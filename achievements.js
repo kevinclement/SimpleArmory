@@ -15195,7 +15195,7 @@ var Achievements =
               {
                 "id": "7535",
                 "name": "Chapter III: Two Princes",
-                "description": "Coming Soon...",
+                "description": "Discover the secrets of the mogu with Wrathion, and deliver to him the heart of the Thunder King.",
                 "icon": "inv_legendary_theblackprince",
                 "side": "",
                 "obtainable": true,
