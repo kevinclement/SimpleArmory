@@ -1,0 +1,617 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Simple Armory</title>
+<link rel="stylesheet" type="text/css" href="reset.css">
+<link rel="stylesheet" type="text/css" href="text.css">
+<link rel="shortcut icon" href="favicon.ico" />
+<style type="text/css">
+    .calendar td {width: 100px; height: 100px; border: 1px solid #999}
+    .calendar td div {width: 96px; height: 72px; margin: 2px; overflow-y: auto}
+    .calendar td.dayspacer {border: 0}
+    #divtabs span {cursor: pointer}
+
+    .clear {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+
+    .contact
+    {
+        position:fixed;
+        left: 80px;
+        bottom: 5px;
+        text-decoration: none;
+        color: black;
+    }
+</style>
+<script type="text/javascript" src="power.js"></script>
+<script type="text/javascript" src="helperFuncs.js"></script>
+<script type="text/javascript">
+
+var charinfo = {
+	genders: ['Male','Female'],
+	races: [,'Human','Orc','Dwarf','Night Elf','Undead','Tauren','Gnome','Troll','Goblin','Blood Elf','Draenei',,,,,,,,,,,'Worgen',,,'Pandaren','Pandaren'],
+	classes: [,'Warrior','Paladin','Hunter','Rogue','Priest','Death Knight','Shaman','Mage','Warlock',,'Druid'],
+	raceToFactions: [,'Alliance','Horde','Alliance','Alliance','Horde','Horde','Alliance','Horde','Horde','Horde','Alliance',,,,,,,,,,,'Alliance',,,'Alliance','Horde'],
+};
+var latestprofile = {};
+
+function onLoad()
+{
+    // Parse hash
+    var locHash = parseHash();
+
+    // If we have hash info, set values
+    if (locHash.region)
+    {
+        setValues(locHash.region, locHash.realm, locHash.char);
+
+        // Load the battle.net account info for this user
+        getcharbyname(locHash.region, locHash.realm, locHash.char);
+    }
+}
+
+function repbar(level,maxrep,curlevel,currep,color) {
+	if (level > curlevel) return '';
+	compareto = (level < curlevel)?maxrep:currep;
+	return '<div style="height: 1em; margin: 0 1px; width: '+Math.ceil(compareto/150)+'px; background-color: '+color+'; float: left"></div>';
+}
+
+function showtab(p_section,p_name) {
+    var runAfterLoad;
+	var o = latestprofile;
+	var h = '';
+	var cath,doshow,showthis,hasthis,spl,imgtag;
+	var PlayerClassNames = [];
+	for (var x=0; x<charinfo.classes.length; x++) if (charinfo.classes[x]) PlayerClassNames.push(charinfo.classes[x]);
+	var charside = charinfo.raceToFactions[o.race].substr(0,1);
+
+	document.getElementById('result').innerHTML = '<div style="margin: 3em auto">Working..</div>'; 
+
+	if (p_section == 'Character') {
+		h += '<h2><a href="http://'+o.region+'.battle.net/wow/en/character/'+o.realm+'/'+o['name']+'/advanced">'+o['name']+'</a> ';
+		h += '<br>'+charinfo.genders[o.gender]+' '+charinfo.races[o.race]+' '+charinfo.classes[o['class']];
+		h += '<br>'+(o.guild?('of &lt;'+o.guild['name']+'&gt; '):'')+'on '+o.realm+'</h2>';
+		if (o.thumbnail) h += '<img src="http://'+o.region+'.battle.net/static-render/'+o.region+'/'+o.thumbnail.replace(/-avatar\.jpg/,'-profilemain.jpg')+'">';
+	}
+
+	if (p_section == 'Factions') {
+		var normalRepNames = ['Hated','Hostile','Unfriendly','Neutral','Friendly','Honored','Revered','Exalted'];
+        var tillerRepNames = ['Stranger','Acquaintance','Buddy','Friend','Good Friend','Best Friend'];
+		var normalRepLevels = [36000,3000,3000,3000,6000,12000,21000,1000];
+		var tillerRepLevels = [8400,8400,8400,8400,8400,999];
+		var repcolors = ['#c22','red','#e62','yellow','lime','#0f8','#0fc','cyan'];
+		h += '<table border="0" cellspacing="0" cellpadding="0">';
+
+        var replevels = normalRepLevels;
+        var repnames = normalRepNames;
+		for (var catx = 0; catx < Factions.categories.length; catx++) {
+			var cat = Factions.categories[catx];
+			var hx = '';
+			for (var fx = 0; fx < cat.factions.length; fx++) {
+				var fac = cat.factions[fx];
+				for (x = 0; x < o.reputation.length; x++) 
+					if (o.reputation[x].id == fac.id) {
+
+                        // Tiller is a different scale
+                        if (fac.id == "1273" || fac.id == "1275" || fac.id == "1276" || fac.id == "1277" || fac.id == "1278" || fac.id == "1279" || 
+                            fac.id == "1280" || fac.id == "1281" || fac.id == "1282" || fac.id == "1283")
+                        {
+                            repnames = tillerRepNames;
+                            replevels = tillerRepLevels;
+                        }
+                        else
+                        {
+                            replevels = normalRepLevels;
+                            repnames = normalRepNames;
+                        }
+						$WowheadPower.registerFaction(fac.id,0,{name_enus:fac['name'],icon:'',tooltip_enus:'<table><tr><td><table width="100%"><tr><td><b>'+fac['name']+'</b></td></tr></table>'});
+
+						if (hx == '') hx = '<tr><td colspan="2" style="font-size: 21px; font-weight: bold; padding-top: 2em">'+cat['name']+'</td></tr>';
+						hx += '<tr><td style="text-align: right; vertical-align: middle; padding-right: 1em">';
+						hx += '<a href="http://www.wowhead.com/faction='+fac.id+'" extratip="'+repnames[o.reputation[x].standing]+': '+o.reputation[x].value+'/'+o.reputation[x].max+'">'+o.reputation[x]['name']+'</a>';
+						hx += '</td><td style="vertical-align: middle">';
+						for (rx = 0; rx < replevels.length; rx++)
+                        {
+							hx += repbar(rx,replevels[rx],o.reputation[x].standing,o.reputation[x].value,repcolors[rx]);
+                        }
+						hx += '<div class="clear"></div></td></tr>';
+						break;
+					}
+			}
+			if (hx != '') {
+                hx += '<tr><td></td><td style="font-size: 75%; font-style: italic; width: 600px">';
+                if (cat.name == "The Tillers")
+                {
+                    hx += '<div style="width: 56px;  float: left; padding: 0 1px">Stranger</div>';
+                    hx += '<div style="width: 56px; float: left; padding: 0 1px">Acq</div>';
+                    hx += '<div style="width: 56px; float: left; padding: 0 1px">Buddy</div>';
+                    hx += '<div style="width: 56px; float: left; padding: 0 1px">Friend</div>';
+                    hx += '<div style="width: 56px; float: left; padding: 0 1px">Good</div>';
+                    hx += '<div style="padding: 0 1px">Best Friend</div>';
+                }
+                else
+                {
+                    hx += '<div style="width: 240px;  float: left; padding: 0 1px">Hated</div>';
+                    hx += '<div style="width: 20px; float: left; padding: 0 1px">Hos</div>';
+                    hx += '<div style="width: 20px; float: left; padding: 0 1px">Unf</div>';
+                    hx += '<div style="width: 20px; float: left; padding: 0 1px">Neu</div>';
+                    hx += '<div style="width: 40px; float: left; padding: 0 1px">Friend</div>';
+                    hx += '<div style="width: 80px; float: left; padding: 0 1px">Honored</div>';
+                    hx += '<div style="width: 140px; float: left; padding: 0 1px">Revered</div>';
+                    hx += '<div style="padding: 0 1px">Ex</div>';
+                }
+                hx += '</td></tr>';
+			}
+			h += hx;			
+		}	
+		h += '</table>';				
+	}
+
+	if (p_section == 'Professions') {
+		for (plevel in o.professions) {
+			var lev = o.professions[plevel];
+			for (x = 0; x < lev.length; x++) {
+				var prof = lev[x];
+				if (typeof Professions[prof.id] == 'undefined') continue;
+				h += '<h2>'+prof['name']+' '+prof.rank+'/'+prof.max+'</h2>';
+				h += '<table><tr><td><b>Learned recipes:</b></td><td><b>Missing recipes:</b></td></tr><tr><td><div style="width: 300px; height: 250px; overflow: auto; margin: 0.5em"><ol>';
+				var mh = '<ol>';
+				for (y in Professions[prof.id].spells) {
+					$WowheadPower.registerSpell(y,0,{name_enus:Professions[prof.id].spells[y]['name'],icon:Professions[prof.id].spells[y].icon,tooltip_enus:'<table><tr><td><table width="100%"><tr><td><b>'+Professions[prof.id].spells[y]['name']+'</b></td></tr></table>'});
+					var rep = '<li><a href="http://www.wowhead.com/spell='+y+'">'+Professions[prof.id].spells[y]['name']+'</a></li>';
+					if (arrayIndexOf(prof.recipes,parseInt(y,10)) < 0) {
+						mh += rep;
+					} else {
+						h += rep;
+					}
+				}
+				h += '</ol></div></td><td><div style="width: 300px; height: 250px; overflow: auto; margin: 0.5em">'+mh+'</ol></div></td></tr></table>';	
+			}
+		}
+	}
+
+    if (p_section == 'Achievements') {
+        var supercat;
+        for (var sc = 0; sc < Achievements.supercats.length; sc++) {
+
+            // Find the supercat that matches 
+            if (Achievements.supercats[sc]['name'] != p_name)
+            {
+                continue;
+            }
+
+            supercat = Achievements.supercats[sc];
+
+            // Set title on top of page
+            h += '<h3 style="margin: 0">'+supercat['name']+'</h3>';
+
+            // Loop through each category in the supercat
+            for (var catx = 0; catx < supercat.cats.length; catx++) {
+
+                var cat = supercat.cats[catx];
+
+                // If the category name is the same as the supercat that we don't put the sub header in
+                if (cat['name'] != supercat['name']) h += '<b>'+cat['name']+'</b>';
+
+                // Start the category section div
+                h += '<div style="margin-left: 20px">';
+                
+                haszonenames = false;
+                for (var zonex = 0; zonex < cat.zones.length; zonex++)
+                {
+                    haszonenames |= cat.zones[zonex]['name'] != '';
+                }
+
+                for (var zonex = 0; zonex < cat.zones.length; zonex++) {
+                    var zone = cat.zones[zonex];
+
+                    var showzone = false;
+                    zh = '<div style="float: left; margin: 10px">';
+
+                    if (haszonenames) {
+                        if (zone['name'] == '') zone['name']=cat['name'];
+                        zh += '<b>'+zone['name']+'</b><br>';
+                    }
+
+                    for (var achx = 0; achx < zone.achs.length; achx++) {
+                        var ach = clone(zone.achs[achx]);
+                        var achidx = arrayIndexOf(o.achievements.achievementsCompleted,parseInt(ach.id,10));
+                        ach.completed = o.achievements.achievementsCompletedTimestamp[achidx];
+                        hasthis = (achidx>=0);
+                        showthis = (hasthis || ((supercat['name'] != 'Feats of Strength' && ach.obtainable) && ((ach.side == '') || (ach.side == charside))));
+                        showzone |= showthis;
+                        if (hasthis) {
+                            imgtag = '<img src="http://cdn.tuj.me/icon/medium/'+ach.icon.toLowerCase()+'.jpg" width="36" height="36" border="0" onerror="this.src=\'inv_misc_questionmark.jpg\';">';
+                        } else if (showthis) {
+                            imgtag = '<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" style="width: 34px; height: 34px; border: 1px dashed grey; display: inline"/'+'>';
+                        }
+                        if (showthis) {
+                            zh += '<a href="http://www.wowhead.com/achievement='+ach.id+'"'+(hasthis?(' rel="when='+ach.completed+'"'):'')+'>'+imgtag+'</a>';
+                            $WowheadPower.registerAchievement(ach.id,0,{name_enus:ach['name'],icon:ach.icon,tooltip_enus:'<table><tr><td><table width="100%"><tr><td><b>'+ach['name']+'</b></td></tr></table><table><tr><td><br /><span class="q">'+ach.description+'</span></td></tr></table>'});
+                        }
+                    }
+                    zh += '</div>';
+                    if (showzone) h += zh;
+                }
+                h += '</div><div class="clear"></div>';
+            }
+        }
+    }
+
+    if (p_section == 'Mounts' || p_section == 'Pets')
+    {
+        var supercat;
+        var hasCount = 0;
+        var wantsCount = 0;
+        var knownLookup = new Array();
+
+        var supercatVar = p_section == "Mounts" ? Mounts : Pets;
+        var collected = p_section.toLowerCase();
+
+        // Build lookup array
+        if (o[collected].collected) {
+            for (var x = 0; x < o[collected].collected.length; x++)
+            {
+                knownLookup.push(o[collected].collected[x].spellId);
+            }
+        }
+
+        for (var sc = 0; sc < supercatVar.supercats.length; sc++) {
+
+            // Find the supercat that matches 
+            if (supercatVar.supercats[sc]['name'] != p_name)
+            {
+                continue;
+            }
+
+            supercat = supercatVar.supercats[sc];
+
+            // Set title on top of page
+            h += '<h3 style="margin: 0"><span id="mountCount"></span> ' + p_section + '</h3>';
+
+            // Loop through each category in the supercat
+            for (var catx = 0; catx < supercat.cats.length; catx++) {
+
+                var cat = supercat.cats[catx];
+
+                // If the category name is the same as the supercat that we don't put the sub header in
+                if (cat['name'] != supercat['name']) h += '<b>'+cat['name']+'</b>';
+
+                // Start the category section div
+                h += '<div style="margin-left: 20px">';
+                
+                haszonenames = false;
+                for (var zonex = 0; zonex < cat.zones.length; zonex++)
+                {
+                    haszonenames |= cat.zones[zonex]['name'] != '';
+                }
+
+                for (var zonex = 0; zonex < cat.zones.length; zonex++) {
+                    var zone = cat.zones[zonex];
+
+                    var showzone = false;
+                    zh = '<div style="float: left; margin: 10px">';
+
+                    if (haszonenames) {
+                        if (zone['name'] == '') zone['name']=cat['name'];
+                        zh += '<b>'+zone['name']+'</b><br>';
+                    }
+
+                    for (var achx = 0; achx < zone.achs.length; achx++) {
+                        var ach = clone(zone.achs[achx]);
+                        var achidx = arrayIndexOf(knownLookup,parseInt(ach.id,10));
+                        hasthis = (achidx>=0);
+
+                        // hack until they fix the armory
+                        if (latestprofile.name == "Marko" && (ach.id == "61309" || ach.id == "75596"))
+                        {
+                            hasthis = true;
+                        }
+
+                        showthis = (hasthis || ach.obtainable);
+                        if (ach.allowableRaces.length > 0)
+                        {
+                            if (arrayIndexOf(ach.allowableRaces, o.race) == -1)
+                            {
+                                showthis = false;
+                            }
+                        }
+
+                        if (ach.allowableClasses && ach.allowableClasses.length > 0)
+                        {
+                            if (arrayIndexOf(ach.allowableClasses, o.class) == -1)
+                            {
+                                showthis = false;
+                            }
+                        }
+
+                        showzone |= showthis;
+                        if (hasthis) {
+                            imgtag = '<img src="http://cdn.tuj.me/icon/medium/'+ach.icon.toLowerCase()+'.jpg" width="36" height="36" border="0" onerror="this.src=\'inv_misc_questionmark.jpg\';">';
+                        } else if (showthis) {
+                            imgtag = '<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" style="width: 34px; height: 34px; border: 1px dashed grey; display: inline"/'+'>';
+                        }
+
+                        if (showthis) {
+                            if (hasthis)
+                            {
+                                hasCount++;
+                            }
+                            zh += '<a href="http://www.wowhead.com/spell='+ach.id+'">'+imgtag+'</a>';
+                            $WowheadPower.registerSpell(ach.id,0,{name_enus:ach['name'],icon:ach.icon,tooltip_enus:'<table><tr><td><table width="100%"><tr><td><b>'+ach['name']+'</b></td></tr></table><table><tr><td><span class="q">'+ach.description+'</span></td></tr></table>'});
+                        }
+                    }
+                    zh += '</div>';
+                    if (showzone) h += zh;
+                }
+                h += '</div><div class="clear"></div>';
+            }
+        }
+
+        runAfterLoad = function () { document.getElementById("mountCount").innerText = hasCount; };
+    }
+
+	if (p_section == 'Calendar') {
+        // Build up the calendar object
+        var calendar = {};
+        for (var sc = 0; sc < Achievements.supercats.length; sc++) 
+        {
+            var supercat = Achievements.supercats[sc];
+            for (var catx = 0; catx < supercat.cats.length; catx++)
+            {
+                var cat = supercat.cats[catx];
+                for (var zonex = 0; zonex < cat.zones.length; zonex++)
+                {
+                    var zone = cat.zones[zonex];
+                    for (var achx = 0; achx < zone.achs.length; achx++)
+                    {
+                        var ach = clone(zone.achs[achx]);
+
+                        var achidx = arrayIndexOf(o.achievements.achievementsCompleted,parseInt(ach.id,10));
+                        if (achidx>=0)
+                        {
+                            var dt = new Date(o.achievements.achievementsCompletedTimestamp[achidx]);
+                            var monthidx = ''+dt.getFullYear()+((dt.getMonth() < 9)?'0':'')+(dt.getMonth()+1);
+                            if (typeof calendar[monthidx] == 'undefined') calendar[monthidx] = new Array(31);
+                            if (typeof calendar[monthidx][dt.getDate()] == 'undefined') calendar[monthidx][dt.getDate()] = new Array();
+                            ach.completed = o.achievements.achievementsCompletedTimestamp[achidx];
+                            calendar[monthidx][dt.getDate()].push(ach);
+                        }
+                    }
+                }
+            }
+        }
+
+		var monthnames = [,'January','February','March','April','May','June','July','August','September','October','November','December'];
+		var today = new Date();
+		var calenpages = new Array();
+		var isfirstmonth = true;
+		for (var yearx = 2008; yearx <= today.getFullYear(); yearx++) {
+			for (var monthx = 1; monthx <= 12; monthx++) {
+				var monthid = ''+((monthx < 10)?'0':'')+monthx;
+				if ((!isfirstmonth) || (typeof calendar[''+yearx+monthid] != 'undefined')) {
+					calenpages.push(''+yearx+monthid);
+					isfirstmonth = false;
+					if ((yearx == today.getFullYear()) && (monthx == (today.getMonth()+1))) break;
+				}
+			}
+		}
+		h += '<div align="center"><input type="button" value="<" onclick="var c=document.getElementById(\'calensel\'); if (c.selectedIndex > 0) {c.selectedIndex--; showcalen(c.options[c.selectedIndex].value);}"> ';
+		h += '<select id="calensel" onchange="showcalen(this.options[this.selectedIndex].value)">';
+		for (x = 0; x < calenpages.length; x++)
+        {
+            var sel = "";
+            if (x == calenpages.length - 1)
+            {
+                sel = "selected"
+            }
+            h += '<option ' +sel+ ' value="'+calenpages[x]+'">'+monthnames[parseInt(calenpages[x].substr(4),10)]+' '+calenpages[x].substr(0,4)+'</option>';
+        }
+		h += '</select> <input type="button" value=">" onclick="var c=document.getElementById(\'calensel\'); if (c.selectedIndex < (c.options.length-1)) {c.selectedIndex++; showcalen(c.options[c.selectedIndex].value);}"></div>';
+		h += '<div align="center" style="margin-top: 1em">';
+        var curMonth = today.getMonth() + 1;
+        curcalenpage = '' + today.getFullYear() + (curMonth < 10 ? '0' + curMonth : curMonth);
+		for (var yearx = 2008; yearx <= today.getFullYear(); yearx++) {
+			for (var monthx = 1; monthx <= 12; monthx++) {
+				var monthid = ''+((monthx < 10)?'0':'')+monthx;
+                var displayIt = (curcalenpage == ''+yearx+monthid);
+				if (displayIt && (typeof calendar[''+yearx+monthid] == 'undefined')) continue;
+
+				h += '<table class="calendar" id="calendar'+yearx+monthid+'" style="display: ' + (displayIt ? "block" : "none")+ '">';
+				for (dayx = 1; dayx <= 31; dayx++) {
+					d = new Date(yearx, monthx-1, dayx);
+					if (d.getDate() != dayx) break;
+					if ((dayx == 1) || (d.getDay() == 0)) h += '<tr>';
+					if ((dayx == 1) && (d.getDay() > 0)) h += '<td colspan="'+(d.getDay())+'" class="dayspacer"></td>';
+					h += '<td>' + dayx;
+				
+					if ((typeof calendar[''+yearx+monthid] != 'undefined') && (typeof calendar[''+yearx+monthid][dayx] != 'undefined')) {
+						day = calendar[''+yearx+monthid][dayx];
+						day.sort(achdatesort);
+						h += '<div>'
+						for (achx in day) {
+							ach = day[achx];
+							h += '<a href="http://www.wowhead.com/achievement='+ach.id+'" rel="when='+ach.completed+'"><img src="http://cdn.tuj.me/icon/medium/'+ach.icon.toLowerCase()+'.jpg" width="36" height="36" border="0"></a>';
+                            $WowheadPower.registerAchievement(ach.id,0,{name_enus:ach['name'],icon:ach.icon,tooltip_enus:'<table><tr><td><table width="100%"><tr><td><b>'+ach['name']+'</b></td></tr></table><table><tr><td><br /><span class="q">'+ach.description+'</span></td></tr></table>'});
+						}
+						h += '</div>';
+					}
+					h += '</td>';
+					if (d.getDay() == 6) h += '</tr>';
+				}
+				if (d.getDay() < 6) h += '<td colspan="'+(6-d.getDay())+'" class="dayspacer"></td>';
+				h += '</tr></table>';
+				if ((yearx == today.getFullYear()) && (monthx == (today.getMonth()+1))) break;
+			}
+		}
+		h += '</div>';
+	}
+	
+	document.getElementById('result').innerHTML = '<div class="clear" id="resulttop"></div>'+h;
+	document.getElementById('resulttop').scrollIntoView();
+
+    if (runAfterLoad) { runAfterLoad(); }
+}
+
+var curcalenpage;
+function showcalen(newpage) {
+	document.getElementById('calendar'+curcalenpage).style.display='none';
+	document.getElementById('calendar'+newpage).style.display='block';
+	curcalenpage=newpage;
+}
+
+function parseHash()
+{
+    // Pull any character info from the location hash
+    // "#us/spirestone/marko"
+    // [0]: us/spirestone/marko
+    // [1]: spirestone
+    // [2]: marko
+    // [3]: location part
+    var rgr = new RegExp('#([^\/]+)/([^\/]+)/([^\/]+)/?([^\/]+)?').exec(location.hash);
+    rgr = rgr ? rgr : {};
+
+    return { "region": rgr[1], "realm": rgr[2], "char": rgr[3], "tab": rgr[4] };
+}
+
+function setValues(region, realm, character)
+{
+    var selbox = document.getElementById('realmlist');
+    var valbox = document.getElementById('charname');
+
+    for (var i=0; i<selbox.length; i++)
+    {
+        if (selbox.options[i].value == region + realm)
+        {
+            selbox.options[i].selected = true;
+            break;
+        }
+    }
+
+    valbox.value = character;
+}
+
+window.onhashchange = onLoad;
+function setLocation(region, server, character, tab)
+{
+    var href = '#'+region+'/'+server+'/'+character;
+    if (tab)
+    {
+        href += '/' + tab;
+    }
+    location.hash = href;
+}
+
+function setLocationToTab(tab)
+{
+    var hash = parseHash();
+    setLocation(hash.region, hash.realm, hash.char, tab.toLowerCase());
+}
+
+function navigateToTab(tab)
+{
+    // uppercase first letter
+    var tab = tab.substr(0, 1).toUpperCase() + tab.substr(1);
+
+    if (tab == "Character" || tab == "Calendar" || tab == "Mounts" || tab == "Factions" || tab == "Pets")
+    {
+        showtab(tab,tab);
+    }
+    else if (tab == "General" || tab == "Quests" || tab == "Exploration" || tab == "Pvp" || tab == "Dungeons" || tab == "Professions" || tab == "Reputation" || tab == "Scenarios" || tab == "World" || tab == "Battles" || tab == "Feats")
+    {
+        if (tab == "Pvp")
+        {
+            tab = "Player vs. Player";
+        }
+        if (tab == "Dungeons")
+        {
+            tab = "Dungeons & Raids";
+        }
+        if (tab == "World")
+        {
+            tab = "World Events";
+        }
+        if (tab == "Battles")
+        {
+            tab = "Pet Battles";
+        }
+        if (tab == "Feats")
+        {
+            tab = "Feats of Strength";
+        }
+        showtab("Achievements",tab);
+    }
+
+    ga('send', 'pageview', {'title': tab});
+}
+
+</script>
+<script type="text/javascript" src="achievements.js"></script>
+<script type="text/javascript" src="mounts.js"></script>
+<script type="text/javascript" src="pets.js"></script>
+<script type="text/javascript" src="factions.js"></script>
+<script type="text/javascript" src="professions.js"></script>
+</head>
+<body style="margin: 0; color: black; background: #EEE">
+<div style="position: absolute; top: 0; left: 0; height: 3em; right: 0; text-align: center" id="charformdiv">
+    <form onsubmit="getchar(this); return false;" style="margin: 0">
+        <select name="realm" size="1" id="realmlist"></select>
+        <input type="text" name="char" size="20" maxlength="15" id="charname">
+        <input type="submit" value="Go">
+    </form>
+</div>
+<div id="divtabs" style="visibility: hidden; position: absolute; top: 3em; left: 0; bottom: 0; width: 15em; padding: 0.5em; text-align: center; font-weight: bold; overflow-y: auto">
+	<span onclick="setLocationToTab('Character')">Character</span><br>
+	<br>
+	<span onclick="setLocationToTab(this.innerHTML)">General</span><br>
+	<span onclick="setLocationToTab(this.innerHTML)">Quests</span><br>
+	<span onclick="setLocationToTab(this.innerHTML)">Exploration</span><br>
+	<span onclick="setLocationToTab('pvp')">Player vs. Player</span><br>
+	<span onclick="setLocationToTab('dungeons')">Dungeons &amp; Raids</span><br>
+	<span onclick="setLocationToTab(this.innerHTML)">Professions</span><br>
+	<span onclick="setLocationToTab(this.innerHTML)">Reputation</span><br>
+	<span onclick="setLocationToTab(this.innerHTML)">Scenarios</span><br>
+	<span onclick="setLocationToTab('world')">World Events</span><br>
+	<span onclick="setLocationToTab('battles')">Pet Battles</span><br>
+	<span onclick="setLocationToTab('feats')">Feats of Strength</span><br>
+	<br>
+	<span onclick="setLocationToTab('Calendar')">Achievement Calendar</span><br>
+	<br>
+	<span onclick="setLocationToTab('Mounts')">Mounts</span><br>
+	<span onclick="setLocationToTab('Pets')">Pets</span><br>
+	<br>
+	<span onclick="setLocationToTab('Factions')">Reputation</span><br>
+    <a href="mailto:simplearmory@gmail.com" class="contact">Contact</a>
+</div>
+<div id="result" style="position: absolute; top: 3em; bottom: 0; left: 15em; right: 0; overflow: auto; padding: 0.5em">
+    <div style="position: relative">
+        <div style="position: absolute; right: 15em; left: 0; text-align: center"><noscript><h2>Please enable JavaScript.</h2></noscript></div>
+    </div>
+</div>
+<script type="text/javascript" src="http://us.battle.net/api/wow/realm/status?jsonp=poprealmlistus"></script>
+<script type="text/javascript" src="http://eu.battle.net/api/wow/realm/status?jsonp=poprealmlisteu"></script>
+<script type="text/javascript">
+	if (document.getElementById('realmlist').options.length == 0) {
+		document.getElementById('charformdiv').style.display='none';
+		document.getElementById('result').innerHTML='<div style="position: absolute; right: 15em; left: 0; text-align: center"><h2>Error: Did not receive realm list from <a href="http://www.battle.net/">Battle.net</a>.</h2></div>';
+	} else {
+		document.getElementById('result').innerHTML='<div style="position: absolute; right: 15em; left: 0; text-align: center"><h2>Enter a realm and character above.</h2></div>';
+	}
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40763505-1', 'simplearmory.com');
+</script>
+</body></html>
+
