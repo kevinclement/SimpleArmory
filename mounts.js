@@ -67,6 +67,42 @@ var Mounts =
                 "obtainable": true,
                 "allowableRaces": [],
                 "allowableClasses": null
+              },
+              {
+                "id": "142478",
+                "name": "Armored Blue Dragonhawk",
+                "description": "Summons and dismisses a rideable Armored Blue Dragonhawk.  This is a flying mount.",
+                "icon": "ability_mount_dragonhawkarmorallliance",
+                "side": "A",
+                "obtainable": true,
+                "allowableRaces": [
+                  1,
+                  3,
+                  4,
+                  7,
+                  11,
+                  22,
+                  25
+                ],
+                "allowableClasses": null
+              },
+              {
+                "id": "142266",
+                "name": "Armored Red Dragonhawk",
+                "description": "Summons and dismisses a rideable Armored Red Dragonhawk.  This is a flying mount.",
+                "icon": "ability_mount_dragonhawkarmorhorde",
+                "side": "H",
+                "obtainable": true,
+                "allowableRaces": [
+                  2,
+                  5,
+                  6,
+                  8,
+                  9,
+                  10,
+                  26
+                ],
+                "allowableClasses": null
               }
             ]
           }
@@ -514,7 +550,7 @@ var Mounts =
               }
             ]
           },
-{
+          {
             "name": "Kirin Tor Offensive",
             "achs": [
               {
@@ -739,8 +775,22 @@ var Mounts =
                 "allowableClasses": null
               }
             ]
+          },
+          {
+            "name": "Brawlers",
+            "achs": [
+              {
+                "id": "142641",
+                "name": "Brawler's Burly Mushan Beast",
+                "description": "Summons and dismisses a rideable Brawler's Burly Mushan Beast.",
+                "icon": "inv_mushanbeastmount",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": [],
+                "allowableClasses": null
+              }
+            ]
           }
-          
         ]
       },
       {
@@ -5639,6 +5689,21 @@ var Mounts =
                 "name": "Ghastly Charger",
                 "description": "Summons and dismisses a rideable Ghastly Charger. This mount changes depending on your Riding skill and location.",
                 "icon": "inv_ghostlycharger",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": [],
+                "allowableClasses": null
+              }
+            ]
+          },
+          {
+            "name": "Hearthstone",
+            "achs": [
+              {
+                "id": "142073",
+                "name": "Hearthsteed",
+                "description": "Summons and dismisses a Hearthsteed.  This mount changes depending on your Riding skill and location.",
+                "icon": "inv_pegasusmount",
                 "side": "",
                 "obtainable": true,
                 "allowableRaces": [],

@@ -8432,6 +8432,117 @@ var Achievements =
         ]
       },
       {
+        "id": "312",
+        "name": "Deepwind Gorge",
+        "zones": [
+          {
+            "name": "",
+            "achs": [
+              {
+                "id": "8359",
+                "name": "Capping Spree",
+                "description": "Personally capture the enemy mine cart 4 times in a single Deepwind Gorge battleground.",
+                "icon": "achievement_bg_captureflag_eos",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8358",
+                "name": "Deepwind Gorge All-Star",
+                "description": "Assault a mine, Defend a mine, Capture a mine cart and Return a mine cart in a single Deepwind Gorge match.",
+                "icon": "ability_warrior_intensifyrage",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8333",
+                "name": "Deepwind Gorge Perfection",
+                "description": "Win Deepwind Gorge with a score of 1600 to 0.",
+                "icon": "achievement_bg_abshutout",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8332",
+                "name": "Deepwind Gorge Veteran",
+                "description": "Complete 100 victories in Deepwind Gorge.",
+                "icon": "achievement_zone_valleyoffourwinds",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8331",
+                "name": "Deepwind Gorge Victory",
+                "description": "Win Deepwind Gorge.",
+                "icon": "achievement_zone_valleyoffourwinds",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8360",
+                "name": "Master of Deepwind Gorge",
+                "description": "Complete the Deepwind Gorge achievements listed below.",
+                "icon": "achievement_zone_valleyoffourwinds",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8350",
+                "name": "Mine! Mine! Mine!",
+                "description": "Assault 50 mines in Deepwind Gorge.",
+                "icon": "achievement_bg_winav_bothmines",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8351",
+                "name": "Other People's Property",
+                "description": "Capture 50 mine carts in Deepwind Gorge.",
+                "icon": "achievement_bg_tophealer_ab",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8354",
+                "name": "Puddle Jumper",
+                "description": "Fall 25 yards without dying in Deepwind Gorge.",
+                "icon": "spell_magic_featherfall",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8355",
+                "name": "Weighed Down",
+                "description": "Kill an enemy carrying your mine cart before they leave your base.",
+                "icon": "inv_stone_weightstone_06",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "99877",
         "name": "Silvershard Mines",
         "zones": [
@@ -11767,6 +11878,26 @@ var Achievements =
                 "obtainable": true,
                 "allowableRaces": null,
                 "allowableClasses": null
+              },
+              {
+                "id": "8304",
+                "name": "Mount Parade",
+                "description": "Obtain 200 mounts.",
+                "icon": "ability_mount_dragonhawkarmorallliance",
+                "side": "A",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8302",
+                "name": "Mount Parade",
+                "description": "Obtain 200 mounts.",
+                "icon": "ability_mount_dragonhawkarmorhorde",
+                "side": "H",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
               }
             ]
           },
@@ -13111,7 +13242,7 @@ var Achievements =
           {
             "name": "Race",
             "achs": [
-                {
+              {
                 "id": "4859",
                 "name": "Kings Under the Mountain",
                 "description": "Discover the following artifacts of the Dark Iron thanes.",
@@ -13121,7 +13252,7 @@ var Achievements =
                 "allowableRaces": null,
                 "allowableClasses": null
               },
-            {
+              {
                 "id": "4858",
                 "name": "Seven Scepters",
                 "description": "Recover the following scepters from the various races of Azeroth.",
@@ -13131,7 +13262,7 @@ var Achievements =
                 "allowableRaces": null,
                 "allowableClasses": null
               },
-{
+              {
                 "id": "5301",
                 "name": "The Boy Who Would be King",
                 "description": "Recover the following tol'vir artifacts that tell of the rise and fall of Emperor Ninjter.",
@@ -15231,6 +15362,16 @@ var Achievements =
                 "obtainable": true,
                 "allowableRaces": null,
                 "allowableClasses": null
+              },
+              {
+                "id": "8325",
+                "name": "Chapter V: Judgement of the Black Prince",
+                "description": "[Coming Soon...]",
+                "icon": "inv_legendary_theblackprince",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
               }
             ]
           },
@@ -15443,6 +15584,31 @@ var Achievements =
                 "description": "Complete the Isle of Thunder achievements listed below.",
                 "icon": "spell_shaman_thunderstorm",
                 "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              }
+            ]
+          },
+          {
+            "name": "Escalation",
+            "achs": [
+              {
+                "id": "8307",
+                "name": "Darkspear Revolutionary",
+                "description": "Aid Vol'jin's troll uprising during Patch 5.3: Escalation.",
+                "icon": "inv_hand_1h_trollshaman_c_01",
+                "side": "H",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8306",
+                "name": "Hordebreaker",
+                "description": "Pit Vol'jin's troll uprising against Garrosh Hellscream's Horde during Patch 5.3: Escalation.",
+                "icon": "inv_hand_1h_trollshaman_c_01",
+                "side": "A",
                 "obtainable": true,
                 "allowableRaces": null,
                 "allowableClasses": null
@@ -21515,6 +21681,86 @@ var Achievements =
                 "obtainable": true,
                 "allowableRaces": null,
                 "allowableClasses": null
+              },
+              {
+                "id": "8342",
+                "name": "Collect Your Deck",
+                "description": "Earn the right to purchase challenge cards for the following Brawler's Guild bosses.",
+                "icon": "inv_inscription_tarot_volcanocard",
+                "side": "H",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8339",
+                "name": "Collect Your Deck",
+                "description": "Earn the right to purchase challenge cards for the following Brawler's Guild bosses.",
+                "icon": "inv_inscription_tarot_volcanocard",
+                "side": "A",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8340",
+                "name": "Deck Your Collection",
+                "description": "Defeat the following Brawler's Guild bosses.",
+                "icon": "inv_inscription_tarot_volcanocard",
+                "side": "A",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8343",
+                "name": "Deck Your Collection",
+                "description": "Defeat the following Brawler's Guild bosses.",
+                "icon": "inv_inscription_tarot_volcanocard",
+                "side": "H",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8337",
+                "name": "Having a Brawl",
+                "description": "Reach Rank 9 with Brawl'gar Arena.",
+                "icon": "warrior_talent_icon_furyintheblood",
+                "side": "H",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8335",
+                "name": "Having a Brawl",
+                "description": "Reach Rank 9 with Bizmo's Brawlpub.",
+                "icon": "warrior_talent_icon_furyintheblood",
+                "side": "A",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8338",
+                "name": "I've Got the Biggest Brawls of Them All",
+                "description": "Reach Rank 10 with Brawl'gar Arena.",
+                "icon": "pandarenracial_quiveringpain",
+                "side": "H",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8336",
+                "name": "I've Got the Biggest Brawls of Them All",
+                "description": "Reach Rank 10 with Bizmo's Brawlpub.",
+                "icon": "pandarenracial_quiveringpain",
+                "side": "A",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
               }
             ]
           }
@@ -22947,6 +23193,26 @@ var Achievements =
                 "obtainable": true,
                 "allowableRaces": null,
                 "allowableClasses": null
+              },
+              {
+                "id": "8392",
+                "name": "Tournament Glory 2013",
+                "description": "Rated in the top 1000 of teams participating in the 2013 Tournament Arena Realm",
+                "icon": "inv_helmet_plate_pvpwarrior_e_01",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8391",
+                "name": "Tournament Participation 2013",
+                "description": "Participated in the 2013 Tournament Arena Realm",
+                "icon": "inv_spear_06",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
               }
             ]
           },
@@ -23318,6 +23584,16 @@ var Achievements =
                 "name": "Malevolent Gladiator's Cloud Serpent",
                 "description": "Obtain the Malevolent Gladiator's Cloud Serpent from Arena Season 12 of Mists of Pandaria",
                 "icon": "inv_pandarenserpentmount_white",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8345",
+                "name": "Hearthstoned",
+                "description": "Obtain the Hearthsteed from the Hearthstone promotion.",
+                "icon": "inv_pegasusmount",
                 "side": "",
                 "obtainable": true,
                 "allowableRaces": null,
@@ -24649,6 +24925,16 @@ var Achievements =
                 "obtainable": true,
                 "allowableRaces": null,
                 "allowableClasses": null
+              },
+              {
+                "id": "8310",
+                "name": "Heroic: A Brewing Storm",
+                "description": "Defeat Borokhula the Destroyer in A Brewing Storm on Heroic Difficulty.",
+                "icon": "ability_hunter_pet_devilsaur",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
               }
             ]
           },
@@ -24750,6 +25036,26 @@ var Achievements =
                 "name": "Fancy Footwork",
                 "description": "Defeat the Abomination of Anger in the Crypt of Forgotten Kings scenario without anyone taking damage from the red clouds.",
                 "icon": "ability_rogue_sprint",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8368",
+                "name": "Fight Anger with Anger",
+                "description": "Defeat the Abomination of Anger in the Crypt of Forgotten Kings scenario with 20 stacks of Uncontrolled Anger.",
+                "icon": "ability_creature_cursed_02",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8311",
+                "name": "Heroic: Crypt of Forgotten Kings",
+                "description": "Complete the Crypt of Forgotten Kings scenario on Heroic Difficulty.",
+                "icon": "archaeology_5_0_keystone_mogu",
                 "side": "",
                 "obtainable": true,
                 "allowableRaces": null,
@@ -25021,6 +25327,176 @@ var Achievements =
                 "description": "Use every weapon and power-up in the Domination Point scenario.",
                 "icon": "inv_box_01",
                 "side": "H",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              }
+            ]
+          },
+          {
+            "name": "Dark Heart of Pandaria",
+            "achs": [
+              {
+                "id": "8319",
+                "name": "Accelerated Archaeology",
+                "description": "Pick up three special artifacts in a single instance of the Dark Heart of Pandaria scenario.",
+                "icon": "trade_archaeology_uldumcanopicjar",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8317",
+                "name": "Dark Heart of Pandaria",
+                "description": "Complete the Dark Heart of Pandaria scenario.",
+                "icon": "inv_heart_of_the_thunderking_icon",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8318",
+                "name": "Heroic: Dark Heart of Pandaria",
+                "description": "Complete the Dark Heart of Pandaria scenario on Heroic Difficulty.",
+                "icon": "inv_heart_of_the_thunderking_icon",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              }
+            ]
+          },
+          {
+            "name": "Blood in the Snow",
+            "achs": [
+              {
+                "id": "8316",
+                "name": "Blood in the Snow",
+                "description": "Complete the Blood in the Snow scenario.",
+                "icon": "achievement_zone_dunmorogh",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8329",
+                "name": "Heed the Weed",
+                "description": "Use every basket of Shimmerweed in a single Blood in the Snow scenario run.",
+                "icon": "inv_misc_herb_04",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8330",
+                "name": "Hekima's Heal-Halter",
+                "description": "Don't let Hekima cast Hekima's Wisdom in the Blood in the Snow scenario.",
+                "icon": "spell_holy_flashheal",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8312",
+                "name": "Heroic: Blood in the Snow",
+                "description": "Complete the Blood in the Snow scenario on Heroic Difficulty.",
+                "icon": "inv_shield_zandalari_c_01",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              }
+            ]
+          },
+          {
+            "name": "Secrets of Ragefire",
+            "achs": [
+              {
+                "id": "8327",
+                "name": "Heroic: The Secrets of Ragefire",
+                "description": "Complete the Secrets of Ragefire scenario on Heroic Difficulty.",
+                "icon": "racial_orc_berserkerstrength",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8294",
+                "name": "The Secrets of Ragefire",
+                "description": "Complete the Secrets of Ragefire scenario.",
+                "icon": "racial_orc_berserkerstrength",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8295",
+                "name": "The Few, the Proud, the Gob Squad",
+                "description": "Complete the Secrets of Ragefire scenario without any member of the Gob Squad taking damage.",
+                "icon": "achievement_pvp_h_11",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              }
+            ]
+          },
+          {
+            "name": "Battle on the High Seas",
+            "achs": [
+              {
+                "id": "8314",
+                "name": "Battle on the High Seas",
+                "description": "Defeat Admiral Hagman in the Battle on the High Seas.",
+                "icon": "ability_vehicle_siegeenginecannon",
+                "side": "A",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8315",
+                "name": "Battle on the High Seas",
+                "description": "Defeat Admiral Hodgson in the Battle on the High Seas.",
+                "icon": "ability_vehicle_siegeenginecannon",
+                "side": "H",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8364",
+                "name": "Heroic: Battle on the High Seas",
+                "description": "Defeat Admiral Hagman in the Battle on the High Seas on Heroic Difficulty.",
+                "icon": "ability_vehicle_siegeenginecannon",
+                "side": "A",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8366",
+                "name": "Heroic: Battle on the High Seas",
+                "description": "Defeat Admiral Hodgson in the Battle on the High Seas on Heroic Difficulty.",
+                "icon": "ability_vehicle_siegeenginecannon",
+                "side": "H",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8347",
+                "name": "Keep those Bombs Away! from me...",
+                "description": "Complete the Battle on the High Seas Scenario without any member of your party getting hit by cannon fire at any point.",
+                "icon": "ability_hunter_snipershot",
+                "side": "",
                 "obtainable": true,
                 "allowableRaces": null,
                 "allowableClasses": null
@@ -25582,6 +26058,16 @@ var Achievements =
                 "obtainable": true,
                 "allowableRaces": null,
                 "allowableClasses": null
+              },
+              {
+                "id": "8293",
+                "name": "Raiding with Leashes II: Attunement Edition",
+                "description": "Collect all of the battle pets listed below from Karazhan, Serpentshrine Cavern, and Tempest Keep.",
+                "icon": "achievement_boss_prince_malchezaar",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
               }
             ]
           }
@@ -25728,6 +26214,46 @@ var Achievements =
                 "obtainable": true,
                 "allowableRaces": null,
                 "allowableClasses": null
+              },
+              {
+                "id": "8300",
+                "name": "Brutal Pet Brawler",
+                "description": "Win 250 PvP pet battles through Find Battle with a full team of level 25 pets.",
+                "icon": "achievement_featsofstrength_gladiator_03",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8301",
+                "name": "Deadly Pet Brawler",
+                "description": "Win 1000 PvP pet battles through Find Battle with a full team of level 25 pets.",
+                "icon": "achievement_featsofstrength_gladiator_04",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8297",
+                "name": "Merciless Pet Brawler",
+                "description": "Win 10 PvP pet battles through Find Battle with a full team of level 25 pets.",
+                "icon": "achievement_featsofstrength_gladiator_01",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8298",
+                "name": "Vengeful Pet Brawler",
+                "description": "Win 50 PvP pet battles through Find Battle with a full team of level 25 pets.",
+                "icon": "achievement_featsofstrength_gladiator_02",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
               }
             ]
           },
@@ -25804,6 +26330,16 @@ var Achievements =
                 "name": "Take 'Em All On!",
                 "description": "Win a solo pet battle against a pet of every family.",
                 "icon": "inv_pet_achievement_captureapetfromeachfamily_battle",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8348",
+                "name": "The Longest Day",
+                "description": "Complete all of the pet battle daily quests listed below in a single day.",
+                "icon": "inv_misc_pocketwatch_01",
                 "side": "",
                 "obtainable": true,
                 "allowableRaces": null,
