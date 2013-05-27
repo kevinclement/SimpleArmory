@@ -1430,24 +1430,6 @@ var Mounts =
                 "allowableClasses": null
               },
               {
-                "id": "64659",
-                "name": "Venomhide Ravasaur",
-                "description": "Summons and dismisses a rideable Venomhide Ravasaur.",
-                "icon": "ability_mount_raptor",
-                "side": "H",
-                "obtainable": true,
-                "allowableRaces": [
-                  2,
-                  5,
-                  6,
-                  8,
-                  9,
-                  10,
-                  26
-                ],
-                "allowableClasses": null
-              },
-              {
                 "id": "65644",
                 "name": "Swift Purple Raptor",
                 "description": "Summons and dismisses a rideable Swift Purple Raptor.",
@@ -1664,24 +1646,6 @@ var Mounts =
                 "allowableClasses": null
               },
               {
-                "id": "66846",
-                "name": "Ochre Skeletal Warhorse",
-                "description": "Summons and dismisses a rideable Ochre Skeletal Warhorse.",
-                "icon": "ability_mount_undeadhorse",
-                "side": "H",
-                "obtainable": true,
-                "allowableRaces": [
-                  2,
-                  5,
-                  6,
-                  8,
-                  9,
-                  10,
-                  26
-                ],
-                "allowableClasses": null
-              },
-              {
                 "id": "67466",
                 "name": "Argent Warhorse",
                 "description": "Summons and dismisses a rideable Argent Warhorse.",
@@ -1689,24 +1653,6 @@ var Mounts =
                 "side": "",
                 "obtainable": true,
                 "allowableRaces": [],
-                "allowableClasses": null
-              },
-              {
-                "id": "68056",
-                "name": "Swift Horde Wolf",
-                "description": "Summons and dismisses a rideable Swift Horde Wolf.",
-                "icon": "ability_mount_blackdirewolf",
-                "side": "H",
-                "obtainable": true,
-                "allowableRaces": [
-                  2,
-                  5,
-                  6,
-                  8,
-                  9,
-                  10,
-                  26
-                ],
                 "allowableClasses": null
               },
               {
@@ -2127,6 +2073,24 @@ var Mounts =
                 "side": "",
                 "obtainable": true,
                 "allowableRaces": [],
+                "allowableClasses": null
+              },
+              {
+                "id": "68056",
+                "name": "Swift Horde Wolf",
+                "description": "Summons and dismisses a rideable Swift Horde Wolf.",
+                "icon": "ability_mount_blackdirewolf",
+                "side": "H",
+                "obtainable": false,
+                "allowableRaces": [
+                  2,
+                  5,
+                  6,
+                  8,
+                  9,
+                  10,
+                  26
+                ],
                 "allowableClasses": null
               }
             ]
@@ -3160,24 +3124,6 @@ var Mounts =
                 "allowableClasses": null
               },
               {
-                "id": "17229",
-                "name": "Winterspring Frostsaber",
-                "description": "Summons and dismisses a rideable Winterspring Frostsaber.",
-                "icon": "ability_mount_pinktiger",
-                "side": "A",
-                "obtainable": true,
-                "allowableRaces": [
-                  1,
-                  3,
-                  4,
-                  7,
-                  11,
-                  22,
-                  25
-                ],
-                "allowableClasses": null
-              },
-              {
                 "id": "23221",
                 "name": "Swift Frostsaber",
                 "description": "Summons and dismisses a rideable Swift Frostsaber.",
@@ -4033,6 +3979,24 @@ var Mounts =
                 "id": "64977",
                 "name": "Black Skeletal Horse",
                 "description": "Summons and dismisses a rideable Black Skeletal Horse.",
+                "icon": "ability_mount_undeadhorse",
+                "side": "H",
+                "obtainable": true,
+                "allowableRaces": [
+                  2,
+                  5,
+                  6,
+                  8,
+                  9,
+                  10,
+                  26
+                ],
+                "allowableClasses": null
+              },
+              {
+                "id": "66846",
+                "name": "Ochre Skeletal Warhorse",
+                "description": "Summons and dismisses a rideable Ochre Skeletal Warhorse.",
                 "icon": "ability_mount_undeadhorse",
                 "side": "H",
                 "obtainable": true,
@@ -5967,6 +5931,47 @@ var Mounts =
                 "side": "",
                 "obtainable": true,
                 "allowableRaces": [],
+                "allowableClasses": null
+              }
+            ]
+          },
+{
+            "name": "Feets of Strength",
+            "achs": [
+              {
+                "id": "64659",
+                "name": "Venomhide Ravasaur",
+                "description": "Summons and dismisses a rideable Venomhide Ravasaur.",
+                "icon": "ability_mount_raptor",
+                "side": "H",
+                "obtainable": true,
+                "allowableRaces": [
+                  2,
+                  5,
+                  6,
+                  8,
+                  9,
+                  10,
+                  26
+                ],
+                "allowableClasses": null
+              },
+              {
+                "id": "17229",
+                "name": "Winterspring Frostsaber",
+                "description": "Summons and dismisses a rideable Winterspring Frostsaber.",
+                "icon": "ability_mount_pinktiger",
+                "side": "A",
+                "obtainable": true,
+                "allowableRaces": [
+                  1,
+                  3,
+                  4,
+                  7,
+                  11,
+                  22,
+                  25
+                ],
                 "allowableClasses": null
               }
             ]
