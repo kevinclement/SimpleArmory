@@ -5936,7 +5936,7 @@ var Mounts =
             ]
           },
 {
-            "name": "Feets of Strength",
+            "name": "Feats of Strength",
             "achs": [
               {
                 "id": "64659",
