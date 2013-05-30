@@ -763,16 +763,6 @@ var Mounts =
                 "obtainable": true,
                 "allowableRaces": [],
                 "allowableClasses": null
-              },
-              {
-                "id": "139595",
-                "name": "Armored Bloodwing",
-                "description": "Summons and dismisses an Armored Bloodwing.  This mount changes depending on your Riding skill and location.",
-                "icon": "ability_mount_epicbatmount",
-                "side": "",
-                "obtainable": false,
-                "allowableRaces": [],
-                "allowableClasses": null
               }
             ]
           },
@@ -2154,7 +2144,7 @@ var Mounts =
                 "name": "Cobalt War Talbuk",
                 "description": "Summons and dismisses a rideable Cobalt War Talbuk.",
                 "icon": "inv_misc_foot_centaur",
-                "side": "H",
+                "side": "",
                 "obtainable": true,
                 "allowableRaces": [],
                 "allowableClasses": null
@@ -2184,17 +2174,9 @@ var Mounts =
                 "name": "Tan War Talbuk",
                 "description": "Summons and dismisses a rideable Tan War Talbuk.",
                 "icon": "inv_misc_foot_centaur",
-                "side": "A",
+                "side": "",
                 "obtainable": true,
-                "allowableRaces": [
-                  1,
-                  3,
-                  4,
-                  7,
-                  11,
-                  22,
-                  25
-                ],
+                "allowableRaces": [],
                 "allowableClasses": null
               },
               {
@@ -3791,24 +3773,6 @@ var Mounts =
                 "allowableClasses": null
               },
               {
-                "id": "23509",
-                "name": "Frostwolf Howler",
-                "description": "Summons and dismisses a rideable Frostwolf Howler.",
-                "icon": "ability_mount_whitedirewolf",
-                "side": "H",
-                "obtainable": true,
-                "allowableRaces": [
-                  2,
-                  5,
-                  6,
-                  8,
-                  9,
-                  10,
-                  26
-                ],
-                "allowableClasses": null
-              },
-              {
                 "id": "580",
                 "name": "Timber Wolf",
                 "description": "Summons and dismisses a rideable Timber Wolf.",
@@ -5119,6 +5083,24 @@ var Mounts =
                 "allowableClasses": null
               },
               {
+                "id": "23509",
+                "name": "Frostwolf Howler",
+                "description": "Summons and dismisses a rideable Frostwolf Howler.",
+                "icon": "ability_mount_whitedirewolf",
+                "side": "H",
+                "obtainable": true,
+                "allowableRaces": [
+                  2,
+                  5,
+                  6,
+                  8,
+                  9,
+                  10,
+                  26
+                ],
+                "allowableClasses": null
+              },
+              {
                 "id": "35028",
                 "name": "Swift Warstrider",
                 "description": "Summons and dismisses a rideable Swift Warstrider.",
@@ -5392,6 +5374,16 @@ var Mounts =
                 "name": "Swift Windsteed",
                 "description": "Summons and dismisses a Swift Windsteed.  This mount changes depending on your Riding skill and location.",
                 "icon": "ability_mount_swiftwindsteed",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": [],
+                "allowableClasses": null
+              },
+              {
+                "id": "139595",
+                "name": "Armored Bloodwing",
+                "description": "Summons and dismisses an Armored Bloodwing.  This mount changes depending on your Riding skill and location.",
+                "icon": "ability_mount_epicbatmount",
                 "side": "",
                 "obtainable": true,
                 "allowableRaces": [],
