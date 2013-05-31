@@ -23,11 +23,43 @@
 
     .contact
     {
-        position:fixed;
         left: 80px;
         bottom: 5px;
         text-decoration: none;
         color: black;
+    }
+
+    #left
+    {
+        position:absolute;
+        top:3em;
+        left:0;
+        bottom:0;
+        width: 15em;
+        padding: 0.5em;
+    }
+    .leftbottom
+    {
+        position:absolute;
+        bottom: 5px;
+        text-align: center;
+        font-weight: bold;
+        right: 0px;
+        left: 0px;
+    }
+
+    #divtabs
+    {
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 25px;
+        width: 15em;
+        padding: 0.5em;
+        text-align: center;
+        font-weight: bold;
+        overflow-y: auto
     }
 </style>
 <script type="text/javascript" src="power.js"></script>
@@ -567,28 +599,30 @@ function navigateToTab(tab)
         <input type="submit" value="Go">
     </form>
 </div>
-<div id="divtabs" style="visibility: hidden; position: absolute; top: 3em; left: 0; bottom: 0; width: 15em; padding: 0.5em; text-align: center; font-weight: bold; overflow-y: auto">
-	<span onclick="setLocationToTab('Character')">Character</span><br>
-	<br>
-	<span onclick="setLocationToTab(this.innerHTML)">General</span><br>
-	<span onclick="setLocationToTab(this.innerHTML)">Quests</span><br>
-	<span onclick="setLocationToTab(this.innerHTML)">Exploration</span><br>
-	<span onclick="setLocationToTab('pvp')">Player vs. Player</span><br>
-	<span onclick="setLocationToTab('dungeons')">Dungeons &amp; Raids</span><br>
-	<span onclick="setLocationToTab(this.innerHTML)">Professions</span><br>
-	<span onclick="setLocationToTab(this.innerHTML)">Reputation</span><br>
-	<span onclick="setLocationToTab(this.innerHTML)">Scenarios</span><br>
-	<span onclick="setLocationToTab('world')">World Events</span><br>
-	<span onclick="setLocationToTab('battles')">Pet Battles</span><br>
-	<span onclick="setLocationToTab('feats')">Feats of Strength</span><br>
-	<br>
-	<span onclick="setLocationToTab('Calendar')">Achievement Calendar</span><br>
-	<br>
-	<span onclick="setLocationToTab('Mounts')">Mounts</span><br>
-	<span onclick="setLocationToTab('Pets')">Pets</span><br>
-	<br>
-	<span onclick="setLocationToTab('Factions')">Reputation</span><br>
-    <a href="mailto:simplearmory@gmail.com" class="contact">Contact</a>
+<div id="left">
+    <div id="divtabs">
+        <span onclick="setLocationToTab('Character')">Character</span><br>
+        <br>
+        <span onclick="setLocationToTab(this.innerHTML)">General</span><br>
+        <span onclick="setLocationToTab(this.innerHTML)">Quests</span><br>
+        <span onclick="setLocationToTab(this.innerHTML)">Exploration</span><br>
+        <span onclick="setLocationToTab('pvp')">Player vs. Player</span><br>
+        <span onclick="setLocationToTab('dungeons')">Dungeons &amp; Raids</span><br>
+        <span onclick="setLocationToTab(this.innerHTML)">Professions</span><br>
+        <span onclick="setLocationToTab(this.innerHTML)">Reputation</span><br>
+        <span onclick="setLocationToTab(this.innerHTML)">Scenarios</span><br>
+        <span onclick="setLocationToTab('world')">World Events</span><br>
+        <span onclick="setLocationToTab('battles')">Pet Battles</span><br>
+        <span onclick="setLocationToTab('feats')">Feats of Strength</span><br>
+        <br>
+        <span onclick="setLocationToTab('Calendar')">Achievement Calendar</span><br>
+        <br>
+        <span onclick="setLocationToTab('Mounts')">Mounts</span><br>
+        <span onclick="setLocationToTab('Pets')">Pets</span><br>
+        <br>
+        <span onclick="setLocationToTab('Factions')">Reputation</span><br>
+    </div>
+    <div class="leftbottom"><a href="mailto:simplearmory@gmail.com" class="contact">Contact</a></div>
 </div>
 <div id="result" style="position: absolute; top: 3em; bottom: 0; left: 15em; right: 0; overflow: auto; padding: 0.5em">
     <div style="position: relative">
