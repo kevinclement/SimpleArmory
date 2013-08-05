@@ -12659,6 +12659,96 @@ var Achievements =
                 "allowableClasses": null
               },
               {
+                "id": "7612",
+                "name": "The Seat of Knowledge",
+                "description": "Restore and display pristine versions of all Pandaren and Mogu artifacts.",
+                "icon": "achievement_zone_ironforge",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "8219",
+                "name": "History of the Mantid",
+                "description": "Restore and display pristine versions of all Mantid artifacts.",
+                "icon": "achievement_zone_ironforge",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              }
+            ]
+          },
+          {
+            "name": "Race",
+            "achs": [
+              {
+                "id": "4859",
+                "name": "Kings Under the Mountain",
+                "description": "Discover the following artifacts of the Dark Iron thanes.",
+                "icon": "achievement_zone_ironforge",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "4858",
+                "name": "Seven Scepters",
+                "description": "Recover the following scepters from the various races of Azeroth.",
+                "icon": "inv_qirajidol_night",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "5301",
+                "name": "The Boy Who Would be King",
+                "description": "Recover the following tol'vir artifacts that tell of the rise and fall of Emperor Ninjter.",
+                "icon": "inv_misc_tabard_tolvir",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "5191",
+                "name": "Tragedy in Three Acts",
+                "description": "Recover the following night elf artifacts that tell the fateful story of Pyramond and Theleste.",
+                "icon": "Spell_Misc_EmotionSad",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "5192",
+                "name": "The Harder they Fall",
+                "description": "Discover how orc Chieftan Hargal was killed by collecting the following artifacts.",
+                "icon": "inv_helmet_04",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "5193",
+                "name": "Blue Streak",
+                "description": "Discover who slew the dread wyrm Kaldrigos by collecting the following artifacts.",
+                "icon": "achievement_boss_cyanigosa",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              }
+            ]
+          },
+          {
+            "name": "Collector: Pandaren",
+            "achs": [
+              {
                 "id": "7345",
                 "name": "Collector: Apothecary Tins",
                 "description": "Restore 5 Apothecary Tins.",
@@ -12699,46 +12789,6 @@ var Achievements =
                 "allowableClasses": null
               },
               {
-                "id": "7349",
-                "name": "Collector: Cracked Mogu Runestones",
-                "description": "Restore 5 Cracked Mogu Runestones.",
-                "icon": "achievement_zone_ironforge",
-                "side": "",
-                "obtainable": true,
-                "allowableRaces": null,
-                "allowableClasses": null
-              },
-              {
-                "id": "7369",
-                "name": "Collector: Cracked Mogu Runestones",
-                "description": "Restore 20 Cracked Mogu Runestones.",
-                "icon": "achievement_zone_ironforge",
-                "side": "",
-                "obtainable": true,
-                "allowableRaces": null,
-                "allowableClasses": null
-              },
-              {
-                "id": "7353",
-                "name": "Collector: Edicts of the Thunder King",
-                "description": "Restore 5 Edicts of the Thunder King.",
-                "icon": "achievement_zone_ironforge",
-                "side": "",
-                "obtainable": true,
-                "allowableRaces": null,
-                "allowableClasses": null
-              },
-              {
-                "id": "7373",
-                "name": "Collector: Edicts of the Thunder King",
-                "description": "Restore 20 Edicts of the Thunder King.",
-                "icon": "achievement_zone_ironforge",
-                "side": "",
-                "obtainable": true,
-                "allowableRaces": null,
-                "allowableClasses": null
-              },
-              {
                 "id": "7342",
                 "name": "Collector: Empty Kegs of Brewfather Xin Wo Yin",
                 "description": "Restore 5 Empty Kegs of Brewfather Xin Wo Yin.",
@@ -12772,66 +12822,6 @@ var Achievements =
                 "id": "7364",
                 "name": "Collector: Gold-Inlaid Porcelain Funerary Figurines",
                 "description": "Restore 20 Gold-Inlaid Porcelain Funerary Figurines.",
-                "icon": "achievement_zone_ironforge",
-                "side": "",
-                "obtainable": true,
-                "allowableRaces": null,
-                "allowableClasses": null
-              },
-              {
-                "id": "7354",
-                "name": "Collector: Iron Amulets",
-                "description": "Restore 5 Iron Amulets.",
-                "icon": "achievement_zone_ironforge",
-                "side": "",
-                "obtainable": true,
-                "allowableRaces": null,
-                "allowableClasses": null
-              },
-              {
-                "id": "7374",
-                "name": "Collector: Iron Amulets",
-                "description": "Restore 20 Iron Amulets.",
-                "icon": "achievement_zone_ironforge",
-                "side": "",
-                "obtainable": true,
-                "allowableRaces": null,
-                "allowableClasses": null
-              },
-              {
-                "id": "7348",
-                "name": "Collector: Manacles of Rebellion",
-                "description": "Restore 5 Manacles of Rebellion.",
-                "icon": "achievement_zone_ironforge",
-                "side": "",
-                "obtainable": true,
-                "allowableRaces": null,
-                "allowableClasses": null
-              },
-              {
-                "id": "7368",
-                "name": "Collector: Manacles of Rebellion",
-                "description": "Restore 20 Manacles of Rebellion.",
-                "icon": "achievement_zone_ironforge",
-                "side": "",
-                "obtainable": true,
-                "allowableRaces": null,
-                "allowableClasses": null
-              },
-              {
-                "id": "7356",
-                "name": "Collector: Mogu Coins",
-                "description": "Restore 5 Mogu Coins.",
-                "icon": "achievement_zone_ironforge",
-                "side": "",
-                "obtainable": true,
-                "allowableRaces": null,
-                "allowableClasses": null
-              },
-              {
-                "id": "7376",
-                "name": "Collector: Mogu Coins",
-                "description": "Restore 20 Mogu Coins.",
                 "icon": "achievement_zone_ironforge",
                 "side": "",
                 "obtainable": true,
@@ -12899,26 +12889,6 @@ var Achievements =
                 "allowableClasses": null
               },
               {
-                "id": "7351",
-                "name": "Collector: Petrified Bone Whips",
-                "description": "Restore 5 Petrified Bone Whips.",
-                "icon": "achievement_zone_ironforge",
-                "side": "",
-                "obtainable": true,
-                "allowableRaces": null,
-                "allowableClasses": null
-              },
-              {
-                "id": "7371",
-                "name": "Collector: Petrified Bone Whips",
-                "description": "Restore 20 Petrified Bone Whips.",
-                "icon": "achievement_zone_ironforge",
-                "side": "",
-                "obtainable": true,
-                "allowableRaces": null,
-                "allowableClasses": null
-              },
-              {
                 "id": "7347",
                 "name": "Collector: Standards of Niuzao",
                 "description": "Restore 5 Standards of Niuzao.",
@@ -12932,6 +12902,171 @@ var Achievements =
                 "id": "7367",
                 "name": "Collector: Standards of Niuzao",
                 "description": "Restore 20 Standards of Niuzao.",
+                "icon": "achievement_zone_ironforge",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "7340",
+                "name": "Collector: Twin Stein Sets of Brewfather Quan Tou Kuo",
+                "description": "Restore 5 Twin Stein Sets of Brewfather Quan Tou Kuo.",
+                "icon": "achievement_zone_ironforge",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "7360",
+                "name": "Collector: Twin Stein Sets of Brewfather Quan Tou Kuo",
+                "description": "Restore 20 Twin Stein Sets of Brewfather Quan Tou Kuo.",
+                "icon": "achievement_zone_ironforge",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "7341",
+                "name": "Collector: Walking Canes of Brewfather Ren Yun",
+                "description": "Restore 5 Walking Canes of Brewfather Ren Yun.",
+                "icon": "achievement_zone_ironforge",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "7361",
+                "name": "Collector: Walking Canes of Brewfather Ren Yun",
+                "description": "Restore 20 Walking Canes of Brewfather Ren Yun.",
+                "icon": "achievement_zone_ironforge",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              }
+            ]
+          },
+          {
+            "name": "Collector: Mogu",
+            "achs": [
+              {
+                "id": "7349",
+                "name": "Collector: Cracked Mogu Runestones",
+                "description": "Restore 5 Cracked Mogu Runestones.",
+                "icon": "achievement_zone_ironforge",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "7369",
+                "name": "Collector: Cracked Mogu Runestones",
+                "description": "Restore 20 Cracked Mogu Runestones.",
+                "icon": "achievement_zone_ironforge",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "7353",
+                "name": "Collector: Edicts of the Thunder King",
+                "description": "Restore 5 Edicts of the Thunder King.",
+                "icon": "achievement_zone_ironforge",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "7373",
+                "name": "Collector: Edicts of the Thunder King",
+                "description": "Restore 20 Edicts of the Thunder King.",
+                "icon": "achievement_zone_ironforge",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "7354",
+                "name": "Collector: Iron Amulets",
+                "description": "Restore 5 Iron Amulets.",
+                "icon": "achievement_zone_ironforge",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "7374",
+                "name": "Collector: Iron Amulets",
+                "description": "Restore 20 Iron Amulets.",
+                "icon": "achievement_zone_ironforge",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "7348",
+                "name": "Collector: Manacles of Rebellion",
+                "description": "Restore 5 Manacles of Rebellion.",
+                "icon": "achievement_zone_ironforge",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "7368",
+                "name": "Collector: Manacles of Rebellion",
+                "description": "Restore 20 Manacles of Rebellion.",
+                "icon": "achievement_zone_ironforge",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "7356",
+                "name": "Collector: Mogu Coins",
+                "description": "Restore 5 Mogu Coins.",
+                "icon": "achievement_zone_ironforge",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "7376",
+                "name": "Collector: Mogu Coins",
+                "description": "Restore 20 Mogu Coins.",
+                "icon": "achievement_zone_ironforge",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "7351",
+                "name": "Collector: Petrified Bone Whips",
+                "description": "Restore 5 Petrified Bone Whips.",
+                "icon": "achievement_zone_ironforge",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": null,
+                "allowableClasses": null
+              },
+              {
+                "id": "7371",
+                "name": "Collector: Petrified Bone Whips",
+                "description": "Restore 20 Petrified Bone Whips.",
                 "icon": "achievement_zone_ironforge",
                 "side": "",
                 "obtainable": true,
@@ -12979,46 +13114,6 @@ var Achievements =
                 "allowableClasses": null
               },
               {
-                "id": "7340",
-                "name": "Collector: Twin Stein Sets of Brewfather Quan Tou Kuo",
-                "description": "Restore 5 Twin Stein Sets of Brewfather Quan Tou Kuo.",
-                "icon": "achievement_zone_ironforge",
-                "side": "",
-                "obtainable": true,
-                "allowableRaces": null,
-                "allowableClasses": null
-              },
-              {
-                "id": "7360",
-                "name": "Collector: Twin Stein Sets of Brewfather Quan Tou Kuo",
-                "description": "Restore 20 Twin Stein Sets of Brewfather Quan Tou Kuo.",
-                "icon": "achievement_zone_ironforge",
-                "side": "",
-                "obtainable": true,
-                "allowableRaces": null,
-                "allowableClasses": null
-              },
-              {
-                "id": "7341",
-                "name": "Collector: Walking Canes of Brewfather Ren Yun",
-                "description": "Restore 5 Walking Canes of Brewfather Ren Yun.",
-                "icon": "achievement_zone_ironforge",
-                "side": "",
-                "obtainable": true,
-                "allowableRaces": null,
-                "allowableClasses": null
-              },
-              {
-                "id": "7361",
-                "name": "Collector: Walking Canes of Brewfather Ren Yun",
-                "description": "Restore 20 Walking Canes of Brewfather Ren Yun.",
-                "icon": "achievement_zone_ironforge",
-                "side": "",
-                "obtainable": true,
-                "allowableRaces": null,
-                "allowableClasses": null
-              },
-              {
                 "id": "7355",
                 "name": "Collector: Warlord's Branding Irons",
                 "description": "Restore 5 Warlord's Branding Irons.",
@@ -13057,17 +13152,12 @@ var Achievements =
                 "obtainable": true,
                 "allowableRaces": null,
                 "allowableClasses": null
-              },
-              {
-                "id": "7612",
-                "name": "The Seat of Knowledge",
-                "description": "Restore and display pristine versions of all Pandaren and Mogu artifacts.",
-                "icon": "achievement_zone_ironforge",
-                "side": "",
-                "obtainable": true,
-                "allowableRaces": null,
-                "allowableClasses": null
-              },
+              }
+            ]
+          },
+          {
+            "name": "Collector: Mantid",
+            "achs": [
               {
                 "id": "8222",
                 "name": "Collector: Ancient Sap Feeders",
@@ -13223,81 +13313,6 @@ var Achievements =
                 "name": "Collector: Remains of Paragons",
                 "description": "Restore 5 Remains of Paragons.",
                 "icon": "achievement_zone_ironforge",
-                "side": "",
-                "obtainable": true,
-                "allowableRaces": null,
-                "allowableClasses": null
-              },
-              {
-                "id": "8219",
-                "name": "History of the Mantid",
-                "description": "Restore and display pristine versions of all Mantid artifacts.",
-                "icon": "achievement_zone_ironforge",
-                "side": "",
-                "obtainable": true,
-                "allowableRaces": null,
-                "allowableClasses": null
-              }
-            ]
-          },
-          {
-            "name": "Race",
-            "achs": [
-              {
-                "id": "4859",
-                "name": "Kings Under the Mountain",
-                "description": "Discover the following artifacts of the Dark Iron thanes.",
-                "icon": "achievement_zone_ironforge",
-                "side": "",
-                "obtainable": true,
-                "allowableRaces": null,
-                "allowableClasses": null
-              },
-              {
-                "id": "4858",
-                "name": "Seven Scepters",
-                "description": "Recover the following scepters from the various races of Azeroth.",
-                "icon": "inv_qirajidol_night",
-                "side": "",
-                "obtainable": true,
-                "allowableRaces": null,
-                "allowableClasses": null
-              },
-              {
-                "id": "5301",
-                "name": "The Boy Who Would be King",
-                "description": "Recover the following tol'vir artifacts that tell of the rise and fall of Emperor Ninjter.",
-                "icon": "inv_misc_tabard_tolvir",
-                "side": "",
-                "obtainable": true,
-                "allowableRaces": null,
-                "allowableClasses": null
-              },
-              {
-                "id": "5191",
-                "name": "Tragedy in Three Acts",
-                "description": "Recover the following night elf artifacts that tell the fateful story of Pyramond and Theleste.",
-                "icon": "Spell_Misc_EmotionSad",
-                "side": "",
-                "obtainable": true,
-                "allowableRaces": null,
-                "allowableClasses": null
-              },
-              {
-                "id": "5192",
-                "name": "The Harder they Fall",
-                "description": "Discover how orc Chieftan Hargal was killed by collecting the following artifacts.",
-                "icon": "inv_helmet_04",
-                "side": "",
-                "obtainable": true,
-                "allowableRaces": null,
-                "allowableClasses": null
-              },
-              {
-                "id": "5193",
-                "name": "Blue Streak",
-                "description": "Discover who slew the dread wyrm Kaldrigos by collecting the following artifacts.",
-                "icon": "achievement_boss_cyanigosa",
                 "side": "",
                 "obtainable": true,
                 "allowableRaces": null,
