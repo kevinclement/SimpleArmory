@@ -5199,6 +5199,16 @@ var Mounts =
             "name": "Brewfest",
             "achs": [
               {
+                "id": "43899",
+                "name": "Brewfest Ram",
+                "description": "Summons and dismisses a rideable Brewfest Ram.",
+                "icon": "ability_mount_mountainram",
+                "side": "",
+                "obtainable": false,
+                "allowableRaces": [],
+                "allowableClasses": null
+              },
+              {
                 "id": "43900",
                 "name": "Swift Brewfest Ram",
                 "description": "Summons and dismisses a rideable Swift Brewfest Ram.",
