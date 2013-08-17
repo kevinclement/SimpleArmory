@@ -16505,9 +16505,9 @@ var Achievements =
             "achs": [
               {
                 "id": "4899",
-                "name": "Loch Modan Quests",
-                "description": "Complete 45 quests in Loch Modan.",
-                "icon": "Achievement_Zone_LochModan",
+                "name": "Loch Modan and Wetlands Quests",
+                "description": "Complete 85 total quests in Loch Modan and Wetlands.",
+                "icon": "achievement_zone_lochmodan",
                 "side": "A",
                 "obtainable": true,
                 "allowableRaces": null,
@@ -16525,8 +16525,8 @@ var Achievements =
               },
               {
                 "id": "4903",
-                "name": "Westfall Quests",
-                "description": "Complete 35 quests in Westfall.",
+                "name": "Westfall and Duskwood Quests",
+                "description": "Complete 80 total quests in Westfall and Duskwood.",
                 "icon": "Achievement_Zone_WestFall_01",
                 "side": "A",
                 "obtainable": true,
@@ -16554,31 +16554,11 @@ var Achievements =
                 "allowableClasses": null
               },
               {
-                "id": "4907",
-                "name": "Duskwood Quests",
-                "description": "Complete 45 quests in Duskwood.",
-                "icon": "Achievement_Zone_Duskwood",
-                "side": "A",
-                "obtainable": true,
-                "allowableRaces": null,
-                "allowableClasses": null
-              },
-              {
                 "id": "4895",
                 "name": "Hillsbrad Foothills Quests",
                 "description": "Complete 50 quests in Hillsbrad Foothills.",
                 "icon": "Achievement_Zone_HillsbradFoothills",
                 "side": "H",
-                "obtainable": true,
-                "allowableRaces": null,
-                "allowableClasses": null
-              },
-              {
-                "id": "4898",
-                "name": "Wetlands Quests",
-                "description": "Complete 40 quests in Wetlands.",
-                "icon": "Achievement_Zone_Wetlands_01",
-                "side": "A",
                 "obtainable": true,
                 "allowableRaces": null,
                 "allowableClasses": null
