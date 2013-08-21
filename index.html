@@ -260,7 +260,7 @@ function showtab(p_section,p_name) {
                         showthis = (hasthis || ((supercat['name'] != 'Feats of Strength' && ach.obtainable) && ((ach.side == '') || (ach.side == charside))));
                         showzone |= showthis;
                         if (hasthis) {
-                            imgtag = '<img src="http://cdn.tuj.me/icon/medium/'+ach.icon.toLowerCase()+'.jpg" width="36" height="36" border="0" onerror="this.src=\'inv_misc_questionmark.jpg\';">';
+                            imgtag = '<img src="http://wow.zamimg.com/images/wow/icons/medium/'+ach.icon.toLowerCase()+'.jpg" width="36" height="36" border="0">';
                         } else if (showthis) {
                             imgtag = '<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" style="width: 34px; height: 34px; border: 1px dashed grey; display: inline"/'+'>';
                         }
@@ -366,7 +366,7 @@ function showtab(p_section,p_name) {
 
                         showzone |= showthis;
                         if (hasthis) {
-                            imgtag = '<img src="http://cdn.tuj.me/icon/medium/'+ach.icon.toLowerCase()+'.jpg" width="36" height="36" border="0" onerror="this.src=\'inv_misc_questionmark.jpg\';">';
+                            imgtag = '<img src="http://wow.zamimg.com/images/wow/icons/medium/'+ach.icon.toLowerCase()+'.jpg" width="36" height="36" border="0">';
                         } else if (showthis) {
                             imgtag = '<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" style="width: 34px; height: 34px; border: 1px dashed grey; display: inline"/'+'>';
                         }
@@ -470,7 +470,7 @@ function showtab(p_section,p_name) {
 						h += '<div>'
 						for (achx in day) {
 							ach = day[achx];
-							h += '<a href="http://www.wowhead.com/achievement='+ach.id+'" rel="when='+ach.completed+'"><img src="http://cdn.tuj.me/icon/medium/'+ach.icon.toLowerCase()+'.jpg" width="36" height="36" border="0"></a>';
+							h += '<a href="http://www.wowhead.com/achievement='+ach.id+'" rel="when='+ach.completed+'"><img src="http://wow.zamimg.com/images/wow/icons/medium/'+ach.icon.toLowerCase()+'.jpg" width="36" height="36" border="0"></a>';
                             $WowheadPower.registerAchievement(ach.id,0,{name_enus:ach['name'],icon:ach.icon,tooltip_enus:'<table><tr><td><table width="100%"><tr><td><b>'+ach['name']+'</b></td></tr></table><table><tr><td><br /><span class="q">'+ach.description+'</span></td></tr></table>'});
 						}
 						h += '</div>';
