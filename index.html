@@ -62,7 +62,7 @@
         overflow-y: auto
     }
 </style>
-<script type="text/javascript" src="power.js"></script>
+<script type="text/javascript" src="http://static.wowhead.com/widgets/power.js"></script>
 <script type="text/javascript" src="helperFuncs.js"></script>
 <script type="text/javascript">
 
@@ -186,29 +186,6 @@ function showtab(p_section,p_name) {
 		h += '</table>';				
 	}
 
-	if (p_section == 'Professions') {
-		for (plevel in o.professions) {
-			var lev = o.professions[plevel];
-			for (x = 0; x < lev.length; x++) {
-				var prof = lev[x];
-				if (typeof Professions[prof.id] == 'undefined') continue;
-				h += '<h2>'+prof['name']+' '+prof.rank+'/'+prof.max+'</h2>';
-				h += '<table><tr><td><b>Learned recipes:</b></td><td><b>Missing recipes:</b></td></tr><tr><td><div style="width: 300px; height: 250px; overflow: auto; margin: 0.5em"><ol>';
-				var mh = '<ol>';
-				for (y in Professions[prof.id].spells) {
-					$WowheadPower.registerSpell(y,0,{name_enus:Professions[prof.id].spells[y]['name'],icon:Professions[prof.id].spells[y].icon,tooltip_enus:'<table><tr><td><table width="100%"><tr><td><b>'+Professions[prof.id].spells[y]['name']+'</b></td></tr></table>'});
-					var rep = '<li><a href="http://www.wowhead.com/spell='+y+'">'+Professions[prof.id].spells[y]['name']+'</a></li>';
-					if (arrayIndexOf(prof.recipes,parseInt(y,10)) < 0) {
-						mh += rep;
-					} else {
-						h += rep;
-					}
-				}
-				h += '</ol></div></td><td><div style="width: 300px; height: 250px; overflow: auto; margin: 0.5em">'+mh+'</ol></div></td></tr></table>';	
-			}
-		}
-	}
-
     if (p_section == 'Achievements') {
         var supercat;
         for (var sc = 0; sc < Achievements.supercats.length; sc++) {
@@ -265,8 +242,7 @@ function showtab(p_section,p_name) {
                             imgtag = '<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" style="width: 34px; height: 34px; border: 1px dashed grey; display: inline"/'+'>';
                         }
                         if (showthis) {
-                            zh += '<a href="http://www.wowhead.com/achievement='+ach.id+'"'+(hasthis?(' rel="when='+ach.completed+'"'):'')+'>'+imgtag+'</a>';
-                            $WowheadPower.registerAchievement(ach.id,0,{name_enus:ach['name'],icon:ach.icon,tooltip_enus:'<table><tr><td><table width="100%"><tr><td><b>'+ach['name']+'</b></td></tr></table><table><tr><td><br /><span class="q">'+ach.description+'</span></td></tr></table>'});
+                            zh += '<a href="http://www.wowhead.com/achievement='+ach.id+'"'+(hasthis?(' rel="who=' + latestprofile.name + '&amp;when=' + ach.completed + '"'):'')+'>'+imgtag+'</a>';
                         }
                     }
                     zh += '</div>';
@@ -377,7 +353,6 @@ function showtab(p_section,p_name) {
                                 hasCount++;
                             }
                             zh += '<a href="http://www.wowhead.com/spell='+ach.id+'">'+imgtag+'</a>';
-                            $WowheadPower.registerSpell(ach.id,0,{name_enus:ach['name'],icon:ach.icon,tooltip_enus:'<table><tr><td><table width="100%"><tr><td><b>'+ach['name']+'</b></td></tr></table><table><tr><td><span class="q">'+ach.description+'</span></td></tr></table>'});
                         }
                     }
                     zh += '</div>';
@@ -470,8 +445,7 @@ function showtab(p_section,p_name) {
 						h += '<div>'
 						for (achx in day) {
 							ach = day[achx];
-							h += '<a href="http://www.wowhead.com/achievement='+ach.id+'" rel="when='+ach.completed+'"><img src="http://wow.zamimg.com/images/wow/icons/medium/'+ach.icon.toLowerCase()+'.jpg" width="36" height="36" border="0"></a>';
-                            $WowheadPower.registerAchievement(ach.id,0,{name_enus:ach['name'],icon:ach.icon,tooltip_enus:'<table><tr><td><table width="100%"><tr><td><b>'+ach['name']+'</b></td></tr></table><table><tr><td><br /><span class="q">'+ach.description+'</span></td></tr></table>'});
+                            h += '<a href="http://www.wowhead.com/achievement='+ach.id+'" rel="who=' + latestprofile.name + '&amp;when='+ach.completed+'"><img src="http://wow.zamimg.com/images/wow/icons/medium/'+ach.icon.toLowerCase()+'.jpg" width="36" height="36" border="0"></a>';
 						}
 						h += '</div>';
 					}
