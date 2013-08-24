@@ -25584,7 +25584,7 @@ var Achievements =
                 "name": "Taming Kalimdor",
                 "description": "Defeat all of the Pet Tamers in Kalimdor listed below.",
                 "icon": "achievement_zone_kalimdor_01",
-                "side": "",
+                "side": "H",
                 "obtainable": true,
                 "allowableRaces": null,
                 "allowableClasses": null
@@ -25594,7 +25594,7 @@ var Achievements =
                 "name": "Taming Eastern Kingdoms",
                 "description": "Defeat all of the Pet Tamers in Eastern Kingdoms listed below.",
                 "icon": "achievement_zone_easternkingdoms_01",
-                "side": "",
+                "side": "A",
                 "obtainable": true,
                 "allowableRaces": null,
                 "allowableClasses": null
