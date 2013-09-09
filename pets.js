@@ -347,6 +347,16 @@ var Pets =
                 "obtainable": true,
                 "allowableRaces": [],
                 "allowableClasses": null
+              },
+              {
+                "id": "142880",
+                "name": "Blossoming Ancient",
+                "description": "Right Click to summon and dismiss your Blossoming Ancient.  This pet changes with the seasons.",
+                "icon": "inv_pet_ancientprotector",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": [],
+                "allowableClasses": null
               }
             ]
           },
@@ -2321,6 +2331,16 @@ var Pets =
                 "obtainable": true,
                 "allowableRaces": [],
                 "allowableClasses": null
+              },
+              {
+                "id": "141789",
+                "name": "Gahz'rooki",
+                "description": "Right Click to summon and dismiss Gahz'rooki.",
+                "icon": "trade_archaeology_whitehydrafigurine",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": [],
+                "allowableClasses": null
               }
             ]
           },
@@ -2816,6 +2836,16 @@ var Pets =
                 "obtainable": true,
                 "allowableRaces": [],
                 "allowableClasses": null
+              },
+              {
+                "id": "142030",
+                "name": "Filthling",
+                "description": "Right Click to summon and dismiss your Filthling.",
+                "icon": "spell_yorsahj_bloodboil_yellow",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": [],
+                "allowableClasses": null
               }
             ]
           },
@@ -2961,6 +2991,16 @@ var Pets =
                 "obtainable": false,
                 "allowableRaces": [],
                 "allowableClasses": null
+              },
+              {
+                "id": "143637",
+                "name": "Murkimus Tyrannicus",
+                "description": "Right Click to summon and dismiss Murkimus Tyrannicus.",
+                "icon": "inv_spear_05",
+                "side": "",
+                "obtainable": false,
+                "allowableRaces": [],
+                "allowableClasses": null
               }
             ]
           },
@@ -2992,6 +3032,26 @@ var Pets =
                 "name": "Son of Animus",
                 "description": "Right Click to summon and dismiss your Son of Animus.",
                 "icon": "ability_animusdraw",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": [],
+                "allowableClasses": null
+              },
+              {
+                "id": "142028",
+                "name": "Living Fluid",
+                "description": "Right Click to summon and dismiss your Living Fluid.",
+                "icon": "spell_deathknight_bloodboil",
+                "side": "",
+                "obtainable": false,
+                "allowableRaces": [],
+                "allowableClasses": null
+              },
+              {
+                "id": "142029",
+                "name": "Viscous Horror",
+                "description": "Right Click to summon and dismiss your Viscous Horror.",
+                "icon": "spell_yorsahj_bloodboil_black",
                 "side": "",
                 "obtainable": true,
                 "allowableRaces": [],
@@ -3117,6 +3177,116 @@ var Pets =
                 "name": "Viscidus Globule",
                 "description": "Right Click to summon and dismiss the Viscidus Globule.",
                 "icon": "inv_misc_volatilelife_green",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": [],
+                "allowableClasses": null
+              },
+              {
+                "id": "141446",
+                "name": "Coilfang Stalker",
+                "description": "Right Click to summon and dismiss your Coilfang Stalker.",
+                "icon": "achievement_boss_theblackstalker",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": [],
+                "allowableClasses": null
+              },
+              {
+                "id": "141451",
+                "name": "Fiendish Imp",
+                "description": "Right Click to summon and dismiss your Fiendish Imp.",
+                "icon": "ability_warlock_impoweredimp",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": [],
+                "allowableClasses": null
+              },
+              {
+                "id": "141448",
+                "name": "Lesser Voidcaller",
+                "description": "Right Click to summon and dismiss your Lesser Voidcaller.",
+                "icon": "warlock_summon_-voidlord",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": [],
+                "allowableClasses": null
+              },
+              {
+                "id": "141433",
+                "name": "Lil' Bad Wolf",
+                "description": "Right Click to summon and dismiss your Lil' Bad Wolf.",
+                "icon": "achievement_worganhead",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": [],
+                "allowableClasses": null
+              },
+              {
+                "id": "141434",
+                "name": "Menagerie Custodian",
+                "description": "Right Click to summon and dismiss your Menagerie Custodian.",
+                "icon": "achievement_dungeon_theviolethold_normal",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": [],
+                "allowableClasses": null
+              },
+              {
+                "id": "141435",
+                "name": "Netherspace Abyssal",
+                "description": "Right Click to summon and dismiss your Netherspace Abyssal.",
+                "icon": "spell_warlock_summonabyssal",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": [],
+                "allowableClasses": null
+              },
+              {
+                "id": "141449",
+                "name": "Phoenix Hawk Hatchling",
+                "description": "Right Click to summon and dismiss your Phoenix Hawk hatchling.",
+                "icon": "ability_hunter_pet_dragonhawk",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": [],
+                "allowableClasses": null
+              },
+              {
+                "id": "141447",
+                "name": "Pocket Reaver",
+                "description": "Right Click to summon and dismiss your Pocket Reaver.",
+                "icon": "inv_pet_personalworlddestroyer",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": [],
+                "allowableClasses": null
+              },
+              {
+                "id": "141437",
+                "name": "Tainted Waveling",
+                "description": "Right Click to summon and dismiss your Tainted Waveling.",
+                "icon": "spell_nature_elementalshields",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": [],
+                "allowableClasses": null
+              },
+              {
+                "id": "141436",
+                "name": "Tideskipper",
+                "description": "Right Click to summon and dismiss your Tideskipper.",
+                "icon": "inv_misc_deepseascales",
+                "side": "",
+                "obtainable": true,
+                "allowableRaces": [],
+                "allowableClasses": null
+              },
+              {
+                "id": "141450",
+                "name": "Tito",
+                "description": "Right Click to summon and dismiss Tito.",
+                "icon": "inv_misc_basket_01",
                 "side": "",
                 "obtainable": true,
                 "allowableRaces": [],
