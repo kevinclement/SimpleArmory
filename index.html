@@ -278,7 +278,7 @@ function showtab(p_section,p_name) {
             var cat = catVar[catx];
 
             // If the category name is the same as the section that we don't put the sub header in
-            if (cat['name'] != p_section) h += '<b>'+cat['name']+'</b>';
+            if (cat.name != p_section) h += '<b>'+cat.name+'</b>';
 
             // Start the category section div
             h += '<div style="margin-left: 20px">';
@@ -294,7 +294,7 @@ function showtab(p_section,p_name) {
                 }
 
                 for (var itemx = 0; itemx < subCat.items.length; itemx++) {
-                    var item = clone(subCat.items[itemx]);
+                    var item = subCat.items[itemx];
                     var hasthis = arrayIndexOf(knownLookup,parseInt(item.id,10)) >= 0;
 
                     showthis = (hasthis || item.obtainable);

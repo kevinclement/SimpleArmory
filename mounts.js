@@ -5877,7 +5877,6 @@ var Mounts =
             "name": "Golden King",
             "description": "Summons and dismisses the Golden King.",
             "icon": "inv_mount_allianceliong",
-            "side": "A",
             "obtainable": true,
             "allowableRaces": [
               1,
