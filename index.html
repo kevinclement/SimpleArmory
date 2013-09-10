@@ -255,12 +255,10 @@ function showtab(p_section,p_name) {
 
     if (p_section == 'Mounts' || p_section == 'Pets')
     {
-        var supercat;
         var hasCount = 0;
-        var wantsCount = 0;
         var knownLookup = new Array();
 
-        var supercatVar = p_section == "Mounts" ? Mounts : Pets;
+        var catVar = p_section == "Mounts" ? Mounts : Pets;
         var collected = p_section.toLowerCase();
 
         // Build lookup array
@@ -271,95 +269,70 @@ function showtab(p_section,p_name) {
             }
         }
 
-        for (var sc = 0; sc < supercatVar.supercats.length; sc++) {
+        // Set title on top of page
+        h += '<h3 style="margin: 0"><span id="mountCount"></span> ' + p_section + '</h3>';
 
-            // Find the supercat that matches 
-            if (supercatVar.supercats[sc]['name'] != p_name)
-            {
-                continue;
-            }
+        // Loop through each category
+        for (var catx = 0; catx < catVar.length; catx++) {
 
-            supercat = supercatVar.supercats[sc];
+            var cat = catVar[catx];
 
-            // Set title on top of page
-            h += '<h3 style="margin: 0"><span id="mountCount"></span> ' + p_section + '</h3>';
+            // If the category name is the same as the section that we don't put the sub header in
+            if (cat['name'] != p_section) h += '<b>'+cat['name']+'</b>';
 
-            // Loop through each category in the supercat
-            for (var catx = 0; catx < supercat.cats.length; catx++) {
+            // Start the category section div
+            h += '<div style="margin-left: 20px">';
 
-                var cat = supercat.cats[catx];
+            for (var subcatx = 0; subcatx < cat.subcats.length; subcatx++) {
+                var subCat = cat.subcats[subcatx];
 
-                // If the category name is the same as the supercat that we don't put the sub header in
-                if (cat['name'] != supercat['name']) h += '<b>'+cat['name']+'</b>';
+                var showSubCat = false;
+                zh = '<div style="float: left; margin: 10px">';
 
-                // Start the category section div
-                h += '<div style="margin-left: 20px">';
-                
-                haszonenames = false;
-                for (var zonex = 0; zonex < cat.zones.length; zonex++)
-                {
-                    haszonenames |= cat.zones[zonex]['name'] != '';
+                if (subCat.name != "") {
+                    zh += '<b>'+subCat.name+'</b><br>';
                 }
 
-                for (var zonex = 0; zonex < cat.zones.length; zonex++) {
-                    var zone = cat.zones[zonex];
+                for (var itemx = 0; itemx < subCat.items.length; itemx++) {
+                    var item = clone(subCat.items[itemx]);
+                    var hasthis = arrayIndexOf(knownLookup,parseInt(item.id,10)) >= 0;
 
-                    var showzone = false;
-                    zh = '<div style="float: left; margin: 10px">';
-
-                    if (haszonenames) {
-                        if (zone['name'] == '') zone['name']=cat['name'];
-                        zh += '<b>'+zone['name']+'</b><br>';
+                    showthis = (hasthis || item.obtainable);
+                    if (item.allowableRaces.length > 0)
+                    {
+                        if (arrayIndexOf(item.allowableRaces, o.race) == -1)
+                        {
+                            showthis = false;
+                        }
                     }
 
-                    for (var achx = 0; achx < zone.achs.length; achx++) {
-                        var ach = clone(zone.achs[achx]);
-                        var achidx = arrayIndexOf(knownLookup,parseInt(ach.id,10));
-                        hasthis = (achidx>=0);
-
-                        // hack until they fix the armory
-                        if (latestprofile.name == "Marko" && (ach.id == "61309" || ach.id == "75596"))
+                    if (item.allowableClasses && item.allowableClasses.length > 0)
+                    {
+                        if (arrayIndexOf(item.allowableClasses, o.class) == -1)
                         {
-                            hasthis = true;
-                        }
-
-                        showthis = (hasthis || ach.obtainable);
-                        if (ach.allowableRaces.length > 0)
-                        {
-                            if (arrayIndexOf(ach.allowableRaces, o.race) == -1)
-                            {
-                                showthis = false;
-                            }
-                        }
-
-                        if (ach.allowableClasses && ach.allowableClasses.length > 0)
-                        {
-                            if (arrayIndexOf(ach.allowableClasses, o.class) == -1)
-                            {
-                                showthis = false;
-                            }
-                        }
-
-                        showzone |= showthis;
-                        if (hasthis) {
-                            imgtag = '<img src="http://wow.zamimg.com/images/wow/icons/medium/'+ach.icon.toLowerCase()+'.jpg" width="36" height="36" border="0">';
-                        } else if (showthis) {
-                            imgtag = '<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" style="width: 34px; height: 34px; border: 1px dashed grey; display: inline"/'+'>';
-                        }
-
-                        if (showthis) {
-                            if (hasthis)
-                            {
-                                hasCount++;
-                            }
-                            zh += '<a href="http://www.wowhead.com/spell='+ach.id+'">'+imgtag+'</a>';
+                            showthis = false;
                         }
                     }
-                    zh += '</div>';
-                    if (showzone) h += zh;
+
+                    showSubCat |= showthis;
+                    if (hasthis) {
+                        imgtag = '<img src="http://wow.zamimg.com/images/wow/icons/medium/'+item.icon.toLowerCase()+'.jpg" width="36" height="36" border="0">';
+                    } else if (showthis) {
+                        imgtag = '<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" style="width: 34px; height: 34px; border: 1px dashed grey; display: inline"/'+'>';
+                    }
+
+                    if (showthis) {
+                        if (hasthis)
+                        {
+                            hasCount++;
+                        }
+                        zh += '<a href="http://www.wowhead.com/spell='+item.id+'">'+imgtag+'</a>';
+                    }
                 }
-                h += '</div><div class="clear"></div>';
+                zh += '</div>';
+                if (showSubCat) h += zh;
             }
+            h += '</div><div class="clear"></div>';
         }
 
         runAfterLoad = function () { document.getElementById("mountCount").innerText = hasCount; };
@@ -563,7 +536,6 @@ function navigateToTab(tab)
 <script type="text/javascript" src="mounts.js"></script>
 <script type="text/javascript" src="pets.js"></script>
 <script type="text/javascript" src="factions.js"></script>
-<script type="text/javascript" src="professions.js"></script>
 </head>
 <body style="margin: 0; color: black; background: #EEE">
 <div style="position: absolute; top: 0; left: 0; height: 3em; right: 0; text-align: center" id="charformdiv">

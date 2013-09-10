@@ -6,7 +6,7 @@ var Pets =
     "subcats": [
       {
         "name": "Achievement",
-        "achs": [
+        "items": [
           {
             "id": "61472",
             "name": "Kirin Tor Familiar",
@@ -151,7 +151,7 @@ var Pets =
       },
       {
         "name": "Archaeology",
-        "achs": [
+        "items": [
           {
             "id": "90523",
             "name": "Clockwork Gnome",
@@ -206,7 +206,7 @@ var Pets =
       },
       {
         "name": "Blizzard Store",
-        "achs": [
+        "items": [
           {
             "id": "69535",
             "name": "Gryphon Hatchling",
@@ -357,7 +357,7 @@ var Pets =
       },
       {
         "name": "Blizzcon",
-        "achs": [
+        "items": [
           {
             "id": "66030",
             "name": "Grunty",
@@ -422,7 +422,7 @@ var Pets =
       },
       {
         "name": "Children's Week",
-        "achs": [
+        "items": [
           {
             "id": "65381",
             "name": "Curious Oracle Hatchling",
@@ -527,7 +527,7 @@ var Pets =
       },
       {
         "name": "Collector's Edition",
-        "achs": [
+        "items": [
           {
             "id": "52615",
             "name": "Frosty",
@@ -642,7 +642,7 @@ var Pets =
       },
       {
         "name": "Darkmoon Faire",
-        "achs": [
+        "items": [
           {
             "id": "23811",
             "name": "Jubling",
@@ -777,7 +777,7 @@ var Pets =
       },
       {
         "name": "Enchanting",
-        "achs": [
+        "items": [
           {
             "id": "93836",
             "name": "Enchanted Lantern",
@@ -802,7 +802,7 @@ var Pets =
       },
       {
         "name": "Inscription",
-        "achs": [
+        "items": [
           {
             "id": "127008",
             "name": "Chi-ji Kite",
@@ -827,7 +827,7 @@ var Pets =
       },
       {
         "name": "Tailoring",
-        "achs": [
+        "items": [
           {
             "id": "132580",
             "name": "Imperial Silkworm",
@@ -852,7 +852,7 @@ var Pets =
       },
       {
         "name": "Jewelcrafting",
-        "achs": [
+        "items": [
           {
             "id": "120501",
             "name": "Jade Owl",
@@ -877,7 +877,7 @@ var Pets =
       },
       {
         "name": "Fishing",
-        "achs": [
+        "items": [
           {
             "id": "139362",
             "name": "Tiny Blue Carp",
@@ -932,7 +932,7 @@ var Pets =
       },
       {
         "name": "Engineering",
-        "achs": [
+        "items": [
           {
             "id": "19772",
             "name": "Lifelike Toad",
@@ -1017,7 +1017,7 @@ var Pets =
       },
       {
         "name": "Guild Vendor",
-        "achs": [
+        "items": [
           {
             "id": "89039",
             "name": "Dark Phoenix Hatchling",
@@ -1134,7 +1134,7 @@ var Pets =
       },
       {
         "name": "Holiday",
-        "achs": [
+        "items": [
           {
             "id": "54187",
             "name": "Clockwork Rocket Bot",
@@ -1349,7 +1349,7 @@ var Pets =
       },
       {
         "name": "Quest",
-        "achs": [
+        "items": [
           {
             "id": "62609",
             "name": "Argent Squire",
@@ -1626,7 +1626,7 @@ var Pets =
       },
       {
         "name": "Trading Card Game",
-        "achs": [
+        "items": [
           {
             "id": "40549",
             "name": "Bananas",
@@ -1781,7 +1781,7 @@ var Pets =
       },
       {
         "name": "Argent Tournament",
-        "achs": [
+        "items": [
           {
             "id": "62562",
             "name": "Ammen Vale Lashling",
@@ -1886,7 +1886,7 @@ var Pets =
       },
       {
         "name": "Alliance Vendor",
-        "achs": [
+        "items": [
           {
             "id": "35907",
             "name": "Blue Moth",
@@ -2001,7 +2001,7 @@ var Pets =
       },
       {
         "name": "Horde Vendor",
-        "achs": [
+        "items": [
           {
             "id": "10714",
             "name": "Black Kingsnake",
@@ -2076,7 +2076,7 @@ var Pets =
       },
       {
         "name": "Vendor",
-        "achs": [
+        "items": [
           {
             "id": "10713",
             "name": "Albino Snake",
@@ -2341,7 +2341,7 @@ var Pets =
       },
       {
         "name": "Drop",
-        "achs": [
+        "items": [
           {
             "id": "10696",
             "name": "Azure Whelpling",
@@ -2846,7 +2846,7 @@ var Pets =
       },
       {
         "name": "Other",
-        "achs": [
+        "items": [
           {
             "id": "63318",
             "name": "Murkimus the Gladiator",
@@ -3001,7 +3001,7 @@ var Pets =
       },
       {
         "name": "Raid Drop",
-        "achs": [
+        "items": [
           {
             "id": "139148",
             "name": "Ji-Kun Hatchling",
@@ -3056,7 +3056,7 @@ var Pets =
       },
       {
         "name": "Raiding with Leashes",
-        "achs": [
+        "items": [
           {
             "id": "135267",
             "name": "Anubisath Idol",
