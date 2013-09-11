@@ -295,7 +295,7 @@ function showtab(p_section,p_name) {
 
                 for (var itemx = 0; itemx < subCat.items.length; itemx++) {
                     var item = subCat.items[itemx];
-                    var hasthis = arrayIndexOf(knownLookup,parseInt(item.id,10)) >= 0;
+                    var hasthis = arrayIndexOf(knownLookup,parseInt(item.spellid,10)) >= 0;
 
                     showthis = (hasthis || item.obtainable);
                     if (item.allowableRaces.length > 0)
@@ -326,7 +326,26 @@ function showtab(p_section,p_name) {
                         {
                             hasCount++;
                         }
-                        zh += '<a href="http://www.wowhead.com/spell='+item.id+'">'+imgtag+'</a>';
+
+                        // Need to some extra work to determine what our url should be
+                        // By default we'll use a spell id
+                        var headUrl = "http://www.wowhead.com/spell="+item.spellid;
+
+                        // If the item id is available lets use that
+                        if (item.itemId)
+                        {
+                            headUrl = "http://www.wowhead.com/item="+item.itemId;
+                        }
+                        else if (item.allianceId && charside == 'A')
+                        {
+                            headUrl = "http://www.wowhead.com/item="+item.allianceId;
+                        }
+                        else if (item.hordeId && charside == 'H')
+                        {
+                            headUrl = "http://www.wowhead.com/item="+item.hordeId;
+                        }
+
+                        zh += '<a href="' + headUrl + '">'+imgtag+'</a>';
                     }
                 }
                 zh += '</div>';
