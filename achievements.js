@@ -13454,6 +13454,12 @@ var Achievements =
                   "icon": "INV_Food_ChristmasFruitCake_01",
                   "side": "",
                   "obtainable": true
+                },
+                {
+                  "id": "8699",
+                  "icon": "ability_mount_gyrocoptorelite",
+                  "side": "",
+                  "obtainable": true
                 }
               ]
             }
