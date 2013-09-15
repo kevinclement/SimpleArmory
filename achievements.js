@@ -1,4 +1,3 @@
-//simple comment for pull request
 var Achievements = 
 {
   "supercats":[
