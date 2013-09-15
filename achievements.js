@@ -5210,7 +5210,7 @@ var Achievements =
                   "id": "8218",
                   "icon": "achievement_bg_winwsg",
                   "side": "A",
-                  "obtainable": true
+                  "obtainable": false
                 }
               ]
             },
@@ -7170,30 +7170,6 @@ var Achievements =
                 {
                   "id": "5343",
                   "icon": "Achievement_PVP_A_14",
-                  "side": "A",
-                  "obtainable": true
-                },
-                {
-                  "id": "5344",
-                  "icon": "Achievement_PVP_A_A",
-                  "side": "A",
-                  "obtainable": true
-                },
-                {
-                  "id": "6316",
-                  "icon": "Achievement_PVP_A_A",
-                  "side": "A",
-                  "obtainable": true
-                },
-                {
-                  "id": "6939",
-                  "icon": "achievement_pvp_a_a",
-                  "side": "A",
-                  "obtainable": true
-                },
-                {
-                  "id": "6942",
-                  "icon": "achievement_pvp_a_a",
                   "side": "A",
                   "obtainable": true
                 },
@@ -14836,9 +14812,33 @@ var Achievements =
                   "obtainable": true
                 },
                 {
+                  "id": "5344",
+                  "icon": "Achievement_PVP_A_A",
+                  "side": "A",
+                  "obtainable": true
+                },
+                {
                   "id": "3618",
                   "icon": "INV_Spear_05",
                   "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "6316",
+                  "icon": "Achievement_PVP_A_A",
+                  "side": "A",
+                  "obtainable": true
+                },
+                {
+                  "id": "6939",
+                  "icon": "achievement_pvp_a_a",
+                  "side": "A",
+                  "obtainable": true
+                },
+                {
+                  "id": "6942",
+                  "icon": "achievement_pvp_a_a",
+                  "side": "A",
                   "obtainable": true
                 },
                 {
