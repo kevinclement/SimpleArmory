@@ -14547,6 +14547,60 @@ var Achievements =
                   "icon": "trade_archaeology_highborne_scroll",
                   "side": "",
                   "obtainable": true
+                },
+                {
+                  "id": "8434",
+                  "icon": "achievement_challengemode_gateofthesettingsun_platinum",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8433",
+                  "icon": "achievement_challengemode_mogushanpalace_platinum",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8436",
+                  "icon": "achievement_challengemode_scarlethalls_platinum",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8437",
+                  "icon": "achievement_challengemode_scarletmonastery_platinum",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8438",
+                  "icon": "achievement_challengemode_scholomance_platinum",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8432",
+                  "icon": "achievement_challengemode_shadopanmonastery_platinum",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8439",
+                  "icon": "achievement_challengemode_seigeofniuzaotemple_platinum",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8431",
+                  "icon": "achievement_challengemode_stormstoutbrewery_platinum",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8430",
+                  "icon": "achievement_challengemode_templeofthejadeserpent_platinum",
+                  "side": "",
+                  "obtainable": true
                 }
               ]
             },
@@ -14816,6 +14870,108 @@ var Achievements =
                   "icon": "inv_spear_06",
                   "side": "",
                   "obtainable": true
+                },
+                {
+                  "id": "8649",
+                  "icon": "achievement_featsofstrength_gladiator_01",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8670",
+                  "icon": "achievement_featsofstrength_gladiator_06",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8645",
+                  "icon": "achievement_featsofstrength_gladiator_01",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8668",
+                  "icon": "achievement_featsofstrength_gladiator_06",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8644",
+                  "icon": "achievement_featsofstrength_gladiator_01",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8667",
+                  "icon": "achievement_featsofstrength_gladiator_06",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8643",
+                  "icon": "achievement_featsofstrength_gladiator_01",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8654",
+                  "icon": "achievement_pvp_a_a",
+                  "side": "A",
+                  "obtainable": true
+                },
+                {
+                  "id": "8658",
+                  "icon": "achievement_pvp_a_a",
+                  "side": "A",
+                  "obtainable": true
+                },
+                {
+                  "id": "8652",
+                  "icon": "achievement_pvp_a_a",
+                  "side": "A",
+                  "obtainable": true
+                },
+                {
+                  "id": "8657",
+                  "icon": "achievement_pvp_h_h",
+                  "side": "H",
+                  "obtainable": true
+                },
+                {
+                  "id": "8659",
+                  "icon": "achievement_pvp_h_h",
+                  "side": "H",
+                  "obtainable": true
+                },
+                {
+                  "id": "8653",
+                  "icon": "achievement_pvp_h_h",
+                  "side": "H",
+                  "obtainable": true
+                },
+                {
+                  "id": "8646",
+                  "icon": "achievement_featsofstrength_gladiator_01",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8669",
+                  "icon": "achievement_featsofstrength_gladiator_06",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8791",
+                  "icon": "achievement_featsofstrength_gladiator_10",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8666",
+                  "icon": "achievement_featsofstrength_gladiator_06",
+                  "side": "",
+                  "obtainable": true
                 }
               ]
             },
@@ -15047,6 +15203,24 @@ var Achievements =
                 {
                   "id": "8345",
                   "icon": "inv_pegasusmount",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8705",
+                  "icon": "inv_pandarenserpentmount",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8707",
+                  "icon": "inv_pandarenserpentmount_yellow",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8678",
+                  "icon": "inv_pandarenserpentmount_blue",
                   "side": "",
                   "obtainable": true
                 }
@@ -15346,6 +15520,30 @@ var Achievements =
                 {
                   "id": "8260",
                   "icon": "achievement_boss_ra_den",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8398",
+                  "icon": "inv_misc_tabard_hellscream",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8399",
+                  "icon": "inv_misc_tabard_hellscream",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8400",
+                  "icon": "inv_misc_tabard_hellscream",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8401",
+                  "icon": "inv_misc_tabard_hellscream",
                   "side": "",
                   "obtainable": true
                 }
@@ -15689,6 +15887,12 @@ var Achievements =
                 {
                   "id": "7853",
                   "icon": "inv_misc_celebrationcake_01",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8698",
+                  "icon": "inv_holiday_christmas_present_01",
                   "side": "",
                   "obtainable": true
                 }
