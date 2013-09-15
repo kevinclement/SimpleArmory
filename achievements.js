@@ -11144,6 +11144,12 @@ var Achievements =
                   "icon": "achievement_faction_sunreaveronslaught",
                   "side": "H",
                   "obtainable": true
+                },
+                {
+                  "id": "8715",
+                  "icon": "ability_monk_quipunch",
+                  "side": "",
+                  "obtainable": true
                 }
               ]
             }
