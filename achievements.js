@@ -16887,6 +16887,12 @@ var Achievements =
                   "icon": "inv_pet_achievement_catch60petsindifferentzones",
                   "side": "",
                   "obtainable": true
+                },
+                {
+                  "id": "8518",
+                  "icon": "inv_misc_summonable_boss_token",
+                  "side": "",
+                  "obtainable": true
                 }
               ]
             },
@@ -16902,6 +16908,12 @@ var Achievements =
                 {
                   "id": "8348",
                   "icon": "inv_misc_pocketwatch_01",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8410",
+                  "icon": "inv_celestialserpentmount",
                   "side": "",
                   "obtainable": true
                 }
