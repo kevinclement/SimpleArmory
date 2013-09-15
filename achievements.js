@@ -5211,6 +5211,30 @@ var Achievements =
                   "icon": "achievement_bg_winwsg",
                   "side": "A",
                   "obtainable": false
+                },
+                {
+                  "id": "8382",
+                  "icon": "achievement_bg_winwsg",
+                  "side": "A",
+                  "obtainable": true
+                },
+                {
+                  "id": "8381",
+                  "icon": "achievement_bg_winwsg",
+                  "side": "H",
+                  "obtainable": true
+                },
+                {
+                  "id": "8450",
+                  "icon": "achievement_bg_winwsg",
+                  "side": "H",
+                  "obtainable": true
+                },
+                {
+                  "id": "8451",
+                  "icon": "achievement_bg_winwsg",
+                  "side": "A",
+                  "obtainable": true
                 }
               ]
             },
@@ -5274,6 +5298,47 @@ var Achievements =
                 {
                   "id": "5363",
                   "icon": "achievement_pvp_p_250k",
+                  "side": "",
+                  "obtainable": true
+                }
+              ]
+            },
+            {
+              "name": "Coins",
+              "achs": [
+                {
+                  "id": "8716",
+                  "icon": "inv_offhand_1h_pvpcataclysms3_c_01",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8717",
+                  "icon": "timelesscoin-bloody",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8718",
+                  "icon": "timelesscoin-bloody",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8719",
+                  "icon": "timelesscoin-bloody",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8720",
+                  "icon": "timelesscoin-bloody",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8721",
+                  "icon": "timelesscoin-bloody",
                   "side": "",
                   "obtainable": true
                 }
@@ -7077,6 +7142,30 @@ var Achievements =
                   "id": "1174",
                   "icon": "Achievement_FeatsOfStrength_Gladiator_08",
                   "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8485",
+                  "icon": "pvpcurrency-conquest-alliance",
+                  "side": "A",
+                  "obtainable": true
+                },
+                {
+                  "id": "8484",
+                  "icon": "pvpcurrency-conquest-horde",
+                  "side": "H",
+                  "obtainable": true
+                },
+                {
+                  "id": "8642",
+                  "icon": "pvpcurrency-conquest-alliance",
+                  "side": "A",
+                  "obtainable": true
+                },
+                {
+                  "id": "8641",
+                  "icon": "pvpcurrency-conquest-horde",
+                  "side": "H",
                   "obtainable": true
                 }
               ]
