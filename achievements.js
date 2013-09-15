@@ -16717,6 +16717,18 @@ var Achievements =
                   "icon": "achievement_boss_prince_malchezaar",
                   "side": "",
                   "obtainable": true
+                },
+                {
+                  "id": "8519",
+                  "icon": "inv_pet_jadeserpentpet",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8397",
+                  "icon": "inv_pet_cats_siamesecat",
+                  "side": "",
+                  "obtainable": true
                 }
               ]
             }
