@@ -92,6 +92,12 @@ var Achievements =
                   "icon": "archaeology_5_0_thunderkinginsignia",
                   "side": "",
                   "obtainable": true
+                },
+                {
+                  "id": "8454",
+                  "icon": "inv_axe_60",
+                  "side": "",
+                  "obtainable": true
                 }
               ]
             },
@@ -983,6 +989,226 @@ var Achievements =
               ]
             },
             {
+              "name": "Siege of Orgrimmar",
+              "achs": [
+                {
+                  "id": "8458",
+                  "icon": "achievement_raid_soo_ruined_vale",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8459",
+                  "icon": "achievement_raid_soo_orgrimmar_outdoors",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8461",
+                  "icon": "achievement_raid_soo_garrosh_compound_half1",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8462",
+                  "icon": "achievement_raid_soo_garrosh_compound_half2",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8536",
+                  "icon": "spell_frost_summonwaterelemental_2",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8528",
+                  "icon": "ability_fixated_state_red",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8532",
+                  "icon": "spell_holy_surgeoflight",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8521",
+                  "icon": "sha_ability_rogue_bloodyeye",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8530",
+                  "icon": "achievement_bg_3flagcap_nodeaths",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8520",
+                  "icon": "inv_misc_enggizmos_38",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8453",
+                  "icon": "ability_paladin_blessedhands",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8448",
+                  "icon": "achievement_character_tauren_male",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8538",
+                  "icon": "sha_spell_warlock_demonsoul",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8529",
+                  "icon": "inv_crate_04",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8527",
+                  "icon": "inv_misc_shell_04",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8543",
+                  "icon": "ability_siege_engineer_sockwave_missile",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8531",
+                  "icon": "achievement_boss_klaxxi_paragons",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8537",
+                  "icon": "ability_garrosh_siege_engine",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8679",
+                  "icon": "ability_garrosh_hellscreams_warsong",
+                  "side": "A",
+                  "obtainable": true
+                },
+                {
+                  "id": "8680",
+                  "icon": "ability_garrosh_hellscreams_warsong",
+                  "side": "H",
+                  "obtainable": true
+                },
+                {
+                  "id": "8463",
+                  "icon": "achievement_boss_immerseus",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8465",
+                  "icon": "achievement_boss_golden_lotus_council",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8466",
+                  "icon": "achievement_boss_norushen",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8467",
+                  "icon": "sha_inv_misc_slime_01",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8468",
+                  "icon": "achievement_boss_galakras",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8469",
+                  "icon": "achievement_boss_ironjuggernaut",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8470",
+                  "icon": "achievement_boss_korkrondarkshaman",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8471",
+                  "icon": "achievement_boss_general_nazgrim",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8472",
+                  "icon": "achievement_boss_malkorok",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8478",
+                  "icon": "achievement_boss_spoils_of_pandaria",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8479",
+                  "icon": "achievement_boss_thokthebloodthirsty",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8480",
+                  "icon": "achievement_boss_siegecrafter_blackfuse",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8481",
+                  "icon": "achievement_boss_klaxxi_paragons",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8482",
+                  "icon": "achievement_boss_garrosh",
+                  "side": "",
+                  "obtainable": true
+                }
+              ]
+            },
+            {
+              "name": "Timeless Isle",
+              "achs": [
+                {
+                  "id": "8535",
+                  "icon": "inv_pa_celestialmallet",
+                  "side": "",
+                  "obtainable": true
+                }
+              ]
+            },
+            {
               "name": "World",
               "achs": [
                 {
@@ -1006,6 +1232,12 @@ var Achievements =
                 {
                   "id": "8028",
                   "icon": "spell_holy_lightsgrace",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8533",
+                  "icon": "inv_axe_1h_firelandsraid_d_02",
                   "side": "",
                   "obtainable": true
                 }
@@ -11506,6 +11738,89 @@ var Achievements =
                 {
                   "id": "7997",
                   "icon": "racial_dwarf_findtreasure",
+                  "side": "",
+                  "obtainable": true
+                }
+              ]
+            },
+            {
+              "name": "Timeless Isle",
+              "achs": [
+                {
+                  "id": "8726",
+                  "icon": "trade_archaeology_chestoftinyglassanimals",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8725",
+                  "icon": "inv_misc_coinbag_special",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8728",
+                  "icon": "inv_misc_bag_16",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8712",
+                  "icon": "ability_monk_touchofkarma",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8723",
+                  "icon": "inv_staff_2h_pandarenmonk_c_01",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8724",
+                  "icon": "ability_monk_tigerslust",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8730",
+                  "icon": "inv_misc_map09",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8714",
+                  "icon": "ability_monk_touchofdeath",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8784",
+                  "icon": "inv_staff_2h_pandarenmonk_c_01",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8722",
+                  "icon": "monk_ability_cherrymanatea",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8729",
+                  "icon": "inv_misc_coin_01",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8727",
+                  "icon": "inv_helmet_66",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8743",
+                  "icon": "inv_misc_bone_02",
                   "side": "",
                   "obtainable": true
                 }
