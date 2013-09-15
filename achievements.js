@@ -16237,6 +16237,125 @@ var Achievements =
                   "obtainable": true
                 }
               ]
+            },
+            {
+              "name": "Proving Grounds",
+              "achs": [
+                {
+                  "id": "8486",
+                  "icon": "achievement_challengemode_bronze",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8491",
+                  "icon": "achievement_challengemode_silver",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8496",
+                  "icon": "achievement_challengemode_gold",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8501",
+                  "icon": "achievement_challengemode_platinum",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8504",
+                  "icon": "achievement_challengemode_platinum",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8507",
+                  "icon": "achievement_challengemode_platinum",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8488",
+                  "icon": "achievement_challengemode_bronze",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8493",
+                  "icon": "achievement_challengemode_silver",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8498",
+                  "icon": "achievement_challengemode_gold",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8503",
+                  "icon": "achievement_challengemode_platinum",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8506",
+                  "icon": "achievement_challengemode_platinum",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8509",
+                  "icon": "achievement_challengemode_platinum",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8487",
+                  "icon": "achievement_challengemode_bronze",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8492",
+                  "icon": "achievement_challengemode_silver",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8497",
+                  "icon": "achievement_challengemode_gold",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8502",
+                  "icon": "achievement_challengemode_platinum",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8505",
+                  "icon": "achievement_challengemode_platinum",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8508",
+                  "icon": "achievement_challengemode_platinum",
+                  "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8697",
+                  "icon": "ability_warrior_throwdown",
+                  "side": "",
+                  "obtainable": true
+                }
+              ]
             }
           ]
         }
