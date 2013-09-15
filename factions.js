@@ -14,6 +14,7 @@ var Factions={"categories":[
 		{"id":"1359","name":"The Black Prince"},
 		{"id":"1337","name":"The Klaxxi"},
 		{"id":"1345","name":"The Lorewalkers"},
+		{"id":"1492","name":"Emperor Shaohao"},
 	]},
 	{"name":"The Tillers","factions":[
 		{"id":"1277","name":"Chee Chee"},
