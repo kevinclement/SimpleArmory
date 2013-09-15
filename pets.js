@@ -1,4 +1,5 @@
-var Pets = [
+var Pets = 
+[
 {
   "name": "Pets",
   "subcats": [
