@@ -826,6 +826,16 @@ var Mounts =
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
+          },
+          {
+            "spellid": "127164",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "87774",
+            "icon": "inv_pandarenserpentgodmount_gold",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
           }
         ]
       }
