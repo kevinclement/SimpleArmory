@@ -1041,6 +1041,16 @@ var Pets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
+        },
+        {
+          "spellid": "138824",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": "94903",
+          "icon": "inv_pet_cookbot",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
         }
       ]
     },
@@ -1626,7 +1636,7 @@ var Pets =
           "allianceId": null,
           "hordeId": null,
           "itemId": "89587",
-          "icon": "inv_misc_spineleaf_01",
+          "icon": "inv_pet_porcupine",
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
