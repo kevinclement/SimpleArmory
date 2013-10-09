@@ -1393,7 +1393,18 @@ var Pets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
+        },
+        {
+          "spellid": "66175",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": "46831",
+          "icon": "inv_misc_bone_humanskull_02",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
         }
+
       ]
     },
     {
@@ -2045,6 +2056,16 @@ var Pets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
+        },
+        {
+          "spellid": "123214",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "icon": "inv_feather_02",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
         }
       ]
     },
@@ -2117,6 +2138,16 @@ var Pets =
           "hordeId": null,
           "itemId": "10393",
           "icon": "inv_pet_cockroach",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": "123212",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "icon": "ability_hunter_pet_crab",
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
@@ -2882,6 +2913,16 @@ var Pets =
           "allowableClasses": null
         },
         {
+          "spellid": "139153",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": "94573",
+          "icon": "inv_babytriceratops_grey",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
           "spellid": "142030",
           "allianceId": null,
           "hordeId": null,
@@ -3047,6 +3088,21 @@ var Pets =
           "allowableClasses": null
         }
       ]
+    },
+{
+      "name": "PvP",
+      "items": [
+            {
+              "spellid": "138287",
+              "allianceId": null,
+              "hordeId": null,
+              "itemId": "94191",
+              "icon": "inv_babytriceratops_green",
+              "obtainable": true,
+              "allowableRaces": [],
+              "allowableClasses": null
+            }
+          ]
     },
     {
       "name": "Raid Drop",
