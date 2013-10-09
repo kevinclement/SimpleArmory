@@ -2487,7 +2487,7 @@ var Pets =
           "hordeId": null,
           "itemId": "27445",
           "icon": "inv_misc_fish_14",
-          "obtainable": false,
+          "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
         },
@@ -2497,7 +2497,7 @@ var Pets =
           "hordeId": null,
           "itemId": "33993",
           "icon": "spell_shaman_hex",
-          "obtainable": false,
+          "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
         },
