@@ -127,16 +127,6 @@ var Pets =
           "allowableClasses": null
         },
         {
-          "spellid": "135256",
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": "93031",
-          "icon": "inv_pet_cats_whitekitten",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
           "spellid": "127815",
           "allianceId": null,
           "hordeId": null,
@@ -145,6 +135,16 @@ var Pets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
+        },
+        {
+              "spellid": "138287",
+              "allianceId": null,
+              "hordeId": null,
+              "itemId": "94191",
+              "icon": "inv_babytriceratops_green",
+              "obtainable": true,
+              "allowableRaces": [],
+              "allowableClasses": null
         }
       ]
     },
@@ -936,6 +936,26 @@ var Pets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
+        },
+        {
+          "spellid": "103588",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": "73953",
+          "icon": "ability_mount_seahorse",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": "59250",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": "43698",
+          "icon": "inv_misc_monstertail_03",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
         }
       ]
     },
@@ -1305,26 +1325,6 @@ var Pets =
           "allowableClasses": null
         },
         {
-          "spellid": "69002",
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": "49362",
-          "icon": "inv_misc_head_dragon_black",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": "65682",
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "icon": "inv_misc_key_05",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
           "spellid": "74932",
           "allianceId": null,
           "hordeId": null,
@@ -1403,8 +1403,17 @@ var Pets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
+        },
+        {
+          "spellid": "71840",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": "50446",
+          "icon": "inv_misc_slime_01",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
         }
-
       ]
     },
     {
@@ -1941,6 +1950,16 @@ var Pets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
+        },
+        {
+          "spellid": "66096",
+          "allianceId": "46820",
+          "hordeId": "46821",
+          "itemId": null,
+          "icon": "inv_elemental_primal_mana",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
         }
       ]
     },
@@ -2328,16 +2347,6 @@ var Pets =
           "allowableClasses": null
         },
         {
-          "spellid": "66096",
-          "allianceId": "46820",
-          "hordeId": "46821",
-          "itemId": null,
-          "icon": "inv_elemental_primal_mana",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
           "spellid": "99668",
           "allianceId": null,
           "hordeId": null,
@@ -2413,6 +2422,16 @@ var Pets =
           "hordeId": null,
           "itemId": "97821",
           "icon": "trade_archaeology_whitehydrafigurine",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": "65682",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "icon": "inv_misc_key_05",
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
@@ -2583,16 +2602,6 @@ var Pets =
           "allowableClasses": null
         },
         {
-          "spellid": "59250",
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": "43698",
-          "icon": "inv_misc_monstertail_03",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
           "spellid": "61348",
           "allianceId": null,
           "hordeId": null,
@@ -2713,16 +2722,6 @@ var Pets =
           "allowableClasses": null
         },
         {
-          "spellid": "71840",
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": "50446",
-          "icon": "inv_misc_slime_01",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
           "spellid": "46599",
           "allianceId": null,
           "hordeId": null,
@@ -2798,16 +2797,6 @@ var Pets =
           "hordeId": null,
           "itemId": "67282",
           "icon": "inv_misc_archstone_01",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": "103588",
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": "73953",
-          "icon": "ability_mount_seahorse",
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
@@ -3086,22 +3075,22 @@ var Pets =
           "obtainable": false,
           "allowableRaces": [],
           "allowableClasses": null
+        },
+        {
+          "spellid": "69002",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": "49362",
+          "icon": "inv_misc_head_dragon_black",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
         }
       ]
     },
 {
       "name": "PvP",
       "items": [
-            {
-              "spellid": "138287",
-              "allianceId": null,
-              "hordeId": null,
-              "itemId": "94191",
-              "icon": "inv_babytriceratops_green",
-              "obtainable": true,
-              "allowableRaces": [],
-              "allowableClasses": null
-            }
           ]
     },
     {
@@ -3428,6 +3417,16 @@ var Pets =
           "hordeId": null,
           "itemId": "97558",
           "icon": "inv_misc_basket_01",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": "135256",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": "93031",
+          "icon": "inv_pet_cats_whitekitten",
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
