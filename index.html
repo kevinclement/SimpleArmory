@@ -252,24 +252,43 @@ function showtab(p_section,p_name) {
         }
     }
 
-    if (p_section == 'Mounts' || p_section == 'Pets')
+    if (p_section == 'Mounts' || p_section == 'Pets' || p_section == 'Battlepets')
     {
         var hasCount = 0;
         var knownLookup = new Array();
 
-        var catVar = p_section == "Mounts" ? Mounts : Pets;
-        var collected = p_section.toLowerCase();
+        var catVar = null;
+        var sectionTitle = null;
+        switch(p_section)
+        {
+            case "Mounts":
+              catVar = Mounts;
+              sectionTitle = "Mounts";
+              break;
+            case "Pets":
+              catVar = Pets;
+              sectionTitle = "Companions";
+              break;
+            case "Battlepets":
+              catVar = BattlePets;
+              sectionTitle = "Battle Pets (In Progress)";
+              break;
+        }
+
+        var collected = p_section == "Mounts" ? "mounts" : "pets";
+        var sectionName = p_section == "Battlepets" ? "Pets" : p_section;
 
         // Build lookup array
         if (o[collected].collected) {
             for (var x = 0; x < o[collected].collected.length; x++)
             {
-                knownLookup.push(o[collected].collected[x].spellId);
+                var uniqueId = p_section == "Battlepets" ? o[collected].collected[x].creatureId : o[collected].collected[x].spellId;
+                knownLookup.push(uniqueId);
             }
         }
 
         // Set title on top of page
-        h += '<h3 style="margin: 0"><span id="mountCount"></span> ' + p_section + '</h3>';
+        h += '<h3 style="margin: 0"><span id="mountCount"></span> ' + sectionTitle + '</h3>';
 
         // Loop through each category
         for (var catx = 0; catx < catVar.length; catx++) {
@@ -277,7 +296,7 @@ function showtab(p_section,p_name) {
             var cat = catVar[catx];
 
             // If the category name is the same as the section that we don't put the sub header in
-            if (cat.name != p_section) h += '<b>'+cat.name+'</b>';
+            if (cat.name != sectionName) h += '<b>'+cat.name+'</b>';
 
             // Start the category section div
             h += '<div style="margin-left: 20px">';
@@ -294,7 +313,8 @@ function showtab(p_section,p_name) {
 
                 for (var itemx = 0; itemx < subCat.items.length; itemx++) {
                     var item = subCat.items[itemx];
-                    var hasthis = arrayIndexOf(knownLookup,parseInt(item.spellid,10)) >= 0;
+                    var lookupId = p_section == "Battlepets" ? item.creatureId : item.spellid;
+                    var hasthis = arrayIndexOf(knownLookup,parseInt(lookupId,10)) >= 0;
 
                     showthis = (hasthis || item.obtainable);
                     if (item.allowableRaces.length > 0)
@@ -342,6 +362,10 @@ function showtab(p_section,p_name) {
                         else if (item.hordeId && charside == 'H')
                         {
                             headUrl = "http://www.wowhead.com/item="+item.hordeId;
+                        }
+                        else if (item.creatureId)
+                        {
+                            headUrl = "http://www.wowhead.com/npc="+item.creatureId;
                         }
 
                         zh += '<a href="' + headUrl + '">'+imgtag+'</a>';
@@ -517,7 +541,7 @@ function navigateToTab(tab)
     // uppercase first letter
     var tab = tab.substr(0, 1).toUpperCase() + tab.substr(1);
 
-    if (tab == "Character" || tab == "Calendar" || tab == "Mounts" || tab == "Factions" || tab == "Pets")
+    if (tab == "Character" || tab == "Calendar" || tab == "Mounts" || tab == "Factions" || tab == "Pets" || tab == "Battlepets")
     {
         showtab(tab,tab);
     }
@@ -553,6 +577,7 @@ function navigateToTab(tab)
 <script type="text/javascript" src="achievements.js"></script>
 <script type="text/javascript" src="mounts.js"></script>
 <script type="text/javascript" src="pets.js"></script>
+<script type="text/javascript" src="battlepets.js"></script>
 <script type="text/javascript" src="factions.js"></script>
 </head>
 <body style="margin: 0; color: black; background: #EEE">
@@ -582,7 +607,8 @@ function navigateToTab(tab)
         <span onclick="setLocationToTab('Calendar')">Achievement Calendar</span><br>
         <br>
         <span onclick="setLocationToTab('Mounts')">Mounts</span><br>
-        <span onclick="setLocationToTab('Pets')">Pets</span><br>
+        <span onclick="setLocationToTab('Pets')">Companions</span><br>
+        <span onclick="setLocationToTab('Battlepets')">Battle Pets</span><br>
         <br>
         <span onclick="setLocationToTab('Factions')">Reputation</span><br>
     </div>
