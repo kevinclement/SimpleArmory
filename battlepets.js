@@ -1308,6 +1308,17 @@ var BattlePets =
           "allianceId": null,
           "hordeId": null,
           "itemId": null,
+          "creatureId": "61171",
+          "icon": "spell_hunter_aspectofthehawk",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },        
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
           "creatureId": "61320",
           "icon": "ability_hunter_pet_spider",
           "obtainable": true,
@@ -1649,6 +1660,17 @@ var BattlePets =
           "allianceId": null,
           "hordeId": null,
           "itemId": null,
+          "creatureId": "61312",
+          "icon": "ability_hunter_pet_crab",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },        
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
           "creatureId": "61370",
           "icon": "ability_hunter_pet_moth",
           "obtainable": true,
@@ -1695,6 +1717,17 @@ var BattlePets =
           "itemId": null,
           "creatureId": "62914",
           "icon": "spell_shadow_shadowfiend",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "61889",
+          "icon": "inv_misc_monstertail_03",
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
