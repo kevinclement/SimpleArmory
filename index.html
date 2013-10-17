@@ -271,7 +271,7 @@ function showtab(p_section,p_name) {
               break;
             case "Battlepets":
               catVar = BattlePets;
-              sectionTitle = "Battle Pets (In Progress)";
+              sectionTitle = "Battle Pets";
               break;
         }
 
@@ -375,6 +375,7 @@ function showtab(p_section,p_name) {
                 if (showSubCat) h += zh;
             }
             h += '</div><div class="clear"></div>';
+            h += '<br><span style="color:#EEE">Thanks Jason for your help!</span>';
         }
 
         runAfterLoad = function () { document.getElementById("mountCount").innerText = hasCount; };

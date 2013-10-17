@@ -2053,6 +2053,121 @@ var BattlePets =
       ]
     },
     {
+      "name": "The Maelstrom",
+      "items": [
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62927",
+          "icon": "inv_misc_qirajicrystal_02",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62922",
+          "icon": "inv_misc_qirajicrystal_02",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "67443",
+          "icon": "ability_hunter_murderofcrows",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62925",
+          "icon": "inv_inscription_pigment_bug04",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "67329",
+          "icon": "spell_fire_felflamering",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62924",
+          "icon": "inv_pet_cockroach",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62915",
+          "icon": "inv_misc_qirajicrystal_03",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62916",
+          "icon": "ability_hunter_pet_moth",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62921",
+          "icon": "inv_misc_monstertail_03",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62181",
+          "icon": "inv_misc_qirajicrystal_01",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        }
+      ]
+    },
+    {
       "name": "Pandaria",
       "items": [
                 {
