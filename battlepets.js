@@ -6,7 +6,7 @@ var BattlePets =
     {
       "name": "Kalimdor",
       "items": [
-      {
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -16,8 +16,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -27,8 +27,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -38,8 +38,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -49,8 +49,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -60,8 +60,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -71,8 +71,19 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62116",
+          "icon": "inv_misc_ahnqirajtrinket_01",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -82,8 +93,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -93,8 +104,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -104,8 +115,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -115,8 +126,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -126,8 +137,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -137,8 +148,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -148,8 +159,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -159,8 +170,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -170,8 +181,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -181,8 +192,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -192,8 +203,19 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62312",
+          "icon": "spell_shaman_hex",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -203,8 +225,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -214,8 +236,19 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "61438",
+          "icon": "inv_inscription_pigment_bug04",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -225,8 +258,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -236,8 +269,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },      
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -247,8 +280,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -258,8 +291,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -269,8 +302,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -280,8 +313,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -291,8 +324,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -302,8 +335,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -313,8 +346,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -324,8 +357,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -335,8 +368,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -346,8 +379,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -357,8 +390,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -368,8 +401,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -379,8 +412,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -390,8 +423,19 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62313",
+          "icon": "trade_archaeology_fossil_snailshell",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -401,8 +445,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -412,8 +456,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -423,8 +467,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -434,8 +478,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -445,8 +489,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -456,8 +500,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -467,8 +511,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -478,8 +522,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -489,8 +533,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -500,8 +544,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -511,8 +555,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -522,8 +566,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -533,8 +577,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -544,8 +588,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -555,8 +599,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -566,8 +610,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -577,8 +621,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -588,8 +632,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -599,8 +643,8 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      },
-      {
+        },
+        {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
@@ -610,7 +654,7 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-      }
+        }
       ]
     },
     {
@@ -744,17 +788,6 @@ var BattlePets =
           "itemId": null,
           "creatureId": "62906",
           "icon": "inv_thanksgiving_turkey",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "61171",
-          "icon": "spell_hunter_aspectofthehawk",
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
