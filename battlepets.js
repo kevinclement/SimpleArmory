@@ -614,6 +614,12 @@ var BattlePets =
       ]
     },
     {
+      "name": "Eastern Kingdoms",
+      "items": [
+
+      ]
+    },
+    {
       "name": "Outland",
       "items": [
         {
@@ -722,6 +728,209 @@ var BattlePets =
           "itemId": null,
           "creatureId": "62583",
           "icon": "ability_hunter_pet_warpstalker",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        }
+      ]
+    },
+    {
+      "name": "Northrend",
+      "items": [
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62864",
+          "icon": "inv_misc_foxkit_white",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62693",
+          "icon": "inv_misc_rabbit",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62815",
+          "icon": "spell_shaman_hex",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62695",
+          "icon": "inv_pet_prairiedog",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62640",
+          "icon": "inv_qiraj_skinsandworm",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62852",
+          "icon": "ability_hunter_pet_vulture",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "68850",
+          "icon": "ability_mount_feldrake",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62641",
+          "icon": "inv_misc_monstertail_03",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62669",
+          "icon": "ability_hunter_pet_wolf",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62819",
+          "icon": "ability_hunter_eagleeye",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "68845",
+          "icon": "inv_misc_head_dragon_nexus",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62697",
+          "icon": "inv_misc_slime_02",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62854",
+          "icon": "inv_misc_head_dragon_black",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62816",
+          "icon": "ability_hunter_pet_rhino",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62835",
+          "icon": "inv_pet_babypengu",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62648",
+          "icon": "inv_thanksgiving_turkey",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "71163",
+          "icon": "inv_valkierpet",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62820",
+          "icon": "spell_frost_summonwaterelemental_2",
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
