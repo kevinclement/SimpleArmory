@@ -753,7 +753,7 @@ var BattlePets =
           "allianceId": null,
           "hordeId": null,
           "itemId": null,
-          "creatureId": "Fledgling Buzzard",
+          "creatureId": "61171",
           "icon": "spell_hunter_aspectofthehawk",
           "obtainable": true,
           "allowableRaces": [],
