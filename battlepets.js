@@ -2187,17 +2187,6 @@ var BattlePets =
           "allowableRaces": [],
           "allowableClasses": null
         },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "62181",
-          "icon": "inv_misc_qirajicrystal_01",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        }
       ]
     },
     {
