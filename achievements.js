@@ -10058,23 +10058,6 @@ var Achievements =
                   "obtainable": true
                 }
               ]
-            },
-            {
-              "name": "Escalation",
-              "achs": [
-                {
-                  "id": "8307",
-                  "icon": "inv_hand_1h_trollshaman_c_01",
-                  "side": "H",
-                  "obtainable": true
-                },
-                {
-                  "id": "8306",
-                  "icon": "inv_hand_1h_trollshaman_c_01",
-                  "side": "A",
-                  "obtainable": true
-                }
-              ]
             }
           ]
         },
@@ -15634,6 +15617,18 @@ var Achievements =
                   "id": "8401",
                   "icon": "inv_misc_tabard_hellscream",
                   "side": "",
+                  "obtainable": true
+                },
+                {
+                  "id": "8307",
+                  "icon": "inv_hand_1h_trollshaman_c_01",
+                  "side": "H",
+                  "obtainable": true
+                },
+                {
+                  "id": "8306",
+                  "icon": "inv_hand_1h_trollshaman_c_01",
+                  "side": "A",
                   "obtainable": true
                 }
               ]
