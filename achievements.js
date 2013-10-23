@@ -8767,15 +8767,9 @@ var Achievements =
                   "obtainable": true
                 },
                 {
-                  "id": "5846",
-                  "icon": "INV_Misc_Food_DimSum",
-                  "side": "H",
-                  "obtainable": true
-                },
-                {
                   "id": "5845",
                   "icon": "INV_Misc_Food_DimSum",
-                  "side": "A",
+                  "side": "",
                   "obtainable": true
                 }
               ]
@@ -8961,7 +8955,7 @@ var Achievements =
                   "obtainable": true
                 },
                 {
-                  "id": "1784",
+                  "id": "3296",
                   "icon": "Achievement_Profession_ChefHat",
                   "side": "H",
                   "obtainable": true
@@ -13170,12 +13164,6 @@ var Achievements =
                   "id": "971",
                   "icon": "INV_Misc_Food_28",
                   "side": "A",
-                  "obtainable": true
-                },
-                {
-                  "id": "970",
-                  "icon": "INV_Misc_Food_28",
-                  "side": "H",
                   "obtainable": true
                 },
                 {
