@@ -5916,13 +5916,7 @@ var Achievements =
                 {
                   "id": "1172",
                   "icon": "INV_Misc_Rune_07",
-                  "side": "A",
-                  "obtainable": true
-                },
-                {
-                  "id": "1173",
-                  "icon": "INV_Misc_Rune_07",
-                  "side": "H",
+                  "side": "",
                   "obtainable": true
                 }
               ]
@@ -6028,15 +6022,9 @@ var Achievements =
                 {
                   "id": "1169",
                   "icon": "INV_Jewelry_Amulet_07",
-                  "side": "A",
+                  "side": "",
                   "obtainable": true
                 },
-                {
-                  "id": "1170",
-                  "icon": "INV_Jewelry_Amulet_07",
-                  "side": "H",
-                  "obtainable": true
-                }
               ]
             }
           ]
@@ -6158,15 +6146,9 @@ var Achievements =
                 {
                   "id": "1167",
                   "icon": "INV_Jewelry_Necklace_21",
-                  "side": "A",
+                  "side": "",
                   "obtainable": true
                 },
-                {
-                  "id": "1168",
-                  "icon": "INV_Jewelry_Necklace_21",
-                  "side": "H",
-                  "obtainable": true
-                }
               ]
             }
           ]
@@ -6364,15 +6346,9 @@ var Achievements =
                 {
                   "id": "2194",
                   "icon": "Achievement_BG_winSOA",
-                  "side": "A",
+                  "side": "",
                   "obtainable": true
                 },
-                {
-                  "id": "2195",
-                  "icon": "Achievement_BG_winSOA",
-                  "side": "H",
-                  "obtainable": true
-                }
               ]
             }
           ]
@@ -6722,15 +6698,9 @@ var Achievements =
                   "obtainable": true
                 },
                 {
-                  "id": "5259",
-                  "icon": "Spell_Nature_EarthShock",
-                  "side": "H",
-                  "obtainable": true
-                },
-                {
                   "id": "5223",
                   "icon": "Spell_Nature_EarthShock",
-                  "side": "A",
+                  "side": "",
                   "obtainable": true
                 }
               ]
