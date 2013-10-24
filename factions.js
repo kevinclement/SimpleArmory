@@ -3,18 +3,23 @@ var Factions={"categories":[
 		{"id":"1168","name":"Guild"}
 	]},
 	{"name":"Mists of Pandaria","factions":[
-		{"id":"1269","name":"Golden Lotus"},
+		{"id":"1375","name":"Dominance Offensive"},
+		{"id":"1492","name":"Emperor Shaohao"},		
+		{"id":"1269","name":"Golden Lotus"},		
+		{"id":"1387","name":"Kirin Tor Offensive"},
+		{"id":"1358","name":"Nat Pagle"},		
 		{"id":"1376","name":"Operation: Shieldwall"},
 		{"id":"1271","name":"Order of the Cloud Serpent"},
-		{"id":"1375","name":"Dominance Offensive"},
 		{"id":"1270","name":"Shado-Pan"},
+		{"id":"1435","name":"Shado-Pan Assault"},		
 		{"id":"1216","name":"Shang Xi's Academy"},
+		{"id":"1388","name":"Sunreaver Onslaught"},		
 		{"id":"1302","name":"The Anglers"},
 		{"id":"1341","name":"The August Celestials"},
 		{"id":"1359","name":"The Black Prince"},
 		{"id":"1337","name":"The Klaxxi"},
 		{"id":"1345","name":"The Lorewalkers"},
-		{"id":"1492","name":"Emperor Shaohao"},
+
 	]},
 	{"name":"The Tillers","factions":[
 		{"id":"1277","name":"Chee Chee"},
@@ -27,31 +32,32 @@ var Factions={"categories":[
 		{"id":"1276","name":"Old Hillpaw"},
 		{"id":"1278","name":"Sho"},
 		{"id":"1280","name":"Tina Mudclaw"},
+		{"id":"1357","name":"Nomi"},		
 	]},
 	{"name":"Cataclysm","factions":[
+		{"id":"1204","name":"Avengers of Hyjal"}		
+		{"id":"1177","name":"Baradin's Wardens"},		
+		{"id":"1172","name":"Dragonmaw Clan"},		
 		{"id":"1158","name":"Guardians of Hyjal"},
-		{"id":"1171","name":"Therazane"},
-		{"id":"1135","name":"The Earthen Ring"},
-		{"id":"1173","name":"Ramkahen"},
-		{"id":"1172","name":"Dragonmaw Clan"},
-		{"id":"1174","name":"Wildhammer Clan"},
 		{"id":"1178","name":"Hellscream's Reach"},
-		{"id":"1177","name":"Baradin's Wardens"},
-		{"id":"1204","name":"Avengers of Hyjal"}
+		{"id":"1173","name":"Ramkahen"},		
+		{"id":"1135","name":"The Earthen Ring"},		
+		{"id":"1171","name":"Therazane"},
+		{"id":"1174","name":"Wildhammer Clan"},
 	]},
 	{"name":"Alliance Vanguard","factions":[
 		{"id":"1037","name":"Alliance Vanguard"},
-		{"id":"1050","name":"Valiance Expedition"},
-		{"id":"1068","name":"Explorers' League"},
+		{"id":"1068","name":"Explorers' League"},		
 		{"id":"1094","name":"The Silver Covenant"},
 		{"id":"1126","name":"The Frostborn"}
+		{"id":"1050","name":"Valiance Expedition"},		
 	]},
 	{"name":"Horde Expedition","factions":[
 		{"id":"1052","name":"Horde Expedition"},
-		{"id":"1085","name":"Warsong Offensive"},
 		{"id":"1067","name":"The Hand of Vengeance"},
 		{"id":"1124","name":"The Sunreavers"},
 		{"id":"1064","name":"The Taunka"}
+		{"id":"1085","name":"Warsong Offensive"},		
 	]},
 	{"name":"Northrend Instances","factions":[
 		{"id":"1106","name":"Argent Crusade"},
@@ -67,55 +73,55 @@ var Factions={"categories":[
 		{"id":"1156","name":"The Ashen Verdict"}
 	]},
 	{"name":"Outland Instances","factions":[
-		{"id":"947","name":"Thrallmar"},
+		{"id":"942","name":"Cenarion Expedition"},		
 		{"id":"946","name":"Honor Hold"},
-		{"id":"942","name":"Cenarion Expedition"},
+		{"id":"989","name":"Keepers of Time"}		
 		{"id":"1011","name":"Lower City"},
 		{"id":"935","name":"The Sha'tar"},
-		{"id":"989","name":"Keepers of Time"}
+		{"id":"947","name":"Thrallmar"},		
 	]},
 	{"name":"Outland Raid","factions":[
+		{"id":"1012","name":"Ashtongue Deathsworn"}		
 		{"id":"967","name":"The Violet Eye"},
 		{"id":"990","name":"The Scale of the Sands"},
-		{"id":"1012","name":"Ashtongue Deathsworn"}
 	]},
 	{"name":"Outland Other","factions":[
 		{"id":"978","name":"Kurenai"},
 		{"id":"941","name":"The Mag'har"},
-		{"id":"970","name":"Sporeggar"},
-		{"id":"933","name":"The Consortium"},
 		{"id":"1015","name":"Netherwing"},
+		{"id":"1038","name":"Ogri'la"},	
 		{"id":"1031","name":"Sha'tari Skyguard"},
-		{"id":"1038","name":"Ogri'la"},
-		{"id":"1077","name":"Shattered Sun Offensive"},
-		{"id":"932","name":"The Aldor"},
+		{"id":"1077","name":"Shattered Sun Offensive"},		
+		{"id":"970","name":"Sporeggar"},
+		{"id":"932","name":"The Aldor"},		
+		{"id":"933","name":"The Consortium"},
 		{"id":"934","name":"The Scryers"}
 	]},
 	{"name":"Horde","factions":[
+		{"id":"1133","name":"Bilgewater Cartel"}
+		{"id":"530","name":"Darkspear Trolls"},		
 		{"id":"76","name":"Orgrimmar"},
-		{"id":"530","name":"Darkspear Trolls"},
+		{"id":"911","name":"Silvermoon City"},
 		{"id":"81","name":"Thunder Bluff"},
 		{"id":"68","name":"Undercity"},
-		{"id":"911","name":"Silvermoon City"},
-		{"id":"1133","name":"Bilgewater Cartel"}
 	]},
 	{"name":"Alliance","factions":[
-		{"id":"72","name":"Stormwind"},
-		{"id":"47","name":"Ironforge"},
-		{"id":"54","name":"Gnomeregan"},
 		{"id":"69","name":"Darnassus"},
 		{"id":"930","name":"Exodar"},
 		{"id":"1134","name":"Gilneas"}
+		{"id":"54","name":"Gnomeregan"},		
+		{"id":"47","name":"Ironforge"},
+		{"id":"72","name":"Stormwind"},
 	]},
 	{"name":"Horde Forces","factions":[
-		{"id":"510","name":"The Defilers"},
 		{"id":"729","name":"Frostwolf Clan"},
+		{"id":"510","name":"The Defilers"},		
 		{"id":"889","name":"Warsong Outriders"}
 	]},
 	{"name":"Alliance Forces","factions":[
-		{"id":"509","name":"The League of Arathor"},
 		{"id":"890","name":"Silverwing Sentinels"},
 		{"id":"730","name":"Stormpike Guard"}
+		{"id":"509","name":"The League of Arathor"},		
 	]},
 	{"name":"Steamwheedle Cartel","factions":[
 		{"id":"21","name":"Booty Bay"},
