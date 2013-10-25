@@ -22,6 +22,7 @@ var Factions={"categories":[
 
 	]},
 	{"name":"The Tillers","factions":[
+		{"id":"1272","name":"The Tillers"},		
 		{"id":"1277","name":"Chee Chee"},
 		{"id":"1275","name":"Ella"},
 		{"id":"1283","name":"Farmer Fung"},
@@ -29,10 +30,10 @@ var Factions={"categories":[
 		{"id":"1281","name":"Gina Mudclaw"},
 		{"id":"1279","name":"Haohan Mudclaw"},
 		{"id":"1273","name":"Jogu the Drunk"},
+		{"id":"1357","name":"Nomi"},		
 		{"id":"1276","name":"Old Hillpaw"},
 		{"id":"1278","name":"Sho"},
-		{"id":"1280","name":"Tina Mudclaw"},
-		{"id":"1357","name":"Nomi"}	
+		{"id":"1280","name":"Tina Mudclaw"}
 	]},
 	{"name":"Cataclysm","factions":[
 		{"id":"1204","name":"Avengers of Hyjal"},		
@@ -66,11 +67,11 @@ var Factions={"categories":[
 		{"id":"1091","name":"The Wyrmrest Accord"}
 	]},
 	{"name":"Northrend Other","factions":[
-		{"id":"1073","name":"The Kalu'ak"},
+		{"id":"1156","name":"The Ashen Verdict"},
 		{"id":"1104","name":"Frenzyheart Tribe"},
+		{"id":"1073","name":"The Kalu'ak"},		
 		{"id":"1105","name":"The Oracles"},
-		{"id":"1119","name":"The Sons of Hodir"},
-		{"id":"1156","name":"The Ashen Verdict"}
+		{"id":"1119","name":"The Sons of Hodir"}
 	]},
 	{"name":"Outland Instances","factions":[
 		{"id":"942","name":"Cenarion Expedition"},		
@@ -82,8 +83,8 @@ var Factions={"categories":[
 	]},
 	{"name":"Outland Raid","factions":[
 		{"id":"1012","name":"Ashtongue Deathsworn"},		
-		{"id":"967","name":"The Violet Eye"},
-		{"id":"990","name":"The Scale of the Sands"}
+		{"id":"990","name":"The Scale of the Sands"},
+		{"id":"967","name":"The Violet Eye"}		
 	]},
 	{"name":"Outland Other","factions":[
 		{"id":"978","name":"Kurenai"},
@@ -114,11 +115,13 @@ var Factions={"categories":[
 		{"id":"72","name":"Stormwind"}
 	]},
 	{"name":"Horde Forces","factions":[
+		{"id":"1374","name":"Brawl'gar Arena"},		
 		{"id":"729","name":"Frostwolf Clan"},
 		{"id":"510","name":"The Defilers"},		
 		{"id":"889","name":"Warsong Outriders"}
 	]},
 	{"name":"Alliance Forces","factions":[
+		{"id":"1419","name":"Bizmo's Brawlpub"},		
 		{"id":"890","name":"Silverwing Sentinels"},
 		{"id":"730","name":"Stormpike Guard"},
 		{"id":"509","name":"The League of Arathor"}	
@@ -139,6 +142,8 @@ var Factions={"categories":[
 	{"name":"Azeroth Other","factions":[
 		{"id":"87","name":"Bloodsail Buccaneers"},
 		{"id":"909","name":"Darkmoon Faire"},
+		{"id":"92","name":"Gelkis Clan Centaur"},		
+		{"id":"93","name":"Magram Clan Centaur"},
 		{"id":"349","name":"Ravenholdt"},
 		{"id":"809","name":"Shen'dralar"},
 		{"id":"70","name":"Syndicate"},
