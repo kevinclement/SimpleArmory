@@ -6780,7 +6780,7 @@ var Achievements =
                   "obtainable": true
                 },
                 {
-                  "id": "1751,
+                  "id": "1751",
                   "icon": "achievement_bg_kill_on_mount",
                   "side": "",
                   "obtainable": true
