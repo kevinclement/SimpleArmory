@@ -252,7 +252,7 @@ function showtab(p_section,p_name) {
         }
     }
 
-    if (p_section == 'Mounts' || p_section == 'Pets' || p_section == 'Battlepets')
+    if (p_section == 'Mounts' || p_section == 'Pets')
     {
         var hasCount = 0;
         var knownLookup = new Array();
@@ -269,20 +269,16 @@ function showtab(p_section,p_name) {
               catVar = Pets;
               sectionTitle = "Companions";
               break;
-            case "Battlepets":
-              catVar = BattlePets;
-              sectionTitle = "Battle Pets";
-              break;
         }
 
         var collected = p_section == "Mounts" ? "mounts" : "pets";
-        var sectionName = p_section == "Battlepets" ? "Pets" : p_section;
+        var sectionName = p_section;
 
         // Build lookup array
         if (o[collected].collected) {
             for (var x = 0; x < o[collected].collected.length; x++)
             {
-                var uniqueId = p_section == "Battlepets" ? o[collected].collected[x].creatureId : o[collected].collected[x].spellId;
+                var uniqueId = o[collected].collected[x].spellId;
                 knownLookup.push(uniqueId);
             }
         }
@@ -313,7 +309,7 @@ function showtab(p_section,p_name) {
 
                 for (var itemx = 0; itemx < subCat.items.length; itemx++) {
                     var item = subCat.items[itemx];
-                    var lookupId = p_section == "Battlepets" ? item.creatureId : item.spellid;
+                    var lookupId = item.spellid;
                     var hasthis = arrayIndexOf(knownLookup,parseInt(lookupId,10)) >= 0;
 
                     showthis = (hasthis || item.obtainable);
@@ -375,14 +371,125 @@ function showtab(p_section,p_name) {
                 if (showSubCat) h += zh;
             }
             h += '</div><div class="clear"></div>';
-            if (p_section == "Battlepets")
-            {
-                h += '<br><span style="color:#EEE">Thanks Jason for your help!</span>';
-            }
         }
 
         runAfterLoad = function () { document.getElementById("mountCount").innerText = hasCount; };
     }
+
+    if (p_section == 'Battlepets')
+    {
+        var hasCount = 0;
+        var knownLookup = new Array();
+
+        var catVar = BattlePets;
+        var sectionTitle = "Battle Pets";
+        var collected = "pets";
+        var sectionName = "Pets";
+
+        // Build lookup array
+        if (o[collected].collected) {
+            for (var x = 0; x < o[collected].collected.length; x++)
+            {
+                var uniqueId = o[collected].collected[x].creatureId;
+                knownLookup.push(uniqueId);
+            }
+        }
+
+        // Set title on top of page
+        h += '<h3 style="margin: 0"><span id="mountCount"></span> ' + sectionTitle + '</h3>';
+
+        // Loop through each category
+        for (var catx = 0; catx < catVar.length; catx++) {
+
+            var cat = catVar[catx];
+
+            // If the category name is the same as the section that we don't put the sub header in
+            if (cat.name != sectionName) h += '<b>'+cat.name+'</b>';
+
+            // Start the category section div
+            h += '<div style="margin-left: 20px">';
+
+            for (var subcatx = 0; subcatx < cat.subcats.length; subcatx++) {
+                var subCat = cat.subcats[subcatx];
+
+                var showSubCat = false;
+                zh = '<div style="float: left; margin: 10px">';
+
+                if (subCat.name != "") {
+                    zh += '<b>'+subCat.name+'</b><br>';
+                }
+
+                for (var itemx = 0; itemx < subCat.items.length; itemx++) {
+                    var item = subCat.items[itemx];
+                    var lookupId = item.creatureId;
+                    var hasthis = arrayIndexOf(knownLookup,parseInt(lookupId,10)) >= 0;
+
+                    showthis = (hasthis || item.obtainable);
+                    if (item.allowableRaces.length > 0)
+                    {
+                        if (arrayIndexOf(item.allowableRaces, o.race) == -1)
+                        {
+                            showthis = false;
+                        }
+                    }
+
+                    if (item.allowableClasses && item.allowableClasses.length > 0)
+                    {
+                        if (arrayIndexOf(item.allowableClasses, o.class) == -1)
+                        {
+                            showthis = false;
+                        }
+                    }
+
+                    showSubCat |= showthis;
+                    if (hasthis) {
+                        imgtag = '<img src="http://wow.zamimg.com/images/wow/icons/medium/'+item.icon.toLowerCase()+'.jpg" width="36" height="36" border="0">';
+                    } else if (showthis) {
+                        imgtag = '<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" style="width: 34px; height: 34px; border: 1px dashed grey; display: inline"/'+'>';
+                    }
+
+                    if (showthis) {
+                        if (hasthis)
+                        {
+                            hasCount++;
+                        }
+
+                        // Need to some extra work to determine what our url should be
+                        // By default we'll use a spell id
+                        var headUrl = "http://www.wowhead.com/spell="+item.spellid;
+
+                        // If the item id is available lets use that
+                        if (item.itemId)
+                        {
+                            headUrl = "http://www.wowhead.com/item="+item.itemId;
+                        }
+                        else if (item.allianceId && charside == 'A')
+                        {
+                            headUrl = "http://www.wowhead.com/item="+item.allianceId;
+                        }
+                        else if (item.hordeId && charside == 'H')
+                        {
+                            headUrl = "http://www.wowhead.com/item="+item.hordeId;
+                        }
+                        else if (item.creatureId)
+                        {
+                            headUrl = "http://www.wowhead.com/npc="+item.creatureId;
+                        }
+
+                        zh += '<a href="' + headUrl + '">'+imgtag+'</a>';
+                    }
+                }
+                zh += '</div>';
+                if (showSubCat) h += zh;
+            }
+
+            h += '</div><div class="clear"></div>';
+            h += '<br><span style="color:#EEE">Thanks Jason for your help!</span>';
+        }
+
+        runAfterLoad = function () { document.getElementById("mountCount").innerText = hasCount; };
+    }
+
 
 	if (p_section == 'Calendar') {
         // Build up the calendar object
