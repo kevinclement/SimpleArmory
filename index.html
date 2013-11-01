@@ -47,7 +47,6 @@
         right: 0px;
         left: 0px;
     }
-
     #divtabs
     {
         visibility: hidden;
@@ -60,6 +59,21 @@
         text-align: center;
         font-weight: bold;
         overflow-y: auto
+    }
+    .pbCell
+    {
+        display:inline-block;
+        position:relative;
+        padding-bottom:4px;
+    }
+    .pbQual
+    {
+        background:green;
+        position:absolute;
+        bottom:0px;
+        right:0px;
+        left:0px;
+        height:4px;
     }
 </style>
 <script type="text/javascript" src="http://static.wowhead.com/widgets/power.js"></script>
@@ -383,7 +397,7 @@ function showtab(p_section,p_name) {
     if (p_section == 'Battlepets')
     {
         var hasCount = 0;
-        var knownLookup = new Array();
+        var known = {};
 
         var catVar = BattlePets;
         var sectionTitle = "Battle Pets";
@@ -394,8 +408,7 @@ function showtab(p_section,p_name) {
         if (o[collected].collected) {
             for (var x = 0; x < o[collected].collected.length; x++)
             {
-                var uniqueId = o[collected].collected[x].creatureId;
-                knownLookup.push(uniqueId);
+                known[o[collected].collected[x].creatureId] = o[collected].collected[x];
             }
         }
 
@@ -426,7 +439,8 @@ function showtab(p_section,p_name) {
                 for (var itemx = 0; itemx < subCat.items.length; itemx++) {
                     var item = subCat.items[itemx];
                     var lookupId = item.creatureId;
-                    var hasthis = arrayIndexOf(knownLookup,parseInt(lookupId,10)) >= 0;
+                    var pet = known[lookupId];
+                    var hasthis = pet != null;
 
                     showthis = (hasthis || item.obtainable);
                     if (item.allowableRaces.length > 0)
@@ -480,7 +494,33 @@ function showtab(p_section,p_name) {
                             headUrl = "http://www.wowhead.com/npc="+item.creatureId;
                         }
 
-                        zh += '<a href="' + headUrl + '">'+imgtag+'</a>';
+                        if (hasthis)
+                        {
+                            switch(pet.qualityId)
+                            {
+                                case 0:
+                                    background = "#7F7F7F";
+                                    break;
+                                case 1:
+                                    background = "#F0F0F0";
+                                    break;
+                                case 2:
+                                    background = "#22B14C";
+                                    break;
+                                case 3:
+                                    background = "#3F48CC";
+                                    break;
+                            }
+                        }
+                        else
+                        {
+                            background = "#eee";
+                        }
+
+                        zh += '<div class="pbCell">' +
+                              '  <a href="' + headUrl + '">'+imgtag+'</a>' +
+                              '  <div class="pbQual" style="background:' + background + ';"></div>' +
+                              '</div>';
                     }
                 }
                 zh += '</div>';
