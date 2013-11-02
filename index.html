@@ -74,6 +74,19 @@
         left:0px;
         height:6px;
     }
+    .pbLevel
+    {
+        color: white;
+        position:absolute;
+        left:38%;
+        top: 9px;
+        height:6px;
+        font-weight:bold;
+        opacity:0;
+        -webkit-transition: opacity .25s ease-in-out;
+       -moz-transition: opacity .25s ease-in-out;
+        transition: opacity .25s ease-in-out;
+    }
 </style>
 <script type="text/javascript" src="http://static.wowhead.com/widgets/power.js"></script>
 <script type="text/javascript" src="helperFuncs.js"></script>
@@ -413,6 +426,7 @@ function showtab(p_section,p_name) {
 
         // Set title on top of page
         h += '<h3 style="margin: 0"><span id="mountCount"></span> ' + sectionTitle + '</h3>';
+        h += '<input type="checkbox" id="showlevels" onclick="showLevels(this.checked)"></input><label for="showlevels">Show levels</label>';
 
         // Loop through each category
         for (var catx = 0; catx < catVar.length; catx++) {
@@ -493,6 +507,7 @@ function showtab(p_section,p_name) {
                             headUrl = "http://www.wowhead.com/npc="+item.creatureId;
                         }
 
+                        var level = ""
                         if (hasthis)
                         {
                             switch(pet.qualityId)
@@ -510,6 +525,7 @@ function showtab(p_section,p_name) {
                                     background = "#3F48CC";
                                     break;
                             }
+                            level = pet.stats.level;
                         }
                         else
                         {
@@ -519,6 +535,7 @@ function showtab(p_section,p_name) {
                         zh += '<div class="pbCell">' +
                               '  <a href="' + headUrl + '">'+imgtag+'</a>' +
                               '  <div class="pbQual" style="background:' + background + ';"></div>' +
+                              '  <div class="pbLevel">' + level + '</div>' +
                               '</div>';
                     }
                 }
@@ -725,6 +742,16 @@ function navigateToTab(tab)
     }
 
     ga('send', 'pageview', {'title': tab});
+}
+
+function showLevels(checked)
+{
+    var elements = document.getElementsByClassName('pbLevel');
+    if (elements == null) return;
+    for(var i=0; i < elements.length; i++)
+    {
+        elements[i].style.opacity = checked ? 1 : 0;
+    }
 }
 
 </script>
