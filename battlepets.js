@@ -451,6 +451,17 @@ var BattlePets =
           "allianceId": null,
           "hordeId": null,
           "itemId": null,
+          "creatureId": "61312",
+          "icon": "ability_hunter_pet_crab",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
           "creatureId": "61440",
           "icon": "ability_hunter_pet_scorpid",
           "obtainable": true,
@@ -1654,18 +1665,7 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "61312",
-          "icon": "ability_hunter_pet_crab",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },        
+        },       
         {
           "spellid": null,
           "allianceId": null,
@@ -2186,34 +2186,17 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-        },
-      ]
-    },
-    {
-      "name": "Pandaria",
-      "items": [
-                {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "63550",
-          "icon": "inv_misc_foxkit_white",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "63551",
-          "icon": "inv_misc_foxkit_white",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
+          }	 	  
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Pandaria",
+    "subcats": [
+      {
+        "name": "Dread Wastes",
+        "items": [
         {
           "spellid": null,
           "allianceId": null,
@@ -2230,67 +2213,12 @@ var BattlePets =
           "allianceId": null,
           "hordeId": null,
           "itemId": null,
-          "creatureId": "63288",
-          "icon": "ability_hunter_pet_spider",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "73542",
-          "icon": "ability_hunter_pet_moth",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "63062",
-          "icon": "inv_pet_raccoon",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "63064",
-          "icon": "inv_pet_raccoon",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "62992",
-          "icon": "inv_pet_beaver",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
           "creatureId": "64242",
           "icon": "inv_pet_porcupine",
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-        },
+        },		
         {
           "spellid": null,
           "allianceId": null,
@@ -2301,40 +2229,56 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-        },
+        },		
         {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
           "itemId": null,
-          "creatureId": "62991",
-          "icon": "ability_hunter_snaketrap",
+          "creatureId": "65203",
+          "icon": "ability_hunter_pet_crab",
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-        },
+        },		
         {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
           "itemId": null,
-          "creatureId": "63847",
-          "icon": "inv_pet_waterstrider",
+          "creatureId": "64352",
+          "icon": "trade_archaeology_fossil_snailshell",
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-        },
+        },		
         {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
           "itemId": null,
-          "creatureId": "63850",
-          "icon": "ability_hunter_pet_wasp",
+          "creatureId": "64238",
+          "icon": "inv_pet_cockroach",
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-        },
+        },		
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "64804",
+          "icon": "inv_pet_porcupine",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        }		
+        ]
+      },		
+      {
+        "name": "Isle of Thunder",
+        "items": [
         {
           "spellid": null,
           "allianceId": null,
@@ -2356,36 +2300,41 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-        },
+        },		
         {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
           "itemId": null,
-          "creatureId": "62994",
-          "icon": "inv_misc_fish_turtle_02",
+          "creatureId": "69819",
+          "icon": "inv_pet_toad_green",
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-        },
+        },		
         {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
           "itemId": null,
-          "creatureId": "65203",
-          "icon": "ability_hunter_pet_crab",
+          "creatureId": "69648",
+          "icon": "inv_pet_thunderbeaver_blue",
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-        },
+        }
+        ]
+      },		  
+      {
+        "name": "Krasarang Wilds",
+        "items": [
         {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
           "itemId": null,
-          "creatureId": "61088",
-          "icon": "inv_pet_waterstrider",
+          "creatureId": "63288",
+          "icon": "ability_hunter_pet_spider",
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
@@ -2400,117 +2349,7 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "73543",
-          "icon": "ability_hunter_pet_moth",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "63002",
-          "icon": "spell_shaman_hex",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "65215",
-          "icon": "ability_hunter_pet_moth",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "63838",
-          "icon": "ability_hunter_pet_moth",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "63841",
-          "icon": "inv_pet_otter",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "63842",
-          "icon": "inv_pet_otter",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "63549",
-          "icon": "inv_pet_cricket",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "63004",
-          "icon": "ability_hunter_snaketrap",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "63715",
-          "icon": "ability_hunter_pet_spider",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "62997",
-          "icon": "spell_shaman_hex",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
+        },		
         {
           "spellid": null,
           "allianceId": null,
@@ -2521,40 +2360,7 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "63953",
-          "icon": "inv_misc_monstertail_07",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "68846",
-          "icon": "inv_misc_pet_pandaren_yeti",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "63919",
-          "icon": "spell_shaman_hex",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
+        },		
         {
           "spellid": null,
           "allianceId": null,
@@ -2565,62 +2371,7 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "63094",
-          "icon": "inv_misc_monstertail_01",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "63095",
-          "icon": "inv_misc_monstertail_01",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "63096",
-          "icon": "inv_pet_cricket",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "63003",
-          "icon": "inv_pet_raccoon",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "63716",
-          "icon": "inv_pet_raccoon",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
+        },		
         {
           "spellid": null,
           "allianceId": null,
@@ -2631,14 +2382,63 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-        },
+        },		
         {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
           "itemId": null,
-          "creatureId": "62998",
-          "icon": "inv_pet_waterstrider",
+          "creatureId": "63291",
+          "icon": "inv_inscription_pigment_bug04",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },		
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "63293",
+          "icon": "ability_mount_pandaranmountepicblack",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },		
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "68506",
+          "icon": "inv_pet_beaver",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },		
+	    {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "67022",
+          "icon": "ability_mount_pandaranmountblack",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        }
+        ]
+      },	
+      {
+        "name": "Kun-Lai Summit",
+        "items": [
+          {			
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "63550",
+          "icon": "inv_misc_foxkit_white",
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
@@ -2648,23 +2448,23 @@ var BattlePets =
           "allianceId": null,
           "hordeId": null,
           "itemId": null,
-          "creatureId": "65190",
-          "icon": "inv_misc_monstertail_07",
+          "creatureId": "63551",
+          "icon": "inv_misc_foxkit_white",
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-        },
+        },		
         {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
           "itemId": null,
-          "creatureId": "63954",
-          "icon": "inv_misc_monstertail_07",
+          "creatureId": "68846",
+          "icon": "inv_misc_pet_pandaren_yeti",
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-        },
+        },		
         {
           "spellid": null,
           "allianceId": null,
@@ -2692,160 +2492,6 @@ var BattlePets =
           "allianceId": null,
           "hordeId": null,
           "itemId": null,
-          "creatureId": "64352",
-          "icon": "trade_archaeology_fossil_snailshell",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "64238",
-          "icon": "inv_pet_cockroach",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "63006",
-          "icon": "inv_misc_seagullpet_01",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "63291",
-          "icon": "inv_inscription_pigment_bug04",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "65216",
-          "icon": "ability_hunter_pet_wasp",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "64246",
-          "icon": "inv_pet_raccoon",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "63057",
-          "icon": "inv_pet_otter",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "63358",
-          "icon": "inv_pet_otter",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "64804",
-          "icon": "inv_pet_porcupine",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "63001",
-          "icon": "trade_archaeology_fossil_snailshell",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "73368",
-          "icon": "ability_hunter_pet_moth",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "63060",
-          "icon": "inv_pet_speedy",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "63293",
-          "icon": "ability_mount_pandaranmountepicblack",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "63005",
-          "icon": "ability_hunter_pet_crab",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
           "creatureId": "64248",
           "icon": "inv_misc_monsterhorn_02",
           "obtainable": true,
@@ -2857,52 +2503,8 @@ var BattlePets =
           "allianceId": null,
           "hordeId": null,
           "itemId": null,
-          "creatureId": "68506",
-          "icon": "inv_pet_beaver",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "69819",
-          "icon": "inv_pet_toad_green",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
           "creatureId": "63585",
           "icon": "inv_thanksgiving_turkey",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "62999",
-          "icon": "ability_hunter_snaketrap",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": null,
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": null,
-          "creatureId": "69648",
-          "icon": "inv_pet_thunderbeaver_blue",
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
@@ -2934,8 +2536,211 @@ var BattlePets =
           "allianceId": null,
           "hordeId": null,
           "itemId": null,
-          "creatureId": "67022",
-          "icon": "ability_mount_pandaranmountblack",
+          "creatureId": "63555",
+          "icon": "ability_hunter_snaketrap",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        }		
+        ]
+      },		  
+      {
+        "name": "The Jade Forest",
+        "items": [
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62992",
+          "icon": "inv_pet_beaver",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62991",
+          "icon": "ability_hunter_snaketrap",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },		
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62994",
+          "icon": "inv_misc_fish_turtle_02",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },		
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "63002",
+          "icon": "spell_shaman_hex",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },		
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "65215",
+          "icon": "ability_hunter_pet_moth",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },	
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "63838",
+          "icon": "ability_hunter_pet_moth",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "63004",
+          "icon": "ability_hunter_snaketrap",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },		
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "63715",
+          "icon": "ability_hunter_pet_spider",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },		
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62997",
+          "icon": "spell_shaman_hex",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },		
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "63919",
+          "icon": "spell_shaman_hex",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },		
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "63003",
+          "icon": "inv_pet_raccoon",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },		
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "63716",
+          "icon": "inv_pet_raccoon",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },		
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62998",
+          "icon": "inv_pet_waterstrider",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },		
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "63006",
+          "icon": "inv_misc_seagullpet_01",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },		
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "65216",
+          "icon": "ability_hunter_pet_wasp",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "63001",
+          "icon": "trade_archaeology_fossil_snailshell",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "63005",
+          "icon": "ability_hunter_pet_crab",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "62999",
+          "icon": "ability_hunter_snaketrap",
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
@@ -2972,14 +2777,150 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
+        }
+        ]
+      }	
+      {
+        "name": Timeless Isle",
+        "items": [
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "73542",
+          "icon": "ability_hunter_pet_moth",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
         },
         {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
           "itemId": null,
-          "creatureId": "63957",
-          "icon": "inv_misc_monstertail_03",
+          "creatureId": "73543",
+          "icon": "ability_hunter_pet_moth",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },		
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "73368",
+          "icon": "ability_hunter_pet_moth",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        }
+        ]
+      },	
+      {
+        "name": "Townlong Steppes",
+        "items": [
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "63549",
+          "icon": "inv_pet_cricket",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "63953",
+          "icon": "inv_misc_monstertail_07",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "65190",
+          "icon": "inv_misc_monstertail_07",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "63954",
+          "icon": "inv_misc_monstertail_07",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        }
+        ]
+      },
+      {
+        "name": Vale of Eternal Blossoms",
+        "items": [
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "63847",
+          "icon": "inv_pet_waterstrider",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "63850",
+          "icon": "ability_hunter_pet_wasp",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },		
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "61088",
+          "icon": "inv_pet_waterstrider",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },		
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "63841",
+          "icon": "inv_pet_otter",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "63842",
+          "icon": "inv_pet_otter",
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
@@ -2994,19 +2935,129 @@ var BattlePets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
+        }
+        ]
+      },	
+      {
+        "name": "Valley of the Four Winds",
+        "items": [
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "63062",
+          "icon": "inv_pet_raccoon",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
         },
         {
           "spellid": null,
           "allianceId": null,
           "hordeId": null,
           "itemId": null,
-          "creatureId": "63555",
-          "icon": "ability_hunter_snaketrap",
+          "creatureId": "63064",
+          "icon": "inv_pet_raccoon",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },		
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "63095",
+          "icon": "inv_misc_monstertail_01",
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
         },
-      ]
-    }
-   ]
-}]
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "63096",
+          "icon": "inv_pet_cricket",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },		
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "64246",
+          "icon": "inv_pet_raccoon",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },		
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "63057",
+          "icon": "inv_pet_otter",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },		
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "63358",
+          "icon": "inv_pet_otter",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "63060",
+          "icon": "inv_pet_speedy",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        }	
+        ]
+      },
+      {
+        "name": "",
+        "items": [
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "63094",
+          "icon": "inv_misc_monstertail_01",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": null,
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": null,
+          "creatureId": "63957",
+          "icon": "inv_misc_monstertail_03",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        }		
+        ]
+      }	  
+    ]
+  }
+]
