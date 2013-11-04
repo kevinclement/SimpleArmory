@@ -2779,9 +2779,9 @@ var BattlePets =
           "allowableClasses": null
         }
         ]
-      }	
+      },
       {
-        "name": Timeless Isle",
+        "name": "Timeless Isle",
         "items": [
         {
           "spellid": null,
@@ -2868,7 +2868,7 @@ var BattlePets =
         ]
       },
       {
-        "name": Vale of Eternal Blossoms",
+        "name": "Vale of Eternal Blossoms",
         "items": [
         {
           "spellid": null,
@@ -3032,7 +3032,7 @@ var BattlePets =
         ]
       },
       {
-        "name": "",
+        "name": "&nbsp;",
         "items": [
         {
           "spellid": null,
