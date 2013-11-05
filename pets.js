@@ -1586,6 +1586,146 @@ var Pets =
         ]
       },
       {
+        "name": "Eastern Kingdoms",
+        "items": [
+        {
+          "spellid": "10697",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": "8499",
+          "icon": "inv_misc_head_dragon_red",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": "10675",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": "8491",
+          "icon": "inv_pet_cats_blacktabbycat",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },			
+        {
+          "spellid": "10682",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": "8494",
+          "icon": "inv_feather_08",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },		
+        {
+          "spellid": "93739",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": "66076",
+          "icon": "inv_pet_maggot",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },		
+        {
+          "spellid": "67419",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": "48124",
+          "icon": "ability_hunter_pet_raptor",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },		
+        {
+          "spellid": "67420",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": "48126",
+          "icon": "ability_hunter_pet_raptor",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        }		
+        ]
+      },
+      {
+        "name": "Kalimdor",
+        "items": [
+        {
+          "spellid": "10696",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": "34535",
+          "icon": "inv_misc_head_dragon_blue",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": "10698",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": "8498",
+          "icon": "inv_misc_head_dragon_green",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },		
+        {
+          "spellid": "67413",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": "48112",
+          "icon": "ability_hunter_pet_raptor",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },	
+        {
+          "spellid": "141789",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": "97821",
+          "icon": "trade_archaeology_whitehydrafigurine",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": "67416",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": "48118",
+          "icon": "ability_mount_raptor",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+        {
+          "spellid": "67418",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": "48122",
+          "icon": "ability_mount_raptor",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },		
+        {
+          "spellid": "15067",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": "11474",
+          "icon": "inv_pet_sprite_darter_hatchling",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        }		
+        ]
+      },	
+      {		  
         "name": "Pandaria",
         "items": [
         {
@@ -2163,17 +2303,7 @@ var Pets =
 
       {	  
         "name": "World",
-        "items": [
-        {
-          "spellid": "10696",
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": "34535",
-          "icon": "inv_misc_head_dragon_blue",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
+        "items": [	
         {
           "spellid": "10695",
           "allianceId": null,
@@ -2183,47 +2313,7 @@ var Pets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-        },		
-        {
-          "spellid": "10697",
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": "8499",
-          "icon": "inv_misc_head_dragon_red",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": "10698",
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": "8498",
-          "icon": "inv_misc_head_dragon_green",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": "10675",
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": "8491",
-          "icon": "inv_pet_cats_blacktabbycat",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },		
-        {
-          "spellid": "10682",
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": "8494",
-          "icon": "inv_feather_08",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },	
+        },				
         {
           "spellid": "25162",
           "allianceId": null,
@@ -2253,27 +2343,7 @@ var Pets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-        },
-        {
-          "spellid": "67413",
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": "48112",
-          "icon": "ability_hunter_pet_raptor",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },		
-        {
-          "spellid": "141789",
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": "97821",
-          "icon": "trade_archaeology_whitehydrafigurine",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },		
+        },			
         {
           "spellid": "67415",
           "allianceId": null,
@@ -2283,73 +2353,13 @@ var Pets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-        },
-        {
-          "spellid": "67416",
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": "48118",
-          "icon": "ability_mount_raptor",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": "93739",
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": "66076",
-          "icon": "inv_pet_maggot",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
         },		
-        {
-          "spellid": "67418",
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": "48122",
-          "icon": "ability_mount_raptor",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": "67419",
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": "48124",
-          "icon": "ability_hunter_pet_raptor",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": "67420",
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": "48126",
-          "icon": "ability_hunter_pet_raptor",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
         {
           "spellid": "45890",
           "allianceId": null,
           "hordeId": null,
           "itemId": "34955",
           "icon": "inv_pet_scorchedstone",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-        {
-          "spellid": "15067",
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": "11474",
-          "icon": "inv_pet_sprite_darter_hatchling",
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
@@ -3437,7 +3447,7 @@ var Pets =
           "hordeId": null,
           "itemId": "48527",
           "icon": "inv_misc_qirajicrystal_05",
-          "obtainable": false,
+          "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
         },
@@ -3461,7 +3471,7 @@ var Pets =
           "hordeId": null,
           "itemId": "49664",
           "icon": "inv_jewelcrafting_gem_06",
-          "obtainable": false,
+          "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
         }		
