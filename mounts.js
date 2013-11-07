@@ -4700,7 +4700,7 @@ var Mounts =
             "hordeId": null,
             "itemId": "47840",
             "icon": "ability_mount_redfrostwyrm_01",
-            "obtainable": true,
+            "obtainable": false,
             "allowableRaces": [],
             "allowableClasses": null
           },
