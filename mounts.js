@@ -5291,7 +5291,17 @@ var Mounts =
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
-          }
+          },
+          {
+            "spellid": "142878",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "97989",
+            "icon": "inv_faeriedragonmount",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          }          
         ]
       },	
       {
