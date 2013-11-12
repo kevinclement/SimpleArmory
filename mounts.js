@@ -5358,7 +5358,7 @@ var Mounts =
             "hordeId": null,
             "itemId": "37719",
             "icon": "ability_mount_charger",
-            "obtainable": false,
+            "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
           },
@@ -5368,7 +5368,7 @@ var Mounts =
             "hordeId": null,
             "itemId": "54860",
             "icon": "ability_mount_rocketmount2",
-            "obtainable": false,
+            "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
           },
@@ -5378,7 +5378,7 @@ var Mounts =
             "hordeId": null,
             "itemId": "83086",
             "icon": "inv_misc_reforgedarchstone_01",
-            "obtainable": false,
+            "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
           }    ,      
