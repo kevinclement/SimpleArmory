@@ -4700,7 +4700,7 @@ var Mounts =
             "hordeId": null,
             "itemId": "47840",
             "icon": "ability_mount_redfrostwyrm_01",
-            "obtainable": true,
+            "obtainable": false,
             "allowableRaces": [],
             "allowableClasses": null
           },
@@ -5291,7 +5291,17 @@ var Mounts =
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
-          }
+          },
+          {
+            "spellid": "142878",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "97989",
+            "icon": "inv_faeriedragonmount",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          }          
         ]
       },	
       {
@@ -5348,7 +5358,7 @@ var Mounts =
             "hordeId": null,
             "itemId": "37719",
             "icon": "ability_mount_charger",
-            "obtainable": false,
+            "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
           },
@@ -5358,7 +5368,7 @@ var Mounts =
             "hordeId": null,
             "itemId": "54860",
             "icon": "ability_mount_rocketmount2",
-            "obtainable": false,
+            "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
           },
@@ -5368,7 +5378,7 @@ var Mounts =
             "hordeId": null,
             "itemId": "83086",
             "icon": "inv_misc_reforgedarchstone_01",
-            "obtainable": false,
+            "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
           }    ,      
