@@ -332,7 +332,7 @@ function showtab(p_section,p_name) {
 
         // Set title on top of page
         h += '<h3 style="margin: 0"><span id="mountCount"></span> ' + sectionTitle + '</h3>';
-        h += '<input type="checkbox" id="showlevels" onclick="showLevels(this.checked)"></input><label for="showlevels">Show levels and breeds</label>';
+        h += '<input type="checkbox" id="showlevels" onclick="showLevels(this.checked)"></input><label for="showlevels">Show levels and breeds</label><br/><br/>';
 
         // Loop through each category
         for (var catx = 0; catx < catVar.length; catx++) {
