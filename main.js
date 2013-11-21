@@ -351,7 +351,7 @@ function showtab(p_section,p_name) {
                 var showSubCat = false;
                 zh = '<div style="float: left; margin: 10px">';
 
-                if (subCat.name != "") {
+                if (subCat.name != "" && subCat.name != "&nbsp;") {
                     zh += '<b>'+subCat.name+'</b><br>';
                 }
 
