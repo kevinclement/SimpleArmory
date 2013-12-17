@@ -3265,7 +3265,7 @@ var Pets =
           "hordeId": null,
           "itemId": "20371",
           "icon": "inv_pet_babymurlocs_blue",
-          "obtainable": false,
+          "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
         },
@@ -3301,7 +3301,7 @@ var Pets =
           "hordeId": null,
           "itemId": "71726",
           "icon": "inv_pet_diablobabymurloc",
-          "obtainable": false,
+          "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
         },
@@ -3328,7 +3328,7 @@ var Pets =
           "hordeId": null,
           "itemId": "13584",
           "icon": "inv_diablostone",
-          "obtainable": false,
+          "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
         },	  
@@ -3338,7 +3338,7 @@ var Pets =
           "hordeId": null,
           "itemId": "13583",
           "icon": "inv_belt_05",
-          "obtainable": false,
+          "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
         },
@@ -3348,17 +3348,30 @@ var Pets =
           "hordeId": null,
           "itemId": "13582",
           "icon": "spell_shadow_summonfelhunter",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
+
+        // Europe: Lurky (Patch 2.1.0)
+		{
+          "spellid": "24988",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": "30360",
+          "icon": "inv_pet_babymurlocs_white",
           "obtainable": false,
           "allowableRaces": [],
           "allowableClasses": null
         },
+		
         {
           "spellid": "32298",
           "allianceId": null,
           "hordeId": null,
           "itemId": "25535",
           "icon": "inv_netherwhelp",
-          "obtainable": false,
+          "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
         },
@@ -3368,7 +3381,7 @@ var Pets =
           "hordeId": null,
           "itemId": "39286",
           "icon": "inv_pet_frostwyrm",
-          "obtainable": false,
+          "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
         },
@@ -3378,7 +3391,7 @@ var Pets =
           "hordeId": null,
           "itemId": "62540",
           "icon": "inv_dragonwhelpcataclysm",
-          "obtainable": false,
+          "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
         },
@@ -3388,7 +3401,7 @@ var Pets =
           "hordeId": null,
           "itemId": "85871",
           "icon": "inv_quilinpet",
-          "obtainable": false,
+          "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
         },		
@@ -3398,7 +3411,7 @@ var Pets =
           "hordeId": null,
           "itemId": "56806",
           "icon": "t_roboticon",
-          "obtainable": false,
+          "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
         },
@@ -3408,7 +3421,7 @@ var Pets =
           "hordeId": null,
           "itemId": "90177",
           "icon": "ability_pet_baneling",
-          "obtainable": false,
+          "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
         },
@@ -3418,15 +3431,29 @@ var Pets =
           "hordeId": null,
           "itemId": "76062",
           "icon": "inv_spear_05",
-          "obtainable": false,
+          "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-        }
+        },
+        {
+          "spellid": "149810",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": "106256",
+          "icon": "ability_racial_packhobgoblin",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        }		
         ]
       },	  
       {
         "name": "Recruit-A-Friend",
         "items": [
+		// Golden Pig
+		// Jade Tiger
+		// Silver Pig
+		// Zipao Tiger
 		
 		// Golden Pig
         {
@@ -3440,17 +3467,17 @@ var Pets =
           "allowableClasses": null
         },		
 		
-		// Onyx Panther
+		// Jade Tiger
         {
-          "spellid": "67527",
+          "spellid": "66520",
           "allianceId": null,
           "hordeId": null,
-          "itemId": "48527",
-          "icon": "inv_misc_qirajicrystal_05",
+          "itemId": "null",
+          "icon": "inv_misc_gem_stone_01",
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-        },
+        },	
 		
 		// Silver Pig
         {
@@ -3469,7 +3496,7 @@ var Pets =
           "spellid": "69539",
           "allianceId": null,
           "hordeId": null,
-          "itemId": "49664",
+          "itemId": "null",
           "icon": "inv_jewelcrafting_gem_06",
           "obtainable": true,
           "allowableRaces": [],
@@ -3478,7 +3505,7 @@ var Pets =
         ]
       },
       {
-        "name": "Asia & Europe Exclusives",
+        "name": "Non-US Region",
         "items": [
 		
 		// China: Tiny Green Dragon (Patch 1.12.1)
@@ -3516,19 +3543,7 @@ var Pets =
           "allowableRaces": [],
           "allowableClasses": null
         },		
-		
-        // Europe: Lurky (Patch 2.1.0)
-		{
-          "spellid": "24988",
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": "30360",
-          "icon": "inv_pet_babymurlocs_white",
-          "obtainable": false,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
-		
+	
 		// China: Essence of Competition (Patch 3.3.0)
         {
           "spellid": "48408",
@@ -3552,6 +3567,18 @@ var Pets =
           "allowableRaces": [],
           "allowableClasses": null
         },	
+		
+		//  Beijing 2008 Summer Olympics: Spirit of Competition (Patch 3.3.0)
+        {
+          "spellid": "48406",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": "37297",
+          "icon": "inv_jewelry_amulet_03",
+          "obtainable": false,
+          "allowableRaces": [],
+          "allowableClasses": null
+        }		
 
 		// Taiwan: iCoke (Patch 4.0.1)
         {
@@ -3565,6 +3592,18 @@ var Pets =
           "allowableClasses": null
         },
 		
+		// Korea: Onyx Panther (Patch 4.0.3)
+        {
+          "spellid": "67527",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": "48527",
+          "icon": "inv_misc_qirajicrystal_05",
+          "obtainable": false,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },		
+		
 		// China - Battle.net World Championship 2012: Spectral Cub (Patch 5.0.4)
         {
           "spellid": "132759",
@@ -3575,7 +3614,8 @@ var Pets =
           "obtainable": false,
           "allowableRaces": [],
           "allowableClasses": null
-        }			
+        }
+		
         ]
       },
       {
@@ -3737,18 +3777,6 @@ var Pets =
         "name": "Other",
         "items": [
 		
-		// 2008 Worldwide Invitational: Mini Tyrael(Patch 2.4.2)
-        {
-          "spellid": "53082",
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": "39656",
-          "icon": "inv_sword_07",
-          "obtainable": false,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },	
-		
 		// WoW 4th Anniversary: Baby Blizzard Bear (Patch 3.0.3)
         {
           "spellid": "61855",
@@ -3783,18 +3811,6 @@ var Pets =
           "obtainable": false,
           "allowableRaces": [],
           "allowableClasses": null
-        },	
-		
-		// Authenticator
-        {
-          "spellid": "69452",
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": "49646",
-          "icon": "ability_hunter_pet_corehound",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
         },		
 
 		// 2007 Blizzard Worldwide Invitational: Lucky
@@ -3809,17 +3825,29 @@ var Pets =
           "allowableClasses": null
         },
 
-		//  Beijing 2008 Summer Olympics: Spirit of Competition
+		// 2008 Worldwide Invitational: Mini Tyrael(Patch 2.4.2)
         {
-          "spellid": "48406",
+          "spellid": "53082",
           "allianceId": null,
           "hordeId": null,
-          "itemId": "37297",
-          "icon": "inv_jewelry_amulet_03",
-          "obtainable": false,
+          "itemId": "39656",
+          "icon": "inv_sword_07",
+          "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-        },
+        },	
+
+		// Authenticator
+        {
+          "spellid": "69452",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": "49646",
+          "icon": "ability_hunter_pet_corehound",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },	
 		
 		// PVP
         {
@@ -3831,19 +3859,19 @@ var Pets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-        },
+        }
 		
 		// PVP
-        {
-          "spellid": "143637",
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": "100870",
-          "icon": "inv_spear_05",
-          "obtainable": true,
-          "allowableRaces": [],
-          "allowableClasses": null
-        }		
+        //{
+        //  "spellid": "143637",
+        //  "allianceId": null,
+        //  "hordeId": null,
+        //  "itemId": "100870",
+        //  "icon": "inv_spear_05",
+        //  "obtainable": true,
+        //  "allowableRaces": [],
+        //  "allowableClasses": null
+        //}		
         ]
       }	  
     ]
