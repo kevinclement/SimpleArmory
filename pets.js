@@ -3472,7 +3472,7 @@ var Pets =
           "spellid": "66520",
           "allianceId": null,
           "hordeId": null,
-          "itemId": "null",
+          "itemId": null,
           "icon": "inv_misc_gem_stone_01",
           "obtainable": true,
           "allowableRaces": [],
@@ -3496,7 +3496,7 @@ var Pets =
           "spellid": "69539",
           "allianceId": null,
           "hordeId": null,
-          "itemId": "null",
+          "itemId": null,
           "icon": "inv_jewelcrafting_gem_06",
           "obtainable": true,
           "allowableRaces": [],
@@ -3578,7 +3578,7 @@ var Pets =
           "obtainable": false,
           "allowableRaces": [],
           "allowableClasses": null
-        }		
+        },
 
 		// Taiwan: iCoke (Patch 4.0.1)
         {
