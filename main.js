@@ -567,7 +567,6 @@ function showtab(p_section,p_name) {
 			for (var monthx = 1; monthx <= 12; monthx++) {
 				var monthid = ''+((monthx < 10)?'0':'')+monthx;
                 var displayIt = (curcalenpage == ''+yearx+monthid);
-				if (displayIt && (typeof calendar[''+yearx+monthid] == 'undefined')) continue;
 
 				h += '<table class="calendar" id="calendar'+yearx+monthid+'" style="display: ' + (displayIt ? "block" : "none")+ '">';
 				for (dayx = 1; dayx <= 31; dayx++) {
@@ -606,7 +605,12 @@ function showtab(p_section,p_name) {
 
 var curcalenpage;
 function showcalen(newpage) {
-	document.getElementById('calendar'+curcalenpage).style.display='none';
+    var curCal = document.getElementById('calendar'+curcalenpage);
+    if (curCal != null)
+    {
+        curCal.style.display='none';
+    }
+
 	document.getElementById('calendar'+newpage).style.display='block';
 	curcalenpage=newpage;
 }
