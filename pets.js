@@ -3567,18 +3567,6 @@ var Pets =
           "allowableRaces": [],
           "allowableClasses": null
         },	
-		
-		//  Beijing 2008 Summer Olympics: Spirit of Competition (Patch 3.3.0)
-        {
-          "spellid": "48406",
-          "allianceId": null,
-          "hordeId": null,
-          "itemId": "37297",
-          "icon": "inv_jewelry_amulet_03",
-          "obtainable": false,
-          "allowableRaces": [],
-          "allowableClasses": null
-        },
 
 		// Taiwan: iCoke (Patch 4.0.1)
         {
@@ -3776,6 +3764,18 @@ var Pets =
       {
         "name": "Other",
         "items": [
+
+		//  Beijing 2008 Summer Olympics: Spirit of Competition (Patch 3.3.0)
+        {
+          "spellid": "48406",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": "37297",
+          "icon": "inv_jewelry_amulet_03",
+          "obtainable": false,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },
 		
 		// WoW 4th Anniversary: Baby Blizzard Bear (Patch 3.0.3)
         {
