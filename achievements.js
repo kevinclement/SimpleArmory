@@ -6024,7 +6024,7 @@ var Achievements =
                   "icon": "INV_Jewelry_Amulet_07",
                   "side": "",
                   "obtainable": true
-                },
+                }
               ]
             }
           ]
@@ -6148,7 +6148,7 @@ var Achievements =
                   "icon": "INV_Jewelry_Necklace_21",
                   "side": "",
                   "obtainable": true
-                },
+                }
               ]
             }
           ]
@@ -6348,7 +6348,7 @@ var Achievements =
                   "icon": "Achievement_BG_winSOA",
                   "side": "",
                   "obtainable": true
-                },
+                }
               ]
             }
           ]
@@ -6784,7 +6784,7 @@ var Achievements =
                   "icon": "achievement_bg_kill_on_mount",
                   "side": "",
                   "obtainable": true
-                },				
+                },
                 {
                   "id": "1727",
                   "icon": "spell_arcane_teleporttheramore",
