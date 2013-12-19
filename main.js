@@ -562,7 +562,7 @@ function showtab(p_section,p_name) {
             h += '<option ' +sel+ ' value="'+calenpages[x]+'">'+monthnames[parseInt(calenpages[x].substr(4),10)]+' '+calenpages[x].substr(0,4)+'</option>';
         }
 		h += '</select> <input type="button" value=">" onclick="var c=document.getElementById(\'calensel\'); if (c.selectedIndex < (c.options.length-1)) {c.selectedIndex++; showcalen(c.options[c.selectedIndex].value);}"></div>';
-		h += '<div align="center" style="margin-top: .5em"><span id="calCount"></span> Achievements Earned <span style="display:none">(<span id="calPoints"></span> points)</span></div>';
+		h += '<div align="center" style="margin-top: .5em"><span id="calCount"></span> Achievements Earned (<span id="calPoints"></span> points)</div>';
 		h += '<div align="center" style="margin-top: 1em">';
         var curMonth = today.getMonth() + 1;
         curcalenpage = '' + today.getFullYear() + (curMonth < 10 ? '0' + curMonth : curMonth);
@@ -622,6 +622,7 @@ function generateCalRows(year, month, calendarData)
                 rows += '<a href="http://www.wowhead.com/achievement='+ach.id+'" rel="who=' + latestprofile.name + '&amp;when='+ach.completed+'"><img src="http://wow.zamimg.com/images/wow/icons/medium/'+ach.icon.toLowerCase()+'.jpg" width="36" height="36" border="0"></a>';
 
                 total++;
+                points += ach.points;
             }
             rows += '</div>';
         }
