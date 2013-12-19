@@ -16021,9 +16021,56 @@ var Achievements =
           "name": "Feats of Strength",
           "zones": [
             {
-              "name": "Realm First!",
+              "name": "Anniversary",
               "achs": [
                 {
+                  "id": "2398",
+                  "icon": "INV_Misc_CelebrationCake_01",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
+                  "id": "4400",
+                  "icon": "INV_Misc_CelebrationCake_01",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
+                  "id": "5512",
+                  "icon": "INV_Misc_CelebrationCake_01",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
+                  "id": "5863",
+                  "icon": "INV_Misc_CelebrationCake_01",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
+                  "id": "6131",
+                  "icon": "INV_Misc_CelebrationCake_01",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
+                  "id": "7853",
+                  "icon": "inv_misc_celebrationcake_01",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 0
+                }		  
+              ]
+            },
+            {
+              "name": "Realm First!",
+              "achs": [
+                {			  
                   "id": "1416",
                   "icon": "INV_Misc_Food_15",
                   "side": "",
@@ -18124,7 +18171,14 @@ var Achievements =
                   "side": "",
                   "obtainable": true,
                   "points": 0
-                }
+                },
+                {
+                  "id": "8793",
+                  "icon": "inv_mace_1h_pandung_c_01",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 0
+                }				
               ]
             },
             {
@@ -18271,48 +18325,6 @@ var Achievements =
                 {
                   "id": "7852",
                   "icon": "inv_holiday_christmas_present_01",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 0
-                },
-                {
-                  "id": "2398",
-                  "icon": "INV_Misc_CelebrationCake_01",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 0
-                },
-                {
-                  "id": "4400",
-                  "icon": "INV_Misc_CelebrationCake_01",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 0
-                },
-                {
-                  "id": "5512",
-                  "icon": "INV_Misc_CelebrationCake_01",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 0
-                },
-                {
-                  "id": "5863",
-                  "icon": "INV_Misc_CelebrationCake_01",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 0
-                },
-                {
-                  "id": "6131",
-                  "icon": "INV_Misc_CelebrationCake_01",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 0
-                },
-                {
-                  "id": "7853",
-                  "icon": "inv_misc_celebrationcake_01",
                   "side": "",
                   "obtainable": true,
                   "points": 0
