@@ -538,6 +538,8 @@ function showtab(p_section,p_name) {
 		var today = new Date();
 		var calenpages = new Array();
 		var isfirstmonth = true;
+        var curTotal = 0;
+        var curPoints = 0;
 		for (var yearx = 2008; yearx <= today.getFullYear(); yearx++) {
 			for (var monthx = 1; monthx <= 12; monthx++) {
 				var monthid = ''+((monthx < 10)?'0':'')+monthx;
@@ -560,6 +562,7 @@ function showtab(p_section,p_name) {
             h += '<option ' +sel+ ' value="'+calenpages[x]+'">'+monthnames[parseInt(calenpages[x].substr(4),10)]+' '+calenpages[x].substr(0,4)+'</option>';
         }
 		h += '</select> <input type="button" value=">" onclick="var c=document.getElementById(\'calensel\'); if (c.selectedIndex < (c.options.length-1)) {c.selectedIndex++; showcalen(c.options[c.selectedIndex].value);}"></div>';
+		h += '<div align="center" style="margin-top: .5em"><span id="calCount"></span> Achievements Earned <span style="display:none">(<span id="calPoints"></span> points)</span></div>';
 		h += '<div align="center" style="margin-top: 1em">';
         var curMonth = today.getMonth() + 1;
         curcalenpage = '' + today.getFullYear() + (curMonth < 10 ? '0' + curMonth : curMonth);
@@ -567,40 +570,69 @@ function showtab(p_section,p_name) {
 			for (var monthx = 1; monthx <= 12; monthx++) {
 				var monthid = ''+((monthx < 10)?'0':'')+monthx;
                 var displayIt = (curcalenpage == ''+yearx+monthid);
+        
+                var rowData = generateCalRows(yearx, monthx, calendar[''+yearx+monthid]);
 
-				h += '<table class="calendar" id="calendar'+yearx+monthid+'" style="display: ' + (displayIt ? "block" : "none")+ '">';
-				for (dayx = 1; dayx <= 31; dayx++) {
-					d = new Date(yearx, monthx-1, dayx);
-					if (d.getDate() != dayx) break;
-					if ((dayx == 1) || (d.getDay() == 0)) h += '<tr>';
-					if ((dayx == 1) && (d.getDay() > 0)) h += '<td colspan="'+(d.getDay())+'" class="dayspacer"></td>';
-					h += '<td>' + dayx;
-				
-					if ((typeof calendar[''+yearx+monthid] != 'undefined') && (typeof calendar[''+yearx+monthid][dayx] != 'undefined')) {
-						day = calendar[''+yearx+monthid][dayx];
-						day.sort(achdatesort);
-						h += '<div>'
-						for (achx in day) {
-							ach = day[achx];
-                            h += '<a href="http://www.wowhead.com/achievement='+ach.id+'" rel="who=' + latestprofile.name + '&amp;when='+ach.completed+'"><img src="http://wow.zamimg.com/images/wow/icons/medium/'+ach.icon.toLowerCase()+'.jpg" width="36" height="36" border="0"></a>';
-						}
-						h += '</div>';
-					}
-					h += '</td>';
-					if (d.getDay() == 6) h += '</tr>';
-				}
-				if (d.getDay() < 6) h += '<td colspan="'+(6-d.getDay())+'" class="dayspacer"></td>';
-				h += '</tr></table>';
-				if ((yearx == today.getFullYear()) && (monthx == (today.getMonth()+1))) break;
+				h += '<table class="calendar" id="calendar'+yearx+monthid+'" style="display: ' + (displayIt ? "block" : "none")+ '" total="' + rowData.total + '" points="' + rowData.points + '"">';
+                h += rowData.rows;
+				h += '</table>';
+
+                if (displayIt)
+                {
+                    curTotal = rowData.total;
+                    curPoints = rowData.points;
+                }
+
+                if ((yearx == today.getFullYear()) && (monthx == (today.getMonth()+1))) break;
 			}
 		}
 		h += '</div>';
+
+        runAfterLoad = function () 
+        { 
+            document.getElementById("calCount").innerText = curTotal; 
+            document.getElementById("calPoints").innerText = curPoints; 
+        };
 	}
 	
 	document.getElementById('result').innerHTML = '<div class="clear" id="resulttop"></div>'+h;
 	document.getElementById('resulttop').scrollIntoView();
 
     if (runAfterLoad) { runAfterLoad(); }
+}
+
+function generateCalRows(year, month, calendarData)
+{
+    var rows = "";
+    var total = 0;
+    var points = 0;
+    for (dayx = 1; dayx <= 31; dayx++) {
+        d = new Date(year, month-1, dayx);
+        if (d.getDate() != dayx) break;
+        if ((dayx == 1) || (d.getDay() == 0)) rows += '<tr>';
+        if ((dayx == 1) && (d.getDay() > 0)) rows += '<td colspan="'+(d.getDay())+'" class="dayspacer"></td>';
+        rows += '<td>' + dayx;
+
+        if ((typeof calendarData != 'undefined') && (typeof calendarData[dayx] != 'undefined')) {
+            day = calendarData[dayx];
+            day.sort(achdatesort);
+            rows += '<div>'
+            for (achx in day) {
+                ach = day[achx];
+                rows += '<a href="http://www.wowhead.com/achievement='+ach.id+'" rel="who=' + latestprofile.name + '&amp;when='+ach.completed+'"><img src="http://wow.zamimg.com/images/wow/icons/medium/'+ach.icon.toLowerCase()+'.jpg" width="36" height="36" border="0"></a>';
+
+                total++;
+            }
+            rows += '</div>';
+        }
+        rows += '</td>';
+        if (d.getDay() == 6) rows += '</tr>';
+    }
+    if (d.getDay() < 6) rows += '<td colspan="'+(6-d.getDay())+'" class="dayspacer"></td>';
+
+    rows += "</tr>";
+
+    return { "rows": rows, "total": total, "points": points };
 }
 
 var curcalenpage;
@@ -611,7 +643,14 @@ function showcalen(newpage) {
         curCal.style.display='none';
     }
 
-	document.getElementById('calendar'+newpage).style.display='block';
+    // Unhide the html
+    var calElement = document.getElementById('calendar'+newpage);
+	calElement.style.display='block';
+
+    // Update the totals
+    document.getElementById("calCount").innerText = calElement.getAttribute("total"); 
+    document.getElementById("calPoints").innerText = calElement.getAttribute("points"); 
+
 	curcalenpage=newpage;
 }
 
