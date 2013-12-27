@@ -1959,6 +1959,16 @@ var Pets =
         "name": "Pandaria: Raids",
         "items": [
         {
+          "spellid": "138825",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": "94574",
+          "icon": "inv_babytriceratops_blue",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },	        	
+        {
           "spellid": "139148",
           "allianceId": null,
           "hordeId": null,
