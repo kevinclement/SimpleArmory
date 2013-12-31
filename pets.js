@@ -3287,7 +3287,7 @@ var Pets =
           "hordeId": null,
           "itemId": "46802",
           "icon": "inv_pet_grunty",
-          "obtainable": false,
+          "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
         },
@@ -3299,7 +3299,7 @@ var Pets =
           "hordeId": null,
           "itemId": "67418",
           "icon": "inv_dragonwhelpcataclysm",
-          "obtainable": false,
+          "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
         },
