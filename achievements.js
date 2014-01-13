@@ -5974,7 +5974,7 @@ var Achievements =
                   "id": "8093",
                   "icon": "achievement_bg_winwsg",
                   "side": "H",
-                  "obtainable": true,
+                  "obtainable": false,
                   "points": 0
                 },
                 {
