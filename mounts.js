@@ -5301,7 +5301,17 @@ var Mounts =
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
-          }          
+          },
+          {
+            "spellid": "153489",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "107951",
+            "icon": "ability_mount_ironchimera",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          }
         ]
       },	
       {
