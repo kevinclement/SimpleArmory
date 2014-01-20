@@ -309,7 +309,7 @@ function showtab(p_section,p_name) {
             h += '</div><div class="clear"></div>';
         }
 
-        runAfterLoad = function () { document.getElementById("mountCount").innerText = hasCount; };
+        runAfterLoad = function () { document.getElementById("mountCount").innerHTML = hasCount; };
     }
 
     if (p_section == 'Battlepets')
@@ -499,7 +499,7 @@ function showtab(p_section,p_name) {
             h += '</div><div class="clear"></div>';
         }
 
-        runAfterLoad = function () { document.getElementById("mountCount").innerText = hasCount; };
+        runAfterLoad = function () { document.getElementById("mountCount").innerHTML = hasCount; };
     }
 
 
@@ -590,8 +590,8 @@ function showtab(p_section,p_name) {
 
         runAfterLoad = function () 
         { 
-            document.getElementById("calCount").innerText = curTotal; 
-            document.getElementById("calPoints").innerText = curPoints; 
+            document.getElementById("calCount").innerHTML = curTotal; 
+            document.getElementById("calPoints").innerHTML = curPoints; 
         };
 	}
 	
@@ -649,8 +649,8 @@ function showcalen(newpage) {
 	calElement.style.display='block';
 
     // Update the totals
-    document.getElementById("calCount").innerText = calElement.getAttribute("total"); 
-    document.getElementById("calPoints").innerText = calElement.getAttribute("points"); 
+    document.getElementById("calCount").innerHTML = calElement.getAttribute("total"); 
+    document.getElementById("calPoints").innerHTML = calElement.getAttribute("points"); 
 
 	curcalenpage=newpage;
 }
