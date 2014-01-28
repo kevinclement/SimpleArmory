@@ -1468,72 +1468,6 @@ var Achievements =
               ]
             },
             {
-              "name": "Gate of the Setting Sun",
-              "achs": [
-                {
-                  "id": "6894",
-                  "icon": "achievement_greatwall",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 10
-                },
-                {
-                  "id": "6905",
-                  "icon": "achievement_greatwall",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 10
-                },
-                {
-                  "id": "6906",
-                  "icon": "achievement_greatwall",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 10
-                },
-                {
-                  "id": "6907",
-                  "icon": "achievement_greatwall",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 10
-                }
-              ]
-            },
-            {
-              "name": "Mogu'shan Palace",
-              "achs": [
-                {
-                  "id": "6892",
-                  "icon": "achievement_greatwall",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 10
-                },
-                {
-                  "id": "6899",
-                  "icon": "achievement_greatwall",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 10
-                },
-                {
-                  "id": "6900",
-                  "icon": "achievement_greatwall",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 10
-                },
-                {
-                  "id": "6901",
-                  "icon": "achievement_greatwall",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 10
-                }
-              ]
-            },
-            {
               "name": "Scarlet Halls",
               "achs": [
                 {
@@ -1567,32 +1501,32 @@ var Achievements =
               ]
             },
             {
-              "name": "Scarlet Monastery",
+              "name": "Gate of the Setting Sun",
               "achs": [
                 {
-                  "id": "6896",
-                  "icon": "spell_holy_resurrection",
+                  "id": "6894",
+                  "icon": "achievement_greatwall",
                   "side": "",
                   "obtainable": true,
                   "points": 10
                 },
                 {
-                  "id": "6911",
-                  "icon": "spell_holy_resurrection",
+                  "id": "6905",
+                  "icon": "achievement_greatwall",
                   "side": "",
                   "obtainable": true,
                   "points": 10
                 },
                 {
-                  "id": "6912",
-                  "icon": "spell_holy_resurrection",
+                  "id": "6906",
+                  "icon": "achievement_greatwall",
                   "side": "",
                   "obtainable": true,
                   "points": 10
                 },
                 {
-                  "id": "6913",
-                  "icon": "spell_holy_resurrection",
+                  "id": "6907",
+                  "icon": "achievement_greatwall",
                   "side": "",
                   "obtainable": true,
                   "points": 10
@@ -1632,6 +1566,39 @@ var Achievements =
                 }
               ]
             },
+{
+              "name": "Temple of the Jade Serpent",
+              "achs": [
+                {
+                  "id": "6884",
+                  "icon": "achievement_jadeserpent",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "6885",
+                  "icon": "achievement_jadeserpent",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "6886",
+                  "icon": "achievement_jadeserpent",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "6887",
+                  "icon": "achievement_jadeserpent",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                }
+              ]
+            },
             {
               "name": "Shado-Pan Monastery",
               "achs": [
@@ -1659,6 +1626,39 @@ var Achievements =
                 {
                   "id": "6904",
                   "icon": "achievement_shadowpan_hideout",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                }
+              ]
+            },
+            {
+              "name": "Mogu'shan Palace",
+              "achs": [
+                {
+                  "id": "6892",
+                  "icon": "achievement_greatwall",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "6899",
+                  "icon": "achievement_greatwall",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "6900",
+                  "icon": "achievement_greatwall",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "6901",
+                  "icon": "achievement_greatwall",
                   "side": "",
                   "obtainable": true,
                   "points": 10
@@ -1731,33 +1731,33 @@ var Achievements =
                 }
               ]
             },
-            {
-              "name": "Temple of the Jade Serpent",
+{
+              "name": "Scarlet Monastery",
               "achs": [
                 {
-                  "id": "6884",
-                  "icon": "achievement_jadeserpent",
+                  "id": "6896",
+                  "icon": "spell_holy_resurrection",
                   "side": "",
                   "obtainable": true,
                   "points": 10
                 },
                 {
-                  "id": "6885",
-                  "icon": "achievement_jadeserpent",
+                  "id": "6911",
+                  "icon": "spell_holy_resurrection",
                   "side": "",
                   "obtainable": true,
                   "points": 10
                 },
                 {
-                  "id": "6886",
-                  "icon": "achievement_jadeserpent",
+                  "id": "6912",
+                  "icon": "spell_holy_resurrection",
                   "side": "",
                   "obtainable": true,
                   "points": 10
                 },
                 {
-                  "id": "6887",
-                  "icon": "achievement_jadeserpent",
+                  "id": "6913",
+                  "icon": "spell_holy_resurrection",
                   "side": "",
                   "obtainable": true,
                   "points": 10
