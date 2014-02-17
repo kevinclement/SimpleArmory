@@ -11333,6 +11333,13 @@ var Achievements =
                   "points": 25
                 },
                 {
+                  "id": "8325",
+                  "icon": "inv_legendary_theblackprince",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 25
+                },
+                {
                   "id": "8030",
                   "icon": "inv_legendary_theblackprince",
                   "side": "A",
@@ -11345,14 +11352,7 @@ var Achievements =
                   "side": "H",
                   "obtainable": true,
                   "points": 10
-                },
-                {
-                  "id": "8325",
-                  "icon": "inv_legendary_theblackprince",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 25
-                }
+                }			
               ]
             },
             {
@@ -18121,7 +18121,7 @@ var Achievements =
               ]
             },
             {
-              "name": "BlizzCon",
+              "name": "Blizzcon",
               "achs": [
                 {
                   "id": "411",
@@ -18679,42 +18679,42 @@ var Achievements =
                 {
                   "id": "7988",
                   "icon": "achievement_character_orc_male",
-                  "side": "A",
+                  "side": "",
                   "obtainable": true,
                   "points": 10
                 },
                 {
                   "id": "7989",
                   "icon": "creatureportrait_bubble",
-                  "side": "A",
+                  "side": "",
                   "obtainable": true,
                   "points": 10
                 },
                 {
                   "id": "7990",
                   "icon": "ability_vehicle_siegeenginecannon",
-                  "side": "A",
+                  "side": "",
                   "obtainable": true,
                   "points": 10
                 },
                 {
                   "id": "7991",
                   "icon": "inv_misc_enggizmos_rocketchicken",
-                  "side": "A",
+                  "side": "",
                   "obtainable": true,
                   "points": 10
                 },
                 {
                   "id": "7992",
                   "icon": "achievement_character_nightelf_female",
-                  "side": "A",
+                  "side": "",
                   "obtainable": true,
                   "points": 10
                 },
                 {
                   "id": "7993",
                   "icon": "achievement_guild_classypanda",
-                  "side": "A",
+                  "side": "",
                   "obtainable": true,
                   "points": 10
                 }
@@ -18964,7 +18964,7 @@ var Achievements =
               ]
             },
             {
-              "name": "Proving Grounds",
+              "name": "Proving Grounds: Damage",
               "achs": [
                 {
                   "id": "8486",
@@ -19007,7 +19007,13 @@ var Achievements =
                   "side": "",
                   "obtainable": true,
                   "points": 10
-                },
+                }
+              ]
+            },
+            {
+              "name": "Proving Grounds: Healer",
+              "achs": [
+                {				
                 {
                   "id": "8488",
                   "icon": "achievement_challengemode_bronze",
@@ -19049,7 +19055,13 @@ var Achievements =
                   "side": "",
                   "obtainable": true,
                   "points": 10
-                },
+                }
+              ]
+            },
+            {
+              "name": "Proving Grounds: Tank",
+              "achs": [
+                {				
                 {
                   "id": "8487",
                   "icon": "achievement_challengemode_bronze",
@@ -19091,7 +19103,13 @@ var Achievements =
                   "side": "",
                   "obtainable": true,
                   "points": 10
-                },
+                }
+              ]
+            },
+            {
+              "name": "Proving Grounds: Other",
+              "achs": [
+                {				
                 {
                   "id": "8697",
                   "icon": "ability_warrior_throwdown",
@@ -19584,7 +19602,7 @@ var Achievements =
               ]
             },
             {
-              "name": "PvP",
+              "name": "PVP",
               "achs": [
                 {
                   "id": "6595",
@@ -19629,20 +19647,6 @@ var Achievements =
                   "points": 10
                 },
                 {
-                  "id": "8300",
-                  "icon": "achievement_featsofstrength_gladiator_03",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 10
-                },
-                {
-                  "id": "8301",
-                  "icon": "achievement_featsofstrength_gladiator_04",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 10
-                },
-                {
                   "id": "8297",
                   "icon": "achievement_featsofstrength_gladiator_01",
                   "side": "",
@@ -19655,7 +19659,21 @@ var Achievements =
                   "side": "",
                   "obtainable": true,
                   "points": 10
-                }
+                },
+                {
+                  "id": "8300",
+                  "icon": "achievement_featsofstrength_gladiator_03",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8301",
+                  "icon": "achievement_featsofstrength_gladiator_04",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                }			
               ]
             },
             {
