@@ -19013,7 +19013,6 @@ var Achievements =
             {
               "name": "Proving Grounds: Healer",
               "achs": [
-                {				
                 {
                   "id": "8488",
                   "icon": "achievement_challengemode_bronze",
@@ -19061,7 +19060,6 @@ var Achievements =
             {
               "name": "Proving Grounds: Tank",
               "achs": [
-                {				
                 {
                   "id": "8487",
                   "icon": "achievement_challengemode_bronze",
@@ -19109,7 +19107,6 @@ var Achievements =
             {
               "name": "Proving Grounds: Other",
               "achs": [
-                {				
                 {
                   "id": "8697",
                   "icon": "ability_warrior_throwdown",
