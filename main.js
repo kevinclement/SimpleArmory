@@ -345,14 +345,29 @@ function showtab(p_section,p_name) {
             // Start the category section div
             h += '<div style="margin-left: 20px">';
 
+            // check if any of the subcats have a title, if they do then we need to space them down a bit
+            var spaceIt = false;
+            for (var i = 0; i < cat.subcats.length; i++) {
+                if (cat.subcats[i].name != "")
+                {
+                    spaceIt = true;
+                    break;
+                }
+            }
+
             for (var subcatx = 0; subcatx < cat.subcats.length; subcatx++) {
                 var subCat = cat.subcats[subcatx];
 
                 var showSubCat = false;
                 zh = '<div style="float: left; margin: 10px">';
 
-                if (subCat.name != "" && subCat.name != "&nbsp;") {
-                    zh += '<b>'+subCat.name+'</b><br>';
+                if (subCat.name != "") {
+                    zh += '<b>'+subCat.name+'</b>';
+                }
+
+                if (spaceIt)
+                {
+                    zh += '<br>';
                 }
 
                 for (var itemx = 0; itemx < subCat.items.length; itemx++) {

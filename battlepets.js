@@ -4,7 +4,7 @@ var BattlePets =
   "name": "Multiple Continents",
   "subcats": [
     {
-      "name": "&nbsp;",
+      "name": "",
       "items": [
         {
           "spellid": null,
@@ -826,7 +826,7 @@ var BattlePets =
         ]
       },	
       {
-        "name": "&nbsp;",
+        "name": "",
         "items": [
         {		
           "spellid": null,
@@ -1456,7 +1456,7 @@ var BattlePets =
         ]
       },	
       {
-        "name": "&nbsp;",
+        "name": "",
         "items": [
         {				
           "spellid": null,
@@ -1796,7 +1796,7 @@ var BattlePets =
     "name": "Outland",
     "subcats": [
       {
-        "name": "&nbsp;",
+        "name": "",
         "items": [
         {	
           "spellid": null,
@@ -1916,7 +1916,7 @@ var BattlePets =
     "name": "Northrend",
     "subcats": [
       {
-        "name": "&nbsp;",
+        "name": "",
         "items": [
         {	
           "spellid": null,
@@ -2124,7 +2124,7 @@ var BattlePets =
     "name": "The Maelstrom",
     "subcats": [
       {
-        "name": "&nbsp;",
+        "name": "",
         "items": [
         {	
           "spellid": null,
@@ -3070,7 +3070,7 @@ var BattlePets =
         ]
       },
       {
-        "name": "&nbsp;",
+        "name": "",
         "items": [
         {
           "spellid": null,
