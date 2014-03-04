@@ -3414,7 +3414,17 @@ var Pets =
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
-        },		
+        },
+        {
+          "spellid": "155748",
+          "allianceId": null,
+          "hordeId": null,
+          "itemId": "109014",
+          "icon": "inv_ravenlordpet",
+          "obtainable": true,
+          "allowableRaces": [],
+          "allowableClasses": null
+        },        
         {
           "spellid": "78381",
           "allianceId": null,
