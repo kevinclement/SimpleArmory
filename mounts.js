@@ -5407,7 +5407,7 @@ var Mounts =
             "hordeId": null,
             "itemId": "76902",
             "icon": "ability_mount_spectralwyvern",
-            "obtainable": true,
+            "obtainable": false,
             "allowableRaces": [
               2,
               5,
