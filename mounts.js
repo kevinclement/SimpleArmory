@@ -5329,7 +5329,7 @@ var Mounts =
             "hordeId": null,
             "itemId": "98618",
             "icon": "inv_pegasusmount",
-            "obtainable": true,
+            "obtainable": false,
             "allowableRaces": [],
             "allowableClasses": null
           }
@@ -5389,7 +5389,7 @@ var Mounts =
             "hordeId": null,
             "itemId": "76889",
             "icon": "ability_mount_spectralgryphon",
-            "obtainable": true,
+            "obtainable": false,
             "allowableRaces": [
               1,
               3,
@@ -5407,7 +5407,7 @@ var Mounts =
             "hordeId": null,
             "itemId": "76902",
             "icon": "ability_mount_spectralwyvern",
-            "obtainable": true,
+            "obtainable": false,
             "allowableRaces": [
               2,
               5,
