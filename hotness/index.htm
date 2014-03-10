@@ -8,8 +8,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="favicon.ico">
-
     <title>Simple Armory (hotness)</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -48,10 +49,16 @@
             height:42px;
             margin-top:4px;
         }
-        .page-header
-        {
+        .page-header {
             margin-top: 0px;
         }
+        .thumbnail {
+            padding: 0px;
+            width:36px;
+            height:36px;
+            float:left;
+        }
+
     </style>
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
@@ -62,6 +69,12 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- TEMP -->
+    <script>
+        $(document).ready(function() {
+        });
+    </script>
   </head>
 
   <body>
@@ -121,8 +134,8 @@
       </div>
     </div>
 
-    <div class="container">
-
+    <!-- Overview -->
+    <div class="container" style="display:none">
       <!-- Progress Overview -->
       <div class="page-header">
         <h2>Progress Overview <small></small></h2>
@@ -237,10 +250,50 @@
     </div> <!-- /container -->
 
 
+    <!-- Achievement -->
+    <div class="container">
+      <div class="page-header">
+        <h2>Achievements <small>General</small></h2>
+      </div>
+
+      <h3>Pandaria</h3>
+      
+
+      <h5>Section 1</h5>
+      <a href="#" class="thumbnail">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+      </a>
+      <a href="#" class="thumbnail">
+        <img src="http://wow.zamimg.com/images/wow/icons/medium/ability_mount_dragonhawkarmorallliance.jpg">
+      </a>
+      <a href="#" class="thumbnail">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+      </a>
+      <a href="#" class="thumbnail">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+      </a>
+
+      <h5>Section 2</h5>
+      <a href="#" class="thumbnail">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+      </a>
+      <a href="#" class="thumbnail">
+        <img src="http://wow.zamimg.com/images/wow/icons/medium/ability_mount_dragonhawkarmorallliance.jpg">
+      </a>
+      <a href="#" class="thumbnail">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+      </a>
+      <a href="#" class="thumbnail">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+      </a>
+
+
+    </div> <!-- /container -->
+
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
