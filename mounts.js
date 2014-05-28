@@ -2698,16 +2698,6 @@ var Mounts =
             "allowableClasses": null
           },
           {
-            "spellid": "24252",
-            "allianceId": null,
-            "hordeId": null,
-            "itemId": "19902",
-            "icon": "ability_mount_jungletiger",
-            "obtainable": false,
-            "allowableRaces": [],
-            "allowableClasses": null
-          },
-          {
             "spellid": "25953",
             "allianceId": null,
             "hordeId": null,
@@ -2744,6 +2734,26 @@ var Mounts =
             "itemId": "21324",
             "icon": "inv_misc_qirajicrystal_01",
             "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "24242",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "19872",
+            "icon": "ability_mount_raptor",
+            "obtainable": false,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "24252",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "19902",
+            "icon": "ability_mount_jungletiger",
+            "obtainable": false,
             "allowableRaces": [],
             "allowableClasses": null
           }
@@ -3969,16 +3979,6 @@ var Mounts =
               10,
               26
             ],
-            "allowableClasses": null
-          },
-          {
-            "spellid": "24242",
-            "allianceId": null,
-            "hordeId": null,
-            "itemId": "19872",
-            "icon": "ability_mount_raptor",
-            "obtainable": false,
-            "allowableRaces": [],
             "allowableClasses": null
           },
           {

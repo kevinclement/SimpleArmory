@@ -6208,6 +6208,20 @@ var Achievements =
                   "side": "H",
                   "obtainable": true,
                   "points": 50
+                },
+                {
+                  "id": "8052",
+                  "icon": "achievement_pvp_a_15",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 50
+                },
+                {
+                  "id": "8055",
+                  "icon": "achievement_pvp_a_15",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 50
                 }
               ]
             },
@@ -6393,20 +6407,6 @@ var Achievements =
                   "side": "H",
                   "obtainable": true,
                   "points": 10
-                },
-                {
-                  "id": "8052",
-                  "icon": "achievement_pvp_a_15",
-                  "side": "A",
-                  "obtainable": true,
-                  "points": 50
-                },
-                {
-                  "id": "8055",
-                  "icon": "achievement_pvp_a_15",
-                  "side": "H",
-                  "obtainable": true,
-                  "points": 50
                 }
               ]
             }
