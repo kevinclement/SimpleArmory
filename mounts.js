@@ -5329,7 +5329,7 @@ var Mounts =
             "hordeId": null,
             "itemId": "98618",
             "icon": "inv_pegasusmount",
-            "obtainable": false,
+            "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
           }
