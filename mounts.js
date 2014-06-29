@@ -5277,7 +5277,17 @@ var Mounts =
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
-          }
+          },
+          {
+            "spellid": "163024",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "112326",
+            "icon": "ability_mount_clockworkhorse",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          }		  
         ]
       },	
       {
