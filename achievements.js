@@ -2350,13 +2350,6 @@ var Achievements =
                   "side": "",
                   "obtainable": true,
                   "points": 10
-                },
-                {
-                  "id": "5313",
-                  "icon": "achievement_dungeon_bastion-of-twilight_ladysinestra",
-                  "side": "",
-                  "obtainable": false,
-                  "points": 0
                 }
               ]
             },
@@ -5971,20 +5964,6 @@ var Achievements =
                   "points": 10
                 },
                 {
-                  "id": "8093",
-                  "icon": "achievement_bg_winwsg",
-                  "side": "H",
-                  "obtainable": false,
-                  "points": 0
-                },
-                {
-                  "id": "8218",
-                  "icon": "achievement_bg_winwsg",
-                  "side": "A",
-                  "obtainable": false,
-                  "points": 0
-                },
-                {
                   "id": "8382",
                   "icon": "achievement_bg_winwsg",
                   "side": "A",
@@ -8399,27 +8378,6 @@ var Achievements =
                   "side": "H",
                   "obtainable": true,
                   "points": 10
-                },
-                {
-                  "id": "5358",
-                  "icon": "Achievement_PVP_H_H",
-                  "side": "H",
-                  "obtainable": true,
-                  "points": 0
-                },
-                {
-                  "id": "6317",
-                  "icon": "Achievement_PVP_H_H",
-                  "side": "H",
-                  "obtainable": true,
-                  "points": 0
-                },
-                {
-                  "id": "6940",
-                  "icon": "Achievement_PVP_H_H",
-                  "side": "H",
-                  "obtainable": true,
-                  "points": 0
                 },
                 {
                   "id": "6941",
@@ -10989,13 +10947,6 @@ var Achievements =
                   "side": "",
                   "obtainable": true,
                   "points": 10
-                },
-                {
-                  "id": "7315",
-                  "icon": "achievement_zone_valeofeternalblossoms_loremaster",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 0
                 },
                 {
                   "id": "6541",
@@ -17105,6 +17056,27 @@ var Achievements =
                   "points": 0
                 },
                 {
+                  "id": "5358",
+                  "icon": "Achievement_PVP_H_H",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
+                  "id": "6317",
+                  "icon": "Achievement_PVP_H_H",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
+                  "id": "6940",
+                  "icon": "Achievement_PVP_H_H",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
                   "id": "3618",
                   "icon": "INV_Spear_05",
                   "side": "",
@@ -17131,6 +17103,20 @@ var Achievements =
                   "side": "A",
                   "obtainable": true,
                   "points": 10
+                },
+                {
+                  "id": "8093",
+                  "icon": "achievement_bg_winwsg",
+                  "side": "H",
+                  "obtainable": false,
+                  "points": 0
+                },
+                {
+                  "id": "8218",
+                  "icon": "achievement_bg_winwsg",
+                  "side": "A",
+                  "obtainable": false,
+                  "points": 0
                 },
                 {
                   "id": "8214",
@@ -17822,6 +17808,13 @@ var Achievements =
                   "points": 0
                 },
                 {
+                  "id": "5313",
+                  "icon": "achievement_dungeon_bastion-of-twilight_ladysinestra",
+                  "side": "",
+                  "obtainable": false,
+                  "points": 0
+                },
+                {
                   "id": "7485",
                   "icon": "achievement_raid_mantidraid07",
                   "side": "H",
@@ -17965,6 +17958,13 @@ var Achievements =
                   "id": "8306",
                   "icon": "inv_hand_1h_trollshaman_c_01",
                   "side": "A",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
+                  "id": "7315",
+                  "icon": "achievement_zone_valeofeternalblossoms_loremaster",
+                  "side": "",
                   "obtainable": true,
                   "points": 0
                 }
