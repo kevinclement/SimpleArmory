@@ -17516,6 +17516,13 @@ var Achievements =
                   "points": 0
                 },
                 {
+                  "id": "8794",
+                  "icon": "ability_mount_warhippogryph",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
                   "id": "8092",
                   "icon": "inv_misc_bone_01",
                   "side": "",
@@ -18114,6 +18121,27 @@ var Achievements =
                 {
                   "id": "6849",
                   "icon": "ability_mount_quilenflyingmount",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
+                  "id": "8915",
+                  "icon": "inv_ravenlordpet",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
+                  "id": "8913",
+                  "icon": "inv_ravenlordmount",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
+                  "id": "8795",
+                  "icon": "ability_racial_packhobgoblin",
                   "side": "",
                   "obtainable": true,
                   "points": 0
