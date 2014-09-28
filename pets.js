@@ -3066,16 +3066,21 @@ var Pets =
           "allowableRaces": [],
           "allowableClasses": null
         },
+        
+        
+        // Sky Lantern (Hopefully works now)
         {
-          "spellid": "148684",
+          "spellid": null,
           "allianceId": null,
           "hordeId": null,
-          "itemId": "104332",
+          "itemId": null,
+          "creatureId": "73809",
           "icon": "inv_misc_trinketpanda_11",
           "obtainable": true,
           "allowableRaces": [],
           "allowableClasses": null
         },
+        
         {
           "spellid": "148530",
           "allianceId": null,
@@ -3323,7 +3328,7 @@ var Pets =
           "hordeId": null,
           "itemId": "106244",
           "icon": "inv_mace_1h_pandung_c_01",
-          "obtainable": true,
+          "obtainable": false,
           "allowableRaces": [],
           "allowableClasses": null
         }	
