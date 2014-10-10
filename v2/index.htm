@@ -17,6 +17,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/simplearmory.css" rel="stylesheet">
+    <link href="css/bootstrap-combobox.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -30,6 +31,7 @@
                 keyboard: false,
                 backdrop: 'static'
             };
+            $('.combobox').combobox();
             $('#myModal').modal(options)
         });
     </script>
@@ -100,7 +102,23 @@
             <h4 class="modal-title" id="myModalLabel">Enter a realm and character</h4>
           </div>
           <div class="modal-body">
-            ...
+            <div class="input-group">
+              <span class="input-group-addon input-group-label">Realm</span>
+              <select class="combobox input-large form-control">
+                  <option value="" selected="selected"></option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="NY">New York</option>
+                  <option value="MD">Maryland</option>
+                  <option value="VA">Virginia</option>
+              </select>
+
+            </div>
+            <br/>
+            <div class="input-group">
+              <span class="input-group-addon input-group-label">Character</span>
+              <input type="text" class="form-control">
+            </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary">Go</button>
@@ -109,13 +127,10 @@
       </div>
     </div>
 
-    <!-- Button trigger modal -->
-    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-      Launch demo modal
-    </button>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-combobox.js"></script>
   </body>
 </html>

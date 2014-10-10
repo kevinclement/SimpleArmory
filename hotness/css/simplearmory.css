@@ -58,4 +58,6 @@ body {
     margin-bottom:5px;
     margin-top:0px;
 }
-
+.input-group-addon {
+    min-width: 100px;
+}

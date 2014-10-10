@@ -58,4 +58,12 @@ body {
     margin-bottom:5px;
     margin-top:0px;
 }
-
+.form-control {
+    border-radius: 0px;
+}
+.input-group-label {
+    min-width: 100px;
+}
+.combobox-container > .input-group {
+    width:100%;
+}
