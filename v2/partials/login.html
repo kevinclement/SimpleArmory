@@ -6,25 +6,18 @@
   <div class="modal-body">
   	<div class="input-group">
     	<span class="input-group-addon input-group-label">Realm</span>
-        <select class="combobox input-large form-control">
-        	<option value="" selected="selected"></option>
-            <option value="PA">Pennsylvania</option>
-            <option value="CT">Connecticut</option>
-            <option value="NY">New York</option>
-            <option value="MD">Maryland</option>
-            <option value="VA">Virginia</option>
-        </select>
+      <select class="combobox input-large form-control" ng-model="selectedRealm" ng-options="realm.value as realm.text for realm in realms">
+        <option value=""></option>
+      </select>
     </div>
     <br/>
     <div class="input-group">
 		<span class="input-group-addon input-group-label">Character</span>
-        <input type="text" class="form-control">
+        <input type="text" class="form-control" ng-model="characterName" >
     </div>
   </div>
   <div class="modal-footer">
+      <button class="btn btn-primary" ng-click="marko()">MARKO</button>
       <button class="btn btn-primary" ng-click="ok()">Go</button>
   </div>
 </script>
-
-<!-- TODO: REMOVE THIS -->
-<div ng-show="loginObj">Region: {{ loginObj.region }} Server: {{ loginObj.server }} Character: {{ loginObj.character }}</div>

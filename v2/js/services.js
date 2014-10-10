@@ -17,7 +17,6 @@ simpleArmoryServices.factory('LoginService', ['$resource', '$location', '$log', 
 	  setUser: function (loginObj) {
 	    this.getCharacter(loginObj).$promise.then(function(char)
 	    	{
-	    		loggedIn = true;
 	    		$location.url(loginObj.region + "/" + loginObj.realm + "/" + loginObj.character);
 	    	});
 	  },
@@ -27,7 +26,7 @@ simpleArmoryServices.factory('LoginService', ['$resource', '$location', '$log', 
 	  		character.region.toLowerCase() == $routeParams.region.toLowerCase() &&
 	  		character.name.toLowerCase() == $routeParams.character.toLowerCase() &&
 	  		character.realm.toLowerCase() == $routeParams.realm.toLowerCase()) {
-	  		$log.log("Using cache'd character");
+	  		$log.log("Using cached character");
 	  		return character;
 	  	}
 	  	else {
@@ -39,23 +38,50 @@ simpleArmoryServices.factory('LoginService', ['$resource', '$location', '$log', 
 		  			jsonp: 'JSON_CALLBACK',
 		  		}, 
 		  		{
-      				getCharacter: {
-      					method:'JSONP',
-      				}
-   			 	}).getCharacter(
+      				get: { method:'JSONP' }
+   			 	}).get(
    			 		{region:$routeParams.region, realm:$routeParams.realm, character:$routeParams.character},
    			 		function(value, responseHeaders) {
 						// Success
 						value.region = $routeParams.region;
 						character = value;
+						loggedIn = true;
    			 		},
    			 		function(httpResponse){
    			 			// Failure
-   			 			// TODO: We should be redirecting to a error page
    			 			$location.url("error");
    			 		});
 	  	}
 	  }
+	}
+}]);
+
+simpleArmoryServices.factory('BlizzardRealmService', ['$resource', '$q', '$log', function ($resource, $q, $log) {
+
+	return {
+		getRealms: function() {
+	  		$log.log("Fetching server list for us...");
+	  		var usPromise = $resource(
+		  		'http://us.battle.net/api/wow/realm/status',
+		  		{
+		  			jsonp: 'JSON_CALLBACK',
+		  		}, 
+		  		{
+      				get: { method:'JSONP', }
+   			 	}).get().$promise;
+
+	  		$log.log("Fetching server list for eu...");
+	  		var euPromise = $resource(
+		  		'http://eu.battle.net/api/wow/realm/status',
+		  		{
+		  			jsonp: 'JSON_CALLBACK',
+		  		}, 
+		  		{
+      				get: { method:'JSONP', }
+   			 	}).get().$promise;
+
+	  		return $q.all([usPromise, euPromise]);
+	  	}
 	}
 }]);
 
