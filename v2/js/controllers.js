@@ -12,7 +12,6 @@ simpleArmoryControllers.controller('LoginCtrl', ['$scope', '$modal', 'LoginServi
   });
 
   modalInstance.result.then(function (loginObj) {
-    $scope.loginObj = loginObj;
     loginService.setUser(loginObj);
   });
 }]);
@@ -24,17 +23,17 @@ simpleArmoryControllers.controller('ModalInstanceCtrl', function ($scope, $modal
   $scope.ok = function () {
     $modalInstance.close({
       'region': 'us',
-      'server': 'spirestone',
+      'realm': 'proudmoore',
       'character': 'marko'
     });
   };
 });
 
 
-simpleArmoryControllers.controller('OverviewCtrl', function ($scope, $routeParams) {
-  
-  $scope.character = $routeParams.character;
-});
+simpleArmoryControllers.controller('OverviewCtrl', ['$scope', 'LoginService', '$routeParams', function ($scope, loginService, $routeParams) {
+
+  $scope.character = loginService.getCharacter($routeParams);
+}]);
 
 simpleArmoryControllers.controller('HeaderCtrl', ['$scope', 'LoginService', function ($scope, loginService) {
     
@@ -43,6 +42,9 @@ simpleArmoryControllers.controller('HeaderCtrl', ['$scope', 'LoginService', func
     $scope.$watch('loginService.isLoggedIn()', function(newVal) {
         $scope.isLoggedIn = newVal;
     });
+}]);
+
+simpleArmoryControllers.controller('ErrorCtrl', ['$scope', function ($scope) {
 }]);
 
 /*

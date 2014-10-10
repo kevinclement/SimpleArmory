@@ -5,7 +5,15 @@
 		[
 			[
 				"$rou",
-				"$routeProvider	AngularJS"
+				"$routeParams	AngularJS"
+			],
+			[
+				"$rot",
+				"$rootScope	AngularJS"
+			],
+			[
+				"simp",
+				"simpleArmoryApp"
 			],
 			[
 				"sim",
@@ -20,18 +28,87 @@
 	"buffers":
 	[
 		{
-			"file": "js/app.js",
+			"file": "index.htm",
 			"settings":
 			{
-				"buffer_size": 600,
+				"buffer_size": 1686,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "index.htm",
+			"file": "partials/header.html",
 			"settings":
 			{
-				"buffer_size": 5778,
+				"buffer_size": 2320,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/simplearmory.css",
+			"settings":
+			{
+				"buffer_size": 1552,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/controllers.js",
+			"settings":
+			{
+				"buffer_size": 1918,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "partials/overview.html",
+			"settings":
+			{
+				"buffer_size": 36,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "partials/login.html",
+			"settings":
+			{
+				"buffer_size": 1148,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/filters.js",
+			"settings":
+			{
+				"buffer_size": 208,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "'use strict';\n\n/* Services */\nvar simpleArmoryServices = angular.module('simpleArmoryServices', ['ngResource']);\n\nsimpleArmoryServices.factory('LoginService', ['$resource', function ($resource) {\n	var loggedIn = false;\n	var character = null;\n\n	return {\n	  isLoggedIn: function () {\n	    return loggedIn;\n	  },\n	  setUser: function (loginObj) {\n	    loggedIn = !loggedIn;\n	  },\n\n	  getCharacter: function($routeParams) {\n	  	if (character != null) {\n	  		return character;\n	  	}\n	  	else {\n		  	return $resource(\n		  		'http://:region.battle.net/api/wow/character/:realm/:character?fields=pets,mounts,achievements,guild,reputation',\n		  		{region:'us', realm:'proudmoore', character:'marko'}, \n		  		{\n      				query: {\n      					method:'GET',\n      					params:{}\n      				}\n   			 	}).;\n	  	}\n	  }\n	}\n}]);\n\n/*\nphonecatServices.factory('Phone', ['$resource',\n  function($resource){\n    return $resource('phones/:phoneId.json', {}, {\n      query: {method:'GET', params:{phoneId:'phones'}, isArray:true}\n    });\n  }]);\n*/",
+			"file": "js/services.js",
+			"file_size": 1064,
+			"file_write_time": 130574345683462392,
+			"settings":
+			{
+				"buffer_size": 1022,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 9 files for \".query\"\n\nC:\\Users\\Kevin Clement\\Dropbox\\Development\\Projects\\SimpleArmory\\SimpleArmory\\v2\\js\\controllers.js:\n   49  simpleArmoryControllers.controller('PhoneListCtrl', ['$scope', 'Phone',\n   50    function($scope, Phone) {\n   51:     $scope.phones = Phone.query();\n   52      $scope.orderProp = 'age';\n   53    }]);\n\n1 match in 1 file\n",
+			"settings":
+			{
+				"buffer_size": 358,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "js/app.js",
+			"settings":
+			{
+				"buffer_size": 594,
 				"line_ending": "Windows"
 			}
 		}
@@ -39,11 +116,11 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 0.0,
+		"height": 173.0,
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 472.0
 	},
 	"console":
 	{
@@ -60,18 +137,22 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Kevin Clement/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/C/Users/Kevin Clement/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings"
+		"/C/Users/Kevin Clement/Dropbox/Development/Projects/SimpleArmory/SimpleArmory/v2/partials/login.html",
+		"/C/Users/Kevin Clement/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Kevin Clement/Dropbox/Development/Projects/SimpleArmory/SimpleArmory/v2/js/directives.js",
+		"/C/Users/Kevin Clement/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Kevin Clement/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -79,6 +160,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".query",
+			"dealing with",
+			"data-toggle",
+			"whitespa"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -96,23 +181,107 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 8,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "js/app.js",
+					"file": "index.htm",
 					"settings":
 					{
-						"buffer_size": 600,
+						"buffer_size": 1686,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								187,
-								187
+								782,
+								782
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "partials/header.html",
+					"settings":
+					{
+						"buffer_size": 2320,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								938,
+								938
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/AngularJS-sublime-package-master/AngularJS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "css/simplearmory.css",
+					"settings":
+					{
+						"buffer_size": 1552,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								693,
+								693
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/controllers.js",
+					"settings":
+					{
+						"buffer_size": 1918,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1039,
+								1039
 							]
 						],
 						"settings":
@@ -128,24 +297,171 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "index.htm",
+					"buffer": 4,
+					"file": "partials/overview.html",
 					"settings":
 					{
-						"buffer_size": 5778,
+						"buffer_size": 36,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								56,
-								56
+								36,
+								36
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/AngularJS-sublime-package-master/AngularJS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "partials/login.html",
+					"settings":
+					{
+						"buffer_size": 1148,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								149,
+								149
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/AngularJS-sublime-package-master/AngularJS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "js/filters.js",
+					"settings":
+					{
+						"buffer_size": 208,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								195,
+								195
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "js/services.js",
+					"settings":
+					{
+						"buffer_size": 1022,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								789,
+								789
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"settings":
+					{
+						"buffer_size": 358,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										278,
+										284
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								358,
+								358
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "js/app.js",
+					"settings":
+					{
+						"buffer_size": 594,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								204,
+								204
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -199,6 +515,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"simplearmoryap",
+				"/C/Users/Kevin Clement/Dropbox/Development/Projects/SimpleArmory/SimpleArmory/v2/js/app.js"
+			]
 		],
 		"width": 0.0
 	},

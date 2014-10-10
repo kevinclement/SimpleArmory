@@ -9,7 +9,6 @@ var simpleArmoryApp = angular.module('simpleArmoryApp', [
   'ui.bootstrap'
 ]);
 
-
 simpleArmoryApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
@@ -21,6 +20,10 @@ simpleArmoryApp.config(['$routeProvider',
         templateUrl: 'partials/overview.html',
         controller: 'OverviewCtrl'
       }).
+    when('/error', {
+        templateUrl: 'partials/error.html',
+        controller: 'ErrorCtrl'
+      }).      
       otherwise({
         redirectTo: '/'
       });
