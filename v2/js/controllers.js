@@ -3,49 +3,37 @@
 /* Controllers */
 var simpleArmoryControllers = angular.module('simpleArmoryControllers', []);
 
-simpleArmoryControllers.controller('ModalDemoCtrl', function ($scope, $modal, $log) {
+simpleArmoryControllers.controller('LoginCtrl', function ($scope, $modal) {
 
-  $scope.items = ['item1', 'item2', 'item3'];
+  var modalInstance = $modal.open({
+    templateUrl: 'ModelLogin.html',
+    controller: 'ModalInstanceCtrl',
+    backdrop: 'static',
+  });
 
-  $scope.open = function (size) {
-
-    var modalInstance = $modal.open({
-      templateUrl: 'myModalContent.html',
-      controller: 'ModalInstanceCtrl',
-      size: size,
-      backdrop: 'static',
-      resolve: {
-        items: function () {
-          return $scope.items;
-        }
-      }
-    });
-
-    modalInstance.result.then(function (selectedItem) {
-      $scope.selected = selectedItem;
-    }, function () {
-      $log.info('Modal dismissed at: ' + new Date());
-    });
-  };
+  modalInstance.result.then(function (loginObj) {
+    
+    $scope.loginObj = loginObj;
+  });
 });
 
 // Please note that $modalInstance represents a modal window (instance) dependency.
 // It is not the same as the $modal service used above.
-
-simpleArmoryControllers.controller('ModalInstanceCtrl', function ($scope, $modalInstance, items) {
-
-  $scope.items = items;
-  $scope.selected = {
-    item: $scope.items[0]
-  };
-
+simpleArmoryControllers.controller('ModalInstanceCtrl', function ($scope, $modalInstance) {
+  
   $scope.ok = function () {
-    $modalInstance.close($scope.selected.item);
+    $modalInstance.close({
+      'region': 'us',
+      'server': 'spirestone',
+      'character': 'marko'
+    });
   };
+});
 
-  $scope.cancel = function () {
-    $modalInstance.dismiss('cancel');
-  };
+
+simpleArmoryControllers.controller('OverviewCtrl', function ($scope, $routeParams) {
+  
+  $scope.name = $routeParams.character;
 });
 
 simpleArmoryControllers.controller('HeaderCtrl', ['$scope', 'LoginService', function ($scope, loginService) {
@@ -55,8 +43,7 @@ simpleArmoryControllers.controller('HeaderCtrl', ['$scope', 'LoginService', func
     $scope.$watch('loginService.isLoggedIn()', function(newVal) {
         $scope.isLoggedIn = newVal;
     });
-
-  }])
+}]);
 
 /*
 simpleArmoryControllers.controller('PhoneListCtrl', ['$scope', 'Phone',

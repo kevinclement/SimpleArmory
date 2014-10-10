@@ -1,0 +1,30 @@
+<!-- Modal Login Template -->
+<script type="text/ng-template" id="ModelLogin.html">
+  <div class="modal-header">
+      <h3 class="modal-title">Enter a realm and character</h3>
+  </div>
+  <div class="modal-body">
+  	<div class="input-group">
+    	<span class="input-group-addon input-group-label">Realm</span>
+        <select class="combobox input-large form-control">
+        	<option value="" selected="selected"></option>
+            <option value="PA">Pennsylvania</option>
+            <option value="CT">Connecticut</option>
+            <option value="NY">New York</option>
+            <option value="MD">Maryland</option>
+            <option value="VA">Virginia</option>
+        </select>
+    </div>
+    <br/>
+    <div class="input-group">
+		<span class="input-group-addon input-group-label">Character</span>
+        <input type="text" class="form-control">
+    </div>
+  </div>
+  <div class="modal-footer">
+      <button class="btn btn-primary" ng-click="ok()">Go</button>
+  </div>
+</script>
+
+<!-- TODO: REMOVE THIS -->
+<div ng-show="loginObj">Region: {{ loginObj.region }} Server: {{ loginObj.server }} Character: {{ loginObj.character }}</div>

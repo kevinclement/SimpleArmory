@@ -10,21 +10,18 @@ var simpleArmoryApp = angular.module('simpleArmoryApp', [
 ]);
 
 
-/*
-
 simpleArmoryApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      when('/phones', {
-        templateUrl: 'partials/phone-list.html',
-        controller: 'PhoneListCtrl'
+      when('/', {
+        templateUrl: 'partials/login.html',
+        controller: 'LoginCtrl'
       }).
-      when('/phones/:phoneId', {
-        templateUrl: 'partials/phone-detail.html',
-        controller: 'PhoneDetailCtrl'
+      when('/:region/:realm/:character', {
+        templateUrl: 'partials/overview.html',
+        controller: 'OverviewCtrl'
       }).
       otherwise({
-        redirectTo: '/phones'
+        redirectTo: '/'
       });
   }]);
-*/

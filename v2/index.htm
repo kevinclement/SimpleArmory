@@ -44,67 +44,13 @@
   </head>
 
   <body>
-
     <!-- Navbar -->
     <div id="navbar" ng-controller="HeaderCtrl">
       <div ng-include src="'partials/header.html'"></div>
     </div>
 
-    <p>1 + 2 = {{ 1 + 2 }}</p>
-
-    <div ng-controller="ModalDemoCtrl">
-      <script type="text/ng-template" id="myModalContent.html">
-          <div class="modal-header">
-              <h3 class="modal-title">Enter a realm and character</h3>
-          </div>
-          <div class="modal-body">
-              <ul>
-                  <li ng-repeat="item in items">
-                      <a ng-click="selected.item = item">{{ item }}</a>
-                  </li>
-              </ul>
-              Selected: <b>{{ selected.item }}</b>
-          </div>
-          <div class="modal-footer">
-              <button class="btn btn-primary" ng-click="ok()">Go</button>
-          </div>
-      </script>
-
-      <button class="btn btn-default" ng-click="open()">Open me!</button>
-      <div ng-show="selected">Selection from a modal: {{ selected }}</div>
-    </div>
-
-    <!-- Modal Login -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">Enter a realm and character</h4>
-          </div>
-          <div class="modal-body">
-            <div class="input-group">
-              <span class="input-group-addon input-group-label">Realm</span>
-              <select class="combobox input-large form-control">
-                  <option value="" selected="selected"></option>
-                  <option value="PA">Pennsylvania</option>
-                  <option value="CT">Connecticut</option>
-                  <option value="NY">New York</option>
-                  <option value="MD">Maryland</option>
-                  <option value="VA">Virginia</option>
-              </select>
-
-            </div>
-            <br/>
-            <div class="input-group">
-              <span class="input-group-addon input-group-label">Character</span>
-              <input type="text" class="form-control">
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Go</button>
-          </div>
-        </div>
-      </div>
+    <div class="view-container">
+      <div ng-view class="view-frame"></div>
     </div>
 
     <!-- Bootstrap core JavaScript
