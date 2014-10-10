@@ -14,15 +14,16 @@ simpleArmoryServices.factory('LoginService', ['$resource', '$location', '$log', 
 	  setUser: function (loginObj) {
 	    this.getCharacter(loginObj).$promise.then(function(char)
 	    	{
-	    		loggedIn = char != null;
-	    		character = char;
-	    		$location.url("us/proudmoore/marko");
+	    		loggedIn = true;
+	    		$location.url(loginObj.region + "/" + loginObj.realm + "/" + loginObj.character);
 	    	});
 	  },
 
 	  getCharacter: function($routeParams) {
-	  	if (character != null) {
-	  		// TODO: if the character changed because the url change by hand then we need to refetch it
+	  	if (character != null &&
+	  		character.region.toLowerCase() == $routeParams.region.toLowerCase() &&
+	  		character.name.toLowerCase() == $routeParams.character.toLowerCase() &&
+	  		character.realm.toLowerCase() == $routeParams.realm.toLowerCase()) {
 	  		$log.log("Using cache'd character");
 	  		return character;
 	  	}
@@ -42,6 +43,8 @@ simpleArmoryServices.factory('LoginService', ['$resource', '$location', '$log', 
    			 		{region:$routeParams.region, realm:$routeParams.realm, character:$routeParams.character},
    			 		function(value, responseHeaders) {
 						// Success
+						value.region = $routeParams.region;
+						character = value;
    			 		},
    			 		function(httpResponse){
    			 			// Failure
