@@ -10,7 +10,7 @@ simpleArmoryServices.factory('LoginService', function () {
 	  isLoggedIn: function () {
 	    return loggedIn;
 	  },
-	  toggleIsLoggedIn: function () {
+	  setUser: function (loginObj) {
 	    loggedIn = !loggedIn;
 	  }
 	}

@@ -3,7 +3,7 @@
 /* Controllers */
 var simpleArmoryControllers = angular.module('simpleArmoryControllers', []);
 
-simpleArmoryControllers.controller('LoginCtrl', function ($scope, $modal) {
+simpleArmoryControllers.controller('LoginCtrl', ['$scope', '$modal', 'LoginService', function ($scope, $modal, loginService) {
 
   var modalInstance = $modal.open({
     templateUrl: 'ModelLogin.html',
@@ -12,10 +12,10 @@ simpleArmoryControllers.controller('LoginCtrl', function ($scope, $modal) {
   });
 
   modalInstance.result.then(function (loginObj) {
-    
     $scope.loginObj = loginObj;
+    loginService.setUser(loginObj);
   });
-});
+}]);
 
 // Please note that $modalInstance represents a modal window (instance) dependency.
 // It is not the same as the $modal service used above.
@@ -33,7 +33,7 @@ simpleArmoryControllers.controller('ModalInstanceCtrl', function ($scope, $modal
 
 simpleArmoryControllers.controller('OverviewCtrl', function ($scope, $routeParams) {
   
-  $scope.name = $routeParams.character;
+  $scope.character = $routeParams.character;
 });
 
 simpleArmoryControllers.controller('HeaderCtrl', ['$scope', 'LoginService', function ($scope, loginService) {
