@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="simpleArmoryApp">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,15 +9,21 @@
     <link rel="shortcut icon" href="favicon.ico">
     <title>Simple Armory</title>
 
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- AngularJS & jQuery -->
+    <script src="ext/js/jquery.min.js"></script>
+    <script src="ext/js/angular.min.js"></script>
+    <script src="ext/js/angular-route.min.js"></script>
+    <script src="ext/js/angular-resource.min.js"></script>
+    <script src="ext/js/ui-bootstrap-tpls-0.11.2.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/services.js"></script>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
+    <!-- CSS -->
+    <link href="ext/css/bootstrap.min.css" rel="stylesheet">
+    <link href="ext/css/bootstrap-combobox.css" rel="stylesheet">
     <link href="css/simplearmory.css" rel="stylesheet">
-    <link href="css/bootstrap-combobox.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -26,72 +32,46 @@
     <![endif]-->
 
     <script>
-        $(document).ready(function() {
-            var options = {
-                keyboard: false,
-                backdrop: 'static'
-            };
-            $('.combobox').combobox();
-            $('#myModal').modal(options)
-        });
+        //$(document).ready(function() {
+        //    var options = {
+        //        keyboard: false,
+        //        backdrop: 'static'
+        //    };
+        //    $('.combobox').combobox();
+        //    $('#myModal').modal(options)
+        //});
     </script>
   </head>
 
   <body>
 
     <!-- Navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Simple Armory</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="overview.htm">Overview</a></li>
+    <div id="navbar" ng-controller="HeaderCtrl">
+      <div ng-include src="'partials/header.html'"></div>
+    </div>
 
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Achievements <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">General</a></li>
-                <li><a href="#">Quest</a></li>
-                <li><a href="#">Exploration</a></li>
-                <li><a href="#">Player vs. Player</a></li>
-                <li><a href="#">Dungeons & Raids</a></li>
-                <li><a href="#">Professions</a></li>
-                <li><a href="#">Reputation</a></li>
-                <li><a href="#">Scenarios</a></li>
-                <li><a href="#">World Events</a></li>
-                <li><a href="#">Pet Battles</a></li>
-                <li><a href="#">Feats of Strength</a></li>
-              </ul>
-            </li>
+    <p>1 + 2 = {{ 1 + 2 }}</p>
 
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Collectable <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Mounts</a></li>
-                <li><a href="#">Companions</a></li>
-                <li><a href="#">Battle Pets</a></li>
+    <div ng-controller="ModalDemoCtrl">
+      <script type="text/ng-template" id="myModalContent.html">
+          <div class="modal-header">
+              <h3 class="modal-title">Enter a realm and character</h3>
+          </div>
+          <div class="modal-body">
+              <ul>
+                  <li ng-repeat="item in items">
+                      <a ng-click="selected.item = item">{{ item }}</a>
+                  </li>
               </ul>
-            </li>
-            <li><a href="#about">Calendar</a></li>
-            <li><a href="#contact">Reputation</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#" class="navbar-char-link">
-                    <div>Marko</div>
-                    <div class="navbar-char-link-subtext">&lt;Game Over&gt;</div>
-                    <div class="navbar-char-link-subtext">17766</div></a></li>
-            <li><img class="navbar-char-image" src="http://us.battle.net/static-render/us/proudmoore/95/142561887-avatar.jpg"/></li>
-          </ul>
-        </div>
-      </div>
+              Selected: <b>{{ selected.item }}</b>
+          </div>
+          <div class="modal-footer">
+              <button class="btn btn-primary" ng-click="ok()">Go</button>
+          </div>
+      </script>
+
+      <button class="btn btn-default" ng-click="open()">Open me!</button>
+      <div ng-show="selected">Selection from a modal: {{ selected }}</div>
     </div>
 
     <!-- Modal Login -->
@@ -129,8 +109,7 @@
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-combobox.js"></script>
+    <script src="ext/js/bootstrap.min.js"></script>
+    <!--<script src="ext/js/bootstrap-combobox.js"></script>-->
   </body>
 </html>
