@@ -44,7 +44,8 @@ simpleArmoryControllers.controller('HeaderCtrl', ['$scope', 'LoginService', func
     });
 }]);
 
-simpleArmoryControllers.controller('ErrorCtrl', ['$scope', function ($scope) {
+simpleArmoryControllers.controller('ErrorCtrl', ['$scope', 'LoginService', function ($scope, loginService) {
+  loginService.resetLoggedIn();
 }]);
 
 /*

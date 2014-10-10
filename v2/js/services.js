@@ -11,6 +11,9 @@ simpleArmoryServices.factory('LoginService', ['$resource', '$location', '$log', 
 	  isLoggedIn: function () {
 	    return loggedIn;
 	  },
+	  resetLoggedIn: function() {
+		loggedIn = false;
+	  },
 	  setUser: function (loginObj) {
 	    this.getCharacter(loginObj).$promise.then(function(char)
 	    	{
