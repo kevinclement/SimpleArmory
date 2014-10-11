@@ -93,28 +93,33 @@ simpleArmoryControllers.controller('HeaderCtrl', ['$scope', 'LoginService', func
 
 }]);
 
-simpleArmoryControllers.controller('AchievementsCtrl', ['$scope', 'LoginService', function ($scope, loginService) {
-  
+simpleArmoryControllers.controller('AchievementsCtrl', ['$scope', 'LoginService', '$routeParams', function ($scope, loginService, $routeParams) {
+
+    $scope.character = loginService.getCharacter($routeParams);
 }]);
 
-simpleArmoryControllers.controller('MountsCtrl', ['$scope', 'LoginService', function ($scope, loginService) {
-  
+simpleArmoryControllers.controller('MountsCtrl', ['$scope', 'LoginService', '$routeParams', function ($scope, loginService, $routeParams) {
+
+    $scope.character = loginService.getCharacter($routeParams);
 }]);
 
-simpleArmoryControllers.controller('CompanionsCtrl', ['$scope', 'LoginService', function ($scope, loginService) {
-  
+simpleArmoryControllers.controller('CompanionsCtrl', ['$scope', 'LoginService', '$routeParams', function ($scope, loginService, $routeParams) {
+
+    $scope.character = loginService.getCharacter($routeParams);
 }]);
 
-simpleArmoryControllers.controller('BattlePetsCtrl', ['$scope', 'LoginService', function ($scope, loginService) {
-  
+simpleArmoryControllers.controller('BattlePetsCtrl', ['$scope', 'LoginService', '$routeParams', function ($scope, loginService, $routeParams) {
+    $scope.character = loginService.getCharacter($routeParams);
 }]);
 
-simpleArmoryControllers.controller('CalendarCtrl', ['$scope', 'LoginService', function ($scope, loginService) {
-  
+simpleArmoryControllers.controller('CalendarCtrl', ['$scope', 'LoginService', '$routeParams', function ($scope, loginService, $routeParams) {
+
+  $scope.character = loginService.getCharacter($routeParams);
 }]);
 
-simpleArmoryControllers.controller('ReputationCtrl', ['$scope', 'LoginService', function ($scope, loginService) {
-  
+simpleArmoryControllers.controller('ReputationCtrl', ['$scope', 'LoginService', '$routeParams', function ($scope, loginService, $routeParams) {
+
+  $scope.character = loginService.getCharacter($routeParams);  
 }]);
 
 simpleArmoryControllers.controller('ErrorCtrl', ['$scope', 'LoginService', function ($scope, loginService) {
