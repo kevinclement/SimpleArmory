@@ -41,7 +41,6 @@ simpleArmoryControllers.controller('ModalInstanceCtrl', ['$scope', '$modalInstan
   });
   
   $scope.ok = function () {
-
     $modalInstance.close({
       'region': $scope.selectedRealm.region,
       'realm': $scope.selectedRealm.realm,
@@ -49,6 +48,7 @@ simpleArmoryControllers.controller('ModalInstanceCtrl', ['$scope', '$modalInstan
     });
   };
 
+  // TMP just to make it easier for me to test, to remove before we go live
   $scope.marko = function () {
 
     $modalInstance.close({
@@ -58,7 +58,6 @@ simpleArmoryControllers.controller('ModalInstanceCtrl', ['$scope', '$modalInstan
     });
   };
 }]);
-
 
 simpleArmoryControllers.controller('OverviewCtrl', ['$scope', 'LoginService', '$routeParams', function ($scope, loginService, $routeParams) {
 
