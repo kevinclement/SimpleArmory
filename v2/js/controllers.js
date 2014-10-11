@@ -119,6 +119,16 @@ simpleArmoryControllers.controller('HeaderCtrl', ['$scope', 'LoginService', '$lo
       return "";   
     }
 
+    $scope.armoryUrl = function() {
+      if ($scope.loginService && $scope.loginService.character) {
+        var c = $scope.loginService.character;
+        return "http://" + c.region + ".battle.net/wow/en/character/" + c.realm + "/" + c.name.toLowerCase() + "/advanced";
+      }
+
+      return "#";   
+    }
+
+
     function getBaseUrl(loginService) {
       
       if(!loginService || !loginService.character) {

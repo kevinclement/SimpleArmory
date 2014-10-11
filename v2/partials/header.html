@@ -42,7 +42,7 @@
         <li ng-class="{ active: isActive('reputation') }"><a ng-href="{{getUrl('reputation')}}">Reputation</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right" ng-show="isLoggedIn">
-        <li><a href="#" class="navbar-char-link">
+        <li><a ng-href="{{armoryUrl()}}" class="navbar-char-link">
                 <div>{{ loginService.character.name }}</div>
                 <div class="navbar-char-link-subtext">{{ guildName() }}</div>
                 <div class="navbar-char-link-subtext">{{ loginService.character.achievementPoints }}</div></a></li>
