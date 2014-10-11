@@ -20,7 +20,7 @@ simpleArmoryApp.config(['$routeProvider',
         templateUrl: 'partials/overview.html',
         controller: 'OverviewCtrl'
       }).
-    when('/error', {
+      when('/error', {
         templateUrl: 'partials/error.html',
         controller: 'ErrorCtrl'
       }).      

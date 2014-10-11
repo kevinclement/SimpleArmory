@@ -11,35 +11,35 @@
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav" ng-show="isLoggedIn">
-        <li><a href="overview.htm">Overview</a></li>
+        <li><a ng-href="{{getUrl('')}}">Overview</a></li>
 
-        <li class="dropdown">
+        <li class="dropdown active">
           <a href="#" class="dropdown-toggle">Achievements <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="#">General</a></li>
-            <li><a href="#">Quest</a></li>
-            <li><a href="#">Exploration</a></li>
-            <li><a href="#">Player vs. Player</a></li>
-            <li><a href="#">Dungeons & Raids</a></li>
-            <li><a href="#">Professions</a></li>
-            <li><a href="#">Reputation</a></li>
-            <li><a href="#">Scenarios</a></li>
-            <li><a href="#">World Events</a></li>
-            <li><a href="#">Pet Battles</a></li>
-            <li><a href="#">Feats of Strength</a></li>
+            <li class="active"><a ng-href="{{getUrl('achievements/general')}}">General</a></li>
+            <li><a ng-href="{{getUrl('achievements/quest')}}">Quest</a></li>
+            <li><a ng-href="{{getUrl('achievements/exploration')}}">Exploration</a></li>
+            <li><a ng-href="{{getUrl('achievements/pvp')}}">Player vs. Player</a></li>
+            <li><a ng-href="{{getUrl('achievements/dungeons')}}">Dungeons & Raids</a></li>
+            <li><a ng-href="{{getUrl('achievements/professions')}}">Professions</a></li>
+            <li><a ng-href="{{getUrl('achievements/reputation')}}">Reputation</a></li>
+            <li><a ng-href="{{getUrl('achievements/scenarios')}}">Scenarios</a></li>
+            <li><a ng-href="{{getUrl('achievements/events')}}">World Events</a></li>
+            <li><a ng-href="{{getUrl('achievements/pets')}}">Pet Battles</a></li>
+            <li><a ng-href="{{getUrl('achievements/feats')}}">Feats of Strength</a></li>
           </ul>
         </li>
 
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Collectable <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Mounts</a></li>
-            <li><a href="#">Companions</a></li>
-            <li><a href="#">Battle Pets</a></li>
+            <li><a ng-href="{{getUrl('mounts')}}">Mounts</a></li>
+            <li><a ng-href="{{getUrl('companions')}}">Companions</a></li>
+            <li><a ng-href="{{getUrl('battlepets')}}">Battle Pets</a></li>
           </ul>
         </li>
-        <li><a href="#about">Calendar</a></li>
-        <li><a href="#contact">Reputation</a></li>
+        <li><a ng-href="{{getUrl('calendar')}}">Calendar</a></li>
+        <li><a ng-href="{{getUrl('reputation')}}">Reputation</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right" ng-show="isLoggedIn">
         <li><a href="#" class="navbar-char-link">

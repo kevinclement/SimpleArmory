@@ -71,6 +71,26 @@ simpleArmoryControllers.controller('HeaderCtrl', ['$scope', 'LoginService', func
     $scope.$watch('loginService.isLoggedIn()', function(newVal) {
         $scope.isLoggedIn = newVal;
     });
+
+    $scope.getUrl = function(subSite) {
+      if (!$scope.loginService || !$scope.loginService.character)
+      {
+        return "#";
+      }
+
+      var url = "#/" + 
+        $scope.loginService.character.region.toLowerCase() + "/" + 
+        $scope.loginService.character.realm.toLowerCase()  + "/" + 
+        $scope.loginService.character.name.toLowerCase();
+
+      if (subSite != "")
+      {
+        url += "/" + subSite;
+      }
+
+      return url;
+    }
+
 }]);
 
 simpleArmoryControllers.controller('ErrorCtrl', ['$scope', 'LoginService', function ($scope, loginService) {

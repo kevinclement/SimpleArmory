@@ -5,9 +5,9 @@ var simpleArmoryServices = angular.module('simpleArmoryServices', ['ngResource']
 
 simpleArmoryServices.factory('LoginService', ['$resource', '$location', '$log', function ($resource, $location, $log) {
 	var loggedIn = false;
-	var character = null;
 
 	return {
+	  character: null,
 	  isLoggedIn: function () {
 	    return loggedIn;
 	  },
@@ -22,12 +22,14 @@ simpleArmoryServices.factory('LoginService', ['$resource', '$location', '$log', 
 	  },
 
 	  getCharacter: function($routeParams) {
-	  	if (character != null &&
-	  		character.region.toLowerCase() == $routeParams.region.toLowerCase() &&
-	  		character.name.toLowerCase() == $routeParams.character.toLowerCase() &&
-	  		character.realm.toLowerCase() == $routeParams.realm.toLowerCase()) {
+		var self = this;
+
+	  	if (this.character != null &&
+	  		this.character.region.toLowerCase() == $routeParams.region.toLowerCase() &&
+	  		this.character.name.toLowerCase() == $routeParams.character.toLowerCase() &&
+	  		this.character.realm.toLowerCase() == $routeParams.realm.toLowerCase()) {
 	  		$log.log("Using cached character");
-	  		return character;
+	  		return this.character;
 	  	}
 	  	else {
 	  		$log.log("Fetching " + $routeParams.character + " from server " + $routeParams.realm);
@@ -44,7 +46,7 @@ simpleArmoryServices.factory('LoginService', ['$resource', '$location', '$log', 
    			 		function(value, responseHeaders) {
 						// Success
 						value.region = $routeParams.region;
-						character = value;
+						self.character = value;
 						loggedIn = true;
    			 		},
    			 		function(httpResponse){
