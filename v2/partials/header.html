@@ -11,35 +11,35 @@
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav" ng-show="isLoggedIn">
-        <li><a ng-href="{{getUrl('')}}">Overview</a></li>
+        <li ng-class="{ active: isActive('') }"><a ng-href="{{getUrl('')}}">Overview</a></li>
 
-        <li class="dropdown active">
+        <li ng-class="{ active: isActive('achievements', true) }" class="dropdown">
           <a href="#" class="dropdown-toggle">Achievements <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li class="active"><a ng-href="{{getUrl('achievements/general')}}">General</a></li>
-            <li><a ng-href="{{getUrl('achievements/quest')}}">Quest</a></li>
-            <li><a ng-href="{{getUrl('achievements/exploration')}}">Exploration</a></li>
-            <li><a ng-href="{{getUrl('achievements/pvp')}}">Player vs. Player</a></li>
-            <li><a ng-href="{{getUrl('achievements/dungeons')}}">Dungeons & Raids</a></li>
-            <li><a ng-href="{{getUrl('achievements/professions')}}">Professions</a></li>
-            <li><a ng-href="{{getUrl('achievements/reputation')}}">Reputation</a></li>
-            <li><a ng-href="{{getUrl('achievements/scenarios')}}">Scenarios</a></li>
-            <li><a ng-href="{{getUrl('achievements/events')}}">World Events</a></li>
-            <li><a ng-href="{{getUrl('achievements/pets')}}">Pet Battles</a></li>
-            <li><a ng-href="{{getUrl('achievements/feats')}}">Feats of Strength</a></li>
+            <li ng-class="{ active: isActive('achievements/general') }"><a ng-href="{{getUrl('achievements/general')}}">General</a></li>
+            <li ng-class="{ active: isActive('achievements/quest') }"><a ng-href="{{getUrl('achievements/quest')}}">Quest</a></li>
+            <li ng-class="{ active: isActive('achievements/exploration') }"><a ng-href="{{getUrl('achievements/exploration')}}">Exploration</a></li>
+            <li ng-class="{ active: isActive('achievements/pvp') }"><a ng-href="{{getUrl('achievements/pvp')}}">Player vs. Player</a></li>
+            <li ng-class="{ active: isActive('achievements/dungeons') }"><a ng-href="{{getUrl('achievements/dungeons')}}">Dungeons & Raids</a></li>
+            <li ng-class="{ active: isActive('achievements/professions') }"><a ng-href="{{getUrl('achievements/professions')}}">Professions</a></li>
+            <li ng-class="{ active: isActive('achievements/reputation') }"><a ng-href="{{getUrl('achievements/reputation')}}">Reputation</a></li>
+            <li ng-class="{ active: isActive('achievements/scenarios') }"><a ng-href="{{getUrl('achievements/scenarios')}}">Scenarios</a></li>
+            <li ng-class="{ active: isActive('achievements/events') }"><a ng-href="{{getUrl('achievements/events')}}">World Events</a></li>
+            <li ng-class="{ active: isActive('achievements/pets') }"><a ng-href="{{getUrl('achievements/pets')}}">Pet Battles</a></li>
+            <li ng-class="{ active: isActive('achievements/feats') }"><a ng-href="{{getUrl('achievements/feats')}}">Feats of Strength</a></li>
           </ul>
         </li>
 
-        <li class="dropdown">
+        <li ng-class="{ active: isActive('collectable', true) }" class="dropdown">
           <a href="#" class="dropdown-toggle">Collectable <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a ng-href="{{getUrl('mounts')}}">Mounts</a></li>
-            <li><a ng-href="{{getUrl('companions')}}">Companions</a></li>
-            <li><a ng-href="{{getUrl('battlepets')}}">Battle Pets</a></li>
+            <li ng-class="{ active: isActive('collectable/mounts') }"><a ng-href="{{getUrl('collectable/mounts')}}">Mounts</a></li>
+            <li ng-class="{ active: isActive('collectable/companions') }"><a ng-href="{{getUrl('collectable/companions')}}">Companions</a></li>
+            <li ng-class="{ active: isActive('collectable/battlepets') }"><a ng-href="{{getUrl('collectable/battlepets')}}">Battle Pets</a></li>
           </ul>
         </li>
-        <li><a ng-href="{{getUrl('calendar')}}">Calendar</a></li>
-        <li><a ng-href="{{getUrl('reputation')}}">Reputation</a></li>
+        <li ng-class="{ active: isActive('calendar') }"><a ng-href="{{getUrl('calendar')}}">Calendar</a></li>
+        <li ng-class="{ active: isActive('reputation') }"><a ng-href="{{getUrl('reputation')}}">Reputation</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right" ng-show="isLoggedIn">
         <li><a href="#" class="navbar-char-link">

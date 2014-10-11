@@ -64,31 +64,53 @@ simpleArmoryControllers.controller('OverviewCtrl', ['$scope', 'LoginService', '$
   $scope.character = loginService.getCharacter($routeParams);
 }]);
 
-simpleArmoryControllers.controller('HeaderCtrl', ['$scope', 'LoginService', function ($scope, loginService) {
+simpleArmoryControllers.controller('HeaderCtrl', ['$scope', 'LoginService', '$location', function ($scope, loginService, $location) {
     
     $scope.loginService = loginService;
-    
+  
     $scope.$watch('loginService.isLoggedIn()', function(newVal) {
         $scope.isLoggedIn = newVal;
     });
 
     $scope.getUrl = function(subSite) {
-      if (!$scope.loginService || !$scope.loginService.character)
-      {
+      if (!$scope.loginService || !$scope.loginService.character) {
         return "#";
       }
 
-      var url = "#/" + 
-        $scope.loginService.character.region.toLowerCase() + "/" + 
-        $scope.loginService.character.realm.toLowerCase()  + "/" + 
-        $scope.loginService.character.name.toLowerCase();
-
-      if (subSite != "")
-      {
+      var url = "#" + getBaseUrl($scope.loginService);
+      if (subSite != "") {
         url += "/" + subSite;
       }
 
       return url;
+    }
+
+    $scope.isActive = function (viewLocation, subMenu) {
+
+      // if its a submenu search, then just look for the location in the url
+      // and call it good      
+      if (subMenu) {
+        return $location.path().indexOf(viewLocation) > 0;
+      }
+
+      // otherwise, lets try to match it directly
+      var combinedUrl = getBaseUrl($scope.loginService);
+      if (viewLocation != "") {
+        combinedUrl += "/" + viewLocation;
+      } 
+
+      return $location.path() == combinedUrl;
+    };
+
+    function getBaseUrl(loginService) {
+      
+      if(!loginService || !loginService.character) {
+        return "#";
+      }
+
+      return "/" + loginService.character.region.toLowerCase() + "/" + 
+                   loginService.character.realm.toLowerCase()  + "/" + 
+                   loginService.character.name.toLowerCase();
     }
 
 }]);

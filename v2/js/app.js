@@ -16,7 +16,7 @@ simpleArmoryApp.config(['$routeProvider',
         templateUrl: 'partials/achievements.html',
         controller: 'AchievementsCtrl'
       }).  
-      when('/:region/:realm/:character/battlepets', {
+      when('/:region/:realm/:character/collectable/battlepets', {
         templateUrl: 'partials/battlePets.html',
         controller: 'BattlePetsCtrl'
       }).  
@@ -24,11 +24,11 @@ simpleArmoryApp.config(['$routeProvider',
         templateUrl: 'partials/calendar.html',
         controller: 'CalendarCtrl'
       }).  
-      when('/:region/:realm/:character/companions', {
+      when('/:region/:realm/:character/collectable/companions', {
         templateUrl: 'partials/companions.html',
         controller: 'CompanionsCtrl'
       }). 
-      when('/:region/:realm/:character/mounts', {
+      when('/:region/:realm/:character/collectable/mounts', {
         templateUrl: 'partials/mounts.html',
         controller: 'MountsCtrl'
       }).        
