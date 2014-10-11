@@ -102,6 +102,23 @@ simpleArmoryControllers.controller('HeaderCtrl', ['$scope', 'LoginService', '$lo
       return $location.path() == combinedUrl;
     };
 
+    $scope.guildName = function() {
+        if ($scope.loginService && $scope.loginService.character && $scope.loginService.character.guild) {
+          return "<" + $scope.loginService.character.guild.name + ">";
+        }
+
+        return "";
+    }
+
+    $scope.imgUrl = function() {
+      if ($scope.loginService && $scope.loginService.character) {
+        var c = $scope.loginService.character;
+        return "http://" + c.region + ".battle.net/static-render/" + c.region + "/" + c.thumbnail;
+      }
+
+      return "";   
+    }
+
     function getBaseUrl(loginService) {
       
       if(!loginService || !loginService.character) {

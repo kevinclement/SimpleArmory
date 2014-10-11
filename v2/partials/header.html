@@ -43,10 +43,10 @@
       </ul>
       <ul class="nav navbar-nav navbar-right" ng-show="isLoggedIn">
         <li><a href="#" class="navbar-char-link">
-                <div>Marko</div>
-                <div class="navbar-char-link-subtext">&lt;Game Over&gt;</div>
-                <div class="navbar-char-link-subtext">17766</div></a></li>
-        <li><img class="navbar-char-image" src="http://us.battle.net/static-render/us/proudmoore/95/142561887-avatar.jpg"/></li>
+                <div>{{ loginService.character.name }}</div>
+                <div class="navbar-char-link-subtext">{{ guildName() }}</div>
+                <div class="navbar-char-link-subtext">{{ loginService.character.achievementPoints }}</div></a></li>
+        <li><img class="navbar-char-image" ng-src="{{imgUrl()}}"/></li>
       </ul>
     </div>
   </div>
