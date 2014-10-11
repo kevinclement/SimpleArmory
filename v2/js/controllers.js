@@ -93,6 +93,30 @@ simpleArmoryControllers.controller('HeaderCtrl', ['$scope', 'LoginService', func
 
 }]);
 
+simpleArmoryControllers.controller('AchievementsCtrl', ['$scope', 'LoginService', function ($scope, loginService) {
+  
+}]);
+
+simpleArmoryControllers.controller('MountsCtrl', ['$scope', 'LoginService', function ($scope, loginService) {
+  
+}]);
+
+simpleArmoryControllers.controller('CompanionsCtrl', ['$scope', 'LoginService', function ($scope, loginService) {
+  
+}]);
+
+simpleArmoryControllers.controller('BattlePetsCtrl', ['$scope', 'LoginService', function ($scope, loginService) {
+  
+}]);
+
+simpleArmoryControllers.controller('CalendarCtrl', ['$scope', 'LoginService', function ($scope, loginService) {
+  
+}]);
+
+simpleArmoryControllers.controller('ReputationCtrl', ['$scope', 'LoginService', function ($scope, loginService) {
+  
+}]);
+
 simpleArmoryControllers.controller('ErrorCtrl', ['$scope', 'LoginService', function ($scope, loginService) {
   loginService.resetLoggedIn();
 }]);
