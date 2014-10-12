@@ -16,7 +16,9 @@ simpleArmoryServices.factory('LoginService', ['$location', '$log', '$http', '$q'
   		}, 1);
   		// ########################################################################
 
-  		var jsonp = $http.jsonp('http://' + $routeParams.region +'.battle.net/api/wow/character/' + $routeParams.realm + '/' + $routeParams.character +'?fields=pets,mounts,achievements,guild,reputation&jsonp=JSON_CALLBACK')
+  		var jsonp = $http.jsonp(
+  				'http://' + $routeParams.region +'.battle.net/api/wow/character/' + $routeParams.realm + '/' + $routeParams.character +'?fields=pets,mounts,achievements,guild,reputation&jsonp=JSON_CALLBACK',
+  				{ cache: true})
   			.error(getCharacterError)
   			.then(getCharacterComplete);
 

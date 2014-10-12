@@ -93,6 +93,11 @@ simpleArmoryControllers.controller('OverviewCtrl', ['$scope', 'LoginService', 'A
   achievementsService.getAchievements($scope.character).then(function(achievements){
     $scope.achievements = achievements;
   });
+
+  // Helper function to print percentage for two numbers
+  $scope.percent = function(n, d) {
+    return $filter('number')(((n / d) * 100), 0);
+  }
 }]);
 
 simpleArmoryControllers.controller('HeaderCtrl', ['$scope', '$location', function ($scope, $location) {

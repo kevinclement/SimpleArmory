@@ -5,9 +5,7 @@
   </div>
   <strong class="desc">Total Complete</strong>
   <div class="progress">
-    <div class="progress-bar progress-bar-success" style="width: {{ (achievements.completed / achievements.possible) * 100 | number:0 }}%">
-      <span>{{achievements.completed}} / {{achievements.possible}} ({{ (achievements.completed / achievements.possible) * 100 | number:0 }}%)</span>
-    </div> 
+  	<progressbar max="100" value="percent(achievements.completed, achievements.possible)" type="success"><span>{{achievements.completed}} / {{achievements.possible}} ({{percent(achievements.completed, achievements.possible) }}%)</span></progressbar>  		
   </div>
 
   <div class="achGrid">
