@@ -3,14 +3,24 @@
 /* Services */
 var simpleArmoryServices = angular.module('simpleArmoryServices', ['ngResource']);
 
-simpleArmoryServices.factory('LoginService', ['$location', '$log', '$http', function ($location, $log, $http) {
+simpleArmoryServices.factory('LoginService', ['$location', '$log', '$http', '$q', function ($location, $log, $http, $q) {
 	return {
 	  getCharacter: function($routeParams) {
-  		$log.log("Fetching " + $routeParams.character + " from server " + $routeParams.realm);
+  		$log.log("Fetching " + $routeParams.character + " from server " + $routeParams.realm + "...");
 
-  		return $http.jsonp('http://' + $routeParams.region +'.battle.net/api/wow/character/' + $routeParams.realm + '/' + $routeParams.character +'?fields=pets,mounts,achievements,guild,reputation&jsonp=JSON_CALLBACK')
+  		// ## TMP #################################################################
+  		// ## Good to make sure I'm honest, will remove before we go live
+  		var deferred = $q.defer();
+  		setTimeout(function() {
+  			deferred.resolve('hello world');
+  		}, 1);
+  		// ########################################################################
+
+  		var jsonp = $http.jsonp('http://' + $routeParams.region +'.battle.net/api/wow/character/' + $routeParams.realm + '/' + $routeParams.character +'?fields=pets,mounts,achievements,guild,reputation&jsonp=JSON_CALLBACK')
   			.error(getCharacterError)
   			.then(getCharacterComplete);
+
+  		return $q.all([jsonp, deferred.promise]);
 
   		function getCharacterError(data, status, headers, config) {
   			$log.log("Trouble fetching character from battlenet");
@@ -54,15 +64,15 @@ simpleArmoryServices.factory('BlizzardRealmService', ['$resource', '$q', '$log',
 	}
 }]);
 
-simpleArmoryServices.factory('AchievementsService', ['$http', '$log', 'LoginService', function ($http, $log, loginService) {
+simpleArmoryServices.factory('AchievementsService', ['$http', '$log', 'LoginService', '$routeParams', function ($http, $log, loginService, $routeParams) {
 	return {
-		getAchievements: function(character) {
-			return $http.get('data/achievements.json', { cache: true})
-                .then(getAchievementsComplete);
-
-            function getAchievementsComplete(data, status, headers, config) {
-            	return parseAchievementObject(data.data.supercats, character);
-            }
+		getAchievements: function() {
+			return loginService.getCharacter({'region': $routeParams.region, 'realm':$routeParams.realm, 'character':$routeParams.character}).then(function(character) {
+				return $http.get('data/achievements.json', { cache: true})
+    	            .then(function(data, status, headers, config) {
+    	        		return parseAchievementObject(data.data.supercats, character[0]);    	
+    	            });
+			})		
 		}
 	}
 

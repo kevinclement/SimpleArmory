@@ -26,7 +26,7 @@ simpleArmoryControllers.controller('ApplicationController', ['$scope', 'LoginSer
         rgr = rgr ? rgr : {};
 
         loginService.getCharacter({'region': rgr[1], 'realm':rgr[2], 'character':rgr[3]}).then(function(character) {
-          $scope.character = character;
+          $scope.character = character[0];
           $scope.isLoggedIn = true;
         });
       }
@@ -90,14 +90,9 @@ simpleArmoryControllers.controller('ModalInstanceCtrl', ['$scope', '$modalInstan
 }]);
 
 simpleArmoryControllers.controller('OverviewCtrl', ['$scope', 'LoginService', 'AchievementsService', '$routeParams', '$filter', function ($scope, loginService, achievementsService, $routeParams, $filter) {
-  //achievementsService.getAchievements($scope.character).then(function(achievements){
-  //  $scope.achievements = achievements;
-
-    // TMP
-    //$scope.max = 311;
-  //  $scope.dynamic = 100;
-
-  //});
+  achievementsService.getAchievements($scope.character).then(function(achievements){
+    $scope.achievements = achievements;
+  });
 }]);
 
 simpleArmoryControllers.controller('HeaderCtrl', ['$scope', '$location', function ($scope, $location) {
