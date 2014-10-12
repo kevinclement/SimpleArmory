@@ -1,13 +1,12 @@
 <div class="container">
-	<div>tmp: {{ achievements.supercats.length }} total: {{achievements.total}} max:{{ max }}</div>
   <!-- Progress Overview -->
   <div class="page-header">
     <h2>Progress Overview</h2>
   </div>
   <strong class="desc">Total Complete</strong>
   <div class="progress">
-    <div class="progress-bar progress-bar-success" style="width: {{ (dynamic / achievements.total) * 100 | number:0 }}%">
-      <span>{{dynamic}} / {{achievements.total}} ({{ (dynamic / achievements.total) * 100 | number:0 }}%)</span>
+    <div class="progress-bar progress-bar-success" style="width: {{ (achievements.completed / achievements.possible) * 100 | number:0 }}%">
+      <span>{{achievements.completed}} / {{achievements.possible}} ({{ (achievements.completed / achievements.possible) * 100 | number:0 }}%)</span>
     </div> 
   </div>
 

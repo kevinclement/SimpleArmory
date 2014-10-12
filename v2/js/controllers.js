@@ -3,7 +3,37 @@
 /* Controllers */
 var simpleArmoryControllers = angular.module('simpleArmoryControllers', []);
 
-simpleArmoryControllers.controller('LoginCtrl', ['$scope', '$modal', 'LoginService', function ($scope, $modal, loginService) {
+
+simpleArmoryControllers.controller('ApplicationController', ['$scope', 'LoginService', '$location', function ($scope, loginService, $location) {
+
+    // default to not logged in
+    $scope.isLoggedIn = false;
+
+    // Listen for path changed and then parse and fetch the character
+    $scope.$on("$locationChangeSuccess",function(event, next, current){
+
+      // If there was an error we need to reset everything
+      if ($location.$$path == "/error") {
+          $scope.character = null;
+          $scope.isLoggedIn = false;
+      } else if ($location.$$path != "" && $location.$$path != "/") {
+        // "us/proudmoore/marko"
+        // [0]: us/proudmoore/marko
+        // [1]: spirestone
+        // [2]: marko
+        // [3]: location part
+        var rgr = new RegExp('([^\/]+)/([^\/]+)/([^\/]+)/?([^\/]+)?').exec($location.$$path);
+        rgr = rgr ? rgr : {};
+
+        loginService.getCharacter({'region': rgr[1], 'realm':rgr[2], 'character':rgr[3]}).then(function(character) {
+          $scope.character = character;
+          $scope.isLoggedIn = true;
+        });
+      }
+    });  
+}]);
+
+simpleArmoryControllers.controller('LoginCtrl', ['$scope', '$modal', '$location', function ($scope, $modal, $location) {
 
   var modalInstance = $modal.open({
     templateUrl: 'ModelLogin.html',
@@ -12,7 +42,7 @@ simpleArmoryControllers.controller('LoginCtrl', ['$scope', '$modal', 'LoginServi
   });
 
   modalInstance.result.then(function (loginObj) {
-    loginService.setUser(loginObj);
+    $location.url(loginObj.region + "/" + loginObj.realm + "/" + loginObj.character);
   });
 }]);
 
@@ -60,31 +90,20 @@ simpleArmoryControllers.controller('ModalInstanceCtrl', ['$scope', '$modalInstan
 }]);
 
 simpleArmoryControllers.controller('OverviewCtrl', ['$scope', 'LoginService', 'AchievementsService', '$routeParams', '$filter', function ($scope, loginService, achievementsService, $routeParams, $filter) {
-  $scope.character = loginService.getCharacter($routeParams);
-  achievementsService.getAchievements($scope.character).then(function(achievements){
-    $scope.achievements = achievements;
+  //achievementsService.getAchievements($scope.character).then(function(achievements){
+  //  $scope.achievements = achievements;
 
     // TMP
     //$scope.max = 311;
-    $scope.dynamic = 100;
-   
-  });
+  //  $scope.dynamic = 100;
+
+  //});
 }]);
 
-simpleArmoryControllers.controller('HeaderCtrl', ['$scope', 'LoginService', '$location', function ($scope, loginService, $location) {
-    
-    $scope.loginService = loginService;
-  
-    $scope.$watch('loginService.isLoggedIn()', function(newVal) {
-        $scope.isLoggedIn = newVal;
-    });
-
+simpleArmoryControllers.controller('HeaderCtrl', ['$scope', '$location', function ($scope, $location) {
+ 
     $scope.getUrl = function(subSite) {
-      if (!$scope.loginService || !$scope.loginService.character) {
-        return "#";
-      }
-
-      var url = "#" + getBaseUrl($scope.loginService);
+      var url = "#" + getBaseUrl($scope.character);
       if (subSite != "") {
         url += "/" + subSite;
       }
@@ -101,7 +120,7 @@ simpleArmoryControllers.controller('HeaderCtrl', ['$scope', 'LoginService', '$lo
       }
 
       // otherwise, lets try to match it directly
-      var combinedUrl = getBaseUrl($scope.loginService);
+      var combinedUrl = getBaseUrl($scope.character);
       if (viewLocation != "") {
         combinedUrl += "/" + viewLocation;
       } 
@@ -110,16 +129,16 @@ simpleArmoryControllers.controller('HeaderCtrl', ['$scope', 'LoginService', '$lo
     };
 
     $scope.guildName = function() {
-        if ($scope.loginService && $scope.loginService.character && $scope.loginService.character.guild) {
-          return "<" + $scope.loginService.character.guild.name + ">";
+        if ($scope.character && $scope.character.guild) {
+          return "<" + $scope.character.guild.name + ">";
         }
 
         return "";
     }
 
     $scope.imgUrl = function() {
-      if ($scope.loginService && $scope.loginService.character) {
-        var c = $scope.loginService.character;
+      if ($scope.character) {
+        var c = $scope.character;
         return "http://" + c.region + ".battle.net/static-render/" + c.region + "/" + c.thumbnail;
       }
 
@@ -127,76 +146,49 @@ simpleArmoryControllers.controller('HeaderCtrl', ['$scope', 'LoginService', '$lo
     }
 
     $scope.armoryUrl = function() {
-      if ($scope.loginService && $scope.loginService.character) {
-        var c = $scope.loginService.character;
+      if ($scope.character) {
+        var c = $scope.character;
         return "http://" + c.region + ".battle.net/wow/en/character/" + c.realm + "/" + c.name.toLowerCase() + "/advanced";
       }
 
       return "#";   
     }
 
-
-    function getBaseUrl(loginService) {
-      
-      if(!loginService || !loginService.character) {
+    function getBaseUrl(character) {    
+      if (!character) {
         return "#";
       }
 
-      return "/" + loginService.character.region.toLowerCase() + "/" + 
-                   loginService.character.realm.toLowerCase()  + "/" + 
-                   loginService.character.name.toLowerCase();
+      return "/" + character.region.toLowerCase() + "/" + 
+                   character.realm.toLowerCase()  + "/" + 
+                   character.name.toLowerCase();
     }
+}]);
+
+simpleArmoryControllers.controller('AchievementsCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
 
 }]);
 
-simpleArmoryControllers.controller('AchievementsCtrl', ['$scope', 'LoginService', '$routeParams', function ($scope, loginService, $routeParams) {
+simpleArmoryControllers.controller('MountsCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
 
-    $scope.character = loginService.getCharacter($routeParams);
 }]);
 
-simpleArmoryControllers.controller('MountsCtrl', ['$scope', 'LoginService', '$routeParams', function ($scope, loginService, $routeParams) {
+simpleArmoryControllers.controller('CompanionsCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
 
-    $scope.character = loginService.getCharacter($routeParams);
 }]);
 
-simpleArmoryControllers.controller('CompanionsCtrl', ['$scope', 'LoginService', '$routeParams', function ($scope, loginService, $routeParams) {
+simpleArmoryControllers.controller('BattlePetsCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
 
-    $scope.character = loginService.getCharacter($routeParams);
 }]);
 
-simpleArmoryControllers.controller('BattlePetsCtrl', ['$scope', 'LoginService', '$routeParams', function ($scope, loginService, $routeParams) {
-    $scope.character = loginService.getCharacter($routeParams);
+simpleArmoryControllers.controller('CalendarCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
+
 }]);
 
-simpleArmoryControllers.controller('CalendarCtrl', ['$scope', 'LoginService', '$routeParams', function ($scope, loginService, $routeParams) {
+simpleArmoryControllers.controller('ReputationCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
 
-  $scope.character = loginService.getCharacter($routeParams);
 }]);
 
-simpleArmoryControllers.controller('ReputationCtrl', ['$scope', 'LoginService', '$routeParams', function ($scope, loginService, $routeParams) {
+simpleArmoryControllers.controller('ErrorCtrl', ['$scope', function ($scope) {
 
-  $scope.character = loginService.getCharacter($routeParams);  
 }]);
-
-simpleArmoryControllers.controller('ErrorCtrl', ['$scope', 'LoginService', function ($scope, loginService) {
-  loginService.resetLoggedIn();
-}]);
-
-/*
-simpleArmoryControllers.controller('PhoneListCtrl', ['$scope', 'Phone',
-  function($scope, Phone) {
-    $scope.phones = Phone.query();
-    $scope.orderProp = 'age';
-  }]);
-
-phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Phone',
-  function($scope, $routeParams, Phone) {
-    $scope.phone = Phone.get({phoneId: $routeParams.phoneId}, function(phone) {
-      $scope.mainImageUrl = phone.images[0];
-    });
-
-    $scope.setImage = function(imageUrl) {
-      $scope.mainImageUrl = imageUrl;
-    }
-  }]);
-*/

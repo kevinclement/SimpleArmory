@@ -3,57 +3,24 @@
 /* Services */
 var simpleArmoryServices = angular.module('simpleArmoryServices', ['ngResource']);
 
-simpleArmoryServices.factory('LoginService', ['$resource', '$location', '$log', function ($resource, $location, $log) {
-	var loggedIn = false;
-
+simpleArmoryServices.factory('LoginService', ['$location', '$log', '$http', function ($location, $log, $http) {
 	return {
-	  character: null,
-	  isLoggedIn: function () {
-	    return loggedIn;
-	  },
-	  resetLoggedIn: function() {
-		loggedIn = false;
-	  },
-	  setUser: function (loginObj) {
-	    this.getCharacter(loginObj).$promise.then(function(char)
-	    	{
-	    		$location.url(loginObj.region + "/" + loginObj.realm + "/" + loginObj.character);
-	    	});
-	  },
-
 	  getCharacter: function($routeParams) {
-		var self = this;
+  		$log.log("Fetching " + $routeParams.character + " from server " + $routeParams.realm);
 
-	  	if (this.character != null &&
-	  		this.character.region.toLowerCase() == $routeParams.region.toLowerCase() &&
-	  		this.character.name.toLowerCase() == $routeParams.character.toLowerCase() &&
-	  		this.character.realm.toLowerCase() == $routeParams.realm.toLowerCase()) {
-	  		$log.log("Using cached character");
-	  		return this.character;
-	  	}
-	  	else {
-	  		$log.log("Fetching " + $routeParams.character + " from server " + $routeParams.realm);
-		  	return $resource(
-		  		'http://:region.battle.net/api/wow/character/:realm/:character',
-		  		{
-		  			fields: 'fields=pets,mounts,achievements,guild,reputation',
-		  			jsonp: 'JSON_CALLBACK',
-		  		}, 
-		  		{
-      				get: { method:'JSONP' }
-   			 	}).get(
-   			 		{region:$routeParams.region, realm:$routeParams.realm, character:$routeParams.character},
-   			 		function(value, responseHeaders) {
-						// Success
-						value.region = $routeParams.region;
-						self.character = value;
-						loggedIn = true;
-   			 		},
-   			 		function(httpResponse){
-   			 			// Failure
-   			 			$location.url("error");
-   			 		});
-	  	}
+  		return $http.jsonp('http://' + $routeParams.region +'.battle.net/api/wow/character/' + $routeParams.realm + '/' + $routeParams.character +'?fields=pets,mounts,achievements,guild,reputation&jsonp=JSON_CALLBACK')
+  			.error(getCharacterError)
+  			.then(getCharacterComplete);
+
+  		function getCharacterError(data, status, headers, config) {
+  			$log.log("Trouble fetching character from battlenet");
+			$location.url("error");
+  		}
+
+  		function getCharacterComplete(data, status, headers, config) {
+  			data.data.region = $routeParams.region;
+			return data.data;
+  		}
 	  }
 	}
 }]);
@@ -88,46 +55,82 @@ simpleArmoryServices.factory('BlizzardRealmService', ['$resource', '$q', '$log',
 }]);
 
 simpleArmoryServices.factory('AchievementsService', ['$http', '$log', 'LoginService', function ($http, $log, loginService) {
-	var cachedParse = null;
 	return {
 		getAchievements: function(character) {
 			return $http.get('data/achievements.json', { cache: true})
                 .then(getAchievementsComplete);
 
             function getAchievementsComplete(data, status, headers, config) {
-            	if (cachedParse == null) {
-            		cachedParse = parseAchievementObject(data.data.supercats, character);
-            	}
-
-            	return cachedParse;
+            	return parseAchievementObject(data.data.supercats, character);
             }
 		}
 	}
 
-	function parseAchievementObject(supercats, character) {		
-		var total = 0;
+	function parseAchievementObject(supercats, character) {	
+		var obj = {};
+		var completed = {};
+		var totalPossible = 0;
+		var totalCompleted = 0;
 		$log.log("Parsing achievements.json...");
+
+		// TODO: Fix feats of strength
+		// TODO: faction check stuff
+
+		// Build up lookup for achievements that character has completed
+		angular.forEach(character.achievements.achievementsCompleted, function(ach, index) {
+			// hash the achievement and its timestamp
+			completed[ach] = character.achievements.achievementsCompletedTimestamp[index];
+		});
 
 		// Lets parse out all the super categories and build out our structure
 		angular.forEach(supercats, function(supercat) {
-			var scc = 0;
+			var possibleCount = 0;
+			var completedCount = 0;
+
+			// Add the supercategory to the object, so we can do quick lookups on category
+			obj[supercat.name] = {};
+			obj[supercat.name]['categories'] = [];
+
 			angular.forEach(supercat.cats, function(cat) {
+				var myCat = {'name': cat.name, 'zones': []};
+
 				angular.forEach(cat.zones, function(zone) {
+					var myZone = {'name': zone.name, 'achievements': []};
+
 					angular.forEach(zone.achs, function(ach) {
+						var myAchievement = ach;
+
 						if (supercat.name != "Feats of Strength" && ach.obtainable && (ach.side == '' || ach.side == "A")){
-							total++;	
-							scc++;
+							possibleCount++;
+							totalPossible++;
+
+							if (completed[ach.id]) {
+								completedCount++;
+								totalCompleted++;
+							}
+
+							myAchievement['completed'] = completed[ach.id];
 						}
+
+						myZone['achievements'].push(myAchievement);
 					});
+
+					myCat['zones'].push(myZone);
 				});
+
+				// Add the category to the obj
+				obj[supercat.name]['categories'].push(myCat);
 			});
 
-			//$log.log(supercat.name + " : " + scc);
+			obj[supercat.name]['possible'] = possibleCount;
+			obj[supercat.name]['completed'] = completedCount;
     	}); 
 
-		return {
-			supercats: supercats,
-			total: total
-		}
+		// Add totals
+		obj['possible'] = totalPossible;
+		obj['completed'] = totalCompleted;
+
+		// Data object we expose externally
+		return obj;
 	}
 }]);
