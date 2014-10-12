@@ -87,11 +87,47 @@ simpleArmoryServices.factory('BlizzardRealmService', ['$resource', '$q', '$log',
 	}
 }]);
 
-/*
-phonecatServices.factory('Phone', ['$resource',
-  function($resource){
-    return $resource('phones/:phoneId.json', {}, {
-      query: {method:'GET', params:{phoneId:'phones'}, isArray:true}
-    });
-  }]);
-*/
+simpleArmoryServices.factory('AchievementsService', ['$http', '$log', 'LoginService', function ($http, $log, loginService) {
+	var cachedParse = null;
+	return {
+		getAchievements: function(character) {
+			return $http.get('data/achievements.json', { cache: true})
+                .then(getAchievementsComplete);
+
+            function getAchievementsComplete(data, status, headers, config) {
+            	if (cachedParse == null) {
+            		cachedParse = parseAchievementObject(data.data.supercats, character);
+            	}
+
+            	return cachedParse;
+            }
+		}
+	}
+
+	function parseAchievementObject(supercats, character) {		
+		var total = 0;
+		$log.log("Parsing achievements.json...");
+
+		// Lets parse out all the super categories and build out our structure
+		angular.forEach(supercats, function(supercat) {
+			var scc = 0;
+			angular.forEach(supercat.cats, function(cat) {
+				angular.forEach(cat.zones, function(zone) {
+					angular.forEach(zone.achs, function(ach) {
+						if (supercat.name != "Feats of Strength" && ach.obtainable && (ach.side == '' || ach.side == "A")){
+							total++;	
+							scc++;
+						}
+					});
+				});
+			});
+
+			//$log.log(supercat.name + " : " + scc);
+    	}); 
+
+		return {
+			supercats: supercats,
+			total: total
+		}
+	}
+}]);

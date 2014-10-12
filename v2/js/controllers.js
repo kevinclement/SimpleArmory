@@ -59,9 +59,16 @@ simpleArmoryControllers.controller('ModalInstanceCtrl', ['$scope', '$modalInstan
   };
 }]);
 
-simpleArmoryControllers.controller('OverviewCtrl', ['$scope', 'LoginService', '$routeParams', function ($scope, loginService, $routeParams) {
-
+simpleArmoryControllers.controller('OverviewCtrl', ['$scope', 'LoginService', 'AchievementsService', '$routeParams', '$filter', function ($scope, loginService, achievementsService, $routeParams, $filter) {
   $scope.character = loginService.getCharacter($routeParams);
+  achievementsService.getAchievements($scope.character).then(function(achievements){
+    $scope.achievements = achievements;
+
+    // TMP
+    //$scope.max = 311;
+    $scope.dynamic = 100;
+   
+  });
 }]);
 
 simpleArmoryControllers.controller('HeaderCtrl', ['$scope', 'LoginService', '$location', function ($scope, loginService, $location) {
