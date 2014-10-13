@@ -88,6 +88,7 @@ simpleArmoryServices.factory('AchievementsService', ['$http', '$log', 'LoginServ
 		var completed = {};
 		var totalPossible = 0;
 		var totalCompleted = 0;
+		var totalFoS = 0;
 		$log.log("Parsing achievements.json...");
 
 		// TODO: Fix feats of strength
@@ -121,6 +122,11 @@ simpleArmoryServices.factory('AchievementsService', ['$http', '$log', 'LoginServ
 						if (completed[ach.id]) {
 							added = true;
 							myZone['achievements'].push(myAchievement);	
+
+							// if this is feats of strength then I want to keep a seperate count for that since its not a percentage thing
+							if (supercat.name == "Feats of Strength") {
+								totalFoS++;
+							}
 						}
 
 						// Update counts proper
@@ -152,6 +158,11 @@ simpleArmoryServices.factory('AchievementsService', ['$http', '$log', 'LoginServ
 
 			obj[supercat.name]['possible'] = possibleCount;
 			obj[supercat.name]['completed'] = completedCount;
+
+			// Add the FoS count if this is the FoS
+			if (supercat.name == "Feats of Strength") {
+				obj[supercat.name]['foSTotal'] = totalFoS;
+			}
     	}); 
 
 		// Add totals
