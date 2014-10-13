@@ -4,7 +4,7 @@
 var simpleArmoryControllers = angular.module('simpleArmoryControllers', []);
 
 
-simpleArmoryControllers.controller('ApplicationController', ['$scope', 'LoginService', '$location', function ($scope, loginService, $location) {
+simpleArmoryControllers.controller('ApplicationController', ['$scope', 'LoginService', '$location', '$filter', function ($scope, loginService, $location, $filter) {
 
     // default to not logged in
     $scope.isLoggedIn = false;
@@ -31,6 +31,11 @@ simpleArmoryControllers.controller('ApplicationController', ['$scope', 'LoginSer
         });
       }
     });  
+
+    // Helper function for percentage numbers.  Used in a lot of screens
+    $scope.percent = function(n, d) {
+      return $filter('number')(((n / d) * 100), 0);
+    }
 }]);
 
 simpleArmoryControllers.controller('LoginCtrl', ['$scope', '$modal', '$location', function ($scope, $modal, $location) {
@@ -89,15 +94,11 @@ simpleArmoryControllers.controller('ModalInstanceCtrl', ['$scope', '$modalInstan
   };
 }]);
 
-simpleArmoryControllers.controller('OverviewCtrl', ['$scope', 'AchievementsService', '$filter', function ($scope, achievementsService, $filter) {
+simpleArmoryControllers.controller('OverviewCtrl', ['$scope', 'AchievementsService', function ($scope, achievementsService) {
+  
   achievementsService.getAchievements().then(function(achievements){
     $scope.achievements = achievements;
   });
-
-  // Helper function to print percentage for two numbers
-  $scope.percent = function(n, d) {
-    return $filter('number')(((n / d) * 100), 0);
-  }
 }]);
 
 simpleArmoryControllers.controller('HeaderCtrl', ['$scope', '$location', function ($scope, $location) {
@@ -165,7 +166,7 @@ simpleArmoryControllers.controller('HeaderCtrl', ['$scope', '$location', functio
     }
 }]);
 
-simpleArmoryControllers.controller('AchievementsCtrl', ['$scope', 'AchievementsService', '$filter', function ($scope, achievementsService, $filter) {
+simpleArmoryControllers.controller('AchievementsCtrl', ['$scope', 'AchievementsService', function ($scope, achievementsService) {
   
   // Need to figure out which supercat
   $scope.superCat = "General";
@@ -174,12 +175,6 @@ simpleArmoryControllers.controller('AchievementsCtrl', ['$scope', 'AchievementsS
   achievementsService.getAchievements().then(function(achievements){
     $scope.achievements = achievements["General"];
   });
-
-  // Helper function to print percentage for two numbers
-  $scope.percent = function(n, d) {
-    return $filter('number')(((n / d) * 100), 0);
-  }    
-
 }]);
 
 simpleArmoryControllers.controller('MountsCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
