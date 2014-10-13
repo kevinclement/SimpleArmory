@@ -176,10 +176,13 @@ simpleArmoryControllers.controller('AchievementsCtrl', ['$scope', 'AchievementsS
 
   $scope.getImageSrc = function(achievement) {
 
-    if (achievement.completed) {
+    if (achievement.id == 8468) {
+      // special case galakras since its busted on wowhead
+      return "images/galakras.png";
+    } else if (achievement.completed) {
+      // wowhead img
       return "http://wow.zamimg.com/images/wow/icons/medium/" + achievement.icon.toLowerCase() + ".jpg";
-    }
-    else {
+    } else {
       // 1x1 gif   
       return "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==";
     }
