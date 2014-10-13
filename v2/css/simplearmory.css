@@ -15,6 +15,23 @@ body {
     margin-right: 10px;
     float: left;
 }
+.categoryHeader {
+  margin-bottom:0px;
+}
+.zoneHeader {
+  margin-bottom:0px;
+}
+.borderOn {
+  border: 1px dashed grey;
+}
+.borderOff {
+  border: 0px;
+}
+.progressRight {
+  float:right;
+  margin-top:10px;
+  width:250px;
+}
 
 #logo {
   display: inline-block;

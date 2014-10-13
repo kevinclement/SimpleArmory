@@ -185,6 +185,15 @@ simpleArmoryControllers.controller('AchievementsCtrl', ['$scope', 'AchievementsS
     }
   }
 
+  $scope.border = function(achievement){
+      if (achievement.completed) {
+        return "borderOff";
+      }
+      else {
+        return "borderOn";
+      }
+    };
+
   // Maps url simplified name into the pretty name and the name we hash off of in the json
   function prettySuperCategory(supercat) {
 

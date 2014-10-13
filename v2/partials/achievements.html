@@ -2,7 +2,7 @@
   <div class="page-header">
     <h2>
         Achievements <small>{{superCat}}</small>
-        <div class="progress" style="float:right;margin-top:8px;width:250px;">
+        <div class="progress progressRight">
             <progressbar max="100" type="success"
       	  		value="percent(achievements.completed, achievements.possible)" >
       	  		<span>{{ achievements.completed}} / {{achievements.possible}} ({{percent(achievements.completed, achievements.possible) }}%)</span></progressbar>  	
@@ -10,10 +10,10 @@
     </h2>
   </div>
   
-  <h3 ng-repeat-start="category in achievements.categories">{{ category.name }}</h3>
+  <h3 class="categoryHeader" ng-repeat-start="category in achievements.categories">{{ category.name }}</h3>
   <div class="sect" ng-repeat="zone in category.zones">
-      <h5>{{ zone.name }}</h5>
-      <a href="#" class="thumbnail" ng-repeat="achievement in zone.achievements">
+      <h5 class="zoneHeader">{{ zone.name }}</h5>
+      <a href="#" class="thumbnail" ng-repeat="achievement in zone.achievements" ng-class="{borderOn:!achievement.completed, borderOff:achievement.completed}">
         <img ng-src="{{getImageSrc(achievement)}}">
       </a>
   </div>
