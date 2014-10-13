@@ -166,15 +166,57 @@ simpleArmoryControllers.controller('HeaderCtrl', ['$scope', '$location', functio
     }
 }]);
 
-simpleArmoryControllers.controller('AchievementsCtrl', ['$scope', 'AchievementsService', function ($scope, achievementsService) {
+simpleArmoryControllers.controller('AchievementsCtrl', ['$scope', 'AchievementsService', '$routeParams', function ($scope, achievementsService, $routeParams) {
   
-  // Need to figure out which supercat
-  $scope.superCat = "General";
-
+  $scope.superCat = prettySuperCategory($routeParams.category);
 
   achievementsService.getAchievements().then(function(achievements){
-    $scope.achievements = achievements["General"];
+    $scope.achievements = achievements[$scope.superCat];
   });
+
+  // Maps url simplified name into the pretty name and the name we hash off of in the json
+  function prettySuperCategory(supercat) {
+
+    var prettyCatName = supercat;
+
+    switch(supercat) {
+      case 'general':
+          prettyCatName = "General";
+          break;
+      case 'quests':
+          prettyCatName = "Quests";
+          break;
+      case 'exploration':
+          prettyCatName = "Exploration";
+          break;
+      case 'pvp':
+          prettyCatName = "Player vs. Player";
+          break;          
+      case 'dungeons':
+          prettyCatName = "Dungeons & Raids";
+          break;          
+      case 'professions':
+          prettyCatName = "Professions";
+          break;
+      case 'reputation':
+          prettyCatName = "Reputation";
+          break;
+      case 'scenarios':
+          prettyCatName = "Scenarios";
+          break;
+      case 'events':
+          prettyCatName = "World Events";
+          break;
+      case 'pets':
+          prettyCatName = "Pet Battles";
+          break;
+      case 'feats':
+          prettyCatName = "Feats of Strength";
+          break;                    
+    }
+
+    return prettyCatName;
+  }
 }]);
 
 simpleArmoryControllers.controller('MountsCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
