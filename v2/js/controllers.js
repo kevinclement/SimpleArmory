@@ -89,8 +89,8 @@ simpleArmoryControllers.controller('ModalInstanceCtrl', ['$scope', '$modalInstan
   };
 }]);
 
-simpleArmoryControllers.controller('OverviewCtrl', ['$scope', 'LoginService', 'AchievementsService', '$routeParams', '$filter', function ($scope, loginService, achievementsService, $routeParams, $filter) {
-  achievementsService.getAchievements($scope.character).then(function(achievements){
+simpleArmoryControllers.controller('OverviewCtrl', ['$scope', 'AchievementsService', '$filter', function ($scope, achievementsService, $filter) {
+  achievementsService.getAchievements().then(function(achievements){
     $scope.achievements = achievements;
   });
 
@@ -165,7 +165,20 @@ simpleArmoryControllers.controller('HeaderCtrl', ['$scope', '$location', functio
     }
 }]);
 
-simpleArmoryControllers.controller('AchievementsCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
+simpleArmoryControllers.controller('AchievementsCtrl', ['$scope', 'AchievementsService', '$filter', function ($scope, achievementsService, $filter) {
+  
+  // Need to figure out which supercat
+  $scope.superCat = "General";
+
+
+  achievementsService.getAchievements().then(function(achievements){
+    $scope.achievements = achievements["General"];
+  });
+
+  // Helper function to print percentage for two numbers
+  $scope.percent = function(n, d) {
+    return $filter('number')(((n / d) * 100), 0);
+  }    
 
 }]);
 

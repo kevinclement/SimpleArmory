@@ -31,6 +31,10 @@ simpleArmoryServices.factory('LoginService', ['$location', '$log', '$http', '$q'
 
   		function getCharacterComplete(data, status, headers, config) {
   			data.data.region = $routeParams.region;
+
+  			// add faction
+  			data.data.faction = [,'A','H','A','A','H','H','A','H','H','H','Alliance',,,,,,,,,,,'A',,,'A','H'][data.data.race];
+
 			return data.data;
   		}
 	  }
@@ -69,12 +73,13 @@ simpleArmoryServices.factory('BlizzardRealmService', ['$resource', '$q', '$log',
 simpleArmoryServices.factory('AchievementsService', ['$http', '$log', 'LoginService', '$routeParams', function ($http, $log, loginService, $routeParams) {
 	return {
 		getAchievements: function() {
-			return loginService.getCharacter({'region': $routeParams.region, 'realm':$routeParams.realm, 'character':$routeParams.character}).then(function(character) {
-				return $http.get('data/achievements.json', { cache: true})
-    	            .then(function(data, status, headers, config) {
-    	        		return parseAchievementObject(data.data.supercats, character[0]);    	
-    	            });
-			})		
+			return loginService.getCharacter({'region': $routeParams.region, 'realm':$routeParams.realm, 'character':$routeParams.character})
+				.then(function(character) {
+					return $http.get('data/achievements.json', { cache: true})
+    	            	.then(function(data, status, headers, config) {
+    	        			return parseAchievementObject(data.data.supercats, character[0]);    	
+    	            	});
+				})		
 		}
 	}
 
@@ -86,7 +91,6 @@ simpleArmoryServices.factory('AchievementsService', ['$http', '$log', 'LoginServ
 		$log.log("Parsing achievements.json...");
 
 		// TODO: Fix feats of strength
-		// TODO: faction check stuff
 
 		// Build up lookup for achievements that character has completed
 		angular.forEach(character.achievements.achievementsCompleted, function(ach, index) {
@@ -110,21 +114,31 @@ simpleArmoryServices.factory('AchievementsService', ['$http', '$log', 'LoginServ
 					var myZone = {'name': zone.name, 'achievements': []};
 
 					angular.forEach(zone.achs, function(ach) {
-						var myAchievement = ach;
+						var myAchievement = ach, added = false;
+						myAchievement['completed'] = completed[ach.id];
 
-						if (supercat.name != "Feats of Strength" && ach.obtainable && (ach.side == '' || ach.side == "A")){
+						// Always add it if we've completed it, it should show up regardless if its avaiable
+						if (completed[ach.id]) {
+							added = true;
+							myZone['achievements'].push(myAchievement);	
+						}
+
+						// Update counts proper
+						if (supercat.name != "Feats of Strength" && ach.obtainable && (ach.side == '' || ach.side == character.faction)){
 							possibleCount++;
 							totalPossible++;
 
 							if (completed[ach.id]) {
 								completedCount++;
 								totalCompleted++;
+							}			
+
+							// if we havne't already added it, then this is one that should show up in the page of achievements
+							// so add it
+							if (!added) {
+								myZone['achievements'].push(myAchievement);		
 							}
-
-							myAchievement['completed'] = completed[ach.id];
-						}
-
-						myZone['achievements'].push(myAchievement);
+						}				
 					});
 
 					myCat['zones'].push(myZone);
