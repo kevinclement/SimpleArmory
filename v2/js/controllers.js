@@ -174,6 +174,17 @@ simpleArmoryControllers.controller('AchievementsCtrl', ['$scope', 'AchievementsS
     $scope.achievements = achievements[$scope.superCat];
   });
 
+  $scope.getImageSrc = function(achievement) {
+
+    if (achievement.completed) {
+      return "http://wow.zamimg.com/images/wow/icons/medium/" + achievement.icon.toLowerCase() + ".jpg";
+    }
+    else {
+      // 1x1 gif   
+      return "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==";
+    }
+  }
+
   // Maps url simplified name into the pretty name and the name we hash off of in the json
   function prettySuperCategory(supercat) {
 

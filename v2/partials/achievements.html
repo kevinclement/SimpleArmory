@@ -9,85 +9,13 @@
         </div>
     </h2>
   </div>
-
-  <h3>Pandaria Dungeon</h3>
-  <div class="sect">
-      <h5>Section 1</h5>
-      <a href="#" class="thumbnail">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-      </a>
-      <a href="#" class="thumbnail">
-        <img src="http://wow.zamimg.com/images/wow/icons/medium/ability_mount_dragonhawkarmorallliance.jpg">
-      </a>
-      <a href="#" class="thumbnail">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-      </a>
-      <a href="#" class="thumbnail">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+  
+  <h3 ng-repeat-start="category in achievements.categories">{{ category.name }}</h3>
+  <div class="sect" ng-repeat="zone in category.zones">
+      <h5>{{ zone.name }}</h5>
+      <a href="#" class="thumbnail" ng-repeat="achievement in zone.achievements">
+        <img ng-src="{{getImageSrc(achievement)}}">
       </a>
   </div>
-  <div class="clear"></div>
-
-  <h3>Pandaria Dungeon</h3>
-  <div class="sect">
-      <h5>Section 1</h5>
-      <a href="#" class="thumbnail">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-      </a>
-      <a href="#" class="thumbnail">
-        <img src="http://wow.zamimg.com/images/wow/icons/medium/ability_mount_dragonhawkarmorallliance.jpg">
-      </a>
-      <a href="#" class="thumbnail">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-      </a>
-      <a href="#" class="thumbnail">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-      </a>
-      <a href="#" class="thumbnail">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-      </a>
-      <a href="#" class="thumbnail">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-      </a>
-      <a href="#" class="thumbnail">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-      </a>
-      <a href="#" class="thumbnail">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-      </a>
-      <a href="#" class="thumbnail">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-      </a>
-      <a href="#" class="thumbnail">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-      </a>
-      <a href="#" class="thumbnail">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-      </a>
-      <a href="#" class="thumbnail">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-      </a>
-      <a href="#" class="thumbnail">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-      </a>
-      <a href="#" class="thumbnail">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-      </a>
-
-  </div>
-  <div class="sect">
-      <h5>Section 1</h5>
-      <a href="#" class="thumbnail">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-      </a>
-      <a href="#" class="thumbnail">
-        <img src="http://wow.zamimg.com/images/wow/icons/medium/ability_mount_dragonhawkarmorallliance.jpg">
-      </a>
-      <a href="#" class="thumbnail">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-      </a>
-      <a href="#" class="thumbnail">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-      </a>
-  </div>
+  <div class="clear" ng-repeat-end /> 
 </div>
