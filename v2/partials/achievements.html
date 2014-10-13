@@ -10,7 +10,7 @@
     </h2>
   </div>
   
-  <h3 class="categoryHeader" ng-repeat-start="category in achievements.categories">{{ category.name }}</h3>
+  <h3 class="categoryHeader" ng-hide="category.name == superCat" ng-repeat-start="category in achievements.categories">{{ category.name }}</h3>
   <div class="sect" ng-repeat="zone in category.zones">
       <h5 class="zoneHeader">{{ zone.name }}</h5>
       <a ng-href="http://www.wowhead.com/achievement={{achievement.id}}" class="thumbnail" ng-repeat="achievement in zone.achievements" ng-class="{borderOn:!achievement.completed, borderOff:achievement.completed}">
