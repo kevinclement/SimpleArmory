@@ -133,7 +133,7 @@ simpleArmoryServices.factory('AchievementsService', ['$http', '$log', 'LoginServ
 								totalCompleted++;
 							}			
 
-							// if we havne't already added it, then this is one that should show up in the page of achievements
+							// if we haven't already added it, then this is one that should show up in the page of achievements
 							// so add it
 							if (!added) {
 								myZone['achievements'].push(myAchievement);		
@@ -141,7 +141,9 @@ simpleArmoryServices.factory('AchievementsService', ['$http', '$log', 'LoginServ
 						}				
 					});
 
-					myCat['zones'].push(myZone);
+					if (myZone.achievements.length > 0) {
+						myCat['zones'].push(myZone);
+					}
 				});
 
 				// Add the category to the obj
