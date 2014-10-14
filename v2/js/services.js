@@ -218,7 +218,91 @@ simpleArmoryServices.factory('MountsAndPetsService', ['$http', '$log', 'LoginSer
 					itm.spellId = item.spellid;
 					delete itm.spellid;
 
-					itm.collected = collected[itm[collectedId]] != null;
+					if (collected[itm[collectedId]]) {
+						var fullItem = collected[itm[collectedId]];
+						itm.collected =  true;
+
+						// Add pet info if we have it
+						if (fullItem.qualityId) {
+							var quality = "";
+							switch(fullItem.qualityId)
+                            {
+                                case 0:
+                                	quality = "poor";
+                                    break;
+                                case 1:
+                                    quality = "common";
+                                    break;
+                                case 2:
+                                    quality = "uncommon";
+                                    break;
+                                case 3:
+                                    quality = "rare";
+                                    break;
+								case 4:
+                                    quality = "epic";                                    
+                                    break;
+								case 5:
+                                    quality = "legendary";                                    
+                                    break;                                    
+                            }
+
+                            itm.quality = quality;
+						}
+
+						if (fullItem.stats) {
+							if (fullItem.stats.breedId) {
+								var breed = "";
+								switch(fullItem.stats.breedId)
+	                            {
+	                                case 4:
+	                                case 14:
+	                                    breed = "P/P";
+	                                    break;
+	                                case 5:
+	                                case 15:
+	                                    breed = "S/S";
+	                                    break;
+	                                case 6:
+	                                case 16:
+	                                    breed = "H/H";
+	                                    break;
+	                                case 7:
+	                                case 17:
+	                                    breed = "H/P";
+	                                    break;
+	                                case 8:
+	                                case 18:
+	                                    breed = "P/S";
+	                                    break;
+	                                case 9:
+	                                case 19:
+	                                    breed = "H/S";
+	                                    break;
+	                                case 10:
+	                                case 20:
+	                                    breed = "P/B";
+	                                    break;
+	                                case 11:
+	                                case 21:
+	                                    breed = "S/B";
+	                                    break;
+	                                case 12:
+	                                case 22:
+	                                    breed = "H/B";
+	                                    break;
+	                                case 3:
+	                                case 13:
+	                                    breed = "B/B";
+	                                    break;
+	                            }
+
+	                            itm.breed = breed;
+							}
+
+							itm.level = fullItem.stats.level;
+						}
+					}
 
 					// Need to some extra work to determine what our url should be
                     // By default we'll use a spell id
