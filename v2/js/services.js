@@ -172,58 +172,57 @@ simpleArmoryServices.factory('AchievementsService', ['$http', '$log', 'LoginServ
 	}
 }]);
 
-simpleArmoryServices.factory('MountsService', ['$http', '$log', 'LoginService', '$routeParams', function ($http, $log, loginService, $routeParams) {
+simpleArmoryServices.factory('MountsAndPetsService', ['$http', '$log', 'LoginService', '$routeParams', function ($http, $log, loginService, $routeParams) {
 	return {
-		getMounts: function() {
+		getItems: function(jsonFile) {
 			return loginService.getCharacter({'region': $routeParams.region, 'realm':$routeParams.realm, 'character':$routeParams.character})
 				.then(function(character) {
-					return $http.get('data/mounts.json', { cache: true, isArray:true })
+					return $http.get('data/' + jsonFile + '.json', { cache: true, isArray:true })
     	            	.then(function(data, status, headers, config) {
-    	        			return parseMountsObject(data.data, character[0]);    	
+    	        			return parseItemsObject(data.data, character[0], jsonFile);    	
     	            	});
 				})		
 		}
 	}
 
-	function parseMountsObject(mountsCategories, character) {	
+	function parseItemsObject(categories, character, jsonFile) {	
 		var obj = { 'categories': [] };
 		var collected = {};
 		var totalCollected = 0;
 		var totalPossible = 0;
-		$log.log("Parsing mounts.json...");
+
+		$log.log("Parsing " + jsonFile + ".json...");
 		
-		// Build up lookup for mounts that character has
-		angular.forEach(character.mounts.collected, function(mount, index) {
-			collected[mount.spellId] = mount;
+		// Build up lookup for items that character has
+		angular.forEach(character[jsonFile].collected, function(item, index) {
+			collected[item.spellId] = item;
 			totalCollected++;
 		});
 
 		// Lets parse out all the categories and build out our structure
-		angular.forEach(mountsCategories, function(category) {
+		angular.forEach(categories, function(category) {
 
-			// Add the mount category to the mount list
+			// Add the item category to the item list
 			var cat = { 'name': category.name, 'subCategories': [] };
 			obj.categories.push(cat);
 
 			angular.forEach(category.subcats, function(subCategory) {
 
-				var subCat = { "name": subCategory.name, "mounts":[] };
-
-				// console.log("subcat: " +subCategory.name + " items: " + subCategory.items.length);	
+				var subCat = { "name": subCategory.name, "items":[] };
 
 				angular.forEach(subCategory.items, function(item) {
 					
-					var mount = item;
+					var itm = item;
 
 					// fix spellid typo
-					mount.spellId = item.spellid;
-					delete mount.spellid;
+					itm.spellId = item.spellid;
+					delete itm.spellid;
 
-					mount.collected = collected[mount.spellId] != null;
+					itm.collected = collected[itm.spellId] != null;
 
 					// Need to some extra work to determine what our url should be
                     // By default we'll use a spell id
-                    var link = "spell="+mount.spellId;
+                    var link = "spell="+itm.spellId;
 
                     // If the item id is available lets use that
                     if (item.itemId) {
@@ -236,14 +235,14 @@ simpleArmoryServices.factory('MountsService', ['$http', '$log', 'LoginService', 
                         link = "npc="+item.creatureId;
                     }
 
-					mount.link = link;
+					itm.link = link;
 
 					// What would cause it to show up in the UI:
 					//	1) You have the item
 					//  2) Its still obtainable 
 					//	3) You meet the class restriction
 					//  4) You meet the race restriction
-                    var hasthis = mount.collected;			
+                    var hasthis = itm.collected;			
 					var showthis = (hasthis || item.obtainable);
                     if (item.allowableRaces.length > 0)
                     {
@@ -274,12 +273,12 @@ simpleArmoryServices.factory('MountsService', ['$http', '$log', 'LoginService', 
                     }
 
 					if (showthis) {
-						subCat.mounts.push(mount);
+						subCat.items.push(itm);
 						totalPossible++;
 					}
 				});
 
-				if (subCat.mounts.length > 0) {
+				if (subCat.items.length > 0) {
 					cat.subCategories.push(subCat);	
 				}				
 			});

@@ -242,18 +242,16 @@ simpleArmoryControllers.controller('AchievementsCtrl', ['$scope', 'AchievementsS
   }
 }]);
 
-simpleArmoryControllers.controller('MountsCtrl', ['$scope', 'MountsService', function ($scope, mountsService) {
-  mountsService.getMounts().then(function(mounts){
-      $scope.mountCount = mounts.collected;
-      $scope.mountsPossible = mounts.possible;
-      $scope.mounts = mounts;
+simpleArmoryControllers.controller('MountsCtrl', ['$scope', 'MountsAndPetsService', function ($scope, mountsService) {
+  mountsService.getItems("mounts").then(function(items){
+      $scope.items = items;
   });
 
-  $scope.getImageSrc = function(mount) {
+  $scope.getImageSrc = function(item) {
 
-    if (mount.collected) {
+    if (item.collected) {
       // wowhead img
-      return "http://wow.zamimg.com/images/wow/icons/medium/" + mount.icon.toLowerCase() + ".jpg";
+      return "http://wow.zamimg.com/images/wow/icons/medium/" + item.icon.toLowerCase() + ".jpg";
     } else {
       // 1x1 gif   
       return "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==";
