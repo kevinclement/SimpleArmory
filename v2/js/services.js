@@ -91,8 +91,6 @@ simpleArmoryServices.factory('AchievementsService', ['$http', '$log', 'LoginServ
 		var totalFoS = 0;
 		$log.log("Parsing achievements.json...");
 
-		// TODO: Fix feats of strength
-
 		// Build up lookup for achievements that character has completed
 		angular.forEach(character.achievements.achievementsCompleted, function(ach, index) {
 			// hash the achievement and its timestamp
@@ -168,6 +166,128 @@ simpleArmoryServices.factory('AchievementsService', ['$http', '$log', 'LoginServ
 		// Add totals
 		obj['possible'] = totalPossible;
 		obj['completed'] = totalCompleted;
+
+		// Data object we expose externally
+		return obj;
+	}
+}]);
+
+simpleArmoryServices.factory('MountsService', ['$http', '$log', 'LoginService', '$routeParams', function ($http, $log, loginService, $routeParams) {
+	return {
+		getMounts: function() {
+			return loginService.getCharacter({'region': $routeParams.region, 'realm':$routeParams.realm, 'character':$routeParams.character})
+				.then(function(character) {
+					return $http.get('data/mounts.json', { cache: true, isArray:true })
+    	            	.then(function(data, status, headers, config) {
+    	        			return parseMountsObject(data.data, character[0]);    	
+    	            	});
+				})		
+		}
+	}
+
+	function parseMountsObject(mountsCategories, character) {	
+		var obj = { 'categories': [] };
+		var collected = {};
+		var totalCollected = 0;
+		var totalPossible = 0;
+		$log.log("Parsing mounts.json...");
+		
+		// Build up lookup for mounts that character has
+		angular.forEach(character.mounts.collected, function(mount, index) {
+			collected[mount.spellId] = mount;
+			totalCollected++;
+		});
+
+		// Lets parse out all the categories and build out our structure
+		angular.forEach(mountsCategories, function(category) {
+
+			// Add the mount category to the mount list
+			var cat = { 'name': category.name, 'subCategories': [] };
+			obj.categories.push(cat);
+
+			angular.forEach(category.subcats, function(subCategory) {
+
+				var subCat = { "name": subCategory.name, "mounts":[] };
+
+				// console.log("subcat: " +subCategory.name + " items: " + subCategory.items.length);	
+
+				angular.forEach(subCategory.items, function(item) {
+					
+					var mount = item;
+
+					// fix spellid typo
+					mount.spellId = item.spellid;
+					delete mount.spellid;
+
+					mount.collected = collected[mount.spellId] != null;
+
+					// Need to some extra work to determine what our url should be
+                    // By default we'll use a spell id
+                    var link = "spell="+mount.spellId;
+
+                    // If the item id is available lets use that
+                    if (item.itemId) {
+                        link = "item="+item.itemId;
+                    } else if (item.allianceId && character.faction == 'A') {
+                        link = "item="+item.allianceId;
+                    } else if (item.hordeId && character.faction == 'H') {
+                        link = "item="+item.hordeId;
+                    } else if (item.creatureId) {
+                        link = "npc="+item.creatureId;
+                    }
+
+					mount.link = link;
+
+					// What would cause it to show up in the UI:
+					//	1) You have the item
+					//  2) Its still obtainable 
+					//	3) You meet the class restriction
+					//  4) You meet the race restriction
+                    var hasthis = mount.collected;			
+					var showthis = (hasthis || item.obtainable);
+                    if (item.allowableRaces.length > 0)
+                    {
+                    	var foundRace = false;
+                    	angular.forEach(item.allowableRaces, function(race) {
+							if (race == character.race) {
+								foundRace = true;
+							}
+						});
+
+						if (!foundRace) {
+							showthis = false;
+						}
+                    }
+
+					if (item.allowableClasses && item.allowableClasses.length > 0)
+                    {
+                    	var foundClass = false;
+                    	angular.forEach(item.allowableClasses, function(allowedClass) {
+							if (allowedClass == character.class) {
+								foundClass = true;
+							}
+						});
+
+						if (!foundClass) {
+							showthis = false;
+						}
+                    }
+
+					if (showthis) {
+						subCat.mounts.push(mount);
+						totalPossible++;
+					}
+				});
+
+				if (subCat.mounts.length > 0) {
+					cat.subCategories.push(subCat);	
+				}				
+			});
+    	}); 
+
+		// Add totals
+		obj['collected'] = totalCollected;
+		obj['possible'] = totalPossible;
 
 		// Data object we expose externally
 		return obj;

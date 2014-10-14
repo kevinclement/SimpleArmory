@@ -242,8 +242,23 @@ simpleArmoryControllers.controller('AchievementsCtrl', ['$scope', 'AchievementsS
   }
 }]);
 
-simpleArmoryControllers.controller('MountsCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
+simpleArmoryControllers.controller('MountsCtrl', ['$scope', 'MountsService', function ($scope, mountsService) {
+  mountsService.getMounts().then(function(mounts){
+      $scope.mountCount = mounts.collected;
+      $scope.mountsPossible = mounts.possible;
+      $scope.mounts = mounts;
+  });
 
+  $scope.getImageSrc = function(mount) {
+
+    if (mount.collected) {
+      // wowhead img
+      return "http://wow.zamimg.com/images/wow/icons/medium/" + mount.icon.toLowerCase() + ".jpg";
+    } else {
+      // 1x1 gif   
+      return "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==";
+    }
+  }
 }]);
 
 simpleArmoryControllers.controller('CompanionsCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
