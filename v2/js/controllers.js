@@ -243,7 +243,7 @@ simpleArmoryControllers.controller('AchievementsCtrl', ['$scope', 'AchievementsS
 }]);
 
 simpleArmoryControllers.controller('MountsCtrl', ['$scope', 'MountsAndPetsService', function ($scope, mountsService) {
-  mountsService.getItems("mounts", "mounts").then(function(items){
+  mountsService.getItems("mounts", "mounts", "spellId").then(function(items){
       $scope.items = items;
   });
 
@@ -261,7 +261,7 @@ simpleArmoryControllers.controller('MountsCtrl', ['$scope', 'MountsAndPetsServic
 
 simpleArmoryControllers.controller('CompanionsCtrl', ['$scope', 'MountsAndPetsService', function ($scope, companionService) {
   
-  companionService.getItems("pets", "pets").then(function(items){
+  companionService.getItems("pets", "pets", "spellId").then(function(items){
       $scope.items = items;
   });
 
@@ -277,8 +277,22 @@ simpleArmoryControllers.controller('CompanionsCtrl', ['$scope', 'MountsAndPetsSe
   }
 }]);
 
-simpleArmoryControllers.controller('BattlePetsCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
+simpleArmoryControllers.controller('BattlePetsCtrl', ['$scope', 'MountsAndPetsService', function ($scope, battlePetsService) {
 
+  battlePetsService.getItems("battlepets", "pets", "creatureId").then(function(items){
+      $scope.items = items;
+  });
+
+  $scope.getImageSrc = function(item) {
+
+    if (item.collected) {
+      // wowhead img
+      return "http://wow.zamimg.com/images/wow/icons/medium/" + item.icon.toLowerCase() + ".jpg";
+    } else {
+      // 1x1 gif   
+      return "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==";
+    }
+  }
 }]);
 
 simpleArmoryControllers.controller('CalendarCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {

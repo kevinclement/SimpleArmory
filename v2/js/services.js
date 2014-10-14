@@ -174,20 +174,20 @@ simpleArmoryServices.factory('AchievementsService', ['$http', '$log', 'LoginServ
 
 simpleArmoryServices.factory('MountsAndPetsService', ['$http', '$log', 'LoginService', '$routeParams', function ($http, $log, loginService, $routeParams) {
 	return {
-		getItems: function(jsonFile, characterProperty) {
+		getItems: function(jsonFile, characterProperty, collectedId) {
 			return loginService.getCharacter({'region': $routeParams.region, 'realm':$routeParams.realm, 'character':$routeParams.character})
 				.then(function(character) {
 					return $http.get('data/' + jsonFile + '.json', { cache: true, isArray:true })
     	            	.then(function(data, status, headers, config) {
 							
 							$log.log("Parsing " + jsonFile + ".json...");
-    	        			return parseItemsObject(data.data, character[0], characterProperty);    	
+    	        			return parseItemsObject(data.data, character[0], characterProperty, collectedId);    	
     	            	});
 				})		
 		}
 	}
 
-	function parseItemsObject(categories, character, characterProperty) {	
+	function parseItemsObject(categories, character, characterProperty, collectedId) {	
 		var obj = { 'categories': [] };
 		var collected = {};
 		var totalCollected = 0;
@@ -195,7 +195,7 @@ simpleArmoryServices.factory('MountsAndPetsService', ['$http', '$log', 'LoginSer
 	
 		// Build up lookup for items that character has
 		angular.forEach(character[characterProperty].collected, function(item, index) {
-			collected[item.spellId] = item;
+			collected[item[collectedId]] = item;
 			totalCollected++;
 		});
 
@@ -218,7 +218,7 @@ simpleArmoryServices.factory('MountsAndPetsService', ['$http', '$log', 'LoginSer
 					itm.spellId = item.spellid;
 					delete itm.spellid;
 
-					itm.collected = collected[itm.spellId] != null;
+					itm.collected = collected[itm[collectedId]] != null;
 
 					// Need to some extra work to determine what our url should be
                     // By default we'll use a spell id
