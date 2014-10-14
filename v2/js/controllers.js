@@ -36,6 +36,17 @@ simpleArmoryControllers.controller('ApplicationController', ['$scope', 'LoginSer
     $scope.percent = function(n, d) {
       return $filter('number')(((n / d) * 100), 0);
     }
+
+    // Helper to get the image id off an item
+    $scope.getImageSrc = function(item) {
+      if (item.collected) {
+        // wowhead img
+        return "http://wow.zamimg.com/images/wow/icons/medium/" + item.icon.toLowerCase() + ".jpg";
+      } else {
+        // 1x1 gif   
+        return "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==";
+      }
+  }
 }]);
 
 simpleArmoryControllers.controller('LoginCtrl', ['$scope', '$modal', '$location', function ($scope, $modal, $location) {
@@ -246,17 +257,6 @@ simpleArmoryControllers.controller('MountsCtrl', ['$scope', 'MountsAndPetsServic
   mountsService.getItems("mounts", "mounts", "spellId").then(function(items){
       $scope.items = items;
   });
-
-  $scope.getImageSrc = function(item) {
-
-    if (item.collected) {
-      // wowhead img
-      return "http://wow.zamimg.com/images/wow/icons/medium/" + item.icon.toLowerCase() + ".jpg";
-    } else {
-      // 1x1 gif   
-      return "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==";
-    }
-  }
 }]);
 
 simpleArmoryControllers.controller('CompanionsCtrl', ['$scope', 'MountsAndPetsService', function ($scope, companionService) {
@@ -264,17 +264,6 @@ simpleArmoryControllers.controller('CompanionsCtrl', ['$scope', 'MountsAndPetsSe
   companionService.getItems("pets", "pets", "spellId").then(function(items){
       $scope.items = items;
   });
-
-  $scope.getImageSrc = function(item) {
-
-    if (item.collected) {
-      // wowhead img
-      return "http://wow.zamimg.com/images/wow/icons/medium/" + item.icon.toLowerCase() + ".jpg";
-    } else {
-      // 1x1 gif   
-      return "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==";
-    }
-  }
 }]);
 
 simpleArmoryControllers.controller('BattlePetsCtrl', ['$scope', 'MountsAndPetsService', function ($scope, battlePetsService) {
@@ -282,17 +271,6 @@ simpleArmoryControllers.controller('BattlePetsCtrl', ['$scope', 'MountsAndPetsSe
   battlePetsService.getItems("battlepets", "pets", "creatureId").then(function(items){
       $scope.items = items;
   });
-
-  $scope.getImageSrc = function(item) {
-
-    if (item.collected) {
-      // wowhead img
-      return "http://wow.zamimg.com/images/wow/icons/medium/" + item.icon.toLowerCase() + ".jpg";
-    } else {
-      // 1x1 gif   
-      return "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==";
-    }
-  }
 }]);
 
 simpleArmoryControllers.controller('CalendarCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
