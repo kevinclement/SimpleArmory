@@ -1,7 +1,10 @@
 <div class="container">
   <div class="page-header">
     <h2>
-        Battle Pets <small>button here</small>
+        Battle Pets <small><button type="button" class="btn btn-primary pbCheckButtom" ng-model="showLevel" btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">Show Levels</button>
+        <input type="checkbox" ng-model="showLevel">
+        <label for="showlevels">Show levels and breeds</label>
+        </small>
     <div class="progress progressRight">
             <progressbar max="100" type="success"
       	  		value="percent(items.collected, items.possible)" >
@@ -14,9 +17,14 @@
   <h3 class="categoryHeader" ng-repeat-start="category in items.categories">{{ category.name }}</h3>
    <div class="sect" ng-repeat="subCategory in category.subCategories">
 		<h5 class="zoneHeader">{{ subCategory.name }}</h5>
-		<a ng-href="http://www.wowhead.com/{{ item.link }}" class="thumbnail" ng-repeat="item in subCategory.items" ng-class="{borderOn:!item.collected, borderOff:item.collected}">
-        	<img ng-src="{{getImageSrc(item)}}">
-      	</a>
+		<div class="pbCell" ng-repeat="item in subCategory.items" >
+			<a ng-href="http://www.wowhead.com/{{ item.link }}" class="thumbnail pbThumbnail" ng-class="{borderOn:!item.collected, borderOff:item.collected}">
+	        	<img ng-src="{{getImageSrc(item)}}">
+	        	<div class="pbLevel" ng-class="{opacityOn:showLevel}">2</div>
+	        	<div class="pbBreed" ng-class="{opacityOn:showLevel}">B/B</div>
+	      	</a> 
+	   		<div class="pbQual" style="{{ qualityToBackground(item) }}"></div>        		      	
+      	</div>  
    </div>
   <div class="clear" ng-repeat-end /> 
 </div>

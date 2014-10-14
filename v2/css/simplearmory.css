@@ -110,6 +110,9 @@ body {
     margin-bottom:5px;
     margin-top:0px;
 }
+.pbThumbnail {
+  margin-bottom:0px;
+}
 .form-control {
     border-radius: 0px;
 }
@@ -121,4 +124,42 @@ body {
 }
 .navbar-brand {
     padding-right:10px;
+}
+ 
+.pbCell {
+    display:inline-block;
+    position:relative;
+    padding-bottom:6px;
+}
+ .pbQual {
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    left:0px;
+    height:6px;
+}
+.pbLevel,.pbBreed
+{
+    color: white;
+    position:absolute;
+    left:38%;
+    top: 2px;
+    height:6px;
+    font-weight:bold;
+    opacity:0;
+    -webkit-transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+    transition: opacity .25s ease-in-out;
+}
+.pbBreed {
+    top: 15px;
+    left:20%;
+}
+.opacityOn {
+  opacity:1;
+}
+.pbCheckButtom {
+  font-size: 12px;
+  padding: 4px;
+  margin-bottom: 10px;
 }
