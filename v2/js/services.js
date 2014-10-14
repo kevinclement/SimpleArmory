@@ -172,29 +172,29 @@ simpleArmoryServices.factory('AchievementsService', ['$http', '$log', 'LoginServ
 	}
 }]);
 
-simpleArmoryServices.factory('MountsAndCompanionsService', ['$http', '$log', 'LoginService', '$routeParams', function ($http, $log, loginService, $routeParams) {
+simpleArmoryServices.factory('MountsAndPetsService', ['$http', '$log', 'LoginService', '$routeParams', function ($http, $log, loginService, $routeParams) {
 	return {
-		getItems: function(jsonFile) {
+		getItems: function(jsonFile, characterProperty) {
 			return loginService.getCharacter({'region': $routeParams.region, 'realm':$routeParams.realm, 'character':$routeParams.character})
 				.then(function(character) {
 					return $http.get('data/' + jsonFile + '.json', { cache: true, isArray:true })
     	            	.then(function(data, status, headers, config) {
-    	        			return parseItemsObject(data.data, character[0], jsonFile);    	
+							
+							$log.log("Parsing " + jsonFile + ".json...");
+    	        			return parseItemsObject(data.data, character[0], characterProperty);    	
     	            	});
 				})		
 		}
 	}
 
-	function parseItemsObject(categories, character, jsonFile) {	
+	function parseItemsObject(categories, character, characterProperty) {	
 		var obj = { 'categories': [] };
 		var collected = {};
 		var totalCollected = 0;
 		var totalPossible = 0;
-
-		$log.log("Parsing " + jsonFile + ".json...");
-		
+	
 		// Build up lookup for items that character has
-		angular.forEach(character[jsonFile].collected, function(item, index) {
+		angular.forEach(character[characterProperty].collected, function(item, index) {
 			collected[item.spellId] = item;
 			totalCollected++;
 		});

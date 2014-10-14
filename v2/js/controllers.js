@@ -242,8 +242,8 @@ simpleArmoryControllers.controller('AchievementsCtrl', ['$scope', 'AchievementsS
   }
 }]);
 
-simpleArmoryControllers.controller('MountsCtrl', ['$scope', 'MountsAndCompanionsService', function ($scope, mountsService) {
-  mountsService.getItems("mounts").then(function(items){
+simpleArmoryControllers.controller('MountsCtrl', ['$scope', 'MountsAndPetsService', function ($scope, mountsService) {
+  mountsService.getItems("mounts", "mounts").then(function(items){
       $scope.items = items;
   });
 
@@ -259,9 +259,9 @@ simpleArmoryControllers.controller('MountsCtrl', ['$scope', 'MountsAndCompanions
   }
 }]);
 
-simpleArmoryControllers.controller('CompanionsCtrl', ['$scope', 'MountsAndCompanionsService', function ($scope, companionService) {
+simpleArmoryControllers.controller('CompanionsCtrl', ['$scope', 'MountsAndPetsService', function ($scope, companionService) {
   
-  companionService.getItems("pets").then(function(items){
+  companionService.getItems("pets", "pets").then(function(items){
       $scope.items = items;
   });
 
