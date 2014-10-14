@@ -172,7 +172,7 @@ simpleArmoryServices.factory('AchievementsService', ['$http', '$log', 'LoginServ
 	}
 }]);
 
-simpleArmoryServices.factory('MountsAndPetsService', ['$http', '$log', 'LoginService', '$routeParams', function ($http, $log, loginService, $routeParams) {
+simpleArmoryServices.factory('MountsAndCompanionsService', ['$http', '$log', 'LoginService', '$routeParams', function ($http, $log, loginService, $routeParams) {
 	return {
 		getItems: function(jsonFile) {
 			return loginService.getCharacter({'region': $routeParams.region, 'realm':$routeParams.realm, 'character':$routeParams.character})
