@@ -163,3 +163,12 @@ body {
   padding: 4px;
   margin-bottom: 10px;
 }
+.pbSmall {
+  display:inline-block;
+}
+.pbSmall > input {
+  margin-right: 4px;
+}
+.pbSmall > label {
+  font-weight: 400;
+}
