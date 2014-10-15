@@ -196,7 +196,6 @@ simpleArmoryServices.factory('MountsAndPetsService', ['$http', '$log', 'LoginSer
 		// Build up lookup for items that character has
 		angular.forEach(character[characterProperty].collected, function(item, index) {
 			collected[item[collectedId]] = item;
-			totalCollected++;
 		});
 
 		// Lets parse out all the categories and build out our structure
@@ -221,6 +220,8 @@ simpleArmoryServices.factory('MountsAndPetsService', ['$http', '$log', 'LoginSer
 					if (collected[itm[collectedId]]) {
 						var fullItem = collected[itm[collectedId]];
 						itm.collected =  true;
+
+						totalCollected++;
 
 						// Add pet info if we have it
 						if (fullItem.qualityId) {
