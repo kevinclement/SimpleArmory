@@ -1,43 +1,47 @@
 'use strict';
 
- angular
-    .module('simpleArmoryApp')
-    .factory('LoginService', LoginService);
+(function() {
 
-function LoginService($location, $log, $http, $q) {
-	return {
-	  getCharacter: function($routeParams) {
-  		$log.log('Fetching ' + $routeParams.character + ' from server ' + $routeParams.realm + '...');
+    angular
+        .module('simpleArmoryApp')
+        .factory('LoginService', LoginService);
 
-  		// ## TMP #################################################################
-  		// ## Good to make sure I'm honest, will remove before we go live
-  		var deferred = $q.defer();
-  		setTimeout(function() {
-  			deferred.resolve('hello world');
-  		}, 1);
-  		// ########################################################################
+    function LoginService($location, $log, $http, $q) {
+        return {
+            getCharacter: function($routeParams) {
+                $log.log('Fetching ' + $routeParams.character + ' from server ' + $routeParams.realm + '...');
 
-  		var jsonp = $http.jsonp(
-  				'http://' + $routeParams.region +'.battle.net/api/wow/character/' + $routeParams.realm + '/' + $routeParams.character +'?fields=pets,mounts,achievements,guild,reputation&jsonp=JSON_CALLBACK',
-  				{ cache: true})
-  			.error(getCharacterError)
-  			.then(getCharacterComplete);
+                // ## TMP #################################################################
+                // ## Good to make sure I'm honest, will remove before we go live
+                var deferred = $q.defer();
+                setTimeout(function() {
+                    deferred.resolve('hello world');
+                }, 1);
+                // ########################################################################
 
-  		return $q.all([jsonp, deferred.promise]);
+                var jsonp = $http.jsonp(
+                    'http://' + $routeParams.region +'.battle.net/api/wow/character/' + $routeParams.realm + '/' + $routeParams.character +'?fields=pets,mounts,achievements,guild,reputation&jsonp=JSON_CALLBACK',
+                	 { cache: true})
+                    .error(getCharacterError)
+                	.then(getCharacterComplete);
 
-  		function getCharacterError() {
-  			$log.log('Trouble fetching character from battlenet');
-			$location.url('error');
-  		}
+      		    return $q.all([jsonp, deferred.promise]);
 
-  		function getCharacterComplete(data) {
-  			data.data.region = $routeParams.region;
+      		function getCharacterError() {
+      			$log.log('Trouble fetching character from battlenet');
+    			$location.url('error');
+      		}
 
-  			// add faction
-  			data.data.faction = [,'A','H','A','A','H','H','A','H','H','H','Alliance',,,,,,,,,,,'A',,,'A','H'][data.data.race];
+      		function getCharacterComplete(data) {
+      			data.data.region = $routeParams.region;
 
-			return data.data;
-  		}
-	  }
-	};
-}
+      			// add faction
+      			data.data.faction = [,'A','H','A','A','H','H','A','H','H','H','Alliance',,,,,,,,,,,'A',,,'A','H'][data.data.race];
+
+    			return data.data;
+      		}
+    	  }
+    	};
+    }
+
+})();

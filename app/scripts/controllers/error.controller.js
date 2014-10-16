@@ -1,7 +1,11 @@
 'use strict';
 
- angular
-    .module('simpleArmoryApp')
-    .controller('ErrorCtrl' , ErrorCtrl);
+(function() {
 
-function ErrorCtrl() { }
+	angular
+	    .module('simpleArmoryApp')
+	    .controller('ErrorCtrl' , ErrorCtrl);
+
+	function ErrorCtrl() { }
+
+})();

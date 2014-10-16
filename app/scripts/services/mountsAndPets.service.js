@@ -1,211 +1,215 @@
 'use strict';
 
- angular
-    .module('simpleArmoryApp')
-    .factory('MountsAndPetsService', MountsAndPetsService);
+(function() {
 
-function MountsAndPetsService($http, $log, LoginService, $routeParams) {
-	return {
-		getItems: function(jsonFile, characterProperty, collectedId) {
-			return LoginService.getCharacter({'region': $routeParams.region, 'realm':$routeParams.realm, 'character':$routeParams.character})
-				.then(function(character) {
-					return $http.get('data/' + jsonFile + '.json', { cache: true, isArray:true })
-    	            	.then(function(data) {
-							
-							$log.log('Parsing ' + jsonFile + '.json...');
-    	        			return parseItemsObject(data.data, character[0], characterProperty, collectedId);    	
-    	            	});
-				});
-		}
-	};
+	angular
+	    .module('simpleArmoryApp')
+	    .factory('MountsAndPetsService', MountsAndPetsService);
 
-	function parseItemsObject(categories, character, characterProperty, collectedId) {	
-		var obj = { 'categories': [] };
-		var collected = {};
-		var totalCollected = 0;
-		var totalPossible = 0;
-	
-		// Build up lookup for items that character has
-		angular.forEach(character[characterProperty].collected, function(item) {
-			collected[item[collectedId]] = item;
-		});
+	function MountsAndPetsService($http, $log, LoginService, $routeParams) {
+		return {
+			getItems: function(jsonFile, characterProperty, collectedId) {
+				return LoginService.getCharacter({'region': $routeParams.region, 'realm':$routeParams.realm, 'character':$routeParams.character})
+					.then(function(character) {
+						return $http.get('data/' + jsonFile + '.json', { cache: true, isArray:true })
+	    	            	.then(function(data) {
+								
+								$log.log('Parsing ' + jsonFile + '.json...');
+	    	        			return parseItemsObject(data.data, character[0], characterProperty, collectedId);    	
+	    	            	});
+					});
+			}
+		};
 
-		// Lets parse out all the categories and build out our structure
-		angular.forEach(categories, function(category) {
+		function parseItemsObject(categories, character, characterProperty, collectedId) {	
+			var obj = { 'categories': [] };
+			var collected = {};
+			var totalCollected = 0;
+			var totalPossible = 0;
+		
+			// Build up lookup for items that character has
+			angular.forEach(character[characterProperty].collected, function(item) {
+				collected[item[collectedId]] = item;
+			});
 
-			// Add the item category to the item list
-			var cat = { 'name': category.name, 'subCategories': [] };
-			obj.categories.push(cat);
+			// Lets parse out all the categories and build out our structure
+			angular.forEach(categories, function(category) {
 
-			angular.forEach(category.subcats, function(subCategory) {
+				// Add the item category to the item list
+				var cat = { 'name': category.name, 'subCategories': [] };
+				obj.categories.push(cat);
 
-				var subCat = { 'name': subCategory.name, 'items':[] };
+				angular.forEach(category.subcats, function(subCategory) {
 
-				angular.forEach(subCategory.items, function(item) {
-					
-					var itm = item;
+					var subCat = { 'name': subCategory.name, 'items':[] };
 
-					// fix spellid typo
-					itm.spellId = item.spellid;
-					delete itm.spellid;
+					angular.forEach(subCategory.items, function(item) {
+						
+						var itm = item;
 
-					if (collected[itm[collectedId]]) {
-						var fullItem = collected[itm[collectedId]];
-						itm.collected =  true;
+						// fix spellid typo
+						itm.spellId = item.spellid;
+						delete itm.spellid;
 
-						totalCollected++;
+						if (collected[itm[collectedId]]) {
+							var fullItem = collected[itm[collectedId]];
+							itm.collected =  true;
 
-						// Add pet info if we have it
-						if (fullItem.qualityId) {
-							var quality = '';
-							switch(fullItem.qualityId)
-                            {
-                                case 0:
-                                	quality = 'poor';
-                                    break;
-                                case 1:
-                                    quality = 'common';
-                                    break;
-                                case 2:
-                                    quality = 'uncommon';
-                                    break;
-                                case 3:
-                                    quality = 'rare';
-                                    break;
-								case 4:
-                                    quality = 'epic';                                    
-                                    break;
-								case 5:
-                                    quality = 'legendary';                                    
-                                    break;                                    
-                            }
+							totalCollected++;
 
-                            itm.quality = quality;
-						}
-
-						if (fullItem.stats) {
-							if (fullItem.stats.breedId) {
-								var breed = '';
-								switch(fullItem.stats.breedId)
+							// Add pet info if we have it
+							if (fullItem.qualityId) {
+								var quality = '';
+								switch(fullItem.qualityId)
 	                            {
-	                                case 4:
-	                                case 14:
-	                                    breed = 'P/P';
+	                                case 0:
+	                                	quality = 'poor';
 	                                    break;
-	                                case 5:
-	                                case 15:
-	                                    breed = 'S/S';
+	                                case 1:
+	                                    quality = 'common';
 	                                    break;
-	                                case 6:
-	                                case 16:
-	                                    breed = 'H/H';
-	                                    break;
-	                                case 7:
-	                                case 17:
-	                                    breed = 'H/P';
-	                                    break;
-	                                case 8:
-	                                case 18:
-	                                    breed = 'P/S';
-	                                    break;
-	                                case 9:
-	                                case 19:
-	                                    breed = 'H/S';
-	                                    break;
-	                                case 10:
-	                                case 20:
-	                                    breed = 'P/B';
-	                                    break;
-	                                case 11:
-	                                case 21:
-	                                    breed = 'S/B';
-	                                    break;
-	                                case 12:
-	                                case 22:
-	                                    breed = 'H/B';
+	                                case 2:
+	                                    quality = 'uncommon';
 	                                    break;
 	                                case 3:
-	                                case 13:
-	                                    breed = 'B/B';
+	                                    quality = 'rare';
 	                                    break;
+									case 4:
+	                                    quality = 'epic';                                    
+	                                    break;
+									case 5:
+	                                    quality = 'legendary';                                    
+	                                    break;                                    
 	                            }
 
-	                            itm.breed = breed;
+	                            itm.quality = quality;
 							}
 
-							itm.level = fullItem.stats.level;
-						}
-					}
+							if (fullItem.stats) {
+								if (fullItem.stats.breedId) {
+									var breed = '';
+									switch(fullItem.stats.breedId)
+		                            {
+		                                case 4:
+		                                case 14:
+		                                    breed = 'P/P';
+		                                    break;
+		                                case 5:
+		                                case 15:
+		                                    breed = 'S/S';
+		                                    break;
+		                                case 6:
+		                                case 16:
+		                                    breed = 'H/H';
+		                                    break;
+		                                case 7:
+		                                case 17:
+		                                    breed = 'H/P';
+		                                    break;
+		                                case 8:
+		                                case 18:
+		                                    breed = 'P/S';
+		                                    break;
+		                                case 9:
+		                                case 19:
+		                                    breed = 'H/S';
+		                                    break;
+		                                case 10:
+		                                case 20:
+		                                    breed = 'P/B';
+		                                    break;
+		                                case 11:
+		                                case 21:
+		                                    breed = 'S/B';
+		                                    break;
+		                                case 12:
+		                                case 22:
+		                                    breed = 'H/B';
+		                                    break;
+		                                case 3:
+		                                case 13:
+		                                    breed = 'B/B';
+		                                    break;
+		                            }
 
-					// Need to some extra work to determine what our url should be
-                    // By default we'll use a spell id
-                    var link = 'spell='+itm.spellId;
+		                            itm.breed = breed;
+								}
 
-                    // If the item id is available lets use that
-                    if (item.itemId) {
-                        link = 'item='+item.itemId;
-                    } else if (item.allianceId && character.faction === 'A') {
-                        link = 'item='+item.allianceId;
-                    } else if (item.hordeId && character.faction === 'H') {
-                        link = 'item='+item.hordeId;
-                    } else if (item.creatureId) {
-                        link = 'npc='+item.creatureId;
-                    }
-
-					itm.link = link;
-
-					// What would cause it to show up in the UI:
-					//	1) You have the item
-					//  2) Its still obtainable 
-					//	3) You meet the class restriction
-					//  4) You meet the race restriction
-                    var hasthis = itm.collected;			
-					var showthis = (hasthis || item.obtainable);
-                    if (item.allowableRaces.length > 0)
-                    {
-                    	var foundRace = false;
-                    	angular.forEach(item.allowableRaces, function(race) {
-							if (race === character.race) {
-								foundRace = true;
+								itm.level = fullItem.stats.level;
 							}
-						});
-
-						if (!foundRace) {
-							showthis = false;
 						}
-                    }
 
-					if (item.allowableClasses && item.allowableClasses.length > 0)
-                    {
-                    	var foundClass = false;
-                    	angular.forEach(item.allowableClasses, function(allowedClass) {
-							if (allowedClass === character.class) {
-								foundClass = true;
+						// Need to some extra work to determine what our url should be
+	                    // By default we'll use a spell id
+	                    var link = 'spell='+itm.spellId;
+
+	                    // If the item id is available lets use that
+	                    if (item.itemId) {
+	                        link = 'item='+item.itemId;
+	                    } else if (item.allianceId && character.faction === 'A') {
+	                        link = 'item='+item.allianceId;
+	                    } else if (item.hordeId && character.faction === 'H') {
+	                        link = 'item='+item.hordeId;
+	                    } else if (item.creatureId) {
+	                        link = 'npc='+item.creatureId;
+	                    }
+
+						itm.link = link;
+
+						// What would cause it to show up in the UI:
+						//	1) You have the item
+						//  2) Its still obtainable 
+						//	3) You meet the class restriction
+						//  4) You meet the race restriction
+	                    var hasthis = itm.collected;			
+						var showthis = (hasthis || item.obtainable);
+	                    if (item.allowableRaces.length > 0)
+	                    {
+	                    	var foundRace = false;
+	                    	angular.forEach(item.allowableRaces, function(race) {
+								if (race === character.race) {
+									foundRace = true;
+								}
+							});
+
+							if (!foundRace) {
+								showthis = false;
 							}
-						});
+	                    }
 
-						if (!foundClass) {
-							showthis = false;
+						if (item.allowableClasses && item.allowableClasses.length > 0)
+	                    {
+	                    	var foundClass = false;
+	                    	angular.forEach(item.allowableClasses, function(allowedClass) {
+								if (allowedClass === character.class) {
+									foundClass = true;
+								}
+							});
+
+							if (!foundClass) {
+								showthis = false;
+							}
+	                    }
+
+						if (showthis) {
+							subCat.items.push(itm);
+							totalPossible++;
 						}
-                    }
+					});
 
-					if (showthis) {
-						subCat.items.push(itm);
-						totalPossible++;
-					}
+					if (subCat.items.length > 0) {
+						cat.subCategories.push(subCat);	
+					}				
 				});
+	    	}); 
 
-				if (subCat.items.length > 0) {
-					cat.subCategories.push(subCat);	
-				}				
-			});
-    	}); 
+			// Add totals
+			obj.collected = totalCollected;
+			obj.possible = totalPossible;
 
-		// Add totals
-		obj.collected = totalCollected;
-		obj.possible = totalPossible;
-
-		// Data object we expose externally
-		return obj;
+			// Data object we expose externally
+			return obj;
+		}
 	}
-}
+
+})();
