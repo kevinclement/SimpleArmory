@@ -10,8 +10,6 @@
  */
 var simpleArmoryApp = angular.module('simpleArmoryApp', [
   'ngRoute',
-  'simpleArmoryControllers',
-  'simpleArmoryFilters',
   'simpleArmoryServices',
   'ui.bootstrap'
 ]);

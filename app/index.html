@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="simpleArmoryApp" ng-controller="ApplicationController">
+  <body ng-app="simpleArmoryApp" ng-controller="ApplicationCtrl">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -59,10 +59,23 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/controllers.js"></script>
-        <script src="scripts/filters.js"></script>
-        <script src="scripts/services.js"></script>
-        <script src="scripts/directives.js"></script>
+        
+        <script src="scripts/controllers/achievements.controller.js"></script>
+        <script src="scripts/controllers/application.controller.js"></script>
+        <script src="scripts/controllers/battlePets.controller.js"></script>
+        <script src="scripts/controllers/calendar.controller.js"></script>
+        <script src="scripts/controllers/companions.controller.js"></script>
+        <script src="scripts/controllers/error.controller.js"></script>
+        <script src="scripts/controllers/header.controller.js"></script>
+        <script src="scripts/controllers/login.controller.js"></script>
+        <script src="scripts/controllers/mounts.controller.js"></script>
+        <script src="scripts/controllers/overview.controller.js"></script>
+        <script src="scripts/controllers/reputation.controller.js"></script>
+
+		<script src="scripts/services/services.js"></script>
+
+        <script src="scripts/filters/filters.js"></script>
+        <script src="scripts/directives/directives.js"></script>
         <!-- endbuild -->
 </body>
 </html>
