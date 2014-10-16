@@ -18,7 +18,7 @@ function LoginCtrl($scope, $modal, $location) {
   });
 }
 
-function ModalInstanceCtrl($scope, $modalInstance, $brService) {
+function ModalInstanceCtrl($scope, $modalInstance, BlizzardRealmService) {
 
   // initialize with just a loading realms message
   $scope.realms = [
@@ -26,7 +26,7 @@ function ModalInstanceCtrl($scope, $modalInstance, $brService) {
   ];
 
   // wait for promises to finish and then populate with servers
-  $brService.getRealms().then(function(data) {
+  BlizzardRealmService.getRealms().then(function(data) {
     $scope.realms = [];
 
     // First add the us servers
