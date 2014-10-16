@@ -2,10 +2,10 @@
 
 (function() {
 
-	angular
-	    .module('simpleArmoryApp')
-	    .controller('ErrorCtrl' , ErrorCtrl);
+    angular
+        .module('simpleArmoryApp')
+        .controller('ErrorCtrl' , ErrorCtrl);
 
-	function ErrorCtrl() { }
+    function ErrorCtrl() { }
 
 })();

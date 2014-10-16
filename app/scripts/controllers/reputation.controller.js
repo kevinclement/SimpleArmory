@@ -2,10 +2,10 @@
 
 (function() {
     
-	angular
-    	.module('simpleArmoryApp')
-    	.controller('ReputationCtrl' , ReputationCtrl);
+    angular
+        .module('simpleArmoryApp')
+        .controller('ReputationCtrl' , ReputationCtrl);
 
-	function ReputationCtrl() { }
+    function ReputationCtrl() { }
 
 })();

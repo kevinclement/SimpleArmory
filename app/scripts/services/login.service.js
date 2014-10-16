@@ -21,27 +21,27 @@
 
                 var jsonp = $http.jsonp(
                     'http://' + $routeParams.region +'.battle.net/api/wow/character/' + $routeParams.realm + '/' + $routeParams.character +'?fields=pets,mounts,achievements,guild,reputation&jsonp=JSON_CALLBACK',
-                	 { cache: true})
+                     { cache: true})
                     .error(getCharacterError)
-                	.then(getCharacterComplete);
+                    .then(getCharacterComplete);
 
-      		    return $q.all([jsonp, deferred.promise]);
+                  return $q.all([jsonp, deferred.promise]);
 
-      		function getCharacterError() {
-      			$log.log('Trouble fetching character from battlenet');
-    			$location.url('error');
-      		}
+              function getCharacterError() {
+                  $log.log('Trouble fetching character from battlenet');
+                $location.url('error');
+              }
 
-      		function getCharacterComplete(data) {
-      			data.data.region = $routeParams.region;
+              function getCharacterComplete(data) {
+                  data.data.region = $routeParams.region;
 
-      			// add faction
-      			data.data.faction = [,'A','H','A','A','H','H','A','H','H','H','Alliance',,,,,,,,,,,'A',,,'A','H'][data.data.race];
+                  // add faction
+                  data.data.faction = [,'A','H','A','A','H','H','A','H','H','H','Alliance',,,,,,,,,,,'A',,,'A','H'][data.data.race];
 
-    			return data.data;
-      		}
-    	  }
-    	};
+                return data.data;
+              }
+          }
+        };
     }
 
 })();

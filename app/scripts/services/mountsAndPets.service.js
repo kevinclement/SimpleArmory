@@ -2,214 +2,214 @@
 
 (function() {
 
-	angular
-	    .module('simpleArmoryApp')
-	    .factory('MountsAndPetsService', MountsAndPetsService);
+    angular
+        .module('simpleArmoryApp')
+        .factory('MountsAndPetsService', MountsAndPetsService);
 
-	function MountsAndPetsService($http, $log, LoginService, $routeParams) {
-		return {
-			getItems: function(jsonFile, characterProperty, collectedId) {
-				return LoginService.getCharacter({'region': $routeParams.region, 'realm':$routeParams.realm, 'character':$routeParams.character})
-					.then(function(character) {
-						return $http.get('data/' + jsonFile + '.json', { cache: true, isArray:true })
-	    	            	.then(function(data) {
-								
-								$log.log('Parsing ' + jsonFile + '.json...');
-	    	        			return parseItemsObject(data.data, character[0], characterProperty, collectedId);    	
-	    	            	});
-					});
-			}
-		};
+    function MountsAndPetsService($http, $log, LoginService, $routeParams) {
+        return {
+            getItems: function(jsonFile, characterProperty, collectedId) {
+                return LoginService.getCharacter({'region': $routeParams.region, 'realm':$routeParams.realm, 'character':$routeParams.character})
+                    .then(function(character) {
+                        return $http.get('data/' + jsonFile + '.json', { cache: true, isArray:true })
+                            .then(function(data) {
+                                
+                                $log.log('Parsing ' + jsonFile + '.json...');
+                                return parseItemsObject(data.data, character[0], characterProperty, collectedId);        
+                            });
+                    });
+            }
+        };
 
-		function parseItemsObject(categories, character, characterProperty, collectedId) {	
-			var obj = { 'categories': [] };
-			var collected = {};
-			var totalCollected = 0;
-			var totalPossible = 0;
-		
-			// Build up lookup for items that character has
-			angular.forEach(character[characterProperty].collected, function(item) {
-				collected[item[collectedId]] = item;
-			});
+        function parseItemsObject(categories, character, characterProperty, collectedId) {    
+            var obj = { 'categories': [] };
+            var collected = {};
+            var totalCollected = 0;
+            var totalPossible = 0;
+        
+            // Build up lookup for items that character has
+            angular.forEach(character[characterProperty].collected, function(item) {
+                collected[item[collectedId]] = item;
+            });
 
-			// Lets parse out all the categories and build out our structure
-			angular.forEach(categories, function(category) {
+            // Lets parse out all the categories and build out our structure
+            angular.forEach(categories, function(category) {
 
-				// Add the item category to the item list
-				var cat = { 'name': category.name, 'subCategories': [] };
-				obj.categories.push(cat);
+                // Add the item category to the item list
+                var cat = { 'name': category.name, 'subCategories': [] };
+                obj.categories.push(cat);
 
-				angular.forEach(category.subcats, function(subCategory) {
+                angular.forEach(category.subcats, function(subCategory) {
 
-					var subCat = { 'name': subCategory.name, 'items':[] };
+                    var subCat = { 'name': subCategory.name, 'items':[] };
 
-					angular.forEach(subCategory.items, function(item) {
-						
-						var itm = item;
+                    angular.forEach(subCategory.items, function(item) {
 
-						// fix spellid typo
-						itm.spellId = item.spellid;
-						delete itm.spellid;
+                        var itm = item;
 
-						if (collected[itm[collectedId]]) {
-							var fullItem = collected[itm[collectedId]];
-							itm.collected =  true;
+                        // fix spellid typo
+                        itm.spellId = item.spellid;
+                        delete itm.spellid;
 
-							totalCollected++;
+                        if (collected[itm[collectedId]]) {
+                            var fullItem = collected[itm[collectedId]];
+                            itm.collected =  true;
 
-							// Add pet info if we have it
-							if (fullItem.qualityId) {
-								var quality = '';
-								switch(fullItem.qualityId)
-	                            {
-	                                case 0:
-	                                	quality = 'poor';
-	                                    break;
-	                                case 1:
-	                                    quality = 'common';
-	                                    break;
-	                                case 2:
-	                                    quality = 'uncommon';
-	                                    break;
-	                                case 3:
-	                                    quality = 'rare';
-	                                    break;
-									case 4:
-	                                    quality = 'epic';                                    
-	                                    break;
-									case 5:
-	                                    quality = 'legendary';                                    
-	                                    break;                                    
-	                            }
+                            totalCollected++;
 
-	                            itm.quality = quality;
-							}
+                            // Add pet info if we have it
+                            if (fullItem.qualityId) {
+                                var quality = '';
+                                switch(fullItem.qualityId)
+                                {
+                                    case 0:
+                                        quality = 'poor';
+                                        break;
+                                    case 1:
+                                        quality = 'common';
+                                        break;
+                                    case 2:
+                                        quality = 'uncommon';
+                                        break;
+                                    case 3:
+                                        quality = 'rare';
+                                        break;
+                                    case 4:
+                                        quality = 'epic';
+                                        break;
+                                    case 5:
+                                        quality = 'legendary';
+                                        break;
+                                }
 
-							if (fullItem.stats) {
-								if (fullItem.stats.breedId) {
-									var breed = '';
-									switch(fullItem.stats.breedId)
-		                            {
-		                                case 4:
-		                                case 14:
-		                                    breed = 'P/P';
-		                                    break;
-		                                case 5:
-		                                case 15:
-		                                    breed = 'S/S';
-		                                    break;
-		                                case 6:
-		                                case 16:
-		                                    breed = 'H/H';
-		                                    break;
-		                                case 7:
-		                                case 17:
-		                                    breed = 'H/P';
-		                                    break;
-		                                case 8:
-		                                case 18:
-		                                    breed = 'P/S';
-		                                    break;
-		                                case 9:
-		                                case 19:
-		                                    breed = 'H/S';
-		                                    break;
-		                                case 10:
-		                                case 20:
-		                                    breed = 'P/B';
-		                                    break;
-		                                case 11:
-		                                case 21:
-		                                    breed = 'S/B';
-		                                    break;
-		                                case 12:
-		                                case 22:
-		                                    breed = 'H/B';
-		                                    break;
-		                                case 3:
-		                                case 13:
-		                                    breed = 'B/B';
-		                                    break;
-		                            }
+                                itm.quality = quality;
+                            }
 
-		                            itm.breed = breed;
-								}
+                            if (fullItem.stats) {
+                                if (fullItem.stats.breedId) {
+                                    var breed = '';
+                                    switch(fullItem.stats.breedId)
+                                    {
+                                        case 4:
+                                        case 14:
+                                            breed = 'P/P';
+                                            break;
+                                        case 5:
+                                        case 15:
+                                            breed = 'S/S';
+                                            break;
+                                        case 6:
+                                        case 16:
+                                            breed = 'H/H';
+                                            break;
+                                        case 7:
+                                        case 17:
+                                            breed = 'H/P';
+                                            break;
+                                        case 8:
+                                        case 18:
+                                            breed = 'P/S';
+                                            break;
+                                        case 9:
+                                        case 19:
+                                            breed = 'H/S';
+                                            break;
+                                        case 10:
+                                        case 20:
+                                            breed = 'P/B';
+                                            break;
+                                        case 11:
+                                        case 21:
+                                            breed = 'S/B';
+                                            break;
+                                        case 12:
+                                        case 22:
+                                            breed = 'H/B';
+                                            break;
+                                        case 3:
+                                        case 13:
+                                            breed = 'B/B';
+                                            break;
+                                    }
 
-								itm.level = fullItem.stats.level;
-							}
-						}
+                                    itm.breed = breed;
+                                }
 
-						// Need to some extra work to determine what our url should be
-	                    // By default we'll use a spell id
-	                    var link = 'spell='+itm.spellId;
+                                itm.level = fullItem.stats.level;
+                            }
+                        }
 
-	                    // If the item id is available lets use that
-	                    if (item.itemId) {
-	                        link = 'item='+item.itemId;
-	                    } else if (item.allianceId && character.faction === 'A') {
-	                        link = 'item='+item.allianceId;
-	                    } else if (item.hordeId && character.faction === 'H') {
-	                        link = 'item='+item.hordeId;
-	                    } else if (item.creatureId) {
-	                        link = 'npc='+item.creatureId;
-	                    }
+                        // Need to some extra work to determine what our url should be
+                        // By default we'll use a spell id
+                        var link = 'spell='+itm.spellId;
 
-						itm.link = link;
+                        // If the item id is available lets use that
+                        if (item.itemId) {
+                            link = 'item='+item.itemId;
+                        } else if (item.allianceId && character.faction === 'A') {
+                            link = 'item='+item.allianceId;
+                        } else if (item.hordeId && character.faction === 'H') {
+                            link = 'item='+item.hordeId;
+                        } else if (item.creatureId) {
+                            link = 'npc='+item.creatureId;
+                        }
 
-						// What would cause it to show up in the UI:
-						//	1) You have the item
-						//  2) Its still obtainable 
-						//	3) You meet the class restriction
-						//  4) You meet the race restriction
-	                    var hasthis = itm.collected;			
-						var showthis = (hasthis || item.obtainable);
-	                    if (item.allowableRaces.length > 0)
-	                    {
-	                    	var foundRace = false;
-	                    	angular.forEach(item.allowableRaces, function(race) {
-								if (race === character.race) {
-									foundRace = true;
-								}
-							});
+                        itm.link = link;
 
-							if (!foundRace) {
-								showthis = false;
-							}
-	                    }
+                        // What would cause it to show up in the UI:
+                        //    1) You have the item
+                        //  2) Its still obtainable 
+                        //    3) You meet the class restriction
+                        //  4) You meet the race restriction
+                        var hasthis = itm.collected;            
+                        var showthis = (hasthis || item.obtainable);
+                        if (item.allowableRaces.length > 0)
+                        {
+                            var foundRace = false;
+                            angular.forEach(item.allowableRaces, function(race) {
+                                if (race === character.race) {
+                                    foundRace = true;
+                                }
+                            });
 
-						if (item.allowableClasses && item.allowableClasses.length > 0)
-	                    {
-	                    	var foundClass = false;
-	                    	angular.forEach(item.allowableClasses, function(allowedClass) {
-								if (allowedClass === character.class) {
-									foundClass = true;
-								}
-							});
+                            if (!foundRace) {
+                                showthis = false;
+                            }
+                        }
 
-							if (!foundClass) {
-								showthis = false;
-							}
-	                    }
+                        if (item.allowableClasses && item.allowableClasses.length > 0)
+                        {
+                            var foundClass = false;
+                            angular.forEach(item.allowableClasses, function(allowedClass) {
+                                if (allowedClass === character.class) {
+                                    foundClass = true;
+                                }
+                            });
 
-						if (showthis) {
-							subCat.items.push(itm);
-							totalPossible++;
-						}
-					});
+                            if (!foundClass) {
+                                showthis = false;
+                            }
+                        }
 
-					if (subCat.items.length > 0) {
-						cat.subCategories.push(subCat);	
-					}				
-				});
-	    	}); 
+                        if (showthis) {
+                            subCat.items.push(itm);
+                            totalPossible++;
+                        }
+                    });
 
-			// Add totals
-			obj.collected = totalCollected;
-			obj.possible = totalPossible;
+                    if (subCat.items.length > 0) {
+                        cat.subCategories.push(subCat);
+                    }
+                });
+            }); 
 
-			// Data object we expose externally
-			return obj;
-		}
-	}
+            // Add totals
+            obj.collected = totalCollected;
+            obj.possible = totalPossible;
+
+            // Data object we expose externally
+            return obj;
+        }
+    }
 
 })();
