@@ -320,7 +320,9 @@ module.exports = function (grunt) {
           cwd: 'bower_components/bootstrap/dist',
           src: 'fonts/*',
           dest: '<%= yeoman.dist %>'
-
+        }, {
+          src: '<%= yeoman.app %>/web.config',
+          dest: '<%= yeoman.dist %>/web.config'
         // ###########################################
         // TMP: Until I ship v2
         // ###########################################
