@@ -323,6 +323,12 @@ module.exports = function (grunt) {
         }, {
           src: '<%= yeoman.app %>/web.config',
           dest: '<%= yeoman.dist %>/web.config'
+        }, {
+          expand: true,
+          cwd: '<%= yeoman.app %>/data',
+          dest: '<%= yeoman.dist %>/data',
+          src: ['*']
+
         // ###########################################
         // TMP: Until I ship v2
         // ###########################################
