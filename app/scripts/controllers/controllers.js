@@ -10,13 +10,13 @@ simpleArmoryControllers.controller('ApplicationController', ['$scope', 'LoginSer
     $scope.isLoggedIn = false;
 
     // Listen for path changed and then parse and fetch the character
-    $scope.$on("$locationChangeSuccess",function(event, next, current){
+    $scope.$on('$locationChangeSuccess',function(){
 
       // If there was an error we need to reset everything
-      if ($location.$$path == "/error") {
+      if ($location.$$path === '/error') {
           $scope.character = null;
           $scope.isLoggedIn = false;
-      } else if ($location.$$path != "" && $location.$$path != "/") {
+      } else if ($location.$$path !== '' && $location.$$path !== '/') {
         // "us/proudmoore/marko"
         // [0]: us/proudmoore/marko
         // [1]: spirestone
@@ -35,18 +35,18 @@ simpleArmoryControllers.controller('ApplicationController', ['$scope', 'LoginSer
     // Helper function for percentage numbers.  Used in a lot of screens
     $scope.percent = function(n, d) {
       return $filter('number')(((n / d) * 100), 0);
-    }
+    };
 
     // Helper to get the image id off an item
     $scope.getImageSrc = function(item) {
       if (item.collected) {
         // wowhead img
-        return "http://wow.zamimg.com/images/wow/icons/medium/" + item.icon.toLowerCase() + ".jpg";
+        return 'http://wow.zamimg.com/images/wow/icons/medium/' + item.icon.toLowerCase() + '.jpg';
       } else {
         // 1x1 gif   
-        return "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==";
+        return 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==';
       }
-  }
+  };
 }]);
 
 simpleArmoryControllers.controller('LoginCtrl', ['$scope', '$modal', '$location', function ($scope, $modal, $location) {
@@ -58,7 +58,7 @@ simpleArmoryControllers.controller('LoginCtrl', ['$scope', '$modal', '$location'
   });
 
   modalInstance.result.then(function (loginObj) {
-    $location.url(loginObj.region + "/" + loginObj.realm + "/" + loginObj.character);
+    $location.url(loginObj.region + '/' + loginObj.realm + '/' + loginObj.character);
   });
 }]);
 
@@ -69,20 +69,20 @@ simpleArmoryControllers.controller('ModalInstanceCtrl', ['$scope', '$modalInstan
   // initialize with just a loading realms message
   $scope.realms = [
       {name:'Loading realms...'},
-  ]
+  ];
 
   // wait for promises to finish and then populate with servers
   $brService.getRealms().then(function(data) {
     $scope.realms = [];
 
     // First add the us servers
-    angular.forEach(data[0].data.realms, function(value, key) {   
-      this.push({value:{realm:value.slug, region:'us'}, text:value.name + " US"});
+    angular.forEach(data[0].data.realms, function(value) {   
+      this.push({value:{realm:value.slug, region:'us'}, text:value.name + ' US'});
     }, $scope.realms);
 
     // Then the eu servers
-    angular.forEach(data[1].data.realms, function(value, key) {
-      this.push({value:{realm:value.slug, region:'eu'}, text:value.name + " EU"});
+    angular.forEach(data[1].data.realms, function(value) {
+      this.push({value:{realm:value.slug, region:'eu'}, text:value.name + ' EU'});
     }, $scope.realms);    
   });
   
@@ -115,13 +115,13 @@ simpleArmoryControllers.controller('OverviewCtrl', ['$scope', 'AchievementsServi
 simpleArmoryControllers.controller('HeaderCtrl', ['$scope', '$location', function ($scope, $location) {
  
     $scope.getUrl = function(subSite) {
-      var url = "#" + getBaseUrl($scope.character);
-      if (subSite != "") {
-        url += "/" + subSite;
+      var url = '#' + getBaseUrl($scope.character);
+      if (subSite !== '') {
+        url += '/' + subSite;
       }
 
       return url;
-    }
+    };
 
     $scope.isActive = function (viewLocation, subMenu) {
 
@@ -133,52 +133,52 @@ simpleArmoryControllers.controller('HeaderCtrl', ['$scope', '$location', functio
 
       // otherwise, lets try to match it directly
       var combinedUrl = getBaseUrl($scope.character);
-      if (viewLocation != "") {
-        combinedUrl += "/" + viewLocation;
+      if (viewLocation !== '') {
+        combinedUrl += '/' + viewLocation;
       } 
 
-      return $location.path() == combinedUrl;
+      return $location.path() === combinedUrl;
     };
 
     $scope.guildName = function() {
         if ($scope.character && $scope.character.guild) {
-          return "<" + $scope.character.guild.name + ">";
+          return '<' + $scope.character.guild.name + '>';
         }
 
-        return "";
-    }
+        return '';
+    };
 
     $scope.imgUrl = function() {
       if ($scope.character) {
         var c = $scope.character;
-        return "http://" + c.region + ".battle.net/static-render/" + c.region + "/" + c.thumbnail;
+        return 'http://' + c.region + '.battle.net/static-render/' + c.region + '/' + c.thumbnail;
       }
 
-      return "";   
-    }
+      return '';   
+    };
 
     $scope.armoryUrl = function() {
       if ($scope.character) {
         var c = $scope.character;
-        return "http://" + c.region + ".battle.net/wow/en/character/" + c.realm + "/" + c.name.toLowerCase() + "/advanced";
+        return 'http://' + c.region + '.battle.net/wow/en/character/' + c.realm + '/' + c.name.toLowerCase() + '/advanced';
       }
 
-      return "#";   
-    }
+      return '#';   
+    };
 
     function getBaseUrl(character) {    
       if (!character) {
-        return "#";
+        return '#';
       }
 
-      return "/" + character.region.toLowerCase() + "/" + 
-                   character.realm.toLowerCase()  + "/" + 
+      return '/' + character.region.toLowerCase() + '/' + 
+                   character.realm.toLowerCase()  + '/' + 
                    character.name.toLowerCase();
     }
 }]);
 
 simpleArmoryControllers.controller('AchievementsCtrl', ['$scope', 'AchievementsService', '$routeParams', function ($scope, achievementsService, $routeParams) {
-  
+
   $scope.superCat = prettySuperCategory($routeParams.category);
 
   achievementsService.getAchievements().then(function(achievements){
@@ -187,24 +187,24 @@ simpleArmoryControllers.controller('AchievementsCtrl', ['$scope', 'AchievementsS
 
   $scope.getImageSrc = function(achievement) {
 
-    if (achievement.id == 8468) {
+    if (achievement.id === 8468) {
       // special case galakras since its busted on wowhead
-      return "images/galakras.png";
+      return 'images/galakras.png';
     } else if (achievement.completed) {
       // wowhead img
-      return "http://wow.zamimg.com/images/wow/icons/medium/" + achievement.icon.toLowerCase() + ".jpg";
+      return 'http://wow.zamimg.com/images/wow/icons/medium/' + achievement.icon.toLowerCase() + '.jpg';
     } else {
       // 1x1 gif   
-      return "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==";
+      return 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==';
     }
-  }
+  };
 
   $scope.border = function(achievement){
       if (achievement.completed) {
-        return "borderOff";
+        return 'borderOff';
       }
       else {
-        return "borderOn";
+        return 'borderOn';
       }
     };
 
@@ -215,94 +215,95 @@ simpleArmoryControllers.controller('AchievementsCtrl', ['$scope', 'AchievementsS
 
     switch(supercat) {
       case 'general':
-          prettyCatName = "General";
+          prettyCatName = 'General';
           break;
       case 'quests':
-          prettyCatName = "Quests";
+          prettyCatName = 'Quests';
           break;
       case 'exploration':
-          prettyCatName = "Exploration";
+          prettyCatName = 'Exploration';
           break;
       case 'pvp':
-          prettyCatName = "Player vs. Player";
+          prettyCatName = 'Player vs. Player';
           break;          
       case 'dungeons':
-          prettyCatName = "Dungeons & Raids";
+          prettyCatName = 'Dungeons & Raids';
           break;          
       case 'professions':
-          prettyCatName = "Professions";
+          prettyCatName = 'Professions';
           break;
       case 'reputation':
-          prettyCatName = "Reputation";
+          prettyCatName = 'Reputation';
           break;
       case 'scenarios':
-          prettyCatName = "Scenarios";
+          prettyCatName = 'Scenarios';
           break;
       case 'events':
-          prettyCatName = "World Events";
+          prettyCatName = 'World Events';
           break;
       case 'pets':
-          prettyCatName = "Pet Battles";
+          prettyCatName = 'Pet Battles';
           break;
       case 'feats':
-          prettyCatName = "Feats of Strength";
+          prettyCatName = 'Feats of Strength';
           break;                    
     }
 
     return prettyCatName;
   }
+
 }]);
 
 simpleArmoryControllers.controller('MountsCtrl', ['$scope', 'MountsAndPetsService', function ($scope, mountsService) {
-  mountsService.getItems("mounts", "mounts", "spellId").then(function(items){
+  mountsService.getItems('mounts', 'mounts', 'spellId').then(function(items){
       $scope.items = items;
   });
 }]);
 
 simpleArmoryControllers.controller('CompanionsCtrl', ['$scope', 'MountsAndPetsService', function ($scope, companionService) {
   
-  companionService.getItems("pets", "pets", "spellId").then(function(items){
+  companionService.getItems('pets', 'pets', 'spellId').then(function(items){
       $scope.items = items;
   });
 }]);
 
 simpleArmoryControllers.controller('BattlePetsCtrl', ['$scope', 'MountsAndPetsService', function ($scope, battlePetsService) {
 
-  battlePetsService.getItems("battlepets", "pets", "creatureId").then(function(items){
+  battlePetsService.getItems('battlepets', 'pets', 'creatureId').then(function(items){
       $scope.items = items;
   });
 
   $scope.qualityToBackground = function(item) {
-    var bgColor = "#fff";
+    var bgColor = '#fff';
 
     switch(item.quality) {
-        case "poor":
-            bgColor = "#7F7F7F";
+        case 'poor':
+            bgColor = '#7F7F7F';
             break;
-        case "common":
-            bgColor = "#F0F0F0";
+        case 'common':
+            bgColor = '#F0F0F0';
             break;
-        case "uncommon":
-            bgColor = "#22B14C";
+        case 'uncommon':
+            bgColor = '#22B14C';
             break;
-        case "rare":
-            bgColor = "#3F48CC";
+        case 'rare':
+            bgColor = '#3F48CC';
             break;
     }
 
-    return "background:" + bgColor;
-  }
+    return 'background:' + bgColor;
+  };
 
 }]);
 
-simpleArmoryControllers.controller('CalendarCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
+simpleArmoryControllers.controller('CalendarCtrl', [function () {
 
 }]);
 
-simpleArmoryControllers.controller('ReputationCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
+simpleArmoryControllers.controller('ReputationCtrl', [function () {
 
 }]);
 
-simpleArmoryControllers.controller('ErrorCtrl', ['$scope', function ($scope) {
+simpleArmoryControllers.controller('ErrorCtrl', [function () {
 
 }]);
