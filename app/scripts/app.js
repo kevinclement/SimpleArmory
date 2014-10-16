@@ -1,16 +1,7 @@
 'use strict';
 
-/**
- * @ngdoc overview
- * @name simpleArmoryApp
- * @description
- * # simpleArmoryApp
- *
- * Main module of the application.
- */
 var simpleArmoryApp = angular.module('simpleArmoryApp', [
   'ngRoute',
-  'simpleArmoryServices',
   'ui.bootstrap'
 ]);
 
