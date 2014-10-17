@@ -9,7 +9,12 @@
     function MountsAndPetsService($http, $log, LoginService, $routeParams) {
         return {
             getItems: function(jsonFile, characterProperty, collectedId) {
-                return LoginService.getCharacter({'region': $routeParams.region, 'realm':$routeParams.realm, 'character':$routeParams.character})
+                return LoginService.getCharacter(
+                        {
+                            'region': $routeParams.region,
+                            'realm':$routeParams.realm,
+                            'character':$routeParams.character
+                        })
                     .then(function(character) {
                         return $http.get('data/' + jsonFile + '.json', { cache: true, isArray:true })
                             .then(function(data) {

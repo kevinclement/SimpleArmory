@@ -26,9 +26,10 @@
                 var rgr = new RegExp('([^\/]+)/([^\/]+)/([^\/]+)/?([^\/]+)?').exec($location.$$path);
                 rgr = rgr ? rgr : {};
 
-                LoginService.getCharacter({'region': rgr[1], 'realm':rgr[2], 'character':rgr[3]}).then(function(character) {
-                    $scope.character = character[0];
-                    $scope.isLoggedIn = true;
+                LoginService.getCharacter({'region': rgr[1], 'realm':rgr[2], 'character':rgr[3]})
+                    .then(function(character) {
+                        $scope.character = character[0];
+                        $scope.isLoggedIn = true;
                 });
             }
         });  

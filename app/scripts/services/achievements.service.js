@@ -9,7 +9,12 @@
     function AchievementsService($http, $log, LoginService, $routeParams) {
         return {
             getAchievements: function() {
-                return LoginService.getCharacter({'region': $routeParams.region, 'realm':$routeParams.realm, 'character':$routeParams.character})
+                return LoginService.getCharacter(
+                        {
+                            'region': $routeParams.region,
+                            'realm':$routeParams.realm,
+                            'character':$routeParams.character
+                        })
                     .then(function(character) {
                         return $http.get('data/achievements.json', { cache: true})
                             .then(function(data) {
@@ -57,14 +62,16 @@
                                 added = true;
                                 myZone.achievements.push(myAchievement);    
 
-                                // if this is feats of strength then I want to keep a seperate count for that since its not a percentage thing
+                                // if this is feats of strength then I want to keep a seperate count for that 
+                                // since its not a percentage thing
                                 if (supercat.name === 'Feats of Strength') {
                                     totalFoS++;
                                 }
                             }
 
                             // Update counts proper
-                            if (supercat.name !== 'Feats of Strength' && ach.obtainable && (ach.side === '' || ach.side === character.faction)){
+                            if (supercat.name !== 'Feats of Strength' && ach.obtainable && 
+                                (ach.side === '' || ach.side === character.faction)){
                                 possibleCount++;
                                 totalPossible++;
 
