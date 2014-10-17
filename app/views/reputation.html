@@ -1,55 +1,101 @@
 <style>
-.mySpan1, .mySpan2 {
-	
-	display:inline-block;
-	background:green;
-	width: 240px;
-	height: 10px;
-	background-color: #428bca;
-	border-radius: 2px;
-	margin-right:1px;
+.rep ul {
+	list-style-type: none;
+	min-width:635px;
+	overflow:none
+}
+.rep li {
+	height: 20px;
+}
+.rep h3 {
+	margin-bottom: 0px;	
 }
 
-.mySpan2 {
-	background:green;
-	width: 30px;
-}
 .factionLabel {
 	display:inline-block;
 	margin-right:15px;
 	text-align: right;
-	width: 160px;
+	width: 140px;
+	font-size: 14px;
 }
 
-.hatedLbl {
+/* all rules */
+.hated,.hostel,.unfriendly,.neutral,.friendly,.honored,.revered,.exalted {
 	display:inline-block;
-	width: 240px;
+	height: 10px;
+	border-radius: 2px;
 	margin-right:1px;
+}
+
+/* Hated */
+.hated {
+	width: 150px;
+	background-color: #c22;	
+}
+
+/* Hostel */
+.hostel {
+	width: 25px;	
+	background-color: red;
+}
+
+/* Unfriendly */
+.unfriendly {
+	background-color: #e62;
+	width: 25px;
+}
+
+/* Neutral  */
+.neutral {
+	background-color: #D29D01;
+	width: 25px;
+}
+
+/* Friendly */
+.friendly {
+	background-color: #55B101;
+	width: 40px;
+}
+
+/* Honored */
+.honored {
+	background-color: #55B101;
+	width: 60px;
+}
+
+/* Revered */
+.revered {
+	background-color: #55B101;
+	width: 85px;
+}
+
+/* Exalted */
+.exalted {
+	background-color: #0EC077;
+	width: 10px;
+}
+
+.repLabel {
 	font-size: 10px;
 	font-style: italic;
-	position:relative;
-	top:-15px;
-}
-.hostileLbl {
-
+	background-color: transparent
 }
 
 </style>
 
-<div class="container">
+<div class="container rep">
   <div class="page-header">
     <h2>Reputation<small></small></h2>        
   </div>
 
   <h3>Guild</h3>
-  <ul style="list-style-type: none;min-width:700px;background:gray;overflow:none">
+  <ul>
   	<li>
-  		<h4 class="factionLabel">Guild</h4><div class="mySpan1"></div><div class="mySpan2"></div><div class="mySpan2"></div><div class="mySpan2"></div><div class="mySpan2"></div><div class="mySpan2"></div><div class="mySpan2"></div><div class="mySpan2"></div>
+  		<h4 class="factionLabel">Guild</h4><div class="hated"></div><div class="hostel"></div><div class="unfriendly"></div><div class="neutral"></div><div class="friendly"></div><div class="honored"></div><div class="revered"></div><div class="exalted"></div>
   	</li>
-  	<li>
-  		<div class="factionLabel"></div><div class="hatedLbl">Hated</div>
+  	<li class="labelRow">
+  		<div class="factionLabel"></div><div class="hated repLabel">Hated</div><div class="hostel repLabel">Hos</div><div class="unfriendly repLabel">Unf</div><div class="neutral repLabel">Neu</div><div class="friendly repLabel">Friend</div><div class="honored repLabel">Honored</div><div class="revered repLabel">Revered</div><div class="exalted repLabel">Ex</div>
   	</li>
   </ul>
-  <br/>
-  
+ 
 </div>
