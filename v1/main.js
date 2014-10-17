@@ -82,7 +82,13 @@ function showtab(p_section,p_name) {
 						hx += '</td><td style="vertical-align: middle">';
 						for (rx = 0; rx < replevels.length; rx++)
                         {
-							hx += repbar(rx,replevels[rx],o.reputation[x].standing,o.reputation[x].value,repcolors[rx]);
+                            var level = rx;
+                            var maxrep = replevels[rx];
+                            var curLevel = o.reputation[x].standing;
+                            var curRep = o.reputation[x].value;
+                            var color = repcolors[rx];
+
+							hx += repbar(level,maxrep,curLevel,curRep,color);
                         }
 						hx += '<div class="clear"></div></td></tr>';
 						break;
