@@ -14,7 +14,7 @@
         		faction: '=', 
       		},
         	templateUrl: function () {
-                return 'scripts/directives/reputationRow.html';    
+                return 'views/reputationRow.html';    
             }
     	};
     }
