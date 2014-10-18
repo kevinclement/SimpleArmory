@@ -37,7 +37,8 @@
         'bestFriends': 50
    	};
 
-    var ReputationRowController = function ($scope, $sce) {
+    /*@ngInject*/ 
+    var ReputationRowController = function ($scope) {
 
         $scope.getWidth = function(level) {
 

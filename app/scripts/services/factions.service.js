@@ -84,7 +84,6 @@
                             f.exalted = calculateLevelPercent(7, stand);                          
                         }
 
-
                         fc.factions.push(f);                      
                     }
                 });
