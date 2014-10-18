@@ -53,9 +53,12 @@
   <div class="page-header">
     <h2>
         Calendar <small>
-        		    <button type="button" class="btn btn-default">&laquo;</button>
-        			<select><option>April 2014</option></select>
-        			<button type="button" class="btn btn-default">&raquo;</button>
+        		    <button type="button" class="btn btn-default" ng-click="leftOneMonth()">&laquo;</button>
+        			<select 
+        				ng-model="month"
+        				ng-options="months.indexOf(month) as month for month in months">
+        			</select>
+        			<button type="button" class="btn btn-default" ng-click="rightOneMonth()">&raquo;</button>
         		 </small>
         <div class="progress progressRight">
             <progressbar max="100" type="success" value="100">
