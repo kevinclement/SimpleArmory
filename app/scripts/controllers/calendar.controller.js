@@ -7,28 +7,39 @@
         .controller('CalendarCtrl' , CalendarCtrl);
 
     function CalendarCtrl($scope, $sce) { 
-
-    	$scope.totalForMonth = 23;
+	   	$scope.totalForMonth = 23;
     	$scope.totalPoints = '(15 points)';
 	
 		buildMonths(); 
 
 		// Select the last month
-		$scope.month = $scope.months.length - 1;
+		$scope.selectedMonth = $scope.months[$scope.months.length - 1];
 
     	$scope.leftOneMonth = function() {
-    		if ($scope.month > 0) {
-    			$scope.month--;
-    		}   
+
+    		if ($scope.selectedMonth.index > 0) {
+    			$scope.selectedMonth = $scope.months[$scope.selectedMonth.index - 1];
+    			$scope.selectionChanged();
+    		}       		
     	};
 
     	$scope.rightOneMonth = function() {
-    		if ($scope.month < $scope.months.length - 1) {
-    			$scope.month++;	
-    		}
-
-    		
+    	
+    		if ($scope.selectedMonth.index < $scope.months.length - 1) {
+    			$scope.selectedMonth = $scope.months[$scope.selectedMonth.index + 1];
+    			$scope.selectionChanged();
+    		}    		
     	};
+
+    	$scope.selectionChanged = function() {
+    		var cc = $(".curCalendar");
+    		cc.removeClass("curCalendar");
+    		cc.hide();
+
+			var newCC = $('#calendar' + $scope.selectedMonth.value);
+			newCC.addClass("curCalendar");
+			newCC.show();
+    	}
 
     	function buildMonths() {
     		var monthnames = [,'January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -37,10 +48,13 @@
 
 			var calendarHtml = '';
 
+			var index = 0;
 			for (var year = 2008; year <= today.getFullYear(); year++) {
 				for (var month = 1; month <= 12; month++) {
-					var monthid = ''+((month < 10)?'0':'')+month;
+					var monthid = '' + year + ((month < 10)?'0':'') + month;
 					
+					//''+year+((dt.getMonth() < 9)?'0':'')+(dt.getMonth()+1);
+
 					// TODO: don't include early months if there were not achievements for that month
 					/*if ((!isfirstmonth) || (typeof calendar[''+yearx+monthid] != 'undefined')) {
 						calenpages.push(''+yearx+monthid);
@@ -51,11 +65,16 @@
 					
 					var thisMonth = (year == today.getFullYear()) && (month == (today.getMonth()+1));
 
-					months.push(monthnames[month] + ' ' + year);
+					// Add the months to the list of months
+					months.push({
+						value:monthid,
+						text:monthnames[month] + ' ' + year,
+						index: index++
+					});
 
 					// Add this month to the calendar html
 					var rowData = buildRows(month, year);
-					calendarHtml += '<table class="calendar" id="calendar'+ year + monthid +'" style="display: ' + (thisMonth ? "block" : "none")+ '" total="' + rowData.total + '" points="' + rowData.points + '"">';
+					calendarHtml += '<table class="calendar' + (thisMonth ? " curCalendar" : "") + '" id="calendar'+ monthid +'" style="display: ' + (thisMonth ? "block" : "none")+ '" total="' + rowData.total + '" points="' + rowData.points + '"">';
 					calendarHtml += rowData.rows;
 					calendarHtml += '</table>';
 

@@ -55,8 +55,9 @@
         Calendar <small>
         		    <button type="button" class="btn btn-default" ng-click="leftOneMonth()">&laquo;</button>
         			<select 
-        				ng-model="month"
-        				ng-options="months.indexOf(month) as month for month in months">
+        				ng-model="selectedMonth"
+        				ng-options="month.text for month in months track by month.value"
+        				ng-change="selectionChanged()">
         			</select>
         			<button type="button" class="btn btn-default" ng-click="rightOneMonth()">&raquo;</button>
         		 </small>
