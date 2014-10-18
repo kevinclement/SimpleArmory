@@ -9,16 +9,17 @@
     function ReputationRow() {
     	return {
         	controller: ReputationRowController,
-        	link: linkFn,
         	restrict: 'E',
     		scope: {
-        		faction: '='
+        		faction: '=', 
       		},
-        	templateUrl: 'scripts/directives/reputationRow.html'
+        	templateUrl: function () {
+                return 'scripts/directives/reputationRow.html';    
+            }
     	};
     }
 
-    // Pixel widths of the differnent level types
+    // Pixel widths of the different level types
    	var levelWidths = {
    		'hated': 150,
    		'hostel': 25,
@@ -27,21 +28,24 @@
         'friendly': 40,
         'honored': 60,
         'revered': 85,
-        'exalted': 10
+        'exalted': 10,
+        'stranger': 50,
+        'acquaintance': 50,
+        'buddy': 50,
+        'friend': 50,
+        'goodFriends': 50,
+        'bestFriends': 50
    	};
 
     var ReputationRowController = function ($scope, $sce) {
 
         $scope.getWidth = function(level) {
 
+            var num = $scope.faction[level] ? $scope.faction[level] : 0;
+
         	// pulls out the faction level percentage from the scope
         	// applies that percentage to the possible fixed width for the div
-        	return ($scope.faction[level] / 100) * levelWidths[level] + 'px';
+        	return (num / 100) * levelWidths[level] + 'px';
         };
     };
-
-    var linkFn = function (scope, lElement, attrs, controller) {
-
-    };
-
 })();

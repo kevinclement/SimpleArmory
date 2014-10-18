@@ -50,6 +50,8 @@
                 fc.name = factionCategory.name;
                 fc.factions = [];
 
+                var tillerCategory = false;
+
                 angular.forEach(factionCategory.factions, function(faction) {
                     var f = {};
                     f.id = faction.id;
@@ -60,18 +62,36 @@
                     if (stand)
                     {
                         // fill out the faction values for this user
-                        f.hated = calculateLevelPercent(0, stand);
-                        f.hostel = calculateLevelPercent(1, stand);
-                        f.unfriendly = calculateLevelPercent(2, stand);
-                        f.neutral = calculateLevelPercent(3, stand);
-                        f.friendly = calculateLevelPercent(4, stand);
-                        f.honored = calculateLevelPercent(5, stand);
-                        f.revered = calculateLevelPercent(6, stand);
-                        f.exalted = calculateLevelPercent(7, stand);
+                        if (isTillerFaction(faction.id)) { 
+                            f.stranger = calculateLevelPercent(0, stand);
+                            f.acquaintance = calculateLevelPercent(1, stand);
+                            f.buddy = calculateLevelPercent(2, stand);
+                            f.friend = calculateLevelPercent(3, stand);
+                            f.goodFriends = calculateLevelPercent(4, stand);
+                            f.bestFriends = calculateLevelPercent(5, stand);
+                            f.isTiller = true;
+
+                            tillerCategory = true;
+                        }
+                        else {
+                            f.hated = calculateLevelPercent(0, stand);
+                            f.hostel = calculateLevelPercent(1, stand);
+                            f.unfriendly = calculateLevelPercent(2, stand);
+                            f.neutral = calculateLevelPercent(3, stand);
+                            f.friendly = calculateLevelPercent(4, stand);
+                            f.honored = calculateLevelPercent(5, stand);
+                            f.revered = calculateLevelPercent(6, stand);
+                            f.exalted = calculateLevelPercent(7, stand);                          
+                        }
+
 
                         fc.factions.push(f);                      
                     }
                 });
+
+                if (tillerCategory) {
+                    fc.isTiller = true;
+                }
 
                 if (fc.factions.length > 0) {
                     obj.categories.push(fc);
@@ -83,7 +103,7 @@
         }
 
         function calculateLevelPercent(level, stand) {
-            if (level == stand.level) {
+            if (level === stand.level) {
                 return stand.perc;
             }
             else if (level < stand.level) {
@@ -92,6 +112,13 @@
             else {
                 return 0;
             }            
+        }
+
+        function isTillerFaction(id) {
+            return id === '1273' || id === '1275' || id === '1276' || 
+                   id === '1277' || id === '1278' || id === '1279' || 
+                   id === '1280' || id === '1281' || id === '1282' || 
+                   id === '1283';
         }
     }
 

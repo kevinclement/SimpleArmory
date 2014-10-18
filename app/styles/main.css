@@ -198,7 +198,8 @@ body {
 }
 
 /* all rules */
-.hated,.hostel,.unfriendly,.neutral,.friendly,.honored,.revered,.exalted {
+.hated,.hostel,.unfriendly,.neutral,.friendly,.honored,.revered,.exalted,
+.stranger,.acquaintance,.buddy,.friend,.goodFriends,.bestFriends {
   display:inline-block;
   height: 10px;
   border-radius: 2px;
