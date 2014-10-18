@@ -24,30 +24,19 @@
             }
         };
 
-        function repbar(level,maxrep,curlevel,currep,color) {
-            if (level > curlevel) {
-                return '';
-            }
-           
-           var compareto = (level < curlevel) ? maxrep:currep;
-           
-           return '<div style="height: 1em; margin: 0 1px; width: '+Math.ceil(compareto/150)+'px; background-color: '+color+'; float: left"></div>';
-        }
-
         function parseFactions(factions, character) {    
             var obj = {};
             obj.categories = [];
+
+            var standing = {};
             $log.log('Parsing factions.json...');
 
             // Build up lookup for factions
             angular.forEach(character.reputation, function(rep, index) {
-
-
-                // {id: 1098, name: "Knights of the Ebon Blade", standing: 7, value: 999, max: 999}
-
-
-
-                //completed[ach] = character.achievements.achievementsCompletedTimestamp[index];
+                standing[rep.id] = {
+                    level: rep.standing,
+                    perc: (rep.value / rep.max) * 100
+                };
             });
 
             // We look up each faction in the character.  
@@ -66,24 +55,43 @@
                     f.id = faction.id;
                     f.name = faction.name;
 
-                    // fill out the faction values for this user
-                    f.hated = 100;
-                    f.hostel = 0;
-                    f.unfriendly = 0;
-                    f.neutral = 0;
-                    f.friendly = 0;
-                    f.honored = 0;
-                    f.revered = 0
-                    f.exalted = 0;
+                    var stand = standing[f.id];
 
-                    fc.factions.push(f);
+                    if (stand)
+                    {
+                        // fill out the faction values for this user
+                        f.hated = calculateLevelPercent(0, stand);
+                        f.hostel = calculateLevelPercent(1, stand);
+                        f.unfriendly = calculateLevelPercent(2, stand);
+                        f.neutral = calculateLevelPercent(3, stand);
+                        f.friendly = calculateLevelPercent(4, stand);
+                        f.honored = calculateLevelPercent(5, stand);
+                        f.revered = calculateLevelPercent(6, stand);
+                        f.exalted = calculateLevelPercent(7, stand);
+
+                        fc.factions.push(f);                      
+                    }
                 });
 
-                obj.categories.push(fc);
+                if (fc.factions.length > 0) {
+                    obj.categories.push(fc);
+                }                
             });
 
             // Data object we expose externally
             return obj;
+        }
+
+        function calculateLevelPercent(level, stand) {
+            if (level == stand.level) {
+                return stand.perc;
+            }
+            else if (level < stand.level) {
+                return 100;
+            }
+            else {
+                return 0;
+            }            
         }
     }
 

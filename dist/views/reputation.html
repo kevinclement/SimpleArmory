@@ -1,34 +1,10 @@
-<style>.mySpan1, .mySpan2 {
-	
-	display:inline-block;
-	background:green;
-	width: 240px;
-	height: 10px;
-	background-color: #428bca;
-	border-radius: 2px;
-	margin-right:1px;
-}
+<div class="container rep"> <div class="page-header"> <h2>Reputation<small></small></h2> </div> <h3 ng-repeat-start="category in items.categories">{{ category.name }}</h3> <ul> <li ng-repeat="faction in category.factions"> <reputation></reputation> </li> <li class="labelRow"> <div class="factionLabel"></div><div class="hated repLabel">Hated</div><div class="hostel repLabel">Hos</div><div class="unfriendly repLabel">Unf</div><div class="neutral repLabel">Neu</div><div class="friendly repLabel">Friend</div><div class="honored repLabel">Honored</div><div class="revered repLabel">Revered</div><div class="exalted repLabel">Ex</div> </li> </ul> <div ng-repeat-end></div> <!--
+   <div class="sect" ng-repeat="subCategory in category.subCategories">
+    <h5 class="zoneHeader">{{ subCategory.name }}</h5>
+    <a ng-href="http://www.wowhead.com/{{ item.link }}" class="thumbnail" ng-repeat="item in subCategory.items" ng-class="{borderOn:!item.collected, borderOff:item.collected}">
+          <img ng-src="{{getImageSrc(item)}}">
+        </a>
+   </div>--> <!--
 
-.mySpan2 {
-	background:green;
-	width: 30px;
-}
-.factionLabel {
-	display:inline-block;
-	margin-right:15px;
-	text-align: right;
-	width: 160px;
-}
-
-.hatedLbl {
-	display:inline-block;
-	width: 240px;
-	margin-right:1px;
-	font-size: 10px;
-	font-style: italic;
-	position:relative;
-	top:-15px;
-}
-.hostileLbl {
-
-}</style> <div class="container"> <div class="page-header"> <h2>Reputation<small></small></h2> </div> <h3>Guild</h3> <ul style="list-style-type: none;min-width:700px;background:gray;overflow:none"> <li> <h4 class="factionLabel">Guild</h4><div class="mySpan1"></div><div class="mySpan2"></div><div class="mySpan2"></div><div class="mySpan2"></div><div class="mySpan2"></div><div class="mySpan2"></div><div class="mySpan2"></div><div class="mySpan2"></div> </li> <li> <div class="factionLabel"></div><div class="hatedLbl">Hated</div> </li> </ul> <br> </div>
+  	
+  --> </div>

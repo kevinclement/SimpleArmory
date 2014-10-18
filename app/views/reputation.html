@@ -4,18 +4,20 @@
   </div>
 
 
-  <h3 ng-repeat-start="category in items.categories">{{ category.name }}</h3>
-  <ul>
-    
-    <li ng-repeat="faction in category.factions">
-      <h4 class="factionLabel">{{ faction.name }}</h4><div class="hated"></div><div class="hostel"></div><div class="unfriendly"></div><div class="neutral"></div><div class="friendly"></div><div class="honored"></div><div class="revered"></div><div class="exalted"></div>
-    </li>
+  <div ng-repeat="category in items.categories">
+	  <h3>{{ category.name }}</h3>
+	  <ul>	    
+	    <li ng-repeat="faction in category.factions">
+	      <sa-reputation-row faction="faction"></sa-reputation-row>
+	    </li>
 
-    <li class="labelRow">
-      <div class="factionLabel"></div><div class="hated repLabel">Hated</div><div class="hostel repLabel">Hos</div><div class="unfriendly repLabel">Unf</div><div class="neutral repLabel">Neu</div><div class="friendly repLabel">Friend</div><div class="honored repLabel">Honored</div><div class="revered repLabel">Revered</div><div class="exalted repLabel">Ex</div>
-    </li>
-  </ul>
-  <div ng-repeat-end></div>
+	    <li class="labelRow" ng-show="!category.isTiller">
+	      <div class="factionLabel"></div><div class="hated repLabel">Hated</div><div class="hostel repLabel">Hos</div><div class="unfriendly repLabel">Unf</div><div class="neutral repLabel">Neu</div><div class="friendly repLabel">Friend</div><div class="honored repLabel">Honored</div><div class="revered repLabel">Revered</div><div class="exalted repLabel">Ex</div>
+	    </li>
+	  </ul>
+  </div>
+
+
    <!--
    <div class="sect" ng-repeat="subCategory in category.subCategories">
     <h5 class="zoneHeader">{{ subCategory.name }}</h5>

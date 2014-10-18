@@ -12,5 +12,4 @@
             $scope.items = items;
         });
     }
-
 })();
