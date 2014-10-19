@@ -7,7 +7,7 @@
         .controller('LoginCtrl' , LoginCtrl)
         .controller('ModalInstanceCtrl' , ModalInstanceCtrl);
 
-    function LoginCtrl($scope, $modal, $location, $timeout) {
+    function LoginCtrl($scope, $rootScope, $modal, $location, $timeout) {
         var modalInstance = $modal.open({
             templateUrl: 'ModelLogin.html',
             controller: 'ModalInstanceCtrl',
@@ -22,8 +22,14 @@
         });     
          
         modalInstance.result.then(function (loginObj) {
+
             $location.url(loginObj.region + '/' + loginObj.realm + '/' + loginObj.character);
         });
+
+       $rootScope.$on('$routeChangeSuccess', function() {
+
+            modalInstance.dismiss();
+       });
     }
 
     function ModalInstanceCtrl($scope, $modalInstance, BlizzardRealmService) {
