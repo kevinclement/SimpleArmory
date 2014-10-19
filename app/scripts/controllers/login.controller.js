@@ -7,14 +7,20 @@
         .controller('LoginCtrl' , LoginCtrl)
         .controller('ModalInstanceCtrl' , ModalInstanceCtrl);
 
-    function LoginCtrl($scope, $modal, $location) {
-
+    function LoginCtrl($scope, $modal, $location, $timeout) {
         var modalInstance = $modal.open({
             templateUrl: 'ModelLogin.html',
             controller: 'ModalInstanceCtrl',
             backdrop: 'static',
         });
 
+        modalInstance.opened.then(function () {
+            // Focus on the selection box when the dialog comes up
+            window.setTimeout(function() {
+                $("#realmSelection").focus();
+            },50);
+        });     
+         
         modalInstance.result.then(function (loginObj) {
             $location.url(loginObj.region + '/' + loginObj.realm + '/' + loginObj.character);
         });
