@@ -4,14 +4,14 @@
   <div class="modal-body">
   	<div class="input-group">
     	<span class="input-group-addon input-group-label">Realm</span>
-      <select class="combobox input-large form-control" ng-model="selectedRealm" ng-options="realm.value as realm.text for realm in realms">
+      <select id="realmSelection" class="combobox input-large form-control" ng-model="selectedRealm" ng-options="realm.value as realm.text for realm in realms">
         <option value=""></option>
       </select>
     </div>
     <br/>
     <div class="input-group">
 		<span class="input-group-addon input-group-label">Character</span>
-        <input type="text" class="form-control" ng-model="characterName">
+        <input type="text" class="form-control" ng-model="characterName" ng-enter="ok()">
     </div>
   </div>
   <div class="modal-footer">

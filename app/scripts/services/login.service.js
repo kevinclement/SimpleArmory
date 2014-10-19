@@ -35,7 +35,7 @@
 
               function getCharacterError() {
                   $log.log('Trouble fetching character from battlenet');
-                $location.url('error/' + $routeParams.realm + "/" + $routeParams.character);
+                $location.url('error/' + $routeParams.realm + '/' + $routeParams.character);
               }
 
               function getCharacterComplete(data) {
