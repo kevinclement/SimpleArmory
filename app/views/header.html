@@ -40,6 +40,13 @@
         </li>
         <li ng-class="{ active: isActive('calendar') }"><a ng-href="{{getUrl('calendar')}}">Calendar</a></li>
         <li ng-class="{ active: isActive('reputation') }"><a ng-href="{{getUrl('reputation')}}">Reputation</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Help <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="mailto:simplearmory@gmail.com?subject=Simple Armory Feedback">Contact</a></li>
+            <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EQKUGCXWLES44" target="_blank">Beer Me</a></li>
+          </ul>
+        </li>
       </ul>
       <ul class="nav navbar-nav navbar-right" ng-show="isLoggedIn">
         <li><a ng-href="{{armoryUrl()}}" class="navbar-char-link">
