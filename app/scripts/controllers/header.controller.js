@@ -8,6 +8,8 @@
 
     function HeaderCtrl($scope, $location) {
      
+        $scope.isCollapsed = true;
+        
         $scope.getUrl = function(subSite) {
             var url = '#' + getBaseUrl($scope.character);
             if (subSite !== '') {
