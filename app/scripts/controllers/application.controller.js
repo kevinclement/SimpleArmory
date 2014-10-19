@@ -36,7 +36,16 @@
 
         // Helper function for percentage numbers.  Used in a lot of screens
         $scope.percent = function(n, d) {
+
             return $filter('number')(((n / d) * 100), 0);
+        };
+
+        $scope.achFormater = function(n, d) {
+            if (!n || !d) {
+                return "";
+            }
+            
+            return '' + n + ' / ' + d + ' (' + $scope.percent(n, d) + '%)';
         };
 
         // Helper to get the image id off an item

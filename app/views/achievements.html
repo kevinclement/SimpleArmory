@@ -5,7 +5,7 @@
         <div class="progress progressRight">
             <progressbar max="100" type="success"
       	  		value="superCat == 'Feats of Strength' ? 100 : percent(achievements.completed, achievements.possible)" >
-      	  		<span ng-hide="superCat == 'Feats of Strength'">{{ achievements.completed}} / {{achievements.possible}} ({{percent(achievements.completed, achievements.possible) }}%)</span>
+      	  		<span ng-hide="superCat == 'Feats of Strength'">{{ achFormater(achievements.completed, achievements.possible) }}</span>
       	  		<span ng-show="superCat == 'Feats of Strength'">{{ achievements.foSTotal }}</span>
       	  	</progressbar>  	
         </div>

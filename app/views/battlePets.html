@@ -5,7 +5,7 @@
     <div class="progress progressRight">
             <progressbar max="100" type="success"
       	  		value="percent(items.collected, items.possible)" >
-      	  		<span>{{ items.collected }} / {{ items.possible }} ({{ percent(items.collected, items.possible) }}%)</span>
+      	  		<span>{{ achFormater(items.collected, items.possible) }}</span>
       	  	</progressbar>  	
         </div>
     </h2>        
