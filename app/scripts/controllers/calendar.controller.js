@@ -148,7 +148,7 @@
 		        	var  achievs = achByMonths[lookup][day];
 		        	achievs.sort(achievementDaySort);
 
-			        rows += '<div>'
+			        rows += '<div>';
 			        angular.forEach(achievs, function(ach) {
 			            rows += '<a href="http://www.wowhead.com/achievement=' + ach.id + '" ' +
 			        			'rel="who=' + prettyName + '&amp;when=' + ach.completed +'">' +
