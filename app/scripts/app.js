@@ -10,6 +10,10 @@
     function config($routeProvider) {
 
         $routeProvider.
+            when('/error/:realm/:character', {
+              templateUrl: 'views/error.html',
+              controller: 'ErrorCtrl'
+            }).      
             when('/:region/:realm/:character/achievements/:category', {
               templateUrl: 'views/achievements.html',
               controller: 'AchievementsCtrl'
@@ -42,10 +46,6 @@
               templateUrl: 'views/login.html',
               controller: 'LoginCtrl'
             }).
-            when('/error', {
-              templateUrl: 'views/error.html',
-              controller: 'ErrorCtrl'
-            }).      
             otherwise({
               redirectTo: '/'
             });

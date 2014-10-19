@@ -2,6 +2,9 @@ body {
   padding-top: 70px;
 }
 
+.errorMsg {
+  color: #d9534f;
+}
 .clear {
     clear: both;
     display: block;
