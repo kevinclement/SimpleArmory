@@ -10,13 +10,11 @@
 
     	 AchievementsService.getAchievements().then(function(achievements){
 	
-		   	$scope.totalForMonth = 23;
-    		$scope.totalPoints = '(15 points)';
-	
 			buildMonths(achievements, $routeParams.character); 
 
 			// Select the last month
 			$scope.selectedMonth = $scope.months[$scope.months.length - 1];
+			$scope.selectionChanged();
         });
 
     	$scope.leftOneMonth = function() {
@@ -43,6 +41,10 @@
 			var newCC = $('#calendar' + $scope.selectedMonth.value);
 			newCC.addClass('curCalendar');
 			newCC.show();
+
+			// Fill in the totals 
+			$scope.totalForMonth = $scope.selectedMonth.total;
+    		$scope.totalPoints = '(' + $scope.selectedMonth.points + ' points)';
     	};
 
     	function buildMonths(achievements, charname) {
@@ -92,22 +94,23 @@
 					}
 					foundFirstMonth = true;
 					
-					// Add the months to the list of months
-					months.push({
-						value:monthid,
-						text:monthnames[month] + ' ' + year,
-						index: index++
-					});
-
 					// build up the table information
 					var rowData = buildRows(month, year, achByMonths, charname);
 
 					// Add the table to the html
 					calendarHtml += '<table class="calendar' + (thisMonth ? ' curCalendar' : '') + 
-						'" id="calendar'+ monthid +'" style="display: ' + (thisMonth ? 'block' : 'none')+ 
-						'" total="' + rowData.total + '" points="' + rowData.points + '"">';
+						'" id="calendar'+ monthid +'" style="display: ' + (thisMonth ? 'block' : 'none') + '">';
 					calendarHtml += rowData.rows;
 					calendarHtml += '</table>';
+
+					// Add the months to the list of months
+					months.push({
+						value:monthid,
+						text:monthnames[month] + ' ' + year,
+						index: index++,
+						total: rowData.total,
+						points: rowData.points
+					});
 
 					// Stop once we get to this month
 					if (thisMonth) {
@@ -141,7 +144,6 @@
 		        }
 		        rows += '<td>' + day;
 
-		        // TODO: build out achieve data
 		        if (achByMonths[lookup] && achByMonths[lookup][day]) {
 		        	var  achievs = achByMonths[lookup][day];
 		        	achievs.sort(achievementDaySort);
