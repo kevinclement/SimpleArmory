@@ -13,56 +13,70 @@
   <div class="achGrid">
     <strong class="desc">General</strong>
     <div class="progress">
-      <progressbar max="100" type="success"
-      	  value="percent(achievements['General'].completed, achievements['General'].possible)" ><span>{{achievements['General'].completed}} / {{achievements['General'].possible}} ({{percent(achievements['General'].completed, achievements['General'].possible) }}%)</span></progressbar>  		
+      <a ng-href="{{baseUrl}}/achievements/general">
+        <progressbar max="100" type="success"
+        	  value="percent(achievements['General'].completed, achievements['General'].possible)" ><span>{{achievements['General'].completed}} / {{achievements['General'].possible}} ({{percent(achievements['General'].completed, achievements['General'].possible) }}%)</span></progressbar>  		
+      </a>
     </div>
   </div>
 
   <div class="achGrid">
     <strong class="desc">Quests</strong>
     <div class="progress">
-      <progressbar max="100" type="success"
-      	  value="percent(achievements['Quests'].completed, achievements['Quests'].possible)" ><span>{{achievements['Quests'].completed}} / {{achievements['Quests'].possible}} ({{percent(achievements['Quests'].completed, achievements['Quests'].possible) }}%)</span></progressbar>  	
+      <a ng-href="{{baseUrl}}/achievements/quests">
+        <progressbar max="100" type="success"
+        	  value="percent(achievements['Quests'].completed, achievements['Quests'].possible)" ><span>{{achievements['Quests'].completed}} / {{achievements['Quests'].possible}} ({{percent(achievements['Quests'].completed, achievements['Quests'].possible) }}%)</span></progressbar>
+      </a>
     </div>
   </div>
 
  <div class="achGrid">
     <strong class="desc">Exploration</strong>
     <div class="progress">
-	   <progressbar max="100" type="success"
+      <a ng-href="{{baseUrl}}/achievements/exploration">
+	      <progressbar max="100" type="success"
       	  value="percent(achievements['Exploration'].completed, achievements['Exploration'].possible)" ><span>{{achievements['Exploration'].completed}} / {{achievements['Exploration'].possible}} ({{percent(achievements['Exploration'].completed, achievements['Exploration'].possible) }}%)</span></progressbar>  	
+      </a>
     </div>
   </div>
 
  <div class="achGrid">
     <strong class="desc">Player vs. Player</strong>
     <div class="progress">
-	   <progressbar max="100" type="success"
-      	  value="percent(achievements['Player vs. Player'].completed, achievements['Player vs. Player'].possible)" ><span>{{achievements['Player vs. Player'].completed}} / {{achievements['Player vs. Player'].possible}} ({{percent(achievements['Player vs. Player'].completed, achievements['Player vs. Player'].possible) }}%)</span></progressbar>  	
+      <a ng-href="{{baseUrl}}/achievements/pvp">
+	     <progressbar max="100" type="success"
+      	  value="percent(achievements['Player vs. Player'].completed, achievements['Player vs. Player'].possible)" ><span>{{achievements['Player vs. Player'].completed}} / {{achievements['Player vs. Player'].possible}} ({{percent(achievements['Player vs. Player'].completed, achievements['Player vs. Player'].possible) }}%)</span></progressbar>
+      </a>
     </div>
   </div>
 
   <div class="achGrid">
     <strong class="desc">Dungeons & Raids</strong>
     <div class="progress">
-	   <progressbar max="100" type="success"
+      <a ng-href="{{baseUrl}}/achievements/dungeons">    
+	      <progressbar max="100" type="success"
       	  value="percent(achievements['Dungeons & Raids'].completed, achievements['Dungeons & Raids'].possible)" ><span>{{achievements['Dungeons & Raids'].completed}} / {{achievements['Dungeons & Raids'].possible}} ({{percent(achievements['Dungeons & Raids'].completed, achievements['Dungeons & Raids'].possible) }}%)</span></progressbar>  	
+      </a>          
     </div>
   </div>
 
   <div class="achGrid">
     <strong class="desc">Professions</strong>
     <div class="progress">
-	   <progressbar max="100" type="success"
+      <a ng-href="{{baseUrl}}/achievements/professions">    
+	      <progressbar max="100" type="success"
       	  value="percent(achievements['Professions'].completed, achievements['Professions'].possible)" ><span>{{achievements['Professions'].completed}} / {{achievements['Professions'].possible}} ({{percent(achievements['Professions'].completed, achievements['Professions'].possible) }}%)</span></progressbar>  	
+      </a>          
     </div>
   </div>
 
   <div class="achGrid">
     <strong class="desc">Reputation</strong>
     <div class="progress">
-	   <progressbar max="100" type="success"
+      <a ng-href="{{baseUrl}}/achievements/reputation">    
+	      <progressbar max="100" type="success"
       	  value="percent(achievements['Reputation'].completed, achievements['Reputation'].possible)" ><span>{{achievements['Reputation'].completed}} / {{achievements['Reputation'].possible}} ({{percent(achievements['Reputation'].completed, achievements['Reputation'].possible) }}%)</span></progressbar>  	
+      </a>          
     </div>
   </div>
 
@@ -70,32 +84,40 @@
   <div class="achGrid">
     <strong class="desc">Scenarios</strong>
     <div class="progress">
-	   <progressbar max="100" type="success"
+      <a ng-href="{{baseUrl}}/achievements/scenarios">    
+	      <progressbar max="100" type="success"
       	  value="percent(achievements['Scenarios'].completed, achievements['Scenarios'].possible)" ><span>{{achievements['Scenarios'].completed}} / {{achievements['Scenarios'].possible}} ({{percent(achievements['Scenarios'].completed, achievements['Scenarios'].possible) }}%)</span></progressbar> 
+      </a>          
     </div>
   </div>
 
   <div class="achGrid">
     <strong class="desc">World Events</strong>
     <div class="progress">
-	   <progressbar max="100" type="success"
+      <a ng-href="{{baseUrl}}/achievements/events">    
+	      <progressbar max="100" type="success"
       	  value="percent(achievements['World Events'].completed, achievements['World Events'].possible)" ><span>{{achievements['World Events'].completed}} / {{achievements['World Events'].possible}} ({{percent(achievements['World Events'].completed, achievements['World Events'].possible) }}%)</span></progressbar> 
+      </a>          
     </div>
   </div>
 
   <div class="achGrid">
     <strong class="desc">Pet Battles</strong>
     <div class="progress">
-	   <progressbar max="100" type="success"
+      <a ng-href="{{baseUrl}}/achievements/pets">    
+	      <progressbar max="100" type="success"
       	  value="percent(achievements['Pet Battles'].completed, achievements['Pet Battles'].possible)" ><span>{{achievements['Pet Battles'].completed}} / {{achievements['Pet Battles'].possible}} ({{percent(achievements['Pet Battles'].completed, achievements['Pet Battles'].possible) }}%)</span></progressbar> 
+      </a>          
     </div>
   </div>
 
   <div class="achGrid">
     <strong class="desc">Feats of Strength</strong>
     <div class="progress">
-	   <progressbar max="100" type="success"
+      <a ng-href="{{baseUrl}}/achievements/feats">    
+	      <progressbar max="100" type="success"
       	  value="100" ><span>{{achievements['Feats of Strength'].foSTotal}}</span></progressbar> 
+      </a>          
     </div>
   </div>
 </div> 
