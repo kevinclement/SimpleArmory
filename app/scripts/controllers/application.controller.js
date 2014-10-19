@@ -42,10 +42,17 @@
 
         $scope.achFormater = function(n, d) {
             if (!n || !d) {
-                return "";
+                return '';
             }
-            
-            return '' + n + ' / ' + d + ' (' + $scope.percent(n, d) + '%)';
+
+            var perc = $scope.percent(n, d);
+
+            // if the percentage is low enough, don't print the numbers, just use the percentage
+            if (perc < 18) {
+                return perc + '%';
+            }
+
+            return '' + n + ' / ' + d + ' (' + perc + '%)';
         };
 
         // Helper to get the image id off an item
