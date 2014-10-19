@@ -56,6 +56,9 @@
                         angular.forEach(zone.achs, function(ach) {
                             var myAchievement = ach, added = false;
                             myAchievement.completed = completed[ach.id];
+                            if (myAchievement.completed) {
+                                myAchievement.rel = 'who=' + character.name + '&when=' + myAchievement.completed;
+                            }
 
                             // Always add it if we've completed it, it should show up regardless if its avaiable
                             if (completed[ach.id]) {

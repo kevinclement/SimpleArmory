@@ -12,7 +12,7 @@
             $scope.achievements = achievements;
         });
 
-        $scope.baseUrl = "#" + $location.$$path;
+        $scope.baseUrl = '#' + $location.$$path;
     }
 
 })();
