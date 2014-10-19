@@ -6,14 +6,14 @@
         .module('simpleArmoryApp')
         .controller('CalendarCtrl' , CalendarCtrl);
 
-    function CalendarCtrl($scope, AchievementsService, $sce) { 
+    function CalendarCtrl($scope, AchievementsService, $sce, $routeParams) { 
 
     	 AchievementsService.getAchievements().then(function(achievements){
 	
 		   	$scope.totalForMonth = 23;
     		$scope.totalPoints = '(15 points)';
 	
-			buildMonths(achievements); 
+			buildMonths(achievements, $routeParams.character); 
 
 			// Select the last month
 			$scope.selectedMonth = $scope.months[$scope.months.length - 1];
@@ -45,7 +45,7 @@
 			newCC.show();
     	};
 
-    	function buildMonths(achievements) {
+    	function buildMonths(achievements, charname) {
     		var monthnames = [,'January','February','March','April','May','June',
     						   'July','August','September','October','November','December'];
 			var months = [];
@@ -100,7 +100,7 @@
 					});
 
 					// build up the table information
-					var rowData = buildRows(month, year, achByMonths);
+					var rowData = buildRows(month, year, achByMonths, charname);
 
 					// Add the table to the html
 					calendarHtml += '<table class="calendar' + (thisMonth ? ' curCalendar' : '') + 
@@ -120,15 +120,12 @@
     		$scope.months = months;
     	}
 
-    	function buildRows(month, year, achByMonths) {
+    	function buildRows(month, year, achByMonths, charname) {
 			var rows = '';
 		    var total = 0;
 		    var points = 0;
 		    var d;
-
-		    // tmp
-		    var name = 'kevinc';
-
+		    var prettyName = charname.charAt(0).toUpperCase() + charname.slice(1);
 			var lookup = '' + year + ((month < 10)?'0':'') + month;
 
 		    for (var day = 1; day <= 31; day++) {
@@ -152,7 +149,7 @@
 			        rows += '<div>'
 			        angular.forEach(achievs, function(ach) {
 			            rows += '<a href="http://www.wowhead.com/achievement=' + ach.id + '" ' +
-			        			'rel="who=' + name + '&amp;when=' + ach.completed +'">' +
+			        			'rel="who=' + prettyName + '&amp;when=' + ach.completed +'">' +
 			        			'<img src="http://wow.zamimg.com/images/wow/icons/medium/' + 
 			        			ach.icon.toLowerCase() + '.jpg" width="36" height="36" border="0"></a>';
 
