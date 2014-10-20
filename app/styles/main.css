@@ -281,3 +281,22 @@ body {
   background-color: transparent
 }
 /* ## Reputation Page ############################### */
+
+/* Fix up the widths for bigger header */
+@media (min-width: 768px) {
+    .container {
+        width:800px
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width:970px
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width:1170px
+    }
+}
