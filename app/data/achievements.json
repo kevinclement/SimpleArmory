@@ -16945,20 +16945,6 @@
               "name": "Brawler's Guild",
               "achs": [
                 {
-                  "id": "7939",
-                  "icon": "inv_misc_bandage_08",
-                  "side": "H",
-                  "obtainable": false,
-                  "points": 0
-                },
-                {
-                  "id": "7940",
-                  "icon": "inv_misc_bandage_05",
-                  "side": "A",
-                  "obtainable": false,
-                  "points": 0
-                },
-                {
                   "id": "8020",
                   "icon": "inv_pants_plate_05",
                   "side": "H",
@@ -16966,8 +16952,22 @@
                   "points": 0
                 },
                 {
+                  "id": "7939",
+                  "icon": "inv_misc_bandage_08",
+                  "side": "H",
+                  "obtainable": false,
+                  "points": 0
+                },
+                {
                   "id": "7937",
                   "icon": "inv_pants_plate_05",
+                  "side": "A",
+                  "obtainable": false,
+                  "points": 0
+                },
+                {
+                  "id": "7940",
+                  "icon": "inv_misc_bandage_05",
                   "side": "A",
                   "obtainable": false,
                   "points": 0
@@ -16982,34 +16982,6 @@
                 {
                   "id": "7941",
                   "icon": "spell_holy_fistofjustice",
-                  "side": "A",
-                  "obtainable": false,
-                  "points": 0
-                },
-                {
-                  "id": "8022",
-                  "icon": "inv_weapon_hand_21",
-                  "side": "H",
-                  "obtainable": false,
-                  "points": 0
-                },
-                {
-                  "id": "7946",
-                  "icon": "inv_weapon_hand_21",
-                  "side": "A",
-                  "obtainable": false,
-                  "points": 0
-                },
-                {
-                  "id": "8343",
-                  "icon": "inv_inscription_tarot_volcanocard",
-                  "side": "H",
-                  "obtainable": false,
-                  "points": 0
-                },
-                {
-                  "id": "8340",
-                  "icon": "inv_inscription_tarot_volcanocard",
                   "side": "A",
                   "obtainable": false,
                   "points": 0
@@ -17036,8 +17008,36 @@
                   "points": 0
                 },
                 {
+                  "id": "7946",
+                  "icon": "inv_weapon_hand_21",
+                  "side": "A",
+                  "obtainable": false,
+                  "points": 0
+                },
+                {
                   "id": "8338",
                   "icon": "pandarenracial_quiveringpain",
+                  "side": "H",
+                  "obtainable": false,
+                  "points": 0
+                },
+                {
+                  "id": "8022",
+                  "icon": "inv_weapon_hand_21",
+                  "side": "H",
+                  "obtainable": false,
+                  "points": 0
+                },
+                {
+                  "id": "8340",
+                  "icon": "inv_inscription_tarot_volcanocard",
+                  "side": "A",
+                  "obtainable": false,
+                  "points": 0
+                },
+                {
+                  "id": "8343",
+                  "icon": "inv_inscription_tarot_volcanocard",
                   "side": "H",
                   "obtainable": false,
                   "points": 0
