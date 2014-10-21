@@ -122,6 +122,16 @@
   </div>
 
   <div class="achGrid">
+    <strong class="desc">Garrisons</strong>
+    <div class="progress">
+      <a ng-href="{{baseUrl}}/achievements/garrisons">    
+        <progressbar max="100" type="success"
+          value="percent(achievements['Garrisons'].completed, achievements['Garrisons'].possible)" ><span>{{ achFormater(achievements['Garrisons'].completed, achievements['Garrisons'].possible) }}</span></progressbar> 
+      </a>          
+    </div>
+  </div>
+
+  <div class="achGrid">
     <strong class="desc">Legacy</strong>
     <div class="progress">
       <a ng-href="{{baseUrl}}/achievements/legacy">    

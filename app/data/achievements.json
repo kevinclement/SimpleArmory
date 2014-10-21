@@ -18321,6 +18321,75 @@
       ]
     },
     {
+      "name": "Garrisons",
+      "cats": [
+        {
+          "name": "Garrisons",
+          "zones": [
+            {
+              "name": "",
+              "achs": [
+                {
+                  "id": "9545",
+                  "icon": "achievement_garrison_tier02_horde",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
+                  "id": "9100",
+                  "icon": "achievement_garrison_tier02_alliance",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
+                  "id": "9546",
+                  "icon": "achievement_garrison_tier03_horde",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
+                  "id": "9101",
+                  "icon": "achievement_garrison_tier03_alliance",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 0
+                }
+              ]
+            },
+            {
+              "name": "Other",
+              "achs": [
+                {
+                  "id": "9210",
+                  "icon": "achievement_reputation_01",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
+                  "id": "9132",
+                  "icon": "achievement_reputation_01",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
+                  "id": "8933",
+                  "icon": "inv_scroll_08",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Legacy",
       "cats": [
         {

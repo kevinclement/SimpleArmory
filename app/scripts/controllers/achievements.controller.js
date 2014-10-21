@@ -75,7 +75,10 @@
                     break;
                 case 'collections':
                     prettyCatName = 'Collections';
-                    break;                    
+                    break;
+                case 'garrisons':
+                    prettyCatName = 'Garrisons';
+                    break;             
                 case 'legacy':
                     prettyCatName = 'Legacy';
                     break;                       
