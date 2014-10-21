@@ -73,6 +73,9 @@
                 case 'pets':
                     prettyCatName = 'Pet Battles';
                     break;
+                case 'collections':
+                    prettyCatName = 'Collections';
+                    break;                    
                 case 'legacy':
                     prettyCatName = 'Legacy';
                     break;                       
