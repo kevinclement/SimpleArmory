@@ -30,6 +30,7 @@
             var totalPossible = 0;
             var totalCompleted = 0;
             var totalFoS = 0;
+            var totalLegacy = 0;
             $log.log('Parsing achievements.json...');
 
             // Build up lookup for achievements that character has completed
@@ -69,11 +70,13 @@
                                 // since its not a percentage thing
                                 if (supercat.name === 'Feats of Strength') {
                                     totalFoS++;
+                                } else if (supercat.name === 'Legacy') {
+                                    totalLegacy++;
                                 }
                             }
 
                             // Update counts proper
-                            if (supercat.name !== 'Feats of Strength' && ach.obtainable && 
+                            if (supercat.name !== 'Feats of Strength' && supercat.name !== 'Legacy' && ach.obtainable && 
                                 (ach.side === '' || ach.side === character.faction)){
                                 possibleCount++;
                                 totalPossible++;
@@ -106,6 +109,8 @@
                 // Add the FoS count if this is the FoS
                 if (supercat.name === 'Feats of Strength') {
                     obj[supercat.name].foSTotal = totalFoS;
+                } else if (supercat.name === 'Legacy') {
+                    obj[supercat.name].legacyTotal = totalLegacy;
                 }
             }); 
 

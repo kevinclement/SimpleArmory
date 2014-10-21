@@ -112,6 +112,16 @@
   </div>
 
   <div class="achGrid">
+    <strong class="desc">Legacy</strong>
+    <div class="progress">
+      <a ng-href="{{baseUrl}}/achievements/legacy">    
+        <progressbar max="100" type="success"
+          value="100" ><span>{{achievements['Legacy'].legacyTotal}}</span></progressbar> 
+      </a>          
+    </div>
+  </div>
+
+  <div class="achGrid">
     <strong class="desc">Feats of Strength</strong>
     <div class="progress">
       <a ng-href="{{baseUrl}}/achievements/feats">    
