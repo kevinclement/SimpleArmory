@@ -18930,7 +18930,7 @@
         {
           "name": "Invasions",
           "zones": [
-          {
+            {
               "name": "",
               "achs": [
                 {
@@ -18947,7 +18947,7 @@
                   "obtainable": true,
                   "points": 5
                 },
-            {
+                {
                   "id": "9165",
                   "icon": "achievement_garrison_invasion_gold",
                   "side": "",
@@ -18968,7 +18968,6 @@
                   "obtainable": true,
                   "points": 5
                 },
-
                 {
                   "id": "9181",
                   "icon": "achievement_bg_defendxtowers_av",
@@ -19059,7 +19058,62 @@
         },
         {
           "name": "Monuments",
-          "zones": []
+          "zones": [
+            {
+              "name": "Monuments",
+              "achs": [
+                {
+                  "id": "9630",
+                  "icon": "achievement_garrison_monument_alliance_pvp",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "9248",
+                  "icon": "achievement_garrison_monument_horde_pvp",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "9264",
+                  "icon": "achievement_garrison_monument_alliance_pets",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "9246",
+                  "icon": "achievement_garrison_monument_horde_profession",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "9265",
+                  "icon": "achievement_garrison_horde_pve",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "9631",
+                  "icon": "achievement_garrison_monument_horde_raid",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "9255",
+                  "icon": "achievement_garrison_monument_horde_raid",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 10
+                }
+              ]
+            }
+          ]
         }
       ]
     },
