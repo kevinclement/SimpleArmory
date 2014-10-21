@@ -629,7 +629,324 @@
         },
         {
           "name": "Draenor Raid",
-          "zones": []
+          "zones": [
+            {
+              "name": "Highmaul",
+              "achs": [
+                {
+                  "id": "8975",
+                  "icon": "druid_ability_wildmushroom_a",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8987",
+                  "icon": "achievement_boss_highmaul_felbreakerlord",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8958",
+                  "icon": "ability_warrior_strengthofarms",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8948",
+                  "icon": "spell_fire_incinerate",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8947",
+                  "icon": "inv_misc_food_vendor_boiledsilkwormpupa",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8988",
+                  "icon": "achievement_boss_highmaul_king",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8977",
+                  "icon": "spell_arcane_invocation",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8974",
+                  "icon": "inv_misc_dust_01",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8949",
+                  "icon": "achievement_boss_highmaul_kargath",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8960",
+                  "icon": "achievement_boss_highmaul_butcher",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8961",
+                  "icon": "achievement_boss_highmaul_earthenfury",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8962",
+                  "icon": "achievement_boss_highmaul_fungalgiant",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8963",
+                  "icon": "achievement_boss_highmaul_aggronguardian",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8964",
+                  "icon": "achievement_boss_highmaul_felbreakerlord",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8965",
+                  "icon": "achievement_boss_highmaul_king",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8976",
+                  "icon": "spell_fire_felflamestrike",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8986",
+                  "icon": "achievement_boss_highmaul_earthenfury",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                }
+              ]
+            },
+            {
+              "name": "Blackrock Foundry",
+              "achs": [
+                {
+                  "id": "8952",
+                  "icon": "inv_misc_herb_torndesecratedherb",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8984",
+                  "icon": "rogue_burstofspeed",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8990",
+                  "icon": "achievement_boss_fomorsmith",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8992",
+                  "icon": "achievement_boss_blackhand",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8981",
+                  "icon": "inv_misc_fish_12",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8979",
+                  "icon": "inv_ore_blackrock_ore",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8991",
+                  "icon": "achievement_boss_ironmaidens",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8966",
+                  "icon": "achievement_boss_gruul",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8967",
+                  "icon": "achievement_boss_oregorger",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8970",
+                  "icon": "achievement_boss_furyfurnace",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8968",
+                  "icon": "achievement_boss_twinorcbrutes",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8932",
+                  "icon": "achievement_boss_flamebender_kagraz",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8971",
+                  "icon": "achievement_boss_fomorsmith",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8956",
+                  "icon": "achievement_boss_breaker_darmac",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8969",
+                  "icon": "achievement_boss_operator_thogar",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8972",
+                  "icon": "achievement_boss_ironmaidens",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8973",
+                  "icon": "achievement_boss_blackhand",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8989",
+                  "icon": "achievement_boss_furyfurnace",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8980",
+                  "icon": "inv_misc_pyriumbar",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8978",
+                  "icon": "inv_ingot_iron",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8929",
+                  "icon": "inv_misc_ebonsteelbar",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8982",
+                  "icon": "spell_fire_selfdestruct",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8983",
+                  "icon": "creatureportrait_fomorhand",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8930",
+                  "icon": "spell_holy_borrowedtime",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                }
+              ]
+            },
+            {
+              "name": "World",
+              "achs": [
+                {
+                  "id": "9423",
+                  "icon": "creatureportrait_fomorhand",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "9425",
+                  "icon": "inv_helm_suncrown_d_01",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                }
+              ]
+            }
+          ]
         },
         {
           "name": "Dungeon Challenges",
