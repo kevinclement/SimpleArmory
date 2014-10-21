@@ -18818,7 +18818,114 @@
         },
         {
           "name": "Followers",
-          "zones": []
+          "zones": [
+            {
+              "name": "Recruit",
+              "achs": [
+                {
+                  "id": "9107",
+                  "icon": "achievement_garrisonfollower_recruit5",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9108",
+                  "icon": "achievement_garrisonfollower_recruit10",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9109",
+                  "icon": "achievement_garrisonfollower_recruit25",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9494",
+                  "icon": "achievement_garrisonfollower_recruit40",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9130",
+                  "icon": "achievement_garrisonfollower_rare",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9131",
+                  "icon": "achievement_garrisonfollower_epic",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                }
+              ]
+            },
+            {
+              "name": "Level",
+              "achs": [
+                {
+                  "id": "9110",
+                  "icon": "achievement_garrisonfollower_levelup100",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9111",
+                  "icon": "achievement_garrisonfollower_levelup10",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9129",
+                  "icon": "achievement_garrisonfollower_levelup20",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                }
+              ]
+            },
+            {
+              "name": "Item Level",
+              "achs": [
+                {
+                  "id": "9211",
+                  "icon": "achievement_garrisonfollower_itemlevel600",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9212",
+                  "icon": "achievement_garrisonfollower_itemlevel650",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9213",
+                  "icon": "achievement_garrisonfollower_itemlevel650",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9243",
+                  "icon": "achievement_garrisonfollower_itemlevel650",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                }
+              ]
+            }
+          ]
         },
         {
           "name": "Invasions",
