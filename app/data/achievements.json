@@ -263,6 +263,59 @@
           ]
         },
         {
+          "name": "Draenor Dungeon",
+          "zones": []
+        },
+        {
+          "name": "Draenor Raid",
+          "zones": []
+        },
+        {
+          "name": "Dungeon Challenges",
+          "zones": [
+            {
+              "name": "Dungeon Challenges",
+              "achs": []
+            },
+            {
+              "name": "Scarlet Halls",
+              "achs": []
+            },
+            {
+              "name": "Gate of the Setting Sun",
+              "achs": []
+            },
+            {
+              "name": "Scholomance",
+              "achs": []
+            },
+            {
+              "name": "Temple of the Jade Serpent",
+              "achs": []
+            },
+            {
+              "name": "Shado-Pan Monastery",
+              "achs": []
+            },
+            {
+              "name": "Mogu'shan Palace",
+              "achs": []
+            },
+            {
+              "name": "Siege of Niuzao Temple",
+              "achs": []
+            },
+            {
+              "name": "Stormstout Brewery",
+              "achs": []
+            },
+            {
+              "name": "Scarlet Monastery",
+              "achs": []
+            }
+          ]
+        },
+        {
           "name": "Pandaria Dungeon",
           "zones": [
             {
@@ -1392,51 +1445,6 @@
                   "points": 10
                 }
               ]
-            }
-          ]
-        },
-        {
-          "name": "Dungeon Challenges",
-          "zones": [
-            {
-              "name": "Dungeon Challenges",
-              "achs": []
-            },
-            {
-              "name": "Scarlet Halls",
-              "achs": []
-            },
-            {
-              "name": "Gate of the Setting Sun",
-              "achs": []
-            },
-            {
-              "name": "Scholomance",
-              "achs": []
-            },
-            {
-              "name": "Temple of the Jade Serpent",
-              "achs": []
-            },
-            {
-              "name": "Shado-Pan Monastery",
-              "achs": []
-            },
-            {
-              "name": "Mogu'shan Palace",
-              "achs": []
-            },
-            {
-              "name": "Siege of Niuzao Temple",
-              "achs": []
-            },
-            {
-              "name": "Stormstout Brewery",
-              "achs": []
-            },
-            {
-              "name": "Scarlet Monastery",
-              "achs": []
             }
           ]
         },
@@ -14674,7 +14682,7 @@
           "name": "Scenarios",
           "zones": [
             {
-              "name": "",
+              "name": "Scenarios",
               "achs": [
                 {
                   "id": "7385",
@@ -18082,7 +18090,7 @@
           "name": "Collections",
           "zones": [
             {
-              "name": "",
+              "name": "Items",
               "achs": [
                 {
                   "id": "8728",
@@ -18395,7 +18403,7 @@
           "name": "Buildings",
           "zones": [
             {
-              "name": "",
+              "name": "Buildings",
               "achs": [
                 {
                   "id": "9097",
@@ -18931,7 +18939,7 @@
           "name": "Invasions",
           "zones": [
             {
-              "name": "",
+              "name": "Invasions",
               "achs": [
                 {
                   "id": "9162",
@@ -19056,7 +19064,7 @@
           "name": "Missions",
           "zones": [
             {
-              "name": "",
+              "name": "Missions",
               "achs": [
                 {
                   "id": "9150",
