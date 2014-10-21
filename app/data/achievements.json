@@ -18327,7 +18327,7 @@
           "name": "Garrisons",
           "zones": [
             {
-              "name": "",
+              "name": "Tier",
               "achs": [
                 {
                   "id": "9545",
@@ -18360,6 +18360,10 @@
               ]
             },
             {
+              "name": "Count",
+              "achs": []
+            },
+            {
               "name": "Other",
               "achs": [
                 {
@@ -18386,6 +18390,447 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Buildings",
+          "zones": [
+            {
+              "name": "",
+              "achs": [
+                {
+                  "id": "9097",
+                  "icon": "inv_garrison_resource",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9099",
+                  "icon": "inv_garrison_blueprints2",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9095",
+                  "icon": "achievement_guildperk_fasttrack",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9098",
+                  "icon": "inv_garrison_blueprints3",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9096",
+                  "icon": "achievement_guildperk_fasttrack_rank2",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9094",
+                  "icon": "inv_garrison_blueprints3",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                }
+              ]
+            },
+            {
+              "name": "Count",
+              "achs": [
+                {
+                  "id": "9125",
+                  "icon": "achievement_garrison_blueprint20",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9126",
+                  "icon": "achievement_garrison_blueprint40",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9128",
+                  "icon": "achievement_garrison_blueprint60",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9405",
+                  "icon": "inv_letter_01",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9406",
+                  "icon": "inv_letter_14",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9407",
+                  "icon": "inv_letter_03",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                }
+              ]
+            },
+            {
+              "name": "Barn",
+              "achs": [
+                {
+                  "id": "9450",
+                  "icon": "garrison_building_barn",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9565",
+                  "icon": "garrison_building_barn",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9451",
+                  "icon": "garrison_building_barn",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9452",
+                  "icon": "garrison_building_barn",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                }
+              ]
+            },
+            {
+              "name": "Inn",
+              "achs": [
+                {
+                  "id": "9703",
+                  "icon": "achievement_guildperk_hastyhearth",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                }
+              ]
+            },
+            {
+              "name": "Lumber Mill",
+              "achs": [
+                {
+                  "id": "9076",
+                  "icon": "garrison_building_lumbermill",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
+                  "id": "9077",
+                  "icon": "garrison_building_lumbermill",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
+                  "id": "9429",
+                  "icon": "inv_tradeskillitem_03",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9078",
+                  "icon": "garrison_building_lumbermill",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
+                  "id": "9080",
+                  "icon": "garrison_building_lumbermill",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 0
+                }
+              ]
+            },
+            {
+              "name": "Gladiator's Sanctum",
+              "achs": [
+                {
+                  "id": "9639",
+                  "icon": "achievement_challengemode_ogreslagmines_silver",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "9495",
+                  "icon": "ability_deathknight_brittlebones",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9508",
+                  "icon": "warrior_talent_icon_furyintheblood",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "9517",
+                  "icon": "achievement_character_undead_male",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9509",
+                  "icon": "trade_archaeology_dignifieddraeneiportrait",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9510",
+                  "icon": "achievement_character_dwarf_male",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9511",
+                  "icon": "achievement_character_gnome_male",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9520",
+                  "icon": "achievement_character_pandaren_female",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9518",
+                  "icon": "achievement_goblinhead",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9512",
+                  "icon": "achievement_character_human_female",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9519",
+                  "icon": "achievement_character_orc_male",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9513",
+                  "icon": "achievement_character_nightelf_male",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9516",
+                  "icon": "achievement_character_bloodelf_female",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9514",
+                  "icon": "achievement_character_pandaren_female",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9521",
+                  "icon": "achievement_character_tauren_male",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9522",
+                  "icon": "achievement_character_troll_female",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9515",
+                  "icon": "achievement_worganhead",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9738",
+                  "icon": "warrior_talent_icon_furyintheblood",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 10
+                }
+              ]
+            },
+            {
+              "name": "Trading Post",
+              "achs": []
+            },
+            {
+              "name": "Armory",
+              "achs": []
+            },
+            {
+              "name": "Barracks",
+              "achs": [
+                {
+                  "id": "9498",
+                  "icon": "inv_feather_01",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9499",
+                  "icon": "inv_feather_04",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                }
+              ]
+            },
+            {
+              "name": "Mage Tower",
+              "achs": [
+                {
+                  "id": "9497",
+                  "icon": "inv_relics_runestone",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                }
+              ]
+            },
+            {
+              "name": "Stables",
+              "achs": [
+                {
+                  "id": "9538",
+                  "icon": "garrison_building_stables",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9526",
+                  "icon": "garrison_building_stables",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                },
+                {
+                  "id": "9706",
+                  "icon": "garrison_building_stables",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "9540",
+                  "icon": "garrison_building_stables",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "9705",
+                  "icon": "garrison_building_stables",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
+                  "id": "9539",
+                  "icon": "garrison_building_stables",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 0
+                }
+              ]
+            },
+            {
+              "name": "Workshop",
+              "achs": [
+                {
+                  "id": "9527",
+                  "icon": "garrison_building_workshop",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                }
+              ]
+            },
+            {
+              "name": "Salvage",
+              "achs": [
+                {
+                  "id": "9468",
+                  "icon": "garrison_building_salvageyard",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Followers",
+          "zones": []
+        },
+        {
+          "name": "Invasions",
+          "zones": []
+        },
+        {
+          "name": "Missions",
+          "zones": []
+        },
+        {
+          "name": "Monuments",
+          "zones": []
         }
       ]
     },
