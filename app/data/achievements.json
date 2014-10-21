@@ -297,7 +297,40 @@
         },
         {
           "name": "Draenor Dungeon",
-          "zones": []
+          "zones": [
+            {
+              "name": "Bloodmaul Slag Mines",
+              "achs": []
+            },
+            {
+              "name": "Auchindoun",
+              "achs": []
+            },
+            {
+              "name": "The Everbloom",
+              "achs": []
+            },
+            {
+              "name": "Shadowmoon Burial Grounds",
+              "achs": []
+            },
+            {
+              "name": "Iron Docks",
+              "achs": []
+            },
+            {
+              "name": "Skyreach",
+              "achs": []
+            },
+            {
+              "name": "Grimrail Depot",
+              "achs": []
+            },
+            {
+              "name": "Upper Blackrock Spire",
+              "achs": []
+            }
+          ]
         },
         {
           "name": "Draenor Raid",
@@ -308,43 +341,300 @@
           "zones": [
             {
               "name": "Dungeon Challenges",
-              "achs": []
+              "achs": [
+                {
+                  "id": "8895",
+                  "icon": "achievement_guildperk_honorablemention",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8897",
+                  "icon": "achievement_challengemode_bronze",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8898",
+                  "icon": "achievement_challengemode_silver",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8899",
+                  "icon": "achievement_challengemode_gold",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                }
+              ]
             },
             {
-              "name": "Scarlet Halls",
-              "achs": []
+              "name": "Bloodmaul Slag Mines",
+              "achs": [
+                {
+                  "id": "8875",
+                  "icon": "achievement_challengemode_ogreslagmines_hourglass",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8876",
+                  "icon": "achievement_challengemode_ogreslagmines_bronze",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8877",
+                  "icon": "achievement_challengemode_ogreslagmines_silver",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8878",
+                  "icon": "achievement_challengemode_ogreslagmines_gold",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                }
+              ]
             },
             {
-              "name": "Gate of the Setting Sun",
-              "achs": []
+              "name": "Auchindoun",
+              "achs": [
+                {
+                  "id": "8879",
+                  "icon": "achievement_challengemode_auchindoun_hourglass",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8880",
+                  "icon": "achievement_challengemode_auchindoun_bronze",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8881",
+                  "icon": "achievement_challengemode_auchindoun_silver",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8882",
+                  "icon": "achievement_challengemode_auchindoun_gold",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                }
+              ]
             },
             {
-              "name": "Scholomance",
-              "achs": []
+              "name": "The Everbloom",
+              "achs": [
+                {
+                  "id": "9001",
+                  "icon": "achievement_challengemode_everbloom_hourglass",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "9002",
+                  "icon": "achievement_challengemode_everbloom_bronze",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "9003",
+                  "icon": "achievement_challengemode_everbloom_silver",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "9004",
+                  "icon": "achievement_challengemode_everbloom_gold",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                }
+              ]
             },
             {
-              "name": "Temple of the Jade Serpent",
-              "achs": []
+              "name": "Shadowmoon Burial Grounds",
+              "achs": [
+                {
+                  "id": "8883",
+                  "icon": "achievement_challengemode_shadowmoonhideout_hourglass",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8884",
+                  "icon": "achievement_challengemode_shadowmoonhideout_bronze",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8885",
+                  "icon": "achievement_challengemode_shadowmoonhideout_silver",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8886",
+                  "icon": "achievement_challengemode_shadowmoonhideout_gold",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                }
+              ]
             },
             {
-              "name": "Shado-Pan Monastery",
-              "achs": []
+              "name": "Iron Docks",
+              "achs": [
+                {
+                  "id": "8997",
+                  "icon": "achievement_challengemode_blackrockdocks_hourglass",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8998",
+                  "icon": "achievement_challengemode_blackrockdocks_bronze",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8999",
+                  "icon": "achievement_challengemode_blackrockdocks_silver",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "9000",
+                  "icon": "achievement_challengemode_blackrockdocks_gold",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                }
+              ]
             },
             {
-              "name": "Mogu'shan Palace",
-              "achs": []
+              "name": "Skyreach",
+              "achs": [
+                {
+                  "id": "8871",
+                  "icon": "achievement_challengemode_arakkoaspires_hourglass",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8872",
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8873",
+                  "icon": "achievement_challengemode_seigeofniuzaotemple_silver",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8874",
+                  "icon": "achievement_challengemode_seigeofniuzaotemple_gold",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                }
+              ]
             },
             {
-              "name": "Siege of Niuzao Temple",
-              "achs": []
+              "name": "Grimrail Depot",
+              "achs": [
+                {
+                  "id": "8887",
+                  "icon": "achievement_challengemode_blackrockdepot_hourglass",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8888",
+                  "icon": "achievement_challengemode_blackrockdepot_bronze",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8889",
+                  "icon": "achievement_challengemode_blackrockdepot_silver",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8890",
+                  "icon": "achievement_challengemode_blackrockdepot_gold",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                }
+              ]
             },
             {
-              "name": "Stormstout Brewery",
-              "achs": []
-            },
-            {
-              "name": "Scarlet Monastery",
-              "achs": []
+              "name": "Upper Blackrock Spire",
+              "achs": [
+                {
+                  "id": "8891",
+                  "icon": "achievement_challengemode_upperbrspire_hourglass",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8892",
+                  "icon": "achievement_challengemode_upperbrspire_bronze",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8893",
+                  "icon": "achievement_challengemode_upperbrspire_silver",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "8894",
+                  "icon": "achievement_challengemode_upperbrspire_gold",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                }
+              ]
             }
           ]
         },
