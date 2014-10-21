@@ -10532,7 +10532,21 @@
               "name": "Zones",
               "achs": [
                 {
+                  "id": "8671",
+                  "icon": "achievement_zone_frostfire",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
                   "id": "8845",
+                  "icon": "achievement_zone_newshadowmoonvalley",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
+                  "id": "9602",
                   "icon": "achievement_zone_newshadowmoonvalley",
                   "side": "A",
                   "obtainable": true,
@@ -10542,6 +10556,34 @@
                   "id": "9528",
                   "icon": "spell_shadow_nethercloak",
                   "side": "A",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
+                  "id": "8923",
+                  "icon": "achievement_zone_gorgrond",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
+                  "id": "9607",
+                  "icon": "achievement_zone_gorgrond",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
+                  "id": "8920",
+                  "icon": "achievement_zone_talador",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
+                  "id": "9674",
+                  "icon": "achievement_zone_talador",
+                  "side": "",
                   "obtainable": true,
                   "points": 0
                 },
@@ -10560,9 +10602,9 @@
                   "points": 0
                 },
                 {
-                  "id": "8920",
-                  "icon": "achievement_zone_talador",
-                  "side": "A",
+                  "id": "9605",
+                  "icon": "achievement_zone_spiresofarak",
+                  "side": "",
                   "obtainable": true,
                   "points": 0
                 },
@@ -10570,13 +10612,6 @@
                   "id": "8919",
                   "icon": "achievement_zone_talador",
                   "side": "H",
-                  "obtainable": true,
-                  "points": 0
-                },
-                {
-                  "id": "9607",
-                  "icon": "achievement_zone_gorgrond",
-                  "side": "",
                   "obtainable": true,
                   "points": 0
                 },
@@ -10595,23 +10630,16 @@
                   "points": 0
                 },
                 {
+                  "id": "9615",
+                  "icon": "inv_misc_food_43",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
                   "id": "8924",
                   "icon": "achievement_zone_gorgrond",
                   "side": "H",
-                  "obtainable": true,
-                  "points": 0
-                },
-                {
-                  "id": "8923",
-                  "icon": "achievement_zone_gorgrond",
-                  "side": "A",
-                  "obtainable": true,
-                  "points": 0
-                },
-                {
-                  "id": "9564",
-                  "icon": "inv_misc_map08",
-                  "side": "A",
                   "obtainable": true,
                   "points": 0
                 },
@@ -10623,23 +10651,9 @@
                   "points": 0
                 },
                 {
-                  "id": "9602",
-                  "icon": "achievement_zone_newshadowmoonvalley",
+                  "id": "9564",
+                  "icon": "inv_misc_map08",
                   "side": "A",
-                  "obtainable": true,
-                  "points": 0
-                },
-                {
-                  "id": "9615",
-                  "icon": "inv_misc_food_43",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 0
-                },
-                {
-                  "id": "8671",
-                  "icon": "achievement_zone_frostfire",
-                  "side": "H",
                   "obtainable": true,
                   "points": 0
                 }
@@ -10850,7 +10864,7 @@
               ]
             },
             {
-              "name": "Talador",
+              "name": "Shattrath",
               "achs": [
                 {
                   "id": "9635",
@@ -10880,18 +10894,6 @@
                   "obtainable": true,
                   "points": 0
                 },
-                {
-                  "id": "9674",
-                  "icon": "achievement_zone_talador",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 0
-                }
-              ]
-            },
-            {
-              "name": "Shattrath",
-              "achs": [
                 {
                   "id": "9638",
                   "icon": "inv_misc_note_06",
@@ -10933,13 +10935,6 @@
                   "points": 0
                 },
                 {
-                  "id": "9605",
-                  "icon": "achievement_zone_spiresofarak",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 0
-                },
-                {
                   "id": "9612",
                   "icon": "inv_misc_easterbasket",
                   "side": "",
@@ -10966,13 +10961,6 @@
                   "points": 0
                 },
                 {
-                  "id": "9548",
-                  "icon": "inv_misc_shovel_02",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 0
-                },
-                {
                   "id": "9610",
                   "icon": "ability_warrior_bloodfrenzy",
                   "side": "",
@@ -10982,6 +10970,13 @@
                 {
                   "id": "9617",
                   "icon": "ability_rogue_ruthlessness",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
+                  "id": "9548",
+                  "icon": "inv_misc_shovel_02",
                   "side": "",
                   "obtainable": true,
                   "points": 0
