@@ -96,6 +96,26 @@
               26
             ],
             "allowableClasses": null
+          },
+          {
+            "spellid": "97501",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "69226",
+            "icon": "inv_misc_summerfest_braziergreen",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "175700",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "118676",
+            "icon": "ability_mount_drake_blue",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
           }
         ]
       }
@@ -106,10 +126,166 @@
     "subcats": [
       {
         "name": "Achievement",
+        "items": [
+          {
+            "spellid": "170347",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "115484",
+            "icon": "inv_belt_45",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "171845",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "116788",
+            "icon": "inv_chopper_horde",
+            "obtainable": false,
+            "allowableRaces": [
+              2,
+              5,
+              6,
+              8,
+              9,
+              10,
+              26
+            ],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "171632",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "116670",
+            "icon": "inv_giantboarmount_brown",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "171436",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "116383",
+            "icon": "inv_lessergronnmount_red",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "171848",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "116791",
+            "icon": "inv_misc_pet_pandaren_yeti",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          }
+        ]
+      },
+      {
+        "name": "Vendor",
         "items": []
       },
       {
         "name": "Garrison",
+        "items": []
+      },
+      {
+        "name": "Stables",
+        "items": [
+          {
+            "spellid": "171841",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "116784",
+            "icon": "inv_wolfdraenormountbrown",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "171623",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "116662",
+            "icon": "ability_mount_elekkdraenormount",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "171638",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "116676",
+            "icon": "inv_hippo_green",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "171637",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "116675",
+            "icon": "inv_giantboarmount_brown",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "171831",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "116774",
+            "icon": "ability_mount_talbukdraenormount",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "171617",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "116656",
+            "icon": "inv_clefthoofdraenormount_blue",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "171629",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "116668",
+            "icon": "inv_giantboarmount_brown",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "171838",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "116781",
+            "icon": "inv_wolfdraenormountfrost",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          }
+        ]
+      },
+      {
+        "name": "Trading Post",
+        "items": []
+      },
+      {
+        "name": "Fishing Shack",
         "items": []
       },
       {
@@ -5840,6 +6016,16 @@
             "hordeId": null,
             "itemId": "85666",
             "icon": "inv_pandarenserpentmount_lightning_green",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "171627",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "116666",
+            "icon": "inv_giantboarmount_brown",
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
