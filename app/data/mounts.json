@@ -280,7 +280,6 @@
             ],
             "allowableClasses": null
           },
-	  
           {
             "spellid": "171829",
             "allianceId": null,
@@ -288,8 +287,7 @@
             "itemId": "116772",
             "icon": "ability_mount_talbukdraenormount",
             "obtainable": true,
-            "allowableRaces": [
-            ],
+            "allowableRaces": [],
             "allowableClasses": null
           },
           {
@@ -502,7 +500,78 @@
       },
       {
         "name": "Rare Spawn",
-        "items": []
+        "items": [
+          {
+            "spellid": "171636",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "116674",
+            "icon": "inv_giantboarmount_brown",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "171620",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "116659",
+            "icon": "inv_clefthoofdraenormount_blue",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "171622",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "116661",
+            "icon": "ability_mount_elekkdraenormount",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "171849",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "116792",
+            "icon": "inv_lessergronnmount_red",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "171824",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "116767",
+            "icon": "inv_hippo_green",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "171830",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "116773",
+            "icon": "ability_mount_talbukdraenormount",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "171851",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "116794",
+            "icon": "ability_mount_blackdirewolf",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          }
+        ]
       }
     ]
   },
