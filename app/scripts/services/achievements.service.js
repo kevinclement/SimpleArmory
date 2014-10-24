@@ -31,12 +31,14 @@
             var totalCompleted = 0;
             var totalFoS = 0;
             var totalLegacy = 0;
+            var found = {};
             $log.log('Parsing achievements.json...');
 
             // Build up lookup for achievements that character has completed
             angular.forEach(character.achievements.achievementsCompleted, function(ach, index) {
                 // hash the achievement and its timestamp
                 completed[ach] = character.achievements.achievementsCompletedTimestamp[index];
+                found[ach] = false;
             });
 
             // Lets parse out all the super categories and build out our structure
@@ -55,6 +57,10 @@
                         var myZone = {'name': zone.name, 'achievements': []};
 
                         angular.forEach(zone.achs, function(ach) {
+
+                            // Mark this achievement in our found tracker
+                            found[ach.id] = true;
+
                             var myAchievement = ach, added = false;
                             myAchievement.completed = completed[ach.id];
                             if (myAchievement.completed) {
@@ -113,6 +119,13 @@
                     obj[supercat.name].legacyTotal = totalLegacy;
                 }
             }); 
+
+
+            for (var achId in found) {
+                if (found.hasOwnProperty(achId)&& !found[achId]) {
+                    console.log('WARN: Found achievement "' + achId + '" from character but not in db.');
+                }
+            }
 
             // Add totals
             obj.possible = totalPossible;
