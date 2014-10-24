@@ -214,7 +214,7 @@
             }); 
 
             for (var collId in found) {
-                if (found.hasOwnProperty(collId) && !found[collId]) {
+                if (collId !== "0" && found.hasOwnProperty(collId) && !found[collId]) {
                     console.log('WARN: Found item "' + collId + '" from character but not in db.');
                 }
             }
