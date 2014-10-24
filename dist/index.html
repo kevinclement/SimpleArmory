@@ -1,95 +1,11 @@
-<!DOCTYPE html> <html> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <title>Simple Armory</title> <link rel="stylesheet" type="text/css" href="v1/reset.css"> <link rel="stylesheet" type="text/css" href="v1/text.css"> <link rel="shortcut icon" href="favicon.ico"> <style type="text/css">.calendar td {width: 100px; height: 100px; border: 1px solid #999}
-    .calendar td div {width: 96px; height: 72px; margin: 2px; overflow-y: auto}
-    .calendar td.dayspacer {border: 0}
-    #divtabs span {cursor: pointer}
+<!doctype html> <html class="no-js"> <head> <meta charset="utf-8"> <title>Simple Armory</title> <meta name="viewport" content="width=device-width,initial-scale=1"> <meta name="description" content="Simplified armory site for World of Warcraft"> <meta name="author" content="Kevin Clement"> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="stylesheet" href="styles/vendor.20833e0b.css"> <link rel="stylesheet" href="styles/main.07b4596e.css">  <body ng-app="simpleArmoryApp" ng-controller="ApplicationCtrl"> <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--> <!-- Main Site --> <div id="navbar" ng-controller="HeaderCtrl"> <div ng-include src="'views/header.html'"></div> </div> <div class="view-container"> <div ng-view class="view-frame"></div> </div> <!-- Google Analytics --> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    .clear {
-      clear: both;
-      display: block;
-      overflow: hidden;
-      visibility: hidden;
-      width: 0;
-      height: 0;
-    }
-
-    .contact
-    {
-        left: 80px;
-        bottom: 5px;
-        text-decoration: none;
-        color: black;
-    }
-
-    #left
-    {
-        position:absolute;
-        top:3em;
-        left:0;
-        bottom:0;
-        width: 15em;
-        padding: 0.5em;
-    }
-    .leftbottom
-    {
-        position:absolute;
-        bottom: 5px;
-        text-align: center;
-        font-weight: bold;
-        right: 0px;
-        left: 0px;
-    }
-    #divtabs
-    {
-        visibility: hidden;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 25px;
-        width: 15em;
-        padding: 0.5em;
-        text-align: center;
-        font-weight: bold;
-        overflow-y: auto
-    }
-    .pbCell
-    {
-        display:inline-block;
-        position:relative;
-        padding-bottom:6px;
-    }
-    .pbQual
-    {
-        position:absolute;
-        bottom:0px;
-        right:0px;
-        left:0px;
-        height:6px;
-    }
-    .pbLevel,.pbBreed
-    {
-        color: white;
-        position:absolute;
-        left:38%;
-        top: 3px;
-        height:6px;
-        font-weight:bold;
-        opacity:0;
-        -webkit-transition: opacity .25s ease-in-out;
-       -moz-transition: opacity .25s ease-in-out;
-        transition: opacity .25s ease-in-out;
-    }
-    .pbBreed
-    {
-        top: 16px;
-        left:20%;
-    }</style> <script type="text/javascript" src="http://static.wowhead.com/widgets/power.js"></script> <script type="text/javascript" src="v1/helperFuncs.js"></script> <script type="text/javascript" src="v1/main.js"></script> <script type="text/javascript" src="v1/achievements.js"></script> <script type="text/javascript" src="v1/mounts.js"></script> <script type="text/javascript" src="v1/pets.js"></script> <script type="text/javascript" src="v1/battlepets.js"></script> <script type="text/javascript" src="v1/factions.js"></script>  <body style="margin: 0; color: black; background: #EEE"> <div style="position: absolute; top: 0; left: 0; height: 3em; right: 0; text-align: center" id="charformdiv"> <form onsubmit="getchar(this); return false" style="margin: 0"> <select name="realm" size="1" id="realmlist"></select> <input type="text" name="char" size="20" maxlength="15" id="charname"> <input type="submit" value="Go"> </form> </div> <div id="left"> <div id="divtabs"> <span onclick="setLocationToTab('Character')">Character</span><br> <br> <span onclick="setLocationToTab(this.innerHTML)">General</span><br> <span onclick="setLocationToTab(this.innerHTML)">Quests</span><br> <span onclick="setLocationToTab(this.innerHTML)">Exploration</span><br> <span onclick="setLocationToTab('pvp')">Player vs. Player</span><br> <span onclick="setLocationToTab('dungeons')">Dungeons &amp; Raids</span><br> <span onclick="setLocationToTab(this.innerHTML)">Professions</span><br> <span onclick="setLocationToTab(this.innerHTML)">Reputation</span><br> <span onclick="setLocationToTab(this.innerHTML)">Scenarios</span><br> <span onclick="setLocationToTab('world')">World Events</span><br> <span onclick="setLocationToTab('battles')">Pet Battles</span><br> <span onclick="setLocationToTab('feats')">Feats of Strength</span><br> <br> <span onclick="setLocationToTab('Calendar')">Achievement Calendar</span><br> <br> <span onclick="setLocationToTab('Mounts')">Mounts</span><br> <span onclick="setLocationToTab('Pets')">Companions</span><br> <span onclick="setLocationToTab('Battlepets')">Battle Pets</span><br> <br> <span onclick="setLocationToTab('Factions')">Reputation</span><br> </div> <div class="leftbottom"><a href="mailto:simplearmory@gmail.com" class="contact">Contact</a></div> </div> <div id="result" style="position: absolute; top: 3em; bottom: 0; left: 15em; right: 0; overflow: auto; padding: 0.5em"> <div style="position: relative"> <div style="position: absolute; right: 15em; left: 0; text-align: center"><noscript><h2>Please enable JavaScript.</h2></noscript></div> </div> </div> <script type="text/javascript" src="http://us.battle.net/api/wow/realm/status?jsonp=poprealmlistus"></script> <script type="text/javascript" src="http://eu.battle.net/api/wow/realm/status?jsonp=poprealmlisteu"></script> <script type="text/javascript">if (document.getElementById('realmlist').options.length == 0) {
-		document.getElementById('charformdiv').style.display='none';
-		document.getElementById('result').innerHTML='<div style="position: absolute; right: 15em; left: 0; text-align: center"><h2>Error: Did not receive realm list from <a href="http://www.battle.net/">Battle.net</a>.</h2></div>';
-	} else {
-		document.getElementById('result').innerHTML='<div style="position: absolute; right: 15em; left: 0; text-align: center"><h2>Enter a realm and character above.</h2></div>';
-	}</script> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-40763505-1', 'simplearmory.com');</script> 
+       ga('create', 'UA-40763505-1', 'simplearmory.com');
+       ga('send', 'pageview');</script> <!--[if lt IE 9]>
+    <script src="scripts/oldieshim.a466b7b1.js"></script>
+    <![endif]--> <script src="scripts/vendor.d54882f6.js"></script> <script src="scripts/scripts.1c172fbf.js"></script> <script type="text/javascript" src="http://static.wowhead.com/widgets/power.js"></script>  

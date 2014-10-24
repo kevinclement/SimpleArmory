@@ -333,16 +333,13 @@ module.exports = function (grunt) {
         // TMP: Until I ship v2
         // ###########################################
         }, {
-          src: '<%= yeoman.dist %>/index.html',
-          dest: '<%= yeoman.dist %>/index2.html'
-        }, {
           expand: true,
           cwd: 'v1',
           src: '*',
           dest: '<%= yeoman.dist %>/v1/'
         }, {
           src: 'index.html',
-          dest: '<%= yeoman.dist %>/index.html'
+          dest: '<%= yeoman.dist %>/indexOld.html'
         },
         // ###########################################
         ]
