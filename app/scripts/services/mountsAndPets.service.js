@@ -213,10 +213,13 @@
                 });
             }); 
 
-            for (var collId in found) {
-                if (collId !== "0" && found.hasOwnProperty(collId) && !found[collId]) {
-                    console.log('WARN: Found item "' + collId + '" from character but not in db.');
-                }
+            // don't do this check for battle pets, I'm lazy and don't want to figure it out
+            if (collectedId !== 'creatureId') {
+                for (var collId in found) {
+                    if (collId !== '0' && found.hasOwnProperty(collId) && !found[collId]) {
+                        console.log('WARN: Found item "' + collId + '" from character but not in db.');
+                    }
+                }               
             }
 
             // Add totals
