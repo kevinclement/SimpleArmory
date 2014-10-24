@@ -34,23 +34,30 @@
 
     function ModalInstanceCtrl($scope, $modalInstance, BlizzardRealmService) {
 
-        // initialize with just a loading realms message
+        // initialize with select disabled and a loading text
         $scope.realms = [
-            {name:'Loading realms...'},
+            {
+                value:{realm:'', region:''}, text:'Loading realms...'
+            }
         ];
+        $scope.selectedRealm = $scope.realms[0].value;
+
+        // turn drop down off until servers come back
+        $scope.isDisabled = true;
 
         // wait for promises to finish and then populate with servers
         BlizzardRealmService.getRealms().then(function(data) {
+            $scope.isDisabled = false;
             $scope.realms = [];
 
             // First add the us servers
             angular.forEach(data[0].data.realms, function(value) {   
-                this.push({value:{realm:value.slug, region:'us'}, text:value.name + ' US'});
+               this.push({value:{realm:value.slug, region:'us'}, text:value.name + ' US'});
             }, $scope.realms);
 
             // Then the eu servers
             angular.forEach(data[1].data.realms, function(value) {
-                this.push({value:{realm:value.slug, region:'eu'}, text:value.name + ' EU'});
+               this.push({value:{realm:value.slug, region:'eu'}, text:value.name + ' EU'});
             }, $scope.realms);    
         });
 
