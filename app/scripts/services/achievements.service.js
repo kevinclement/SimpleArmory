@@ -122,7 +122,7 @@
 
 
             for (var achId in found) {
-                if (found.hasOwnProperty(achId)&& !found[achId]) {
+                if (found.hasOwnProperty(achId) && !found[achId]) {
                     console.log('WARN: Found achievement "' + achId + '" from character but not in db.');
                 }
             }

@@ -31,10 +31,12 @@
             var collected = {};
             var totalCollected = 0;
             var totalPossible = 0;
-        
+            var found = {};
+
             // Build up lookup for items that character has
             angular.forEach(character[characterProperty].collected, function(item) {
                 collected[item[collectedId]] = item;
+                found[item[collectedId]] = false;
             });
 
             // Lets parse out all the categories and build out our structure
@@ -55,6 +57,9 @@
                         // fix spellid typo
                         itm.spellId = item.spellid;
                         delete itm.spellid;
+
+                        // Mark it found
+                        found[itm[collectedId]] = true;
 
                         if (collected[itm[collectedId]]) {
                             var fullItem = collected[itm[collectedId]];
@@ -207,6 +212,12 @@
                     }
                 });
             }); 
+
+            for (var collId in found) {
+                if (found.hasOwnProperty(collId) && !found[collId]) {
+                    console.log('WARN: Found item "' + collId + '" from character but not in db.');
+                }
+            }
 
             // Add totals
             obj.collected = totalCollected;
