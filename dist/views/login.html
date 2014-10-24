@@ -4,8 +4,10 @@
   <div class="modal-body">
   	<div class="input-group">
     	<span class="input-group-addon input-group-label">Realm</span>
-      <select id="realmSelection" class="combobox input-large form-control" ng-model="selectedRealm" ng-options="realm.value as realm.text for realm in realms">
-        <option value=""></option>
+      <select id="realmSelection" class="combobox input-large form-control"
+          ng-disabled="isDisabled"
+          ng-model="selectedRealm"
+          ng-options="realm.value as realm.text for realm in realms">
       </select>
     </div>
     <br/>
