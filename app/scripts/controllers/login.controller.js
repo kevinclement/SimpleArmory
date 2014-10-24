@@ -61,15 +61,6 @@
                 'character': $scope.characterName
             });
         };
-
-        // TMP just to make it easier for me to test, to remove before we go live
-        $scope.marko = function () {
-            $modalInstance.close({
-                'region': 'us',
-                'realm': 'proudmoore',
-                'character': 'marko'
-            });
-        };
     }
 
 })();

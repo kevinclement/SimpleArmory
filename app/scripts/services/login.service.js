@@ -11,14 +11,6 @@
             getCharacter: function($routeParams) {
                 $log.log('Fetching ' + $routeParams.character + ' from server ' + $routeParams.realm + '...');
 
-                // ## TMP #################################################################
-                // ## Good to make sure I'm honest, will remove before we go live
-                var deferred = $q.defer();
-                setTimeout(function() {
-                    deferred.resolve('hello world');
-                }, 1);
-                // ########################################################################
-
                 var jsonp = $http.jsonp(
                     'http://' + 
                       $routeParams.region +
@@ -31,7 +23,7 @@
                     .error(getCharacterError)
                     .then(getCharacterComplete);
 
-                  return $q.all([jsonp, deferred.promise]);
+                  return $q.all([jsonp]);
 
               function getCharacterError() {
                   $log.log('Trouble fetching character from battlenet');
