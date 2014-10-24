@@ -6,7 +6,10 @@
         .module('simpleArmoryApp')
         .controller('CalendarCtrl' , CalendarCtrl);
 
-    function CalendarCtrl($scope, AchievementsService, $sce, $routeParams) { 
+    function CalendarCtrl($scope, AchievementsService, $sce, $routeParams, $window) { 
+
+		// Analytics for page
+        $window.ga('send', 'pageview', 'Calendar');
 
     	 AchievementsService.getAchievements().then(function(achievements){
 	

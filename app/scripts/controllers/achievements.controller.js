@@ -8,10 +8,10 @@
 
       function AchievementsCtrl($scope, AchievementsService, $routeParams, $window) {
 
-        // Analytics for page
-        $window.ga('send', 'pageview', 'Achievements');
-
         $scope.superCat = prettySuperCategory($routeParams.category);
+
+        // Analytics for page
+        $window.ga('send', 'pageview', 'Achievements/' + $scope.superCat);
 
         AchievementsService.getAchievements().then(function(achievements){
             $scope.achievements = achievements[$scope.superCat];

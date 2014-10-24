@@ -6,7 +6,10 @@
         .module('simpleArmoryApp')
         .controller('BattlePetsCtrl' , BattlePetsCtrl);
 
-    function BattlePetsCtrl($scope, MountsAndPetsService) {
+    function BattlePetsCtrl($scope, MountsAndPetsService, $window) {
+
+        // Analytics for page
+        $window.ga('send', 'pageview', 'BattlePets');
 
         MountsAndPetsService.getItems('battlepets', 'pets', 'creatureId').then(function(items){
             $scope.items = items;
