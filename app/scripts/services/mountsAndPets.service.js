@@ -39,6 +39,22 @@
                 found[item[collectedId]] = false;
             });
 
+            // Hack until they fix the armory to return Felfire hawk
+            if (character[characterProperty].collected.length >= 250) {
+                    collected[97501] = 
+                    {
+                        icon: 'inv_misc_summerfest_braziergreen',
+                        isAquatic: false,
+                        isFlying: true,
+                        isGround: true,
+                        isJumping: false,
+                        itemId: 69226,
+                        name: 'Felfire Hawk',
+                        qualityId: 4,
+                        spellId: 97501
+                    };
+            }        
+
             // Lets parse out all the categories and build out our structure
             angular.forEach(categories, function(category) {
 
