@@ -19,9 +19,12 @@
 
         $scope.getImageSrc = function(achievement) {
 
-              if (achievement.id === 8468) {
+            if (achievement.id === '8468') {
                 // special case galakras since its busted on wowhead
                 return 'images/galakras.png';
+            } else if (achievement.id === '9552') {
+                // special case falling down since its busted on wowhead
+                return 'images/spell_fel_incinerate.jpg';
             } else if (achievement.completed) {
                 // wowhead img
                 return 'http://wow.zamimg.com/images/wow/icons/medium/' + achievement.icon.toLowerCase() + '.jpg';

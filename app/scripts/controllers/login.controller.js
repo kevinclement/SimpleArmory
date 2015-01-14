@@ -47,6 +47,7 @@
 
         // wait for promises to finish and then populate with servers
         BlizzardRealmService.getRealms().then(function(data) {
+            console.log('realm server callback: ' + $scope.isDisabled + ' setting to false');
             $scope.isDisabled = false;
             $scope.realms = [];
 
