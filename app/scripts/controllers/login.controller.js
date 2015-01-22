@@ -46,18 +46,26 @@
         $scope.isDisabled = true;
 
         // wait for promises to finish and then populate with servers
-        BlizzardRealmService.getRealms().then(function(data) {
-            console.log('realm server callback: ' + $scope.isDisabled + ' setting to false');
+        BlizzardRealmService.getUSRealms().then(function(data) {
+            console.log("Got realms for US");
             $scope.isDisabled = false;
-            $scope.realms = [];
+            if ($scope.realms.length === 1) {
+                $scope.realms = [];
+            }
 
-            // First add the us servers
-            angular.forEach(data[0].data.realms, function(value) {   
+            angular.forEach(data.data.realms, function(value) {   
                this.push({value:{realm:value.slug, region:'us'}, text:value.name + ' US'});
             }, $scope.realms);
+        });
 
-            // Then the eu servers
-            angular.forEach(data[1].data.realms, function(value) {
+        BlizzardRealmService.getEURealms().then(function(data) {
+            console.log("Got realms for EU");
+            $scope.isDisabled = false;
+            if ($scope.realms.length === 1) {
+                $scope.realms = [];
+            }
+
+            angular.forEach(data.data.realms, function(value) {
                this.push({value:{realm:value.slug, region:'eu'}, text:value.name + ' EU'});
             }, $scope.realms);    
         });

@@ -175,7 +175,9 @@ module.exports = function (grunt) {
           '<%= yeoman.dist %>/scripts/{,*/}*.js',
           '<%= yeoman.dist %>/styles/{,*/}*.css',
           '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
-          '<%= yeoman.dist %>/styles/fonts/*'
+          '<%= yeoman.dist %>/styles/fonts/*',
+          '!<%= yeoman.dist %>/images/galakras.png',
+          '!<%= yeoman.dist %>/images/spell_fel_incinerate.jpg'
         ]
       }
     },
@@ -328,6 +330,13 @@ module.exports = function (grunt) {
           cwd: '<%= yeoman.app %>/data',
           dest: '<%= yeoman.dist %>/data',
           src: ['*']
+
+        // ###########################################
+        // Code behind images
+        // ###########################################
+        }, {
+          src: '<%= yeoman.app %>/images/galakras.png',
+          dest: '<%= yeoman.dist %>/images/galakras.png'
 
         // ###########################################
         // TMP: Until I ship v2
