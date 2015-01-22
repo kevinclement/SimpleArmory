@@ -12,7 +12,7 @@
                 $log.log('Fetching ' + $routeParams.character + ' from server ' + $routeParams.realm + '...');
 
                 var jsonp = $http.jsonp(
-                    'http://' + 
+                    window.location.protocol + '//' + 
                       $routeParams.region +
                       '.battle.net/api/wow/character/' +
                       $routeParams.realm + 

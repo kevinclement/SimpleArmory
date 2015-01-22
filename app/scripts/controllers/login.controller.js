@@ -47,7 +47,7 @@
 
         // wait for promises to finish and then populate with servers
         BlizzardRealmService.getUSRealms().then(function(data) {
-            console.log("Got realms for US");
+            console.log('Got realms for US');
             $scope.isDisabled = false;
             if ($scope.realms.length === 1) {
                 $scope.realms = [];
@@ -59,7 +59,7 @@
         });
 
         BlizzardRealmService.getEURealms().then(function(data) {
-            console.log("Got realms for EU");
+            console.log('Got realms for EU');
             $scope.isDisabled = false;
             if ($scope.realms.length === 1) {
                 $scope.realms = [];

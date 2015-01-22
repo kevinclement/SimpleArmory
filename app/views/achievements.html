@@ -17,7 +17,7 @@
   <div class="sect" ng-repeat="zone in category.zones">
       <h5 class="zoneHeader">{{ zone.name }}</h5>
 
-      <a ng-href="http://www.wowhead.com/achievement={{achievement.id}}" class="thumbnail" ng-attr-rel="{{achievement.rel}}" ng-repeat="achievement in zone.achievements" ng-class="{borderOn:!achievement.completed, borderOff:achievement.completed}">
+      <a ng-href="//www.wowhead.com/achievement={{achievement.id}}" class="thumbnail" ng-attr-rel="{{achievement.rel}}" ng-repeat="achievement in zone.achievements" ng-class="{borderOn:!achievement.completed, borderOff:achievement.completed}">
         <img ng-src="{{getImageSrc(achievement)}}">
       </a>
   </div>

@@ -56,7 +56,8 @@
         $scope.armoryUrl = function() {
             if ($scope.character) {
                 var c = $scope.character;
-                return window.location.protocol + '//' + c.region + '.battle.net/wow/en/character/' + c.realm + '/' + c.name.toLowerCase() + '/advanced';
+                return window.location.protocol + '//' + 
+                       c.region + '.battle.net/wow/en/character/' + c.realm + '/' + c.name.toLowerCase() + '/advanced';
             }
 
             return '#';   

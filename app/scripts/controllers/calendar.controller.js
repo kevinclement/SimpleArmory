@@ -153,9 +153,9 @@
 
 			        rows += '<div>';
 			        angular.forEach(achievs, function(ach) {
-			            rows += '<a href="http://www.wowhead.com/achievement=' + ach.id + '" ' +
+			            rows += '<a href="//www.wowhead.com/achievement=' + ach.id + '" ' +
 			        			'rel="who=' + prettyName + '&amp;when=' + ach.completed +'">' +
-			        			'<img src="http://wow.zamimg.com/images/wow/icons/medium/' + 
+			        			'<img src="//wow.zamimg.com/images/wow/icons/medium/' + 
 			        			ach.icon.toLowerCase() + '.jpg" width="36" height="36" border="0"></a>';
 
 			            total++;

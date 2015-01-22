@@ -59,7 +59,7 @@
         $scope.getImageSrc = function(item) {
             if (item.collected) {
                 // wowhead img
-                return 'http://wow.zamimg.com/images/wow/icons/medium/' + item.icon.toLowerCase() + '.jpg';
+                return '//wow.zamimg.com/images/wow/icons/medium/' + item.icon.toLowerCase() + '.jpg';
             } else {
                 // 1x1 gif   
                 return 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==';
