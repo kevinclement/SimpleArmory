@@ -47,7 +47,7 @@
         $scope.imgUrl = function() {
             if ($scope.character) {
                 var c = $scope.character;
-                return 'http://' + c.region + '.battle.net/static-render/' + c.region + '/' + c.thumbnail;
+                return window.location.protocol + '//' + c.region + '.battle.net/static-render/' + c.region + '/' + c.thumbnail;
             }
 
             return '';   
@@ -56,7 +56,7 @@
         $scope.armoryUrl = function() {
             if ($scope.character) {
                 var c = $scope.character;
-                return 'http://' + c.region + '.battle.net/wow/en/character/' + c.realm + '/' + c.name.toLowerCase() + '/advanced';
+                return window.location.protocol + '//' + c.region + '.battle.net/wow/en/character/' + c.realm + '/' + c.name.toLowerCase() + '/advanced';
             }
 
             return '#';   
