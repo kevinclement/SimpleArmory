@@ -68,6 +68,19 @@
             angular.forEach(data.data.realms, function(value) {
                this.push({value:{realm:value.slug, region:'eu'}, text:value.name + ' EU'});
             }, $scope.realms);    
+        }, function(reason) {
+            console.log('Failed to get realms for EU: ' + reason.status + ' ' + reason.statusText);
+            
+            $scope.isDisabled = false;
+            if ($scope.realms.length === 1) {
+                $scope.realms = [];
+            }
+
+            BlizzardRealmService.getEUDefaultRealms().then(function(data) {
+                angular.forEach(data, function(serverObj) {
+                    this.push({value:{realm:serverObj.slug, region:'eu'}, text:serverObj.name + ' EU'});
+                }, $scope.realms);  
+            });
         });
 
         $scope.ok = function () {
