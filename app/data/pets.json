@@ -572,6 +572,41 @@
             "allowableClasses": null
           }
         ]
+      },
+            {
+        "name": "Critters",
+        "items": [
+          {
+            "spellid": "177238",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "122532",
+            "icon": "inv_fishing_innards_bones",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "177218",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "122533",
+            "icon": "inv_talbukdraenor_white",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "177223",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "122534",
+            "icon": "inv_misc_fish_11",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          }
+        ]
       }
     ]
   },
@@ -4145,6 +4180,21 @@
             "hordeId": null,
             "itemId": null,
             "icon": "inv_jewelcrafting_gem_06",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          }
+        ]
+      },
+      {
+        "name": "HotS",
+        "items": [
+          {
+            "spellid": "181086",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "122477",
+            "icon": "inv_gravegolempet",
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
