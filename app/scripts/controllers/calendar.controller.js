@@ -21,7 +21,6 @@
         });
 
     	$scope.leftOneMonth = function() {
-
     		if ($scope.selectedMonth.index > 0) {
     			$scope.selectedMonth = $scope.months[$scope.selectedMonth.index - 1];
     			$scope.selectionChanged();
