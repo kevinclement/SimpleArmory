@@ -14,7 +14,7 @@ Feel free to contribute to its development.
 git clone https://github.com/kevinclement/SimpleArmory.git SA
 cd SA
 npm install
-npm install -g gulp
+npm install -g grunt-cli
 ```
 
 ## Start Development
