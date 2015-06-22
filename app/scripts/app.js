@@ -5,7 +5,8 @@
         .module('simpleArmoryApp', [
             'ngRoute',
             'ui.bootstrap'])
-        .config(config);
+        .config(config)
+        .constant('settings', settings());
 
     function config($routeProvider) {
 
@@ -50,5 +51,11 @@
               redirectTo: '/'
             });
       }
+
+  function settings() { 
+    return {
+        'WowHeadUrl': 'ptr.wowhead.com'
+    };
+  }
 
 })();
