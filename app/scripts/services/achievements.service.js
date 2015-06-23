@@ -32,12 +32,25 @@
             var totalFoS = 0;
             var totalLegacy = 0;
             var found = {};
+            var blizzardBugPrinted = false;
             $log.log('Parsing achievements.json...');
 
             // Build up lookup for achievements that character has completed
             angular.forEach(character.achievements.achievementsCompleted, function(ach, index) {
                 // hash the achievement and its timestamp
                 completed[ach] = character.achievements.achievementsCompletedTimestamp[index];
+
+                // Hack: blizzard is not returning timestamps for FoS right now
+                // So I'll mark with a fake date to fix rest of parsing
+                if (!character.achievements.achievementsCompletedTimestamp[index])
+                {
+                    if (!blizzardBugPrinted)
+                    {
+                        console.log('WARN: Blizzard is still returning incorrect FoS dates');
+                        blizzardBugPrinted = true;
+                    }
+                    completed[ach] = 311;
+                }
                 found[ach] = false;
             });
 
@@ -63,7 +76,9 @@
 
                             var myAchievement = ach, added = false;
                             myAchievement.completed = completed[ach.id];
-                            if (myAchievement.completed) {
+
+                            // Hack: until blizz fixes api, don't stamp with date
+                            if (myAchievement.completed && myAchievement.completed !== 311) {
                                 myAchievement.rel = 'who=' + character.name + '&when=' + myAchievement.completed;
                             }
 
