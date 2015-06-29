@@ -6,10 +6,10 @@
         .module('simpleArmoryApp')
         .controller('AchievementsCtrl' , AchievementsCtrl);
 
-      function AchievementsCtrl($scope, AchievementsService, $routeParams, $window, settings) {
+      function AchievementsCtrl($scope, AchievementsService, $routeParams, $window, SettingsService) {
 
         $scope.superCat = prettySuperCategory($routeParams.category);
-        $scope.settings = settings;
+        $scope.settings = SettingsService;
 
         // Analytics for page
         $window.ga('send', 'pageview', 'Achievements/' + $routeParams.category);
