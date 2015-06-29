@@ -34,7 +34,7 @@
             when('/:region/:realm/:character/collectable/mounts', {
               templateUrl: 'views/mounts.html',
               controller: 'MountsCtrl'
-            }).        
+            }).  
             when('/:region/:realm/:character', {
               templateUrl: 'views/overview.html',
               controller: 'OverviewCtrl'
@@ -54,7 +54,7 @@
 
   function settings() { 
     return {
-        'WowHeadUrl': 'ptr.wowhead.com'
+        'WowHeadUrl': 'www.wowhead.com'
     };
   }
 
