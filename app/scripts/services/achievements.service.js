@@ -6,7 +6,7 @@
         .module('simpleArmoryApp')
         .factory('AchievementsService', AchievementsService);
 
-    function AchievementsService($http, $log, LoginService, $routeParams) {
+    function AchievementsService($http, $log, LoginService, $routeParams, SettingsService) {
         return {
             getAchievements: function() {
                 return LoginService.getCharacter(
@@ -18,13 +18,13 @@
                     .then(function(character) {
                         return $http.get('data/achievements.json', { cache: true})
                             .then(function(data) {
-                                return parseAchievementObject(data.data.supercats, character[0]);        
+                                return parseAchievementObject(data.data.supercats, character[0], SettingsService);        
                             });
                     });
             }
         };
 
-        function parseAchievementObject(supercats, character) {    
+        function parseAchievementObject(supercats, character, settings) {    
             var obj = {};
             var completed = {};
             var totalPossible = 0;
@@ -49,7 +49,7 @@
                         console.log('WARN: Blizzard is still returning incorrect FoS dates');
                         blizzardBugPrinted = true;
                     }
-                    completed[ach] = 311;
+                    completed[ach] = settings.fakeCompletionTime;
                 }
                 found[ach] = false;
             });
@@ -75,15 +75,22 @@
                             found[ach.id] = true;
 
                             var myAchievement = ach, added = false;
+
+                            // Store the date we completed it
                             myAchievement.completed = completed[ach.id];
 
+                            // if we're forcing all completed then set those up
+                            if (!myAchievement.completed && settings.debug) {
+                                myAchievement.completed = settings.fakeCompletionTime;    
+                            }                          
+
                             // Hack: until blizz fixes api, don't stamp with date
-                            if (myAchievement.completed && myAchievement.completed !== 311) {
+                            if (myAchievement.completed && myAchievement.completed !== settings.fakeCompletionTime) {
                                 myAchievement.rel = 'who=' + character.name + '&when=' + myAchievement.completed;
                             }
 
-                            // Always add it if we've completed it, it should show up regardless if its avaiable
-                            if (completed[ach.id]) {
+                            // Always add it if we've completed it, it should show up regardless if its available
+                            if (myAchievement.completed) {
                                 added = true;
                                 myZone.achievements.push(myAchievement);    
 
@@ -102,7 +109,7 @@
                                 possibleCount++;
                                 totalPossible++;
 
-                                if (completed[ach.id]) {
+                                if (myAchievement.completed) {
                                     completedCount++;
                                     totalCompleted++;
                                 }            
