@@ -7,6 +7,13 @@
         .factory('AchievementsService', AchievementsService);
 
     function AchievementsService($http, $log, LoginService, $routeParams, SettingsService) {
+        // ignore achievements that shouldn't show up in the UI
+        var ignoredFoundAchivements = 
+        {
+            10050: true, // learn a primary prof
+            10051: true  // learn two primary prof
+        };
+
         return {
             getAchievements: function() {
                 return LoginService.getCharacter(
@@ -144,7 +151,7 @@
 
 
             for (var achId in found) {
-                if (found.hasOwnProperty(achId) && !found[achId]) {
+                if (found.hasOwnProperty(achId) && !found[achId] && !ignoredFoundAchivements[achId]) {
                     console.log('WARN: Found achievement "' + achId + '" from character but not in db.');
                 }
             }
