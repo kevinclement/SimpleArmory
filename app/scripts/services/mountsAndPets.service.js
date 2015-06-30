@@ -7,6 +7,16 @@
         .factory('MountsAndPetsService', MountsAndPetsService);
 
     function MountsAndPetsService($http, $log, LoginService, $routeParams) {
+        // issues/53: Pets that we can ignore warning for because they are battle pets
+        var ignoredFoundPets = 
+        {
+            10708:  true,
+            132785: true,
+            148065: true,
+            148068: true,
+            148069: true
+        };
+
         return {
             getItems: function(jsonFile, characterProperty, collectedId) {
                 return LoginService.getCharacter(
@@ -80,8 +90,6 @@
                         if (collected[itm[collectedId]]) {
                             var fullItem = collected[itm[collectedId]];
                             itm.collected =  true;
-
-                            totalCollected++;
 
                             // Add pet info if we have it
                             if (fullItem.qualityId) {
@@ -184,9 +192,9 @@
 
                         // What would cause it to show up in the UI:
                         //    1) You have the item
-                        //  2) Its still obtainable 
+                        //    2) Its still obtainable 
                         //    3) You meet the class restriction
-                        //  4) You meet the race restriction
+                        //    4) You meet the race restriction
                         var hasthis = itm.collected;            
                         var showthis = (hasthis || item.obtainable);
                         if (item.allowableRaces.length > 0)
@@ -219,6 +227,10 @@
 
                         if (showthis) {
                             subCat.items.push(itm);
+                            if (hasthis) {
+                                totalCollected++;
+                            }
+
                             totalPossible++;
                         }
                     });
@@ -232,7 +244,7 @@
             // don't do this check for battle pets, I'm lazy and don't want to figure it out
             if (collectedId !== 'creatureId') {
                 for (var collId in found) {
-                    if (collId !== '0' && found.hasOwnProperty(collId) && !found[collId]) {
+                    if (collId !== '0' && found.hasOwnProperty(collId) && !found[collId] && !ignoredFoundPets[collId]) {
                         console.log('WARN: Found item "' + collId + '" from character but not in db.');
                     }
                 }               
