@@ -1450,21 +1450,36 @@
                   "icon": "achievement_boss_furyfurnace",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "25019": "37128",
+                    "25020": "37129",
+                    "25021": "37130"
+                  }
                 },
                 {
                   "id": "8990",
                   "icon": "achievement_boss_fomorsmith",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "25022": "37132",
+                    "25023": "37133",
+                    "25024": "37134"
+                  }
                 },
                 {
                   "id": "8991",
                   "icon": "achievement_boss_ironmaidens",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "25025": "37136",
+                    "25026": "37137",
+                    "25027": "37138"
+                  }
                 },
                 {
                   "id": "8992",
@@ -1520,7 +1535,12 @@
                   "icon": "inv_misc_fish_12",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "24675": "36020",
+                    "24676": "36021",
+                    "24677": "36022"
+                  }
                 },
                 {
                   "id": "8982",
@@ -1623,28 +1643,48 @@
                   "icon": "achievement_boss_hellfire_siegeworks",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "28075": "43812",
+                    "28076": "43811",
+                    "28077": "43810"
+                  }
                 },
                 {
                   "id": "10024",
                   "icon": "achievement_boss_hellfire_gorefiend",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "28078": "43816",
+                    "28079": "43814",
+                    "28080": "43815"
+                  }
                 },
                 {
                   "id": "10025",
                   "icon": "achievement_boss_hellfire_antipaladin",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "28081": "43819",
+                    "28082": "43820",
+                    "28083": "43818"
+                  }
                 },
                 {
                   "id": "10020",
                   "icon": "achievement_boss_hellfire_mannorothreanimated",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "28067": "43792",
+                    "28068": "43793",
+                    "28069": "43794"
+                  }
                 },
                 {
                   "id": "10019",
@@ -1838,7 +1878,11 @@
                   "icon": "creatureportrait_fomorhand",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "25767": "38882",
+                    "25768": "38883"
+                  }
                 },
                 {
                   "id": "9425",
@@ -1869,28 +1913,68 @@
                   "icon": "achievement_guildperk_honorablemention",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "24487": "35466",
+                    "24488": "35467",
+                    "24489": "35468",
+                    "24490": "35469",
+                    "24491": "35470",
+                    "24492": "35471",
+                    "26537": "40297",
+                    "26538": "40298"
+                  }
                 },
                 {
                   "id": "8897",
                   "icon": "achievement_challengemode_bronze",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "24493": "35473",
+                    "24494": "35474",
+                    "24495": "35475",
+                    "24496": "35476",
+                    "24497": "35477",
+                    "24498": "35478",
+                    "26539": "40299",
+                    "26540": "40300"
+                  }
                 },
                 {
                   "id": "8898",
                   "icon": "achievement_challengemode_silver",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "24499": "35480",
+                    "24500": "35481",
+                    "24501": "35482",
+                    "24502": "35483",
+                    "24503": "35484",
+                    "24504": "35485",
+                    "26535": "40295",
+                    "26536": "40296"
+                  }
                 },
                 {
                   "id": "8899",
                   "icon": "achievement_challengemode_gold",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "24505": "40292",
+                    "24506": "40287",
+                    "24507": "40288",
+                    "24508": "40289",
+                    "24509": "40290",
+                    "24510": "40291",
+                    "26533": "40293",
+                    "26534": "40294"
+                  }
                 }
               ]
             },
@@ -2331,7 +2415,15 @@
                   "icon": "inv_potion_97",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "19603": "22191",
+                    "19604": "22204",
+                    "19605": "22192",
+                    "19606": "22193",
+                    "19608": "22201",
+                    "19609": "22194"
+                  }
                 },
                 {
                   "id": "6821",
@@ -2529,14 +2621,24 @@
                   "icon": "achievement_dungeon_halls-of-origination",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "19110": "22614",
+                    "19111": "22615",
+                    "19112": "22616"
+                  }
                 },
                 {
                   "id": "6844",
                   "icon": "achievement_dungeon_halls-of-origination",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "19113": "90",
+                    "19115": "92",
+                    "19767": "91"
+                  }
                 },
                 {
                   "id": "6823",
@@ -2550,7 +2652,14 @@
                   "icon": "thumbsup",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "19501": "21786",
+                    "19502": "21787",
+                    "19504": "21788",
+                    "19506": "21812",
+                    "19507": "21813"
+                  }
                 },
                 {
                   "id": "7056",
@@ -2639,14 +2748,24 @@
                   "icon": "achievement_raid_mantidraid01",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "19628": "22618",
+                    "19629": "22619",
+                    "19632": "22620"
+                  }
                 },
                 {
                   "id": "6845",
                   "icon": "achievement_raid_mantidraid01",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "19631": "22261",
+                    "19633": "22262",
+                    "19634": "22264"
+                  }
                 },
                 {
                   "id": "6937",
@@ -2688,7 +2807,11 @@
                   "icon": "spell_holy_borrowedtime",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "21105": "30710",
+                    "21107": "27448"
+                  }
                 },
                 {
                   "id": "6725",
@@ -2742,14 +2865,25 @@
                   "icon": "achievement_raid_terraceofendlessspring04",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "19518": "21834",
+                    "19519": "21837",
+                    "19520": "21838",
+                    "19521": "21839"
+                  }
                 },
                 {
                   "id": "6717",
                   "icon": "ability_rogue_envelopingshadows",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "19624": "22249",
+                    "19625": "22250",
+                    "19626": "22251"
+                  }
                 },
                 {
                   "id": "6933",
@@ -2810,28 +2944,48 @@
                   "icon": "archaeology_5_0_thunderkinginsignia",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "22912": "32274",
+                    "22963": "32276",
+                    "22984": "32275"
+                  }
                 },
                 {
                   "id": "8070",
                   "icon": "archaeology_5_0_thunderkinginsignia",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "22985": "32278",
+                    "22986": "32279",
+                    "22987": "32280"
+                  }
                 },
                 {
                   "id": "8071",
                   "icon": "archaeology_5_0_thunderkinginsignia",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "22988": "32282",
+                    "22989": "32283",
+                    "22990": "32284"
+                  }
                 },
                 {
                   "id": "8072",
                   "icon": "archaeology_5_0_thunderkinginsignia",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "22965": "32287",
+                    "22991": "32286",
+                    "23317": "32288"
+                  }
                 },
                 {
                   "id": "8094",
@@ -2866,7 +3020,12 @@
                   "icon": "inv_misc_head_dragon_01",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "22744": "31849",
+                    "22746": "31850",
+                    "22747": "31851"
+                  }
                 },
                 {
                   "id": "8097",
@@ -2894,14 +3053,47 @@
                   "icon": "ability_touchofanimus",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "22765": "31865",
+                    "22766": "31869",
+                    "22767": "31870",
+                    "22768": "31871",
+                    "22769": "31872",
+                    "22770": "31873",
+                    "22771": "31874",
+                    "22772": "31875",
+                    "22773": "31876",
+                    "22774": "31877",
+                    "22775": "31878",
+                    "22776": "31879",
+                    "22777": "31880",
+                    "22778": "31881",
+                    "22779": "31882",
+                    "22780": "31883",
+                    "22781": "31884",
+                    "22782": "31885",
+                    "22783": "31886",
+                    "22784": "31887",
+                    "22785": "31888",
+                    "22786": "31889",
+                    "22787": "31890",
+                    "22788": "31891"
+                  }
                 },
                 {
                   "id": "8087",
                   "icon": "thumbup",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "22791": "31897",
+                    "22792": "31898",
+                    "22793": "31899",
+                    "22794": "31900",
+                    "22795": "31901"
+                  }
                 },
                 {
                   "id": "8086",
@@ -2915,7 +3107,13 @@
                   "icon": "spell_nature_lightningoverload",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "22797": "31905",
+                    "22996": "31906",
+                    "22997": "31907",
+                    "22998": "31908"
+                  }
                 },
                 {
                   "id": "8056",
@@ -3018,28 +3216,50 @@
                   "icon": "achievement_raid_soo_ruined_vale",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "23651": "33446",
+                    "23652": "33463",
+                    "23653": "33448",
+                    "23654": "33447"
+                  }
                 },
                 {
                   "id": "8459",
                   "icon": "achievement_raid_soo_orgrimmar_outdoors",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "23655": "33465",
+                    "23656": "33466",
+                    "23657": "33467",
+                    "23658": "33468"
+                  }
                 },
                 {
                   "id": "8461",
                   "icon": "achievement_raid_soo_garrosh_compound_half1",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "23659": "33470",
+                    "23660": "33471",
+                    "23661": "33472"
+                  }
                 },
                 {
                   "id": "8462",
                   "icon": "achievement_raid_soo_garrosh_compound_half2",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "23662": "33476",
+                    "23664": "33475",
+                    "23906": "33474"
+                  }
                 },
                 {
                   "id": "8536",
@@ -3123,14 +3343,31 @@
                   "icon": "ability_siege_engineer_sockwave_missile",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "23772": "33682",
+                    "23773": "33683",
+                    "23774": "33684",
+                    "23775": "33685"
+                  }
                 },
                 {
                   "id": "8531",
                   "icon": "achievement_boss_klaxxi_paragons",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "23904": "33639",
+                    "23907": "33640",
+                    "23908": "33643",
+                    "23909": "33646",
+                    "23910": "34009",
+                    "23911": "34012",
+                    "23912": "34015",
+                    "23913": "34018",
+                    "23914": "34021"
+                  }
                 },
                 {
                   "id": "8537",
@@ -3261,7 +3498,13 @@
                   "icon": "inv_pa_celestialmallet",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "23743": "33651",
+                    "23744": "33652",
+                    "23745": "33653",
+                    "23746": "33654"
+                  }
                 }
               ]
             },
@@ -3664,7 +3907,11 @@
                   "icon": "INV_Misc_Ammo_Bullet_05",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "16086": "20157",
+                    "16544": "20156"
+                  }
                 },
                 {
                   "id": "5093",
@@ -3683,7 +3930,21 @@
                   "icon": "Spell_Shaman_Hex",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "16836": "19470",
+                    "16837": "19471",
+                    "16838": "19472",
+                    "16839": "19473",
+                    "16840": "19474",
+                    "16841": "19475",
+                    "16842": "19476",
+                    "16843": "19477",
+                    "16844": "19478",
+                    "16845": "19479",
+                    "16846": "19480",
+                    "16847": "19481"
+                  }
                 },
                 {
                   "id": "5750",
@@ -3723,7 +3984,17 @@
                   "icon": "INV_Spear_02",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "16808": "19542",
+                    "16809": "19543",
+                    "16810": "19544",
+                    "16811": "19545",
+                    "16812": "19546",
+                    "16813": "19547",
+                    "16814": "19548",
+                    "17022": "19549"
+                  }
                 },
                 {
                   "id": "5743",
@@ -3744,7 +4015,11 @@
                   "icon": "achievement_rat",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "16861": "19927",
+                    "16880": "19926"
+                  }
                 },
                 {
                   "id": "5759",
@@ -3834,7 +4109,11 @@
                   "icon": "achievement_dungeon_bastion-of-twilight_valiona-theralion",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "13576": "18363",
+                    "16015": "18364"
+                  }
                 },
                 {
                   "id": "5311",
@@ -3855,7 +4134,13 @@
                   "icon": "spell_fire_twilightcano",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "13576": "13129",
+                    "13577": "13130",
+                    "13578": "13131",
+                    "13579": "13132"
+                  }
                 },
                 {
                   "id": "5118",
@@ -3916,7 +4201,11 @@
                   "icon": "Achievement_Boss_Murmur",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "13581": "12486",
+                    "14097": "12485"
+                  }
                 },
                 {
                   "id": "5122",
@@ -3949,7 +4238,13 @@
                   "icon": "achievement_dungeon_blackwingdescent_darkironcouncil",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "15651": "16586",
+                    "15652": "16587",
+                    "15653": "16588",
+                    "15654": "16589"
+                  }
                 },
                 {
                   "id": "5310",
@@ -3984,7 +4279,15 @@
                   "icon": "Achievement_Boss_Nefarion",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "13537": "15625",
+                    "13538": "15626",
+                    "13539": "15627",
+                    "13540": "15628",
+                    "13541": "15629",
+                    "13542": "15630"
+                  }
                 },
                 {
                   "id": "5094",
@@ -4038,7 +4341,14 @@
                   "icon": "achievement_zone_firelands",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "17775": "19275",
+                    "17776": "19272",
+                    "17777": "19273",
+                    "17778": "19276",
+                    "17779": "19274"
+                  }
                 },
                 {
                   "id": "5810",
@@ -4059,7 +4369,13 @@
                   "icon": "spell_magic_polymorphrabbit",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "17533": "20172",
+                    "17535": "20173",
+                    "17536": "20174",
+                    "17538": "20175"
+                  }
                 },
                 {
                   "id": "5830",
@@ -4087,7 +4403,16 @@
                   "icon": "achievement_zone_firelands",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "17429": "18261",
+                    "17430": "18260",
+                    "17431": "18258",
+                    "17432": "18256",
+                    "17433": "18259",
+                    "17434": "18257",
+                    "17435": "18262"
+                  }
                 },
                 {
                   "id": "5806",
@@ -4148,14 +4473,26 @@
                   "icon": "Achievement_Reputation_WyrmrestTemple",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "18445": "20099",
+                    "18446": "20098",
+                    "18447": "20100",
+                    "18448": "20101"
+                  }
                 },
                 {
                   "id": "6107",
                   "icon": "achievment_boss_madnessofdeathwing",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "18449": "20104",
+                    "18450": "20105",
+                    "18451": "20106",
+                    "18452": "20107"
+                  }
                 },
                 {
                   "id": "6174",
@@ -4176,7 +4513,13 @@
                   "icon": "achievement_doublerainbow",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "18495": "20620",
+                    "18496": "20621",
+                    "18497": "20622",
+                    "18498": "20623"
+                  }
                 },
                 {
                   "id": "6175",
@@ -4218,7 +4561,13 @@
                   "icon": "inv_dragonchromaticmount",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "18658": "19387",
+                    "18659": "19388",
+                    "18660": "19389",
+                    "18661": "19390"
+                  }
                 },
                 {
                   "id": "6109",
@@ -4291,7 +4640,13 @@
                   "icon": "Achievement_Dungeon_UtgardeKeep_Normal",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "5377": "4312",
+                    "5378": "4310",
+                    "5379": "4313",
+                    "5380": "4311"
+                  }
                 },
                 {
                   "id": "1919",
@@ -4305,7 +4660,13 @@
                   "icon": "Achievement_Dungeon_UtgardeKeep_Heroic",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "3701": "2777",
+                    "3702": "2778",
+                    "3703": "2775",
+                    "5608": "2776"
+                  }
                 }
               ]
             },
@@ -4317,7 +4678,13 @@
                   "icon": "Achievement_Dungeon_Nexus70_Normal",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "5381": "1733",
+                    "5382": "1730",
+                    "5383": "1731",
+                    "5384": "1732"
+                  }
                 },
                 {
                   "id": "2150",
@@ -4345,7 +4712,13 @@
                   "icon": "Achievement_Dungeon_Nexus70_Heroic",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "5245": "7612",
+                    "5246": "7615",
+                    "5247": "7613",
+                    "5609": "7614"
+                  }
                 }
               ]
             },
@@ -4357,7 +4730,12 @@
                   "icon": "Achievement_Dungeon_AzjolUppercity_Normal",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "5436": "2173",
+                    "5437": "2174",
+                    "5438": "2175"
+                  }
                 },
                 {
                   "id": "1296",
@@ -4385,7 +4763,12 @@
                   "icon": "Achievement_Dungeon_AzjolUppercity_Heroic",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "5610": "899",
+                    "6848": "897",
+                    "6849": "898"
+                  }
                 }
               ]
             },
@@ -4397,7 +4780,13 @@
                   "icon": "Achievement_Dungeon_AzjolLowercity_Normal",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "5439": "6282",
+                    "5440": "6283",
+                    "5441": "6285",
+                    "5442": "6284"
+                  }
                 },
                 {
                   "id": "2038",
@@ -4425,7 +4814,14 @@
                   "icon": "Achievement_Dungeon_AzjolLowercity_Heroic",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "5054": "9001",
+                    "5611": "9004",
+                    "6851": "9000",
+                    "6852": "9002",
+                    "6853": "9003"
+                  }
                 }
               ]
             },
@@ -4437,7 +4833,13 @@
                   "icon": "Achievement_Dungeon_Drak'Tharon_Normal",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "5443": "1749",
+                    "5444": "1750",
+                    "5445": "1751",
+                    "9098": "1752"
+                  }
                 },
                 {
                   "id": "2151",
@@ -4465,7 +4867,13 @@
                   "icon": "Achievement_Dungeon_Drak'Tharon_Heroic",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "6813": "8385",
+                    "6814": "8383",
+                    "6815": "8382",
+                    "9261": "8384"
+                  }
                 }
               ]
             },
@@ -4505,7 +4913,15 @@
                   "icon": "Achievement_Dungeon_TheVioletHold_10man",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "7137": "10999",
+                    "7138": "11002",
+                    "7139": "11000",
+                    "7140": "10997",
+                    "7141": "11001",
+                    "7142": "10998"
+                  }
                 },
                 {
                   "id": "494",
@@ -4524,7 +4940,13 @@
                   "icon": "Achievement_Dungeon_Gundrak_Normal",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "5448": "1842",
+                    "5449": "1843",
+                    "5450": "1840",
+                    "5451": "1841"
+                  }
                 },
                 {
                   "id": "2040",
@@ -4559,7 +4981,14 @@
                   "icon": "Achievement_Dungeon_Gundrak_Heroic",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "5053": "14230",
+                    "5614": "14232",
+                    "6839": "14229",
+                    "6840": "14233",
+                    "6841": "14231"
+                  }
                 }
               ]
             },
@@ -4571,7 +5000,13 @@
                   "icon": "Achievement_Dungeon_Ulduar77_Normal",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "5452": "902",
+                    "5453": "903",
+                    "5454": "904",
+                    "6935": "905"
+                  }
                 },
                 {
                   "id": "1866",
@@ -4599,7 +5034,13 @@
                   "icon": "Achievement_Dungeon_Ulduar77_Heroic",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "5615": "3140",
+                    "6856": "3138",
+                    "6857": "3139",
+                    "6936": "3137"
+                  }
                 }
               ]
             },
@@ -4611,7 +5052,13 @@
                   "icon": "Achievement_Dungeon_CoTStratholme_Normal",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "5467": "1705",
+                    "5468": "1708",
+                    "5469": "1706",
+                    "6433": "1707"
+                  }
                 },
                 {
                   "id": "1872",
@@ -4632,7 +5079,13 @@
                   "icon": "Achievement_Dungeon_CoTStratholme_Heroic",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "6434": "5744",
+                    "6805": "5743",
+                    "6806": "5745",
+                    "6807": "5742"
+                  }
                 }
               ]
             },
@@ -4644,14 +5097,25 @@
                   "icon": "Achievement_Dungeon_Nexus80_Normal",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "5459": "2181",
+                    "5460": "2180",
+                    "5461": "2179",
+                    "5462": "2178"
+                  }
                 },
                 {
                   "id": "1871",
                   "icon": "Achievement_Dungeon_Nexus80_10man",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "7177": "10558",
+                    "7178": "10559",
+                    "7179": "10557"
+                  }
                 },
                 {
                   "id": "2046",
@@ -4686,7 +5150,13 @@
                   "icon": "Achievement_Dungeon_Nexus80_Heroic",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "5617": "2789",
+                    "6859": "2790",
+                    "6860": "2787",
+                    "6861": "2788"
+                  }
                 }
               ]
             },
@@ -4698,7 +5168,13 @@
                   "icon": "Achievement_Dungeon_Ulduar80_Normal",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "5455": "1012",
+                    "5456": "1013",
+                    "5457": "1015",
+                    "5458": "1014"
+                  }
                 },
                 {
                   "id": "1834",
@@ -4726,7 +5202,13 @@
                   "icon": "Achievement_Dungeon_Ulduar80_Heroic",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "5616": "2784",
+                    "6831": "2781",
+                    "6832": "2783",
+                    "6833": "2782"
+                  }
                 }
               ]
             },
@@ -4738,7 +5220,13 @@
                   "icon": "Achievement_Dungeon_UtgardePinnacle_Normal",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "5463": "3762",
+                    "5464": "3763",
+                    "5465": "3761",
+                    "5466": "3764"
+                  }
                 },
                 {
                   "id": "2043",
@@ -4773,7 +5261,13 @@
                   "icon": "Achievement_Dungeon_UtgardePinnacle_Heroic",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "5618": "2184",
+                    "6863": "2185",
+                    "6864": "2186",
+                    "6865": "2187"
+                  }
                 }
               ]
             },
@@ -4785,21 +5279,68 @@
                   "icon": "INV_Spear_05",
                   "side": "H",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "11420": "8556",
+                    "12298": "8552",
+                    "12299": "8553",
+                    "12300": "8554",
+                    "12301": "8555",
+                    "13312": "8557",
+                    "13313": "8551",
+                    "13314": "8550"
+                  }
                 },
                 {
                   "id": "4296",
                   "icon": "INV_Spear_05",
                   "side": "A",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "11420": "9860",
+                    "12298": "9857",
+                    "12299": "9855",
+                    "12300": "9858",
+                    "12301": "9859",
+                    "13312": "9861",
+                    "13313": "9862",
+                    "13314": "9856"
+                  }
                 },
                 {
                   "id": "3802",
                   "icon": "INV_Helmet_52",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "11863": "7553",
+                    "11904": "7537",
+                    "11905": "7554",
+                    "11906": "7555",
+                    "11907": "7538",
+                    "11908": "7556",
+                    "11909": "7539",
+                    "11910": "7540",
+                    "11911": "7541",
+                    "11912": "7557",
+                    "11913": "7542",
+                    "11914": "7543",
+                    "11915": "7558",
+                    "11916": "7544",
+                    "11917": "7545",
+                    "11918": "7546",
+                    "11919": "7559",
+                    "11920": "7547",
+                    "11921": "7548",
+                    "11922": "7560",
+                    "11923": "7549",
+                    "11924": "7550",
+                    "11925": "7551",
+                    "11926": "7561",
+                    "11927": "7552"
+                  }
                 },
                 {
                   "id": "3803",
@@ -4820,14 +5361,34 @@
                   "icon": "INV_Spear_05",
                   "side": "H",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "12320": "7575",
+                    "12539": "7573",
+                    "12541": "7577",
+                    "12543": "7576",
+                    "12545": "7574",
+                    "12549": "7578",
+                    "12551": "7579",
+                    "12553": "7580"
+                  }
                 },
                 {
                   "id": "4298",
                   "icon": "INV_Spear_05",
                   "side": "A",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "12320": "6997",
+                    "12539": "7002",
+                    "12541": "6999",
+                    "12543": "6998",
+                    "12545": "6996",
+                    "12549": "7000",
+                    "12551": "7001",
+                    "12553": "7003"
+                  }
                 }
               ]
             },
@@ -4839,7 +5400,11 @@
                   "icon": "achievement_dungeon_icecrown_forgeofsouls",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "13315": "14577",
+                    "13316": "14578"
+                  }
                 },
                 {
                   "id": "4522",
@@ -4860,7 +5425,11 @@
                   "icon": "achievement_dungeon_icecrown_forgeofsouls",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "13167": "17501",
+                    "13168": "17500"
+                  }
                 }
               ]
             },
@@ -4872,7 +5441,12 @@
                   "icon": "achievement_dungeon_icecrown_pitofsaron",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "13317": "14176",
+                    "13318": "14177",
+                    "13319": "14175"
+                  }
                 },
                 {
                   "id": "4524",
@@ -4893,7 +5467,12 @@
                   "icon": "achievement_dungeon_icecrown_pitofsaron",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "13173": "15240",
+                    "13175": "15239",
+                    "13182": "15241"
+                  }
                 }
               ]
             },
@@ -4905,7 +5484,12 @@
                   "icon": "achievement_dungeon_icecrown_hallsofreflection",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "13320": "8656",
+                    "13321": "8654",
+                    "13323": "8655"
+                  }
                 },
                 {
                   "id": "4526",
@@ -4919,7 +5503,12 @@
                   "icon": "achievement_dungeon_icecrown_hallsofreflection",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "13177": "14182",
+                    "13179": "14181",
+                    "13181": "14180"
+                  }
                 }
               ]
             }
@@ -4950,7 +5539,12 @@
                   "icon": "INV_Trinket_Naxxramas04",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "5100": "1083",
+                    "5102": "1084",
+                    "6430": "1085"
+                  }
                 },
                 {
                   "id": "1996",
@@ -4971,7 +5565,12 @@
                   "icon": "INV_Misc_Cauldron_Nature",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "5104": "8195",
+                    "6426": "8193",
+                    "6428": "8194"
+                  }
                 },
                 {
                   "id": "1856",
@@ -4999,7 +5598,13 @@
                   "icon": "Ability_Rogue_DeviousPoisons",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "5110": "5751",
+                    "5117": "5752",
+                    "5119": "5753",
+                    "6425": "5754"
+                  }
                 },
                 {
                   "id": "2176",
@@ -5013,7 +5618,12 @@
                   "icon": "Spell_Deathknight_ClassIcon",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "5108": "3206",
+                    "5120": "3205",
+                    "7805": "3207"
+                  }
                 },
                 {
                   "id": "2146",
@@ -5048,14 +5658,38 @@
                   "icon": "Achievement_Dungeon_Naxxramas_Normal",
                   "side": "",
                   "obtainable": true,
-                  "points": 25
+                  "points": 25,
+                  "criteria": {
+                    "383": "14874",
+                    "384": "14878",
+                    "385": "14875",
+                    "386": "14876",
+                    "387": "14879",
+                    "388": "14877"
+                  }
                 },
                 {
                   "id": "578",
                   "icon": "Spell_Shadow_RaiseDead",
                   "side": "",
                   "obtainable": true,
-                  "points": 25
+                  "points": 25,
+                  "criteria": {
+                    "6802": "4497",
+                    "7146": "4488",
+                    "7147": "4500",
+                    "7148": "4501",
+                    "7149": "4498",
+                    "7150": "4499",
+                    "7151": "4493",
+                    "7152": "4494",
+                    "7153": "4495",
+                    "7154": "4489",
+                    "7155": "4496",
+                    "7156": "4490",
+                    "7157": "4491",
+                    "7158": "4492"
+                  }
                 }
               ]
             },
@@ -5081,7 +5715,13 @@
                   "icon": "Achievement_Dungeon_CoABlackDragonflight_Heroic",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "522": "2269",
+                    "7189": "2267",
+                    "7190": "2266",
+                    "7191": "2268"
+                  }
                 },
                 {
                   "id": "2049",
@@ -5161,7 +5801,12 @@
                   "icon": "INV_Trinket_Naxxramas04",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "5111": "1431",
+                    "5126": "1432",
+                    "6405": "1433"
+                  }
                 },
                 {
                   "id": "2139",
@@ -5182,7 +5827,12 @@
                   "icon": "INV_Misc_Cauldron_Nature",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "5128": "3373",
+                    "5133": "3371",
+                    "6409": "3372"
+                  }
                 },
                 {
                   "id": "1857",
@@ -5210,7 +5860,13 @@
                   "icon": "Ability_Rogue_DeviousPoisons",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "5124": "3086",
+                    "5134": "3087",
+                    "6403": "3084",
+                    "6406": "3085"
+                  }
                 },
                 {
                   "id": "2177",
@@ -5224,7 +5880,12 @@
                   "icon": "Spell_Deathknight_ClassIcon",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "5125": "5808",
+                    "6410": "5807",
+                    "7806": "5809"
+                  }
                 },
                 {
                   "id": "2147",
@@ -5259,14 +5920,38 @@
                   "icon": "Achievement_Dungeon_Naxxramas_10man",
                   "side": "",
                   "obtainable": true,
-                  "points": 50
+                  "points": 50,
+                  "criteria": {
+                    "389": "8745",
+                    "390": "8748",
+                    "391": "8746",
+                    "392": "8747",
+                    "393": "8750",
+                    "394": "8749"
+                  }
                 },
                 {
                   "id": "579",
                   "icon": "Spell_Shadow_RaiseDead",
                   "side": "",
                   "obtainable": true,
-                  "points": 50
+                  "points": 50,
+                  "criteria": {
+                    "7159": "4508",
+                    "7160": "4514",
+                    "7161": "4507",
+                    "7162": "4517",
+                    "7163": "4509",
+                    "7164": "4504",
+                    "7165": "4510",
+                    "7166": "4512",
+                    "7167": "4506",
+                    "7168": "4511",
+                    "7169": "4513",
+                    "7170": "4505",
+                    "7171": "4515",
+                    "7172": "4516"
+                  }
                 }
               ]
             },
@@ -5292,7 +5977,13 @@
                   "icon": "Achievement_Dungeon_CoABlackDragonflight_25man",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "7185": "10135",
+                    "7186": "10137",
+                    "7187": "10134",
+                    "7188": "10136"
+                  }
                 },
                 {
                   "id": "2052",
@@ -5384,7 +6075,12 @@
                   "icon": "INV_Gizmo_02",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "10046": "8995",
+                    "10047": "8996",
+                    "10048": "8997"
+                  }
                 },
                 {
                   "id": "2911",
@@ -5496,7 +6192,13 @@
                   "icon": "Achievement_Dungeon_UlduarRaid_Archway_01",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "9939": "13086",
+                    "9968": "13084",
+                    "9972": "13085",
+                    "9974": "13087"
+                  }
                 }
               ]
             },
@@ -5585,7 +6287,12 @@
                   "icon": "Achievement_Boss_TribunalofAges",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "9978": "7864",
+                    "9992": "7862",
+                    "10580": "7863"
+                  }
                 }
               ]
             },
@@ -5597,7 +6304,12 @@
                   "icon": "Ability_Mage_MissileBarrage",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "10543": "7600",
+                    "10544": "7601",
+                    "10545": "7602"
+                  }
                 },
                 {
                   "id": "3180",
@@ -5674,7 +6386,12 @@
                   "icon": "Achievement_Dungeon_UlduarRaid_IronSentinel_01",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "10287": "9133",
+                    "10288": "9134",
+                    "10558": "9132"
+                  }
                 },
                 {
                   "id": "2975",
@@ -5737,7 +6454,13 @@
                   "icon": "Achievement_Dungeon_UlduarRaid_Misc_05",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "9947": "12579",
+                    "10558": "12578",
+                    "10559": "12577",
+                    "10560": "12576"
+                  }
                 }
               ]
             },
@@ -5791,7 +6514,12 @@
                   "icon": "Spell_Shadow_Brainwash",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "10324": "7523",
+                    "10325": "7524",
+                    "10326": "7525"
+                  }
                 },
                 {
                   "id": "3157",
@@ -5826,7 +6554,11 @@
                   "icon": "Achievement_Boss_YoggSaron_01",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "9948": "7529",
+                    "9994": "7528"
+                  }
                 }
               ]
             },
@@ -5838,7 +6570,13 @@
                   "icon": "Achievement_Dungeon_UlduarRaid_Misc_01",
                   "side": "",
                   "obtainable": true,
-                  "points": 25
+                  "points": 25,
+                  "criteria": {
+                    "10027": "12342",
+                    "10028": "12345",
+                    "10029": "12343",
+                    "10030": "12344"
+                  }
                 },
                 {
                   "id": "3036",
@@ -5852,7 +6590,11 @@
                   "icon": "Spell_Shadow_MindTwisting",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "10780": "8239",
+                    "10781": "8240"
+                  }
                 }
               ]
             }
@@ -5890,7 +6632,12 @@
                   "icon": "INV_Gizmo_02",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "10049": "7822",
+                    "10050": "7820",
+                    "10051": "7821"
+                  }
                 },
                 {
                   "id": "2912",
@@ -6002,7 +6749,13 @@
                   "icon": "Achievement_Dungeon_UlduarRaid_Archway_01",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "9957": "13090",
+                    "9969": "13091",
+                    "9971": "13092",
+                    "9973": "13093"
+                  }
                 }
               ]
             },
@@ -6091,7 +6844,12 @@
                   "icon": "Achievement_Boss_TribunalofAges",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "9959": "14403",
+                    "9993": "14404",
+                    "10581": "14402"
+                  }
                 }
               ]
             },
@@ -6103,7 +6861,12 @@
                   "icon": "Ability_Mage_MissileBarrage",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "10546": "7391",
+                    "10547": "7392",
+                    "10548": "7390"
+                  }
                 },
                 {
                   "id": "3189",
@@ -6180,7 +6943,12 @@
                   "icon": "Achievement_Dungeon_UlduarRaid_IronSentinel_01",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "10311": "8103",
+                    "10312": "8104",
+                    "10561": "8102"
+                  }
                 },
                 {
                   "id": "2976",
@@ -6243,7 +7011,13 @@
                   "icon": "Achievement_Dungeon_UlduarRaid_Misc_05",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "9963": "10326",
+                    "10561": "10324",
+                    "10562": "10323",
+                    "10563": "10325"
+                  }
                 }
               ]
             },
@@ -6297,7 +7071,12 @@
                   "icon": "Spell_Shadow_Brainwash",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "10321": "5637",
+                    "10322": "5635",
+                    "10323": "5636"
+                  }
                 },
                 {
                   "id": "3161",
@@ -6332,7 +7111,11 @@
                   "icon": "Achievement_Boss_YoggSaron_01",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "9964": "10721",
+                    "9995": "10720"
+                  }
                 }
               ]
             },
@@ -6344,7 +7127,13 @@
                   "icon": "Achievement_Dungeon_UlduarRaid_Misc_01",
                   "side": "",
                   "obtainable": true,
-                  "points": 25
+                  "points": 25,
+                  "criteria": {
+                    "10031": "14109",
+                    "10032": "14107",
+                    "10033": "14108",
+                    "10034": "14106"
+                  }
                 },
                 {
                   "id": "3037",
@@ -6358,7 +7147,11 @@
                   "icon": "Spell_Shadow_MindTwisting",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "10782": "12061",
+                    "10783": "12062"
+                  }
                 }
               ]
             }
@@ -6417,14 +7210,28 @@
                   "icon": "Achievement_Reputation_ArgentChampion",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "12236": "7423",
+                    "12240": "7424",
+                    "12244": "7425",
+                    "13326": "7421",
+                    "13327": "7422"
+                  }
                 },
                 {
                   "id": "3918",
                   "icon": "Achievement_Reputation_ArgentChampion",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "12229": "7634",
+                    "12233": "7635",
+                    "12237": "7636",
+                    "12241": "7637",
+                    "12245": "7638"
+                  }
                 }
               ]
             },
@@ -6471,14 +7278,28 @@
                   "icon": "Achievement_Reputation_ArgentChampion",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "12230": "4342",
+                    "12242": "4345",
+                    "12246": "4346",
+                    "13347": "4343",
+                    "13348": "4344"
+                  }
                 },
                 {
                   "id": "3812",
                   "icon": "Achievement_Reputation_ArgentChampion",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "12231": "9670",
+                    "12235": "9671",
+                    "12239": "9668",
+                    "12243": "9672",
+                    "12247": "9669"
+                  }
                 }
               ]
             },
@@ -6589,7 +7410,13 @@
                   "icon": "achievement_dungeon_icecrown_icecrownentrance",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "12770": "12590",
+                    "12771": "12589",
+                    "12772": "12588",
+                    "12773": "12591"
+                  }
                 },
                 {
                   "id": "4577",
@@ -6617,7 +7444,12 @@
                   "icon": "achievement_dungeon_plaguewing",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "12759": "7195",
+                    "12760": "7196",
+                    "12761": "7197"
+                  }
                 },
                 {
                   "id": "4582",
@@ -6631,14 +7463,22 @@
                   "icon": "achievement_boss_lanathel",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "12780": "15569",
+                    "13011": "15570"
+                  }
                 },
                 {
                   "id": "4529",
                   "icon": "achievement_dungeon_crimsonhall",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "12762": "15131",
+                    "12763": "15130"
+                  }
                 },
                 {
                   "id": "4579",
@@ -6659,7 +7499,11 @@
                   "icon": "achievement_dungeon_icecrown_frostwinghalls",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "12757": "14702",
+                    "12758": "14701"
+                  }
                 },
                 {
                   "id": "4581",
@@ -6687,7 +7531,14 @@
                   "icon": "achievement_dungeon_icecrown_frostmourne",
                   "side": "",
                   "obtainable": true,
-                  "points": 25
+                  "points": 25,
+                  "criteria": {
+                    "12765": "17159",
+                    "12766": "17160",
+                    "12767": "17158",
+                    "12768": "17161",
+                    "12769": "17162"
+                  }
                 }
               ]
             },
@@ -6699,28 +7550,47 @@
                   "icon": "achievement_dungeon_icecrown_icecrownentrance",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "13090": "14545",
+                    "13104": "14546",
+                    "13110": "14547",
+                    "13113": "14548"
+                  }
                 },
                 {
                   "id": "4629",
                   "icon": "achievement_dungeon_plaguewing",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "13116": "15522",
+                    "13119": "15523",
+                    "13128": "15524"
+                  }
                 },
                 {
                   "id": "4630",
                   "icon": "achievement_dungeon_crimsonhall",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "13122": "14555",
+                    "13131": "14556"
+                  }
                 },
                 {
                   "id": "4631",
                   "icon": "achievement_dungeon_icecrown_frostwinghalls",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "13125": "14348",
+                    "13134": "14347"
+                  }
                 },
                 {
                   "id": "4583",
@@ -6734,7 +7604,14 @@
                   "icon": "achievement_dungeon_icecrown_frostmourne",
                   "side": "",
                   "obtainable": true,
-                  "points": 25
+                  "points": 25,
+                  "criteria": {
+                    "13065": "18715",
+                    "13071": "18716",
+                    "13072": "18717",
+                    "13073": "18718",
+                    "13074": "18714"
+                  }
                 }
               ]
             },
@@ -6793,7 +7670,13 @@
                   "icon": "achievement_dungeon_icecrown_icecrownentrance",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "12945": "13908",
+                    "12946": "13909",
+                    "12947": "13910",
+                    "12948": "13911"
+                  }
                 },
                 {
                   "id": "4615",
@@ -6821,7 +7704,12 @@
                   "icon": "achievement_dungeon_plaguewing",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "12949": "15021",
+                    "12950": "15022",
+                    "12951": "15023"
+                  }
                 },
                 {
                   "id": "4617",
@@ -6835,14 +7723,22 @@
                   "icon": "achievement_boss_lanathel",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "13012": "17059",
+                    "13013": "17060"
+                  }
                 },
                 {
                   "id": "4606",
                   "icon": "achievement_dungeon_crimsonhall",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "12952": "12797",
+                    "12953": "12798"
+                  }
                 },
                 {
                   "id": "4619",
@@ -6863,7 +7759,11 @@
                   "icon": "achievement_dungeon_icecrown_frostwinghalls",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "12954": "15026",
+                    "12955": "15027"
+                  }
                 },
                 {
                   "id": "4622",
@@ -6891,7 +7791,14 @@
                   "icon": "achievement_dungeon_icecrown_frostmourne",
                   "side": "",
                   "obtainable": true,
-                  "points": 25
+                  "points": 25,
+                  "criteria": {
+                    "12956": "13852",
+                    "12957": "13853",
+                    "12958": "13854",
+                    "12959": "13855",
+                    "12960": "13856"
+                  }
                 }
               ]
             },
@@ -6903,28 +7810,47 @@
                   "icon": "achievement_dungeon_icecrown_icecrownentrance",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "13091": "16801",
+                    "13106": "16798",
+                    "13111": "16800",
+                    "13114": "16799"
+                  }
                 },
                 {
                   "id": "4633",
                   "icon": "achievement_dungeon_plaguewing",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "13117": "18153",
+                    "13120": "18154",
+                    "13129": "18155"
+                  }
                 },
                 {
                   "id": "4634",
                   "icon": "achievement_dungeon_crimsonhall",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "13123": "17442",
+                    "13132": "17441"
+                  }
                 },
                 {
                   "id": "4635",
                   "icon": "achievement_dungeon_icecrown_frostwinghalls",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "13126": "17446",
+                    "13135": "17445"
+                  }
                 },
                 {
                   "id": "4584",
@@ -6938,7 +7864,14 @@
                   "icon": "achievement_dungeon_icecrown_frostmourne",
                   "side": "",
                   "obtainable": true,
-                  "points": 25
+                  "points": 25,
+                  "criteria": {
+                    "13070": "17313",
+                    "13075": "17314",
+                    "13076": "17310",
+                    "13077": "17311",
+                    "13078": "17312"
+                  }
                 }
               ]
             },
@@ -7091,7 +8024,12 @@
                   "icon": "Achievement_Boss_OmarTheUnscarred_01",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "3705": "8030",
+                    "3706": "8031",
+                    "3816": "8032"
+                  }
                 },
                 {
                   "id": "668",
@@ -7330,7 +8268,11 @@
                   "icon": "Spell_DeathKnight_ArmyOfTheDead",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "550": "259",
+                    "18471": "258"
+                  }
                 },
                 {
                   "id": "641",
@@ -7405,7 +8347,12 @@
                   "icon": "Ability_Warrior_DecisiveStrike",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "545": "4979",
+                    "546": "4981",
+                    "18535": "4980"
+                  }
                 },
                 {
                   "id": "639",
