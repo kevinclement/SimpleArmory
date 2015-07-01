@@ -34,12 +34,18 @@
         function parseAchievementObject(supercats, character, settings) {    
             var obj = {};
             var completed = {};
+            var critCompleted = {};
             var totalPossible = 0;
             var totalCompleted = 0;
             var totalFoS = 0;
             var totalLegacy = 0;
             var found = {};
             $log.log('Parsing achievements.json...');
+
+            // Build up lookup for criteria that character has completed
+            angular.forEach(character.achievements.criteria, function(crit, index) {
+                critCompleted[crit] = true;
+            });
 
             // Build up lookup for achievements that character has completed
             angular.forEach(character.achievements.achievementsCompleted, function(ach, index) {
@@ -101,6 +107,22 @@
                                 } else if (supercat.name === 'Legacy') {
                                     totalLegacy++;
                                 }
+                            }
+                            else if (ach.criteria) {
+
+                                // build up rel based on completed criteria for the achievement 
+                                // and pass that along to wowhead
+                                //cri=40635:40636:40637:40638:40640:40641:40642:40643:40644:40645
+                                var criCom = [];
+                                angular.forEach(ach.criteria, function(wowheadCrit, blizzCrit) {
+                                    if (critCompleted[blizzCrit]) {
+                                        criCom.push(wowheadCrit);
+                                    }
+                                });
+
+                                if (criCom.length > 0) {
+                                    myAchievement.rel = 'cri=' + criCom.join(':');        
+                                }                     
                             }
 
                             // Update counts proper

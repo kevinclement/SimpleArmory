@@ -12522,7 +12522,6 @@
                   "obtainable": true,
                   "points": 10
                 }
-
               ]
             },
             {
@@ -12540,7 +12539,13 @@
                   "icon": "ability_warrior_bloodfrenzy",
                   "side": "",
                   "obtainable": true,
-                  "points": 10
+                  "points": 10,
+                  "criteria": {
+                    "26397": "40030",
+                    "26399": "40031",
+                    "26400": "40032",
+                    "26404": "40033"
+                  }
                 },
                 {
                   "id": "9617",
@@ -12620,7 +12625,6 @@
             {
               "name": "Tanaan Jungle",
               "achs": [
-                
                 {
                   "id": "10068",
                   "icon": "achievement_zone_tanaanjungle",
@@ -18639,7 +18643,7 @@
                   "side": "",
                   "obtainable": true,
                   "points": 10
-                },               
+                },
                 {
                   "id": "6023",
                   "icon": "inv_misc_bone_skull_01",
@@ -18672,7 +18676,7 @@
                   "side": "",
                   "obtainable": true,
                   "points": 5
-                },                
+                },
                 {
                   "id": "9781",
                   "icon": "inv_checkered_flag",
@@ -19929,7 +19933,6 @@
                   "obtainable": true,
                   "points": 10
                 },
-
                 {
                   "id": "4888",
                   "icon": "ability_mount_camel_tan",
@@ -19990,7 +19993,7 @@
                   "side": "H",
                   "obtainable": true,
                   "points": 10
-                },				
+                },
                 {
                   "id": "2536",
                   "icon": "ability_hunter_pet_dragonhawk",
@@ -20011,7 +20014,7 @@
                   "side": "H",
                   "obtainable": true,
                   "points": 10
-                },				
+                },
                 {
                   "id": "8304",
                   "icon": "ability_mount_dragonhawkarmorallliance",
@@ -20025,7 +20028,7 @@
                   "side": "H",
                   "obtainable": true,
                   "points": 10
-                },				
+                },
                 {
                   "id": "9599",
                   "icon": "ability_mount_fireravengodmountgreen",
@@ -23782,7 +23785,6 @@
                   "obtainable": true,
                   "points": 0
                 },
-
                 {
                   "id": "9240",
                   "icon": "achievement_featsofstrength_gladiator_06",
@@ -23965,7 +23967,6 @@
                   "obtainable": true,
                   "points": 0
                 },
-
                 {
                   "id": "9231",
                   "icon": "achievement_pvp_h_h",
@@ -24264,7 +24265,7 @@
                   "side": "",
                   "obtainable": true,
                   "points": 0
-                },                
+                },
                 {
                   "id": "8345",
                   "icon": "inv_pegasusmount",
