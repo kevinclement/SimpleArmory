@@ -6,6 +6,7 @@
         "name": "",
         "items": [
           {
+			// Adder
             "spellid": null,
             "allianceId": null,
             "hordeId": null,
@@ -17,6 +18,7 @@
             "allowableClasses": null
           },
           {
+			// Alpine Hare
             "spellid": null,
             "allianceId": null,
             "hordeId": null,
@@ -39,6 +41,19 @@
             "allowableClasses": null
           },
           {
+			// Ash Spiderling
+            "spellid": null,
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": null,
+            "creatureId": "68838",
+            "icon": "inv_pet_mechanicaltigercub",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },		  
+          {
+			// Ash Viper
             "spellid": null,
             "allianceId": null,
             "hordeId": null,
@@ -138,6 +153,19 @@
             "allowableClasses": null
           },
           {
+			// Fel Flame
+            "spellid": null,
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": null,
+            "creatureId": "62621",
+            "icon": "spell_fire_felfire",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },		  
+          {
+			// Fire Beetle
             "spellid": null,
             "allianceId": null,
             "hordeId": null,
@@ -148,6 +176,30 @@
             "allowableRaces": [],
             "allowableClasses": null
           },
+          {
+			// Fire-Proof Roach
+            "spellid": null,
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": null,
+            "creatureId": "62886",
+            "icon": "inv_pet_cockroach",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },		  
+          {
+			// Forest Spiderling
+            "spellid": null,
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": null,
+            "creatureId": "61320",
+            "icon": "ability_hunter_pet_spider",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },		  
           {
             "spellid": null,
             "allianceId": null,
@@ -182,6 +234,19 @@
             "allowableClasses": null
           },
           {
+			// Horny Toad
+            "spellid": null,
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": null,
+            "creatureId": "62185",
+            "icon": "spell_shaman_hex",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },		  
+          {
+			// Huge Toad
             "spellid": null,
             "allianceId": null,
             "hordeId": null,
@@ -214,6 +279,18 @@
             "allowableRaces": [],
             "allowableClasses": null
           },
+          {
+			// Leopard Tree Frog
+            "spellid": null,
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": null,
+            "creatureId": "63919",
+            "icon": "spell_shaman_hex",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },		  
           {
             "spellid": null,
             "allianceId": null,
@@ -375,6 +452,18 @@
             "itemId": null,
             "creatureId": "61158",
             "icon": "ability_hunter_pet_crab",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+			// Silkbead Snail
+            "spellid": null,
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": null,
+            "creatureId": "63001",
+            "icon": "trade_archaeology_fossil_snailshell",
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
@@ -620,17 +709,6 @@
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
-          },
-          {
-            "spellid": null,
-            "allianceId": null,
-            "hordeId": null,
-            "itemId": null,
-            "creatureId": "85253",
-            "icon": "inv_dragonflypet_blue",
-            "obtainable": true,
-            "allowableRaces": [],
-            "allowableClasses": null
           }
         ]
       },
@@ -655,28 +733,6 @@
             "itemId": null,
             "creatureId": "85005",
             "icon": "inv_ravager2pet_white",
-            "obtainable": true,
-            "allowableRaces": [],
-            "allowableClasses": null
-          },
-          {
-            "spellid": null,
-            "allianceId": null,
-            "hordeId": null,
-            "itemId": null,
-            "creatureId": "88417",
-            "icon": "ability_hunter_pet_moth",
-            "obtainable": true,
-            "allowableRaces": [],
-            "allowableClasses": null
-          },
-          {
-            "spellid": null,
-            "allianceId": null,
-            "hordeId": null,
-            "itemId": null,
-            "creatureId": "88355",
-            "icon": "ability_hunter_pet_wasp",
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
@@ -769,6 +825,7 @@
         "name": "Talador",
         "items": [
           {
+			// Brilliant Bloodfeather
             "spellid": null,
             "allianceId": null,
             "hordeId": null,
@@ -779,6 +836,18 @@
             "allowableRaces": [],
             "allowableClasses": null
           },
+          {
+			// Crimsonwing Moth
+            "spellid": null,
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": null,
+            "creatureId": "88413",
+            "icon": "ability_hunter_pet_moth",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },		  
           {
             "spellid": null,
             "allianceId": null,
@@ -797,17 +866,6 @@
             "itemId": null,
             "creatureId": "88465",
             "icon": "ability_hunter_pet_crab",
-            "obtainable": true,
-            "allowableRaces": [],
-            "allowableClasses": null
-          },
-          {
-            "spellid": null,
-            "allianceId": null,
-            "hordeId": null,
-            "itemId": null,
-            "creatureId": "83642",
-            "icon": "inv_pet_toad_brown",
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
@@ -851,17 +909,19 @@
             "allowableClasses": null
           },
           {
+			// Sapphire Firefly
             "spellid": null,
             "allianceId": null,
             "hordeId": null,
             "itemId": null,
-            "creatureId": "85007",
-            "icon": "inv_ravager2pet_white",
+            "creatureId": "88356",
+            "icon": "ability_hunter_pet_wasp",
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
-          },
+          },		  
           {
+			// Swamplighter Firefly
             "spellid": null,
             "allianceId": null,
             "hordeId": null,
@@ -871,7 +931,19 @@
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
-          } 
+          },
+          {
+			// Thicket Skitterer
+            "spellid": null,
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": null,
+            "creatureId": "85007",
+            "icon": "inv_ravager2pet_white",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          }		  
         ]
       },
       {
@@ -894,39 +966,7 @@
         "name": "Tanaan Jungle",
         "items": [
           {
-            "spellid": null,
-            "allianceId": null,
-            "hordeId": null,
-            "itemId": null,
-            "creatureId": "88357",
-            "icon": "ability_hunter_pet_wasp",
-            "obtainable": true,
-            "allowableRaces": [],
-            "allowableClasses": null
-          },
-          {
-            "spellid": null,
-            "allianceId": null,
-            "hordeId": null,
-            "itemId": null,
-            "creatureId": "88473",
-            "icon": "ability_hunter_pet_crab",
-            "obtainable": true,
-            "allowableRaces": [],
-            "allowableClasses": null
-          },
-          {
-            "spellid": null,
-            "allianceId": null,
-            "hordeId": null,
-            "itemId": null,
-            "creatureId": "88422",
-            "icon": "ability_hunter_pet_moth",
-            "obtainable": true,
-            "allowableRaces": [],
-            "allowableClasses": null
-          },
-          {
+			// Bloodbeak
             "spellid": null,
             "allianceId": null,
             "hordeId": null,
@@ -936,29 +976,96 @@
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
-          },
+          },		  
           {
+			// Cerulean Moth
             "spellid": null,
             "allianceId": null,
             "hordeId": null,
             "itemId": null,
-            "creatureId": "88356",
-            "icon": "ability_hunter_pet_wasp",
-            "obtainable": true,
-            "allowableRaces": [],
-            "allowableClasses": null
-          },
-          {
-            "spellid": null,
-            "allianceId": null,
-            "hordeId": null,
-            "itemId": null,
-            "creatureId": "88413",
+            "creatureId": "88422",
             "icon": "ability_hunter_pet_moth",
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
+          },		  
+          {
+			// Fen Crab
+            "spellid": null,
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": null,
+            "creatureId": "88473",
+            "icon": "ability_hunter_pet_crab",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },		  
+          {	  
+			// Violet Firefly
+            "spellid": null,
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": null,
+            "creatureId": "88357",
+            "icon": "ability_hunter_pet_wasp",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
           }
+        ]
+      },
+      {
+        "name": "",
+        "items": [
+          {
+          {
+			// Mud Jumper
+            "spellid": null,
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": null,
+            "creatureId": "83642",
+            "icon": "inv_pet_toad_brown",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },		  
+			// Royal Moth
+            "spellid": null,
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": null,
+            "creatureId": "88417",
+            "icon": "ability_hunter_pet_moth",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },		
+          {
+			// Twilight Wasp
+            "spellid": null,
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": null,
+            "creatureId": "85253",
+            "icon": "inv_dragonflypet_blue",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+			// Waterfly
+            "spellid": null,
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": null,
+            "creatureId": "88355",
+            "icon": "ability_hunter_pet_wasp",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          }		  
         ]
       }
     ]
@@ -1368,17 +1475,6 @@
             "allianceId": null,
             "hordeId": null,
             "itemId": null,
-            "creatureId": "65215",
-            "icon": "ability_hunter_pet_moth",
-            "obtainable": true,
-            "allowableRaces": [],
-            "allowableClasses": null
-          },
-          {
-            "spellid": null,
-            "allianceId": null,
-            "hordeId": null,
-            "itemId": null,
             "creatureId": "63838",
             "icon": "ability_hunter_pet_moth",
             "obtainable": true,
@@ -1413,17 +1509,6 @@
             "hordeId": null,
             "itemId": null,
             "creatureId": "62997",
-            "icon": "spell_shaman_hex",
-            "obtainable": true,
-            "allowableRaces": [],
-            "allowableClasses": null
-          },
-          {
-            "spellid": null,
-            "allianceId": null,
-            "hordeId": null,
-            "itemId": null,
-            "creatureId": "63919",
             "icon": "spell_shaman_hex",
             "obtainable": true,
             "allowableRaces": [],
@@ -1480,17 +1565,6 @@
             "itemId": null,
             "creatureId": "65216",
             "icon": "ability_hunter_pet_wasp",
-            "obtainable": true,
-            "allowableRaces": [],
-            "allowableClasses": null
-          },
-          {
-            "spellid": null,
-            "allianceId": null,
-            "hordeId": null,
-            "itemId": null,
-            "creatureId": "63001",
-            "icon": "trade_archaeology_fossil_snailshell",
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
@@ -1675,6 +1749,18 @@
             "allowableRaces": [],
             "allowableClasses": null
           },
+          {
+			// Gilded Moth
+            "spellid": null,
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": null,
+            "creatureId": "65215",
+            "icon": "ability_hunter_pet_moth",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },		  
           {
             "spellid": null,
             "allianceId": null,
@@ -2182,17 +2268,6 @@
             "allianceId": null,
             "hordeId": null,
             "itemId": null,
-            "creatureId": "62621",
-            "icon": "spell_fire_felfire",
-            "obtainable": true,
-            "allowableRaces": [],
-            "allowableClasses": null
-          },
-          {
-            "spellid": null,
-            "allianceId": null,
-            "hordeId": null,
-            "itemId": null,
             "creatureId": "62555",
             "icon": "ability_racial_flayer",
             "obtainable": true,
@@ -2423,17 +2498,6 @@
             "hordeId": null,
             "itemId": null,
             "creatureId": "62887",
-            "icon": "inv_pet_cockroach",
-            "obtainable": true,
-            "allowableRaces": [],
-            "allowableClasses": null
-          },
-          {
-            "spellid": null,
-            "allianceId": null,
-            "hordeId": null,
-            "itemId": null,
-            "creatureId": "62886",
             "icon": "inv_pet_cockroach",
             "obtainable": true,
             "allowableRaces": [],
@@ -2676,17 +2740,6 @@
             "itemId": null,
             "creatureId": "62130",
             "icon": "ability_warstomp",
-            "obtainable": true,
-            "allowableRaces": [],
-            "allowableClasses": null
-          },
-          {
-            "spellid": null,
-            "allianceId": null,
-            "hordeId": null,
-            "itemId": null,
-            "creatureId": "62185",
-            "icon": "spell_shaman_hex",
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
@@ -2950,17 +3003,6 @@
             "itemId": null,
             "creatureId": "60649",
             "icon": "spell_nature_polymorph",
-            "obtainable": true,
-            "allowableRaces": [],
-            "allowableClasses": null
-          },
-          {
-            "spellid": null,
-            "allianceId": null,
-            "hordeId": null,
-            "itemId": null,
-            "creatureId": "68838",
-            "icon": "inv_pet_mechanicaltigercub",
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
@@ -3251,17 +3293,6 @@
             "itemId": null,
             "creatureId": "61171",
             "icon": "spell_hunter_aspectofthehawk",
-            "obtainable": true,
-            "allowableRaces": [],
-            "allowableClasses": null
-          },
-          {
-            "spellid": null,
-            "allianceId": null,
-            "hordeId": null,
-            "itemId": null,
-            "creatureId": "61320",
-            "icon": "ability_hunter_pet_spider",
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
