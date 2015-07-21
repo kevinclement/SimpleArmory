@@ -200,6 +200,7 @@ body {
   text-align: right;
   width: 175px;
   font-size: 14px;
+  position:relative;
 }
 
 /* all rules */
@@ -209,6 +210,7 @@ body {
   height: 10px;
   border-radius: 2px;
   margin-right:1px;
+  position: relative;
 }
 
 /* Hated */
@@ -281,6 +283,15 @@ body {
   font-size: 10px;
   font-style: italic;
   background-color: transparent
+}
+.repValue {
+  position: absolute;
+  font-weight: bold;
+  font-size: 20px;
+  width: 200px;
+  top: -10px;
+  left: 170px;
+  z-index:1;
 }
 /* ## Reputation Page ############################### */
 

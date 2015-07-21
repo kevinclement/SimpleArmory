@@ -35,7 +35,9 @@
             angular.forEach(character.reputation, function(rep, index) {
                 standing[rep.id] = {
                     level: rep.standing,
-                    perc: (rep.value / rep.max) * 100
+                    perc: (rep.value / rep.max) * 100,
+                    value: rep.value,
+                    max: rep.max
                 };
             });
 
@@ -69,6 +71,8 @@
                             f.friend = calculateLevelPercent(3, stand);
                             f.goodFriends = calculateLevelPercent(4, stand);
                             f.bestFriends = calculateLevelPercent(5, stand);
+                            f.value = stand.value;
+                            f.max = stand.max;
                             f.isTiller = true;
 
                             tillerCategory = true;
@@ -81,7 +85,9 @@
                             f.friendly = calculateLevelPercent(4, stand);
                             f.honored = calculateLevelPercent(5, stand);
                             f.revered = calculateLevelPercent(6, stand);
-                            f.exalted = calculateLevelPercent(7, stand);                          
+                            f.exalted = calculateLevelPercent(7, stand);
+                            f.value = stand.value;
+                            f.max = stand.max;      
                         }
 
                         fc.factions.push(f);                      
