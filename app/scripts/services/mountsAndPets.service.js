@@ -43,33 +43,33 @@
             var totalPossible = 0;
             var found = {};
 
+            // Hack: Horde chopper doesn't show up, so we have to check for achievement and just assume they 'learned' it
+            if (character.achievements.achievementsCompleted.indexOf(9909) >= 0) {
+                collected[179244] = {
+                    'spellid': '179244',
+                    'allianceId': null,
+                    'hordeId': null,
+                    'itemId': '122703',
+                    'icon': 'inv_misc_key_06',
+                    'obtainable': true,
+                    'allowableRaces': [
+                        2,
+                        5,
+                        6,
+                        8,
+                        9,
+                        10,
+                        26
+                    ],
+                    'allowableClasses': null
+                };
+                found[179244] = false;
+            }
+
             // Build up lookup for items that character has
             angular.forEach(character[characterProperty].collected, function(item) {
                 collected[item[collectedId]] = item;
-                found[item[collectedId]] = false;
-
-                // Hack: Horde chopper is listed as Mechano-Hog, so we have to check for achievement and just assume they 'learned' it
-                if (item[collectedId] === 55531 && character.achievements.achievementsCompleted.indexOf(9909) >= 0) {
-                    collected[179244] = {
-                        'spellid': '179244',
-                        'allianceId': null,
-                        'hordeId': null,
-                        'itemId': '122703',
-                        'icon': 'inv_misc_key_06',
-                        'obtainable': true,
-                        'allowableRaces': [
-                          2,
-                          5,
-                          6,
-                          8,
-                          9,
-                          10,
-                          26
-                        ],
-                        'allowableClasses': null
-                    };
-                    found[179244] = false;
-                }
+                found[item[collectedId]] = false;               
             });
 
             // Hack: until they fix the armory to return Felfire hawk
