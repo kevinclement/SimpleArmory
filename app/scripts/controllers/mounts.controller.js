@@ -27,12 +27,15 @@
                 {step:'Run Throne of the Four Winds', boss:'Al\'akir', spellId:88744, itemId:63041},
             ];
 
+            // TODO: what is the best way to do this??
+
             // refresh the wow links so they are stylized and iconized
-            if ($WowheadPower) {
-                window.setTimeout(function() {
-                    $WowheadPower.refreshLinks();
-                }, 0);
-            }
+            //if ($WowheadPower && $scope.showPlanner) {
+                //window.setTimeout(function() {
+                //    wowhead_tooltips = { "colorlinks": true, "iconizelinks": true, "renamelinks": true };
+                //    $WowheadPower.refreshLinks();
+                //}, 0);
+            //}
         });       
     }
 
