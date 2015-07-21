@@ -276,6 +276,7 @@
             // Add totals
             obj.collected = totalCollected;
             obj.possible = totalPossible;
+            obj.lookup = collected;
 
             // Data object we expose externally
             return obj;

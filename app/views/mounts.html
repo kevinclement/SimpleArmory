@@ -1,7 +1,7 @@
 <div class="container">
   <div class="page-header">
     <h2>
-        Mounts
+        Mounts <small class="pbSmall"><input type="checkbox" id="planner" ng-model="showPlanner"><label for="planner">Show Planner</label></small>
     <div class="progress progressRight">
             <progressbar max="100" type="success"
       	  		value="percent(items.collected, items.possible)" >
@@ -11,12 +11,39 @@
     </h2>        
   </div>
 
-  <h3 class="categoryHeader" ng-hide="category.name == 'Mounts'" ng-repeat-start="category in items.categories">{{ category.name }}</h3>
-   <div class="sect" ng-repeat="subCategory in category.subCategories">
-		<h5 class="zoneHeader">{{ subCategory.name }}</h5>
-		<a ng-href="//www.wowhead.com/{{ item.link }}" class="thumbnail" ng-repeat="item in subCategory.items" ng-class="{borderOn:!item.collected, borderOff:item.collected}">
-        	<img ng-src="{{getImageSrc(item)}}">
-      	</a>
-   </div>
-  <div class="clear" ng-repeat-end /> 
+  <!-- Grid Layout -->
+  <div ng-show="showPlanner == true">
+    <h3 class="categoryHeader" ng-hide="category.name == 'Mounts'" ng-repeat-start="category in items.categories">{{ category.name }}</h3>
+    <div class="sect" ng-repeat="subCategory in category.subCategories">
+  		<h5 class="zoneHeader">{{ subCategory.name }}</h5>
+  		<a ng-href="//www.wowhead.com/{{ item.link }}" class="thumbnail" ng-repeat="item in subCategory.items" ng-class="{borderOn:!item.collected, borderOff:item.collected}">
+          	<img ng-src="{{getImageSrc(item)}}">
+        	</a>
+    </div>
+    <div class="clear" ng-repeat-end /> 
+  </div>
+
+  <!-- Planner Layout -->
+  <div ng-show="showPlanner != true">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Step</th>
+          <th>Boss</th>
+          <th>Mount</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody ng-repeat="step in planner">
+        <tr ng-hide="isCollected(step.spellId)">
+          <td>{{$index + 1}}</td>
+          <td>{{step.step}}</td>
+          <td>{{step.boss}}</td>
+          <td><a ng-show="step.itemId" ng-href="//www.wowhead.com/item={{ step.itemId }}">Reins of the Drake of the North Wind</a></td>
+          <td>{{step.notes}}</td>
+        </tr ng-repeat-end>
+      </tbody>
+    </table>
+  </div>
 </div>
