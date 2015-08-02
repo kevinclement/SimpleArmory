@@ -41,14 +41,12 @@
           <td>{{step.title}}</td>
           <td colspan="2">
             <table width="100%">
-              <tr>
-                <td width="50%">{{step.boss}}</td>
-                <td><a ng-show="step.itemId" ng-class="anchorCss(step)" ng-href="//www.wowhead.com/item={{ step.itemId }}"><img class="mnt-plan-icon" ng-src="{{getPlanImageSrc(step)}}">{{step.name}}</a></td>
-              </tr>
-              <tr>
-                <td>{{step.boss}}</td>
-                <td><a ng-show="step.itemId" ng-class="anchorCss(step)" ng-href="//www.wowhead.com/item={{ step.itemId }}"><img class="mnt-plan-icon" ng-src="{{getPlanImageSrc(step)}}">{{step.name}}</a></td>
-              </tr>
+              <tbody ng-repeat="boss in step.bosses">
+                <tr>
+                  <td width="50%">{{boss.name}}</td>
+                  <td><a ng-show="boss.itemId" ng-class="anchorCss(step)" ng-href="//www.wowhead.com/item={{ boss.itemId }}"><img class="mnt-plan-icon" ng-src="{{getPlanImageSrc(boss)}}">{{boss.mount}}</a></td>
+                </tr ng-repeat-end>
+              </tbody>
             </table>
           </td>
           <td>{{step.notes}}</td>

@@ -13,12 +13,17 @@
 					[
 						{
 							"title": "Run Vortex Pinnacle",
-							"boss":"Altarius",
-							"spellId":88472,
-							"itemId":63040,
-							"name": "Foo",
-							"epic": false,
-							"icon":"inv_misc_summerfest_braziergreen",
+							"bosses": 
+							[
+								{
+									"name":"Altarius",
+									"spellId":88472,
+									"itemId":63040,
+									"mount": "Foo",
+									"epic": false,
+									"icon":"inv_misc_summerfest_braziergreen"
+								}
+							],
 							"notes":"You can run heroic once and 9 normal"
 						},
 						{
