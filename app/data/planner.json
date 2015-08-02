@@ -28,12 +28,17 @@
 						},
 						{
 							"title": "Run Throne of the Four Winds",
-							"boss":"Al'akir",
-							"spellId":88744,
-							"itemId":63041,
-							"name": "Bar",
-							"epic":true,
-							"icon": "ability_mount_drake_blue"
+							"bosses": 
+							[
+								{
+									"name":"Al'akir",
+									"spellId":88744,
+									"itemId":63041,
+									"mount": "Bar",
+									"epic":true,
+									"icon": "ability_mount_drake_blue"
+								}
+							]
 						},
 						{
 							"title": "Fly to Silithus",
@@ -41,12 +46,17 @@
 							[
 								{
 									"title": "Run Ahn'Quiraj",
-									"boss":"XXX",
-									"spellId":999999,
-									"itemId":999999,
-									"name": "ZZZ",
-									"epic": false,
-									"icon":"inv_misc_summerfest_braziergreen",
+									"bosses": 
+									[
+										{
+											"name":"XXX",
+											"spellId":999999,
+											"itemId":999999,
+											"mount": "ZZZ",
+											"epic": false,
+											"icon":"inv_misc_summerfest_braziergreen"
+										}
+									],
 									"notes":"NOTES!!"
 								}
 							]
@@ -57,22 +67,32 @@
 							[
 								{
 									"title": "Run Culling of Stratholme",
-									"boss":"XXX",
-									"spellId":999999,
-									"itemId":999999,
-									"name": "ZZZ",
-									"epic": false,
-									"icon":"inv_misc_summerfest_braziergreen",
+									"bosses": 
+									[
+										{
+											"name":"XXX",
+											"spellId":999999,
+											"itemId":999999,
+											"mount": "ZZZ",
+											"epic": false,
+											"icon":"inv_misc_summerfest_braziergreen"
+										}
+									],
 									"notes":"NOTES!!"
 								},
 								{
 									"title": "Run Dragon Soul",
-									"boss":"XXX",
-									"spellId":999999,
-									"itemId":999999,
-									"name": "ZZZ",
-									"epic": false,
-									"icon":"inv_misc_summerfest_braziergreen",
+									"bosses": 
+									[
+										{
+											"name":"XXX",
+											"spellId":999999,
+											"itemId":999999,
+											"mount": "ZZZ",
+											"epic": false,
+											"icon":"inv_misc_summerfest_braziergreen"
+										}
+									],
 									"notes":"NOTES!!"
 								}
 							]
@@ -83,12 +103,17 @@
 							[
 								{
 									"title": "Run Onyxia",
-									"boss":"XXX",
-									"spellId":999999,
-									"itemId":999999,
-									"name": "ZZZ",
-									"epic": false,
-									"icon":"inv_misc_summerfest_braziergreen",
+									"bosses": 
+									[
+										{
+											"name":"XXX",
+											"spellId":999999,
+											"itemId":999999,
+											"mount": "ZZZ",
+											"epic": false,
+											"icon":"inv_misc_summerfest_braziergreen"
+										}
+									],
 									"notes":"NOTES!!"
 								}
 							]
@@ -106,12 +131,17 @@
 							[
 								{
 									"title": "Run Icecrown Citadel",
-									"boss":"XXX",
-									"spellId":999999,
-									"itemId":999999,
-									"name": "ZZZ",
-									"epic": false,
-									"icon":"inv_misc_summerfest_braziergreen",
+									"bosses": 
+									[
+										{
+											"name":"XXX",
+											"spellId":999999,
+											"itemId":999999,
+											"mount": "ZZZ",
+											"epic": false,
+											"icon":"inv_misc_summerfest_braziergreen"
+										}
+									],
 									"notes":"NOTES!!"
 								}
 							]
@@ -122,12 +152,17 @@
 							[
 								{
 									"title": "Run Vault of Archavon",
-									"boss":"XXX",
-									"spellId":999999,
-									"itemId":999999,
-									"name": "ZZZ",
-									"epic": false,
-									"icon":"inv_misc_summerfest_braziergreen",
+									"bosses": 
+									[
+										{
+											"name":"XXX",
+											"spellId":999999,
+											"itemId":999999,
+											"mount": "ZZZ",
+											"epic": false,
+											"icon":"inv_misc_summerfest_braziergreen"
+										}
+									],
 									"notes":"NOTES!!"
 								}
 							]
@@ -138,12 +173,17 @@
 							[
 								{
 									"title": "Run Eye of Eternity",
-									"boss":"XXX",
-									"spellId":999999,
-									"itemId":999999,
-									"name": "ZZZ",
-									"epic": false,
-									"icon":"inv_misc_summerfest_braziergreen",
+									"bosses": 
+									[
+										{
+											"name":"XXX",
+											"spellId":999999,
+											"itemId":999999,
+											"mount": "ZZZ",
+											"epic": false,
+											"icon":"inv_misc_summerfest_braziergreen"
+										}
+									],
 									"notes":"NOTES!!"
 								}
 							]
@@ -154,12 +194,17 @@
 							[
 								{
 									"title": "Run Obsidian Sanctum",
-									"boss":"XXX",
-									"spellId":999999,
-									"itemId":999999,
-									"name": "ZZZ",
-									"epic": false,
-									"icon":"inv_misc_summerfest_braziergreen",
+									"bosses": 
+									[
+										{
+											"name":"XXX",
+											"spellId":999999,
+											"itemId":999999,
+											"mount": "ZZZ",
+											"epic": false,
+											"icon":"inv_misc_summerfest_braziergreen"
+										}
+									],
 									"notes":"NOTES!!"
 								}
 							]
@@ -170,12 +215,17 @@
 							[
 								{
 									"title": "Run Utgarde Pinnacle",
-									"boss":"XXX",
-									"spellId":999999,
-									"itemId":999999,
-									"name": "ZZZ",
-									"epic": false,
-									"icon":"inv_misc_summerfest_braziergreen",
+									"bosses": 
+									[
+										{
+											"name":"XXX",
+											"spellId":999999,
+											"itemId":999999,
+											"mount": "ZZZ",
+											"epic": false,
+											"icon":"inv_misc_summerfest_braziergreen"
+										}
+									],
 									"notes":"NOTES!!"
 								}
 							]
@@ -186,12 +236,17 @@
 							[
 								{
 									"title": "Run Ulduar",
-									"boss":"XXX",
-									"spellId":999999,
-									"itemId":999999,
-									"name": "ZZZ",
-									"epic": false,
-									"icon":"inv_misc_summerfest_braziergreen",
+									"bosses": 
+									[
+										{
+											"name":"XXX",
+											"spellId":999999,
+											"itemId":999999,
+											"mount": "ZZZ",
+											"epic": false,
+											"icon":"inv_misc_summerfest_braziergreen"
+										}
+									],
 									"notes":"NOTES!!"
 								}
 							]
@@ -209,12 +264,17 @@
 							[
 								{
 									"title": "Run Firelands",
-									"boss":"XXX",
-									"spellId":999999,
-									"itemId":999999,
-									"name": "ZZZ",
-									"epic": false,
-									"icon":"inv_misc_summerfest_braziergreen",
+									"bosses": 
+									[
+										{
+											"name":"XXX",
+											"spellId":999999,
+											"itemId":999999,
+											"mount": "ZZZ",
+											"epic": false,
+											"icon":"inv_misc_summerfest_braziergreen"
+										}
+									],
 									"notes":"NOTES!!"
 								}
 							]
@@ -232,12 +292,17 @@
 							[
 								{
 									"title": "Run Stonecore",
-									"boss":"XXX",
-									"spellId":999999,
-									"itemId":999999,
-									"name": "ZZZ",
-									"epic": false,
-									"icon":"inv_misc_summerfest_braziergreen",
+									"bosses": 
+									[
+										{
+											"name":"XXX",
+											"spellId":999999,
+											"itemId":999999,
+											"mount": "ZZZ",
+											"epic": false,
+											"icon":"inv_misc_summerfest_braziergreen"
+										}
+									],
 									"notes":"You can run heroic once and 9 normal"
 								}
 							]
@@ -255,13 +320,18 @@
 							[
 								{
 									"title": "Run Sethekk Halls",
-									"boss":"XXX",
-									"spellId":999999,
-									"itemId":999999,
-									"name": "ZZZ",
-									"epic": false,
-									"icon":"inv_misc_summerfest_braziergreen",
-									"notes":"NOTES"
+									"bosses": 
+									[
+										{
+											"name":"XXX",
+											"spellId":999999,
+											"itemId":999999,
+											"mount": "ZZZ",
+											"epic": false,
+											"icon":"inv_misc_summerfest_braziergreen"
+										}
+									],
+									"notes":"NOTES!!"
 								}
 							]
 						},
@@ -271,13 +341,18 @@
 							[
 								{
 									"title": "Run Tempest Keep",
-									"boss":"XXX",
-									"spellId":999999,
-									"itemId":999999,
-									"name": "ZZZ",
-									"epic": false,
-									"icon":"inv_misc_summerfest_braziergreen",
-									"notes":"NOTES"
+									"bosses": 
+									[
+										{
+											"name":"XXX",
+											"spellId":999999,
+											"itemId":999999,
+											"mount": "ZZZ",
+											"epic": false,
+											"icon":"inv_misc_summerfest_braziergreen"
+										}
+									],
+									"notes":"NOTES!!"
 								}
 							]
 						},
@@ -291,13 +366,18 @@
 									[
 										{
 											"title": "Run Magister's Terrace",
-											"boss":"XXX",
-											"spellId":999999,
-											"itemId":999999,
-											"name": "ZZZ",
-											"epic": false,
-											"icon":"inv_misc_summerfest_braziergreen",
-											"notes":"NOTES"
+											"bosses": 
+											[
+												{
+													"name":"XXX",
+													"spellId":999999,
+													"itemId":999999,
+													"mount": "ZZZ",
+													"epic": false,
+													"icon":"inv_misc_summerfest_braziergreen"
+												}
+											],
+											"notes":"NOTES!!"
 										},
 										{
 											"title": "Fly to Ghostlands",
@@ -305,13 +385,18 @@
 											[
 												{
 													"title": "Run Zul'Aman",
-													"boss":"XXX",
-													"spellId":999999,
-													"itemId":999999,
-													"name": "ZZZ",
-													"epic": false,
-													"icon":"inv_misc_summerfest_braziergreen",
-													"notes":"NOTES"
+													"bosses": 
+													[
+														{
+															"name":"XXX",
+															"spellId":999999,
+															"itemId":999999,
+															"mount": "ZZZ",
+															"epic": false,
+															"icon":"inv_misc_summerfest_braziergreen"
+														}
+													],
+													"notes":"NOTES!!"
 												}
 											]
 										},
@@ -321,13 +406,18 @@
 											[
 												{
 													"title": "Run Stratholme",
-													"boss":"XXX",
-													"spellId":999999,
-													"itemId":999999,
-													"name": "ZZZ",
-													"epic": false,
-													"icon":"inv_misc_summerfest_braziergreen",
-													"notes":"NOTES"
+													"bosses": 
+													[
+														{
+															"name":"XXX",
+															"spellId":999999,
+															"itemId":999999,
+															"mount": "ZZZ",
+															"epic": false,
+															"icon":"inv_misc_summerfest_braziergreen"
+														}
+													],
+													"notes":"NOTES!!"
 												}
 											]
 										}
@@ -351,13 +441,18 @@
 									[
 										{
 											"title": "Run Karazhan",
-											"boss":"XXX",
-											"spellId":999999,
-											"itemId":999999,
-											"name": "ZZZ",
-											"epic": false,
-											"icon":"inv_misc_summerfest_braziergreen",
-											"notes":"NOTES"
+											"bosses": 
+											[
+												{
+													"name":"XXX",
+													"spellId":999999,
+													"itemId":999999,
+													"mount": "ZZZ",
+													"epic": false,
+													"icon":"inv_misc_summerfest_braziergreen"
+												}
+											],
+											"notes":"NOTES!!"
 										}
 									]
 								},
@@ -367,13 +462,18 @@
 									[
 										{
 											"title": "Run Zul'Gurub",
-											"boss":"XXX",
-											"spellId":999999,
-											"itemId":999999,
-											"name": "ZZZ",
-											"epic": false,
-											"icon":"inv_misc_summerfest_braziergreen",
-											"notes":"NOTES"
+											"bosses": 
+											[
+												{
+													"name":"XXX",
+													"spellId":999999,
+													"itemId":999999,
+													"mount": "ZZZ",
+													"epic": false,
+													"icon":"inv_misc_summerfest_braziergreen"
+												}
+											],
+											"notes":"NOTES!!"
 										}
 									]
 								}
