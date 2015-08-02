@@ -1,7 +1,7 @@
 <div class="container">
   <div class="page-header">
     <h2>
-        Mounts <small class="pbSmall"><input type="checkbox" id="planner" ng-model="showPlanner"><label for="planner">Show Planner</label></small>
+        Mounts <small class="pbSmall"><input type="checkbox" id="planner" ng-model="showPlanner" ng-change="plannerChanged()"><label for="planner">Show Planner</label></small>
     <div class="progress progressRight">
             <progressbar max="100" type="success"
       	  		value="percent(items.collected, items.possible)" >
@@ -12,7 +12,7 @@
   </div>
 
   <!-- Grid Layout -->
-  <div ng-show="showPlanner == true">
+  <div ng-hide="showPlanner">
     <h3 class="categoryHeader" ng-hide="category.name == 'Mounts'" ng-repeat-start="category in items.categories">{{ category.name }}</h3>
     <div class="sect" ng-repeat="subCategory in category.subCategories">
   		<h5 class="zoneHeader">{{ subCategory.name }}</h5>
@@ -24,7 +24,7 @@
   </div>
 
   <!-- Planner Layout -->
-  <div ng-show="showPlanner != true">
+  <div ng-show="showPlanner">
     <table class="table table-condensed">
       <thead>
         <tr>

@@ -7,39 +7,45 @@
         .module('simpleArmoryApp')
         .controller('MountsCtrl' , MountsCtrl);
 
-    function MountsCtrl($scope, MountsAndPetsService, $window) {
+    function MountsCtrl($scope, MountsAndPetsService, PlannerService, $window) {
 
     	// Analytics for page
         $window.ga('send', 'pageview', 'Mounts');
 
+        // called when planner checkbox is clicked
+        $scope.plannerChanged = function() {
+            if ($scope.showPlanner) {
+                PlannerService.getSteps().then(function(steps){
+                    $scope.planner = steps;
+                });
+            }
+        };
+
+        // anchor css used for planner checkbox
+        $scope.anchorCss = function (step) {
+            if (step.epic) {
+                return 'mnt-plan-epic';
+            }
+
+            return 'mnt-plan-rare';
+        };
+
+        // img src for planner image
+        $scope.getPlanImageSrc = function (step) {
+            if (!step.icon) {
+                return '';
+            }
+
+            return '//wow.zamimg.com/images/wow/icons/tiny/' + step.icon + '.gif';
+        };
+
         MountsAndPetsService.getItems('mounts', 'mounts', 'spellId').then(function(items){
             $scope.items = items;
 
+            // need to define here so that we have access to the items that came from callback
             $scope.isCollected = function (id) {
                 return items.lookup[id] !== undefined;
-            };
-            $scope.anchorCss = function (step) {
-                if (step.epic) {
-                    return 'mnt-plan-epic';
-                }
-
-                return 'mnt-plan-rare';
-            };
-            $scope.getPlanImageSrc = function (step) {
-                if (!step.icon) {
-                    return '';
-                }
-
-                return '//wow.zamimg.com/images/wow/icons/tiny/' + step.icon + '.gif';
-            };
-
-            $scope.planner = 
-            [
-                {step:'Start off in Stormwind/Orgrimmar'},
-                {step:'Portal to Uldum'},
-                {step:'Run Vortex Pinnacle', boss:'Altarius', spellId:88472, itemId:63040, name: 'Foo', icon:'inv_misc_summerfest_braziergreen', notes:'You can run heroic once and 9 normal'},
-                {step:'Run Throne of the Four Winds', boss:'Al\'akir', spellId:88744, itemId:63041, name: 'Bar', epic:true, icon: 'ability_mount_drake_blue'},
-            ];
+            };            
         });       
     }
 
