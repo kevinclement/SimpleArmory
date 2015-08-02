@@ -38,6 +38,9 @@
                     if (neededChildSteps.length > 0) {
                         neededSteps.push(step);
                         neededSteps = neededSteps.concat(neededChildSteps);
+                        if (step.finalStep) {
+                            neededSteps.push({'title':step.finalStep});
+                        }
                     }
                 }
                 else if (!checkStepCompleted(step)) {

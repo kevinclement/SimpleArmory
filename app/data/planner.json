@@ -3,10 +3,12 @@
 	[
 		{
 			"title":"Start off in Stormwind/Orgrimmar",
+			"notes": "Make sure you have hearth set to shrine",
 			"steps": 
 			[
 				{
 					"title":"Portal to Uldum",
+					"finalStep": "Hearthstone back to shrine",
 					"steps": 
 					[
 						{
@@ -15,6 +17,7 @@
 							"spellId":88472,
 							"itemId":63040,
 							"name": "Foo",
+							"epic": false,
 							"icon":"inv_misc_summerfest_braziergreen",
 							"notes":"You can run heroic once and 9 normal"
 						},
@@ -26,11 +29,197 @@
 							"name": "Bar",
 							"epic":true,
 							"icon": "ability_mount_drake_blue"
+						},
+						{
+							"title": "Fly to Silithus",
+							"steps":
+							[
+								{
+									"title": "Run Ahn'Quiraj",
+									"boss":"XXX",
+									"spellId":999999,
+									"itemId":999999,
+									"name": "ZZZ",
+									"epic": false,
+									"icon":"inv_misc_summerfest_braziergreen",
+									"notes":"NOTES!!"
+								}
+							]
+						},
+						{
+							"title": "Fly to Tanaris",
+							"steps":
+							[
+								{
+									"title": "Run Culling of Stratholme",
+									"boss":"XXX",
+									"spellId":999999,
+									"itemId":999999,
+									"name": "ZZZ",
+									"epic": false,
+									"icon":"inv_misc_summerfest_braziergreen",
+									"notes":"NOTES!!"
+								},
+								{
+									"title": "Run Dragon Soul",
+									"boss":"XXX",
+									"spellId":999999,
+									"itemId":999999,
+									"name": "ZZZ",
+									"epic": false,
+									"icon":"inv_misc_summerfest_braziergreen",
+									"notes":"NOTES!!"
+								}
+							]
+						},
+						{
+							"title": "Fly to Dustwallow Marsh",
+							"steps":
+							[
+								{
+									"title": "Run Onyxia",
+									"boss":"XXX",
+									"spellId":999999,
+									"itemId":999999,
+									"name": "ZZZ",
+									"epic": false,
+									"icon":"inv_misc_summerfest_braziergreen",
+									"notes":"NOTES!!"
+								}
+							]
 						}
 					]
 				},
 				{
-					"title":"3"
+					"title":"Portal to Dalaran",
+					"finalStep": "Hearthstone back to shrine",
+					"steps": 
+					[
+						{
+							"title": "Fly to Icecrown",
+							"steps":
+							[
+								{
+									"title": "Run Icecrown Citadel",
+									"boss":"XXX",
+									"spellId":999999,
+									"itemId":999999,
+									"name": "ZZZ",
+									"epic": false,
+									"icon":"inv_misc_summerfest_braziergreen",
+									"notes":"NOTES!!"
+								}
+							]
+						},
+						{
+							"title": "Fly to Wintergrasp",
+							"steps":
+							[
+								{
+									"title": "Run Vault of Archavon",
+									"boss":"XXX",
+									"spellId":999999,
+									"itemId":999999,
+									"name": "ZZZ",
+									"epic": false,
+									"icon":"inv_misc_summerfest_braziergreen",
+									"notes":"NOTES!!"
+								}
+							]
+						},
+						{
+							"title": "Fly to Coldarra",
+							"steps":
+							[
+								{
+									"title": "Run Eye of Eternity",
+									"boss":"XXX",
+									"spellId":999999,
+									"itemId":999999,
+									"name": "ZZZ",
+									"epic": false,
+									"icon":"inv_misc_summerfest_braziergreen",
+									"notes":"NOTES!!"
+								}
+							]
+						},
+						{
+							"title": "Fly to Wyrmrest Temple",
+							"steps":
+							[
+								{
+									"title": "Run Obsidian Sanctum",
+									"boss":"XXX",
+									"spellId":999999,
+									"itemId":999999,
+									"name": "ZZZ",
+									"epic": false,
+									"icon":"inv_misc_summerfest_braziergreen",
+									"notes":"NOTES!!"
+								}
+							]
+						},
+						{
+							"title": "Fly to Howling Fjord",
+							"steps":
+							[
+								{
+									"title": "Run Utgarde Pinnacle",
+									"boss":"XXX",
+									"spellId":999999,
+									"itemId":999999,
+									"name": "ZZZ",
+									"epic": false,
+									"icon":"inv_misc_summerfest_braziergreen",
+									"notes":"NOTES!!"
+								}
+							]
+						},
+						{
+							"title": "Fly to Storm Peaks",
+							"steps":
+							[
+								{
+									"title": "Run Ulduar",
+									"boss":"XXX",
+									"spellId":999999,
+									"itemId":999999,
+									"name": "ZZZ",
+									"epic": false,
+									"icon":"inv_misc_summerfest_braziergreen",
+									"notes":"NOTES!!"
+								}
+							]
+						}
+					]
+				},
+				{
+					"title":"Portal to Stormwind/Orgrimmar",
+					"finalStep": "Hearthstone back to shrine",
+					"steps": 
+					[
+					]
+				},
+				{
+					"title":"Portal to Stormwind/Orgrimmar",
+					"finalStep": "Hearthstone back to shrine",
+					"steps": 
+					[
+					]
+				},
+				{
+					"title":"Portal to Shattrath",
+					"finalStep": "Hearthstone back to shrine",
+					"steps": 
+					[
+					]
+				},
+				{
+					"title":"Portal to Stormwind/Orgrimmar",
+					"finalStep": "Hearthstone back to shrine",
+					"steps": 
+					[
+					]
 				}
 			]
 		}
