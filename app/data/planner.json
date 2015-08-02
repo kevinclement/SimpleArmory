@@ -52,7 +52,7 @@
 											"name":"Trash",
 											"spellId":25953,
 											"itemId":21218,
-											"mount": "Blue Qiraji Resonating Crystal",
+											"mount": "Blue Qiraji Crystal",
 											"epic": false,
 											"icon":"inv_misc_qirajicrystal_04"
 										},
@@ -60,7 +60,7 @@
 											"name":"Trash",
 											"spellId":26056,
 											"itemId":21323,
-											"mount": "Green Qiraji Resonating Crystal",
+											"mount": "Green Qiraji Crystal",
 											"epic": false,
 											"icon":"inv_misc_qirajicrystal_03"
 										},
@@ -68,7 +68,7 @@
 											"name":"Trash",
 											"spellId":26055,
 											"itemId":21324,
-											"mount": "Yellow Qiraji Resonating Crystal",
+											"mount": "Yellow Qiraji Crystal",
 											"epic": false,
 											"icon":"inv_misc_qirajicrystal_01"
 										},
@@ -76,7 +76,7 @@
 											"name":"Trash",
 											"spellId":26054,
 											"itemId":21321,
-											"mount": "Red Qiraji Resonating Crystal",
+											"mount": "Red Qiraji Crystal",
 											"epic": false,
 											"icon":"inv_misc_qirajicrystal_02"
 										}
@@ -107,15 +107,30 @@
 									"bosses": 
 									[
 										{
-											"name":"XXX",
-											"spellId":999999,
-											"itemId":999999,
-											"mount": "ZZZ",
-											"epic": false,
-											"icon":"inv_misc_summerfest_braziergreen"
+											"name":"Ultraxion",
+											"spellId":110039,
+											"itemId":78919,
+											"mount": "Experiment 12-B",
+											"epic": true,
+											"icon":"ability_mount_drake_twilight"
+										},
+										{
+											"name":"Deathwing",
+											"spellId":107842,
+											"itemId":77067,
+											"mount": "Blazing Drake",
+											"epic": true,
+											"icon":"ability_mount_drake_red"
+										},
+										{
+											"name":"Deathwing",
+											"spellId":107845,
+											"itemId":77069,
+											"mount": "Life-Binder's Handmaiden",
+											"epic": true,
+											"icon":"ability_mount_drake_red"
 										}
-									],
-									"notes":"NOTES!!"
+									]
 								}
 							]
 						},
