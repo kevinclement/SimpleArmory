@@ -34,9 +34,9 @@
 									"name":"Al'akir",
 									"spellId":88744,
 									"itemId":63041,
-									"mount": "Bar",
+									"mount": "Drake of the South Wind",
 									"epic":true,
-									"icon": "ability_mount_drake_blue"
+									"icon": "inv_misc_stormdragonpurple"
 								}
 							]
 						},
@@ -49,15 +49,38 @@
 									"bosses": 
 									[
 										{
-											"name":"XXX",
-											"spellId":999999,
-											"itemId":999999,
-											"mount": "ZZZ",
+											"name":"Trash",
+											"spellId":25953,
+											"itemId":21218,
+											"mount": "Blue Qiraji Resonating Crystal",
 											"epic": false,
-											"icon":"inv_misc_summerfest_braziergreen"
+											"icon":"inv_misc_qirajicrystal_04"
+										},
+										{
+											"name":"Trash",
+											"spellId":26056,
+											"itemId":21323,
+											"mount": "Green Qiraji Resonating Crystal",
+											"epic": false,
+											"icon":"inv_misc_qirajicrystal_03"
+										},
+										{
+											"name":"Trash",
+											"spellId":26055,
+											"itemId":21324,
+											"mount": "Yellow Qiraji Resonating Crystal",
+											"epic": false,
+											"icon":"inv_misc_qirajicrystal_01"
+										},
+										{
+											"name":"Trash",
+											"spellId":26054,
+											"itemId":21321,
+											"mount": "Red Qiraji Resonating Crystal",
+											"epic": false,
+											"icon":"inv_misc_qirajicrystal_02"
 										}
-									],
-									"notes":"NOTES!!"
+									]
 								}
 							]
 						},
