@@ -13,8 +13,8 @@
         $window.ga('send', 'pageview', 'Mounts');
 
         // anchor css used for planner checkbox
-        $scope.anchorCss = function (step) {
-            if (step.epic) {
+        $scope.anchorCss = function (boss) {
+            if (boss.epic) {
                 return 'mnt-plan-epic';
             }
 
@@ -22,12 +22,12 @@
         };
 
         // img src for planner image
-        $scope.getPlanImageSrc = function (step) {
-            if (!step.icon) {
+        $scope.getPlanImageSrc = function (boss) {
+            if (!boss.icon) {
                 return '';
             }
 
-            return '//wow.zamimg.com/images/wow/icons/tiny/' + step.icon + '.gif';
+            return '//wow.zamimg.com/images/wow/icons/tiny/' + boss.icon + '.gif';
         };
 
         MountsAndPetsService.getItems('mounts', 'mounts', 'spellId').then(function(items){
