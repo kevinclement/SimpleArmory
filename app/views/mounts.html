@@ -30,8 +30,8 @@
         <tr>
           <th>#</th>
           <th>Step</th>
-          <th>Boss</th>
-          <th>Mount</th>
+          <th class="mnt-plan-boss-col">Boss</th>
+          <th class="mnt-plan-mount-col">Mount</th>
           <th>Notes</th>
         </tr>
       </thead>
@@ -43,8 +43,8 @@
             <table width="100%">
               <tbody ng-repeat="boss in step.bosses">
                 <tr>
-                  <td width="50%">{{boss.name}}</td>
-                  <td><a ng-show="boss.itemId" ng-class="anchorCss(step)" ng-href="//www.wowhead.com/item={{ boss.itemId }}"><img class="mnt-plan-icon" ng-src="{{getPlanImageSrc(boss)}}">{{boss.mount}}</a></td>
+                  <td class="mnt-plan-boss-col">{{boss.name}}</td>
+                  <td class="mnt-plan-mount-col"><a ng-show="boss.itemId" ng-class="anchorCss(boss)" ng-href="//www.wowhead.com/item={{ boss.itemId }}"><img class="mnt-plan-icon" ng-src="{{getPlanImageSrc(boss)}}">{{boss.mount}}</a></td>
                 </tr ng-repeat-end>
               </tbody>
             </table>
