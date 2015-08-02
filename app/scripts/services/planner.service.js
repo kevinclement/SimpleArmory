@@ -8,7 +8,7 @@
 
     function PlannerService($http, $log, LoginService, $routeParams) {
         return {
-            getSteps: function() {
+            getSteps: function(items) {
                 return LoginService.getCharacter(
                     {
                         'region': $routeParams.region,
@@ -20,18 +20,18 @@
                              .then(function(data) {
                                 
                                  $log.log('Parsing planner.json...');
-                                 return parseStepsObject(data.data.steps, character[0]);
+                                 return parseStepsObject(data.data.steps, items);
                              });
                      });
             }
         };
 
         // gotta love recursion
-        function parseStepsObject(steps, character) {    
+        function parseStepsObject(steps, items) {    
             var neededSteps = [];
             angular.forEach(steps, function(step) {
                 if (step.steps) {
-                    var neededChildSteps = parseStepsObject(step.steps, character);
+                    var neededChildSteps = parseStepsObject(step.steps, items);
 
                     // if we have child steps and we found ones that were needed, then we can
                     // go ahead and add ourself as a step and our children too
@@ -43,7 +43,7 @@
                         }
                     }
                 }
-                else if (!checkStepCompleted(step)) {
+                else if (!checkStepCompleted(step, items)) {
                     neededSteps.push(step);        
                 }
             });
@@ -51,8 +51,24 @@
             return neededSteps;
         }
 
-        function checkStepCompleted(step) {
-            return false;
+        function checkStepCompleted(step, items) {
+            var completed = true;
+            var neededBosses = [];
+
+            // check to see if we've finished all the bosses
+            if (step.bosses) {
+                angular.forEach(step.bosses, function(boss) {
+                    if (items.lookup[boss.spellId] === undefined) {
+                        neededBosses.push(boss);
+                        completed = false;
+                    }
+                });
+            }
+
+            // reset bosses array to the ones we need
+            step.bosses = neededBosses;
+
+            return completed;
         }
     }
 

@@ -36,7 +36,7 @@
         </tr>
       </thead>
       <tbody ng-repeat="step in planner">
-        <tr ng-hide="isCollected(step.spellId)">
+        <tr>
           <td>{{$index + 1}}</td>
           <td>{{step.title}}</td>
           <td colspan="2">
