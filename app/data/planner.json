@@ -334,9 +334,46 @@
 				},
 				{
 					"title":"Portal to Stormwind/Orgrimmar",
-					"finalStep": "Hearthstone back to shrine",
 					"steps": 
 					[
+						{
+							"title": "Portal to Blasted Lands",
+							"steps":
+							[
+								{
+									"title": "Fly to Deadwind Pass",
+									"steps": 
+									[
+										{
+											"title": "Run Karazhan",
+											"boss":"XXX",
+											"spellId":999999,
+											"itemId":999999,
+											"name": "ZZZ",
+											"epic": false,
+											"icon":"inv_misc_summerfest_braziergreen",
+											"notes":"NOTES"
+										}
+									]
+								},
+								{
+									"title": "Fly to Stranglethorn Vale",
+									"steps": 
+									[
+										{
+											"title": "Run Zul'Gurub",
+											"boss":"XXX",
+											"spellId":999999,
+											"itemId":999999,
+											"name": "ZZZ",
+											"epic": false,
+											"icon":"inv_misc_summerfest_braziergreen",
+											"notes":"NOTES"
+										}
+									]
+								}
+							]
+						}
 					]
 				}
 			]
