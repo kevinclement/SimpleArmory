@@ -338,15 +338,22 @@
 									"bosses": 
 									[
 										{
-											"name":"XXX",
-											"spellId":999999,
-											"itemId":999999,
-											"mount": "ZZZ",
-											"epic": false,
-											"icon":"inv_misc_summerfest_braziergreen"
+											"name":"Alysrazor",
+											"spellId":101542,
+											"itemId":71665,
+											"mount": "Flametalon of Alysrazor",
+											"epic": true,
+											"icon":"ability_mount_fireravengodmount"
+										},
+										{
+											"name":"Ragnaros",
+											"spellId":97493,
+											"itemId":69224,
+											"mount":  "Egg of Millagazor",
+											"epic": true,
+											"icon":"inv_misc_orb_05"
 										}
-									],
-									"notes":"NOTES!!"
+									]
 								}
 							]
 						}
