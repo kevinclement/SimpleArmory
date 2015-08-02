@@ -40,7 +40,7 @@
                         neededSteps = neededSteps.concat(neededChildSteps);
                     }
                 }
-                else if (checkStepCompleted(step)) {
+                else if (!checkStepCompleted(step)) {
                     neededSteps.push(step);        
                 }
             });
@@ -49,7 +49,7 @@
         }
 
         function checkStepCompleted(step) {
-            return step.title != "3";
+            return false;
         }
     }
 
