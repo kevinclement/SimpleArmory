@@ -221,6 +221,22 @@
 					"finalStep": "Hearthstone back to shrine",
 					"steps": 
 					[
+						{
+							"title": "Portal to Deepholm",
+							"steps":
+							[
+								{
+									"title": "Run Stonecore",
+									"boss":"XXX",
+									"spellId":999999,
+									"itemId":999999,
+									"name": "ZZZ",
+									"epic": false,
+									"icon":"inv_misc_summerfest_braziergreen",
+									"notes":"You can run heroic once and 9 normal"
+								}
+							]
+						}
 					]
 				},
 				{
