@@ -244,6 +244,92 @@
 					"finalStep": "Hearthstone back to shrine",
 					"steps": 
 					[
+						{
+							"title": "Fly to Auchindoun",
+							"steps":
+							[
+								{
+									"title": "Run Sethekk Halls",
+									"boss":"XXX",
+									"spellId":999999,
+									"itemId":999999,
+									"name": "ZZZ",
+									"epic": false,
+									"icon":"inv_misc_summerfest_braziergreen",
+									"notes":"NOTES"
+								}
+							]
+						},
+						{
+							"title": "Fly to Netherstorm",
+							"steps":
+							[
+								{
+									"title": "Run Tempest Keep",
+									"boss":"XXX",
+									"spellId":999999,
+									"itemId":999999,
+									"name": "ZZZ",
+									"epic": false,
+									"icon":"inv_misc_summerfest_braziergreen",
+									"notes":"NOTES"
+								}
+							]
+						},
+						{
+							"title": "Fly to Shattrath",
+							"steps":
+							[
+								{
+									"title": "Portal to Isle of Quel'Danas",
+									"steps":
+									[
+										{
+											"title": "Run Magister's Terrace",
+											"boss":"XXX",
+											"spellId":999999,
+											"itemId":999999,
+											"name": "ZZZ",
+											"epic": false,
+											"icon":"inv_misc_summerfest_braziergreen",
+											"notes":"NOTES"
+										},
+										{
+											"title": "Fly to Ghostlands",
+											"steps": 
+											[
+												{
+													"title": "Run Zul'Aman",
+													"boss":"XXX",
+													"spellId":999999,
+													"itemId":999999,
+													"name": "ZZZ",
+													"epic": false,
+													"icon":"inv_misc_summerfest_braziergreen",
+													"notes":"NOTES"
+												}
+											]
+										},
+										{
+											"title": "Fly to Eastern Plaguelands",
+											"steps": 
+											[
+												{
+													"title": "Run Stratholme",
+													"boss":"XXX",
+													"spellId":999999,
+													"itemId":999999,
+													"name": "ZZZ",
+													"epic": false,
+													"icon":"inv_misc_summerfest_braziergreen",
+													"notes":"NOTES"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
 					]
 				},
 				{
