@@ -38,7 +38,7 @@
       <tbody ng-repeat="step in planner">
         <tr ng-hide="isCollected(step.spellId)">
           <td>{{$index + 1}}</td>
-          <td>{{step.step}}</td>
+          <td>{{step.title}}</td>
           <td>{{step.boss}}</td>
           <td><a ng-show="step.itemId" ng-class="anchorCss(step)" ng-href="//www.wowhead.com/item={{ step.itemId }}"><img class="mnt-plan-icon" ng-src="{{getPlanImageSrc(step)}}">{{step.name}}</a></td>
           <td>{{step.notes}}</td>

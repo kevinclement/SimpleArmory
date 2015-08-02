@@ -1,6 +1,17 @@
-[
-    {"step":"Start off in Stormwind/Orgrimmar"},
-    {"step":"Portal to Uldum"},
-    {"step":"Run Vortex Pinnacle", "boss":"Altarius", "spellId":88472, "itemId":63040, "name": "Foo", "icon":"inv_misc_summerfest_braziergreen", "notes":"You can run heroic once and 9 normal"},
-    {"step":"Run Throne of the Four Winds", "boss":"Al'akir", "spellId":88744, "itemId":63041, "name": "Bar", "epic":true, "icon": "ability_mount_drake_blue"}
-]
+{
+	"steps": 
+	[
+		{
+			"title":"1",
+			"steps": 
+			[
+				{
+					"title":"2"
+				},
+				{
+					"title":"3"
+				}
+			]
+		}
+	]
+}

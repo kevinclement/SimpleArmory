@@ -16,20 +16,40 @@
                         'character':$routeParams.character
                     })
                     .then(function(character) {
-                         return $http.get('data/planner.json', { cache: true, isArray:true })
+                         return $http.get('data/planner.json', { cache: true })
                              .then(function(data) {
                                 
                                  $log.log('Parsing planner.json...');
-                                 return parseItemsObject(data.data, character[0]);        
+                                 return parseStepsObject(data.data.steps, character[0]);
                              });
                      });
             }
         };
 
-        function parseItemsObject(steps, character) {    
-            
-            // Data object we expose externally
-            return steps;
+        // gotta love recursion
+        function parseStepsObject(steps, character) {    
+            var neededSteps = [];
+            angular.forEach(steps, function(step) {
+                if (step.steps) {
+                    var neededChildSteps = parseStepsObject(step.steps, character);
+
+                    // if we have child steps and we found ones that were needed, then we can
+                    // go ahead and add ourself as a step and our children too
+                    if (neededChildSteps.length > 0) {
+                        neededSteps.push(step);
+                        neededSteps = neededSteps.concat(neededChildSteps);
+                    }
+                }
+                else if (checkStepCompleted(step)) {
+                    neededSteps.push(step);        
+                }
+            });
+
+            return neededSteps;
+        }
+
+        function checkStepCompleted(step) {
+            return step.title != "3";
         }
     }
 
