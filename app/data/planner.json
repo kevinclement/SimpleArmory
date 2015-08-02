@@ -170,15 +170,14 @@
 									"bosses": 
 									[
 										{
-											"name":"XXX",
-											"spellId":999999,
-											"itemId":999999,
-											"mount": "ZZZ",
-											"epic": false,
-											"icon":"inv_misc_summerfest_braziergreen"
+											"name":"The Lich King",
+											"spellId":72286,
+											"itemId":50818,
+											"mount": "Invincible's Reins",
+											"epic": true,
+											"icon":"ability_mount_pegasus"
 										}
-									],
-									"notes":"NOTES!!"
+									]
 								}
 							]
 						},
@@ -191,15 +190,38 @@
 									"bosses": 
 									[
 										{
-											"name":"XXX",
-											"spellId":999999,
-											"itemId":999999,
-											"mount": "ZZZ",
-											"epic": false,
-											"icon":"inv_misc_summerfest_braziergreen"
+											"name":"Koralon",
+											"spellId":61467,
+											"itemId":44083,
+											"mount": "Grand Black War Mammoth",
+											"epic": true,
+											"icon":"ability_mount_mammoth_black"
+										},
+										{
+											"name":"Toravon",
+											"spellId":61467,
+											"itemId":44083,
+											"mount": "Grand Black War Mammoth",
+											"epic": true,
+											"icon":"ability_mount_mammoth_black"
+										},
+										{
+											"name":"Archavon",
+											"spellId":61467,
+											"itemId":44083,
+											"mount": "Grand Black War Mammoth",
+											"epic": true,
+											"icon":"ability_mount_mammoth_black"
+										},
+										{
+											"name":"Emalon",
+											"spellId":61467,
+											"itemId":44083,
+											"mount": "Grand Black War Mammoth",
+											"epic": true,
+											"icon":"ability_mount_mammoth_black"
 										}
-									],
-									"notes":"NOTES!!"
+									]
 								}
 							]
 						},
@@ -212,15 +234,22 @@
 									"bosses": 
 									[
 										{
-											"name":"XXX",
-											"spellId":999999,
-											"itemId":999999,
-											"mount": "ZZZ",
-											"epic": false,
-											"icon":"inv_misc_summerfest_braziergreen"
+											"name":"Malygos",
+											"spellId":59567,
+											"itemId":43952,
+											"mount": "Azure Drake",
+											"epic": true,
+											"icon":"ability_mount_drake_azure"
+										},
+										{
+											"name":"Malygos",
+											"spellId":59568,
+											"itemId":43953,
+											"mount": "Blue Drake",
+											"epic": true,
+											"icon":"ability_mount_drake_blue"
 										}
-									],
-									"notes":"NOTES!!"
+									]
 								}
 							]
 						},
@@ -233,15 +262,22 @@
 									"bosses": 
 									[
 										{
-											"name":"XXX",
-											"spellId":999999,
-											"itemId":999999,
-											"mount": "ZZZ",
-											"epic": false,
-											"icon":"inv_misc_summerfest_braziergreen"
+											"name":"Sartharion",
+											"spellId":59650,
+											"itemId":43986,
+											"mount": "Black Drake",
+											"epic": true,
+											"icon":"ability_mount_drake_twilight"
+										},
+										{
+											"name":"Sartharion",
+											"spellId":59571,
+											"itemId":43954,
+											"mount": "Twilight Drake",
+											"epic": true,
+											"icon":"ability_mount_drake_twilight"
 										}
-									],
-									"notes":"NOTES!!"
+									]
 								}
 							]
 						},
