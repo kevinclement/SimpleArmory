@@ -198,6 +198,22 @@
 					"finalStep": "Hearthstone back to shrine",
 					"steps": 
 					[
+						{
+							"title": "Portal to Hyjal",
+							"steps":
+							[
+								{
+									"title": "Run Firelands",
+									"boss":"XXX",
+									"spellId":999999,
+									"itemId":999999,
+									"name": "ZZZ",
+									"epic": false,
+									"icon":"inv_misc_summerfest_braziergreen",
+									"notes":"NOTES!!"
+								}
+							]
+						}
 					]
 				},
 				{
