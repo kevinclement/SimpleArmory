@@ -9,7 +9,7 @@
 
     function MountsCtrl($scope, MountsAndPetsService, PlannerService, $window) {
 
-    	// Analytics for page
+    	// Analytics for page 
         $window.ga('send', 'pageview', 'Mounts');
 
         // anchor css used for planner checkbox
