@@ -203,9 +203,9 @@
                         // If the item id is available lets use that
                         if (item.itemId) {
                             link = 'item='+item.itemId;
-                        } else if (item.allianceId && character.faction === 'A') {
+                        } else if (item.allianceId && (character.faction === 'A' || character.faction === 'Alliance')) {
                             link = 'item='+item.allianceId;
-                        } else if (item.hordeId && character.faction === 'H') {
+                        } else if (item.hordeId && (character.faction === 'H' || character.faction === 'Horde')) {
                             link = 'item='+item.hordeId;
                         } else if (item.creatureId) {
                             link = 'npc='+item.creatureId;
@@ -279,7 +279,7 @@
             obj.lookup = collected;
 
             // Add stuff that planner needs
-            obj.isAlliance = character.faction === 'A';
+            obj.isAlliance = (character.faction === 'A' || character.faction === 'Alliance');
 
             // Data object we expose externally
             return obj;
