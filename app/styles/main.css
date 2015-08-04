@@ -136,7 +136,7 @@ body {
     position:relative;
     padding-bottom:6px;
 }
- .pbQual {
+.pbQual {
     position:absolute;
     bottom:0px;
     right:0px;
@@ -294,6 +294,33 @@ body {
   z-index:1;
 }
 /* ## Reputation Page ############################### */
+
+/* ## Mounts Page ############################### */
+.mnt-plan-boss-col {
+  min-width: 110px;
+}
+.mnt-plan-mount-col {
+  min-width: 200px;
+}
+.mnt-plan-icon {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: -2px;
+  margin-right: 4px;
+}
+.mnt-plan-rare {
+  color: #0070dd;
+}
+.mnt-plan-epic {
+  color: #a335ee;
+}
+.mnt-icon-step {
+  position: relative;
+  top: -2px;
+  margin-right: 3px;
+}
+/* ## Mounts Page ############################### */
 
 /* Fix up the widths for bigger header */
 @media (min-width: 768px) {

@@ -276,6 +276,10 @@
             // Add totals
             obj.collected = totalCollected;
             obj.possible = totalPossible;
+            obj.lookup = collected;
+
+            // Add stuff that planner needs
+            obj.isAlliance = character.faction === 'A';
 
             // Data object we expose externally
             return obj;
