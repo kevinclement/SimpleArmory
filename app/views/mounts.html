@@ -10,7 +10,6 @@
         </div>
     </h2>        
   </div>
-
   <div ng-hide="showPlanner">
     <h3 class="categoryHeader" ng-hide="category.name == 'Mounts'" ng-repeat-start="category in items.categories">{{ category.name }}</h3>
     <div class="sect" ng-repeat="subCategory in category.subCategories">
@@ -19,9 +18,8 @@
           	<img ng-src="{{getImageSrc(item)}}">
         	</a>
     </div>
-    <div class="clear" ng-repeat-end /> 
+    <div class="clear" ng-repeat-end></div> 
   </div>
-
   <div ng-show="showPlanner && plannerReturned && planner.length > 0">
     <table class="table table-condensed">
       <thead>
@@ -52,7 +50,6 @@
       </tbody>
     </table>
   </div>
-
   <div ng-show="showPlanner && plannerReturned && planner.length == 0">
     <img src="images/success.png" />
     <p>
