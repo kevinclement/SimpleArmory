@@ -517,15 +517,14 @@
 											"bosses": 
 											[
 												{
-													"name":"XXX",
-													"spellId":999999,
-													"itemId":999999,
-													"mount": "ZZZ",
-													"epic": false,
-													"icon":"inv_misc_summerfest_braziergreen"
+													"name":"Attumen",
+													"spellId":36702,
+													"itemId":30480,
+													"mount": "Fiery Warhorse's Reins",
+													"epic": true,
+													"icon":"ability_mount_dreadsteed"
 												}
-											],
-											"notes":"NOTES!!"
+											]
 										}
 									]
 								},
@@ -538,15 +537,22 @@
 											"bosses": 
 											[
 												{
-													"name":"XXX",
-													"spellId":999999,
-													"itemId":999999,
-													"mount": "ZZZ",
-													"epic": false,
-													"icon":"inv_misc_summerfest_braziergreen"
+													"name":"Kilnara",
+													"spellId":96499,
+													"itemId":68824,
+													"mount": "Zulian Panther",
+													"epic": true,
+													"icon":"ability_mount_blackpanther"
+												},
+												{
+													"name":"Mandokir",
+													"spellId":96491,
+													"itemId":68823,
+													"mount": "Razzashi Raptor",
+													"epic": true,
+													"icon":"ability_mount_raptor"
 												}
-											],
-											"notes":"NOTES!!"
+											]
 										}
 									]
 								}
