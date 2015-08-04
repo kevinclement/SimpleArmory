@@ -42,7 +42,34 @@
                         $scope.planner = steps;
                     });
                 }
-            };            
+            };
+
+            // img src for planner image
+            $scope.getPlanStepImageSrc = function (step) {
+                
+                if (step.capital) {
+                    if (items.isAlliance) {
+                        return 'images/alliance.png';
+                    }
+                    else {
+                        return 'images/horde.png';
+                    }
+                }
+                else if (step.hearth) {
+                    return 'images/hearth.png';
+                }
+
+                return '';
+            };
+
+            $scope.getStepTitle = function (step) {
+                if (step.capital) {
+                    return step.title + (items.isAlliance ? 'Stormwind' : 'Orgrimmar');
+                }
+                else {
+                    return step.title;
+                }
+            };
         });       
     }
 

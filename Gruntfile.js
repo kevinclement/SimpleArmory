@@ -177,6 +177,9 @@ module.exports = function (grunt) {
           '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
           '<%= yeoman.dist %>/styles/fonts/*',
           '!<%= yeoman.dist %>/images/galakras.png',
+          '!<%= yeoman.dist %>/images/alliance.png',
+          '!<%= yeoman.dist %>/images/horde.png',
+          '!<%= yeoman.dist %>/images/hearth.png',
           '!<%= yeoman.dist %>/images/spell_fel_incinerate.jpg'
         ]
       }

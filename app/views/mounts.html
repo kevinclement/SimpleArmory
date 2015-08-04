@@ -38,7 +38,7 @@
       <tbody ng-repeat="step in planner">
         <tr>
           <td>{{$index + 1}}</td>
-          <td>{{step.title}}</td>
+          <td><img ng-src="{{getPlanStepImageSrc(step)}}" ng-hide="getPlanStepImageSrc(step) == ''" class="mnt-icon-step"/>{{getStepTitle(step)}}</td>
           <td colspan="2">
             <table width="100%">
               <tbody ng-repeat="boss in step.bosses">

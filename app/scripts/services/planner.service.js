@@ -39,7 +39,7 @@
                         neededSteps.push(step);
                         neededSteps = neededSteps.concat(neededChildSteps);
                         if (step.finalStep) {
-                            neededSteps.push({'title':step.finalStep});
+                            neededSteps.push({'title':step.finalStep, 'hearth':true});
                         }
                     }
                 }
