@@ -58,8 +58,7 @@
             // check to see if we've finished all the bosses
             if (step.bosses) {
                 angular.forEach(step.bosses, function(boss) {
-                    // TMP: REMOVE || before shipping
-                    if (items.lookup[boss.spellId] === undefined || 1===1) {
+                    if (items.lookup[boss.spellId] === undefined) {
                         neededBosses.push(boss);
                         completed = false;
                     }
