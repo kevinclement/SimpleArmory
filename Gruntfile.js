@@ -180,6 +180,7 @@ module.exports = function (grunt) {
           '!<%= yeoman.dist %>/images/alliance.png',
           '!<%= yeoman.dist %>/images/horde.png',
           '!<%= yeoman.dist %>/images/hearth.png',
+          '!<%= yeoman.dist %>/images/success.png',
           '!<%= yeoman.dist %>/images/spell_fel_incinerate.jpg'
         ]
       }

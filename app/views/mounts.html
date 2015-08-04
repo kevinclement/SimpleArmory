@@ -24,7 +24,7 @@
   </div>
 
   <!-- Planner Layout -->
-  <div ng-show="showPlanner">
+  <div ng-show="showPlanner && plannerReturned && planner.length > 0">
     <table class="table table-condensed">
       <thead>
         <tr>
@@ -53,5 +53,14 @@
         </tr ng-repeat-end>
       </tbody>
     </table>
+  </div>
+
+  <!-- Planner, all completed -->
+  <div ng-show="showPlanner && plannerReturned && planner.length == 0">
+    <img src="images/success.png" />
+    <p>
+      Grats! You've farmed all the mounts. <br/>
+      You should post on <a href="http://reddit.com/r/wow">/r/wow</a>!
+    </p>
   </div>
 </div>

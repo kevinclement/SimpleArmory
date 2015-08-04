@@ -39,6 +39,7 @@
                     $window.ga('send', 'pageview', 'Planner');
 
                     PlannerService.getSteps(items).then(function(steps){
+                        $scope.plannerReturned = true;
                         $scope.planner = steps;
                     });
                 }
