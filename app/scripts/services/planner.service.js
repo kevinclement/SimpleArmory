@@ -58,7 +58,15 @@
             // check to see if we've finished all the bosses
             if (step.bosses) {
                 angular.forEach(step.bosses, function(boss) {
-                    if (items.lookup[boss.spellId] === undefined) {
+                    if (boss.allianceSpellId !== undefined && items.isAlliance && items.lookup[boss.allianceSpellId] === undefined) {
+                        neededBosses.push(boss);
+                        completed = false;
+                    }
+                    else if (boss.hordeSpellId !== undefined && !items.isAlliance && items.lookup[boss.hordeSpellId] === undefined) {
+                        neededBosses.push(boss);
+                        completed = false;
+                    }
+                    else if (boss.spellId !== undefined && items.lookup[boss.spellId] === undefined) {
                         neededBosses.push(boss);
                         completed = false;
                     }
