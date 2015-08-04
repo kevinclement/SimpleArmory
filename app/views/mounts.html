@@ -11,7 +11,6 @@
     </h2>        
   </div>
 
-  <!-- Grid Layout -->
   <div ng-hide="showPlanner">
     <h3 class="categoryHeader" ng-hide="category.name == 'Mounts'" ng-repeat-start="category in items.categories">{{ category.name }}</h3>
     <div class="sect" ng-repeat="subCategory in category.subCategories">
@@ -23,7 +22,6 @@
     <div class="clear" ng-repeat-end /> 
   </div>
 
-  <!-- Planner Layout -->
   <div ng-show="showPlanner && plannerReturned && planner.length > 0">
     <table class="table table-condensed">
       <thead>
@@ -55,7 +53,6 @@
     </table>
   </div>
 
-  <!-- Planner, all completed -->
   <div ng-show="showPlanner && plannerReturned && planner.length == 0">
     <img src="images/success.png" />
     <p>
