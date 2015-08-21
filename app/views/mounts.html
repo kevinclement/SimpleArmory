@@ -45,7 +45,16 @@
               </tbody>
             </table>
           </td>
-          <td>{{step.notes}}</td>
+          <td>
+            {{step.notes}}
+            <table>
+              <tbody ng-repeat="boss in step.bosses">
+                <tr>
+                  <td>{{boss.note}}&nbsp;</td>
+                </tr ng-repeat-end>
+              </tbody>
+            </table>
+          </td>
         </tr ng-repeat-end>
       </tbody>
     </table>
