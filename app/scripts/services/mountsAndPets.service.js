@@ -43,34 +43,14 @@
             var totalPossible = 0;
             var found = {};
 
-            // Hack: Horde chopper doesn't show up, so we have to check for achievement and just assume they 'learned' it
-            if (character.achievements.achievementsCompleted.indexOf(9909) >= 0) {
-                collected[179244] = {
-                    'spellid': '179244',
-                    'allianceId': null,
-                    'hordeId': null,
-                    'itemId': '122703',
-                    'icon': 'inv_misc_key_06',
-                    'obtainable': true,
-                    'allowableRaces': [
-                        2,
-                        5,
-                        6,
-                        8,
-                        9,
-                        10,
-                        26
-                    ],
-                    'allowableClasses': null
-                };
-                found[179244] = false;
-            }
-
             // Build up lookup for items that character has
             angular.forEach(character[characterProperty].collected, function(item) {
                 collected[item[collectedId]] = item;
                 found[item[collectedId]] = false;               
             });
+
+            // Fix any problems blizzard has introduced
+            applyHacks(character, collected, found);
 
             // Lets parse out all the categories and build out our structure
             angular.forEach(categories, function(category) {
@@ -267,6 +247,85 @@
 
             // Data object we expose externally
             return obj;
+        }
+
+        function applyHacks(character, collected, found) {
+            // Hack: Horde chopper doesn't show up, so we have to check for achievement and just assume they 'learned' it
+            if (character.achievements.achievementsCompleted.indexOf(9909) >= 0) {
+                collected[179244] = {
+                    'spellid': '179244',
+                    'allianceId': null,
+                    'hordeId': null,
+                    'itemId': '122703',
+                    'icon': 'inv_misc_key_06',
+                    'obtainable': true,
+                    'allowableRaces': [
+                        2,
+                        5,
+                        6,
+                        8,
+                        9,
+                        10,
+                        26
+                    ],
+                    'allowableClasses': null
+                };
+                found[179244] = false;
+            }
+
+            // Brown Horse (if you have all the other horses, you get this.  Oprah would approve)
+            if (!collected[458] && collected[23227] && collected[23229] && 
+                 collected[23228] && collected[6648] && collected[470] && collected[472]) {
+                
+                console.log('Hack: Blizzard still has the brown horse bug');
+
+                collected[458] = {
+                    'spellid': '458',
+                    'allianceId': null,
+                    'hordeId': null,
+                    'itemId': '5656',
+                    'icon': 'ability_mount_ridinghorse',
+                    'obtainable': true,
+                    'allowableRaces': [
+                        1,
+                        3,
+                        4,
+                        7,
+                        11,
+                        22,
+                        25
+                    ],
+                    'allowableClasses': null
+                };
+                found[458] = false;
+            }
+
+            // Swift Warstrider (same problem as brown horse)
+            if (!collected[35028] && collected[22718] && collected[22724] && 
+                 collected[22722] && collected[22721] && collected[23509] && collected[59788]) {
+                
+                console.log('Hack: Blizzard still has the swift warstrider bug');
+
+                collected[35028] = {
+                    'spellid': '35028',
+                    'allianceId': null,
+                    'hordeId': null,
+                    'itemId': '34129',
+                    'icon': 'ability_mount_cockatricemountelite_black',
+                    'obtainable': true,
+                    'allowableRaces': [
+                        2,
+                        5,
+                        6,
+                        8,
+                        9,
+                        10,
+                        26
+                    ],
+                    'allowableClasses': null
+                };
+                found[35028] = false;
+            }
         }
     }
 
