@@ -53,6 +53,7 @@
 
         function checkStepCompleted(step, items) {
             var completed = true;
+            var showAll = true; // used for debugging
             var neededBosses = [];
 
             // check to see if we've finished all the bosses
@@ -66,7 +67,7 @@
                         neededBosses.push(boss);
                         completed = false;
                     }
-                    else if (boss.spellId !== undefined && items.lookup[boss.spellId] === undefined) {
+                    else if ((boss.spellId !== undefined && items.lookup[boss.spellId] === undefined) || showAll) {
                         neededBosses.push(boss);
                         completed = false;
                     }
