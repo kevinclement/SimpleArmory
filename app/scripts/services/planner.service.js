@@ -53,7 +53,7 @@
 
         function checkStepCompleted(step, items) {
             var completed = true;
-            var showAll = true; // used for debugging
+            var showAll = false; // used for debugging
             var neededBosses = [];
 
             // check to see if we've finished all the bosses
