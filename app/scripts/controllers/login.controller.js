@@ -45,42 +45,15 @@
         // turn drop down off until servers come back
         $scope.isDisabled = true;
 
-        // wait for promises to finish and then populate with servers
-        BlizzardRealmService.getUSRealms().then(function(data) {
-            console.log('Got realms for US');
+        BlizzardRealmService.getAllRealms().then(function(realms) {
             $scope.isDisabled = false;
             if ($scope.realms.length === 1) {
                 $scope.realms = [];
             }
 
-            angular.forEach(data.data.realms, function(value) {   
-               this.push({value:{realm:value.slug, region:'us'}, text:value.name + ' US'});
+            angular.forEach(realms, function(realm) {   
+                this.push({value:{realm:realm.slug, region:realm.region}, text:realm.name + ' ' + realm.region.toUpperCase()});
             }, $scope.realms);
-        });
-
-        BlizzardRealmService.getEURealms().then(function(data) {
-            console.log('Got realms for EU');
-            $scope.isDisabled = false;
-            if ($scope.realms.length === 1) {
-                $scope.realms = [];
-            }
-
-            angular.forEach(data.data.realms, function(value) {
-               this.push({value:{realm:value.slug, region:'eu'}, text:value.name + ' EU'});
-            }, $scope.realms);    
-        }, function(reason) {
-            console.log('Failed to get realms for EU: ' + reason.status + ' ' + reason.statusText);
-            
-            $scope.isDisabled = false;
-            if ($scope.realms.length === 1) {
-                $scope.realms = [];
-            }
-
-            BlizzardRealmService.getEUDefaultRealms().then(function(data) {
-                angular.forEach(data, function(serverObj) {
-                    this.push({value:{realm:serverObj.slug, region:'eu'}, text:serverObj.name + ' EU'});
-                }, $scope.realms);  
-            });
         });
 
         $scope.ok = function () {
