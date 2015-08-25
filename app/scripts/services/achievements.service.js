@@ -31,7 +31,7 @@
             }
         };
 
-        function parseAchievementObject(supercats, character, settings) {    
+        function parseAchievementObject(supercats, character, settings, $window) {    
             var obj = {};
             var completed = {};
             var critCompleted = {};
@@ -167,6 +167,7 @@
 
             for (var achId in found) {
                 if (found.hasOwnProperty(achId) && !found[achId] && !ignoredFoundAchivements[achId]) {
+                    $window.ga('send', 'event', 'MissingAchievement', achId);
                     console.log('WARN: Found achievement "' + achId + '" from character but not in db.');
                 }
             }

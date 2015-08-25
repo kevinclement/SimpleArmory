@@ -6,7 +6,7 @@
         .module('simpleArmoryApp')
         .factory('BlizzardRealmService', BlizzardRealmService);
 
-    function BlizzardRealmService($http, $q, $log) {
+    function BlizzardRealmService($http, $q, $log, $window) {
 
         return {
 
@@ -22,6 +22,7 @@
                     }, function(reason) {
                         
                         // had some problems loading data from cdn.  lets load the local copy
+                        $window.ga('send', 'event', 'CDNFailure', 'US');
                         console.log('Failed to get realms for US: ' + reason.status + ' ' + reason.statusText);
                         return $http.get('data/servers.us.json');
                     }),
@@ -34,6 +35,7 @@
                     }, function(reason) {
 
                        // had some problems loading data from cdn.  lets load the local copy
+                       $window.ga('send', 'event', 'CDNFailure', 'EU');
                        console.log('Failed to get realms for EU: ' + reason.status + ' ' + reason.statusText);
                        return $http.get('data/servers.eu.json'); 
                     }),

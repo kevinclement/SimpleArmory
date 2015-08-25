@@ -6,7 +6,7 @@
         .module('simpleArmoryApp')
         .factory('MountsAndPetsService', MountsAndPetsService);
 
-    function MountsAndPetsService($http, $log, LoginService, $routeParams) {
+    function MountsAndPetsService($http, $log, LoginService, $routeParams, $window) {
         // issues/53: Pets that we can ignore warning for because they are battle pets
         var ignoredFoundPets = 
         {
@@ -232,6 +232,7 @@
             if (collectedId !== 'creatureId') {
                 for (var collId in found) {
                     if (collId !== '0' && found.hasOwnProperty(collId) && !found[collId] && !ignoredFoundPets[collId]) {
+                        $window.ga('send', 'event', 'MissingCollection', collId);
                         console.log('WARN: Found item "' + collId + '" from character but not in db.');
                     }
                 }               

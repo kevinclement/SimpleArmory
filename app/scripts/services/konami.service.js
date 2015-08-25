@@ -52,7 +52,6 @@
           jq.animate({'bottom': '30'}, function() {           
             jq.animate({'bottom' : '0px' }, 100, function() {
               var offset = ((jq.position().left) + 400);
-              console.log('offset: ' + offset);
               jq.delay(300).animate({
                 'right' : offset
                 }, 1750, function() {
