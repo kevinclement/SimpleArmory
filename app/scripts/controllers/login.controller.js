@@ -25,11 +25,12 @@
        });
     }
 
-    function ModalInstanceCtrl($scope, $modalInstance, BlizzardRealmService) {
+    function ModalInstanceCtrl($scope, $modalInstance, BlizzardRealmService, $timeout) {
 
         // initialize with select disabled and a loading text
         $scope.realms = [];
         $scope.selectedRealm = {};
+        $scope.selectPlaceholder = 'Loading realm list...';
 
         // turn drop down off until servers come back
         $scope.isDisabled = true;
@@ -45,12 +46,14 @@
         };
 
         BlizzardRealmService.getAllRealms().then(function(realms) {
+
+            $scope.selectPlaceholder = 'Enter an realm...';    
             $scope.isDisabled = false;
             if ($scope.realms.length === 1) {
                 $scope.realms = [];
             }
-
             $scope.realms = realms;
+            $scope.$broadcast('SetFocus');
         });
 
         $scope.ok = function () {
