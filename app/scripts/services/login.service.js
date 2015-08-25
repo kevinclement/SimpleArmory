@@ -6,7 +6,7 @@
         .module('simpleArmoryApp')
         .factory('LoginService', LoginService);
 
-    function LoginService($location, $log, $http, $q) {
+    function LoginService($location, $log, $http, $q, $window) {
         return {
             getCharacter: function($routeParams) {
                 $log.log('Fetching ' + $routeParams.character + ' from server ' + $routeParams.realm + '...');
@@ -26,12 +26,19 @@
                   return $q.all([jsonp]);
 
               function getCharacterError() {
-                  $log.log('Trouble fetching character from battlenet');
+                $log.log('Trouble fetching character from battlenet');
+
+                // let's figure out what the errors are
+                $window.ga('send', 'event', 'LoginError', $routeParams.region + ':' + $routeParams.realm + ':' + $routeParams.character);
+
                 $location.url('error/' + $routeParams.realm + '/' + $routeParams.character);
               }
 
               function getCharacterComplete(data) {
                   data.data.region = $routeParams.region;
+
+                  // lets figure out who uses the site
+                  $window.ga('send', 'event', 'Login', $routeParams.region + ':' + $routeParams.realm + ':' + $routeParams.character);
 
                   // add faction
                   data.data.faction = [,'A','H','A','A','H','H','A','H','H','H','Alliance',,,,,,,,,,,'A',,,'A','H'][data.data.race];
