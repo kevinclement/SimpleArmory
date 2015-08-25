@@ -13,13 +13,6 @@
             controller: 'ModalInstanceCtrl',
             backdrop: 'static',
         });
-
-        modalInstance.opened.then(function () {
-            // Focus on the selection box when the dialog comes up
-            window.setTimeout(function() {
-                $('#realmSelection').focus();
-            },50);
-        });     
          
         modalInstance.result.then(function (loginObj) {
 

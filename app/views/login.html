@@ -7,13 +7,12 @@
   	<div class="input-group">
     	<span class="input-group-addon input-group-label">Realm</span>
       <ui-select ng-model="selectedRealm.selected"
-                   theme="bootstrap"
                    ng-disabled="isDisabled"
-                   reset-search-input="false"
                    style="width: 100%;"
+                   autofocus="true"
                    title="Choose an realm">
           <ui-select-match placeholder="Enter an realm...">{{$select.selected.name}}</ui-select-match>
-          <ui-select-choices repeat="realm in realms | filter:$select.search">
+          <ui-select-choices repeat="realm in realms | filter:{name:$select.search}">
             <div ng-bind-html="realm.name | highlight: $select.search"></div>
           </ui-select-choices>
       </ui-select>
