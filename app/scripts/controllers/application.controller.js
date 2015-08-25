@@ -6,7 +6,7 @@
         .module('simpleArmoryApp')
         .controller('ApplicationCtrl' , ApplicationCtrl);
 
-    function ApplicationCtrl($scope, LoginService, $location, $filter) {
+    function ApplicationCtrl($scope, LoginService, $location, $filter, KeyboardService, KonamiService) {
 
         // default to not logged in
         $scope.isLoggedIn = false;
@@ -32,7 +32,10 @@
                         $scope.isLoggedIn = true;
                 });
             }
-        });  
+        });
+
+        // hookup global hotkeys
+        KeyboardService.init(KonamiService.trigger);
 
         // Helper function for percentage numbers.  Used in a lot of screens
         $scope.percent = function(n, d) {
