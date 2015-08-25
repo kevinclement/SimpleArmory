@@ -12,7 +12,7 @@
                    autofocus="true"
                    title="Choose an realm">
           <ui-select-match placeholder="Enter an realm...">{{$select.selected.name}}</ui-select-match>
-          <ui-select-choices repeat="realm in realms | filter:{name:$select.search}">
+          <ui-select-choices group-by="regionGroupFn" repeat="realm in realms | filter:{name:$select.search}">
             <div ng-bind-html="realm.name | highlight: $select.search"></div>
           </ui-select-choices>
       </ui-select>

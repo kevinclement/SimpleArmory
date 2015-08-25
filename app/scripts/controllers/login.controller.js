@@ -34,6 +34,16 @@
         // turn drop down off until servers come back
         $scope.isDisabled = true;
 
+        // grouping for drop down
+        $scope.regionGroupFn = function (realm){
+            if (realm.region.toLowerCase() === 'us') {
+                return 'US';
+            }
+            else {
+                return 'EU';
+            }
+        };
+
         BlizzardRealmService.getAllRealms().then(function(realms) {
             $scope.isDisabled = false;
             if ($scope.realms.length === 1) {
