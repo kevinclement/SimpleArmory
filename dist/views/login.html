@@ -4,11 +4,16 @@
   <div class="modal-body">
   	<div class="input-group">
     	<span class="input-group-addon input-group-label">Realm</span>
-      <select id="realmSelection" class="combobox input-large form-control"
-          ng-disabled="isDisabled"
-          ng-model="selectedRealm"
-          ng-options="realm.value as realm.text for realm in realms">
-      </select>
+      <ui-select ng-model="selectedRealm.selected"
+                   ng-disabled="isDisabled"
+                   style="width: 100%;"
+                   focus-on="SetFocus"
+                   title="Choose an realm">
+          <ui-select-match placeholder="{{selectPlaceholder}}">{{$select.selected.name}}</ui-select-match>
+          <ui-select-choices group-by="regionGroupFn" repeat="realm in realms | filter:{name:$select.search}">
+            <div ng-bind-html="realm.name | highlight: $select.search"></div>
+          </ui-select-choices>
+      </ui-select>
     </div>
     <br/>
     <div class="input-group">
