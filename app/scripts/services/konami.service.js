@@ -9,7 +9,7 @@
         .module('simpleArmoryApp')
         .factory('KonamiService', KonamiService);
 
-    function KonamiService($document, $animate) {
+    function KonamiService($document, $animate, $window) {
       
       // Check for audio support
       var a = document.createElement('audio');
@@ -41,6 +41,9 @@
       return {
         trigger: function() {
           
+          // lets track this
+          $window.ga('send', 'event', 'Fun', 'Konami');
+
           if (audio) {
             audio.play();
           }
