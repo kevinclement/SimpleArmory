@@ -35,12 +35,8 @@
     function ModalInstanceCtrl($scope, $modalInstance, BlizzardRealmService) {
 
         // initialize with select disabled and a loading text
-        $scope.realms = [
-            {
-                value:{realm:'', region:''}, text:'Loading realms...'
-            }
-        ];
-        $scope.selectedRealm = $scope.realms[0].value;
+        $scope.realms = [];
+        $scope.selectedRealm = {};
 
         // turn drop down off until servers come back
         $scope.isDisabled = true;
@@ -51,15 +47,13 @@
                 $scope.realms = [];
             }
 
-            angular.forEach(realms, function(realm) {   
-                this.push({value:{realm:realm.slug, region:realm.region}, text:realm.name + ' ' + realm.region.toUpperCase()});
-            }, $scope.realms);
+            $scope.realms = realms;
         });
 
         $scope.ok = function () {
             $modalInstance.close({
-                'region': $scope.selectedRealm.region,
-                'realm': $scope.selectedRealm.realm,
+                'region': $scope.selectedRealm.selected.region,
+                'realm': $scope.selectedRealm.selected.slug,
                 'character': $scope.characterName
             });
         };

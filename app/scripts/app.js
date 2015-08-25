@@ -4,7 +4,9 @@
     angular
         .module('simpleArmoryApp', [
             'ngRoute',
-            'ui.bootstrap'])
+            'ngSanitize',
+            'ui.bootstrap',
+            'ui.select'])
         .config(config);
 
     function config($routeProvider) {
