@@ -11,7 +11,12 @@
         var character;
 
         return {
-            getCharacter: function($routeParams) {
+            getCharacter: function($routeParams, dontCache) {
+                // don't fetch if we've already got it
+                if (character && !dontCache) {
+                  return $q.when(character);
+                }
+
                 $log.log('Fetching ' + $routeParams.character + ' from server ' + $routeParams.realm + '...');
 
                 var jsonp = $http.jsonp(
@@ -46,7 +51,8 @@
                   // add faction
                   data.data.faction = [,'A','H','A','A','H','H','A','H','H','H','Alliance',,,,,,,,,,,'A',,,'A','H'][data.data.race];
 
-                return data.data;
+                  character = data.data;
+                  return character;
               }
           }
         };
