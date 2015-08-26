@@ -6,9 +6,16 @@
         .module('simpleArmoryApp')
         .factory('PlannerService', PlannerService);
 
-    function PlannerService($http, $log, LoginService, $routeParams) {
+    function PlannerService($http, $log, LoginService, $routeParams, $q) {
+        //  cache results
+        var parsedStepsObject;
+
         return {
             getSteps: function(items) {
+                if (parsedStepsObject) {
+                    return $q.when(parsedStepsObject);
+                }
+
                 return LoginService.getCharacter(
                     {
                         'region': $routeParams.region,
@@ -20,7 +27,8 @@
                              .then(function(data) {
                                 
                                  $log.log('Parsing planner.json...');
-                                 return parseStepsObject(data.data.steps, items);
+                                 parsedStepsObject = parseStepsObject(data.data.steps, items);
+                                 return parsedStepsObject;
                              });
                      });
             }

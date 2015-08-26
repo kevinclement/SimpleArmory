@@ -6,7 +6,7 @@
         .module('simpleArmoryApp')
         .factory('AchievementsService', AchievementsService);
 
-    function AchievementsService($http, $log, LoginService, $routeParams, SettingsService) {
+    function AchievementsService($http, $log, LoginService, $routeParams, SettingsService, $q) {
         // ignore achievements that shouldn't show up in the UI
         var ignoredFoundAchivements = 
         {
@@ -14,8 +14,15 @@
             10051: true  // learn two primary prof
         };
 
+        //  cache results
+        var parsedAchievements;
+
         return {
             getAchievements: function() {
+                if (parsedAchievements) {
+                    return $q.when(parsedAchievements);
+                }
+
                 return LoginService.getCharacter(
                         {
                             'region': $routeParams.region,
@@ -25,7 +32,8 @@
                     .then(function(character) {
                         return $http.get('data/achievements.json', { cache: true})
                             .then(function(data) {
-                                return parseAchievementObject(data.data.supercats, character[0], SettingsService);        
+                                parsedAchievements = parseAchievementObject(data.data.supercats, character[0], SettingsService);
+                                return parsedAchievements;
                             });
                     });
             }

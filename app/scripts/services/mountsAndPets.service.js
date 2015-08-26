@@ -6,7 +6,7 @@
         .module('simpleArmoryApp')
         .factory('MountsAndPetsService', MountsAndPetsService);
 
-    function MountsAndPetsService($http, $log, LoginService, $routeParams, $window) {
+    function MountsAndPetsService($http, $log, LoginService, $routeParams, $window, $q) {
         // issues/53: Pets that we can ignore warning for because they are battle pets
         var ignoredFoundPets = 
         {
@@ -17,8 +17,21 @@
             148069: true
         };
 
+        //  cache results
+        var parsedMounts;
+        var parsedCompanions;
+        var parsedPets;
+
         return {
             getItems: function(jsonFile, characterProperty, collectedId) {
+                if (jsonFile === 'pets' && parsedCompanions) {
+                    return $q.when(parsedCompanions);
+                } else if (jsonFile === 'battlepets' && parsedPets) {
+                    return $q.when(parsedPets);
+                } else if (jsonFile === 'mounts' && parsedMounts) {
+                    return $q.when(parsedMounts);
+                }
+
                 return LoginService.getCharacter(
                         {
                             'region': $routeParams.region,
@@ -30,7 +43,17 @@
                             .then(function(data) {
                                 
                                 $log.log('Parsing ' + jsonFile + '.json...');
-                                return parseItemsObject(data.data, character[0], characterProperty, collectedId);        
+                                var parsed = parseItemsObject(data.data, character[0], characterProperty, collectedId);
+
+                                if (jsonFile === 'pets') {
+                                    parsedCompanions = parsed; 
+                                } else if (jsonFile === 'battlepets') {
+                                    parsedPets = parsed; 
+                                } else if (jsonFile === 'mounts') {
+                                    parsedMounts = parsed;
+                                }
+
+                                return parsed;
                             });
                     });
             }

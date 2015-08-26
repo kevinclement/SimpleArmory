@@ -6,9 +6,16 @@
         .module('simpleArmoryApp')
         .factory('FactionsService', FactionsService);
 
-    function FactionsService($http, $log, LoginService, $routeParams) {
+    function FactionsService($http, $log, LoginService, $routeParams, $q) {
+        //  cache results
+        var parsedFactions;
+
         return {
             getFactions: function() {
+                if (parsedFactions) {
+                    return $q.when(parsedFactions);
+                }
+                
                 return LoginService.getCharacter(
                         {
                             'region': $routeParams.region,
@@ -18,7 +25,8 @@
                     .then(function(character) {
                         return $http.get('data/factions.json', { cache: true})
                             .then(function(data) {
-                                return parseFactions(data.data, character[0]);        
+                                parsedFactions =  parseFactions(data.data, character[0]);
+                                return parsedFactions;
                             });
                     });
             }

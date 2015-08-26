@@ -7,6 +7,9 @@
         .factory('LoginService', LoginService);
 
     function LoginService($location, $log, $http, $q, $window) {
+        //  cache results
+        var character;
+
         return {
             getCharacter: function($routeParams) {
                 $log.log('Fetching ' + $routeParams.character + ' from server ' + $routeParams.realm + '...');
