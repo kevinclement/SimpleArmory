@@ -13,9 +13,9 @@
         return {
             getCharacter: function($routeParams, dontCache) {
                 // don't fetch if we've already got it
-                if (character && !dontCache) {
-                  return $q.when(character);
-                }
+                //if (character && !dontCache) {
+                //  return $q.when(character);
+                //}
 
                 $log.log('Fetching ' + $routeParams.character + ' from server ' + $routeParams.realm + '...');
 
@@ -31,7 +31,7 @@
                     .error(getCharacterError)
                     .then(getCharacterComplete);
 
-                  return $q.all([jsonp]);
+                return $q.all([jsonp]);
 
               function getCharacterError() {
                 $log.log('Trouble fetching character from battlenet');
@@ -43,15 +43,15 @@
               }
 
               function getCharacterComplete(data) {
-                  data.data.region = $routeParams.region;
-
                   // lets figure out who uses the site
                   $window.ga('send', 'event', 'Login', $routeParams.region + ':' + $routeParams.realm + ':' + $routeParams.character);
 
-                  // add faction
-                  data.data.faction = [,'A','H','A','A','H','H','A','H','H','H','Alliance',,,,,,,,,,,'A',,,'A','H'][data.data.race];
-
                   character = data.data;
+
+                  // add region and faction to character
+                  character.region = $routeParams.region;
+                  character.faction = [,'A','H','A','A','H','H','A','H','H','H','Alliance',,,,,,,,,,,'A',,,'A','H'][character.race];
+                  
                   return character;
               }
           }
