@@ -32,7 +32,7 @@
                     .then(function(character) {
                         return $http.get('data/achievements.json', { cache: true})
                             .then(function(data) {
-                                parsedAchievements = parseAchievementObject(data.data.supercats, character[0], SettingsService);
+                                parsedAchievements = parseAchievementObject(data.data.supercats, character, SettingsService);
                                 return parsedAchievements;
                             });
                     });

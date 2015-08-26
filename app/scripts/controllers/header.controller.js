@@ -65,7 +65,7 @@
 
         function getBaseUrl(character) {    
             if (!character) {
-                return '#';
+                return '';
             }
 
             return '/' + character.region.toLowerCase() + '/' + 

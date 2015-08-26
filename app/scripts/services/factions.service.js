@@ -25,7 +25,7 @@
                     .then(function(character) {
                         return $http.get('data/factions.json', { cache: true})
                             .then(function(data) {
-                                parsedFactions =  parseFactions(data.data, character[0]);
+                                parsedFactions =  parseFactions(data.data, character);
                                 return parsedFactions;
                             });
                     });

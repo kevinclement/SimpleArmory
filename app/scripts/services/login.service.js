@@ -8,18 +8,18 @@
 
     function LoginService($location, $log, $http, $q, $window) {
         //  cache results
-        var character;
+        var characterCached;
 
         return {
             getCharacter: function($routeParams, dontCache) {
                 // don't fetch if we've already got it
-                //if (character && !dontCache) {
-                //  return $q.when(character);
-                //}
+                if (characterCached && !dontCache) {
+                  return $q.when(characterCached);
+                }
 
                 $log.log('Fetching ' + $routeParams.character + ' from server ' + $routeParams.realm + '...');
 
-                var jsonp = $http.jsonp(
+                return $http.jsonp(
                     window.location.protocol + '//' + 
                       $routeParams.region +
                       '.battle.net/api/wow/character/' +
@@ -31,7 +31,7 @@
                     .error(getCharacterError)
                     .then(getCharacterComplete);
 
-                return $q.all([jsonp]);
+                //return $q.all([jsonp]);
 
               function getCharacterError() {
                 $log.log('Trouble fetching character from battlenet');
@@ -46,13 +46,13 @@
                   // lets figure out who uses the site
                   $window.ga('send', 'event', 'Login', $routeParams.region + ':' + $routeParams.realm + ':' + $routeParams.character);
 
-                  character = data.data;
+                  characterCached = data.data;
 
                   // add region and faction to character
-                  character.region = $routeParams.region;
-                  character.faction = [,'A','H','A','A','H','H','A','H','H','H','Alliance',,,,,,,,,,,'A',,,'A','H'][character.race];
+                  characterCached.region = $routeParams.region;
+                  characterCached.faction = [,'A','H','A','A','H','H','A','H','H','H','Alliance',,,,,,,,,,,'A',,,'A','H'][characterCached.race];
                   
-                  return character;
+                  return characterCached;
               }
           }
         };

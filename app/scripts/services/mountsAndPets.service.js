@@ -43,7 +43,7 @@
                             .then(function(data) {
                                 
                                 $log.log('Parsing ' + jsonFile + '.json...');
-                                var parsed = parseItemsObject(data.data, character[0], characterProperty, collectedId);
+                                var parsed = parseItemsObject(data.data, character, characterProperty, collectedId);
 
                                 if (jsonFile === 'pets') {
                                     parsedCompanions = parsed; 
