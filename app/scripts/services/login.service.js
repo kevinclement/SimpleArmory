@@ -10,11 +10,34 @@
         //  cache results
         var characterCached;
 
+        // callbacks to call once we've logged in
+        // this allows for aggregator type behavior where we can clear caches
+        var callbacks = [];
+
+        // saved from last time soemone tried to use the login service
+        var g_region;
+        var g_realm;
+        var g_character;
+
         return {
-            getCharacter: function($routeParams, dontCache) {
+            
+            // allow consumers to register when a login has occcured
+            onLogin: function(callback) {
+              callbacks.push(callback);
+            },
+
+            getCharacter: function($routeParams, noCache) {
                 // don't fetch if we've already got it
-                if (characterCached && !dontCache) {
+                var sameUser = checkIfSameUser($routeParams.region, $routeParams.realm, $routeParams.character);
+                if (sameUser && characterCached) {
                   return $q.when(characterCached);
+                }
+
+                // notify others to clear their caches
+                if (!sameUser) {
+                  for (var i=0; i<callbacks.length; i++) {
+                    callbacks[i]('logged in');
+                  }
                 }
 
                 $log.log('Fetching ' + $routeParams.character + ' from server ' + $routeParams.realm + '...');
@@ -30,8 +53,6 @@
                      { cache: true})
                     .error(getCharacterError)
                     .then(getCharacterComplete);
-
-                //return $q.all([jsonp]);
 
               function getCharacterError() {
                 $log.log('Trouble fetching character from battlenet');
@@ -51,10 +72,24 @@
                   // add region and faction to character
                   characterCached.region = $routeParams.region;
                   characterCached.faction = [,'A','H','A','A','H','H','A','H','H','H','Alliance',,,,,,,,,,,'A',,,'A','H'][characterCached.race];
+
+                  g_region = $routeParams.region;
+                  g_realm = $routeParams.realm;
+                  g_character = $routeParams.character;
                   
                   return characterCached;
               }
-          }
+
+              function checkIfSameUser(region, realm, character) {
+                if ((region && g_region && region.toLowerCase() === g_region.toLowerCase())  &&
+                    (realm && g_realm && realm.toLowerCase() === g_realm.toLowerCase())  &&
+                    (character && g_character && character.toLowerCase() === g_character.toLowerCase())) {
+                      console.log("same user");
+                    return true;
+                }
+                return false;
+              }
+            },
         };
     }
 

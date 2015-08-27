@@ -9,6 +9,9 @@
     function FactionsService($http, $log, LoginService, $routeParams, $q) {
         //  cache results
         var parsedFactions;
+        LoginService.onLogin(function() {
+            parsedFactions = undefined;
+        });
 
         return {
             getFactions: function() {

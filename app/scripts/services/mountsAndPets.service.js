@@ -21,6 +21,11 @@
         var parsedMounts;
         var parsedCompanions;
         var parsedPets;
+        LoginService.onLogin(function() {
+            parsedMounts = undefined;
+            parsedCompanions = undefined;
+            parsedPets = undefined;
+        });
 
         return {
             getItems: function(jsonFile, characterProperty, collectedId) {

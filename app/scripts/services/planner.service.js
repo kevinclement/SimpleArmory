@@ -9,6 +9,9 @@
     function PlannerService($http, $log, LoginService, $routeParams, $q) {
         //  cache results
         var parsedStepsObject;
+        LoginService.onLogin(function() {
+            parsedStepsObject = undefined;
+        });
 
         return {
             getSteps: function(items) {

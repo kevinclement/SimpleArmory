@@ -16,7 +16,10 @@
 
         //  cache results
         var parsedAchievements;
-
+        LoginService.onLogin(function() {
+            parsedAchievements = undefined;
+        });
+        
         return {
             getAchievements: function() {
                 if (parsedAchievements) {
