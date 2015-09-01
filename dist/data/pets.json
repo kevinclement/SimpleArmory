@@ -507,16 +507,6 @@
             "allowableClasses": null
           },
           {
-            "spellid": "184480",
-            "allianceId": null,
-            "hordeId": null,
-            "itemId": null,
-            "icon": "inv_pet_frostwolfpup_fel",
-            "obtainable": true,
-            "allowableRaces": [],
-            "allowableClasses": null
-          },
-          {
             "spellid": "189357",
             "allianceId": null,
             "hordeId": null,
@@ -1398,6 +1388,16 @@
             "hordeId": null,
             "itemId": "21308",
             "icon": "inv_misc_bell_01",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "191967",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "128770",
+            "icon": "inv_misc_pet_pandaren_yeti_grey",
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
@@ -2786,8 +2786,53 @@
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
+          },
+          {
+            "spellid": "184480",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "129205",
+            "icon": "inv_throwingchakrum_01_fel",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
           }
 
+        ]
+      },
+      {
+        "name": "Draenor: Highmaul",
+        "items": [
+          {
+            "spellid": "193572",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "129216",
+            "icon": "inv_jewelcrafting_gem_40",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "193588",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "129217",
+            "icon": "inv_jewelcrafting_gem_39",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "193589",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "129218",
+            "icon": "inv_jewelcrafting_gem_42",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          }
         ]
       },
       {
@@ -4315,6 +4360,16 @@
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
+          },
+          {
+            "spellid": "190035",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "128424",
+            "icon": "inv_pet_mysticmanakitty",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
           }
         ]
       },
@@ -4377,6 +4432,16 @@
             "hordeId": null,
             "itemId": "118517",
             "icon": "inv_grommloc",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "190036",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "128427",
+            "icon": "inv_dhmurloc",
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
@@ -4512,6 +4577,26 @@
             "hordeId": null,
             "itemId": "106256",
             "icon": "ability_racial_packhobgoblin",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "143637",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "128423",
+            "icon": "inv_archonpet",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "190020",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "128426",
+            "icon": "inv_felstalker_pet",
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
