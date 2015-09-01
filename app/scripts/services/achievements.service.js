@@ -6,7 +6,7 @@
         .module('simpleArmoryApp')
         .factory('AchievementsService', AchievementsService);
 
-    function AchievementsService($http, $log, LoginService, $routeParams, SettingsService, $q) {
+    function AchievementsService($http, $log, LoginService, $routeParams, SettingsService, $q, $window) {
         // ignore achievements that shouldn't show up in the UI
         var ignoredFoundAchivements = 
         {
@@ -35,7 +35,7 @@
                     .then(function(character) {
                         return $http.get('data/achievements.json', { cache: true})
                             .then(function(data) {
-                                parsedAchievements = parseAchievementObject(data.data.supercats, character, SettingsService);
+                                parsedAchievements = parseAchievementObject(data.data.supercats, character, SettingsService, $window);
                                 return parsedAchievements;
                             });
                     });
