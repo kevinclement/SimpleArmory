@@ -78,7 +78,7 @@
             });
 
             // Fix any problems blizzard has introduced
-            applyHacks(character, collected, found);
+            applyHacks(character, characterProperty, collected, found);
 
             // Lets parse out all the categories and build out our structure
             angular.forEach(categories, function(category) {
@@ -278,7 +278,9 @@
             return obj;
         }
 
-        function applyHacks(character, collected, found) {
+        function applyHacks(character, characterProperty, collected, found) {
+            var plusMounts = 0;
+
             // Hack: Horde chopper doesn't show up, so we have to check for achievement and just assume they 'learned' it
             if (character.achievements.achievementsCompleted.indexOf(9909) >= 0) {
                 collected[179244] = {
@@ -300,6 +302,10 @@
                     'allowableClasses': null
                 };
                 found[179244] = false;
+
+                if (character.faction === 'H' || character.faction === 'Horde') {
+                    plusMounts++;
+                }
             }
 
             // Brown Horse (if you have all the other horses, you get this.  Oprah would approve)
@@ -327,6 +333,10 @@
                     'allowableClasses': null
                 };
                 found[458] = false;
+
+                if (character.faction === 'A' || character.faction === 'Alliance') {
+                    plusMounts++;
+                }
             }
 
             // Swift Warstrider (same problem as brown horse)
@@ -354,7 +364,26 @@
                     'allowableClasses': null
                 };
                 found[35028] = false;
+                if (character.faction === 'H' || character.faction === 'Horde') {
+                    plusMounts++;
+                }
             }
+
+            // Hack: until they fix the armory to return 300 mount
+            if ((character[characterProperty].collected.length + plusMounts) >= 300) {
+                collected[127169] = 
+                {
+                    icon: 'inv_jewelcrafting_jadeserpent',
+                    isAquatic: false,
+                    isFlying: true,
+                    isGround: true,
+                    isJumping: false,
+                    itemId: 87776,
+                    name: 'Heavenly Azure Cloud Serpent',
+                    qualityId: 4,
+                    spellId: 127169
+                };
+            }  
         }
     }
 
