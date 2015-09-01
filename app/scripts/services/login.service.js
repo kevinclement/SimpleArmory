@@ -15,9 +15,9 @@
         var callbacks = [];
 
         // saved from last time soemone tried to use the login service
-        var g_region;
-        var g_realm;
-        var g_character;
+        var gRegion;
+        var gRealm;
+        var gCharacter;
 
         return {
             
@@ -73,18 +73,17 @@
                   characterCached.region = $routeParams.region;
                   characterCached.faction = [,'A','H','A','A','H','H','A','H','H','H','Alliance',,,,,,,,,,,'A',,,'A','H'][characterCached.race];
 
-                  g_region = $routeParams.region;
-                  g_realm = $routeParams.realm;
-                  g_character = $routeParams.character;
+                  gRegion = $routeParams.region;
+                  gRealm = $routeParams.realm;
+                  gCharacter = $routeParams.character;
                   
                   return characterCached;
               }
 
               function checkIfSameUser(region, realm, character) {
-                if ((region && g_region && region.toLowerCase() === g_region.toLowerCase())  &&
-                    (realm && g_realm && realm.toLowerCase() === g_realm.toLowerCase())  &&
-                    (character && g_character && character.toLowerCase() === g_character.toLowerCase())) {
-                      console.log("same user");
+                if ((region && gRegion && region.toLowerCase() === gRegion.toLowerCase())  &&
+                    (realm && gRealm && realm.toLowerCase() === gRealm.toLowerCase())  &&
+                    (character && gCharacter && character.toLowerCase() === gCharacter.toLowerCase())) {
                     return true;
                 }
                 return false;
