@@ -108,6 +108,16 @@
             "allowableClasses": null
           },
           {
+            "spellid": "127169",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "87776",
+            "icon": "inv_jewelcrafting_jadeserpent",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
             "spellid": "175700",
             "allianceId": null,
             "hordeId": null,
@@ -818,7 +828,7 @@
       {
         "name": "BMAH",
         "items": [
-	{
+	         {
             "spellid": "24242",
             "allianceId": null,
             "hordeId": null,
@@ -828,7 +838,7 @@
             "allowableRaces": [],
             "allowableClasses": null
           },
-{
+          {
             "spellid": "24252",
             "allianceId": null,
             "hordeId": null,
@@ -838,7 +848,7 @@
             "allowableRaces": [],
             "allowableClasses": null
           },
-	  {
+	        {
             "spellid": "60021",
             "allianceId": null,
             "hordeId": null,
@@ -848,7 +858,32 @@
             "allowableRaces": [],
             "allowableClasses": null
           }
-	]
+	     ]
+      },
+      {
+        "name": "Timewalking",
+        "items": [
+          {
+            "spellid": "142910",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "129922",
+            "icon": "ability_mount_steelwarhorse",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "194464",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "129923",
+            "icon": "ability_hunter_pet_dragonhawk",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          }
+       ]
       }
     ]
   },
@@ -6000,6 +6035,21 @@
             "allowableClasses": null
           }
         ]
+      },
+      {
+        "name": "Winter Veil",
+        "items": [
+          {
+            "spellid": "191314",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "128671",
+            "icon": "inv_misc_pet_pandaren_yeti_grey",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          }
+        ]
       }
     ]
   },
@@ -6123,6 +6173,16 @@
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
+          },
+          {
+            "spellid": "189999",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "128422",
+            "icon": "inv_moosemount",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
           }
         ]
       },
@@ -6160,6 +6220,16 @@
             "hordeId": null,
             "itemId": "109013",
             "icon": "inv_ravenlordmount",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "189998",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "128425",
+            "icon": "inv_felstalkermount",
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
