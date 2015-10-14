@@ -195,9 +195,9 @@
                         // If the item id is available lets use that
                         if (item.itemId) {
                             link = 'item='+item.itemId;
-                        } else if (item.allianceId && (character.faction === 'A' || character.faction === 'Alliance')) {
+                        } else if (item.allianceId && (character.faction === 'A')) {
                             link = 'item='+item.allianceId;
-                        } else if (item.hordeId && (character.faction === 'H' || character.faction === 'Horde')) {
+                        } else if (item.hordeId && (character.faction === 'H')) {
                             link = 'item='+item.hordeId;
                         } else if (item.creatureId) {
                             link = 'npc='+item.creatureId;
@@ -272,7 +272,7 @@
             obj.lookup = collected;
 
             // Add stuff that planner needs
-            obj.isAlliance = (character.faction === 'A' || character.faction === 'Alliance');
+            obj.isAlliance = (character.faction === 'A');
 
             // Data object we expose externally
             return obj;
@@ -303,7 +303,7 @@
                 };
                 found[179244] = false;
 
-                if (character.faction === 'H' || character.faction === 'Horde') {
+                if (character.faction === 'H') {
                     plusMounts++;
                 }
             }
@@ -334,7 +334,7 @@
                 };
                 found[458] = false;
 
-                if (character.faction === 'A' || character.faction === 'Alliance') {
+                if (character.faction === 'A') {
                     plusMounts++;
                 }
             }
@@ -364,7 +364,7 @@
                     'allowableClasses': null
                 };
                 found[35028] = false;
-                if (character.faction === 'H' || character.faction === 'Horde') {
+                if (character.faction === 'H') {
                     plusMounts++;
                 }
             }

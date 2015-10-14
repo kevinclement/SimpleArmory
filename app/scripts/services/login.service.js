@@ -71,7 +71,7 @@
 
                   // add region and faction to character
                   characterCached.region = $routeParams.region;
-                  characterCached.faction = [,'A','H','A','A','H','H','A','H','H','H','Alliance',,,,,,,,,,,'A',,,'A','H'][characterCached.race];
+                  characterCached.faction = [,'A','H','A','A','H','H','A','H','H','H','A',,,,,,,,,,,'A',,,'A','H'][characterCached.race];
 
                   gRegion = $routeParams.region;
                   gRealm = $routeParams.realm;
