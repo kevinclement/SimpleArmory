@@ -282,7 +282,7 @@
             var plusMounts = 0;
 
             // Hack: Horde chopper doesn't show up, so we have to check for achievement and just assume they 'learned' it
-            if (character.achievements.achievementsCompleted.indexOf(9909) >= 0) {
+            if (character.faction === 'H' && characterProperty === 'mounts' && character.achievements.achievementsCompleted.indexOf(9909) >= 0) {
                 collected[179244] = {
                     'spellid': '179244',
                     'allianceId': null,
@@ -309,7 +309,7 @@
             }
 
             // Brown Horse (if you have all the other horses, you get this.  Oprah would approve)
-            if (!collected[458] && collected[23227] && collected[23229] && 
+            if (character.faction === 'A' && characterProperty === 'mounts' && !collected[458] && collected[23227] && collected[23229] && 
                  collected[23228] && collected[6648] && collected[470] && collected[472]) {
                 
                 console.log('Hack: Blizzard still has the brown horse bug');
@@ -340,7 +340,7 @@
             }
 
             // Swift Warstrider (same problem as brown horse)
-            if (!collected[35028] && collected[22718] && collected[22724] && 
+            if (character.faction === 'H' && characterProperty === 'mounts' && !collected[35028] && collected[22718] && collected[22724] && 
                  collected[22722] && collected[22721] && collected[23509] && collected[59788]) {
                 
                 console.log('Hack: Blizzard still has the swift warstrider bug');
@@ -370,7 +370,7 @@
             }
 
             // Hack: until they fix the armory to return 300 mount
-            if ((character[characterProperty].collected.length + plusMounts) >= 300) {
+            if (characterProperty === 'mounts' && (character[characterProperty].collected.length + plusMounts) >= 300) {
                 collected[127169] = 
                 {
                     icon: 'inv_jewelcrafting_jadeserpent',
