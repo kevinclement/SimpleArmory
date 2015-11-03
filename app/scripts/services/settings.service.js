@@ -9,7 +9,7 @@
     function SettingsService($log, $routeParams) {
 
         return {
-            'WowHeadUrl': 'ptr.wowhead.com',
+            'WowHeadUrl': 'wowhead.com',
             'debug': $routeParams['debug'] && $routeParams['debug'] === '1' ? true : false,
             'fakeCompletionTime': 312
         };       

@@ -26106,13 +26106,6 @@
                   "side": "",
                   "obtainable": true,
                   "points": 10
-                },
-                {
-                  "id": "10353",
-                  "icon": "ability_ironmaidens_deployturret",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 10
                 }
               ]
             }
@@ -26484,6 +26477,20 @@
                   "side": "",
                   "obtainable": true,
                   "points": 10
+                },
+                {
+                  "id": "10353",
+                  "icon": "ability_ironmaidens_deployturret",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {
+                    "28924": "45703",
+                    "28987": "45704",
+                    "28988": "45705",
+                    "28989": "45706",
+                    "28990": "45707"
+                  }
                 }
               ]
             }
