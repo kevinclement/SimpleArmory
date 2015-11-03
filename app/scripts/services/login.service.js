@@ -6,7 +6,7 @@
         .module('simpleArmoryApp')
         .factory('LoginService', LoginService);
 
-    function LoginService($location, $log, $http, $q, $window) {
+    function LoginService($location, $log, $http, $q, $window, SettingsService) {
         //  cache results
         var characterCached;
 
@@ -43,13 +43,15 @@
                 $log.log('Fetching ' + $routeParams.character + ' from server ' + $routeParams.realm + '...');
 
                 return $http.jsonp(
-                    window.location.protocol + '//' + 
+                    SettingsService.apiProtocol + 
                       $routeParams.region +
-                      '.battle.net/api/wow/character/' +
+                      '.' + SettingsService.apiEndPoint + '/wow/character/' +
                       $routeParams.realm + 
                       '/' +
-                      $routeParams.character +
-                      '?fields=pets,mounts,achievements,guild,reputation&jsonp=JSON_CALLBACK',
+                      $routeParams.character + 
+                      '?fields=pets,mounts,achievements,guild,reputation' + 
+                      SettingsService.apiKey + 
+                      '&jsonp=JSON_CALLBACK',
                      { cache: true})
                     .error(getCharacterError)
                     .then(getCharacterComplete);
