@@ -2,6 +2,7 @@ body {
   padding-top: 70px;
   overflow-y: scroll;
   padding-bottom: 25px;
+  padding-right: 0px !important;  
 }
 
 .errorMsg {
@@ -339,4 +340,9 @@ body {
     .container {
         width:1170px
     }
+}
+
+/* Fix bootstrap bug in ios 9 where it zooms in */
+.modal-open {
+  overflow-y: auto;
 }
