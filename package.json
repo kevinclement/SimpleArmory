@@ -2,7 +2,6 @@
   "name": "simplearmory",
   "version": "0.0.0",
   "dependencies": {
-    "karma-chrome-launcher": "^0.1.5"
   },
   "devDependencies": {
     "grunt": "^0.4.1",
@@ -14,13 +13,12 @@
     "grunt-contrib-copy": "^0.5.0",
     "grunt-contrib-cssmin": "^0.9.0",
     "grunt-contrib-htmlmin": "^0.3.0",
-    "grunt-contrib-imagemin": "^0.8.1",
+	"grunt-contrib-imagemin": "^1.0.0",    
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-uglify": "^0.4.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-filerev": "^0.2.1",
     "grunt-google-cdn": "^0.4.3",
-    "grunt-karma": "^0.9.0",
     "grunt-newer": "^0.7.0",
     "grunt-ng-annotate": "^0.3.0",
     "grunt-svgmin": "^0.4.0",
@@ -28,7 +26,7 @@
     "grunt-wiredep": "^1.7.0",
     "jshint-stylish": "^0.2.0",
     "load-grunt-tasks": "^0.4.0",
-    "time-grunt": "^0.3.1"
+	"time-grunt": "^0.3.1"
   },
   "engines": {
     "node": ">=0.10.0"

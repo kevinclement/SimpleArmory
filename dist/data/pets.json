@@ -2731,16 +2731,6 @@
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
-          },
-          {
-            "spellid": "190682",
-            "allianceId": null,
-            "hordeId": null,
-            "itemId": "128477",
-            "icon": "ability_mount_jungletiger",
-            "obtainable": true,
-            "allowableRaces": [],
-            "allowableClasses": null
           }
         ]
       },
@@ -4184,7 +4174,17 @@
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
-          }
+          },
+          {
+            "spellid": "190682",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "128477",
+            "icon": "ability_mount_jungletiger",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          }		  
         ]
       }
     ]
@@ -4542,6 +4542,16 @@
             "allowableClasses": null
           },
           {
+            "spellid": "190020",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "128426",
+            "icon": "inv_felstalker_pet",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
             "spellid": "78381",
             "allianceId": null,
             "hordeId": null,
@@ -4557,6 +4567,16 @@
             "hordeId": null,
             "itemId": "90177",
             "icon": "ability_pet_baneling",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "143637",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "128423",
+            "icon": "inv_archonpet",
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
@@ -4582,21 +4602,11 @@
             "allowableClasses": null
           },
           {
-            "spellid": "143637",
+            "spellid": "204148",
             "allianceId": null,
             "hordeId": null,
-            "itemId": "128423",
-            "icon": "inv_archonpet",
-            "obtainable": true,
-            "allowableRaces": [],
-            "allowableClasses": null
-          },
-          {
-            "spellid": "190020",
-            "allianceId": null,
-            "hordeId": null,
-            "itemId": "128426",
-            "icon": "inv_felstalker_pet",
+            "itemId": "134047",
+            "icon": "inv_pet_babywinston",
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
@@ -4657,21 +4667,6 @@
             "hordeId": null,
             "itemId": "122477",
             "icon": "inv_gravegolempet",
-            "obtainable": true,
-            "allowableRaces": [],
-            "allowableClasses": null
-          }
-        ]
-      },
-      {
-        "name": "Overwatch",
-        "items": [
-          {
-            "spellid": "204148",
-            "allianceId": null,
-            "hordeId": null,
-            "itemId": "134047",
-            "icon": "inv_pet_babywinston",
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
