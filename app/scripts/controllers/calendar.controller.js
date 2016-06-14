@@ -6,12 +6,14 @@
         .module('simpleArmoryApp')
         .controller('CalendarCtrl' , CalendarCtrl);
 
-    function CalendarCtrl($scope, AchievementsService, $sce, $routeParams, $window) { 
+    function CalendarCtrl($scope, AchievementsService, $sce, $routeParams, $window, SettingsService) { 
 
+        $scope.settings = SettingsService;
+    
 		// Analytics for page
         $window.ga('send', 'pageview', 'Calendar');
 
-    	 AchievementsService.getAchievements().then(function(achievements){
+    	AchievementsService.getAchievements().then(function(achievements){
 	
 			buildMonths(achievements, $routeParams.character); 
 
@@ -152,7 +154,7 @@
 
 			        rows += '<div>';
 			        angular.forEach(achievs, function(ach) {
-			            rows += '<a href="//www.wowhead.com/achievement=' + ach.id + '" ' +
+			            rows += '<a href="//' + $scope.settings.WowHeadUrl + '/achievement=' + ach.id + '" ' +
 			        			'rel="who=' + prettyName + '&amp;when=' + ach.completed +'">' +
 			        			'<img src="//wow.zamimg.com/images/wow/icons/medium/' + 
 			        			ach.icon.toLowerCase() + '.jpg" width="36" height="36" border="0"></a>';
