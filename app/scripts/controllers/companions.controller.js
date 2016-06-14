@@ -6,8 +6,10 @@
         .module('simpleArmoryApp')
         .controller('CompanionsCtrl' , CompanionsCtrl);
 
-    function CompanionsCtrl($scope, MountsAndPetsService, $window) {
+    function CompanionsCtrl($scope, MountsAndPetsService, $window, SettingsService) {
 
+        $scope.settings = SettingsService;
+    
     	// Analytics for page
         $window.ga('send', 'pageview', 'Companions');
      
