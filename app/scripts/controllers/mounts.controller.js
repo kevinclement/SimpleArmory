@@ -7,8 +7,10 @@
         .module('simpleArmoryApp')
         .controller('MountsCtrl' , MountsCtrl);
 
-    function MountsCtrl($scope, MountsAndPetsService, PlannerService, $window) {
+    function MountsCtrl($scope, MountsAndPetsService, PlannerService, $window, SettingsService) {
 
+        $scope.settings = SettingsService;
+    
     	// Analytics for page 
         $window.ga('send', 'pageview', 'Mounts');
 

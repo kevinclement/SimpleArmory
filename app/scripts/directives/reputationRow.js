@@ -38,8 +38,10 @@
    	};
 
     /*@ngInject*/ 
-    var ReputationRowController = function ($scope) {
+    var ReputationRowController = function ($scope, SettingsService) {
 
+        $scope.settings = SettingsService;
+    
         $scope.getWidth = function(level) {
 
             var num = $scope.faction[level] ? $scope.faction[level] : 0;
