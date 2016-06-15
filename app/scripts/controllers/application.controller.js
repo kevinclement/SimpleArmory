@@ -14,7 +14,7 @@
         // Listen for path changed and then parse and fetch the character
         $scope.$on('$locationChangeSuccess', function(){
             // If there was an error we need to reset everything
-            if ($location.$$path === '/error') {
+            if ($location.$$path.lastIndexOf('/error', 0) === 0 ) {
                 $scope.character = null;
                 $scope.isLoggedIn = false;
             } else if ($location.$$path !== '' && $location.$$path !== '/') {

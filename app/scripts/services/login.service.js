@@ -57,7 +57,7 @@
                     .then(getCharacterComplete);
 
               function getCharacterError() {
-                $log.log('Trouble fetching character from battlenet');
+                $log.error('Trouble fetching character from battlenet');
 
                 // let's figure out what the errors are
                 $window.ga('send', 'event', 'LoginError', $routeParams.region + ':' + $routeParams.realm + ':' + $routeParams.character);
