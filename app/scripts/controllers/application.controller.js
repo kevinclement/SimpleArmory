@@ -17,6 +17,9 @@
             if ($location.$$path.lastIndexOf('/error', 0) === 0 ) {
                 $scope.character = null;
                 $scope.isLoggedIn = false;
+            } else if ($location.$$path === '/login') {
+                // Leave current character logged in, just force the login controller execute
+                $location.url('/');
             } else if ($location.$$path !== '' && $location.$$path !== '/') {
                 // "us/proudmoore/marko"
                 // [0]: us/proudmoore/marko
