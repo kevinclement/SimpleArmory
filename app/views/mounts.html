@@ -6,19 +6,19 @@
             <progressbar max="100" type="success"
       	  		value="percent(items.collected, items.possible)" >
       	  		<span>{{ achFormater(items.collected, items.possible) }}</span>
-      	  	</progressbar>  	
+      	  	</progressbar>
         </div>
-    </h2>        
+    </h2>
   </div>
   <div ng-hide="showPlanner">
     <h3 class="categoryHeader" ng-hide="category.name == 'Mounts'" ng-repeat-start="category in items.categories">{{ category.name }}</h3>
     <div class="sect" ng-repeat="subCategory in category.subCategories">
   		<h5 class="zoneHeader">{{ subCategory.name }}</h5>
-  		<a ng-href="//{{settings.WowHeadUrl}}/{{ item.link }}" class="thumbnail" ng-repeat="item in subCategory.items" ng-class="{borderOn:!item.collected, borderOff:item.collected}">
+  		<a ng-href="//{{i18n.selectedLanguage}}.{{settings.WowHeadUrl}}/{{ item.link }}" class="thumbnail" ng-repeat="item in subCategory.items" ng-class="{borderOn:!item.collected, borderOff:item.collected}">
           	<img ng-src="{{getImageSrc(item)}}">
         	</a>
     </div>
-    <div class="clear" ng-repeat-end></div> 
+    <div class="clear" ng-repeat-end></div>
   </div>
   <div ng-show="showPlanner && plannerReturned && planner.length > 0">
     <table class="table table-condensed">
@@ -40,7 +40,7 @@
               <tbody ng-repeat="boss in step.bosses">
                 <tr>
                   <td class="mnt-plan-boss-col">{{boss.name}}</td>
-                  <td class="mnt-plan-mount-col"><a ng-show="boss.itemId" ng-class="anchorCss(boss)" ng-href="//{{settings.WowHeadUrl}}/item={{ boss.itemId }}"><img class="mnt-plan-icon" ng-src="{{getPlanImageSrc(boss)}}">{{boss.mount}}</a></td>
+                  <td class="mnt-plan-mount-col"><a ng-show="boss.itemId" ng-class="anchorCss(boss)" ng-href="//{{i18n.selectedLanguage}}.{{settings.WowHeadUrl}}/item={{ boss.itemId }}"><img class="mnt-plan-icon" ng-src="{{getPlanImageSrc(boss)}}">{{boss.mount}}</a></td>
                 </tr ng-repeat-end>
               </tbody>
             </table>

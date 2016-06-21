@@ -5,6 +5,7 @@
         .module('simpleArmoryApp', [
             'ngRoute',
             'ngSanitize',
+            'ngCookies',
             'ui.bootstrap',
             'ui.select'])
         .config(config);

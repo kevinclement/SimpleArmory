@@ -6,7 +6,7 @@
         .module('simpleArmoryApp')
         .controller('ApplicationCtrl' , ApplicationCtrl);
 
-    function ApplicationCtrl($scope, LoginService, $location, $filter, KeyboardService, KonamiService) {
+    function ApplicationCtrl($scope, LoginService, $location, $filter, KeyboardService, KonamiService, i18nService) {
 
         // default to not logged in
         $scope.isLoggedIn = false;
@@ -42,7 +42,6 @@
 
         // Helper function for percentage numbers.  Used in a lot of screens
         $scope.percent = function(n, d) {
-
             return $filter('number')(((n / d) * 100), 0);
         };
 
@@ -71,6 +70,14 @@
                 return 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==';
             }
         };
+
+        // i18n
+        $scope.translate = function(lng) {
+            i18nService.setLanguage($scope, lng);
+        };
+
+        $scope.supportedLanguages = i18nService.getSupportedLanguages();
+        $scope.translate(i18nService.getLanguage());
   }
 
 })();
