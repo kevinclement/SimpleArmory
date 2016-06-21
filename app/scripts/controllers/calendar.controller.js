@@ -154,7 +154,7 @@
 
 			        rows += '<div>';
 			        angular.forEach(achievs, function(ach) {
-			            rows += '<a href="//' + $scope.selectedLanguage + '.' + $scope.settings.WowHeadUrl + '/achievement=' + ach.id + '" ' +
+			            rows += '<a href="//' + $scope.i18n.selectedLanguage + '.' + $scope.settings.WowHeadUrl + '/achievement=' + ach.id + '" ' +
 			        			'rel="who=' + prettyName + '&amp;when=' + ach.completed +'">' +
 			        			'<img src="//wow.zamimg.com/images/wow/icons/medium/' + 
 			        			ach.icon.toLowerCase() + '.jpg" width="36" height="36" border="0"></a>';
