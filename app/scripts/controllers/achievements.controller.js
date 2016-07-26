@@ -71,9 +71,6 @@
                 case 'reputation':
                     prettyCatName = 'Reputation';
                     break;
-                case 'scenarios':
-                    prettyCatName = 'Scenarios';
-                    break;
                 case 'events':
                     prettyCatName = 'World Events';
                     break;
@@ -83,9 +80,15 @@
                 case 'collections':
                     prettyCatName = 'Collections';
                     break;
+                case 'classhall':
+                    prettyCatName = 'Class Hall';
+                    break;                    
                 case 'garrisons':
-                    prettyCatName = 'Garrisons';
-                    break;             
+                    prettyCatName = 'Draenor Garrison';
+                    break;
+                case 'scenarios':
+                    prettyCatName = 'Scenarios';
+                    break;                                
                 case 'legacy':
                     prettyCatName = 'Legacy';
                     break;                       
