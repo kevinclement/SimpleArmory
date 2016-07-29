@@ -11807,6 +11807,14 @@
                   "points": 10
                 },
                 {
+                  "id": "10671",
+                  "icon": "achievement_level_110",
+                  "obtainable": true,
+                  "points": 10,
+                  "side": "",
+                  "criteriaNeeded": true
+                },
+                {
                   "id": "7382",
                   "icon": "achievement_arena_2v2_7",
                   "side": "",
@@ -12229,6 +12237,22 @@
                     "26656": "40559",
                     "26657": "40560"
                   }
+                },
+                {
+                  "id": "10764",
+                  "icon": "inv_bracer_mail_legionquest100_b_01",
+                  "obtainable": true,
+                  "points": 10,
+                  "side": "",
+                  "criteriaNeeded": true
+                },
+                {
+                  "id": "10765",
+                  "icon": "inv_bracer_cloth_legionquest100_b_01",
+                  "obtainable": true,
+                  "points": 10,
+                  "side": "",
+                  "criteriaNeeded": true
                 }
               ]
             },
@@ -29816,8 +29840,8 @@
       "name": "Class Hall",
       "cats": [
         {
-        "name": "Class Hall",
-        "zones": [
+          "name": "Class Hall",
+          "zones": [
             {
               "name": "TMP_ZONE1",
               "achs": [
@@ -29830,7 +29854,7 @@
                 }
               ]
             }
-         ]
+          ]
         }
       ]
     },
