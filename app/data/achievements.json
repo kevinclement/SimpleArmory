@@ -30828,16 +30828,58 @@
           "name": "Class Hall",
           "zones": [
             {
-              "name": "TMP_ZONE1",
+              "name": "Campaign",
               "achs": [
                 {
-                  "id": "9545",
-                  "icon": "achievement_garrison_tier02_horde",
-                  "side": "A",
+                  "id": "10994",
+                  "icon": "achievement_doublejeopardy",
+                  "side": "",
                   "obtainable": true,
-                  "points": 5
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": "11135",
+                  "icon": "achievement_doublejeopardy",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 20,
+                  "criteria": {}
+                },
+                {
+                  "id": "11136",
+                  "icon": "achievement_doublejeopardy",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 30,
+                  "criteria": {}
                 }
               ]
+            },
+            {
+              "name": "Other",
+              "achs": [
+                {
+                  "id": "11223",
+                  "icon": "achievement_garrison_blueprint_large",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5,
+                  "criteria": {}
+                },
+                {
+                  "id": "11298",
+                  "icon": "spell_magic_greaterblessingofkings",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                }
+              ]
+            },
+            {
+              "name": " ",
+              "achs": []
             }
           ]
         }
