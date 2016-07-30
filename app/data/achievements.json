@@ -19663,6 +19663,40 @@
           ]
         },
         {
+          "name": "Legion",
+          "zones": [
+            {
+              "name": " ",
+              "achs": [
+                {
+                  "id": "11159",
+                  "icon": "achievement_reputation_08",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5,
+                  "criteria": {}
+                },
+                {
+                  "id": "10778",
+                  "icon": "inv_legion_faction_nightfallen",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": "10672",
+                  "icon": "achievements_zone_brokenshore",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "Draenor",
           "zones": [
             {
