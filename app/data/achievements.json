@@ -19556,18 +19556,19 @@
                   "points": 10
                 },
                 {
-                  "id": "9478",
-                  "icon": "achievement_reputation_03",
-                  "side": "A",
-                  "obtainable": true,
-                  "points": 5
-                },
-                {
                   "id": "9477",
                   "icon": "achievement_reputation_03",
                   "side": "H",
                   "obtainable": true,
                   "points": 5
+                },
+                {
+                  "id": "11177",
+                  "icon": "achievement_reputation_08",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
                 }
               ]
             },
@@ -19667,6 +19668,13 @@
             {
               "name": "",
               "achs": [
+                {
+                  "id": "9478",
+                  "icon": "achievement_reputation_03",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 5
+                },
                 {
                   "id": "9469",
                   "icon": "inv_tabard_a_76arakkoaoutcast",
