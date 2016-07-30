@@ -12760,6 +12760,14 @@
                   "points": 10
                 },
                 {
+                  "id": "10582",
+                  "icon": "inv_misc_note_01",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
                   "id": "730",
                   "icon": "INV_Misc_Note_02",
                   "side": "",
@@ -12811,6 +12819,14 @@
                   }
                 },
                 {
+                  "id": "10580",
+                  "icon": "inv_misc_note_02",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
                   "id": "735",
                   "icon": "Ability_Repair",
                   "side": "",
@@ -12837,6 +12853,14 @@
                   "side": "",
                   "obtainable": true,
                   "points": 10
+                },
+                {
+                  "id": "10581",
+                  "icon": "ability_repair",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
                 },
                 {
                   "id": "7378",
@@ -12897,6 +12921,22 @@
                     "5720": "37572",
                     "5722": "37577"
                   }
+                },
+                {
+                  "id": "10583",
+                  "icon": "inv_hammer_16",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 50,
+                  "criteria": {}
+                },
+                {
+                  "id": "10761",
+                  "icon": "inv_recipe_70_scroll2star",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
                 }
               ]
             },
@@ -12920,6 +12960,27 @@
               ]
             },
             {
+              "name": "Minigame",
+              "achs": [
+                {
+                  "id": "10587",
+                  "icon": "inv_enchanting_wod_crystal2",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": "10588",
+                  "icon": "inv_eng_gizmo3",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                }
+              ]
+            },
+            {
               "name": "Other",
               "achs": [
                 {
@@ -12938,6 +12999,22 @@
                     "25138": "37415",
                     "25139": "37416"
                   }
+                },
+                {
+                  "id": "10585",
+                  "icon": "inv_misc_reforgedarchstone_01",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": "10586",
+                  "icon": "inv_misc_dust",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 15,
+                  "criteria": {}
                 }
               ]
             }
@@ -20259,14 +20336,6 @@
                   "obtainable": true,
                   "points": 25,
                   "criteria": {}
-                },
-                {
-                  "id": "11190",
-                  "icon": "inv_misc_map06",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 25,
-                  "criteria": {}
                 }
               ]
             }
@@ -20317,7 +20386,15 @@
                   "obtainable": true,
                   "points": 10,
                   "criteria": {}
-                }                
+                },
+                {
+                  "id": "11190",
+                  "icon": "inv_misc_map06",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 25,
+                  "criteria": {}
+                }
               ]
             },
             {
