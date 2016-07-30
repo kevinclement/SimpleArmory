@@ -15821,6 +15821,192 @@
           ]
         },
         {
+          "name": "Legion",
+          "zones": [
+            {
+              "name": "Zones",
+              "achs": [
+                {
+                  "id": "10059",
+                  "icon": "achievements_zone_highmountain",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": "10763",
+                  "icon": "achievements_zone_azsuna",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": "11124",
+                  "icon": "achievements_zone_suramar",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": "10756",
+                  "icon": "sha_ability_mage_firestarter_nightborne",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": "10698",
+                  "icon": "achievements_zone_valsharah",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": "10790",
+                  "icon": "achievements_zone_stormheim",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": "10877",
+                  "icon": "ability_titankeeper_cleansingorb",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 25,
+                  "criteria": {}
+                },
+                {
+                  "id": "11157",
+                  "icon": "achievement_zone_wetlands_01",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                }
+              ]
+            },
+            {
+              "name": "Highmountain",
+              "achs": [
+                {
+                  "id": "10398",
+                  "icon": "inv_archaeology_orcclans_warsingersdrums",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5,
+                  "criteria": {}
+                },
+                {
+                  "id": "10774",
+                  "icon": "inv_misc_herb_felblossom",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5,
+                  "criteria": {}
+                },
+                {
+                  "id": "10626",
+                  "icon": "trade_archaeology_fossil_snailshell",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5,
+                  "criteria": {}
+                }
+              ]
+            },
+            {
+              "name": "Stormheim",
+              "achs": [
+                {
+                  "id": "11232",
+                  "icon": "achievement_goblinheaddead",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5,
+                  "criteria": {}
+                },
+                {
+                  "id": "11186",
+                  "icon": "inv_misc_head_undead_01",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5,
+                  "criteria": {}
+                },
+                {
+                  "id": "10793",
+                  "icon": "achievement_goblinhead",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5,
+                  "criteria": {}
+                }
+              ]
+            },
+            {
+              "name": "Suramar",
+              "achs": [
+                {
+                  "id": "10617",
+                  "icon": "achievements_zone_suramar",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": "11125",
+                  "icon": "inv_engineering_failuredetectionpylon",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": "11133",
+                  "icon": "inv_misc_ancient_mana",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                }
+              ]
+            },
+            {
+              "name": "Val'sharah",
+              "achs": []
+            },
+            {
+              "name": "Azsuna",
+              "achs": []
+            },
+            {
+              "name": "Broken Shore",
+              "achs": []
+            },
+            {
+              "name": "Events",
+              "achs": [
+                {
+                  "id": "11240",
+                  "icon": "achievement_boss_illidan",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5,
+                  "criteria": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "Draenor",
           "zones": [
             {
