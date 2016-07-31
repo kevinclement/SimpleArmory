@@ -8929,67 +8929,6 @@
           "name": "Player vs. Player",
           "zones": [
             {
-              "name": "Conquest Points",
-              "achs": [
-                {
-                  "id": "5542",
-                  "icon": "Achievement_BG_winWSG",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 10
-                },
-                {
-                  "id": "5541",
-                  "icon": "Achievement_BG_winWSG",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 10
-                },
-                {
-                  "id": "5540",
-                  "icon": "Achievement_BG_winWSG",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 10
-                },
-                {
-                  "id": "5539",
-                  "icon": "Achievement_BG_winWSG",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 10
-                },
-                {
-                  "id": "10089",
-                  "icon": "achievement_bg_winwsg",
-                  "side": "A",
-                  "obtainable": true,
-                  "points": 10
-                },
-                {
-                  "id": "10088",
-                  "icon": "achievement_bg_winwsg",
-                  "side": "H",
-                  "obtainable": true,
-                  "points": 10
-                },
-                {
-                  "id": "10091",
-                  "icon": "achievement_bg_winwsg",
-                  "side": "A",
-                  "obtainable": true,
-                  "points": 10
-                },
-                {
-                  "id": "10090",
-                  "icon": "achievement_bg_winwsg",
-                  "side": "H",
-                  "obtainable": true,
-                  "points": 10
-                }
-              ]
-            },
-            {
               "name": "Kills",
               "achs": [
                 {
@@ -9476,21 +9415,7 @@
                   "side": "",
                   "obtainable": true,
                   "points": 10
-                },
-                {
-                  "id": "701",
-                  "icon": "INV_Jewelry_TrinketPVP_01",
-                  "side": "A",
-                  "obtainable": true,
-                  "points": 10
-                },
-                {
-                  "id": "700",
-                  "icon": "INV_Jewelry_TrinketPVP_02",
-                  "side": "H",
-                  "obtainable": true,
-                  "points": 10
-                },
+                },               
                 {
                   "id": "246",
                   "icon": "Ability_Gouge",
@@ -33505,6 +33430,62 @@
                   "side": "",
                   "obtainable": false,
                   "points": 0
+                },
+                {
+                  "id": "5542",
+                  "icon": "Achievement_BG_winWSG",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "5541",
+                  "icon": "Achievement_BG_winWSG",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "5540",
+                  "icon": "Achievement_BG_winWSG",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "5539",
+                  "icon": "Achievement_BG_winWSG",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "10089",
+                  "icon": "achievement_bg_winwsg",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "10088",
+                  "icon": "achievement_bg_winwsg",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "10091",
+                  "icon": "achievement_bg_winwsg",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "10090",
+                  "icon": "achievement_bg_winwsg",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 10
                 }
               ]
             },
@@ -33883,6 +33864,20 @@
                   "side": "H",
                   "obtainable": false,
                   "points": 0
+                },
+                {
+                  "id": "701",
+                  "icon": "INV_Jewelry_TrinketPVP_01",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 10
+                },
+                {
+                  "id": "700",
+                  "icon": "INV_Jewelry_TrinketPVP_02",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 10
                 },
                 {
                   "id": "8485",
