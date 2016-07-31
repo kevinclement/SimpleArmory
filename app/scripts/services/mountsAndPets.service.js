@@ -306,68 +306,7 @@
                 if (character.faction === 'H') {
                     plusMounts++;
                 }
-            }
-
-            // Brown Horse (if you have all the other horses, you get this.  Oprah would approve)
-            if (character.faction === 'A' && characterProperty === 'mounts' && !collected[458] && collected[23227] && collected[23229] && 
-                 collected[23228] && collected[6648] && collected[470] && collected[472]) {
-                
-                console.log('Hack: Blizzard still has the brown horse bug');
-
-                collected[458] = {
-                    'spellid': '458',
-                    'allianceId': null,
-                    'hordeId': null,
-                    'itemId': '5656',
-                    'icon': 'ability_mount_ridinghorse',
-                    'obtainable': true,
-                    'allowableRaces': [
-                        1,
-                        3,
-                        4,
-                        7,
-                        11,
-                        22,
-                        25
-                    ],
-                    'allowableClasses': null
-                };
-                found[458] = false;
-
-                if (character.faction === 'A') {
-                    plusMounts++;
-                }
-            }
-
-            // Swift Warstrider (same problem as brown horse)
-            if (character.faction === 'H' && characterProperty === 'mounts' && !collected[35028] && collected[22718] && collected[22724] && 
-                 collected[22722] && collected[22721] && collected[23509] && collected[59788]) {
-                
-                console.log('Hack: Blizzard still has the swift warstrider bug');
-
-                collected[35028] = {
-                    'spellid': '35028',
-                    'allianceId': null,
-                    'hordeId': null,
-                    'itemId': '34129',
-                    'icon': 'ability_mount_cockatricemountelite_black',
-                    'obtainable': true,
-                    'allowableRaces': [
-                        2,
-                        5,
-                        6,
-                        8,
-                        9,
-                        10,
-                        26
-                    ],
-                    'allowableClasses': null
-                };
-                found[35028] = false;
-                if (character.faction === 'H') {
-                    plusMounts++;
-                }
-            }
+            }            
 
             // Death Knight fix (if you're a death knight, you get acherus-deathcharger if you have the other one)
             if (character.class === 6 && characterProperty === 'mounts' && !collected[48778] && collected[54729]) {
@@ -387,22 +326,6 @@
 
                 found[48778] = false;
                 plusMounts++;
-            }
-
-            // Hack: until they fix the armory to return 300 mount
-            if (characterProperty === 'mounts' && (character[characterProperty].collected.length + plusMounts) >= 300) {
-                collected[127169] = 
-                {
-                    icon: 'inv_jewelcrafting_jadeserpent',
-                    isAquatic: false,
-                    isFlying: true,
-                    isGround: true,
-                    isJumping: false,
-                    itemId: 87776,
-                    name: 'Heavenly Azure Cloud Serpent',
-                    qualityId: 4,
-                    spellId: 127169
-                };
             }  
         }
     }
