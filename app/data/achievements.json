@@ -4059,14 +4059,7 @@
                   "side": "",
                   "obtainable": true,
                   "points": 10
-                },
-                {
-                  "id": "8533",
-                  "icon": "inv_axe_1h_firelandsraid_d_02",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 10
-                }
+                }                
               ]
             }
           ]
@@ -12017,50 +12010,6 @@
                   "obtainable": true,
                   "points": 10,
                   "criteria": {}
-                },
-                {
-                  "id": "10093",
-                  "icon": "pvpcurrency-conquest-alliance",
-                  "side": "A",
-                  "obtainable": true,
-                  "points": 15,
-                  "criteria": {
-                    "28386": "44313",
-                    "28387": "44314"
-                  }
-                },
-                {
-                  "id": "10092",
-                  "icon": "pvpcurrency-conquest-horde",
-                  "side": "H",
-                  "obtainable": true,
-                  "points": 15,
-                  "criteria": {
-                    "28386": "44310",
-                    "28387": "44311"
-                  }
-                },
-                {
-                  "id": "10095",
-                  "icon": "pvpcurrency-conquest-alliance",
-                  "side": "A",
-                  "obtainable": true,
-                  "points": 15,
-                  "criteria": {
-                    "28388": "44319",
-                    "28389": "44320"
-                  }
-                },
-                {
-                  "id": "10094",
-                  "icon": "pvpcurrency-conquest-horde",
-                  "side": "H",
-                  "obtainable": true,
-                  "points": 15,
-                  "criteria": {
-                    "28388": "44317",
-                    "28389": "44316"
-                  }
                 },
                 {
                   "id": "10998",
@@ -34252,7 +34201,30 @@
                   "side": "H",
                   "obtainable": false,
                   "points": 0
-                }
+                },
+                
+                {
+                  "id": "10093",
+                  "icon": "pvpcurrency-conquest-alliance",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 15,
+                  "criteria": {
+                    "28386": "44313",
+                    "28387": "44314"
+                  }
+                },
+                {
+                  "id": "10092",
+                  "icon": "pvpcurrency-conquest-horde",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 15,
+                  "criteria": {
+                    "28386": "44310",
+                    "28387": "44311"
+                  }
+                }                
               ]
             },
             {
@@ -34383,6 +34355,13 @@
                   "side": "",
                   "obtainable": false,
                   "points": 0
+                },
+                {
+                  "id": "8533",
+                  "icon": "inv_axe_1h_firelandsraid_d_02",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
                 }
               ]
             },
@@ -36623,6 +36602,28 @@
                   "side": "H",
                   "obtainable": true,
                   "points": 0
+                },
+                {
+                  "id": "10095",
+                  "icon": "pvpcurrency-conquest-alliance",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 15,
+                  "criteria": {
+                    "28388": "44319",
+                    "28389": "44320"
+                  }
+                },
+                {
+                  "id": "10094",
+                  "icon": "pvpcurrency-conquest-horde",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 15,
+                  "criteria": {
+                    "28388": "44317",
+                    "28389": "44316"
+                  }
                 },
                 {
                   "id": "10107",
