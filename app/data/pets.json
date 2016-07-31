@@ -88,6 +88,47 @@
         ]
       },
       {
+        "name": "Prestige",
+        "items": [
+          {
+            "spellid": "221684",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "139775",
+            "icon": "inv_pet_wyrmtongue",
+            "obtainable": true,
+            "allowableRaces": [
+              1,
+              3,
+              4,
+              7,
+              11,
+              22,
+              25
+            ],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "221683",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "139776",
+            "icon": "inv_pet_wyrmtongue",
+            "obtainable": true,
+            "allowableRaces": [
+              2,
+              5,
+              6,
+              8,
+              9,
+              10,
+              26
+            ],
+            "allowableClasses": null
+          }
+        ]
+      },
+      {
         "name": "",
         "items": [
           {
@@ -176,6 +217,46 @@
             "hordeId": null,
             "itemId": "120121",
             "icon": "inv_pet_baby_elekk_blue",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "223409",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "140323",
+            "icon": "inv_misc_fish_11",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "224786",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "140761",
+            "icon": "spell_nature_thorns_nightmare",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },          
+          {
+            "spellid": "226813",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "141352",
+            "icon": "inv_babydeer",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "212749",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "137298",
+            "icon": "inv_checkered_flag",
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
@@ -516,7 +597,91 @@
             "allowableRaces": [],
             "allowableClasses": null
           }
-          
+        ]
+      },
+      {
+        "name": "Legion",
+        "items": [
+          {
+            "spellid": "191425",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "128690",
+            "icon": "inv_misc_bearcubbrown",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },          
+          {
+            "spellid": "193388",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "129178",
+            "icon": "inv_misc_head_dragon_blue",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "186299",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "128354",
+            "icon": "inv_misc_rope_01",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "221908",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "139791",
+            "icon": "ability_druid_catformattack",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "195369",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "130167",
+            "icon": "inv_misc_lifeblood",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "221907",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "139790",
+            "icon": "inv_elemental_mote_mana",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "226682",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "141348",
+            "icon": "quest_khadgar",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "193680",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "129277",
+            "icon": "ability_hunter_eagleeye",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          }
         ]
       },
       {
@@ -613,6 +778,26 @@
             "hordeId": null,
             "itemId": "127748",
             "icon": "inv_pet_frostwolfpup_fire",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "223339",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "140316",
+            "icon": "inv_batpet",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "223359",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "140320",
+            "icon": "inv_corgi2",
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
@@ -1481,6 +1666,16 @@
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
+          },
+          {
+            "spellid": "210697",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "136922",
+            "icon": "inv_pet_wyrmtongue",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
           }
         ]
       },
@@ -1498,7 +1693,7 @@
             "allowableClasses": null
           }
         ]
-      },		  
+      },
       {
         "name": "Cooking",
         "items": [
@@ -1513,7 +1708,7 @@
             "allowableClasses": null
           }
         ]
-      },	  
+      },
       {
         "name": "Enchanting",
         "items": [
@@ -1533,6 +1728,36 @@
             "hordeId": null,
             "itemId": "67275",
             "icon": "inv_shield_26",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "191071",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "128533",
+            "icon": "inv_enchanting_70_pet_cauldron",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "191073",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "128535",
+            "icon": "inv_enchanting_70_pet_pen",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "191072",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "128534",
+            "icon": "inv_enchanting_70_pet_torch",
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
@@ -1691,6 +1916,26 @@
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
+          },
+          {
+            "spellid": "210696",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "136921",
+            "icon": "inv_robotpet",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "210683",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "136911",
+            "icon": "inv_misc_blingtron",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
           }
         ]
       },
@@ -1816,6 +2061,16 @@
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
+          },
+          {
+            "spellid": "217218",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "138810",
+            "icon": "inv_fish_stormraygreen",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
           }
         ]
       },
@@ -1898,6 +2153,21 @@
             "hordeId": null,
             "itemId": "113216",
             "icon": "inv_tailoring_elekkplushie",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          }
+        ]
+      },
+      {
+        "name": "Alchemy",
+        "items": [
+          {
+            "spellid": "221906",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "139789",
+            "icon": "inv_misc_endlesspotion",
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
@@ -2787,7 +3057,6 @@
             "allowableRaces": [],
             "allowableClasses": null
           }
-
         ]
       },
       {
@@ -2819,6 +3088,246 @@
             "hordeId": null,
             "itemId": "129218",
             "icon": "inv_jewelcrafting_gem_42",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          }
+        ]
+      },
+      {
+        "name": "Legion",
+        "items": [
+          {
+            "spellid": "225200",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "140934",
+            "icon": "inv_pet_toad_blue",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "193434",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "129188",
+            "icon": "inv_fishing_f_ammonite1",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "193368",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "129175",
+            "icon": "inv_misc_food_02",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "210673",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "136901",
+            "icon": "levelupicon-lfd",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "195368",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "130168",
+            "icon": "inv_enchant_voidsphere",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "223027",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "140261",
+            "icon": "spell_priest_voidtendrils",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "210691",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "136914",
+            "icon": "inv_pet_spiderdemon",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "215560",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "130154",
+            "icon": "inv_misc_ancientarrakoafeather",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "195370",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "130166",
+            "icon": "ability_mount_blackpanther",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "193279",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "129108",
+            "icon": "inv_weapon_shortblade_70",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "193514",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "129208",
+            "icon": "inv_misc_head_dragon_01",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "210680",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "136907",
+            "icon": "inv_giantboarmount_brown",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "210679",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "136906",
+            "icon": "inv_giantboarmount_brown",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "210675",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "136903",
+            "icon": "inv_misc_head_dragon_bronze_nightmare",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "210690",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "136913",
+            "icon": "inv_misc_head_nerubian_01",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "210678",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "136905",
+            "icon": "inv_giantboarmount_brown",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "210674",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "136902",
+            "icon": "inv_misc_head_dragon_green",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "210681",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "136908",
+            "icon": "inv_giantboarmount_brown",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "210665",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "136897",
+            "icon": "ability_hunter_pet_owl",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          }
+        ]
+      },
+      {
+        "name": "Legion: Class Hall",
+        "items": [
+          {
+            "spellid": "193943",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "129362",
+            "icon": "inv_pet_ancientprotector",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "210672",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "136900",
+            "icon": "levelupicon-lfd",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "224536",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "140741",
+            "icon": "inv_misc_herb_fireweed",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "227093",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "141530",
+            "icon": "inv_frostwolfpupsnowfang",
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
@@ -4184,7 +4693,142 @@
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
-          }		  
+          }
+        ]
+      },
+      {
+        "name": "Legion",
+        "items": [
+          {
+            "spellid": "210682",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "136910",
+            "icon": "inv_gizmo_07",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "210694",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "136919",
+            "icon": "inv_moosemount2",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "210698",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "136923",
+            "icon": "inv_pet_celestialbabyhippo",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "224403",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "140672",
+            "icon": "inv_misc_book_18",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "210671",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "136899",
+            "icon": "levelupicon-lfd",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "194294",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "129760",
+            "icon": "ability_mount_felboarmount",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "194393",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "129878",
+            "icon": "ability_hunter_pet_owl",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "194330",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "129798",
+            "icon": "inv_fishing_f_ammonite1",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "223110",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "140274",
+            "icon": "inv_babyhippo01_blue",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "210669",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "136898",
+            "icon": "inv_pet_wardenowl",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "194357",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "129826",
+            "icon": "achievement_halloween_spider_01",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "210677",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "136904",
+            "icon": "inv_fishing_f_ammonite1",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },          
+          {
+            "spellid": "210695",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "136920",
+            "icon": "inv_valkiergoldpet",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          }
         ]
       }
     ]
@@ -4442,6 +5086,16 @@
             "hordeId": null,
             "itemId": "128427",
             "icon": "inv_dhmurloc",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "225663",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "141316",
+            "icon": "inv_pet_bluemurlocegg",
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
@@ -5002,6 +5656,26 @@
             "hordeId": null,
             "itemId": "115301",
             "icon": "inv_moltencorgi",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "210701",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "136925",
+            "icon": "inv_corgi2",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "210699",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "136924",
+            "icon": "inv_batpet",
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
