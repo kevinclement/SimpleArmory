@@ -1147,7 +1147,32 @@
             },
             {
               "name": "Court of Stars",
-              "achs": []
+              "achs": [
+                {
+                  "id": "10610",
+                  "icon": "spell_nature_sleep",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": "10611",
+                  "icon": "inv_helm_mask_fittedalpha_b_01_nightborne_01",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": "10816",
+                  "icon": "achievement_dungeon_courtofstars",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                }
+              ]
             },
             {
               "name": "Valt of the Wardens",
