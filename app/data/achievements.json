@@ -13072,24 +13072,7 @@
                     "3802": "5088",
                     "3803": "5061"
                   }
-                },
-                {
-                  "id": "1956",
-                  "icon": "INV_Misc_Book_11",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 10,
-                  "criteria": {
-                    "7236": "9035",
-                    "7237": "9030",
-                    "7238": "9037",
-                    "7239": "9034",
-                    "7240": "9031",
-                    "7241": "9032",
-                    "7242": "9033",
-                    "7243": "9036"
-                  }
-                }
+                }                
               ]
             },
             {
@@ -13729,14 +13712,7 @@
                   "side": "",
                   "obtainable": true,
                   "points": 10
-                },
-                {
-                  "id": "2716",
-                  "icon": "Achievement_General",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 10
-                },
+                },                
                 {
                   "id": "545",
                   "icon": "INV_Misc_Comb_02",
@@ -13750,6 +13726,13 @@
                   "side": "",
                   "obtainable": true,
                   "points": 10
+                },
+                {
+                  "id": "4496",
+                  "icon": "Ability_Warrior_InnerRage",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 0
                 }
               ]
             }
@@ -23695,6 +23678,23 @@
                     "8120": "8958",
                     "8121": "8959",
                     "8122": "8960"
+                  }
+                },
+                {
+                  "id": "1956",
+                  "icon": "INV_Misc_Book_11",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {
+                    "7236": "9035",
+                    "7237": "9030",
+                    "7238": "9037",
+                    "7239": "9034",
+                    "7240": "9031",
+                    "7241": "9032",
+                    "7242": "9033",
+                    "7243": "9036"
                   }
                 }
               ]
@@ -35367,6 +35367,13 @@
                   "side": "",
                   "obtainable": true,
                   "points": 0
+                },
+                {
+                  "id": "2716",
+                  "icon": "Achievement_General",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10
                 }
               ]
             }
@@ -38490,14 +38497,7 @@
                   "side": "",
                   "obtainable": true,
                   "points": 0
-                },
-                {
-                  "id": "4496",
-                  "icon": "Ability_Warrior_InnerRage",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 0
-                },
+                },                
                 {
                   "id": "9597",
                   "icon": "spell_priest_divinestar_holy",
