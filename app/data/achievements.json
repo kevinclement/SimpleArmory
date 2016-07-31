@@ -1011,12 +1011,41 @@
               ]
             },
             {
-              "name": "The Nighthold",
-              "achs": []
-            },
-            {
               "name": "The Arcway",
-              "achs": []
+              "achs": [
+                {
+                  "id": "10773",
+                  "icon": "spell_arcane_starfire",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": "10775",
+                  "icon": "inv_pet_broom",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": "10776",
+                  "icon": "ability_racial_timeismoney",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": "10813",
+                  "icon": "achievement_dungeon_thearcway",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                }
+              ]
             },
             {
               "name": "Maw of Souls",
