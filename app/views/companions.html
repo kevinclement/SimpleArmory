@@ -14,7 +14,7 @@
   <h3 class="categoryHeader" ng-repeat-start="category in items.categories">{{ category.name }}</h3>
    <div class="sect" ng-repeat="subCategory in category.subCategories">
 		<h5 class="zoneHeader">{{ subCategory.name }}</h5>
-		<a ng-href="//{{settings.WowHeadUrl}}/{{ item.link }}" class="thumbnail" ng-repeat="item in subCategory.items" ng-class="{borderOn:!item.collected, borderOff:item.collected}">
+		<a target="{{settings.anchorTarget}}" ng-href="//{{settings.WowHeadUrl}}/{{ item.link }}" class="thumbnail" ng-repeat="item in subCategory.items" ng-class="{borderOn:!item.collected, borderOff:item.collected}">
         	<img ng-src="{{getImageSrc(item)}}">
       	</a>
    </div>
