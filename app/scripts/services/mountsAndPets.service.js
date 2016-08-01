@@ -283,6 +283,8 @@
 
             // Hack: Horde chopper doesn't show up, so we have to check for achievement and just assume they 'learned' it
             if (character.faction === 'H' && characterProperty === 'mounts' && character.achievements.achievementsCompleted.indexOf(9909) >= 0) {
+                console.log('Hack: Blizzard still has the chopper bug');
+
                 collected[179244] = {
                     'spellid': '179244',
                     'allianceId': null,
