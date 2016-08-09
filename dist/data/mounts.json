@@ -132,6 +132,146 @@
     ]
   },
   {
+    "name": "Legion",
+    "subcats": [
+      {
+        "name": "Achievement",
+        "items": [
+          {
+            "spellid": "193007",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "141216",
+            "icon": "inv_moosemount2nightmare",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "215558",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "138387",
+            "icon": "inv_ratmount",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "225765",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "141217",
+            "icon": "inv_mount_hippogryph_arcane",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "223814",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "140500",
+            "icon": "ability_mount_shreddermount",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          }
+        ]
+      },
+      {
+        "name": "Vendor",
+        "items": [
+          {
+            "spellid": "214791",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "138811",
+            "icon": "inv_fishmount",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "227956",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "141713",
+            "icon": "inv_turtlemount",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "213115",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "137570",
+            "icon": "inv_spidermount",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          }
+        ]
+      },
+      {
+        "name": "Quest",
+        "items": [
+          {
+            "spellid": "171850",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "137573",
+            "icon": "foxmounticon",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          }
+        ]
+      },
+      {
+        "name": "Rare Spawn",
+        "items": [
+          {
+            "spellid": "223018",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "138201",
+            "icon": "inv_fishing_lure_starfish",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          }
+        ]
+      },
+      {
+        "name": "Raid",
+        "items": [
+          {
+            "spellid": "213134",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "137574",
+            "icon": "inv_infernalmountgreen",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "171827",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "137575",
+            "icon": "inv_infernalmountred",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Draenor",
     "subcats": [
       {
@@ -191,7 +331,7 @@
             "hordeId": null,
             "itemId": "116791",
             "icon": "inv_misc_pet_pandaren_yeti",
-            "obtainable": true,
+            "obtainable": false,
             "allowableRaces": [],
             "allowableClasses": null
           },
@@ -404,13 +544,13 @@
             "icon": "ability_mount_felboarmount",
             "obtainable": true,
             "allowableRaces": [
-                          2,
-                          5,
-                          6,
-                          8,
-                          9,
-                          10,
-                          26
+              2,
+              5,
+              6,
+              8,
+              9,
+              10,
+              26
             ],
             "allowableClasses": null
           },
@@ -838,7 +978,7 @@
       {
         "name": "BMAH",
         "items": [
-	         {
+          {
             "spellid": "24242",
             "allianceId": null,
             "hordeId": null,
@@ -858,7 +998,7 @@
             "allowableRaces": [],
             "allowableClasses": null
           },
-	        {
+          {
             "spellid": "60021",
             "allianceId": null,
             "hordeId": null,
@@ -868,7 +1008,7 @@
             "allowableRaces": [],
             "allowableClasses": null
           }
-	     ]
+        ]
       },
       {
         "name": "Timewalking",
@@ -903,7 +1043,7 @@
             "allowableRaces": [],
             "allowableClasses": null
           }
-       ]
+        ]
       }
     ]
   },
@@ -5025,6 +5165,16 @@
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
+          },
+          {
+            "spellid": "196681",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "131734",
+            "icon": "inv_archaeology_70_spiritofechero",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
           }
         ]
       },
@@ -5128,6 +5278,16 @@
             "hordeId": null,
             "itemId": "46109",
             "icon": "inv_misc_fish_turtle_02",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "30174",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "23720",
+            "icon": "ability_hunter_pet_turtle",
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
@@ -5243,6 +5403,31 @@
             "hordeId": null,
             "itemId": "108883",
             "icon": "inv_wolfdraenormountbrown",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "213339",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "129962",
+            "icon": "inv_belt_39b",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          }
+        ]
+      },
+      {
+        "name": "Blacksmith",
+        "items": [
+          {
+            "spellid": "213209",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "137686",
+            "icon": "inv_belt_45",
             "obtainable": true,
             "allowableRaces": [],
             "allowableClasses": null
@@ -5436,6 +5621,98 @@
               26
             ],
             "allowableClasses": null
+          },
+          {
+            "spellid": "223341",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "140353",
+            "icon": "inv_mount_vicioushorse",
+            "obtainable": true,
+            "allowableRaces": [
+              1,
+              1,
+              3,
+              3,
+              4,
+              4,
+              7,
+              7,
+              11,
+              11,
+              22,
+              25
+            ],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "223578",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "140350",
+            "icon": "ability_mount_viciouswarelekk",
+            "obtainable": true,
+            "allowableRaces": [
+              1,
+              1,
+              3,
+              3,
+              4,
+              4,
+              7,
+              7,
+              11,
+              11,
+              22,
+              25
+            ],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "223363",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "140348",
+            "icon": "ability_mount_vicioushawkstrider",
+            "obtainable": true,
+            "allowableRaces": [
+              2,
+              2,
+              5,
+              5,
+              6,
+              6,
+              8,
+              8,
+              9,
+              10,
+              10,
+              26
+            ],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "223354",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "140354",
+            "icon": "inv_viciousgoblintrike",
+            "obtainable": true,
+            "allowableRaces": [
+              2,
+              2,
+              5,
+              5,
+              6,
+              6,
+              8,
+              8,
+              9,
+              10,
+              10,
+              26
+            ],
+            "allowableClasses": null
           }
         ]
       },
@@ -5618,6 +5895,66 @@
             "hordeId": null,
             "itemId": "128282",
             "icon": "inv_fellessergronnmount_dark",
+            "obtainable": false,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "227989",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "141845",
+            "icon": "inv_stormdragonmount2dark",
+            "obtainable": false,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "227988",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "141844",
+            "icon": "inv_stormdragonmount2blue",
+            "obtainable": false,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "227991",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "141846",
+            "icon": "inv_stormdragonmount2green",
+            "obtainable": false,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "227986",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "141843",
+            "icon": "inv_stormdragonmount2",
+            "obtainable": false,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "227995",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "141848",
+            "icon": "inv_stormdragonmount2yellow",
+            "obtainable": false,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "227994",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "141847",
+            "icon": "inv_stormdragonmount2light",
             "obtainable": false,
             "allowableRaces": [],
             "allowableClasses": null
@@ -5916,6 +6253,71 @@
             "itemId": "103638",
             "icon": "inv_mushanbeastmountblack",
             "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          }
+        ]
+      },
+      {
+        "name": "Prestige",
+        "items": [
+          {
+            "spellid": "222202",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "140228",
+            "icon": "inv_horse2mount",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "222238",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "140233",
+            "icon": "inv_horse2mountlight",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "222240",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "140408",
+            "icon": "inv_horse2mountyellow",
+            "obtainable": false,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "222237",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "140232",
+            "icon": "inv_horse2mountgreen",
+            "obtainable": false,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "222241",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "140407",
+            "icon": "inv_horse2mountblack",
+            "obtainable": false,
+            "allowableRaces": [],
+            "allowableClasses": null
+          },
+          {
+            "spellid": "222236",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": "140230",
+            "icon": "inv_horse2mountpurple",
+            "obtainable": false,
             "allowableRaces": [],
             "allowableClasses": null
           }
@@ -6359,17 +6761,7 @@
       },
       {
         "name": "Trading Card Game",
-        "items": [
-          {
-            "spellid": "30174",
-            "allianceId": null,
-            "hordeId": null,
-            "itemId": "23720",
-            "icon": "ability_hunter_pet_turtle",
-            "obtainable": true,
-            "allowableRaces": [],
-            "allowableClasses": null
-          },
+        "items": [          
           {
             "spellid": "42776",
             "allianceId": null,
@@ -6664,6 +7056,23 @@
             ],
             "allowableClasses": [
               2
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Demon Hunter",
+        "items": [
+          {
+            "spellid": "200175",
+            "allianceId": null,
+            "hordeId": null,
+            "itemId": null,
+            "icon": "inv_dhmount",
+            "obtainable": true,
+            "allowableRaces": [],
+            "allowableClasses": [
+              12
             ]
           }
         ]
