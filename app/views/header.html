@@ -44,6 +44,22 @@
         </li>
         <li ng-class="{ active: isActive('calendar') }"><a ng-click="isCollapsed = true" ng-href="{{getUrl('calendar')}}">Calendar</a></li>
         <li ng-class="{ active: isActive('reputation') }"><a ng-click="isCollapsed = true" ng-href="{{getUrl('reputation')}}">Reputation</a></li>
+        <!--
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle"><img style="height:16px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAQAAAC1QeVaAAAAvklEQVQYlWNggINywfKw8kAGdFDOXM4KJJPK/wMhJ5DFj5BiK79Y/qTcsvwEWLKgvBBIRsMkC8GC6JALIslS/gBDKhZmn1D5S7CAdTljOUf5UjA7t5wdJPkbqrYPagkHXHcAA5yZAZVkhIuEMZQ7lJeCmXfKmcGSFmDeufL0chGI6qNggVvlyeUdUF0WMK8YYfHInXIWiKQOmHseKvyi/BGQvAixBCStV+4CDwyhctby4nI29BC2BUr9husAAgD6C537ZBPytwAAAABJRU5ErkJggg=="></a>
+          <ul class="dropdown-menu">
+            <li><a href="mailto:simplearmory@gmail.com?subject=Simple Armory Feedback">Contact</a></li>
+            <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EQKUGCXWLES44" target="_blank">Beer Me</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAMAAAAolt3jAAAAeFBMVEUAAAB3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3c+RLoqAAAAJ3RSTlMAAQIDBAUIDRccHSYnMDQ1ODw/QEZKTE5hd3iDi6Cmwdri5uj1+f2XX9FQAAAAXklEQVQIHUXBBxKCMAAAwQO7IPaCInbu/z90Amh2CZb163Ee00lrg09Bq7LTTAhK3Y2mdz3RKtbARUt+kkOjK3rDm3pN6FXqnr+3HokW282AaJ5nKZGaEak50VNnBF9lDAkDniuziQAAAABJRU5ErkJggg=="></a>
+          <ul class="dropdown-menu">
+            <li><a href="mailto:simplearmory@gmail.com?subject=Simple Armory Feedback">Contact</a></li>
+            <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EQKUGCXWLES44" target="_blank">Beer Me</a></li>
+          </ul>
+        </li>
+        -->        
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Help <b class="caret"></b></a>
           <ul class="dropdown-menu">
@@ -51,13 +67,67 @@
             <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EQKUGCXWLES44" target="_blank">Beer Me</a></li>
           </ul>
         </li>
+
       </ul>
       <ul class="nav navbar-nav navbar-right" ng-show="isLoggedIn">
-        <li><a ng-href="{{armoryUrl()}}" class="navbar-char-link">
-                <div>{{ character.name }}</div>
-                <div class="navbar-char-link-subtext">{{ guildName() }}</div>
-                <div class="navbar-char-link-subtext">{{ character.achievementPoints }}</div></a></li>
+        <!--
+        <li><img style="height:16px;margin-top:15px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAMAAABhEH5lAAAApVBMVEUAAAAzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzO5NJfvAAAANnRSTlMAAQIDBAcIChcmKCsuLzEyND9CTGJjaW1vcXV3eHx+goOIj5GjqLS1w8XH0dfg5Obp6+/x8/lp83/WAAAAjklEQVQYGXXB61JBARhA0X2IXEK5nkMhyr1y3e//aPmmGeP8aC3+ZOqQnKW64CYBTuoBSAitY7+6Nqyq6fkJeNh777sIb+aNYGoYlChnhgnQVOeEmfpMUNuEF5VQU+eEmVoBUsOgRDkzdOHVvE8o/njv8gg0LuP6xrBrpOcOoQB8eVWAhJsPdUtOT33nX78sKiDZ2mWF2wAAAABJRU5ErkJggg=="></li>
+        
+        <div style="display:inline-block;">
+	                <div>{{ character.name }}</div>
+                  <div style="margin-top:2px" class="navbar-char-link-subtext">{{ guildName() }}</div>
+                  <div style="margin-top:3px" class="navbar-char-link-subtext">{{ character.achievementPoints }}</div>
+	     </div>
+        
+        
         <li><img class="navbar-char-image" ng-src="{{imgUrl()}}"/></li>
+        -->
+        <li class="dropdown">
+            <a style="margin:0px;padding:0px;padding-left:5px;padding-right:5px" href="#" class="navbar-char-link dropdown-toggle">
+                <img style="vertical-align:baseline;margin:0px;padding:0px;margin-top:3px;position:relative;top:1px;" class="navbar-char-image" ng-src="{{imgUrl()}}"/>
+                <div style="display:inline-block; height:45px;overflow:hidden;margin-left:5px;">
+                  <div>{{ character.name }}</div>
+                  <div style="margin-top:1px" class="navbar-char-link-subtext">{{ guildName() }}</div>
+                  <div style="margin-top:4px" class="navbar-char-link-subtext">{{ character.achievementPoints }}</div>
+                 </div>
+                
+                <b class="caret" style="color:#777;vertical-align:top;margin-top:23px;margin-left:5px;"></b>
+                
+                
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="mailto:simplearmory@gmail.com?subject=Simple Armory Feedback">Armory Profile</a></li>
+              <li><a href="#">Settings</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Logout</a></li>
+            </ul>                
+        </li>
+        
+
+        <!--
+        WORKING:
+        <li class="dropdown">
+            <a style="margin:0px;padding:0px;padding-left:5px;padding-right:5px" href="#" class="navbar-char-link dropdown-toggle">
+                <img style="vertical-align:baseline;margin:0px;padding:0px;margin-top:3px;position:relative;top:1px;" class="navbar-char-image" ng-src="{{imgUrl()}}"/>
+                <div style="display:inline-block; height:45px;overflow:hidden;margin-left:5px;">
+                  <div>{{ character.name }}</div>
+                  <div style="margin-top:1px" class="navbar-char-link-subtext">{{ guildName() }}</div>
+                  <div style="margin-top:4px" class="navbar-char-link-subtext">{{ character.achievementPoints }}</div>
+                 </div>
+                
+                <b class="caret" style="color:#777;vertical-align:top;margin-top:23px;margin-left:5px;"></b>
+                
+                
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="mailto:simplearmory@gmail.com?subject=Simple Armory Feedback">Armory Profile</a></li>
+              <li><a href="#">Language: en-us</a></li>
+            </ul>                
+        </li>
+        
+        <li><b class="caret" style="color:#777;margin-top:20px;margin-left:5px;"></b></li>
+        -->
+       
       </ul>
     </div>
   </div>
