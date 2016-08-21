@@ -82,16 +82,81 @@
         
         <li><img class="navbar-char-image" ng-src="{{imgUrl()}}"/></li>
         -->
+
+        <style>
+            #logo {
+              top: -5px !important;
+            }
+            .navbar-nav > li > a {
+              padding-top: 10px;
+              padding-bottom: 10px;
+            }
+
+            .navbar-brand {
+              padding-top: 10px;
+              padding-bottom: 10px;
+              height: 40px;
+            }
+
+            .tmpIconA {
+              margin:0px !important;
+              padding:0px !important;
+              padding-top: 4px !important;
+              padding-bottom: 4px !important;
+              padding-left:15px !important;
+              padding-right:15px !important;
+            }
+            
+            .tmpIconI {
+              height:32px;
+              width:32px;
+              border-radius: 3px;
+              margin: 0px; 
+            }
+
+            .navbar {
+              min-height:0px !important;
+            }
+
+            .tmpChar {
+              display:inline-block;
+              margin-left: 4px !important;
+              margin-right: 2px !important;
+            }
+
+            .tmpCaret {
+              color:#777;    
+            }
+
+
+            
+            
+        </style>
+        <!--
+          vertical-align:baseline;
+              margin:0px;
+              padding:0px;
+              margin-top:0px;
+              position:relative;
+              top:0px;
+
+          vertical-align:top;
+              margin-top:23px;
+              margin-left:5px;              
+        -->
         <li class="dropdown">
-            <a style="margin:0px;padding:0px;padding-left:5px;padding-right:5px" href="#" class="navbar-char-link dropdown-toggle">
-                <img style="vertical-align:baseline;margin:0px;padding:0px;margin-top:3px;position:relative;top:1px;" class="navbar-char-image" ng-src="{{imgUrl()}}"/>
-                <div style="display:inline-block; height:45px;overflow:hidden;margin-left:5px;">
+            <a href="#" class="navbar-char-link dropdown-toggle tmpIconA">
+                <img class="navbar-char-image tmpIconI" ng-src="{{imgUrl()}}"/>
+                
+                <div class="tmpChar">
                   <div>{{ character.name }}</div>
+                  <!--
                   <div style="margin-top:1px" class="navbar-char-link-subtext">{{ guildName() }}</div>
                   <div style="margin-top:4px" class="navbar-char-link-subtext">{{ character.achievementPoints }}</div>
+                  -->
                  </div>
                 
-                <b class="caret" style="color:#777;vertical-align:top;margin-top:23px;margin-left:5px;"></b>
+                <b class="caret tmpCaret"></b>
                 
                 
             </a>
