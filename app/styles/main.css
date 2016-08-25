@@ -360,6 +360,16 @@ body {
     }
 }
 
+/* ## Setting Page ############################### */
+.settingsPage .input-group {
+  margin: 15px 0;
+}
+.autoLogin {
+  display:block;
+  font-weight: 400;
+  cursor: pointer;
+}
+
 /* Fix bootstrap bug in ios 9 where it zooms in */
 .modal-open {
   overflow-y: auto;
