@@ -15,7 +15,11 @@
             when('/error/:realm/:character', {
               templateUrl: 'views/error.html',
               controller: 'ErrorCtrl'
-            }).      
+            }).
+            when('/:region/:realm/:character/settings', {
+              templateUrl: 'views/settings.html',
+              controller: 'SettingsCtrl'
+            }).
             when('/:region/:realm/:character/achievements/:category', {
               templateUrl: 'views/achievements.html',
               controller: 'AchievementsCtrl'

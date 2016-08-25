@@ -23,7 +23,7 @@
             } else if ($location.$$path !== '' && $location.$$path !== '/') {
                 // "us/proudmoore/marko"
                 // [0]: us/proudmoore/marko
-                // [1]: spirestone
+                // [1]: proudmoore
                 // [2]: marko
                 // [3]: location part
                 var rgr = new RegExp('([^\/]+)/([^\/]+)/([^\/]+)/?([^\/]+)?').exec($location.$$path);
