@@ -46,63 +46,16 @@
         <li ng-class="{ active: isActive('reputation') }"><a ng-click="isCollapsed = true" ng-href="{{getUrl('reputation')}}">Reputation</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right" ng-show="isLoggedIn">
-        <style>
-            #logo {
-              top: -5px !important;
-            }
-            .navbar-nav > li > a {
-              padding-top: 10px;
-              padding-bottom: 10px;
-            }
-
-            .navbar-brand {
-              padding-top: 10px;
-              padding-bottom: 10px;
-              height: 40px;
-            }
-
-            .tmpIconA {
-              margin:0px !important;
-              padding:0px !important;
-              padding-top: 4px !important;
-              padding-bottom: 4px !important;
-              padding-left:15px !important;
-              padding-right:15px !important;
-            }
-            
-            .tmpIconI {
-              height:32px;
-              width:32px;
-              border-radius: 3px;
-              margin: 0px; 
-            }
-
-            .navbar {
-              min-height:0px !important;
-            }
-
-            .tmpChar {
-              display:inline-block;
-              margin-left: 0px !important;
-              margin-right: 0px !important;
-            }
-
-            .tmpSignIn {
-              color: #767676;
-              padding: 3px 20px;
-            }
-            .tmpSignInStrong {
-              color: #767676;
-              font-weight: 600;
-              padding: 3px 20px;
-              white-space: nowrap;
-            }
-            
-        </style>
         <li class="dropdown">
-            <a href="#" class="navbar-char-link dropdown-toggle tmpIconA">
-                <img class="navbar-char-image tmpIconI" ng-src="{{imgUrl()}}"/>
-                <!-- 
+            <a href="#" class="navbar-char-link dropdown-toggle">
+                <img class="navbar-char-image" ng-src="{{imgUrl()}}"/>
+                <!--
+                    .tmpChar {
+                      display:inline-block;
+                      margin-left: 0px !important;
+                      margin-right: 0px !important;
+                    }
+ 
                 <div class="tmpChar">
 
                   
@@ -115,8 +68,8 @@
                 <b class="caret"></b>                
             </a>
             <ul class="dropdown-menu">
-              <li class="tmpSignIn">Signed in as</li>
-              <li><strong class="tmpSignInStrong">Marko @ Proudmoore</strong></li>
+              <li class="signin-label">Signed in as</li>
+              <li><strong class="signin-name">Marko @ Proudmoore</strong></li>
               <li role="separator" class="divider"></li>
               <li><a href="#">Armory Profile</a></li>
               <li><a href="mailto:simplearmory@gmail.com?subject=Simple Armory Feedback">Contact</a></li>
