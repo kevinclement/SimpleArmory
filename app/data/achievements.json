@@ -1448,6 +1448,67 @@
               ]
             },
             {
+              "name": "Karazhan",
+              "achs": [
+                {
+                  "id": 11429,
+                  "icon": "achievement_raid_karazhan",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11433,
+                  "icon": "inv_inscription_tomeoftheclearmind",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11335,
+                  "icon": "inv_scroll_16",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11338,
+                  "icon": "inv_tradeskill_cooking_feastofblood",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11432,
+                  "icon": "spell_warlock_soulburn",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11431,
+                  "icon": "inv_staff_medivh",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11430,
+                  "icon": "inv_staff_medivh",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                }
+              ]
+            },
+            {
               "name": "Keystone",
               "achs": [
                 {
@@ -1870,6 +1931,83 @@
                 {
                   "id": "10827",
                   "icon": "achievement_emeraldnightmare_xavius",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                }
+              ]
+            },
+            {
+              "name": "Trial of Valor",
+              "achs": [
+                {
+                  "id": 11394,
+                  "icon": "achievement_raid_trialofvalor",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11426,
+                  "icon": "achievement_raid_trialofvalor",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11337,
+                  "icon": "inv_relics_runestone",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11386,
+                  "icon": "inv_misc_bone_01",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11377,
+                  "icon": "inv_pet_diseasedsquirrel",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },                
+                {
+                  "id": 11396,
+                  "icon": "achievement_boss_odyn",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11397,
+                  "icon": "achievement_boss_guarm",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11398,
+                  "icon": "achievement_boss_helyra",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11387,
+                  "icon": "achievement_raid_trialofvalor",
                   "side": "",
                   "obtainable": true,
                   "points": 10,
@@ -9442,6 +9580,22 @@
               "name": "Prestige",
               "achs": [
                 {
+                  "id": 10990,
+                  "icon": "pvpcurrency-honor-horde",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 10988,
+                  "icon": "pvpcurrency-honor-alliance",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
                   "id": "10991",
                   "icon": "achievement_legionpvptier1",
                   "side": "",
@@ -9472,9 +9626,94 @@
                   "obtainable": true,
                   "points": 10,
                   "criteria": {}
+                },
+                {
+                  "id": 11468,
+                  "icon": "achievement_legionpvp2tier1",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11469,
+                  "icon": "achievement_legionpvp2tier2",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11470,
+                  "icon": "achievement_legionpvp2tier3",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11471,
+                  "icon": "achievement_legionpvp2tier4",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11472,
+                  "icon": "achievement_legionpvptier4",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
                 }
               ]
             },
+            {
+              "name": "World Quests",
+              "achs": [
+                {
+                  "id": 11475,
+                  "icon": "inv_babymurloc3_yellow",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11476,
+                  "icon": "inv_pet_goat",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11477,
+                  "icon": "achievement_dungeon_blackrookhold",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11478,
+                  "icon": "misc_drogbarhead",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11474,
+                  "icon": "achievement_bg_kill_on_mount",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 20,
+                  "criteria": {}
+                }
+              ]
+            },            
             {
               "name": "Crest",
               "achs": [
@@ -12373,6 +12612,22 @@
                   "side": "A",
                   "obtainable": true,
                   "points": 10
+                },
+                {
+                  "id": 11578,
+                  "icon": "achievement_bg_dg_master_of_the_deepwind_gorge",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11579,
+                  "icon": "achievement_bg_killxenemies_generalsroom",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
                 }
               ]
             },
@@ -17185,6 +17440,14 @@
                   }
                 },
                 {
+                  "id": 11340,
+                  "icon": "inv_nightbornefemale",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
                   "id": "10756",
                   "icon": "sha_ability_mage_firestarter_nightborne",
                   "side": "",
@@ -17384,6 +17647,14 @@
                     "33146": "53649",
                     "33147": "53650"
                   }
+                },
+                {
+                  "id": 11427,
+                  "icon": "inv_pet_babymurlocs_blue",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5,
+                  "criteria": {}
                 }
               ]
             }
@@ -27205,6 +27476,38 @@
                   "side": "H",
                   "obtainable": true,
                   "points": 10
+                },
+                {
+                  "id": 11276,
+                  "icon": "spell_fire_masterofelements",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11278,
+                  "icon": "spell_fire_masterofelements",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11277,
+                  "icon": "spell_fire_masterofelements",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11279,
+                  "icon": "spell_fire_masterofelements",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
                 }
               ]
             },
@@ -27458,6 +27761,38 @@
                     "22694": "31744",
                     "22695": "31745"
                   }
+                },
+                {
+                  "id": 11283,
+                  "icon": "inv_summerfest_firespirit",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11280,
+                  "icon": "inv_summerfest_firespirit",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11284,
+                  "icon": "inv_summerfest_firespirit",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11282,
+                  "icon": "inv_summerfest_firespirit",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
                 }
               ]
             },
@@ -29428,7 +29763,104 @@
           "zones": [
             {
               "name": "",
-              "achs": []
+              "achs": [
+                {
+                  "id": 11558,
+                  "icon": "spell_holy_silence",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 5,
+                  "criteria": {}
+                },
+                {
+                  "id": 11560,
+                  "icon": "inv_pants_plate_05",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 5,
+                  "criteria": {}
+                },
+                {
+                  "id": 11563,
+                  "icon": "inv_misc_bandage_05",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 5,
+                  "criteria": {}
+                },
+                {
+                  "id": 11565,
+                  "icon": "spell_holy_fistofjustice",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 5,
+                  "criteria": {}
+                },
+                {
+                  "id": 11559,
+                  "icon": "spell_holy_silence",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 5,
+                  "criteria": {}
+                },
+                {
+                  "id": 11561,
+                  "icon": "inv_pants_plate_05",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 5,
+                  "criteria": {}
+                },
+                {
+                  "id": 11564,
+                  "icon": "inv_misc_bandage_08",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 5,
+                  "criteria": {}
+                },
+                {
+                  "id": 11566,
+                  "icon": "spell_holy_fistofjustice",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 5,
+                  "criteria": {}
+                },
+                {
+                  "id": 11567,
+                  "icon": "inv_misc_coin_17",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5,
+                  "criteria": {}
+                },
+                {
+                  "id": 11570,
+                  "icon": "achievement_guildperk_cashflow_rank2",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5,
+                  "criteria": {}
+                },
+                {
+                  "id": 11572,
+                  "icon": "achievement_leader_thrall",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5,
+                  "criteria": {}
+                },
+                {
+                  "id": 11573,
+                  "icon": "inv_moosemount",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5,
+                  "criteria": {}
+                }
+              ]
             }
           ]
         }
@@ -30383,35 +30815,9 @@
               ]
             },
             {
-              "name": "Other",
+              "name": "Leashes",
               "achs": [
-                {
-                  "id": "6608",
-                  "icon": "inv_pet_achievement_captureapetfromeachfamily",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 10,
-                  "criteria": {
-                    "19750": "22576",
-                    "19751": "22577",
-                    "19752": "22579",
-                    "19753": "22578",
-                    "19754": "22580",
-                    "19755": "22581",
-                    "19756": "22582",
-                    "19757": "22583",
-                    "19758": "22584",
-                    "19759": "22585"
-                  }
-                },
-                {
-                  "id": "6571",
-                  "icon": "inv_pet_achievement_captureapetatlessthan5health",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 5
-                },
-                {
+{
                   "id": "7934",
                   "icon": "achievement_boss_ragnaros",
                   "side": "",
@@ -30472,6 +30878,45 @@
                     "27578": "42683"
                   }
                 },
+                {
+                  "id": 11320,
+                  "icon": "achievement_boss_lichking",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                }
+              ]
+            },
+            {
+              "name": "Other",
+              "achs": [
+                {
+                  "id": "6608",
+                  "icon": "inv_pet_achievement_captureapetfromeachfamily",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {
+                    "19750": "22576",
+                    "19751": "22577",
+                    "19752": "22579",
+                    "19753": "22578",
+                    "19754": "22580",
+                    "19755": "22581",
+                    "19756": "22582",
+                    "19757": "22583",
+                    "19758": "22584",
+                    "19759": "22585"
+                  }
+                },
+                {
+                  "id": "6571",
+                  "icon": "inv_pet_achievement_captureapetatlessthan5health",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 5
+                },             
                 {
                   "id": "8519",
                   "icon": "inv_pet_jadeserpentpet",
@@ -32203,6 +32648,99 @@
               ]
             },
             {
+              "name": "Artifact",
+              "achs": [
+                {
+                  "id": 11171,
+                  "icon": "inv_glaive_1h_artifactaldrochi_d_01dual",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11144,
+                  "icon": "ability_skyreach_empower",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 10746,
+                  "icon": "achievement_bg_killxenemies_generalsroom",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 10461,
+                  "icon": "achievement_arena_5v5_1",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 10459,
+                  "icon": "achievement_dungeon_utgardepinnacle_25man",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 10743,
+                  "icon": "ability_rogue_combatreadiness",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 10745,
+                  "icon": "ability_rogue_combatreadiness",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },                
+                {
+                  "id": 10747,
+                  "icon": "achievement_arena_5v5_2",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 10748,
+                  "icon": "achievement_arena_5v5_5",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 10749,
+                  "icon": "achievement_arena_5v5_6",
+                  "side": "A",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 11173,
+                  "icon": "achievement_arena_5v5_6",
+                  "side": "H",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                }                               
+              ]
+            },
+            {
               "name": "Other",
               "achs": [
                 {
@@ -32224,6 +32762,22 @@
                     "30103": "55203",
                     "30499": "55195"
                   }
+                },
+                {
+                  "id": 10852,
+                  "icon": "inv_artifact_tome02",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 10853,
+                  "icon": "inv_artifact_tome01",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
                 }
               ]
             },
@@ -38624,6 +39178,14 @@
                   "criteria": {
                     "31801": "51219"
                   }
+                },
+                {
+                  "id": 11425,
+                  "icon": "inv_firecatmount",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 0,
+                  "criteria": {}
                 }
               ]
             },
@@ -38879,6 +39441,22 @@
                 {
                   "id": "11191",
                   "icon": "achievement_emeraldnightmare_xavius",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 0,
+                  "criteria": {}
+                },
+                {
+                  "id": 11581,
+                  "icon": "achievement_boss_helyra",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 0,
+                  "criteria": {}
+                },
+                {
+                  "id": 11580,
+                  "icon": "achievement_boss_helyra",
                   "side": "",
                   "obtainable": true,
                   "points": 0,
@@ -39158,6 +39736,14 @@
                   "side": "",
                   "obtainable": true,
                   "points": 0
+                },
+                {
+                  "id": 11294,
+                  "icon": "inv_pet_alliancemurloc",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 0,
+                  "criteria": {}
                 }
               ]
             },
@@ -39332,6 +39918,22 @@
                     "32778": "52884",
                     "32779": "52880"
                   }
+                },
+                {
+                  "id": 10537,
+                  "icon": "garrison_building_sparringarena",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 0,
+                  "criteria": {}
+                },
+                {
+                  "id": 11395,
+                  "icon": "diabloanniversary_achievement",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 0,
+                  "criteria": {}
                 }
               ]
             },
