@@ -5,6 +5,8 @@ Simple Armory is a World of Warcraft armory site that presents your armory in a 
 
 This is the code used to build out [simplearmory.com](http://simplearmory.com) website.  
 
+![Example Armory for Marko](screenshot.png)
+
 Feel free to contribute to its development.
 
 ## Create App
