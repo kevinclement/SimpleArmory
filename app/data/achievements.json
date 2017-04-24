@@ -112,7 +112,15 @@
                     "32350": "52227",
                     "32351": "52228"
                   }
-                }
+                },
+                {
+  "id": 11763,
+  "icon": "inv_helm_cloth_raidpriest_o_01",
+  "side": "",
+  "obtainable": true,
+  "points": 25,
+  "criteria": {}
+}
               ]
             },
             {
@@ -1463,6 +1471,56 @@
               ]
             },
             {
+              "name": "Cathedral of Eternal Night",
+              "achs": [{
+  "id": 11700,
+  "icon": "spell_warlock_demonicempowerment",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},{
+  "id": 11701,
+  "icon": "spell_shadow_demonicfortitude",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11768,
+  "icon": "inv_gizmo_supersappercharge",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11769,
+  "icon": "inv_misc_book_09",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11703,
+  "icon": "spell_shadow_shadesofdarkness",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11702,
+  "icon": "spell_shadow_demonicempathy",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+}]
+            },
+            {
               "name": "Keystone",
               "achs": [
                 {
@@ -1934,6 +1992,177 @@
               ]
             },
             {
+              "name": "Tomb of Sargeras",
+              "achs": [{
+  "id": 11788,
+  "icon": "achievement_boss_soulengine",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11789,
+  "icon": "achievement_boss_titanconstructshell",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11790,
+  "icon": "achievement_boss_kiljaeden2",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11724,
+  "icon": "inv_thanksgiving_turkey",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11696,
+  "icon": "achievement_boss_jailers",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11699,
+  "icon": "inv_misc_head_murloc_01",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11676,
+  "icon": "inv_tradeskill_cooking_feastofthewater",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11773,
+  "icon": "spell_druid_lunarinspiration",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11674,
+  "icon": "item_holyspark",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11675,
+  "icon": "ability_titankeeper_cleansingorb",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11683,
+  "icon": "ability_bossfellord_felfissure",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11770,
+  "icon": "sha_spell_warlock_demonsoul",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11767,
+  "icon": "achievement_boss_pitinfernal",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11774,
+  "icon": "achievement_boss_jailers",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11775,
+  "icon": "achievement_boss_nagabruteboss",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11776,
+  "icon": "achievement_boss_seawitch",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11777,
+  "icon": "achievement_boss_councilsentinel",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11778,
+  "icon": "achievement_boss_soulengine",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11779,
+  "icon": "achievement_boss_maidenofgrief",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11780,
+  "icon": "achievement_boss_titanconstructshell",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11781,
+  "icon": "achievement_boss_kiljaeden2",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+}]
+            },
+            {
               "name": "World",
               "achs": [
                 {
@@ -1954,7 +2183,23 @@
                     "32102": "51914",
                     "35022": "56418"
                   }
-                }
+                },
+                {
+  "id": 11786,
+  "icon": "ability_warlock_demonicpower",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11787,
+  "icon": "achievement_boss_seawitch",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+}
               ]
             }
           ]
@@ -9573,7 +9818,71 @@
                   "side": "",
                   "obtainable": true,
                   "points": 10
-                }
+                },
+{
+  "id": 11685,
+  "icon": "achievement_legionpvp3tier2",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11686,
+  "icon": "achievement_legionpvp3tier3",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11687,
+  "icon": "achievement_legionpvp3tier4",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11688,
+  "icon": "achievement_legionpvp3tier5",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11689,
+  "icon": "achievement_legionpvp4tier2",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11690,
+  "icon": "achievement_legionpvp4tier3",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11691,
+  "icon": "achievement_legionpvp4tier4",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11692,
+  "icon": "achievement_legionpvp4tier6",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+}
               ]
             },
             {
@@ -12526,7 +12835,24 @@
                   "side": "",
                   "obtainable": true,
                   "points": 10
-                }
+                },
+
+{
+  "id": 11697,
+  "icon": "achievement_pvp_legion03",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11698,
+  "icon": "achievement_pvp_legion04",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+}
               ]
             },
             {
@@ -17504,8 +17830,82 @@
             },
             {
               "name": "Broken Shore",
-              "achs": []
+              "achs": [{
+  "id": 11607,
+  "icon": "ability_vehicle_liquidpyrite_blue",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11546,
+  "icon": "achievement_dungeon_tombofsargeras",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11681,
+  "icon": "inv_pet_wyrmtongue",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+}]
             },
+             {
+              "name": "Broken Shore: Buildings",
+              "achs": [{
+  "id": 11731,
+  "icon": "spell_mage_altertime",
+  "side": "",
+  "obtainable": true,
+  "points": 5,
+  "criteria": {}
+},
+{
+  "id": 11732,
+  "icon": "spell_mage_altertime",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11735,
+  "icon": "ability_warrior_charge",
+  "side": "",
+  "obtainable": true,
+  "points": 5,
+  "criteria": {}
+},
+{
+  "id": 11736,
+  "icon": "ability_warrior_charge",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11737,
+  "icon": "ability_demonhunter_netherbond",
+  "side": "",
+  "obtainable": true,
+  "points": 5,
+  "criteria": {}
+},
+{
+  "id": 11738,
+  "icon": "ability_demonhunter_netherbond",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+}]
+             },
             {
               "name": "Events",
               "achs": [
@@ -17532,7 +17932,15 @@
                     "34847": "56515",
                     "34848": "56516"
                   }
-                }
+                },
+                {
+  "id": 11544,
+  "icon": "warlock_pvp_burninglegion",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+}
               ]
             }
           ]
@@ -20896,7 +21304,39 @@
                     "30500": "48720",
                     "30501": "48721"
                   }
-                }
+                },
+                {
+  "id": 11545,
+  "icon": "achievement_faction_legionfall",
+  "side": "",
+  "obtainable": true,
+  "points": 5,
+  "criteria": {}
+},
+{
+  "id": 11796,
+  "icon": "achievement_faction_legionfall",
+  "side": "",
+  "obtainable": true,
+  "points": 5,
+  "criteria": {}
+},
+{
+  "id": 11652,
+  "icon": "achievement_reputation_07",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11653,
+  "icon": "achievement_reputation_08",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+}
               ]
             }
           ]
@@ -21907,6 +22347,14 @@
                   }
                 },
                 {
+  "id": 11543,
+  "icon": "achievement_zone_brokenshore",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+                {
                   "id": "11190",
                   "icon": "inv_misc_map06",
                   "side": "",
@@ -21919,7 +22367,15 @@
                     "32417": "52374",
                     "32418": "52375"
                   }
-                }
+                },
+                {
+  "id": 11446,
+  "icon": "inv_misc_map06",
+  "side": "",
+  "obtainable": true,
+  "points": 25,
+  "criteria": {}
+}
               ]
             },
             {
@@ -22135,7 +22591,23 @@
                     "33291": "53847",
                     "34537": "53848"
                   }
-                }
+                },
+                {
+  "id": 11802,
+  "icon": "inv_jewelcrafting_starofelune_01",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11841,
+  "icon": "warlock_summon_shivan",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+}
               ]
             },
             {
@@ -31627,6 +32099,18 @@
               ]
             },
             {
+              "name": "Challenges",
+              "achs": [
+            {
+  "id": 11765,
+  "icon": "inv_misc_monsterscales_08",
+  "side": "",
+  "obtainable": true,
+  "points": 5,
+  "criteria": {}
+}]
+            },
+            {
               "name": "Other",
               "achs": [
                 {
@@ -32463,6 +32947,383 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Armor Sets",
+          "zones": [
+            {
+              "name": "Classic",
+              "achs": [{
+  "id": 11741,
+  "icon": "achievement_boss_ragnaros",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11742,
+  "icon": "achievement_boss_nefarion",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11743,
+  "icon": "achievement_boss_cthun",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+}]
+            },
+            {
+              "name": "Burning Crusade",
+              "achs": [{
+  "id": 11746,
+  "icon": "achievement_dungeon_outland_dungeonmaster",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11747,
+  "icon": "achievement_boss_kael'thassunstrider_01",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11748,
+  "icon": "achievement_boss_illidan",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11749,
+  "icon": "achievement_boss_kiljaedan",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+}]
+            },
+            {
+              "name": "Wrath of the Lich King",
+              "achs": [{
+  "id": 11750,
+  "icon": "achievement_boss_kelthuzad_01",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11751,
+  "icon": "achievement_boss_yoggsaron_01",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11752,
+  "icon": "achievement_reputation_argentchampion",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11753,
+  "icon": "achievement_zone_icecrown_01",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+}]
+            },
+            {
+              "name": "Cataclysm",
+              "achs": [{
+  "id": 11754,
+  "icon": "warlock_houroftwilight",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11755,
+  "icon": "achievement_dungeon_firelandsraid",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11756,
+  "icon": "achievment_boss_madnessofdeathwing",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+}
+]
+            },
+            {
+              "name": "Pandaria",
+              "achs": [{
+  "id": 11757,
+  "icon": "ability_shawaterelemental_swirl",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11758,
+  "icon": "achievement_raid_thunder_king",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11759,
+  "icon": "achievement_boss_garrosh",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+}]
+            },
+            {
+              "name": "Draenor",
+              "achs": [{
+  "id": 11740,
+  "icon": "ability_foundryraid_heatregulators",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11631,
+  "icon": "achievement_boss_hellfire_zone",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+}]
+            },
+            {
+              "name": "Legion",
+              "achs": [{
+  "id": 11628,
+  "icon": "achievement_thenighthold",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11762,
+  "icon": "achievement_raid_trialofvalor",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11760,
+  "icon": "achievement_raid_tombofsargeras",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+}]
+            },
+            {
+              "name": "PvP",
+              "achs": [{
+  "id": 11706,
+  "icon": "inv_axe_68",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11707,
+  "icon": "inv_mace_47",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11708,
+  "icon": "inv_axe_60",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11709,
+  "icon": "inv_axe_73",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11710,
+  "icon": "inv_axe_98",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11711,
+  "icon": "inv_mace_17",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11712,
+  "icon": "inv_axe_111",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11713,
+  "icon": "inv_axe_115",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11714,
+  "icon": "inv_axe_2h_pvp400_c_01",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11715,
+  "icon": "inv_axe_2h_pvp410_c_01",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11716,
+  "icon": "inv_axe_2h_pvpcataclysms3_c_01",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11717,
+  "icon": "inv_axe_2h_pvppandarias1_d_01",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11718,
+  "icon": "inv_axe_2h_pvppandarias2_c_01horde",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11719,
+  "icon": "inv_axe_2h_pvppandarias3_c_01",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11720,
+  "icon": "inv_mace_1h_pvppandarias3_c_02",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11629,
+  "icon": "ability_druid_primaltenacity",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11721,
+  "icon": "inv_axe_2h_pvpdraenors2_d_01",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11722,
+  "icon": "inv_mace_1h_pvpdraenors2_d_02",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11630,
+  "icon": "inv_cape_leather_raidrogue_q_01",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11723,
+  "icon": "inv_cape_leather_raiddemonhunter_r_01_long",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+}]
+            },
+            {
+              "name": "Count",
+              "achs": [{
+  "id": 11761,
+  "icon": "achievement_transmog_collections",
+  "side": "",
+  "obtainable": true,
+  "points": 20,
+  "criteria": {}
+}]
+            }
+          ]
         }
       ]
     },
@@ -32542,6 +33403,14 @@
                   "side": "",
                   "obtainable": true,
                   "points": 10
+                },
+                {
+                  "id": 11772,
+                  "icon": "inv_artifact_xp05",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 10,
+                  "criteria": {}
                 },
                 {
                   "id": 10746,
@@ -32633,7 +33502,39 @@
                     "32152": "52063",
                     "32155": "52056"
                   }
-                }
+                },
+                {
+  "id": 11609,
+  "icon": "inv_enchant_philostone_lv1",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11610,
+  "icon": "inv_enchant_philostone_lv2",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11611,
+  "icon": "inv_icon_heirloomtoken_weapon01",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+},
+{
+  "id": 11612,
+  "icon": "inv_icon_heirloomtoken_weapon01",
+  "side": "",
+  "obtainable": true,
+  "points": 10,
+  "criteria": {}
+}
               ]
             },
             {
@@ -36731,7 +37632,15 @@
                   "side": "",
                   "obtainable": true,
                   "points": 10
-                }
+                },
+                {
+  "id": 11391,
+  "icon": "inv_sword_40",
+  "side": "",
+  "obtainable": true,
+  "points": 0,
+  "criteria": {}
+}
               ]
             }
           ]
@@ -39238,20 +40147,6 @@
                   "points": 0
                 },
                 {
-                  "id": "11195",
-                  "icon": "achievement_thenighthold_guldan",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 0
-                },
-                {
-                  "id": "11192",
-                  "icon": "achievement_thenighthold_guldan",
-                  "side": "",
-                  "obtainable": true,
-                  "points": 0
-                },
-                {
                   "id": "11194",
                   "icon": "achievement_emeraldnightmare_xavius",
                   "side": "",
@@ -39275,6 +40170,20 @@
                 {
                   "id": 11580,
                   "icon": "achievement_boss_helyra",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
+                  "id": "11195",
+                  "icon": "achievement_thenighthold_guldan",
+                  "side": "",
+                  "obtainable": true,
+                  "points": 0
+                },
+                {
+                  "id": "11192",
+                  "icon": "achievement_thenighthold_guldan",
                   "side": "",
                   "obtainable": true,
                   "points": 0
@@ -39950,7 +40859,39 @@
                   "side": "",
                   "obtainable": true,
                   "points": 0
-                }
+                },
+                {
+  "id": 11744,
+  "icon": "achievement_boss_kelthuzad_01",
+  "side": "",
+  "obtainable": true,
+  "points": 0,
+  "criteria": {}
+},
+{
+  "id": 11654,
+  "icon": "inv_knife_1h_artifactcthun_d_01",
+  "side": "",
+  "obtainable": true,
+  "points": 0,
+  "criteria": {}
+},
+{
+  "id": 11655,
+  "icon": "inv_knife_1h_artifactcthun_d_02",
+  "side": "",
+  "obtainable": true,
+  "points": 0,
+  "criteria": {}
+},
+{
+  "id": 11669,
+  "icon": "inv_misc_head_dragon_bronze_nightmare",
+  "side": "",
+  "obtainable": true,
+  "points": 0,
+  "criteria": {}
+}
               ]
             }
           ]
