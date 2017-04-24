@@ -147,13 +147,7 @@ module.exports = function (grunt) {
           '<%= yeoman.dist %>/styles/{,*/}*.css',
           '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
           '<%= yeoman.dist %>/styles/fonts/*',
-          '!<%= yeoman.dist %>/images/galakras.png',
-          '!<%= yeoman.dist %>/images/alliance.png',
-          '!<%= yeoman.dist %>/images/horde.png',
-          '!<%= yeoman.dist %>/images/hearth.png',
-          '!<%= yeoman.dist %>/images/success.png',
-          '!<%= yeoman.dist %>/images/spell_fel_incinerate.jpg',
-          '!<%= yeoman.dist %>/images/murloc.png'
+          '<%= yeoman.dist %>/data/*'
         ]
       }
     },
@@ -180,9 +174,16 @@ module.exports = function (grunt) {
     // Performs rewrites based on filerev and the useminPrepare configuration
     usemin: {
       html: ['<%= yeoman.dist %>/{,*/}*.html'],
+      js: ['<%= yeoman.dist %>/scripts/*.js'],
       css: ['<%= yeoman.dist %>/styles/{,*/}*.css'],
       options: {
-        assetsDirs: ['<%= yeoman.dist %>','<%= yeoman.dist %>/images']
+        assetsDirs: ['<%= yeoman.dist %>','<%= yeoman.dist %>/images'],
+        patterns: {
+            js: [
+              [/(images\/.*?\.(?:gif|jpeg|jpg|png|webp))/gm, 'Update the JS to reference our revved images'],
+              [/(data\/.*?\.(?:json))/gm, 'Update the JS to reference our revved json']
+            ]
+        }
       }
     },
 
@@ -274,13 +275,6 @@ module.exports = function (grunt) {
           cwd: '<%= yeoman.app %>/data',
           dest: '<%= yeoman.dist %>/data',
           src: ['*']
-
-        // ###########################################
-        // Code behind images
-        // ###########################################
-        }, {
-          src: '<%= yeoman.app %>/images/galakras.png',
-          dest: '<%= yeoman.dist %>/images/galakras.png'
         }
         ]
       },
