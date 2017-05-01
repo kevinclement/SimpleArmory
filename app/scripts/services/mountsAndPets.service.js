@@ -83,7 +83,7 @@
             // Build up lookup for items that character has
             angular.forEach(character[characterProperty].collected, function(item) {
                 collected[item[collectedId]] = item;
-                found[item[collectedId]] = false;               
+                found[item[collectedId]] = false;
             });
 
             // Fix any problems blizzard has introduced
@@ -272,7 +272,7 @@
                         $window.ga('send', 'event', 'MissingCollection', collId);
                         console.log('WARN: Found item "' + collId + '" from character but not in db.');
                     }
-                }               
+                }
             }
 
             // Add totals
