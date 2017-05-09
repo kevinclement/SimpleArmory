@@ -52,7 +52,12 @@
         };
 
         $scope.shouldShow = function(show) {
-            $scope.show = show;
+            // if we're at max, don't show the hover
+            if ($scope.faction.max === 0) {
+                $scope.show = false;
+            } else {
+                $scope.show = show;
+            }
         }
     };
 })();
