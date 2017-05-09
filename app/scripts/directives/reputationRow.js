@@ -50,5 +50,9 @@
         	// applies that percentage to the possible fixed width for the div
         	return (num / 100) * levelWidths[level] + 'px';
         };
+
+        $scope.shouldShow = function(show) {
+            $scope.show = show;
+        }
     };
 })();
