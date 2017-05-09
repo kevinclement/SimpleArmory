@@ -7,16 +7,16 @@
         .directive('saReputationRow', ReputationRow);
 
     function ReputationRow() {
-    	return {
-        	controller: ReputationRowController,
-        	restrict: 'E',
-    		scope: {
-        		faction: '=', 
-      		},
-        	templateUrl: function () {
-                return 'views/reputationRow.html';    
+        return {
+            controller: ReputationRowController,
+            restrict: 'E',
+            scope: {
+                faction: '=', 
+            },
+            templateUrl: function () {
+                return 'views/reputationRow.html';
             }
-    	};
+        };
     }
 
     // Pixel widths of the different level types
