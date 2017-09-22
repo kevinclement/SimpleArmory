@@ -52,7 +52,7 @@
     	};
 
     	function buildMonths(achievements, charname) {
-    		var monthnames = [,'January','February','March','April','May','June',
+    		var monthnames = ['','January','February','March','April','May','June',
     						   'July','August','September','October','November','December'];
 			var months = [];
 			var today = new Date();
@@ -154,7 +154,8 @@
 
 			        rows += '<div>';
 			        angular.forEach(achievs, function(ach) {
-			            rows += '<a target="' + $scope.settings.anchorTarget + '" href="//' + $scope.settings.WowHeadUrl + '/achievement=' + ach.id + '" ' +
+						rows += '<a target="' + $scope.settings.anchorTarget + '" href="//' + 
+								$scope.settings.WowHeadUrl + '/achievement=' + ach.id + '" ' +
 			        			'rel="who=' + prettyName + '&amp;when=' + ach.completed +'">' +
 			        			'<img src="//wow.zamimg.com/images/wow/icons/medium/' + 
 			        			ach.icon.toLowerCase() + '.jpg" width="36" height="36" border="0"></a>';

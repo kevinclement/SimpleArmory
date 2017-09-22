@@ -23,7 +23,7 @@
             'pets': 'data/pets.json',
             'battlepets': 'data/battlepets.json',
             'mounts': 'data/mounts.json'
-        }
+        };
 
         //  cache results
         var parsedMounts;
