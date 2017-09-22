@@ -12,6 +12,10 @@
     function config($routeProvider) {
 
         $routeProvider.
+            when('/admin', {
+              templateUrl: 'views/admin.html',
+              controller: 'AdminCtrl'
+            }).
             when('/error/:realm/:character', {
               templateUrl: 'views/error.html',
               controller: 'ErrorCtrl'
@@ -47,7 +51,7 @@
             when('/:region/:realm/:character/reputation', {
               templateUrl: 'views/reputation.html',
               controller: 'ReputationCtrl'
-            }).          
+            }).
             when('/', {
               templateUrl: 'views/login.html',
               controller: 'LoginCtrl'

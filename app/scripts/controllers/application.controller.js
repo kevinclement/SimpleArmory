@@ -20,7 +20,7 @@
             } else if ($location.$$path === '/login') {
                 // Leave current character logged in, just force the login controller execute
                 $location.url('/');
-            } else if ($location.$$path !== '' && $location.$$path !== '/') {
+            } else if ($location.$$path !== '' && $location.$$path !== '/' && $location.$$path !== '/admin') {
                 // "us/proudmoore/marko"
                 // [0]: us/proudmoore/marko
                 // [1]: proudmoore
