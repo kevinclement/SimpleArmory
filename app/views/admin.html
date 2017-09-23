@@ -22,7 +22,7 @@
   <div class="wrapper">
     <h4>Category</h4>
     <h4>Sub Category</h4>
-    <select size="20" style="width:220px;" ng-change="catChanged()" ng-model="selectedCat" ng-options="cat as cat.name for cat in categories"></select>
+    <select size="20" style="width:220px;" ng-change="selectionChanged()" ng-model="selectedCat" ng-options="cat as cat.name for cat in categories"></select>
     <select size="20" style="width:220px;" ng-model="selectedSubCat" ng-options="subCat as subCat.name for subCat in selectedCat.subcats"></select>
     <div>
       <a class="btn btn-default btn-sm" role="button" ng-click="addCategory()">+</a>
@@ -33,8 +33,8 @@
     <div>
       <a class="btn btn-default btn-sm" role="button" ng-click="addSubCategory()">+</a>
       <a class="btn btn-default btn-sm" role="button" ng-click="removeSubCategory()">-</a>
-      <a class="btn btn-default btn-sm" role="button" ng-click="">↑</a>
-      <a class="btn btn-default btn-sm" role="button" ng-click="">↓</a>
+      <a class="btn btn-default btn-sm" role="button" ng-click="moveSubCategory(true)">↑</a>
+      <a class="btn btn-default btn-sm" role="button" ng-click="moveSubCategory(false)">↓</a>
     </div>
   </div>
 

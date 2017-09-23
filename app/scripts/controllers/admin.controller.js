@@ -29,7 +29,7 @@
             $scope.categories = categories;
             $scope.selectedCat = $scope.categories[0];
 
-            selectionChanged();
+            $scope.selectionChanged();
         });
 
         $scope.saveClicked = function() {
@@ -42,11 +42,14 @@
             anchor.click()
         }
 
-        function selectionChanged() {
+        $scope.selectionChanged = function() {
             $scope.catUpDisabled = $scope.categories.indexOf($scope.selectedCat) == 0;
             $scope.catDownDisabled = $scope.categories.indexOf($scope.selectedCat) == $scope.categories.length - 1;
 
-            $scope.selectedSubCat = $scope.selectedCat.subcats[0];
+            if ($scope.selectedSubCat === undefined || 
+                $scope.selectedCat.subcats.indexOf($scope.selectedSubCat) === -1) {
+                $scope.selectedSubCat = $scope.selectedCat.subcats[0];
+            }
         }
 
         /* ## Category ############################################################################### */
@@ -58,7 +61,7 @@
                 $scope.categories.push(catObj);
             }
 
-            selectionChanged();
+            $scope.selectionChanged();
         }
 
         $scope.removeCategory = function() {
@@ -68,7 +71,7 @@
 
             $scope.selectedCat = $scope.categories[0];
 
-            selectionChanged();
+            $scope.selectionChanged();
         }
 
         $scope.moveCategory = function(up) {
@@ -81,10 +84,6 @@
 
             selectionChanged();
         }
-        
-        $scope.catChanged = function() {
-            selectionChanged();
-        }
 
         /* ## Sub Category ############################################################################### */
 
@@ -93,7 +92,7 @@
                 return sub != $scope.selectedSubCat;
             });
 
-            selectionChanged();
+            $scope.selectionChanged();
         }
 
         $scope.addSubCategory = function() {
@@ -103,7 +102,18 @@
                  $scope.selectedCat.subcats.push(catObj);
              }
 
-             selectionChanged();
+             $scope.selectionChanged();
+        }
+
+        $scope.moveSubCategory = function(up) {
+            var catToMove = $scope.selectedSubCat;
+            var src = $scope.selectedCat.subcats.indexOf(catToMove);
+            var dest = up ? src - 1 : src + 1;
+
+            $scope.selectedCat.subcats[src] = $scope.selectedCat.subcats[dest];
+            $scope.selectedCat.subcats[dest] = catToMove;
+
+            $scope.selectionChanged();
         }
     }
 
