@@ -28,6 +28,7 @@
 
             $scope.categories = categories;
             $scope.selectedCat = $scope.categories[0];
+            $scope.selectedSubCat = $scope.selectedCat.subcats[0];
 
             updateMoveButtons();
         });
@@ -36,12 +37,9 @@
             // NOTE: There is probably an easier way todo this, but I'm using 2 anchors, one to trigger refresh of data
             // and a 2nd to actually download that data
 
-            // update scope data to download based on changes we made
-            var jsonData = 'data:text/json;charset=utf-8,' + encodeURIComponent(angular.toJson($scope.categories, 2));
-
             // trigger hidden link
             var anchor = document.getElementById('downloadLink');
-            anchor.href = jsonData;
+            anchor.href = 'data:text/json;charset=utf-8,' + encodeURIComponent(angular.toJson($scope.categories, 2));
             anchor.click()
         }
 
@@ -91,6 +89,7 @@
         
         $scope.catChanged = function() {
             updateMoveButtons();
+            $scope.selectedSubCat = $scope.selectedCat.subcats[0];
         }
 
         /* ## Sub Category ############################################################################### */
