@@ -77,15 +77,14 @@
             $scope.selectionChanged();
         }
 
-        $scope.moveCategory = function(up) {
-            var catToMove = $scope.selectedCat;
-            var src = $scope.categories.indexOf(catToMove);
+        $scope.move = function(up, item, array) {
+            var src = array.indexOf(item);
             var dest = up ? src - 1 : src + 1;
 
-            $scope.categories[src] = $scope.categories[dest];
-            $scope.categories[dest] = catToMove;
+            array[src] = array[dest];
+            array[dest] = item;
 
-            selectionChanged();
+            $scope.selectionChanged();
         }
 
         /* ## Sub Category ############################################################################### */
@@ -106,17 +105,6 @@
              }
 
              $scope.selectionChanged();
-        }
-
-        $scope.moveSubCategory = function(up) {
-            var catToMove = $scope.selectedSubCat;
-            var src = $scope.selectedCat.subcats.indexOf(catToMove);
-            var dest = up ? src - 1 : src + 1;
-
-            $scope.selectedCat.subcats[src] = $scope.selectedCat.subcats[dest];
-            $scope.selectedCat.subcats[dest] = catToMove;
-
-            $scope.selectionChanged();
         }
     }
 
