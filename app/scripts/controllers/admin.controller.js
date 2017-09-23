@@ -15,7 +15,6 @@
         $scope.downloadFile = 'mounts.json';
 
         // TODO: don't show save button unless we've made a change
-        // TODO: service and stuff should be based on changes I made
 
         AdminService.getMountData().then(function(data){
             // store the data in the scope so that we can build out forms from it
@@ -43,16 +42,35 @@
         }
 
         $scope.selectionChanged = function() {
-            $scope.catUpDisabled = $scope.categories.indexOf($scope.selectedCat) == 0;
-            $scope.catDownDisabled = $scope.categories.indexOf($scope.selectedCat) == $scope.categories.length - 1;
+            var cat =  $scope.selectedCat;
+            var subcat = $scope.selectedSubCat;
 
-            if ($scope.selectedSubCat === undefined || 
-                $scope.selectedCat.subcats.indexOf($scope.selectedSubCat) === -1) {
-                $scope.selectedSubCat = $scope.selectedCat.subcats[0];
+            // reset any selected indexes if we've done modifications
+            if (cat === null) {
+                $scope.selectedCat = cat = $scope.categories[0];
             }
 
-            $scope.subCatUpDisabled = $scope.selectedCat.subcats.indexOf($scope.selectedSubCat) === 0;
-            $scope.subCatDownDisabled = $scope.selectedCat.subcats.indexOf($scope.selectedSubCat) === $scope.selectedCat.subcats.length - 1;
+            if (subcat === undefined || 
+                cat.subcats.indexOf(subcat) === -1) {
+                $scope.selectedSubCat = subcat = cat.subcats[0];
+            }
+
+            // enable and disable up/down arrows it we're at the boundaries
+            $scope.catUpDisabled = $scope.categories.indexOf(cat) == 0;
+            $scope.catDownDisabled = $scope.categories.indexOf(cat) == $scope.categories.length - 1;
+
+            $scope.subCatUpDisabled = cat.subcats.indexOf(subcat) === 0;
+            $scope.subCatDownDisabled = cat.subcats.indexOf(subcat) === cat.subcats.length - 1;
+        }
+
+        $scope.move = function(up, item, array) {
+            var src = array.indexOf(item);
+            var dest = up ? src - 1 : src + 1;
+
+            array[src] = array[dest];
+            array[dest] = item;
+
+            $scope.selectionChanged();
         }
 
         /* ## Category ############################################################################### */
@@ -71,18 +89,6 @@
             $scope.categories = $scope.categories.filter(function(category){
                 return category != $scope.selectedCat;
             });
-
-            $scope.selectedCat = $scope.categories[0];
-
-            $scope.selectionChanged();
-        }
-
-        $scope.move = function(up, item, array) {
-            var src = array.indexOf(item);
-            var dest = up ? src - 1 : src + 1;
-
-            array[src] = array[dest];
-            array[dest] = item;
 
             $scope.selectionChanged();
         }
