@@ -92,9 +92,9 @@
         /* ## Sub Category ############################################################################### */
 
         $scope.removeSubCategory = function() {
-            // $scope.mountSubCategories = $scope.mountSubCategories.filter(function(sub){
-            //     return sub != $scope.selectedMountSubCategory;
-            // });
+            $scope.selectedMountCategory.subcats = $scope.selectedMountCategory.subcats.filter(function(sub){
+                return sub != $scope.selectedMountSubCategory;
+            });
         }
 
         $scope.addSubCategory = function() {
