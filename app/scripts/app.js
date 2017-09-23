@@ -9,7 +9,10 @@
             'ui.select'])
         .config(config);
 
-    function config($routeProvider) {
+    function config($routeProvider, $compileProvider) {
+
+        // allow me to download json for admin site
+        $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|data|chrome-extension):/);
 
         $routeProvider.
             when('/admin', {

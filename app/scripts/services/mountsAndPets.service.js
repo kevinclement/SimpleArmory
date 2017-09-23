@@ -6,7 +6,7 @@
         .module('simpleArmoryApp')
         .factory('MountsAndPetsService', MountsAndPetsService);
 
-    function MountsAndPetsService($http, $log, LoginService, $routeParams, $window, $q) {
+    function MountsAndPetsService($http, $log, LoginService, $routeParams, $window, $q, SettingsService) {
         // issues/53: Pets that we can ignore warning for because they are battle pets
         var ignoredFoundPets = 
         {
@@ -15,14 +15,6 @@
             148065: true,
             148068: true,
             148069: true
-        };
-
-        // needed so that we can use 'usemin' to replace *.json references to hashed versions
-        var jsonFiles = 
-        {
-            'pets': 'data/pets.json',
-            'battlepets': 'data/battlepets.json',
-            'mounts': 'data/mounts.json'
         };
 
         //  cache results
@@ -53,7 +45,7 @@
                             'character':$routeParams.character
                         })
                     .then(function(character) {
-                        return $http.get(jsonFiles[jsonFile], { cache: true, isArray:true })
+                        return $http.get(SettingsService.jsonFiles[jsonFile], { cache: true, isArray:true })
                             .then(function(data) {
                                 
                                 $log.log('Parsing ' + jsonFile + '.json...');

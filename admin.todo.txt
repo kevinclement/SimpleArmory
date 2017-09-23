@@ -1,0 +1,22 @@
+[ ] ui to select what to update
+  [ ] start with a dropdown
+
+[ ] only show save button once a change was made to something
+[ ] download attribute on link is dynamic based on what I'm editing
+
+create new categories
+ [ ] mount 
+    [ ] save to json, to replace it
+    [ ] add
+    [ ] reorder
+    
+    
+admin for mounts
+ [ ] call get mounts for blizzard
+ [ ] compare to current mounts list
+ [ ] show all new mounts in UI
+ [ ] drag/drop to category
+ 
+ later:
+ [ ] dynamic script load so it only loads when you go to /admin
+ [ ] reorganize like I had with c# app
