@@ -5,16 +5,23 @@
       display: grid;
       grid-template-columns: 250px 250px;
     }
+    .saveRight {
+      float:right;
+    }
   </style>
 
   <div class="page-header">
     <h2>
         Admin for updates
+        <div class="saveRight">
+          <a class="btn btn-primary" role="button" ng-click="saveClicked()">Save</a>
+          <a id="downloadLink" class="hide" download="{{downloadFile}}">hidden anchor</a>
+        </div>
     </h2>
   </div>
   <div class="wrapper">
-    <div>cat</div>
-    <div>sub cat</div>
+    <h4>Category</h4>
+    <h4>Sub Category</h4>
     <select size="20" style="width:220px;" ng-change="catChanged()" ng-model="selectedCat" ng-options="cat as cat.name for cat in categories">
     </select>
     <select size="20" style="width:220px;" ng-model="selectedSubCat" ng-options="subCat as subCat.name for subCat in selectedCat.subcats">
@@ -32,8 +39,5 @@
         <a class="btn btn-default btn-sm" role="button" ng-click="">↓</a>
       </div>
   </div>
-  <div>
-    <a class="btn btn-default" role="button" ng-click="saveClicked()">Save</a>
-    <a id="downloadLink" style="visibility:hidden" download="{{downloadFile}}">hidden anchor</a>
-  </div>
+  
 </div>
