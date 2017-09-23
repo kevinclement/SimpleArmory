@@ -1,14 +1,36 @@
 <div class="container">
+  
+  <style>
+    .wrapper {
+      display: grid;
+      grid-template-columns: 250px 250px;
+    }
+  </style>
+
   <div class="page-header">
     <h2>
         Admin for updates
     </h2>
   </div>
-  <div>
-  <select size="20" style="width:220px;" ng-change="mountCategorySelected()" ng-model="selectedMountCategory" ng-options="category as category.name for category in mountCategories">
-  </select>
-  <select size="20" style="width:220px;" ng-model="selectedMountSubCategory" ng-options="subCategory as subCategory.name for subCategory in mountSubCategories">
-  </select>
+  <div class="wrapper">
+    <div>cat</div>
+    <div>sub cat</div>
+    <select size="20" style="width:220px;" ng-change="mountCategorySelected()" ng-model="selectedMountCategory" ng-options="category as category.name for category in mountCategories">
+    </select>
+    <select size="20" style="width:220px;" ng-model="selectedMountSubCategory" ng-options="subCategory as subCategory.name for subCategory in mountSubCategories">
+    </select>
+    <div>
+      <a class="btn btn-default btn-sm" role="button" ng-click="addCategory()">+</a>
+      <a class="btn btn-default btn-sm" role="button" ng-click="removeCategory()">-</a>
+      <a class="btn btn-default btn-sm" role="button" ng-click="moveCategoryUp()">↑</a>
+      <a class="btn btn-default btn-sm" role="button" ng-click="moveCategoryDown()">↓</a>
+    </div>
+    <div>
+        <a class="btn btn-default btn-sm" role="button" ng-click="">+</a>
+        <a class="btn btn-default btn-sm" role="button" ng-click="">-</a>
+        <a class="btn btn-default btn-sm" role="button" ng-click="">↑</a>
+        <a class="btn btn-default btn-sm" role="button" ng-click="">↓</a>
+      </div>
   </div>
   <div>
     <a class="btn btn-default" role="button" ng-click="saveClicked()">Save</a>

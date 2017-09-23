@@ -55,6 +55,43 @@
             anchor.href = jsonData;
             anchor.click()
         }
+
+        $scope.addCategory = function() {
+            var newCategory = prompt('Category to add:');
+            if (newCategory != '') {
+
+                // TODO: probably should be in a service
+                var catObj = { name: newCategory, subcats: [] }
+                $scope.mountCategories.push(catObj);
+            }
+        }
+
+        $scope.removeCategory = function() {
+            var selectedCategory = $scope.selectedMountCategory;
+            $scope.mountCategories = $scope.mountCategories.filter(function(category){
+                return category != $scope.selectedMountCategory;
+            });
+
+            // TODO: better fallback selection?
+            $scope.selectedMountCategory = $scope.mountCategories[0];
+        }
+
+        $scope.moveCategoryUp = function() {
+            move(true);
+        }
+
+        $scope.moveCategoryDown = function() {
+            move(false);
+        }
+        
+        function move(up) {
+            var catToMove = $scope.selectedMountCategory;
+            var src = $scope.mountCategories.indexOf(catToMove);
+            var dest = up ? src - 1 : src + 1;
+
+            $scope.mountCategories[src] = $scope.mountCategories[dest];
+            $scope.mountCategories[dest] = catToMove;
+        }
     }
 
 })();
