@@ -28,16 +28,11 @@
 
             $scope.mountCategories = categories;
             $scope.selectedMountCategory = $scope.mountCategories[0];
-            $scope.mountCategoryUpdated();
-
-            // update the download data
-            var jsonData = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data, null, 2));
-            $scope.jsonUrl = 'data:' + jsonData;
+            $scope.mountCategorySelected();
         });
 
+        $scope.mountCategorySelected = function() {
 
-        $scope.mountCategoryUpdated = function() {
-            console.log('update called');
             var subCategories = [];
             for(var j=0; j<$scope.selectedMountCategory.subcats.length; j++) {
                 var subCat = $scope.selectedMountCategory.subcats[j];
@@ -46,6 +41,18 @@
 
             $scope.mountSubCategories = subCategories;
             $scope.selectedMountSubCategory = $scope.mountSubCategories[0];
+        }
+
+        $scope.saveClicked = function() {
+            // NOTE: There is probably an easier way todo this, but I'm using 2 anchors, one to trigger refresh of data
+            // and a 2nd to actually download that data
+
+            // update scope data to download based on changes we made
+            var jsonData = "text/json;charset=utf-8," + encodeURIComponent(angular.toJson($scope.mountCategories, 2));
+            $scope.jsonUrl = 'data:' + jsonData;
+
+            // trigger hidden link
+            //document.getElementById('downloadLink').click()
         }
     }
 

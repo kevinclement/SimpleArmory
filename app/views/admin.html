@@ -5,12 +5,13 @@
     </h2>
   </div>
   <div>
-  <select size="20" style="width:220px;" ng-change="mountCategoryUpdated()" ng-model="selectedMountCategory" ng-options="category as category.name for category in mountCategories">
+  <select size="20" style="width:220px;" ng-change="mountCategorySelected()" ng-model="selectedMountCategory" ng-options="category as category.name for category in mountCategories">
   </select>
   <select size="20" style="width:220px;" ng-model="selectedMountSubCategory" ng-options="subCategory as subCategory.name for subCategory in mountSubCategories">
   </select>
   </div>
   <div>
-    <a class="btn btn-default" href="{{jsonUrl}}" role="button" download="{{downloadFile}}">Save</a>
+    <a class="btn btn-default" role="button" ng-click="saveClicked()">Save</a>
+    <a id="downloadLink" style="" href="{{jsonUrl}}" download="{{downloadFile}}">hidden anchor</a>
   </div>
 </div>
