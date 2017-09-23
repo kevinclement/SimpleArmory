@@ -6,13 +6,16 @@
   .saveRight {
     float:right;
   }
+  .catSel {
+    width: 220px;
+  }
 </style>
 
 <div ng-controller="AdminMountsCategories" class="wrapper">
   <h4>Category</h4>
   <h4>Sub Category</h4>
-  <select size="20" style="width:220px;" ng-change="selectionChanged(true)" ng-model="selectedCat" ng-options="cat as cat.name for cat in categories"></select>
-  <select size="20" style="width:220px;" ng-change="selectionChanged(true)" ng-model="selectedSubCat" ng-options="subCat as subCat.name for subCat in selectedCat.subcats"></select>
+  <select size="20" class="catSel" ng-change="selectionChanged(true)" ng-model="selectedCat" ng-options="cat as cat.name for cat in categories"></select>
+  <select size="20" class="catSel" ng-change="selectionChanged(true)" ng-model="selectedSubCat" ng-options="subCat as subCat.name for subCat in selectedCat.subcats"></select>
   <div>
     <a class="btn btn-default btn-sm" role="button" ng-click="addCategory()">+</a>
     <a class="btn btn-default btn-sm" role="button" ng-click="removeCategory()">-</a>

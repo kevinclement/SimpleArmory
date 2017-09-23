@@ -11,6 +11,9 @@
         // Analytics for page
         $window.ga('send', 'pageview', 'Admin');
 
+        $scope.sections = ['Mounts Categories'];
+        $scope.selectedAdminSection = $scope.sections[0];
+
         $scope.canSave = function(file, data) {
             $scope.data = data;
             $scope.file = file;

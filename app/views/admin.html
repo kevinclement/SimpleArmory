@@ -3,6 +3,7 @@
   <div class="page-header">
     <h2>
         Admin: 
+        <select ng-model="selectedAdminSection" ng-options="section for section in sections"></select>
         <div class="saveRight">
           <a class="btn btn-primary" role="button" ng-click="saveClicked()" ng-hide="!data">Save</a>
           <a id="downloadLink" class="hide" download="{{file}}">hidden anchor</a>
