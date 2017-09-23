@@ -15,9 +15,9 @@
   <div class="wrapper">
     <div>cat</div>
     <div>sub cat</div>
-    <select size="20" style="width:220px;" ng-model="selectedMountCategory" ng-options="category as category.name for category in mountCategories">
+    <select size="20" style="width:220px;" ng-model="selectedCat" ng-options="cat as cat.name for cat in categories">
     </select>
-    <select size="20" style="width:220px;" ng-model="selectedMountSubCategory" ng-options="subCategory as subCategory.name for subCategory in selectedMountCategory.subcats">
+    <select size="20" style="width:220px;" ng-model="selectedSubCat" ng-options="subCat as subCat.name for subCat in selectedCat.subcats">
     </select>
     <div>
       <a class="btn btn-default btn-sm" role="button" ng-click="addCategory()">+</a>

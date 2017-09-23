@@ -26,8 +26,8 @@
                 categories.push(cat);
             }
 
-            $scope.mountCategories = categories;
-            $scope.selectedMountCategory = $scope.mountCategories[0];
+            $scope.categories = categories;
+            $scope.selectedCat = $scope.categories[0];
 
             updateMoveButtons();
         });
@@ -37,7 +37,7 @@
             // and a 2nd to actually download that data
 
             // update scope data to download based on changes we made
-            var jsonData = 'data:text/json;charset=utf-8,' + encodeURIComponent(angular.toJson($scope.mountCategories, 2));
+            var jsonData = 'data:text/json;charset=utf-8,' + encodeURIComponent(angular.toJson($scope.categories, 2));
 
             // trigger hidden link
             var anchor = document.getElementById('downloadLink');
@@ -46,8 +46,8 @@
         }
 
         function updateMoveButtons() {
-            $scope.upButtonDisabled = $scope.mountCategories.indexOf($scope.selectedMountCategory) == 0;
-            $scope.downButtonDisabled = $scope.mountCategories.indexOf($scope.selectedMountCategory) == $scope.mountCategories.length - 1;
+            $scope.upButtonDisabled = $scope.categories.indexOf($scope.selectedCat) == 0;
+            $scope.downButtonDisabled = $scope.categories.indexOf($scope.selectedCat) == $scope.categories.length - 1;
         }
 
         /* ## Category ############################################################################### */
@@ -58,16 +58,16 @@
 
                 // TODO: probably should be in a service
                 var catObj = { name: newCategory, subcats: [] }
-                $scope.mountCategories.push(catObj);
+                $scope.categories.push(catObj);
             }
         }
 
         $scope.removeCategory = function() {
-            $scope.mountCategories = $scope.mountCategories.filter(function(category){
-                return category != $scope.selectedMountCategory;
+            $scope.categories = $scope.categories.filter(function(category){
+                return category != $scope.selectedCat;
             });
 
-            $scope.selectedMountCategory = $scope.mountCategories[0];
+            $scope.selectedCat = $scope.categories[0];
         }
 
         $scope.moveCategoryUp = function() {
@@ -79,12 +79,12 @@
         }
         
         function moveCategory(up) {
-            var catToMove = $scope.selectedMountCategory;
-            var src = $scope.mountCategories.indexOf(catToMove);
+            var catToMove = $scope.selectedCat;
+            var src = $scope.categories.indexOf(catToMove);
             var dest = up ? src - 1 : src + 1;
 
-            $scope.mountCategories[src] = $scope.mountCategories[dest];
-            $scope.mountCategories[dest] = catToMove;
+            $scope.categories[src] = $scope.categories[dest];
+            $scope.categories[dest] = catToMove;
 
             updateMoveButtons();
         }
@@ -92,8 +92,8 @@
         /* ## Sub Category ############################################################################### */
 
         $scope.removeSubCategory = function() {
-            $scope.selectedMountCategory.subcats = $scope.selectedMountCategory.subcats.filter(function(sub){
-                return sub != $scope.selectedMountSubCategory;
+            $scope.selectedCat.subcats = $scope.selectedCat.subcats.filter(function(sub){
+                return sub != $scope.selectedSubCat;
             });
         }
 
