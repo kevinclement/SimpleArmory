@@ -15,7 +15,7 @@
   <div class="wrapper">
     <div>cat</div>
     <div>sub cat</div>
-    <select size="20" style="width:220px;" ng-model="selectedCat" ng-options="cat as cat.name for cat in categories">
+    <select size="20" style="width:220px;" ng-change="catChanged()" ng-model="selectedCat" ng-options="cat as cat.name for cat in categories">
     </select>
     <select size="20" style="width:220px;" ng-model="selectedSubCat" ng-options="subCat as subCat.name for subCat in selectedCat.subcats">
     </select>

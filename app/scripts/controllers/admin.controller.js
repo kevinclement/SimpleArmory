@@ -88,6 +88,10 @@
 
             updateMoveButtons();
         }
+        
+        $scope.catChanged = function() {
+            updateMoveButtons();
+        }
 
         /* ## Sub Category ############################################################################### */
 
