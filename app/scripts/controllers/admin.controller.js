@@ -28,22 +28,9 @@
 
             $scope.mountCategories = categories;
             $scope.selectedMountCategory = $scope.mountCategories[0];
-            $scope.mountCategorySelected();
 
             updateMoveButtons();
         });
-
-        $scope.mountCategorySelected = function() {
-
-            var subCategories = [];
-            for(var j=0; j<$scope.selectedMountCategory.subcats.length; j++) {
-                var subCat = $scope.selectedMountCategory.subcats[j];
-                subCategories.push(subCat);
-            }
-
-            $scope.mountSubCategories = subCategories;
-            $scope.selectedMountSubCategory = $scope.mountSubCategories[0];
-        }
 
         $scope.saveClicked = function() {
             // NOTE: There is probably an easier way todo this, but I'm using 2 anchors, one to trigger refresh of data
@@ -57,6 +44,13 @@
             anchor.href = jsonData;
             anchor.click()
         }
+
+        function updateMoveButtons() {
+            $scope.upButtonDisabled = $scope.mountCategories.indexOf($scope.selectedMountCategory) == 0;
+            $scope.downButtonDisabled = $scope.mountCategories.indexOf($scope.selectedMountCategory) == $scope.mountCategories.length - 1;
+        }
+
+        /* ## Category ############################################################################### */
 
         $scope.addCategory = function() {
             var newCategory = prompt('Category to add:');
@@ -95,17 +89,20 @@
             updateMoveButtons();
         }
 
-        $scope.removeSubCategory = function() {
-            $scope.mountSubCategories = $scope.mountSubCategories.filter(function(sub){
-                return sub != $scope.selectedMountSubCategory;
-            });
+        /* ## Sub Category ############################################################################### */
 
-            $scope.selectedMountSubCategory = $scope.mountSubCategories[0];
+        $scope.removeSubCategory = function() {
+            // $scope.mountSubCategories = $scope.mountSubCategories.filter(function(sub){
+            //     return sub != $scope.selectedMountSubCategory;
+            // });
         }
 
-        function updateMoveButtons() {
-            $scope.upButtonDisabled = $scope.mountCategories.indexOf($scope.selectedMountCategory) == 0;
-            $scope.downButtonDisabled = $scope.mountCategories.indexOf($scope.selectedMountCategory) == $scope.mountCategories.length - 1;
+        $scope.addSubCategory = function() {
+            // var newCat = prompt('Sub Category to add:');
+            // if (newCat != '') {
+            //     var catObj = { name: newCat, items: [] };
+            //     $scope.mountSubCategories.push(catObj);
+            // }
         }
     }
 

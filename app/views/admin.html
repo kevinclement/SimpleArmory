@@ -15,9 +15,9 @@
   <div class="wrapper">
     <div>cat</div>
     <div>sub cat</div>
-    <select size="20" style="width:220px;" ng-change="mountCategorySelected()" ng-model="selectedMountCategory" ng-options="category as category.name for category in mountCategories">
+    <select size="20" style="width:220px;" ng-model="selectedMountCategory" ng-options="category as category.name for category in mountCategories">
     </select>
-    <select size="20" style="width:220px;" ng-model="selectedMountSubCategory" ng-options="subCategory as subCategory.name for subCategory in mountSubCategories">
+    <select size="20" style="width:220px;" ng-model="selectedMountSubCategory" ng-options="subCategory as subCategory.name for subCategory in selectedMountCategory.subcats">
     </select>
     <div>
       <a class="btn btn-default btn-sm" role="button" ng-click="addCategory()">+</a>
@@ -26,7 +26,7 @@
       <a class="btn btn-default btn-sm" role="button" ng-click="moveCategoryDown()" ng-disabled="downButtonDisabled">↓</a>
     </div>
     <div>
-        <a class="btn btn-default btn-sm" role="button" ng-click="">+</a>
+        <a class="btn btn-default btn-sm" role="button" ng-click="addSubCategory()">+</a>
         <a class="btn btn-default btn-sm" role="button" ng-click="removeSubCategory()">-</a>
         <a class="btn btn-default btn-sm" role="button" ng-click="">↑</a>
         <a class="btn btn-default btn-sm" role="button" ng-click="">↓</a>
