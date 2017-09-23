@@ -22,12 +22,12 @@
     <div>
       <a class="btn btn-default btn-sm" role="button" ng-click="addCategory()">+</a>
       <a class="btn btn-default btn-sm" role="button" ng-click="removeCategory()">-</a>
-      <a class="btn btn-default btn-sm" role="button" ng-click="moveCategoryUp()">↑</a>
-      <a class="btn btn-default btn-sm" role="button" ng-click="moveCategoryDown()">↓</a>
+      <a class="btn btn-default btn-sm" role="button" ng-click="moveCategoryUp()" ng-disabled="upButtonDisabled">↑</a>
+      <a class="btn btn-default btn-sm" role="button" ng-click="moveCategoryDown()" ng-disabled="downButtonDisabled">↓</a>
     </div>
     <div>
         <a class="btn btn-default btn-sm" role="button" ng-click="">+</a>
-        <a class="btn btn-default btn-sm" role="button" ng-click="">-</a>
+        <a class="btn btn-default btn-sm" role="button" ng-click="removeSubCategory()">-</a>
         <a class="btn btn-default btn-sm" role="button" ng-click="">↑</a>
         <a class="btn btn-default btn-sm" role="button" ng-click="">↓</a>
       </div>

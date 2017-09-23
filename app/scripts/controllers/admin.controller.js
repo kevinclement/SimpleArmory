@@ -67,13 +67,19 @@
         }
 
         $scope.removeCategory = function() {
-            var selectedCategory = $scope.selectedMountCategory;
             $scope.mountCategories = $scope.mountCategories.filter(function(category){
                 return category != $scope.selectedMountCategory;
             });
 
-            // TODO: better fallback selection?
             $scope.selectedMountCategory = $scope.mountCategories[0];
+        }
+
+        $scope.removeSubCategory = function() {
+            $scope.mountSubCategories = $scope.mountSubCategories.filter(function(sub){
+                return sub != $scope.selectedMountSubCategory;
+            });
+
+            $scope.selectedMountSubCategory = $scope.mountSubCategories[0];
         }
 
         $scope.moveCategoryUp = function() {
@@ -91,6 +97,9 @@
 
             $scope.mountCategories[src] = $scope.mountCategories[dest];
             $scope.mountCategories[dest] = catToMove;
+
+            $scope.upButtonDisabled = $scope.mountCategories.indexOf($scope.selectedMountCategory) == 0;
+            $scope.downButtonDisabled = $scope.mountCategories.indexOf($scope.selectedMountCategory) == $scope.mountCategories.length - 1;
         }
     }
 
