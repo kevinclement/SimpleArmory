@@ -43,8 +43,8 @@
         }
 
         function selectionChanged() {
-            $scope.upButtonDisabled = $scope.categories.indexOf($scope.selectedCat) == 0;
-            $scope.downButtonDisabled = $scope.categories.indexOf($scope.selectedCat) == $scope.categories.length - 1;
+            $scope.catUpDisabled = $scope.categories.indexOf($scope.selectedCat) == 0;
+            $scope.catDownDisabled = $scope.categories.indexOf($scope.selectedCat) == $scope.categories.length - 1;
 
             $scope.selectedSubCat = $scope.selectedCat.subcats[0];
         }
