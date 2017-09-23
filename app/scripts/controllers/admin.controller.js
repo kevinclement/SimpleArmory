@@ -57,6 +57,8 @@
                 var catObj = { name: newCategory, subcats: [] }
                 $scope.categories.push(catObj);
             }
+
+            selectionChanged();
         }
 
         $scope.removeCategory = function() {
@@ -103,11 +105,13 @@
         }
 
         $scope.addSubCategory = function() {
-            // var newCat = prompt('Sub Category to add:');
-            // if (newCat != '') {
-            //     var catObj = { name: newCat, items: [] };
-            //     $scope.mountSubCategories.push(catObj);
-            // }
+             var newCat = prompt('Sub Category to add:');
+             if (newCat != '') {
+                 var catObj = { name: newCat, items: [] };
+                 $scope.selectedCat.subcats.push(catObj);
+             }
+
+             selectionChanged();
         }
     }
 
