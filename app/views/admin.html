@@ -14,7 +14,7 @@
     <h2>
         Admin: 
         <div class="saveRight">
-          <a class="btn btn-primary" role="button" ng-click="saveClicked()">Save</a>
+          <a class="btn btn-primary" role="button" ng-click="saveClicked()" ng-hide="!dirty">Save</a>
           <a id="downloadLink" class="hide" download="{{downloadFile}}">hidden anchor</a>
         </div>
     </h2>
@@ -22,8 +22,8 @@
   <div class="wrapper">
     <h4>Category</h4>
     <h4>Sub Category</h4>
-    <select size="20" style="width:220px;" ng-change="selectionChanged()" ng-model="selectedCat" ng-options="cat as cat.name for cat in categories"></select>
-    <select size="20" style="width:220px;" ng-change="selectionChanged()" ng-model="selectedSubCat" ng-options="subCat as subCat.name for subCat in selectedCat.subcats"></select>
+    <select size="20" style="width:220px;" ng-change="selectionChanged(true)" ng-model="selectedCat" ng-options="cat as cat.name for cat in categories"></select>
+    <select size="20" style="width:220px;" ng-change="selectionChanged(true)" ng-model="selectedSubCat" ng-options="subCat as subCat.name for subCat in selectedCat.subcats"></select>
     <div>
       <a class="btn btn-default btn-sm" role="button" ng-click="addCategory()">+</a>
       <a class="btn btn-default btn-sm" role="button" ng-click="removeCategory()">-</a>

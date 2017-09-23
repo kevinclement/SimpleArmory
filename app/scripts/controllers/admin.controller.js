@@ -28,7 +28,7 @@
             $scope.categories = categories;
             $scope.selectedCat = $scope.categories[0];
 
-            $scope.selectionChanged();
+            $scope.selectionChanged(true);
         });
 
         $scope.saveClicked = function() {
@@ -41,7 +41,7 @@
             anchor.click()
         }
 
-        $scope.selectionChanged = function() {
+        $scope.selectionChanged = function(indexChanged) {
             var cat =  $scope.selectedCat;
             var subcat = $scope.selectedSubCat;
 
@@ -61,6 +61,11 @@
 
             $scope.subCatUpDisabled = cat.subcats.indexOf(subcat) === 0;
             $scope.subCatDownDisabled = cat.subcats.indexOf(subcat) === cat.subcats.length - 1;
+
+            // if called from an index change, then don't mark it dirty
+            if (!indexChanged) {
+                $scope.dirty = true;
+            }
         }
 
         $scope.move = function(up, item, array) {
