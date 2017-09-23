@@ -48,11 +48,12 @@
             // and a 2nd to actually download that data
 
             // update scope data to download based on changes we made
-            var jsonData = "text/json;charset=utf-8," + encodeURIComponent(angular.toJson($scope.mountCategories, 2));
-            $scope.jsonUrl = 'data:' + jsonData;
+            var jsonData = 'data:text/json;charset=utf-8,' + encodeURIComponent(angular.toJson($scope.mountCategories, 2));
 
             // trigger hidden link
-            //document.getElementById('downloadLink').click()
+            var anchor = document.getElementById('downloadLink');
+            anchor.href = jsonData;
+            anchor.click()
         }
     }
 
