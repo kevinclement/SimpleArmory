@@ -50,6 +50,9 @@
                 $scope.selectedCat.subcats.indexOf($scope.selectedSubCat) === -1) {
                 $scope.selectedSubCat = $scope.selectedCat.subcats[0];
             }
+
+            $scope.subCatUpDisabled = $scope.selectedCat.subcats.indexOf($scope.selectedSubCat) === 0;
+            $scope.subCatDownDisabled = $scope.selectedCat.subcats.indexOf($scope.selectedSubCat) === $scope.selectedCat.subcats.length - 1;
         }
 
         /* ## Category ############################################################################### */
