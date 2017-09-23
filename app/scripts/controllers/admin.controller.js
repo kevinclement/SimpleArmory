@@ -71,15 +71,7 @@
             selectionChanged();
         }
 
-        $scope.moveCategoryUp = function() {
-            moveCategory(true);
-        }
-
-        $scope.moveCategoryDown = function() {
-            moveCategory(false);
-        }
-        
-        function moveCategory(up) {
+        $scope.moveCategory = function(up) {
             var catToMove = $scope.selectedCat;
             var src = $scope.categories.indexOf(catToMove);
             var dest = up ? src - 1 : src + 1;

@@ -1,18 +1,20 @@
 [ ] ui to select what to update
   [ ] start with a dropdown
-
+  [ ] up top: Admin: <select>
+[ ] style button buttons
+[ ] hookup subcat buttons
 [ ] only show save button once a change was made to something
-[ ] download attribute on link is dynamic based on what I'm editing
-[ ] page styling
-    [ ] save button goes right side
 
 [ ] how generic do I need this to be? should I just have super specialized admin sections?
+[ ] download attribute on link is dynamic based on what I'm editing
 
-create new categories
+[x] create new categories
  [x] mount 
     [x] save to json, to replace it
     [x] add
     [x] reorder
+[x] page styling
+    [x] save button goes right side
     
 admin for mounts
  [ ] call get mounts for blizzard
