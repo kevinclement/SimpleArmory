@@ -29,6 +29,8 @@
             $scope.mountCategories = categories;
             $scope.selectedMountCategory = $scope.mountCategories[0];
             $scope.mountCategorySelected();
+
+            updateMoveButtons();
         });
 
         $scope.mountCategorySelected = function() {
@@ -74,6 +76,25 @@
             $scope.selectedMountCategory = $scope.mountCategories[0];
         }
 
+        $scope.moveCategoryUp = function() {
+            moveCategory(true);
+        }
+
+        $scope.moveCategoryDown = function() {
+            moveCategory(false);
+        }
+        
+        function moveCategory(up) {
+            var catToMove = $scope.selectedMountCategory;
+            var src = $scope.mountCategories.indexOf(catToMove);
+            var dest = up ? src - 1 : src + 1;
+
+            $scope.mountCategories[src] = $scope.mountCategories[dest];
+            $scope.mountCategories[dest] = catToMove;
+
+            updateMoveButtons();
+        }
+
         $scope.removeSubCategory = function() {
             $scope.mountSubCategories = $scope.mountSubCategories.filter(function(sub){
                 return sub != $scope.selectedMountSubCategory;
@@ -82,22 +103,7 @@
             $scope.selectedMountSubCategory = $scope.mountSubCategories[0];
         }
 
-        $scope.moveCategoryUp = function() {
-            move(true);
-        }
-
-        $scope.moveCategoryDown = function() {
-            move(false);
-        }
-        
-        function move(up) {
-            var catToMove = $scope.selectedMountCategory;
-            var src = $scope.mountCategories.indexOf(catToMove);
-            var dest = up ? src - 1 : src + 1;
-
-            $scope.mountCategories[src] = $scope.mountCategories[dest];
-            $scope.mountCategories[dest] = catToMove;
-
+        function updateMoveButtons() {
             $scope.upButtonDisabled = $scope.mountCategories.indexOf($scope.selectedMountCategory) == 0;
             $scope.downButtonDisabled = $scope.mountCategories.indexOf($scope.selectedMountCategory) == $scope.mountCategories.length - 1;
         }
