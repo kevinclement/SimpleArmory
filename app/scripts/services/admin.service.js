@@ -20,6 +20,14 @@
             return data;
           });
         },
+
+        getMountData: function() {
+          return $http.get(SettingsService.jsonFiles.mounts, { cache: true, isArray:true })
+          .then(function(data) {
+            // data is the json
+            return data.data;
+          });
+        },
       };
     }
 })();

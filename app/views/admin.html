@@ -4,5 +4,13 @@
         Admin for updates
     </h2>
   </div>
-  <a class="btn btn-default" href="{{jsonUrl}}" role="button" download="{{downloadFile}}">Save</a>
+  <div>
+  <select size="20" style="width:220px;" ng-change="mountCategoryUpdated()" ng-model="selectedMountCategory" ng-options="category as category.name for category in mountCategories">
+  </select>
+  <select size="20" style="width:220px;" ng-model="selectedMountSubCategory" ng-options="subCategory as subCategory.name for subCategory in mountSubCategories">
+  </select>
+  </div>
+  <div>
+    <a class="btn btn-default" href="{{jsonUrl}}" role="button" download="{{downloadFile}}">Save</a>
+  </div>
 </div>
