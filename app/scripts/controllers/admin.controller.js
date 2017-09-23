@@ -28,9 +28,8 @@
 
             $scope.categories = categories;
             $scope.selectedCat = $scope.categories[0];
-            $scope.selectedSubCat = $scope.selectedCat.subcats[0];
 
-            updateMoveButtons();
+            selectionChanged();
         });
 
         $scope.saveClicked = function() {
@@ -43,9 +42,11 @@
             anchor.click()
         }
 
-        function updateMoveButtons() {
+        function selectionChanged() {
             $scope.upButtonDisabled = $scope.categories.indexOf($scope.selectedCat) == 0;
             $scope.downButtonDisabled = $scope.categories.indexOf($scope.selectedCat) == $scope.categories.length - 1;
+
+            $scope.selectedSubCat = $scope.selectedCat.subcats[0];
         }
 
         /* ## Category ############################################################################### */
@@ -53,8 +54,6 @@
         $scope.addCategory = function() {
             var newCategory = prompt('Category to add:');
             if (newCategory != '') {
-
-                // TODO: probably should be in a service
                 var catObj = { name: newCategory, subcats: [] }
                 $scope.categories.push(catObj);
             }
@@ -66,6 +65,8 @@
             });
 
             $scope.selectedCat = $scope.categories[0];
+
+            selectionChanged();
         }
 
         $scope.moveCategoryUp = function() {
@@ -84,12 +85,11 @@
             $scope.categories[src] = $scope.categories[dest];
             $scope.categories[dest] = catToMove;
 
-            updateMoveButtons();
+            selectionChanged();
         }
         
         $scope.catChanged = function() {
-            updateMoveButtons();
-            $scope.selectedSubCat = $scope.selectedCat.subcats[0];
+            selectionChanged();
         }
 
         /* ## Sub Category ############################################################################### */
@@ -98,6 +98,8 @@
             $scope.selectedCat.subcats = $scope.selectedCat.subcats.filter(function(sub){
                 return sub != $scope.selectedSubCat;
             });
+
+            selectionChanged();
         }
 
         $scope.addSubCategory = function() {
