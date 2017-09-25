@@ -1,10 +1,36 @@
 <style>
   .wrapper {
     display: grid;
-    grid-template-columns: 250px 250px;
+    grid-template-columns: 300px auto;
+  }
+  .catBox {
+    display: inline-block;
+    padding: 15px;
+    margin: 5px;
+    background: lightgray;
+    border: 1px dashed grey;
+  }
+  .missingItem {
+    margin: 1px;
   }
 </style>
 
 <div ng-controller="AdminMounts" class="wrapper">
-  <h4>Mounts</h4>
+  <div style="padding-right:10px;">
+    
+    <h4>Missing</h4>
+    <a target="_blank" ng-href="//{{settings.WowHeadUrl}}/{{ item.link }}" class="thumbnail missingItem" ng-repeat="item in missing">
+      <img ng-src="{{getImageSrc(item)}}">
+    </a>
+
+  </div>
+  <div>
+    <div ng-repeat="cat in categories">
+        <h4>{{cat.name}}</h4>
+        <div class="catBox" ng-repeat="subcat in cat.subcats">
+          {{subcat.name}}
+        </div>
+    </div>
+  </div>
+
 </div>

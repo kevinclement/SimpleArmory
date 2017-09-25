@@ -13,12 +13,25 @@
           return {};
         },
 
-        getMountCategories: function() {
+        getMissingMounts: function() {
           return $http.get(SettingsService.jsonFiles.mounts, { cache: true, isArray:true })
           .then(function(data) {
-            // data is the json
-            return data;
+            return [
+              { collected:true, icon:'inv_moosemount2nightmare', link: 'item=141216'},
+              { collected:true, icon:'inv_moosemount2nightmare', link: 'item=141216'},
+              { collected:true, icon:'inv_moosemount2nightmare', link: 'item=141216'},
+              { collected:true, icon:'inv_moosemount2nightmare', link: 'item=141216'},
+              { collected:true, icon:'inv_moosemount2nightmare', link: 'item=141216'},
+              { collected:true, icon:'inv_moosemount2nightmare', link: 'item=141216'},
+              { collected:true, icon:'inv_moosemount2nightmare', link: 'item=141216'},
+              { collected:true, icon:'inv_moosemount2nightmare', link: 'item=141216'},
+              { collected:true, icon:'inv_moosemount2nightmare', link: 'item=141216'},
+              { collected:true, icon:'inv_moosemount2nightmare', link: 'item=141216'},
+              { collected:true, icon:'inv_moosemount2nightmare', link: 'item=141216'},
+              { collected:true, icon:'inv_moosemount2nightmare', link: 'item=141216'},
+            ];
           });
+
         },
 
         getMountData: function() {

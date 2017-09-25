@@ -6,21 +6,23 @@
         .module('simpleArmoryApp')
         .controller('AdminMounts', AdminMounts);
 
-    function AdminMounts($scope, AdminService) {
+    function AdminMounts($scope, AdminService, SettingsService) {
+        $scope.settings = SettingsService;
 
         AdminService.getMountData().then(function(data){
-            // store the data in the scope so that we can build out forms from it
-            // var categories = [];
-            // for(var i=0; i<data.length; i++) {
-            //     var cat = data[i];
-            //     var name = cat.name;
-            //     categories.push(cat);
-            // }
+            var categories = [];
 
-            // $scope.categories = categories;
-            // $scope.selectedCat = $scope.categories[0];
+            for(var i=0; i<data.length; i++) {
+                var cat = data[i];
 
-            // $scope.selectionChanged(true);
+                categories.push(cat);
+            }
+
+            $scope.categories = categories;
+        });
+
+        AdminService.getMissingMounts().then(function(data){
+            $scope.missing = data;
         });
     }
 })();

@@ -12,9 +12,7 @@
             // store the data in the scope so that we can build out forms from it
             var categories = [];
             for(var i=0; i<data.length; i++) {
-                var cat = data[i];
-                var name = cat.name;
-                categories.push(cat);
+                categories.push(data[i]);
             }
 
             $scope.categories = categories;
