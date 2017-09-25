@@ -1,3 +1,8 @@
+<style>
+  .saveRight {
+    float:right;
+  }
+</style>
 <div class="container">
 
   <div class="page-header">
@@ -11,6 +16,7 @@
     </h2>
   </div>
 
-  <div ng-include src="'views/admin.mounts.categories.html'"></div>
+  <div ng-if="selectedAdminSection === 'Mounts Categories'" ng-include src="'views/admin.mounts.categories.html'"></div>
+  <div ng-if="selectedAdminSection === 'Mounts'" ng-include src="'views/admin.mounts.html'"></div>
 
 </div>
