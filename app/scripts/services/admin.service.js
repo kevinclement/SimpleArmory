@@ -14,7 +14,7 @@
         },
 
         getMissingMounts: function() {
-          return $http.get(SettingsService.jsonFiles.mounts, { cache: true, isArray:true })
+          return $http.get(SettingsService.jsonFiles.mounts, { isArray:true })
           .then(function(data) {
             return [
               { collected:true, icon:'inv_moosemount2nightmare', link: 'item=141216'},
