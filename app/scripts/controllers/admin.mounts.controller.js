@@ -27,6 +27,9 @@
 
         var draggedItem;
         $scope.dragStart = function(dragItem) {
+            // hide any wowhead tooltips since they get in the way when dragging
+            $WowheadPower.hideTooltip();
+
             draggedItem = dragItem;
         }
 
