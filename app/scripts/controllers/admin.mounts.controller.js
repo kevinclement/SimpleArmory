@@ -24,5 +24,14 @@
         AdminService.getMissingMounts().then(function(data){
             $scope.missing = data;
         });
+
+        var draggedItem;
+        $scope.dragStart = function(dragItem) {
+            draggedItem = dragItem;
+        }
+
+        $scope.dragDone = function(dropItem) {
+            console.log('dropped from controller: ' + draggedItem.link + " -> " + dropItem.name);
+        }
     }
 })();

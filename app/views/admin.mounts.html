@@ -13,13 +13,16 @@
   .missingItem {
     margin: 1px;
   }
+  .dragOver {
+  border: 1px solid #000;
+  }
 </style>
 
 <div ng-controller="AdminMounts" class="wrapper">
   <div style="padding-right:10px;">
-    
+
     <h4>Missing</h4>
-    <a target="_blank" ng-href="//{{settings.WowHeadUrl}}/{{ item.link }}" class="thumbnail missingItem" ng-repeat="item in missing">
+    <a target="_blank" ng-drag="dragStart({{item}})" ng-href="//{{settings.WowHeadUrl}}/{{ item.link }}" class="thumbnail missingItem" ng-repeat="item in missing">
       <img ng-src="{{getImageSrc(item)}}">
     </a>
 
@@ -27,7 +30,7 @@
   <div>
     <div ng-repeat="cat in categories">
         <h4>{{cat.name}}</h4>
-        <div class="catBox" ng-repeat="subcat in cat.subcats">
+        <div class="catBox" ng-repeat="subcat in cat.subcats" ng-drop="dragDone({{subcat}})" ng-drop-class="dragOver">
           {{subcat.name}}
         </div>
     </div>

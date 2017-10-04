@@ -33,6 +33,8 @@
                  scope.$apply(function (){
                      scope.$eval(attrs.ngDrop);
                  });
+
+                 e.target.classList.remove(attrs.ngDropClass);
             });
 
             /* Add/Remove css class on enter/exit if specified*/
