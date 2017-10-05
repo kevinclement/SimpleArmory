@@ -30,11 +30,12 @@
             });
 
             element.bind("drop", function (e) {
-                 scope.$apply(function (){
-                     scope.$eval(attrs.ngDrop);
-                 });
+                e.preventDefault();
+                scope.$apply(function (){
+                    scope.$eval(attrs.ngDrop);
+                });
 
-                 e.target.classList.remove(attrs.ngDropClass);
+                e.target.classList.remove(attrs.ngDropClass);
             });
 
             /* Add/Remove css class on enter/exit if specified*/

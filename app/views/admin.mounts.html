@@ -30,7 +30,7 @@
   <div>
     <div ng-repeat="cat in categories">
         <h4>{{cat.name}}</h4>
-        <div class="catBox" ng-repeat="subcat in cat.subcats" ng-drop="dragDone({{subcat}})" ng-drop-class="dragOver">
+        <div class="catBox" ng-repeat="subcat in cat.subcats" ng-drop="dragDone({{subcat.id}})" ng-drop-class="dragOver">
           {{subcat.name}}
         </div>
     </div>

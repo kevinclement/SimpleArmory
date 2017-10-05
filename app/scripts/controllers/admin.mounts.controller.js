@@ -34,16 +34,24 @@
         }
 
         $scope.dragDone = function(dropItem) {
-            console.log('dropped from controller: ' + draggedItem.link + " -> " + dropItem.name);
 
             // save to category
+            
+            // TODO: im tired, fix this
+            //$scope.categories[dropItem].items.push(draggedItem);
 
             // remove from scope
-            // $scope.missing = $scope.missing.filter(function(item){
-            //     return item.link != draggedItem.link
-            // });
-            
+            $scope.missing = $scope.missing.filter(function(item) {
+                if (draggedItem.itemId) {
+                    return item.itemId != draggedItem.itemId
+                }
+                else {
+                    return item.spellid != draggedItem.spellid;
+                }
+            });
+
             // enable the save button
+            $scope.$parent.canSave('mounts.json', $scope.categories);
         }
 
         $scope.getLink  = function(item) {
@@ -54,5 +62,12 @@
 
             return link;
         }
+
+        // TODO: tag cats and subcats with guids
+        function createSimpleGuid() {
+            return (((1+Math.random())*0x10000)|0).toString(16).substring(1) + (((1+Math.random())*0x10000)|0).toString(16).substring(1); 
+        }
+
+        console.log(createSimpleGuid());
     }
 })();
