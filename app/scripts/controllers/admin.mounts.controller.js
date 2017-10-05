@@ -33,12 +33,32 @@
             draggedItem = dragItem;
         }
 
-        $scope.dragDone = function(dropItem) {
+        $scope.dragDone = function(subcatId) {
+
+            // find drop target obj
+            var subCatObj;
+            for (var i=0; i<$scope.categories.length; i++) {
+                var cat = $scope.categories[i];
+                for (var k2 in cat.subcats) {
+                    var subcat = cat.subcats[k2];
+                    if (subcat.id === subcatId) {
+                        subCatObj = subcat;
+                    }
+                }
+            }
 
             // save to category
-            
-            // TODO: im tired, fix this
-            //$scope.categories[dropItem].items.push(draggedItem);
+            subCatObj.items.push(draggedItem);
+
+            // show the info alert, and hide after 2s
+            $scope.notifyIn = true;
+            $scope.notifyOut = false;
+            window.setTimeout(function() {
+                $scope.$apply(function () {
+                    $scope.notifyIn = false;
+                    $scope.notifyOut = true;
+                });
+            }, 2100)
 
             // remove from scope
             $scope.missing = $scope.missing.filter(function(item) {
@@ -63,11 +83,19 @@
             return link;
         }
 
-        // TODO: tag cats and subcats with guids
-        function createSimpleGuid() {
-            return (((1+Math.random())*0x10000)|0).toString(16).substring(1) + (((1+Math.random())*0x10000)|0).toString(16).substring(1); 
-        }
-
-        console.log(createSimpleGuid());
+        // used to fix mounts with ids 
+        // function createSimpleGuid() {
+        //     return (((1+Math.random())*0x10000)|0).toString(16).substring(1) + (((1+Math.random())*0x10000)|0).toString(16).substring(1); 
+        // }
+        // var tmpCats = $scope.categories;
+        // for (var i=0; i<tmpCats.length; i++) {
+        //     var cat = tmpCats[i];
+        //     cat.id = '' + createSimpleGuid() + '';
+        //     for (var k2 in cat.subcats) {
+        //         var subcat = cat.subcats[k2];
+        //         subcat.id = '' + createSimpleGuid() + '';
+        //         console.log(subcat.name);
+        //     }
+        // }
     }
 })();

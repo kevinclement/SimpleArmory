@@ -2,14 +2,6 @@
   .saveRight {
     float:right;
   }
-  .alertNotify {
-    font-size: 14px;
-    float: right;
-    line-height: 20px;
-    padding: 9px;
-    margin-bottom:0px;
-    display: none; /* TODO: hook this up */
-  }
 </style>
 <div class="container">
 
@@ -17,9 +9,6 @@
     <h2>
         Admin: 
         <select ng-model="selectedAdminSection" ng-options="section for section in sections"></select>
-        <div class="alert alert-info alert-dismissible alertNotify" role="alert">
-          <strong>Maddened Chaosrunner</strong> moved to <strong>Collect</strong>.
-        </div>
         <div class="saveRight">
           <a class="btn btn-primary" role="button" ng-click="saveClicked()" ng-hide="!data">Save</a>
           <a id="downloadLink" class="hide" download="{{file}}">hidden anchor</a>

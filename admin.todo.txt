@@ -1,12 +1,12 @@
 admin for mounts:
  [x] drag/drop global support
  [x] hide wowhead popover when dragging
- [ ] drag/drop to category
-  [ ] removes from source list
-  [ ] formulates proper object and saves to cat
- [ ] call get mounts for blizzard
- [ ] compare to current mounts list
- [ ] show all new mounts in UI
+ [x] drag/drop to category
+  [x] removes from source list
+  [x] formulates proper object and saves to cat
+ [x] call get mounts for blizzard
+ [x] compare to current mounts list
+ [x] show all new mounts in UI
  [ ] probably need a mount order admin section
  [ ] bug: when adding a category if you cancel it shows up as null
  [ ] hookup notify dialog
