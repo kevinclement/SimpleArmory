@@ -22,8 +22,8 @@
   <div style="padding-right:10px;">
 
     <h4>Missing</h4>
-    <a target="_blank" ng-drag="dragStart({{item}})" ng-href="//{{settings.WowHeadUrl}}/{{ item.link }}" class="thumbnail missingItem" ng-repeat="item in missing">
-      <img ng-src="{{getImageSrc(item)}}">
+    <a target="_blank" ng-drag="dragStart({{item}})" ng-href="//{{settings.WowHeadUrl}}/{{ getLink(item) }}" class="thumbnail missingItem" ng-repeat="item in missing">
+      <img ng-src="{{getImageSrc(item, true)}}">
     </a>
 
   </div>

@@ -62,8 +62,10 @@
         };
 
         // Helper to get the image id off an item
-        $scope.getImageSrc = function(item) {
-            if (item.collected) {
+        $scope.getImageSrc = function(item, renderIcon) {
+
+            renderIcon = renderIcon || item.collected;
+            if (renderIcon) {
                 // wowhead img
                 return '//wow.zamimg.com/images/wow/icons/medium/' + item.icon.toLowerCase() + '.jpg';
             } else {

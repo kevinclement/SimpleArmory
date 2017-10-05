@@ -1,13 +1,17 @@
 admin for mounts:
  [x] drag/drop global support
  [x] hide wowhead popover when dragging
+ [ ] drag/drop to category
+  [ ] removes from source list
+  [ ] formulates proper object and saves to cat
  [ ] call get mounts for blizzard
  [ ] compare to current mounts list
  [ ] show all new mounts in UI
- [ ] drag/drop to category
+ 
  [ ] change select to Mounts from Blizzard API (should support mounts from game api later)
  
  later:
+ [ ] fix lint errors
  [ ] dynamic script load so it only loads when you go to /admin
  [ ] reorganize like I had with c# app
  
