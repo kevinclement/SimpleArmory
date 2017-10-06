@@ -90,12 +90,12 @@
 
         $scope.addSubCategory = function() {
              var newCat = prompt('Sub Category to add:');
-             if (newCat != '') {
+             if (newCat != null && newCat != '') {
                  var catObj = { name: newCat, items: [] };
                  $scope.selectedCat.subcats.push(catObj);
-             }
 
-             $scope.selectionChanged();
+                 $scope.selectionChanged();
+             }
         }
     }
 

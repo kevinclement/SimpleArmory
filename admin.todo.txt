@@ -1,23 +1,7 @@
-admin for mounts:
- [x] drag/drop global support
- [x] hide wowhead popover when dragging
- [x] drag/drop to category
-  [x] removes from source list
-  [x] formulates proper object and saves to cat
- [x] call get mounts for blizzard
- [x] compare to current mounts list
- [x] show all new mounts in UI
- [ ] probably need a mount order admin section
- [ ] bug: when adding a category if you cancel it shows up as null
- [ ] hookup notify dialog
- 
- [ ] change select to Mounts from Blizzard API (should support mounts from game api later)
- 
- later:
- [ ] fix lint errors
- [ ] dynamic script load so it only loads when you go to /admin
- [ ] reorganize like I had with c# app
- 
+[ ] bug: when adding a category if you cancel it shows up as null
+[ ] add 3rd column in category to allow item reordering
+[ ] dynamic script load so it only loads when you go to /admin
+
  -----------
 [x] style button buttons
 [x] ui to select what to update
@@ -34,3 +18,14 @@ admin for mounts:
     [x] reorder
 [x] page styling
     [x] save button goes right side
+
+admin for mounts:
+ [x] drag/drop global support
+ [x] hide wowhead popover when dragging
+ [x] drag/drop to category
+  [x] removes from source list
+  [x] formulates proper object and saves to cat
+ [x] call get mounts for blizzard
+ [x] compare to current mounts list
+ [x] show all new mounts in UI
+ [x] hookup notify dialog
