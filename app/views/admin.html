@@ -16,7 +16,8 @@
     </h2>
   </div>
 
-  <div ng-if="selectedAdminSection === 'Mounts Categories'" ng-include src="'views/admin.mounts.categories.html'"></div>
-  <div ng-if="selectedAdminSection === 'Mounts'" ng-include src="'views/admin.mounts.html'"></div>
+  <div ng-if="selectedAdminSection === settingsSections.mountCategories" ng-include src="'views/admin.mounts.categories.html'"></div>
+  <div ng-if="selectedAdminSection === settingsSections.achievementCategories" ng-include src="'views/admin.mounts.categories.html'"></div>
+  <div ng-if="selectedAdminSection === settingsSections.mounts" ng-include src="'views/admin.mounts.html'"></div>
 
 </div>

@@ -20,6 +20,11 @@
                 'pets': 'data/pets.json',
                 'battlepets': 'data/battlepets.json',
                 'mounts': 'data/mounts.json'
+            },
+            'adminSections': {
+                'mounts': 'Mounts',
+                'mountCategories': 'Mounts Categories',
+                'achievementCategories': 'Achievement Categories'
             }
         };
     }

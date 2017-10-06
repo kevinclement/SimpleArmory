@@ -6,13 +6,18 @@
         .module('simpleArmoryApp')
         .controller('AdminCtrl', AdminCtrl);
 
-    function AdminCtrl($scope, $window) {
+    function AdminCtrl($scope, $window, SettingsService) {
 
         // Analytics for page
         $window.ga('send', 'pageview', 'Admin');
 
-        $scope.sections = ['Mounts', 'Mounts Categories'];
+        // Use the settings to materialize select drop down
+        $scope.sections = [];
+        for (var secKey in SettingsService.adminSections) {
+            $scope.sections.push(SettingsService.adminSections[secKey]);
+        }
         $scope.selectedAdminSection = $scope.sections[1];
+        $scope.settingsSections = SettingsService.adminSections;
 
         $scope.canSave = function(file, data) {
             $scope.data = data;
