@@ -1,7 +1,7 @@
 <style>
   .wrapper {
     display: grid;
-    grid-template-columns: 250px 250px;
+    grid-template-columns: 250px 250px 250px;
   }
   .catSel {
     width: 220px;
@@ -18,8 +18,10 @@
 <div ng-controller="AdminMountsCategories" class="wrapper">
   <h4>Category</h4>
   <h4>Sub Category</h4>
+  <h4>Item</h4>
   <select size="20" class="catSel" ng-change="selectionChanged(true)" ng-model="selectedCat" ng-options="cat as cat.name for cat in categories"></select>
   <select size="20" class="catSel" ng-change="selectionChanged(true)" ng-model="selectedSubCat" ng-options="subCat as subCat.name for subCat in selectedCat.subcats"></select>
+  <select size="20" class="catSel" ng-change="selectionChanged(true)" ng-model="selectedItem" ng-options="item as item.icon for item in selectedSubCat.items"></select>
   <div class="buttonRow">
     <span>
       <a class="btn btn-default btn-sm" role="button" ng-click="addCategory()">+</a>
@@ -39,5 +41,11 @@
       <a class="btn btn-default btn-sm" role="button" ng-click="move(true, selectedSubCat, selectedCat.subcats)" ng-disabled="subCatUpDisabled">↑</a>
       <a class="btn btn-default btn-sm" role="button" ng-click="move(false, selectedSubCat, selectedCat.subcats)" ng-disabled="subCatDownDisabled">↓</a>
     </span>
+  </div>
+  <div class="buttonRow">
+      <span class="buttonRight">
+        <a class="btn btn-default btn-sm" role="button" ng-click="move(true, selectedItem, selectedSubCat.items)" ng-disabled="itemUpDisabled">↑</a>
+        <a class="btn btn-default btn-sm" role="button" ng-click="move(false, selectedItem, selectedSubCat.items)" ng-disabled="itemDownDisabled">↓</a>
+      </span>
   </div>
 </div>

@@ -25,6 +25,7 @@
         $scope.selectionChanged = function(indexChanged) {
             var cat =  $scope.selectedCat;
             var subcat = $scope.selectedSubCat;
+            var item = $scope.selectedItem;
 
             // reset any selected indexes if we've done modifications
             if (cat === null) {
@@ -36,12 +37,20 @@
                 $scope.selectedSubCat = subcat = cat.subcats[0];
             }
 
+            if (item === undefined || 
+                subcat.items.indexOf(item) === -1) {
+                $scope.selectedItem = item = subcat.items[0];
+            }
+
             // enable and disable up/down arrows it we're at the boundaries
             $scope.catUpDisabled = $scope.categories.indexOf(cat) === 0;
             $scope.catDownDisabled = $scope.categories.indexOf(cat) === $scope.categories.length - 1;
 
             $scope.subCatUpDisabled = cat.subcats.indexOf(subcat) === 0;
             $scope.subCatDownDisabled = cat.subcats.indexOf(subcat) === cat.subcats.length - 1;
+
+            $scope.itemUpDisabled = subcat.items.indexOf(item) === 0;
+            $scope.itemDownDisabled = subcat.items.indexOf(item) === subcat.items.length - 1;
 
             // if called from an index change, then don't mark it dirty
             if (!indexChanged) {
