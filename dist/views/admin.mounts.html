@@ -1,0 +1,52 @@
+<style>/* Animations for notify */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 300px auto;
+  }
+  .catBox {
+    display: inline-block;
+    padding: 15px;
+    margin: 5px;
+    background: lightgray;
+    border: 1px dashed grey;
+  }
+  .missingItem {
+    margin: 1px;
+  }
+  .dragOver {
+    border: 1px solid #000;
+  }
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  .alertNotify {
+    position:fixed;
+    right:58px;
+    opacity:0;
+  }
+  .fadeIn {
+    animation-name: fadeIn;
+  }
+  .fadeOut {
+    animation-name: fadeOut;
+  }</style> <div ng-controller="AdminMounts" class="wrapper"> <div ng-class="{'fadeIn': notifyIn, 'fadeOut': notifyOut}" class="alert alert-info alertNotify animated" role="alert"> <strong>{{notify.name}}</strong> moved to <strong>{{notify.subcat}}</strong>. </div> <div style="padding-right:10px"> <h4>Missing</h4> <a target="_blank" ng-drag="dragStart({{item}})" ng-href="//{{settings.WowHeadUrl}}/{{ getLink(item) }}" class="thumbnail missingItem" ng-repeat="item in missing"> <img ng-src="{{getImageSrc(item, true)}}"> </a> </div> <div> <div ng-repeat="cat in categories"> <h4>{{cat.name}}</h4> <div class="catBox" ng-repeat="subcat in cat.subcats" ng-drop="dragDone('{{subcat.id}}')" ng-drop-class="dragOver"> {{subcat.name}} </div> </div> </div> </div>
