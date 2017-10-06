@@ -110,7 +110,8 @@
                       'icon': mount.icon,
                       'obtainable': true,
                       'allowableRaces': [],
-                      'allowableClasses': null
+                      'allowableClasses': null,
+                      'name': mount.name
                   };
 
                   missingMounts.push(myMount);

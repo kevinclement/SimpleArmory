@@ -47,18 +47,23 @@
                 }
             }
 
-            // save to category
-            subCatObj.items.push(draggedItem);
-
             // show the info alert, and hide after 2s
             $scope.notifyIn = true;
             $scope.notifyOut = false;
+            $scope.notify = {
+                'name': draggedItem.name,
+                'subcat': subCatObj.name
+            };
             window.setTimeout(function() {
                 $scope.$apply(function () {
                     $scope.notifyIn = false;
                     $scope.notifyOut = true;
                 });
-            }, 2100)
+            }, 2100);
+
+            // save to category (minus the name)
+            delete draggedItem['name'];
+            subCatObj.items.push(draggedItem);
 
             // remove from scope
             $scope.missing = $scope.missing.filter(function(item) {
