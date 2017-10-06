@@ -5,6 +5,7 @@
   .module('simpleArmoryApp')
   .service('AdminService', AdminService);
 
+  // Keyed off of spellId
   var knownMissing = {
     '17458':true,  // Fluorescent Green Mechanostrider - only give to one player on accident
     '147595':true, // Stormcrow - unknown origin yet in game
@@ -21,7 +22,9 @@
     '10788':true,  // Leopard - Alpha only mount
     '10790':true,  // Tiger - Alpha only mount
     '171618':true, // Ancient Leatherhide - unknown
-    '48954':true   // Old Swift Zhevra 
+    '48954':true,  // Old Swift Zhevra 
+    '242896':true, // Vicious War Fox (added in 7.3 but not available yet)
+    '242897':true  // Vicious War Fox (added in 7.3 but not available yet)
   };
 
   function AdminService($http, $log, SettingsService, $q) {
