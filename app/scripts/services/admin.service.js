@@ -12,7 +12,6 @@
     '127180':true, // Albino Riding Crane - mop mounts never available
     '127213':true, // Black Riding Yak - mop mounts never available
     '123160':true, // Brown Riding Yak - mop mounts never available
-    '123160':true, // Crimson Riding Crane - mop mounts never available
     '127272':true, // Orange Water Strider - mop mounts never available
     '127274':true, // Jade Water Strider - mop mounts never available
     '123182':true, // White Riding Yak - mop mounts never available
@@ -76,8 +75,6 @@
 
               if (!allMounts[mount.spellId] && !knownMissing[mount.spellId])
               {
-                  console.log('NOT FOUND: s:' + mount.spellId + ' i:' + mount.itemId + ' - ' + mount.name);
-
                   // Mount obj
                   //  creatureId
                   //  icon

@@ -17,7 +17,7 @@
         $scope.canSave = function(file, data) {
             $scope.data = data;
             $scope.file = file;
-        }
+        };
 
         $scope.saveClicked = function() {
             // NOTE: There is probably an easier way todo this, but I'm using 2 anchors, one to trigger refresh of data
@@ -26,8 +26,8 @@
             // trigger hidden link
             var anchor = document.getElementById('downloadLink');
             anchor.href = 'data:text/json;charset=utf-8,' + encodeURIComponent(angular.toJson($scope.data, 2));
-            anchor.click()
-        }
+            anchor.click();
+        };
     }
 
 })();

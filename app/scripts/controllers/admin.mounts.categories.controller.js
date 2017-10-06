@@ -1,3 +1,4 @@
+/*globals prompt */
 'use strict';
 
 (function() {
@@ -36,8 +37,8 @@
             }
 
             // enable and disable up/down arrows it we're at the boundaries
-            $scope.catUpDisabled = $scope.categories.indexOf(cat) == 0;
-            $scope.catDownDisabled = $scope.categories.indexOf(cat) == $scope.categories.length - 1;
+            $scope.catUpDisabled = $scope.categories.indexOf(cat) === 0;
+            $scope.catDownDisabled = $scope.categories.indexOf(cat) === $scope.categories.length - 1;
 
             $scope.subCatUpDisabled = cat.subcats.indexOf(subcat) === 0;
             $scope.subCatDownDisabled = cat.subcats.indexOf(subcat) === cat.subcats.length - 1;
@@ -46,7 +47,7 @@
             if (!indexChanged) {
                 $scope.$parent.canSave('mounts.json', $scope.categories);
             }
-        }
+        };
 
         $scope.move = function(up, item, array) {
             var src = array.indexOf(item);
@@ -56,47 +57,47 @@
             array[dest] = item;
 
             $scope.selectionChanged();
-        }
+        };
 
         /* ## Category ############################################################################### */
 
         $scope.addCategory = function() {
             var newCategory = prompt('Category to add:');
-            if (newCategory != '') {
-                var catObj = { name: newCategory, subcats: [] }
+            if (newCategory !== '') {
+                var catObj = { name: newCategory, subcats: [] };
                 $scope.categories.push(catObj);
             }
 
             $scope.selectionChanged();
-        }
+        };
 
         $scope.removeCategory = function() {
             $scope.categories = $scope.categories.filter(function(category){
-                return category != $scope.selectedCat;
+                return category !== $scope.selectedCat;
             });
 
             $scope.selectionChanged();
-        }
+        };
 
         /* ## Sub Category ############################################################################### */
 
         $scope.removeSubCategory = function() {
             $scope.selectedCat.subcats = $scope.selectedCat.subcats.filter(function(sub){
-                return sub != $scope.selectedSubCat;
+                return sub !== $scope.selectedSubCat;
             });
 
             $scope.selectionChanged();
-        }
+        };
 
         $scope.addSubCategory = function() {
              var newCat = prompt('Sub Category to add:');
-             if (newCat != null && newCat != '') {
+             if (newCat !== null && newCat !== '') {
                  var catObj = { name: newCat, items: [] };
                  $scope.selectedCat.subcats.push(catObj);
 
                  $scope.selectionChanged();
              }
-        }
+        };
     }
 
 })();

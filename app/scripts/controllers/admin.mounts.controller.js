@@ -1,3 +1,4 @@
+/*globals $WowheadPower */
 'use strict';
 
 (function() {
@@ -31,7 +32,7 @@
             $WowheadPower.hideTooltip();
 
             draggedItem = dragItem;
-        }
+        };
 
         $scope.dragDone = function(subcatId) {
 
@@ -68,16 +69,16 @@
             // remove from scope
             $scope.missing = $scope.missing.filter(function(item) {
                 if (draggedItem.itemId) {
-                    return item.itemId != draggedItem.itemId
+                    return item.itemId !== draggedItem.itemId;
                 }
                 else {
-                    return item.spellid != draggedItem.spellid;
+                    return item.spellid !== draggedItem.spellid;
                 }
             });
 
             // enable the save button
             $scope.$parent.canSave('mounts.json', $scope.categories);
-        }
+        };
 
         $scope.getLink  = function(item) {
             var link = 'spell='+item.spellId;
@@ -86,7 +87,7 @@
             }
 
             return link;
-        }
+        };
 
         // used to fix mounts with ids 
         // function createSimpleGuid() {
