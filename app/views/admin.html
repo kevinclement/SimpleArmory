@@ -8,7 +8,7 @@
   <div class="page-header">
     <h2>
         Admin: 
-        <select ng-model="selectedAdminSection" ng-options="section for section in sections"></select>
+        <select ng-model="selectedAdminSection" ng-options="section as section.label for section in sections track by section.route"></select>
         <div class="saveRight">
           <a class="btn btn-primary" role="button" ng-click="saveClicked()" ng-hide="!data">Save</a>
           <a id="downloadLink" class="hide" download="{{file}}">hidden anchor</a>
@@ -16,8 +16,8 @@
     </h2>
   </div>
 
-  <div ng-if="selectedAdminSection === settingsSections.mountCategories" ng-include src="'views/admin.mounts.categories.html'"></div>
-  <div ng-if="selectedAdminSection === settingsSections.achievementCategories" ng-include src="'views/admin.achievement.categories.html'"></div>
-  <div ng-if="selectedAdminSection === settingsSections.mounts" ng-include src="'views/admin.mounts.html'"></div>
+  <div ng-if="area === 'mounts'" ng-include src="'views/admin.mounts.html'"></div>
+  <div ng-if="area === 'categories' && section === 'mounts'" ng-include src="'views/admin.mounts.categories.html'"></div>
+  <div ng-if="area === 'categories' && section === 'achievements'" ng-include src="'views/admin.achievement.categories.html'"></div>
 
 </div>

@@ -10,12 +10,12 @@
     function AdminAchievementCategories($scope, AdminService, SettingsService) {
 
         $scope.settings = SettingsService;
-        
+
         // get data based on which section is selected
         var categories = [];
         AdminService.getAchievementData().then(function(data){
             for(var i=0; i < data.supercats.length; i++) {
-                if (data.supercats[i].name === "Quests") {
+                if (data.supercats[i].name.toLowerCase() === $scope.subsection) {
                     for(var j=0; j < data.supercats[i].cats.length; j++) {
                         // data.supercats is array with super cats
                         // data[0].cats are the categories

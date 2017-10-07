@@ -15,9 +15,13 @@
         $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|data|chrome-extension):/);
 
         $routeProvider.
-            when('/admin', {
+            when('/admin/:area/:section?/:subsection?', {
               templateUrl: 'views/admin.html',
               controller: 'AdminCtrl'
+            }).
+            when('/admin', {
+              // so I dont have to type it all out, default admin route is here
+              redirectTo: '/admin/categories/achievements/quests'
             }).
             when('/error/:realm/:character', {
               templateUrl: 'views/error.html',
