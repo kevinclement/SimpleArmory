@@ -12,10 +12,15 @@
         $window.ga('send', 'pageview', 'Admin');
 
         // Use the settings to materialize select drop down
-        $scope.sections = SettingsService.adminSections;
+        $scope.sections = [
+            { 'label': 'Mounts', 'route': '/admin/mounts' },
+            { 'label': 'Mount Categories', 'route': '/admin/categories/mounts' },
+            { 'label': 'Achievement Categories (General)', 'route': '/admin/categories/achievements/general' },
+            { 'label': 'Achievement Categories (Quests)', 'route': '/admin/categories/achievements/quests' }
+        ]
 
         // find the matching drop down so we can select it when loading from url
-        angular.forEach(SettingsService.adminSections, function(section) {
+        angular.forEach($scope.sections, function(section) {
             if (section.route === $location.path()) {
                 $scope.selectedAdminSection = section;
             }

@@ -21,13 +21,7 @@
                 'battlepets': 'data/battlepets.json',
                 'mounts': 'data/mounts.json',
                 'achievements': 'data/achievements.json'
-            },
-            'adminSections': [
-                { 'label': 'Mounts', 'route': '/admin/mounts' },
-                { 'label': 'Mount Categories', 'route': '/admin/categories/mounts' },
-                { 'label': 'Achievement Categories (General)', 'route': '/admin/categories/achievements/general' },
-                { 'label': 'Achievement Categories (Quests)', 'route': '/admin/categories/achievements/quests' }
-            ]
+            }
         };
     }
 
