@@ -19,7 +19,8 @@
             'jsonFiles': {
                 'pets': 'data/pets.json',
                 'battlepets': 'data/battlepets.json',
-                'mounts': 'data/mounts.json'
+                'mounts': 'data/mounts.json',
+                'achievements': 'data/achievements.json'
             },
             'adminSections': {
                 'mounts': 'Mounts',

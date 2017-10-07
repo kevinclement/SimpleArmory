@@ -16,7 +16,7 @@
         for (var secKey in SettingsService.adminSections) {
             $scope.sections.push(SettingsService.adminSections[secKey]);
         }
-        $scope.selectedAdminSection = $scope.sections[1];
+        $scope.selectedAdminSection = $scope.sections[2];
         $scope.settingsSections = SettingsService.adminSections;
 
         $scope.canSave = function(file, data) {

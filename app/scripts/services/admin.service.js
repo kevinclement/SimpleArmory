@@ -29,10 +29,6 @@
 
   function AdminService($http, $log, SettingsService, $q) {
     return {
-      getLatestBlizzardMounts: function() {
-        return {};
-      },
-
       getMissingMounts: function() {
         var defer = $q.defer();
 
@@ -126,7 +122,12 @@
 
       getMountData: function() {
         return $http.get(SettingsService.jsonFiles.mounts, { cache: true, isArray: true }).then(function(data) {
-          // data is the json
+          return data.data;
+        });
+      },
+
+      getAchievementData: function() {
+        return $http.get(SettingsService.jsonFiles.achievements, { cache: true }).then(function(data) {
           return data.data;
         });
       }
