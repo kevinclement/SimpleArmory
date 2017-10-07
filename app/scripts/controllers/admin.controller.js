@@ -18,7 +18,7 @@
 
         // Use the settings to materialize select drop down
         $scope.sections = [
-            { 'label': 'Mounts', 'route': '/admin/mounts' },
+            { 'label': 'Missing Mounts', 'route': '/admin/mounts' },
             { 'label': 'Mount Categories', 'route': '/admin/categories/mounts' },
         ];
 
@@ -47,7 +47,9 @@
 
         $scope.$watch('selectedAdminSection', function(newValue, oldValue) {
             // selection changes url
-            $location.url(newValue.route);
+            if (newValue !== undefined) {
+                $location.url(newValue.route);
+            }
         });
 
         $scope.saveClicked = function() {
