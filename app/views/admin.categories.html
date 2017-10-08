@@ -18,7 +18,9 @@
 <div ng-controller="AdminCategories" class="wrapper">
   <h4>{{col1Title}}</h4>
   <h4>{{col2Title}}</h4>
-  <h4>{{col3Title}}</h4>
+  <a target="{{settings.anchorTarget}}" ng-href="//{{settings.WowHeadUrl}}/{{col3Link(col3selected)}}">
+    <h4>{{col3Title}}</h4>
+  </a>
   <select size="20" class="col" ng-change="selectionChanged(true)" ng-model="col1selected" ng-options="item as item.name for item in col1items"></select>
   <select size="20" class="col" ng-change="selectionChanged(true)" ng-model="col2selected" ng-options="item as item.name for item in col2items"></select>
   <select size="20" class="col" ng-change="selectionChanged(true)" ng-model="col3selected" ng-options="item as col3Label(item) for item in col3items"></select>

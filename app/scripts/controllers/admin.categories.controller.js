@@ -7,10 +7,9 @@
         .module('simpleArmoryApp')
         .controller('AdminCategories', AdminCategories);
 
-    function AdminCategories($scope, AdminService) {
+    function AdminCategories($scope, AdminService, SettingsService) {
 
-        // TODO: add link to wowhead like old achievement had
-
+        $scope.settings = SettingsService;
         if ($scope.section === 'mounts') {
             AdminService.getMountData().then(function(data){
 
@@ -30,6 +29,14 @@
                 $scope.col3Title = 'Item';
                 $scope.col3Label = function(col3item) {
                     return col3item.icon;
+                }
+                $scope.col3Link = function(col3item) {
+                    if (col3item.itemId !== null) {
+                        return 'item=' + col3item.itemId;
+                    }
+                    else {
+                        return 'spell=' + col3item.spellid;
+                    }
                 }
                 $scope.col3child = 'items';
 
@@ -67,6 +74,9 @@
                 $scope.col3Title = 'Achievement';
                 $scope.col3Label = function(col3item) {
                     return col3item.id;
+                }
+                $scope.col3Link = function(col3item) {
+                    return 'achievement=' + col3item.id;
                 }
                 $scope.col3child = 'achs';
 
