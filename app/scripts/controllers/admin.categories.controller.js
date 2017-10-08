@@ -30,6 +30,9 @@
             $scope.col1Factory = function(newCol1) {
                 return { name: newCol1, subcats: [], id: createSimpleGuid().toString() };
             }
+            $scope.col2Factory = function(newCol2) {
+                return { name: newCol2, items: [], id: createSimpleGuid().toString() };
+            }
 
             // TODO: need add/delete as well
             // TODO: rename addCategory/removeCategory
@@ -89,12 +92,12 @@
 
         $scope.add = function(colArray, label, factory) {
             var newItem = prompt(label + ' to add:');
-            if (newItem !== '') {
+            if (newItem !== null && newItem !== '') {
                 var newObj = factory(newItem);
                 colArray.push(newObj);
-            }
 
-            $scope.selectionChanged();
+                $scope.selectionChanged();
+            }
         }
 
         $scope.remove = function(colArray, selectedItem, scopeVar) {
@@ -114,16 +117,6 @@
             });
 
             $scope.selectionChanged();
-        };
-
-        $scope.addSubCategory = function() {
-             var newCat = prompt('Sub Category to add:');
-             if (newCat !== null && newCat !== '') {
-                 var catObj = { name: newCat, items: [] };
-                 $scope.selectedCat.subcats.push(catObj);
-
-                 $scope.selectionChanged();
-             }
         };
 
         function createSimpleGuid() {
