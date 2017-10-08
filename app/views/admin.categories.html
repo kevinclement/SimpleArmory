@@ -16,15 +16,15 @@
 </style>
 
 <div ng-controller="AdminCategories" class="wrapper">
-  <h4>Category</h4>
-  <h4>Sub Category</h4>
-  <h4>Item</h4>
+  <h4>{{col1Title}}</h4>
+  <h4>{{col2Title}}</h4>
+  <h4>{{col3Title}}</h4>
   <select size="20" class="col" ng-change="selectionChanged(true)" ng-model="col1selected" ng-options="item as item.name for item in col1items"></select>
   <select size="20" class="col" ng-change="selectionChanged(true)" ng-model="col2selected" ng-options="item as item.name for item in col2items"></select>
   <select size="20" class="col" ng-change="selectionChanged(true)" ng-model="col3selected" ng-options="item as col3Label(item) for item in col3items"></select>
   <div class="buttonRow">
     <span>
-      <a class="btn btn-default btn-sm" role="button" ng-click="add(col1items, 'Category', col1Factory)">+</a>
+      <a class="btn btn-default btn-sm" role="button" ng-click="add(col1items, col1Title, col1Factory)">+</a>
       <a class="btn btn-default btn-sm" role="button" ng-click="removeCol1()">-</a>
     </span>
     <span class="buttonRight">
@@ -34,7 +34,7 @@
   </div>
   <div class="buttonRow">
     <span>
-      <a class="btn btn-default btn-sm" role="button" ng-click="add(col1selected[col1child], 'Sub Category', col2Factory)">+</a>
+      <a class="btn btn-default btn-sm" role="button" ng-click="add(col1selected[col1child], col2Title, col2Factory)">+</a>
       <a class="btn btn-default btn-sm" role="button" ng-click="removeCol2()">-</a>
     </span>
     <span class="buttonRight">

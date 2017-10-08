@@ -14,16 +14,23 @@
             // Generic interface to allow different types of column objects
             $scope.col1items = data;
             $scope.col1child = 'subcats';
+            $scope.col1Title = 'Category';
             $scope.col1Factory = function(newCol1) {
                 return { name: newCol1, subcats: [], id: createSimpleGuid().toString() };
             }
+
+            $scope.col2Title = 'Sub Category';
             $scope.col2Factory = function(newCol2) {
                 return { name: newCol2, items: [], id: createSimpleGuid().toString() };
+            }
+
+            $scope.col3Title = 'Item';
+            $scope.col3Label = function(col3item) {
+                return col3item.icon;
             }
             $scope.col3child = 'items';
 
             // TODO: either switch out here, or move out one layer and do this in admin controller
-            // TODO: use scope var for 'Category' and fix call to add in html
 
             $scope.selectionChanged(true);
         });
@@ -61,10 +68,6 @@
                 $scope.$parent.canSave('mounts.json', $scope.col1items);
             }
         };
-
-        $scope.col3Label = function(col3item) {
-            return col3item.icon;
-        }
 
         $scope.move = function(up, item, parent) {
             var array = parent[$scope.col1child] ? parent[$scope.col1child] : parent[$scope.col3child];
