@@ -18,7 +18,8 @@
 
         // Use the settings to materialize select drop down
         $scope.sections = [
-            { 'label': 'Missing Mounts', 'route': '/admin/mounts' },
+            { 'label': 'Missing Achievements', 'route': '/admin/missing/achievements' },
+            { 'label': 'Missing Mounts', 'route': '/admin/missing/mounts' },
             { 'label': 'Mount Categories', 'route': '/admin/categories/mounts' },
         ];
 
