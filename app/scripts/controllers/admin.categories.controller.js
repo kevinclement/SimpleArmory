@@ -22,12 +22,8 @@
             }
             $scope.col3child = 'items';
 
-            // TODO: need add/delete as well
-            // TODO: rename addCategory/removeCategory
-            // TODO: fix move pointers to use something defined in scope here
             // TODO: rename buttons
             // TODO: either switch out here, or move out one layer and do this in admin controller
-            // TODO: test save still works
             // TODO: use scope var for 'Category' and fix call to add in html
 
             $scope.selectionChanged(true);
