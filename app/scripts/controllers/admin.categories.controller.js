@@ -27,12 +27,17 @@
             $scope.col3Label = function(col3item) {
                 return col3item.icon;
             }
+            $scope.col1Factory = function(newCol1) {
+                return { name: newCol1, subcats: [], id: createSimpleGuid().toString() };
+            }
 
             // TODO: need add/delete as well
             // TODO: rename addCategory/removeCategory
             // TODO: fix move pointers to use something defined in scope here
             // TODO: rename buttons
             // TODO: either switch out here, or move out one layer and do this in admin controller
+            // TODO: test save still works
+            // TODO: use scope var for 'Category' and fix call to add in html
 
             $scope.selectionChanged(true);
         });
@@ -82,19 +87,17 @@
             $scope.selectionChanged();
         };
 
-        /* ## Category ############################################################################### */
-
-        $scope.addCategory = function() {
-            var newCategory = prompt('Category to add:');
-            if (newCategory !== '') {
-                var catObj = { name: newCategory, subcats: [] };
-                $scope.categories.push(catObj);
+        $scope.add = function(colArray, label, factory) {
+            var newItem = prompt(label + ' to add:');
+            if (newItem !== '') {
+                var newObj = factory(newItem);
+                colArray.push(newObj);
             }
 
             $scope.selectionChanged();
-        };
+        }
 
-        $scope.removeCategory = function() {
+        $scope.removeCol1 = function() {
             $scope.categories = $scope.categories.filter(function(category){
                 return category !== $scope.selectedCat;
             });
@@ -121,6 +124,10 @@
                  $scope.selectionChanged();
              }
         };
+
+        function createSimpleGuid() {
+            return (((1+Math.random())*0x10000)|0).toString(16).substring(1) + (((1+Math.random())*0x10000)|0).toString(16).substring(1); 
+        }
     }
 
 })();
