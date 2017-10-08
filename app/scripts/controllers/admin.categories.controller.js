@@ -13,7 +13,7 @@
 
             // Generic interface to allow different types of column objects
             $scope.col1items = data;
-
+            $scope.col1child = 'subcats';
             $scope.col1Factory = function(newCol1) {
                 return { name: newCol1, subcats: [], id: createSimpleGuid().toString() };
             }
@@ -29,6 +29,8 @@
             // TODO: test save still works
             // TODO: use scope var for 'Category' and fix call to add in html
 
+            // TODO: how do i remap subcats/items global somewhere
+
             $scope.selectionChanged(true);
         });
 
@@ -39,7 +41,7 @@
             }
 
             // TODO: use subcats or something else
-            $scope.col2items = $scope.col1selected.subcats;
+            $scope.col2items = $scope.col1selected[$scope.col1child];
             if ($scope.col2selected === undefined || 
                 $scope.col2items.indexOf($scope.col2selected) === -1) {
                 $scope.col2selected = $scope.col2items[0];
@@ -103,7 +105,7 @@
         };
 
         $scope.removeCol2 = function() {
-            $scope.col1selected.subcats = $scope.col1selected.subcats.filter(function(item){
+            $scope.col1selected[$scope.col1child] = $scope.col1selected[$scope.col1child].filter(function(item){
                 return item !== $scope.col2selected;
             });
 
