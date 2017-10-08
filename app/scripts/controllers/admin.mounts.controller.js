@@ -10,6 +10,11 @@
     function AdminMounts($scope, AdminService, SettingsService) {
         $scope.settings = SettingsService;
 
+        // TODO: take mount specific shit out of it
+        // TODO: rename to missing in controller and html
+        // TODO: will need to add ids to achievement categories
+        // TODO: fix route to including missing
+
         AdminService.getMountData().then(function(data){
             var categories = [];
 
@@ -88,20 +93,5 @@
 
             return link;
         };
-
-        // used to fix mounts with ids 
-        // function createSimpleGuid() {
-        //     return (((1+Math.random())*0x10000)|0).toString(16).substring(1) + (((1+Math.random())*0x10000)|0).toString(16).substring(1); 
-        // }
-        // var tmpCats = $scope.categories;
-        // for (var i=0; i<tmpCats.length; i++) {
-        //     var cat = tmpCats[i];
-        //     cat.id = '' + createSimpleGuid() + '';
-        //     for (var k2 in cat.subcats) {
-        //         var subcat = cat.subcats[k2];
-        //         subcat.id = '' + createSimpleGuid() + '';
-        //         console.log(subcat.name);
-        //     }
-        // }
     }
 })();

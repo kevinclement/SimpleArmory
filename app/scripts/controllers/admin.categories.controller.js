@@ -165,6 +165,18 @@
         function createSimpleGuid() {
             return (((1+Math.random())*0x10000)|0).toString(16).substring(1) + (((1+Math.random())*0x10000)|0).toString(16).substring(1); 
         }
+
+        // used to fix mount categories with ids 
+        // var tmpCats = $scope.categories;
+        // for (var i=0; i<tmpCats.length; i++) {
+        //     var cat = tmpCats[i];
+        //     cat.id = '' + createSimpleGuid() + '';
+        //     for (var k2 in cat.subcats) {
+        //         var subcat = cat.subcats[k2];
+        //         subcat.id = '' + createSimpleGuid() + '';
+        //         console.log(subcat.name);
+        //     }
+        // }
     }
 
 })();
