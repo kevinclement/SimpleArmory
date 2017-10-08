@@ -97,9 +97,10 @@
             $scope.selectionChanged();
         }
 
-        $scope.removeCol1 = function() {
-            $scope.categories = $scope.categories.filter(function(category){
-                return category !== $scope.selectedCat;
+        $scope.remove = function(colArray, selectedItem, scopeVar) {
+
+            $scope[scopeVar] = colArray.filter(function(item){
+                return item !== selectedItem;
             });
 
             $scope.selectionChanged();
