@@ -28,8 +28,8 @@
       <a class="btn btn-default btn-sm" role="button" ng-click="removeCol1()">-</a>
     </span>
     <span class="buttonRight">
-      <a class="btn btn-default btn-sm" role="button" ng-click="move(true, col1selected, col1items)" ng-disabled="catUpDisabled">↑</a>
-      <a class="btn btn-default btn-sm" role="button" ng-click="move(false, col1selected, col1items)" ng-disabled="catDownDisabled">↓</a>
+      <a class="btn btn-default btn-sm" role="button" ng-click="move(true, col1selected, col1items)" ng-disabled="col1UpDisabled">↑</a>
+      <a class="btn btn-default btn-sm" role="button" ng-click="move(false, col1selected, col1items)" ng-disabled="col1DownDisabled">↓</a>
     </span>
   </div>
   <div class="buttonRow">
@@ -38,14 +38,14 @@
       <a class="btn btn-default btn-sm" role="button" ng-click="removeCol2()">-</a>
     </span>
     <span class="buttonRight">
-      <a class="btn btn-default btn-sm" role="button" ng-click="move(true, col2selected, col1selected)" ng-disabled="subCatUpDisabled">↑</a>
-      <a class="btn btn-default btn-sm" role="button" ng-click="move(false, col2selected, col1selected)" ng-disabled="subCatDownDisabled">↓</a>
+      <a class="btn btn-default btn-sm" role="button" ng-click="move(true, col2selected, col1selected)" ng-disabled="col2UpDisabled">↑</a>
+      <a class="btn btn-default btn-sm" role="button" ng-click="move(false, col2selected, col1selected)" ng-disabled="col2DownDisabled">↓</a>
     </span>
   </div>
   <div class="buttonRow">
       <span class="buttonRight">
-        <a class="btn btn-default btn-sm" role="button" ng-click="move(true, col3selected, col2selected)" ng-disabled="itemUpDisabled">↑</a>
-        <a class="btn btn-default btn-sm" role="button" ng-click="move(false, col3selected, col2selected)" ng-disabled="itemDownDisabled">↓</a>
+        <a class="btn btn-default btn-sm" role="button" ng-click="move(true, col3selected, col2selected)" ng-disabled="col3UpDisabled">↑</a>
+        <a class="btn btn-default btn-sm" role="button" ng-click="move(false, col3selected, col2selected)" ng-disabled="col3DownDisabled">↓</a>
       </span>
   </div>
 </div>

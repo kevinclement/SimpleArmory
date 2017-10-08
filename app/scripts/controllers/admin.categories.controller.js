@@ -22,7 +22,6 @@
             }
             $scope.col3child = 'items';
 
-            // TODO: rename buttons
             // TODO: either switch out here, or move out one layer and do this in admin controller
             // TODO: use scope var for 'Category' and fix call to add in html
 
@@ -48,14 +47,14 @@
             }
 
             // enable and disable up/down arrows if we're at the boundaries
-            $scope.catUpDisabled = $scope.col1items.indexOf($scope.col1selected) === 0;
-            $scope.catDownDisabled = $scope.col1items.indexOf($scope.col1selected) === $scope.col1items.length - 1;
+            $scope.col1UpDisabled = $scope.col1items.indexOf($scope.col1selected) === 0;
+            $scope.col1DownDisabled = $scope.col1items.indexOf($scope.col1selected) === $scope.col1items.length - 1;
 
-            $scope.subCatUpDisabled = $scope.col2items.indexOf($scope.col2selected) === 0;
-            $scope.subCatDownDisabled =  $scope.col2items.indexOf($scope.col2selected) === $scope.col2items.length - 1;
+            $scope.col2UpDisabled = $scope.col2items.indexOf($scope.col2selected) === 0;
+            $scope.col2DownDisabled =  $scope.col2items.indexOf($scope.col2selected) === $scope.col2items.length - 1;
 
-            $scope.itemUpDisabled = $scope.col3items.indexOf($scope.col3selected) === 0;
-            $scope.itemDownDisabled = $scope.col3items.indexOf($scope.col2selected) === $scope.col3items.length - 1;
+            $scope.col3UpDisabled = $scope.col3items.indexOf($scope.col3selected) === 0;
+            $scope.col3DownDisabled = $scope.col3items.indexOf($scope.col3selected) === $scope.col3items.length - 1;
 
             // if called from an index change, then don't mark it dirty
             if (!indexChanged) {
