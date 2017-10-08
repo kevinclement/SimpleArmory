@@ -26,9 +26,14 @@
                     return { name: newCol2, items: [], id: createSimpleGuid().toString() };
                 }
 
-                $scope.col3Title = 'Item';
+                $scope.col3Title = 'Mount';
                 $scope.col3Label = function(col3item) {
-                    return col3item.icon;
+                    if (col3item.itemId !== null) {
+                        return col3item.itemId;
+                    }
+                    else {
+                        return col3item.spellid;
+                    }
                 }
                 $scope.col3Link = function(col3item) {
                     if (col3item.itemId !== null) {
