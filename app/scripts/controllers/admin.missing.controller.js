@@ -5,9 +5,9 @@
 
     angular
         .module('simpleArmoryApp')
-        .controller('AdminMounts', AdminMounts);
+        .controller('AdminMissing', AdminMissing);
 
-    function AdminMounts($scope, AdminService, SettingsService) {
+    function AdminMissing($scope, AdminService, SettingsService) {
         $scope.settings = SettingsService;
 
         // TODO: take mount specific shit out of it
@@ -33,6 +33,25 @@
                 $scope.missing = data;
             });
         } else if ($scope.section === 'achievements') {
+            AdminService.getAchievementData().then(function(data){
+
+                for (var i=0; i < data.supercats.length; i++) {
+                     var supercat = data.supercats[i];
+                     supercat.id = '' + $scope.createSimpleGuid() + '';
+
+                     for (var j in supercat.cats) {
+                         var cat = supercat.cats[j];
+                         cat.id = '' + $scope.createSimpleGuid() + '';
+
+                         for (var k in cat.subcats) {
+                            var subcat = cat.subcats[k];
+                            subcat.id = '' + $scope.createSimpleGuid() + '';
+                         }
+                     }
+                }
+
+                $scope.$parent.canSave('achievements.json', data);
+            });
             
         }
 

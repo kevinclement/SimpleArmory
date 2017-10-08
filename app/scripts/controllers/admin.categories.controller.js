@@ -14,10 +14,10 @@
         $scope.col1child = 'subcats';
         $scope.col2Title = 'Sub Category';
         $scope.col1Factory = function(newCol1) {
-            return { name: newCol1, subcats: [], id: createSimpleGuid().toString() };
+            return { name: newCol1, subcats: [], id: $scope.createSimpleGuid().toString() };
         }
         $scope.col2Factory = function(newCol2) {
-            return { name: newCol2, items: [], id: createSimpleGuid().toString() };
+            return { name: newCol2, items: [], id: $scope.createSimpleGuid().toString() };
         }
         $scope.col3child = 'items';
 
@@ -146,10 +146,6 @@
 
             $scope.selectionChanged();
         };
-
-        function createSimpleGuid() {
-            return (((1+Math.random())*0x10000)|0).toString(16).substring(1) + (((1+Math.random())*0x10000)|0).toString(16).substring(1); 
-        }
 
         // used to fix mount categories with ids 
         // var tmpCats = $scope.categories;
