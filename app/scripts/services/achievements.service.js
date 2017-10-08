@@ -81,12 +81,12 @@
                 obj[supercat.name].categories = [];
 
                 angular.forEach(supercat.cats, function(cat) {
-                    var myCat = {'name': cat.name, 'zones': []};
+                    var myCat = {'name': cat.name, 'subcats': []};
 
-                    angular.forEach(cat.zones, function(zone) {
-                        var myZone = {'name': zone.name, 'achievements': []};
+                    angular.forEach(cat.subcats, function(subcat) {
+                        var mySubCat = {'name': subcat.name, 'achievements': []};
 
-                        angular.forEach(zone.achs, function(ach) {
+                        angular.forEach(subcat.achs, function(ach) {
 
                             // Mark this achievement in our found tracker
                             found[ach.id] = true;
@@ -99,7 +99,7 @@
                             // if we're forcing all completed then set those up
                             if (!myAchievement.completed && settings.debug) {
                                 myAchievement.completed = settings.fakeCompletionTime;    
-                            }                          
+                            }
 
                             // Hack: until blizz fixes api, don't stamp with date
                             if (myAchievement.completed && myAchievement.completed !== settings.fakeCompletionTime) {
@@ -109,7 +109,7 @@
                             // Always add it if we've completed it, it should show up regardless if its available
                             if (myAchievement.completed) {
                                 added = true;
-                                myZone.achievements.push(myAchievement);    
+                                mySubCat.achievements.push(myAchievement);    
 
                                 // if this is feats of strength then I want to keep a seperate count for that 
                                 // since its not a percentage thing
@@ -132,8 +132,8 @@
                                 });
 
                                 if (criCom.length > 0) {
-                                    myAchievement.rel = 'cri=' + criCom.join(':');        
-                                }                     
+                                    myAchievement.rel = 'cri=' + criCom.join(':');
+                                }
                             }
 
                             // Update counts proper
@@ -145,18 +145,18 @@
                                 if (myAchievement.completed) {
                                     completedCount++;
                                     totalCompleted++;
-                                }            
+                                }
 
                                 // if we haven't already added it, then this is one that should show up in the page of achievements
                                 // so add it
                                 if (!added) {
-                                    myZone.achievements.push(myAchievement);
+                                    mySubCat.achievements.push(myAchievement);
                                 }
-                            }                
+                            }
                         });
 
-                        if (myZone.achievements.length > 0) {
-                            myCat.zones.push(myZone);
+                        if (mySubCat.achievements.length > 0) {
+                            myCat.subcats.push(mySubCat);
                         }
                     });
 

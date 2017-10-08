@@ -9,19 +9,21 @@
 
     function AdminCategories($scope, AdminService, SettingsService) {
 
+        // TODO: using the same one now.  if when done with all this, its the only one left, can remove code to enable thi
+        $scope.col1Title = 'Category';
+        $scope.col1child = 'subcats';
+        $scope.col2Title = 'Sub Category';
+        $scope.col1Factory = function(newCol1) {
+            return { name: newCol1, subcats: [], id: createSimpleGuid().toString() };
+        }
+
         $scope.settings = SettingsService;
         if ($scope.section === 'mounts') {
             AdminService.getMountData().then(function(data){
 
                 $scope.saveFile = 'mounts.json';
                 $scope.col1items = data;
-                $scope.col1child = 'subcats';
-                $scope.col1Title = 'Category';
-                $scope.col1Factory = function(newCol1) {
-                    return { name: newCol1, subcats: [], id: createSimpleGuid().toString() };
-                }
 
-                $scope.col2Title = 'Sub Category';
                 $scope.col2Factory = function(newCol2) {
                     return { name: newCol2, items: [], id: createSimpleGuid().toString() };
                 }
@@ -52,12 +54,7 @@
                 var categories = [];
                 for(var i=0; i < data.supercats.length; i++) {
                     if (data.supercats[i].name.toLowerCase() === $scope.subsection) {
-                        for(var j=0; j < data.supercats[i].cats.length; j++) {
-                            // data.supercats is array with super cats
-                            // data[0].cats are the categories
-                            // data[0].cats[0].zones are the subcats
-                            // data[0].cats[0].zones[0].achs are the items
-    
+                        for(var j=0; j < data.supercats[i].cats.length; j++) {  
                             categories.push(data.supercats[i].cats[j]);
                         }
                     }
@@ -65,13 +62,7 @@
 
                 $scope.saveFile = 'achievements.json';
                 $scope.col1items = categories;
-                $scope.col1child = 'zones';
-                $scope.col1Title = 'Category';
-                $scope.col1Factory = function(newCol1) {
-                    return { name: newCol1, zones: [], id: createSimpleGuid().toString() };
-                }
 
-                $scope.col2Title = 'Zone';
                 $scope.col2Factory = function(newCol2) {
                     return { name: newCol2, achs: [], id: createSimpleGuid().toString() };
                 }

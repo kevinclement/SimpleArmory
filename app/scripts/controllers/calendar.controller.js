@@ -63,8 +63,8 @@
 			// build a lookup of month to achievement list
 			angular.forEach(achievements, function(supercat) {
 				angular.forEach(supercat.categories, function(cat) {
-					angular.forEach(cat.zones, function(zone) {
-						angular.forEach(zone.achievements, function(ach) {
+					angular.forEach(cat.subcat, function(subcat) {
+						angular.forEach(subcat.achievements, function(ach) {
 							if (ach.completed) {
 								var dt = new Date(ach.completed);
 								var monthid = ''+dt.getFullYear()+((dt.getMonth() < 9)?'0':'')+(dt.getMonth()+1);

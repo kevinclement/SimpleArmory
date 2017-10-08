@@ -13,7 +13,7 @@
   <div ng-hide="showPlanner">
     <h3 class="categoryHeader" ng-hide="category.name == 'Mounts'" ng-repeat-start="category in items.categories">{{ category.name }}</h3>
     <div class="sect" ng-repeat="subCategory in category.subCategories">
-  		<h5 class="zoneHeader">{{ subCategory.name }}</h5>
+  		<h5 class="subCatHeader">{{ subCategory.name }}</h5>
   		<a target="{{settings.anchorTarget}}" ng-href="//{{settings.WowHeadUrl}}/{{ item.link }}" class="thumbnail" ng-repeat="item in subCategory.items" ng-class="{borderOn:!item.collected, borderOff:item.collected}">
           	<img ng-src="{{getImageSrc(item)}}">
         	</a>
