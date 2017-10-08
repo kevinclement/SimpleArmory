@@ -20,6 +20,7 @@
             $scope.col2Factory = function(newCol2) {
                 return { name: newCol2, items: [], id: createSimpleGuid().toString() };
             }
+            $scope.col3child = 'items';
 
             // TODO: need add/delete as well
             // TODO: rename addCategory/removeCategory
@@ -28,8 +29,6 @@
             // TODO: either switch out here, or move out one layer and do this in admin controller
             // TODO: test save still works
             // TODO: use scope var for 'Category' and fix call to add in html
-
-            // TODO: how do i remap subcats/items global somewhere
 
             $scope.selectionChanged(true);
         });
@@ -40,14 +39,13 @@
                 $scope.col1selected = $scope.col1items[0];
             }
 
-            // TODO: use subcats or something else
             $scope.col2items = $scope.col1selected[$scope.col1child];
             if ($scope.col2selected === undefined || 
                 $scope.col2items.indexOf($scope.col2selected) === -1) {
                 $scope.col2selected = $scope.col2items[0];
             }
 
-            $scope.col3items = $scope.col2selected.items;
+            $scope.col3items = $scope.col2selected[$scope.col3child];
             if ($scope.col3selected === undefined || 
                 $scope.col3items.indexOf($scope.col3selected) === -1) {
                 $scope.col3selected = $scope.col3items[0];
@@ -74,7 +72,7 @@
         }
 
         $scope.move = function(up, item, parent) {
-            var array = parent.subcats ? parent.subcats : parent.items;
+            var array = parent[$scope.col1child] ? parent[$scope.col1child] : parent[$scope.col3child];
 
             var src = array.indexOf(item);
             var dest = up ? src - 1 : src + 1;
