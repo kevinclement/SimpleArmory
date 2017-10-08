@@ -14,6 +14,7 @@
         if ($scope.section === 'mounts') {
             AdminService.getMountData().then(function(data){
 
+                $scope.saveFile = 'mounts.json';
                 $scope.col1items = data;
                 $scope.col1child = 'subcats';
                 $scope.col1Title = 'Category';
@@ -50,6 +51,7 @@
                     }
                 }
 
+                $scope.saveFile = 'achievements.json';
                 $scope.col1items = categories;
                 $scope.col1child = 'zones';
                 $scope.col1Title = 'Category';
@@ -102,7 +104,7 @@
 
             // if called from an index change, then don't mark it dirty
             if (!indexChanged) {
-                $scope.$parent.canSave('mounts.json', $scope.col1items);
+                $scope.$parent.canSave($scope.saveFile, $scope.col1items);
             }
         };
 
