@@ -86,7 +86,7 @@
                     angular.forEach(cat.subcats, function(subcat) {
                         var mySubCat = {'name': subcat.name, 'achievements': []};
 
-                        angular.forEach(subcat.achs, function(ach) {
+                        angular.forEach(subcat.items, function(ach) {
 
                             // Mark this achievement in our found tracker
                             found[ach.id] = true;

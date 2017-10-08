@@ -16,6 +16,10 @@
         $scope.col1Factory = function(newCol1) {
             return { name: newCol1, subcats: [], id: createSimpleGuid().toString() };
         }
+        $scope.col2Factory = function(newCol2) {
+            return { name: newCol2, items: [], id: createSimpleGuid().toString() };
+        }
+        $scope.col3child = 'items';
 
         $scope.settings = SettingsService;
         if ($scope.section === 'mounts') {
@@ -23,10 +27,6 @@
 
                 $scope.saveFile = 'mounts.json';
                 $scope.col1items = data;
-
-                $scope.col2Factory = function(newCol2) {
-                    return { name: newCol2, items: [], id: createSimpleGuid().toString() };
-                }
 
                 $scope.col3Title = 'Mount';
                 $scope.col3Label = function(col3item) {
@@ -45,7 +45,6 @@
                         return 'spell=' + col3item.spellid;
                     }
                 }
-                $scope.col3child = 'items';
 
                 $scope.selectionChanged(true);
             });
@@ -63,10 +62,6 @@
                 $scope.saveFile = 'achievements.json';
                 $scope.col1items = categories;
 
-                $scope.col2Factory = function(newCol2) {
-                    return { name: newCol2, achs: [], id: createSimpleGuid().toString() };
-                }
-
                 $scope.col3Title = 'Achievement';
                 $scope.col3Label = function(col3item) {
                     return col3item.id;
@@ -74,7 +69,6 @@
                 $scope.col3Link = function(col3item) {
                     return 'achievement=' + col3item.id;
                 }
-                $scope.col3child = 'achs';
 
                 $scope.selectionChanged(true);
             });

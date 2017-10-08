@@ -63,7 +63,7 @@
 			// build a lookup of month to achievement list
 			angular.forEach(achievements, function(supercat) {
 				angular.forEach(supercat.categories, function(cat) {
-					angular.forEach(cat.subcat, function(subcat) {
+					angular.forEach(cat.subcats, function(subcat) {
 						angular.forEach(subcat.achievements, function(ach) {
 							if (ach.completed) {
 								var dt = new Date(ach.completed);
