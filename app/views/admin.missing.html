@@ -28,9 +28,9 @@
     animation-fill-mode: both;
   }
   .alertNotify {
-    position:fixed;
-    right:58px;
-    opacity:0;
+    position: fixed;
+    right: 58px; 
+    opacity: 0;
   }
   .fadeIn {
     animation-name: fadeIn;
@@ -39,7 +39,7 @@
     animation-name: fadeOut;
   }
   .col {
-    max-width: 600px;
+    max-width: 575px;
   }
   .missingSection {
     height: 342px;
@@ -63,9 +63,9 @@
 </style>
 
 <div ng-controller="AdminMissing">
-  <div ng-class="{'fadeIn': notifyIn, 'fadeOut': notifyOut}" class="alert alert-info alertNotify animated" role="alert">
-      <strong>{{notify.name}}</strong> moved to <strong>{{notify.subcat}}</strong>.
-  </div>
+    <div ng-class="{'fadeIn': notifyIn, 'fadeOut': notifyOut}" class="alert alert-info alertNotify animated" role="alert">
+        <strong>{{notify.name}}</strong> moved to <strong>{{notify.subcat}}</strong>.
+    </div>
   <div class="wrapper">
     <div>
         <h4>{{col1Title}}</h4>

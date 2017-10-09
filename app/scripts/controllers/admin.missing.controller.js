@@ -54,7 +54,7 @@
                 }
 
                 $scope.categorySelected = $scope.categories[0];
-                $scope.supercats = data.supercats;
+                $scope.data = data;
             });
 
             // TMP
@@ -91,8 +91,12 @@
 
                 if (item.selected && item.selected === true) {
                     console.log('adding ' + item.id + ' to ' + $scope.categorySelected.subcat.name);
+
+                    notify(item.id, $scope.categorySelected.subcat.name);
                 }
             }
+
+            $scope.$parent.canSave($scope.section, $scope.data);
         }
 
         // TODO: cleanup
@@ -153,5 +157,22 @@
 
             return link;
         };
+
+        function notify(name, category) {
+
+            // show the info alert, and hide after 2s
+            $scope.notifyIn = true;
+            $scope.notifyOut = false;
+            $scope.notify = {
+                'name': name,
+                'subcat': category
+            };
+            window.setTimeout(function() {
+                $scope.$apply(function () {
+                    $scope.notifyIn = false;
+                    $scope.notifyOut = true;
+                });
+            }, 2100);
+        }
     }
 })();
