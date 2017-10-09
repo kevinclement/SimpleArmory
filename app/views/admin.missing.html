@@ -21,7 +21,7 @@
 
   .wrapper {
     display: grid;
-    grid-template-columns: 300px auto;
+    grid-template-columns: 280px 105px auto;
   }
   .animated {
     animation-duration: 1s;
@@ -39,7 +39,7 @@
     animation-name: fadeOut;
   }
   .col {
-    width: 220px;
+    max-width: 600px;
   }
   .missingItem {
     margin: 1px;
@@ -49,9 +49,13 @@
     height: 100%;
   }
   .missingItemSelected {
-    width: 56px;
-    height: 56px;
-    border: 2px solid #428bca;
+    width: 36px;
+    height: 36px;
+    border: 3px solid green;
+  }
+  .movebtn { 
+    font-size: 18px;
+    margin-top: 55px;
   }
 </style>
 
@@ -60,7 +64,7 @@
       <strong>{{notify.name}}</strong> moved to <strong>{{notify.subcat}}</strong>.
   </div>
   <div class="wrapper">
-    <div style='background:lightgray;'>
+    <div>
         <h4>{{col1Title}}</h4>
         <div>
             <a target="_blank" ng-click="clicked($event, this.item)" ng-href="//{{settings.WowHeadUrl}}/{{ getLink(item) }}" class="thumbnail missingItem" ng-repeat="item in missing">
@@ -68,9 +72,10 @@
             </a>
         </div>
     </div>
-    <div style='background:gray;'>
+    <div><a class="btn btn-primary movebtn" role="button" ng-click="move()">Move ↠</a></div>
+    <div>
         <h4>{{col2Title}}</h4>
-        <select size="20" class="col" ng-change="selectionChanged(true)" ng-model="col2selected" ng-options="item as item.name for item in col2items"></select>
+        <select size="20" class="col" ng-change="selectionChanged(true)" ng-model="categorySelected" ng-options="item as item.label for item in categories"></select>
     </div>
   </div>
 </div>

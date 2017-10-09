@@ -14,7 +14,6 @@
         $scope.col1Title = "Missing";
         $scope.col2Title = "Categories";
 
-
         // TODO: take mount specific shit out of it
         // TODO: rename to missing in controller and html
         // TODO: will need to add ids to achievement categories
@@ -40,22 +39,37 @@
         } else if ($scope.section === 'achievements') {
             AdminService.getAchievementData().then(function(data){
 
-                 for (var i=0; i < data.supercats.length; i++) {
+                $scope.categories = [];
+                for (var i=0; i < data.supercats.length; i++) {
                     var supercat = data.supercats[i];
                     for (var j in supercat.cats) {
                          var cat = supercat.cats[j];
                          for (var k in cat.subcats) {
                             var subcat = cat.subcats[k];
+
+                            $scope.categories.push({ label: supercat.name + '\\' + cat.name + '\\' + subcat.name });
                          }
                      }
                 }
 
+                $scope.categorySelected = $scope.categories[0];
                 $scope.supercats = data.supercats;
             });
 
             // TMP
             $scope.missing = [
                 { 'id': '4476', 'icon': 'Achievement_Arena_2v2_3' },
+                { 'id': '4477', 'icon': 'Achievement_Arena_3v3_4' },
+                { 'id': '4476', 'icon': 'Achievement_Arena_2v2_3' },
+                { 'id': '4477', 'icon': 'Achievement_Arena_3v3_4' },{ 'id': '4476', 'icon': 'Achievement_Arena_2v2_3' },
+                { 'id': '4477', 'icon': 'Achievement_Arena_3v3_4' },{ 'id': '4476', 'icon': 'Achievement_Arena_2v2_3' },
+                { 'id': '4477', 'icon': 'Achievement_Arena_3v3_4' },{ 'id': '4476', 'icon': 'Achievement_Arena_2v2_3' },
+                { 'id': '4477', 'icon': 'Achievement_Arena_3v3_4' },{ 'id': '4476', 'icon': 'Achievement_Arena_2v2_3' },
+                { 'id': '4477', 'icon': 'Achievement_Arena_3v3_4' },{ 'id': '4476', 'icon': 'Achievement_Arena_2v2_3' },
+                { 'id': '4477', 'icon': 'Achievement_Arena_3v3_4' },{ 'id': '4476', 'icon': 'Achievement_Arena_2v2_3' },
+                { 'id': '4477', 'icon': 'Achievement_Arena_3v3_4' },{ 'id': '4476', 'icon': 'Achievement_Arena_2v2_3' },
+                { 'id': '4477', 'icon': 'Achievement_Arena_3v3_4' },{ 'id': '4476', 'icon': 'Achievement_Arena_2v2_3' },
+                { 'id': '4477', 'icon': 'Achievement_Arena_3v3_4' },{ 'id': '4476', 'icon': 'Achievement_Arena_2v2_3' },
                 { 'id': '4477', 'icon': 'Achievement_Arena_3v3_4' },
                 { 'id': '4478', 'icon': 'Achievement_Arena_5v5_3' }
             ]
