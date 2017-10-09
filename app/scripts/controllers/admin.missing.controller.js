@@ -55,13 +55,25 @@
 
                 $scope.categorySelected = $scope.categories[0];
                 $scope.data = data;
+
+                $scope.createItem = function(ach) {
+                    
+                    return {
+                        'id': ach.id,
+                        'icon': ach.icon,
+                        'side': getFactionSymbol(ach.id, ach.factionId),
+                        'obtainable': true,
+                        'points': ach.points,
+                        'criteria': {}
+                    };
+                }
             });
 
             // TMP
             $scope.missing = [
-                { 'id': '4476', 'icon': 'Achievement_Arena_2v2_3' },
-                { 'id': '4477', 'icon': 'Achievement_Arena_3v3_4' },
-                { 'id': '4478', 'icon': 'Achievement_Arena_5v5_3' }
+                { 'id': '4476', 'icon': 'Achievement_Arena_2v2_3', 'factionId': 2, points:5 },
+                { 'id': '4477', 'icon': 'Achievement_Arena_3v3_4', 'factionId': 2, points:5 },
+                { 'id': '4478', 'icon': 'Achievement_Arena_5v5_3', 'factionId': 2, points:5 }
             ]
 
         }
@@ -92,6 +104,19 @@
                 if (item.selected && item.selected === true) {
                     console.log('adding ' + item.id + ' to ' + $scope.categorySelected.subcat.name);
 
+                    var itemToSave = $scope.createItem(item);
+                    $scope.categorySelected.subcat.items.push(item);
+
+                    // remove from scope
+                    $scope.missing = $scope.missing.filter(function(missing) {
+                        if (item.id) {
+                            return item.id !== missing.id;
+                        }
+                        else {
+                            return item.spellid !== missing.spellid;
+                        }
+                    });
+
                     // TODO: turn back on when I have time, hurt my brain
                     // notify(item.id, $scope.categorySelected.subcat.name);
                 }
@@ -99,53 +124,6 @@
 
             $scope.$parent.canSave($scope.section, $scope.data);
         }
-
-        // TODO: cleanup
-        $scope.dragDone = function(subcatId) {
-
-            // find drop target obj
-            var subCatObj;
-            for (var i=0; i<$scope.categories.length; i++) {
-                var cat = $scope.categories[i];
-                for (var k2 in cat.subcats) {
-                    var subcat = cat.subcats[k2];
-                    if (subcat.id === subcatId) {
-                        subCatObj = subcat;
-                    }
-                }
-            }
-
-            // show the info alert, and hide after 2s
-            $scope.notifyIn = true;
-            $scope.notifyOut = false;
-            $scope.notify = {
-                'name': draggedItem.name,
-                'subcat': subCatObj.name
-            };
-            window.setTimeout(function() {
-                $scope.$apply(function () {
-                    $scope.notifyIn = false;
-                    $scope.notifyOut = true;
-                });
-            }, 2100);
-
-            // save to category (minus the name)
-            delete draggedItem['name'];
-            subCatObj.items.push(draggedItem);
-
-            // remove from scope
-            $scope.missing = $scope.missing.filter(function(item) {
-                if (draggedItem.itemId) {
-                    return item.itemId !== draggedItem.itemId;
-                }
-                else {
-                    return item.spellid !== draggedItem.spellid;
-                }
-            });
-
-            // enable the save button
-            $scope.$parent.canSave('mounts', $scope.categories);
-        };
 
         $scope.getLink  = function(item) {
             var link = 'spell='+item.spellId;
@@ -174,6 +152,24 @@
                     $scope.notifyOut = true;
                 });
             }, 2100);
+        }
+
+        function getFactionSymbol(id, factionId) {
+            // 0 is alliance
+            // 1 is horde
+            // 2 is anyone
+            if (factionId === 0) {
+                return 'A';
+            }
+            else if (factionId === 1) { 
+                return 'H';
+            }
+            else if (factionId === 2) {
+                return '';
+            }
+            else {
+                console.log('UNKNOWN FACTION: ' + factionId + ' for ' + id);
+            }
         }
     }
 })();
