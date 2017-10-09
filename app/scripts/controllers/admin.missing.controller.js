@@ -92,7 +92,8 @@
                 if (item.selected && item.selected === true) {
                     console.log('adding ' + item.id + ' to ' + $scope.categorySelected.subcat.name);
 
-                    notify(item.id, $scope.categorySelected.subcat.name);
+                    // TODO: turn back on when I have time, hurt my brain
+                    // notify(item.id, $scope.categorySelected.subcat.name);
                 }
             }
 
