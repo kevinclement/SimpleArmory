@@ -86,11 +86,9 @@
 
             if (item.selected !== true) {
                 $(event.currentTarget).addClass('missingItemSelected');
-                event.currentTarget.children[0].src = event.currentTarget.children[0].src.replace('/medium/', '/large/');
                 item.selected = true;
             } else {
                 $(event.currentTarget).removeClass('missingItemSelected');
-                event.currentTarget.children[0].src = event.currentTarget.children[0].src.replace('/large/', '/medium/');
                 item.selected = false;
             }
         };
