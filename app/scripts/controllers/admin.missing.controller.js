@@ -25,34 +25,34 @@
     
                     categories.push(cat);
                 }
-    
+
                 $scope.categories = categories;
             });
-    
+
             AdminService.getMissingMounts().then(function(data){
                 $scope.missing = data;
             });
         } else if ($scope.section === 'achievements') {
             AdminService.getAchievementData().then(function(data){
 
-                for (var i=0; i < data.supercats.length; i++) {
-                     var supercat = data.supercats[i];
-                     supercat.id = '' + $scope.createSimpleGuid() + '';
+                // for (var i=0; i < data.supercats.length; i++) {
+                //      var supercat = data.supercats[i];
+                //      supercat.id = '' + $scope.createSimpleGuid() + '';
 
-                     for (var j in supercat.cats) {
-                         var cat = supercat.cats[j];
-                         cat.id = '' + $scope.createSimpleGuid() + '';
+                //      for (var j in supercat.cats) {
+                //          var cat = supercat.cats[j];
+                //          cat.id = '' + $scope.createSimpleGuid() + '';
 
-                         for (var k in cat.subcats) {
-                            var subcat = cat.subcats[k];
-                            subcat.id = '' + $scope.createSimpleGuid() + '';
-                         }
-                     }
-                }
+                //          for (var k in cat.subcats) {
+                //             var subcat = cat.subcats[k];
+                //             subcat.id = '' + $scope.createSimpleGuid() + '';
+                //          }
+                //      }
+                // }
 
-                $scope.$parent.canSave('achievements.json', data);
+                $scope.$parent.canSave('achievements', data);
             });
-            
+
         }
 
         var draggedItem;
@@ -106,7 +106,7 @@
             });
 
             // enable the save button
-            $scope.$parent.canSave('mounts.json', $scope.categories);
+            $scope.$parent.canSave('mounts', $scope.categories);
         };
 
         $scope.getLink  = function(item) {

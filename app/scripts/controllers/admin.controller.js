@@ -6,7 +6,7 @@
         .module('simpleArmoryApp')
         .controller('AdminCtrl', AdminCtrl);
 
-    function AdminCtrl($scope, $window, $routeParams, SettingsService, $location, AdminService) {
+    function AdminCtrl($scope, $window, $routeParams, SettingsService, $location, AdminService, $http) {
 
         // Analytics for page
         $window.ga('send', 'pageview', 'Admin');
@@ -54,13 +54,11 @@
         });
 
         $scope.saveClicked = function() {
-            // NOTE: There is probably an easier way todo this, but I'm using 2 anchors, one to trigger refresh of data
-            // and a 2nd to actually download that data
 
-            // trigger hidden link
-            var anchor = document.getElementById('downloadLink');
-            anchor.href = 'data:text/json;charset=utf-8,' + encodeURIComponent(angular.toJson($scope.data, 2));
-            anchor.click();
+            // NOTE: This is leveraging connect middleware that is hooked up during
+            // dev debugging to save to file.  This does a post of the data and 
+            // that decodes the body, and saves into the file on disk
+            $http.post("/save/" + $scope.file, angular.toJson($scope.data, 2));
         };
     }
 

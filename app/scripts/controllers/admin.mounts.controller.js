@@ -82,7 +82,7 @@
             });
 
             // enable the save button
-            $scope.$parent.canSave('mounts.json', $scope.categories);
+            $scope.$parent.canSave('mounts', $scope.categories);
         };
 
         $scope.getLink  = function(item) {

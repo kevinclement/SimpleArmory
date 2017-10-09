@@ -25,7 +25,7 @@
         if ($scope.section === 'mounts') {
             AdminService.getMountData().then(function(data){
 
-                $scope.saveFile = 'mounts.json';
+                $scope.saveFile = 'mounts';
                 $scope.col1items = data;
 
                 $scope.col3Title = 'Mount';
@@ -59,7 +59,7 @@
                     }
                 }
 
-                $scope.saveFile = 'achievements.json';
+                $scope.saveFile = 'achievements';
                 $scope.col1items = categories;
 
                 $scope.col3Title = 'Achievement';
