@@ -13,6 +13,7 @@
         // TODO: might not need customization here
         $scope.col1Title = "Missing";
         $scope.col2Title = "Categories";
+        $scope.moveDisabled = true;
 
         // TODO: take mount specific shit out of it
         // TODO: rename to missing in controller and html
@@ -47,7 +48,7 @@
                          for (var k in cat.subcats) {
                             var subcat = cat.subcats[k];
 
-                            $scope.categories.push({ label: supercat.name + '\\' + cat.name + '\\' + subcat.name });
+                            $scope.categories.push({ label: supercat.name + '\\' + cat.name + '\\' + subcat.name, subcat:subcat });
                          }
                      }
                 }
@@ -59,17 +60,6 @@
             // TMP
             $scope.missing = [
                 { 'id': '4476', 'icon': 'Achievement_Arena_2v2_3' },
-                { 'id': '4477', 'icon': 'Achievement_Arena_3v3_4' },
-                { 'id': '4476', 'icon': 'Achievement_Arena_2v2_3' },
-                { 'id': '4477', 'icon': 'Achievement_Arena_3v3_4' },{ 'id': '4476', 'icon': 'Achievement_Arena_2v2_3' },
-                { 'id': '4477', 'icon': 'Achievement_Arena_3v3_4' },{ 'id': '4476', 'icon': 'Achievement_Arena_2v2_3' },
-                { 'id': '4477', 'icon': 'Achievement_Arena_3v3_4' },{ 'id': '4476', 'icon': 'Achievement_Arena_2v2_3' },
-                { 'id': '4477', 'icon': 'Achievement_Arena_3v3_4' },{ 'id': '4476', 'icon': 'Achievement_Arena_2v2_3' },
-                { 'id': '4477', 'icon': 'Achievement_Arena_3v3_4' },{ 'id': '4476', 'icon': 'Achievement_Arena_2v2_3' },
-                { 'id': '4477', 'icon': 'Achievement_Arena_3v3_4' },{ 'id': '4476', 'icon': 'Achievement_Arena_2v2_3' },
-                { 'id': '4477', 'icon': 'Achievement_Arena_3v3_4' },{ 'id': '4476', 'icon': 'Achievement_Arena_2v2_3' },
-                { 'id': '4477', 'icon': 'Achievement_Arena_3v3_4' },{ 'id': '4476', 'icon': 'Achievement_Arena_2v2_3' },
-                { 'id': '4477', 'icon': 'Achievement_Arena_3v3_4' },{ 'id': '4476', 'icon': 'Achievement_Arena_2v2_3' },
                 { 'id': '4477', 'icon': 'Achievement_Arena_3v3_4' },
                 { 'id': '4478', 'icon': 'Achievement_Arena_5v5_3' }
             ]
@@ -91,7 +81,19 @@
                 $(event.currentTarget).removeClass('missingItemSelected');
                 item.selected = false;
             }
+
+            $scope.moveDisabled = $scope.missing.filter(item => item.selected === true).length == 0;
         };
+
+        $scope.move = function() {
+            for (var i=0; i < $scope.missing.length; i++) {
+                var item = $scope.missing[i];
+
+                if (item.selected && item.selected === true) {
+                    console.log('adding ' + item.id + ' to ' + $scope.categorySelected.subcat.name);
+                }
+            }
+        }
 
         // TODO: cleanup
         $scope.dragDone = function(subcatId) {

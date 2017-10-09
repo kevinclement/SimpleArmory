@@ -21,7 +21,7 @@
 
   .wrapper {
     display: grid;
-    grid-template-columns: 280px 105px auto;
+    grid-template-columns: 280px 125px auto;
   }
   .animated {
     animation-duration: 1s;
@@ -41,6 +41,10 @@
   .col {
     max-width: 600px;
   }
+  .missingSection {
+    height: 342px;
+    border: 1px solid rgb(169, 169, 169);
+  }
   .missingItem {
     margin: 1px;
   }
@@ -54,6 +58,7 @@
   .movebtn { 
     font-size: 18px;
     margin-top: 55px;
+    margin-left: 16px;
   }
 </style>
 
@@ -64,13 +69,13 @@
   <div class="wrapper">
     <div>
         <h4>{{col1Title}}</h4>
-        <div>
+        <div class="missingSection">
             <a target="_blank" ng-click="clicked($event, this.item)" ng-href="//{{settings.WowHeadUrl}}/{{ getLink(item) }}" class="thumbnail missingItem" ng-repeat="item in missing">
               <img ng-src="{{getImageSrc(item, true)}}">
             </a>
         </div>
     </div>
-    <div><a class="btn btn-primary movebtn" role="button" ng-click="move()">Move ↠</a></div>
+    <div><a class="btn btn-primary movebtn" role="button" ng-disabled="moveDisabled" ng-click="move()">Move ↠</a></div>
     <div>
         <h4>{{col2Title}}</h4>
         <select size="20" class="col" ng-change="selectionChanged(true)" ng-model="categorySelected" ng-options="item as item.label for item in categories"></select>
