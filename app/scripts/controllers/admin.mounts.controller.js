@@ -10,10 +10,7 @@
     function AdminMounts($scope, AdminService, SettingsService) {
         $scope.settings = SettingsService;
 
-        // TODO: take mount specific shit out of it
-        // TODO: rename to missing in controller and html
-        // TODO: will need to add ids to achievement categories
-        // TODO: fix route to including missing
+        // TODO: remove this once missing.controller is finished and unified
 
         AdminService.getMountData().then(function(data){
             var categories = [];

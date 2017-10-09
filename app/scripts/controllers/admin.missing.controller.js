@@ -35,34 +35,48 @@
         } else if ($scope.section === 'achievements') {
             AdminService.getAchievementData().then(function(data){
 
-                // for (var i=0; i < data.supercats.length; i++) {
-                //      var supercat = data.supercats[i];
-                //      supercat.id = '' + $scope.createSimpleGuid() + '';
+                 for (var i=0; i < data.supercats.length; i++) {
+                    var supercat = data.supercats[i];
+                    for (var j in supercat.cats) {
+                         var cat = supercat.cats[j];
+                         for (var k in cat.subcats) {
+                            var subcat = cat.subcats[k];
+                         }
+                     }
+                }
 
-                //      for (var j in supercat.cats) {
-                //          var cat = supercat.cats[j];
-                //          cat.id = '' + $scope.createSimpleGuid() + '';
-
-                //          for (var k in cat.subcats) {
-                //             var subcat = cat.subcats[k];
-                //             subcat.id = '' + $scope.createSimpleGuid() + '';
-                //          }
-                //      }
-                // }
-
-                $scope.$parent.canSave('achievements', data);
+                $scope.supercats = data.supercats;
             });
+
+            // TMP
+            $scope.missing = [
+                { 'id': '4476', 'icon': 'Achievement_Arena_2v2_3' },
+                { 'id': '4477', 'icon': 'Achievement_Arena_3v3_4' },
+                { 'id': '4478', 'icon': 'Achievement_Arena_5v5_3' }
+            ]
 
         }
 
-        var draggedItem;
-        $scope.dragStart = function(dragItem) {
-            // hide any wowhead tooltips since they get in the way when dragging
-            $WowheadPower.hideTooltip();
-
-            draggedItem = dragItem;
+        $scope.getImageSrc = function(item) {
+            return '//wow.zamimg.com/images/wow/icons/medium/' + item.icon.toLowerCase() + '.jpg';
         };
 
+        $scope.clicked = function(event, item) {
+            event.preventDefault();
+            $WowheadPower.hideTooltip();
+
+            if (item.selected !== true) {
+                $(event.currentTarget).addClass('missingItemSelected');
+                event.currentTarget.children[0].src = event.currentTarget.children[0].src.replace('/medium/', '/large/');
+                item.selected = true;
+            } else {
+                $(event.currentTarget).removeClass('missingItemSelected');
+                event.currentTarget.children[0].src = event.currentTarget.children[0].src.replace('/large/', '/medium/');
+                item.selected = false;
+            }
+        };
+
+        // TODO: cleanup
         $scope.dragDone = function(subcatId) {
 
             // find drop target obj
@@ -111,7 +125,10 @@
 
         $scope.getLink  = function(item) {
             var link = 'spell='+item.spellId;
-            if (item.itemId) {
+
+            if (item.id) {
+                link = 'achievement='+item.id;
+            } else if (item.itemId) {
                 link = 'item='+item.itemId;
             }
 

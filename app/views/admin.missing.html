@@ -23,19 +23,6 @@
     display: grid;
     grid-template-columns: 300px auto;
   }
-  .catBox {
-    display: inline-block;
-    padding: 15px;
-    margin: 5px;
-    background: lightgray;
-    border: 1px dashed grey;
-  }
-  .missingItem {
-    margin: 1px;
-  }
-  .dragOver {
-    border: 1px solid #000;
-  }
   .animated {
     animation-duration: 1s;
     animation-fill-mode: both;
@@ -51,27 +38,39 @@
   .fadeOut {
     animation-name: fadeOut;
   }
+  .col {
+    width: 220px;
+  }
+  .missingItem {
+    margin: 1px;
+  }
+  .missingItem img {
+    width: 100%;
+    height: 100%;
+  }
+  .missingItemSelected {
+    width: 56px;
+    height: 56px;
+    border: 2px solid #428bca;
+  }
 </style>
 
-<div ng-controller="AdminMissing" class="wrapper">
+<div ng-controller="AdminMissing">
   <div ng-class="{'fadeIn': notifyIn, 'fadeOut': notifyOut}" class="alert alert-info alertNotify animated" role="alert">
-    <strong>{{notify.name}}</strong> moved to <strong>{{notify.subcat}}</strong>.
+      <strong>{{notify.name}}</strong> moved to <strong>{{notify.subcat}}</strong>.
   </div>
-  <div style="padding-right:10px;">
-
-    <h4>Missing</h4>
-    <a target="_blank" ng-drag="dragStart({{item}})" ng-href="//{{settings.WowHeadUrl}}/{{ getLink(item) }}" class="thumbnail missingItem" ng-repeat="item in missing">
-      <img ng-src="{{getImageSrc(item, true)}}">
-    </a>
-
-  </div>
-  <div>
-    <div ng-repeat="cat in categories">
-        <h4>{{cat.name}}</h4>
-        <div class="catBox" ng-repeat="subcat in cat.subcats" ng-drop="dragDone('{{subcat.id}}')" ng-drop-class="dragOver">
-          {{subcat.name}}
+  <div class="wrapper">
+    <div style='background:lightgray;'>
+        <h4>{{col1Title}}a</h4>
+        <div>
+            <a target="_blank" ng-click="clicked($event, this.item)" ng-href="//{{settings.WowHeadUrl}}/{{ getLink(item) }}" class="thumbnail missingItem" ng-repeat="item in missing">
+              <img ng-src="{{getImageSrc(item, true)}}">
+            </a>
         </div>
     </div>
+    <div style='background:gray;'>
+        <h4>{{col2Title}}b</h4>
+        <select size="20" class="col" ng-change="selectionChanged(true)" ng-model="col2selected" ng-options="item as item.name for item in col2items"></select>
+    </div>
   </div>
-
 </div>
