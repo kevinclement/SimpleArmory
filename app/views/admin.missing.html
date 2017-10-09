@@ -61,7 +61,7 @@
   </div>
   <div class="wrapper">
     <div style='background:lightgray;'>
-        <h4>{{col1Title}}a</h4>
+        <h4>{{col1Title}}</h4>
         <div>
             <a target="_blank" ng-click="clicked($event, this.item)" ng-href="//{{settings.WowHeadUrl}}/{{ getLink(item) }}" class="thumbnail missingItem" ng-repeat="item in missing">
               <img ng-src="{{getImageSrc(item, true)}}">
@@ -69,7 +69,7 @@
         </div>
     </div>
     <div style='background:gray;'>
-        <h4>{{col2Title}}b</h4>
+        <h4>{{col2Title}}</h4>
         <select size="20" class="col" ng-change="selectionChanged(true)" ng-model="col2selected" ng-options="item as item.name for item in col2items"></select>
     </div>
   </div>

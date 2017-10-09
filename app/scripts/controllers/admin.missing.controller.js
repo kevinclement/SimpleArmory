@@ -10,6 +10,11 @@
     function AdminMissing($scope, AdminService, SettingsService) {
         $scope.settings = SettingsService;
 
+        // TODO: might not need customization here
+        $scope.col1Title = "Missing";
+        $scope.col2Title = "Categories";
+
+
         // TODO: take mount specific shit out of it
         // TODO: rename to missing in controller and html
         // TODO: will need to add ids to achievement categories
