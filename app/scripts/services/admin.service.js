@@ -174,16 +174,16 @@
               // categories
               for (var c1 in supercat.categories) {
                   var cat = supercat.categories[c1];
-                  for (var a1 in cat.achievements) { 
-                      var ach = cat.achievements[a1];
-                      checkAch(ach, allAchievements, missingAchievements, wowheadCriteria);
+                  for (var a in cat.achievements) { 
+                      var ach1 = cat.achievements[a];
+                      checkAch(ach1, allAchievements, missingAchievements, wowheadCriteria);
                   }
               }
       
               // top level achievements   
-              for (var a1 in supercat.achievements) { 
-                  var ach = supercat.achievements[a1];
-                  checkAch(ach, allAchievements, missingAchievements, wowheadCriteria);
+              for (var b in supercat.achievements) { 
+                  var ach2 = supercat.achievements[b];
+                  checkAch(ach2, allAchievements, missingAchievements, wowheadCriteria);
               }
             }	  
 
@@ -213,7 +213,7 @@
 
         if (ach.criteria && ach.criteria.length > 1) {
           // reset the criteria to wowhead based
-          var newCriteria = {}
+          var newCriteria = {};
 
           var critObj = wowheadCriteria[ach.id];
           for(var wowheadId in critObj) {

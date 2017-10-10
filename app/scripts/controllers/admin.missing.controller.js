@@ -1,3 +1,4 @@
+/* jshint esnext:true */
 /*globals $WowheadPower */
 'use strict';
 
@@ -11,8 +12,8 @@
         $scope.settings = SettingsService;
 
         // TODO: might not need customization here
-        $scope.col1Title = "Missing";
-        $scope.col2Title = "Categories";
+        $scope.col1Title = 'Missing';
+        $scope.col2Title = 'Categories';
         $scope.moveDisabled = true;
 
         // TODO: take mount specific shit out of it
@@ -72,7 +73,7 @@
                     }
 
                     return myItem;
-                }
+                };
             });
 
             AdminService.getMissingAchievements().then(function(data){
@@ -96,7 +97,7 @@
                 item.selected = false;
             }
 
-            $scope.moveDisabled = $scope.missing.filter(item => item.selected === true).length == 0;
+            $scope.moveDisabled = $scope.missing.filter(item => item.selected === true).length === 0;
         };
 
         $scope.move = function() {
@@ -122,7 +123,7 @@
             });
 
             $scope.$parent.canSave($scope.section, $scope.data);
-        }
+        };
 
         $scope.getLink  = function(item) {
             var link = 'spell='+item.spellId;

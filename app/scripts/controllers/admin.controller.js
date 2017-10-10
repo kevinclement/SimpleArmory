@@ -12,9 +12,9 @@
         $window.ga('send', 'pageview', 'Admin');
 
         // Store url parts into scope
-        $scope.area = $routeParams.area;            // e.g. categories
-        $scope.section = $routeParams.section       // e.g. achievement
-        $scope.subsection = $routeParams.subsection // e.g. quests
+        $scope.area = $routeParams.area;             // e.g. categories
+        $scope.section = $routeParams.section;       // e.g. achievement
+        $scope.subsection = $routeParams.subsection; // e.g. quests
 
         // Use the settings to materialize select drop down
         $scope.sections = [
@@ -58,7 +58,7 @@
             // NOTE: This is leveraging connect middleware that is hooked up during
             // dev debugging to save to file.  This does a post of the data and 
             // that decodes the body, and saves into the file on disk
-            $http.post("/save/" + $scope.file, angular.toJson($scope.data, 2));
+            $http.post('/save/' + $scope.file, angular.toJson($scope.data, 2));
         };
     }
 

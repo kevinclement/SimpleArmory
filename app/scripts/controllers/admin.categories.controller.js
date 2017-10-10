@@ -15,10 +15,10 @@
         $scope.col2Title = 'Sub Category';
         $scope.col1Factory = function(newCol1) {
             return { name: newCol1, subcats: [], id: $scope.createSimpleGuid().toString() };
-        }
+        };
         $scope.col2Factory = function(newCol2) {
             return { name: newCol2, items: [], id: $scope.createSimpleGuid().toString() };
-        }
+        };
         $scope.col3child = 'items';
 
         $scope.settings = SettingsService;
@@ -37,7 +37,7 @@
                     else {
                         return col3item.spellid;
                     }
-                }
+                };
                 $scope.col3Link = function(col3item) {
                     if (col3item.itemId !== null) {
                         return 'item=' + col3item.itemId;
@@ -45,7 +45,7 @@
                     else {
                         return 'spell=' + col3item.spellid;
                     }
-                }
+                };
 
                 $scope.selectionChanged(true);
             });
@@ -67,10 +67,10 @@
                 $scope.col3Title = 'Achievement';
                 $scope.col3Label = function(col3item) {
                     return col3item.id;
-                }
+                };
                 $scope.col3Link = function(col3item) {
                     return 'achievement=' + col3item.id;
-                }
+                };
 
                 $scope.selectionChanged(true);
             });
@@ -130,7 +130,7 @@
 
                 $scope.selectionChanged();
             }
-        }
+        };
 
         $scope.removeCol1 = function() {
             $scope.col1items = $scope.col1items.filter(function(item){
