@@ -210,10 +210,11 @@
   function checkAch(ach, allAchievements, missing, wowheadCriteria) {
     if (!allAchievements[ach.id] && !knownMissingAchievements[ach.id])
     {
-        // always reset the criteria to either empty or wowhead based
-        var newCriteria = {}
 
         if (ach.criteria && ach.criteria.length > 1) {
+          // reset the criteria to wowhead based
+          var newCriteria = {}
+
           var critObj = wowheadCriteria[ach.id];
           for(var wowheadId in critObj) {
              if(critObj.hasOwnProperty(wowheadId)) {
@@ -225,10 +226,13 @@
                  });
              }
           } 
-        }
 
-        // update the criteria for the object
-        ach.criteria = newCriteria;
+          // update the criteria for the object
+          ach.criteria = newCriteria;
+        }
+        else {
+          delete ach['criteria'];
+        }
 
         console.log('NOT FOUND: ' + ach.id + ' - ' + ach.title + '...');
         missing.push(ach);

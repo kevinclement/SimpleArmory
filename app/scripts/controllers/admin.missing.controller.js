@@ -58,14 +58,20 @@
 
                 $scope.createItem = function(ach) {
 
-                    return {
+                    var myItem = {
                         'id': ach.id,
                         'icon': ach.icon,
                         'side': getFactionSymbol(ach.id, ach.factionId),
                         'obtainable': true,
-                        'points': ach.points,
-                        'criteria': ach.criteria
+                        'points': ach.points
                     };
+
+                    // only add criteria if we translated from wowhead
+                    if (ach.criteria) {
+                        myItem.criteria = ach.criteria;
+                    }
+
+                    return myItem;
                 }
             });
 
