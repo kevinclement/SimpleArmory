@@ -100,29 +100,26 @@
         };
 
         $scope.move = function() {
-            for (var i=0; i < $scope.missing.length; i++) {
-                var item = $scope.missing[i];
 
-                if (item.selected && item.selected === true) {
-                    console.log('adding ' + item.id + ' to ' + $scope.categorySelected.subcat.name);
+            $scope.missing.filter(item => item.selected === true).forEach(function(item) {
+                console.log('adding ' + item.id + ' to ' + $scope.categorySelected.subcat.name);
 
-                    var itemToSave = $scope.createItem(item);
-                    $scope.categorySelected.subcat.items.push(itemToSave);
+                var itemToSave = $scope.createItem(item);
+                $scope.categorySelected.subcat.items.push(itemToSave);
+    
+                // remove from scope
+                $scope.missing = $scope.missing.filter(function(missing) {
+                    if (item.id) {
+                        return item.id !== missing.id;
+                    }
+                    else {
+                        return item.spellid !== missing.spellid;
+                    }
+                });
 
-                    // remove from scope
-                    $scope.missing = $scope.missing.filter(function(missing) {
-                        if (item.id) {
-                            return item.id !== missing.id;
-                        }
-                        else {
-                            return item.spellid !== missing.spellid;
-                        }
-                    });
-
-                    // TODO: turn back on when I have time, hurt my brain
-                    // notify(item.id, $scope.categorySelected.subcat.name);
-                }
-            }
+                //         // TODO: turn back on when I have time, hurt my brain
+                //         // notify(item.id, $scope.categorySelected.subcat.name);
+            });
 
             $scope.$parent.canSave($scope.section, $scope.data);
         }
