@@ -69,13 +69,9 @@
                 }
             });
 
-            // TMP
-            $scope.missing = [
-                { 'id': '4476', 'icon': 'Achievement_Arena_2v2_3', 'factionId': 2, points:5 },
-                { 'id': '4477', 'icon': 'Achievement_Arena_3v3_4', 'factionId': 2, points:5 },
-                { 'id': '4478', 'icon': 'Achievement_Arena_5v5_3', 'factionId': 2, points:5 }
-            ]
-
+            AdminService.getMissingAchievements().then(function(data){
+                $scope.missing = data;
+            });
         }
 
         $scope.getImageSrc = function(item) {

@@ -6,7 +6,7 @@
   .service('AdminService', AdminService);
 
   // Keyed off of spellId
-  var knownMissing = {
+  var knownMissingMounts = {
     '17458':true,  // Fluorescent Green Mechanostrider - only give to one player on accident
     '147595':true, // Stormcrow - unknown origin yet in game
     '127178':true, // Jungle Riding Crane - mop mounts never available
@@ -25,6 +25,13 @@
     '48954':true,  // Old Swift Zhevra 
     '242896':true, // Vicious War Fox (added in 7.3 but not available yet)
     '242897':true  // Vicious War Fox (added in 7.3 but not available yet)
+  };
+
+  var knownMissingAchievements = {
+    '7268':true,
+    '7269':true,
+    '7270':true,
+    '8812':true, // You're Really Doing It Wrong (Level 90) - this one might actually be in game
   };
 
   function AdminService($http, $log, SettingsService, $q) {
@@ -57,9 +64,6 @@
                 { cache: true }
               )
               .then(function(data) {
-
-
-
                 return data;
               })
           ])
@@ -72,7 +76,7 @@
             for (var key in blizzardMounts) {
               var mount = blizzardMounts[key];
 
-              if (!allMounts[mount.spellId] && !knownMissing[mount.spellId])
+              if (!allMounts[mount.spellId] && !knownMissingMounts[mount.spellId])
               {
                   // Mount obj
                   //  creatureId
@@ -120,6 +124,70 @@
         return defer.promise;
       },
 
+      getMissingAchievements: function() {
+        var defer = $q.defer();
+        
+                $q
+                  .all([
+                    $http.get(SettingsService.jsonFiles.achievements).then(function(data) {
+                      
+                      var allAchievements = {};
+                      for (var key in data.supercats) {
+                       var supercat = data.supercats[key];
+                          for (var k2 in supercat.cats) {
+                              var cat = supercat.cats[k2];
+                              for (var k3 in cat.subcats) {
+                                  var subcat = cat.subcats[k3];
+                                  for (var k4 in subcat.items) {
+                                      var ach = subcat.items[k4];
+                                      allAchievements[ach.id] = ach; 
+                                  }
+                              }
+                          }
+                      }
+        
+                      return allAchievements;
+                    }),
+                    $http
+                      .jsonp(
+                        'https://us.api.battle.net/wow/data/character/achievements?locale=en_US&apikey=kwptv272nvrashj83xtxcdysghbkw6ep&jsonp=JSON_CALLBACK',
+                        { cache: true }
+                      )
+                      .then(function(data) {
+                        return data;
+                      })
+                  ])
+                  .then(function(data) {
+        
+                    var missingAchievements = [];
+                    var allAchievements = data[0];
+                    var blizzardAchievements = data[1].data.achievements;
+
+                    for (var key in blizzardAchievements) {
+                      var supercat = blizzardAchievements[key];
+
+                      // categories
+                      for (var c1 in supercat.categories) {
+                          var cat = supercat.categories[c1];
+                          for (var a1 in cat.achievements) { 
+                              var ach = cat.achievements[a1];
+                              checkAch(ach, allAchievements);
+                          }
+                      }
+              
+                      // top level achievements   
+                      for (var a1 in supercat.achievements) { 
+                          var ach = supercat.achievements[a1];
+                          checkAch(ach, allAchievements);
+                      }
+                    }	  
+        
+                    defer.resolve(missingAchievements);
+                  });
+        
+                return defer.promise;
+      },
+
       getMountData: function() {
         return $http.get(SettingsService.jsonFiles.mounts, { cache: true, isArray: true }).then(function(data) {
           return data.data;
@@ -133,4 +201,12 @@
       }
     };
   }
+
+  function checkAch(ach, allAchievements) {
+    if (!allAchievements[ach.id] && !knownMissingAchievements[ach.id])
+    {
+        console.log('NOT FOUND: ' + ach.id + ' - ' + ach.title + '...');
+        //notFound.push(ach);
+    }
+}
 })();
