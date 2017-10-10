@@ -3,6 +3,7 @@
 
 var bodyParser = require('body-parser');
 var request = require('request');
+var cachedWowheadRequest;
 
 exports.getMiddleware = function() {
     return [
@@ -29,7 +30,12 @@ exports.getMiddleware = function() {
         var criteriaUrl = req.url.indexOf('/criteria/') === 0;
         if (!criteriaUrl) return next();
 
-        request('http://www.wowhead.com/data=achievements', function (error, response, body) {
+        // No need to query from wowhead for every refresh in admin session, restart dev env for a refresh
+        if (cachedWowheadRequest) {
+          res.setHeader('Content-Type', 'application/json');
+          res.end(cachedWowheadRequest);
+        } else {
+          request('http://www.wowhead.com/data=achievements', function (error, response, body) {
             if (!error && response.statusCode == 200) {
 
                 // criteria mapping
@@ -49,7 +55,7 @@ exports.getMiddleware = function() {
                 //        ]
                 //   }
                 // }
-
+                cachedWowheadRequest = match[1];
                 res.setHeader('Content-Type', 'application/json');
                 res.end(match[1]);
             }
@@ -59,7 +65,8 @@ exports.getMiddleware = function() {
 
                 res.end(response.statusCode);
             }
-        });
+          });
+        }
       }
     ];
 }
