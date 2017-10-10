@@ -42,7 +42,8 @@
     max-width: 575px;
   }
   .missingSection {
-    height: 342px;
+    height: 529px;
+    overflow-y: scroll;
     border: 1px solid rgb(169, 169, 169);
   }
   .missingItem {
@@ -74,11 +75,12 @@
               <img ng-src="{{getImageSrc(item, true)}}">
             </a>
         </div>
+        <div style="float:right" ng-if="missing.length > 0">{{missing.length}} found</div>
     </div>
     <div><a class="btn btn-primary movebtn" role="button" ng-disabled="moveDisabled" ng-click="move()">Move ↠</a></div>
     <div>
         <h4>{{col2Title}}</h4>
-        <select size="20" class="col" ng-change="selectionChanged(true)" ng-model="categorySelected" ng-options="item as item.label for item in categories"></select>
+        <select size="31" class="col" ng-change="selectionChanged(true)" ng-model="categorySelected" ng-options="item as item.label for item in categories"></select>
     </div>
   </div>
 </div>

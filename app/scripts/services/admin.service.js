@@ -126,66 +126,65 @@
 
       getMissingAchievements: function() {
         var defer = $q.defer();
-        
-                $q
-                  .all([
-                    $http.get(SettingsService.jsonFiles.achievements).then(function(data) {
-                      
-                      var allAchievements = {};
-                      for (var key in data.supercats) {
-                       var supercat = data.supercats[key];
-                          for (var k2 in supercat.cats) {
-                              var cat = supercat.cats[k2];
-                              for (var k3 in cat.subcats) {
-                                  var subcat = cat.subcats[k3];
-                                  for (var k4 in subcat.items) {
-                                      var ach = subcat.items[k4];
-                                      allAchievements[ach.id] = ach; 
-                                  }
-                              }
+        $q
+          .all([
+            $http.get(SettingsService.jsonFiles.achievements).then(function(data) {
+
+              var allAchievements = {};
+              for (var key in data.data.supercats) {
+                var supercat = data.data.supercats[key];
+                  for (var k2 in supercat.cats) {
+                      var cat = supercat.cats[k2];
+                      for (var k3 in cat.subcats) {
+                          var subcat = cat.subcats[k3];
+                          for (var k4 in subcat.items) {
+                              var ach = subcat.items[k4];
+                              allAchievements[ach.id] = ach; 
                           }
                       }
-        
-                      return allAchievements;
-                    }),
-                    $http
-                      .jsonp(
-                        'https://us.api.battle.net/wow/data/character/achievements?locale=en_US&apikey=kwptv272nvrashj83xtxcdysghbkw6ep&jsonp=JSON_CALLBACK',
-                        { cache: true }
-                      )
-                      .then(function(data) {
-                        return data;
-                      })
-                  ])
-                  .then(function(data) {
-        
-                    var missingAchievements = [];
-                    var allAchievements = data[0];
-                    var blizzardAchievements = data[1].data.achievements;
+                  }
+              }
 
-                    for (var key in blizzardAchievements) {
-                      var supercat = blizzardAchievements[key];
+              return allAchievements;
+            }),
+            $http
+              .jsonp(
+                'https://us.api.battle.net/wow/data/character/achievements?locale=en_US&apikey=kwptv272nvrashj83xtxcdysghbkw6ep&jsonp=JSON_CALLBACK',
+                { cache: true }
+              )
+              .then(function(data) {
+                return data;
+              })
+          ])
+          .then(function(data) {
 
-                      // categories
-                      for (var c1 in supercat.categories) {
-                          var cat = supercat.categories[c1];
-                          for (var a1 in cat.achievements) { 
-                              var ach = cat.achievements[a1];
-                              checkAch(ach, allAchievements);
-                          }
-                      }
-              
-                      // top level achievements   
-                      for (var a1 in supercat.achievements) { 
-                          var ach = supercat.achievements[a1];
-                          checkAch(ach, allAchievements);
-                      }
-                    }	  
-        
-                    defer.resolve(missingAchievements);
-                  });
-        
-                return defer.promise;
+            var missingAchievements = [];
+            var allAchievements = data[0];
+            var blizzardAchievements = data[1].data.achievements;
+
+            for (var key in blizzardAchievements) {
+              var supercat = blizzardAchievements[key];
+
+              // categories
+              for (var c1 in supercat.categories) {
+                  var cat = supercat.categories[c1];
+                  for (var a1 in cat.achievements) { 
+                      var ach = cat.achievements[a1];
+                      checkAch(ach, allAchievements, missingAchievements);
+                  }
+              }
+      
+              // top level achievements   
+              for (var a1 in supercat.achievements) { 
+                  var ach = supercat.achievements[a1];
+                  checkAch(ach, allAchievements, missingAchievements);
+              }
+            }	  
+
+            defer.resolve(missingAchievements);
+          });
+
+        return defer.promise;
       },
 
       getMountData: function() {
@@ -202,11 +201,11 @@
     };
   }
 
-  function checkAch(ach, allAchievements) {
+  function checkAch(ach, allAchievements, missing) {
     if (!allAchievements[ach.id] && !knownMissingAchievements[ach.id])
     {
         console.log('NOT FOUND: ' + ach.id + ' - ' + ach.title + '...');
-        //notFound.push(ach);
+        missing.push(ach);
     }
 }
 })();
