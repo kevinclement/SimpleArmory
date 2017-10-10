@@ -5,9 +5,6 @@
 
 module.exports = function (grunt) {
 
-  // Used by connect to parse body for admin section to save to json
-  var bodyParser = require('body-parser');
-  
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
 
@@ -69,24 +66,10 @@ module.exports = function (grunt) {
       },
       livereload: {
         options: {
-          open: true,
+          open: false,
           middleware: function (connect) {
             return [
-              bodyParser.json({limit: '5mb'}), // will parse json data out of the body
-              function(req, res, next) {
-
-                // NOTE: special contract with me and admin section of site that allows
-                // me to post json to /save/<file>/, and I'll write it to <file>.json on disk
-                var saveUrl = req.url.indexOf('/save/') === 0;
-                if (!saveUrl) return next();
-
-                var fileToSaveTo = 'app/data/' + req.url.replace('/save/', '') + '.json';
-                require('fs').writeFile(
-                  fileToSaveTo,
-                  JSON.stringify(req.body, null, '  '));
-
-                res.end('Uploaded to ' + fileToSaveTo);
-              },
+              ...require('./grunt.connect.routes.js').getMiddleware(),
               connect.static('.tmp'),
               connect().use(
                 '/bower_components',
