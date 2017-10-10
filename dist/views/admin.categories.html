@@ -1,0 +1,14 @@
+<style>.wrapper {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+  }
+  .col {
+    width: 220px;
+  }
+  .buttonRow {
+    margin-top:5px;
+  }
+  .buttonRight {
+    float:right;
+    margin-right:30px;
+  }</style> <div ng-controller="AdminCategories" class="wrapper"> <h4>{{col1Title}}</h4> <h4>{{col2Title}}</h4> <a target="{{settings.anchorTarget}}" ng-href="//{{settings.WowHeadUrl}}/{{col3Link(col3selected)}}"> <h4>{{col3Title}}</h4> </a> <select size="20" class="col" ng-change="selectionChanged(true)" ng-model="col1selected" ng-options="item as item.name for item in col1items"></select> <select size="20" class="col" ng-change="selectionChanged(true)" ng-model="col2selected" ng-options="item as item.name for item in col2items"></select> <select size="20" class="col" ng-change="selectionChanged(true)" ng-model="col3selected" ng-options="item as col3Label(item) for item in col3items"></select> <div class="buttonRow"> <span> <a class="btn btn-default btn-sm" role="button" ng-click="add(col1items, col1Title, col1Factory)">+</a> <a class="btn btn-default btn-sm" role="button" ng-click="removeCol1()">-</a> </span> <span class="buttonRight"> <a class="btn btn-default btn-sm" role="button" ng-click="move(true, col1selected, col1items)" ng-disabled="col1UpDisabled">↑</a> <a class="btn btn-default btn-sm" role="button" ng-click="move(false, col1selected, col1items)" ng-disabled="col1DownDisabled">↓</a> </span> </div> <div class="buttonRow"> <span> <a class="btn btn-default btn-sm" role="button" ng-click="add(col1selected[col1child], col2Title, col2Factory)">+</a> <a class="btn btn-default btn-sm" role="button" ng-click="removeCol2()">-</a> </span> <span class="buttonRight"> <a class="btn btn-default btn-sm" role="button" ng-click="move(true, col2selected, col1selected)" ng-disabled="col2UpDisabled">↑</a> <a class="btn btn-default btn-sm" role="button" ng-click="move(false, col2selected, col1selected)" ng-disabled="col2DownDisabled">↓</a> </span> </div> <div class="buttonRow"> <span class="buttonRight"> <a class="btn btn-default btn-sm" role="button" ng-click="move(true, col3selected, col2selected)" ng-disabled="col3UpDisabled">↑</a> <a class="btn btn-default btn-sm" role="button" ng-click="move(false, col3selected, col2selected)" ng-disabled="col3DownDisabled">↓</a> </span> </div> </div>

@@ -1,0 +1,62 @@
+<style>/* Animations for notify */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 280px 125px auto;
+  }
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  .alertNotify {
+    position: fixed;
+    right: 58px; 
+    opacity: 0;
+  }
+  .fadeIn {
+    animation-name: fadeIn;
+  }
+  .fadeOut {
+    animation-name: fadeOut;
+  }
+  .col {
+    max-width: 575px;
+  }
+  .missingSection {
+    height: 529px;
+    overflow-y: scroll;
+    border: 1px solid rgb(169, 169, 169);
+  }
+  .missingItem {
+    margin: 1px;
+  }
+  .missingItem img {
+    width: 100%;
+    height: 100%;
+  }
+  .missingItemSelected {
+    border: 3px solid green !important;
+  }
+  .movebtn { 
+    font-size: 18px;
+    margin-top: 55px;
+    margin-left: 16px;
+  }</style> <div ng-controller="AdminMissing"> <div ng-class="{'fadeIn': notifyIn, 'fadeOut': notifyOut}" class="alert alert-info alertNotify animated" role="alert"> <strong>{{notify.name}}</strong> moved to <strong>{{notify.subcat}}</strong>. </div> <div class="wrapper"> <div> <h4>{{col1Title}}</h4> <div class="missingSection"> <a target="_blank" ng-click="clicked($event, this.item)" ng-href="//{{settings.WowHeadUrl}}/{{ getLink(item) }}" class="thumbnail missingItem" ng-repeat="item in missing"> <img ng-src="{{getImageSrc(item, true)}}"> </a> </div> <div style="float:right" ng-if="missing.length > 0">{{missing.length}} found</div> </div> <div><a class="btn btn-primary movebtn" role="button" ng-disabled="moveDisabled" ng-click="move()">Move ↠</a></div> <div> <h4>{{col2Title}}</h4> <select size="31" class="col" ng-change="selectionChanged(true)" ng-model="categorySelected" ng-options="item as item.label for item in categories"></select> </div> </div> </div>
