@@ -1,9 +1,9 @@
-[x] modify achievement shit to do the criteria too
+[ ] achievements
+[ ] reorder raid based on raid order
+[ ] remove drag/drop from production, any others I added there?
 
 [ ] bug: can't move achievement super cats (column1)
-[x] bug: category admin is only saving subsection
 [ ] show special ui when no missing mounts
-[ ] achievements
 [ ] have a helpers service for a lot of the common code and find and move all none scope functions there
 
 [ ] cleanup: achievements and remove criteria: {} types
@@ -42,3 +42,5 @@ admin for mounts:
 [x] add 7.3 mounts
 [x] unify category admin 
 [-] add names to all the things so reordering is easier.  determine size impact first.  is the url trick in item good enough?
+[x] bug: category admin is only saving subsection
+[x] modify achievement shit to do the criteria too
