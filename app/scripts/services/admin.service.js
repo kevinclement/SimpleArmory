@@ -154,13 +154,19 @@
               )
               .then(function(data) {
                 return data;
-              })
+            }),
+            $http.get('/criteria/').then(function(data) {
+              // special route I host during development to query wowhead to get around
+              // cors issues
+              return data.data;
+            })
           ])
           .then(function(data) {
 
             var missingAchievements = [];
             var allAchievements = data[0];
             var blizzardAchievements = data[1].data.achievements;
+            var wowheadCriteria = data[2];
 
             for (var key in blizzardAchievements) {
               var supercat = blizzardAchievements[key];
@@ -170,14 +176,14 @@
                   var cat = supercat.categories[c1];
                   for (var a1 in cat.achievements) { 
                       var ach = cat.achievements[a1];
-                      checkAch(ach, allAchievements, missingAchievements);
+                      checkAch(ach, allAchievements, missingAchievements, wowheadCriteria);
                   }
               }
       
               // top level achievements   
               for (var a1 in supercat.achievements) { 
                   var ach = supercat.achievements[a1];
-                  checkAch(ach, allAchievements, missingAchievements);
+                  checkAch(ach, allAchievements, missingAchievements, wowheadCriteria);
               }
             }	  
 
@@ -201,9 +207,29 @@
     };
   }
 
-  function checkAch(ach, allAchievements, missing) {
+  function checkAch(ach, allAchievements, missing, wowheadCriteria) {
     if (!allAchievements[ach.id] && !knownMissingAchievements[ach.id])
     {
+        // always reset the criteria to either empty or wowhead based
+        var newCriteria = {}
+
+        if (ach.criteria && ach.criteria.length > 1) {
+          var critObj = wowheadCriteria[ach.id];
+          for(var wowheadId in critObj) {
+             if(critObj.hasOwnProperty(wowheadId)) {
+               var wowArray = critObj[wowheadId];
+            
+               wowArray.forEach(function(blizArray) {
+                 var blizId = blizArray[1];
+                 newCriteria[blizId] = wowheadId;
+                 });
+             }
+          } 
+        }
+
+        // update the criteria for the object
+        ach.criteria = newCriteria;
+
         console.log('NOT FOUND: ' + ach.id + ' - ' + ach.title + '...');
         missing.push(ach);
     }

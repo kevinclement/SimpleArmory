@@ -57,14 +57,14 @@
                 $scope.data = data;
 
                 $scope.createItem = function(ach) {
-                    
+
                     return {
                         'id': ach.id,
                         'icon': ach.icon,
                         'side': getFactionSymbol(ach.id, ach.factionId),
                         'obtainable': true,
                         'points': ach.points,
-                        'criteria': {}
+                        'criteria': ach.criteria
                     };
                 }
             });
@@ -101,7 +101,7 @@
                     console.log('adding ' + item.id + ' to ' + $scope.categorySelected.subcat.name);
 
                     var itemToSave = $scope.createItem(item);
-                    $scope.categorySelected.subcat.items.push(item);
+                    $scope.categorySelected.subcat.items.push(itemToSave);
 
                     // remove from scope
                     $scope.missing = $scope.missing.filter(function(missing) {
