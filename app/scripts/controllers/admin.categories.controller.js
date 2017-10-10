@@ -27,6 +27,7 @@
 
                 $scope.saveFile = 'mounts';
                 $scope.col1items = data;
+                $scope.saveData = data;
 
                 $scope.col3Title = 'Mount';
                 $scope.col3Label = function(col3item) {
@@ -60,6 +61,7 @@
                 }
 
                 $scope.saveFile = 'achievements';
+                $scope.saveData = data;
                 $scope.col1items = categories;
 
                 $scope.col3Title = 'Achievement';
@@ -104,7 +106,7 @@
 
             // if called from an index change, then don't mark it dirty
             if (!indexChanged) {
-                $scope.$parent.canSave($scope.saveFile, $scope.col1items);
+                $scope.$parent.canSave($scope.saveFile, $scope.saveData);
             }
         };
 
