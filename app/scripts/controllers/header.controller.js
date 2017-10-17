@@ -47,7 +47,7 @@
         $scope.imgUrl = function() {
             if ($scope.character) {
                 var c = $scope.character;
-                return window.location.protocol + '//' + c.region + '.battle.net/static-render/' + c.region + '/' + c.thumbnail;
+                return window.location.protocol + '//render-' + c.region + '.worldofwarcraft.com/character/' + c.thumbnail;
             }
 
             return '';   
