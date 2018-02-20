@@ -213,6 +213,11 @@
                         //    4) You meet the race restriction
                         var hasthis = itm.collected;
                         var showthis = (hasthis || !item.notObtainable);
+
+                        if (item.side && item.side !== character.faction) {
+                            showthis = false;
+                        }
+
                         if (item.allowableRaces && item.allowableRaces.length > 0)
                         {
                             var foundRace = false;
