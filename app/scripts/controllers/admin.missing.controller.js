@@ -17,9 +17,7 @@
         $scope.moveDisabled = true;
 
         // TODO: take mount specific shit out of it
-        // TODO: rename to missing in controller and html
         // TODO: will need to add ids to achievement categories
-        // TODO: fix route to including missing
 
         // TODO: have support for both mount and achievements
         if ($scope.section === 'mounts') {
@@ -62,9 +60,13 @@
                     var myItem = {
                         'id': ach.id,
                         'icon': ach.icon,
-                        'side': getFactionSymbol(ach.id, ach.factionId),
                         'points': ach.points
                     };
+
+                    var side = getFactionSymbol(ach.id, ach.factionId);
+                    if (side !== '') {
+                        myItem.side = side;
+                    }
 
                     // only add criteria if we translated from wowhead
                     if (ach.criteria) {
