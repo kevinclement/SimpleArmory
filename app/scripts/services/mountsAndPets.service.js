@@ -298,8 +298,7 @@
                         9,
                         10,
                         26
-                    ],
-                    'allowableClasses': null
+                    ]
                 };
                 found[179244] = false;
 

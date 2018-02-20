@@ -106,7 +106,6 @@
                       'spellid': mount.spellId,
                       'itemId': mount.itemId,
                       'icon': mount.icon,
-                      'allowableClasses': null,
                       'name': mount.name
                   };
 
