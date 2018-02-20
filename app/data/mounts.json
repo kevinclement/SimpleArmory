@@ -3127,6 +3127,18 @@
             "icon": "ability_mount_viciouskorkronannihilator",
             "notObtainable": true,
             "side": "H"
+          },
+          {
+            "spellid": 242896,
+            "itemId": 152870,
+            "icon": "inv_viciouswarfoxalliance",
+            "side": "A"
+          },
+          {
+            "spellid": 242897,
+            "itemId": 152869,
+            "icon": "inv_viciouswarfoxhorde",
+            "side": "H"
           }
         ],
         "id": "2255b4f2"
@@ -3276,6 +3288,12 @@
             "spellid": "227994",
             "itemId": "141847",
             "icon": "inv_stormdragonmount2light",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_stormdragonmount2_fel",
+            "spellid": 243201,
+            "itemId": 153493,
             "notObtainable": true
           }
         ],
@@ -3644,6 +3662,10 @@
             "spellid": 243512,
             "itemId": 147901,
             "icon": "inv_shadowstalkerpanthermount"
+          },
+          {
+            "icon": "1795322",
+            "spellid": 259395
           }
         ],
         "id": "a90a3293"
@@ -3655,6 +3677,16 @@
             "spellid": "58983",
             "itemId": "43599",
             "icon": "ability_mount_bigblizzardbear"
+          },
+          {
+            "icon": "inv_allianceshipmount",
+            "spellid": 245723,
+            "itemId": 151618
+          },
+          {
+            "icon": "inv_hordezeppelinmount",
+            "spellid": 245725,
+            "itemId": 151617
           }
         ],
         "id": "6f31dfa2"
@@ -3676,6 +3708,14 @@
             "spellid": "189998",
             "itemId": "128425",
             "icon": "inv_felstalkermount"
+          },
+          {
+            "icon": "inv_dressedhorse",
+            "spellid": 255695
+          },
+          {
+            "icon": "inv_armoredraptor",
+            "spellid": 255696
           }
         ],
         "id": "259f733d"
