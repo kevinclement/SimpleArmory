@@ -213,7 +213,7 @@
                         //    4) You meet the race restriction
                         var hasthis = itm.collected;
                         var showthis = (hasthis || !item.notObtainable);
-                        if (item.allowableRaces.length > 0)
+                        if (item.allowableRaces && item.allowableRaces.length > 0)
                         {
                             var foundRace = false;
                             angular.forEach(item.allowableRaces, function(race) {
@@ -316,7 +316,6 @@
                 collected[48778] = {
                     'spellid': '48778',
                     'icon': 'Spell_DeathKnight_SummonDeathCharger',
-                    'allowableRaces': [],
                     'allowableClasses': [6]
                 };
 
