@@ -30,6 +30,14 @@ bower install
 - `grunt` builds the site full
 - `grunt serve` runs the app in dev mode
 
+To test changes I usually use a character that has a lot of achievements, mounts and pets from both factions.  I usually check out rankings on guildox.
+- [Achievements - Horde](http://localhost:9001/#/us/Thrall/Ranklock)
+- [Achievements - Alliance](http://localhost:9001/#/us/Proudmoore/Vanas)
+- [Mounts - Horde](http://localhost:9001/#/us/thrall/shaketank/collectable/mounts)
+- [Mounts - Alliance](http://localhost:9001/#/us/sargeras/Jramm/collectable/mounts)
+- [Pets - Horde](http://localhost:9001/#/us/burning%20blade/mastr/collectable/companions)
+- [Pets - Alliance](http://localhost:9001/#/eu/azuregos/%D0%BC%D0%B0%D1%80%D0%B8%D0%BE%D0%B4%D0%B0/collectable/companions)
+
 Authors:
 -------
 
