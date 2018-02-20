@@ -211,7 +211,7 @@
                         //    2) Its still obtainable 
                         //    3) You meet the class restriction
                         //    4) You meet the race restriction
-                        var hasthis = itm.collected;            
+                        var hasthis = itm.collected;
                         var showthis = (hasthis || item.obtainable);
                         if (item.allowableRaces.length > 0)
                         {
@@ -288,8 +288,6 @@
 
                 collected[179244] = {
                     'spellid': '179244',
-                    'allianceId': null,
-                    'hordeId': null,
                     'itemId': '122703',
                     'icon': 'inv_misc_key_06',
                     'obtainable': true,
@@ -318,8 +316,6 @@
 
                 collected[48778] = {
                     'spellid': '48778',
-                    'allianceId': null,
-                    'hordeId': null,
                     'itemId': null,
                     'icon': 'Spell_DeathKnight_SummonDeathCharger',
                     'obtainable': true,
