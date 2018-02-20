@@ -295,22 +295,14 @@
                     'spellid': '179244',
                     'itemId': '122703',
                     'icon': 'inv_misc_key_06',
-                    'allowableRaces': [
-                        2,
-                        5,
-                        6,
-                        8,
-                        9,
-                        10,
-                        26
-                    ]
+                    'side': 'H'
                 };
                 found[179244] = false;
 
                 if (character.faction === 'H') {
                     plusMounts++;
                 }
-            }            
+            }
 
             // Death Knight fix (if you're a death knight, you get acherus-deathcharger if you have the other one)
             if (character.class === 6 && characterProperty === 'mounts' && !collected[48778] && collected[54729]) {
@@ -325,7 +317,7 @@
 
                 found[48778] = false;
                 plusMounts++;
-            }  
+            }
         }
     }
 
