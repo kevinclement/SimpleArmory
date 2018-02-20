@@ -107,6 +107,30 @@
             "spellid": 254260,
             "itemId": 153041,
             "icon": "inv_argustalbukmount_felred"
+          },
+          {
+            "icon": "inv_hmmoosemount",
+            "spellid": 258060,
+            "itemId": 155662,
+            "side": "H"
+          },
+          {
+            "icon": "ability_mount_voidelfstridermount",
+            "spellid": 259202,
+            "itemId": 156486,
+            "side": "A"
+          },
+          {
+            "icon": "inv_nightborneracialmount",
+            "spellid": 258845,
+            "itemId": 156487,
+            "side": "H"
+          },
+          {
+            "icon": "inv_lightforgedelekk",
+            "spellid": 258022,
+            "itemId": 155656,
+            "side": "A"
           }
         ],
         "id": "13a5b522"
@@ -480,6 +504,27 @@
             "icon": "inv_warlockmountfire",
             "allowableClasses": [
               9
+            ]
+          },
+          {
+            "icon": "inv_priestmount",
+            "spellid": 229377,
+            "allowableClasses": [
+              5
+            ]
+          },
+          {
+            "icon": "inv_magemount",
+            "spellid": 229376,
+            "allowableClasses": [
+              8
+            ]
+          },
+          {
+            "icon": "inv_dhmount",
+            "spellid": 229417,
+            "allowableClasses": [
+              12
             ]
           }
         ],
@@ -2177,12 +2222,6 @@
         "name": "Raid Drop",
         "items": [
           {
-            "spellid": "26656",
-            "itemId": "21176",
-            "icon": "inv_misc_qirajicrystal_05",
-            "notObtainable": true
-          },
-          {
             "spellid": "25953",
             "itemId": "21218",
             "icon": "inv_misc_qirajicrystal_04"
@@ -3088,6 +3127,18 @@
             "icon": "ability_mount_viciouskorkronannihilator",
             "notObtainable": true,
             "side": "H"
+          },
+          {
+            "spellid": 242896,
+            "itemId": 152870,
+            "icon": "inv_viciouswarfoxalliance",
+            "side": "A"
+          },
+          {
+            "spellid": 242897,
+            "itemId": 152869,
+            "icon": "inv_viciouswarfoxhorde",
+            "side": "H"
           }
         ],
         "id": "2255b4f2"
@@ -3237,6 +3288,12 @@
             "spellid": "227994",
             "itemId": "141847",
             "icon": "inv_stormdragonmount2light",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_stormdragonmount2_fel",
+            "spellid": 243201,
+            "itemId": 153493,
             "notObtainable": true
           }
         ],
@@ -3605,6 +3662,10 @@
             "spellid": 243512,
             "itemId": 147901,
             "icon": "inv_shadowstalkerpanthermount"
+          },
+          {
+            "icon": "1795322",
+            "spellid": 259395
           }
         ],
         "id": "a90a3293"
@@ -3616,6 +3677,16 @@
             "spellid": "58983",
             "itemId": "43599",
             "icon": "ability_mount_bigblizzardbear"
+          },
+          {
+            "icon": "inv_allianceshipmount",
+            "spellid": 245723,
+            "itemId": 151618
+          },
+          {
+            "icon": "inv_hordezeppelinmount",
+            "spellid": 245725,
+            "itemId": 151617
           }
         ],
         "id": "6f31dfa2"
@@ -3637,6 +3708,14 @@
             "spellid": "189998",
             "itemId": "128425",
             "icon": "inv_felstalkermount"
+          },
+          {
+            "icon": "inv_dressedhorse",
+            "spellid": 255695
+          },
+          {
+            "icon": "inv_armoredraptor",
+            "spellid": 255696
           }
         ],
         "id": "259f733d"
@@ -4003,6 +4082,27 @@
             "itemId": "13086",
             "icon": "ability_mount_pinktiger",
             "side": "A"
+          },
+          {
+            "spellid": "26656",
+            "itemId": "21176",
+            "icon": "inv_misc_qirajicrystal_05",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_misc_qirajicrystal_05",
+            "spellid": 25863,
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_misc_qirajicrystal_05",
+            "spellid": 26655,
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_ridingsilithid2",
+            "spellid": 239770,
+            "notObtainable": true
           }
         ],
         "id": "d7fbf0fc"
