@@ -104,7 +104,6 @@
                   // format it properly for me
                   var myMount = {
                       'spellid': mount.spellId,
-                      'hordeId': null,
                       'itemId': mount.itemId,
                       'icon': mount.icon,
                       'obtainable': true,
