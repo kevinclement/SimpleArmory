@@ -1951,6 +1951,11 @@
                   "points": 10
                 },
                 {
+                  "id": 12257,
+                  "icon": "inv_herbalism_70_starlightrosedust",
+                  "points": 10
+                },
+                {
                   "id": 11915,
                   "icon": "inv_sword_1h_aggramar_d_01",
                   "points": 10
@@ -27270,6 +27275,23 @@
                   "id": 12289,
                   "icon": "inv_pet_wretchedelf",
                   "points": 5
+                },
+                {
+                  "id": 12290,
+                  "icon": "icon_ravagergold",
+                  "points": 10,
+                  "criteria": {
+                    "38935": "63649",
+                    "38936": "63650",
+                    "38937": "63651",
+                    "38938": "63652",
+                    "38939": "63653",
+                    "38940": "63654",
+                    "38941": "63655",
+                    "38942": "63656",
+                    "38943": "63657",
+                    "38944": "63658"
+                  }
                 }
               ],
               "id": "04f45fbe"
@@ -36116,6 +36138,26 @@
                   "id": "11064",
                   "icon": "inv_pet_babywinston",
                   "points": 0
+                },
+                {
+                  "id": 12229,
+                  "icon": "inv_dressedhorse",
+                  "points": 0,
+                  "side": "A",
+                  "criteria": {}
+                },
+                {
+                  "id": 12230,
+                  "icon": "inv_armoredraptor",
+                  "points": 0,
+                  "side": "H",
+                  "criteria": {}
+                },
+                {
+                  "id": 12232,
+                  "icon": "inv_babytortollan",
+                  "points": 0,
+                  "criteria": {}
                 }
               ],
               "id": "7a094f6c"
