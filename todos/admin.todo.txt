@@ -4,7 +4,6 @@
 
 [ ] cleanup: have a helpers service for a lot of the common code and find and move all none scope functions there
 [ ] cleanup: achievements and remove criteria: {} types
-[ ] cleanup: default obtainable to true, remove all set to true, leave only false
 
  -----------
 [x] bug: when adding a category if you cancel it shows up as null
@@ -44,3 +43,4 @@ admin for mounts:
 [x] achievements
 [x] reorder raid based on raid order
 [x] remove drag/drop from production, any others I added there?
+[x] cleanup: default obtainable to true, remove all set to true, leave only false

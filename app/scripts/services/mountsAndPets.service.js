@@ -212,7 +212,7 @@
                         //    3) You meet the class restriction
                         //    4) You meet the race restriction
                         var hasthis = itm.collected;
-                        var showthis = (hasthis || item.obtainable);
+                        var showthis = (hasthis || !item.notObtainable);
                         if (item.allowableRaces.length > 0)
                         {
                             var foundRace = false;
@@ -290,7 +290,6 @@
                     'spellid': '179244',
                     'itemId': '122703',
                     'icon': 'inv_misc_key_06',
-                    'obtainable': true,
                     'allowableRaces': [
                         2,
                         5,
@@ -316,9 +315,7 @@
 
                 collected[48778] = {
                     'spellid': '48778',
-                    'itemId': null,
                     'icon': 'Spell_DeathKnight_SummonDeathCharger',
-                    'obtainable': true,
                     'allowableRaces': [],
                     'allowableClasses': [6]
                 };

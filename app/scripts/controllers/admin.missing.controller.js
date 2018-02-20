@@ -63,7 +63,6 @@
                         'id': ach.id,
                         'icon': ach.icon,
                         'side': getFactionSymbol(ach.id, ach.factionId),
-                        'obtainable': true,
                         'points': ach.points
                     };
 

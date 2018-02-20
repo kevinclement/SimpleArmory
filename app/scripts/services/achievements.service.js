@@ -137,7 +137,7 @@
                             }
 
                             // Update counts proper
-                            if (supercat.name !== 'Feats of Strength' && supercat.name !== 'Legacy' && ach.obtainable && 
+                            if (supercat.name !== 'Feats of Strength' && supercat.name !== 'Legacy' && !ach.notObtainable && 
                                 (ach.side === '' || ach.side === character.faction)){
                                 possibleCount++;
                                 totalPossible++;
