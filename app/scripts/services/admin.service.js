@@ -41,6 +41,17 @@
     '66123':true,  // Magic Rooster - Draenei Male
     '66122':true,  // Magic Rooster 
     '66124':true,  // Magic Rooster - Tauren Male
+    '60136':true,  // Grand Caravan Mammoth
+    '60140':true,  // Grand Caravan Mammoth
+    '55164':true,  // Swift Spectral Gryphon
+    '59572':true,  // Black Polar Bear
+    '28828':true,  // Nether Drake
+    '44317':true,  // Merciless Nether Drake
+    '194046':true, // Swift Spectral Rylak
+    '62048':true,  // Black Dragonhawk Mount
+    '239363':true, // Swift Spectral Hippogryph
+    '239767':true, // Ruby Qiraji Resonating Crystal - only available during holiday
+    '239766':true, // Sapphire  Qiraji Resonating Crystal - only available during holiday
   };
 
   var knownMissingAchievements = {

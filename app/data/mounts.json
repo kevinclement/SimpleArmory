@@ -2198,12 +2198,6 @@
         "name": "Raid Drop",
         "items": [
           {
-            "spellid": "26656",
-            "itemId": "21176",
-            "icon": "inv_misc_qirajicrystal_05",
-            "notObtainable": true
-          },
-          {
             "spellid": "25953",
             "itemId": "21218",
             "icon": "inv_misc_qirajicrystal_04"
@@ -4024,7 +4018,29 @@
             "itemId": "13086",
             "icon": "ability_mount_pinktiger",
             "side": "A"
+          },
+          {
+            "spellid": "26656",
+            "itemId": "21176",
+            "icon": "inv_misc_qirajicrystal_05",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_misc_qirajicrystal_05",
+            "spellid": 25863,
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_misc_qirajicrystal_05",
+            "spellid": 26655,
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_ridingsilithid2",
+            "spellid": 239770,
+            "notObtainable": true
           }
+          
         ],
         "id": "d7fbf0fc"
       },
