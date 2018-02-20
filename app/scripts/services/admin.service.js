@@ -24,7 +24,23 @@
     '171618':true, // Ancient Leatherhide - unknown
     '48954':true,  // Old Swift Zhevra 
     '242896':true, // Vicious War Fox (added in 7.3 but not available yet)
-    '242897':true  // Vicious War Fox (added in 7.3 but not available yet)
+    '242897':true,
+    '459':true,    // Gray Wolf - old mounts, marked not in game
+    '581':true,    // Winter Wolf
+    '578':true,    // Black Wolf
+    '579':true,    // Red Wolf
+    '15780':true,  // Green Mechanostrider
+    '33630':true,  // Blue Mechanostrider
+    '10795':true,  // Ivory Raptor
+    '468':true,    // White Stallion
+    '8980':true,   // Skelatal Horse
+    '64656':true,  // Blue Skelatal Warhorse
+    '6896':true,   // Black Ram
+    '18363':true,  // Riding Kodo
+    '49378':true,  // Brewfest Riding Kodo
+    '66123':true,  // Magic Rooster - Draenei Male
+    '66122':true,  // Magic Rooster 
+    '66124':true,  // Magic Rooster - Tauren Male
   };
 
   var knownMissingAchievements = {
