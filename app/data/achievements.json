@@ -15798,43 +15798,6 @@
                 }
               ],
               "id": "0e362ed4"
-            },
-            {
-              "name": "Khadgar",
-              "items": [
-                {
-                  "id": "9640",
-                  "icon": "garrison_building_magetower",
-                  "points": 25
-                },
-                {
-                  "id": "9641",
-                  "icon": "garrison_building_magetower",
-                  "points": 25
-                },
-                {
-                  "id": "9642",
-                  "icon": "garrison_building_magetower",
-                  "points": 25,
-                  "criteria": {
-                    "26487": "40217",
-                    "26488": "40218"
-                  }
-                },
-                {
-                  "id": "10021",
-                  "icon": "quest_khadgar",
-                  "side": "A",
-                  "points": 25
-                },
-                {
-                  "id": "10148",
-                  "icon": "quest_khadgar",
-                  "side": "H",
-                  "points": 25
-                }
-              ],
-              "id": "8a09cc7a"
             }
           ],
           "id": "8cff209c"
@@ -36048,6 +36011,38 @@
                 }
               ],
               "id": "102e2600"
+            },
+            {
+              "name": "Khadgar",
+              "items": [
+                {
+                  "id": "9640",
+                  "icon": "garrison_building_magetower"
+                },
+                {
+                  "id": "9641",
+                  "icon": "garrison_building_magetower"
+                },
+                {
+                  "id": "9642",
+                  "icon": "garrison_building_magetower",
+                  "criteria": {
+                    "26487": "40217",
+                    "26488": "40218"
+                  }
+                },
+                {
+                  "id": "10021",
+                  "icon": "quest_khadgar",
+                  "side": "A"
+                },
+                {
+                  "id": "10148",
+                  "icon": "quest_khadgar",
+                  "side": "H"
+                }
+              ],
+              "id": "8a09cc7a"
             },
             {
               "name": "Raids",
