@@ -92,10 +92,10 @@
 
                   // check to make sure mount has stuff we require
                   if (!mount.spellId) {
-                      console.log('ERROR: mount doesn\'t have spellId: ' + mount.name);
+                      console.log('WARN: mount doesn\'t have spellId: ' + mount.name);
                   }
                   if (!mount.itemId) {
-                      console.log('ERROR: mount doesn\'t have itemId: ' + mount.name);
+                      console.log('WARN: mount doesn\'t have itemId spellId: ' + mount.spellId + ' name: ' + mount.name);
                   }
                   if (!mount.icon) {
                       console.log('ERROR: mount doesn\'t have icon: ' + mount.name);
@@ -103,11 +103,16 @@
 
                   // format it properly for me
                   var myMount = {
-                      'spellid': mount.spellId,
-                      'itemId': mount.itemId,
                       'icon': mount.icon,
                       'name': mount.name
                   };
+
+                  if (mount.spellId) {
+                    myMount.spellid = mount.spellId;
+                  }
+                  if (mount.itemId) {
+                    myMount.itemId = mount.itemId;
+                  }
 
                   missingMounts.push(myMount);
               }

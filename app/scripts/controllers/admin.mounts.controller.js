@@ -83,7 +83,7 @@
         };
 
         $scope.getLink  = function(item) {
-            var link = 'spell='+item.spellId;
+            var link = 'spell='+item.spellid;
             if (item.itemId) {
                 link = 'item='+item.itemId;
             }
