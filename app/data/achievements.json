@@ -7796,6 +7796,26 @@
                   "id": 12109,
                   "icon": "achievement_legionpvp5tier4",
                   "points": 10
+                },
+                {
+                  "id": 12180,
+                  "icon": "achievement_legionpvp6tier1",
+                  "points": 10
+                },
+                {
+                  "id": 12181,
+                  "icon": "achievement_legionpvp6tier2",
+                  "points": 10
+                },
+                {
+                  "id": 12182,
+                  "icon": "achievement_legionpvp6tier3",
+                  "points": 10
+                },
+                {
+                  "id": 12183,
+                  "icon": "achievement_legionpvp6tier4",
+                  "points": 10
                 }
               ],
               "id": "b88a6272"
@@ -7993,6 +8013,100 @@
             }
           ],
           "id": "e33b07f3"
+        },
+        {
+          "name": "Seething Shore",
+          "subcats": [
+            {
+              "name": "",
+              "items": [
+                {
+                  "id": 12409,
+                  "icon": "achievement_zone_sholazar_07",
+                  "points": 10
+                },
+                {
+                  "id": 12404,
+                  "icon": "achievement_bg_killflagcarriers_grabflag_capit",
+                  "points": 10
+                },
+                {
+                  "id": 12405,
+                  "icon": "spell_rogue_deathfromabove",
+                  "points": 10
+                },
+                {
+                  "id": 12406,
+                  "icon": "inv_misc_powder_adamantite",
+                  "points": 20
+                },
+                {
+                  "id": 12411,
+                  "icon": "spell_quicksand",
+                  "points": 10,
+                  "criteria": {
+                    "39747": "65306",
+                    "39748": "65307",
+                    "39749": "65308",
+                    "39750": "65309",
+                    "39751": "65310",
+                    "39752": "65311",
+                    "39753": "65312",
+                    "39754": "65313",
+                    "39755": "65314",
+                    "39756": "65315",
+                    "39757": "65316",
+                    "39758": "65317"
+                  }
+                },
+                {
+                  "id": 12410,
+                  "icon": "achievement_legionpvp7tier3",
+                  "points": 15
+                },
+                {
+                  "id": 12408,
+                  "icon": "achievement_legionpvp8tier4",
+                  "points": 20,
+                  "criteria": {
+                    "39679": "65182",
+                    "39680": "65183",
+                    "39681": "65186",
+                    "39683": "65187",
+                    "39684": "65188",
+                    "39685": "65189",
+                    "39687": "65190",
+                    "39688": "65192",
+                    "39689": "65193",
+                    "39690": "65191",
+                    "39691": "65195",
+                    "39724": "65194"
+                  }
+                },
+                {
+                  "id": 12407,
+                  "icon": "achievement_bg_abshutout",
+                  "points": 20
+                },
+                {
+                  "id": 12412,
+                  "icon": "ability_warrior_intensifyrage",
+                  "points": 25,
+                  "criteria": {
+                    "39693": "65199",
+                    "39694": "65200",
+                    "39695": "65201",
+                    "39696": "65202",
+                    "39697": "65203",
+                    "39698": "65204",
+                    "39699": "65205",
+                    "39725": "65252"
+                  }
+                }
+              ]
+            }
+          ],
+          "id": "c90a048a"
         },
         {
           "name": "Ashran",
@@ -10093,6 +10207,46 @@
                     "37471": "61054",
                     "37472": "61055"
                   }
+                },
+                {
+                  "id": 12136,
+                  "icon": "pvpcurrency-conquest-horde",
+                  "points": 15,
+                  "side": "H",
+                  "criteria": {
+                    "38107": "62079",
+                    "38517": "62080"
+                  }
+                },
+                {
+                  "id": 12199,
+                  "icon": "pvpcurrency-conquest-horde",
+                  "points": 0,
+                  "side": "H",
+                  "criteria": {
+                    "38139": "62157",
+                    "39799": "62158"
+                  }
+                },
+                {
+                  "id": 12200,
+                  "icon": "pvpcurrency-conquest-alliance",
+                  "points": 0,
+                  "side": "A",
+                  "criteria": {
+                    "38139": "62160",
+                    "39798": "62161"
+                  }
+                },
+                {
+                  "id": 12137,
+                  "icon": "pvpcurrency-conquest-alliance",
+                  "points": 15,
+                  "side": "A",
+                  "criteria": {
+                    "38107": "62082",
+                    "38517": "62083"
+                  }
                 }
               ],
               "id": "e90d4689"
@@ -10310,6 +10464,12 @@
                 },
                 {
                   "id": 12090,
+                  "icon": "achievement_pvp_legion04",
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 12198,
                   "icon": "achievement_pvp_legion04",
                   "points": 10,
                   "criteria": {}
