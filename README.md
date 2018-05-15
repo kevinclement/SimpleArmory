@@ -20,6 +20,13 @@ npm install -g grunt-cli bower
 bower install
 ```
 
+## Replace your API key
+
+Edit the file `app/scripts/services/settings.service.js` and replace the apiKey
+setting by your Battle.net API key. You can generate an API key by creating an
+account on <https://dev.battle.net>. You can then find your API key on [this
+page](https://dev.battle.net/apps/mykeys).
+
 ## Start Development
 
 - run `grunt serve`
