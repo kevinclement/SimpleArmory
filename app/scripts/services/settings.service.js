@@ -20,6 +20,7 @@
                 'pets': 'data/pets.json',
                 'battlepets': 'data/battlepets.json',
                 'mounts': 'data/mounts.json',
+                'toys': 'data/toys.json',
                 'achievements': 'data/achievements.json'
             }
         };

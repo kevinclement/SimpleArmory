@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="page-header">
+    <h2>
+      Toys
+    <div class="progress progressRight">
+            <progressbar max="100" type="success"
+      	  		value="percent(items.collected, items.possible)" >
+      	  		<span>{{ achFormater(items.collected, items.possible) }}</span>
+      	  	</progressbar>
+        </div>
+    </h2>
+  </div>
+  <div>
+    <p><strong>The Blizzard API doesn't allow yet fetching toys from your
+      character.</strong>
+    To see what toys you have earned, you have to paste a <strong>Toy export
+      string</strong> in the field below. You can get this string by downloading the
+    <a href="http://">Simple Armory Toy Exporter</a> addon, then typing
+    <code>/simplearmorytoyexporter</code> in your chat window.</p>
+    <p><small>(If you find this frustrating, you can do a post on the forums to ask for
+      the Toys to be exported in the API along with the mounts and pets.)</small></p>
+
+    <form role="form" ng-app="simpleArmoryApp" ng-controller="ToysFormCtrl">
+      <textarea name="toys" cols="80" ng-model="formInfo.toys"
+        placeholder="Copy your Simple Armory Toy Export string here..."></textarea>
+
+      <div><input type="submit" value="Save" ng-click="saveData()" /></div>
+    </form>
+  </div>
+  <div>
+    <h3 class="categoryHeader" ng-hide="category.name == 'Toys'" ng-repeat-start="category in items.categories">{{ category.name }}</h3>
+    <div class="sect" ng-repeat="subCategory in category.subCategories">
+  		<h5 class="subCatHeader">{{ subCategory.name }}</h5>
+  		<a target="{{settings.anchorTarget}}" ng-href="//{{settings.WowHeadUrl}}/{{ item.link }}" class="thumbnail" ng-repeat="item in subCategory.items" ng-class="{borderOn:!item.collected, borderOff:item.collected}">
+          	<img ng-src="{{getImageSrc(item)}}">
+        	</a>
+    </div>
+    <div class="clear" ng-repeat-end></div>
+  </div>
+</div>

@@ -21,10 +21,12 @@
         var parsedMounts;
         var parsedCompanions;
         var parsedPets;
+        var parsedToys;
         LoginService.onLogin(function() {
             parsedMounts = undefined;
             parsedCompanions = undefined;
             parsedPets = undefined;
+            parsedToys = undefined;
         });
 
         return {
@@ -36,6 +38,8 @@
                     return $q.when(parsedPets);
                 } else if (jsonFile === 'mounts' && parsedMounts) {
                     return $q.when(parsedMounts);
+                } else if (jsonFile === 'toys' && parsedToys) {
+                    return $q.when(parsedToys);
                 }
 
                 return LoginService.getCharacter(
@@ -57,6 +61,8 @@
                                     parsedPets = parsed; 
                                 } else if (jsonFile === 'mounts') {
                                     parsedMounts = parsed;
+                                } else if (jsonFile === 'toys') {
+                                    parsedToys = parsed;
                                 }
 
                                 return parsed;
@@ -71,6 +77,15 @@
             var totalCollected = 0;
             var totalPossible = 0;
             var found = {};
+
+            // Retrieve the toys from the localstorage
+            // Remove this if Blizzard ever implements this in the API.
+            var toys = JSON.parse(localStorage.getItem('toys'));
+            character.toys = {};
+            character.toys.collected = [];
+            angular.forEach(toys, function(item) {
+                character.toys.collected.push({'itemId': item});
+            });
 
             // Build up lookup for items that character has
             angular.forEach(character[characterProperty].collected, function(item) {

@@ -51,6 +51,10 @@
               templateUrl: 'views/mounts.html',
               controller: 'MountsCtrl'
             }).  
+            when('/:region/:realm/:character/collectable/toys', {
+              templateUrl: 'views/toys.html',
+              controller: 'ToysCtrl'
+            }).
             when('/:region/:realm/:character', {
               templateUrl: 'views/overview.html',
               controller: 'OverviewCtrl'
