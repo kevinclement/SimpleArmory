@@ -11,7 +11,7 @@
 
         $scope.settings = SettingsService;
 
-    	// Analytics for page
+        // Analytics for page
         $window.ga('send', 'pageview', 'Toys');
 
         MountsAndPetsService.getItems('toys', 'toys', 'itemId').then(function(items){

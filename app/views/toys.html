@@ -11,18 +11,17 @@
     </h2>
   </div>
   <div>
-    <p><strong>The Blizzard API doesn't allow yet fetching toys from your
-      character.</strong>
+    <p><strong>The Blizzard API doesn't allow fetching toys from your character.</strong>
     To see what toys you have earned, you have to paste a <strong>Toy export
       string</strong> in the field below. You can get this string by downloading the
-    <a href="http://">Simple Armory Toy Exporter</a> addon, then typing
-    <code>/simplearmorytoyexporter</code> in your chat window.</p>
+    <a href="https://wow.curseforge.com/projects/simple-armory">Simple Armory</a> addon, then typing
+    <code>/sa toys</code> in your chat window.</p>
     <p><small>(If you find this frustrating, you can do a post on the forums to ask for
       the Toys to be exported in the API along with the mounts and pets.)</small></p>
 
     <form role="form" ng-app="simpleArmoryApp" ng-controller="ToysFormCtrl">
       <textarea name="toys" cols="80" ng-model="formInfo.toys"
-        placeholder="Copy your Simple Armory Toy Export string here..."></textarea>
+        placeholder="Copy your export string here..."></textarea>
 
       <div><input type="submit" value="Save" ng-click="saveData()" /></div>
     </form>
