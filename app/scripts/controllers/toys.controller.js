@@ -9,7 +9,7 @@
     function ToysCtrl($scope, MountsAndPetsService, PlannerService, $window, SettingsService) {
 
         $scope.settings = SettingsService;
-        $scope.toyString = "";
+        $scope.toyString = '';
 
         // only show export if they don't have a local storage settings, or when they click update
         $scope.showExport = localStorage.getItem('toys') === null;
