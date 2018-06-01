@@ -6,7 +6,7 @@
         .module('simpleArmoryApp')
         .controller('ToysCtrl' , ToysCtrl);
 
-    function ToysCtrl($scope, MountsAndPetsService, PlannerService, $window, SettingsService) {
+    function ToysCtrl($scope, ToysService, $window, SettingsService) {
 
         $scope.settings = SettingsService;
         $scope.toyString = '';
@@ -17,7 +17,7 @@
         // Analytics for page
         $window.ga('send', 'pageview', 'Toys');
 
-        MountsAndPetsService.getItems('toys', 'toys', 'itemId').then(function(items){
+        ToysService.getItems().then(function(items){
             $scope.items = items;
         });
 
@@ -28,8 +28,11 @@
             // TODO: display json error, do more consistency checks
             return;
           }
+
           localStorage.setItem('toys', $scope.toyString);
-          window.location.reload(true);
+          ToysService.getItems(true).then(function(items){
+            $scope.items = items;
+          });
         };
 
         $scope.cancel = function() {
