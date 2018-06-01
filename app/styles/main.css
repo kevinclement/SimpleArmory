@@ -196,6 +196,10 @@ body {
 .pbSmall > label {
   font-weight: 400;
 }
+.pbSmall > .tupd {
+  margin-left: 3px;
+  font-size:18px;
+}
 
 /* ## Reputation Page ############################### */
 .rep ul {
