@@ -548,6 +548,7 @@
 				{
 					"title":"Portal to ",
 					"capital": true,
+					"finalStep": "Hearthstone back to shrine",
 					"steps": 
 					[
 						{
@@ -603,6 +604,162 @@
 											]
 										}
 									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"title":"Fly to Valley of the Four Winds",
+					"steps": 
+					[
+						{
+							"title": "Kill Galleon",
+							"bosses": 
+							[
+								{
+									"name":"Galleon",
+									"spellId":130965,
+									"itemId":89783,
+									"mount": "Son of Galleon's Saddle",
+									"epic": true,
+									"icon":"inv_mushanbeastmount",
+									"note":"Mount is bonus rollable"
+								}
+							]
+						}
+					]
+				},
+				{
+					"title":"Fly to Kun-Lai Summit",
+					"steps": 
+					[
+						{
+							"title": "Kill Sha of Anger",
+							"bosses": 
+							[
+								{
+									"name":"Sha of Anger",
+									"spellId":127158,
+									"itemId":87771,
+									"mount": "Reins of the Heavenly Onyx Cloud Serpent",
+									"epic": true,
+									"icon":"inv_pandarenserpentgodmount_black",
+									"note":"Mount is bonus rollable"
+								}
+							]
+						}
+					]
+				},
+				{
+					"title":"Fly to Isle of Giants",
+					"steps": 
+					[
+						{
+							"title": "Kill Oondasta",
+							"bosses": 
+							[
+								{
+									"name":"Oondasta",
+									"spellId":138423,
+									"itemId":94228,
+									"mount": "Reins of the Cobalt Primordial Direhorn",
+									"epic": true,
+									"icon":"ability_mount_triceratopsmount_blue",
+									"note":"Mount is bonus rollable"
+								}
+							]
+						}
+					]
+				},
+				{
+					"title":"Fly to Kun-Lai Summit",
+					"finalStep": "Hearthstone back to shrine",
+					"steps": 
+					[
+						{
+							"title": "Run Mogu'shan Vaults",
+							"bosses": 
+							[
+								{
+									"name":"Elegon",
+									"spellId":127170,
+									"itemId":87777,
+									"mount": "Reins of the Astral Cloud Serpent",
+									"epic": true,
+									"icon":"inv_celestialserpentmount"
+								}
+							]
+						}
+					]
+				},
+				{
+					"title":"Fly to Townlong Steppes",
+					"finalStep": "Hearthstone back to shrine",
+					"steps": 
+					[
+						{
+							"title":"Portal to Isle of Thunder",
+							"steps":
+							[
+								{
+									"title": "Kill Nalak",
+									"bosses": 
+									[
+										{
+											"name":"Nalak",
+											"spellId":139442,
+											"itemId":95057,
+											"mount": "Reins of the Thundering Cobalt Cloud Serpent",
+											"epic": true,
+											"icon":"inv_pandarenserpentmount_lightning_blue",
+											"note":"Mount is bonus rollable"
+										}
+									]
+								},
+								{
+									"title": "Run Throne of Thunder",
+									"bosses": 
+									[
+										{
+											"name":"Horridon",
+											"spellId":136471,
+											"itemId":93666,
+											"mount": "Spawn of Horridon",
+											"epic": true,
+											"icon":"ability_mount_triceratopsmount"
+										},
+										{
+											"name":"Ji-Kun",
+											"spellId":139448,
+											"itemId":95059,
+											"mount": "Clutch of Ji-Kun",
+											"epic": true,
+											"icon":"achievement_boss_ji-kun"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"title":"Fly to Vale of the Eternal Blossoms",
+					"finalStep": "Hearthstone back to shrine",
+					"steps": 
+					[
+						{
+							"title": "Run Siege of Orgrimmar",
+							"bosses": 
+							[
+								{
+									"name":"Garrosh Hellscream",
+									"spellId":148417,
+									"itemId":104253,
+									"mount": "Kor'kron Juggernaut",
+									"epic": true,
+									"icon":"inv_mount_hordescorpiong",
+									"note":"Mythic only"
 								}
 							]
 						}
