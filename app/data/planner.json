@@ -572,6 +572,21 @@
 													"icon":"ability_mount_dreadsteed"
 												}
 											]
+										},
+										{
+											"title": "Run Return to Karazhan",
+											"bosses": 
+											[
+												{
+													"name":"Attumen",
+													"spellId":229499,
+													"itemId":142236,
+													"mount": "Midnight's Eternal Reins",
+													"epic": true,
+													"icon":"inv_skeletalwarhorse_black",
+													"note":"Mythic only"
+												}
+											]
 										}
 									]
 								},
@@ -828,6 +843,93 @@
 											"mount": "Ironhoof Destroyer",
 											"epic": true,
 											"icon":"inv_ironhordeclefthoof",
+											"note":"Mythic only"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"title":"Fly to Suramar",
+					"finalStep": "Hearthstone to Dalaran",
+					"steps": 
+					[
+						{
+							"title": "Run Nighthold",
+							"bosses": 
+							[
+								{
+									"name":"Gul'dan",
+									"spellId":213134,
+									"itemId":137574,
+									"mount": "Living Infernal Core",
+									"epic": true,
+									"icon":"inv_infernalmountgreen"
+								},
+								{
+									"name":"Gul'dan",
+									"spellId":171827,
+									"itemId":137575,
+									"mount": "Fiendish Hellfire Core",
+									"epic": true,
+									"icon":"inv_infernalmountred",
+									"note":"Mythic only"
+								}
+							]
+						}
+					]
+				},
+				{
+					"title":"Fly to Broke Shore",
+					"finalStep": "Hearthstone to Dalaran",
+					"steps": 
+					[
+						{
+							"title": "Run Tomb of Sargeras",
+							"bosses": 
+							[
+								{
+									"name":"Mistress Sassz'ine",
+									"spellId":232519,
+									"itemId":143643,
+									"mount": "Abyss Worm",
+									"epic": true,
+									"icon":"inv_serpentmount_green"
+								}
+							]
+						}
+					]
+				},
+				{
+					"title":"Portal to Argus",
+					"finalStep": "Hearthstone to Dalaran",
+					"steps": 
+					[
+						{
+							"title": "Portal to Antoran Wastes",
+							"steps": 
+							[
+								{
+									"title": "Run Antorus, the Burning Throne",
+									"bosses": 
+									[
+										{
+											"name":"Felhounds of Sargeras",
+											"spellId":253088,
+											"itemId":152816,
+											"mount": "Antoran Charhound",
+											"epic": true,
+											"icon":"inv_felhound3_shadow_fire"
+										},
+										{
+											"name":"Argus the Unmaker",
+											"spellId":243651,
+											"itemId":152789,
+											"mount": "Shackled Ur'zul",
+											"epic": true,
+											"icon":"inv_soulhoundmount_blue",
 											"note":"Mythic only"
 										}
 									]
