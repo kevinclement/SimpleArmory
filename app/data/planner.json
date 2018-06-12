@@ -764,6 +764,77 @@
 							]
 						}
 					]
+				},
+				{
+					"title":"Portal to Garrison",
+					"finalStep": "Hearthstone to Dalaran",
+					"steps": 
+					[
+						{
+							"title": "Fly to Spires of Arak",
+							"steps": 
+							[
+								{
+									"title": "Kill Rukhmar",
+									"bosses": 
+									[
+										{
+											"name":"Rukhmar",
+											"spellId":171828,
+											"itemId":116771,
+											"mount": "Solar Spirehawk",
+											"epic": true,
+											"icon":"inv_helm_suncrown_d_01",
+											"note":"Mount is NOT bonus rollable"
+										}
+									]
+								}
+							]
+						},
+						{
+							"title": "Fly to Tanaan Jungle",
+							"notes": "Portal in Ashran",
+							"steps": 
+							[
+								{
+									"title": "Run Hellfire Citadel",
+									"bosses": 
+									[
+										{
+											"name":"Archimonde",
+											"spellId":182912,
+											"itemId":123890,
+											"mount": "Felsteel Annihilator",
+											"epic": true,
+											"icon":"ability_mount_felreavermount",
+											"note":"Mythic only"
+										}
+									]
+								}
+							]
+						},
+						{
+							"title": "Fly to Gorgrond",
+							"steps": 
+							[
+								{
+									"title": "Run Blackrock Foundry",
+									"bosses": 
+									[
+										{
+											"name":"Blackhand",
+											"spellId":171621,
+											"itemId":116660,
+											"mount": "Ironhoof Destroyer",
+											"epic": true,
+											"icon":"inv_ironhordeclefthoof",
+											"note":"Mythic only"
+										}
+									]
+								}
+							]
+						}
+					]
 				}
 			]
 		}
