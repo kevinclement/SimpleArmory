@@ -14,30 +14,13 @@
                 var defer = $q.defer();
                 
                 $q.all([
-                    $http.get(window.location.protocol + '//cdn.simplearmory.com/json/servers.us.json').then(function(data) {
-
-                        // initial fetch for us looks good.  TODO: if our update ever goes bad, we'll need more checks here
+                    $http.get('data/servers.us.json').then(function(data) {
                         console.log('Got realms for US');
                         return data;
-                    }, function(reason) {
-                        
-                        // had some problems loading data from cdn.  lets load the local copy
-                        $window.ga('send', 'event', 'CDNFailure', 'US');
-                        console.log('Failed to get realms for US: ' + reason.status + ' ' + reason.statusText);
-                        return $http.get('data/servers.us.json');
                     }),
-                    $http.get(window.location.protocol + '//cdn.simplearmory.com/json/servers.eu.json').then(function(data) {
+                    $http.get('data/servers.eu.json').then(function(data) {
                         console.log('Got realms for EU');
-
-                        // todo: verify data is good
-
                         return data;
-                    }, function(reason) {
-
-                       // had some problems loading data from cdn.  lets load the local copy
-                       $window.ga('send', 'event', 'CDNFailure', 'EU');
-                       console.log('Failed to get realms for EU: ' + reason.status + ' ' + reason.statusText);
-                       return $http.get('data/servers.eu.json'); 
                     }),
                 ]).then(function(data) {
 
