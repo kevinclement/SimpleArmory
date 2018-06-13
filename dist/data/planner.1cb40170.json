@@ -548,6 +548,7 @@
 				{
 					"title":"Portal to ",
 					"capital": true,
+					"finalStep": "Hearthstone back to shrine",
 					"steps": 
 					[
 						{
@@ -569,6 +570,21 @@
 													"mount": "Fiery Warhorse's Reins",
 													"epic": true,
 													"icon":"ability_mount_dreadsteed"
+												}
+											]
+										},
+										{
+											"title": "Run Return to Karazhan",
+											"bosses": 
+											[
+												{
+													"name":"Attumen",
+													"spellId":229499,
+													"itemId":142236,
+													"mount": "Midnight's Eternal Reins",
+													"epic": true,
+													"icon":"inv_skeletalwarhorse_black",
+													"note":"Mythic only"
 												}
 											]
 										}
@@ -601,6 +617,320 @@
 													"note":"Heroic only"
 												}
 											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"title":"Fly to Valley of the Four Winds",
+					"steps": 
+					[
+						{
+							"title": "Kill Galleon",
+							"bosses": 
+							[
+								{
+									"name":"Galleon",
+									"spellId":130965,
+									"itemId":89783,
+									"mount": "Son of Galleon's Saddle",
+									"epic": true,
+									"icon":"inv_mushanbeastmount",
+									"note":"Mount is bonus rollable"
+								}
+							]
+						}
+					]
+				},
+				{
+					"title":"Fly to Kun-Lai Summit",
+					"steps": 
+					[
+						{
+							"title": "Kill Sha of Anger",
+							"bosses": 
+							[
+								{
+									"name":"Sha of Anger",
+									"spellId":127158,
+									"itemId":87771,
+									"mount": "Reins of the Heavenly Onyx Cloud Serpent",
+									"epic": true,
+									"icon":"inv_pandarenserpentgodmount_black",
+									"note":"Mount is bonus rollable"
+								}
+							]
+						}
+					]
+				},
+				{
+					"title":"Fly to Isle of Giants",
+					"steps": 
+					[
+						{
+							"title": "Kill Oondasta",
+							"bosses": 
+							[
+								{
+									"name":"Oondasta",
+									"spellId":138423,
+									"itemId":94228,
+									"mount": "Reins of the Cobalt Primordial Direhorn",
+									"epic": true,
+									"icon":"ability_mount_triceratopsmount_blue",
+									"note":"Mount is bonus rollable"
+								}
+							]
+						}
+					]
+				},
+				{
+					"title":"Fly to Kun-Lai Summit",
+					"finalStep": "Hearthstone back to shrine",
+					"steps": 
+					[
+						{
+							"title": "Run Mogu'shan Vaults",
+							"bosses": 
+							[
+								{
+									"name":"Elegon",
+									"spellId":127170,
+									"itemId":87777,
+									"mount": "Reins of the Astral Cloud Serpent",
+									"epic": true,
+									"icon":"inv_celestialserpentmount"
+								}
+							]
+						}
+					]
+				},
+				{
+					"title":"Fly to Townlong Steppes",
+					"finalStep": "Hearthstone back to shrine",
+					"steps": 
+					[
+						{
+							"title":"Portal to Isle of Thunder",
+							"steps":
+							[
+								{
+									"title": "Kill Nalak",
+									"bosses": 
+									[
+										{
+											"name":"Nalak",
+											"spellId":139442,
+											"itemId":95057,
+											"mount": "Reins of the Thundering Cobalt Cloud Serpent",
+											"epic": true,
+											"icon":"inv_pandarenserpentmount_lightning_blue",
+											"note":"Mount is bonus rollable"
+										}
+									]
+								},
+								{
+									"title": "Run Throne of Thunder",
+									"bosses": 
+									[
+										{
+											"name":"Horridon",
+											"spellId":136471,
+											"itemId":93666,
+											"mount": "Spawn of Horridon",
+											"epic": true,
+											"icon":"ability_mount_triceratopsmount"
+										},
+										{
+											"name":"Ji-Kun",
+											"spellId":139448,
+											"itemId":95059,
+											"mount": "Clutch of Ji-Kun",
+											"epic": true,
+											"icon":"achievement_boss_ji-kun"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"title":"Fly to Vale of the Eternal Blossoms",
+					"finalStep": "Hearthstone back to shrine",
+					"steps": 
+					[
+						{
+							"title": "Run Siege of Orgrimmar",
+							"bosses": 
+							[
+								{
+									"name":"Garrosh Hellscream",
+									"spellId":148417,
+									"itemId":104253,
+									"mount": "Kor'kron Juggernaut",
+									"epic": true,
+									"icon":"inv_mount_hordescorpiong",
+									"note":"Mythic only"
+								}
+							]
+						}
+					]
+				},
+				{
+					"title":"Portal to Garrison",
+					"finalStep": "Hearthstone to Dalaran",
+					"steps": 
+					[
+						{
+							"title": "Fly to Spires of Arak",
+							"steps": 
+							[
+								{
+									"title": "Kill Rukhmar",
+									"bosses": 
+									[
+										{
+											"name":"Rukhmar",
+											"spellId":171828,
+											"itemId":116771,
+											"mount": "Solar Spirehawk",
+											"epic": true,
+											"icon":"inv_helm_suncrown_d_01",
+											"note":"Mount is NOT bonus rollable"
+										}
+									]
+								}
+							]
+						},
+						{
+							"title": "Fly to Tanaan Jungle",
+							"notes": "Portal in Ashran",
+							"steps": 
+							[
+								{
+									"title": "Run Hellfire Citadel",
+									"bosses": 
+									[
+										{
+											"name":"Archimonde",
+											"spellId":182912,
+											"itemId":123890,
+											"mount": "Felsteel Annihilator",
+											"epic": true,
+											"icon":"ability_mount_felreavermount",
+											"note":"Mythic only"
+										}
+									]
+								}
+							]
+						},
+						{
+							"title": "Fly to Gorgrond",
+							"steps": 
+							[
+								{
+									"title": "Run Blackrock Foundry",
+									"bosses": 
+									[
+										{
+											"name":"Blackhand",
+											"spellId":171621,
+											"itemId":116660,
+											"mount": "Ironhoof Destroyer",
+											"epic": true,
+											"icon":"inv_ironhordeclefthoof",
+											"note":"Mythic only"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"title":"Fly to Suramar",
+					"finalStep": "Hearthstone to Dalaran",
+					"steps": 
+					[
+						{
+							"title": "Run Nighthold",
+							"bosses": 
+							[
+								{
+									"name":"Gul'dan",
+									"spellId":213134,
+									"itemId":137574,
+									"mount": "Living Infernal Core",
+									"epic": true,
+									"icon":"inv_infernalmountgreen"
+								},
+								{
+									"name":"Gul'dan",
+									"spellId":171827,
+									"itemId":137575,
+									"mount": "Fiendish Hellfire Core",
+									"epic": true,
+									"icon":"inv_infernalmountred",
+									"note":"Mythic only"
+								}
+							]
+						}
+					]
+				},
+				{
+					"title":"Fly to Broke Shore",
+					"finalStep": "Hearthstone to Dalaran",
+					"steps": 
+					[
+						{
+							"title": "Run Tomb of Sargeras",
+							"bosses": 
+							[
+								{
+									"name":"Mistress Sassz'ine",
+									"spellId":232519,
+									"itemId":143643,
+									"mount": "Abyss Worm",
+									"epic": true,
+									"icon":"inv_serpentmount_green"
+								}
+							]
+						}
+					]
+				},
+				{
+					"title":"Portal to Argus",
+					"finalStep": "Hearthstone to Dalaran",
+					"steps": 
+					[
+						{
+							"title": "Portal to Antoran Wastes",
+							"steps": 
+							[
+								{
+									"title": "Run Antorus, the Burning Throne",
+									"bosses": 
+									[
+										{
+											"name":"Felhounds of Sargeras",
+											"spellId":253088,
+											"itemId":152816,
+											"mount": "Antoran Charhound",
+											"epic": true,
+											"icon":"inv_felhound3_shadow_fire"
+										},
+										{
+											"name":"Argus the Unmaker",
+											"spellId":243651,
+											"itemId":152789,
+											"mount": "Shackled Ur'zul",
+											"epic": true,
+											"icon":"inv_soulhoundmount_blue",
+											"note":"Mythic only"
 										}
 									]
 								}
