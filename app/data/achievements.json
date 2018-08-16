@@ -28,6 +28,27 @@
               "id": "812a31c4"
             },
             {
+              "name": "Battle",
+              "items": [
+                {
+                  "id": 12807,
+                  "icon": "inv_belt_cloth_zandalarquest_b_01",
+                  "points": 20
+                },
+                {
+                  "id": 12812,
+                  "icon": "inv_helm_plate_raiddeathknightmythic_s_01",
+                  "points": 25
+                },
+                {
+                  "id": 12806,
+                  "icon": "achievement_nazmir_zone",
+                  "points": 25
+                }
+              ],
+              "id": "25a84428"
+            },
+            {
               "name": "Legion",
               "items": [
                 {
@@ -894,6 +915,520 @@
             }
           ],
           "id": "59753096"
+        },
+        {
+          "name": "Battle Dungeon",
+          "subcats": [
+            {
+              "name": "Freehold",
+              "items": [
+                {
+                  "id": 12831,
+                  "icon": "achievement_dungeon_freehold",
+                  "points": 10
+                },
+                {
+                  "id": 12832,
+                  "icon": "achievement_dungeon_freehold",
+                  "points": 10
+                },
+                {
+                  "id": 12833,
+                  "icon": "achievement_dungeon_freehold",
+                  "points": 10
+                },
+                {
+                  "id": 12548,
+                  "icon": "warlock_summon_beholder",
+                  "points": 10
+                },
+                {
+                  "id": 12550,
+                  "icon": "inv_parrotmount_red",
+                  "points": 10
+                },
+                {
+                  "id": 12998,
+                  "icon": "inv_misc_treasurechest05b",
+                  "points": 10
+                }
+              ],
+              "id": "50778888"
+            },
+            {
+              "name": "Waycrest Manor",
+              "items": [
+                {
+                  "id": 12483,
+                  "icon": "achievement_dungeon_waycrestmannor",
+                  "points": 10
+                },
+                {
+                  "id": 12484,
+                  "icon": "achievement_dungeon_waycrestmannor",
+                  "points": 10
+                },
+                {
+                  "id": 12488,
+                  "icon": "achievement_dungeon_waycrestmannor",
+                  "points": 10
+                },
+                {
+                  "id": 12489,
+                  "icon": "inv_misc_book_09",
+                  "points": 10,
+                  "criteria": {
+                    "40145": "65985",
+                    "40146": "65986",
+                    "40147": "65987",
+                    "40148": "65988",
+                    "40149": "65989",
+                    "40749": "67353",
+                    "40750": "67354",
+                    "40751": "67355"
+                  }
+                },
+                {
+                  "id": 12495,
+                  "icon": "achievement_dungeon_soulboundgoliath",
+                  "points": 10
+                },
+                {
+                  "id": 12490,
+                  "icon": "achievement_dungeon_goraktul",
+                  "points": 10
+                }
+              ],
+              "id": "c9679119"
+            },
+            {
+              "name": "Shrine of the Storm",
+              "items": [
+                {
+                  "id": 12835,
+                  "icon": "achievement_dungeon_shrineofthestorm",
+                  "points": 10
+                },
+                {
+                  "id": 12837,
+                  "icon": "achievement_dungeon_shrineofthestorm",
+                  "points": 10
+                },
+                {
+                  "id": 12838,
+                  "icon": "achievement_dungeon_shrineofthestorm",
+                  "points": 10
+                },
+                {
+                  "id": 12600,
+                  "icon": "spell_fire_bluefire",
+                  "points": 10
+                },
+                {
+                  "id": 12601,
+                  "icon": "achievement_dungeon_lordstormsong",
+                  "points": 10
+                },
+                {
+                  "id": 12602,
+                  "icon": "achievement_dungeon_volzith",
+                  "points": 10
+                }
+              ],
+              "id": "5330f5d8"
+            },
+            {
+              "name": "Atal'Dazar",
+              "items": [
+                {
+                  "id": 12824,
+                  "icon": "achievement_dungeon_ataldazar",
+                  "points": 10
+                },
+                {
+                  "id": 12825,
+                  "icon": "achievement_dungeon_ataldazar",
+                  "points": 10
+                },
+                {
+                  "id": 12826,
+                  "icon": "achievement_dungeon_ataldazar",
+                  "points": 10
+                },
+                {
+                  "id": 12270,
+                  "icon": "inv_zandalaribabyraptorred",
+                  "points": 10,
+                  "criteria": {
+                    "38504": "62877",
+                    "38505": "62880",
+                    "38506": "62881",
+                    "38507": "62882"
+                  }
+                },
+                {
+                  "id": 12272,
+                  "icon": "racial_dwarf_findtreasure",
+                  "points": 10
+                },
+                {
+                  "id": 12273,
+                  "icon": "spell_fire_twilightfire",
+                  "points": 10
+                }
+              ],
+              "id": "b7c6812e"
+            },
+            {
+              "name": "Underrot",
+              "items": [
+                {
+                  "id": 12500,
+                  "icon": "achievement_dungeon_underrot",
+                  "points": 10
+                },
+                {
+                  "id": 12501,
+                  "icon": "achievement_dungeon_underrot",
+                  "points": 10
+                },
+                {
+                  "id": 12502,
+                  "icon": "achievement_dungeon_underrot",
+                  "points": 10
+                },
+                {
+                  "id": 12549,
+                  "icon": "inv_fungarian_white",
+                  "points": 10
+                },
+                {
+                  "id": 12498,
+                  "icon": "inv_artifact_corruptedbloodofzakajz",
+                  "points": 10
+                },
+                {
+                  "id": 12499,
+                  "icon": "spell_shadow_plaguecloud",
+                  "points": 10
+                }
+              ],
+              "id": "92a8611f"
+            },
+            {
+              "name": "Temple of Sethraliss",
+              "items": [
+                {
+                  "id": 12504,
+                  "icon": "achievement_dungeon_templeofsethraliss",
+                  "points": 10
+                },
+                {
+                  "id": 12505,
+                  "icon": "achievement_dungeon_templeofsethraliss",
+                  "points": 10
+                },
+                {
+                  "id": 12506,
+                  "icon": "achievement_dungeon_templeofsethraliss",
+                  "points": 10
+                },
+                {
+                  "id": 12503,
+                  "icon": "inv_misc_epicgem_06",
+                  "points": 10
+                },
+                {
+                  "id": 12507,
+                  "icon": "inv_waepon_bow_zulgrub_d_01",
+                  "points": 10
+                },
+                {
+                  "id": 12508,
+                  "icon": "spell_shaman_hex",
+                  "points": 10
+                }
+              ],
+              "id": "02ff5dbb"
+            },
+            {
+              "name": "Tol Dagor",
+              "items": [
+                {
+                  "id": 12840,
+                  "icon": "achievement_dungeon_toldagor",
+                  "points": 10
+                },
+                {
+                  "id": 12841,
+                  "icon": "achievement_dungeon_toldagor",
+                  "points": 10
+                },
+                {
+                  "id": 12842,
+                  "icon": "achievement_dungeon_toldagor",
+                  "points": 10
+                },
+                {
+                  "id": 12457,
+                  "icon": "achievement_dungeon_ignitionmagevalyri",
+                  "points": 10
+                },
+                {
+                  "id": 12462,
+                  "icon": "achievement_dungeon_overseerkorgus",
+                  "points": 10
+                }
+              ],
+              "id": "05e0459b"
+            },
+            {
+              "name": "The MOTHERLODE!!",
+              "items": [
+                {
+                  "id": 12844,
+                  "icon": "achievement_dungeon_kezan",
+                  "points": 10
+                },
+                {
+                  "id": 12845,
+                  "icon": "achievement_dungeon_kezan",
+                  "points": 10
+                },
+                {
+                  "id": 12846,
+                  "icon": "achievement_dungeon_kezan",
+                  "points": 10
+                },
+                {
+                  "id": 12854,
+                  "icon": "achievement_dungeon_mogulrazdunk",
+                  "points": 10
+                },
+                {
+                  "id": 12855,
+                  "icon": "inv_misc_soccerball",
+                  "points": 10
+                }
+              ],
+              "id": "3e071a9b"
+            },
+            {
+              "name": "Siege of Boralus",
+              "items": [
+                {
+                  "id": 12847,
+                  "icon": "achievement_dungeon_siegeofboralus",
+                  "points": 10
+                },
+                {
+                  "id": 12727,
+                  "icon": "ability_demonhunter_vengefulretreat2",
+                  "points": 10
+                },
+                {
+                  "id": 12726,
+                  "icon": "inv_misc_fish_27",
+                  "points": 10
+                }
+              ],
+              "id": "5a178eeb"
+            },
+            {
+              "name": "King's Rest",
+              "items": [
+                {
+                  "id": 12848,
+                  "icon": "achievement_dungeon_siegeofboralus",
+                  "points": 10
+                },
+                {
+                  "id": 12722,
+                  "icon": "archaeology_5_0_edictsofthethunderking",
+                  "points": 10,
+                  "criteria": {
+                    "41269": "68418",
+                    "41270": "68419",
+                    "41271": "68420",
+                    "41272": "68421"
+                  }
+                },
+                {
+                  "id": 12721,
+                  "icon": "inv_misc_bandage_05",
+                  "points": 10
+                },
+                {
+                  "id": 12723,
+                  "icon": "inv_mummypet",
+                  "points": 10
+                }
+              ],
+              "id": "8b6da771"
+            },
+            {
+              "name": "Keystone",
+              "items": [
+                {
+                  "id": 13075,
+                  "icon": "inv_relics_hourglass",
+                  "points": 10,
+                  "criteria": {
+                    "41506": "68776",
+                    "41507": "68773",
+                    "41508": "68772",
+                    "41509": "68775",
+                    "41510": "68779",
+                    "41511": "68774",
+                    "41512": "68780",
+                    "41513": "68771",
+                    "41514": "68777",
+                    "41515": "68778"
+                  }
+                }
+              ],
+              "id": "ffbb538e"
+            }
+          ]
+        },
+        {
+          "name": "Battle Raid",
+          "subcats": [
+            {
+              "name": "Uldir",
+              "items": [
+                {
+                  "id": 12521,
+                  "icon": "achievement_nazmir_boss_zekvoz",
+                  "points": 10,
+                  "criteria": {
+                    "40223": "66227",
+                    "40246": "66225",
+                    "40247": "66226"
+                  }
+                },
+                {
+                  "id": 12522,
+                  "icon": "achievement_nazmir_boss_zul",
+                  "points": 10,
+                  "criteria": {
+                    "40222": "66230",
+                    "40224": "66231",
+                    "40248": "66229"
+                  }
+                },
+                {
+                  "id": 12523,
+                  "icon": "achievement_nazmir_boss_ghuun",
+                  "points": 10,
+                  "criteria": {
+                    "40220": "66233",
+                    "40221": "66234"
+                  }
+                },
+                {
+                  "id": 12524,
+                  "icon": "achievement_nazmir_boss_talocthecorrupted",
+                  "points": 10
+                },
+                {
+                  "id": 12526,
+                  "icon": "achievement_nazmir_boss_mother",
+                  "points": 10
+                },
+                {
+                  "id": 12527,
+                  "icon": "achievement_nazmir_boss_zekvoz",
+                  "points": 10
+                },
+                {
+                  "id": 12529,
+                  "icon": "achievement_nazmir_boss_bloodofghuun",
+                  "points": 10
+                },
+                {
+                  "id": 12530,
+                  "icon": "achievement_nazmir_boss_fetiddevourer",
+                  "points": 10
+                },
+                {
+                  "id": 12531,
+                  "icon": "achievement_nazmir_boss_zul",
+                  "points": 10
+                },
+                {
+                  "id": 12532,
+                  "icon": "achievement_nazmir_boss_mythraxtheunraveler",
+                  "points": 10
+                },
+                {
+                  "id": 12533,
+                  "icon": "achievement_nazmir_boss_ghuun",
+                  "points": 10
+                },
+                {
+                  "id": 12937,
+                  "icon": "inv_gizmo_goblinboombox_01",
+                  "points": 10
+                },
+                {
+                  "id": 12938,
+                  "icon": "inv_gizmo_goblingtonkcontroller",
+                  "points": 10
+                },
+                {
+                  "id": 12823,
+                  "icon": "achievement_character_orc_male",
+                  "points": 10
+                },
+                {
+                  "id": 12828,
+                  "icon": "trade_archaeology_cthunspuzzlebox",
+                  "points": 10
+                },
+                {
+                  "id": 12772,
+                  "icon": "inv_bloodtrollfemalehead",
+                  "points": 10
+                },
+                {
+                  "id": 12830,
+                  "icon": "inv_helmet_51",
+                  "points": 10
+                },
+                {
+                  "id": 12836,
+                  "icon": "inv_offhand_1h_xalzaix_d_01",
+                  "points": 10
+                },
+                {
+                  "id": 12551,
+                  "icon": "inv_misc_throwingball_01",
+                  "points": 10
+                }
+              ],
+              "id": "ebe6fbbd"
+            },
+            {
+              "name": "World",
+              "items": [
+                {
+                  "id": 12587,
+                  "icon": "ability_hunter_aspectoftheviper",
+                  "points": 10,
+                  "criteria": {
+                    "40529": "66831",
+                    "40530": "66832",
+                    "40531": "66833",
+                    "40532": "66834",
+                    "40533": "66835",
+                    "40534": "66836"
+                  }
+                }
+              ],
+              "id": "669e1d1f"
+            }
+          ]
         },
         {
           "name": "Legion Dungeon",
@@ -8106,6 +8641,162 @@
                 }
               ],
               "id": "549f401b"
+            },
+            {
+              "name": "War Mode",
+              "items": [
+                {
+                  "id": 12572,
+                  "icon": "inv_crate_03",
+                  "points": 10
+                },
+                {
+                  "id": 12571,
+                  "icon": "ability_blackhand_marked4death",
+                  "points": 10
+                },
+                {
+                  "id": 12574,
+                  "icon": "inv_tourofdutynazmir",
+                  "points": 10
+                },
+                {
+                  "id": 12575,
+                  "icon": "inv_tourofdutyzuldazar",
+                  "points": 10
+                },
+                {
+                  "id": 12576,
+                  "icon": "inv_tourofdutyvoldun",
+                  "points": 10
+                },
+                {
+                  "id": 12577,
+                  "icon": "inv_tourofdutytiragardesound",
+                  "points": 10
+                },
+                {
+                  "id": 12578,
+                  "icon": "inv_tourofdutystormsongvalley",
+                  "points": 10
+                },
+                {
+                  "id": 12579,
+                  "icon": "inv_tourofdutydrustvar",
+                  "points": 10
+                },
+                {
+                  "id": 12573,
+                  "icon": "inv_bandofbrothers",
+                  "points": 15,
+                  "criteria": {
+                    "41008": "67922",
+                    "41009": "67923",
+                    "41010": "67924",
+                    "41011": "67925"
+                  }
+                },
+                {
+                  "id": 12604,
+                  "icon": "inv_conquerorifazeroth_horde",
+                  "points": 20,
+                  "side": "H",
+                  "criteria": {
+                    "40589": "67930",
+                    "40590": "67929",
+                    "40591": "67928",
+                    "40592": "67927",
+                    "40593": "67926",
+                    "40594": "67931",
+                    "40599": "67090",
+                    "40600": "67091",
+                    "40601": "67092"
+                  }
+                },
+                {
+                  "id": 12605,
+                  "icon": "inv_conquerorifazeroth_alliance",
+                  "points": 20,
+                  "side": "A",
+                  "criteria": {
+                    "40589": "67940",
+                    "40590": "67939",
+                    "40591": "67938",
+                    "40592": "67937",
+                    "40593": "67936",
+                    "40594": "67941",
+                    "40599": "67933",
+                    "40600": "67934",
+                    "40601": "67935"
+                  }
+                }
+              ],
+              "id": "c5cdfc9b"
+            },
+            {
+              "name": "Dueler's Guild",
+              "items": [
+                {
+                  "id": 12856,
+                  "icon": "warrior_skullbanner",
+                  "points": 5
+                },
+                {
+                  "id": 12858,
+                  "icon": "inv_misc_desecrated_leatherglove",
+                  "points": 5
+                },
+                {
+                  "id": 12860,
+                  "icon": "achievement_arena_2v2_5",
+                  "points": 5
+                },
+                {
+                  "id": 12863,
+                  "icon": "ability_dualwield",
+                  "points": 5
+                },
+                {
+                  "id": 12859,
+                  "icon": "ability_pvp_hardiness",
+                  "points": 5
+                },
+                {
+                  "id": 12861,
+                  "icon": "ability_parry",
+                  "points": 0,
+                  "criteria": {
+                    "41081": "68041",
+                    "41082": "68042",
+                    "41094": "68056"
+                  }
+                },
+                {
+                  "id": 12862,
+                  "icon": "achievement_arena_3v3_4",
+                  "points": 0,
+                  "criteria": {
+                    "41083": "68044",
+                    "41084": "68045",
+                    "41085": "68046",
+                    "41086": "68047",
+                    "41087": "68049",
+                    "41088": "68048",
+                    "41089": "68050",
+                    "41090": "68051",
+                    "41091": "68052",
+                    "41092": "68053",
+                    "41093": "68054",
+                    "43156": "68055"
+                  }
+                },
+                {
+                  "id": 12857,
+                  "icon": "spell_misc_warsongfocus",
+                  "points": 5
+                }
+              ],
+              "id": "27de5faa"
             }
           ],
           "id": "e33b07f3"
@@ -15159,6 +15850,44 @@
                 }
               ],
               "id": "75c47843"
+            },
+            {
+              "name": "Events",
+              "items": [
+                {
+                  "id": 12918,
+                  "icon": "inv_heartofazeroth",
+                  "points": 10
+                },
+                {
+                  "id": 12480,
+                  "icon": "spell_nature_agitatingtotem",
+                  "points": 5,
+                  "side": "H"
+                },
+                {
+                  "id": 12481,
+                  "icon": "inv__faction_zandalariempire",
+                  "points": 5,
+                  "side": "H"
+                },
+                {
+                  "id": 13048,
+                  "icon": "ability_hunter_pet_devilsaur",
+                  "points": 5,
+                  "criteria": {
+                    "41672": "68882",
+                    "41673": "68887",
+                    "41674": "68885",
+                    "41675": "68880",
+                    "41676": "68881",
+                    "41677": "68888",
+                    "41683": "68883",
+                    "41684": "68886"
+                  }
+                }
+              ],
+              "id": "ac6d870e"
             }
           ]
         },
