@@ -19415,6 +19415,21 @@
                   "id": "11177",
                   "icon": "achievement_reputation_08",
                   "points": 10
+                },
+                {
+                  "id": 12864,
+                  "icon": "achievement_reputation_08",
+                  "points": 10
+                },
+                {
+                  "id": 12865,
+                  "icon": "achievement_reputation_08",
+                  "points": 10
+                },
+                {
+                  "id": 12866,
+                  "icon": "achievement_reputation_08",
+                  "points": 20
                 }
               ],
               "id": "f9a2dea4"
@@ -19497,9 +19512,167 @@
                 }
               ],
               "id": "e346f09b"
+            },
+            {
+              "name": "Allied Races",
+              "items": [
+                {
+                  "id": 12242,
+                  "icon": "achievement_alliedrace_voidelf",
+                  "points": 0,
+                  "criteria": {}
+                },
+                {
+                  "id": 12291,
+                  "icon": "inv_chest_armor_voidelf_d_01",
+                  "points": 0
+                },
+                {
+                  "id": 12243,
+                  "icon": "achievement_alliedrace_lightforgeddraenei",
+                  "points": 0,
+                  "criteria": {}
+                },
+                {
+                  "id": 12414,
+                  "icon": "inv_armor_chest_lightforgeddraenei_d_01",
+                  "points": 0
+                },
+                {
+                  "id": 12244,
+                  "icon": "achievement_alliedrace_nightborne",
+                  "points": 0,
+                  "criteria": {}
+                },
+                {
+                  "id": 12413,
+                  "icon": "inv_chest_armor_nightborne_d_01",
+                  "points": 0
+                },
+                {
+                  "id": 12245,
+                  "icon": "achievement_alliedrace_highmountaintauren",
+                  "points": 0,
+                  "criteria": {}
+                },
+                {
+                  "id": 12415,
+                  "icon": "inv_chest_armor_highmountaintauren_d_01",
+                  "points": 0
+                },
+                {
+                  "id": 12515,
+                  "icon": "achievement_alliedrace_darkirondwarf",
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 13076,
+                  "icon": "inv_shield_1h_darkirondwarf_d_01",
+                  "points": 10
+                },
+                {
+                  "id": 12518,
+                  "icon": "achievement_alliedrace_magharorc",
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 13077,
+                  "icon": "inv_faction_hordewarfront_round_magharorc",
+                  "points": 10
+                }
+              ],
+              "id": "2aa228db"
             }
           ],
           "id": "3092c06a"
+        },
+        {
+          "name": "Battle for Azeroth",
+          "subcats": [
+            {
+              "name": " ",
+              "items": [
+                {
+                  "id": 12947,
+                  "icon": "achievement_reputation_02",
+                  "points": 10,
+                  "criteria": {
+                    "41654": "70662",
+                    "41655": "70662",
+                    "42226": "70656",
+                    "42227": "70660",
+                    "42228": "70658",
+                    "42229": "70656",
+                    "42230": "70660",
+                    "42231": "70658",
+                    "43121": "70665",
+                    "43122": "70666"
+                  }
+                },
+                {
+                  "id": 12948,
+                  "icon": "inv_faction_talanjisexpedition",
+                  "points": 5,
+                  "side": "H"
+                },
+                {
+                  "id": 12949,
+                  "icon": "inv_faction_voldunai",
+                  "points": 5,
+                  "side": "H"
+                },
+                {
+                  "id": 12950,
+                  "icon": "inv_faction_zandalariempire",
+                  "points": 5,
+                  "side": "H"
+                },
+                {
+                  "id": 12957,
+                  "icon": "inv_tabard_hordewareffort",
+                  "points": 5,
+                  "side": "H"
+                },
+                {
+                  "id": 12951,
+                  "icon": "inv_faction_proudmooreadmiralty",
+                  "points": 5,
+                  "side": "A"
+                },
+                {
+                  "id": 12953,
+                  "icon": "inv_faction_stormswake",
+                  "points": 5,
+                  "side": "A"
+                },
+                {
+                  "id": 12952,
+                  "icon": "inv_faction_orderofembers",
+                  "points": 5,
+                  "side": "A"
+                },
+                {
+                  "id": 12954,
+                  "icon": "inv_tabard_alliancewareffort",
+                  "points": 5,
+                  "side": "A"
+                },
+                {
+                  "id": 12955,
+                  "icon": "inv_faction_championsofazeroth",
+                  "points": 5
+                },
+                {
+                  "id": 12956,
+                  "icon": "inv_faction_tortollanseekers",
+                  "points": 5
+                }
+              ],
+              "id": "66e3c5b7"
+            }
+          ]
         },
         {
           "name": "Legion",
@@ -28760,6 +28933,16 @@
                   "id": "9643",
                   "icon": "inv_box_petcarrier_01",
                   "points": 10
+                },
+                {
+                  "id": 12992,
+                  "icon": "inv_box_petcarrier_01",
+                  "points": 10
+                },
+                {
+                  "id": 12958,
+                  "icon": "inv_box_petcarrier_01",
+                  "points": 10
                 }
               ],
               "id": "be333d80"
@@ -29304,6 +29487,40 @@
                     "33140": "53633",
                     "33141": "53634"
                   }
+                },
+                {
+                  "id": 12930,
+                  "icon": "inv_pet_achievement_collectallwild_pandaria",
+                  "points": 5,
+                  "criteria": {
+                    "41273": "68336",
+                    "41274": "68424",
+                    "41275": "68425",
+                    "41276": "68426",
+                    "41277": "68427",
+                    "41278": "68428",
+                    "41279": "68429",
+                    "41280": "68430",
+                    "41281": "68431",
+                    "41282": "68432",
+                    "41283": "68433",
+                    "41284": "68434",
+                    "41285": "68435",
+                    "41286": "68436",
+                    "41287": "68437",
+                    "41288": "68439",
+                    "41289": "68438",
+                    "41290": "68440",
+                    "41291": "68441",
+                    "41292": "68442",
+                    "41293": "68443",
+                    "41294": "68444",
+                    "41295": "68445",
+                    "41296": "68446",
+                    "41297": "68447",
+                    "41298": "68448",
+                    "41299": "68449"
+                  }
                 }
               ],
               "id": "87900015"
@@ -29699,6 +29916,37 @@
                     "38942": "63656",
                     "38943": "63657",
                     "38944": "63658"
+                  }
+                },
+                {
+                  "id": 12936,
+                  "icon": "inv_pet_achievement_pandaria",
+                  "points": 10,
+                  "criteria": {
+                    "41245": "68380",
+                    "41246": "68399",
+                    "41247": "68410",
+                    "41248": "68394",
+                    "41249": "68404",
+                    "41250": "68381",
+                    "41251": "68391",
+                    "41252": "68403",
+                    "41253": "68396",
+                    "41254": "68402",
+                    "41255": "68397",
+                    "41256": "68386",
+                    "41257": "68401",
+                    "41258": "68392",
+                    "41259": "68384",
+                    "41260": "68409",
+                    "41261": "68414",
+                    "41262": "68415",
+                    "41263": "68407",
+                    "41264": "68389",
+                    "41265": "68395",
+                    "41266": "68406",
+                    "41267": "68388",
+                    "41268": "68416"
                   }
                 }
               ],
@@ -36847,56 +37095,6 @@
                 }
               ],
               "id": "2851aa64"
-            },
-            {
-              "name": "Allied Races",
-              "items": [
-                {
-                  "id": 12242,
-                  "icon": "achievement_alliedrace_voidelf",
-                  "points": 0,
-                  "criteria": {}
-                },
-                {
-                  "id": 12291,
-                  "icon": "inv_chest_armor_voidelf_d_01",
-                  "points": 0
-                },
-                {
-                  "id": 12243,
-                  "icon": "achievement_alliedrace_lightforgeddraenei",
-                  "points": 0,
-                  "criteria": {}
-                },
-                {
-                  "id": 12414,
-                  "icon": "inv_armor_chest_lightforgeddraenei_d_01",
-                  "points": 0
-                },
-                {
-                  "id": 12244,
-                  "icon": "achievement_alliedrace_nightborne",
-                  "points": 0,
-                  "criteria": {}
-                },
-                {
-                  "id": 12413,
-                  "icon": "inv_chest_armor_nightborne_d_01",
-                  "points": 0
-                },
-                {
-                  "id": 12245,
-                  "icon": "achievement_alliedrace_highmountaintauren",
-                  "points": 0,
-                  "criteria": {}
-                },
-                {
-                  "id": 12415,
-                  "icon": "inv_chest_armor_highmountaintauren_d_01",
-                  "points": 0
-                }
-              ],
-              "id": "d901db70"
             },
             {
               "name": "PVP",
