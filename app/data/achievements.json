@@ -10617,6 +10617,11 @@
                   "criteriaNeeded": true
                 },
                 {
+                  "id": 12544,
+                  "icon": "inv_level120",
+                  "points": 10
+                },
+                {
                   "id": "7382",
                   "icon": "achievement_arena_2v2_7",
                   "points": 20
@@ -10981,6 +10986,50 @@
                   "icon": "inv_bracer_cloth_legionquest100_b_01",
                   "points": 10,
                   "criteriaNeeded": true
+                },
+                {
+                  "id": 12546,
+                  "icon": "spell_frost_wizardmark",
+                  "points": 10,
+                  "criteria": {
+                    "40379": "66516",
+                    "40380": "66517",
+                    "40381": "66518",
+                    "40382": "66519",
+                    "40383": "66520",
+                    "40384": "66521",
+                    "40385": "66522",
+                    "40386": "66523",
+                    "40387": "66524",
+                    "40388": "66525",
+                    "40389": "66526",
+                    "40390": "66527",
+                    "40391": "66528",
+                    "40392": "66529",
+                    "40393": "66530"
+                  }
+                },
+                {
+                  "id": 12547,
+                  "icon": "inv_enchant_voidcrystal",
+                  "points": 10,
+                  "criteria": {
+                    "40394": "66532",
+                    "40395": "66533",
+                    "40396": "66534",
+                    "40397": "66535",
+                    "40398": "66536",
+                    "40399": "66537",
+                    "40400": "66538",
+                    "40401": "66539",
+                    "40402": "66540",
+                    "40403": "66541",
+                    "40404": "66542",
+                    "40405": "66543",
+                    "40406": "66544",
+                    "40407": "66545",
+                    "40408": "66546"
+                  }
                 }
               ],
               "id": "becb2792"
@@ -14526,6 +14575,338 @@
             }
           ],
           "id": "9fd3290d"
+        },
+        {
+          "name": "Battle for Azeroth",
+          "subcats": [
+            {
+              "name": "Zones",
+              "items": [
+                {
+                  "id": 12497,
+                  "icon": "inv_drustvar",
+                  "points": 10,
+                  "side": "A",
+                  "criteria": {
+                    "40168": "66065",
+                    "40169": "66066",
+                    "40170": "66067",
+                    "40171": "66068",
+                    "40172": "66069",
+                    "40173": "66070",
+                    "40174": "66071",
+                    "40175": "66072",
+                    "40176": "66073",
+                    "40177": "66074"
+                  }
+                },
+                {
+                  "id": 12473,
+                  "icon": "inv_misc_seagullpet_01",
+                  "points": 10,
+                  "side": "A",
+                  "criteria": {
+                    "39984": "65710",
+                    "39985": "66875",
+                    "39987": "65712",
+                    "39988": "65713",
+                    "39989": "65713",
+                    "39990": "65713",
+                    "39991": "65717",
+                    "39992": "66076",
+                    "39993": "66075",
+                    "40155": "66076",
+                    "40551": "66875",
+                    "40552": "66875",
+                    "40553": "66875",
+                    "40554": "66875"
+                  }
+                },
+                {
+                  "id": 12496,
+                  "icon": "inv_stormsongvalley",
+                  "points": 10,
+                  "side": "A",
+                  "criteria": {
+                    "40160": "66030",
+                    "40161": "67443",
+                    "40162": "67442",
+                    "40194": "66116",
+                    "40195": "66029",
+                    "40196": "67438",
+                    "40197": "67444",
+                    "40198": "67441",
+                    "40767": "67438",
+                    "40768": "67438"
+                  }
+                },
+                {
+                  "id": 11861,
+                  "icon": "achievement_raid_laststandzandalari",
+                  "points": 10,
+                  "side": "H",
+                  "criteria": {
+                    "36882": "59506",
+                    "37082": "59511",
+                    "37953": "61846",
+                    "37954": "61846",
+                    "38187": "59508",
+                    "38189": "59509",
+                    "38514": "59510",
+                    "40025": "65797"
+                  }
+                },
+                {
+                  "id": 12478,
+                  "icon": "achievement_zone_thousandneedles_01",
+                  "points": 10,
+                  "side": "H",
+                  "criteria": {
+                    "40016": "65784",
+                    "40017": "65784",
+                    "40020": "65789",
+                    "40021": "65790",
+                    "40022": "65791",
+                    "40023": "65792",
+                    "40024": "65793",
+                    "40280": "65787"
+                  }
+                },
+                {
+                  "id": 11868,
+                  "icon": "achievement_nazmir_zone",
+                  "points": 10,
+                  "side": "H",
+                  "criteria": {
+                    "36955": "59735",
+                    "36956": "59736",
+                    "36957": "59739",
+                    "36958": "61873",
+                    "36978": "61874",
+                    "36979": "59740",
+                    "37970": "59738",
+                    "37971": "59737"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Tiragarde Sound",
+              "items": [
+                {
+                  "id": 13050,
+                  "icon": "inv_misc_food_legion_gooslime_drop",
+                  "points": 5,
+                  "criteria": {
+                    "41662": "68982",
+                    "41663": "68983",
+                    "41664": "68984",
+                    "41665": "68985"
+                  }
+                },
+                {
+                  "id": 13049,
+                  "icon": "inv_tortollanhead",
+                  "points": 5,
+                  "side": "A",
+                  "criteria": {
+                    "41666": "68993",
+                    "41668": "68987",
+                    "41669": "68990",
+                    "41670": "68991",
+                    "41671": "68992"
+                  }
+                },
+                {
+                  "id": 12087,
+                  "icon": "inv_horse3saddle003_chestnut",
+                  "points": 5,
+                  "side": "A"
+                },
+                {
+                  "id": 13059,
+                  "icon": "inv_misc_rope_01",
+                  "points": 5,
+                  "side": "A"
+                }
+              ],
+              "id": "52bc4a3a"
+            },
+            {
+              "name": "Drustvar",
+              "items": [],
+              "id": "722bfe3b"
+            },
+            {
+              "name": "Stormsong Valley",
+              "items": [
+                {
+                  "id": 13054,
+                  "icon": "inv_saber2mount",
+                  "points": 5,
+                  "criteria": {
+                    "41420": "68664",
+                    "41421": "68665",
+                    "41422": "68666",
+                    "41423": "68667",
+                    "41424": "68668"
+                  }
+                },
+                {
+                  "id": 13053,
+                  "icon": "inv_misc_basket_04",
+                  "points": 5,
+                  "side": "A"
+                },
+                {
+                  "id": 13047,
+                  "icon": "inv_fungarian_white",
+                  "points": 5
+                },
+                {
+                  "id": 13046,
+                  "icon": "inv_stormsongvalley",
+                  "points": 5
+                },
+                {
+                  "id": 13045,
+                  "icon": "druid_ability_wildmushroom_b",
+                  "points": 5,
+                  "criteria": {}
+                },
+                {
+                  "id": 13042,
+                  "icon": "spell_arcane_mindmastery",
+                  "points": 5,
+                  "criteria": {}
+                },
+                {
+                  "id": 13062,
+                  "icon": "inv_bee_default",
+                  "points": 5,
+                  "side": "A"
+                }
+              ],
+              "id": "601e7d9e"
+            },
+            {
+              "name": "Zuldazar",
+              "items": [
+                {
+                  "id": 13039,
+                  "icon": "inv_pterrordax2mount_lightgreen",
+                  "points": 5,
+                  "side": "H"
+                },
+                {
+                  "id": 13038,
+                  "icon": "inv_armoredraptor",
+                  "points": 5,
+                  "side": "H"
+                },
+                {
+                  "id": 13030,
+                  "icon": "inv_pterrordax2mount_purple",
+                  "points": 5,
+                  "side": "H",
+                  "criteria": {
+                    "41767": "69097",
+                    "41770": "69096",
+                    "41771": "69095",
+                    "41773": "69094"
+                  }
+                },
+                {
+                  "id": 13035,
+                  "icon": "ability_racial_wardoftheloa",
+                  "points": 5
+                }
+              ],
+              "id": "59c2aa41"
+            },
+            {
+              "name": "Vol'dun",
+              "items": [
+                {
+                  "id": 13009,
+                  "icon": "achievement_profession_fishing_outlandangler",
+                  "points": 5,
+                  "side": "H",
+                  "criteria": {
+                    "41335": "68549",
+                    "41336": "68550",
+                    "41337": "68551",
+                    "41338": "68552",
+                    "41339": "68553"
+                  }
+                },
+                {
+                  "id": 13011,
+                  "icon": "inv_helm_cloth_b_01pirate_black",
+                  "points": 5
+                },
+                {
+                  "id": 13014,
+                  "icon": "inv_staff_2h_snakeman_c_01",
+                  "points": 5,
+                  "side": "H",
+                  "criteria": {
+                    "41356": "68574",
+                    "41357": "68575",
+                    "41358": "68576"
+                  }
+                },
+                {
+                  "id": 13041,
+                  "icon": "ability_thunderking_lightningwhip",
+                  "points": 5,
+                  "side": "H"
+                },
+                {
+                  "id": 13017,
+                  "icon": "inv_tabard_vulpera",
+                  "points": 5,
+                  "side": "H"
+                }
+              ],
+              "id": "72dcdbf0"
+            },
+            {
+              "name": "Nazmir",
+              "items": [
+                {
+                  "id": 13026,
+                  "icon": "ability_rogue_surpriseattack2",
+                  "points": 5,
+                  "side": "A"
+                },
+                {
+                  "id": 13025,
+                  "icon": "ability_rogue_murderspree",
+                  "points": 5,
+                  "side": "H"
+                },
+                {
+                  "id": 13023,
+                  "icon": "inv_offhand_stratholme_a_02",
+                  "points": 5
+                },
+                {
+                  "id": 13022,
+                  "icon": "ivn_toadloamount",
+                  "points": 5,
+                  "side": "H"
+                },
+                {
+                  "id": 13021,
+                  "icon": "ships_ability_bombers",
+                  "points": 5,
+                  "side": "H"
+                }
+              ],
+              "id": "75c47843"
+            }
+          ]
         },
         {
           "name": "Legion",
