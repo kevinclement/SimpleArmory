@@ -44,11 +44,35 @@
             "spellid": "170289",
             "itemId": "118577",
             "icon": "ability_mount_stormcrowmount"
+          },
+          {
+            "itemId": 163220,
+            "name": "Rooter",
+            "icon": "inv_pet_prairiedog",
+            "spellid": 279129
+          },
+          {
+            "itemId": 163218,
+            "name": "Hearthy",
+            "icon": "inv_hearthstonepet",
+            "spellid": 233650
           }
         ]
       },
       {
-        "name": "Prestige",
+        "name": "Toys",
+        "id": "57e71f2d",
+        "items": [
+          {
+            "itemId": 163244,
+            "name": "Brutus",
+            "icon": "creatureportrait_robot_bulldog",
+            "spellid": 279171
+          }
+        ]
+      },
+      {
+        "name": "Honor",
         "items": [
           {
             "spellid": "221684",
@@ -71,6 +95,20 @@
             "spellid": "230443",
             "itemId": "142379",
             "icon": "inv_boastfulsquire_hd"
+          },
+          {
+            "itemId": 163975,
+            "name": "Sir Snips",
+            "icon": "inv_crab2alliance",
+            "spellid": 280728,
+            "side": "A"
+          },
+          {
+            "itemId": 163974,
+            "name": "Bucketshell",
+            "icon": "inv_crab2horde",
+            "spellid": 280727,
+            "side": "H"
           }
         ]
       },
@@ -152,7 +190,17 @@
             "itemId": "101426",
             "icon": "inv_legionadventure"
           },
-          { "spellid": "260887", "itemId": "156721", "icon": "achievement_guildperk_gmail" }
+          {
+            "spellid": "260887",
+            "itemId": "156721",
+            "icon": "achievement_guildperk_gmail"
+          },
+          {
+            "itemId": 163504,
+            "name": "Child of Jani",
+            "icon": "ability_hunter_pet_raptor",
+            "spellid": 279220
+          }
         ]
       }
     ]
@@ -160,6 +208,54 @@
   {
     "name": "Quest",
     "subcats": [
+      {
+        "name": "Battle for Azeroth",
+        "id": "4daa7e00",
+        "items": [
+          {
+            "itemId": 163496,
+            "name": "Strange Looking Mechanical Squirrel",
+            "icon": "inv_pet_mechanicalsquirrel",
+            "spellid": 279212
+          },
+          {
+            "itemId": 163495,
+            "name": "Greatwing Macaw Feather",
+            "icon": "inv_icon_feather03c",
+            "spellid": 279211
+          },
+          {
+            "itemId": 160940,
+            "name": "Intact Chicken Brain",
+            "icon": "inv_misc_organ_03",
+            "spellid": 273869
+          },
+          {
+            "itemId": 158464,
+            "name": "Poda",
+            "icon": "inv_ferret_stripeddark",
+            "spellid": 273195
+          },
+          {
+            "itemId": 160847,
+            "name": "Snake Charmer's Flute",
+            "icon": "8xp_vulperaflute",
+            "spellid": 273839
+          },
+          {
+            "itemId": 161081,
+            "name": "Taptaf",
+            "icon": "inv_babypig",
+            "spellid": 274353
+          },
+          {
+            "itemId": 162578,
+            "name": "Baa'ls Darksign",
+            "icon": "spell_warlock_demonbolt",
+            "spellid": 277461
+          }
+        ]
+      },
       {
         "name": "Legion",
         "items": [
@@ -940,6 +1036,30 @@
             "spellid": "221906",
             "itemId": "139789",
             "icon": "inv_misc_endlesspotion"
+          },
+          {
+            "itemId": 163860,
+            "name": "Wind-Up Frog",
+            "icon": "inv_mechanicalfrog",
+            "spellid": 280617
+          },
+          {
+            "itemId": 163861,
+            "name": "Undulating Blue Sac",
+            "icon": "inv_bloodticklarvaeblue",
+            "spellid": 280618
+          },
+          {
+            "itemId": 163859,
+            "name": "Baby Crawg",
+            "icon": "inv_misc_monsterhorn_07",
+            "spellid": 279435
+          },
+          {
+            "itemId": 163858,
+            "name": "Ball of Tentacles",
+            "icon": "achievement_boss_yoggsaron_01",
+            "spellid": 280619
           }
         ]
       },
@@ -985,6 +1105,18 @@
             "spellid": "210697",
             "itemId": "136922",
             "icon": "inv_archaeology_70_wyrmytunkins"
+          },
+          {
+            "itemId": 161080,
+            "name": "Intact Direhorn Egg",
+            "icon": "inv_archaeology_80_zandalari_direhornhatchling",
+            "spellid": 274348
+          },
+          {
+            "itemId": 161089,
+            "name": "Pile of Bones",
+            "icon": "inv_archaeology_80_witch_restoredrevenant",
+            "spellid": 274380
           }
         ]
       },
@@ -1279,6 +1411,24 @@
     "name": "Raid & Dungeon Drop",
     "subcats": [
       {
+        "name": "Battle for Azeroth",
+        "id": "b5c2ad42",
+        "items": [
+          {
+            "itemId": 160702,
+            "name": "Spawn of Merektha",
+            "icon": "inv_waepon_bow_zulgrub_d_01",
+            "spellid": 273159
+          },
+          {
+            "itemId": 160704,
+            "name": "Filthy Bucket",
+            "icon": "inv_misc_1h_bucket_c_01",
+            "spellid": 273184
+          }
+        ]
+      },
+      {
         "name": "Warlords of Draenor",
         "items": [
           {
@@ -1383,6 +1533,12 @@
         "name": "Dungeons",
         "items": [
           {
+            "itemId": 161214,
+            "name": "Thousand Year Old Mummy Wraps",
+            "icon": "inv_firstaid_bandage2",
+            "spellid": 274776
+          },
+          {
             "spellid": "43918",
             "itemId": "33993",
             "icon": "spell_shaman_hex"
@@ -1474,6 +1630,18 @@
   {
     "name": "World Drop",
     "subcats": [
+      {
+        "name": "Battle for Azeroth",
+        "id": "72c890b0",
+        "items": [
+          {
+            "itemId": 163497,
+            "name": "Spooky Bundle of Sticks",
+            "icon": "inv_wickerbeastpet",
+            "spellid": 279213
+          }
+        ]
+      },
       {
         "name": "Argus",
         "items": [
@@ -2682,6 +2850,144 @@
             "spellid": "167389",
             "itemId": "118599",
             "icon": "inv_misc_herb_wldsteelbloom_petal"
+          },
+          {
+            "itemId": 163506,
+            "name": "Accursed Hexxer",
+            "icon": "inv_tikiman2_bloodtroll",
+            "spellid": 279224
+          },
+          {
+            "itemId": 163489,
+            "name": "Abyssal Eel",
+            "icon": "inv_seaeel_teal",
+            "spellid": 279205
+          },
+          {
+            "itemId": 163500,
+            "name": "Bloodfeaster Larva",
+            "icon": "inv_bloodticklarvaegreen",
+            "spellid": 279216
+          },
+          {
+            "itemId": 163510,
+            "name": "Crimson Frog",
+            "icon": "inv_pet_toad_black",
+            "spellid": 279228
+          },
+          {
+            "itemId": 163492,
+            "name": "Drustvar Piglet",
+            "icon": "inv_babypig",
+            "spellid": 279208
+          },
+          {
+            "itemId": 163493,
+            "name": "Bloody Rabbit Fang",
+            "icon": "ability_druid_disembowel",
+            "spellid": 279209
+          },
+          {
+            "itemId": 163494,
+            "name": "Wad of Spider Web",
+            "icon": "inv_misc_web_01",
+            "spellid": 279210
+          },
+          {
+            "itemId": 160708,
+            "name": "Smoochums' Bloody Heart",
+            "icon": "inv_misc_organ_01",
+            "spellid": 273215
+          },
+          {
+            "itemId": 163508,
+            "name": "Butterfly in a Jar",
+            "icon": "inv_pet_butterfly_blue",
+            "spellid": 279226
+          },
+          {
+            "itemId": 163560,
+            "name": "Saurolisk Hatchling",
+            "icon": "inv_babykomododragon_purple",
+            "spellid": 279225
+          },
+          {
+            "itemId": 163509,
+            "name": "Freshwater Pincher",
+            "icon": "inv_crab2_pink",
+            "spellid": 279227
+          },
+          {
+            "itemId": 163511,
+            "name": "Barnacled Hermit Crab",
+            "icon": "inv_hermitcrab_red",
+            "spellid": 279230
+          },
+          {
+            "itemId": 163512,
+            "name": "Sandstinger Wasp",
+            "icon": "inv_giantwasp_orange",
+            "spellid": 279231
+          },
+          {
+            "itemId": 163514,
+            "name": "Violent Looking Flower Pot",
+            "icon": "achievement_guildperk_bountifulbags",
+            "spellid": 279233
+          },
+          {
+            "itemId": 163502,
+            "name": "Lil' Ben'fon",
+            "icon": "inv_brontosaurusmount",
+            "spellid": 279218
+          },
+          {
+            "itemId": 163503,
+            "name": "Ranishu Runt",
+            "icon": "inv_bloodtrollbeast_mount_dark",
+            "spellid": 279219
+          },
+          {
+            "itemId": 163499,
+            "name": "Raptor Containment Crate",
+            "icon": "inv_crate_05",
+            "spellid": 279215
+          },
+          {
+            "itemId": 163560,
+            "name": "Saurolisk Hatchling",
+            "icon": "inv_babykomododragon_purple",
+            "spellid": 279225
+          },
+          {
+            "itemId": 163505,
+            "name": "Toad in a Box",
+            "icon": "inv_box_01",
+            "spellid": 279221
+          },
+          {
+            "itemId": 163498,
+            "name": "Tiny Direhorn",
+            "icon": "inv_babytriceratops_beige",
+            "spellid": 279214
+          },
+          {
+            "itemId": 161016,
+            "name": "Lil' Tika",
+            "icon": "inv_zandalaribabyraptorred",
+            "spellid": 274202
+          }
+        ]
+      },
+      {
+        "name": "Battle for Azeroth",
+        "id": "0bc473f9",
+        "items": [
+          {
+            "itemId": 163568,
+            "name": "Lost Platysaur",
+            "icon": "inv_babysaurolophus",
+            "spellid": 279433
           }
         ]
       },
@@ -2924,6 +3230,48 @@
   {
     "name": "Reputation Vendor",
     "subcats": [
+      {
+        "name": "Battle for Azeroth",
+        "id": "5da9eb3c",
+        "items": [
+          {
+            "itemId": 163501,
+            "name": "Tragg the Curious",
+            "icon": "ivn_toadloamount",
+            "spellid": 279217
+          },
+          {
+            "itemId": 163491,
+            "name": "Pristine Falcon Feather",
+            "icon": "inv_feather_03",
+            "spellid": 279207
+          },
+          {
+            "itemId": 163490,
+            "name": "Pair of Bee Wings",
+            "icon": "spell_nature_insect_swarm2",
+            "spellid": 279206
+          },
+          {
+            "itemId": 163513,
+            "name": "Cou'pa",
+            "icon": "inv_babyturtle2_yellow",
+            "spellid": 279232
+          },
+          {
+            "itemId": 163555,
+            "name": "Drop of Azerite",
+            "icon": "inv_radientazeriteheart",
+            "spellid": 279365
+          },
+          {
+            "itemId": 163515,
+            "name": "Shard of Azerite",
+            "icon": "inv_glowing_azerite_spire",
+            "spellid": 279234
+          }
+        ]
+      },
       {
         "name": "Legion",
         "items": [
