@@ -28,6 +28,27 @@
               "id": "812a31c4"
             },
             {
+              "name": "Battle",
+              "items": [
+                {
+                  "id": 12807,
+                  "icon": "inv_belt_cloth_zandalarquest_b_01",
+                  "points": 20
+                },
+                {
+                  "id": 12812,
+                  "icon": "inv_helm_plate_raiddeathknightmythic_s_01",
+                  "points": 25
+                },
+                {
+                  "id": 12806,
+                  "icon": "achievement_nazmir_zone",
+                  "points": 25
+                }
+              ],
+              "id": "25a84428"
+            },
+            {
               "name": "Legion",
               "items": [
                 {
@@ -894,6 +915,520 @@
             }
           ],
           "id": "59753096"
+        },
+        {
+          "name": "Battle Dungeon",
+          "subcats": [
+            {
+              "name": "Freehold",
+              "items": [
+                {
+                  "id": 12831,
+                  "icon": "achievement_dungeon_freehold",
+                  "points": 10
+                },
+                {
+                  "id": 12832,
+                  "icon": "achievement_dungeon_freehold",
+                  "points": 10
+                },
+                {
+                  "id": 12833,
+                  "icon": "achievement_dungeon_freehold",
+                  "points": 10
+                },
+                {
+                  "id": 12548,
+                  "icon": "warlock_summon_beholder",
+                  "points": 10
+                },
+                {
+                  "id": 12550,
+                  "icon": "inv_parrotmount_red",
+                  "points": 10
+                },
+                {
+                  "id": 12998,
+                  "icon": "inv_misc_treasurechest05b",
+                  "points": 10
+                }
+              ],
+              "id": "50778888"
+            },
+            {
+              "name": "Waycrest Manor",
+              "items": [
+                {
+                  "id": 12483,
+                  "icon": "achievement_dungeon_waycrestmannor",
+                  "points": 10
+                },
+                {
+                  "id": 12484,
+                  "icon": "achievement_dungeon_waycrestmannor",
+                  "points": 10
+                },
+                {
+                  "id": 12488,
+                  "icon": "achievement_dungeon_waycrestmannor",
+                  "points": 10
+                },
+                {
+                  "id": 12489,
+                  "icon": "inv_misc_book_09",
+                  "points": 10,
+                  "criteria": {
+                    "40145": "65985",
+                    "40146": "65986",
+                    "40147": "65987",
+                    "40148": "65988",
+                    "40149": "65989",
+                    "40749": "67353",
+                    "40750": "67354",
+                    "40751": "67355"
+                  }
+                },
+                {
+                  "id": 12495,
+                  "icon": "achievement_dungeon_soulboundgoliath",
+                  "points": 10
+                },
+                {
+                  "id": 12490,
+                  "icon": "achievement_dungeon_goraktul",
+                  "points": 10
+                }
+              ],
+              "id": "c9679119"
+            },
+            {
+              "name": "Shrine of the Storm",
+              "items": [
+                {
+                  "id": 12835,
+                  "icon": "achievement_dungeon_shrineofthestorm",
+                  "points": 10
+                },
+                {
+                  "id": 12837,
+                  "icon": "achievement_dungeon_shrineofthestorm",
+                  "points": 10
+                },
+                {
+                  "id": 12838,
+                  "icon": "achievement_dungeon_shrineofthestorm",
+                  "points": 10
+                },
+                {
+                  "id": 12600,
+                  "icon": "spell_fire_bluefire",
+                  "points": 10
+                },
+                {
+                  "id": 12601,
+                  "icon": "achievement_dungeon_lordstormsong",
+                  "points": 10
+                },
+                {
+                  "id": 12602,
+                  "icon": "achievement_dungeon_volzith",
+                  "points": 10
+                }
+              ],
+              "id": "5330f5d8"
+            },
+            {
+              "name": "Atal'Dazar",
+              "items": [
+                {
+                  "id": 12824,
+                  "icon": "achievement_dungeon_ataldazar",
+                  "points": 10
+                },
+                {
+                  "id": 12825,
+                  "icon": "achievement_dungeon_ataldazar",
+                  "points": 10
+                },
+                {
+                  "id": 12826,
+                  "icon": "achievement_dungeon_ataldazar",
+                  "points": 10
+                },
+                {
+                  "id": 12270,
+                  "icon": "inv_zandalaribabyraptorred",
+                  "points": 10,
+                  "criteria": {
+                    "38504": "62877",
+                    "38505": "62880",
+                    "38506": "62881",
+                    "38507": "62882"
+                  }
+                },
+                {
+                  "id": 12272,
+                  "icon": "racial_dwarf_findtreasure",
+                  "points": 10
+                },
+                {
+                  "id": 12273,
+                  "icon": "spell_fire_twilightfire",
+                  "points": 10
+                }
+              ],
+              "id": "b7c6812e"
+            },
+            {
+              "name": "Underrot",
+              "items": [
+                {
+                  "id": 12500,
+                  "icon": "achievement_dungeon_underrot",
+                  "points": 10
+                },
+                {
+                  "id": 12501,
+                  "icon": "achievement_dungeon_underrot",
+                  "points": 10
+                },
+                {
+                  "id": 12502,
+                  "icon": "achievement_dungeon_underrot",
+                  "points": 10
+                },
+                {
+                  "id": 12549,
+                  "icon": "inv_fungarian_white",
+                  "points": 10
+                },
+                {
+                  "id": 12498,
+                  "icon": "inv_artifact_corruptedbloodofzakajz",
+                  "points": 10
+                },
+                {
+                  "id": 12499,
+                  "icon": "spell_shadow_plaguecloud",
+                  "points": 10
+                }
+              ],
+              "id": "92a8611f"
+            },
+            {
+              "name": "Temple of Sethraliss",
+              "items": [
+                {
+                  "id": 12504,
+                  "icon": "achievement_dungeon_templeofsethraliss",
+                  "points": 10
+                },
+                {
+                  "id": 12505,
+                  "icon": "achievement_dungeon_templeofsethraliss",
+                  "points": 10
+                },
+                {
+                  "id": 12506,
+                  "icon": "achievement_dungeon_templeofsethraliss",
+                  "points": 10
+                },
+                {
+                  "id": 12503,
+                  "icon": "inv_misc_epicgem_06",
+                  "points": 10
+                },
+                {
+                  "id": 12507,
+                  "icon": "inv_waepon_bow_zulgrub_d_01",
+                  "points": 10
+                },
+                {
+                  "id": 12508,
+                  "icon": "spell_shaman_hex",
+                  "points": 10
+                }
+              ],
+              "id": "02ff5dbb"
+            },
+            {
+              "name": "Tol Dagor",
+              "items": [
+                {
+                  "id": 12840,
+                  "icon": "achievement_dungeon_toldagor",
+                  "points": 10
+                },
+                {
+                  "id": 12841,
+                  "icon": "achievement_dungeon_toldagor",
+                  "points": 10
+                },
+                {
+                  "id": 12842,
+                  "icon": "achievement_dungeon_toldagor",
+                  "points": 10
+                },
+                {
+                  "id": 12457,
+                  "icon": "achievement_dungeon_ignitionmagevalyri",
+                  "points": 10
+                },
+                {
+                  "id": 12462,
+                  "icon": "achievement_dungeon_overseerkorgus",
+                  "points": 10
+                }
+              ],
+              "id": "05e0459b"
+            },
+            {
+              "name": "The MOTHERLODE!!",
+              "items": [
+                {
+                  "id": 12844,
+                  "icon": "achievement_dungeon_kezan",
+                  "points": 10
+                },
+                {
+                  "id": 12845,
+                  "icon": "achievement_dungeon_kezan",
+                  "points": 10
+                },
+                {
+                  "id": 12846,
+                  "icon": "achievement_dungeon_kezan",
+                  "points": 10
+                },
+                {
+                  "id": 12854,
+                  "icon": "achievement_dungeon_mogulrazdunk",
+                  "points": 10
+                },
+                {
+                  "id": 12855,
+                  "icon": "inv_misc_soccerball",
+                  "points": 10
+                }
+              ],
+              "id": "3e071a9b"
+            },
+            {
+              "name": "Siege of Boralus",
+              "items": [
+                {
+                  "id": 12847,
+                  "icon": "achievement_dungeon_siegeofboralus",
+                  "points": 10
+                },
+                {
+                  "id": 12727,
+                  "icon": "ability_demonhunter_vengefulretreat2",
+                  "points": 10
+                },
+                {
+                  "id": 12726,
+                  "icon": "inv_misc_fish_27",
+                  "points": 10
+                }
+              ],
+              "id": "5a178eeb"
+            },
+            {
+              "name": "King's Rest",
+              "items": [
+                {
+                  "id": 12848,
+                  "icon": "achievement_dungeon_siegeofboralus",
+                  "points": 10
+                },
+                {
+                  "id": 12722,
+                  "icon": "archaeology_5_0_edictsofthethunderking",
+                  "points": 10,
+                  "criteria": {
+                    "41269": "68418",
+                    "41270": "68419",
+                    "41271": "68420",
+                    "41272": "68421"
+                  }
+                },
+                {
+                  "id": 12721,
+                  "icon": "inv_misc_bandage_05",
+                  "points": 10
+                },
+                {
+                  "id": 12723,
+                  "icon": "inv_mummypet",
+                  "points": 10
+                }
+              ],
+              "id": "8b6da771"
+            },
+            {
+              "name": "Keystone",
+              "items": [
+                {
+                  "id": 13075,
+                  "icon": "inv_relics_hourglass",
+                  "points": 10,
+                  "criteria": {
+                    "41506": "68776",
+                    "41507": "68773",
+                    "41508": "68772",
+                    "41509": "68775",
+                    "41510": "68779",
+                    "41511": "68774",
+                    "41512": "68780",
+                    "41513": "68771",
+                    "41514": "68777",
+                    "41515": "68778"
+                  }
+                }
+              ],
+              "id": "ffbb538e"
+            }
+          ]
+        },
+        {
+          "name": "Battle Raid",
+          "subcats": [
+            {
+              "name": "Uldir",
+              "items": [
+                {
+                  "id": 12521,
+                  "icon": "achievement_nazmir_boss_zekvoz",
+                  "points": 10,
+                  "criteria": {
+                    "40223": "66227",
+                    "40246": "66225",
+                    "40247": "66226"
+                  }
+                },
+                {
+                  "id": 12522,
+                  "icon": "achievement_nazmir_boss_zul",
+                  "points": 10,
+                  "criteria": {
+                    "40222": "66230",
+                    "40224": "66231",
+                    "40248": "66229"
+                  }
+                },
+                {
+                  "id": 12523,
+                  "icon": "achievement_nazmir_boss_ghuun",
+                  "points": 10,
+                  "criteria": {
+                    "40220": "66233",
+                    "40221": "66234"
+                  }
+                },
+                {
+                  "id": 12524,
+                  "icon": "achievement_nazmir_boss_talocthecorrupted",
+                  "points": 10
+                },
+                {
+                  "id": 12526,
+                  "icon": "achievement_nazmir_boss_mother",
+                  "points": 10
+                },
+                {
+                  "id": 12527,
+                  "icon": "achievement_nazmir_boss_zekvoz",
+                  "points": 10
+                },
+                {
+                  "id": 12529,
+                  "icon": "achievement_nazmir_boss_bloodofghuun",
+                  "points": 10
+                },
+                {
+                  "id": 12530,
+                  "icon": "achievement_nazmir_boss_fetiddevourer",
+                  "points": 10
+                },
+                {
+                  "id": 12531,
+                  "icon": "achievement_nazmir_boss_zul",
+                  "points": 10
+                },
+                {
+                  "id": 12532,
+                  "icon": "achievement_nazmir_boss_mythraxtheunraveler",
+                  "points": 10
+                },
+                {
+                  "id": 12533,
+                  "icon": "achievement_nazmir_boss_ghuun",
+                  "points": 10
+                },
+                {
+                  "id": 12937,
+                  "icon": "inv_gizmo_goblinboombox_01",
+                  "points": 10
+                },
+                {
+                  "id": 12938,
+                  "icon": "inv_gizmo_goblingtonkcontroller",
+                  "points": 10
+                },
+                {
+                  "id": 12823,
+                  "icon": "achievement_character_orc_male",
+                  "points": 10
+                },
+                {
+                  "id": 12828,
+                  "icon": "trade_archaeology_cthunspuzzlebox",
+                  "points": 10
+                },
+                {
+                  "id": 12772,
+                  "icon": "inv_bloodtrollfemalehead",
+                  "points": 10
+                },
+                {
+                  "id": 12830,
+                  "icon": "inv_helmet_51",
+                  "points": 10
+                },
+                {
+                  "id": 12836,
+                  "icon": "inv_offhand_1h_xalzaix_d_01",
+                  "points": 10
+                },
+                {
+                  "id": 12551,
+                  "icon": "inv_misc_throwingball_01",
+                  "points": 10
+                }
+              ],
+              "id": "ebe6fbbd"
+            },
+            {
+              "name": "World",
+              "items": [
+                {
+                  "id": 12587,
+                  "icon": "ability_hunter_aspectoftheviper",
+                  "points": 10,
+                  "criteria": {
+                    "40529": "66831",
+                    "40530": "66832",
+                    "40531": "66833",
+                    "40532": "66834",
+                    "40533": "66835",
+                    "40534": "66836"
+                  }
+                }
+              ],
+              "id": "669e1d1f"
+            }
+          ]
         },
         {
           "name": "Legion Dungeon",
@@ -7806,6 +8341,117 @@
               "id": "b88a6272"
             },
             {
+              "name": "Honor",
+              "items": [
+                {
+                  "id": 12893,
+                  "icon": "achievement_legionpvptier1",
+                  "points": 10
+                },
+                {
+                  "id": 12894,
+                  "icon": "achievement_legionpvptier2",
+                  "points": 10
+                },
+                {
+                  "id": 12895,
+                  "icon": "achievement_legionpvptier3",
+                  "points": 10
+                },
+                {
+                  "id": 12900,
+                  "icon": "achievement_legionpvptier4",
+                  "points": 10
+                },
+                {
+                  "id": 12901,
+                  "icon": "achievement_legionpvp2tier1",
+                  "points": 10
+                },
+                {
+                  "id": 12902,
+                  "icon": "achievement_legionpvp2tier2",
+                  "points": 10
+                },
+                {
+                  "id": 12903,
+                  "icon": "achievement_legionpvp2tier3",
+                  "points": 10
+                },
+                {
+                  "id": 12904,
+                  "icon": "achievement_legionpvp2tier4",
+                  "points": 10
+                },
+                {
+                  "id": 12905,
+                  "icon": "achievement_legionpvp2tier5",
+                  "points": 10
+                },
+                {
+                  "id": 12906,
+                  "icon": "achievement_legionpvp3tier2",
+                  "points": 10
+                },
+                {
+                  "id": 12907,
+                  "icon": "achievement_legionpvp3tier3",
+                  "points": 10
+                },
+                {
+                  "id": 12908,
+                  "icon": "achievement_legionpvp3tier4",
+                  "points": 10
+                },
+                {
+                  "id": 12909,
+                  "icon": "achievement_legionpvp3tier5",
+                  "points": 10
+                },
+                {
+                  "id": 12910,
+                  "icon": "achievement_legionpvp4tier2",
+                  "points": 10
+                },
+                {
+                  "id": 12911,
+                  "icon": "achievement_legionpvp4tier3",
+                  "points": 10
+                },
+                {
+                  "id": 12912,
+                  "icon": "achievement_legionpvp4tier4",
+                  "points": 10
+                },
+                {
+                  "id": 12913,
+                  "icon": "achievement_legionpvp4tier6",
+                  "points": 10
+                },
+                {
+                  "id": 12914,
+                  "icon": "achievement_legionpvp5tier1",
+                  "points": 10
+                },
+                {
+                  "id": 12915,
+                  "icon": "achievement_legionpvp5tier2",
+                  "points": 10
+                },
+                {
+                  "id": 12916,
+                  "icon": "achievement_legionpvp5tier3",
+                  "points": 10
+                },
+                {
+                  "id": 12917,
+                  "icon": "achievement_legionpvp5tier4",
+                  "points": 10
+                }
+              ],
+              "id": "d716e3c2"
+            },
+            {
               "name": "World Quests",
               "items": [
                 {
@@ -7995,6 +8641,162 @@
                 }
               ],
               "id": "549f401b"
+            },
+            {
+              "name": "War Mode",
+              "items": [
+                {
+                  "id": 12572,
+                  "icon": "inv_crate_03",
+                  "points": 10
+                },
+                {
+                  "id": 12571,
+                  "icon": "ability_blackhand_marked4death",
+                  "points": 10
+                },
+                {
+                  "id": 12574,
+                  "icon": "inv_tourofdutynazmir",
+                  "points": 10
+                },
+                {
+                  "id": 12575,
+                  "icon": "inv_tourofdutyzuldazar",
+                  "points": 10
+                },
+                {
+                  "id": 12576,
+                  "icon": "inv_tourofdutyvoldun",
+                  "points": 10
+                },
+                {
+                  "id": 12577,
+                  "icon": "inv_tourofdutytiragardesound",
+                  "points": 10
+                },
+                {
+                  "id": 12578,
+                  "icon": "inv_tourofdutystormsongvalley",
+                  "points": 10
+                },
+                {
+                  "id": 12579,
+                  "icon": "inv_tourofdutydrustvar",
+                  "points": 10
+                },
+                {
+                  "id": 12573,
+                  "icon": "inv_bandofbrothers",
+                  "points": 15,
+                  "criteria": {
+                    "41008": "67922",
+                    "41009": "67923",
+                    "41010": "67924",
+                    "41011": "67925"
+                  }
+                },
+                {
+                  "id": 12604,
+                  "icon": "inv_conquerorifazeroth_horde",
+                  "points": 20,
+                  "side": "H",
+                  "criteria": {
+                    "40589": "67930",
+                    "40590": "67929",
+                    "40591": "67928",
+                    "40592": "67927",
+                    "40593": "67926",
+                    "40594": "67931",
+                    "40599": "67090",
+                    "40600": "67091",
+                    "40601": "67092"
+                  }
+                },
+                {
+                  "id": 12605,
+                  "icon": "inv_conquerorifazeroth_alliance",
+                  "points": 20,
+                  "side": "A",
+                  "criteria": {
+                    "40589": "67940",
+                    "40590": "67939",
+                    "40591": "67938",
+                    "40592": "67937",
+                    "40593": "67936",
+                    "40594": "67941",
+                    "40599": "67933",
+                    "40600": "67934",
+                    "40601": "67935"
+                  }
+                }
+              ],
+              "id": "c5cdfc9b"
+            },
+            {
+              "name": "Dueler's Guild",
+              "items": [
+                {
+                  "id": 12856,
+                  "icon": "warrior_skullbanner",
+                  "points": 5
+                },
+                {
+                  "id": 12858,
+                  "icon": "inv_misc_desecrated_leatherglove",
+                  "points": 5
+                },
+                {
+                  "id": 12860,
+                  "icon": "achievement_arena_2v2_5",
+                  "points": 5
+                },
+                {
+                  "id": 12863,
+                  "icon": "ability_dualwield",
+                  "points": 5
+                },
+                {
+                  "id": 12859,
+                  "icon": "ability_pvp_hardiness",
+                  "points": 5
+                },
+                {
+                  "id": 12861,
+                  "icon": "ability_parry",
+                  "points": 0,
+                  "criteria": {
+                    "41081": "68041",
+                    "41082": "68042",
+                    "41094": "68056"
+                  }
+                },
+                {
+                  "id": 12862,
+                  "icon": "achievement_arena_3v3_4",
+                  "points": 0,
+                  "criteria": {
+                    "41083": "68044",
+                    "41084": "68045",
+                    "41085": "68046",
+                    "41086": "68047",
+                    "41087": "68049",
+                    "41088": "68048",
+                    "41089": "68050",
+                    "41090": "68051",
+                    "41091": "68052",
+                    "41092": "68053",
+                    "41093": "68054",
+                    "43156": "68055"
+                  }
+                },
+                {
+                  "id": 12857,
+                  "icon": "spell_misc_warsongfocus",
+                  "points": 5
+                }
+              ],
+              "id": "27de5faa"
             }
           ],
           "id": "e33b07f3"
@@ -10617,6 +11419,11 @@
                   "criteriaNeeded": true
                 },
                 {
+                  "id": 12544,
+                  "icon": "inv_level120",
+                  "points": 10
+                },
+                {
                   "id": "7382",
                   "icon": "achievement_arena_2v2_7",
                   "points": 20
@@ -10981,6 +11788,50 @@
                   "icon": "inv_bracer_cloth_legionquest100_b_01",
                   "points": 10,
                   "criteriaNeeded": true
+                },
+                {
+                  "id": 12546,
+                  "icon": "spell_frost_wizardmark",
+                  "points": 10,
+                  "criteria": {
+                    "40379": "66516",
+                    "40380": "66517",
+                    "40381": "66518",
+                    "40382": "66519",
+                    "40383": "66520",
+                    "40384": "66521",
+                    "40385": "66522",
+                    "40386": "66523",
+                    "40387": "66524",
+                    "40388": "66525",
+                    "40389": "66526",
+                    "40390": "66527",
+                    "40391": "66528",
+                    "40392": "66529",
+                    "40393": "66530"
+                  }
+                },
+                {
+                  "id": 12547,
+                  "icon": "inv_enchant_voidcrystal",
+                  "points": 10,
+                  "criteria": {
+                    "40394": "66532",
+                    "40395": "66533",
+                    "40396": "66534",
+                    "40397": "66535",
+                    "40398": "66536",
+                    "40399": "66537",
+                    "40400": "66538",
+                    "40401": "66539",
+                    "40402": "66540",
+                    "40403": "66541",
+                    "40404": "66542",
+                    "40405": "66543",
+                    "40406": "66544",
+                    "40407": "66545",
+                    "40408": "66546"
+                  }
                 }
               ],
               "id": "becb2792"
@@ -11599,6 +12450,48 @@
                   "id": "10761",
                   "icon": "inv_recipe_70_scroll2star",
                   "points": 10
+                },
+                {
+                  "id": 12731,
+                  "icon": "inv_misc_note_01",
+                  "points": 10,
+                  "side": "A",
+                  "criteria": {}
+                },
+                {
+                  "id": 12733,
+                  "icon": "inv_misc_note_01",
+                  "points": 10,
+                  "side": "H",
+                  "criteria": {}
+                },
+                {
+                  "id": 12734,
+                  "icon": "ability_repair",
+                  "points": 10,
+                  "side": "A",
+                  "criteria": {}
+                },
+                {
+                  "id": 12735,
+                  "icon": "ability_repair",
+                  "points": 10,
+                  "side": "H",
+                  "criteria": {}
+                },
+                {
+                  "id": 12736,
+                  "icon": "inv_hammer_16",
+                  "points": 50,
+                  "side": "A",
+                  "criteria": {}
+                },
+                {
+                  "id": 12737,
+                  "icon": "inv_hammer_16",
+                  "points": 50,
+                  "side": "H",
+                  "criteria": {}
                 }
               ],
               "id": "b2a9dcb7"
@@ -11662,6 +12555,35 @@
                   "id": "10586",
                   "icon": "inv_misc_dust",
                   "points": 15
+                },
+                {
+                  "id": 12741,
+                  "icon": "inv_misc_1h_wrench_a_02",
+                  "points": 5,
+                  "side": "A",
+                  "criteria": {}
+                },
+                {
+                  "id": 13056,
+                  "icon": "inv_misc_1h_wrench_a_02",
+                  "points": 5,
+                  "side": "H",
+                  "criteria": {}
+                },
+                {
+                  "id": 12738,
+                  "icon": "6bf_explosive_shard",
+                  "points": 10
+                },
+                {
+                  "id": 12739,
+                  "icon": "6bf_explosive_shard",
+                  "points": 15
+                },
+                {
+                  "id": 12740,
+                  "icon": "6bf_explosive_shard",
+                  "points": 25
                 }
               ],
               "id": "4b32f46d"
@@ -11719,6 +12641,18 @@
                   "id": "10600",
                   "icon": "trade_archaeology",
                   "points": 10
+                },
+                {
+                  "id": 12760,
+                  "icon": "trade_archaeology",
+                  "points": 10,
+                  "side": "A"
+                },
+                {
+                  "id": 12761,
+                  "icon": "trade_archaeology",
+                  "points": 10,
+                  "side": "H"
                 }
               ],
               "id": "21e8991f"
@@ -11789,6 +12723,16 @@
                 },
                 {
                   "id": "10608",
+                  "icon": "inv_misc_shovel_01",
+                  "points": 10
+                },
+                {
+                  "id": 12769,
+                  "icon": "inv_misc_shovel_01",
+                  "points": 10
+                },
+                {
+                  "id": 12770,
                   "icon": "inv_misc_shovel_01",
                   "points": 10
                 }
@@ -12015,6 +12959,25 @@
                   "id": "10606",
                   "icon": "inv_relics_warpring",
                   "points": 5
+                },
+                {
+                  "id": 12765,
+                  "icon": "trade_archaeology",
+                  "points": 10,
+                  "criteria": {
+                    "40842": "67622",
+                    "40843": "67623",
+                    "40844": "67624",
+                    "40845": "67625",
+                    "40846": "67626",
+                    "40847": "67627",
+                    "40848": "67628",
+                    "40849": "67629",
+                    "40850": "67630",
+                    "40851": "67631",
+                    "40852": "67632",
+                    "43323": "67621"
+                  }
                 }
               ],
               "id": "69a2692d"
@@ -12190,6 +13153,46 @@
                     "29991": "47854",
                     "29992": "47855",
                     "29993": "47856"
+                  }
+                },
+                {
+                  "id": 12762,
+                  "icon": "achievement_zone_draenor_01",
+                  "points": 25,
+                  "side": "A",
+                  "criteria": {
+                    "40829": "67593",
+                    "40830": "67594",
+                    "40831": "67595",
+                    "40832": "67596",
+                    "40833": "67597",
+                    "40834": "67598",
+                    "40835": "67599",
+                    "40836": "67600",
+                    "40837": "67601",
+                    "40838": "67602",
+                    "40839": "67603",
+                    "40840": "67604"
+                  }
+                },
+                {
+                  "id": 12764,
+                  "icon": "achievement_zone_draenor_01",
+                  "points": 25,
+                  "side": "H",
+                  "criteria": {
+                    "40829": "67608",
+                    "40830": "67609",
+                    "40831": "67610",
+                    "40832": "67611",
+                    "40833": "67612",
+                    "40834": "67613",
+                    "40835": "67614",
+                    "40836": "67615",
+                    "40837": "67616",
+                    "40838": "67617",
+                    "40839": "67618",
+                    "40840": "67619"
                   }
                 }
               ],
@@ -12671,6 +13674,18 @@
                   "id": "10589",
                   "icon": "inv_misc_food_15",
                   "points": 10
+                },
+                {
+                  "id": 12742,
+                  "icon": "inv_misc_food_15",
+                  "points": 10,
+                  "side": "A"
+                },
+                {
+                  "id": 12743,
+                  "icon": "inv_misc_food_15",
+                  "points": 10,
+                  "side": "H"
                 }
               ],
               "id": "d537243f"
@@ -13309,6 +14324,94 @@
                     "31272": "50032",
                     "31273": "50033"
                   }
+                },
+                {
+                  "id": 12744,
+                  "icon": "inv_cooking_80_minorfeast",
+                  "points": 10,
+                  "side": "A",
+                  "criteria": {
+                    "40770": "67450",
+                    "40771": "67450",
+                    "40772": "67450",
+                    "40773": "67454",
+                    "40774": "67454",
+                    "40775": "67454",
+                    "40776": "67458",
+                    "40777": "67458",
+                    "40778": "67458",
+                    "40780": "67464",
+                    "40781": "67464",
+                    "40782": "67464",
+                    "40783": "67468",
+                    "40784": "67468",
+                    "40785": "67468",
+                    "40786": "67472",
+                    "40787": "67472",
+                    "40788": "67472",
+                    "40789": "67476",
+                    "40790": "67476",
+                    "40791": "67476",
+                    "40792": "67480",
+                    "40793": "67480",
+                    "40794": "67480",
+                    "40795": "67484",
+                    "40796": "67484",
+                    "40797": "67484",
+                    "40798": "67488",
+                    "40799": "67488",
+                    "40800": "67488",
+                    "40801": "67492",
+                    "40802": "67492",
+                    "40803": "67492",
+                    "40804": "67496",
+                    "40805": "67496",
+                    "40806": "67496"
+                  }
+                },
+                {
+                  "id": 12746,
+                  "icon": "inv_cooking_80_minorfeast",
+                  "points": 10,
+                  "side": "H",
+                  "criteria": {
+                    "40770": "67501",
+                    "40771": "67501",
+                    "40772": "67501",
+                    "40773": "67505",
+                    "40774": "67505",
+                    "40775": "67505",
+                    "40776": "67509",
+                    "40777": "67509",
+                    "40778": "67509",
+                    "40780": "67513",
+                    "40781": "67513",
+                    "40782": "67513",
+                    "40783": "67517",
+                    "40784": "67517",
+                    "40785": "67517",
+                    "40786": "67521",
+                    "40787": "67521",
+                    "40788": "67521",
+                    "40789": "67525",
+                    "40790": "67525",
+                    "40791": "67525",
+                    "40792": "67529",
+                    "40793": "67529",
+                    "40794": "67529",
+                    "40795": "67533",
+                    "40796": "67533",
+                    "40797": "67533",
+                    "40798": "67537",
+                    "40799": "67537",
+                    "40800": "67537",
+                    "40801": "67541",
+                    "40802": "67541",
+                    "40803": "67541",
+                    "40804": "67545",
+                    "40805": "67545",
+                    "40806": "67545"
+                  }
                 }
               ],
               "id": "da3bf44b"
@@ -13396,6 +14499,12 @@
                   "id": "10592",
                   "icon": "inv_misc_food_cooked_greatpabanquet_steamer",
                   "points": 10
+                },
+                {
+                  "id": 12747,
+                  "icon": "inv_cooking_80_majorfeast",
+                  "points": 25,
+                  "criteria": {}
                 }
               ],
               "id": "ca180fb2"
@@ -13571,6 +14680,18 @@
                   "id": "10594",
                   "icon": "trade_fishing",
                   "points": 10
+                },
+                {
+                  "id": 12753,
+                  "icon": "trade_fishing",
+                  "points": 10,
+                  "side": "A"
+                },
+                {
+                  "id": 12754,
+                  "icon": "trade_fishing",
+                  "points": 10,
+                  "side": "H"
                 }
               ],
               "id": "ccc53106"
@@ -13646,6 +14767,22 @@
                 {
                   "id": "10597",
                   "icon": "achievement_profession_fishing_northrendangler",
+                  "points": 10
+                },
+                {
+                  "id": 12757,
+                  "icon": "inv_fishing_lanesnapper",
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 12755,
+                  "icon": "trade_alchemy_dpotion_e2",
+                  "points": 10
+                },
+                {
+                  "id": 12756,
+                  "icon": "inv_misc_fish_51",
                   "points": 10
                 }
               ],
@@ -14102,6 +15239,18 @@
                     "30776": "49237",
                     "30777": "49238"
                   }
+                },
+                {
+                  "id": 12758,
+                  "icon": "inv_bannerpvp_02",
+                  "points": 15,
+                  "side": "A"
+                },
+                {
+                  "id": 12759,
+                  "icon": "inv_bannerpvp_01",
+                  "points": 15,
+                  "side": "H"
                 }
               ],
               "id": "894d6367"
@@ -14283,6 +15432,11 @@
                     "5762": "3237",
                     "7495": "3236"
                   }
+                },
+                {
+                  "id": 12990,
+                  "icon": "inv_stingray2mount",
+                  "points": 10
                 }
               ],
               "id": "9de68640"
@@ -14526,6 +15680,519 @@
             }
           ],
           "id": "9fd3290d"
+        },
+        {
+          "name": "Battle for Azeroth",
+          "subcats": [
+            {
+              "name": "Zones",
+              "items": [
+                {
+                  "id": 12497,
+                  "icon": "inv_drustvar",
+                  "points": 10,
+                  "side": "A",
+                  "criteria": {
+                    "40168": "66065",
+                    "40169": "66066",
+                    "40170": "66067",
+                    "40171": "66068",
+                    "40172": "66069",
+                    "40173": "66070",
+                    "40174": "66071",
+                    "40175": "66072",
+                    "40176": "66073",
+                    "40177": "66074"
+                  }
+                },
+                {
+                  "id": 12473,
+                  "icon": "inv_misc_seagullpet_01",
+                  "points": 10,
+                  "side": "A",
+                  "criteria": {
+                    "39984": "65710",
+                    "39985": "66875",
+                    "39987": "65712",
+                    "39988": "65713",
+                    "39989": "65713",
+                    "39990": "65713",
+                    "39991": "65717",
+                    "39992": "66076",
+                    "39993": "66075",
+                    "40155": "66076",
+                    "40551": "66875",
+                    "40552": "66875",
+                    "40553": "66875",
+                    "40554": "66875"
+                  }
+                },
+                {
+                  "id": 12496,
+                  "icon": "inv_stormsongvalley",
+                  "points": 10,
+                  "side": "A",
+                  "criteria": {
+                    "40160": "66030",
+                    "40161": "67443",
+                    "40162": "67442",
+                    "40194": "66116",
+                    "40195": "66029",
+                    "40196": "67438",
+                    "40197": "67444",
+                    "40198": "67441",
+                    "40767": "67438",
+                    "40768": "67438"
+                  }
+                },
+                {
+                  "id": 11861,
+                  "icon": "achievement_raid_laststandzandalari",
+                  "points": 10,
+                  "side": "H",
+                  "criteria": {
+                    "36882": "59506",
+                    "37082": "59511",
+                    "37953": "61846",
+                    "37954": "61846",
+                    "38187": "59508",
+                    "38189": "59509",
+                    "38514": "59510",
+                    "40025": "65797"
+                  }
+                },
+                {
+                  "id": 12478,
+                  "icon": "achievement_zone_thousandneedles_01",
+                  "points": 10,
+                  "side": "H",
+                  "criteria": {
+                    "40016": "65784",
+                    "40017": "65784",
+                    "40020": "65789",
+                    "40021": "65790",
+                    "40022": "65791",
+                    "40023": "65792",
+                    "40024": "65793",
+                    "40280": "65787"
+                  }
+                },
+                {
+                  "id": 11868,
+                  "icon": "achievement_nazmir_zone",
+                  "points": 10,
+                  "side": "H",
+                  "criteria": {
+                    "36955": "59735",
+                    "36956": "59736",
+                    "36957": "59739",
+                    "36958": "61873",
+                    "36978": "61874",
+                    "36979": "59740",
+                    "37970": "59738",
+                    "37971": "59737"
+                  }
+                },
+                {
+                  "id": 12582,
+                  "icon": "inv_misc_seagullpet_01",
+                  "points": 10,
+                  "side": "A"
+                },
+                {
+                  "id": 12997,
+                  "icon": "inv_staff_2h_jaina_d_01",
+                  "points": 10,
+                  "side": "A"
+                },
+                {
+                  "id": 12593,
+                  "icon": "inv_trinket_80_kultiras01b",
+                  "points": 10,
+                  "side": "A",
+                  "criteria": {
+                    "40559": "66892",
+                    "40560": "66893",
+                    "40561": "66894"
+                  }
+                },
+                {
+                  "id": 12891,
+                  "icon": "inv_trinket_80_kultiras01b",
+                  "points": 10,
+                  "side": "A",
+                  "criteria": {
+                    "41137": "68179",
+                    "41138": "68181",
+                    "41395": "68180"
+                  }
+                },
+                {
+                  "id": 12555,
+                  "icon": "inv_helm_cloth_zandalardungeon_c_01",
+                  "points": 10,
+                  "side": "H"
+                },
+                {
+                  "id": 12479,
+                  "icon": "inv_axe_2h_zandalarquest_b_01",
+                  "points": 10,
+                  "side": "H",
+                  "criteria": {
+                    "40030": "65801",
+                    "40031": "65802",
+                    "40032": "65803",
+                    "40034": "65806",
+                    "40036": "65809"
+                  }
+                },
+                {
+                  "id": 12509,
+                  "icon": "achievement_doublejeopardyhorde",
+                  "points": 10,
+                  "side": "H",
+                  "criteria": {
+                    "40200": "66124",
+                    "40453": "66671",
+                    "40454": "66797",
+                    "40509": "66796",
+                    "40510": "66798",
+                    "40511": "66799",
+                    "40867": "67654",
+                    "40868": "67655"
+                  }
+                },
+                {
+                  "id": 12510,
+                  "icon": "achievement_doublejeopardyally",
+                  "points": 10,
+                  "side": "A",
+                  "criteria": {
+                    "40201": "66126",
+                    "40202": "66127",
+                    "40203": "66128",
+                    "40573": "67048",
+                    "40574": "67049",
+                    "40583": "67062",
+                    "40869": "67656",
+                    "40870": "67657"
+                  }
+                },
+                {
+                  "id": 13144,
+                  "icon": "achievement_raregarrisonquests_x",
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 13060,
+                  "icon": "inv_misc_penguinpet",
+                  "points": 5,
+                  "side": "A",
+                  "criteria": {
+                    "41764": "69091",
+                    "41766": "69092",
+                    "41768": "69093"
+                  }
+                },
+                {
+                  "id": 12719,
+                  "icon": "inv_misc_voljinsshatteredtusk",
+                  "points": 10,
+                  "side": "H",
+                  "criteria": {
+                    "40709": "67208",
+                    "40710": "67209"
+                  }
+                },
+                {
+                  "id": 13020,
+                  "icon": "ability_racial_embracetheloa",
+                  "points": 5,
+                  "side": "H",
+                  "criteria": {
+                    "41495": "68760",
+                    "41497": "68761",
+                    "41498": "68762",
+                    "41499": "68763",
+                    "41500": "68764",
+                    "41501": "68765",
+                    "41502": "68766",
+                    "41503": "68767",
+                    "41525": "68759"
+                  }
+                },
+                {
+                  "id": 12614,
+                  "icon": "inv_armoredraptor",
+                  "points": 5,
+                  "side": "H",
+                  "criteria": {
+                    "40619": "67121",
+                    "40620": "67122",
+                    "40621": "67123",
+                    "40622": "67124",
+                    "40623": "67125",
+                    "40624": "67126"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Tiragarde Sound",
+              "items": [
+                {
+                  "id": 13050,
+                  "icon": "inv_misc_food_legion_gooslime_drop",
+                  "points": 5,
+                  "criteria": {
+                    "41662": "68982",
+                    "41663": "68983",
+                    "41664": "68984",
+                    "41665": "68985"
+                  }
+                },
+                {
+                  "id": 13049,
+                  "icon": "inv_tortollanhead",
+                  "points": 5,
+                  "side": "A",
+                  "criteria": {
+                    "41666": "68993",
+                    "41668": "68987",
+                    "41669": "68990",
+                    "41670": "68991",
+                    "41671": "68992"
+                  }
+                },
+                {
+                  "id": 12087,
+                  "icon": "inv_horse3saddle003_chestnut",
+                  "points": 5,
+                  "side": "A"
+                },
+                {
+                  "id": 13059,
+                  "icon": "inv_misc_rope_01",
+                  "points": 5,
+                  "side": "A"
+                }
+              ],
+              "id": "52bc4a3a"
+            },
+            {
+              "name": "Drustvar",
+              "items": [],
+              "id": "722bfe3b"
+            },
+            {
+              "name": "Stormsong Valley",
+              "items": [
+                {
+                  "id": 13054,
+                  "icon": "inv_saber2mount",
+                  "points": 5,
+                  "criteria": {
+                    "41420": "68664",
+                    "41421": "68665",
+                    "41422": "68666",
+                    "41423": "68667",
+                    "41424": "68668"
+                  }
+                },
+                {
+                  "id": 13053,
+                  "icon": "inv_misc_basket_04",
+                  "points": 5,
+                  "side": "A"
+                },
+                {
+                  "id": 13047,
+                  "icon": "inv_fungarian_white",
+                  "points": 5
+                },
+                {
+                  "id": 13046,
+                  "icon": "inv_stormsongvalley",
+                  "points": 5
+                },
+                {
+                  "id": 13045,
+                  "icon": "druid_ability_wildmushroom_b",
+                  "points": 5,
+                  "criteria": {}
+                },
+                {
+                  "id": 13042,
+                  "icon": "spell_arcane_mindmastery",
+                  "points": 5,
+                  "criteria": {}
+                },
+                {
+                  "id": 13062,
+                  "icon": "inv_bee_default",
+                  "points": 5,
+                  "side": "A"
+                }
+              ],
+              "id": "601e7d9e"
+            },
+            {
+              "name": "Zuldazar",
+              "items": [
+                {
+                  "id": 13039,
+                  "icon": "inv_pterrordax2mount_lightgreen",
+                  "points": 5,
+                  "side": "H"
+                },
+                {
+                  "id": 13038,
+                  "icon": "inv_armoredraptor",
+                  "points": 5,
+                  "side": "H"
+                },
+                {
+                  "id": 13030,
+                  "icon": "inv_pterrordax2mount_purple",
+                  "points": 5,
+                  "side": "H",
+                  "criteria": {
+                    "41767": "69097",
+                    "41770": "69096",
+                    "41771": "69095",
+                    "41773": "69094"
+                  }
+                },
+                {
+                  "id": 13035,
+                  "icon": "ability_racial_wardoftheloa",
+                  "points": 5
+                }
+              ],
+              "id": "59c2aa41"
+            },
+            {
+              "name": "Vol'dun",
+              "items": [
+                {
+                  "id": 13009,
+                  "icon": "achievement_profession_fishing_outlandangler",
+                  "points": 5,
+                  "side": "H",
+                  "criteria": {
+                    "41335": "68549",
+                    "41336": "68550",
+                    "41337": "68551",
+                    "41338": "68552",
+                    "41339": "68553"
+                  }
+                },
+                {
+                  "id": 13011,
+                  "icon": "inv_helm_cloth_b_01pirate_black",
+                  "points": 5
+                },
+                {
+                  "id": 13014,
+                  "icon": "inv_staff_2h_snakeman_c_01",
+                  "points": 5,
+                  "side": "H",
+                  "criteria": {
+                    "41356": "68574",
+                    "41357": "68575",
+                    "41358": "68576"
+                  }
+                },
+                {
+                  "id": 13041,
+                  "icon": "ability_thunderking_lightningwhip",
+                  "points": 5,
+                  "side": "H"
+                },
+                {
+                  "id": 13017,
+                  "icon": "inv_tabard_vulpera",
+                  "points": 5,
+                  "side": "H"
+                }
+              ],
+              "id": "72dcdbf0"
+            },
+            {
+              "name": "Nazmir",
+              "items": [
+                {
+                  "id": 13026,
+                  "icon": "ability_rogue_surpriseattack2",
+                  "points": 5,
+                  "side": "A"
+                },
+                {
+                  "id": 13025,
+                  "icon": "ability_rogue_murderspree",
+                  "points": 5,
+                  "side": "H"
+                },
+                {
+                  "id": 13023,
+                  "icon": "inv_offhand_stratholme_a_02",
+                  "points": 5
+                },
+                {
+                  "id": 13022,
+                  "icon": "ivn_toadloamount",
+                  "points": 5,
+                  "side": "H"
+                },
+                {
+                  "id": 13021,
+                  "icon": "ships_ability_bombers",
+                  "points": 5,
+                  "side": "H"
+                }
+              ],
+              "id": "75c47843"
+            },
+            {
+              "name": "Events",
+              "items": [
+                {
+                  "id": 12918,
+                  "icon": "inv_heartofazeroth",
+                  "points": 10
+                },
+                {
+                  "id": 12480,
+                  "icon": "spell_nature_agitatingtotem",
+                  "points": 5,
+                  "side": "H"
+                },
+                {
+                  "id": 12481,
+                  "icon": "inv__faction_zandalariempire",
+                  "points": 5,
+                  "side": "H"
+                },
+                {
+                  "id": 13048,
+                  "icon": "ability_hunter_pet_devilsaur",
+                  "points": 5,
+                  "criteria": {
+                    "41672": "68882",
+                    "41673": "68887",
+                    "41674": "68885",
+                    "41675": "68880",
+                    "41676": "68881",
+                    "41677": "68888",
+                    "41683": "68883",
+                    "41684": "68886"
+                  }
+                }
+              ],
+              "id": "ac6d870e"
+            }
+          ]
         },
         {
           "name": "Legion",
@@ -17748,6 +19415,21 @@
                   "id": "11177",
                   "icon": "achievement_reputation_08",
                   "points": 10
+                },
+                {
+                  "id": 12864,
+                  "icon": "achievement_reputation_08",
+                  "points": 10
+                },
+                {
+                  "id": 12865,
+                  "icon": "achievement_reputation_08",
+                  "points": 10
+                },
+                {
+                  "id": 12866,
+                  "icon": "achievement_reputation_08",
+                  "points": 20
                 }
               ],
               "id": "f9a2dea4"
@@ -17830,9 +19512,167 @@
                 }
               ],
               "id": "e346f09b"
+            },
+            {
+              "name": "Allied Races",
+              "items": [
+                {
+                  "id": 12242,
+                  "icon": "achievement_alliedrace_voidelf",
+                  "points": 0,
+                  "criteria": {}
+                },
+                {
+                  "id": 12291,
+                  "icon": "inv_chest_armor_voidelf_d_01",
+                  "points": 0
+                },
+                {
+                  "id": 12243,
+                  "icon": "achievement_alliedrace_lightforgeddraenei",
+                  "points": 0,
+                  "criteria": {}
+                },
+                {
+                  "id": 12414,
+                  "icon": "inv_armor_chest_lightforgeddraenei_d_01",
+                  "points": 0
+                },
+                {
+                  "id": 12244,
+                  "icon": "achievement_alliedrace_nightborne",
+                  "points": 0,
+                  "criteria": {}
+                },
+                {
+                  "id": 12413,
+                  "icon": "inv_chest_armor_nightborne_d_01",
+                  "points": 0
+                },
+                {
+                  "id": 12245,
+                  "icon": "achievement_alliedrace_highmountaintauren",
+                  "points": 0,
+                  "criteria": {}
+                },
+                {
+                  "id": 12415,
+                  "icon": "inv_chest_armor_highmountaintauren_d_01",
+                  "points": 0
+                },
+                {
+                  "id": 12515,
+                  "icon": "achievement_alliedrace_darkirondwarf",
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 13076,
+                  "icon": "inv_shield_1h_darkirondwarf_d_01",
+                  "points": 10
+                },
+                {
+                  "id": 12518,
+                  "icon": "achievement_alliedrace_magharorc",
+                  "points": 10,
+                  "criteria": {}
+                },
+                {
+                  "id": 13077,
+                  "icon": "inv_faction_hordewarfront_round_magharorc",
+                  "points": 10
+                }
+              ],
+              "id": "2aa228db"
             }
           ],
           "id": "3092c06a"
+        },
+        {
+          "name": "Battle for Azeroth",
+          "subcats": [
+            {
+              "name": " ",
+              "items": [
+                {
+                  "id": 12947,
+                  "icon": "achievement_reputation_02",
+                  "points": 10,
+                  "criteria": {
+                    "41654": "70662",
+                    "41655": "70662",
+                    "42226": "70656",
+                    "42227": "70660",
+                    "42228": "70658",
+                    "42229": "70656",
+                    "42230": "70660",
+                    "42231": "70658",
+                    "43121": "70665",
+                    "43122": "70666"
+                  }
+                },
+                {
+                  "id": 12948,
+                  "icon": "inv_faction_talanjisexpedition",
+                  "points": 5,
+                  "side": "H"
+                },
+                {
+                  "id": 12949,
+                  "icon": "inv_faction_voldunai",
+                  "points": 5,
+                  "side": "H"
+                },
+                {
+                  "id": 12950,
+                  "icon": "inv_faction_zandalariempire",
+                  "points": 5,
+                  "side": "H"
+                },
+                {
+                  "id": 12957,
+                  "icon": "inv_tabard_hordewareffort",
+                  "points": 5,
+                  "side": "H"
+                },
+                {
+                  "id": 12951,
+                  "icon": "inv_faction_proudmooreadmiralty",
+                  "points": 5,
+                  "side": "A"
+                },
+                {
+                  "id": 12953,
+                  "icon": "inv_faction_stormswake",
+                  "points": 5,
+                  "side": "A"
+                },
+                {
+                  "id": 12952,
+                  "icon": "inv_faction_orderofembers",
+                  "points": 5,
+                  "side": "A"
+                },
+                {
+                  "id": 12954,
+                  "icon": "inv_tabard_alliancewareffort",
+                  "points": 5,
+                  "side": "A"
+                },
+                {
+                  "id": 12955,
+                  "icon": "inv_faction_championsofazeroth",
+                  "points": 5
+                },
+                {
+                  "id": 12956,
+                  "icon": "inv_faction_tortollanseekers",
+                  "points": 5
+                }
+              ],
+              "id": "66e3c5b7"
+            }
+          ]
         },
         {
           "name": "Legion",
@@ -18685,12 +20525,775 @@
                     "37704": "61540",
                     "37705": "61541"
                   }
+                },
+                {
+                  "id": 12988,
+                  "icon": "inv_misc_tabard_explorersguild",
+                  "points": 25,
+                  "criteria": {
+                    "41302": "68485",
+                    "41303": "68486",
+                    "41304": "68484",
+                    "41305": "68483",
+                    "41306": "68482",
+                    "41307": "68481"
+                  }
                 }
               ],
               "id": "bbe0ee52"
             }
           ],
           "id": "51ac00bc"
+        },
+        {
+          "name": "Battle for Azeroth",
+          "subcats": [
+            {
+              "name": "Area",
+              "items": [
+                {
+                  "id": 12989,
+                  "icon": "inv_misc_map06",
+                  "points": 25,
+                  "criteria": {
+                    "41137": "68504",
+                    "41308": "68500",
+                    "41309": "68504",
+                    "41310": "68503",
+                    "41491": "70667",
+                    "41493": "70667",
+                    "43123": "68506"
+                  }
+                },
+                {
+                  "id": 12556,
+                  "icon": "inv_tiragardesound",
+                  "points": 10,
+                  "criteria": {
+                    "41799": "69137",
+                    "41801": "69138",
+                    "41802": "69139",
+                    "41803": "69140",
+                    "41804": "69141",
+                    "41805": "69142",
+                    "41807": "69143",
+                    "41808": "69144",
+                    "41809": "69145",
+                    "41810": "69146",
+                    "41811": "69147"
+                  }
+                },
+                {
+                  "id": 12557,
+                  "icon": "inv_drustvar",
+                  "points": 10,
+                  "criteria": {
+                    "41685": "69004",
+                    "41686": "69005",
+                    "41687": "69006",
+                    "41688": "69007",
+                    "41689": "69008",
+                    "41690": "69009",
+                    "41691": "69010",
+                    "41692": "69011",
+                    "41693": "69012",
+                    "41694": "69013",
+                    "41695": "69014",
+                    "41696": "69015"
+                  }
+                },
+                {
+                  "id": 12558,
+                  "icon": "inv_stormsongvalley",
+                  "points": 10,
+                  "criteria": {
+                    "40978": "67889",
+                    "40979": "67890",
+                    "40980": "67891",
+                    "40981": "67892",
+                    "40982": "67893",
+                    "40983": "67894",
+                    "40984": "67895",
+                    "40985": "67896",
+                    "40986": "67897"
+                  }
+                },
+                {
+                  "id": 12559,
+                  "icon": "inv_zuldazar",
+                  "points": 10,
+                  "criteria": {
+                    "41731": "69027",
+                    "41734": "69028",
+                    "41735": "69029",
+                    "41737": "69030",
+                    "41738": "69031",
+                    "41740": "69032",
+                    "41741": "69033",
+                    "41743": "69034",
+                    "41744": "69035",
+                    "41746": "69036",
+                    "41747": "69037",
+                    "41749": "69038"
+                  }
+                },
+                {
+                  "id": 12561,
+                  "icon": "achievement_nazmir_zone",
+                  "points": 10,
+                  "criteria": {
+                    "41526": "68786",
+                    "41527": "68787",
+                    "41528": "68788",
+                    "41529": "68792",
+                    "41530": "68789",
+                    "41531": "68791",
+                    "41532": "68793",
+                    "41533": "68794",
+                    "41534": "68790"
+                  }
+                },
+                {
+                  "id": 12560,
+                  "icon": "inv_voldun",
+                  "points": 10,
+                  "criteria": {
+                    "41592": "68890",
+                    "41593": "68891",
+                    "41594": "68892",
+                    "41595": "68893",
+                    "41596": "68894",
+                    "41597": "68895",
+                    "41599": "68899",
+                    "41600": "68900",
+                    "41601": "68901",
+                    "41602": "68902",
+                    "41603": "68903",
+                    "41604": "68904",
+                    "41605": "68905"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Treasure",
+              "items": [
+                {
+                  "id": 12852,
+                  "icon": "garrison_bronzechest",
+                  "points": 10,
+                  "criteria": {
+                    "41012": "67943",
+                    "41013": "67944",
+                    "41014": "67945",
+                    "41015": "67946",
+                    "41016": "67947",
+                    "41017": "67948",
+                    "41018": "67949",
+                    "41019": "67950",
+                    "41020": "67951",
+                    "41021": "67952"
+                  }
+                },
+                {
+                  "id": 12995,
+                  "icon": "inv_misc_treasurechest01a",
+                  "points": 10,
+                  "criteria": {
+                    "41697": "69017",
+                    "41698": "69018",
+                    "41699": "69019",
+                    "41700": "69020",
+                    "41701": "69021",
+                    "41702": "69022",
+                    "41703": "69023",
+                    "41704": "69024",
+                    "41705": "69025",
+                    "41752": "69077"
+                  }
+                },
+                {
+                  "id": 12851,
+                  "icon": "garrison_bronzechest",
+                  "points": 10,
+                  "criteria": {
+                    "40988": "67899",
+                    "40989": "67900",
+                    "40990": "67901",
+                    "40991": "67902",
+                    "40992": "67903",
+                    "40993": "67904",
+                    "40994": "67905",
+                    "40995": "67906",
+                    "40996": "67907",
+                    "40997": "67908"
+                  }
+                },
+                {
+                  "id": 12771,
+                  "icon": "garrison_bronzechest",
+                  "points": 10,
+                  "criteria": {
+                    "40857": "67644",
+                    "40858": "67645",
+                    "40859": "67646",
+                    "40860": "67647",
+                    "40861": "67648",
+                    "40862": "67649",
+                    "40863": "67650",
+                    "40864": "67651",
+                    "40865": "67652",
+                    "40866": "67653"
+                  }
+                },
+                {
+                  "id": 12849,
+                  "icon": "garrison_bronzechest",
+                  "points": 10,
+                  "criteria": {
+                    "40966": "67873",
+                    "40967": "67874",
+                    "40968": "67875",
+                    "40969": "67876",
+                    "40970": "67877",
+                    "40971": "67878",
+                    "40972": "67879",
+                    "41002": "67913",
+                    "41003": "67914",
+                    "41004": "67915"
+                  }
+                },
+                {
+                  "id": 12853,
+                  "icon": "inv_misc_diachest02",
+                  "points": 10,
+                  "criteria": {
+                    "41061": "68003",
+                    "41062": "68004",
+                    "41063": "68005",
+                    "41064": "68006",
+                    "41065": "68007",
+                    "41066": "68008",
+                    "41067": "68009",
+                    "41068": "68010",
+                    "41069": "68011",
+                    "41070": "68012"
+                  }
+                }
+              ],
+              "id": "e7baa68e"
+            },
+            {
+              "name": "Encounters",
+              "items": [
+                {
+                  "id": 12939,
+                  "icon": "inv_tourofdutytiragardesound",
+                  "points": 10,
+                  "criteria": {
+                    "41793": "69152",
+                    "41795": "69153",
+                    "41796": "69154",
+                    "41797": "69155",
+                    "41798": "69156",
+                    "41800": "69157",
+                    "41806": "69158",
+                    "41812": "69159",
+                    "41813": "69160",
+                    "41814": "69161",
+                    "41819": "69162",
+                    "41820": "69163",
+                    "41821": "69164",
+                    "41822": "69165",
+                    "41823": "69166",
+                    "41824": "69167",
+                    "41825": "69168",
+                    "41826": "69169",
+                    "41827": "69170",
+                    "41828": "69171",
+                    "41829": "69172",
+                    "41830": "69173",
+                    "41831": "69174",
+                    "41832": "69175",
+                    "41833": "69176",
+                    "41834": "69177",
+                    "41835": "69178",
+                    "41836": "69179",
+                    "41837": "69180",
+                    "41838": "69181",
+                    "41839": "69182",
+                    "41840": "69183"
+                  }
+                },
+                {
+                  "id": 12941,
+                  "icon": "inv_drustvar",
+                  "points": 10,
+                  "criteria": {
+                    "41706": "69040",
+                    "41707": "69041",
+                    "41708": "69042",
+                    "41709": "69043",
+                    "41711": "69045",
+                    "41712": "69046",
+                    "41713": "69047",
+                    "41714": "69048",
+                    "41715": "69049",
+                    "41717": "69051",
+                    "41718": "69052",
+                    "41719": "69053",
+                    "41720": "69054",
+                    "41721": "69055",
+                    "41722": "69056",
+                    "41723": "69057",
+                    "41724": "69058",
+                    "41725": "69059",
+                    "41726": "69060",
+                    "41727": "69061",
+                    "41728": "69062",
+                    "41729": "69064",
+                    "41730": "69065",
+                    "41732": "69066",
+                    "41733": "69067",
+                    "41736": "69068",
+                    "41739": "69069",
+                    "41742": "69070",
+                    "41745": "69071",
+                    "41748": "69072",
+                    "41750": "69073",
+                    "41751": "69074",
+                    "42342": "69063"
+                  }
+                },
+                {
+                  "id": 12940,
+                  "icon": "inv_tourofdutystormsongvalley",
+                  "points": 10,
+                  "criteria": {
+                    "41753": "69076",
+                    "41754": "69078",
+                    "41755": "69079",
+                    "41756": "69080",
+                    "41757": "69081",
+                    "41758": "69082",
+                    "41759": "69083",
+                    "41760": "69084",
+                    "41761": "69085",
+                    "41762": "69086",
+                    "41763": "69087",
+                    "41765": "69088",
+                    "41769": "69098",
+                    "41772": "69099",
+                    "41774": "69100",
+                    "41775": "69101",
+                    "41776": "69102",
+                    "41777": "69103",
+                    "41778": "69105",
+                    "41782": "69106",
+                    "41787": "69107",
+                    "41815": "69135",
+                    "41816": "69148",
+                    "41817": "69149",
+                    "41818": "69150",
+                    "41841": "69184",
+                    "41842": "69185",
+                    "41843": "69186",
+                    "41844": "69187",
+                    "41845": "69188",
+                    "41846": "69189",
+                    "41847": "69190",
+                    "41848": "69194",
+                    "41849": "69194"
+                  }
+                },
+                {
+                  "id": 12944,
+                  "icon": "inv_zuldazar",
+                  "points": 10,
+                  "criteria": {
+                    "41850": "69199",
+                    "41851": "69200",
+                    "41852": "69201",
+                    "41853": "69202",
+                    "41855": "69204",
+                    "41856": "69205",
+                    "41858": "69207",
+                    "41859": "69208",
+                    "41863": "69209",
+                    "41864": "69210",
+                    "41865": "69211",
+                    "41866": "69212",
+                    "41867": "69213",
+                    "41868": "69214",
+                    "41869": "69215",
+                    "41870": "69216",
+                    "41871": "69217",
+                    "41872": "69218",
+                    "41873": "69219",
+                    "41874": "69220",
+                    "41875": "69221",
+                    "41876": "69222",
+                    "41877": "69223"
+                  }
+                },
+                {
+                  "id": 12942,
+                  "icon": "achievement_nazmir_zone",
+                  "points": 10,
+                  "criteria": {
+                    "41440": "68700",
+                    "41444": "68701",
+                    "41447": "68702",
+                    "41448": "68703",
+                    "41450": "68704",
+                    "41451": "68705",
+                    "41452": "68706",
+                    "41453": "68707",
+                    "41454": "68708",
+                    "41455": "68709",
+                    "41456": "68710",
+                    "41457": "68711",
+                    "41458": "68712",
+                    "41459": "68713",
+                    "41460": "68714",
+                    "41461": "68715",
+                    "41462": "68716",
+                    "41463": "68717",
+                    "41464": "68718",
+                    "41466": "68719",
+                    "41467": "68720",
+                    "41468": "68721",
+                    "41469": "68722",
+                    "41470": "68723",
+                    "41472": "68725",
+                    "41473": "68726",
+                    "41474": "68727",
+                    "41475": "68728",
+                    "41476": "68729",
+                    "41477": "68730",
+                    "41478": "68731",
+                    "41479": "68732"
+                  }
+                },
+                {
+                  "id": 12943,
+                  "icon": "inv_voldun",
+                  "points": 10,
+                  "criteria": {
+                    "41606": "68907",
+                    "41607": "68908",
+                    "41608": "68909",
+                    "41609": "68910",
+                    "41610": "68911",
+                    "41611": "68912",
+                    "41612": "68913",
+                    "41613": "68914",
+                    "41614": "68915",
+                    "41615": "68916",
+                    "41616": "68917",
+                    "41617": "68918",
+                    "41618": "68919",
+                    "41619": "68920",
+                    "41620": "68921",
+                    "41621": "68922",
+                    "41622": "68923",
+                    "41623": "68924",
+                    "41624": "68925",
+                    "41625": "68926",
+                    "41626": "68927",
+                    "41627": "68928",
+                    "41628": "68929",
+                    "41629": "68930",
+                    "41630": "68931",
+                    "41631": "68932",
+                    "41632": "68933",
+                    "41633": "68934"
+                  }
+                }
+              ],
+              "id": "2dd75b4b"
+            },
+            {
+              "name": "Events",
+              "items": [],
+              "id": "43b97e65"
+            },
+            {
+              "name": "Kul Tiras",
+              "items": [
+                {
+                  "id": 13061,
+                  "icon": "spell_misc_drink",
+                  "points": 5,
+                  "criteria": {
+                    "41396": "68639",
+                    "41397": "68640",
+                    "41398": "68641",
+                    "41399": "68642",
+                    "41400": "68643",
+                    "41401": "68644",
+                    "41402": "68645",
+                    "41403": "68646",
+                    "41404": "68647",
+                    "41405": "68648",
+                    "41406": "68649",
+                    "41407": "68650",
+                    "41408": "68651",
+                    "41409": "68652",
+                    "41410": "68653",
+                    "41411": "68654",
+                    "41412": "68655",
+                    "41413": "68656",
+                    "41414": "68657",
+                    "41415": "68658",
+                    "41416": "68659",
+                    "41417": "68660"
+                  }
+                },
+                {
+                  "id": 13057,
+                  "icon": "inv_misc_scrollrolled02b",
+                  "points": 5,
+                  "criteria": {
+                    "41541": "68804",
+                    "41542": "68805",
+                    "41543": "68806",
+                    "41544": "68807",
+                    "41545": "68808",
+                    "41546": "68809"
+                  }
+                },
+                {
+                  "id": 13058,
+                  "icon": "ability_monk_tigerslust",
+                  "points": 5
+                },
+                {
+                  "id": 13087,
+                  "icon": "inv_holiday_beerfestsausage04",
+                  "points": 5,
+                  "criteria": {
+                    "41648": "68956",
+                    "41649": "68955",
+                    "41650": "68957",
+                    "41651": "68958",
+                    "41652": "68959",
+                    "41653": "68960"
+                  }
+                },
+                {
+                  "id": 13083,
+                  "icon": "inv_archaeology_80_witch_restoredrevenant",
+                  "points": 5,
+                  "criteria": {}
+                },
+                {
+                  "id": 13082,
+                  "icon": "inv_ember",
+                  "points": 5,
+                  "side": "A",
+                  "criteria": {
+                    "41636": "68938",
+                    "41637": "68939",
+                    "41638": "68940",
+                    "41639": "68941"
+                  }
+                },
+                {
+                  "id": 13064,
+                  "icon": "inv_archaeology_80_witch_etcheddrustbone",
+                  "points": 5,
+                  "criteria": {
+                    "41436": "68689",
+                    "41437": "68690",
+                    "41438": "68691",
+                    "41439": "68692",
+                    "41441": "68693",
+                    "41442": "68694",
+                    "41443": "68695",
+                    "41445": "68696",
+                    "41446": "68697",
+                    "41449": "68698"
+                  }
+                },
+                {
+                  "id": 13094,
+                  "icon": "spell_beastmaster_wolf",
+                  "points": 5,
+                  "criteria": {
+                    "41779": "69116",
+                    "41780": "69116",
+                    "41781": "69116",
+                    "41783": "69112",
+                    "41784": "69112",
+                    "41785": "69125",
+                    "41786": "69125",
+                    "41788": "69125",
+                    "41789": "69125",
+                    "41790": "69121",
+                    "41791": "69121",
+                    "41792": "69121",
+                    "41794": "69109",
+                    "42143": "69111",
+                    "42144": "69111",
+                    "42145": "69111",
+                    "42146": "69120",
+                    "42147": "69120",
+                    "42148": "69131",
+                    "42149": "69132",
+                    "42150": "69132",
+                    "42151": "69133",
+                    "42152": "69134",
+                    "42153": "69130",
+                    "42154": "69130",
+                    "42265": "69115",
+                    "42266": "69115",
+                    "42267": "69115"
+                  }
+                },
+                {
+                  "id": 13051,
+                  "icon": "inv_misc_scrollunrolled02",
+                  "points": 5,
+                  "criteria": {
+                    "41425": "68670",
+                    "41426": "68671",
+                    "41427": "68672",
+                    "41428": "68673",
+                    "41429": "68674",
+                    "41430": "68675",
+                    "41431": "68676",
+                    "41432": "68677"
+                  }
+                }
+              ],
+              "id": "039d4bcc"
+            },
+            {
+              "name": "Zandalar",
+              "items": [
+                {
+                  "id": 12482,
+                  "icon": "buff_feltreasures",
+                  "points": 5,
+                  "criteria": {
+                    "40037": "65812",
+                    "40038": "65813",
+                    "40039": "65814",
+                    "40040": "65815",
+                    "40041": "65817",
+                    "40042": "65818",
+                    "40043": "65819",
+                    "40044": "65820",
+                    "40045": "65822",
+                    "40046": "65823",
+                    "40047": "65824",
+                    "40048": "65825"
+                  }
+                },
+                {
+                  "id": 13036,
+                  "icon": "inv_helm_cloth_zandalardungeon_c_01",
+                  "points": 5,
+                  "criteria": {
+                    "41564": "68852",
+                    "41565": "68853",
+                    "41566": "68854",
+                    "41567": "68855",
+                    "41568": "68856",
+                    "41569": "68857",
+                    "41570": "68860",
+                    "41571": "68861",
+                    "41572": "68862",
+                    "41573": "68863",
+                    "41574": "68864",
+                    "41576": "68865",
+                    "41577": "68866",
+                    "41579": "68867",
+                    "41581": "68868"
+                  }
+                },
+                {
+                  "id": 13029,
+                  "icon": "inv_brontosaurusmount",
+                  "points": 5,
+                  "criteria": {
+                    "41575": "68625",
+                    "41578": "68858",
+                    "41580": "68859"
+                  }
+                },
+                {
+                  "id": 13027,
+                  "icon": "inv_fungarian_dark",
+                  "points": 5,
+                  "criteria": {
+                    "41390": "68631",
+                    "41391": "68632",
+                    "41392": "68633",
+                    "41393": "68634"
+                  }
+                },
+                {
+                  "id": 12588,
+                  "icon": "inv_misc_herb_01",
+                  "points": 5,
+                  "criteria": {
+                    "40542": "66860",
+                    "40543": "66861",
+                    "40544": "66862",
+                    "40546": "66865",
+                    "40549": "66870",
+                    "40550": "66871"
+                  }
+                },
+                {
+                  "id": 13024,
+                  "icon": "inv_misc_rune_11",
+                  "points": 5,
+                  "criteria": {
+                    "41860": "68597",
+                    "41861": "69196",
+                    "41862": "69197",
+                    "42116": "69466"
+                  }
+                },
+                {
+                  "id": 13028,
+                  "icon": "inv_pet_toad_green",
+                  "points": 5
+                },
+                {
+                  "id": 13016,
+                  "icon": "racial_dwarf_findtreasure",
+                  "points": 5,
+                  "criteria": {
+                    "41342": "68559",
+                    "41343": "68560",
+                    "41344": "68561",
+                    "41345": "68562",
+                    "41346": "68563",
+                    "41347": "68564",
+                    "41348": "68565",
+                    "41349": "68566",
+                    "41350": "68567",
+                    "41351": "68568",
+                    "41352": "68569",
+                    "41353": "68570",
+                    "41354": "68571",
+                    "41355": "68572"
+                  }
+                },
+                {
+                  "id": 13018,
+                  "icon": "inv_shield_16",
+                  "points": 10,
+                  "criteria": {}
+                }
+              ],
+              "id": "96d9e35f"
+            }
+          ]
         },
         {
           "name": "Legion",
@@ -26330,6 +28933,16 @@
                   "id": "9643",
                   "icon": "inv_box_petcarrier_01",
                   "points": 10
+                },
+                {
+                  "id": 12992,
+                  "icon": "inv_box_petcarrier_01",
+                  "points": 10
+                },
+                {
+                  "id": 12958,
+                  "icon": "inv_box_petcarrier_01",
+                  "points": 10
                 }
               ],
               "id": "be333d80"
@@ -26874,6 +29487,40 @@
                     "33140": "53633",
                     "33141": "53634"
                   }
+                },
+                {
+                  "id": 12930,
+                  "icon": "inv_pet_achievement_collectallwild_pandaria",
+                  "points": 5,
+                  "criteria": {
+                    "41273": "68336",
+                    "41274": "68424",
+                    "41275": "68425",
+                    "41276": "68426",
+                    "41277": "68427",
+                    "41278": "68428",
+                    "41279": "68429",
+                    "41280": "68430",
+                    "41281": "68431",
+                    "41282": "68432",
+                    "41283": "68433",
+                    "41284": "68434",
+                    "41285": "68435",
+                    "41286": "68436",
+                    "41287": "68437",
+                    "41288": "68439",
+                    "41289": "68438",
+                    "41290": "68440",
+                    "41291": "68441",
+                    "41292": "68442",
+                    "41293": "68443",
+                    "41294": "68444",
+                    "41295": "68445",
+                    "41296": "68446",
+                    "41297": "68447",
+                    "41298": "68448",
+                    "41299": "68449"
+                  }
                 }
               ],
               "id": "87900015"
@@ -27269,6 +29916,37 @@
                     "38942": "63656",
                     "38943": "63657",
                     "38944": "63658"
+                  }
+                },
+                {
+                  "id": 12936,
+                  "icon": "inv_pet_achievement_pandaria",
+                  "points": 10,
+                  "criteria": {
+                    "41245": "68380",
+                    "41246": "68399",
+                    "41247": "68410",
+                    "41248": "68394",
+                    "41249": "68404",
+                    "41250": "68381",
+                    "41251": "68391",
+                    "41252": "68403",
+                    "41253": "68396",
+                    "41254": "68402",
+                    "41255": "68397",
+                    "41256": "68386",
+                    "41257": "68401",
+                    "41258": "68392",
+                    "41259": "68384",
+                    "41260": "68409",
+                    "41261": "68414",
+                    "41262": "68415",
+                    "41263": "68407",
+                    "41264": "68389",
+                    "41265": "68395",
+                    "41266": "68406",
+                    "41267": "68388",
+                    "41268": "68416"
                   }
                 }
               ],
@@ -34417,56 +37095,6 @@
                 }
               ],
               "id": "2851aa64"
-            },
-            {
-              "name": "Allied Races",
-              "items": [
-                {
-                  "id": 12242,
-                  "icon": "achievement_alliedrace_voidelf",
-                  "points": 0,
-                  "criteria": {}
-                },
-                {
-                  "id": 12291,
-                  "icon": "inv_chest_armor_voidelf_d_01",
-                  "points": 0
-                },
-                {
-                  "id": 12243,
-                  "icon": "achievement_alliedrace_lightforgeddraenei",
-                  "points": 0,
-                  "criteria": {}
-                },
-                {
-                  "id": 12414,
-                  "icon": "inv_armor_chest_lightforgeddraenei_d_01",
-                  "points": 0
-                },
-                {
-                  "id": 12244,
-                  "icon": "achievement_alliedrace_nightborne",
-                  "points": 0,
-                  "criteria": {}
-                },
-                {
-                  "id": 12413,
-                  "icon": "inv_chest_armor_nightborne_d_01",
-                  "points": 0
-                },
-                {
-                  "id": 12245,
-                  "icon": "achievement_alliedrace_highmountaintauren",
-                  "points": 0,
-                  "criteria": {}
-                },
-                {
-                  "id": 12415,
-                  "icon": "inv_chest_armor_highmountaintauren_d_01",
-                  "points": 0
-                }
-              ],
-              "id": "d901db70"
             },
             {
               "name": "PVP",
