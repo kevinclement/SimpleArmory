@@ -944,6 +944,36 @@
 					"steps": 
 					[
 						{
+							"title": "Run Battle of Dazar'alor",
+							"bosses":
+							[
+								{
+									"name":"High Tinker Mekkatorque",
+									"spellId":289083,
+									"itemId":166518,
+									"mount": "G.M.O.D.",
+									"epic": true,
+									"icon":"achievement_dungeon_coinoperatedcrowdpummeler"
+								},
+								{
+									"name":"Jaina Proudmoore",
+									"spellId":289555,
+									"itemId":166705,
+									"mount": "Glacial Tidestorm",
+									"epic": true,
+									"icon":"spell_frost_summonwaterelemental_2",
+									"note":"Mythic only"
+								}
+							]
+						}
+					]
+				},
+				{
+					"title":"Portal to Zandalar / Kul'Tiras",
+					"finalStep": "Hearthstone to Zandalar / Kul'Tiras",
+					"steps": 
+					[
+						{
 							"title": "Walk to Tiragarde Sound",
 							"steps": 
 							[
