@@ -167,6 +167,7 @@
             "spellid": "274610",
             "icon": "inv_hippogryphmountnightelf",
             "name": "Smoldering Reins of the Teldrassil Hippogryph",
+            "notObtainable": true,
             "side": "A"
           },
           {
@@ -174,6 +175,7 @@
             "spellid": "272472",
             "icon": "inv_felbatmountforsaken",
             "name": "War-Torn Reins of the Undercity Plaguebat",
+            "notObtainable": true,
             "side": "H"
           },
           {
@@ -362,16 +364,22 @@
             "spellid": "243795"
           },
           {
-            "itemId": "161479",
-            "name": "Nazjatar Blood Serpent",
-            "icon": "inv_serpentmount_red",
-            "spellid": "275623"
-          },
-          {
             "itemId": "163573",
             "name": "Goldenmane's Reins",
             "icon": "ability_mount_ridinghorse",
             "spellid": "260175"
+          }
+        ]
+      },
+      {
+        "name": "Rare",
+        "id": "a9a95eb4",
+        "items": [
+          {
+            "itemId": "161479",
+            "name": "Nazjatar Blood Serpent",
+            "icon": "inv_serpentmount_red",
+            "spellid": "275623"
           }
         ]
       },
@@ -383,72 +391,84 @@
             "itemId": "161911",
             "name": "Reins of the Admiralty Stallion",
             "icon": "ability_mount_ridinghorse",
+            "side": "A",
             "spellid": "259213"
           },
           {
             "itemId": "161912",
             "name": "Reins of the Dapple Gray",
             "icon": "ability_mount_ridinghorse",
+            "side": "A",
             "spellid": "260172"
           },
           {
             "itemId": "161910",
             "name": "Reins of the Smoky Charger",
             "icon": "ability_mount_ridinghorse",
+            "side": "A",
             "spellid": "260173"
           },
           {
             "itemId": "161773",
             "name": "Reins of the Alabaster Hyena",
             "icon": "inv_hyena2mount_light",
+            "side": "H",
             "spellid": "237287"
+          },
+          {
+            "itemId": "161774",
+            "name": "Reins of the Expedition Bloodswarmer",
+            "icon": "inv_bloodtrollbeast_mount",
+            "side": "H",
+            "spellid": "275841"
+          },
+          {
+            "itemId": "161665",
+            "name": "Reins of the Cobalt Pterrordax",
+            "icon": "inv_pterrordax2mount_blue",
+            "side": "H",
+            "spellid": "275837"
           },
           {
             "itemId": "161879",
             "name": "Reins of the Proudmoore Sea Scout",
             "icon": "inv_misc_elitegryphonarmored",
+            "notObtainable": true,
             "spellid": "275868"
           },
           {
             "itemId": "161909",
             "name": "Reins of the Stormsong Coastwatcher",
             "icon": "inv_misc_elitegryphonarmored",
+            "notObtainable": true,
             "spellid": "275866"
           },
           {
             "itemId": "161908",
             "name": "Reins of the Dusky Waycrest Gryphon",
             "icon": "inv_misc_elitegryphonarmored",
+            "notObtainable": true,
             "spellid": "275859"
-          },
-          {
-            "itemId": "161774",
-            "name": "Reins of the Expedition Bloodswarmer",
-            "icon": "inv_bloodtrollbeast_mount",
-            "spellid": "275841"
           },
           {
             "itemId": "161666",
             "name": "Reins of the Armored Orange Pterrordax",
             "icon": "inv_pterrordax2mount_orange",
+            "notObtainable": true,
             "spellid": "275838"
           },
           {
             "itemId": "161667",
             "name": "Reins of the Armored Albino Pterrordax",
             "icon": "inv_pterrordax2mount_white",
+            "notObtainable": true,
             "spellid": "275840"
-          },
-          {
-            "itemId": "161665",
-            "name": "Reins of the Cobalt Pterrordax",
-            "icon": "inv_pterrordax2mount_blue",
-            "spellid": "275837"
           },
           {
             "itemId": "161664",
             "name": "Reins of the Armored Ebony Pterrordax",
             "icon": "inv_pterrordax2mount_black",
+            "notObtainable": true,
             "spellid": "244712"
           }
         ]
@@ -596,11 +616,6 @@
             "spellid": 247402,
             "itemId": 151623,
             "icon": "inv_horse2purple"
-          },
-          {
-            "spellid": 253639,
-            "itemId": 152901,
-            "icon": "inv_mount_arcaneraven"
           }
         ],
         "id": "bc380747"
@@ -750,6 +765,12 @@
             "spellid": 243651,
             "itemId": 152789,
             "icon": "inv_soulhoundmount_blue"
+          },
+          {
+            "spellid": 253639,
+            "itemId": 152901,
+            "notObtainable": true,
+            "icon": "inv_mount_arcaneraven"
           }
         ],
         "id": "07298901"
@@ -1295,7 +1316,8 @@
           {
             "spellid": "189999",
             "itemId": "128422",
-            "icon": "inv_moosemount"
+            "icon": "inv_moosemount",
+            "notObtainable": true
           }
         ],
         "id": "9e0fd274"
@@ -1361,12 +1383,6 @@
             "spellid": "148392",
             "itemId": "104208",
             "icon": "inv_belt_44a"
-          },
-          {
-            "spellid": "148396",
-            "itemId": "104246",
-            "icon": "inv_belt_45",
-            "notObtainable": true
           }
         ],
         "id": "cada0b8f"
@@ -1577,6 +1593,12 @@
             "spellid": "148417",
             "itemId": "104253",
             "icon": "inv_mount_hordescorpiong"
+          },
+          {
+            "spellid": "148396",
+            "itemId": "104246",
+            "icon": "inv_belt_45",
+            "notObtainable": true
           }
         ],
         "id": "c623e972"
@@ -2550,6 +2572,24 @@
   {
     "name": "Classic",
     "subcats": [
+      {
+        "name": "Reputation",
+        "id": "d82b2f98",
+        "items": [
+          {
+            "spellid": "64659",
+            "itemId": "46102",
+            "icon": "ability_mount_raptor",
+            "side": "H"
+          },
+          {
+            "spellid": "17229",
+            "itemId": "13086",
+            "icon": "ability_mount_pinktiger",
+            "side": "A"
+          }
+        ]
+      },
       {
         "name": "Dungeon Drop",
         "items": [
@@ -3955,14 +3995,14 @@
         "name": "Love is in the Air",
         "items": [
           {
-            "spellid": "71342",
-            "itemId": "50250",
-            "icon": "inv_valentinepinkrocket"
-          },
-          {
             "spellid": "102350",
             "itemId": "72146",
             "icon": "ability_hunter_pet_tallstrider"
+          },
+          {
+            "spellid": "71342",
+            "itemId": "50250",
+            "icon": "inv_valentinepinkrocket"
           }
         ],
         "id": "77428bcc"
@@ -4564,18 +4604,6 @@
       {
         "name": "Feats of Strength",
         "items": [
-          {
-            "spellid": "64659",
-            "itemId": "46102",
-            "icon": "ability_mount_raptor",
-            "side": "H"
-          },
-          {
-            "spellid": "17229",
-            "itemId": "13086",
-            "icon": "ability_mount_pinktiger",
-            "side": "A"
-          },
           {
             "spellid": "26656",
             "itemId": "21176",
