@@ -50,8 +50,8 @@
             var prettyCatName = supercat;
 
              switch(supercat) {
-                case 'general':
-                    prettyCatName = 'General';
+                case 'character':
+                    prettyCatName = 'Character';
                     break;
                 case 'quests':
                     prettyCatName = 'Quests';
@@ -80,15 +80,9 @@
                 case 'collections':
                     prettyCatName = 'Collections';
                     break;
-                case 'classhall':
-                    prettyCatName = 'Class Hall';
-                    break;                    
-                case 'garrisons':
-                    prettyCatName = 'Draenor Garrison';
+                case 'expansions':
+                    prettyCatName = 'Expansion Features';
                     break;
-                case 'scenarios':
-                    prettyCatName = 'Scenarios';
-                    break;                                
                 case 'legacy':
                     prettyCatName = 'Legacy';
                     break;                       

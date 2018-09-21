@@ -11,11 +11,11 @@
 
 
   <div class="achGrid">
-    <strong class="desc">General</strong>
+    <strong class="desc">Character</strong>
     <div class="progress">
-      <a ng-href="{{baseUrl}}/achievements/general">
+      <a ng-href="{{baseUrl}}/achievements/character">
         <progressbar max="100" type="success"
-        	  value="percent(achievements['General'].completed, achievements['General'].possible)" ><span>{{ achFormater(achievements['General'].completed, achievements['General'].possible) }}</span></progressbar>  		
+        	  value="percent(achievements['Character'].completed, achievements['Character'].possible)" ><span>{{ achFormater(achievements['Character'].completed, achievements['Character'].possible) }}</span></progressbar>  		
       </a>
     </div>
   </div>
@@ -111,31 +111,11 @@
   </div>
 
   <div class="achGrid">
-    <strong class="desc">Class Hall</strong>
+    <strong class="desc">Expansion Features</strong>
     <div class="progress">
-      <a ng-href="{{baseUrl}}/achievements/classhall">    
+      <a ng-href="{{baseUrl}}/achievements/expansions">    
         <progressbar max="100" type="success"
-          value="percent(achievements['Class Hall'].completed, achievements['Class Hall'].possible)" ><span>{{ achFormater(achievements['Class Hall'].completed, achievements['Class Hall'].possible) }}</span></progressbar> 
-      </a>          
-    </div>
-  </div>
-
-  <div class="achGrid">
-    <strong class="desc">Draenor Garrison</strong>
-    <div class="progress">
-      <a ng-href="{{baseUrl}}/achievements/garrisons">    
-        <progressbar max="100" type="success"
-          value="percent(achievements['Draenor Garrison'].completed, achievements['Draenor Garrison'].possible)" ><span>{{ achFormater(achievements['Draenor Garrison'].completed, achievements['Draenor Garrison'].possible) }}</span></progressbar> 
-      </a>          
-    </div>
-  </div>
-
-  <div class="achGrid">
-    <strong class="desc">Scenarios</strong>
-    <div class="progress">
-      <a ng-href="{{baseUrl}}/achievements/scenarios">    
-	      <progressbar max="100" type="success"
-      	  value="percent(achievements['Scenarios'].completed, achievements['Scenarios'].possible)" ><span>{{ achFormater(achievements['Scenarios'].completed, achievements['Scenarios'].possible) }}</span></progressbar> 
+          value="percent(achievements['Expansion Features'].completed, achievements['Expansion Features'].possible)" ><span>{{ achFormater(achievements['Expansion Features'].completed, achievements['Expansion Features'].possible) }}</span></progressbar> 
       </a>          
     </div>
   </div>
