@@ -1045,12 +1045,6 @@
             "side": "H"
           },
           {
-            "spellid": "171832",
-            "itemId": "116775",
-            "icon": "ability_mount_talbukdraenormount",
-            "side": "H"
-          },
-          {
             "spellid": "171625",
             "itemId": "116664",
             "icon": "ability_mount_elekkdraenormount",
@@ -1060,7 +1054,13 @@
             "spellid": "171833",
             "itemId": "116776",
             "icon": "ability_mount_talbukdraenormount",
-            "side": "A"
+            "notObtainable": true
+          },
+          {
+            "spellid": "171832",
+            "itemId": "116775",
+            "icon": "ability_mount_talbukdraenormount",
+            "notObtainable": true
           },
           {
             "spellid": "171829",
