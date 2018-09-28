@@ -34,6 +34,117 @@
         ]
       },
       {
+        "name": "Vendor",
+        "id": "2629653d",
+        "items": [
+          {
+            "itemId": "156649",
+            "name": "Zandalari Effigy Amulet",
+            "icon": "archaeology_5_0_ironamulet"
+          },
+          {
+            "itemId": "163705",
+            "name": "Imaginary Gun",
+            "icon": "inv_weapon_rifle_01"
+          },
+          {
+            "itemId": "163704",
+            "name": "Tiny Mechanical Mouse",
+            "icon": "inv_pet_mouse"
+          }
+        ]
+      },
+      {
+        "name": "Quest",
+        "id": "5c328ffc",
+        "items": [
+          {
+            "itemId": "156871",
+            "name": "Spitzy",
+            "icon": "inv_inscription_pigment_bug07"
+          },
+          {
+            "itemId": "163607",
+            "name": "Lucille's Sewing Needle",
+            "side": "A",
+            "icon": "inv_weapon_shortblade_18"
+          },
+          {
+            "itemId": "160509",
+            "name": "Echoes of Rezan",
+            "icon": "ability_warrior_dragonroar"
+          }
+        ]
+      },
+      {
+        "name": "Reputation",
+        "id": "9ecbc819",
+        "items": [
+          {
+            "itemId": "163211",
+            "name": "Akunda's Firesticks",
+            "side": "H",
+            "icon": "spell_fire_bluefire"
+          },
+          {
+            "itemId": "159753",
+            "name": "Desert Flute",
+            "side": "H",
+            "icon": "8xp_vulperaflute"
+          },
+          {
+            "itemId": "163201",
+            "name": "Gnoll Targetting Barrel",
+            "side": "A",
+            "icon": "inv_misc_head_gnoll_01"
+          },
+          {
+            "itemId": "163200",
+            "name": "Cursed Spyglass",
+            "side": "A",
+            "icon": "inv_misc_spyglass_03"
+          },
+          {
+            "itemId": "163210",
+            "name": "Party Totem",
+            "side": "H",
+            "icon": "inv_relics_totemoflife"
+          }
+        ]
+      },
+      {
+        "name": "Riddle",
+        "id": "13b0d905",
+        "items": [
+          {
+            "itemId": "161342",
+            "name": "Gem of Acquiescence",
+            "icon": "inv_misc_gem_amethystrough_03"
+          }
+        ]
+      },
+      {
+        "name": "Treasure",
+        "id": "7a17211a",
+        "items": [
+          {
+            "itemId": "163742",
+            "name": "Heartsbane Grimoire",
+            "icon": "inv_archaeology_80_witch_book"
+          },
+          {
+            "itemId": "163740",
+            "name": "Drust Ritual Knife",
+            "icon": "inv_knife_1h_draenorquest95_b_02"
+          },
+          {
+            "itemId": "163603",
+            "name": "Lucille's Handkerchief",
+            "icon": "inv_fabric_mageweave_01"
+          }
+        ]
+      },
+      {
         "name": "Island Expeditions",
         "id": "1b9e3d61",
         "items": [
@@ -76,131 +187,6 @@
             "itemId": "164372",
             "name": "Jinyu Light Globe",
             "icon": "inv_elemental_primal_water"
-          }
-        ]
-      },
-      {
-        "name": "Quest",
-        "id": "5c328ffc",
-        "items": [
-          {
-            "itemId": "156871",
-            "name": "Spitzy",
-            "icon": "inv_inscription_pigment_bug07"
-          },
-          {
-            "itemId": "163607",
-            "name": "Lucille's Sewing Needle",
-            "icon": "inv_weapon_shortblade_18"
-          },
-          {
-            "itemId": "160509",
-            "name": "Echoes of Rezan",
-            "icon": "ability_warrior_dragonroar"
-          }
-        ]
-      },
-      {
-        "name": "Reputation",
-        "id": "9ecbc819",
-        "items": [
-          {
-            "itemId": "163211",
-            "name": "Akunda's Firesticks",
-            "icon": "spell_fire_bluefire"
-          },
-          {
-            "itemId": "163566",
-            "name": "Vulpera Battle Banner",
-            "icon": "inv__faction_voldunai"
-          },
-          {
-            "itemId": "159753",
-            "name": "Desert Flute",
-            "icon": "8xp_vulperaflute"
-          },
-          {
-            "itemId": "163213",
-            "name": "Ghostly Explorer's Skull",
-            "icon": "inv_misc_bone_humanskull_02"
-          },
-          {
-            "itemId": "163565",
-            "name": "Vulpera Scrapper's Armor",
-            "icon": "inv_inscription_80_contract_vulpera"
-          },
-          {
-            "itemId": "163201",
-            "name": "Gnoll Targetting Barrel",
-            "icon": "inv_misc_head_gnoll_01"
-          },
-          {
-            "itemId": "163200",
-            "name": "Cursed Spyglass",
-            "icon": "inv_misc_spyglass_03"
-          },
-          {
-            "itemId": "163210",
-            "name": "Party Totem",
-            "icon": "inv_relics_totemoflife"
-          },
-          {
-            "itemId": "163206",
-            "name": "Weary Spirit Binding",
-            "icon": "inv_stone_08"
-          }
-        ]
-      },
-      {
-        "name": "Riddle",
-        "id": "13b0d905",
-        "items": [
-          {
-            "itemId": "161342",
-            "name": "Gem of Acquiescence",
-            "icon": "inv_misc_gem_amethystrough_03"
-          }
-        ]
-      },
-      {
-        "name": "Treasure",
-        "id": "7a17211a",
-        "items": [
-          {
-            "itemId": "163742",
-            "name": "Heartsbane Grimoire",
-            "icon": "inv_archaeology_80_witch_book"
-          },
-          {
-            "itemId": "163740",
-            "name": "Drust Ritual Knife",
-            "icon": "inv_knife_1h_draenorquest95_b_02"
-          },
-          {
-            "itemId": "163603",
-            "name": "Lucille's Handkerchief",
-            "icon": "inv_fabric_mageweave_01"
-          }
-        ]
-      },
-      {
-        "name": "Vendor",
-        "id": "2629653d",
-        "items": [
-          {
-            "itemId": "156649",
-            "name": "Zandalari Effigy Amulet",
-            "icon": "archaeology_5_0_ironamulet"
-          },
-          {
-            "itemId": "163705",
-            "name": "Imaginary Gun",
-            "icon": "inv_weapon_rifle_01"
-          },
-          {
-            "itemId": "163704",
-            "name": "Tiny Mechanical Mouse",
-            "icon": "inv_pet_mouse"
           }
         ]
       },
