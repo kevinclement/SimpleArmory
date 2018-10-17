@@ -14,7 +14,7 @@
         // this allows for aggregator type behavior where we can clear caches
         var callbacks = [];
 
-        // saved from last time soemone tried to use the login service
+        // saved from last time someone tried to use the login service
         var gRegion;
         var gRealm;
         var gCharacter;
@@ -73,10 +73,12 @@
 
                   // add region and faction to character
                   characterCached.region = $routeParams.region;
-                  characterCached.faction = [
-                    '','A','H','A','A','H','H','A','H','H',
-                    'H','A','','','','','','','','',
-                    '','','A','','','A','H','H','H','A','A'][characterCached.race];
+
+                  characterCached.faction = ['',
+                    'A','H','A','A','H','H','A','H','H','H',
+                    'A','','','','','','','','','',
+                    '','A','','','A','H','H','H','A','A',
+                    '','','','A','','H'][characterCached.race];
 
                   gRegion = $routeParams.region;
                   gRealm = $routeParams.realm;
