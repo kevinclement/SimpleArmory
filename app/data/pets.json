@@ -1,6 +1,6 @@
 [
   {
-    "name": "Achievement",
+    "name": "",
     "subcats": [
       {
         "name": "Collect",
@@ -113,27 +113,12 @@
         ]
       },
       {
-        "name": "",
+        "name": "Achievement",
         "items": [
-          {
-            "spellid": "126247",
-            "itemId": "86562",
-            "icon": "achievement_brewery_1"
-          },
           {
             "spellid": "130726",
             "itemId": "89686",
             "icon": "inv_pet_cricket"
-          },
-          {
-            "spellid": "61472",
-            "itemId": "44738",
-            "icon": "ability_creature_disease_05"
-          },
-          {
-            "spellid": "84492",
-            "itemId": "60869",
-            "icon": "spell_nature_earthelemental_totem"
           },
           {
             "spellid": "70613",
@@ -146,11 +131,6 @@
             "icon": "inv_pet_cricket"
           },
           {
-            "spellid": "138287",
-            "itemId": "94191",
-            "icon": "inv_babytriceratops_green"
-          },
-          {
             "spellid": "161643",
             "itemId": "111866",
             "icon": "inv_pet_peacock_gold"
@@ -161,55 +141,39 @@
             "icon": "inv_pet_baby_elekk_blue"
           },
           {
-            "spellid": "223409",
-            "itemId": "140323",
-            "icon": "inv_misc_fish_11"
-          },
-          {
-            "spellid": "224786",
-            "itemId": "140761",
-            "icon": "spell_nature_thorns_nightmare"
-          },
-          {
-            "spellid": "254255",
-            "itemId": "153040",
-            "icon": "inv_feasel_fel"
-          },
-          {
-            "spellid": "226813",
-            "itemId": "141352",
-            "icon": "inv_babydeer"
-          },
-          {
-            "spellid": "212749",
-            "itemId": "137298",
-            "icon": "inv_checkered_flag"
-          },
-          {
-            "spellid": "249870",
-            "itemId": "101426",
-            "icon": "inv_legionadventure"
-          },
-          {
-            "spellid": "260887",
-            "itemId": "156721",
-            "icon": "achievement_guildperk_gmail"
-          },
-          {
-            "itemId": 163504,
-            "name": "Child of Jani",
-            "icon": "ability_hunter_pet_raptor",
-            "spellid": 279220
+            "spellid": "138287",
+            "itemId": "94191",
+            "icon": "inv_babytriceratops_green"
           }
         ]
       }
     ]
   },
   {
-    "name": "Quest",
+    "name": "Battle for Azeroth",
+    "id": "6130fe62",
     "subcats": [
       {
-        "name": "Battle for Azeroth",
+        "name": "Achievement",
+        "id": "a4a47bf2",
+        "items": [
+          {
+            "itemId": 163504,
+            "name": "Child of Jani",
+            "icon": "ability_hunter_pet_raptor",
+            "spellid": 279220
+          },
+          {
+            "itemId": 161214,
+            "name": "Thousand Year Old Mummy Wraps",
+            "icon": "inv_firstaid_bandage2",
+            "spellid": 274776
+          }
+        ]
+      },
+
+      {
+        "name": "Quest",
         "id": "4daa7e00",
         "items": [
           {
@@ -247,7 +211,79 @@
             "name": "Taptaf",
             "icon": "inv_babypig",
             "spellid": 274353
+          }
+        ]
+      },
+      {
+        "name": "Vendor",
+        "id": "0bc473f9",
+        "items": [
+          {
+            "itemId": 163568,
+            "name": "Lost Platysaur",
+            "icon": "inv_babysaurolophus",
+            "spellid": 279433
+          }
+        ]
+      },
+      {
+        "name": "Reputation",
+        "id": "5da9eb3c",
+        "items": [
+          {
+            "itemId": 163501,
+            "name": "Tragg the Curious",
+            "icon": "ivn_toadloamount",
+            "spellid": 279217
           },
+          {
+            "itemId": 163491,
+            "name": "Pristine Falcon Feather",
+            "icon": "inv_feather_03",
+            "spellid": 279207
+          },
+          {
+            "itemId": 163490,
+            "name": "Pair of Bee Wings",
+            "icon": "spell_nature_insect_swarm2",
+            "spellid": 279206
+          },
+          {
+            "itemId": 163513,
+            "name": "Cou'pa",
+            "icon": "inv_babyturtle2_yellow",
+            "spellid": 279232
+          },
+          {
+            "itemId": 163555,
+            "name": "Drop of Azerite",
+            "icon": "inv_radientazeriteheart",
+            "spellid": 279365
+          },
+          {
+            "itemId": 163515,
+            "name": "Shard of Azerite",
+            "icon": "inv_glowing_azerite_spire",
+            "spellid": 279234
+          }
+        ]
+      },
+      {
+        "name": "Treasure",
+        "id": "72c890b0",
+        "items": [
+          {
+            "itemId": 163497,
+            "name": "Spooky Bundle of Sticks",
+            "icon": "inv_wickerbeastpet",
+            "spellid": 279213
+          }
+        ]
+      },
+      {
+        "name": "Riddle",
+        "id": "8ad77163",
+        "items": [
           {
             "itemId": 162578,
             "name": "Baa'ls Darksign",
@@ -257,7 +293,208 @@
         ]
       },
       {
-        "name": "Legion",
+        "name": "Dungeon Drop",
+        "id": "b5c2ad42",
+        "items": [
+          {
+            "itemId": 160702,
+            "name": "Spawn of Merektha",
+            "icon": "inv_waepon_bow_zulgrub_d_01",
+            "spellid": 273159
+          },
+          {
+            "itemId": 160704,
+            "name": "Filthy Bucket",
+            "icon": "inv_misc_1h_bucket_c_01",
+            "spellid": 273184
+          }
+        ]
+      },
+      {
+        "name": "Pet Charm",
+        "items": [
+          {
+            "itemId": 163506,
+            "name": "Accursed Hexxer",
+            "icon": "inv_tikiman2_bloodtroll",
+            "spellid": 279224
+          },
+          {
+            "itemId": 163489,
+            "name": "Abyssal Eel",
+            "icon": "inv_seaeel_teal",
+            "spellid": 279205
+          },
+          {
+            "itemId": 163500,
+            "name": "Bloodfeaster Larva",
+            "icon": "inv_bloodticklarvaegreen",
+            "spellid": 279216
+          },
+          {
+            "itemId": 163510,
+            "name": "Crimson Frog",
+            "icon": "inv_pet_toad_black",
+            "spellid": 279228
+          },
+          {
+            "itemId": 163492,
+            "name": "Drustvar Piglet",
+            "icon": "inv_babypig",
+            "spellid": 279208
+          },
+          {
+            "itemId": 163493,
+            "name": "Bloody Rabbit Fang",
+            "icon": "ability_druid_disembowel",
+            "spellid": 279209
+          },
+          {
+            "itemId": 163494,
+            "name": "Wad of Spider Web",
+            "icon": "inv_misc_web_01",
+            "spellid": 279210
+          },
+          {
+            "itemId": 160708,
+            "name": "Smoochums' Bloody Heart",
+            "icon": "inv_misc_organ_01",
+            "spellid": 273215
+          },
+          {
+            "itemId": 163508,
+            "name": "Butterfly in a Jar",
+            "icon": "inv_pet_butterfly_blue",
+            "spellid": 279226
+          },
+          {
+            "itemId": 163560,
+            "name": "Saurolisk Hatchling",
+            "icon": "inv_babykomododragon_purple",
+            "spellid": 279225
+          },
+          {
+            "itemId": 163509,
+            "name": "Freshwater Pincher",
+            "icon": "inv_crab2_pink",
+            "spellid": 279227
+          },
+          {
+            "itemId": 163511,
+            "name": "Barnacled Hermit Crab",
+            "icon": "inv_hermitcrab_red",
+            "spellid": 279230
+          },
+          {
+            "itemId": 163512,
+            "name": "Sandstinger Wasp",
+            "icon": "inv_giantwasp_orange",
+            "spellid": 279231
+          },
+          {
+            "itemId": 163514,
+            "name": "Violent Looking Flower Pot",
+            "icon": "achievement_guildperk_bountifulbags",
+            "spellid": 279233
+          },
+          {
+            "itemId": 163502,
+            "name": "Lil' Ben'fon",
+            "icon": "inv_brontosaurusmount",
+            "spellid": 279218
+          },
+          {
+            "itemId": 163503,
+            "name": "Ranishu Runt",
+            "icon": "inv_bloodtrollbeast_mount_dark",
+            "spellid": 279219
+          },
+          {
+            "itemId": 163499,
+            "name": "Raptor Containment Crate",
+            "icon": "inv_crate_05",
+            "spellid": 279215
+          },
+          {
+            "itemId": 163560,
+            "name": "Saurolisk Hatchling",
+            "icon": "inv_babykomododragon_purple",
+            "spellid": 279225
+          },
+          {
+            "itemId": 163505,
+            "name": "Toad in a Box",
+            "icon": "inv_box_01",
+            "spellid": 279221
+          },
+          {
+            "itemId": 163498,
+            "name": "Tiny Direhorn",
+            "icon": "inv_babytriceratops_beige",
+            "spellid": 279214
+          },
+          {
+            "itemId": 161016,
+            "name": "Lil' Tika",
+            "icon": "inv_zandalaribabyraptorred",
+            "spellid": 274202
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Legion",
+    "id": "714ef600",
+    "subcats": [
+      {
+        "name": "Achievement",
+        "id": "3f4ea958",
+        "items": [
+          {
+            "spellid": "61472",
+            "itemId": "44738",
+            "icon": "ability_creature_disease_05"
+          },
+          {
+            "spellid": "223409",
+            "itemId": "140323",
+            "icon": "inv_misc_fish_11"
+          },
+          {
+            "spellid": "224786",
+            "itemId": "140761",
+            "icon": "spell_nature_thorns_nightmare"
+          },
+          {
+            "spellid": "254255",
+            "itemId": "153040",
+            "icon": "inv_feasel_fel"
+          },
+          {
+            "spellid": "226813",
+            "itemId": "141352",
+            "icon": "inv_babydeer"
+          },
+          {
+            "spellid": "212749",
+            "itemId": "137298",
+            "icon": "inv_checkered_flag"
+          },
+          {
+            "spellid": "249870",
+            "itemId": "101426",
+            "icon": "inv_legionadventure"
+          },
+          {
+            "spellid": "260887",
+            "itemId": "156721",
+            "icon": "achievement_guildperk_gmail"
+          }
+        ]
+      },
+      {
+        "name": "Quest",
         "items": [
           {
             "spellid": "191425",
@@ -280,25 +517,125 @@
             "icon": "ability_druid_catformattack"
           },
           {
-            "spellid": "195369",
-            "itemId": "130167",
-            "icon": "inv_misc_lifeblood"
-          },
-          {
             "spellid": "221907",
             "itemId": "139790",
             "icon": "inv_elemental_mote_mana"
           },
           {
-            "spellid": "226682",
-            "itemId": "141348",
-            "icon": "quest_khadgar"
-          },
-          {
             "spellid": "193680",
             "itemId": "129277",
             "icon": "ability_hunter_eagleeye"
+          }
+        ]
+      },
+      {
+        "name": "Vendor",
+        "id": "d643cb8e",
+        "items": [
+          {
+            "spellid": "210677",
+            "itemId": "136904",
+            "icon": "inv_fishing_f_ammonite1"
           },
+          {
+            "spellid": "210698",
+            "itemId": "136923",
+            "icon": "inv_pet_celestialbabyhippo"
+          },
+          {
+            "spellid": "254196",
+            "itemId": "153026",
+            "icon": "warlock_summon_-beholder"
+          }
+        ]
+      },
+      {
+        "name": "Emissary",
+        "id": "c520320a",
+        "items": [
+          {
+            "spellid": "195369",
+            "itemId": "130167",
+            "icon": "inv_misc_lifeblood"
+          },
+          {
+            "spellid": "226682",
+            "itemId": "141348",
+            "icon": "quest_khadgar"
+          }
+        ]
+      },
+      {
+        "name": "Pet Charm",
+        "id": "78ea0e09",
+        "items": [
+          {
+            "spellid": "210682",
+            "itemId": "136910",
+            "icon": "inv_gizmo_07"
+          },
+          {
+            "spellid": "194294",
+            "itemId": "129760",
+            "icon": "ability_mount_felboarmount"
+          },
+          {
+            "spellid": "194393",
+            "itemId": "129878",
+            "icon": "ability_hunter_pet_owl"
+          },
+          {
+            "spellid": "194330",
+            "itemId": "129798",
+            "icon": "inv_fishing_f_ammonite1"
+          },
+          {
+            "spellid": "223110",
+            "itemId": "140274",
+            "icon": "inv_babyhippo01_blue"
+          },
+          {
+            "spellid": "167389",
+            "itemId": "118599",
+            "icon": "inv_misc_herb_wldsteelbloom_petal"
+          }
+        ]
+      },
+      {
+        "name": "Pet Battle",
+        "id": "fe77fd69",
+        "items": [
+          {
+            "spellid": "233647",
+            "itemId": "151645",
+            "icon": "creatureportrait_babyspider"
+          }
+        ]
+      },
+      {
+        "name": "Riddle",
+        "id": "f28ecef0",
+        "items": [
+          {
+            "spellid": "177220",
+            "icon": "trade_archaeology_draenei-candelabra"
+          },
+          {
+            "spellid": "223027",
+            "itemId": "140261",
+            "icon": "spell_priest_voidtendrils"
+          },
+          {
+            "spellid": "231215",
+            "itemId": "142223",
+            "icon": "inv_faeriedragon2_orange"
+          }
+        ]
+      },
+      {
+        "name": "Falcosaur",
+        "id": "8ac36dba",
+        "items": [
           {
             "spellid": "230074",
             "icon": "inv_falcosaurospet_red"
@@ -314,22 +651,271 @@
           {
             "spellid": "230076",
             "icon": "inv_falcosaurospet_black"
-          },
-          {
-            "spellid": "254196",
-            "itemId": "153026",
-            "icon": "warlock_summon_-beholder"
-          },
-          {
-            "spellid": "231215",
-            "itemId": "142223",
-            "icon": "inv_faeriedragon2_orange"
           }
         ]
       },
       {
-        "name": "Warlords of Draenor",
+        "name": "Order Hall",
         "items": [
+          {
+            "spellid": "193943",
+            "itemId": "129362",
+            "icon": "inv_pet_ancientprotector"
+          },
+          {
+            "spellid": "210672",
+            "itemId": "136900",
+            "icon": "levelupicon-lfd"
+          },
+          {
+            "spellid": "224536",
+            "itemId": "140741",
+            "icon": "inv_misc_herb_fireweed"
+          },
+          {
+            "spellid": "227093",
+            "itemId": "141530",
+            "icon": "inv_frostwolfpupsnowfang"
+          },
+          {
+            "spellid": "232867",
+            "itemId": "143679",
+            "icon": "inv_toucan_color4"
+          },
+          {
+            "spellid": "237250",
+            "itemId": "147539",
+            "icon": "inv_pet_dkwhelplingblood"
+          },
+          {
+            "spellid": "237251",
+            "itemId": "147540",
+            "icon": "inv_pet_dkwhelplingfrost"
+          },
+          {
+            "spellid": "237252",
+            "itemId": "147541",
+            "icon": "inv_pet_dkwhelplingunholy"
+          },
+          {
+            "spellid": "240794",
+            "itemId": "147542",
+            "icon": "inv_tigergodcubmonk"
+          }
+        ]
+      },
+      {
+        "name": "Reputation",
+        "items": [
+          {
+            "spellid": "210694",
+            "itemId": "136919",
+            "icon": "inv_moosemount2"
+          },
+          {
+            "spellid": "224403",
+            "itemId": "140672",
+            "icon": "inv_misc_book_18"
+          },
+          {
+            "spellid": "210671",
+            "itemId": "136899",
+            "icon": "levelupicon-lfd"
+          },
+          {
+            "spellid": "210669",
+            "itemId": "136898",
+            "icon": "inv_pet_wardenowl"
+          },
+          {
+            "spellid": "210695",
+            "itemId": "136920",
+            "icon": "inv_valkiergoldpet"
+          },
+          {
+            "spellid": "30152",
+            "itemId": "23712",
+            "icon": "ability_mount_whitetiger"
+          },
+          {
+            "spellid": "233805",
+            "itemId": "143842",
+            "icon": "inv_pet_raccoon"
+          },
+          {
+            "spellid": "254197",
+            "itemId": "153027",
+            "icon": "inv_feasel_purple"
+          }
+        ]
+      },
+      {
+        "name": "Rare",
+        "items": [
+          {
+            "spellid": "225200",
+            "itemId": "140934",
+            "icon": "inv_pet_toad_blue"
+          },
+          {
+            "spellid": "193434",
+            "itemId": "129188",
+            "icon": "inv_fishing_f_ammonite1"
+          },
+          {
+            "spellid": "193368",
+            "itemId": "129175",
+            "icon": "inv_misc_food_02"
+          },
+          {
+            "spellid": "195368",
+            "itemId": "130168",
+            "icon": "inv_enchant_voidsphere"
+          },
+          {
+            "spellid": "215560",
+            "itemId": "130154",
+            "icon": "inv_misc_ancientarrakoafeather"
+          },
+          {
+            "spellid": "195370",
+            "itemId": "130166",
+            "icon": "ability_mount_blackpanther"
+          },
+          {
+            "spellid": "193514",
+            "itemId": "129208",
+            "icon": "inv_misc_head_dragon_01"
+          },
+          {
+            "spellid": "254297",
+            "itemId": "153056",
+            "icon": "ability_warlock_soulsiphon"
+          },
+          {
+            "spellid": "254763",
+            "itemId": "153195",
+            "icon": "inv_misc_toy_02"
+          },
+          {
+            "spellid": "254749",
+            "itemId": "153252",
+            "icon": "ability_warlock_impoweredimp"
+          }
+        ]
+      },
+      {
+        "name": "Fel Egg",
+        "items": [
+          {
+            "spellid": "254295",
+            "itemId": "153054",
+            "icon": "inv_manaraymount_magenta"
+          },
+          {
+            "spellid": "254296",
+            "itemId": "153055",
+            "icon": "inv_manaraymount_blackfel"
+          }
+        ]
+      },
+      {
+        "name": "World Drop",
+        "items": [
+          {
+            "spellid": "210673",
+            "itemId": "136901",
+            "icon": "levelupicon-lfd"
+          },
+          {
+            "spellid": "210690",
+            "itemId": "136913",
+            "icon": "inv_misc_head_nerubian_01"
+          },
+          {
+            "spellid": "210674",
+            "itemId": "136902",
+            "icon": "inv_misc_head_dragon_green"
+          },
+          {
+            "spellid": "210665",
+            "itemId": "136897",
+            "icon": "ability_hunter_pet_owl"
+          },
+          {
+            "spellid": "240064",
+            "itemId": "146953",
+            "icon": "inv_weapon_crossbow_22"
+          },
+          {
+            "spellid": "225663",
+            "itemId": "141316",
+            "icon": "inv_babymurloc3_yellow"
+          }
+        ]
+      },
+      {
+        "name": "Falanaar",
+        "id": "ac140dc9",
+        "items": [
+          {
+            "spellid": "210691",
+            "itemId": "136914",
+            "icon": "inv_pet_spiderdemon"
+          }
+        ]
+      },
+      {
+        "name": "Deaths of Chromie",
+        "items": [
+          {
+            "spellid": "248240",
+            "itemId": "151828",
+            "icon": "inv_misc_head_dragon_bronze"
+          },
+          {
+            "spellid": "248025",
+            "itemId": "151829",
+            "icon": "spell_warrior_dragoncharge"
+          }
+        ]
+      },
+      {
+        "name": "Raid Drop",
+        "id": "4e0f660f",
+        "items": [
+          {
+            "spellid": "210675",
+            "itemId": "136903",
+            "icon": "inv_misc_head_dragon_bronze_nightmare"
+          }
+        ]
+      },
+      {
+        "name": "Paragon Reputation",
+        "id": "b6602fe6",
+        "items": [
+          {
+            "spellid": "243136",
+            "itemId": "147841",
+            "icon": "inv_felbatmount"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Warlords of Draenor",
+    "id": "86863b16",
+    "subcats": [
+      {
+        "name": "Quest",
+        "items": [
+          {
+            "spellid": "155838",
+            "itemId": "111660",
+            "icon": "ability_siege_engineer_detonate"
+          },
           {
             "spellid": "176137",
             "itemId": "118921",
@@ -353,6 +939,68 @@
             "spellid": "189357",
             "itemId": "128309",
             "icon": "tooltip_crystallizedfel"
+          }
+        ]
+      },
+      {
+        "name": "Vendor",
+        "items": [
+          {
+            "spellid": "188235",
+            "itemId": "127868",
+            "icon": "achievement_boss_oregorger"
+          },
+          {
+            "spellid": "177215",
+            "itemId": "120051",
+            "icon": "inv_box_birdcage_01"
+          },
+          {
+            "spellid": "170283",
+            "itemId": "120050",
+            "icon": "inv_box_birdcage_01"
+          },
+          {
+            "spellid": "159581",
+            "itemId": "110721",
+            "icon": "inv_misc_food_54"
+          }
+        ]
+      },
+      {
+        "name": "Pet Charm",
+        "id": "5c16d8b9",
+        "items": [
+          {
+            "spellid": "187384",
+            "itemId": "127704",
+            "icon": "inv_ravager2pet_red"
+          },
+          {
+            "spellid": "187383",
+            "itemId": "127703",
+            "icon": "ability_hunter_pet_moth"
+          },
+          {
+            "spellid": "187376",
+            "itemId": "127701",
+            "icon": "ability_hunter_pet_sporebat"
+          },
+          {
+            "spellid": "184481",
+            "itemId": "127705",
+            "icon": "inv_pet_frostwolfpup_shadow"
+          }
+        ]
+      },
+      {
+        "name": "Dungeon Drop",
+        "id": "0fa981b5",
+        "items": [
+          {
+            "spellid": "172998",
+            "itemId": "117528",
+            "icon": "achievement_dungeon_blackwingdescent_raid_chimaron"
           }
         ]
       },
@@ -442,11 +1090,251 @@
         ]
       },
       {
-        "name": "Mists of Pandaria",
+        "name": "Rare",
         "items": [
+          {
+            "spellid": "173547",
+            "itemId": "118107",
+            "icon": "inv_elemental_primal_shadow"
+          },
+          {
+            "spellid": "170272",
+            "itemId": "118709",
+            "icon": "inv_misc_herb_dreamingglory"
+          },
+          {
+            "spellid": "170273",
+            "itemId": "118207",
+            "icon": "trade_archaeology_whitehydrafigurine"
+          },
+          {
+            "spellid": "170275",
+            "itemId": "119170",
+            "icon": "achievement_boss_cthun"
+          },
+          {
+            "spellid": "170269",
+            "itemId": "116815",
+            "icon": "spell_nature_acid_01"
+          },
+          {
+            "spellid": "193572",
+            "itemId": "129216",
+            "icon": "inv_jewelcrafting_gem_40"
+          },
+          {
+            "spellid": "193588",
+            "itemId": "129217",
+            "icon": "inv_jewelcrafting_gem_39"
+          },
+          {
+            "spellid": "193589",
+            "itemId": "129218",
+            "icon": "inv_jewelcrafting_gem_42"
+          },
+          {
+            "spellid": "170278",
+            "itemId": "119431",
+            "icon": "spell_shadow_summonvoidwalker"
+          },
+          {
+            "spellid": "184480",
+            "itemId": "129205",
+            "icon": "inv_pet_frostwolfpup_fel"
+          }
+        ]
+      },
+      {
+        "name": "Treasure",
+        "id": "e33dc261",
+        "items": [
+          {
+            "spellid": "173542",
+            "itemId": "118106",
+            "icon": "priest_icon_chakra_red"
+          },
+          {
+            "spellid": "170285",
+            "itemId": "117564",
+            "icon": "inv_box_birdcage_01"
+          },
+          {
+            "spellid": "170284",
+            "itemId": "120309",
+            "icon": "spell_nature_polymorph_cow"
+          },
+          {
+            "spellid": "170282",
+            "itemId": "116402",
+            "icon": "inv_eng_gizmo3"
+          },
+          {
+            "spellid": "173543",
+            "itemId": "118104",
+            "icon": "priest_icon_chakra_blue"
+          },
+          {
+            "spellid": "164212",
+            "itemId": "112699",
+            "icon": "ability_hunter_pet_tallstrider"
+          }
+        ]
+      },
+      {
+        "name": "Reputation",
+        "items": [
+          {
+            "spellid": "190681",
+            "itemId": "128478",
+            "icon": "ability_mount_fireravengodmount"
+          },
+          {
+            "spellid": "170286",
+            "itemId": "119146",
+            "icon": "ability_hunter_pet_silithid"
+          },
+          {
+            "spellid": "167390",
+            "itemId": "119149",
+            "icon": "inv_misc_herb_wldsteelbloom_petal"
+          },
+          {
+            "spellid": "169666",
+            "itemId": "119142",
+            "icon": "inv_eng_gizmo2"
+          },
+          {
+            "spellid": "170281",
+            "itemId": "119141",
+            "icon": "inv_frostwolfpup"
+          },
+          {
+            "spellid": "170287",
+            "itemId": "119148",
+            "icon": "inv_babyhippo01"
+          },
+          {
+            "spellid": "190682",
+            "itemId": "128477",
+            "icon": "ability_mount_jungletiger"
+          },
+          {
+            "spellid": "170271",
+            "itemId": "119150",
+            "icon": "ability_hunter_pet_netherray"
+          },
+          {
+            "spellid": "170277",
+            "itemId": "119143",
+            "icon": "inv_misc_boilingblood"
+          },
+          {
+            "spellid": "172695",
+            "itemId": "117404",
+            "icon": "inv_pet_babyshark"
+          },
+          {
+            "spellid": "168977",
+            "itemId": "114919",
+            "icon": "inv_misc_throwingball_01"
+          }
+        ]
+      },
+      {
+        "name": "World Drop",
+        "items": [
+          {
+            "spellid": "167394",
+            "itemId": "118595",
+            "icon": "inv_podling_purple"
+          },
+          {
+            "spellid": "170280",
+            "itemId": "118919",
+            "icon": "inv_misc_leather_shellfragment"
+          },
+          {
+            "spellid": "167336",
+            "itemId": "113554",
+            "icon": "inv_misc_food_92_lobster"
+          }
+        ]
+      },
+      {
+        "name": "Tanaan Pet Battle",
+        "items": [
+          {
+            "spellid": "185055",
+            "itemId": "127753",
+            "icon": "inv_misc_bell_01"
+          },
+          {
+            "spellid": "187555",
+            "itemId": "127754",
+            "icon": "inv_babyhippo01"
+          },
+          {
+            "spellid": "173544",
+            "itemId": "118105",
+            "icon": "priest_icon_chakra_green"
+          },
+          {
+            "spellid": "173532",
+            "itemId": "118101",
+            "icon": "priest_icon_chakra"
+          }
+        ]
+      },
+      {
+        "name": "Raid Drop",
+        "id": "6a488763",
+        "items": [
+          {
+            "spellid": "187532",
+            "itemId": "127749",
+            "icon": "ability_felarakkoa_feldetonation_green"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mists of Pandaria",
+    "id": "3235be6c",
+    "subcats": [
+      {
+        "name": "Achievement",
+        "id": "3552756c",
+        "items": [
+          {
+            "spellid": "126247",
+            "itemId": "86562",
+            "icon": "achievement_brewery_1"
+          }
+        ]
+      },
+      {
+        "name": "Quest",
+        "items": [
+          {
+            "spellid": "122748",
+            "itemId": "84105",
+            "icon": "inv_misc_fish_58"
+          },
           {
             "spellid": "138285",
             "itemId": "94190",
+            "icon": "inv_pet_porcupine"
+          }
+        ]
+      },
+      {
+        "name": "Pet Battle",
+        "id": "99912ef5",
+        "items": [
+          {
+            "spellid": "118414",
+            "itemId": "89587",
             "icon": "inv_pet_porcupine"
           },
           {
@@ -488,21 +1376,276 @@
             "spellid": "131590",
             "itemId": "90173",
             "icon": "inv_pet_pandarenelemental"
-          },
-          {
-            "spellid": "155838",
-            "itemId": "111660",
-            "icon": "ability_siege_engineer_detonate"
-          },
-          {
-            "spellid": "122748",
-            "itemId": "84105",
-            "icon": "inv_misc_fish_58"
           }
         ]
       },
       {
-        "name": "Cataclysm",
+        "name": "Reputation",
+        "id": "35fcdb00",
+        "items": [
+          {
+            "spellid": "124000",
+            "itemId": "85447",
+            "icon": "inv_misc_fish_36"
+          },
+          {
+            "spellid": "148530",
+            "itemId": "104295",
+            "icon": "inv_pet_spectralporcupinegreen"
+          },
+          {
+            "spellid": "123784",
+            "itemId": "85222",
+            "icon": "spell_nature_insectswarm"
+          }
+        ]
+      },
+      {
+        "name": "Celestial Tournament",
+        "items": [
+          {
+            "spellid": "145697",
+            "itemId": "102145",
+            "icon": "inv_pet_cranegod"
+          },
+          {
+            "spellid": "145696",
+            "itemId": "101771",
+            "icon": "inv_pet_tigergodcub"
+          },
+          {
+            "spellid": "145698",
+            "itemId": "102147",
+            "icon": "inv_pet_jadeserpentpet"
+          },
+          {
+            "spellid": "145699",
+            "itemId": "102146",
+            "icon": "inv_pet_yakgod"
+          }
+        ]
+      },
+      {
+        "name": "Vendor",
+        "id": "7bd84e84",
+        "items": [
+          {
+            "spellid": "148684",
+            "itemId": "104332",
+            "icon": "inv_misc_trinketpanda_11"
+          },
+          {
+            "spellid": "148427",
+            "itemId": "103637",
+            "icon": "inv_pet_spectralporcupinered"
+          }
+        ]
+      },
+      {
+        "name": "Raid Drop",
+        "items": [
+          {
+            "spellid": "138825",
+            "itemId": "94574",
+            "icon": "inv_babytriceratops_blue"
+          },
+          {
+            "spellid": "139148",
+            "itemId": "94835",
+            "icon": "inv_pet_thunderislebabybird"
+          },
+          {
+            "spellid": "137977",
+            "itemId": "94125",
+            "icon": "spell_sandelemental"
+          },
+          {
+            "spellid": "138161",
+            "itemId": "94152",
+            "icon": "ability_animusdraw"
+          },
+          {
+            "spellid": "142028",
+            "itemId": "97959",
+            "icon": "spell_deathknight_bloodboil"
+          },
+          {
+            "spellid": "142029",
+            "itemId": "97960",
+            "icon": "spell_yorsahj_bloodboil_black"
+          },
+          {
+            "spellid": "148061",
+            "itemId": "104165",
+            "icon": "achievement_raid_mantidraid02"
+          },
+          {
+            "spellid": "148049",
+            "itemId": "104158",
+            "icon": "achievement_boss_siegecrafter_blackfuse"
+          },
+          {
+            "spellid": "148058",
+            "itemId": "104162",
+            "icon": "ability_shawaterelemental_split"
+          },
+          {
+            "spellid": "148059",
+            "itemId": "104163",
+            "icon": "ability_shawaterelemental_swirl"
+          }
+        ]
+      },
+      {
+        "name": "Rare",
+        "id": "8523558d",
+        "items": [
+          {
+            "spellid": "126249",
+            "itemId": "86563",
+            "icon": "inv_misc_flute_01"
+          },
+          {
+            "spellid": "126251",
+            "itemId": "86564",
+            "icon": "inv_misc_reforgedarchstone_01"
+          },
+          {
+            "spellid": "138913",
+            "itemId": "94595",
+            "icon": "inv_misc_fish_12"
+          },
+          {
+            "spellid": "148046",
+            "itemId": "104156",
+            "icon": "spell_nature_dryaddispelmagic"
+          },
+          {
+            "spellid": "148052",
+            "itemId": "104161",
+            "icon": "inv_pet_pythonbrown"
+          },
+          {
+            "spellid": "148067",
+            "itemId": "104169",
+            "icon": "inv_pet_toad_black"
+          },
+          {
+            "spellid": "148552",
+            "itemId": "104307",
+            "icon": "spell_fire_felfire"
+          },
+          {
+            "spellid": "148050",
+            "itemId": "104159",
+            "icon": "inv_pet_pandarenelementa_fire"
+          },
+          {
+            "spellid": "148066",
+            "itemId": "104168",
+            "icon": "ability_hunter_pet_crab"
+          },
+          {
+            "spellid": "148527",
+            "itemId": "104291",
+            "icon": "inv_misc_food_vendor_boiledsilkwormpupa"
+          }
+        ]
+      },
+      {
+        "name": "World Drop",
+        "items": [
+          {
+            "spellid": "139153",
+            "itemId": "94573",
+            "icon": "inv_babytriceratops_grey"
+          },
+          {
+            "spellid": "142030",
+            "itemId": "97961",
+            "icon": "achievement_cooking_masterofthesteamer"
+          },
+          {
+            "spellid": "138082",
+            "itemId": "94124",
+            "icon": "inv_pet_arcanegolem"
+          },
+          {
+            "spellid": "123778",
+            "itemId": "85220",
+            "icon": "inv_pet_turnippet"
+          },
+          {
+            "spellid": "139932",
+            "itemId": "95422",
+            "icon": "inv_zandalaribabyraptorblue"
+          },
+          {
+            "spellid": "139933",
+            "itemId": "95423",
+            "icon": "inv_zandalaribabyraptorred"
+          },
+          {
+            "spellid": "138087",
+            "itemId": "94126",
+            "icon": "inv_zandalaribabyraptorblack"
+          },
+          {
+            "spellid": "139934",
+            "itemId": "95424",
+            "icon": "inv_zandalaribabyraptorwhite"
+          },
+          {
+            "spellid": "148047",
+            "itemId": "104157",
+            "icon": "inv_pet_babycrane"
+          },
+          {
+            "spellid": "148373",
+            "itemId": "104202",
+            "icon": "inv_pet_monkey"
+          },
+          {
+            "spellid": "148051",
+            "itemId": "104160",
+            "icon": "spell_nature_naturetouchgrow"
+          },
+          {
+            "spellid": "148060",
+            "itemId": "104164",
+            "icon": "inv_pet_pandarenelemental_air"
+          },
+          {
+            "spellid": "148062",
+            "itemId": "104166",
+            "icon": "spell_fire_bluefire"
+          },
+          {
+            "spellid": "148063",
+            "itemId": "104167",
+            "icon": "inv_pet_pandarenelemental_earth"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Cataclysm",
+    "id": "ffd80305",
+    "subcats": [
+      {
+        "name": "Achievement",
+        "id": "13fdd138",
+        "items": [
+          {
+            "spellid": "84492",
+            "itemId": "60869",
+            "icon": "spell_nature_earthelemental_totem"
+          }
+        ]
+      },
+      {
+        "name": "Quest",
         "items": [
           {
             "spellid": "78683",
@@ -527,18 +1670,78 @@
         ]
       },
       {
-        "name": "",
+        "name": "Racial",
+        "id": "9708d7cf",
         "items": [
           {
-            "spellid": "101986",
-            "itemId": "72042",
-            "icon": "inv_misc_balloon_04"
+            "spellid": "123214",
+            "icon": "inv_feather_02"
           },
           {
-            "spellid": "101989",
-            "itemId": "72045",
-            "icon": "inv_misc_balloon_02"
+            "spellid": "123212",
+            "icon": "ability_hunter_pet_crab"
+          }
+        ]
+      },
+      {
+        "name": "Rare",
+        "id": "e776b33f",
+        "items": [
+          {
+            "spellid": "91343",
+            "itemId": "64494",
+            "icon": "inv_misc_qirajicrystal_03"
+          }
+        ]
+      },
+      {
+        "name": "Reputation",
+        "id": "381a8a11",
+        "items": [
+          {
+            "spellid": "89472",
+            "allianceId": "63355",
+            "hordeId": "64996",
+            "icon": "inv_misc_seagullpet_01"
           },
+          {
+            "spellid": "90637",
+            "allianceId": "90897",
+            "hordeId": "90898",
+            "icon": "inv_misc_foxkit"
+          }
+        ]
+      },
+      {
+        "name": "Molten Front",
+        "items": [
+          {
+            "spellid": "99668",
+            "itemId": "70160",
+            "icon": "inv_misc_flower_04"
+          },
+          {
+            "spellid": "99663",
+            "itemId": "70140",
+            "icon": "inv_misc_bearcubbrown"
+          },
+          {
+            "spellid": "45890",
+            "itemId": "34955",
+            "icon": "inv_pet_scorchedstone"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Wrath of the Lich King",
+    "id": "7e35ba97",
+    "subcats": [
+      {
+        "name": "Quest",
+        "id": "cd88e425",
+        "items": [
           {
             "spellid": "62609",
             "itemId": "44998",
@@ -550,44 +1753,107 @@
             "itemId": "45022",
             "icon": "achievement_reputation_argentchampion",
             "side": "H"
-          },
-          {
-            "spellid": "12243",
-            "itemId": "10398",
-            "icon": "inv_pet_mechanicalchicken"
-          },
-          {
-            "spellid": "39181",
-            "itemId": "31760",
-            "icon": "inv_box_birdcage_01"
-          },
-          {
-            "spellid": "93823",
-            "itemId": "66067",
-            "icon": "inv_misc_flower_02"
-          },
-          {
-            "spellid": "93813",
-            "itemId": "66080",
-            "icon": "inv_inscription_pigment_bug06"
-          },
-          {
-            "spellid": "13548",
-            "itemId": "11110",
-            "icon": "spell_magic_polymorphchicken"
-          },
-          {
-            "spellid": "65046",
-            "itemId": "46325",
-            "icon": "ability_druid_forceofnature"
           }
         ]
-      }
-    ]
-  },
-  {
-    "name": "World Event",
-    "subcats": [
+      },
+      {
+        "name": "Vendor",
+        "items": [
+          {
+            "spellid": "10713",
+            "itemId": "44822",
+            "icon": "spell_nature_guardianward"
+          },
+          {
+            "spellid": "65358",
+            "itemId": "46398",
+            "icon": "inv_pet_cats_calicocat"
+          },
+          {
+            "spellid": "67417",
+            "itemId": "48120",
+            "icon": "ability_mount_raptor"
+          },
+          {
+            "spellid": "194357",
+            "itemId": "129826",
+            "icon": "achievement_halloween_spider_01"
+          },
+          {
+            "spellid": "53316",
+            "itemId": "39973",
+            "icon": "inv_misc_bone_humanskull_01"
+          }
+        ],
+        "id": "86f4e9fd"
+      },
+      {
+        "name": "Treasure",
+        "id": "0ede3b2c",
+        "items": [
+          {
+            "spellid": "28487",
+            "itemId": "22780",
+            "icon": "inv_pet_babymurlocs_white"
+          }
+        ]
+      },
+      {
+        "name": "Reputation",
+        "id": "dbf0e7ca",
+        "items": [
+          {
+            "spellid": "61357",
+            "itemId": "44723",
+            "icon": "inv_pet_babypengu"
+          }
+        ]
+      },
+      {
+        "name": "World Drop",
+        "items": [
+          {
+            "spellid": "67415",
+            "itemId": "48116",
+            "icon": "ability_mount_raptor"
+          }
+        ]
+      },
+      {
+        "name": "Raid Drop",
+        "items": [
+          {
+            "spellid": "229091",
+            "itemId": "142084",
+            "icon": "inv_misc_head_kobold_01"
+          }
+        ]
+      },
+      {
+        "name": "Cracked Egg",
+        "items": [
+          {
+            "spellid": "61351",
+            "itemId": "39898",
+            "icon": "ability_hunter_cobrastrikes"
+          },
+          {
+            "spellid": "61350",
+            "itemId": "44721",
+            "icon": "ability_mount_drake_proto"
+          },
+          {
+            "spellid": "61348",
+            "itemId": "39896",
+            "icon": "ability_hunter_pet_owl"
+          },
+          {
+            "spellid": "61349",
+            "itemId": "39899",
+            "icon": "ability_hunter_pet_owl"
+          }
+        ]
+      },
       {
         "name": "Argent Tournament",
         "items": [
@@ -650,119 +1916,434 @@
         ]
       },
       {
-        "name": "Chromie",
+        "name": "Pre-launch Event",
         "items": [
           {
-            "spellid": "248240",
-            "itemId": "151828",
-            "icon": "inv_misc_head_dragon_bronze"
-          },
-          {
-            "spellid": "248025",
-            "itemId": "151829",
-            "icon": "spell_warrior_dragoncharge"
-          }
-        ]
-      },
-      {
-        "name": "Darkmoon Faire",
-        "items": [
-          {
-            "spellid": "103076",
-            "itemId": "73762",
-            "icon": "inv_misc_balloon_01"
-          },
-          {
-            "spellid": "105122",
-            "itemId": "74981",
-            "icon": "ability_mount_jungletiger"
-          },
-          {
-            "spellid": "132789",
-            "itemId": "91040",
-            "icon": "spell_shadow_evileye"
-          },
-          {
-            "spellid": "132762",
-            "itemId": "91003",
-            "icon": "ability_hunter_pet_tallstrider"
-          },
-          {
-            "spellid": "101733",
-            "itemId": "73764",
-            "icon": "ability_hunter_aspectofthemonkey"
-          },
-          {
-            "spellid": "114090",
-            "itemId": "80008",
-            "icon": "inv_misc_rabbit"
-          },
-          {
-            "spellid": "103544",
-            "itemId": "73903",
-            "icon": "inv_gizmo_goblingtonkcontroller"
-          },
-          {
-            "spellid": "103074",
-            "itemId": "73765",
-            "icon": "inv_pet_speedy"
-          },
-          {
-            "spellid": "103549",
-            "itemId": "73905",
-            "icon": "inv_gizmo_goblingtonkcontroller"
-          },
-          {
-            "spellid": "23811",
-            "itemId": "19450",
-            "icon": "spell_shaman_hex"
-          },
-          {
-            "spellid": "144761",
-            "itemId": "101570",
-            "icon": "ability_shaman_freedomwolf"
-          },
-          {
-            "spellid": "10704",
-            "itemId": "11026",
-            "icon": "spell_shaman_hex"
-          },
-          {
-            "spellid": "10703",
-            "itemId": "11027",
-            "icon": "spell_shaman_hex"
-          },
-          {
-            "spellid": "170774",
-            "itemId": "116064",
-            "icon": "inv_misc_fish_102"
-          },
-          {
-            "spellid": "179954",
-            "itemId": "122125",
-            "icon": "inv_gizmo_goblingtonkcontroller"
-          },
-          {
-            "spellid": "170267",
-            "itemId": "123862",
-            "icon": "inv_belt_46b"
-          },
-          {
-            "spellid": "185601",
-            "itemId": "126925",
-            "icon": "creatureportrait_bubble"
-          },
-          {
-            "spellid": "185591",
-            "itemId": "126926",
-            "icon": "inv_jewelcrafting_azurecrab"
+            "spellid": "51851",
+            "itemId": "38658",
+            "icon": "ability_hunter_pet_bat",
+            "notObtainable": true
           }
         ]
       }
     ]
   },
   {
-    "name": "Holiday",
+    "name": "The Burning Crusade",
+    "id": "4426ce42",
+    "subcats": [
+      {
+        "name": "Quest",
+        "id": "12871832",
+        "items": [
+          {
+            "spellid": "39181",
+            "itemId": "31760",
+            "icon": "inv_box_birdcage_01"
+          }
+        ]
+      },
+      {
+        "name": "Vendor",
+        "items": [
+          {
+            "spellid": "36031",
+            "itemId": "29958",
+            "icon": "ability_hunter_pet_dragonhawk"
+          },
+          {
+            "spellid": "35239",
+            "itemId": "29364",
+            "icon": "inv_crate_02"
+          },
+          {
+            "spellid": "10717",
+            "itemId": "10392",
+            "icon": "spell_nature_guardianward"
+          },
+          {
+            "spellid": "35156",
+            "itemId": "29363",
+            "icon": "spell_nature_abolishmagic"
+          },
+          {
+            "spellid": "35909",
+            "itemId": "29902",
+            "icon": "ability_hunter_pet_moth"
+          },
+          {
+            "spellid": "10684",
+            "itemId": "8495",
+            "icon": "inv_feather_11"
+          },
+          {
+            "spellid": "10677",
+            "itemId": "8490",
+            "icon": "inv_pet_cats_siamesecat"
+          },
+          {
+            "spellid": "10688",
+            "itemId": "10393",
+            "icon": "inv_pet_cockroach"
+          }
+        ]
+      },
+      {
+        "name": "Reputation",
+        "id": "8535e207",
+        "items": [
+          {
+            "spellid": "51716",
+            "itemId": "38628",
+            "icon": "ability_hunter_pet_netherray"
+          },
+          {
+            "spellid": "45082",
+            "itemId": "34478",
+            "icon": "ability_hunter_pet_sporebat"
+          }
+        ]
+      },
+      {
+        "name": "World Drop",
+        "id": "c8186c85",
+        "items": [
+          {
+            "spellid": "36034",
+            "itemId": "29960",
+            "icon": "ability_hunter_pet_wasp"
+          }
+        ]
+      },
+      {
+        "name": "Raid Drop",
+        "id": "4af30918",
+        "items": [
+          {
+            "spellid": "43918",
+            "itemId": "33993",
+            "icon": "spell_shaman_hex"
+          },
+          {
+            "spellid": "46599",
+            "itemId": "35504",
+            "icon": "inv_misc_pheonixpet_01"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Classic",
+    "id": "a98dd022",
+    "subcats": [
+      {
+        "name": "Quest",
+        "id": "755f4361",
+        "items": [
+          {
+            "spellid": "101986",
+            "itemId": "72042",
+            "icon": "inv_misc_balloon_04"
+          },
+          {
+            "spellid": "101989",
+            "itemId": "72045",
+            "icon": "inv_misc_balloon_02"
+          },
+          {
+            "spellid": "12243",
+            "itemId": "10398",
+            "icon": "inv_pet_mechanicalchicken"
+          },
+          {
+            "spellid": "93813",
+            "itemId": "66080",
+            "icon": "inv_inscription_pigment_bug06"
+          },
+          {
+            "spellid": "65046",
+            "itemId": "46325",
+            "icon": "ability_druid_forceofnature"
+          },
+          {
+            "spellid": "13548",
+            "itemId": "11110",
+            "icon": "spell_magic_polymorphchicken"
+          },
+          {
+            "spellid": "93823",
+            "itemId": "66067",
+            "icon": "inv_misc_flower_02"
+          }
+        ]
+      },
+      {
+        "name": "Vendor",
+        "items": [
+          {
+            "spellid": "10685",
+            "itemId": "11023",
+            "icon": "spell_magic_polymorphchicken"
+          },
+          {
+            "spellid": "75134",
+            "itemId": "54436",
+            "icon": "inv_gizmo_06"
+          },
+          {
+            "spellid": "10680",
+            "itemId": "8496",
+            "icon": "inv_feather_08"
+          },
+          {
+            "spellid": "127816",
+            "itemId": "88148",
+            "icon": "inv_pet_babycrane"
+          },
+          {
+            "spellid": "65682",
+            "itemId": "95621",
+            "icon": "inv_misc_key_05"
+          },
+          {
+            "spellid": "97638",
+            "itemId": "69239",
+            "icon": "ability_mount_pinktiger"
+          }
+        ]
+      },
+      {
+        "name": "Alliance Vendor",
+        "items": [
+          {
+            "spellid": "35907",
+            "itemId": "29901",
+            "icon": "ability_hunter_pet_moth"
+          },
+          {
+            "spellid": "10673",
+            "itemId": "8485",
+            "icon": "inv_pet_cats_bombaycat"
+          },
+          {
+            "spellid": "10674",
+            "itemId": "8486",
+            "icon": "inv_pet_cats_cornishrexcat"
+          },
+          {
+            "spellid": "10707",
+            "itemId": "8500",
+            "icon": "ability_eyeoftheowl"
+          },
+          {
+            "spellid": "10706",
+            "itemId": "8501",
+            "icon": "ability_eyeoftheowl"
+          },
+          {
+            "spellid": "10676",
+            "itemId": "8487",
+            "icon": "inv_pet_cats_orangetabbycat"
+          },
+          {
+            "spellid": "10678",
+            "itemId": "8488",
+            "icon": "inv_pet_cats_silvertabbycat"
+          },
+          {
+            "spellid": "10711",
+            "itemId": "8497",
+            "icon": "inv_crate_02"
+          },
+          {
+            "spellid": "10679",
+            "itemId": "8489",
+            "icon": "inv_pet_cats_whitekitten"
+          },
+          {
+            "spellid": "35911",
+            "itemId": "29904",
+            "icon": "ability_hunter_pet_moth"
+          },
+          {
+            "spellid": "35910",
+            "itemId": "29903",
+            "icon": "ability_hunter_pet_moth"
+          }
+        ]
+      },
+      {
+        "name": "Horde Vendor",
+        "items": [
+          {
+            "spellid": "10714",
+            "itemId": "10360",
+            "icon": "spell_nature_guardianward"
+          },
+          {
+            "spellid": "10709",
+            "itemId": "10394",
+            "icon": "inv_pet_prairiedog"
+          },
+          {
+            "spellid": "10716",
+            "itemId": "10361",
+            "icon": "spell_nature_guardianward"
+          },
+          {
+            "spellid": "36027",
+            "itemId": "29953",
+            "icon": "ability_hunter_pet_dragonhawk"
+          },
+          {
+            "spellid": "36028",
+            "itemId": "29956",
+            "icon": "ability_hunter_pet_dragonhawk"
+          },
+          {
+            "spellid": "36029",
+            "itemId": "29957",
+            "icon": "ability_hunter_pet_dragonhawk"
+          }
+        ]
+      },
+      {
+        "name": "Dungeon Drop",
+        "id": "2825cb13",
+        "items": [
+          {
+            "spellid": "16450",
+            "itemId": "68673",
+            "icon": "inv_box_birdcage_01"
+          },
+          {
+            "spellid": "15999",
+            "itemId": "12264",
+            "icon": "inv_box_petcarrier_01"
+          },
+          {
+            "spellid": "67414",
+            "itemId": "48114",
+            "icon": "ability_hunter_pet_raptor"
+          },
+          {
+            "spellid": "10683",
+            "itemId": "8492",
+            "icon": "inv_feather_12"
+          }
+        ]
+      },
+      {
+        "name": "World Drop",
+        "id": "829f9226",
+        "items": [
+          {
+            "spellid": "25162",
+            "itemId": "20769",
+            "icon": "ability_creature_poison_05"
+          }
+        ]
+      },
+      {
+        "name": "World Drop: Eastern Kingdoms",
+        "items": [
+          {
+            "spellid": "10675",
+            "itemId": "8491",
+            "icon": "inv_pet_cats_blacktabbycat"
+          },
+          {
+            "spellid": "10682",
+            "itemId": "8494",
+            "icon": "inv_feather_08"
+          },
+          {
+            "spellid": "10697",
+            "itemId": "8499",
+            "icon": "inv_misc_head_dragon_red"
+          },
+          {
+            "spellid": "10695",
+            "itemId": "10822",
+            "icon": "inv_misc_head_dragon_black"
+          },
+          {
+            "spellid": "67419",
+            "itemId": "48124",
+            "icon": "ability_hunter_pet_raptor"
+          },
+          {
+            "spellid": "67420",
+            "itemId": "48126",
+            "icon": "ability_hunter_pet_raptor"
+          },
+          {
+            "spellid": "93739",
+            "itemId": "66076",
+            "icon": "inv_pet_maggot"
+          },
+          {
+            "spellid": "10699",
+            "itemId": "118675",
+            "icon": "inv_misc_head_dragon_bronze"
+          }
+        ]
+      },
+      {
+        "name": "World Drop: Kalimdor",
+        "items": [
+          {
+            "spellid": "10698",
+            "itemId": "8498",
+            "icon": "inv_misc_head_dragon_green"
+          },
+          {
+            "spellid": "15067",
+            "itemId": "11474",
+            "icon": "inv_pet_sprite_darter_hatchling"
+          },
+          {
+            "spellid": "10696",
+            "itemId": "34535",
+            "icon": "inv_misc_head_dragon_blue"
+          },
+          {
+            "spellid": "67413",
+            "itemId": "48112",
+            "icon": "ability_hunter_pet_raptor"
+          },
+          {
+            "spellid": "67416",
+            "itemId": "48118",
+            "icon": "ability_mount_raptor"
+          },
+          {
+            "spellid": "67418",
+            "itemId": "48122",
+            "icon": "ability_mount_raptor"
+          },
+          {
+            "spellid": "141789",
+            "itemId": "97821",
+            "icon": "trade_archaeology_whitehydrafigurine"
+          },
+          {
+            "spellid": "231017",
+            "itemId": "142448",
+            "icon": "ability_hunter_pet_vulture"
+          },
+          {
+            "spellid": "261755",
+            "itemId": 156851,
+            "icon": "inv_ridingsilithid2red"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "World Event",
     "subcats": [
       {
         "name": "Lunar Festival",
@@ -1023,6 +2604,133 @@
             "icon": "inv_misc_pet_pandaren_yeti_grey"
           }
         ]
+      },
+      {
+        "name": "Brawler's Guild",
+        "id": "282c0fe7",
+        "items": [
+          {
+            "spellid": "135156",
+            "itemId": "93025",
+            "icon": "inv_misc_head_clockworkgnome_01"
+          },
+          {
+            "spellid": "236285",
+            "itemId": "144394",
+            "icon": "achievement_boss_highmaul_aggronguardian"
+          }
+        ]
+      },
+      {
+        "name": "Timewalking",
+        "id": "b8db5310",
+        "items": [
+          {
+            "spellid": "234555",
+            "itemId": "143953",
+            "icon": "inv_cloudserpent_egg_black"
+          },
+          {
+            "spellid": "234556",
+            "itemId": "143954",
+            "icon": "inv_pet_pandarenelemental"
+          }
+        ]
+      },
+      {
+        "name": "Darkmoon Faire",
+        "items": [
+          {
+            "spellid": "103076",
+            "itemId": "73762",
+            "icon": "inv_misc_balloon_01"
+          },
+          {
+            "spellid": "105122",
+            "itemId": "74981",
+            "icon": "ability_mount_jungletiger"
+          },
+          {
+            "spellid": "132789",
+            "itemId": "91040",
+            "icon": "spell_shadow_evileye"
+          },
+          {
+            "spellid": "132762",
+            "itemId": "91003",
+            "icon": "ability_hunter_pet_tallstrider"
+          },
+          {
+            "spellid": "101733",
+            "itemId": "73764",
+            "icon": "ability_hunter_aspectofthemonkey"
+          },
+          {
+            "spellid": "114090",
+            "itemId": "80008",
+            "icon": "inv_misc_rabbit"
+          },
+          {
+            "spellid": "103544",
+            "itemId": "73903",
+            "icon": "inv_gizmo_goblingtonkcontroller"
+          },
+          {
+            "spellid": "103074",
+            "itemId": "73765",
+            "icon": "inv_pet_speedy"
+          },
+          {
+            "spellid": "103549",
+            "itemId": "73905",
+            "icon": "inv_gizmo_goblingtonkcontroller"
+          },
+          {
+            "spellid": "23811",
+            "itemId": "19450",
+            "icon": "spell_shaman_hex"
+          },
+          {
+            "spellid": "144761",
+            "itemId": "101570",
+            "icon": "ability_shaman_freedomwolf"
+          },
+          {
+            "spellid": "10704",
+            "itemId": "11026",
+            "icon": "spell_shaman_hex"
+          },
+          {
+            "spellid": "10703",
+            "itemId": "11027",
+            "icon": "spell_shaman_hex"
+          },
+          {
+            "spellid": "170774",
+            "itemId": "116064",
+            "icon": "inv_misc_fish_102"
+          },
+          {
+            "spellid": "179954",
+            "itemId": "122125",
+            "icon": "inv_gizmo_goblingtonkcontroller"
+          },
+          {
+            "spellid": "170267",
+            "itemId": "123862",
+            "icon": "inv_belt_46b"
+          },
+          {
+            "spellid": "185601",
+            "itemId": "126925",
+            "icon": "creatureportrait_bubble"
+          },
+          {
+            "spellid": "185591",
+            "itemId": "126926",
+            "icon": "inv_jewelcrafting_azurecrab"
+          }
+        ]
       }
     ]
   },
@@ -1032,6 +2740,16 @@
       {
         "name": "Alchemy",
         "items": [
+          {
+            "spellid": "210678",
+            "itemId": "136905",
+            "icon": "inv_giantboarmount_brown"
+          },
+          {
+            "spellid": "210681",
+            "itemId": "136908",
+            "icon": "inv_giantboarmount_brown"
+          },
           {
             "spellid": "221906",
             "itemId": "139789",
@@ -1177,6 +2895,17 @@
             "spellid": "254271",
             "itemId": "153045",
             "icon": "inv_misc_herb_fellotus"
+          }
+        ]
+      },
+      {
+        "name": "Mining",
+        "id": "1c97a084",
+        "items": [
+          {
+            "spellid": "93838",
+            "itemId": "67282",
+            "icon": "inv_misc_archstone_01"
           }
         ]
       },
@@ -1404,177 +3133,28 @@
             "icon": "inv_pet_babyshark"
           }
         ]
+      },
+      {
+        "name": "Pickpocketing",
+        "id": "67751d08",
+        "items": [
+          {
+            "spellid": "247474",
+            "itemId": "151633",
+            "icon": "inv_pet_mouse"
+          },
+          {
+            "spellid": "247123",
+            "itemId": "151569",
+            "icon": "achievement_brewery_1"
+          }
+        ]
       }
     ]
   },
   {
-    "name": "Raid & Dungeon Drop",
+    "name": "Pet Battle Dungeon",
     "subcats": [
-      {
-        "name": "Battle for Azeroth",
-        "id": "b5c2ad42",
-        "items": [
-          {
-            "itemId": 160702,
-            "name": "Spawn of Merektha",
-            "icon": "inv_waepon_bow_zulgrub_d_01",
-            "spellid": 273159
-          },
-          {
-            "itemId": 160704,
-            "name": "Filthy Bucket",
-            "icon": "inv_misc_1h_bucket_c_01",
-            "spellid": 273184
-          }
-        ]
-      },
-      {
-        "name": "Warlords of Draenor",
-        "items": [
-          {
-            "spellid": "193572",
-            "itemId": "129216",
-            "icon": "inv_jewelcrafting_gem_40"
-          },
-          {
-            "spellid": "193588",
-            "itemId": "129217",
-            "icon": "inv_jewelcrafting_gem_39"
-          },
-          {
-            "spellid": "193589",
-            "itemId": "129218",
-            "icon": "inv_jewelcrafting_gem_42"
-          },
-          {
-            "spellid": "170268",
-            "itemId": "118574",
-            "icon": "spell_fire_ragnaros_supernova"
-          }
-        ]
-      },
-      {
-        "name": "Mists of Pandaria",
-        "items": [
-          {
-            "spellid": "138825",
-            "itemId": "94574",
-            "icon": "inv_babytriceratops_blue"
-          },
-          {
-            "spellid": "139148",
-            "itemId": "94835",
-            "icon": "inv_pet_thunderislebabybird"
-          },
-          {
-            "spellid": "137977",
-            "itemId": "94125",
-            "icon": "spell_sandelemental"
-          },
-          {
-            "spellid": "138161",
-            "itemId": "94152",
-            "icon": "ability_animusdraw"
-          },
-          {
-            "spellid": "142028",
-            "itemId": "97959",
-            "icon": "spell_deathknight_bloodboil"
-          },
-          {
-            "spellid": "142029",
-            "itemId": "97960",
-            "icon": "spell_yorsahj_bloodboil_black"
-          },
-          {
-            "spellid": "148061",
-            "itemId": "104165",
-            "icon": "achievement_raid_mantidraid02"
-          },
-          {
-            "spellid": "148049",
-            "itemId": "104158",
-            "icon": "achievement_boss_siegecrafter_blackfuse"
-          },
-          {
-            "spellid": "148058",
-            "itemId": "104162",
-            "icon": "ability_shawaterelemental_split"
-          },
-          {
-            "spellid": "148059",
-            "itemId": "104163",
-            "icon": "ability_shawaterelemental_swirl"
-          }
-        ]
-      },
-      {
-        "name": "",
-        "items": [
-          {
-            "spellid": "229091",
-            "itemId": "142084",
-            "icon": "inv_misc_head_kobold_01"
-          }
-        ]
-      },
-      {
-        "name": "",
-        "items": [
-          {
-            "spellid": "51851",
-            "itemId": "38658",
-            "icon": "ability_hunter_pet_bat",
-            "notObtainable": true
-          }
-        ]
-      },
-      {
-        "name": "Dungeons",
-        "items": [
-          {
-            "itemId": 161214,
-            "name": "Thousand Year Old Mummy Wraps",
-            "icon": "inv_firstaid_bandage2",
-            "spellid": 274776
-          },
-          {
-            "spellid": "43918",
-            "itemId": "33993",
-            "icon": "spell_shaman_hex"
-          },
-          {
-            "spellid": "46599",
-            "itemId": "35504",
-            "icon": "inv_misc_pheonixpet_01"
-          },
-          {
-            "spellid": "172998",
-            "itemId": "117528",
-            "icon": "achievement_dungeon_blackwingdescent_raid_chimaron"
-          },
-          {
-            "spellid": "16450",
-            "itemId": "68673",
-            "icon": "inv_box_birdcage_01"
-          },
-          {
-            "spellid": "15999",
-            "itemId": "12264",
-            "icon": "inv_box_petcarrier_01"
-          },
-          {
-            "spellid": "67414",
-            "itemId": "48114",
-            "icon": "ability_hunter_pet_raptor"
-          },
-          {
-            "spellid": "10683",
-            "itemId": "8492",
-            "icon": "inv_feather_12"
-          }
-        ]
-      },
       {
         "name": "Challenge: Wailing Caverns",
         "items": [
@@ -1622,620 +3202,6 @@
             "spellid": "247452",
             "itemId": "151632",
             "icon": "inv_pet_monkey"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "World Drop",
-    "subcats": [
-      {
-        "name": "Battle for Azeroth",
-        "id": "72c890b0",
-        "items": [
-          {
-            "itemId": 163497,
-            "name": "Spooky Bundle of Sticks",
-            "icon": "inv_wickerbeastpet",
-            "spellid": 279213
-          }
-        ]
-      },
-      {
-        "name": "Argus",
-        "items": [
-          {
-            "spellid": "233647",
-            "itemId": "151645",
-            "icon": "creatureportrait_babyspider"
-          },
-          {
-            "spellid": "254763",
-            "itemId": "153195",
-            "icon": "inv_misc_toy_02"
-          },
-          {
-            "spellid": "254749",
-            "itemId": "153252",
-            "icon": "ability_warlock_impoweredimp"
-          },
-          {
-            "spellid": "254297",
-            "itemId": "153056",
-            "icon": "ability_warlock_soulsiphon"
-          }
-        ]
-      },
-      {
-        "name": "The Broken Isles",
-        "items": [
-          {
-            "spellid": "225200",
-            "itemId": "140934",
-            "icon": "inv_pet_toad_blue"
-          },
-          {
-            "spellid": "193434",
-            "itemId": "129188",
-            "icon": "inv_fishing_f_ammonite1"
-          },
-          {
-            "spellid": "193368",
-            "itemId": "129175",
-            "icon": "inv_misc_food_02"
-          },
-          {
-            "spellid": "210673",
-            "itemId": "136901",
-            "icon": "levelupicon-lfd"
-          },
-          {
-            "spellid": "195368",
-            "itemId": "130168",
-            "icon": "inv_enchant_voidsphere"
-          },
-          {
-            "spellid": "223027",
-            "itemId": "140261",
-            "icon": "spell_priest_voidtendrils"
-          },
-          {
-            "spellid": "210691",
-            "itemId": "136914",
-            "icon": "inv_pet_spiderdemon"
-          },
-          {
-            "spellid": "215560",
-            "itemId": "130154",
-            "icon": "inv_misc_ancientarrakoafeather"
-          },
-          {
-            "spellid": "195370",
-            "itemId": "130166",
-            "icon": "ability_mount_blackpanther"
-          },
-          {
-            "spellid": "193514",
-            "itemId": "129208",
-            "icon": "inv_misc_head_dragon_01"
-          },
-          {
-            "spellid": "210675",
-            "itemId": "136903",
-            "icon": "inv_misc_head_dragon_bronze_nightmare"
-          },
-          {
-            "spellid": "210690",
-            "itemId": "136913",
-            "icon": "inv_misc_head_nerubian_01"
-          },
-          {
-            "spellid": "210678",
-            "itemId": "136905",
-            "icon": "inv_giantboarmount_brown"
-          },
-          {
-            "spellid": "210674",
-            "itemId": "136902",
-            "icon": "inv_misc_head_dragon_green"
-          },
-          {
-            "spellid": "210681",
-            "itemId": "136908",
-            "icon": "inv_giantboarmount_brown"
-          },
-          {
-            "spellid": "210665",
-            "itemId": "136897",
-            "icon": "ability_hunter_pet_owl"
-          },
-          {
-            "spellid": "240064",
-            "itemId": "146953",
-            "icon": "inv_weapon_crossbow_22"
-          },
-          {
-            "spellid": "225663",
-            "itemId": "141316",
-            "icon": "inv_babymurloc3_yellow"
-          }
-        ]
-      },
-      {
-        "name": "Fel Egg",
-        "items": [
-          {
-            "spellid": "254295",
-            "itemId": "153054",
-            "icon": "inv_manaraymount_magenta"
-          },
-          {
-            "spellid": "254296",
-            "itemId": "153055",
-            "icon": "inv_manaraymount_blackfel"
-          }
-        ]
-      },
-      {
-        "name": "Legion Class Hall",
-        "items": [
-          {
-            "spellid": "193943",
-            "itemId": "129362",
-            "icon": "inv_pet_ancientprotector"
-          },
-          {
-            "spellid": "210672",
-            "itemId": "136900",
-            "icon": "levelupicon-lfd"
-          },
-          {
-            "spellid": "224536",
-            "itemId": "140741",
-            "icon": "inv_misc_herb_fireweed"
-          },
-          {
-            "spellid": "227093",
-            "itemId": "141530",
-            "icon": "inv_frostwolfpupsnowfang"
-          },
-          {
-            "spellid": "232867",
-            "itemId": "143679",
-            "icon": "inv_toucan_color4"
-          },
-          {
-            "spellid": "237250",
-            "itemId": "147539",
-            "icon": "inv_pet_dkwhelplingblood"
-          },
-          {
-            "spellid": "237251",
-            "itemId": "147540",
-            "icon": "inv_pet_dkwhelplingfrost"
-          },
-          {
-            "spellid": "237252",
-            "itemId": "147541",
-            "icon": "inv_pet_dkwhelplingunholy"
-          },
-          {
-            "spellid": "240794",
-            "itemId": "147542",
-            "icon": "inv_tigergodcubmonk"
-          }
-        ]
-      },
-      {
-        "name": "Draenor",
-        "items": [
-          {
-            "spellid": "173547",
-            "itemId": "118107",
-            "icon": "inv_elemental_primal_shadow"
-          },
-          {
-            "spellid": "173542",
-            "itemId": "118106",
-            "icon": "priest_icon_chakra_red"
-          },
-          {
-            "spellid": "170272",
-            "itemId": "118709",
-            "icon": "inv_misc_herb_dreamingglory"
-          },
-          {
-            "spellid": "170275",
-            "itemId": "119170",
-            "icon": "achievement_boss_cthun"
-          },
-          {
-            "spellid": "170285",
-            "itemId": "117564",
-            "icon": "inv_misc_food_41"
-          },
-          {
-            "spellid": "170273",
-            "itemId": "118207",
-            "icon": "trade_archaeology_whitehydrafigurine"
-          },
-          {
-            "spellid": "170284",
-            "itemId": "120309",
-            "icon": "spell_nature_polymorph_cow"
-          },
-          {
-            "spellid": "170269",
-            "itemId": "116815",
-            "icon": "spell_nature_acid_01"
-          },
-          {
-            "spellid": "167394",
-            "itemId": "118595",
-            "icon": "inv_podling_purple"
-          },
-          {
-            "spellid": "170280",
-            "itemId": "118919",
-            "icon": "inv_misc_leather_shellfragment"
-          },
-          {
-            "spellid": "170278",
-            "itemId": "119431",
-            "icon": "spell_shadow_summonvoidwalker"
-          },
-          {
-            "spellid": "170282",
-            "itemId": "116402",
-            "icon": "inv_eng_gizmo3"
-          },
-          {
-            "spellid": "164212",
-            "itemId": "112699",
-            "icon": "ability_hunter_pet_tallstrider"
-          },
-          {
-            "spellid": "173543",
-            "itemId": "118104",
-            "icon": "priest_icon_chakra_blue"
-          },
-          {
-            "spellid": "167336",
-            "itemId": "113554",
-            "icon": "inv_misc_food_92_lobster"
-          },
-          {
-            "spellid": "187532",
-            "itemId": "127749",
-            "icon": "ability_felarakkoa_feldetonation_green"
-          }
-        ]
-      },
-      {
-        "name": "Draenor: Tanaan Jungle",
-        "items": [
-          {
-            "spellid": "185055",
-            "itemId": "127753",
-            "icon": "inv_misc_bell_01"
-          },
-          {
-            "spellid": "187555",
-            "itemId": "127754",
-            "icon": "inv_babyhippo01"
-          },
-          {
-            "spellid": "173544",
-            "itemId": "118105",
-            "icon": "priest_icon_chakra_green"
-          },
-          {
-            "spellid": "173532",
-            "itemId": "118101",
-            "icon": "priest_icon_chakra"
-          },
-          {
-            "spellid": "184480",
-            "itemId": "129205",
-            "icon": "inv_pet_frostwolfpup_fel"
-          }
-        ]
-      },
-      {
-        "name": "Pandaria",
-        "items": [
-          {
-            "spellid": "126249",
-            "itemId": "86563",
-            "icon": "inv_misc_flute_01"
-          },
-          {
-            "spellid": "139153",
-            "itemId": "94573",
-            "icon": "inv_babytriceratops_grey"
-          },
-          {
-            "spellid": "142030",
-            "itemId": "97961",
-            "icon": "achievement_cooking_masterofthesteamer"
-          },
-          {
-            "spellid": "126251",
-            "itemId": "86564",
-            "icon": "inv_misc_reforgedarchstone_01"
-          },
-          {
-            "spellid": "118414",
-            "itemId": "89587",
-            "icon": "inv_pet_porcupine"
-          },
-          {
-            "spellid": "138913",
-            "itemId": "94595",
-            "icon": "inv_misc_fish_12"
-          },
-          {
-            "spellid": "138082",
-            "itemId": "94124",
-            "icon": "inv_pet_arcanegolem"
-          },
-          {
-            "spellid": "123778",
-            "itemId": "85220",
-            "icon": "inv_pet_turnippet"
-          },
-          {
-            "spellid": "139932",
-            "itemId": "95422",
-            "icon": "inv_zandalaribabyraptorblue"
-          },
-          {
-            "spellid": "139933",
-            "itemId": "95423",
-            "icon": "inv_zandalaribabyraptorred"
-          },
-          {
-            "spellid": "138087",
-            "itemId": "94126",
-            "icon": "inv_zandalaribabyraptorblack"
-          },
-          {
-            "spellid": "139934",
-            "itemId": "95424",
-            "icon": "inv_zandalaribabyraptorwhite"
-          }
-        ]
-      },
-      {
-        "name": "Pandaria: Timeless Isle",
-        "items": [
-          {
-            "spellid": "148046",
-            "itemId": "104156",
-            "icon": "spell_nature_dryaddispelmagic"
-          },
-          {
-            "spellid": "148047",
-            "itemId": "104157",
-            "icon": "inv_pet_babycrane"
-          },
-          {
-            "spellid": "148373",
-            "itemId": "104202",
-            "icon": "inv_pet_monkey"
-          },
-          {
-            "spellid": "148051",
-            "itemId": "104160",
-            "icon": "spell_nature_naturetouchgrow"
-          },
-          {
-            "spellid": "148052",
-            "itemId": "104161",
-            "icon": "inv_pet_pythonbrown"
-          },
-          {
-            "spellid": "148067",
-            "itemId": "104169",
-            "icon": "inv_pet_toad_black"
-          },
-          {
-            "spellid": "148552",
-            "itemId": "104307",
-            "icon": "spell_fire_felfire"
-          },
-          {
-            "spellid": "148060",
-            "itemId": "104164",
-            "icon": "inv_pet_pandarenelemental_air"
-          },
-          {
-            "spellid": "148062",
-            "itemId": "104166",
-            "icon": "spell_fire_bluefire"
-          },
-          {
-            "spellid": "148050",
-            "itemId": "104159",
-            "icon": "inv_pet_pandarenelementa_fire"
-          },
-          {
-            "spellid": "148063",
-            "itemId": "104167",
-            "icon": "inv_pet_pandarenelemental_earth"
-          },
-          {
-            "spellid": "148066",
-            "itemId": "104168",
-            "icon": "ability_hunter_pet_crab"
-          },
-          {
-            "spellid": "148527",
-            "itemId": "104291",
-            "icon": "inv_misc_food_vendor_boiledsilkwormpupa"
-          }
-        ]
-      },
-      {
-        "name": "Northrend",
-        "items": [
-          {
-            "spellid": "67415",
-            "itemId": "48116",
-            "icon": "ability_mount_raptor"
-          },
-          {
-            "spellid": "28487",
-            "itemId": "22780",
-            "icon": "inv_pet_babymurlocs_white"
-          }
-        ]
-      },
-      {
-        "name": "Northrend: Cracked Egg",
-        "items": [
-          {
-            "spellid": "61351",
-            "itemId": "39898",
-            "icon": "ability_hunter_cobrastrikes"
-          },
-          {
-            "spellid": "61350",
-            "itemId": "44721",
-            "icon": "ability_mount_drake_proto"
-          },
-          {
-            "spellid": "61348",
-            "itemId": "39896",
-            "icon": "ability_hunter_pet_owl"
-          },
-          {
-            "spellid": "61349",
-            "itemId": "39899",
-            "icon": "ability_hunter_pet_owl"
-          }
-        ]
-      },
-      {
-        "name": "Eastern Kingdoms",
-        "items": [
-          {
-            "spellid": "10697",
-            "itemId": "8499",
-            "icon": "inv_misc_head_dragon_red"
-          },
-          {
-            "spellid": "10675",
-            "itemId": "8491",
-            "icon": "inv_pet_cats_blacktabbycat"
-          },
-          {
-            "spellid": "10682",
-            "itemId": "8494",
-            "icon": "inv_feather_08"
-          },
-          {
-            "spellid": "93739",
-            "itemId": "66076",
-            "icon": "inv_pet_maggot"
-          },
-          {
-            "spellid": "67419",
-            "itemId": "48124",
-            "icon": "ability_hunter_pet_raptor"
-          },
-          {
-            "spellid": "67420",
-            "itemId": "48126",
-            "icon": "ability_hunter_pet_raptor"
-          },
-          {
-            "spellid": "10699",
-            "itemId": "118675",
-            "icon": "inv_misc_head_dragon_bronze"
-          }
-        ]
-      },
-      {
-        "name": "Kalimdor",
-        "items": [
-          {
-            "spellid": "10696",
-            "itemId": "34535",
-            "icon": "inv_misc_head_dragon_blue"
-          },
-          {
-            "spellid": "10698",
-            "itemId": "8498",
-            "icon": "inv_misc_head_dragon_green"
-          },
-          {
-            "spellid": "67413",
-            "itemId": "48112",
-            "icon": "ability_hunter_pet_raptor"
-          },
-          {
-            "spellid": "141789",
-            "itemId": "97821",
-            "icon": "trade_archaeology_whitehydrafigurine"
-          },
-          {
-            "spellid": "67416",
-            "itemId": "48118",
-            "icon": "ability_mount_raptor"
-          },
-          {
-            "spellid": "67418",
-            "itemId": "48122",
-            "icon": "ability_mount_raptor"
-          },
-          {
-            "spellid": "15067",
-            "itemId": "11474",
-            "icon": "inv_pet_sprite_darter_hatchling"
-          },
-          {
-            "spellid": "231017",
-            "itemId": "142448",
-            "icon": "ability_hunter_pet_vulture"
-          },
-          {"spellid": "261755","itemId": 156851,"icon": "inv_ridingsilithid2red"}
-        ]
-      },
-      {
-        "name": "Misc",
-        "items": [
-          {
-            "spellid": "10695",
-            "itemId": "10822",
-            "icon": "inv_misc_head_dragon_black"
-          },
-          {
-            "spellid": "25162",
-            "itemId": "20769",
-            "icon": "ability_creature_poison_05"
-          },
-          {
-            "spellid": "93838",
-            "itemId": "67282",
-            "icon": "inv_misc_archstone_01"
-          },
-          {
-            "spellid": "36034",
-            "itemId": "29960",
-            "icon": "ability_hunter_pet_wasp"
-          },
-          {
-            "spellid": "91343",
-            "itemId": "64494",
-            "icon": "inv_misc_qirajicrystal_03"
-          },
-          {
-            "spellid": "132785",
-            "itemId": "91031",
-            "icon": "inv_dragonflypet_blue",
-            "notObtainable": true
           }
         ]
       }
@@ -2624,799 +3590,6 @@
     ]
   },
   {
-    "name": "Vendor",
-    "subcats": [
-      {
-        "name": "Guild",
-        "items": [
-          {
-            "spellid": "89670",
-            "itemId": "63398",
-            "icon": "inv_misc_babyarmadillopet"
-          },
-          {
-            "spellid": "89039",
-            "itemId": "63138",
-            "icon": "inv_misc_darkphoenixpet_01"
-          },
-          {
-            "spellid": "92398",
-            "itemId": "65364",
-            "icon": "achievement_guildperk_honorablemention_rank2",
-            "side": "H"
-          },
-          {
-            "spellid": "92397",
-            "itemId": "65363",
-            "icon": "achievement_guildperk_honorablemention_rank2",
-            "side": "A"
-          },
-          {
-            "spellid": "92396",
-            "itemId": "65362",
-            "icon": "achievement_guildperk_honorablemention",
-            "side": "H"
-          },
-          {
-            "spellid": "92395",
-            "itemId": "65361",
-            "icon": "achievement_guildperk_honorablemention",
-            "side": "A"
-          },
-          {
-            "spellid": "100576",
-            "itemId": "71033",
-            "icon": "inv_misc_petdragonwhelptarecgosa"
-          },
-          {
-            "spellid": "127813",
-            "itemId": "85513",
-            "icon": "inv_pandarenserpentpet"
-          },
-          {
-            "spellid": "169220",
-            "itemId": "114968",
-            "icon": "inv_ravager2pet_black"
-          }
-        ]
-      },
-      {
-        "name": "Alliance",
-        "items": [
-          {
-            "spellid": "35907",
-            "itemId": "29901",
-            "icon": "ability_hunter_pet_moth"
-          },
-          {
-            "spellid": "10673",
-            "itemId": "8485",
-            "icon": "inv_pet_cats_bombaycat"
-          },
-          {
-            "spellid": "10674",
-            "itemId": "8486",
-            "icon": "inv_pet_cats_cornishrexcat"
-          },
-          {
-            "spellid": "123214",
-            "icon": "inv_feather_02"
-          },
-          {
-            "spellid": "10707",
-            "itemId": "8500",
-            "icon": "ability_eyeoftheowl"
-          },
-          {
-            "spellid": "10706",
-            "itemId": "8501",
-            "icon": "ability_eyeoftheowl"
-          },
-          {
-            "spellid": "10676",
-            "itemId": "8487",
-            "icon": "inv_pet_cats_orangetabbycat"
-          },
-          {
-            "spellid": "10678",
-            "itemId": "8488",
-            "icon": "inv_pet_cats_silvertabbycat"
-          },
-          {
-            "spellid": "10711",
-            "itemId": "8497",
-            "icon": "inv_crate_02"
-          },
-          {
-            "spellid": "10679",
-            "itemId": "8489",
-            "icon": "inv_pet_cats_whitekitten"
-          },
-          {
-            "spellid": "35911",
-            "itemId": "29904",
-            "icon": "ability_hunter_pet_moth"
-          },
-          {
-            "spellid": "35910",
-            "itemId": "29903",
-            "icon": "ability_hunter_pet_moth"
-          }
-        ]
-      },
-      {
-        "name": "Horde",
-        "items": [
-          {
-            "spellid": "10714",
-            "itemId": "10360",
-            "icon": "spell_nature_guardianward"
-          },
-          {
-            "spellid": "10709",
-            "itemId": "10394",
-            "icon": "inv_pet_prairiedog"
-          },
-          {
-            "spellid": "10716",
-            "itemId": "10361",
-            "icon": "spell_nature_guardianward"
-          },
-          {
-            "spellid": "36027",
-            "itemId": "29953",
-            "icon": "ability_hunter_pet_dragonhawk"
-          },
-          {
-            "spellid": "36028",
-            "itemId": "29956",
-            "icon": "ability_hunter_pet_dragonhawk"
-          },
-          {
-            "spellid": "123212",
-            "icon": "ability_hunter_pet_crab"
-          },
-          {
-            "spellid": "36029",
-            "itemId": "29957",
-            "icon": "ability_hunter_pet_dragonhawk"
-          }
-        ]
-      },
-      {
-        "name": "Pet Charms",
-        "items": [
-          {
-            "spellid": "187384",
-            "itemId": "127704",
-            "icon": "inv_ravager2pet_red"
-          },
-          {
-            "spellid": "187383",
-            "itemId": "127703",
-            "icon": "ability_hunter_pet_moth"
-          },
-          {
-            "spellid": "187376",
-            "itemId": "127701",
-            "icon": "ability_hunter_pet_sporebat"
-          },
-          {
-            "spellid": "184481",
-            "itemId": "127705",
-            "icon": "inv_pet_frostwolfpup_shadow"
-          },
-          {
-            "spellid": "210682",
-            "itemId": "136910",
-            "icon": "inv_gizmo_07"
-          },
-          {
-            "spellid": "194294",
-            "itemId": "129760",
-            "icon": "ability_mount_felboarmount"
-          },
-          {
-            "spellid": "194393",
-            "itemId": "129878",
-            "icon": "ability_hunter_pet_owl"
-          },
-          {
-            "spellid": "194330",
-            "itemId": "129798",
-            "icon": "inv_fishing_f_ammonite1"
-          },
-          {
-            "spellid": "223110",
-            "itemId": "140274",
-            "icon": "inv_babyhippo01_blue"
-          },
-          {
-            "spellid": "167389",
-            "itemId": "118599",
-            "icon": "inv_misc_herb_wldsteelbloom_petal"
-          },
-          {
-            "itemId": 163506,
-            "name": "Accursed Hexxer",
-            "icon": "inv_tikiman2_bloodtroll",
-            "spellid": 279224
-          },
-          {
-            "itemId": 163489,
-            "name": "Abyssal Eel",
-            "icon": "inv_seaeel_teal",
-            "spellid": 279205
-          },
-          {
-            "itemId": 163500,
-            "name": "Bloodfeaster Larva",
-            "icon": "inv_bloodticklarvaegreen",
-            "spellid": 279216
-          },
-          {
-            "itemId": 163510,
-            "name": "Crimson Frog",
-            "icon": "inv_pet_toad_black",
-            "spellid": 279228
-          },
-          {
-            "itemId": 163492,
-            "name": "Drustvar Piglet",
-            "icon": "inv_babypig",
-            "spellid": 279208
-          },
-          {
-            "itemId": 163493,
-            "name": "Bloody Rabbit Fang",
-            "icon": "ability_druid_disembowel",
-            "spellid": 279209
-          },
-          {
-            "itemId": 163494,
-            "name": "Wad of Spider Web",
-            "icon": "inv_misc_web_01",
-            "spellid": 279210
-          },
-          {
-            "itemId": 160708,
-            "name": "Smoochums' Bloody Heart",
-            "icon": "inv_misc_organ_01",
-            "spellid": 273215
-          },
-          {
-            "itemId": 163508,
-            "name": "Butterfly in a Jar",
-            "icon": "inv_pet_butterfly_blue",
-            "spellid": 279226
-          },
-          {
-            "itemId": 163560,
-            "name": "Saurolisk Hatchling",
-            "icon": "inv_babykomododragon_purple",
-            "spellid": 279225
-          },
-          {
-            "itemId": 163509,
-            "name": "Freshwater Pincher",
-            "icon": "inv_crab2_pink",
-            "spellid": 279227
-          },
-          {
-            "itemId": 163511,
-            "name": "Barnacled Hermit Crab",
-            "icon": "inv_hermitcrab_red",
-            "spellid": 279230
-          },
-          {
-            "itemId": 163512,
-            "name": "Sandstinger Wasp",
-            "icon": "inv_giantwasp_orange",
-            "spellid": 279231
-          },
-          {
-            "itemId": 163514,
-            "name": "Violent Looking Flower Pot",
-            "icon": "achievement_guildperk_bountifulbags",
-            "spellid": 279233
-          },
-          {
-            "itemId": 163502,
-            "name": "Lil' Ben'fon",
-            "icon": "inv_brontosaurusmount",
-            "spellid": 279218
-          },
-          {
-            "itemId": 163503,
-            "name": "Ranishu Runt",
-            "icon": "inv_bloodtrollbeast_mount_dark",
-            "spellid": 279219
-          },
-          {
-            "itemId": 163499,
-            "name": "Raptor Containment Crate",
-            "icon": "inv_crate_05",
-            "spellid": 279215
-          },
-          {
-            "itemId": 163560,
-            "name": "Saurolisk Hatchling",
-            "icon": "inv_babykomododragon_purple",
-            "spellid": 279225
-          },
-          {
-            "itemId": 163505,
-            "name": "Toad in a Box",
-            "icon": "inv_box_01",
-            "spellid": 279221
-          },
-          {
-            "itemId": 163498,
-            "name": "Tiny Direhorn",
-            "icon": "inv_babytriceratops_beige",
-            "spellid": 279214
-          },
-          {
-            "itemId": 161016,
-            "name": "Lil' Tika",
-            "icon": "inv_zandalaribabyraptorred",
-            "spellid": 274202
-          }
-        ]
-      },
-      {
-        "name": "Battle for Azeroth",
-        "id": "0bc473f9",
-        "items": [
-          {
-            "itemId": 163568,
-            "name": "Lost Platysaur",
-            "icon": "inv_babysaurolophus",
-            "spellid": 279433
-          }
-        ]
-      },
-      {
-        "name": "Dalaran",
-        "items": [
-          {
-            "spellid": "10713",
-            "itemId": "44822",
-            "icon": "spell_nature_guardianward"
-          },
-          {
-            "spellid": "65358",
-            "itemId": "46398",
-            "icon": "inv_pet_cats_calicocat"
-          },
-          {
-            "spellid": "67417",
-            "itemId": "48120",
-            "icon": "ability_mount_raptor"
-          },
-          {
-            "spellid": "194357",
-            "itemId": "129826",
-            "icon": "achievement_halloween_spider_01"
-          },
-          {
-            "spellid": "53316",
-            "itemId": "39973",
-            "icon": "inv_misc_bone_humanskull_01"
-          },
-          {
-            "spellid": "210698",
-            "itemId": "136923",
-            "icon": "inv_pet_celestialbabyhippo"
-          },
-          {
-            "spellid": "177220",
-            "icon": "trade_archaeology_draenei-candelabra"
-          },
-          {
-            "spellid": "210677",
-            "itemId": "136904",
-            "icon": "inv_fishing_f_ammonite1"
-          },
-          {
-            "spellid": "247474",
-            "itemId": "151633",
-            "icon": "inv_pet_mouse"
-          },
-          {
-            "spellid": "247123",
-            "itemId": "151569",
-            "icon": "achievement_brewery_1"
-          }
-        ]
-      },
-      {
-        "name": "Dealer Rashaad (Netherstorm)",
-        "items": [
-          {
-            "spellid": "36031",
-            "itemId": "29958",
-            "icon": "ability_hunter_pet_dragonhawk"
-          },
-          {
-            "spellid": "35239",
-            "itemId": "29364",
-            "icon": "inv_crate_02"
-          },
-          {
-            "spellid": "10717",
-            "itemId": "10392",
-            "icon": "spell_nature_guardianward"
-          },
-          {
-            "spellid": "35156",
-            "itemId": "29363",
-            "icon": "spell_nature_abolishmagic"
-          },
-          {
-            "spellid": "35909",
-            "itemId": "29902",
-            "icon": "ability_hunter_pet_moth"
-          },
-          {
-            "spellid": "10684",
-            "itemId": "8495",
-            "icon": "inv_feather_11"
-          },
-          {
-            "spellid": "10677",
-            "itemId": "8490",
-            "icon": "inv_pet_cats_siamesecat"
-          },
-          {
-            "spellid": "10688",
-            "itemId": "10393",
-            "icon": "inv_pet_cockroach"
-          }
-        ]
-      },
-      {
-        "name": "Draenor",
-        "items": [
-          {
-            "spellid": "159581",
-            "itemId": "110721",
-            "icon": "inv_misc_food_54"
-          },
-          {
-            "spellid": "188235",
-            "itemId": "127868",
-            "icon": "achievement_boss_oregorger"
-          },
-          {
-            "spellid": "177215",
-            "itemId": "120051",
-            "icon": "inv_box_birdcage_01"
-          },
-          {
-            "spellid": "170283",
-            "itemId": "120050",
-            "icon": "inv_box_birdcage_01"
-          }
-        ]
-      },
-      {
-        "name": "Timeless Isle",
-        "items": [
-          {
-            "spellid": "145697",
-            "itemId": "102145",
-            "icon": "inv_pet_cranegod"
-          },
-          {
-            "spellid": "145696",
-            "itemId": "101771",
-            "icon": "inv_pet_tigergodcub"
-          },
-          {
-            "spellid": "145698",
-            "itemId": "102147",
-            "icon": "inv_pet_jadeserpentpet"
-          },
-          {
-            "spellid": "145699",
-            "itemId": "102146",
-            "icon": "inv_pet_yakgod"
-          },
-          {
-            "spellid": "148684",
-            "itemId": "104332",
-            "icon": "inv_misc_trinketpanda_11"
-          },
-          {
-            "spellid": "148530",
-            "itemId": "104295",
-            "icon": "inv_pet_spectralporcupinegreen"
-          },
-          {
-            "spellid": "148427",
-            "itemId": "103637",
-            "icon": "inv_pet_spectralporcupinered"
-          },
-          {
-            "spellid": "234555",
-            "itemId": "143953",
-            "icon": "inv_cloudserpent_egg_black"
-          },
-          {
-            "spellid": "234556",
-            "itemId": "143954",
-            "icon": "inv_pet_pandarenelemental"
-          }
-        ]
-      },
-      {
-        "name": "Molten Front",
-        "items": [
-          {
-            "spellid": "99668",
-            "itemId": "70160",
-            "icon": "inv_misc_flower_04"
-          },
-          {
-            "spellid": "99663",
-            "itemId": "70140",
-            "icon": "inv_misc_bearcubbrown"
-          },
-          {
-            "spellid": "45890",
-            "itemId": "34955",
-            "icon": "inv_pet_scorchedstone"
-          }
-        ]
-      },
-      {
-        "name": "",
-        "items": [
-          {
-            "spellid": "10685",
-            "itemId": "11023",
-            "icon": "spell_magic_polymorphchicken"
-          },
-          {
-            "spellid": "75134",
-            "itemId": "54436",
-            "icon": "inv_gizmo_06"
-          },
-          {
-            "spellid": "10680",
-            "itemId": "8496",
-            "icon": "inv_feather_08"
-          },
-          {
-            "spellid": "127816",
-            "itemId": "88148",
-            "icon": "inv_pet_babycrane"
-          },
-          {
-            "spellid": "65682",
-            "itemId": "95621",
-            "icon": "inv_misc_key_05"
-          },
-          {
-            "spellid": "97638",
-            "itemId": "69239",
-            "icon": "ability_mount_pinktiger"
-          },
-          {
-            "spellid": "123784",
-            "itemId": "85222",
-            "icon": "spell_nature_insectswarm"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Reputation Vendor",
-    "subcats": [
-      {
-        "name": "Battle for Azeroth",
-        "id": "5da9eb3c",
-        "items": [
-          {
-            "itemId": 163501,
-            "name": "Tragg the Curious",
-            "icon": "ivn_toadloamount",
-            "spellid": 279217
-          },
-          {
-            "itemId": 163491,
-            "name": "Pristine Falcon Feather",
-            "icon": "inv_feather_03",
-            "spellid": 279207
-          },
-          {
-            "itemId": 163490,
-            "name": "Pair of Bee Wings",
-            "icon": "spell_nature_insect_swarm2",
-            "spellid": 279206
-          },
-          {
-            "itemId": 163513,
-            "name": "Cou'pa",
-            "icon": "inv_babyturtle2_yellow",
-            "spellid": 279232
-          },
-          {
-            "itemId": 163555,
-            "name": "Drop of Azerite",
-            "icon": "inv_radientazeriteheart",
-            "spellid": 279365
-          },
-          {
-            "itemId": 163515,
-            "name": "Shard of Azerite",
-            "icon": "inv_glowing_azerite_spire",
-            "spellid": 279234
-          }
-        ]
-      },
-      {
-        "name": "Legion",
-        "items": [
-          {
-            "spellid": "210694",
-            "itemId": "136919",
-            "icon": "inv_moosemount2"
-          },
-          {
-            "spellid": "224403",
-            "itemId": "140672",
-            "icon": "inv_misc_book_18"
-          },
-          {
-            "spellid": "210671",
-            "itemId": "136899",
-            "icon": "levelupicon-lfd"
-          },
-          {
-            "spellid": "210669",
-            "itemId": "136898",
-            "icon": "inv_pet_wardenowl"
-          },
-          {
-            "spellid": "210695",
-            "itemId": "136920",
-            "icon": "inv_valkiergoldpet"
-          },
-          {
-            "spellid": "30152",
-            "itemId": "23712",
-            "icon": "ability_mount_whitetiger"
-          },
-          {
-            "spellid": "233805",
-            "itemId": "143842",
-            "icon": "inv_pet_raccoon"
-          },
-          {
-            "spellid": "243136",
-            "itemId": "147841",
-            "icon": "inv_felbatmount"
-          },
-          {
-            "spellid": "254197",
-            "itemId": "153027",
-            "icon": "inv_feasel_purple"
-          }
-        ]
-      },
-      {
-        "name": "Warlords of Draenor",
-        "items": [
-          {
-            "spellid": "190681",
-            "itemId": "128478",
-            "icon": "ability_mount_fireravengodmount"
-          },
-          {
-            "spellid": "170286",
-            "itemId": "119146",
-            "icon": "ability_hunter_pet_silithid"
-          },
-          {
-            "spellid": "172695",
-            "itemId": "117404",
-            "icon": "inv_pet_babyshark"
-          },
-          {
-            "spellid": "168977",
-            "itemId": "114919",
-            "icon": "inv_misc_throwingball_01"
-          },
-          {
-            "spellid": "167390",
-            "itemId": "119149",
-            "icon": "inv_misc_herb_wldsteelbloom_petal"
-          },
-          {
-            "spellid": "169666",
-            "itemId": "119142",
-            "icon": "inv_eng_gizmo2"
-          },
-          {
-            "spellid": "170281",
-            "itemId": "119141",
-            "icon": "inv_frostwolfpup"
-          },
-          {
-            "spellid": "170287",
-            "itemId": "119148",
-            "icon": "inv_babyhippo01"
-          },
-          {
-            "spellid": "190682",
-            "itemId": "128477",
-            "icon": "ability_mount_jungletiger"
-          },
-          {
-            "spellid": "170271",
-            "itemId": "119150",
-            "icon": "ability_hunter_pet_netherray"
-          },
-          {
-            "spellid": "170277",
-            "itemId": "119143",
-            "icon": "inv_misc_boilingblood"
-          }
-        ]
-      },
-      {
-        "name": "",
-        "items": [
-          {
-            "spellid": "135156",
-            "itemId": "93025",
-            "icon": "inv_misc_head_clockworkgnome_01"
-          },
-          {
-            "spellid": "90637",
-            "allianceId": "90897",
-            "hordeId": "90898",
-            "icon": "inv_misc_foxkit"
-          },
-          {
-            "spellid": "51716",
-            "itemId": "38628",
-            "icon": "ability_hunter_pet_netherray"
-          },
-          {
-            "spellid": "61357",
-            "itemId": "44723",
-            "icon": "inv_pet_babypengu"
-          },
-          {
-            "spellid": "89472",
-            "allianceId": "63355",
-            "hordeId": "64996",
-            "icon": "inv_misc_seagullpet_01"
-          },
-          {
-            "spellid": "124000",
-            "itemId": "85447",
-            "icon": "inv_misc_fish_36"
-          },
-          {
-            "spellid": "45082",
-            "itemId": "34478",
-            "icon": "ability_hunter_pet_sporebat"
-          },
-          {
-            "spellid": "236285",
-            "itemId": "144394",
-            "icon": "achievement_boss_highmaul_aggronguardian"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "name": "Promotional",
     "subcats": [
       {
@@ -3608,7 +3781,14 @@
           {
             "spellid": "169695",
             "itemId": "115301",
+            "notObtainable": true,
             "icon": "inv_moltencorgi"
+          },
+          {
+            "spellid": "170268",
+            "itemId": "118574",
+            "notObtainable": true,
+            "icon": "spell_fire_ragnaros_supernova"
           },
           {
             "spellid": "210701",
@@ -3913,6 +4093,67 @@
             "itemId": "20651",
             "icon": "inv_egg_03",
             "notObtainable": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Other",
+    "id": "04fedc71",
+    "subcats": [
+      {
+        "name": "Guild Vendor",
+        "items": [
+          {
+            "spellid": "89670",
+            "itemId": "63398",
+            "icon": "inv_misc_babyarmadillopet"
+          },
+          {
+            "spellid": "89039",
+            "itemId": "63138",
+            "icon": "inv_misc_darkphoenixpet_01"
+          },
+          {
+            "spellid": "92398",
+            "itemId": "65364",
+            "icon": "achievement_guildperk_honorablemention_rank2",
+            "side": "H"
+          },
+          {
+            "spellid": "92397",
+            "itemId": "65363",
+            "icon": "achievement_guildperk_honorablemention_rank2",
+            "side": "A"
+          },
+          {
+            "spellid": "92396",
+            "itemId": "65362",
+            "icon": "achievement_guildperk_honorablemention",
+            "side": "H"
+          },
+          {
+            "spellid": "92395",
+            "itemId": "65361",
+            "icon": "achievement_guildperk_honorablemention",
+            "side": "A"
+          },
+          {
+            "spellid": "100576",
+            "itemId": "71033",
+            "icon": "inv_misc_petdragonwhelptarecgosa"
+          },
+          {
+            "spellid": "127813",
+            "itemId": "85513",
+            "notObtainable": true,
+            "icon": "inv_pandarenserpentpet"
+          },
+          {
+            "spellid": "169220",
+            "itemId": "114968",
+            "icon": "inv_ravager2pet_black"
           }
         ]
       }
