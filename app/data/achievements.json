@@ -12990,152 +12990,6 @@
           "name": "Legion Raid",
           "subcats": [
             {
-              "id": "3d867a24",
-              "items": [
-                {
-                  "criteria": {
-                    "31443": "50388",
-                    "31444": "50389",
-                    "31445": "50390"
-                  },
-                  "icon": "achievement_thenighthold_trillax",
-                  "id": "10829",
-                  "points": 10
-                },
-                {
-                  "criteria": {
-                    "31447": "50394",
-                    "31448": "50395",
-                    "31449": "50396"
-                  },
-                  "icon": "achievement_thenighthold_highbotanisttelam",
-                  "id": "10837",
-                  "points": 10
-                },
-                {
-                  "criteria": {
-                    "31450": "50398",
-                    "31451": "50399",
-                    "31452": "50400"
-                  },
-                  "icon": "achievement_thenighthold_grandmagistrixelisande",
-                  "id": "10838",
-                  "points": 10
-                },
-                {
-                  "icon": "achievement_thenighthold_guldan",
-                  "id": "10839",
-                  "points": 10
-                },
-                {
-                  "icon": "inv_misc_desecrated_plategloves",
-                  "id": "10678",
-                  "points": 10
-                },
-                {
-                  "icon": "inv_misc_tolbaradsearchlight",
-                  "id": "10697",
-                  "points": 10
-                },
-                {
-                  "icon": "inv_misc_food_147_cake",
-                  "id": "10742",
-                  "points": 10
-                },
-                {
-                  "criteria": {
-                    "31806": "50358",
-                    "31807": "50357",
-                    "31808": "50359"
-                  },
-                  "icon": "inv_misc_trailofflowers",
-                  "id": "10817",
-                  "points": 10
-                },
-                {
-                  "icon": "achievement_pvp_h_14",
-                  "id": "10704",
-                  "points": 10
-                },
-                {
-                  "icon": "spell_volatilefiregreen",
-                  "id": "10575",
-                  "points": 10
-                },
-                {
-                  "icon": "ability_creature_disease_03",
-                  "id": "10754",
-                  "points": 10
-                },
-                {
-                  "icon": "spell_arcane_arcane01",
-                  "id": "10851",
-                  "points": 10
-                },
-                {
-                  "icon": "achievement_boss_infinitecorruptor",
-                  "id": "10699",
-                  "points": 10
-                },
-                {
-                  "icon": "inv_darkmoon_eye",
-                  "id": "10696",
-                  "points": 10
-                },
-                {
-                  "icon": "achievement_thenighthold_skorpyron",
-                  "id": "10840",
-                  "points": 10
-                },
-                {
-                  "icon": "achievement_thenighthold_chromaticanomaly",
-                  "id": "10842",
-                  "points": 10
-                },
-                {
-                  "icon": "achievement_thenighthold_trillax",
-                  "id": "10843",
-                  "points": 10
-                },
-                {
-                  "icon": "achievement_thenighthold_spellbladealuriel",
-                  "id": "10844",
-                  "points": 10
-                },
-                {
-                  "icon": "achievement_thenighthold_tichondrius",
-                  "id": "10847",
-                  "points": 10
-                },
-                {
-                  "icon": "achievement_thenighthold_krosus",
-                  "id": "10848",
-                  "points": 10
-                },
-                {
-                  "icon": "achievement_thenighthold_highbotanisttelam",
-                  "id": "10846",
-                  "points": 10
-                },
-                {
-                  "icon": "achievement_thenighthold_starauguretraeus",
-                  "id": "10845",
-                  "points": 10
-                },
-                {
-                  "icon": "achievement_thenighthold_grandmagistrixelisande",
-                  "id": "10849",
-                  "points": 10
-                },
-                {
-                  "icon": "achievement_thenighthold_guldan",
-                  "id": "10850",
-                  "points": 10
-                }
-              ],
-              "name": "The Nighthold"
-            },
-            {
               "id": "049bdaeb",
               "items": [
                 {
@@ -13301,6 +13155,152 @@
                 }
               ],
               "name": "Trial of Valor"
+            },
+            {
+              "id": "3d867a24",
+              "items": [
+                {
+                  "criteria": {
+                    "31443": "50388",
+                    "31444": "50389",
+                    "31445": "50390"
+                  },
+                  "icon": "achievement_thenighthold_trillax",
+                  "id": "10829",
+                  "points": 10
+                },
+                {
+                  "criteria": {
+                    "31447": "50394",
+                    "31448": "50395",
+                    "31449": "50396"
+                  },
+                  "icon": "achievement_thenighthold_highbotanisttelam",
+                  "id": "10837",
+                  "points": 10
+                },
+                {
+                  "criteria": {
+                    "31450": "50398",
+                    "31451": "50399",
+                    "31452": "50400"
+                  },
+                  "icon": "achievement_thenighthold_grandmagistrixelisande",
+                  "id": "10838",
+                  "points": 10
+                },
+                {
+                  "icon": "achievement_thenighthold_guldan",
+                  "id": "10839",
+                  "points": 10
+                },
+                {
+                  "icon": "inv_misc_desecrated_plategloves",
+                  "id": "10678",
+                  "points": 10
+                },
+                {
+                  "icon": "inv_misc_tolbaradsearchlight",
+                  "id": "10697",
+                  "points": 10
+                },
+                {
+                  "icon": "inv_misc_food_147_cake",
+                  "id": "10742",
+                  "points": 10
+                },
+                {
+                  "criteria": {
+                    "31806": "50358",
+                    "31807": "50357",
+                    "31808": "50359"
+                  },
+                  "icon": "inv_misc_trailofflowers",
+                  "id": "10817",
+                  "points": 10
+                },
+                {
+                  "icon": "achievement_pvp_h_14",
+                  "id": "10704",
+                  "points": 10
+                },
+                {
+                  "icon": "spell_volatilefiregreen",
+                  "id": "10575",
+                  "points": 10
+                },
+                {
+                  "icon": "ability_creature_disease_03",
+                  "id": "10754",
+                  "points": 10
+                },
+                {
+                  "icon": "spell_arcane_arcane01",
+                  "id": "10851",
+                  "points": 10
+                },
+                {
+                  "icon": "achievement_boss_infinitecorruptor",
+                  "id": "10699",
+                  "points": 10
+                },
+                {
+                  "icon": "inv_darkmoon_eye",
+                  "id": "10696",
+                  "points": 10
+                },
+                {
+                  "icon": "achievement_thenighthold_skorpyron",
+                  "id": "10840",
+                  "points": 10
+                },
+                {
+                  "icon": "achievement_thenighthold_chromaticanomaly",
+                  "id": "10842",
+                  "points": 10
+                },
+                {
+                  "icon": "achievement_thenighthold_trillax",
+                  "id": "10843",
+                  "points": 10
+                },
+                {
+                  "icon": "achievement_thenighthold_spellbladealuriel",
+                  "id": "10844",
+                  "points": 10
+                },
+                {
+                  "icon": "achievement_thenighthold_tichondrius",
+                  "id": "10847",
+                  "points": 10
+                },
+                {
+                  "icon": "achievement_thenighthold_krosus",
+                  "id": "10848",
+                  "points": 10
+                },
+                {
+                  "icon": "achievement_thenighthold_highbotanisttelam",
+                  "id": "10846",
+                  "points": 10
+                },
+                {
+                  "icon": "achievement_thenighthold_starauguretraeus",
+                  "id": "10845",
+                  "points": 10
+                },
+                {
+                  "icon": "achievement_thenighthold_grandmagistrixelisande",
+                  "id": "10849",
+                  "points": 10
+                },
+                {
+                  "icon": "achievement_thenighthold_guldan",
+                  "id": "10850",
+                  "points": 10
+                }
+              ],
+              "name": "The Nighthold"
             },
             {
               "id": "5b056a3a",
