@@ -897,6 +897,17 @@
             "icon": "inv_felbatmount"
           }
         ]
+      },
+      {
+        "name": "Pre-launch event",
+        "id": "aeda7bc6",
+        "items": [
+          {
+            "spellid": "210699",
+            "itemId": "136924",
+            "icon": "inv_batpet"
+          }
+        ]
       }
     ]
   },
@@ -4069,12 +4080,8 @@
           },
           {
             "spellid": "63318",
-            "icon": "inv_spear_05"
-          },
-          {
-            "spellid": "210699",
-            "itemId": "136924",
-            "icon": "inv_batpet"
+            "icon": "inv_spear_05",
+            "notObtainable": true
           },
           {
             "spellid": "23531",
