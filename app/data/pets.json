@@ -3604,6 +3604,17 @@
     "name": "Promotional",
     "subcats": [
       {
+        "name": "Authenticator",
+        "id": "ecb396f0",
+        "items": [
+          {
+            "spellid": "69452",
+            "itemId": "49646",
+            "icon": "ability_hunter_pet_corehound"
+          }
+        ]
+      },
+      {
         "name": "Blizzard Store",
         "items": [
           {
@@ -3771,6 +3782,17 @@
             "spellid": "227051",
             "itemId": "141895",
             "icon": "inv_pet_hordemurloc"
+          }
+        ]
+      },
+      {
+        "name": "WWI",
+        "id": "2e69c310",
+        "items": [
+          {
+            "spellid": "53082",
+            "itemId": "39656",
+            "icon": "inv_sword_07"
           }
         ]
       },
@@ -4067,16 +4089,6 @@
             "itemId": "32498",
             "icon": "inv_misc_elvencoins",
             "notObtainable": true
-          },
-          {
-            "spellid": "53082",
-            "itemId": "39656",
-            "icon": "inv_sword_07"
-          },
-          {
-            "spellid": "69452",
-            "itemId": "49646",
-            "icon": "ability_hunter_pet_corehound"
           },
           {
             "spellid": "63318",
