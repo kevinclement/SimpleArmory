@@ -38,6 +38,11 @@
         "id": "2629653d",
         "items": [
           {
+            "itemId": 159749,
+            "name": "Haw'li's Hot & Spicy Chili",
+            "icon": "inv_misc_food_159_fish_82"
+          },
+          {
             "itemId": "156649",
             "name": "Zandalari Effigy Amulet",
             "icon": "archaeology_5_0_ironamulet"
@@ -109,6 +114,12 @@
             "name": "Party Totem",
             "side": "H",
             "icon": "inv_relics_totemoflife"
+          },
+          {
+            "itemId": 163463,
+            "name": "Dead Ringer",
+            "icon": "inv_7_0raid_trinket_09b",
+            "side": "A"
           }
         ]
       },
@@ -162,7 +173,7 @@
           {
             "itemId": "164375",
             "name": "Bad Mojo Banana",
-            "icon": "ability_hunter_aspectofthemonkey"
+            "icon": "trade_archaeology_shriveledmonkeypaw"
           },
           {
             "itemId": "164377",
@@ -2333,6 +2344,16 @@
             "icon": "inv_archaeology_70_crystallineeyeofundravius",
             "itemId": "131724",
             "name": "Crystalline Eye of Undravius"
+          },
+          {
+            "itemId": 160751,
+            "name": "Dance of the Dead",
+            "icon": "inv_archaeology_80_witch_danceofthedead"
+          },
+          {
+            "itemId": 160740,
+            "name": "Croak Crock",
+            "icon": "inv_archaeology_80_zandalari_croakcrock"
           }
         ],
         "name": "Archaeology"
@@ -2695,6 +2716,11 @@
             "icon": "achievement_bg_3flagcap_nodeaths",
             "itemId": "134034",
             "name": "Esteemed Pennant"
+          },
+          {
+            "itemId": 164310,
+            "name": "Glorious Pennant",
+            "icon": "achievement_bg_3flagcap_nodeaths"
           }
         ],
         "name": "Prestige"
@@ -3182,6 +3208,11 @@
             "icon": "inv_mace_122",
             "itemId": "151265",
             "name": "Blight Boar Microphone"
+          },
+          {
+            "itemId": 162539,
+            "name": "Hot Buttered Popcorn",
+            "icon": "inv_misc_food_legion_flaked-sea-salt"
           }
         ],
         "name": "Darkmoon Faire"
@@ -3341,6 +3372,22 @@
           }
         ],
         "name": "Blizzard Store"
+      },
+      {
+        "name": "Diablo 20th Anniversary",
+        "id": "c0f754ff",
+        "items": [
+          {
+            "itemId": 142542,
+            "name": "Tome of Town Portal",
+            "icon": "diabloanniversary_tomeoftownportal"
+          },
+          {
+            "itemId": 143543,
+            "name": "Twelve-String Guitar",
+            "icon": "inv_axe_2h_undeadguitar_c_01"
+          }
+        ]
       }
     ]
   }
