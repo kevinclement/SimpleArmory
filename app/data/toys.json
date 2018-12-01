@@ -71,7 +71,7 @@
           {
             "itemId": "163607",
             "name": "Lucille's Sewing Needle",
-            "side": "A",
+            "obtainSide": "A",
             "icon": "inv_weapon_shortblade_18"
           },
           {
@@ -88,38 +88,38 @@
           {
             "itemId": "163211",
             "name": "Akunda's Firesticks",
-            "side": "H",
+            "obtainSide": "H",
             "icon": "spell_fire_bluefire"
           },
           {
             "itemId": "159753",
             "name": "Desert Flute",
-            "side": "H",
+            "obtainSide": "H",
             "icon": "8xp_vulperaflute"
           },
           {
             "itemId": "163201",
             "name": "Gnoll Targetting Barrel",
-            "side": "A",
+            "obtainSide": "A",
             "icon": "inv_misc_head_gnoll_01"
           },
           {
             "itemId": "163200",
             "name": "Cursed Spyglass",
-            "side": "A",
+            "obtainSide": "A",
             "icon": "inv_misc_spyglass_03"
           },
           {
             "itemId": "163210",
             "name": "Party Totem",
-            "side": "H",
+            "obtainSide": "H",
             "icon": "inv_relics_totemoflife"
           },
           {
             "itemId": 163463,
             "name": "Dead Ringer",
             "icon": "inv_7_0raid_trinket_09b",
-            "side": "A"
+            "obtainSide": "A"
           }
         ]
       },
@@ -151,7 +151,7 @@
           {
             "itemId": "163603",
             "name": "Lucille's Handkerchief",
-            "side": "A",
+            "obtainSide": "A",
             "icon": "inv_fabric_mageweave_01"
           }
         ]
@@ -254,13 +254,13 @@
           {
             "itemId": "163828",
             "name": "Toy Siege Tower",
-            "side": "A",
+            "obtainSide": "A",
             "icon": "inv_bannerpvp_02"
           },
           {
             "itemId": "163829",
             "name": "Toy War Machine",
-            "side": "H",
+            "obtainSide": "H",
             "icon": "inv_bannerpvp_01"
           }
         ]
@@ -302,7 +302,7 @@
             "name": "Champion's Salute"
           },
           {
-            "allowableClasses": [
+            "obtainClasses": [
               7
             ],
             "icon": "ability_shaman_watershield",
@@ -310,7 +310,7 @@
             "name": "Waterspeaker's Totem"
           },
           {
-            "allowableClasses": [
+            "obtainClasses": [
               7
             ],
             "icon": "inv_waepon_bow_zulgrub_d_01",
@@ -318,7 +318,7 @@
             "name": "Vol'jin's Serpent Totem"
           },
           {
-            "allowableClasses": [
+            "obtainClasses": [
               7
             ],
             "icon": "inv_wand_22",
@@ -326,7 +326,7 @@
             "name": "Tadpole Cloudseeder"
           },
           {
-            "allowableClasses": [
+            "obtainClasses": [
               7
             ],
             "icon": "inv_pet_scorchedstone",
@@ -334,7 +334,7 @@
             "name": "Raging Elemental Stone"
           },
           {
-            "allowableClasses": [
+            "obtainClasses": [
               7
             ],
             "icon": "ability_shaman_echooftheelements",
@@ -342,7 +342,7 @@
             "name": "Lava Fountain"
           },
           {
-            "allowableClasses": [
+            "obtainClasses": [
               5
             ],
             "icon": "spell_holy_dizzy",
@@ -350,7 +350,7 @@
             "name": "Thaumaturgist's Orb"
           },
           {
-            "allowableClasses": [
+            "obtainClasses": [
               5
             ],
             "icon": "ability_priest_bindingprayers",
@@ -358,7 +358,7 @@
             "name": "Scarlet Confessional Book"
           },
           {
-            "allowableClasses": [
+            "obtainClasses": [
               4
             ],
             "icon": "inv_crate_01",
@@ -366,7 +366,7 @@
             "name": "Suspicious Crate"
           },
           {
-            "allowableClasses": [
+            "obtainClasses": [
               4
             ],
             "icon": "inv_cask_03",
@@ -374,7 +374,7 @@
             "name": "Barrel of Eyepatches"
           },
           {
-            "allowableClasses": [
+            "obtainClasses": [
               1
             ],
             "icon": "inv_misc_horn_05",
@@ -382,7 +382,7 @@
             "name": "Stormforged Vrykul Horn"
           },
           {
-            "allowableClasses": [
+            "obtainClasses": [
               11
             ],
             "icon": "ability_druid_manatree",
@@ -390,7 +390,7 @@
             "name": "Nature's Beacon"
           },
           {
-            "allowableClasses": [
+            "obtainClasses": [
               8
             ],
             "icon": "creatureportrait_nexus_floating_disc",
@@ -398,7 +398,7 @@
             "name": "Magical Saucer"
           },
           {
-            "allowableClasses": [
+            "obtainClasses": [
               8
             ],
             "icon": "inv_helmet_120",
@@ -406,7 +406,7 @@
             "name": "Akazamzarak's Spare Hat"
           },
           {
-            "allowableClasses": [
+            "obtainClasses": [
               8
             ],
             "icon": "inv_misc_enchantedpearl",
@@ -414,7 +414,7 @@
             "name": "Familiar Stone"
           },
           {
-            "allowableClasses": [
+            "obtainClasses": [
               3
             ],
             "icon": "ability_hunter_bestialdiscipline",
@@ -422,7 +422,7 @@
             "name": "Hunter's Call"
           },
           {
-            "allowableClasses": [
+            "obtainClasses": [
               12
             ],
             "icon": "ability_demonhunter_chaosstrike",
@@ -506,7 +506,7 @@
             "icon": "trade_archaeology_antleredcloakclasp",
             "itemId": "129093",
             "name": "Ravenbear Disguise",
-            "side": "H"
+            "obtainSide": "H"
           },
           {
             "icon": "inv_helm_cloth_witchhat_b_01",
@@ -700,25 +700,25 @@
             "icon": "inv_misc_map09",
             "itemId": "150744",
             "name": "Walking Kalimdor with the Earthmother",
-            "side": "H"
+            "obtainSide": "H"
           },
           {
             "icon": "inv_misc_map09",
             "itemId": "150743",
             "name": "Surviving Kalimdor",
-            "side": "A"
+            "obtainSide": "A"
           },
           {
             "icon": "icon_treasuremap",
             "itemId": "150745",
             "name": "The Azeroth Campaign",
-            "side": "H"
+            "obtainSide": "H"
           },
           {
             "icon": "icon_treasuremap",
             "itemId": "150746",
             "name": "To Modernize the Provisioning of Azeroth",
-            "side": "A"
+            "obtainSide": "A"
           },
           {
             "icon": "inv_7_0raid_trinket_010a",
@@ -793,7 +793,7 @@
         "id": "f74583f5",
         "items": [
           {
-            "allowableClasses": [
+            "obtainClasses": [
               12
             ],
             "icon": "inv_helm_laughingskull_01",
@@ -975,7 +975,7 @@
             "icon": "trade_archaeology_dignified-draenei-portrait",
             "itemId": "119144",
             "name": "Touch of the Naaru",
-            "side": "A"
+            "obtainSide": "A"
           },
           {
             "icon": "spell_fel_incinerate",
@@ -991,13 +991,13 @@
             "icon": "spell_frost_fireresistancetotem",
             "itemId": "119145",
             "name": "Firefury Totem",
-            "side": "H"
+            "obtainSide": "H"
           },
           {
             "icon": "inv_jewelry_necklace_103",
             "itemId": "115503",
             "name": "Blazing Diamond Pendant",
-            "side": "H"
+            "obtainSide": "H"
           }
         ],
         "name": "Quest"
@@ -1009,43 +1009,43 @@
             "icon": "spell_nature_invisibilitytotem",
             "itemId": "119160",
             "name": "Tickle Totem",
-            "side": "H"
+            "obtainSide": "H"
           },
           {
             "icon": "inv_datacrystal01",
             "itemId": "119182",
             "name": "Soul Evacuation Crystal",
-            "side": "A"
+            "obtainSide": "A"
           },
           {
             "icon": "trade_archaeology_draenei_artifactfragment",
             "itemId": "119421",
             "name": "Sha'tari Defender's Medallion",
-            "side": "A"
+            "obtainSide": "A"
           },
           {
             "icon": "spell_frost_frost",
             "itemId": "115468",
             "name": "Permanent Frost Essence",
-            "side": "H"
+            "obtainSide": "H"
           },
           {
             "icon": "creatureportrait_bubble",
             "itemId": "115472",
             "name": "Permanent Time Bubble",
-            "side": "A"
+            "obtainSide": "A"
           },
           {
             "icon": "inv_chest_cloth_draenei_c_01",
             "itemId": "128462",
             "name": "Karabor Councilor's Attire",
-            "side": "A"
+            "obtainSide": "A"
           },
           {
             "icon": "inv_frostwolfpup",
             "itemId": "128471",
             "name": "Frostwolf Grunt's Battlegear",
-            "side": "H"
+            "obtainSide": "H"
           },
           {
             "icon": "inv_jewelry_necklace_109",
@@ -1139,13 +1139,13 @@
             "icon": "inv_banner_03",
             "itemId": "119217",
             "name": "Alliance Flag of Victory",
-            "side": "A"
+            "obtainSide": "A"
           },
           {
             "icon": "inv_banner_03",
             "itemId": "119218",
             "name": "Horde Flag of Victory",
-            "side": "H"
+            "obtainSide": "H"
           },
           {
             "icon": "inv_banner_03",
@@ -1502,13 +1502,13 @@
             "icon": "achievement_reputation_kirintor_offensive",
             "itemId": "95567",
             "name": "Kirin Tor Beacon",
-            "side": "A"
+            "obtainSide": "A"
           },
           {
             "icon": "achievement_faction_sunreaveronslaught",
             "itemId": "95568",
             "name": "Sunreaver Beacon",
-            "side": "H"
+            "obtainSide": "H"
           },
           {
             "icon": "inv_misc_food_41",
@@ -1570,13 +1570,13 @@
             "icon": "achievement_faction_sunreaveronslaught",
             "itemId": "95590",
             "name": "Glorious Standard of the Sunreaver Onslaught",
-            "side": "H"
+            "obtainSide": "H"
           },
           {
             "icon": "achievement_reputation_kirintor_offensive",
             "itemId": "95589",
             "name": "Glorious Standard of the Kirin Tor Offensive",
-            "side": "A"
+            "obtainSide": "A"
           },
           {
             "icon": "inv_misc_trinketpanda_07",
@@ -1822,13 +1822,13 @@
             "icon": "inv_misc_tolbaradsearchlight",
             "itemId": "64997",
             "name": "Tol Barad Searchlight#Horde",
-            "side": "H"
+            "obtainSide": "H"
           },
           {
             "icon": "inv_misc_tolbaradsearchlight",
             "itemId": "63141",
             "name": "Tol Barad Searchlight",
-            "side": "A"
+            "obtainSide": "A"
           },
           {
             "icon": "inv_misc_necklace_firelands_2",
@@ -1852,7 +1852,7 @@
         "id": "904c30d3",
         "items": [
           {
-            "allowableClasses": [
+            "obtainClasses": [
               11
             ],
             "icon": "inv_misc_bag_herbpouch",
@@ -1936,61 +1936,61 @@
             "icon": "inv_misc_tournaments_banner_human",
             "itemId": "45011",
             "name": "Stormwind Banner",
-            "side": "A"
+            "obtainSide": "A"
           },
           {
             "icon": "inv_misc_tournaments_banner_dwarf",
             "itemId": "45018",
             "name": "Ironforge Banner",
-            "side": "A"
+            "obtainSide": "A"
           },
           {
             "icon": "inv_misc_tournaments_banner_gnome",
             "itemId": "45019",
             "name": "Gnomeregan Banner",
-            "side": "A"
+            "obtainSide": "A"
           },
           {
             "icon": "inv_misc_tournaments_banner_draenei",
             "itemId": "45020",
             "name": "Exodar Banner",
-            "side": "A"
+            "obtainSide": "A"
           },
           {
             "icon": "inv_misc_tournaments_banner_nightelf",
             "itemId": "45021",
             "name": "Darnassus Banner",
-            "side": "A"
+            "obtainSide": "A"
           },
           {
             "icon": "inv_misc_tournaments_banner_scourge",
             "itemId": "45016",
             "name": "Undercity Banner",
-            "side": "H"
+            "obtainSide": "H"
           },
           {
             "icon": "inv_misc_tournaments_banner_tauren",
             "itemId": "45013",
             "name": "Thunder Bluff Banner",
-            "side": "H"
+            "obtainSide": "H"
           },
           {
             "icon": "inv_misc_tournaments_banner_bloodelf",
             "itemId": "45017",
             "name": "Silvermoon City Banner",
-            "side": "H"
+            "obtainSide": "H"
           },
           {
             "icon": "inv_misc_tournaments_banner_troll",
             "itemId": "45015",
             "name": "Sen'jin Banner",
-            "side": "H"
+            "obtainSide": "H"
           },
           {
             "icon": "inv_misc_tournaments_banner_orc",
             "itemId": "45014",
             "name": "Orgrimmar Banner",
-            "side": "H"
+            "obtainSide": "H"
           },
           {
             "icon": "achievement_reputation_argentchampion",
@@ -2163,7 +2163,7 @@
           {
             "icon": "inv_helmet_29",
             "itemId": "53057",
-            "side": "H",
+            "obtainSide": "H",
             "name": "Faded Wizard Hat"
           }
         ],
@@ -2222,19 +2222,19 @@
             "icon": "inv_misc_flute_01",
             "itemId": "98552",
             "name": "Xan'tish's Flute",
-            "side": "H"
+            "obtainSide": "H"
           },
           {
             "icon": "inv_hand_1h_trollshaman_c_01",
             "itemId": "97919",
             "name": "Whole-Body Shrinka'",
-            "side": "H"
+            "obtainSide": "H"
           },
           {
             "icon": "inv_misc_archaeology_trolldrum",
             "itemId": "97942",
             "name": "Sen'jin Spirit Drum",
-            "side": "H"
+            "obtainSide": "H"
           },
           {
             "icon": "inv_potion_107",
@@ -2614,7 +2614,7 @@
         "id": "79a66987",
         "items": [
           {
-            "allowableClasses": [
+            "obtainClasses": [
               4
             ],
             "icon": "inv_cask_03",
@@ -2622,7 +2622,7 @@
             "name": "Barrel of Bandanas"
           },
           {
-            "allowableClasses": [
+            "obtainClasses": [
               4
             ],
             "icon": "inv_misc_dice_01",
@@ -2630,7 +2630,7 @@
             "name": "Decahedral Dwarven Dice"
           },
           {
-            "allowableClasses": [
+            "obtainClasses": [
               4
             ],
             "icon": "inv_misc_dice_02",
@@ -2638,7 +2638,7 @@
             "name": "Loaded Gnomish Dice"
           },
           {
-            "allowableClasses": [
+            "obtainClasses": [
               4
             ],
             "icon": "inv_misc_dice_02",
@@ -3066,25 +3066,25 @@
             "icon": "inv_shield_1h_alliancetoy_a_01",
             "itemId": "151349",
             "name": "Toy Weapon Set",
-            "side": "A"
+            "obtainSide": "A"
           },
           {
             "icon": "inv_shield_1h_hordetoy_a_01",
             "itemId": "151348",
             "name": "Toy Weapon Set",
-            "side": "H"
+            "obtainSide": "H"
           },
           {
             "icon": "inv_misc_gobstationx",
             "itemId": "151344",
             "name": "Hearthstation",
-            "side": "H"
+            "obtainSide": "H"
           },
           {
             "icon": "inv_misc_gnomefundo86",
             "itemId": "151343",
             "name": "Hearthstation",
-            "side": "A"
+            "obtainSide": "A"
           },
           {
             "icon": "inv_gizmo_goblingtonkcontroller",
@@ -3099,13 +3099,13 @@
           {
             "itemId": "162643",
             "name": "Toy Armor Set",
-            "side": "A",
+            "obtainSide": "A",
             "icon": "inv_helm_alliancetoy_a_01"
           },
           {
             "itemId": "162642",
             "name": "Toy Armor Set",
-            "side": "H",
+            "obtainSide": "H",
             "icon": "inv_helm_hordetoy_a_01"
           }
         ],
