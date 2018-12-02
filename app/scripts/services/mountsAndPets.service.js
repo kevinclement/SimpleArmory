@@ -318,21 +318,6 @@
                     plusMounts++;
                 }
             }
-
-            // Death Knight fix (if you're a death knight, you get acherus-deathcharger if you have the other one)
-            if (character.class === 6 && characterProperty === 'mounts' && !collected[48778] && collected[54729]) {
-                
-                console.log('Hack: Blizzard still has the DK bug');
-
-                collected[48778] = {
-                    'spellid': '48778',
-                    'icon': 'Spell_DeathKnight_SummonDeathCharger',
-                    'allowableClasses': [6]
-                };
-
-                found[48778] = false;
-                plusMounts++;
-            }
         }
     }
 
