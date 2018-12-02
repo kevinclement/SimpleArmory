@@ -180,11 +180,25 @@
         "id": "a4a47bf2",
         "items": [
           {
+            "creatureId": 143464,
+            "icon": "ability_mount_bloodtick_red",
+            "itemId": 163634,
+            "name": "Dreadtick Leecher",
+            "spellid": 279576
+          },
+          {
             "creatureId": 143198,
             "icon": "ability_hunter_pet_raptor",
             "itemId": 163504,
             "name": "Child of Jani",
             "spellid": 279220
+          },
+          {
+            "creatureId": 143730,
+            "icon": "inv_cooking_80_choralhoney",
+            "itemId": 163776,
+            "name": "Large Honeycomb Cluster",
+            "spellid": 280157
           },
           {
             "creatureId": 140125,
@@ -240,6 +254,13 @@
             "itemId": 161081,
             "name": "Taptaf",
             "spellid": 274353
+          },
+          {
+            "creatureId": 131644,
+            "icon": "trade_archaeology_trolltooth-w-goldfilling",
+            "itemId": 156566,
+            "name": "Dart",
+            "spellid": 259758
           }
         ],
         "name": "Quest"
@@ -253,6 +274,13 @@
             "itemId": 163568,
             "name": "Lost Platysaur",
             "spellid": 279433
+          },
+          {
+            "creatureId": 134406,
+            "icon": "inv_cloudserpent_egg_yellow",
+            "itemId": 158077,
+            "name": "Faberge Egg",
+            "spellid": 264001
           }
         ],
         "name": "Vendor"
@@ -301,6 +329,20 @@
             "itemId": 163515,
             "name": "Shard of Azerite",
             "spellid": 279234
+          },
+          {
+            "creatureId": 143738,
+            "icon": "inv_bannerpvp_02",
+            "itemId": 163778,
+            "name": "Lil' Siege Tower",
+            "spellid": 280185
+          },
+          {
+            "creatureId": 143739,
+            "icon": "inv_bannerpvp_01",
+            "itemId": 163779,
+            "name": "Lil' War Machine",
+            "spellid": 280188
           }
         ],
         "name": "Reputation"
@@ -502,6 +544,277 @@
           }
         ],
         "name": "Pet Charm"
+      },
+      {
+        "name": "Warfront: Arathi",
+        "id": "d8ae4bea",
+        "items": [
+          {
+            "creatureId": 143627,
+            "icon": "inv_elemental_eternal_life",
+            "itemId": 163711,
+            "name": "Shard of Fozruk",
+            "spellid": 279929
+          },
+          {
+            "creatureId": 143628,
+            "icon": "inv_pet_nurturedpenguinegg",
+            "itemId": 163712,
+            "name": "Mana-Warped Egg",
+            "spellid": 279930
+          },
+          {
+            "creatureId": 143499,
+            "icon": "ability_hunter_pet_spider",
+            "itemId": 163648,
+            "name": "Fuzzy Creepling",
+            "spellid": 279631
+          },
+          {
+            "creatureId": 143507,
+            "icon": "inv_misc_book_05",
+            "itemId": 163652,
+            "name": "Tiny Grimoire",
+            "spellid": 279643
+          },
+          {
+            "creatureId": 143503,
+            "icon": "inv_tradeskillitem_03",
+            "itemId": 163650,
+            "name": "Aldrusian Sproutling",
+            "spellid": 279638
+          },
+          {
+            "creatureId": 143515,
+            "icon": "ability_priest_halo",
+            "itemId": 163677,
+            "name": "Teeny Titan Orb",
+            "spellid": 279657
+          },
+          {
+            "creatureId": 143533,
+            "icon": "inv_pet_diseasedbearcub",
+            "itemId": 163684,
+            "name": "Scabby",
+            "spellid": 279686
+          },
+          {
+            "creatureId": 143563,
+            "icon": "inv_egg_02",
+            "itemId": 163689,
+            "name": "Angry Egg",
+            "spellid": 279723
+          },
+          {
+            "creatureId": 143564,
+            "icon": "achievement_halloween_rottenegg_01",
+            "itemId": 163690,
+            "name": "Plagued Egg",
+            "spellid": 279724
+          }
+        ]
+      },
+      {
+        "name": "Island Expeditions",
+        "id": "78de8045",
+        "items": [
+          {
+            "creatureId": 143794,
+            "icon": "inv_crab2pirate",
+            "itemId": 163797,
+            "name": "Scuttle",
+            "spellid": 177244
+          },
+          {
+            "creatureId": 143795,
+            "icon": "inv_helm_cloth_b_01pirate_irontideraiders",
+            "itemId": 163798,
+            "name": "Captain Nibs",
+            "spellid": 177243
+          },
+          {
+            "creatureId": 143796,
+            "icon": "inv_helm_cloth_b_01pirate_brown",
+            "itemId": 163799,
+            "name": "Barnaby",
+            "spellid": 177242
+          },
+          {
+            "creatureId": 143797,
+            "icon": "inv_kakapo",
+            "itemId": 163800,
+            "name": "Poro",
+            "spellid": 177241
+          },
+          {
+            "creatureId": 143798,
+            "icon": "inv_babyoctopus",
+            "itemId": 163801,
+            "name": "Octopode Fry",
+            "spellid": 177240
+          },
+          {
+            "creatureId": 143799,
+            "icon": "inv_babyoctopus_eyepatch",
+            "itemId": 163802,
+            "name": "Inky",
+            "spellid": 177239
+          },
+          {
+            "creatureId": 143801,
+            "icon": "inv_crab2_purple",
+            "itemId": 163803,
+            "name": "Sparkleshell Sandcrawler",
+            "spellid": 177237
+          },
+          {
+            "creatureId": 143802,
+            "icon": "inv_plate_firelands_d_01",
+            "itemId": 163804,
+            "name": "Kindleweb Spiderling",
+            "spellid": 177236
+          },
+          {
+            "creatureId": 143803,
+            "icon": "inv_pet_-goat",
+            "itemId": 163805,
+            "name": "Craghoof Kid",
+            "spellid": 177235
+          },
+          {
+            "creatureId": 143804,
+            "icon": "ability_hunter_pet_gorilla",
+            "itemId": 163806,
+            "name": "False Knucklebump",
+            "spellid": 177231
+          },
+          {
+            "creatureId": 143805,
+            "icon": "inv_mace_116",
+            "itemId": 163807,
+            "name": "Tinder Pup",
+            "spellid": 177230
+          },
+          {
+            "creatureId": 143806,
+            "icon": "inv_shield_21",
+            "itemId": 163808,
+            "name": "Sandshell Chitterer",
+            "spellid": 177229
+          },
+          {
+            "creatureId": 143807,
+            "icon": "inv_mount_hordescorpiong",
+            "itemId": 163809,
+            "name": "Deathsting Scorpid",
+            "spellid": 177228
+          },
+          {
+            "creatureId": 143808,
+            "icon": "inv_misc_herb_stormvine",
+            "itemId": 163810,
+            "name": "Thistlebrush Bud",
+            "spellid": 177226
+          },
+          {
+            "creatureId": 143809,
+            "icon": "inv_pet_pandarenelemental_fire",
+            "itemId": 163811,
+            "name": "Giggling Flame",
+            "spellid": 177225
+          },
+          {
+            "creatureId": 143810,
+            "icon": "inv_pet_pandarenelemental_earth",
+            "itemId": 163812,
+            "name": "Laughing Stonekin",
+            "spellid": 177224
+          },
+          {
+            "creatureId": 143811,
+            "icon": "inv_pet_pandarenelemental",
+            "itemId": 163813,
+            "name": "Playful Frostkin",
+            "spellid": 177222
+          },
+          {
+            "creatureId": 143812,
+            "icon": "inv_pet_pandarenelemental_air",
+            "itemId": 163814,
+            "name": "Mischievous Zephyr",
+            "spellid": 177221
+          },
+          {
+            "creatureId": 143813,
+            "icon": "inv_babydeer",
+            "itemId": 163815,
+            "name": "Littlehoof",
+            "spellid": 177219
+          },
+          {
+            "creatureId": 143814,
+            "icon": "inv_babyturtle2_white",
+            "itemId": 163816,
+            "name": "Snapper",
+            "spellid": 177217
+          },
+          {
+            "creatureId": 143815,
+            "icon": "ability_hunter_serpentswiftness",
+            "itemId": 163817,
+            "name": "Sunscale Hatchling",
+            "spellid": 280331
+          },
+          {
+            "creatureId": 143816,
+            "icon": "ability_hunter_pet_worm",
+            "itemId": 163818,
+            "name": "Bloodstone Tunneler",
+            "spellid": 280332
+          },
+          {
+            "creatureId": 143817,
+            "icon": "ability_mount_yakmount",
+            "itemId": 163819,
+            "name": "Snort",
+            "spellid": 280333
+          },
+          {
+            "creatureId": 143818,
+            "icon": "inv_misc_nativebeastfur",
+            "itemId": 163820,
+            "name": "Muskflank Calfling",
+            "spellid": 280334
+          },
+          {
+            "creatureId": 143819,
+            "icon": "inv_misc_claw_lobstrok_teal",
+            "itemId": 163821,
+            "name": "Juvenile Brineshell",
+            "spellid": 280335
+          },
+          {
+            "creatureId": 143820,
+            "icon": "achievement_raid_mantidraid05",
+            "itemId": 163822,
+            "name": "Kunchong Hatchling",
+            "spellid": 280336
+          },
+          {
+            "creatureId": 143821,
+            "icon": "inv_fishing_innards_eye",
+            "itemId": 163823,
+            "name": "Coldlight Surfrunner",
+            "spellid": 280337
+          },
+          {
+            "creatureId": 143822,
+            "icon": "inv_misc_monsterclaw_09",
+            "itemId": 163824,
+            "name": "Voru'kar Leecher",
+            "spellid": 280338
+          }
+        ]
       }
     ]
   },
