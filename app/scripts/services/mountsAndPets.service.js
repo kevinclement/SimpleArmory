@@ -300,24 +300,7 @@
         }
 
         function applyHacks(character, characterProperty, collected, found) {
-            var plusMounts = 0;
-
-            // Hack: Horde chopper doesn't show up, so we have to check for achievement and just assume they 'learned' it
-            if (character.faction === 'H' && characterProperty === 'mounts' && character.achievements.achievementsCompleted.indexOf(9909) >= 0) {
-                console.log('Hack: Blizzard still has the chopper bug');
-
-                collected[179244] = {
-                    'spellid': '179244',
-                    'itemId': '122703',
-                    'icon': 'inv_misc_key_06',
-                    'side': 'H'
-                };
-                found[179244] = false;
-
-                if (character.faction === 'H') {
-                    plusMounts++;
-                }
-            }
+            // No hacks needed right now! :-)
         }
     }
 
