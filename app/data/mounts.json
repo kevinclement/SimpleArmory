@@ -1008,12 +1008,6 @@
         "name": "Achievement",
         "items": [
           {
-            "spellid": "170347",
-            "itemId": "115484",
-            "icon": "inv_belt_45",
-            "notObtainable": true
-          },
-          {
             "spellid": "171632",
             "itemId": "116670",
             "icon": "inv_giantboarmount_brown"
@@ -4229,6 +4223,18 @@
           }
         ],
         "id": "259f733d"
+      },
+      {
+        "name": "WoW's 10th Anniversary",
+        "id": "435bf98f",
+        "items": [
+          {
+            "spellid": "170347",
+            "itemId": "115484",
+            "icon": "inv_belt_45",
+            "notObtainable": true
+          }
+        ]
       },
       {
         "name": "HotS",
