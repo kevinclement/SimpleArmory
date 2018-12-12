@@ -11,6 +11,7 @@ import tqdm
 
 
 IGNORE_PETS_CREATUREIDS = [
+    144617,  # Test Pet https://www.wowhead.com/npc=144617
 ]
 
 
