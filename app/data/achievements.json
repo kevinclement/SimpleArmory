@@ -616,7 +616,7 @@
                     "40560": "66893",
                     "40561": "66894"
                   },
-                  "icon": "inv_trinket_80_kultiras01b",
+                  "icon": "achievement_alliedrace_kultiranhuman",
                   "id": 12593,
                   "points": 10,
                   "side": "A"
@@ -740,6 +740,13 @@
                   "id": 12614,
                   "points": 5,
                   "side": "H"
+                },
+                {
+                  "icon": "achievement_alliedrace_zandalaritroll",
+                  "id": 13294,
+                  "points": 10,
+                  "side": "H",
+                  "title": "Loremaster of Zandalar"
                 }
               ],
               "name": "Zones"
@@ -989,9 +996,92 @@
                   "icon": "ability_hunter_pet_devilsaur",
                   "id": 13048,
                   "points": 5
+                },
+                {
+                  "icon": "ability_druid_manatree",
+                  "id": 13251,
+                  "points": 0,
+                  "side": "A",
+                  "title": "In Teldrassil's Shadow"
+                },
+                {
+                  "icon": "achievement_character_troll_male",
+                  "id": 13263,
+                  "points": 10,
+                  "side": "H",
+                  "title": "The Shadow Hunter"
+                },
+                {
+                  "icon": "achievement_alliedrace_kultiranhuman",
+                  "id": 13384,
+                  "points": 10,
+                  "side": "A",
+                  "title": "Kul Tirans Don't Look at Explosions"
                 }
               ],
               "name": "Events"
+            },
+            {
+              "id": "a0fb1ec2",
+              "items": [
+                {
+                  "icon": "achievement_garrison_invasion",
+                  "id": 13283,
+                  "points": 10,
+                  "side": "A",
+                  "title": "Frontline Warrior"
+                },
+                {
+                  "icon": "achievement_garrison_invasion",
+                  "id": 13284,
+                  "points": 10,
+                  "side": "H",
+                  "title": "Frontline Warrior"
+                },
+                {
+                  "icon": "inv_misc_archaeology_vrykuldrinkinghorn",
+                  "id": 13285,
+                  "points": 5,
+                  "side": "A",
+                  "title": "Upright Citizens"
+                },
+                {
+                  "icon": "spell_winston_bubble",
+                  "id": 13426,
+                  "points": 5,
+                  "side": "A",
+                  "title": "Come On and Slam"
+                },
+                {
+                  "icon": "spell_warlock_soulburn_haunt",
+                  "id": 13435,
+                  "points": 5,
+                  "side": "H",
+                  "title": "Doomsoul Surprise"
+                },
+                {
+                  "icon": "inv_inscription_80_contract_vulpera",
+                  "id": 13437,
+                  "points": 5,
+                  "side": "H",
+                  "title": "Scavenge like a Vulpera"
+                },
+                {
+                  "icon": "inv_shield_1h_darkirondwarf_d_01",
+                  "id": 13440,
+                  "points": 5,
+                  "side": "A",
+                  "title": "Pushing the Payload"
+                },
+                {
+                  "icon": "ability_mount_kodo_02",
+                  "id": 13441,
+                  "points": 5,
+                  "side": "H",
+                  "title": "Pushing the Payload"
+                }
+              ],
+              "name": "Assaults"
             }
           ]
         },
@@ -11489,6 +11579,60 @@
                   "id": 12605,
                   "points": 20,
                   "side": "A"
+                },
+                {
+                  "icon": "inv_misc_treasurechest04b",
+                  "id": 13317,
+                  "points": 5,
+                  "title": "Supplied and Ready"
+                },
+                {
+                  "icon": "achievement_garrison_invasion_gold",
+                  "id": 13387,
+                  "points": 10,
+                  "side": "A",
+                  "title": "Frontline Veteran"
+                },
+                {
+                  "icon": "achievement_garrison_invasion_gold",
+                  "id": 13388,
+                  "points": 10,
+                  "side": "H",
+                  "title": "Frontline Veteran"
+                },
+                {
+                  "icon": "ability_warrior_improveddisciplines",
+                  "id": 13402,
+                  "points": 5,
+                  "side": "A",
+                  "title": "Frontline Slayer"
+                },
+                {
+                  "icon": "ability_warrior_improveddisciplines",
+                  "id": 13403,
+                  "points": 5,
+                  "side": "H",
+                  "title": "Frontline Slayer"
+                },
+                {
+                  "icon": "inv_azeriteempoweredstate",
+                  "id": 13429,
+                  "points": 5,
+                  "title": "Azerfighter"
+                },
+                {
+                  "icon": "ability_butcher_heavyhanded",
+                  "id": 13438,
+                  "points": 5,
+                  "side": "H",
+                  "title": "Boxing Match"
+                },
+                {
+                  "icon": "achievement_character_orc_male",
+                  "id": 13439,
+                  "points": 5,
+                  "side": "A",
+                  "title": "Boxing Match"
                 }
               ],
               "name": "Battle for Azeroth"
@@ -11610,6 +11754,12 @@
                   "icon": "achievement_nazmir_zone",
                   "id": 12806,
                   "points": 25
+                },
+                {
+                  "icon": "inv_zuldazar",
+                  "id": 13315,
+                  "points": 25,
+                  "title": "Glory of the Dazar'alor Raider"
                 }
               ],
               "name": "Battle"
@@ -12590,6 +12740,200 @@
               "name": "Uldir"
             },
             {
+              "name": "Siege of Dazar'alor",
+              "id": "554c4d24",
+              "items": [
+                {
+                  "icon": "inv_zuldazar",
+                  "id": 13286,
+                  "points": 10,
+                  "side": "A",
+                  "title": "Siege of Dazar'alor"
+                },
+                {
+                  "icon": "achievement_boss_zuldazar_rastakhan",
+                  "id": 13287,
+                  "points": 0,
+                  "side": "A",
+                  "title": "Empire's Fall"
+                },
+                {
+                  "icon": "achievement_boss_zuldazar_jaina",
+                  "id": 13288,
+                  "points": 10,
+                  "side": "A",
+                  "title": "Might of the Alliance"
+                },
+                {
+                  "icon": "inv_zuldazar",
+                  "id": 13289,
+                  "points": 10,
+                  "side": "H",
+                  "title": "Defense of Dazar'alor"
+                },
+                {
+                  "icon": "achievement_boss_zuldazar_rastakhan",
+                  "id": 13290,
+                  "points": 10,
+                  "side": "H",
+                  "title": "Death's Bargain"
+                },
+                {
+                  "icon": "achievement_boss_zuldazar_jaina",
+                  "id": 13291,
+                  "points": 10,
+                  "side": "H",
+                  "title": "Victory or Death"
+                },
+                {
+                  "icon": "inv_compy_purple",
+                  "id": 13316,
+                  "points": 10,
+                  "title": "Can I Get a Hek Hek Hek Yeah?"
+                },
+                {
+                  "icon": "ability_hunter_pet_raptor",
+                  "id": 13325,
+                  "points": 10,
+                  "title": "Walk the Dinosaur"
+                },
+                {
+                  "icon": "inv_misc_flower_01",
+                  "id": 13345,
+                  "points": 10,
+                  "title": "Praise the Sunflower"
+                },
+                {
+                  "icon": "inv_pet_monkey",
+                  "id": 13383,
+                  "points": 10,
+                  "title": "Barrel of Monkeys"
+                },
+                {
+                  "icon": "inv_misc_blingtron",
+                  "id": 13401,
+                  "points": 10,
+                  "title": "I Got Next!"
+                },
+                {
+                  "icon": "inv_pet_snowman",
+                  "id": 13410,
+                  "points": 10,
+                  "title": "Snow Fun Allowed"
+                },
+                {
+                  "icon": "spell_holy_guardianspirit",
+                  "id": 13425,
+                  "points": 10,
+                  "title": "We Got Spirit, How About You?"
+                },
+                {
+                  "icon": "achievement_boss_warlord_kalithresh",
+                  "id": 13430,
+                  "points": 10,
+                  "title": "De Lurker Be'loa"
+                },
+                {
+                  "icon": "inv_cloudserpent_egg_green",
+                  "id": 13431,
+                  "points": 10,
+                  "title": "Hidden Dragon"
+                },
+                {
+                  "icon": "ability_paladin_blindinglight",
+                  "id": 13292,
+                  "points": 10,
+                  "title": "Mythic: Champion of the Light"
+                },
+                {
+                  "icon": "achievement_boss_zuldazar_grong",
+                  "id": 13293,
+                  "points": 10,
+                  "title": "Mythic: Grong"
+                },
+                {
+                  "icon": "achievement_boss_zuldazar_manceroy_mestrah",
+                  "id": 13295,
+                  "points": 10,
+                  "side": "H",
+                  "title": "Mythic: Jadefire Masters"
+                },
+                {
+                  "icon": "achievement_boss_zuldazar_grimfang_anathos",
+                  "id": 13298,
+                  "points": 10,
+                  "side": "A",
+                  "title": "Mythic: Jadefire Masters"
+                },
+                {
+                  "icon": "achievement_boss_zuldazar_loacouncil",
+                  "id": 13300,
+                  "points": 10,
+                  "title": "Mythic: Conclave of the Chosen"
+                },
+                {
+                  "icon": "achievement_boss_zuldazar_treasuregolem",
+                  "id": 13299,
+                  "points": 10,
+                  "title": "Mythic: Opulence"
+                },
+                {
+                  "icon": "achievement_boss_zuldazar_rastakhan",
+                  "id": 13311,
+                  "points": 10,
+                  "title": "Mythic: King Rastakhan"
+                },
+                {
+                  "icon": "achievement_boss_zuldazar_mekkatorque",
+                  "id": 13312,
+                  "points": 10,
+                  "title": "Mythic: Mekkatorque"
+                },
+                {
+                  "icon": "achievement_boss_zuldazar_blockade",
+                  "id": 13313,
+                  "points": 10,
+                  "title": "Mythic: Stormwall Blockade"
+                },
+                {
+                  "icon": "achievement_boss_zuldazar_jaina",
+                  "id": 13314,
+                  "points": 10,
+                  "title": "Mythic: Lady Jaina Proudmoore"
+                }
+              ]
+            },
+            {
+              "name": "Crucible of Storms",
+              "id": "5d78c1f1",
+              "items": [
+                {
+                  "icon": "inv_stormsongvalley",
+                  "id": 13414,
+                  "points": 10,
+                  "title": "Crucible of Storms"
+                },
+                {
+                  "icon": "inv_stormsongvalley",
+                  "id": 13415,
+                  "points": 10,
+                  "title": "Heroic: Crucible of Storms"
+                },
+                {
+                  "icon": "achievement_dungeon_lordstormsong",
+                  "id": 13416,
+                  "points": 10,
+                  "title": "Mythic: The Restless Cabal"
+                },
+                {
+                  "icon": "inv_chest_armor_voidelf_d_01",
+                  "id": 13417,
+                  "points": 10,
+                  "title": "Mythic: Uu'nat, Harbinger of the Void"
+                }
+              ]
+            },
+            {
               "id": "669e1d1f",
               "items": [
                 {
@@ -12932,7 +13276,7 @@
               "id": "8b6da771",
               "items": [
                 {
-                  "icon": "achievement_dungeon_siegeofboralus",
+                  "icon": "achievement_dungeon_kingsrest",
                   "id": 12848,
                   "points": 10
                 },
@@ -26872,6 +27216,12 @@
                   "icon": "ability_rogue_cannonballbarrage",
                   "id": 11856,
                   "points": 5
+                },
+                {
+                  "icon": "inv_misc_tournaments_symbol_gnome",
+                  "id": 13269,
+                  "points": 5,
+                  "title": "Pet Battle Challenge: Gnomeregan"
                 }
               ],
               "name": "Challenges"
@@ -27806,7 +28156,6 @@
               "name": "Count"
             },
             {
-              "name": "World Quests",
               "id": "8ddee335",
               "items": [
                 {
@@ -27884,7 +28233,8 @@
                   "id": 12936,
                   "points": 10
                 }
-              ]
+              ],
+              "name": "World Quests"
             },
             {
               "id": "04f45fbe",
@@ -28337,6 +28687,7 @@
             },
             {
               "id": "e035deb4",
+              "name": "Species: Broken Isles",
               "items": [
                 {
                   "criteria": {
@@ -28574,7 +28925,13 @@
                   "icon": "icon_hippogold",
                   "id": "9696",
                   "points": 10
-                },
+                }
+              ]
+            },
+            {
+              "name": "Species: Argus",
+              "id": "0a481904",
+              "items": [
                 {
                   "criteria": {
                     "37740": "61590",
@@ -28842,8 +29199,79 @@
                   "id": 12100,
                   "points": 10
                 }
+              ]
+            },
+            {
+              "id": "87d26795",
+              "items": [
+                {
+                  "icon": "inv_komododragon_gilaorange",
+                  "id": 13270,
+                  "points": 5,
+                  "title": "Beast Mode"
+                },
+                {
+                  "icon": "inv_scarab_gold",
+                  "id": 13271,
+                  "points": 5,
+                  "title": "Critters With Huge Teeth"
+                },
+                {
+                  "icon": "inv_misc_head_dragon_nexus",
+                  "id": 13272,
+                  "points": 5,
+                  "title": "Dragons Make Everything Better"
+                },
+                {
+                  "icon": "spell_nature_earthelemental_totem",
+                  "id": 13273,
+                  "points": 5,
+                  "title": "Element of Success"
+                },
+                {
+                  "icon": "ability_hunter_murderofcrows",
+                  "id": 13274,
+                  "points": 5,
+                  "title": "Fun With Flying"
+                },
+                {
+                  "icon": "spell_magic_lesserinvisibilty",
+                  "id": 13275,
+                  "points": 5,
+                  "title": "Magician's Secrets"
+                },
+                {
+                  "icon": "inv_misc_enggizmos_30",
+                  "id": 13277,
+                  "points": 5,
+                  "title": "Machine Learning"
+                },
+                {
+                  "icon": "ability_deathknight_necroticaura",
+                  "id": 13278,
+                  "points": 5,
+                  "title": "Not Quite Dead Yet"
+                },
+                {
+                  "icon": "inv_misc_fish_70",
+                  "id": 13280,
+                  "points": 5,
+                  "title": "Hobbyist Aquarist"
+                },
+                {
+                  "icon": "spell_shadow_twistedfaith",
+                  "id": 13281,
+                  "points": 5,
+                  "title": "Human Resources"
+                },
+                {
+                  "icon": "ability_hunter_bestialdiscipline",
+                  "id": 13279,
+                  "points": 10,
+                  "title": "Family Battler"
+                }
               ],
-              "name": "Species"
+              "name": "Species: Battle for Azeroth"
             },
             {
               "id": "4bbaf263",
@@ -29738,6 +30166,12 @@
                   "id": 12991,
                   "points": 10,
                   "title": "New Mog, G'huun This?"
+                },
+                {
+                  "icon": "inv_zuldazar",
+                  "id": 13385,
+                  "points": 10,
+                  "title": "Daz'aling Attire"
                 }
               ],
               "name": "Battle for Azeroth"
@@ -29875,6 +30309,12 @@
                   "id": 12993,
                   "points": 10,
                   "title": "Don't Warfront Me"
+                },
+                {
+                  "icon": "inv_misc_tabard_forsaken",
+                  "id": 13433,
+                  "points": 10,
+                  "title": "Tall, Dark, and Sinister"
                 }
               ],
               "name": "PvP"
@@ -30038,6 +30478,82 @@
                 }
               ],
               "name": "Warfront: Stromgarde"
+            },
+            {
+              "id": "48d3d9ef",
+              "items": [
+                {
+                  "icon": "spell_shadow_nethercloak",
+                  "id": 13305,
+                  "points": 10,
+                  "side": "A",
+                  "title": "Night Moves"
+                },
+                {
+                  "icon": "spell_shadow_nethercloak",
+                  "id": 13306,
+                  "points": 10,
+                  "side": "H",
+                  "title": "Night Moves"
+                },
+                {
+                  "icon": "garrison_building_armory",
+                  "id": 13307,
+                  "points": 10,
+                  "side": "H",
+                  "title": "Recruitment Officer"
+                },
+                {
+                  "icon": "garrison_building_armory",
+                  "id": 13308,
+                  "points": 10,
+                  "side": "A",
+                  "title": "Recruitment Officer"
+                },
+                {
+                  "icon": "ability_deathknight_asphixiate",
+                  "id": 13309,
+                  "points": 10,
+                  "side": "H",
+                  "title": "Deforester"
+                },
+                {
+                  "icon": "ui_darkshore_warfront_alliance_dryad",
+                  "id": 13310,
+                  "points": 10,
+                  "side": "A",
+                  "title": "By Nature's Call"
+                },
+                {
+                  "icon": "inv_glaive_1h_warfrontsforsaken_d_01",
+                  "id": 13296,
+                  "points": 10,
+                  "side": "H",
+                  "title": "War for the Shore"
+                },
+                {
+                  "icon": "inv_staff_2h_warfrontsnightelf_d_01",
+                  "id": 13297,
+                  "points": 10,
+                  "side": "A",
+                  "title": "War for the Shore"
+                },
+                {
+                  "icon": "ability_rogue_nightblade",
+                  "id": 13301,
+                  "points": 10,
+                  "side": "H",
+                  "title": "Under Cover of Darkness"
+                },
+                {
+                  "icon": "ability_rogue_nightblade",
+                  "id": 13302,
+                  "points": 10,
+                  "side": "A",
+                  "title": "Under Cover of Darkness"
+                }
+              ],
+              "name": "Warfront: Arathi"
             }
           ]
         },
@@ -30239,6 +30755,54 @@
                   "id": 13098,
                   "points": 10,
                   "title": "Bane of the Chain"
+                },
+                {
+                  "icon": "achievement_zone_howlingfjord_03",
+                  "id": 13389,
+                  "points": 10,
+                  "title": "Jorundall"
+                },
+                {
+                  "icon": "achievement_zone_howlingfjord_03",
+                  "id": 13394,
+                  "points": 10,
+                  "title": "Heroic: Jorundall"
+                },
+                {
+                  "icon": "achievement_zone_howlingfjord_03",
+                  "id": 13395,
+                  "points": 10,
+                  "title": "Mythic: Jorundall"
+                },
+                {
+                  "icon": "achievement_zone_howlingfjord_03",
+                  "id": 13399,
+                  "points": 10,
+                  "title": "Jorundall Justice"
+                },
+                {
+                  "icon": "achievement_zone_grizzlyhills_01",
+                  "id": 13396,
+                  "points": 10,
+                  "title": "Havenswood"
+                },
+                {
+                  "icon": "achievement_zone_grizzlyhills_01",
+                  "id": 13397,
+                  "points": 10,
+                  "title": "Heroic: Havenswood"
+                },
+                {
+                  "icon": "achievement_zone_grizzlyhills_01",
+                  "id": 13398,
+                  "points": 10,
+                  "title": "Mythic: Havenswood"
+                },
+                {
+                  "icon": "achievement_zone_grizzlyhills_01",
+                  "id": 13400,
+                  "points": 10,
+                  "title": "Havenswood Hero"
                 }
               ],
               "name": "Islands"
@@ -38176,6 +38740,12 @@
                   "title": "Ferocious Gladiator's Storm Dragon"
                 },
                 {
+                  "icon": "inv_stormdragonmount2light",
+                  "id": 13450,
+                  "points": 0,
+                  "title": "Fierce Gladiator's Storm Dragon"
+                },
+                {
                   "criteria": {
                     "38111": "62089"
                   },
@@ -38198,6 +38768,12 @@
                   "id": 13093,
                   "points": 0,
                   "title": "Dread Gladiator's Proto-Drake"
+                },
+                {
+                  "icon": "ability_mount_protodrakegladiatormount",
+                  "id": 13202,
+                  "points": 0,
+                  "title": "Sinister Gladiator's Proto-Drake"
                 }
               ],
               "name": "PVP"
@@ -38352,21 +38928,33 @@
             },
             {
               "id": "91952688",
+              "name": "Mythic Keystone: Battle for Azeroth",
               "items": [
                 {
-                  "icon": "trade_engineering",
+                  "icon": "achievement_challengemode_gold",
                   "id": 13079,
                   "points": 0,
                   "title": "Battle for Azeroth Keystone Conqueror: Season One"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "achievement_challengemode_platinum",
                   "id": 13080,
                   "points": 0,
                   "title": "Battle for Azeroth Keystone Master: Season One"
+                },
+                {
+                  "icon": "achievement_challengemode_gold",
+                  "id": 13448,
+                  "points": 0,
+                  "title": "Battle for Azeroth Keystone Conqueror: Season Two"
+                },
+                {
+                  "icon": "achievement_challengemode_platinum",
+                  "id": 13449,
+                  "points": 0,
+                  "title": "Battle for Azeroth Keystone Master: Season Two"
                 }
-              ],
-              "name": "Mythic Keystone: Battle for Azeroth"
+              ]
             }
           ]
         },
@@ -38631,6 +39219,30 @@
                   "id": 12536,
                   "points": 0,
                   "title": "Ahead of the Curve: G'huun"
+                },
+                {
+                  "icon": "achievement_dungeon_ulduar77_heroic",
+                  "id": 13322,
+                  "points": 0,
+                  "title": "Ahead of the Curve: Lady Jaina Proudmoore"
+                },
+                {
+                  "icon": "achievement_dungeon_ulduar77_heroic",
+                  "id": 13323,
+                  "points": 0,
+                  "title": "Cutting Edge: Lady Jaina Proudmoore"
+                },
+                {
+                  "icon": "achievement_dungeon_ulduar77_heroic",
+                  "id": 13418,
+                  "points": 0,
+                  "title": "Ahead of the Curve: Uu'nat, Harbinger of the Void"
+                },
+                {
+                  "icon": "achievement_dungeon_ulduar77_heroic",
+                  "id": 13419,
+                  "points": 0,
+                  "title": "Cutting Edge: Uu'nat, Harbinger of the Void"
                 }
               ],
               "name": "Lost Content"
@@ -40111,6 +40723,62 @@
                   "id": 13199,
                   "points": 0,
                   "title": "Combatant: Battle for Azeroth Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13451,
+                  "points": 0,
+                  "title": "Elite: Battle for Azeroth Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13200,
+                  "points": 0,
+                  "title": "Sinister Gladiator: Battle for Azeroth Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13203,
+                  "points": 0,
+                  "title": "Challenger: Battle for Azeroth Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13205,
+                  "points": 0,
+                  "title": "Rival: Battle for Azeroth Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13204,
+                  "points": 0,
+                  "title": "Combatant: Battle for Azeroth Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13209,
+                  "points": 0,
+                  "title": "Duelist: Battle for Azeroth Season 2"
+                },
+                {
+                  "icon": "achievement_pvp_a_a",
+                  "id": 13210,
+                  "points": 0,
+                  "side": "A",
+                  "title": "Hero of the Alliance: Sinister"
+                },
+                {
+                  "icon": "achievement_pvp_h_h",
+                  "id": 13211,
+                  "points": 0,
+                  "side": "H",
+                  "title": "Hero of the Horde: Sinister"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13212,
+                  "points": 0,
+                  "title": "Gladiator: Battle for Azeroth Season 2"
                 }
               ],
               "name": "PVP"
@@ -40574,6 +41242,12 @@
                   "id": 11425,
                   "points": 0,
                   "title": "Herald of Flames"
+                },
+                {
+                  "icon": "2147656",
+                  "id": 13196,
+                  "points": 0,
+                  "title": "Meat Marauder"
                 }
               ],
               "name": "Mounts"
@@ -40774,6 +41448,12 @@
                   "icon": "inv_hordezeppelinmount",
                   "id": 11931,
                   "points": 0
+                },
+                {
+                  "icon": "2060704",
+                  "id": 13138,
+                  "points": 0,
+                  "title": "Flying Colors"
                 }
               ],
               "name": "Blizzcon"
