@@ -45,7 +45,8 @@ IGNORE_MOUNT_SPELLIDS = [
     174004,  # Spirit of Shinri https://www.wowhead.com/item=113543
 
     # "GM mistake" mounts
-    17458,   # Fluorescent Green Mechanostrider https://www.wowhead.com/item=13325
+    17458,   # Fluorescent Green Mechanostrider
+             # https://www.wowhead.com/item=13325
 
     # Mounts in armor/weapons
     101641,  # Tarecgosa's Visage https://www.wowhead.com/item=71086
@@ -74,6 +75,7 @@ class MountFixer:
                     self.id_to_old_mount[int(item['spellid'])] = item
 
     def fix_missing(self):
+        mounts_to_add = []
         for mount in self.bnet_mounts['mounts']:
             if not mount['itemId']:
                 # Not a real obtainable mount
@@ -81,8 +83,16 @@ class MountFixer:
             spellid = int(mount['spellId'])
             if ((spellid not in self.id_to_old_mount
                  and spellid not in IGNORE_MOUNT_SPELLIDS)):
-                print('Mount {} missing: {} https://www.wowhead.com/item={}'
-                      .format(spellid, mount['name'], mount['itemId']))
+                changelog('Mount {} missing: {} '
+                          'https://www.wowhead.com/item={}'
+                          .format(spellid, mount['name'], mount['itemId']))
+                mounts_to_add.append({
+                    'name': mount['name'],
+                    'spellid': mount['spellId'],
+                    'itemId': mount['itemId'],
+                    'icon': mount['icon'],
+                })
+        json.dump(mounts_to_add, sys.stdout, indent=2, sort_keys=True)
 
     def run(self):
         self.fix_missing()

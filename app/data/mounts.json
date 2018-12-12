@@ -137,6 +137,12 @@
             "name": "Bloodgorged Crawg",
             "icon": "inv_bloodtrollbeast_mount",
             "spellid": "250735"
+          },
+          {
+            "icon": "inv_pterrordax2mount_bronze",
+            "itemId": 166539,
+            "name": "Dazar'alor Windreaver",
+            "spellid": 289101
           }
         ]
       },
@@ -144,6 +150,24 @@
         "name": "Vendor",
         "id": "062a5729",
         "items": [
+          {
+            "itemId": "163183",
+            "spellid": "259740",
+            "icon": "ivn_toadloamount",
+            "name": "Green Marsh Hopper"
+          },
+          {
+            "icon": "ivn_toadloamount",
+            "itemId": 166442,
+            "name": "Blue Marsh Hopper",
+            "spellid": 288587
+          },
+          {
+            "icon": "ivn_toadloamount",
+            "itemId": 166443,
+            "name": "Yellow Marsh Hopper",
+            "spellid": 288589
+          },
           {
             "itemId": "163589",
             "name": "Reins of the Palehide Direhorn",
@@ -163,27 +187,45 @@
         "id": "c31da708",
         "items": [
           {
-            "itemId": "163127",
-            "spellid": "274610",
-            "icon": "inv_hippogryphmountnightelf",
-            "name": "Smoldering Reins of the Teldrassil Hippogryph",
-            "notObtainable": true,
-            "side": "A"
-          },
-          {
-            "itemId": "163128",
-            "spellid": "272472",
-            "icon": "inv_felbatmountforsaken",
-            "name": "War-Torn Reins of the Undercity Plaguebat",
-            "notObtainable": true,
-            "side": "H"
-          },
-          {
             "itemId": "159146",
             "spellid": "267270",
             "icon": "inv_pterrordax2mount_yellow",
             "side": "H",
             "name": "Kua'fon's Harness"
+          }
+        ]
+      },
+      {
+        "name": "Medals",
+        "id": "773df5f2",
+        "items": [
+          {
+            "icon": "ability_hunter_pet_bat",
+            "itemId": 166469,
+            "name": "Bloodthirsty Dreadwing",
+            "side": "H",
+            "spellid": 288714
+          },
+          {
+            "icon": "inv_trilobitemount_red",
+            "itemId": 166464,
+            "name": "Rubyshell Krolusk",
+            "side": "H",
+            "spellid": 288735
+          },
+          {
+            "icon": "inv_saber3mount",
+            "itemId": 166463,
+            "name": "Priestess' Moonsaber",
+            "side": "A",
+            "spellid": 288740
+          },
+          {
+            "icon": "inv_trilobitemount_blue",
+            "itemId": 166465,
+            "name": "Azureshell Krolusk",
+            "side": "A",
+            "spellid": 288736
           }
         ]
       },
@@ -236,115 +278,6 @@
             "spellid": "263707",
             "notObtainable": true,
             "side": "H"
-          }
-        ]
-      },
-      {
-        "name": "Dungeon",
-        "id": "8e8e5c12",
-        "items": [
-          {
-            "itemId": "159921",
-            "name": "Mummified Raptor Skull",
-            "icon": "inv_armoredraptorundead",
-            "spellid": "266058"
-          },
-          {
-            "itemId": "160829",
-            "name": "Underrot Crawg Harness",
-            "icon": "inv_archaeology_ogres_chimera_riding_harness",
-            "spellid": "273541"
-          },
-          {
-            "itemId": "159842",
-            "name": "Sharkbait's Favorite Crackers",
-            "icon": "inv_misc_food_wheat_02",
-            "spellid": "254813"
-          }
-        ]
-      },
-      {
-        "name": "Pre-Patch Event",
-        "id": "d9a261ed",
-        "items": []
-      },
-      {
-        "name": "Warfront",
-        "id": "1caadcd7",
-        "items": [
-          {
-            "itemId": "163579",
-            "name": "Highland Mustang",
-            "icon": "ability_mount_ridinghorse",
-            "spellid": "279456",
-            "side": "A"
-          },
-          {
-            "itemId": "163578",
-            "name": "Broken Highland Mustang",
-            "icon": "ability_mount_ridinghorse",
-            "spellid": "279457",
-            "side": "H"
-          },
-          {
-            "itemId": "163644",
-            "name": "Swift Albino Raptor",
-            "icon": "ability_mount_raptor_white",
-            "spellid": "279569"
-          },
-          {
-            "itemId": "163645",
-            "name": "Skullripper",
-            "icon": "ability_hunter_pet_raptor",
-            "spellid": "279611"
-          },
-          {
-            "itemId": "163706",
-            "name": "Witherbark Direwing",
-            "icon": "ability_hunter_pet_bat",
-            "spellid": "279868"
-          },
-          {
-            "itemId": "163646",
-            "name": "Lil' Donkey",
-            "icon": "ability_mount_ridinghorse",
-            "spellid": "279608"
-          }
-        ]
-      },
-      {
-        "name": "Island Expedition",
-        "id": "da655cc0",
-        "items": [
-          {
-            "itemId": "163584",
-            "name": "Twilight Avenger",
-            "icon": "ability_mount_drake_twilight",
-            "spellid": "279466"
-          },
-          {
-            "itemId": "163585",
-            "name": "Surf Jelly",
-            "icon": "inv_misc_fish_70",
-            "spellid": "278979"
-          },
-          {
-            "itemId": "163583",
-            "name": "Craghorn Chasm-Leaper",
-            "icon": "inv_misc_pet_pandaren_yeti",
-            "spellid": "279467"
-          },
-          {
-            "itemId": "163586",
-            "name": "Squawks",
-            "icon": "inv_parrotmount_green",
-            "spellid": "254811"
-          },
-          {
-            "itemId": "163582",
-            "name": "Qinsho's Eternal Hound",
-            "icon": "achievement_moguraid_01",
-            "spellid": "279469"
           }
         ]
       },
@@ -481,16 +414,243 @@
         ]
       },
       {
-        "name": "Unknown",
-        "id": "eba1d3de",
+        "name": "Riddle",
+        "id": "1a094f97",
         "items": [
           {
             "itemId": "156798",
             "name": "The Hivemind",
-            "icon": "spell_shadow_brainwash",
-            "spellid": "261395",
-            "notObtainable": true
+            "icon": "inv_hivemind",
+            "spellid": "261395"
+          }
+        ]
+      },
+      {
+        "name": "Dungeon Drop",
+        "id": "8e8e5c12",
+        "items": [
+          {
+            "itemId": "159921",
+            "name": "Mummified Raptor Skull",
+            "icon": "inv_armoredraptorundead",
+            "spellid": "266058"
           },
+          {
+            "itemId": "160829",
+            "name": "Underrot Crawg Harness",
+            "icon": "inv_archaeology_ogres_chimera_riding_harness",
+            "spellid": "273541"
+          },
+          {
+            "itemId": "159842",
+            "name": "Sharkbait's Favorite Crackers",
+            "icon": "inv_misc_food_wheat_02",
+            "spellid": "254813"
+          }
+        ]
+      },
+      {
+        "name": "Raid Drop",
+        "id": "6815d547",
+        "items": [
+          {
+            "icon": "achievement_dungeon_coinoperatedcrowdpummeler",
+            "itemId": 166518,
+            "name": "G.M.O.D.",
+            "spellid": 289083
+          },
+          {
+            "icon": "inv_waterelementalmount",
+            "itemId": 166705,
+            "name": "Glacial Tidestorm",
+            "spellid": 289555
+          }
+        ]
+      },
+      {
+        "name": "Warfront: Arathi",
+        "id": "1caadcd7",
+        "items": [
+          {
+            "itemId": "163579",
+            "name": "Highland Mustang",
+            "icon": "ability_mount_ridinghorse",
+            "spellid": "279456",
+            "side": "A"
+          },
+          {
+            "itemId": "163578",
+            "name": "Broken Highland Mustang",
+            "icon": "ability_mount_ridinghorse",
+            "spellid": "279457",
+            "side": "H"
+          },
+          {
+            "itemId": "163644",
+            "name": "Swift Albino Raptor",
+            "icon": "ability_mount_raptor_white",
+            "spellid": "279569"
+          },
+          {
+            "itemId": "163645",
+            "name": "Skullripper",
+            "icon": "ability_hunter_pet_raptor",
+            "spellid": "279611"
+          },
+          {
+            "itemId": "163706",
+            "name": "Witherbark Direwing",
+            "icon": "ability_hunter_pet_bat",
+            "spellid": "279868"
+          },
+          {
+            "itemId": "163646",
+            "name": "Lil' Donkey",
+            "icon": "ability_mount_ridinghorse",
+            "spellid": "279608"
+          }
+        ]
+      },
+      {
+        "name": "Warfront: Darkshore",
+        "id": "0c4b4d67",
+        "items": [
+          {
+            "icon": "spell_druid_bearhug",
+            "itemId": 166438,
+            "name": "Blackpaw",
+            "spellid": 288438
+          },
+          {
+            "icon": "inv_nightsaber2brown",
+            "itemId": 166434,
+            "name": "Umber Nightsaber",
+            "spellid": 288503
+          },
+          {
+            "icon": "ability_mount_kodo_03",
+            "itemId": 166433,
+            "name": "Frightened Kodo",
+            "spellid": 288499
+          },
+          {
+            "icon": "inv_nightsaber2mount",
+            "itemId": 166435,
+            "name": "Kaldorei Nightsaber",
+            "spellid": 288505
+          },
+          {
+            "icon": "inv_nightsaber2mountyellow",
+            "itemId": 166436,
+            "name": "Sandy Nightsaber",
+            "spellid": 288506
+          },
+          {
+            "icon": "inv_chimera3",
+            "itemId": 166432,
+            "name": "Ashenvale Chimaera",
+            "spellid": 288495
+          }
+        ]
+      },
+      {
+        "name": "Island Expedition",
+        "id": "da655cc0",
+        "items": [
+          {
+            "itemId": "163584",
+            "name": "Twilight Avenger",
+            "icon": "ability_mount_drake_twilight",
+            "spellid": "279466"
+          },
+          {
+            "itemId": "163585",
+            "name": "Surf Jelly",
+            "icon": "inv_misc_fish_70",
+            "spellid": "278979"
+          },
+          {
+            "itemId": "163583",
+            "name": "Craghorn Chasm-Leaper",
+            "icon": "inv_misc_pet_pandaren_yeti",
+            "spellid": "279467"
+          },
+          {
+            "itemId": "163586",
+            "name": "Squawks",
+            "icon": "inv_parrotmount_green",
+            "spellid": "254811"
+          },
+          {
+            "itemId": "163582",
+            "name": "Qinsho's Eternal Hound",
+            "icon": "achievement_moguraid_01",
+            "spellid": "279469"
+          },
+          {
+            "icon": "inv_misc_moosehoof_black",
+            "itemId": 166470,
+            "name": "Stonehide Elderhorn",
+            "spellid": 288712
+          },
+          {
+            "icon": "ability_hunter_pet_bat",
+            "itemId": 166468,
+            "name": "Bloodgorged Hunter",
+            "spellid": 288720
+          },
+          {
+            "icon": "inv_stormdragonmount2_fel",
+            "itemId": 166467,
+            "name": "Island Thunderscale",
+            "spellid": 288721
+          },
+          {
+            "icon": "ability_mount_undeadhorse",
+            "itemId": 166466,
+            "name": "Risen Mare",
+            "spellid": 288722
+          }
+        ]
+      },
+      {
+        "name": "Dubloons",
+        "id": "cefc57e0",
+        "items": [
+          {
+            "icon": "ability_mount_seahorse",
+            "itemId": 166471,
+            "name": "Saltwater Seahorse",
+            "spellid": 288711
+          }
+        ]
+      },
+      {
+        "name": "Pre-launch Event",
+        "id": "d9a261ed",
+        "items": [
+          {
+            "itemId": "163127",
+            "spellid": "274610",
+            "icon": "inv_hippogryphmountnightelf",
+            "name": "Smoldering Reins of the Teldrassil Hippogryph",
+            "notObtainable": true,
+            "side": "A"
+          },
+          {
+            "itemId": "163128",
+            "spellid": "272472",
+            "icon": "inv_felbatmountforsaken",
+            "name": "War-Torn Reins of the Undercity Plaguebat",
+            "notObtainable": true,
+            "side": "H"
+          }
+        ]
+      },
+      {
+        "name": "Unknown",
+        "id": "eba1d3de",
+        "items": [
           {
             "itemId": "153594",
             "spellid": "256123",
@@ -499,10 +659,10 @@
             "notObtainable": true
           },
           {
-            "itemId": "163183",
-            "spellid": "259740",
-            "icon": "ivn_toadloamount",
-            "name": "Spawn of Krag'wa",
+            "icon": "inv_hyena2mount_dark",
+            "itemId": 166417,
+            "name": "Onyx War Hyena",
+            "spellid": 237288,
             "notObtainable": true
           }
         ]
@@ -3680,6 +3840,20 @@
             "icon": "inv_vicioushordeclefthoof",
             "name": "Vicious War Clefthoof",
             "side": "H"
+          },
+          {
+            "icon": "ability_mount_warnightsaber",
+            "itemId": 165019,
+            "name": "Vicious Black Warsaber",
+            "side": "A",
+            "spellid": 281887
+          },
+          {
+            "icon": "inv_skeletalwarhorse_01_brown",
+            "itemId": 165020,
+            "name": "Vicious Black Bonesteed",
+            "side": "H",
+            "spellid": 281890
           }
         ]
       },
@@ -4258,6 +4432,18 @@
           }
         ],
         "id": "de7926b2"
+      },
+      {
+        "name": "Warcraft III Reforged",
+        "id": "4d832551",
+        "items": [
+          {
+            "icon": "inv_encrypted05",
+            "itemId": 164571,
+            "name": "Meat Wagon",
+            "spellid": 281554
+          }
+        ]
       },
       {
         "name": "Recruit-A-Friend",
