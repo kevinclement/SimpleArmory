@@ -2,9 +2,12 @@
 
 import aiohttp
 import asyncio
+import binascii
+import bnet
 import json
 import logging
 import lxml.etree
+import os
 import re
 import sys
 import tqdm
@@ -21,6 +24,14 @@ WOWDB_API_ITEM = 'https://www.wowdb.com/api/item/{}'
 
 def changelog(*args, **kwargs):
     print(*args, **kwargs, file=sys.stderr)
+
+
+def genid():
+    return binascii.b2a_hex(os.urandom(4)).decode('ascii')
+
+
+def list_find(L, pred):
+    return next(item for item in L if pred(item))
 
 
 class PetFixer:
@@ -44,6 +55,23 @@ class PetFixer:
         for pet in self.bnet_pets['pets']:
             if pet['creatureId'] not in IGNORE_PETS_CREATUREIDS:
                 self.id_to_bnet_pet[int(pet['creatureId'])] = pet
+
+    def cat(self, dct, cat=None, subcat=None):
+        def try_find_create(L, name, items=None):
+            try:
+                return list_find(L, lambda x: x['name'] == name)
+            except StopIteration:
+                d = {'id': genid(), 'name': name}
+                if items:
+                    d[items] = []
+                L.append(d)
+                return d
+
+        if cat is not None:
+            res = try_find_create(dct, cat, 'subcats')
+        if subcat is not None:
+            res = try_find_create(res['subcats'], subcat, 'items')
+        return res
 
     def removed(self):
         return set(self.id_to_old_pet.keys() - self.id_to_bnet_pet.keys())
@@ -81,7 +109,7 @@ class PetFixer:
                    'icon': self.id_to_bnet_pet[creature_id]['icon'],
                    'creatureId': creature_id,
                    'spellid': None}
-            return 'wild', pet
+            return ('wild', None, pet)
 
         div = learned_from[0]
         item_link = div.xpath('.//a[contains(@href,"item")]')[1]
@@ -104,13 +132,16 @@ class PetFixer:
                'spellid': spell_id}
         return ('companion', pet)
 
-    async def add_missing_pet(self, sem, session, pbar, creature_id):
+    async def add_missing_pet(self, sem, session, pbar, bnetc, creature_id):
         async with sem:
             type, pet = await self.get_pet_source(session, creature_id)
         if type == 'wild':
-            self.todo_battlepets.append(pet)
+            self.cat(self.battlepets, 'TODO', 'TODO')['items'].append(pet)
         else:
-            self.todo_companions.append(pet)
+            species_id = self.id_to_bnet_pet[creature_id]['stats']['speciesId']
+            src = await bnetc.pet_source(species_id)
+
+            self.cat(self.pets, 'TODO', src)['items'].append(pet)
         pbar.update(1)
 
     async def retrieve_missing_pets(self):
@@ -121,14 +152,12 @@ class PetFixer:
         self.todo_battlepets = []
         self.todo_companions = []
         async with session:
-            with tqdm.tqdm(total=len(missing)) as pbar:
-                for creature_id in missing:
-                    tasks.append(self.add_missing_pet(
-                        sem, session, pbar, creature_id))
-                await asyncio.gather(*tasks)
-        json.dump(self.todo_battlepets, sys.stdout, indent=2, sort_keys=True)
-        print()
-        json.dump(self.todo_companions, sys.stdout, indent=2, sort_keys=True)
+            async with bnet.BnetClient() as bnetc:
+                with tqdm.tqdm(total=len(missing)) as pbar:
+                    for creature_id in missing:
+                        tasks.append(self.add_missing_pet(
+                            sem, session, pbar, bnetc, creature_id))
+                    await asyncio.gather(*tasks)
 
     def fix_missing(self):
         for creatureId in self.missing():
@@ -144,12 +173,19 @@ class PetFixer:
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)
 
-    if len(sys.argv) < 4:
-        sys.exit("Usage: {} bnet_pets.json pets.json battlepets.json")
+    if len(sys.argv) < 3:
+        sys.exit("Usage: {} pets.json battlepets.json")
 
-    bnet_pets = json.load(open(sys.argv[1]))
-    pets = json.load(open(sys.argv[2]))
-    battlepets = json.load(open(sys.argv[3]))
+    bnet_pets = bnet.get_master_list('pets')
+    with open(sys.argv[1]) as pets_file:
+        pets = json.load(pets_file)
+    with open(sys.argv[2]) as bpets_file:
+        battlepets = json.load(bpets_file)
 
     fixer = PetFixer(bnet_pets, pets, battlepets)
     fixer.run()
+
+    with open(sys.argv[1], 'w') as pets_file:
+        json.dump(fixer.pets, pets_file, indent=2, sort_keys=True)
+    with open(sys.argv[2], 'w') as bpets_file:
+        json.dump(fixer.battlepets, bpets_file, indent=2, sort_keys=True)

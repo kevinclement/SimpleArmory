@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import bnet
 import json
 import logging
 import sys
@@ -101,11 +102,11 @@ class MountFixer:
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)
 
-    if len(sys.argv) < 3:
-        sys.exit("Usage: {} bnet_mounts.json mounts.json")
+    if len(sys.argv) < 2:
+        sys.exit("Usage: {} mounts.json")
 
-    bnet_mounts = json.load(open(sys.argv[1]))
-    mounts = json.load(open(sys.argv[2]))
+    bnet_mounts = bnet.get_master_list('mounts')
+    mounts = json.load(open(sys.argv[1]))
 
     fixer = MountFixer(bnet_mounts, mounts)
     fixer.run()

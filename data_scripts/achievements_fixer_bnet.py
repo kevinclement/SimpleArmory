@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
-import collections
 import binascii
+import bnet
+import collections
 import json
 import logging
 import os
@@ -355,11 +356,11 @@ class AchievementFixer:
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)
 
-    if len(sys.argv) < 3:
-        sys.exit("Usage: {} bnet_api_achievements.json achievements.json")
+    if len(sys.argv) < 2:
+        sys.exit("Usage: {} achievements.json")
 
-    bnet_achievements = json.load(open(sys.argv[1]))
-    achievements = json.load(open(sys.argv[2]))
+    achievements = json.load(open(sys.argv[1]))
+    bnet_achievements = bnet.get_master_list('achievements')
 
     fixer = AchievementFixer(achievements, bnet_achievements)
     fixer.run()
