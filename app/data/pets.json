@@ -206,6 +206,13 @@
             "itemId": 161214,
             "name": "Thousand Year Old Mummy Wraps",
             "spellid": 274776
+          },
+          {
+            "creatureId": 147884,
+            "icon": "spell_shadow_summonvoidwalker",
+            "itemId": 165907,
+            "name": "Wicker Wraith",
+            "spellid": 286837
           }
         ],
         "name": "Achievement"
@@ -264,6 +271,26 @@
           }
         ],
         "name": "Quest"
+      },
+      {
+        "id": "f1526c9d",
+        "items": [
+          {
+            "creatureId": 148524,
+            "icon": "inv_pet_pettrap01",
+            "itemId": 166346,
+            "name": "Trecker's Cage",
+            "spellid": 288006
+          },
+          {
+            "creatureId": 148525,
+            "icon": "inv_raptorbaby_red",
+            "itemId": 166347,
+            "name": "Tanzil",
+            "spellid": 288009
+          }
+        ],
+        "name": "Medals"
       },
       {
         "id": "0bc473f9",
@@ -348,6 +375,19 @@
         "name": "Reputation"
       },
       {
+        "id": "2b6cb530",
+        "items": [
+          {
+            "creatureId": 148520,
+            "icon": "inv_egg_06",
+            "itemId": 166345,
+            "name": "Zandalari Raptor Egg",
+            "spellid": 287997
+          }
+        ],
+        "name": "Rare"
+      },
+      {
         "id": "72c890b0",
         "items": [
           {
@@ -392,6 +432,33 @@
           }
         ],
         "name": "Dungeon Drop"
+      },
+      {
+        "id": "6452b479",
+        "items": [
+          {
+            "creatureId": 147585,
+            "icon": "inv_toadswamp_dark",
+            "itemId": 165848,
+            "name": "Spawn of Krag'wa",
+            "spellid": 286484
+          },
+          {
+            "creatureId": 147586,
+            "icon": "inv_misc_bearclaw_blue",
+            "itemId": 165846,
+            "name": "Enchanted Talon of Pa'ku",
+            "spellid": 286483
+          },
+          {
+            "creatureId": 147587,
+            "icon": "inv_skinning_80_mistscale",
+            "itemId": 165847,
+            "name": "Thundering Scale of Akunda",
+            "spellid": 286482
+          }
+        ],
+        "name": "Raid Drop"
       },
       {
         "items": [
@@ -546,7 +613,26 @@
         "name": "Pet Charm"
       },
       {
-        "name": "Warfront: Arathi",
+        "id": "a6c0c8cb",
+        "items": [
+          {
+            "creatureId": 149348,
+            "icon": "inv_misc_monkeypaw",
+            "itemId": 166715,
+            "name": "Rebuilt Gorilla Bot",
+            "spellid": 289604
+          },
+          {
+            "creatureId": 149361,
+            "icon": "inv_mechanicalspider",
+            "itemId": 166723,
+            "name": "Rebuilt Mechanical Spider",
+            "spellid": 289605
+          }
+        ],
+        "name": "Assault"
+      },
+      {
         "id": "d8ae4bea",
         "items": [
           {
@@ -612,10 +698,72 @@
             "name": "Plagued Egg",
             "spellid": 279724
           }
-        ]
+        ],
+        "name": "Warfront: Arathi"
       },
       {
-        "name": "Island Expeditions",
+        "id": "90fa23fc",
+        "items": [
+          {
+            "creatureId": 148781,
+            "icon": "inv_pet_wardenowl",
+            "itemId": 166449,
+            "name": "Darkshore Sentinel",
+            "spellid": 288486
+          },
+          {
+            "creatureId": 148784,
+            "icon": "inv_bracer_mail_vrykuldragonrider_b_01",
+            "itemId": 166448,
+            "name": "Binding of Cyclarus",
+            "spellid": 288582
+          },
+          {
+            "creatureId": 148825,
+            "icon": "trade_archaeology_bones-of-transformation",
+            "itemId": 166451,
+            "name": "Rattling Bones",
+            "spellid": 288592
+          },
+          {
+            "creatureId": 148841,
+            "icon": "inv_misc_flaskofvolatility",
+            "itemId": 166452,
+            "name": "Bottled Essence of Hydrath",
+            "spellid": 288595
+          },
+          {
+            "creatureId": 148843,
+            "icon": "spell_fire_totemofwrath",
+            "itemId": 166453,
+            "name": "Everburning Treant",
+            "spellid": 288597
+          },
+          {
+            "creatureId": 148844,
+            "icon": "inv_inscription_pigment_violet",
+            "itemId": 166454,
+            "name": "Squishy Purple Goo",
+            "spellid": 288598
+          },
+          {
+            "creatureId": 148846,
+            "icon": "spell_priest_void-flay",
+            "itemId": 166455,
+            "name": "Zur'aj the Depleted",
+            "spellid": 288600
+          },
+          {
+            "creatureId": 149205,
+            "icon": "ability_eyeoftheowl",
+            "itemId": 166528,
+            "name": "Nightwreathed Watcher",
+            "spellid": 289359
+          }
+        ],
+        "name": "Warfront: Darkshore"
+      },
+      {
         "id": "78de8045",
         "items": [
           {
@@ -813,8 +961,147 @@
             "itemId": 163824,
             "name": "Voru'kar Leecher",
             "spellid": 280338
+          },
+          {
+            "creatureId": 148995,
+            "icon": "inv_misc_head_dragon_black",
+            "itemId": 166499,
+            "name": "Thunderscale Whelpling",
+            "spellid": 288916
+          },
+          {
+            "creatureId": 148988,
+            "icon": "inv_giantwasp_yellow",
+            "itemId": 166493,
+            "name": "Firesting Buzzer",
+            "spellid": 288895
+          },
+          {
+            "creatureId": 148990,
+            "icon": "inv_toadswamp_yellow",
+            "itemId": 166495,
+            "name": "Tonguelasher",
+            "spellid": 288910
+          },
+          {
+            "creatureId": 148991,
+            "icon": "inv_misc_foxkit_white",
+            "itemId": 166498,
+            "name": "Scritches",
+            "spellid": 288914
+          },
+          {
+            "creatureId": 148976,
+            "icon": "inv_pet_babymoose",
+            "itemId": 166486,
+            "name": "Baby Stonehide",
+            "spellid": 288867
+          },
+          {
+            "creatureId": 148979,
+            "icon": "ability_hunter_pet_bat",
+            "itemId": 166487,
+            "name": "Leatherwing Screecher",
+            "spellid": 288868
+          },
+          {
+            "creatureId": 148981,
+            "icon": "inv_pet_ghoul",
+            "itemId": 166488,
+            "name": "Rotting Ghoul",
+            "spellid": 288870
+          },
+          {
+            "creatureId": 148982,
+            "icon": "inv_pet_porcupine",
+            "itemId": 166489,
+            "name": "Needleback Pup",
+            "spellid": 288875
+          },
+          {
+            "creatureId": 148984,
+            "icon": "inv_petraven2_black",
+            "itemId": 166492,
+            "name": "Shadefeather Hatchling",
+            "spellid": 288889
+          },
+          {
+            "creatureId": 148989,
+            "icon": "inv_pet_mastiff",
+            "itemId": 166494,
+            "name": "Lord Woofington",
+            "spellid": 288901
           }
-        ]
+        ],
+        "name": "Island Expeditions"
+      },
+      {
+        "id": "a66e2371",
+        "items": [
+          {
+            "creatureId": 148997,
+            "icon": "inv_babyoctopus",
+            "itemId": 166500,
+            "name": "Crimson Octopode",
+            "spellid": 288919
+          },
+          {
+            "creatureId": 148985,
+            "icon": "inv_petraven2_white",
+            "itemId": 166491,
+            "name": "Albino Duskwatcher",
+            "spellid": 288890
+          }
+        ],
+        "name": "Dubloons"
+      },
+      {
+        "id": "c4ed565c",
+        "items": [
+          {
+            "creatureId": 149376,
+            "icon": "inv_seaeel_purple",
+            "itemId": 166719,
+            "name": "Violet Abyssal Eel",
+            "spellid": 289633
+          },
+          {
+            "creatureId": 149363,
+            "icon": "inv_feather_10",
+            "itemId": 166714,
+            "name": "Albatross Feather",
+            "spellid": 289606
+          },
+          {
+            "creatureId": 149372,
+            "icon": "inv_icon_wing08e",
+            "itemId": 166716,
+            "name": "Pair of Tiny Bat Wings",
+            "spellid": 289622
+          },
+          {
+            "creatureId": 149375,
+            "icon": "spell_nature_ravenform",
+            "itemId": 166718,
+            "name": "Cobalt Raven Hatchling",
+            "spellid": 289629
+          }
+        ],
+        "name": "Paragon Reputation"
+      },
+      {
+        "id": "da59c1f3",
+        "items": [
+          {
+            "creatureId": 148542,
+            "icon": "inv_parrotmount_green",
+            "itemId": 166358,
+            "name": "Proper Parrot",
+            "notObtainable": true,
+            "spellid": 288054
+          }
+        ],
+        "name": "Unknown"
       }
     ]
   },
@@ -2902,6 +3189,19 @@
         "name": "Dungeon Drop"
       },
       {
+        "id": "0626da30",
+        "items": [
+          {
+            "creatureId": 147221,
+            "icon": "inv_egg_03",
+            "itemId": 165722,
+            "name": "Redridge Tarantula Egg",
+            "spellid": 285843
+          }
+        ],
+        "name": "Rare"
+      },
+      {
         "id": "829f9226",
         "items": [
           {
@@ -3657,6 +3957,13 @@
             "icon": "inv_enchanting_70_pet_torch",
             "itemId": "128534",
             "spellid": "191072"
+          },
+          {
+            "creatureId": 139743,
+            "icon": "inv_tikiman2_zandalar",
+            "itemId": 152878,
+            "name": "Enchanted Tiki Mask",
+            "spellid": 274760
           }
         ],
         "name": "Enchanting"
@@ -3855,6 +4162,13 @@
             "icon": "inv_misc_blingtron",
             "itemId": "136911",
             "spellid": "210683"
+          },
+          {
+            "creatureId": 147619,
+            "icon": "inv_mechanicalspider",
+            "itemId": 165849,
+            "name": "Mechantula",
+            "spellid": 286514
           }
         ],
         "name": "Engineering"
@@ -4028,6 +4342,40 @@
           }
         ],
         "name": "Challenge: Deadmines"
+      },
+      {
+        "id": "ab2d08f2",
+        "items": [
+          {
+            "creatureId": 147671,
+            "icon": "inv_pet_cockroach",
+            "itemId": 165854,
+            "name": "Mechanical Cockroach",
+            "spellid": 286574
+          },
+          {
+            "creatureId": 147679,
+            "icon": "inv_misc_monstertail_06",
+            "itemId": 165855,
+            "name": "Leper Rat Tail",
+            "spellid": 286576
+          },
+          {
+            "creatureId": 147692,
+            "icon": "inv_battery_02",
+            "itemId": 165857,
+            "name": "Rechargeable Alarm-O-Dog Battery",
+            "spellid": 286582
+          },
+          {
+            "creatureId": 147838,
+            "icon": "ability_mount_gyrocoptorelite",
+            "itemId": 165894,
+            "name": "Mini Spider Tank",
+            "spellid": 286790
+          }
+        ],
+        "name": "Challenge: Gnomeregan"
       }
     ]
   },
@@ -4613,6 +4961,20 @@
             "icon": "inv_foxpet",
             "itemId": 151234,
             "spellid": "246105"
+          },
+          {
+            "creatureId": 138741,
+            "icon": "inv_redbird",
+            "itemId": 160588,
+            "name": "Cap'n Crackers",
+            "spellid": 272772
+          },
+          {
+            "creatureId": 138742,
+            "icon": "1998314",
+            "itemId": 160587,
+            "name": "Whomper",
+            "spellid": 272771
           }
         ],
         "name": "Blizzard Store"
