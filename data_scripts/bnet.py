@@ -53,6 +53,9 @@ class BnetClient:
     async def pets_species(self, species_id):
         return (await self.query('wow/pet/species/{}'.format(species_id)))
 
+    async def item(self, item_id):
+        return (await self.query('wow/item/{}'.format(item_id)))
+
     async def pet_source(self, species_id):
         species = await self.pets_species(species_id)
         return species['source'].split(':')[0].strip()

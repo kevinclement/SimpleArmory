@@ -149,8 +149,6 @@ class PetFixer:
         session = aiohttp.ClientSession()
         tasks = []
         missing = self.missing()
-        self.todo_battlepets = []
-        self.todo_companions = []
         async with session:
             async with bnet.BnetClient() as bnetc:
                 with tqdm.tqdm(total=len(missing)) as pbar:
