@@ -42,19 +42,15 @@
 
                 $log.log('Fetching ' + $routeParams.character + ' from server ' + $routeParams.realm + '...');
 
-                return $http.jsonp(
-                    SettingsService.apiProtocol + 
-                      $routeParams.region +
-                      '.' + SettingsService.apiEndPoint + '/wow/character/' +
-                      $routeParams.realm + 
-                      '/' +
-                      $routeParams.character + 
-                      '?fields=pets,mounts,achievements,guild,reputation' + 
-                      SettingsService.apiKey + 
-                      '&jsonp=JSON_CALLBACK',
-                     { cache: true})
+                return $http.get(
+                    SettingsService.BackendURL + '/character/' +
+                    $routeParams.region + '/' +
+                    $routeParams.realm + '/' +
+                    $routeParams.character,
+                    {cache: true})
                     .error(getCharacterError)
                     .then(getCharacterComplete);
+
 
               function getCharacterError() {
                 $log.error('Trouble fetching character from battlenet');

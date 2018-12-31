@@ -10,9 +10,7 @@
 
         return {
             'WowHeadUrl': 'wowhead.com',
-            'apiEndPoint':'api.battle.net',
-            'apiKey': '&apikey=kwptv272nvrashj83xtxcdysghbkw6ep',
-            'apiProtocol': 'https://',
+            'BackendURL':'http://localhost:9012', // TODO: replace this with hosted backend URL once it's available
             'anchorTarget': '_blank',  // in case we want this to be a setting for _self
             'debug': $routeParams['debug'] && $routeParams['debug'] === '1' ? true : false,
             'fakeCompletionTime': 312,
