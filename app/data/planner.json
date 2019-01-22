@@ -937,6 +937,76 @@
 							]
 						}
 					]
+				},
+				{
+					"title":"Portal to Zandalar / Kul'Tiras",
+					"finalStep": "Hearthstone to Zandalar / Kul'Tiras",
+					"steps": 
+					[
+						{
+							"title": "Walk to Tiragarde Sound",
+							"steps": 
+							[
+								{
+									"title": "Run Freehold",
+									"bosses": 
+									[
+										{
+											"name":"Harlan Sweete",
+											"spellId":254813,
+											"itemId":159842,
+											"mount": "Sharkbait's Favorite Crackers",
+											"epic": true,
+											"icon":"inv_misc_food_wheat_02",
+											"note":"Mythic only"
+										}
+									]
+								}
+							]
+						},
+						{
+							"title": "Walk to Zuldazar",
+							"steps": 
+							[
+								{
+									"title": "Run King's Rest",
+									"bosses": 
+									[
+										{
+											"name":"Dazar, The First King",
+											"spellId":266058,
+											"itemId":159921,
+											"mount": "Mummified Raptor Skull",
+											"epic": true,
+											"icon":"inv_armoredraptorundead",
+											"note":"Mythic only"
+										}
+									]
+								}
+							]
+						},
+						{
+							"title": "Walk to Nazmir",
+							"steps": 
+							[
+								{
+									"title": "Run The Underrot",
+									"bosses": 
+									[
+										{
+											"name":"Unbound Abomination",
+											"spellId":273541,
+											"itemId":160829,
+											"mount": "Underrot Crawg Harness",
+											"epic": true,
+											"icon":"inv_archaeology_ogres_chimera_riding_harness",
+											"note":"Mythic only"
+										}
+									]
+								}
+							]
+						}
+					]
 				}
 			]
 		}

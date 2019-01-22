@@ -300,39 +300,7 @@
         }
 
         function applyHacks(character, characterProperty, collected, found) {
-            var plusMounts = 0;
-
-            // Hack: Horde chopper doesn't show up, so we have to check for achievement and just assume they 'learned' it
-            if (character.faction === 'H' && characterProperty === 'mounts' && character.achievements.achievementsCompleted.indexOf(9909) >= 0) {
-                console.log('Hack: Blizzard still has the chopper bug');
-
-                collected[179244] = {
-                    'spellid': '179244',
-                    'itemId': '122703',
-                    'icon': 'inv_misc_key_06',
-                    'side': 'H'
-                };
-                found[179244] = false;
-
-                if (character.faction === 'H') {
-                    plusMounts++;
-                }
-            }
-
-            // Death Knight fix (if you're a death knight, you get acherus-deathcharger if you have the other one)
-            if (character.class === 6 && characterProperty === 'mounts' && !collected[48778] && collected[54729]) {
-                
-                console.log('Hack: Blizzard still has the DK bug');
-
-                collected[48778] = {
-                    'spellid': '48778',
-                    'icon': 'Spell_DeathKnight_SummonDeathCharger',
-                    'allowableClasses': [6]
-                };
-
-                found[48778] = false;
-                plusMounts++;
-            }
+            // No hacks needed right now! :-)
         }
     }
 

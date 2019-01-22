@@ -14,7 +14,7 @@
         // this allows for aggregator type behavior where we can clear caches
         var callbacks = [];
 
-        // saved from last time soemone tried to use the login service
+        // saved from last time someone tried to use the login service
         var gRegion;
         var gRealm;
         var gCharacter;
@@ -42,19 +42,14 @@
 
                 $log.log('Fetching ' + $routeParams.character + ' from server ' + $routeParams.realm + '...');
 
-                return $http.jsonp(
-                    SettingsService.apiProtocol + 
-                      $routeParams.region +
-                      '.' + SettingsService.apiEndPoint + '/wow/character/' +
-                      $routeParams.realm + 
-                      '/' +
-                      $routeParams.character + 
-                      '?fields=pets,mounts,achievements,guild,reputation' + 
-                      SettingsService.apiKey + 
-                      '&jsonp=JSON_CALLBACK',
-                     { cache: true})
-                    .error(getCharacterError)
-                    .then(getCharacterComplete);
+                return $http.get(
+                  SettingsService.apiEndPoint +
+                  $routeParams.region + '/' +
+                  $routeParams.realm + '/' +
+                  $routeParams.character,
+                  {cache: true})
+                  .error(getCharacterError)
+                  .then(getCharacterComplete);
 
               function getCharacterError() {
                 $log.error('Trouble fetching character from battlenet');
@@ -73,10 +68,12 @@
 
                   // add region and faction to character
                   characterCached.region = $routeParams.region;
-                  characterCached.faction = [
-                    '','A','H','A','A','H','H','A','H','H',
-                    'H','A','','','','','','','','',
-                    '','','A','','','A','H','H','H','A','A'][characterCached.race];
+
+                  characterCached.faction = ['',
+                    'A','H','A','A','H','H','A','H','H','H',
+                    'A','','','','','','','','','',
+                    '','A','','','A','H','H','H','A','A',
+                    '','','','A','','H'][characterCached.race];
 
                   gRegion = $routeParams.region;
                   gRealm = $routeParams.realm;

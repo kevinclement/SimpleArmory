@@ -16,7 +16,7 @@
         <li ng-class="{ active: isActive('achievements', true) }" class="dropdown">
           <a href="#" class="dropdown-toggle">Achievements <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li ng-class="{ active: isActive('achievements/general') }"><a ng-click="isCollapsed = true" ng-href="{{getUrl('achievements/general')}}">General</a></li>
+            <li ng-class="{ active: isActive('achievements/character') }"><a ng-click="isCollapsed = true" ng-href="{{getUrl('achievements/character')}}">Character</a></li>
             <li ng-class="{ active: isActive('achievements/quests') }"><a ng-click="isCollapsed = true" ng-href="{{getUrl('achievements/quests')}}">Quests</a></li>
             <li ng-class="{ active: isActive('achievements/exploration') }"><a ng-click="isCollapsed = true" ng-href="{{getUrl('achievements/exploration')}}">Exploration</a></li>
             <li ng-class="{ active: isActive('achievements/pvp') }"><a ng-click="isCollapsed = true" ng-href="{{getUrl('achievements/pvp')}}">Player vs. Player</a></li>
@@ -26,9 +26,7 @@
             <li ng-class="{ active: isActive('achievements/events') }"><a ng-click="isCollapsed = true" ng-href="{{getUrl('achievements/events')}}">World Events</a></li>
             <li ng-class="{ active: isActive('achievements/pets') }"><a ng-click="isCollapsed = true" ng-href="{{getUrl('achievements/pets')}}">Pet Battles</a></li>
             <li ng-class="{ active: isActive('achievements/collections') }"><a ng-click="isCollapsed = true" ng-href="{{getUrl('achievements/collections')}}">Collections</a></li>
-            <li ng-class="{ active: isActive('achievements/classhall') }"><a ng-click="isCollapsed = true" ng-href="{{getUrl('achievements/classhall')}}">Class Hall</a></li>
-            <li ng-class="{ active: isActive('achievements/garrisons') }"><a ng-click="isCollapsed = true" ng-href="{{getUrl('achievements/garrisons')}}">Draenor Garrison</a></li>
-            <li ng-class="{ active: isActive('achievements/scenarios') }"><a ng-click="isCollapsed = true" ng-href="{{getUrl('achievements/scenarios')}}">Scenarios</a></li>                        
+            <li ng-class="{ active: isActive('achievements/expansions') }"><a ng-click="isCollapsed = true" ng-href="{{getUrl('achievements/expansions')}}">Expansion Features</a></li>
             <li ng-class="{ active: isActive('achievements/legacy') }"><a ng-click="isCollapsed = true" ng-href="{{getUrl('achievements/legacy')}}">Legacy</a></li>
             <li ng-class="{ active: isActive('achievements/feats') }"><a ng-click="isCollapsed = true" ng-href="{{getUrl('achievements/feats')}}">Feats of Strength</a></li>
           </ul>

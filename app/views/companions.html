@@ -14,9 +14,13 @@
   <h3 class="categoryHeader" ng-repeat-start="category in items.categories">{{ category.name }}</h3>
    <div class="sect" ng-repeat="subCategory in category.subCategories">
 		<h5 class="subCatHeader">{{ subCategory.name }}</h5>
-		<a target="{{settings.anchorTarget}}" ng-href="//{{settings.WowHeadUrl}}/{{ item.link }}" class="thumbnail" ng-repeat="item in subCategory.items" ng-class="{borderOn:!item.collected, borderOff:item.collected}">
+		<div class="pbCell" ng-repeat="item in subCategory.items" >
+		<a target="{{settings.anchorTarget}}"
+            ng-href="//{{settings.WowHeadUrl}}/{{ item.link }}" class="thumbnail pbThumbnail" ng-class="{borderOn:!item.collected, borderOff:item.collected}">
         	<img ng-src="{{getImageSrc(item)}}">
       	</a>
+        <div class="pbQual" style="{{ qualityToBackground(item) }}"></div>
+      	</div>
    </div>
-  <div class="clear" ng-repeat-end /> 
+  <div class="clear" ng-repeat-end />
 </div>
