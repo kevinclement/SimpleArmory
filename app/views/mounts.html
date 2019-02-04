@@ -2,19 +2,20 @@
   <div class="page-header">
     <h2>
         Mounts <small class="pbSmall"><input type="checkbox" id="planner" ng-model="showPlanner" ng-change="plannerChanged()"><label for="planner">Show Planner</label></small>
+		    <small class="pbSmall" ng-hide="showPlanner"><input type="checkbox" id="show-unobtainable" ng-model="unobtainable"><label for="show-unobtainable">Show Unobtainables</label></small>
     <div class="progress progressRight">
             <progressbar max="100" type="success"
-      	  		value="percent(items.collected, items.possible)" >
-      	  		<span>{{ achFormater(items.collected, items.possible) }}</span>
+      	  		value="percent((items.collected), unobtainable ? items.possible : items.possible - items.notObtainable)" >
+      	  		<span>{{ achFormater((items.collected), unobtainable ? items.possible : (items.possible - items.notObtainable) + items.notObtainableCollected) }}</span>
       	  	</progressbar>  	
         </div>
     </h2>
   </div>
   <div ng-hide="showPlanner">
     <h3 class="categoryHeader" ng-hide="category.name == 'Mounts'" ng-repeat-start="category in items.categories">{{ category.name }}</h3>
-    <div class="sect" ng-repeat="subCategory in category.subCategories">
+    <div class="sect" ng-repeat="subCategory in category.subCategories | filterUnobtainables:unobtainable">
   		<h5 class="subCatHeader">{{ subCategory.name }}</h5>
-  		<a target="{{settings.anchorTarget}}" ng-href="//{{settings.WowHeadUrl}}/{{ item.link }}" class="thumbnail" ng-repeat="item in subCategory.items" ng-class="{borderOn:!item.collected, borderOff:item.collected}">
+  		<a target="{{settings.anchorTarget}}" ng-href="//{{settings.WowHeadUrl}}/{{ item.link }}" class="thumbnail" ng-if="!item.notObtainable || item.notObtainable == unobtainable || item.collected" ng-repeat="item in subCategory.items" ng-class="{borderOn:!item.collected, borderOff:item.collected}">
           	<img ng-src="{{getImageSrc(item)}}">
         	</a>
     </div>

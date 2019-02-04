@@ -75,6 +75,8 @@
             var obj = { 'categories': [] };
             var collected = {};
             var totalCollected = 0;
+            var totalNotObtainableCollected = 0;
+            var totalNotObtainable = 0;
             var totalPossible = 0;
             var found = {};
 
@@ -223,11 +225,12 @@
 
                         // What would cause it to show up in the UI:
                         //    1) You have the item
-                        //    2) Its still obtainable 
+                        //    2) Its either obtainable or unobtainable 
                         //    3) You meet the class restriction
                         //    4) You meet the race restriction
+                        //    5) The item is currently in-game
                         var hasthis = itm.collected;
-                        var showthis = (hasthis || !item.notObtainable);
+                        var showthis = (hasthis || !item.notObtainable || item.notObtainable);
 
                         if (item.side && item.side !== character.faction) {
                             showthis = false;
@@ -261,10 +264,21 @@
                             }
                         }
 
+                        if (item.notIngame) {
+                            showthis = false;
+                        }
+
                         if (showthis) {
                             subCat.items.push(itm);
                             if (hasthis) {
                                 totalCollected++;
+                            }
+                            if(item.notObtainable) {
+                                if (hasthis) {
+                                    totalNotObtainableCollected++;
+                                }
+
+                                totalNotObtainable++;
                             }
 
                             totalPossible++;
@@ -289,6 +303,8 @@
 
             // Add totals
             obj.collected = totalCollected;
+            obj.notObtainable = totalNotObtainable;
+            obj.notObtainableCollected = totalNotObtainableCollected;
             obj.possible = totalPossible;
             obj.lookup = collected;
 

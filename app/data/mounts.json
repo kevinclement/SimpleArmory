@@ -276,7 +276,7 @@
             "name": "Zandalari Direhorn",
             "icon": "inv_triceratopszandalari",
             "spellid": "263707",
-            "notObtainable": true,
+            "notIngame": true,
             "side": "H"
           }
         ]
@@ -373,42 +373,42 @@
             "itemId": "161879",
             "name": "Reins of the Proudmoore Sea Scout",
             "icon": "inv_misc_elitegryphonarmored",
-            "notObtainable": true,
+            "notIngame": true,
             "spellid": "275868"
           },
           {
             "itemId": "161909",
             "name": "Reins of the Stormsong Coastwatcher",
             "icon": "inv_misc_elitegryphonarmored",
-            "notObtainable": true,
+            "notIngame": true,
             "spellid": "275866"
           },
           {
             "itemId": "161908",
             "name": "Reins of the Dusky Waycrest Gryphon",
             "icon": "inv_misc_elitegryphonarmored",
-            "notObtainable": true,
+            "notIngame": true,
             "spellid": "275859"
           },
           {
             "itemId": "161666",
             "name": "Reins of the Armored Orange Pterrordax",
             "icon": "inv_pterrordax2mount_orange",
-            "notObtainable": true,
+            "notIngame": true,
             "spellid": "275838"
           },
           {
             "itemId": "161667",
             "name": "Reins of the Armored Albino Pterrordax",
             "icon": "inv_pterrordax2mount_white",
-            "notObtainable": true,
+            "notIngame": true,
             "spellid": "275840"
           },
           {
             "itemId": "161664",
             "name": "Reins of the Armored Ebony Pterrordax",
             "icon": "inv_pterrordax2mount_black",
-            "notObtainable": true,
+            "notIngame": true,
             "spellid": "244712"
           }
         ]
@@ -544,7 +544,7 @@
             "itemId": 166436,
             "name": "Sandy Nightsaber",
             "spellid": 288506,
-            "notObtainable": true
+            "notIngame": true
           },
           {
             "icon": "inv_chimera3",
@@ -663,14 +663,14 @@
             "spellid": "256123",
             "icon": "inv_hovercraftmount",
             "name": "Xiwyllag ATV",
-            "notObtainable": true
+            "notIngame": true
           },
           {
             "icon": "inv_hyena2mount_dark",
             "itemId": 166417,
             "name": "Onyx War Hyena",
             "spellid": 237288,
-            "notObtainable": true
+            "notIngame": true
           }
         ]
       }
@@ -3831,14 +3831,16 @@
             "spellid": "261433",
             "icon": "inv_viciouswarbasiliskalliance",
             "name": "Vicious War Basilisk",
-            "side": "A"
+            "side": "A",
+            "notIngame": true
           },
           {
             "itemId": "163121",
             "spellid": "261434",
             "icon": "inv_viciouswarbasiliskhorde",
             "name": "Vicious War Basilisk",
-            "side": "H"
+            "side": "H",
+            "notIngame": true
           },
           {
             "itemId": "163123",
@@ -3982,9 +3984,9 @@
             "notObtainable": true
           },
           {
-            "spellid": "227989",
-            "itemId": "141845",
-            "icon": "inv_stormdragonmount2dark",
+            "spellid": "227986",
+            "itemId": "141843",
+            "icon": "inv_stormdragonmount2",
             "notObtainable": true
           },
           {
@@ -3994,21 +3996,15 @@
             "notObtainable": true
           },
           {
+            "spellid": "227989",
+            "itemId": "141845",
+            "icon": "inv_stormdragonmount2dark",
+            "notObtainable": true
+          },
+          {
             "spellid": "227991",
             "itemId": "141846",
             "icon": "inv_stormdragonmount2green",
-            "notObtainable": true
-          },
-          {
-            "spellid": "227986",
-            "itemId": "141843",
-            "icon": "inv_stormdragonmount2",
-            "notObtainable": true
-          },
-          {
-            "spellid": "227995",
-            "itemId": "141848",
-            "icon": "inv_stormdragonmount2yellow",
             "notObtainable": true
           },
           {
@@ -4018,9 +4014,9 @@
             "notObtainable": true
           },
           {
-            "icon": "inv_stormdragonmount2_fel",
-            "spellid": 243201,
-            "itemId": 153493,
+            "spellid": "227995",
+            "itemId": "141848",
+            "icon": "inv_stormdragonmount2yellow",
             "notObtainable": true
           },
           {
@@ -4028,42 +4024,35 @@
             "name": "Gold Gladiator's Proto-Drake",
             "icon": "ability_mount_protodrakegladiatormount",
             "spellid": "262028",
-            "notObtainable": true
+            "notIngame": true
           },
           {
             "itemId": "156884",
             "name": "Black Gladiator's Proto-Drake",
             "icon": "ability_mount_protodrakegladiatormount",
             "spellid": "262027",
-            "notObtainable": true
+            "notIngame": true
           },
           {
             "itemId": "156883",
             "name": "Green Gladiator's Proto-Drake",
             "icon": "ability_mount_protodrakegladiatormount",
             "spellid": "262026",
-            "notObtainable": true
+            "notIngame": true
           },
           {
             "itemId": "156882",
             "name": "Pale Gladiator's Proto-Drake",
             "icon": "ability_mount_protodrakegladiatormount",
             "spellid": "262025",
-            "notObtainable": true
+            "notIngame": true
           },
           {
             "itemId": "156881",
             "name": "Purple Gladiator's Proto-Drake",
             "icon": "ability_mount_protodrakegladiatormount",
             "spellid": "262024",
-            "notObtainable": true
-          },
-          {
-            "itemId": "156880",
-            "name": "Blue Gladiator's Proto-Drake",
-            "icon": "ability_mount_protodrakegladiatormount",
-            "spellid": "262023",
-            "notObtainable": true
+            "notIngame": true
           },
           {
             "itemId": "156879",
@@ -4071,6 +4060,12 @@
             "icon": "ability_mount_protodrakegladiatormount",
             "spellid": "262022",
             "notObtainable": true
+          },
+          {
+            "itemId": "156880",
+            "name": "Sinister Gladiator's Proto-Drake",
+            "icon": "ability_mount_protodrakegladiatormount",
+            "spellid": "262023"
           }
         ],
         "id": "deeb6401"
@@ -4831,16 +4826,6 @@
             "spellid": "26656",
             "itemId": "21176",
             "icon": "inv_misc_qirajicrystal_05",
-            "notObtainable": true
-          },
-          {
-            "icon": "inv_misc_qirajicrystal_05",
-            "spellid": 25863,
-            "notObtainable": true
-          },
-          {
-            "icon": "inv_misc_qirajicrystal_05",
-            "spellid": 26655,
             "notObtainable": true
           },
           {
