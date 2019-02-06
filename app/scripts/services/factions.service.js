@@ -44,9 +44,11 @@
 
             // Build up lookup for factions
             angular.forEach(character.reputation, function(rep, index) {
+                var calculatedPerc = (rep.value / rep.max) * 100;
+
                 standing[rep.id] = {
                     level: rep.standing,
-                    perc: (isNaN((rep.value / rep.max) * 100) ? 100 : (rep.value / rep.max) * 100),
+                    perc: (isNaN(calculatedPerc) ? 100 : calculatedPerc),
                     value: rep.value,
                     max: rep.max
                 };
