@@ -46,7 +46,7 @@
             angular.forEach(character.reputation, function(rep, index) {
                 standing[rep.id] = {
                     level: rep.standing,
-                    perc: (rep.value / rep.max) * 100,
+                    perc: (rep.standing == 7 ? 100 : (rep.value / rep.max) * 100),
                     value: rep.value,
                     max: rep.max
                 };
