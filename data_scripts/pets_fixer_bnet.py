@@ -14,6 +14,7 @@ import tqdm
 
 
 IGNORE_PETS_CREATUREIDS = [
+    123329,  # Test Dragon Pet https://www.wowhead.com/npc=123329
     144617,  # Test Pet https://www.wowhead.com/npc=144617
 ]
 
@@ -109,7 +110,7 @@ class PetFixer:
                    'icon': self.id_to_bnet_pet[creature_id]['icon'],
                    'creatureId': creature_id,
                    'spellid': None}
-            return ('wild', None, pet)
+            return ('wild', pet)
 
         div = learned_from[0]
         item_link = div.xpath('.//a[contains(@href,"item")]')[1]
