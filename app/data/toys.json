@@ -1932,22 +1932,6 @@
           }
         ],
         "name": "Treasure"
-      },
-      {
-        "id": "f9885138",
-        "items": [
-          {
-            "icon": "inv_crate_02",
-            "itemId": "144072",
-            "name": "Adopted Puppy Crate"
-          },
-          {
-            "icon": "inv_misc_1h_bucket_c_01",
-            "itemId": "144393",
-            "name": "Portable Yak Wash"
-          }
-        ],
-        "name": "Timewalking"
       }
     ]
   },
@@ -2013,22 +1997,6 @@
           }
         ],
         "name": "Rare"
-      },
-      {
-        "id": "0e758c11",
-        "items": [
-          {
-            "icon": "inv_helmet_170",
-            "itemId": "133542",
-            "name": "Tosselwrench's Mega-Accurate Simulation Viewfinder"
-          },
-          {
-            "icon": "inv_misc_enchantedpearlf",
-            "itemId": "133511",
-            "name": "Gurboggle's Gleaming Bauble"
-          }
-        ],
-        "name": "Timewalking"
       }
     ]
   },
@@ -2167,27 +2135,6 @@
           }
         ],
         "name": "World Drop"
-      },
-      {
-        "id": "691d3ec4",
-        "items": [
-          {
-            "icon": "inv_jewelry_trinket_04",
-            "itemId": "129938",
-            "name": "Will of Northrend"
-          },
-          {
-            "icon": "inv_gizmo_khoriumpowercore",
-            "itemId": "129952",
-            "name": "Hourglass of Eternity (toy)"
-          },
-          {
-            "icon": "ability_hunter_pet_wolf",
-            "itemId": "129965",
-            "name": "Grizzlesnout's Fang"
-          }
-        ],
-        "name": "Timewalking"
       }
     ]
   },
@@ -2254,32 +2201,6 @@
           }
         ],
         "name": "Dungeon"
-      },
-      {
-        "id": "f33390b3",
-        "items": [
-          {
-            "icon": "spell_fire_felflamering",
-            "itemId": "151184",
-            "name": "Verdant Throwing Sphere"
-          },
-          {
-            "icon": "inv_misc_bone_orcskull_01",
-            "itemId": "151016",
-            "name": "Fractured Necrolyte Skull"
-          },
-          {
-            "icon": "trade_archaeology_highbornesoulmirror",
-            "itemId": "129929",
-            "name": "Ever-Shifting Mirror"
-          },
-          {
-            "icon": "achievement_reputation_ashtonguedeathsworn",
-            "itemId": "129926",
-            "name": "Mark of the Ashtongue"
-          }
-        ],
-        "name": "Timewalking"
       }
     ]
   },
@@ -3408,6 +3329,67 @@
           }
         ],
         "name": "Darkmoon Faire"
+      },
+      {
+        "name": "Timewalking",
+        "id": "d7c0bef2",
+        "items": [
+          {
+            "icon": "spell_fire_felflamering",
+            "itemId": "151184",
+            "name": "Verdant Throwing Sphere"
+          },
+          {
+            "icon": "inv_misc_bone_orcskull_01",
+            "itemId": "151016",
+            "name": "Fractured Necrolyte Skull"
+          },
+          {
+            "icon": "trade_archaeology_highbornesoulmirror",
+            "itemId": "129929",
+            "name": "Ever-Shifting Mirror"
+          },
+          {
+            "icon": "achievement_reputation_ashtonguedeathsworn",
+            "itemId": "129926",
+            "name": "Mark of the Ashtongue"
+          },
+          {
+            "icon": "inv_jewelry_trinket_04",
+            "itemId": "129938",
+            "name": "Will of Northrend"
+          },
+          {
+            "icon": "inv_gizmo_khoriumpowercore",
+            "itemId": "129952",
+            "name": "Hourglass of Eternity (toy)"
+          },
+          {
+            "icon": "ability_hunter_pet_wolf",
+            "itemId": "129965",
+            "name": "Grizzlesnout's Fang"
+          },
+          {
+            "icon": "inv_helmet_170",
+            "itemId": "133542",
+            "name": "Tosselwrench's Mega-Accurate Simulation Viewfinder"
+          },
+          {
+            "icon": "inv_misc_enchantedpearlf",
+            "itemId": "133511",
+            "name": "Gurboggle's Gleaming Bauble"
+          },
+          {
+            "icon": "inv_crate_02",
+            "itemId": "144072",
+            "name": "Adopted Puppy Crate"
+          },
+          {
+            "icon": "inv_misc_1h_bucket_c_01",
+            "itemId": "144393",
+            "name": "Portable Yak Wash"
+          }
+        ]
       },
       {
         "id": "abab0c56",
