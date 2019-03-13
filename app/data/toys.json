@@ -92,6 +92,11 @@
             "icon": "inv_misc_cape_03",
             "itemId": 165791,
             "name": "Worn Cloak"
+          },
+          {
+            "icon": "inv_helm_cloth_eyeballhat_b_01",
+            "itemId": 168123,
+            "name": "Twitching Eyeball"
           }
         ],
         "name": "Quest"
@@ -2317,7 +2322,6 @@
         "name": "Vendor"
       },
       {
-        "name": "Dungeon Drop",
         "id": "961433e8",
         "items": [
           {
@@ -2325,7 +2329,8 @@
             "itemId": "13379",
             "name": "Piccolo of the Flaming Fire"
           }
-        ]
+        ],
+        "name": "Dungeon Drop"
       },
       {
         "id": "2b03cbb4",
@@ -2921,6 +2926,17 @@
         "name": "Love is in the Air"
       },
       {
+        "name": "Noblegarden",
+        "id": "d19ee5ca",
+        "items": [
+          {
+            "icon": "inv_holiday_hearthstonenoblegarden",
+            "itemId": 165802,
+            "name": "Noble Gardener's Hearthstone"
+          }
+        ]
+      },
+      {
         "id": "39f1544a",
         "items": [
           {
@@ -2958,6 +2974,11 @@
             "icon": "inv_misc_matchbook",
             "itemId": "141649",
             "name": "Set of Matches"
+          },
+          {
+            "icon": "inv_holiday_hearthstonemidsummerfirefestival",
+            "itemId": 166746,
+            "name": "Fire Eater's Hearthstone"
           }
         ],
         "name": "Midsummer"
@@ -2994,6 +3015,11 @@
             "icon": "ability_mount_ridinghorse",
             "itemId": "71137",
             "name": "Brewfest Keg Pony"
+          },
+          {
+            "icon": "inv_holiday_hearthstonebrewfest",
+            "itemId": 166747,
+            "name": "Brewfest Reveler's Hearthstone"
           }
         ],
         "name": "Brewfest"
@@ -3331,7 +3357,6 @@
         "name": "Darkmoon Faire"
       },
       {
-        "name": "Timewalking",
         "id": "d7c0bef2",
         "items": [
           {
@@ -3388,8 +3413,19 @@
             "icon": "inv_misc_1h_bucket_c_01",
             "itemId": "144393",
             "name": "Portable Yak Wash"
+          },
+          {
+            "icon": "inv_misc_apexis_shard",
+            "itemId": 168012,
+            "name": "Apexis Focusing Shard"
+          },
+          {
+            "icon": "inv_guild_standard_horde_a",
+            "itemId": 168014,
+            "name": "Banner of the Burning Blade"
           }
-        ]
+        ],
+        "name": "Timewalking"
       },
       {
         "id": "abab0c56",
