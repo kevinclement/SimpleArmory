@@ -493,6 +493,18 @@
             {
               "items": [
                 {
+                  "icon": "inv_misc_seagullpet_01",
+                  "id": 12582,
+                  "points": 10,
+                  "side": "A"
+                },
+                {
+                  "icon": "inv_helm_cloth_zandalardungeon_c_01",
+                  "id": 12555,
+                  "points": 10,
+                  "side": "H"
+                },
+                {
                   "criteria": {
                     "40168": "66065",
                     "40169": "66066",
@@ -599,18 +611,6 @@
                   "side": "H"
                 },
                 {
-                  "icon": "inv_misc_seagullpet_01",
-                  "id": 12582,
-                  "points": 10,
-                  "side": "A"
-                },
-                {
-                  "icon": "inv_staff_2h_jaina_d_01",
-                  "id": 12997,
-                  "points": 10,
-                  "side": "A"
-                },
-                {
                   "criteria": {
                     "40559": "66892",
                     "40560": "66893",
@@ -622,6 +622,20 @@
                   "side": "A"
                 },
                 {
+                  "icon": "achievement_alliedrace_zandalaritroll",
+                  "id": 13294,
+                  "points": 10,
+                  "side": "H",
+                  "title": "Loremaster of Zandalar"
+                }
+              ],
+              "name": "Zones"
+            },
+            {
+              "name": "War Campaign",
+              "id": "e1b3d52d",
+              "items": [
+                {
                   "criteria": {
                     "41137": "68179",
                     "41138": "68181",
@@ -631,12 +645,6 @@
                   "id": 12891,
                   "points": 10,
                   "side": "A"
-                },
-                {
-                  "icon": "inv_helm_cloth_zandalardungeon_c_01",
-                  "id": 12555,
-                  "points": 10,
-                  "side": "H"
                 },
                 {
                   "criteria": {
@@ -684,72 +692,91 @@
                   "side": "A"
                 },
                 {
-                  "criteria": {},
-                  "icon": "achievement_raregarrisonquests_x",
-                  "id": 13144,
+                  "icon": "ui_horde_honorboundmedal",
+                  "id": 13466,
+                  "points": 10,
+                  "side": "H",
+                  "title": "Tides of Vengeance"
+                },
+                {
+                  "icon": "ui_alliance_7legionmedal",
+                  "id": 13467,
+                  "points": 10,
+                  "side": "A",
+                  "title": "Tides of Vengeance"
+                },
+                {
+                  "icon": "factionchange",
+                  "id": 13517,
+                  "points": 20,
+                  "title": "Two Sides to Every Tale"
+                }
+              ]
+            },
+            {
+              "id": "ac6d870e",
+              "items": [
+                {
+                  "icon": "inv_heartofazeroth",
+                  "id": 12918,
                   "points": 10
                 },
                 {
-                  "criteria": {
-                    "41764": "69091",
-                    "41766": "69092",
-                    "41768": "69093"
-                  },
-                  "icon": "inv_misc_penguinpet",
-                  "id": 13060,
-                  "points": 5,
+                  "icon": "inv_staff_2h_jaina_d_01",
+                  "id": 12997,
+                  "points": 10,
                   "side": "A"
                 },
                 {
-                  "criteria": {
-                    "40709": "67208",
-                    "40710": "67209"
-                  },
-                  "icon": "inv_misc_voljinsshatteredtusk",
-                  "id": 12719,
-                  "points": 10,
+                  "icon": "spell_nature_agitatingtotem",
+                  "id": 12480,
+                  "points": 5,
                   "side": "H"
                 },
                 {
-                  "criteria": {
-                    "41495": "68760",
-                    "41497": "68761",
-                    "41498": "68762",
-                    "41499": "68763",
-                    "41500": "68764",
-                    "41501": "68765",
-                    "41502": "68766",
-                    "41503": "68767",
-                    "41525": "68759"
-                  },
-                  "icon": "ability_racial_embracetheloa",
-                  "id": 13020,
+                  "icon": "inv__faction_zandalariempire",
+                  "id": 12481,
                   "points": 5,
                   "side": "H"
                 },
                 {
                   "criteria": {
-                    "40619": "67121",
-                    "40620": "67122",
-                    "40621": "67123",
-                    "40622": "67124",
-                    "40623": "67125",
-                    "40624": "67126"
+                    "41672": "68882",
+                    "41673": "68887",
+                    "41674": "68885",
+                    "41675": "68880",
+                    "41676": "68881",
+                    "41677": "68888",
+                    "41683": "68883",
+                    "41684": "68886"
                   },
-                  "icon": "inv_armoredraptor",
-                  "id": 12614,
-                  "points": 5,
-                  "side": "H"
+                  "icon": "ability_hunter_pet_devilsaur",
+                  "id": 13048,
+                  "points": 5
                 },
                 {
-                  "icon": "achievement_alliedrace_zandalaritroll",
-                  "id": 13294,
+                  "icon": "ability_druid_manatree",
+                  "id": 13251,
+                  "points": 0,
+                  "side": "A",
+                  "title": "In Teldrassil's Shadow"
+                },
+                {
+                  "icon": "achievement_character_troll_male",
+                  "id": 13263,
                   "points": 10,
                   "side": "H",
-                  "title": "Loremaster of Zandalar"
+                  "title": "The Shadow Hunter"
+                },
+                {
+                  "icon": "achievement_alliedrace_kultiranhuman",
+                  "id": 13384,
+                  "points": 10,
+                  "side": "A",
+                  "title": "Kul Tirans Don't Look at Explosions"
                 }
               ],
-              "name": "Zones"
+              "name": "Events"
             },
             {
               "id": "52bc4a3a",
@@ -963,65 +990,6 @@
               "name": "Nazmir"
             },
             {
-              "id": "ac6d870e",
-              "items": [
-                {
-                  "icon": "inv_heartofazeroth",
-                  "id": 12918,
-                  "points": 10
-                },
-                {
-                  "icon": "spell_nature_agitatingtotem",
-                  "id": 12480,
-                  "points": 5,
-                  "side": "H"
-                },
-                {
-                  "icon": "inv__faction_zandalariempire",
-                  "id": 12481,
-                  "points": 5,
-                  "side": "H"
-                },
-                {
-                  "criteria": {
-                    "41672": "68882",
-                    "41673": "68887",
-                    "41674": "68885",
-                    "41675": "68880",
-                    "41676": "68881",
-                    "41677": "68888",
-                    "41683": "68883",
-                    "41684": "68886"
-                  },
-                  "icon": "ability_hunter_pet_devilsaur",
-                  "id": 13048,
-                  "points": 5
-                },
-                {
-                  "icon": "ability_druid_manatree",
-                  "id": 13251,
-                  "points": 0,
-                  "side": "A",
-                  "title": "In Teldrassil's Shadow"
-                },
-                {
-                  "icon": "achievement_character_troll_male",
-                  "id": 13263,
-                  "points": 10,
-                  "side": "H",
-                  "title": "The Shadow Hunter"
-                },
-                {
-                  "icon": "achievement_alliedrace_kultiranhuman",
-                  "id": 13384,
-                  "points": 10,
-                  "side": "A",
-                  "title": "Kul Tirans Don't Look at Explosions"
-                }
-              ],
-              "name": "Events"
-            },
-            {
               "id": "a0fb1ec2",
               "items": [
                 {
@@ -1082,6 +1050,76 @@
                 }
               ],
               "name": "Assaults"
+            },
+            {
+              "name": "World",
+              "id": "d591e640",
+              "items": [
+                {
+                  "criteria": {},
+                  "icon": "achievement_raregarrisonquests_x",
+                  "id": 13144,
+                  "points": 10
+                },
+                {
+                  "criteria": {
+                    "41764": "69091",
+                    "41766": "69092",
+                    "41768": "69093"
+                  },
+                  "icon": "inv_misc_penguinpet",
+                  "id": 13060,
+                  "points": 5,
+                  "side": "A"
+                },
+                {
+                  "criteria": {
+                    "40709": "67208",
+                    "40710": "67209"
+                  },
+                  "icon": "inv_misc_voljinsshatteredtusk",
+                  "id": 12719,
+                  "points": 10,
+                  "side": "H"
+                },
+                {
+                  "criteria": {
+                    "41495": "68760",
+                    "41497": "68761",
+                    "41498": "68762",
+                    "41499": "68763",
+                    "41500": "68764",
+                    "41501": "68765",
+                    "41502": "68766",
+                    "41503": "68767",
+                    "41525": "68759"
+                  },
+                  "icon": "ability_racial_embracetheloa",
+                  "id": 13020,
+                  "points": 5,
+                  "side": "H"
+                },
+                {
+                  "criteria": {
+                    "40619": "67121",
+                    "40620": "67122",
+                    "40621": "67123",
+                    "40622": "67124",
+                    "40623": "67125",
+                    "40624": "67126"
+                  },
+                  "icon": "inv_armoredraptor",
+                  "id": 12614,
+                  "points": 5,
+                  "side": "H"
+                },
+                {
+                  "icon": "inv_inscription_certificate",
+                  "id": 13512,
+                  "points": 10,
+                  "title": "Master Calligrapher"
+                }
+              ]
             }
           ]
         },
@@ -10416,6 +10454,152 @@
           ]
         },
         {
+          "id": "b5c193bd",
+          "name": "Wintergrasp",
+          "subcats": [
+            {
+              "id": "df9f6638",
+              "items": [
+                {
+                  "icon": "inv_misc_statue_07",
+                  "id": "1722",
+                  "points": 10
+                },
+                {
+                  "icon": "inv_misc_statue_07",
+                  "id": "1721",
+                  "points": 10
+                },
+                {
+                  "icon": "inv_misc_statue_10",
+                  "id": "3136",
+                  "points": 10
+                },
+                {
+                  "icon": "inv_misc_statue_10",
+                  "id": "3137",
+                  "points": 10
+                },
+                {
+                  "icon": "spell_fire_totemofwrath",
+                  "id": "3836",
+                  "points": 10
+                },
+                {
+                  "icon": "spell_fire_totemofwrath",
+                  "id": "3837",
+                  "points": 10
+                },
+                {
+                  "icon": "spell_frost_frostbrand",
+                  "id": "4585",
+                  "points": 10
+                },
+                {
+                  "icon": "spell_frost_frostbrand",
+                  "id": "4586",
+                  "points": 10
+                },
+                {
+                  "icon": "ability_mount_mammoth_black",
+                  "id": "2080",
+                  "points": 10
+                },
+                {
+                  "criteria": {
+                    "6444": "14643",
+                    "9178": "14642",
+                    "9179": "14645",
+                    "9181": "14644"
+                  },
+                  "icon": "spell_fire_blueflamestrike",
+                  "id": "1737",
+                  "points": 10,
+                  "side": "A"
+                },
+                {
+                  "criteria": {
+                    "9178": "9971",
+                    "9179": "9972",
+                    "9180": "9973",
+                    "9181": "9974"
+                  },
+                  "icon": "spell_fire_blueflamestrike",
+                  "id": "2476",
+                  "points": 10,
+                  "side": "H"
+                },
+                {
+                  "icon": "achievement_bg_kill_on_mount",
+                  "id": "1751",
+                  "points": 10
+                },
+                {
+                  "icon": "spell_arcane_teleporttheramore",
+                  "id": "1727",
+                  "points": 10
+                },
+                {
+                  "icon": "ability_mount_gyrocoptor",
+                  "id": "1723",
+                  "points": 10
+                },
+                {
+                  "criteria": {
+                    "7709": "10469",
+                    "7710": "10470",
+                    "7711": "10471",
+                    "7712": "10472",
+                    "7713": "10473",
+                    "7714": "10474",
+                    "7715": "10468",
+                    "7716": "10475",
+                    "7718": "10476",
+                    "7719": "10477"
+                  },
+                  "icon": "ability_mage_shattershield",
+                  "id": "2199",
+                  "points": 10
+                },
+                {
+                  "icon": "spell_frost_manaburn",
+                  "id": "1755",
+                  "points": 10
+                },
+                {
+                  "icon": "spell_frost_chillingblast",
+                  "id": "1717",
+                  "points": 10
+                },
+                {
+                  "icon": "spell_frost_chillingblast",
+                  "id": "1718",
+                  "points": 10
+                },
+                {
+                  "criteria": {
+                    "7732": "29106",
+                    "9758": "14247",
+                    "9759": "14249",
+                    "9760": "14255",
+                    "9761": "14253",
+                    "9765": "14250",
+                    "9766": "14248",
+                    "9767": "29106",
+                    "9769": "14256",
+                    "9770": "14254",
+                    "9771": "14251"
+                  },
+                  "icon": "spell_frost_chillingblast",
+                  "id": "1752",
+                  "points": 10
+                }
+              ],
+              "name": ""
+            }
+          ]
+        },
+        {
           "id": "82d49a82",
           "name": "Battle for Gilneas",
           "subcats": [
@@ -12740,7 +12924,6 @@
               "name": "Uldir"
             },
             {
-              "name": "Siege of Dazar'alor",
               "id": "554c4d24",
               "items": [
                 {
@@ -12901,10 +13084,10 @@
                   "points": 10,
                   "title": "Mythic: Lady Jaina Proudmoore"
                 }
-              ]
+              ],
+              "name": "Siege of Dazar'alor"
             },
             {
-              "name": "Crucible of Storms",
               "id": "5d78c1f1",
               "items": [
                 {
@@ -12914,24 +13097,31 @@
                   "title": "Crucible of Storms"
                 },
                 {
-                  "icon": "inv_stormsongvalley",
-                  "id": 13415,
+                  "icon": "inv_enchant_voidcrystal",
+                  "id": 13501,
                   "points": 10,
-                  "title": "Heroic: Crucible of Storms"
+                  "title": "Gotta Bounce"
                 },
                 {
-                  "icon": "achievement_dungeon_lordstormsong",
+                  "icon": "achievement_boss_shrine_uunat",
+                  "id": 13506,
+                  "points": 10,
+                  "title": "A Good Eye-dea"
+                },
+                {
+                  "icon": "achievement_restlesscabal",
                   "id": 13416,
                   "points": 10,
                   "title": "Mythic: The Restless Cabal"
                 },
                 {
-                  "icon": "inv_chest_armor_voidelf_d_01",
+                  "icon": "achievement_uunat",
                   "id": 13417,
                   "points": 10,
                   "title": "Mythic: Uu'nat, Harbinger of the Void"
                 }
-              ]
+              ],
+              "name": "Crucible of Storms"
             },
             {
               "id": "669e1d1f",
@@ -19968,23 +20158,9 @@
               "name": "Minigame"
             },
             {
-              "id": "4b32f46d",
+              "name": "Obliterum",
+              "id": "231f31a0",
               "items": [
-                {
-                  "criteria": {
-                    "25132": "37409",
-                    "25133": "37410",
-                    "25134": "37411",
-                    "25135": "37412",
-                    "25136": "37413",
-                    "25137": "37414",
-                    "25138": "37415",
-                    "25139": "37416"
-                  },
-                  "icon": "inv_misc_punchcards_white",
-                  "id": "9071",
-                  "points": 5
-                },
                 {
                   "icon": "inv_misc_reforgedarchstone_01",
                   "id": "10585",
@@ -19994,7 +20170,13 @@
                   "icon": "inv_misc_dust",
                   "id": "10586",
                   "points": 15
-                },
+                }
+              ]
+            },
+            {
+              "name": "Scrap",
+              "id": "03aa2fb5",
+              "items": [
                 {
                   "criteria": {},
                   "icon": "inv_misc_1h_wrench_a_02",
@@ -20023,6 +20205,32 @@
                   "icon": "6bf_explosive_shard",
                   "id": 12740,
                   "points": 25
+                }
+              ]
+            },
+            {
+              "id": "4b32f46d",
+              "items": [
+                {
+                  "criteria": {
+                    "25132": "37409",
+                    "25133": "37410",
+                    "25134": "37411",
+                    "25135": "37412",
+                    "25136": "37413",
+                    "25137": "37414",
+                    "25138": "37415",
+                    "25139": "37416"
+                  },
+                  "icon": "inv_misc_punchcards_white",
+                  "id": "9071",
+                  "points": 5
+                },
+                {
+                  "icon": "inv_inscription_80_scroll",
+                  "id": 13516,
+                  "points": 10,
+                  "title": "Massive Tool"
                 }
               ],
               "name": "Other"
@@ -23030,6 +23238,30 @@
                   "icon": "inv_faction_hordewarfront_round_magharorc",
                   "id": 13077,
                   "points": 10
+                },
+                {
+                  "icon": "inv_tabard_kultiran",
+                  "id": 13163,
+                  "points": 10,
+                  "title": "Allied Races: Kul Tiran"
+                },
+                {
+                  "icon": "inv__faction_proudmooreadmiralty",
+                  "id": 13504,
+                  "points": 10,
+                  "title": "Heritage of the Kul Tirans"
+                },
+                {
+                  "icon": "achievement_alliedrace_zandalaritroll",
+                  "id": 13161,
+                  "points": 10,
+                  "title": "Allied Races: Zandalari Troll"
+                },
+                {
+                  "icon": "inv__faction_zandalariempire",
+                  "id": 13503,
+                  "points": 10,
+                  "title": "Heritage of the Zandalari"
                 }
               ],
               "name": "Allied Races"
@@ -24809,6 +25041,20 @@
                   "id": 11279,
                   "points": 10,
                   "side": "H"
+                },
+                {
+                  "icon": "spell_fire_masterofelements",
+                  "id": 13342,
+                  "points": 10,
+                  "side": "H",
+                  "title": "Extinguishing Kul Tiras"
+                },
+                {
+                  "icon": "spell_fire_masterofelements",
+                  "id": 13343,
+                  "points": 10,
+                  "side": "A",
+                  "title": "Extinguishing Zandalar"
                 }
               ],
               "name": "Desecrate"
@@ -25101,6 +25347,20 @@
                   "id": 11282,
                   "points": 10,
                   "side": "H"
+                },
+                {
+                  "icon": "inv_summerfest_firespirit",
+                  "id": 13340,
+                  "points": 10,
+                  "side": "H",
+                  "title": "Flame Keeper of Zandalar"
+                },
+                {
+                  "icon": "inv_summerfest_firespirit",
+                  "id": 13341,
+                  "points": 10,
+                  "side": "A",
+                  "title": "Flame Warden of Kul Tiras"
                 }
               ],
               "name": "Honor"
@@ -26860,24 +27120,6 @@
                   "side": "A"
                 },
                 {
-                  "icon": "inv_pants_plate_05",
-                  "id": 11560,
-                  "points": 5,
-                  "side": "A"
-                },
-                {
-                  "icon": "inv_misc_bandage_05",
-                  "id": 11563,
-                  "points": 5,
-                  "side": "A"
-                },
-                {
-                  "icon": "spell_holy_fistofjustice",
-                  "id": 11565,
-                  "points": 5,
-                  "side": "A"
-                },
-                {
                   "icon": "spell_holy_silence",
                   "id": 11559,
                   "points": 5,
@@ -26885,21 +27127,51 @@
                 },
                 {
                   "icon": "inv_pants_plate_05",
-                  "id": 11561,
+                  "id": 13186,
                   "points": 5,
-                  "side": "H"
+                  "side": "A",
+                  "title": "You Are Not Your $#*@! Legplates"
+                },
+                {
+                  "icon": "inv_pants_plate_05",
+                  "id": 13188,
+                  "points": 5,
+                  "side": "H",
+                  "title": "You Are Not Your $#*@! Legplates"
+                },
+                {
+                  "icon": "inv_misc_bandage_05",
+                  "id": 13189,
+                  "points": 5,
+                  "side": "A",
+                  "title": "The Second Rule of Brawler's Guild"
                 },
                 {
                   "icon": "inv_misc_bandage_08",
-                  "id": 11564,
+                  "id": 13190,
                   "points": 5,
-                  "side": "H"
+                  "side": "H",
+                  "title": "The Second Rule of Brawler's Guild"
                 },
                 {
                   "icon": "spell_holy_fistofjustice",
-                  "id": 11566,
+                  "id": 13191,
                   "points": 5,
-                  "side": "H"
+                  "side": "A",
+                  "title": "Brawler for Azeroth"
+                },
+                {
+                  "icon": "spell_holy_fistofjustice",
+                  "id": 13192,
+                  "points": 5,
+                  "side": "H",
+                  "title": "Brawler for Azeroth"
+                },
+                {
+                  "icon": "achievement_leader_-thrall",
+                  "id": 13194,
+                  "points": 5,
+                  "title": "I Am Thrall's Complete Lack Of Surprise"
                 },
                 {
                   "icon": "inv_misc_coin_17",
@@ -26909,11 +27181,6 @@
                 {
                   "icon": "achievement_guildperk_cashflow_rank2",
                   "id": 11570,
-                  "points": 5
-                },
-                {
-                  "icon": "achievement_leader_-thrall",
-                  "id": 11572,
                   "points": 5
                 },
                 {
@@ -28028,6 +28295,12 @@
                   "icon": "achievment_boss_madnessofdeathwing",
                   "id": 12079,
                   "points": 10
+                },
+                {
+                  "icon": "inv_misc_pet_03",
+                  "id": 13469,
+                  "points": 10,
+                  "title": "Raiding with Leashes VI: Pets of Pandaria"
                 }
               ],
               "name": "Leashes"
@@ -28687,7 +28960,6 @@
             },
             {
               "id": "e035deb4",
-              "name": "Species: Broken Isles",
               "items": [
                 {
                   "criteria": {
@@ -28926,10 +29198,10 @@
                   "id": "9696",
                   "points": 10
                 }
-              ]
+              ],
+              "name": "Species: Broken Isles"
             },
             {
-              "name": "Species: Argus",
               "id": "0a481904",
               "items": [
                 {
@@ -29199,7 +29471,8 @@
                   "id": 12100,
                   "points": 10
                 }
-              ]
+              ],
+              "name": "Species: Argus"
             },
             {
               "id": "87d26795",
@@ -33698,152 +33971,6 @@
               "name": ""
             }
           ]
-        },
-        {
-          "id": "4a6f8585",
-          "name": "Wintergrasp",
-          "subcats": [
-            {
-              "id": "c98f1db7",
-              "items": [
-                {
-                  "icon": "inv_misc_statue_07",
-                  "id": "1722",
-                  "points": 10
-                },
-                {
-                  "icon": "inv_misc_statue_07",
-                  "id": "1721",
-                  "points": 10
-                },
-                {
-                  "icon": "inv_misc_statue_10",
-                  "id": "3136",
-                  "points": 10
-                },
-                {
-                  "icon": "inv_misc_statue_10",
-                  "id": "3137",
-                  "points": 10
-                },
-                {
-                  "icon": "spell_fire_totemofwrath",
-                  "id": "3836",
-                  "points": 10
-                },
-                {
-                  "icon": "spell_fire_totemofwrath",
-                  "id": "3837",
-                  "points": 10
-                },
-                {
-                  "icon": "spell_frost_frostbrand",
-                  "id": "4585",
-                  "points": 10
-                },
-                {
-                  "icon": "spell_frost_frostbrand",
-                  "id": "4586",
-                  "points": 10
-                },
-                {
-                  "icon": "ability_mount_mammoth_black",
-                  "id": "2080",
-                  "points": 10
-                },
-                {
-                  "criteria": {
-                    "6444": "14643",
-                    "9178": "14642",
-                    "9179": "14645",
-                    "9181": "14644"
-                  },
-                  "icon": "spell_fire_blueflamestrike",
-                  "id": "1737",
-                  "points": 10,
-                  "side": "A"
-                },
-                {
-                  "criteria": {
-                    "9178": "9971",
-                    "9179": "9972",
-                    "9180": "9973",
-                    "9181": "9974"
-                  },
-                  "icon": "spell_fire_blueflamestrike",
-                  "id": "2476",
-                  "points": 10,
-                  "side": "H"
-                },
-                {
-                  "icon": "achievement_bg_kill_on_mount",
-                  "id": "1751",
-                  "points": 10
-                },
-                {
-                  "icon": "spell_arcane_teleporttheramore",
-                  "id": "1727",
-                  "points": 10
-                },
-                {
-                  "icon": "ability_mount_gyrocoptor",
-                  "id": "1723",
-                  "points": 10
-                },
-                {
-                  "criteria": {
-                    "7709": "10469",
-                    "7710": "10470",
-                    "7711": "10471",
-                    "7712": "10472",
-                    "7713": "10473",
-                    "7714": "10474",
-                    "7715": "10468",
-                    "7716": "10475",
-                    "7718": "10476",
-                    "7719": "10477"
-                  },
-                  "icon": "ability_mage_shattershield",
-                  "id": "2199",
-                  "points": 10
-                },
-                {
-                  "icon": "spell_frost_manaburn",
-                  "id": "1755",
-                  "points": 10
-                },
-                {
-                  "icon": "spell_frost_chillingblast",
-                  "id": "1717",
-                  "points": 10
-                },
-                {
-                  "icon": "spell_frost_chillingblast",
-                  "id": "1718",
-                  "points": 10
-                },
-                {
-                  "criteria": {
-                    "7732": "29106",
-                    "9758": "14247",
-                    "9759": "14249",
-                    "9760": "14255",
-                    "9761": "14253",
-                    "9765": "14250",
-                    "9766": "14248",
-                    "9767": "29106",
-                    "9769": "14256",
-                    "9770": "14254",
-                    "9771": "14251"
-                  },
-                  "icon": "spell_frost_chillingblast",
-                  "id": "1752",
-                  "points": 10
-                }
-              ],
-              "name": ""
-            }
-          ]
         }
       ],
       "id": "df65df58",
@@ -34374,6 +34501,47 @@
                   "id": "9171",
                   "points": 25,
                   "side": "A"
+                },
+                {
+                  "icon": "inv_pants_plate_05",
+                  "id": 11560,
+                  "points": 5,
+                  "side": "A"
+                },
+                {
+                  "icon": "inv_misc_bandage_05",
+                  "id": 11563,
+                  "points": 5,
+                  "side": "A"
+                },
+                {
+                  "icon": "spell_holy_fistofjustice",
+                  "id": 11565,
+                  "points": 5,
+                  "side": "A"
+                },
+                {
+                  "icon": "inv_pants_plate_05",
+                  "id": 11561,
+                  "points": 5,
+                  "side": "H"
+                },
+                {
+                  "icon": "inv_misc_bandage_08",
+                  "id": 11564,
+                  "points": 5,
+                  "side": "H"
+                },
+                {
+                  "icon": "spell_holy_fistofjustice",
+                  "id": 11566,
+                  "points": 5,
+                  "side": "H"
+                },
+                {
+                  "icon": "achievement_leader_-thrall",
+                  "id": 11572,
+                  "points": 5
                 }
               ],
               "name": "Brawler's Guild"
@@ -38928,7 +39096,6 @@
             },
             {
               "id": "91952688",
-              "name": "Mythic Keystone: Battle for Azeroth",
               "items": [
                 {
                   "icon": "achievement_challengemode_gold",
@@ -38954,7 +39121,8 @@
                   "points": 0,
                   "title": "Battle for Azeroth Keystone Master: Season Two"
                 }
-              ]
+              ],
+              "name": "Mythic Keystone: Battle for Azeroth"
             }
           ]
         },
@@ -39209,37 +39377,37 @@
                   "title": "Ahead of the Curve: Argus the Unmaker"
                 },
                 {
-                  "icon": "achievement_dungeon_ulduar77_heroic",
+                  "icon": "achievement_nazmir_boss_ghuun",
                   "id": 12535,
                   "points": 0,
                   "title": "Cutting Edge: G'huun"
                 },
                 {
-                  "icon": "achievement_dungeon_ulduar77_heroic",
+                  "icon": "achievement_nazmir_boss_ghuun",
                   "id": 12536,
                   "points": 0,
                   "title": "Ahead of the Curve: G'huun"
                 },
                 {
-                  "icon": "achievement_dungeon_ulduar77_heroic",
+                  "icon": "achievement_boss_zuldazar_jaina",
                   "id": 13322,
                   "points": 0,
                   "title": "Ahead of the Curve: Lady Jaina Proudmoore"
                 },
                 {
-                  "icon": "achievement_dungeon_ulduar77_heroic",
+                  "icon": "achievement_boss_zuldazar_jaina",
                   "id": 13323,
                   "points": 0,
                   "title": "Cutting Edge: Lady Jaina Proudmoore"
                 },
                 {
-                  "icon": "achievement_dungeon_ulduar77_heroic",
+                  "icon": "achievement_uunat",
                   "id": 13418,
                   "points": 0,
                   "title": "Ahead of the Curve: Uu'nat, Harbinger of the Void"
                 },
                 {
-                  "icon": "achievement_dungeon_ulduar77_heroic",
+                  "icon": "achievement_uunat",
                   "id": 13419,
                   "points": 0,
                   "title": "Cutting Edge: Uu'nat, Harbinger of the Void"
@@ -40676,6 +40844,12 @@
                 },
                 {
                   "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13465,
+                  "points": 0,
+                  "title": "Elite: Battle for Azeroth Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
                   "id": 12945,
                   "points": 0,
                   "title": "Dread Gladiator: Battle for Azeroth Season 1"
@@ -41244,7 +41418,7 @@
                   "title": "Herald of Flames"
                 },
                 {
-                  "icon": "2147656",
+                  "icon": "inv_encrypted05",
                   "id": 13196,
                   "points": 0,
                   "title": "Meat Marauder"
@@ -41450,7 +41624,7 @@
                   "points": 0
                 },
                 {
-                  "icon": "2060704",
+                  "icon": "inv_8xp_encrypted01",
                   "id": 13138,
                   "points": 0,
                   "title": "Flying Colors"
