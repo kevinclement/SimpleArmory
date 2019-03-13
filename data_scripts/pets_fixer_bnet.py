@@ -15,12 +15,13 @@ import tqdm
 
 IGNORE_PETS_CREATUREIDS = [
     123329,  # Test Dragon Pet https://www.wowhead.com/npc=123329
+    125494,  # SpeedyNumberIII https://www.wowhead.com/npc=125494
     144617,  # Test Pet https://www.wowhead.com/npc=144617
 ]
 
 
-WOWDB_NPCS_PAGE = 'https://www.wowdb.com/npcs/{}'
-WOWDB_API_ITEM = 'https://www.wowdb.com/api/item/{}'
+WOWDB_NPCS_PAGE = 'https://ptr.wowdb.com/npcs/{}'
+WOWDB_API_ITEM = 'https://ptr.wowdb.com/api/item/{}'
 
 
 def changelog(*args, **kwargs):

@@ -268,6 +268,13 @@
             "itemId": 156566,
             "name": "Dart",
             "spellid": 259758
+          },
+          {
+            "creatureId": 147583,
+            "icon": "inv_mechanicalparrotpet",
+            "itemId": 165845,
+            "name": "Feathers",
+            "spellid": 286474
           }
         ],
         "name": "Quest"
@@ -3454,6 +3461,34 @@
             "icon": "achievement_reputation_wolvar",
             "itemId": "46544",
             "spellid": "65382"
+          },
+          {
+            "creatureId": 150098,
+            "icon": "inv_hermitcrab_darkred",
+            "itemId": 167008,
+            "name": "Sandy Hermit Crab Shell",
+            "spellid": 291203
+          },
+          {
+            "creatureId": 150120,
+            "icon": "inv_misc_bag_10_green",
+            "itemId": 167011,
+            "name": "Slimy Pouch",
+            "spellid": 291215
+          },
+          {
+            "creatureId": 150119,
+            "icon": "inv_babyturtle2_teal",
+            "itemId": 167010,
+            "name": "Beakbert",
+            "spellid": 291214
+          },
+          {
+            "creatureId": 150126,
+            "icon": "inv_misc_scales_dragongreen01",
+            "itemId": 167009,
+            "name": "Enchanted Saurolisk Scale",
+            "spellid": 291223
           }
         ],
         "name": "Children's Week"
@@ -3671,6 +3706,48 @@
       {
         "items": [
           {
+            "creatureId": 7549,
+            "icon": "spell_shaman_hex",
+            "itemId": "11026",
+            "spellid": "10704"
+          },
+          {
+            "creatureId": 7550,
+            "icon": "spell_shaman_hex",
+            "itemId": "11027",
+            "spellid": "10703"
+          },
+          {
+            "creatureId": 14878,
+            "icon": "spell_shaman_hex",
+            "itemId": "19450",
+            "spellid": "23811"
+          },
+          {
+            "creatureId": 90345,
+            "icon": "inv_gizmo_goblingtonkcontroller",
+            "itemId": "122125",
+            "spellid": "179954"
+          },
+          {
+            "creatureId": 76873,
+            "icon": "inv_belt_46b",
+            "itemId": "123862",
+            "spellid": "170267"
+          },
+          {
+            "creatureId": 93814,
+            "icon": "creatureportrait_bubble",
+            "itemId": "126925",
+            "spellid": "185601"
+          },
+          {
+            "creatureId": 93808,
+            "icon": "inv_jewelcrafting_azurecrab",
+            "itemId": "126926",
+            "spellid": "185591"
+          },
+          {
             "creatureId": 55187,
             "icon": "inv_misc_balloon_01",
             "itemId": "73762",
@@ -3701,12 +3778,6 @@
             "spellid": "101733"
           },
           {
-            "creatureId": 59358,
-            "icon": "inv_misc_rabbit",
-            "itemId": "80008",
-            "spellid": "114090"
-          },
-          {
             "creatureId": 55356,
             "icon": "inv_gizmo_goblingtonkcontroller",
             "itemId": "73903",
@@ -3725,10 +3796,31 @@
             "spellid": "103549"
           },
           {
-            "creatureId": 14878,
-            "icon": "spell_shaman_hex",
-            "itemId": "19450",
-            "spellid": "23811"
+            "creatureId": 145946,
+            "icon": "inv_misc_8xp_balloon_horse01",
+            "itemId": 164969,
+            "name": "Horse Balloon",
+            "spellid": 283740
+          },
+          {
+            "creatureId": 145947,
+            "icon": "inv_misc_8xp_balloon_murloc01",
+            "itemId": 164971,
+            "name": "Murloc Balloon",
+            "spellid": 283741
+          },
+          {
+            "creatureId": 145948,
+            "icon": "inv_misc_8xp_balloon_wolf01",
+            "itemId": 164970,
+            "name": "Wolf Balloon",
+            "spellid": 283744
+          },
+          {
+            "creatureId": 59358,
+            "icon": "inv_misc_rabbit",
+            "itemId": "80008",
+            "spellid": "114090"
           },
           {
             "creatureId": 72160,
@@ -3737,46 +3829,10 @@
             "spellid": "144761"
           },
           {
-            "creatureId": 7549,
-            "icon": "spell_shaman_hex",
-            "itemId": "11026",
-            "spellid": "10704"
-          },
-          {
-            "creatureId": 7550,
-            "icon": "spell_shaman_hex",
-            "itemId": "11027",
-            "spellid": "10703"
-          },
-          {
             "creatureId": 85527,
             "icon": "inv_misc_fish_102",
             "itemId": "116064",
             "spellid": "170774"
-          },
-          {
-            "creatureId": 90345,
-            "icon": "inv_gizmo_goblingtonkcontroller",
-            "itemId": "122125",
-            "spellid": "179954"
-          },
-          {
-            "creatureId": 76873,
-            "icon": "inv_belt_46b",
-            "itemId": "123862",
-            "spellid": "170267"
-          },
-          {
-            "creatureId": 93814,
-            "icon": "creatureportrait_bubble",
-            "itemId": "126925",
-            "spellid": "185601"
-          },
-          {
-            "creatureId": 93808,
-            "icon": "inv_jewelcrafting_azurecrab",
-            "itemId": "126926",
-            "spellid": "185591"
           }
         ],
         "name": "Darkmoon Faire"
@@ -4826,6 +4882,96 @@
           }
         ],
         "name": "V: Cuteaclysm"
+      },
+      {
+        "id": "e4ccbad3",
+        "items": [
+          {
+            "creatureId": 150354,
+            "icon": "ability_mount_quilenmount",
+            "itemId": 167047,
+            "name": "Stoneclaw",
+            "spellid": 291513
+          },
+          {
+            "creatureId": 150356,
+            "icon": "inv_hand_1h_trollshaman_c_01",
+            "itemId": 167048,
+            "name": "Wayward Spirit",
+            "spellid": 291515
+          },
+          {
+            "creatureId": 150357,
+            "icon": "inv_fabric_celestial_cloth",
+            "itemId": 167049,
+            "name": "Celestial Gift",
+            "spellid": 291517
+          },
+          {
+            "creatureId": 150360,
+            "icon": "archaeology_5_0_keystone_mogu",
+            "itemId": 167050,
+            "name": "Mogu Statue",
+            "spellid": 291533
+          },
+          {
+            "creatureId": 150365,
+            "icon": "inv_cloudserpent_egg_blue",
+            "itemId": 167051,
+            "name": "Azure Cloud Serpent Egg",
+            "spellid": 291537
+          },
+          {
+            "creatureId": 150372,
+            "icon": "inv_pet_pandarenelemental_fire",
+            "itemId": 167052,
+            "name": "Spirit of the Spring",
+            "spellid": null
+          },
+          {
+            "creatureId": 150374,
+            "icon": "achievement_raid_mantidraid07",
+            "itemId": 167058,
+            "name": "Kor'thik Swarmling",
+            "spellid": 291548
+          },
+          {
+            "creatureId": 150375,
+            "icon": "inv_icon_wing03e",
+            "itemId": 167053,
+            "name": "Tiny Amber Wings",
+            "spellid": 291549
+          },
+          {
+            "creatureId": 150377,
+            "icon": "achievement_raid_mantidraid05",
+            "itemId": 167054,
+            "name": "Spawn of Garalon",
+            "spellid": 291553
+          },
+          {
+            "creatureId": 150380,
+            "icon": "ability_creature_amber_02",
+            "itemId": 167055,
+            "name": "Amber Goo Puddle",
+            "spellid": 291556
+          },
+          {
+            "creatureId": 150381,
+            "icon": "spell_fire_blueflamering",
+            "itemId": 167056,
+            "name": "Essence of Pride",
+            "spellid": 291560
+          },
+          {
+            "creatureId": 150385,
+            "icon": "inv_shapet",
+            "itemId": 167057,
+            "name": "Happiness",
+            "spellid": 291561
+          }
+        ],
+        "name": "VI: Pets of Pandaria"
       }
     ]
   },
