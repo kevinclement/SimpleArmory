@@ -121,6 +121,20 @@
         "id": "d2878c68",
         "items": [
           {
+            "icon": "inv_alliancewolfmount",
+            "itemId": 168056,
+            "name": "Ironclad Frostclaw",
+            "side": "A",
+            "spellid": 295386
+          },
+          {
+            "icon": "inv_hordehorsemount",
+            "itemId": 168055,
+            "name": "Bloodflank Charger",
+            "side": "H",
+            "spellid": 295387
+          },
+          {
             "itemId": "163577",
             "name": "Conquerer's Scythemaw",
             "icon": "inv_trilobitemount_green",
@@ -272,11 +286,17 @@
             "side": "A"
           },
           {
+            "icon": "inv_horsekultiran",
+            "itemId": 164762,
+            "name": "Kul Tiran Charger",
+            "side": "A",
+            "spellid": 282682
+          },
+          {
             "itemId": "157870",
             "name": "Zandalari Direhorn",
             "icon": "inv_triceratopszandalari",
             "spellid": "263707",
-            "notObtainable": true,
             "side": "H"
           }
         ]
@@ -4215,6 +4235,12 @@
             "itemId": 142403,
             "icon": "inv_basaliskmount",
             "notObtainable": true
+          },
+          {
+            "icon": "inv_crocoliskmount_blue",
+            "itemId": 166724,
+            "name": "Bruce",
+            "spellid": 289639
           }
         ],
         "id": "6359899a"
@@ -4262,6 +4288,18 @@
             "spellid": 127165,
             "itemId": 87775,
             "icon": "ability_monk_summonserpentstatue"
+          },
+          {
+            "icon": "inv_armoredelekkmount",
+            "itemId": 167894,
+            "name": "Beastlord's Irontusk",
+            "spellid": 294568
+          },
+          {
+            "icon": "inv_armoredwolfmount",
+            "itemId": 167895,
+            "name": "Beastlord's Warwolf",
+            "spellid": 294569
           },
           {
             "spellid": "201098",
@@ -4357,6 +4395,18 @@
             "name": "The Dreadwake",
             "spellid": 272770,
             "itemId": 160589
+          },
+          {
+            "icon": "2495963",
+            "itemId": 166775,
+            "name": "Vulpine Familiar",
+            "spellid": 290133
+          },
+          {
+            "icon": "2459601",
+            "itemId": 166774,
+            "name": "Hogrus, Swine of Good Fortune",
+            "spellid": 290134
           }
         ],
         "id": "a90a3293"
