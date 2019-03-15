@@ -73,7 +73,7 @@
                     'A','H','A','A','H','H','A','H','H','H',
                     'A','','','','','','','','','',
                     '','A','','','A','H','H','H','A','A',
-                    '','','','A','','H'][characterCached.race];
+                    'H','A','','A','','H'][characterCached.race];
 
                   gRegion = $routeParams.region;
                   gRealm = $routeParams.realm;
