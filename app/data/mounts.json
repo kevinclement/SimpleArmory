@@ -332,7 +332,7 @@
         ]
       },
       {
-        "name": "Rare",
+        "name": "Rare Spawn",
         "id": "a9a95eb4",
         "items": [
           {
@@ -1467,11 +1467,6 @@
             "icon": "ability_mount_blackdirewolf"
           },
           {
-            "spellid": "171828",
-            "itemId": "116771",
-            "icon": "inv_helm_suncrown_d_01"
-          },
-          {
             "spellid": "179478",
             "itemId": "121815",
             "icon": "ability_mount_fireravengodmountpurple"
@@ -1493,6 +1488,17 @@
           }
         ],
         "id": "980c3195"
+      },
+      {
+        "name": "World Boss",
+        "id": "d5dd41b9",
+        "items": [
+          {
+            "spellid": "171828",
+            "itemId": "116771",
+            "icon": "inv_helm_suncrown_d_01"
+          }
+        ]
       },
       {
         "name": "Raid Drop",
@@ -1780,29 +1786,9 @@
         "name": "Rare Spawn",
         "items": [
           {
-            "spellid": "127158",
-            "itemId": "87771",
-            "icon": "inv_pandarenserpentgodmount_black"
-          },
-          {
-            "spellid": "130965",
-            "itemId": "89783",
-            "icon": "inv_mushanbeastmount"
-          },
-          {
             "spellid": "132036",
             "itemId": "90655",
             "icon": "inv_pandarenserpentmount_lightning"
-          },
-          {
-            "spellid": "139442",
-            "itemId": "95057",
-            "icon": "inv_pandarenserpentmount_lightning_blue"
-          },
-          {
-            "spellid": "138423",
-            "itemId": "94228",
-            "icon": "ability_mount_triceratopsmount_blue"
           },
           {
             "spellid": "138425",
@@ -1826,6 +1812,32 @@
           }
         ],
         "id": "1e73598b"
+      },
+      {
+        "name": "World Boss",
+        "id": "a76b7e37",
+        "items": [
+          {
+            "spellid": "138423",
+            "itemId": "94228",
+            "icon": "ability_mount_triceratopsmount_blue"
+          },
+          {
+            "spellid": "127158",
+            "itemId": "87771",
+            "icon": "inv_pandarenserpentgodmount_black"
+          },
+          {
+            "spellid": "130965",
+            "itemId": "89783",
+            "icon": "inv_mushanbeastmount"
+          },
+          {
+            "spellid": "139442",
+            "itemId": "95057",
+            "icon": "inv_pandarenserpentmount_lightning_blue"
+          }
+        ]
       },
       {
         "name": "Reputation",
