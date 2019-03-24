@@ -39732,7 +39732,8 @@
               "name": "Ratings"
             },
             {
-              "id": "b1e0e831",
+              "name": "Rated Arena",
+              "id": "e0b1647d",
               "items": [
                 {
                   "icon": "achievement_featsofstrength_gladiator_01",
@@ -39795,84 +39796,10 @@
                   "title": "Cataclysmic Gladiator"
                 },
                 {
-                  "icon": "achievement_pvp_a_a",
-                  "id": 5344,
-                  "points": 0,
-                  "side": "A",
-                  "title": "Hero of the Alliance: Vicious"
-                },
-                {
-                  "icon": "achievement_pvp_h_h",
-                  "id": 5358,
-                  "points": 0,
-                  "side": "H",
-                  "title": "Hero of the Horde: Vicious"
-                },
-                {
-                  "icon": "achievement_pvp_h_h",
-                  "id": 6317,
-                  "points": 0,
-                  "side": "H",
-                  "title": "Hero of the Horde: Ruthless"
-                },
-                {
-                  "icon": "achievement_pvp_h_h",
-                  "id": 6940,
-                  "points": 0,
-                  "side": "H",
-                  "title": "Hero of the Horde: Cataclysmic"
-                },
-                {
-                  "icon": "inv_spear_05",
-                  "id": 3618,
-                  "points": 0,
-                  "title": "Murkimus the Gladiator"
-                },
-                {
-                  "icon": "achievement_pvp_a_a",
-                  "id": 6316,
-                  "points": 0,
-                  "side": "A",
-                  "title": "Hero of the Alliance: Ruthless"
-                },
-                {
-                  "icon": "achievement_pvp_a_a",
-                  "id": 6939,
-                  "points": 0,
-                  "side": "A",
-                  "title": "Hero of the Alliance: Cataclysmic"
-                },
-                {
                   "icon": "achievement_featsofstrength_gladiator_10",
                   "id": 8214,
                   "points": 0,
                   "title": "Malevolent Gladiator"
-                },
-                {
-                  "icon": "achievement_pvp_a_a",
-                  "id": 8243,
-                  "points": 0,
-                  "side": "A",
-                  "title": "Hero of the Alliance: Malevolent"
-                },
-                {
-                  "icon": "achievement_pvp_h_h",
-                  "id": 8244,
-                  "points": 0,
-                  "side": "H",
-                  "title": "Hero of the Horde: Malevolent"
-                },
-                {
-                  "icon": "inv_helmet_plate_pvpwarrior_e_01",
-                  "id": 8392,
-                  "points": 0,
-                  "title": "Tournament Glory 2013"
-                },
-                {
-                  "icon": "inv_spear_06",
-                  "id": 8391,
-                  "points": 0,
-                  "title": "Tournament Participation 2013"
                 },
                 {
                   "icon": "achievement_featsofstrength_gladiator_01",
@@ -39915,48 +39842,6 @@
                   "id": 8643,
                   "points": 0,
                   "title": "Grievous Gladiator: Season 14"
-                },
-                {
-                  "icon": "achievement_pvp_a_a",
-                  "id": 8654,
-                  "points": 0,
-                  "side": "A",
-                  "title": "Hero of the Alliance: Grievous"
-                },
-                {
-                  "icon": "achievement_pvp_a_a",
-                  "id": 8658,
-                  "points": 0,
-                  "side": "A",
-                  "title": "Hero of the Alliance: Prideful"
-                },
-                {
-                  "icon": "achievement_pvp_a_a",
-                  "id": 8652,
-                  "points": 0,
-                  "side": "A",
-                  "title": "Hero of the Alliance: Tyrannical"
-                },
-                {
-                  "icon": "achievement_pvp_h_h",
-                  "id": 8657,
-                  "points": 0,
-                  "side": "H",
-                  "title": "Hero of the Horde: Grievous"
-                },
-                {
-                  "icon": "achievement_pvp_h_h",
-                  "id": 8659,
-                  "points": 0,
-                  "side": "H",
-                  "title": "Hero of the Horde: Prideful"
-                },
-                {
-                  "icon": "achievement_pvp_h_h",
-                  "id": 8653,
-                  "points": 0,
-                  "side": "H",
-                  "title": "Hero of the Horde: Tyrannical"
                 },
                 {
                   "icon": "achievement_featsofstrength_gladiator_01",
@@ -40065,6 +39950,409 @@
                   "id": 9232,
                   "points": 0,
                   "title": "Primal Gladiator: Warlords Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_06",
+                  "id": 9241,
+                  "points": 0,
+                  "title": "Rival: Warlords Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_08",
+                  "id": 11017,
+                  "points": 0,
+                  "title": "Challenger: Legion Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_04",
+                  "id": 11028,
+                  "points": 0,
+                  "title": "Challenger: Legion Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 11015,
+                  "points": 0,
+                  "title": "Duelist: Legion Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_04",
+                  "id": 11026,
+                  "points": 0,
+                  "title": "Duelist: Legion Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_04",
+                  "id": 11014,
+                  "points": 0,
+                  "title": "Fearless Gladiator: Legion Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_08",
+                  "id": 11011,
+                  "points": 0,
+                  "title": "Gladiator: Legion Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_04",
+                  "id": 11013,
+                  "points": 0,
+                  "title": "Gladiator: Legion Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 11016,
+                  "points": 0,
+                  "title": "Rival: Legion Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_04",
+                  "id": 11027,
+                  "points": 0,
+                  "title": "Rival: Legion Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_08",
+                  "id": 11012,
+                  "points": 0,
+                  "title": "Vindictive Gladiator: Legion Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 11039,
+                  "points": 0,
+                  "title": "Challenger: Legion Season 3"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 11037,
+                  "points": 0,
+                  "title": "Cruel Gladiator: Legion Season 3"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 11041,
+                  "points": 0,
+                  "title": "Duelist: Legion Season 3"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 11038,
+                  "points": 0,
+                  "title": "Gladiator: Legion Season 3"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 11040,
+                  "points": 0,
+                  "title": "Rival: Legion Season 3"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 11058,
+                  "points": 0,
+                  "title": "Duelist: Legion Season 4"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 11060,
+                  "points": 0,
+                  "title": "Challenger: Legion Season 4"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 11059,
+                  "points": 0,
+                  "title": "Rival: Legion Season 4"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 11062,
+                  "points": 0,
+                  "title": "Ferocious Gladiator: Legion Season 4"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 11061,
+                  "points": 0,
+                  "title": "Gladiator: Legion Season 4"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 12010,
+                  "points": 0,
+                  "title": "Fierce Gladiator: Legion Season 5"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 12045,
+                  "points": 0,
+                  "title": "Gladiator: Legion Season 5"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 12036,
+                  "points": 0,
+                  "title": "Challenger: Legion Season 5"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 12035,
+                  "points": 0,
+                  "title": "Rival: Legion Season 5"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 12034,
+                  "points": 0,
+                  "title": "Duelist: Legion Season 5"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 12134,
+                  "points": 0,
+                  "title": "Dominant Gladiator: Legion Season 6"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 12185,
+                  "points": 0,
+                  "title": "Demonic Gladiator: Legion Season 7"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 12167,
+                  "points": 0,
+                  "title": "Gladiator: Legion Season 6"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 12168,
+                  "points": 0,
+                  "title": "Gladiator: Legion Season 7"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 12169,
+                  "points": 0,
+                  "title": "Challenger: Legion Season 6"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 12187,
+                  "points": 0,
+                  "title": "Challenger: Legion Season 7"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 12170,
+                  "points": 0,
+                  "title": "Rival: Legion Season 6"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 12188,
+                  "points": 0,
+                  "title": "Rival: Legion Season 7"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 12171,
+                  "points": 0,
+                  "title": "Duelist: Legion Season 6"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 12186,
+                  "points": 0,
+                  "title": "Duelist: Legion Season 7"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13465,
+                  "points": 0,
+                  "title": "Elite: Battle for Azeroth Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 12945,
+                  "points": 0,
+                  "title": "Dread Gladiator: Battle for Azeroth Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 12959,
+                  "points": 0,
+                  "title": "Challenger: Battle for Azeroth Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 12960,
+                  "points": 0,
+                  "title": "Rival: Battle for Azeroth Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 12961,
+                  "points": 0,
+                  "title": "Gladiator: Battle for Azeroth Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 12962,
+                  "points": 0,
+                  "title": "Duelist: Battle for Azeroth Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13199,
+                  "points": 0,
+                  "title": "Combatant: Battle for Azeroth Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13451,
+                  "points": 0,
+                  "title": "Elite: Battle for Azeroth Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13200,
+                  "points": 0,
+                  "title": "Sinister Gladiator: Battle for Azeroth Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13203,
+                  "points": 0,
+                  "title": "Challenger: Battle for Azeroth Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13205,
+                  "points": 0,
+                  "title": "Rival: Battle for Azeroth Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13204,
+                  "points": 0,
+                  "title": "Combatant: Battle for Azeroth Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13209,
+                  "points": 0,
+                  "title": "Duelist: Battle for Azeroth Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13212,
+                  "points": 0,
+                  "title": "Gladiator: Battle for Azeroth Season 2"
+                }
+              ]
+            },
+            {
+              "id": "b1e0e831",
+              "items": [
+                {
+                  "icon": "achievement_pvp_a_a",
+                  "id": 5344,
+                  "points": 0,
+                  "side": "A",
+                  "title": "Hero of the Alliance: Vicious"
+                },
+                {
+                  "icon": "achievement_pvp_h_h",
+                  "id": 5358,
+                  "points": 0,
+                  "side": "H",
+                  "title": "Hero of the Horde: Vicious"
+                },
+                {
+                  "icon": "achievement_pvp_h_h",
+                  "id": 6317,
+                  "points": 0,
+                  "side": "H",
+                  "title": "Hero of the Horde: Ruthless"
+                },
+                {
+                  "icon": "achievement_pvp_h_h",
+                  "id": 6940,
+                  "points": 0,
+                  "side": "H",
+                  "title": "Hero of the Horde: Cataclysmic"
+                },
+                {
+                  "icon": "achievement_pvp_a_a",
+                  "id": 6316,
+                  "points": 0,
+                  "side": "A",
+                  "title": "Hero of the Alliance: Ruthless"
+                },
+                {
+                  "icon": "achievement_pvp_a_a",
+                  "id": 6939,
+                  "points": 0,
+                  "side": "A",
+                  "title": "Hero of the Alliance: Cataclysmic"
+                },
+                {
+                  "icon": "achievement_pvp_a_a",
+                  "id": 8243,
+                  "points": 0,
+                  "side": "A",
+                  "title": "Hero of the Alliance: Malevolent"
+                },
+                {
+                  "icon": "achievement_pvp_h_h",
+                  "id": 8244,
+                  "points": 0,
+                  "side": "H",
+                  "title": "Hero of the Horde: Malevolent"
+                },
+                {
+                  "icon": "achievement_pvp_a_a",
+                  "id": 8654,
+                  "points": 0,
+                  "side": "A",
+                  "title": "Hero of the Alliance: Grievous"
+                },
+                {
+                  "icon": "achievement_pvp_a_a",
+                  "id": 8658,
+                  "points": 0,
+                  "side": "A",
+                  "title": "Hero of the Alliance: Prideful"
+                },
+                {
+                  "icon": "achievement_pvp_a_a",
+                  "id": 8652,
+                  "points": 0,
+                  "side": "A",
+                  "title": "Hero of the Alliance: Tyrannical"
+                },
+                {
+                  "icon": "achievement_pvp_h_h",
+                  "id": 8657,
+                  "points": 0,
+                  "side": "H",
+                  "title": "Hero of the Horde: Grievous"
+                },
+                {
+                  "icon": "achievement_pvp_h_h",
+                  "id": 8659,
+                  "points": 0,
+                  "side": "H",
+                  "title": "Hero of the Horde: Prideful"
+                },
+                {
+                  "icon": "achievement_pvp_h_h",
+                  "id": 8653,
+                  "points": 0,
+                  "side": "H",
+                  "title": "Hero of the Horde: Tyrannical"
                 },
                 {
                   "icon": "achievement_pvp_a_a",
@@ -40235,24 +40523,6 @@
                   "title": "Hero of the Horde: Primal"
                 },
                 {
-                  "icon": "achievement_featsofstrength_gladiator_06",
-                  "id": 9241,
-                  "points": 0,
-                  "title": "Rival: Warlords Season 1"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_08",
-                  "id": 11017,
-                  "points": 0,
-                  "title": "Challenger: Legion Season 1"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_04",
-                  "id": 11028,
-                  "points": 0,
-                  "title": "Challenger: Legion Season 2"
-                },
-                {
                   "icon": "achievement_pvp_o_a",
                   "id": 11022,
                   "points": 0,
@@ -40279,36 +40549,6 @@
                   "points": 0,
                   "side": "H",
                   "title": "Defender of the Horde: Legion Season 2"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 11015,
-                  "points": 0,
-                  "title": "Duelist: Legion Season 1"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_04",
-                  "id": 11026,
-                  "points": 0,
-                  "title": "Duelist: Legion Season 2"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_04",
-                  "id": 11014,
-                  "points": 0,
-                  "title": "Fearless Gladiator: Legion Season 2"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_08",
-                  "id": 11011,
-                  "points": 0,
-                  "title": "Gladiator: Legion Season 1"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_04",
-                  "id": 11013,
-                  "points": 0,
-                  "title": "Gladiator: Legion Season 2"
                 },
                 {
                   "icon": "achievement_pvp_p_a",
@@ -40367,18 +40607,6 @@
                   "title": "Hero of the Horde: Vindictive"
                 },
                 {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 11016,
-                  "points": 0,
-                  "title": "Rival: Legion Season 1"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_04",
-                  "id": 11027,
-                  "points": 0,
-                  "title": "Rival: Legion Season 2"
-                },
-                {
                   "icon": "achievement_pvp_g_a",
                   "id": 11024,
                   "points": 0,
@@ -40391,24 +40619,6 @@
                   "points": 0,
                   "side": "H",
                   "title": "Soldier of the Horde: Legion Season 1"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_08",
-                  "id": 11012,
-                  "points": 0,
-                  "title": "Vindictive Gladiator: Legion Season 1"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 11039,
-                  "points": 0,
-                  "title": "Challenger: Legion Season 3"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 11037,
-                  "points": 0,
-                  "title": "Cruel Gladiator: Legion Season 3"
                 },
                 {
                   "icon": "achievement_pvp_o_a",
@@ -40425,18 +40635,6 @@
                   "title": "Defender of the Horde: Legion Season 3"
                 },
                 {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 11041,
-                  "points": 0,
-                  "title": "Duelist: Legion Season 3"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 11038,
-                  "points": 0,
-                  "title": "Gladiator: Legion Season 3"
-                },
-                {
                   "icon": "achievement_pvp_a_a",
                   "id": 11043,
                   "points": 0,
@@ -40449,12 +40647,6 @@
                   "points": 0,
                   "side": "H",
                   "title": "Hero of the Horde: Cruel"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 11040,
-                  "points": 0,
-                  "title": "Rival: Legion Season 3"
                 },
                 {
                   "icon": "achievement_pvp_g_a",
@@ -40483,12 +40675,6 @@
                   "points": 0,
                   "side": "H",
                   "title": "Defender of the Horde: Legion Season 4"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 11058,
-                  "points": 0,
-                  "title": "Duelist: Legion Season 4"
                 },
                 {
                   "icon": "achievement_pvp_p_a",
@@ -40561,60 +40747,6 @@
                   "title": "Soldier of the Horde: Legion Season 3"
                 },
                 {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 11060,
-                  "points": 0,
-                  "title": "Challenger: Legion Season 4"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 11059,
-                  "points": 0,
-                  "title": "Rival: Legion Season 4"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 11062,
-                  "points": 0,
-                  "title": "Ferocious Gladiator: Legion Season 4"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 11061,
-                  "points": 0,
-                  "title": "Gladiator: Legion Season 4"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 12010,
-                  "points": 0,
-                  "title": "Fierce Gladiator: Legion Season 5"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 12045,
-                  "points": 0,
-                  "title": "Gladiator: Legion Season 5"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 12036,
-                  "points": 0,
-                  "title": "Challenger: Legion Season 5"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 12035,
-                  "points": 0,
-                  "title": "Rival: Legion Season 5"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 12034,
-                  "points": 0,
-                  "title": "Duelist: Legion Season 5"
-                },
-                {
                   "icon": "achievement_pvp_h_h",
                   "id": 12041,
                   "points": 0,
@@ -40669,66 +40801,6 @@
                   "points": 0,
                   "side": "A",
                   "title": "Soldier of the Alliance: Legion Season 5"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 12134,
-                  "points": 0,
-                  "title": "Dominant Gladiator: Legion Season 6"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 12185,
-                  "points": 0,
-                  "title": "Demonic Gladiator: Legion Season 7"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 12167,
-                  "points": 0,
-                  "title": "Gladiator: Legion Season 6"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 12168,
-                  "points": 0,
-                  "title": "Gladiator: Legion Season 7"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 12169,
-                  "points": 0,
-                  "title": "Challenger: Legion Season 6"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 12187,
-                  "points": 0,
-                  "title": "Challenger: Legion Season 7"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 12170,
-                  "points": 0,
-                  "title": "Rival: Legion Season 6"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 12188,
-                  "points": 0,
-                  "title": "Rival: Legion Season 7"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 12171,
-                  "points": 0,
-                  "title": "Duelist: Legion Season 6"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 12186,
-                  "points": 0,
-                  "title": "Duelist: Legion Season 7"
                 },
                 {
                   "icon": "achievement_pvp_h_h",
@@ -40843,42 +40915,6 @@
                   "title": "Soldier of the Alliance: Legion Season 7"
                 },
                 {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 13465,
-                  "points": 0,
-                  "title": "Elite: Battle for Azeroth Season 1"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 12945,
-                  "points": 0,
-                  "title": "Dread Gladiator: Battle for Azeroth Season 1"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 12959,
-                  "points": 0,
-                  "title": "Challenger: Battle for Azeroth Season 1"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 12960,
-                  "points": 0,
-                  "title": "Rival: Battle for Azeroth Season 1"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 12961,
-                  "points": 0,
-                  "title": "Gladiator: Battle for Azeroth Season 1"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 12962,
-                  "points": 0,
-                  "title": "Duelist: Battle for Azeroth Season 1"
-                },
-                {
                   "icon": "achievement_pvp_a_a",
                   "id": 12963,
                   "points": 0,
@@ -40893,48 +40929,6 @@
                   "title": "Hero of the Horde: Dread"
                 },
                 {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 13199,
-                  "points": 0,
-                  "title": "Combatant: Battle for Azeroth Season 1"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 13451,
-                  "points": 0,
-                  "title": "Elite: Battle for Azeroth Season 2"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 13200,
-                  "points": 0,
-                  "title": "Sinister Gladiator: Battle for Azeroth Season 2"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 13203,
-                  "points": 0,
-                  "title": "Challenger: Battle for Azeroth Season 2"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 13205,
-                  "points": 0,
-                  "title": "Rival: Battle for Azeroth Season 2"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 13204,
-                  "points": 0,
-                  "title": "Combatant: Battle for Azeroth Season 2"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 13209,
-                  "points": 0,
-                  "title": "Duelist: Battle for Azeroth Season 2"
-                },
-                {
                   "icon": "achievement_pvp_a_a",
                   "id": 13210,
                   "points": 0,
@@ -40947,15 +40941,33 @@
                   "points": 0,
                   "side": "H",
                   "title": "Hero of the Horde: Sinister"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 13212,
-                  "points": 0,
-                  "title": "Gladiator: Battle for Azeroth Season 2"
                 }
               ],
-              "name": "PVP"
+              "name": "Rated Battleground"
+            },
+            {
+              "name": "Tournaments",
+              "id": "5da56702",
+              "items": [
+                {
+                  "icon": "inv_spear_05",
+                  "id": 3618,
+                  "points": 0,
+                  "title": "Murkimus the Gladiator"
+                },
+                {
+                  "icon": "inv_spear_06",
+                  "id": 8391,
+                  "points": 0,
+                  "title": "Tournament Participation 2013"
+                },
+                {
+                  "icon": "inv_helmet_plate_pvpwarrior_e_01",
+                  "id": 8392,
+                  "points": 0,
+                  "title": "Tournament Glory 2013"
+                }
+              ]
             },
             {
               "id": "bf90653f",
