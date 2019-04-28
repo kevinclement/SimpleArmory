@@ -379,6 +379,16 @@ body {
   overflow-y: auto;
 }
 
+.bug-footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  text-align: right;
+  background-color: white;
+  opacity: 0.8;
+  border: 1px solid #eee;
+}
+
 /* Footer */
 .footer {
   display:none;
