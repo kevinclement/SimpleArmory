@@ -34,6 +34,11 @@
             "icon": "inv_misc_archaeology_vrykuldrinkinghorn",
             "itemId": 166247,
             "name": "Citizens Brigade Whistle"
+          },
+          {
+            "icon": "inv_elemental_primal_water",
+            "itemId": 168016,
+            "name": "Hyper-Compressed Ocean"
           }
         ],
         "name": "Achievement"
@@ -65,6 +70,11 @@
             "icon": "inv_pet_mouse",
             "itemId": "163704",
             "name": "Tiny Mechanical Mouse"
+          },
+          {
+            "icon": "inv_misc_cat_trinket07",
+            "itemId": 170204,
+            "name": "Symbol of Gral"
           }
         ],
         "name": "Vendor"
@@ -97,6 +107,16 @@
             "icon": "inv_helm_cloth_eyeballhat_b_01",
             "itemId": 168123,
             "name": "Twitching Eyeball"
+          },
+          {
+            "icon": "inv_heartofazeroth",
+            "itemId": 169768,
+            "name": "Heart of a Champion"
+          },
+          {
+            "icon": "inv_misc_enggizmos_21",
+            "itemId": 169796,
+            "name": "Azeroth Mini Collection: Mechagon"
           }
         ],
         "name": "Quest"
@@ -133,6 +153,12 @@
             "obtainSide": "H"
           },
           {
+            "icon": "inv_inscription_80_scroll",
+            "itemId": 165021,
+            "name": "Words of Akunda",
+            "obtainSide": "H"
+          },
+          {
             "icon": "inv_misc_head_gnoll_01",
             "itemId": "163201",
             "name": "Gnoll Targetting Barrel",
@@ -155,6 +181,11 @@
             "itemId": 163463,
             "name": "Dead Ringer",
             "obtainSide": "A"
+          },
+          {
+            "icon": "inv_faction_rustbolt",
+            "itemId": 169108,
+            "name": "Rustbolt Banner"
           }
         ],
         "name": "Reputation"
@@ -188,9 +219,61 @@
             "itemId": "163603",
             "name": "Lucille's Handkerchief",
             "obtainSide": "A"
+          },
+          {
+            "icon": "inv_misc_2h_babynagafork_a_01",
+            "itemId": 170198,
+            "name": "Eternal Palace Dining Set"
           }
         ],
         "name": "Treasure"
+      },
+      {
+        "name": "Rare",
+        "id": "e023ca9d",
+        "items": [
+          {
+            "icon": "inv_misc_sawblade_01",
+            "itemId": 167931,
+            "name": "Mechagonian Sawblades"
+          },
+          {
+            "icon": "inv_conchshell",
+            "itemId": 168824,
+            "name": "Ocean Simulator"
+          },
+          {
+            "icon": "inv_misc_scales_dragonpaleviolet01",
+            "itemId": 170187,
+            "name": "Shadescale"
+          },
+          {
+            "icon": "inv_misc_rune_13",
+            "itemId": 170196,
+            "name": "Shirakess Warning Sign"
+          },
+          {
+            "icon": "inv_misc_enggizmos_08",
+            "itemId": 169347,
+            "name": "Judgment of Mechagon"
+          }
+        ]
+      },
+      {
+        "name": "World Drop",
+        "id": "0d4e8ce6",
+        "items": [
+          {
+            "icon": "inv_shield_1h_naga_c_01",
+            "itemId": 170476,
+            "name": "Underlight Sealamp"
+          },
+          {
+            "icon": "inv_mace_1h_naga_a_01",
+            "itemId": 170199,
+            "name": "Zanj'ir Weapon Rack"
+          }
+        ]
       },
       {
         "id": "1b9e3d61",
@@ -243,6 +326,47 @@
           }
         ],
         "name": "Dubloons"
+      },
+      {
+        "name": "Nazjatar PvP",
+        "id": "85aa933a",
+        "items": [
+          {
+            "icon": "achievement_bg_3flagcap_nodeaths",
+            "itemId": 169276,
+            "side": "H",
+            "name": "Horde War Banner"
+          },
+          {
+            "icon": "achievement_general_hordeslayer",
+            "itemId": 169277,
+            "side": "H",
+            "name": "Horde War Standard"
+          },
+          {
+            "icon": "achievement_bg_3flagcap_nodeaths",
+            "itemId": 169275,
+            "side": "A",
+            "name": "Alliance War Banner"
+          },
+          {
+            "icon": "inv_bannerpvp_02",
+            "itemId": 169278,
+            "side": "A",
+            "name": "Alliance War Standard"
+          }
+        ]
+      },
+      {
+        "name": "Junkyard Tinkering",
+        "id": "7adbb5d6",
+        "items": [
+          {
+            "icon": "inv_holiday_hearthstonelunarfestival",
+            "itemId": 168907,
+            "name": "Holographic Digitalization Hearthstone"
+          }
+        ]
       },
       {
         "id": "f0b2c441",
@@ -401,6 +525,16 @@
             "itemId": 166702,
             "name": "Proudmoore Music Box",
             "obtainSide": "A"
+          },
+          {
+            "icon": "inv_misc_fish_74",
+            "itemId": 170203,
+            "name": "Flopping Fish"
+          },
+          {
+            "icon": "inv_misc_shell_04",
+            "itemId": 170469,
+            "name": "Memento of the Deeps"
           }
         ],
         "name": "Paragon Reputation"
@@ -1191,6 +1325,23 @@
             "icon": "inv_jewelry_necklace_109",
             "itemId": "122283",
             "name": "Rukhmar's Sacred Memory"
+          },
+          {
+            "icon": "inv_misc_flute_01",
+            "itemId": 116396,
+            "obtainSide": "A",
+            "name": "LeBlanc's Recorder"
+          },
+          {
+            "icon": "inv_misc_flute_01",
+            "itemId": 115505,
+            "obtainSide": "H",
+            "name": "LeBlanc's Recorder"
+          },
+          {
+            "icon": "trade_archaeology_delicatemusicbox",
+            "itemId": 115501,
+            "name": "Kowalski's Music Box"
           }
         ],
         "name": "Reputation"
@@ -2232,6 +2383,16 @@
             "icon": "inv_wand_01",
             "itemId": "66888",
             "name": "Stave of Fur and Claw"
+          },
+          {
+            "icon": "inv_jewelry_stormpiketrinket_04",
+            "itemId": 169297,
+            "name": "Stormpike Insignia"
+          },
+          {
+            "icon": "inv_jewelry_frostwolftrinket_05",
+            "itemId": 169298,
+            "name": "Frostwolf Insignia"
           }
         ],
         "name": "Reputation"
@@ -2915,7 +3076,6 @@
         "name": "Love is in the Air"
       },
       {
-        "name": "Noblegarden",
         "id": "d19ee5ca",
         "items": [
           {
@@ -2923,7 +3083,8 @@
             "itemId": 165802,
             "name": "Noble Gardener's Hearthstone"
           }
-        ]
+        ],
+        "name": "Noblegarden"
       },
       {
         "id": "39f1544a",
@@ -3009,6 +3170,11 @@
             "icon": "inv_holiday_hearthstonebrewfest",
             "itemId": 166747,
             "name": "Brewfest Reveler's Hearthstone"
+          },
+          {
+            "icon": "inv_holiday_beerfest_beerfesttrophy",
+            "itemId": 169865,
+            "name": "Brewfest Chowdown Trophy"
           }
         ],
         "name": "Brewfest"
@@ -3349,6 +3515,11 @@
         "id": "d7c0bef2",
         "items": [
           {
+            "icon": "inv_alchemy_80_potion02yellow",
+            "itemId": 170380,
+            "name": "Jar of Sunwarmed Sand"
+          },
+          {
             "icon": "spell_fire_felflamering",
             "itemId": "151184",
             "name": "Verdant Throwing Sphere"
@@ -3580,6 +3751,11 @@
             "icon": "inv_misc_steel_hitching_post2",
             "itemId": "112324",
             "name": "Nightmarish Hitching Post"
+          },
+          {
+            "icon": "inv_encrypted20",
+            "itemId": 166779,
+            "name": "Transmorpher Beacon"
           }
         ],
         "name": "Blizzard Store"
