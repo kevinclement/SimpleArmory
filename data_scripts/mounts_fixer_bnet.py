@@ -38,6 +38,7 @@ IGNORE_MOUNT_SPELLIDS = [
     130678,  # Unruly Behemoth https://www.wowhead.com/item=89682
     130730,  # Kafa-Crazed Goat https://www.wowhead.com/item=89697
     130895,  # Rampaging Yak https://www.wowhead.com/item=89770
+    170178,  # Wild Snapdragon https://www.wowhead.com/item=170178
 
     # Toy mounts
     254545,  # Baarut the Brisk https://www.wowhead.com/item=153193

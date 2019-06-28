@@ -135,10 +135,28 @@
             "spellid": 295387
           },
           {
+            "icon": "inv_mechanicalparrotmount",
+            "itemId": 169162,
+            "name": "Wonderwing 2.0",
+            "spellid": 290328
+          },
+          {
             "itemId": "163577",
             "name": "Conquerer's Scythemaw",
             "icon": "inv_trilobitemount_green",
             "spellid": "279454"
+          },
+          {
+            "icon": "inv_crabmount",
+            "itemId": 169194,
+            "name": "Snapback Scuttler",
+            "spellid": 294039
+          },
+          {
+            "icon": "inv_mechacycle",
+            "itemId": 168329,
+            "name": "Mechacycle Model W",
+            "spellid": 296788
           },
           {
             "itemId": "161215",
@@ -157,6 +175,12 @@
             "itemId": 166539,
             "name": "Dazar'alor Windreaver",
             "spellid": 289101
+          },
+          {
+            "icon": "inv_sharkraymount_4",
+            "itemId": 167171,
+            "name": "Azshari Bloatray",
+            "spellid": 292419
           }
         ]
       },
@@ -193,6 +217,24 @@
             "name": "Reins of the Mighty Caravan Brutosaur",
             "icon": "inv_brontosaurusmount",
             "spellid": "264058"
+          },
+          {
+            "icon": "ability_mount_seahorse",
+            "itemId": 169203,
+            "name": "Inkscale Deepseeker",
+            "spellid": 300151
+          },
+          {
+            "icon": "ability_mount_seahorse",
+            "itemId": 169202,
+            "name": "Crimson Tidestallion",
+            "spellid": 300153
+          },
+          {
+            "icon": "inv_pet_mechanicaltigercub",
+            "itemId": 167751,
+            "name": "X-995 Mechanocat",
+            "spellid": 294143
           }
         ]
       },
@@ -206,6 +248,30 @@
             "icon": "inv_pterrordax2mount_yellow",
             "side": "H",
             "name": "Kua'fon's Harness"
+          },
+          {
+            "icon": "creatureportrait_babyspider",
+            "itemId": 168827,
+            "name": "Scrapforged Mechaspider",
+            "spellid": 299159
+          },
+          {
+            "icon": "inv_snapdragonmount01",
+            "itemId": 169199,
+            "name": "Snapdragon Kelpstalker",
+            "spellid": 300146
+          },
+          {
+            "icon": "inv_triceratopsgreen",
+            "itemId": 168408,
+            "name": "Child of Torcali",
+            "spellid": 297560
+          },
+          {
+            "icon": "inv_snapdragonmount01",
+            "itemId": 169200,
+            "name": "Deepcoral Snapdragon",
+            "spellid": 300147
           }
         ]
       },
@@ -346,6 +412,36 @@
             "itemId": 166433,
             "name": "Frightened Kodo",
             "spellid": 288499
+          },
+          {
+            "icon": "ability_mount_seahorse",
+            "itemId": 169201,
+            "name": "Fabious",
+            "spellid": 300150
+          },
+          {
+            "icon": "inv_snapdragonmount01",
+            "itemId": 169198,
+            "name": "Royal Snapdragon",
+            "spellid": 294038
+          },
+          {
+            "icon": "inv_mechacycle",
+            "itemId": 168370,
+            "name": "Junkheap Drifter",
+            "spellid": 297157
+          },
+          {
+            "icon": "creatureportrait_babyspider",
+            "itemId": 168823,
+            "name": "Rusty Mechanocrawler",
+            "spellid": 291492
+          },
+          {
+            "icon": "inv_sharkraymount_4",
+            "itemId": 169163,
+            "name": "Silent Glider",
+            "spellid": 300149
           }
         ]
       },
@@ -399,43 +495,63 @@
             "itemId": "161879",
             "name": "Reins of the Proudmoore Sea Scout",
             "icon": "inv_misc_elitegryphonarmored",
-            "notObtainable": true,
+            "side": "A",
             "spellid": "275868"
           },
           {
             "itemId": "161909",
             "name": "Reins of the Stormsong Coastwatcher",
             "icon": "inv_misc_elitegryphonarmored",
-            "notObtainable": true,
+            "side": "A",
             "spellid": "275866"
           },
           {
             "itemId": "161908",
             "name": "Reins of the Dusky Waycrest Gryphon",
             "icon": "inv_misc_elitegryphonarmored",
-            "notObtainable": true,
+            "side": "A",
             "spellid": "275859"
           },
           {
             "itemId": "161666",
             "name": "Reins of the Armored Orange Pterrordax",
             "icon": "inv_pterrordax2mount_orange",
-            "notObtainable": true,
+            "side": "H",
             "spellid": "275838"
           },
           {
             "itemId": "161667",
             "name": "Reins of the Armored Albino Pterrordax",
             "icon": "inv_pterrordax2mount_white",
-            "notObtainable": true,
+            "side": "H",
             "spellid": "275840"
           },
           {
             "itemId": "161664",
             "name": "Reins of the Armored Ebony Pterrordax",
             "icon": "inv_pterrordax2mount_black",
-            "notObtainable": true,
+            "side": "H",
             "spellid": "244712"
+          },
+          {
+            "icon": "inv_sharkraymount_1",
+            "itemId": 167167,
+            "name": "Ankoan Waveray",
+            "side": "A",
+            "spellid": 292407
+          },
+          {
+            "icon": "inv_sharkraymount_2",
+            "itemId": 167170,
+            "name": "Unshackled Waveray",
+            "side": "H",
+            "spellid": 291538
+          },
+          {
+            "icon": "achievement_dungeon_mogulrazdunk",
+            "itemId": 168829,
+            "name": "Rustbolt Resistor",
+            "spellid": 299170
           }
         ]
       },
@@ -472,6 +588,18 @@
             "name": "Sharkbait's Favorite Crackers",
             "icon": "inv_misc_food_wheat_02",
             "spellid": "254813"
+          },
+          {
+            "icon": "creatureportrait_babyspider",
+            "itemId": 168826,
+            "name": "Mechagon Peacekeeper",
+            "spellid": 299158
+          },
+          {
+            "icon": "achievement_dungeon_mogulrazdunk",
+            "itemId": 168830,
+            "name": "Aerial Unit R-21/X",
+            "spellid": 290718
           }
         ]
       },
@@ -678,13 +806,6 @@
         "name": "Unknown",
         "id": "eba1d3de",
         "items": [
-          {
-            "itemId": "153594",
-            "spellid": "256123",
-            "icon": "inv_hovercraftmount",
-            "name": "Xiwyllag ATV",
-            "notObtainable": true
-          },
           {
             "icon": "inv_hyena2mount_dark",
             "itemId": 166417,
@@ -3459,6 +3580,12 @@
             "name": "Mecha-Mogul Mk2",
             "icon": "achievement_dungeon_mogulrazdunk",
             "spellid": "261437"
+          },
+          {
+            "itemId": "153594",
+            "spellid": "256123",
+            "icon": "inv_hovercraftmount",
+            "name": "Xiwyllag ATV"
           }
         ],
         "id": "5a9bbbf6"
