@@ -20,8 +20,8 @@ IGNORE_PETS_CREATUREIDS = [
 ]
 
 
-WOWDB_NPCS_PAGE = 'https://ptr.wowdb.com/npcs/{}'
-WOWDB_API_ITEM = 'https://ptr.wowdb.com/api/item/{}'
+WOWDB_NPCS_PAGE = 'https://www.wowdb.com/npcs/{}'
+WOWDB_API_ITEM = 'https://www.wowdb.com/api/item/{}'
 
 
 def changelog(*args, **kwargs):
