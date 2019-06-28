@@ -632,7 +632,6 @@
               "name": "Zones"
             },
             {
-              "name": "War Campaign",
               "id": "e1b3d52d",
               "items": [
                 {
@@ -710,17 +709,41 @@
                   "id": 13517,
                   "points": 20,
                   "title": "Two Sides to Every Tale"
+                },
+                {
+                  "icon": "inv_faction_unshackled",
+                  "id": 13709,
+                  "points": 10,
+                  "side": "H",
+                  "title": "Unfathomable"
+                },
+                {
+                  "icon": "inv_faction_akoan",
+                  "id": 13710,
+                  "points": 10,
+                  "side": "A",
+                  "title": "Sunken Ambitions"
+                },
+                {
+                  "icon": "inv_faction_rustbolt",
+                  "id": 13553,
+                  "points": 10,
+                  "side": "A",
+                  "title": "The Mechagonian Threat"
+                },
+                {
+                  "icon": "inv_faction_rustbolt",
+                  "id": 13700,
+                  "points": 10,
+                  "side": "H",
+                  "title": "The Mechagonian Threat"
                 }
-              ]
+              ],
+              "name": "War Campaign"
             },
             {
               "id": "ac6d870e",
               "items": [
-                {
-                  "icon": "inv_heartofazeroth",
-                  "id": 12918,
-                  "points": 10
-                },
                 {
                   "icon": "inv_staff_2h_jaina_d_01",
                   "id": 12997,
@@ -990,6 +1013,18 @@
               "name": "Nazmir"
             },
             {
+              "id": "bde78d93",
+              "items": [
+                {
+                  "icon": "ability_hunter_rapidregeneration",
+                  "id": 13790,
+                  "points": 5,
+                  "title": "Armed for Action"
+                }
+              ],
+              "name": "Mechagon"
+            },
+            {
               "id": "a0fb1ec2",
               "items": [
                 {
@@ -1052,7 +1087,6 @@
               "name": "Assaults"
             },
             {
-              "name": "World",
               "id": "d591e640",
               "items": [
                 {
@@ -1119,7 +1153,34 @@
                   "points": 10,
                   "title": "Master Calligrapher"
                 }
-              ]
+              ],
+              "name": "World"
+            },
+            {
+              "id": "8c2ebe9a",
+              "items": [
+                {
+                  "icon": "inv_pterrordax2mount_purple",
+                  "id": 13573,
+                  "points": 5,
+                  "side": "H",
+                  "title": "How to Ptrain Your Pterrordax"
+                },
+                {
+                  "icon": "inv_triceratopsgreen",
+                  "id": 13542,
+                  "points": 5,
+                  "side": "H",
+                  "title": "How to Train Your Direhorn"
+                },
+                {
+                  "icon": "inv_mechagonspidertank_silver",
+                  "id": 13791,
+                  "points": 10,
+                  "title": "Making the Mount"
+                }
+              ],
+              "name": "Mount"
             }
           ]
         },
@@ -4547,20 +4608,6 @@
               "items": [
                 {
                   "criteria": {
-                    "41137": "68504",
-                    "41308": "68500",
-                    "41309": "68504",
-                    "41310": "68503",
-                    "41491": "70667",
-                    "41493": "70667",
-                    "43123": "68506"
-                  },
-                  "icon": "inv_misc_map04",
-                  "id": 12989,
-                  "points": 25
-                },
-                {
-                  "criteria": {
                     "41799": "69137",
                     "41801": "69138",
                     "41802": "69139",
@@ -4666,6 +4713,38 @@
                   "icon": "inv_voldun",
                   "id": 12560,
                   "points": 10
+                },
+                {
+                  "icon": "inv_misc_map02",
+                  "id": 13712,
+                  "points": 10,
+                  "title": "Explore Nazjatar"
+                },
+                {
+                  "icon": "inv_misc_map08",
+                  "id": 13776,
+                  "points": 10,
+                  "title": "Explore Mechagon"
+                },
+                {
+                  "criteria": {
+                    "41137": "68504",
+                    "41308": "68500",
+                    "41309": "68504",
+                    "41310": "68503",
+                    "41491": "70667",
+                    "41493": "70667",
+                    "43123": "68506"
+                  },
+                  "icon": "inv_misc_map04",
+                  "id": 12989,
+                  "points": 25
+                },
+                {
+                  "icon": "inv_misc_map04",
+                  "id": 13250,
+                  "points": 25,
+                  "title": "Battle for Azeroth Pathfinder, Part Two"
                 }
               ],
               "name": "Area"
@@ -5282,6 +5361,352 @@
                 }
               ],
               "name": "Zandalar"
+            },
+            {
+              "id": "aa8b9a42",
+              "items": [
+                {
+                  "icon": "inv_staff_2h_deepjinyu_b_01",
+                  "id": 13745,
+                  "points": 5,
+                  "side": "A",
+                  "title": "Seasoned: Farseer Ori"
+                },
+                {
+                  "icon": "inv_staff_2h_deepjinyu_b_01",
+                  "id": 13755,
+                  "points": 5,
+                  "side": "A",
+                  "title": "Veteran: Farseer Ori"
+                },
+                {
+                  "icon": "inv_staff_2h_deepjinyu_b_01",
+                  "id": 13760,
+                  "points": 5,
+                  "side": "A",
+                  "title": "Battle-Scarred: Farseer Ori"
+                },
+                {
+                  "icon": "inv_misc_deepjinyumelee",
+                  "id": 13743,
+                  "points": 5,
+                  "side": "A",
+                  "title": "Seasoned: Hunter Akana"
+                },
+                {
+                  "icon": "inv_misc_deepjinyumelee",
+                  "id": 13753,
+                  "points": 5,
+                  "side": "A",
+                  "title": "Veteran: Hunter Akana"
+                },
+                {
+                  "icon": "inv_misc_deepjinyumelee",
+                  "id": 13758,
+                  "points": 5,
+                  "side": "A",
+                  "title": "Battle-Scarred: Hunter Akana"
+                },
+                {
+                  "icon": "inv_misc_deepjinyucaster",
+                  "id": 13744,
+                  "points": 5,
+                  "side": "A",
+                  "title": "Seasoned: Bladesman Inowari"
+                },
+                {
+                  "icon": "inv_misc_deepjinyucaster",
+                  "id": 13754,
+                  "points": 5,
+                  "side": "A",
+                  "title": "Veteran: Bladesman Inowari"
+                },
+                {
+                  "icon": "inv_misc_deepjinyucaster",
+                  "id": 13759,
+                  "points": 5,
+                  "side": "A",
+                  "title": "Battle-Scarred: Bladesman Inowari"
+                },
+                {
+                  "icon": "inv_gilgoblin_female",
+                  "id": 13746,
+                  "points": 5,
+                  "side": "H",
+                  "title": "Seasoned: Neri Sharpfin"
+                },
+                {
+                  "icon": "inv_gilgoblin_female",
+                  "id": 13749,
+                  "points": 5,
+                  "side": "H",
+                  "title": "Veteran: Neri Sharpfin"
+                },
+                {
+                  "icon": "inv_gilgoblin_female",
+                  "id": 13750,
+                  "points": 5,
+                  "side": "H",
+                  "title": "Battle-Scarred: Neri Sharpfin"
+                },
+                {
+                  "icon": "inv_misc_gilgoblin",
+                  "id": 13748,
+                  "points": 5,
+                  "side": "H",
+                  "title": "Seasoned: Vim Brineheart"
+                },
+                {
+                  "icon": "inv_misc_gilgoblin",
+                  "id": 13752,
+                  "points": 5,
+                  "side": "H",
+                  "title": "Veteran: Vim Brineheart"
+                },
+                {
+                  "icon": "inv_misc_gilgoblin",
+                  "id": 13757,
+                  "points": 5,
+                  "side": "H",
+                  "title": "Battle-Scarred: Vim Brineheart"
+                },
+                {
+                  "icon": "inv_conchshell",
+                  "id": 13747,
+                  "points": 5,
+                  "side": "H",
+                  "title": "Seasoned: Poen Gillbrack"
+                },
+                {
+                  "icon": "inv_conchshell",
+                  "id": 13751,
+                  "points": 5,
+                  "side": "H",
+                  "title": "Veteran: Poen Gillbrack"
+                },
+                {
+                  "icon": "inv_conchshell",
+                  "id": 13756,
+                  "points": 5,
+                  "side": "H",
+                  "title": "Battle-Scarred: Poen Gillbrack"
+                },
+                {
+                  "icon": "inv_sword_1h_naga_a_01",
+                  "id": 13645,
+                  "points": 10,
+                  "side": "H",
+                  "title": "Nautical Battlefield Training"
+                },
+                {
+                  "icon": "inv_sword_2h_deepjinyu_b_01",
+                  "id": 13704,
+                  "points": 10,
+                  "side": "A",
+                  "title": "Nautical Battlefield Training"
+                },
+                {
+                  "icon": "inv_sword_1h_naga_a_01",
+                  "id": 13761,
+                  "points": 10,
+                  "side": "H",
+                  "title": "Aqua Team Murder Force"
+                },
+                {
+                  "icon": "inv_sword_2h_deepjinyu_b_01",
+                  "id": 13762,
+                  "points": 10,
+                  "side": "A",
+                  "title": "Aqua Team Murder Force"
+                },
+                {
+                  "icon": "inv_misc_treasurechest01b",
+                  "id": 13549,
+                  "points": 10,
+                  "title": "Trove Tracker"
+                },
+                {
+                  "icon": "achievement_zone_vashjir",
+                  "id": 13635,
+                  "points": 10,
+                  "title": "Tour of the Depths"
+                },
+                {
+                  "icon": "ability_hunter_mastermarksman",
+                  "id": 13690,
+                  "points": 10,
+                  "title": "Nazjatarget Eliminated"
+                },
+                {
+                  "icon": "ability_demonhunter_bloodlet",
+                  "id": 13691,
+                  "points": 10,
+                  "title": "I Thought You Said They'd Be Rare?"
+                },
+                {
+                  "icon": "inv_misc_bag_34",
+                  "id": 13692,
+                  "points": 10,
+                  "title": "Give Me the Biggest Bag You've Got"
+                },
+                {
+                  "icon": "inv_artifact_tome02",
+                  "id": 13707,
+                  "points": 5,
+                  "title": "Mrrl's Secret Stash"
+                },
+                {
+                  "icon": "spell_nature_elementalprecision_1",
+                  "id": 13699,
+                  "points": 10,
+                  "title": "Periodic Destruction"
+                },
+                {
+                  "icon": "inv_gauntlets_15",
+                  "id": 13711,
+                  "points": 10,
+                  "title": "A Fistful of Manapearls"
+                },
+                {
+                  "icon": "inv_relics_runestone",
+                  "id": 13713,
+                  "points": 5,
+                  "title": "Nothing To Scry About"
+                },
+                {
+                  "icon": "inv_babymurloc3_red",
+                  "id": 13722,
+                  "points": 5,
+                  "title": "Terror of the Tadpoles"
+                },
+                {
+                  "icon": "ability_shawaterelemental_swirl",
+                  "id": 13763,
+                  "points": 10,
+                  "title": "Back to the Depths!"
+                },
+                {
+                  "icon": "ability_mage_potentspirit",
+                  "id": 13764,
+                  "points": 10,
+                  "title": "Puzzle Performer"
+                },
+                {
+                  "icon": "inv_tradeskill_cooking_feastofthewater",
+                  "id": 13765,
+                  "points": 10,
+                  "title": "Subaquatic Support"
+                },
+                {
+                  "icon": "trade_archaeology_catstatueemeraldeyes",
+                  "id": 13836,
+                  "points": 5,
+                  "title": "Feline Figurines Found"
+                },
+                {
+                  "icon": "inv_misc_nagafemale",
+                  "id": 13638,
+                  "points": 20,
+                  "title": "Undersea Usurper"
+                }
+              ],
+              "name": "Nazjatar"
+            },
+            {
+              "id": "b1b45d28",
+              "items": [
+                {
+                  "icon": "inv_mechagon_blueprints",
+                  "id": 13478,
+                  "points": 10,
+                  "title": "Junkyard Collector"
+                },
+                {
+                  "icon": "inv_mechagon_blueprints",
+                  "id": 13479,
+                  "points": 10,
+                  "title": "Junkyard Architect"
+                },
+                {
+                  "icon": "garrison_building_workshop",
+                  "id": 13473,
+                  "points": 10,
+                  "title": "Diversed Investments"
+                },
+                {
+                  "icon": "garrison_building_workshop",
+                  "id": 13474,
+                  "points": 10,
+                  "title": "Junkyard Machinist"
+                },
+                {
+                  "icon": "inv_mechagon_spareparts",
+                  "id": 13472,
+                  "points": 10,
+                  "title": "Deep Pockets"
+                },
+                {
+                  "icon": "inv_mechagon_spareparts",
+                  "id": 13482,
+                  "points": 10,
+                  "title": "Head Financier of Mechagon"
+                },
+                {
+                  "icon": "spell_mekkatorque_bot_redwrench",
+                  "id": 13475,
+                  "points": 10,
+                  "title": "Junkyard Scavenger"
+                },
+                {
+                  "icon": "spell_mekkatorque_bot_redwrench",
+                  "id": 13477,
+                  "points": 10,
+                  "title": "Junkyard Apprentice"
+                },
+                {
+                  "icon": "spell_mekkatorque_bot_redwrench",
+                  "id": 13476,
+                  "points": 10,
+                  "title": "Junkyard Tinkerer"
+                },
+                {
+                  "icon": "spell_mekkatorque_bot_redwrench",
+                  "id": 13555,
+                  "points": 10,
+                  "title": "Junkyard Tinkmaster"
+                },
+                {
+                  "icon": "inv_garrison_cargoship",
+                  "id": 13556,
+                  "points": 10,
+                  "title": "Outside Influences"
+                },
+                {
+                  "icon": "inv_misc_blizzcon09_graphicscard",
+                  "id": 13686,
+                  "points": 10,
+                  "title": "Junkyard Melomaniac"
+                },
+                {
+                  "icon": "ability_fiegndead",
+                  "id": 13470,
+                  "points": 10,
+                  "title": "Rest In Pistons"
+                },
+                {
+                  "icon": "creatureportrait_robot_doberman",
+                  "id": 13696,
+                  "points": 10,
+                  "title": "Scrappy's Best Friend"
+                },
+                {
+                  "icon": "inv_mechacycle",
+                  "id": 13541,
+                  "points": 20,
+                  "title": "Mecha-Done"
+                }
+              ],
+              "name": "Mechagon"
             }
           ]
         },
@@ -9785,6 +10210,30 @@
                 }
               ],
               "name": "Honor"
+            },
+            {
+              "id": "70219331",
+              "items": [
+                {
+                  "icon": "spell_holy_fistofjustice",
+                  "id": 13701,
+                  "points": 0,
+                  "title": "Battlefield Brawler"
+                },
+                {
+                  "icon": "inv_misc_map08",
+                  "id": 13702,
+                  "points": 0,
+                  "title": "Battlefield Tactician"
+                },
+                {
+                  "icon": "icon_treasuremap",
+                  "id": 13703,
+                  "points": 0,
+                  "title": "Battlefield Master"
+                }
+              ],
+              "name": "Battlefield"
             }
           ]
         },
@@ -10272,6 +10721,247 @@
                 }
               ],
               "name": ""
+            }
+          ]
+        },
+        {
+          "id": "6af057aa",
+          "name": "Ashran",
+          "subcats": [
+            {
+              "id": "b432c41c",
+              "items": [
+                {
+                  "criteria": {
+                    "25196": "37597",
+                    "27862": "43386"
+                  },
+                  "icon": "achievement_zone_ashran",
+                  "id": 9102,
+                  "points": 0,
+                  "title": "Ashran Victory"
+                },
+                {
+                  "criteria": {
+                    "25202": "37613",
+                    "25204": "37611",
+                    "25205": "37610",
+                    "25206": "37609",
+                    "25207": "37608",
+                    "25208": "37612",
+                    "25209": "37607"
+                  },
+                  "icon": "ability_hunter_snipershot",
+                  "id": 9104,
+                  "points": 0,
+                  "side": "A",
+                  "title": "Bounty Hunter"
+                },
+                {
+                  "criteria": {
+                    "25197": "37604",
+                    "25198": "37603",
+                    "25199": "37602",
+                    "25200": "37601",
+                    "25201": "37600",
+                    "25202": "37599",
+                    "25203": "37605"
+                  },
+                  "icon": "ability_hunter_snipershot",
+                  "id": 9103,
+                  "points": 0,
+                  "side": "H",
+                  "title": "Bounty Hunter"
+                },
+                {
+                  "icon": "ability_crown_of_the_heavens_icon",
+                  "id": 9222,
+                  "points": 0,
+                  "title": "Divide and Conquer"
+                },
+                {
+                  "icon": "creatureportrait_creature_iceblock",
+                  "id": 9228,
+                  "points": 0,
+                  "side": "A",
+                  "title": "Down Goes Van Rook"
+                },
+                {
+                  "icon": "inv_misc_coinbag_special",
+                  "id": 9218,
+                  "points": 0,
+                  "title": "Grand Theft, 1st Degree"
+                },
+                {
+                  "icon": "inv_misc_coinbag_special",
+                  "id": 9219,
+                  "points": 0,
+                  "title": "Grand Theft, 2nd Degree"
+                },
+                {
+                  "icon": "inv_misc_coinbag_special",
+                  "id": 9220,
+                  "points": 0,
+                  "title": "Grand Theft, 3rd Degree"
+                },
+                {
+                  "criteria": {
+                    "25843": "39072",
+                    "25844": "39073",
+                    "25845": "39074",
+                    "25846": "39075",
+                    "25847": "39076",
+                    "25848": "39077",
+                    "25849": "39078",
+                    "25850": "39079",
+                    "25851": "39080"
+                  },
+                  "icon": "ability_hunter_assassinate",
+                  "id": 9216,
+                  "points": 0,
+                  "title": "High-value Targets"
+                },
+                {
+                  "icon": "inv_misc_book_03",
+                  "id": 9106,
+                  "points": 0,
+                  "title": "Just for Me"
+                },
+                {
+                  "icon": "achievement_boss_highmaul_earthenfury",
+                  "id": 9408,
+                  "points": 0,
+                  "side": "A",
+                  "title": "Operation Counterattack"
+                },
+                {
+                  "icon": "inv_pet_ancientprotector",
+                  "id": 9217,
+                  "points": 0,
+                  "side": "H",
+                  "title": "Operation Counterattack"
+                },
+                {
+                  "criteria": {
+                    "25350": "39916",
+                    "26303": "39914",
+                    "26304": "39915",
+                    "26305": "39917",
+                    "26306": "39918",
+                    "26307": "39919",
+                    "26308": "39920",
+                    "26309": "39921",
+                    "26310": "39922",
+                    "26311": "39923",
+                    "26312": "39924",
+                    "26313": "39925",
+                    "26314": "39926"
+                  },
+                  "icon": "ability_hunter_rapidkilling",
+                  "id": 9225,
+                  "points": 0,
+                  "side": "A",
+                  "title": "Take Them Out"
+                },
+                {
+                  "criteria": {
+                    "26289": "39898",
+                    "26290": "39899",
+                    "26291": "39900",
+                    "26293": "39902",
+                    "26294": "39903",
+                    "26295": "39904",
+                    "26296": "39905",
+                    "26297": "39906",
+                    "26298": "39907",
+                    "26299": "39908",
+                    "26300": "39909",
+                    "26301": "39910"
+                  },
+                  "icon": "ability_hunter_rapidkilling",
+                  "id": 9224,
+                  "points": 0,
+                  "side": "H",
+                  "title": "Take Them Out"
+                },
+                {
+                  "icon": "achievement_reputation_ogre",
+                  "id": 9715,
+                  "points": 0,
+                  "side": "H",
+                  "title": "Thy Kingdom Come"
+                },
+                {
+                  "icon": "achievement_reputation_ogre",
+                  "id": 9714,
+                  "points": 0,
+                  "side": "A",
+                  "title": "Thy Kingdom Come"
+                },
+                {
+                  "criteria": {
+                    "25215": "37621",
+                    "25789": "37620",
+                    "25790": "38944",
+                    "25791": "38945"
+                  },
+                  "icon": "achievement_ashran_tourofduty",
+                  "id": 9105,
+                  "points": 0,
+                  "title": "Tour of Duty"
+                }
+              ],
+              "name": "Ashran"
+            },
+            {
+              "id": "9e539439",
+              "items": [
+                {
+                  "icon": "inv_tabard_a_77voljinsspear",
+                  "id": 9473,
+                  "points": 0,
+                  "side": "H",
+                  "title": "Vol'jin's Spear"
+                },
+                {
+                  "icon": "inv_tabard_a_78wrynnvanguard",
+                  "id": 9474,
+                  "points": 0,
+                  "side": "A",
+                  "title": "Wrynn's Vanguard"
+                }
+              ],
+              "name": "Ashran Reputation"
+            },
+            {
+              "id": "cb24c606",
+              "items": [
+                {
+                  "criteria": {
+                    "25447": "38207",
+                    "25448": "38208",
+                    "25449": "38209"
+                  },
+                  "icon": "inv_box_birdcage_01",
+                  "id": 9257,
+                  "points": 0,
+                  "side": "H",
+                  "title": "Rescue Operation"
+                },
+                {
+                  "criteria": {
+                    "25410": "38116",
+                    "25416": "38134",
+                    "25417": "38133"
+                  },
+                  "icon": "inv_box_birdcage_01",
+                  "id": 9256,
+                  "points": 0,
+                  "side": "A",
+                  "title": "Rescue Operation"
+                }
+              ],
+              "name": "Ashran"
             }
           ]
         },
@@ -11731,6 +12421,18 @@
                   "points": 10
                 },
                 {
+                  "icon": "inv_belt_mail_nazjatarraid_d_01",
+                  "id": 13569,
+                  "points": 10,
+                  "title": "Tour of Duty: Nazjatar"
+                },
+                {
+                  "icon": "inv_mechagon_blueprints",
+                  "id": 13570,
+                  "points": 10,
+                  "title": "Tour of Duty: Mechagon"
+                },
+                {
                   "criteria": {
                     "40589": "67930",
                     "40590": "67929",
@@ -11817,6 +12519,24 @@
                   "points": 5,
                   "side": "A",
                   "title": "Boxing Match"
+                },
+                {
+                  "icon": "inv_misc_nagafemale",
+                  "id": 13568,
+                  "points": 10,
+                  "title": "For Nazjatar!"
+                },
+                {
+                  "icon": "spell_misc_hellifrepvpcombatmorale",
+                  "id": 13623,
+                  "points": 5,
+                  "title": "Fighting on Two Fronts"
+                },
+                {
+                  "icon": "inv_misc_treasurechest04b",
+                  "id": 13720,
+                  "points": 10,
+                  "title": "Supplying the Assassins"
                 }
               ],
               "name": "Battle for Azeroth"
@@ -11944,6 +12664,12 @@
                   "id": 13315,
                   "points": 25,
                   "title": "Glory of the Dazar'alor Raider"
+                },
+                {
+                  "icon": "achievement_boss_nagazone",
+                  "id": 13687,
+                  "points": 25,
+                  "title": "Glory of the Eternal Raider"
                 }
               ],
               "name": "Battle"
@@ -13124,6 +13850,126 @@
               "name": "Crucible of Storms"
             },
             {
+              "id": "98a47fb1",
+              "items": [
+                {
+                  "icon": "achievement_boss_nagazone",
+                  "id": 13718,
+                  "points": 10,
+                  "title": "The Grand Reception"
+                },
+                {
+                  "icon": "achievement_boss_elitenagamale",
+                  "id": 13719,
+                  "points": 10,
+                  "title": "Depths of the Devoted"
+                },
+                {
+                  "icon": "achievement_boss_azshara",
+                  "id": 13725,
+                  "points": 10,
+                  "title": "The Circle of Stars"
+                },
+                {
+                  "icon": "inv_misc_herb_zoanthid",
+                  "id": 13724,
+                  "points": 10,
+                  "title": "A Smack of Jellyfish"
+                },
+                {
+                  "icon": "inv_conchshell",
+                  "id": 13628,
+                  "points": 10,
+                  "title": "Intro to Marine Biology"
+                },
+                {
+                  "icon": "spell_azerite_essence02",
+                  "id": 13629,
+                  "points": 10,
+                  "title": "Simple Geometry"
+                },
+                {
+                  "icon": "inv_helm_crown_c_01_rose",
+                  "id": 13633,
+                  "points": 10,
+                  "title": "If It Please the Court"
+                },
+                {
+                  "icon": "achievement_boss_warlord_kalithresh",
+                  "id": 13684,
+                  "points": 10,
+                  "title": "You and What Army?"
+                },
+                {
+                  "icon": "spell_nature_polymorph_cow",
+                  "id": 13716,
+                  "points": 10,
+                  "title": "Lactose Intolerant"
+                },
+                {
+                  "icon": "ability_rogue_sprint_blue",
+                  "id": 13767,
+                  "points": 10,
+                  "title": "Fun Run"
+                },
+                {
+                  "icon": "spell_azerite_essence08",
+                  "id": 13768,
+                  "points": 10,
+                  "title": "The Best of Us"
+                },
+                {
+                  "icon": "achievement_boss_nagacentaur",
+                  "id": 13726,
+                  "points": 10,
+                  "title": "Mythic: Abyssal Commander Sivara"
+                },
+                {
+                  "icon": "achievement_boss_warthofazshara",
+                  "id": 13727,
+                  "points": 10,
+                  "title": "Mythic: Radiance of Azshara"
+                },
+                {
+                  "icon": "achievement_boss_wolfeel",
+                  "id": 13728,
+                  "points": 10,
+                  "title": "Mythic: Blackwater Behemoth"
+                },
+                {
+                  "icon": "achievement_boss_ashvanemonstrosity",
+                  "id": 13729,
+                  "points": 10,
+                  "title": "Mythic: Lady Ashvane"
+                },
+                {
+                  "icon": "achievement_boss_orgozoa",
+                  "id": 13730,
+                  "points": 10,
+                  "title": "Mythic: Orgozoa"
+                },
+                {
+                  "icon": "achievement_boss_elitenagamale",
+                  "id": 13731,
+                  "points": 10,
+                  "title": "Mythic: The Queen's Court"
+                },
+                {
+                  "icon": "achievement_boss_heraldofnzoth",
+                  "id": 13732,
+                  "points": 10,
+                  "title": "Mythic: Za'qul"
+                },
+                {
+                  "icon": "achievement_boss_azshara",
+                  "id": 13733,
+                  "points": 10,
+                  "title": "Mythic: Queen Azshara"
+                }
+              ],
+              "name": "The Eternal Palace"
+            },
+            {
               "id": "669e1d1f",
               "items": [
                 {
@@ -13493,6 +14339,42 @@
                 }
               ],
               "name": "King's Rest"
+            },
+            {
+              "id": "06b82d1f",
+              "items": [
+                {
+                  "icon": "inv_misc_flower_02",
+                  "id": 13545,
+                  "points": 10,
+                  "title": "Go Ahead, Make My Daisy"
+                },
+                {
+                  "icon": "inv_misc_bomb_03",
+                  "id": 13624,
+                  "points": 10,
+                  "title": "Keep DPS-ing and Nobody Explodes"
+                },
+                {
+                  "icon": "ability_creature_poison_02",
+                  "id": 13698,
+                  "points": 10,
+                  "title": "Clean Up On Aisle Mechagon"
+                },
+                {
+                  "icon": "spell_misc_emotionhappy",
+                  "id": 13706,
+                  "points": 10,
+                  "title": "Stay Positive"
+                },
+                {
+                  "icon": "inv_engineering_autohammer",
+                  "id": 13723,
+                  "points": 10,
+                  "title": "M.C., Hammered"
+                }
+              ],
+              "name": "Operation: Mechagon"
             },
             {
               "id": "ffbb538e",
@@ -20158,7 +21040,6 @@
               "name": "Minigame"
             },
             {
-              "name": "Obliterum",
               "id": "231f31a0",
               "items": [
                 {
@@ -20171,10 +21052,10 @@
                   "id": "10586",
                   "points": 15
                 }
-              ]
+              ],
+              "name": "Obliterum"
             },
             {
-              "name": "Scrap",
               "id": "03aa2fb5",
               "items": [
                 {
@@ -20206,7 +21087,8 @@
                   "id": 12740,
                   "points": 25
                 }
-              ]
+              ],
+              "name": "Scrap"
             },
             {
               "id": "4b32f46d",
@@ -21511,6 +22393,18 @@
                   "icon": "achievement_profession_fishing_oldmanbarlowned",
                   "id": 11725,
                   "points": 5
+                },
+                {
+                  "icon": "trade_fishing",
+                  "id": 13489,
+                  "points": 5,
+                  "title": "Secret Fish of Mechagon"
+                },
+                {
+                  "icon": "trade_fishing",
+                  "id": 13502,
+                  "points": 10,
+                  "title": "Secret Fish and Where to Find Them"
                 }
               ],
               "name": "Quests"
@@ -23348,6 +24242,26 @@
                   "icon": "inv_faction_tortollanseekers",
                   "id": 12956,
                   "points": 5
+                },
+                {
+                  "icon": "inv_mechagon_junkyardtinkeringcrafting",
+                  "id": 13557,
+                  "points": 5,
+                  "title": "Rustbolt Rebellion"
+                },
+                {
+                  "icon": "inv_faction_akoan",
+                  "id": 13558,
+                  "points": 5,
+                  "side": "A",
+                  "title": "Waveblade Ankoan"
+                },
+                {
+                  "icon": "inv_faction_unshackled",
+                  "id": 13559,
+                  "points": 5,
+                  "side": "H",
+                  "title": "The Unshackled"
                 }
               ],
               "name": " "
@@ -25470,11 +26384,6 @@
                   "points": 10
                 },
                 {
-                  "icon": "INV_Ore_Mithril_01",
-                  "id": "1186",
-                  "points": 10
-                },
-                {
                   "icon": "INV_Cask_02",
                   "id": "1260",
                   "points": 10
@@ -27204,6 +28113,18 @@
           "name": "Pet Battles",
           "subcats": [
             {
+              "id": "09e5563c",
+              "items": [
+                {
+                  "icon": "spell_shaman_staticshock",
+                  "id": 13695,
+                  "points": 10,
+                  "title": "Team Aquashock"
+                }
+              ],
+              "name": "Achievements"
+            },
+            {
               "id": "22ece4aa",
               "items": [
                 {
@@ -27489,6 +28410,12 @@
                   "id": 13269,
                   "points": 5,
                   "title": "Pet Battle Challenge: Gnomeregan"
+                },
+                {
+                  "icon": "ability_deathknight_reanimation",
+                  "id": 13627,
+                  "points": 5,
+                  "title": "Pet Battle Challenge: Stratholme"
                 }
               ],
               "name": "Challenges"
@@ -28189,6 +29116,18 @@
                   "icon": "inv_pet_achievement_collectallwild_pandaria",
                   "id": 12930,
                   "points": 5
+                },
+                {
+                  "icon": "inv_babynagagreen",
+                  "id": 13694,
+                  "points": 5,
+                  "title": "Nazjatari Safari"
+                },
+                {
+                  "icon": "inv_mechanicalfrog",
+                  "id": 13693,
+                  "points": 5,
+                  "title": "Mecha-Safari"
                 }
               ],
               "name": "Zones"
@@ -28372,6 +29311,12 @@
                   "icon": "inv_pet_cats_siamesecat",
                   "id": "8397",
                   "points": 10
+                },
+                {
+                  "icon": "ability_creature_poison_05",
+                  "id": 13715,
+                  "points": 10,
+                  "title": "From The Belly Of The Jelly"
                 }
               ],
               "name": "Other"
@@ -28954,6 +29899,24 @@
                   "icon": "inv_argustalbukmount_felred",
                   "id": 12088,
                   "points": 10
+                },
+                {
+                  "icon": "inv_mechanicalprairiedog_black",
+                  "id": 13625,
+                  "points": 10,
+                  "title": "Mighty Minions of Mechagon"
+                },
+                {
+                  "icon": "inv_seasnail_bluepink",
+                  "id": 13626,
+                  "points": 10,
+                  "title": "Nautical Nuisances of Nazjatar"
+                },
+                {
+                  "icon": "inv_letter_04",
+                  "id": 13766,
+                  "points": 10,
+                  "title": "Malowned"
                 }
               ],
               "name": "Zones"
@@ -29984,6 +30947,18 @@
                 }
               ],
               "name": "Toy Box"
+            },
+            {
+              "id": "3551ff40",
+              "items": [
+                {
+                  "icon": "trade_archaeology_tyrandesfavoritedoll",
+                  "id": 13708,
+                  "points": 10,
+                  "title": "Most Minis Wins"
+                }
+              ],
+              "name": "Other"
             }
           ]
         },
@@ -30156,6 +31131,18 @@
                 }
               ],
               "name": "Mount Count"
+            },
+            {
+              "id": "4d1e4719",
+              "items": [
+                {
+                  "icon": "inv_ore_arcanite_01",
+                  "id": 13513,
+                  "points": 5,
+                  "title": "Available in Eight Colors"
+                }
+              ],
+              "name": "Other"
             }
           ]
         },
@@ -30445,6 +31432,12 @@
                   "id": 13385,
                   "points": 10,
                   "title": "Daz'aling Attire"
+                },
+                {
+                  "icon": "achievement_boss_nagazone",
+                  "id": 13571,
+                  "points": 10,
+                  "title": "Under the Seams"
                 }
               ],
               "name": "Battle for Azeroth"
@@ -30588,6 +31581,12 @@
                   "id": 13433,
                   "points": 10,
                   "title": "Tall, Dark, and Sinister"
+                },
+                {
+                  "icon": "inv_helm_plate_nazjatar_c_01",
+                  "id": 13585,
+                  "points": 10,
+                  "title": "Never Lose, Never Choose To"
                 }
               ],
               "name": "PvP"
@@ -30612,6 +31611,77 @@
     },
     {
       "cats": [
+        {
+          "id": "c1e52975",
+          "name": "Heart of Azeroth",
+          "subcats": [
+            {
+              "id": "2fce2cad",
+              "items": [
+                {
+                  "icon": "inv_heartofazeroth",
+                  "id": 12918,
+                  "points": 10
+                },
+                {
+                  "icon": "achievement_nazmir_boss_mother",
+                  "id": 13572,
+                  "points": 10,
+                  "title": "The Heart Forge"
+                }
+              ],
+              "name": "Quest"
+            },
+            {
+              "id": "f108a1db",
+              "items": [
+                {
+                  "icon": "spell_azerite_essence01",
+                  "id": 13769,
+                  "points": 10,
+                  "title": "Power Up"
+                },
+                {
+                  "icon": "spell_azerite_essence08",
+                  "id": 13770,
+                  "points": 10,
+                  "title": "Power Creep"
+                },
+                {
+                  "icon": "mystery_azerite_helm_mythic",
+                  "id": 13771,
+                  "points": 10,
+                  "title": "Power Is Beautiful"
+                },
+                {
+                  "icon": "spell_azerite_essence10",
+                  "id": 13772,
+                  "points": 10,
+                  "title": "Essence Essentials"
+                },
+                {
+                  "icon": "spell_azerite_essence07",
+                  "id": 13773,
+                  "points": 10,
+                  "title": "Essence Gains"
+                },
+                {
+                  "icon": "inv_azeriteareadenial",
+                  "id": 13775,
+                  "points": 10,
+                  "title": "Essence Overload"
+                },
+                {
+                  "icon": "spell_azerite_essence09",
+                  "id": 13777,
+                  "points": 10,
+                  "title": "My Heart Container is Full"
+                }
+              ],
+              "name": "Infuse"
+            }
+          ]
+        },
         {
           "id": "91d22fae",
           "name": "War Effort",
@@ -30688,6 +31758,20 @@
                   "title": "War is Hell"
                 },
                 {
+                  "icon": "achievement_garrison_monument_horde_pvp",
+                  "id": 13735,
+                  "points": 10,
+                  "side": "H",
+                  "title": "Heroic: War is Hell"
+                },
+                {
+                  "icon": "achievement_garrison_monument_alliance_pvp",
+                  "id": 13737,
+                  "points": 10,
+                  "side": "A",
+                  "title": "Heroic: War is Hell"
+                },
+                {
                   "icon": "achievement_faction_lorewalkers",
                   "id": 12874,
                   "points": 10,
@@ -30748,6 +31832,20 @@
                   "points": 10,
                   "side": "A",
                   "title": "Tour of War"
+                },
+                {
+                  "icon": "achievement_bg_kill_flag_carrier",
+                  "id": 13738,
+                  "points": 10,
+                  "side": "H",
+                  "title": "Heroic: Tour of War"
+                },
+                {
+                  "icon": "achievement_bg_kill_flag_carrier",
+                  "id": 13739,
+                  "points": 10,
+                  "side": "A",
+                  "title": "Heroic: Tour of War"
                 }
               ],
               "name": "Warfront: Stromgarde"
@@ -31076,6 +32174,54 @@
                   "id": 13400,
                   "points": 10,
                   "title": "Havenswood Hero"
+                },
+                {
+                  "icon": "achievement_zone_grizzlyhills_01",
+                  "id": 13577,
+                  "points": 10,
+                  "title": "Crestfall"
+                },
+                {
+                  "icon": "achievement_zone_grizzlyhills_01",
+                  "id": 13578,
+                  "points": 10,
+                  "title": "Heroic: Crestfall"
+                },
+                {
+                  "icon": "achievement_zone_grizzlyhills_01",
+                  "id": 13579,
+                  "points": 10,
+                  "title": "Mythic: Crestfall"
+                },
+                {
+                  "icon": "achievement_zone_grizzlyhills_01",
+                  "id": 13580,
+                  "points": 10,
+                  "title": "Crestfallen"
+                },
+                {
+                  "icon": "achievement_zone_valleyoffourwinds",
+                  "id": 13581,
+                  "points": 10,
+                  "title": "Snowblossom Village"
+                },
+                {
+                  "icon": "achievement_zone_valleyoffourwinds",
+                  "id": 13582,
+                  "points": 10,
+                  "title": "Heroic: Snowblossom Village"
+                },
+                {
+                  "icon": "achievement_zone_valleyoffourwinds",
+                  "id": 13583,
+                  "points": 10,
+                  "title": "Mythic: Snowblossom Village"
+                },
+                {
+                  "icon": "achievement_zone_valleyoffourwinds",
+                  "id": 13584,
+                  "points": 10,
+                  "title": "Snowblossom Scrapper"
                 }
               ],
               "name": "Islands"
@@ -37486,79 +38632,6 @@
               "id": "5d1887da",
               "items": [
                 {
-                  "criteria": {
-                    "25196": "37597",
-                    "27862": "43386"
-                  },
-                  "icon": "achievement_zone_ashran",
-                  "id": 9102,
-                  "points": 0,
-                  "title": "Ashran Victory"
-                },
-                {
-                  "criteria": {
-                    "25202": "37613",
-                    "25204": "37611",
-                    "25205": "37610",
-                    "25206": "37609",
-                    "25207": "37608",
-                    "25208": "37612",
-                    "25209": "37607"
-                  },
-                  "icon": "ability_hunter_snipershot",
-                  "id": 9104,
-                  "points": 0,
-                  "side": "A",
-                  "title": "Bounty Hunter"
-                },
-                {
-                  "criteria": {
-                    "25197": "37604",
-                    "25198": "37603",
-                    "25199": "37602",
-                    "25200": "37601",
-                    "25201": "37600",
-                    "25202": "37599",
-                    "25203": "37605"
-                  },
-                  "icon": "ability_hunter_snipershot",
-                  "id": 9103,
-                  "points": 0,
-                  "side": "H",
-                  "title": "Bounty Hunter"
-                },
-                {
-                  "icon": "ability_crown_of_the_heavens_icon",
-                  "id": 9222,
-                  "points": 0,
-                  "title": "Divide and Conquer"
-                },
-                {
-                  "icon": "creatureportrait_creature_iceblock",
-                  "id": 9228,
-                  "points": 0,
-                  "side": "A",
-                  "title": "Down Goes Van Rook"
-                },
-                {
-                  "icon": "inv_misc_coinbag_special",
-                  "id": 9218,
-                  "points": 0,
-                  "title": "Grand Theft, 1st Degree"
-                },
-                {
-                  "icon": "inv_misc_coinbag_special",
-                  "id": 9219,
-                  "points": 0,
-                  "title": "Grand Theft, 2nd Degree"
-                },
-                {
-                  "icon": "inv_misc_coinbag_special",
-                  "id": 9220,
-                  "points": 0,
-                  "title": "Grand Theft, 3rd Degree"
-                },
-                {
                   "icon": "inv_tabard_a_78wrynnvanguard",
                   "id": 9214,
                   "points": 0,
@@ -37571,135 +38644,9 @@
                   "points": 0,
                   "side": "H",
                   "title": "Hero of Warspear"
-                },
-                {
-                  "criteria": {
-                    "25843": "39072",
-                    "25844": "39073",
-                    "25845": "39074",
-                    "25846": "39075",
-                    "25847": "39076",
-                    "25848": "39077",
-                    "25849": "39078",
-                    "25850": "39079",
-                    "25851": "39080"
-                  },
-                  "icon": "ability_hunter_assassinate",
-                  "id": 9216,
-                  "points": 0,
-                  "title": "High-value Targets"
-                },
-                {
-                  "icon": "inv_misc_book_03",
-                  "id": 9106,
-                  "points": 0,
-                  "title": "Just for Me"
-                },
-                {
-                  "icon": "achievement_boss_highmaul_earthenfury",
-                  "id": 9408,
-                  "points": 0,
-                  "side": "A",
-                  "title": "Operation Counterattack"
-                },
-                {
-                  "icon": "inv_pet_ancientprotector",
-                  "id": 9217,
-                  "points": 0,
-                  "side": "H",
-                  "title": "Operation Counterattack"
-                },
-                {
-                  "criteria": {
-                    "25350": "39916",
-                    "26303": "39914",
-                    "26304": "39915",
-                    "26305": "39917",
-                    "26306": "39918",
-                    "26307": "39919",
-                    "26308": "39920",
-                    "26309": "39921",
-                    "26310": "39922",
-                    "26311": "39923",
-                    "26312": "39924",
-                    "26313": "39925",
-                    "26314": "39926"
-                  },
-                  "icon": "ability_hunter_rapidkilling",
-                  "id": 9225,
-                  "points": 0,
-                  "side": "A",
-                  "title": "Take Them Out"
-                },
-                {
-                  "criteria": {
-                    "26289": "39898",
-                    "26290": "39899",
-                    "26291": "39900",
-                    "26293": "39902",
-                    "26294": "39903",
-                    "26295": "39904",
-                    "26296": "39905",
-                    "26297": "39906",
-                    "26298": "39907",
-                    "26299": "39908",
-                    "26300": "39909",
-                    "26301": "39910"
-                  },
-                  "icon": "ability_hunter_rapidkilling",
-                  "id": 9224,
-                  "points": 0,
-                  "side": "H",
-                  "title": "Take Them Out"
-                },
-                {
-                  "icon": "achievement_reputation_ogre",
-                  "id": 9715,
-                  "points": 0,
-                  "side": "H",
-                  "title": "Thy Kingdom Come"
-                },
-                {
-                  "icon": "achievement_reputation_ogre",
-                  "id": 9714,
-                  "points": 0,
-                  "side": "A",
-                  "title": "Thy Kingdom Come"
-                },
-                {
-                  "criteria": {
-                    "25215": "37621",
-                    "25789": "37620",
-                    "25790": "38944",
-                    "25791": "38945"
-                  },
-                  "icon": "achievement_ashran_tourofduty",
-                  "id": 9105,
-                  "points": 0,
-                  "title": "Tour of Duty"
                 }
               ],
               "name": "Ashran"
-            },
-            {
-              "id": "1af83273",
-              "items": [
-                {
-                  "icon": "inv_tabard_a_77voljinsspear",
-                  "id": 9473,
-                  "points": 0,
-                  "side": "H",
-                  "title": "Vol'jin's Spear"
-                },
-                {
-                  "icon": "inv_tabard_a_78wrynnvanguard",
-                  "id": 9474,
-                  "points": 0,
-                  "side": "A",
-                  "title": "Wrynn's Vanguard"
-                }
-              ],
-              "name": "Ashran Reputation"
             },
             {
               "id": "af969e3c",
@@ -38016,6 +38963,23 @@
                 }
               ],
               "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": "0fe9b402",
+          "name": "World Events",
+          "subcats": [
+            {
+              "id": "4a38a714",
+              "items": [
+                {
+                  "icon": "INV_Ore_Mithril_01",
+                  "id": "1186",
+                  "points": 10
+                }
+              ],
+              "name": "Brewfest"
             }
           ]
         }
@@ -38591,6 +39555,12 @@
                   "points": 0
                 },
                 {
+                  "icon": "inv_heartofazeroth",
+                  "id": 13779,
+                  "points": 0,
+                  "title": "Phenomenal Cosmic Power"
+                },
+                {
                   "icon": "ability_warrior_innerrage",
                   "id": 4496,
                   "points": 0,
@@ -38942,6 +39912,12 @@
                   "id": 13202,
                   "points": 0,
                   "title": "Sinister Gladiator's Proto-Drake"
+                },
+                {
+                  "icon": "ability_mount_protodrakegladiatormount",
+                  "id": 13632,
+                  "points": 0,
+                  "title": "Notorious Gladiator's Proto-Drake"
                 }
               ],
               "name": "PVP"
@@ -39120,9 +40096,33 @@
                   "id": 13449,
                   "points": 0,
                   "title": "Battle for Azeroth Keystone Master: Season Two"
+                },
+                {
+                  "icon": "achievement_challengemode_gold",
+                  "id": 13780,
+                  "points": 0,
+                  "title": "Battle for Azeroth Keystone Conqueror: Season Three"
+                },
+                {
+                  "icon": "achievement_challengemode_platinum",
+                  "id": 13781,
+                  "points": 0,
+                  "title": "Battle for Azeroth Keystone Master: Season Three"
                 }
               ],
               "name": "Mythic Keystone: Battle for Azeroth"
+            },
+            {
+              "id": "786c469d",
+              "items": [
+                {
+                  "icon": "inv_misc_head_clockworkgnome_01",
+                  "id": 13789,
+                  "points": 0,
+                  "title": "Hertz Locker"
+                }
+              ],
+              "name": "Other"
             }
           ]
         },
@@ -39411,6 +40411,18 @@
                   "id": 13419,
                   "points": 0,
                   "title": "Cutting Edge: Uu'nat, Harbinger of the Void"
+                },
+                {
+                  "icon": "achievement_boss_azshara",
+                  "id": 13784,
+                  "points": 0,
+                  "title": "Ahead of the Curve: Queen Azshara"
+                },
+                {
+                  "icon": "achievement_boss_azshara",
+                  "id": 13785,
+                  "points": 0,
+                  "title": "Cutting Edge: Queen Azshara"
                 }
               ],
               "name": "Lost Content"
@@ -39732,7 +40744,6 @@
               "name": "Ratings"
             },
             {
-              "name": "Rated Arena",
               "id": "e0b1647d",
               "items": [
                 {
@@ -40250,8 +41261,51 @@
                   "id": 13212,
                   "points": 0,
                   "title": "Gladiator: Battle for Azeroth Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13634,
+                  "points": 0,
+                  "title": "Challenger: Battle for Azeroth Season 3"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13639,
+                  "points": 0,
+                  "title": "Combatant: Battle for Azeroth Season 3"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13641,
+                  "points": 0,
+                  "title": "Rival: Battle for Azeroth Season 3"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13642,
+                  "points": 0,
+                  "title": "Duelist: Battle for Azeroth Season 3"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13630,
+                  "points": 0,
+                  "title": "Notorious Gladiator: Battle for Azeroth Season 3"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13647,
+                  "points": 0,
+                  "title": "Gladiator: Battle for Azeroth Season 3"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13676,
+                  "points": 0,
+                  "title": "Elite: Battle for Azeroth Season 3"
                 }
-              ]
+              ],
+              "name": "Rated Arena"
             },
             {
               "id": "b1e0e831",
@@ -40941,12 +41995,25 @@
                   "points": 0,
                   "side": "H",
                   "title": "Hero of the Horde: Sinister"
+                },
+                {
+                  "icon": "achievement_pvp_a_a",
+                  "id": 13643,
+                  "points": 0,
+                  "side": "A",
+                  "title": "Hero of the Alliance: Notorious"
+                },
+                {
+                  "icon": "achievement_pvp_h_h",
+                  "id": 13644,
+                  "points": 0,
+                  "side": "H",
+                  "title": "Hero of the Horde: Notorious"
                 }
               ],
               "name": "Rated Battleground"
             },
             {
-              "name": "Tournaments",
               "id": "5da56702",
               "items": [
                 {
@@ -40967,7 +42034,8 @@
                   "points": 0,
                   "title": "Tournament Glory 2013"
                 }
-              ]
+              ],
+              "name": "Tournaments"
             },
             {
               "id": "bf90653f",
@@ -40988,36 +42056,6 @@
                 }
               ],
               "name": "War Mode"
-            },
-            {
-              "id": "2774b853",
-              "items": [
-                {
-                  "criteria": {
-                    "25447": "38207",
-                    "25448": "38208",
-                    "25449": "38209"
-                  },
-                  "icon": "inv_box_birdcage_01",
-                  "id": 9257,
-                  "points": 0,
-                  "side": "H",
-                  "title": "Rescue Operation"
-                },
-                {
-                  "criteria": {
-                    "25410": "38116",
-                    "25416": "38134",
-                    "25417": "38133"
-                  },
-                  "icon": "inv_box_birdcage_01",
-                  "id": 9256,
-                  "points": 0,
-                  "side": "A",
-                  "title": "Rescue Operation"
-                }
-              ],
-              "name": "Ashran"
             },
             {
               "id": "4fa9b10b",
