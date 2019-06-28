@@ -115,7 +115,7 @@ class PetFixer:
 
         div = learned_from[0]
         item_link = div.xpath('.//a[contains(@href,"item")]')[1]
-        img_link = div.xpath('.//img[contains(@src,"media-azeroth")]')[0]
+        img_link = div.xpath('.//img[contains(@src,"media.wowdb.com")]')[0]
 
         name = item_link.text
 
