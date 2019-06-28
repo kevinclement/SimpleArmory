@@ -1629,8 +1629,109 @@
     ]
   },
   {
-    "name": "The Maelstrom",
+    "name": "Cataclysm",
     "subcats": [
+      {
+        "items": [
+          {
+            "creatureId": "62885",
+            "icon": "inv_misc_monstertail_03",
+            "spellid": null
+          },
+          {
+            "creatureId": "62887",
+            "icon": "inv_pet_cockroach",
+            "spellid": null
+          },
+          {
+            "creatureId": "62884",
+            "icon": "inv_misc_monstertail_03",
+            "spellid": null
+          },
+          {
+            "creatureId": "62888",
+            "icon": "spell_nature_wispsplode",
+            "spellid": null
+          }
+        ],
+        "name": "Mount Hyjal"
+      },
+      {
+        "items": [
+          {
+            "creatureId": "62894",
+            "icon": "trade_archaeology_trolllizardfootcharm",
+            "spellid": null
+          },
+          {
+            "creatureId": "62896",
+            "icon": "ability_hunter_pet_scorpid",
+            "spellid": null
+          },
+          {
+            "creatureId": "62893",
+            "icon": "inv_pet_cockroach",
+            "spellid": null
+          },
+          {
+            "creatureId": "62892",
+            "icon": "spell_shaman_hex",
+            "spellid": null
+          },
+          {
+            "creatureId": "62895",
+            "icon": "ability_hunter_pet_moth",
+            "spellid": null
+          },
+          {
+            "creatureId": "62899",
+            "icon": "inv_scarab_stone",
+            "spellid": null
+          }
+        ],
+        "name": "Uldum"
+      },
+      {
+        "items": [
+          {
+            "creatureId": "62905",
+            "icon": "inv_pet_mouse",
+            "spellid": null
+          },
+          {
+            "creatureId": "62907",
+            "icon": "inv_misc_volatileshadow",
+            "spellid": null
+          },
+          {
+            "creatureId": "62906",
+            "icon": "inv_thanksgiving_turkey",
+            "spellid": null
+          },
+          {
+            "creatureId": "62914",
+            "icon": "spell_shadow_shadowfiend",
+            "spellid": null
+          },
+          {
+            "creatureId": "62900",
+            "icon": "inv_misc_pet_02",
+            "spellid": null
+          },
+          {
+            "creatureId": "62904",
+            "icon": "inv_pet_prairiedog",
+            "spellid": null
+          },
+          {
+            "creatureId": 154803,
+            "icon": "inv_misc_head_dragon_black",
+            "name": "Twilight Whelpling",
+            "spellid": null
+          }
+        ],
+        "name": "Twilight Highlands"
+      },
       {
         "items": [
           {
@@ -1674,7 +1775,7 @@
             "spellid": null
           }
         ],
-        "name": ""
+        "name": "Deepholm"
       }
     ]
   },
@@ -1900,66 +2001,6 @@
           }
         ],
         "name": "Horde Territory"
-      },
-      {
-        "items": [
-          {
-            "creatureId": "62885",
-            "icon": "inv_misc_monstertail_03",
-            "spellid": null
-          },
-          {
-            "creatureId": "62887",
-            "icon": "inv_pet_cockroach",
-            "spellid": null
-          },
-          {
-            "creatureId": "62884",
-            "icon": "inv_misc_monstertail_03",
-            "spellid": null
-          },
-          {
-            "creatureId": "62888",
-            "icon": "spell_nature_wispsplode",
-            "spellid": null
-          }
-        ],
-        "name": "Mount Hyjal"
-      },
-      {
-        "items": [
-          {
-            "creatureId": "62894",
-            "icon": "trade_archaeology_trolllizardfootcharm",
-            "spellid": null
-          },
-          {
-            "creatureId": "62896",
-            "icon": "ability_hunter_pet_scorpid",
-            "spellid": null
-          },
-          {
-            "creatureId": "62893",
-            "icon": "inv_pet_cockroach",
-            "spellid": null
-          },
-          {
-            "creatureId": "62892",
-            "icon": "spell_shaman_hex",
-            "spellid": null
-          },
-          {
-            "creatureId": "62895",
-            "icon": "ability_hunter_pet_moth",
-            "spellid": null
-          },
-          {
-            "creatureId": "62899",
-            "icon": "inv_scarab_stone",
-            "spellid": null
-          }
-        ],
-        "name": "Uldum"
       },
       {
         "items": [
@@ -2215,47 +2256,6 @@
           }
         ],
         "name": "Horde Territory"
-      },
-      {
-        "items": [
-          {
-            "creatureId": "62905",
-            "icon": "inv_pet_mouse",
-            "spellid": null
-          },
-          {
-            "creatureId": "62907",
-            "icon": "inv_misc_volatileshadow",
-            "spellid": null
-          },
-          {
-            "creatureId": "62906",
-            "icon": "inv_thanksgiving_turkey",
-            "spellid": null
-          },
-          {
-            "creatureId": "62914",
-            "icon": "spell_shadow_shadowfiend",
-            "spellid": null
-          },
-          {
-            "creatureId": "62900",
-            "icon": "inv_misc_pet_02",
-            "spellid": null
-          },
-          {
-            "creatureId": "62904",
-            "icon": "inv_pet_prairiedog",
-            "spellid": null
-          },
-          {
-            "creatureId": 154803,
-            "icon": "inv_misc_head_dragon_black",
-            "name": "Twilight Whelpling",
-            "spellid": null
-          }
-        ],
-        "name": "Twilight Highlands"
       },
       {
         "items": [
