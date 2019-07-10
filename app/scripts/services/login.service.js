@@ -9,6 +9,7 @@
     function LoginService($location, $log, $http, $q, $window, SettingsService) {
         //  cache results
         var characterCached;
+        var profileCached;
 
         // callbacks to call once we've logged in
         // this allows for aggregator type behavior where we can clear caches
@@ -19,8 +20,12 @@
         var gRealm;
         var gCharacter;
 
+        var pRegion;
+        var pRealm;
+        var pCharacter;
+
         return {
-            
+
             // allow consumers to register when a login has occcured
             onLogin: function(callback) {
               callbacks.push(callback);
@@ -44,6 +49,7 @@
 
                 return $http.get(
                   SettingsService.apiEndPoint +
+                  'character/' +
                   $routeParams.region + '/' +
                   $routeParams.realm + '/' +
                   $routeParams.character,
@@ -78,7 +84,7 @@
                   gRegion = $routeParams.region;
                   gRealm = $routeParams.realm;
                   gCharacter = $routeParams.character;
-                  
+
                   return characterCached;
               }
 
@@ -86,6 +92,63 @@
                 if ((region && gRegion && region.toLowerCase() === gRegion.toLowerCase())  &&
                     (realm && gRealm && realm.toLowerCase() === gRealm.toLowerCase())  &&
                     (character && gCharacter && character.toLowerCase() === gCharacter.toLowerCase())) {
+                    return true;
+                }
+                return false;
+              }
+            },
+
+            getProfile: function($routeParams, noCache) {
+                // don't fetch if we've already got it
+                var sameUser = checkIfSameUser($routeParams.region, $routeParams.realm, $routeParams.character);
+                if (sameUser && profileCached) {
+                  return $q.when(profileCached);
+                }
+
+                // notify others to clear their caches
+                if (!sameUser) {
+                  for (var i=0; i<callbacks.length; i++) {
+                    callbacks[i]('logged in');
+                  }
+                }
+
+                $log.log('Fetching ' + $routeParams.character + ' from server ' + $routeParams.realm + '...');
+
+                return $http.get(
+                  SettingsService.apiEndPoint +
+                  'profile/' +
+                  $routeParams.region + '/' +
+                  $routeParams.realm + '/' +
+                  $routeParams.character,
+                  {cache: true})
+                  .then(getProfileComplete);
+
+              function getProfileComplete(data) {
+                  // lets figure out who uses the site
+                  $window.ga('send', 'event', 'Login', $routeParams.region + ':' + $routeParams.realm + ':' + $routeParams.character);
+
+                  profileCached = data.data;
+
+                  // add region and faction to character
+                  profileCached.region = $routeParams.region;
+
+                  profileCached.faction = ['',
+                    'A','H','A','A','H','H','A','H','H','H',
+                    'A','','','','','','','','','',
+                    '','A','','','A','H','H','H','A','A',
+                    'H','A','','A','','H'][profileCached.race.id];
+
+                  pRegion = $routeParams.region;
+                  pRealm = $routeParams.realm;
+                  pCharacter = $routeParams.character;
+
+                  return profileCached;
+              }
+
+              function checkIfSameUser(region, realm, character) {
+                if ((region && pRegion && region.toLowerCase() === pRegion.toLowerCase())  &&
+                    (realm && pRealm && realm.toLowerCase() === pRealm.toLowerCase())  &&
+                    (character && pCharacter && character.toLowerCase() === pCharacter.toLowerCase())) {
                     return true;
                 }
                 return false;
