@@ -229,12 +229,6 @@
             "itemId": 169202,
             "name": "Crimson Tidestallion",
             "spellid": 300153
-          },
-          {
-            "icon": "inv_pet_mechanicaltigercub",
-            "itemId": 167751,
-            "name": "X-995 Mechanocat",
-            "spellid": 294143
           }
         ]
       },
@@ -255,12 +249,6 @@
             "spellid": 299159
           },
           {
-            "icon": "inv_snapdragonmount01",
-            "itemId": 169199,
-            "name": "Snapdragon Kelpstalker",
-            "spellid": 300146
-          },
-          {
             "icon": "inv_triceratopsgreen",
             "itemId": 168408,
             "name": "Child of Torcali",
@@ -268,8 +256,16 @@
           },
           {
             "icon": "inv_snapdragonmount01",
+            "itemId": 169199,
+            "name": "Snapdragon Kelpstalker",
+            "side": "H",
+            "spellid": 300146
+          },
+          {
+            "icon": "inv_snapdragonmount01",
             "itemId": 169200,
             "name": "Deepcoral Snapdragon",
+            "side": "A",
             "spellid": 300147
           }
         ]
@@ -419,12 +415,6 @@
             "spellid": 300150
           },
           {
-            "icon": "inv_snapdragonmount01",
-            "itemId": 169198,
-            "name": "Royal Snapdragon",
-            "spellid": 294038
-          },
-          {
             "icon": "inv_mechacycle",
             "itemId": 168370,
             "name": "Junkheap Drifter",
@@ -563,6 +553,18 @@
             "name": "The Hivemind",
             "icon": "inv_hivemind",
             "spellid": "261395"
+          }
+        ]
+      },
+      {
+        "name": "Tinkering",
+        "id": "43fbfe21",
+        "items": [
+          {
+            "icon": "inv_pet_mechanicaltigercub",
+            "itemId": 167751,
+            "name": "X-995 Mechanocat",
+            "spellid": 294143
           }
         ]
       },
@@ -776,6 +778,18 @@
             "itemId": 166745,
             "name": "Siltwing Albatross",
             "spellid": 266925
+          }
+        ]
+      },
+      {
+        "name": "Paragon Reputation",
+        "id": "2415033e",
+        "items": [
+          {
+            "icon": "inv_snapdragonmount01",
+            "itemId": 169198,
+            "name": "Royal Snapdragon",
+            "spellid": 294038
           }
         ]
       },
