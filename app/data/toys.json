@@ -229,7 +229,6 @@
         "name": "Treasure"
       },
       {
-        "name": "Rare",
         "id": "e023ca9d",
         "items": [
           {
@@ -257,10 +256,10 @@
             "itemId": 169347,
             "name": "Judgment of Mechagon"
           }
-        ]
+        ],
+        "name": "Rare"
       },
       {
-        "name": "World Drop",
         "id": "0d4e8ce6",
         "items": [
           {
@@ -273,7 +272,8 @@
             "itemId": 170199,
             "name": "Zanj'ir Weapon Rack"
           }
-        ]
+        ],
+        "name": "World Drop"
       },
       {
         "id": "1b9e3d61",
@@ -328,37 +328,36 @@
         "name": "Dubloons"
       },
       {
-        "name": "Nazjatar PvP",
         "id": "85aa933a",
         "items": [
           {
             "icon": "achievement_bg_3flagcap_nodeaths",
             "itemId": 169276,
-            "side": "H",
-            "name": "Horde War Banner"
+            "name": "Horde War Banner",
+            "side": "H"
           },
           {
             "icon": "achievement_general_hordeslayer",
             "itemId": 169277,
-            "side": "H",
-            "name": "Horde War Standard"
+            "name": "Horde War Standard",
+            "side": "H"
           },
           {
             "icon": "achievement_bg_3flagcap_nodeaths",
             "itemId": 169275,
-            "side": "A",
-            "name": "Alliance War Banner"
+            "name": "Alliance War Banner",
+            "side": "A"
           },
           {
             "icon": "inv_bannerpvp_02",
             "itemId": 169278,
-            "side": "A",
-            "name": "Alliance War Standard"
+            "name": "Alliance War Standard",
+            "side": "A"
           }
-        ]
+        ],
+        "name": "Nazjatar PvP"
       },
       {
-        "name": "Tinkering",
         "id": "7adbb5d6",
         "items": [
           {
@@ -366,7 +365,8 @@
             "itemId": 168907,
             "name": "Holographic Digitalization Hearthstone"
           }
-        ]
+        ],
+        "name": "Tinkering"
       },
       {
         "id": "f0b2c441",
@@ -1329,14 +1329,14 @@
           {
             "icon": "inv_misc_flute_01",
             "itemId": 116396,
-            "obtainSide": "A",
-            "name": "LeBlanc's Recorder"
+            "name": "LeBlanc's Recorder",
+            "obtainSide": "A"
           },
           {
             "icon": "inv_misc_flute_01",
             "itemId": 115505,
-            "obtainSide": "H",
-            "name": "LeBlanc's Recorder"
+            "name": "LeBlanc's Recorder",
+            "obtainSide": "H"
           },
           {
             "icon": "trade_archaeology_delicatemusicbox",
@@ -2712,6 +2712,11 @@
             "name": "Blingtron 5000"
           },
           {
+            "icon": "inv_gizmo_goblingtonkcontroller",
+            "itemId": 168667,
+            "name": "Blingtron 7000"
+          },
+          {
             "icon": "inv_misc_enggizmos_12",
             "itemId": "18986",
             "name": "Ultrasafe Transporter: Gadgetzan"
@@ -2750,6 +2755,16 @@
             "icon": "spell_shadow_demoniccircleteleport",
             "itemId": "151652",
             "name": "Wormhole Generator: Argus"
+          },
+          {
+            "icon": "inv_trinket_80_kultiras02a",
+            "itemId": 168808,
+            "name": "Wormhole Generator: Zandalar"
+          },
+          {
+            "icon": "inv_trinket_80_kultiras02b",
+            "itemId": 168807,
+            "name": "Wormhole Generator: Kul Tiras"
           }
         ],
         "name": "Engineering"
