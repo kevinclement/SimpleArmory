@@ -6,7 +6,19 @@
     "type": "git",
     "url": "https://github.com/kevinclement/SimpleArmory.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@bower_components/angular": "angular/bower-angular#1.4.14",
+    "@bower_components/angular-bootstrap": "angular-ui/bootstrap-bower#~0.11.2",
+    "@bower_components/angular-mocks": "angular/bower-angular-mocks#~1.4.0",
+    "@bower_components/angular-route": "angular/bower-angular-route#~1.4.0",
+    "@bower_components/angular-sanitize": "angular/bower-angular-sanitize#~1.4.4",
+    "@bower_components/angular-scenario": "angular/bower-angular-scenario#~1.4.0",
+    "@bower_components/angular-ui-select": "angular-ui/ui-select#~0.12.1",
+    "@bower_components/bootstrap": "twbs/bootstrap#~3.2.0",
+    "@bower_components/es5-shim": "es-shims/es5-shim#~3.1.0",
+    "@bower_components/jquery": "jquery/jquery-dist#>= 1.9.0",
+    "@bower_components/json3": "bestiejs/json3#~3.3.1"
+  },
   "devDependencies": {
     "body-parser": "^1.18.2",
     "grunt": "^0.4.1",
@@ -34,9 +46,11 @@
     "time-grunt": "^0.3.1"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=0.10.0",
+    "yarn": ">= 1.0.0"
   },
   "scripts": {
-    "host": "http-server dist"
+    "host": "http-server dist",
+    "postinstall": "node -e \"try { require('fs').symlinkSync(require('path').resolve('node_modules/@bower_components'), 'bower_components', 'junction') } catch (e) { }\""
   }
 }

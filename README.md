@@ -15,9 +15,8 @@ This is the code used to build out [simplearmory.com](http://simplearmory.com) w
 ```shell
 git clone https://github.com/kevinclement/SimpleArmory.git SA
 cd SA
-npm install
-npm install -g grunt-cli bower
-bower install
+npm install -g grunt-cli yarn
+yarn install
 ```
 
 ## Start Development
