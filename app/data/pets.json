@@ -433,6 +433,27 @@
             "itemId": 169380,
             "name": "Mustyfur Snooter",
             "spellid": 301051
+          },
+          {
+            "creatureId": 158681,
+            "icon": "inv_pet_butterfly_purple",
+            "itemId": 172491,
+            "name": "Papi",
+            "spellid": 309516
+          },
+          {
+            "creatureId": 158683,
+            "icon": "inv_pet_butterfly_orange",
+            "itemId": 172492,
+            "name": "Sunsoaked Flitter",
+            "spellid": 309519
+          },
+          {
+            "creatureId": 158685,
+            "icon": "inv_box_petcarrier_01",
+            "itemId": 172493,
+            "name": "Snarling Butterfly Crate",
+            "spellid": 309522
           }
         ],
         "name": "Reputation"
@@ -956,7 +977,6 @@
         "name": "Pet Charm"
       },
       {
-        "name": "Tinkering",
         "id": "0394a83e",
         "items": [
           {
@@ -973,7 +993,8 @@
             "name": "Utility Mechanoclaw",
             "spellid": 301054
           }
-        ]
+        ],
+        "name": "Tinkering"
       },
       {
         "id": "a6c0c8cb",
@@ -1433,7 +1454,6 @@
         "name": "Dubloons"
       },
       {
-        "name": "Nazjatar PvP",
         "id": "6021ffd6",
         "items": [
           {
@@ -1443,7 +1463,8 @@
             "name": "Chitterspine Devourer",
             "spellid": 301028
           }
-        ]
+        ],
+        "name": "Nazjatar PvP"
       },
       {
         "id": "c4ed565c",
@@ -1489,6 +1510,12 @@
             "name": "Proper Parrot",
             "notObtainable": true,
             "spellid": 288054
+          },
+          {
+            "creatureId": 159783,
+            "icon": "inv_pet_cats_blacktabbycat",
+            "name": "Jenafur",
+            "spellid": 311289
           }
         ],
         "name": "Unknown"
@@ -4818,7 +4845,6 @@
         "name": "Challenge: Gnomeregan"
       },
       {
-        "name": "Challenge: Stratholme",
         "id": "f6d41fb0",
         "items": [
           {
@@ -4856,7 +4882,8 @@
             "name": "Evil Wizard Hat",
             "spellid": 300387
           }
-        ]
+        ],
+        "name": "Challenge: Stratholme"
       }
     ]
   },
@@ -5573,6 +5600,12 @@
             "creatureId": 36910,
             "icon": "inv_jewelcrafting_gem_06",
             "spellid": "69539"
+          },
+          {
+            "creatureId": 157524,
+            "icon": "inv_marmosetpet",
+            "name": "Rikki",
+            "spellid": 307264
           }
         ],
         "name": "Recruit-A-Friend"
@@ -5683,6 +5716,13 @@
             "icon": "inv_corgi2",
             "itemId": "136925",
             "spellid": "210701"
+          },
+          {
+            "creatureId": 151779,
+            "icon": "2615850",
+            "itemId": 172016,
+            "name": "Lil' Nefarian",
+            "spellid": 294206
           }
         ],
         "name": "Anniversary"
