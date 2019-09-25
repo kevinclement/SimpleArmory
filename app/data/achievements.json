@@ -711,6 +711,20 @@
                   "title": "Two Sides to Every Tale"
                 },
                 {
+                  "icon": "inv_tabard_battlepvps4_horde",
+                  "id": 13924,
+                  "points": 10,
+                  "side": "H",
+                  "title": "The Fourth War"
+                },
+                {
+                  "icon": "inv_tabard_battlepvps4_alliance",
+                  "id": 13925,
+                  "points": 10,
+                  "side": "A",
+                  "title": "The Fourth War"
+                },
+                {
                   "icon": "inv_faction_unshackled",
                   "id": 13709,
                   "points": 10,
@@ -1020,6 +1034,12 @@
                   "id": 13790,
                   "points": 5,
                   "title": "Armed for Action"
+                },
+                {
+                  "icon": "inv_mechagonspidertank_silver",
+                  "id": 13791,
+                  "points": 10,
+                  "title": "Making the Mount"
                 }
               ],
               "name": "Mechagon"
@@ -1172,12 +1192,6 @@
                   "points": 5,
                   "side": "H",
                   "title": "How to Train Your Direhorn"
-                },
-                {
-                  "icon": "inv_mechagonspidertank_silver",
-                  "id": 13791,
-                  "points": 10,
-                  "title": "Making the Mount"
                 }
               ],
               "name": "Mount"
@@ -10721,6 +10735,26 @@
                 }
               ],
               "name": ""
+            },
+            {
+              "id": "cefbd842",
+              "items": [
+                {
+                  "icon": "achievement_zone_alteracmountains_01",
+                  "id": 13928,
+                  "points": 10,
+                  "side": "A",
+                  "title": "Alterac Valley of Olde"
+                },
+                {
+                  "icon": "achievement_zone_alteracmountains_01",
+                  "id": 13930,
+                  "points": 10,
+                  "side": "H",
+                  "title": "Alterac Valley of Olde"
+                }
+              ],
+              "name": "15th Anniversary"
             }
           ]
         },
@@ -42176,6 +42210,12 @@
                   "id": 12827,
                   "points": 0,
                   "title": "WoW's 14th Anniversary"
+                },
+                {
+                  "icon": "inv_misc_celebrationcake_01",
+                  "id": 13917,
+                  "points": 0,
+                  "title": "WoW's 15th Anniversary"
                 }
               ],
               "name": "Anniversary"
@@ -42341,6 +42381,12 @@
                   "id": 11395,
                   "points": 0,
                   "title": "Diablo's 20th Anniversary"
+                },
+                {
+                  "icon": "spell_nature_elementalabsorption",
+                  "id": 13931,
+                  "points": 0,
+                  "title": "Memories of Fel, Frost and Fire"
                 }
               ],
               "name": "Events"

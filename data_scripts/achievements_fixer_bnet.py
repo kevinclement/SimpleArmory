@@ -256,7 +256,7 @@ class AchievementFixer:
                             pass
         for ach_id in missing:
             # Bugged achievements returned by the API
-            if ach_id in [7268, 7269, 7270]:
+            if ach_id in [7268, 7269, 7270, 13927]:
                 continue
             path = self.id_to_cat[ach_id]
             ach = self.id_to_ach[ach_id]
