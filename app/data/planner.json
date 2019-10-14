@@ -86,59 +86,6 @@
 							]
 						},
 						{
-							"title": "Fly to Tanaris",
-							"steps":
-							[
-								{
-									"title": "Run Culling of Stratholme",
-									"bosses": 
-									[
-										{
-											"name":"Infinite Corruptor",
-											"spellId":59569,
-											"itemId":43951,
-											"mount": "Bronze Drake",
-											"epic": true,
-											"icon":"ability_mount_drake_bronze",
-											"note":"Heroic only. Timed run"
-										}
-									]
-								},
-								{
-									"title": "Run Dragon Soul",
-									"bosses": 
-									[
-										{
-											"name":"Ultraxion",
-											"spellId":110039,
-											"itemId":78919,
-											"mount": "Experiment 12-B",
-											"epic": true,
-											"icon":"ability_mount_drake_twilight"
-										},
-										{
-											"name":"Deathwing",
-											"spellId":107842,
-											"itemId":77067,
-											"mount": "Blazing Drake",
-											"epic": true,
-											"icon":"ability_mount_drake_red"
-
-										},
-										{
-											"name":"Deathwing",
-											"spellId":107845,
-											"itemId":77069,
-											"mount": "Life-Binder's Handmaiden",
-											"epic": true,
-											"icon":"ability_mount_drake_red",
-											"note":"Heroic (10 or 25)"
-										}
-									]
-								}
-							]
-						},
-						{
 							"title": "Fly to Dustwallow Marsh",
 							"steps":
 							[
@@ -393,6 +340,66 @@
 											"mount":  "Egg of Millagazor",
 											"epic": true,
 											"icon":"inv_misc_orb_05"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"title":"Portal to ",
+					"capital": true,
+					"finalStep": "Hearthstone back to shrine",
+					"steps": 
+					[
+						{
+							"title": "Portal to Caverns of Time",
+							"steps":
+							[
+								{
+									"title": "Run Culling of Stratholme",
+									"bosses": 
+									[
+										{
+											"name":"Infinite Corruptor",
+											"spellId":59569,
+											"itemId":43951,
+											"mount": "Bronze Drake",
+											"epic": true,
+											"icon":"ability_mount_drake_bronze",
+											"note":"Heroic only. Timed run"
+										}
+									]
+								},
+								{
+									"title": "Run Dragon Soul",
+									"bosses": 
+									[
+										{
+											"name":"Ultraxion",
+											"spellId":110039,
+											"itemId":78919,
+											"mount": "Experiment 12-B",
+											"epic": true,
+											"icon":"ability_mount_drake_twilight"
+										},
+										{
+											"name":"Deathwing",
+											"spellId":107842,
+											"itemId":77067,
+											"mount": "Blazing Drake",
+											"epic": true,
+											"icon":"ability_mount_drake_red"
+										},
+										{
+											"name":"Deathwing",
+											"spellId":107845,
+											"itemId":77069,
+											"mount": "Life-Binder's Handmaiden",
+											"epic": true,
+											"icon":"ability_mount_drake_red",
+											"note":"Heroic (10 or 25)"
 										}
 									]
 								}
