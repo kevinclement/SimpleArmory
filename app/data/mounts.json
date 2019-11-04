@@ -4579,12 +4579,14 @@
           {
             "icon": "inv_allianceshipmount",
             "spellid": 245723,
-            "itemId": 151618
+            "itemId": 151618,
+            "side": "A"					
           },
           {
             "icon": "inv_hordezeppelinmount",
             "spellid": 245725,
-            "itemId": 151617
+            "itemId": 151617,
+            "side": "H"			
           }
         ],
         "id": "6f31dfa2"
@@ -4609,12 +4611,20 @@
           },
           {
             "icon": "inv_dressedhorse",
-            "spellid": 255695
+            "itemId": "153539",					
+            "spellid": 255695,
+            "side": "A"					
           },
           {
             "icon": "inv_armoredraptor",
-            "spellid": 255696
-          }
+            "itemId": "153540",			
+            "spellid": 255696,
+            "side": "H"				
+          },
+          {
+            "icon": "3040844",		
+            "spellid": 307932		
+          }		  
         ],
         "id": "259f733d"
       },
