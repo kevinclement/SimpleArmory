@@ -16,7 +16,7 @@ async function handleRequest(request) {
   let debug = "";
 
   // simple bailout for any url I don't like
-  if (!request.url.match(/armorystats\.info\/character\/.*/i)) {
+  if (!request.url.match(/armorystats\.info\/(character|profile)\/.*/i)) {
     return new Response('Hello, this is the api server for simplearmory.com');
   }
 
@@ -55,26 +55,41 @@ async function handleRequest(request) {
     debug = `EXISTING: ${access_token_expires_date}`;
   }
 
-  let url_match = request.url.match(/character\/(.+)\/(.+)\/(.+)/i);
+  let url_match = request.url.match(/(character|profile)\/(.+)\/(.+)\/(.+)/i);
   if (!url_match) {
     return new Response('Bad Request', { status: 400, statusText: 'Bad Request' });
   } 
 
-  let region = url_match[1];
-  let realm = url_match[2];
-  let character = url_match[3];
+  let region = url_match[2];
+  let realm = url_match[3];
+  let character = url_match[4];
 
   console.log(`region: ${region} realm: ${realm} character: ${character}`)
-  let url = `https://${region}.api.blizzard.com/wow/character/${realm}/${character}?fields=pets,mounts,achievements,guild,reputation`;
 
-  let char_api_response = await fetch(url, { headers: { 'Authorization': 'Bearer ' + access_token } } )
+  let url;
+  let api_response;
 
-  // Copy the response so that we can modify headers.
-  char_api_response = new Response(char_api_response.body, char_api_response)
+  if (url_match[1] === 'character') {
+    url = `https://${region}.api.blizzard.com/wow/character/${realm}/${character}?fields=pets,mounts,achievements,guild,reputation`;
+    api_response = await fetch(url, { headers: { 'Authorization': 'Bearer ' + access_token } } )
+
+    // Copy the response so that we can modify headers.
+    api_response = new Response(api_response.body, api_response)
+  } else if (url_match[1] === 'profile') {
+    url = `https://${region}.api.blizzard.com/profile/wow/character/${realm}/${character}?namespace=profile-${region}`;
+    api_response = await fetch(url, { headers: { 'Authorization': 'Bearer ' + access_token } } )
+    let json_response = await api_response.json()
+
+    let achievements_url = json_response.achievements.href
+    let achievements_response = await fetch(achievements_url, { headers: { 'Authorization': 'Bearer ' + access_token } } )
+    json_response.achievements = await achievements_response.json()
+    api_response = new Response(JSON.stringify(json_response), api_response)
+  }
 
   // Add CORS so we can call it from our site
-  char_api_response.headers.set("Access-Control-Allow-Origin", "*")
-  char_api_response.headers.set("X-Debug", debug)
+  api_response.headers.set("Access-Control-Allow-Origin", "*")
+  api_response.headers.set("X-Debug", debug)
 
-  return char_api_response
+  return api_response
 }
+

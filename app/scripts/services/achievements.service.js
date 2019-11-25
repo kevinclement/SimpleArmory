@@ -26,23 +26,40 @@
                     return $q.when(parsedAchievements);
                 }
 
-                return LoginService.getCharacter(
+                // Try getting data from the Profile API first
+                return LoginService.getProfile(
                         {
                             'region': $routeParams.region,
                             'realm':$routeParams.realm,
                             'character':$routeParams.character
                         })
-                    .then(function(character) {
-                        return $http.get('data/achievements.json', { cache: true})
+                    .then(function(profile) {
+                        return $http.get('data/achievements.json', { cache: true })
                             .then(function(data) {
-                                parsedAchievements = parseAchievementObject(data.data.supercats, character, SettingsService, $window);
+                                parsedAchievements = parseAchievementObject(data.data.supercats, profile, null, SettingsService, $window);
                                 return parsedAchievements;
                             });
-                    });
+                    })
+                    // If the Profile API fails, use the old Community API
+                    .catch(function() {
+                        return LoginService.getCharacter(
+                            {
+                                'region': $routeParams.region,
+                                'realm':$routeParams.realm,
+                                'character':$routeParams.character
+                            })
+                        .then(function(character) {
+                            return $http.get('data/achievements.json', { cache: true })
+                                .then(function(data) {
+                                    parsedAchievements = parseAchievementObject(data.data.supercats, null, character, SettingsService, $window);
+                                    return parsedAchievements;
+                                });
+                        })
+                    })
             }
         };
 
-        function parseAchievementObject(supercats, character, settings, $window) {    
+        function parseAchievementObject(supercats, profile, character, settings, $window) {
             var obj = {};
             var completed = {};
             var critCompleted = {};
@@ -51,25 +68,60 @@
             var totalFoS = 0;
             var totalLegacy = 0;
             var found = {};
+            var name = '';
+            var faction = '';
             $log.log('Parsing achievements.json...');
 
-            // Build up lookup for criteria that character has completed
-            angular.forEach(character.achievements.criteria, function(crit, index) {
-                critCompleted[crit] = true;
-            });
+            // Parse achievements from the Profile API if available
+            if (profile) {
+                name = profile.name;
+                faction = profile.faction;
 
-            // Build up lookup for achievements that character has completed
-            angular.forEach(character.achievements.achievementsCompleted, function(ach, index) {
-                // hash the achievement and its timestamp
-                completed[ach] = character.achievements.achievementsCompletedTimestamp[index];
+                // Build up lookup for achievements that character has completed
+                angular.forEach(profile.achievements.achievements, function(ach, index) {
+                    if (ach.completed_timestamp) {
+                        // hash the achievement and its timestamp
+                        completed[ach.id] = ach.completed_timestamp;
+                    }
 
-                // FoS will no longer have timestamps, so we need to fake their timestamp
-                if (!character.achievements.achievementsCompletedTimestamp[index])
-                {
-                    completed[ach] = settings.fakeCompletionTime;
-                }
-                found[ach] = false;
-            });
+                    // Build up lookup for criteria that character has completed
+                    angular.forEach(ach.criteria, function(crit, index) {
+                        if (crit.is_completed) {
+                            critCompleted[crit.id] = true;
+                        }
+
+                        angular.forEach(crit.child_criteria, function(child_crit, index) {
+                            if (child_crit.is_completed) {
+                                critCompleted[child_crit.id] = true;
+                            }
+                        });
+                    });
+                });
+            }
+            // The Profile API doesn't have achievement data if the character hasn't logged on since the release of 8.2,
+            // use the Community API for old characters instead
+            else {
+              name = character.name;
+              faction = character.faction;
+
+              // Build up lookup for criteria that character has completed
+              angular.forEach(character.achievements.criteria, function(crit, index) {
+                  critCompleted[crit] = true;
+              });
+
+              // Build up lookup for achievements that character has completed
+              angular.forEach(character.achievements.achievementsCompleted, function(ach, index) {
+                  // hash the achievement and its timestamp
+                  completed[ach] = character.achievements.achievementsCompletedTimestamp[index];
+
+                  // FoS will no longer have timestamps, so we need to fake their timestamp
+                  if (!character.achievements.achievementsCompletedTimestamp[index])
+                  {
+                      completed[ach] = settings.fakeCompletionTime;
+                  }
+                  found[ach] = false;
+              });
+            }
 
             // Lets parse out all the super categories and build out our structure
             angular.forEach(supercats, function(supercat) {
@@ -103,7 +155,7 @@
 
                             // Hack: until blizz fixes api, don't stamp with date
                             if (myAchievement.completed && myAchievement.completed !== settings.fakeCompletionTime) {
-                                myAchievement.rel = 'who=' + character.name + '&when=' + myAchievement.completed;
+                                myAchievement.rel = 'who=' + name + '&when=' + myAchievement.completed;
                             }
 
                             // Always add it if we've completed it, it should show up regardless if its available
@@ -138,7 +190,7 @@
 
                             // Update counts proper
                             if (supercat.name !== 'Feats of Strength' && supercat.name !== 'Legacy' && !ach.notObtainable && 
-                                (!ach.side || ach.side === character.faction)){
+                                (!ach.side || ach.side === faction)){
                                 possibleCount++;
                                 totalPossible++;
 

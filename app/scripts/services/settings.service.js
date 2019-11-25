@@ -10,7 +10,7 @@
 
         return {
             'WowHeadUrl': 'wowhead.com',
-            'apiEndPoint':'https://armorystats.info/character/',
+            'apiEndPoint':'https://armorystats.info/',
             'anchorTarget': '_blank',  // in case we want this to be a setting for _self
             'debug': $routeParams['debug'] && $routeParams['debug'] === '1' ? true : false,
             'fakeCompletionTime': 312,
