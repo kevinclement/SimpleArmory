@@ -33,6 +33,8 @@
                 LoginService.getCharacter({'region': rgr[1], 'realm':rgr[2], 'character':rgr[3]})
                     .then(function(character) {
                         $scope.character = character;
+                        $scope.region = rgr[1];
+                        $scope.realm = rgr[2];
                         $scope.isLoggedIn = true;
                 });
             }
