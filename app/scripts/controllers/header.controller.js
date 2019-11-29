@@ -19,6 +19,16 @@
             return url;
         };
 
+        $scope.toggleDarkTheme = function() {
+            var isUsingDarkTheme = localStorage.getItem('darkTheme') == 'true';
+            if(isUsingDarkTheme) {
+                localStorage.setItem('darkTheme', 'false');
+            } else {
+                localStorage.setItem('darkTheme', 'true');
+            }
+            $scope.$parent.updateTheme();
+        };
+
         $scope.isActive = function (viewLocation, subMenu) {
 
             // if its a submenu search, then just look for the location in the url

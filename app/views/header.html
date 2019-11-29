@@ -48,7 +48,7 @@
         <li class="dropdown">
             <a href="#" class="navbar-char-link dropdown-toggle">
                 <img class="navbar-char-image" ng-src="{{imgUrl()}}"/>
-                <b class="caret"></b>                
+                <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
               <li class="signin-label">Signed in as</li>
@@ -56,14 +56,19 @@
               <li role="separator" class="divider"></li>
               <li><a ng-href="{{armoryUrl()}}" target="_blank">Armory profile</a></li>
               <li><a href="mailto:simplearmory@gmail.com?subject=Simple Armory Feedback">Contact</a></li>
+              <li>
+                  <a ng-click="toggleDarkTheme()" class="toggleTheme">
+                    Use <span ng-if="!$parent.isUsingDarkTheme">Dark Theme</span><span ng-if="$parent.isUsingDarkTheme">Light Theme</span>
+                  </a>
+              </li>
               <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EQKUGCXWLES44" target="_blank">Donate</a></li>
               <!-- hide until I implement
               <li role="separator" class="divider"></li>
               <li><a ng-href="{{getUrl('settings')}}">Settings</a></li>
               <li><a href="#">Sign out</a></li>
               -->
-            </ul>                
-        </li>       
+            </ul>
+        </li>
       </ul>
     </div>
   </div>

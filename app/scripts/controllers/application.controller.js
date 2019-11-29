@@ -11,6 +11,7 @@
 
         // default to not logged in
         $scope.isLoggedIn = false;
+        $scope.isUsingDarkTheme = localStorage.getItem('darkTheme') == 'true';
 
         // Listen for path changed and then parse and fetch the character
         $scope.$on('$locationChangeSuccess', function(){
@@ -62,6 +63,10 @@
             }
 
             return '' + n + ' / ' + d + ' (' + perc + '%)';
+        };
+
+        $scope.updateTheme = function() {
+            $scope.isUsingDarkTheme = localStorage.getItem('darkTheme') == 'true';
         };
 
         // Helper to get the image id off an item
