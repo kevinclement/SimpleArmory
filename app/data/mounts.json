@@ -181,7 +181,21 @@
             "itemId": 167171,
             "name": "Azshari Bloatray",
             "spellid": 292419
-          }
+          },
+          {
+            "icon": "inv_nzothserpentmount_purple",
+            "itemId": 174861,
+            "name": "Wriggling Parasite",
+            "spellid": 316343,
+			"notObtainable": true
+          },
+          {
+            "icon": "inv_nzothserpentmount_pale",
+            "itemId": 174836,
+            "name": "Awakened Mindborer",
+            "spellid": 316637,
+			"notObtainable": true
+          }		  		  
         ]
       },
       {
@@ -229,7 +243,21 @@
             "itemId": 169202,
             "name": "Crimson Tidestallion",
             "spellid": 300153
-          }
+          },
+		  {
+            "itemId": "174649",
+            "spellid": "315427",
+            "icon": "inv_pandarenserpentmount_white",
+            "name": "Rajani Warserpent",
+			"notObtainable": true
+          },
+		  {
+            "itemId": "174770",
+            "spellid": "316340",
+            "icon": "inv_aqirflyingmount_red",
+            "name": "Wicked Swarmer",
+			"notObtainable": true
+          }			  
         ]
       },
       {
@@ -272,8 +300,23 @@
             "icon": "inv_beemount",
             "itemId": 170069,
             "name": "Honeyback Harvester",
-            "spellid": 259741
-          }
+            "spellid": 259741,
+			"side": "A"
+          },
+		  {
+            "itemId": "174859",
+            "spellid": "316802",
+            "icon": "inv_alpacamount_yellow",
+            "name": "Reins of the Springfur Alpaca",
+			"notObtainable": true
+          },
+		  {
+            "itemId": "174771",
+            "spellid": "316339",
+            "icon": "inv_aqirflyingmount_purple",
+            "name": "Shadowbarb Drone",
+			"notObtainable": true
+          }		  
         ]
       },
       {
@@ -307,6 +350,13 @@
             "name": "Azureshell Krolusk",
             "side": "A",
             "spellid": 288736
+          },
+		  {
+            "icon": "inv_nightsaber2mountyellow",
+            "itemId": 166436,
+            "name": "Sandy Nightsaber",
+            "spellid": 288506,
+            "notObtainable": true
           }
         ]
       },
@@ -365,6 +415,22 @@
             "icon": "inv_triceratopszandalari",
             "spellid": "263707",
             "side": "H"
+          },
+		  {
+            "itemId": "174067",
+            "name": "Mechagon Mechanostrider",
+            "icon": "inv_mechagnomestrider",
+            "spellid": "305592",
+            "side": "A",
+			"notObtainable": true
+          },
+		  {
+            "itemId": "174066",
+            "name": "Caravan Hyena",
+            "icon": "inv_vulperamount",
+            "spellid": "306423",
+            "side": "H",
+			"notObtainable": true
           }
         ]
       },
@@ -395,7 +461,14 @@
             "name": "Goldenmane's Reins",
             "icon": "ability_mount_ridinghorse",
             "spellid": "260175"
-          }
+          },
+          {
+            "itemId": "174860",
+            "name": "Reins of the Elusive Quickhoof",
+            "icon": "inv_alpacamount_black",
+            "spellid": "316493",
+			"notObtainable": true
+          }	  
         ]
       },
       {
@@ -438,6 +511,19 @@
             "name": "Silent Glider",
             "spellid": 300149
           }
+        ]
+      },
+	  {
+        "name": "World Boss",
+        "id": "",
+        "items": [
+		  {
+            "itemId": "174842",
+            "spellid": "298367",
+            "icon": "inv_alpacamount_brown",
+            "name": "Slightly Damp Pile of Fur",
+			"notObtainable": true
+          }	
         ]
       },
       {
@@ -545,6 +631,13 @@
             "itemId": 168829,
             "name": "Rustbolt Resistor",
             "spellid": 299170
+          },
+		  {
+            "itemId": "174754",
+            "spellid": "316276",
+            "icon": "inv_vulturemount_red",
+            "name": "Wastewander Skyterror",
+			"notObtainable": true
           }
         ]
       },
@@ -623,7 +716,21 @@
             "itemId": 166705,
             "name": "Glacial Tidestorm",
             "spellid": 289555
-          }
+          },
+          {
+            "icon": "inv_eyeballjellyfishmount",
+            "itemId": 174872,
+            "name": "Ny'alotha Allseer",
+            "spellid": 308814,
+			"notObtainable": true
+          },
+          {
+            "icon": "inv_voiddragonmount",
+            "itemId": 174862,
+            "name": "Uncorrupted Voidwing",
+            "spellid": 302143,
+			"notObtainable": true
+          }	
         ]
       },
       {
@@ -691,13 +798,6 @@
             "itemId": 166435,
             "name": "Kaldorei Nightsaber",
             "spellid": 288505
-          },
-          {
-            "icon": "inv_nightsaber2mountyellow",
-            "itemId": 166436,
-            "name": "Sandy Nightsaber",
-            "spellid": 288506,
-            "notObtainable": true
           },
           {
             "icon": "inv_chimera3",
@@ -797,6 +897,74 @@
           }
         ]
       },
+     {
+        "name": "Horrific Visions",
+        "id": "",
+        "items": [
+          {	 
+		    "itemId": "174653",
+            "spellid": "315987",
+            "icon": "inv_nzothserpentmount_red",
+            "name": "Mail Muncher",
+			"notObtainable": true
+          }
+        ]
+      },	  
+	  {
+        "name": "Titan Assaults",
+        "id": "",
+        "items": [
+		  {
+            "itemId": "173887",
+            "spellid": "312751",
+            "icon": "inv_thunderislebirdbossmount_blue",
+            "name": "Clutch of Ha-Li",
+			"notObtainable": true
+          },
+		  {
+            "itemId": "174752",
+            "spellid": "315014",
+            "icon": "inv_pandarenserpentmount_white",
+            "name": "Ivory Cloud Serpent",
+			"notObtainable": true
+          },
+		  {
+            "itemId": "174641",
+            "spellid": "315847",
+            "icon": "inv_dragonskywallmount_bronze",
+            "name": "Reins of the Drake of the Four Winds",
+			"notObtainable": true
+          },
+		  {
+            "itemId": "174753",
+            "spellid": "316275",
+            "icon": "inv_vulturemount_black",
+            "name": "Waste Marauder",
+			"notObtainable": true
+          },
+		  {
+            "itemId": "174769",
+            "spellid": "316337",
+            "icon": "inv_aqirflyingmount_black",
+            "name": "Malevolent Drone",
+			"notObtainable": true
+          },	
+		  {
+            "itemId": "174840",
+            "spellid": "316723",
+            "icon": "inv_quilenmount_gold",
+            "name": "Xinlao",
+			"notObtainable": true
+          },	
+		  {
+            "itemId": "174841",
+            "spellid": "316722",
+            "icon": "inv_quilenmount_red",
+            "name": "Ren's Stalwart Hound",
+			"notObtainable": true
+          }	
+        ]
+      },	  
       {
         "name": "Pre-launch Event",
         "id": "d9a261ed",
@@ -829,9 +997,9 @@
             "name": "Onyx War Hyena",
             "spellid": 237288,
             "notObtainable": true
-          }
+          }	  
         ]
-      }
+      }	  
     ]
   },
   {
@@ -1385,12 +1553,14 @@
           {
             "spellid": "171833",
             "itemId": "116776",
-            "icon": "ability_mount_talbukdraenormount"
+            "icon": "ability_mount_talbukdraenormount",
+			"side": "A"
           },
           {
             "spellid": "171832",
             "itemId": "116775",
-            "icon": "ability_mount_talbukdraenormount"
+            "icon": "ability_mount_talbukdraenormount",
+			"side": "H"
           },
           {
             "spellid": "171829",
@@ -4564,7 +4734,19 @@
             "itemId": 166776,
             "name": "Sylverian Dreamer",
             "spellid": 290132
-          }	  
+          },
+		  {
+			"icon": "2957417",
+			"name": "Alabaster Stormtalon",
+			"spellid": 302361,
+			"side": "A"	
+		  },
+		  {
+			"icon": "2974019",
+			"name": "Alabaster Thunderwing",
+			"spellid": 302362,
+			"side": "H"
+		  }		  
         ],
         "id": "a90a3293"
       },
@@ -4624,7 +4806,7 @@
           {
             "icon": "3040844",		
             "spellid": 307932		
-          }		  
+          }
         ],
         "id": "259f733d"
       },
