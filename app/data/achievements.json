@@ -751,6 +751,12 @@
                   "points": 10,
                   "side": "H",
                   "title": "The Mechagonian Threat"
+                },
+                {
+                  "icon": "inv_eyeofnzothpet",
+                  "id": 14157,
+                  "points": 10,
+                  "title": "The Corruptor's End"
                 }
               ],
               "name": "War Campaign"
@@ -1104,7 +1110,31 @@
                   "title": "Pushing the Payload"
                 }
               ],
-              "name": "Assaults"
+              "name": "War Assaults"
+            },
+            {
+              "name": "Black Empire Assaults",
+              "id": "122e2144",
+              "items": [
+                {
+                  "icon": "achievement_zone_uldum",
+                  "id": 14153,
+                  "points": 5,
+                  "title": "Uldum Under Assault"
+                },
+                {
+                  "icon": "achievement_zone_valeofeternalblossoms",
+                  "id": 14154,
+                  "points": 5,
+                  "title": "Defend the Vale"
+                },
+                {
+                  "icon": "ability_warrior_bloodnova",
+                  "id": 14161,
+                  "points": 5,
+                  "title": "All Consuming"
+                }
+              ]
             },
             {
               "id": "d591e640",
@@ -5721,6 +5751,30 @@
                 }
               ],
               "name": "Mechagon"
+            },
+            {
+              "id": "bbf49487",
+              "items": [
+                {
+                  "icon": "artifactability_blooddeathknight_umbilicuseternus",
+                  "id": 14158,
+                  "points": 10,
+                  "title": "It's Not A Tumor!"
+                },
+                {
+                  "icon": "spell_priest_voidform",
+                  "id": 14159,
+                  "points": 10,
+                  "title": "Combating the Corruption"
+                },
+                {
+                  "icon": "inv_misc_food_cooked_tigersteak",
+                  "id": 14160,
+                  "points": 10,
+                  "title": "Rare to Well Done"
+                }
+              ],
+              "name": "Black Empire Assaults"
             }
           ]
         },
@@ -9945,12 +9999,6 @@
                   "side": "A"
                 },
                 {
-                  "icon": "Achievement_Leader_Sylvanas",
-                  "id": "612",
-                  "points": 10,
-                  "side": "A"
-                },
-                {
                   "icon": "Achievement_Leader_Prophet_Velen",
                   "id": "618",
                   "points": 10,
@@ -11746,85 +11794,6 @@
           ]
         },
         {
-          "id": "a7de5618",
-          "name": "Deepwind Gorge",
-          "subcats": [
-            {
-              "id": "1363cb3b",
-              "items": [
-                {
-                  "icon": "achievement_bg_captureflag_eos",
-                  "id": "8359",
-                  "points": 10
-                },
-                {
-                  "criteria": {
-                    "23425": "33014",
-                    "23426": "33015",
-                    "23427": "33016",
-                    "23428": "33017"
-                  },
-                  "icon": "ability_warrior_intensifyrage",
-                  "id": "8358",
-                  "points": 20
-                },
-                {
-                  "icon": "achievement_bg_abshutout",
-                  "id": "8333",
-                  "points": 20
-                },
-                {
-                  "icon": "achievement_zone_valleyoffourwinds",
-                  "id": "8332",
-                  "points": 10
-                },
-                {
-                  "icon": "achievement_zone_valleyoffourwinds",
-                  "id": "8331",
-                  "points": 10
-                },
-                {
-                  "criteria": {
-                    "23429": "33021",
-                    "23430": "33022",
-                    "23431": "33023",
-                    "23432": "33024",
-                    "23433": "33025",
-                    "23434": "33138",
-                    "23522": "33139",
-                    "23523": "33140",
-                    "23524": "33141"
-                  },
-                  "icon": "achievement_bg_dg_master_of_the_deepwind_gorge",
-                  "id": "8360",
-                  "points": 10
-                },
-                {
-                  "icon": "achievement_bg_winav_bothmines",
-                  "id": "8350",
-                  "points": 10
-                },
-                {
-                  "icon": "achievement_bg_tophealer_ab",
-                  "id": "8351",
-                  "points": 10
-                },
-                {
-                  "icon": "spell_magic_featherfall",
-                  "id": "8354",
-                  "points": 10
-                },
-                {
-                  "icon": "inv_stone_weightstone_06",
-                  "id": "8355",
-                  "points": 10
-                }
-              ],
-              "name": ""
-            }
-          ]
-        },
-        {
           "id": "c90a048a",
           "name": "Seething Shore",
           "subcats": [
@@ -11912,6 +11881,57 @@
                   "icon": "ability_warrior_intensifyrage",
                   "id": 12412,
                   "points": 25
+                }
+              ],
+              "name": ""
+            }
+          ]
+        },
+        {
+          "id": "a7de5618",
+          "name": "Deepwind Gorge",
+          "subcats": [
+            {
+              "id": "1363cb3b",
+              "items": [
+                {
+                  "icon": "achievement_bg_abshutout",
+                  "id": "8333",
+                  "points": 20
+                },
+                {
+                  "icon": "achievement_zone_valleyoffourwinds",
+                  "id": "8332",
+                  "points": 10
+                },
+                {
+                  "icon": "achievement_zone_valleyoffourwinds",
+                  "id": "8331",
+                  "points": 10
+                },
+                {
+                  "icon": "achievement_bg_dg_master_of_the_deepwind_gorge",
+                  "id": 14175,
+                  "points": 10,
+                  "title": "Master of Deepwind Gorge"
+                },
+                {
+                  "icon": "achievement_cooking_masterofthesteamer",
+                  "id": 14186,
+                  "points": 20,
+                  "title": "Market Dominance"
+                },
+                {
+                  "icon": "ability_monk_drunkenhaze",
+                  "id": 14187,
+                  "points": 20,
+                  "title": "Cruisin' for a Brewsin'"
+                },
+                {
+                  "icon": "pandarenracial_epicurean",
+                  "id": 14188,
+                  "points": 20,
+                  "title": "Well Gorged"
                 }
               ],
               "name": ""
@@ -12704,6 +12724,12 @@
                   "id": 13687,
                   "points": 25,
                   "title": "Glory of the Eternal Raider"
+                },
+                {
+                  "icon": "achievement_nzothraid_nyalothaguildrun",
+                  "id": 14146,
+                  "points": 25,
+                  "title": "Glory of the Ny'alotha Raider"
                 }
               ],
               "name": "Battle"
@@ -14021,6 +14047,180 @@
                 }
               ],
               "name": "World"
+            },
+            {
+              "id": "ba6fd32a",
+              "items": [
+                {
+                  "icon": "achievement_nzothraid_nyalothaguildrun",
+                  "id": 14193,
+                  "points": 10,
+                  "title": "Vision of Destiny"
+                },
+                {
+                  "icon": "achievement_nzothraid_raden",
+                  "id": 14194,
+                  "points": 10,
+                  "title": "Halls of Devotion"
+                },
+                {
+                  "icon": "achievement_nzothraid_ilgynoth",
+                  "id": 14195,
+                  "points": 10,
+                  "title": "Gift of Flesh"
+                },
+                {
+                  "icon": "achievement_nzothraid_nzoth",
+                  "id": 14196,
+                  "points": 10,
+                  "title": "The Waking Dream"
+                },
+                {
+                  "icon": "ability_rogue_smoke",
+                  "id": 14019,
+                  "points": 10,
+                  "title": "Smoke Test"
+                },
+                {
+                  "icon": "spell_shadow_summonvoidwalker",
+                  "id": 14008,
+                  "points": 10,
+                  "title": "Mana Sponge"
+                },
+                {
+                  "icon": "inv_armor_tauren_d_01pants",
+                  "id": 14037,
+                  "points": 10,
+                  "title": "Phase 3: Prophet"
+                },
+                {
+                  "icon": "ability_mount_goatmountblack",
+                  "id": 14024,
+                  "points": 10,
+                  "title": "Buzzer Beater"
+                },
+                {
+                  "icon": "achievement_boss_krikthir",
+                  "id": 14023,
+                  "points": 10,
+                  "title": "Realizing Your Potential"
+                },
+                {
+                  "icon": "inv_pet_voidhound",
+                  "id": 13990,
+                  "points": 10,
+                  "title": "You Can Pet the Dog, But..."
+                },
+                {
+                  "icon": "ability_rogue_kidneyshot",
+                  "id": 14026,
+                  "points": 10,
+                  "title": "Temper Tantrum"
+                },
+                {
+                  "icon": "spell_priest_voidsear",
+                  "id": 14139,
+                  "points": 10,
+                  "title": "Total Annihilation"
+                },
+                {
+                  "icon": "trade_archaeology_nerubian_obelisk",
+                  "id": 13999,
+                  "points": 10,
+                  "title": "How? Isn't it Obelisk?"
+                },
+                {
+                  "icon": "inv_artifact_bloodoftheassassinated",
+                  "id": 14038,
+                  "points": 10,
+                  "title": "Bloody Mess"
+                },
+                {
+                  "icon": "inv_fishing_innards_guts",
+                  "id": 14147,
+                  "points": 10,
+                  "title": "Cleansing Treatment"
+                },
+                {
+                  "icon": "ability_mage_massinvisibility",
+                  "id": 14148,
+                  "points": 10,
+                  "title": "It's Not A Cult"
+                },
+                {
+                  "icon": "achievement_nzothraid_wrathion",
+                  "id": 14041,
+                  "points": 10,
+                  "title": "Mythic: Wrathion, the Black Emperor"
+                },
+                {
+                  "icon": "achievement_nzothraid_maut",
+                  "id": 14043,
+                  "points": 10,
+                  "title": "Mythic: Maut"
+                },
+                {
+                  "icon": "achievement_nzothraid_skitra",
+                  "id": 14044,
+                  "points": 10,
+                  "title": "Mythic: The Prophet Skitra"
+                },
+                {
+                  "icon": "achievement_nzothraid_xanesh",
+                  "id": 14045,
+                  "points": 10,
+                  "title": "Mythic: Dark Inquisitor Xanesh"
+                },
+                {
+                  "icon": "achievement_nzothraid_hivemind",
+                  "id": 14046,
+                  "points": 10,
+                  "title": "Mythic: The Hivemind"
+                },
+                {
+                  "icon": "achievement_nzothraid_shadhar",
+                  "id": 14048,
+                  "points": 10,
+                  "title": "Mythic: Shad'har the Insatiable"
+                },
+                {
+                  "icon": "achievement_nzothraid_drestagath",
+                  "id": 14049,
+                  "points": 10,
+                  "title": "Mythic: Drest'agath"
+                },
+                {
+                  "icon": "achievement_nzothraid_vexiona",
+                  "id": 14050,
+                  "points": 10,
+                  "title": "Mythic: Vexiona"
+                },
+                {
+                  "icon": "achievement_nzothraid_raden",
+                  "id": 14051,
+                  "points": 10,
+                  "title": "Mythic: Ra-den the Despoiled"
+                },
+                {
+                  "icon": "achievement_nzothraid_ilgynoth",
+                  "id": 14052,
+                  "points": 10,
+                  "title": "Mythic: Il'gynoth, Corruption Reborn"
+                },
+                {
+                  "icon": "achievement_nzothraid_carapace",
+                  "id": 14054,
+                  "points": 10,
+                  "title": "Mythic: Carapace of N'Zoth"
+                },
+                {
+                  "icon": "achievement_nzothraid_nzoth",
+                  "id": 14055,
+                  "points": 10,
+                  "title": "Mythic: N'Zoth the Corruptor"
+                }
+              ],
+              "name": "Ny'alotha, the Waking City"
             }
           ]
         },
@@ -24190,6 +24390,30 @@
                   "id": 13503,
                   "points": 10,
                   "title": "Heritage of the Zandalari"
+                },
+                {
+                  "icon": "achievement_alliedrace_vulpera",
+                  "id": 13206,
+                  "points": 10,
+                  "title": "Allied Races: Vulpera"
+                },
+                {
+                  "icon": "inv_tabard_vulpera",
+                  "id": 14002,
+                  "points": 10,
+                  "title": "Heritage of the Vulpera"
+                },
+                {
+                  "icon": "achievement_alliedrace_mechagnome",
+                  "id": 14013,
+                  "points": 10,
+                  "title": "Allied Races: Mechagnome"
+                },
+                {
+                  "icon": "inv_plate_mechagnome_c_01chest",
+                  "id": 14014,
+                  "points": 10,
+                  "title": "Heritage of the Mechagnome"
                 }
               ],
               "name": "Allied Races"
@@ -24296,6 +24520,18 @@
                   "points": 5,
                   "side": "H",
                   "title": "The Unshackled"
+                },
+                {
+                  "icon": "inv_faction_83_uldumaccord",
+                  "id": 14155,
+                  "points": 5,
+                  "title": "Uldum Accord"
+                },
+                {
+                  "icon": "inv_faction_83_rajani",
+                  "id": 14156,
+                  "points": 5,
+                  "title": "The Rajani"
                 }
               ],
               "name": " "
@@ -27312,329 +27548,6 @@
           ]
         },
         {
-          "id": "d8da7821",
-          "name": "Argent Tournament",
-          "subcats": [
-            {
-              "id": "1e8fb283",
-              "items": [
-                {
-                  "icon": "inv_misc_tournaments_symbol_human",
-                  "id": "2781",
-                  "points": 10,
-                  "side": "A"
-                },
-                {
-                  "icon": "inv_misc_tournaments_symbol_dwarf",
-                  "id": "2780",
-                  "points": 10,
-                  "side": "A"
-                },
-                {
-                  "icon": "inv_misc_tournaments_symbol_gnome",
-                  "id": "2779",
-                  "points": 10,
-                  "side": "A"
-                },
-                {
-                  "icon": "inv_misc_tournaments_symbol_nightelf",
-                  "id": "2777",
-                  "points": 10,
-                  "side": "A"
-                },
-                {
-                  "icon": "inv_misc_tournaments_symbol_draenei",
-                  "id": "2778",
-                  "points": 10,
-                  "side": "A"
-                },
-                {
-                  "criteria": {
-                    "9778": "2160",
-                    "9779": "2161",
-                    "9780": "2162",
-                    "9781": "2163",
-                    "9782": "2164"
-                  },
-                  "icon": "inv_misc_tournaments_banner_human",
-                  "id": "2782",
-                  "points": 10,
-                  "side": "A"
-                },
-                {
-                  "icon": "inv_misc_tournaments_symbol_orc",
-                  "id": "2783",
-                  "points": 10,
-                  "side": "H"
-                },
-                {
-                  "icon": "inv_misc_tournaments_symbol_troll",
-                  "id": "2784",
-                  "points": 10,
-                  "side": "H"
-                },
-                {
-                  "icon": "inv_misc_tournaments_symbol_tauren",
-                  "id": "2786",
-                  "points": 10,
-                  "side": "H"
-                },
-                {
-                  "icon": "inv_misc_tournaments_symbol_scourge",
-                  "id": "2787",
-                  "points": 10,
-                  "side": "H"
-                },
-                {
-                  "icon": "inv_misc_tournaments_symbol_bloodelf",
-                  "id": "2785",
-                  "points": 10,
-                  "side": "H"
-                },
-                {
-                  "criteria": {
-                    "9788": "3426",
-                    "9789": "3427",
-                    "9790": "3428",
-                    "9791": "3429",
-                    "9792": "3430"
-                  },
-                  "icon": "inv_misc_tournaments_banner_orc",
-                  "id": "2788",
-                  "points": 10,
-                  "side": "H"
-                }
-              ],
-              "name": "Champion"
-            },
-            {
-              "id": "ad601e30",
-              "items": [
-                {
-                  "criteria": {
-                    "11324": "10357",
-                    "5331": "10358"
-                  },
-                  "icon": "inv_misc_tournaments_symbol_human",
-                  "id": "2764",
-                  "points": 10,
-                  "side": "A"
-                },
-                {
-                  "criteria": {
-                    "11323": "11150",
-                    "5330": "11151"
-                  },
-                  "icon": "inv_misc_tournaments_symbol_dwarf",
-                  "id": "2763",
-                  "points": 10,
-                  "side": "A"
-                },
-                {
-                  "criteria": {
-                    "11322": "6992",
-                    "5329": "6993"
-                  },
-                  "icon": "inv_misc_tournaments_symbol_gnome",
-                  "id": "2762",
-                  "points": 10,
-                  "side": "A"
-                },
-                {
-                  "criteria": {
-                    "11320": "7111",
-                    "5328": "7112"
-                  },
-                  "icon": "inv_misc_tournaments_symbol_nightelf",
-                  "id": "2760",
-                  "points": 10,
-                  "side": "A"
-                },
-                {
-                  "criteria": {
-                    "11321": "7897",
-                    "5332": "7898"
-                  },
-                  "icon": "inv_misc_tournaments_symbol_draenei",
-                  "id": "2761",
-                  "points": 10,
-                  "side": "A"
-                },
-                {
-                  "criteria": {
-                    "9668": "8505",
-                    "9669": "8509",
-                    "9670": "8506",
-                    "9671": "8507",
-                    "9672": "8508"
-                  },
-                  "icon": "inv_misc_tournaments_banner_human",
-                  "id": "2770",
-                  "points": 10,
-                  "side": "A"
-                },
-                {
-                  "criteria": {
-                    "2024": "10739",
-                    "9668": "10740",
-                    "9669": "10741",
-                    "9670": "10736",
-                    "9671": "10737",
-                    "9672": "10738"
-                  },
-                  "icon": "inv_misc_tournaments_banner_human",
-                  "id": "2817",
-                  "points": 10,
-                  "side": "A"
-                },
-                {
-                  "criteria": {
-                    "5314": "7901",
-                    "9783": "7902"
-                  },
-                  "icon": "inv_misc_tournaments_symbol_orc",
-                  "id": "2765",
-                  "points": 10,
-                  "side": "H"
-                },
-                {
-                  "criteria": {
-                    "11326": "14357",
-                    "5313": "14358"
-                  },
-                  "icon": "inv_misc_tournaments_symbol_troll",
-                  "id": "2766",
-                  "points": 10,
-                  "side": "H"
-                },
-                {
-                  "criteria": {
-                    "11328": "8560",
-                    "5315": "8561"
-                  },
-                  "icon": "inv_misc_tournaments_symbol_tauren",
-                  "id": "2768",
-                  "points": 10,
-                  "side": "H"
-                },
-                {
-                  "criteria": {
-                    "11329": "8065",
-                    "5316": "8066"
-                  },
-                  "icon": "inv_misc_tournaments_symbol_scourge",
-                  "id": "2769",
-                  "points": 10,
-                  "side": "H"
-                },
-                {
-                  "criteria": {
-                    "5317": "8473",
-                    "9785": "8472"
-                  },
-                  "icon": "inv_misc_tournaments_symbol_bloodelf",
-                  "id": "2767",
-                  "points": 10,
-                  "side": "H"
-                },
-                {
-                  "criteria": {
-                    "9673": "8564",
-                    "9674": "8565",
-                    "9675": "8568",
-                    "9676": "8566",
-                    "9677": "8567"
-                  },
-                  "icon": "inv_misc_tournaments_banner_orc",
-                  "id": "2771",
-                  "points": 10,
-                  "side": "H"
-                },
-                {
-                  "criteria": {
-                    "2024": "10315",
-                    "9673": "10316",
-                    "9674": "10317",
-                    "9675": "10318",
-                    "9676": "10319",
-                    "9677": "10320"
-                  },
-                  "icon": "inv_misc_tournaments_banner_orc",
-                  "id": "2816",
-                  "points": 10,
-                  "side": "H"
-                }
-              ],
-              "name": "Exalted Champion"
-            },
-            {
-              "id": "1ba6553e",
-              "items": [
-                {
-                  "icon": "inv_elemental_primal_nether",
-                  "id": "3677",
-                  "points": 10,
-                  "side": "H"
-                },
-                {
-                  "icon": "INV_Spear_05",
-                  "id": "2772",
-                  "points": 10
-                },
-                {
-                  "icon": "inv_sword_155",
-                  "id": "4596",
-                  "points": 10
-                },
-                {
-                  "icon": "Ability_Mount_RidingHorse",
-                  "id": "3736",
-                  "points": 10
-                },
-                {
-                  "criteria": {
-                    "10224": "8520",
-                    "10225": "8521",
-                    "10226": "8522",
-                    "10227": "8523",
-                    "10228": "8524",
-                    "9918": "8518",
-                    "9919": "8515",
-                    "9920": "8519",
-                    "9921": "8517",
-                    "9922": "8516"
-                  },
-                  "icon": "INV_Spear_05",
-                  "id": "2836",
-                  "points": 10
-                },
-                {
-                  "icon": "INV_Helmet_44",
-                  "id": "2773",
-                  "points": 10
-                },
-                {
-                  "icon": "achievement_reputation_argentcrusader",
-                  "id": "2756",
-                  "points": 10
-                },
-                {
-                  "icon": "Achievement_Reputation_ArgentChampion",
-                  "id": "2758",
-                  "points": 10
-                },
-                {
-                  "icon": "INV_Elemental_Primal_Mana",
-                  "id": "3676",
-                  "points": 10,
-                  "side": "A"
-                }
-              ],
-              "name": "Other"
-            }
-          ]
-        },
-        {
           "id": "93e7c386",
           "name": "Darkmoon Faire",
           "subcats": [
@@ -28450,6 +28363,18 @@
                   "id": 13627,
                   "points": 5,
                   "title": "Pet Battle Challenge: Stratholme"
+                },
+                {
+                  "icon": "achievement_zone_blackrock_01",
+                  "id": 14020,
+                  "points": 5,
+                  "title": "Pet Battle Challenge: Blackrock Depths"
+                },
+                {
+                  "icon": "spell_nzinsanity_chasedbyshadows",
+                  "id": 14021,
+                  "points": 10,
+                  "title": "The Shadows Revealed"
                 }
               ],
               "name": "Challenges"
@@ -30748,903 +30673,161 @@
     {
       "cats": [
         {
-          "id": "397263e3",
-          "name": "Collections",
+          "id": "e24d70ab",
+          "name": "Visions of N'Zoth",
           "subcats": [
             {
-              "id": "f54736be",
+              "id": "2c96d6a1",
               "items": [
                 {
-                  "criteria": {
-                    "24024": "34194",
-                    "24025": "34250",
-                    "24026": "34249",
-                    "24027": "34248",
-                    "24028": "34247",
-                    "24029": "34246",
-                    "24030": "34245",
-                    "24031": "34244",
-                    "24032": "34243",
-                    "24033": "34242",
-                    "24034": "34241",
-                    "24035": "34240",
-                    "24037": "34239",
-                    "24038": "34238",
-                    "24039": "34237",
-                    "24040": "34236",
-                    "24041": "34235",
-                    "24042": "34233",
-                    "24043": "34232",
-                    "24044": "34231",
-                    "24045": "34230",
-                    "24046": "34229",
-                    "24047": "34228",
-                    "24048": "34227",
-                    "24049": "34226",
-                    "24050": "34225",
-                    "24051": "34224",
-                    "24052": "34223",
-                    "24053": "34222",
-                    "24054": "34221",
-                    "24055": "34220",
-                    "24056": "34219",
-                    "24057": "34218",
-                    "24058": "34217",
-                    "24059": "34216",
-                    "24060": "34215",
-                    "24061": "34214",
-                    "24062": "34213",
-                    "24063": "34212",
-                    "24064": "34211",
-                    "24065": "34210",
-                    "24066": "34209",
-                    "24067": "34208",
-                    "24068": "34207",
-                    "24069": "34206",
-                    "24070": "34205",
-                    "24071": "34204",
-                    "24072": "34203",
-                    "24073": "34202",
-                    "24074": "34201",
-                    "24075": "34200",
-                    "24076": "34199",
-                    "24077": "34198",
-                    "24078": "34197",
-                    "24079": "34196",
-                    "24080": "34195",
-                    "24081": "34234"
-                  },
-                  "icon": "inv_misc_bag_16",
-                  "id": "8728",
-                  "points": 10
+                  "icon": "inv_misc_cape_deathwingraid_d_03",
+                  "id": 14060,
+                  "points": 10,
+                  "title": "Unwavering Resolve"
                 },
                 {
-                  "icon": "inv_misc_bag_27",
-                  "id": "1165",
-                  "points": 10
+                  "icon": "inv_titan_runestones_icon",
+                  "id": 14061,
+                  "points": 10,
+                  "title": "We Have the Technology"
                 },
                 {
-                  "icon": "inv_jewelry_ring_73",
-                  "id": "2084",
-                  "points": 10
+                  "icon": "ability_priest_voidentropy",
+                  "id": 14143,
+                  "points": 10,
+                  "title": "Reeking of Visions"
                 },
                 {
-                  "criteria": {
-                    "27625": "42809",
-                    "27626": "42810",
-                    "27627": "42811",
-                    "27628": "42812",
-                    "27629": "42813",
-                    "27630": "42814",
-                    "27631": "42815",
-                    "27632": "42816",
-                    "27633": "42823",
-                    "27634": "42833",
-                    "27635": "42817",
-                    "27636": "42818",
-                    "27637": "42819",
-                    "27638": "42820",
-                    "27639": "42821",
-                    "27640": "42822",
-                    "27641": "42825",
-                    "27642": "42824",
-                    "27643": "42826",
-                    "27644": "42827",
-                    "27645": "42828",
-                    "27646": "42829",
-                    "27647": "42830",
-                    "27648": "42831",
-                    "27649": "42832",
-                    "27650": "42836",
-                    "27651": "42834",
-                    "27652": "42835"
-                  },
-                  "icon": "ability_garrison_orangebird",
-                  "id": "9838",
-                  "points": 10
-                },
-                {
-                  "criteria": {
-                    "28182": "44034",
-                    "28183": "44033",
-                    "28184": "44032",
-                    "28185": "44031"
-                  },
-                  "icon": "ability_garrison_orangebird",
-                  "id": "10053",
-                  "points": 10
-                },
-                {
-                  "icon": "ability_garrison_orangebird",
-                  "id": "10770",
-                  "points": 5
+                  "icon": "spell_shadow_auraofdarkness",
+                  "id": 13994,
+                  "points": 20,
+                  "title": "Through the Depths of Visions"
                 }
               ],
-              "name": "Items"
+              "name": ""
             },
             {
-              "id": "35c30faa",
+              "name": "Stormwind",
+              "id": "d395aa74",
               "items": [
                 {
-                  "icon": "inv_shirt_guildtabard_01",
-                  "id": "621",
-                  "points": 10
-                },
-                {
-                  "icon": "inv_shirt_guildtabard_01",
-                  "id": "1020",
-                  "points": 10
-                },
-                {
-                  "icon": "inv_chest_cloth_30",
-                  "id": "1021",
-                  "points": 10
-                },
-                {
-                  "icon": "inv_chest_cloth_30",
-                  "id": "5755",
-                  "points": 10
-                }
-              ],
-              "name": "Tabards"
-            },
-            {
-              "id": "5bcc5ce1",
-              "items": [
-                {
-                  "icon": "inv_weapon_shortblade_05",
-                  "id": "9911",
-                  "points": 5
-                },
-                {
-                  "icon": "inv_sword_05",
-                  "id": "9906",
-                  "points": 10
-                },
-                {
-                  "icon": "inv_weapon_shortblade_58",
-                  "id": "9908",
-                  "points": 10
-                },
-                {
-                  "icon": "inv_sword_50",
-                  "id": "9909",
-                  "points": 10
-                }
-              ],
-              "name": "Heirlooms"
-            }
-          ]
-        },
-        {
-          "id": "271ecc05",
-          "name": "Toy Box",
-          "subcats": [
-            {
-              "id": "7fd9150e",
-              "items": [
-                {
-                  "icon": "inv_misc_toy_01",
-                  "id": "9670",
-                  "points": 10
-                },
-                {
-                  "icon": "inv_misc_toy_09",
-                  "id": "9671",
-                  "points": 10
-                },
-                {
-                  "icon": "inv_misc_toy_08",
-                  "id": "9672",
-                  "points": 10
-                },
-                {
-                  "icon": "inv_misc_toy_10",
-                  "id": "9673",
-                  "points": 10
-                },
-                {
-                  "icon": "inv_misc_toy_05",
-                  "id": "10354",
-                  "points": 10
-                },
-                {
-                  "icon": "inv_misc_football",
-                  "id": "11176",
-                  "points": 10
-                },
-                {
-                  "icon": "creatureportrait_robot_bulldog",
-                  "id": 12996,
-                  "points": 10,
-                  "title": "Toybox Tycoon"
-                }
-              ],
-              "name": "Toy Box"
-            },
-            {
-              "id": "3551ff40",
-              "items": [
-                {
-                  "icon": "trade_archaeology_tyrandesfavoritedoll",
-                  "id": 13708,
-                  "points": 10,
-                  "title": "Most Minis Wins"
-                }
-              ],
-              "name": "Other"
-            }
-          ]
-        },
-        {
-          "id": "6fca96ad",
-          "name": "Mounts",
-          "subcats": [
-            {
-              "id": "db0e6b80",
-              "items": [
-                {
-                  "icon": "ability_mount_polarbear_brown",
-                  "id": "2076",
-                  "points": 10
-                },
-                {
-                  "icon": "ability_mount_mammoth_brown",
-                  "id": "2077",
-                  "points": 10
-                },
-                {
-                  "icon": "ability_mount_mammoth_brown",
-                  "id": "2078",
-                  "points": 10
-                },
-                {
-                  "icon": "inv_misc_key_14",
-                  "id": "2097",
-                  "points": 10
-                },
-                {
-                  "icon": "ability_mount_camel_tan",
-                  "id": "4888",
-                  "points": 10
-                },
-                {
-                  "icon": "inv_alchemy_potion_06",
-                  "id": "5749",
-                  "points": 10
-                },
-                {
-                  "icon": "ability_mount_travellersyakmount",
-                  "id": "7386",
-                  "points": 10
-                },
-                {
-                  "criteria": {
-                    "26683": "40596",
-                    "26684": "40597",
-                    "26685": "40598",
-                    "26686": "40599",
-                    "26687": "40600",
-                    "26688": "40601",
-                    "26689": "40603",
-                    "26690": "40604",
-                    "26800": "40602"
-                  },
-                  "icon": "ability_mount_drake_blue",
-                  "id": "9713",
-                  "points": 5
-                }
-              ],
-              "name": "Mounts"
-            },
-            {
-              "id": "14d9c75d",
-              "items": [
-                {
-                  "icon": "ability_mount_ridingelekk",
-                  "id": "2141",
-                  "points": 10
-                },
-                {
-                  "icon": "ability_mount_ridingelekkelite_green",
-                  "id": "2142",
-                  "points": 10
-                },
-                {
-                  "icon": "ability_mount_mammoth_black",
-                  "id": "2143",
-                  "points": 10
-                },
-                {
-                  "icon": "ability_hunter_pet_dragonhawk",
-                  "id": "2537",
-                  "points": 10,
-                  "side": "H"
-                },
-                {
-                  "icon": "ability_hunter_pet_dragonhawk",
-                  "id": "2536",
-                  "points": 10,
-                  "side": "A"
-                },
-                {
-                  "icon": "ability_mount_pandarenkitemount_green",
-                  "id": "7860",
-                  "points": 10,
-                  "side": "A"
-                },
-                {
-                  "icon": "ability_mount_pandarenkitemount_green",
-                  "id": "7862",
-                  "points": 10,
-                  "side": "H"
-                },
-                {
-                  "icon": "ability_mount_dragonhawkarmorallliance",
-                  "id": "8304",
-                  "points": 10,
-                  "side": "A"
-                },
-                {
-                  "icon": "ability_mount_dragonhawkarmorhorde",
-                  "id": "8302",
-                  "points": 10,
-                  "side": "H"
-                },
-                {
-                  "icon": "ability_mount_fireravengodmountgreen",
-                  "id": "9599",
-                  "points": 10,
-                  "side": "H"
-                },
-                {
-                  "icon": "ability_mount_fireravengodmountgreen",
-                  "id": "9598",
-                  "points": 10,
-                  "side": "A"
-                },
-                {
-                  "icon": "inv_pandarenserpentmount_blue",
-                  "id": "10356",
-                  "points": 10,
-                  "side": "A"
-                },
-                {
-                  "icon": "inv_pandarenserpentmount_blue",
-                  "id": "10355",
-                  "points": 10,
-                  "side": "H"
-                },
-                {
-                  "icon": "inv_infernalmounice",
-                  "id": 12931,
-                  "points": 10,
-                  "side": "H",
-                  "title": "No Stable Big Enough"
-                },
-                {
-                  "icon": "inv_infernalmounice",
-                  "id": 12932,
-                  "points": 10,
-                  "side": "A",
-                  "title": "No Stable Big Enough"
-                },
-                {
-                  "icon": "ability_mount_fireravengodmountgreen",
-                  "id": 12933,
-                  "points": 10,
-                  "side": "A",
-                  "title": "A Horde of Hoofbeats"
-                },
-                {
-                  "icon": "ability_mount_fireravengodmountgreen",
-                  "id": 12934,
-                  "points": 10,
-                  "side": "H",
-                  "title": "A Horde of Hoofbeats"
-                }
-              ],
-              "name": "Mount Count"
-            },
-            {
-              "id": "4d1e4719",
-              "items": [
-                {
-                  "icon": "inv_ore_arcanite_01",
-                  "id": 13513,
+                  "icon": "spell_arcane_teleportstormwind",
+                  "id": 14062,
                   "points": 5,
-                  "title": "Available in Eight Colors"
+                  "title": "Horrific Vision of Stormwind"
+                },
+                {
+                  "icon": "spell_arcane_teleportstormwind",
+                  "id": 14064,
+                  "points": 10,
+                  "title": "The Even More Horrific Vision of Stormwind"
+                },
+                {
+                  "icon": "spell_arcane_teleportstormwind",
+                  "id": 14066,
+                  "points": 15,
+                  "title": "The Most Horrific Vision of Stormwind"
                 }
-              ],
-              "name": "Other"
+              ]
+            },
+            {
+              "name": "Orgrimmar",
+              "id": "2701f008",
+              "items": [
+                {
+                  "icon": "spell_arcane_teleportorgrimmar",
+                  "id": 14063,
+                  "points": 5,
+                  "title": "Horrific Vision of Orgimmar"
+                },
+                {
+                  "icon": "spell_arcane_teleportorgrimmar",
+                  "id": 14065,
+                  "points": 10,
+                  "title": "The Even More Horrific Vision of Orgrimmar"
+                },
+                {
+                  "icon": "spell_arcane_teleportorgrimmar",
+                  "id": 14067,
+                  "points": 15,
+                  "title": "The Most Horrific Vision of Orgrimmar"
+                }
+              ]
+            },
+            {
+              "name": "Faceless Masks",
+              "id": "53d1dfeb",
+              "items": [
+                {
+                  "icon": "inv_helm_mask_fittedalpha_b_01_nightborne_01",
+                  "id": 14162,
+                  "points": 10,
+                  "title": "Horrific Masquerade"
+                },
+                {
+                  "icon": "inv_helmet_186v3",
+                  "id": 14165,
+                  "points": 5,
+                  "title": "Masked Soliloquy"
+                },
+                {
+                  "icon": "inv_helmet_186",
+                  "id": 14166,
+                  "points": 5,
+                  "title": "Masked Duet"
+                },
+                {
+                  "icon": "inv_helmet_186v4",
+                  "id": 14167,
+                  "points": 5,
+                  "title": "Masked Trio"
+                },
+                {
+                  "icon": "inv_helmet_187",
+                  "id": 14168,
+                  "points": 5,
+                  "title": "Masked Quartet"
+                },
+                {
+                  "icon": "inv_helmet_186v2",
+                  "id": 14169,
+                  "points": 10,
+                  "title": "Symphony of Masks"
+                }
+              ]
+            },
+            {
+              "name": "Mementos",
+              "id": "f56a66f1",
+              "items": [
+                {
+                  "icon": "archaeology_5_0_mogucoin",
+                  "id": 14170,
+                  "points": 5,
+                  "title": "Thanks For The Mementos"
+                },
+                {
+                  "icon": "archaeology_5_0_mogucoin",
+                  "id": 14171,
+                  "points": 10,
+                  "title": "Memento Mori"
+                },
+                {
+                  "icon": "archaeology_5_0_mogucoin",
+                  "id": 14172,
+                  "points": 10,
+                  "title": "A Monumental Amount of Mementos"
+                },
+                {
+                  "icon": "archaeology_5_0_mogucoin",
+                  "id": 14173,
+                  "points": 20,
+                  "title": "A Mountain of Mementos"
+                }
+              ]
             }
           ]
         },
-        {
-          "id": "d70c2c1e",
-          "name": "Appearances",
-          "subcats": [
-            {
-              "id": "137378e0",
-              "items": [
-                {
-                  "icon": "inv_misc_cape_18",
-                  "id": "10687",
-                  "points": 5
-                },
-                {
-                  "icon": "inv_chest_cloth_07",
-                  "id": "10682",
-                  "points": 5
-                },
-                {
-                  "icon": "inv_boots_09",
-                  "id": "10685",
-                  "points": 5
-                },
-                {
-                  "icon": "inv_misc_desecrated_leatherglove",
-                  "id": "10693",
-                  "points": 5
-                },
-                {
-                  "icon": "inv_helmet_25",
-                  "id": "10681",
-                  "points": 5
-                },
-                {
-                  "icon": "inv_pants_11",
-                  "id": "10684",
-                  "points": 5
-                },
-                {
-                  "icon": "inv_shirt_01",
-                  "id": "10691",
-                  "points": 5
-                },
-                {
-                  "icon": "inv_shoulder_30",
-                  "id": "10692",
-                  "points": 5
-                },
-                {
-                  "icon": "inv_shirt_guildtabard_01",
-                  "id": "10690",
-                  "points": 5
-                },
-                {
-                  "icon": "inv_belt_04",
-                  "id": "10686",
-                  "points": 5
-                },
-                {
-                  "criteria": {
-                    "30574": "48883",
-                    "30575": "48884"
-                  },
-                  "icon": "inv_sword_159",
-                  "id": "10689",
-                  "points": 5
-                },
-                {
-                  "icon": "inv_bracer_06",
-                  "id": "10688",
-                  "points": 5
-                },
-                {
-                  "criteria": {
-                    "30580": "48894",
-                    "30581": "48895",
-                    "30582": "48896",
-                    "30583": "48897",
-                    "30584": "48898",
-                    "30585": "48899",
-                    "30586": "48900",
-                    "30587": "48901",
-                    "30588": "48902",
-                    "30589": "48903",
-                    "30590": "48904",
-                    "30591": "48905"
-                  },
-                  "icon": "inv_jewelry_ring_42",
-                  "id": "10694",
-                  "points": 10
-                }
-              ],
-              "name": "Appearances"
-            },
-            {
-              "id": "70b0ef48",
-              "items": [
-                {
-                  "criteria": {},
-                  "icon": "achievement_boss_ragnaros",
-                  "id": 11741,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "achievement_boss_nefarion",
-                  "id": 11742,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "achievement_boss_cthun",
-                  "id": 11743,
-                  "points": 10
-                }
-              ],
-              "name": "Classic"
-            },
-            {
-              "id": "94278d1a",
-              "items": [
-                {
-                  "criteria": {},
-                  "icon": "achievement_dungeon_outland_dungeonmaster",
-                  "id": 11746,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "achievement_boss_kael'thassunstrider_01",
-                  "id": 11747,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "achievement_boss_illidan",
-                  "id": 11748,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "achievement_boss_kiljaedan",
-                  "id": 11749,
-                  "points": 10
-                }
-              ],
-              "name": "Burning Crusade"
-            },
-            {
-              "id": "49349814",
-              "items": [
-                {
-                  "criteria": {},
-                  "icon": "achievement_boss_kelthuzad_01",
-                  "id": 11750,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "achievement_boss_yoggsaron_01",
-                  "id": 11751,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "achievement_reputation_argentchampion",
-                  "id": 11752,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "achievement_zone_icecrown_01",
-                  "id": 11753,
-                  "points": 10
-                }
-              ],
-              "name": "Wrath of the Lich King"
-            },
-            {
-              "id": "83a94219",
-              "items": [
-                {
-                  "criteria": {},
-                  "icon": "warlock_houroftwilight",
-                  "id": 11754,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "achievement_dungeon_firelandsraid",
-                  "id": 11755,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "achievment_boss_madnessofdeathwing",
-                  "id": 11756,
-                  "points": 10
-                }
-              ],
-              "name": "Cataclysm"
-            },
-            {
-              "id": "43aa6575",
-              "items": [
-                {
-                  "criteria": {},
-                  "icon": "ability_shawaterelemental_swirl",
-                  "id": 11757,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "achievement_raid_thunder_king",
-                  "id": 11758,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "achievement_boss_garrosh",
-                  "id": 11759,
-                  "points": 10
-                }
-              ],
-              "name": "Pandaria"
-            },
-            {
-              "id": "ee06d3b0",
-              "items": [
-                {
-                  "criteria": {},
-                  "icon": "ability_foundryraid_heatregulators",
-                  "id": 11740,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "achievement_boss_hellfire_zone",
-                  "id": 11631,
-                  "points": 10
-                }
-              ],
-              "name": "Draenor"
-            },
-            {
-              "id": "7b80118c",
-              "items": [
-                {
-                  "criteria": {},
-                  "icon": "achievement_thenighthold",
-                  "id": 11628,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "achievement_raid_trialofvalor",
-                  "id": 11762,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "achievement_raid_tombofsargeras",
-                  "id": 11760,
-                  "points": 10
-                },
-                {
-                  "icon": "achievement_raid_argusraid",
-                  "id": 12020,
-                  "points": 10
-                }
-              ],
-              "name": "Legion"
-            },
-            {
-              "id": "47b528b6",
-              "items": [
-                {
-                  "icon": "achievement_nazmir_zone",
-                  "id": 12991,
-                  "points": 10,
-                  "title": "New Mog, G'huun This?"
-                },
-                {
-                  "icon": "inv_zuldazar",
-                  "id": 13385,
-                  "points": 10,
-                  "title": "Daz'aling Attire"
-                },
-                {
-                  "icon": "achievement_boss_nagazone",
-                  "id": 13571,
-                  "points": 10,
-                  "title": "Under the Seams"
-                }
-              ],
-              "name": "Battle for Azeroth"
-            },
-            {
-              "id": "199d4aa3",
-              "items": [
-                {
-                  "criteria": {},
-                  "icon": "inv_axe_68",
-                  "id": 11706,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "inv_mace_47",
-                  "id": 11707,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "inv_axe_60",
-                  "id": 11708,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "inv_axe_73",
-                  "id": 11709,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "inv_axe_98",
-                  "id": 11710,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "inv_mace_17",
-                  "id": 11711,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "inv_axe_111",
-                  "id": 11712,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "inv_axe_115",
-                  "id": 11713,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "inv_axe_2h_pvp400_c_01",
-                  "id": 11714,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "inv_axe_2h_pvp410_c_01",
-                  "id": 11715,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "inv_axe_2h_pvpcataclysms3_c_01",
-                  "id": 11716,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "inv_axe_2h_pvppandarias1_d_01",
-                  "id": 11717,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "inv_axe_2h_pvppandarias2_c_01horde",
-                  "id": 11718,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "inv_axe_2h_pvppandarias3_c_01",
-                  "id": 11719,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "inv_mace_1h_pvppandarias3_c_02",
-                  "id": 11720,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "ability_druid_primaltenacity",
-                  "id": 11629,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "inv_axe_2h_pvpdraenors2_d_01",
-                  "id": 11721,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "inv_mace_1h_pvpdraenors2_d_02",
-                  "id": 11722,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "inv_cape_leather_raidrogue_q_01",
-                  "id": 11630,
-                  "points": 10
-                },
-                {
-                  "criteria": {},
-                  "icon": "inv_cape_leather_raiddemonhunter_r_01_long",
-                  "id": 11723,
-                  "points": 10
-                },
-                {
-                  "icon": "inv_chest_plate_raidpaladin_s_01",
-                  "id": 12021,
-                  "points": 10
-                },
-                {
-                  "icon": "inv__faction_alliancewareffort",
-                  "id": 12993,
-                  "points": 10,
-                  "title": "Don't Warfront Me"
-                },
-                {
-                  "icon": "inv_misc_tabard_forsaken",
-                  "id": 13433,
-                  "points": 10,
-                  "title": "Tall, Dark, and Sinister"
-                },
-                {
-                  "icon": "inv_helm_plate_nazjatar_c_01",
-                  "id": 13585,
-                  "points": 10,
-                  "title": "Never Lose, Never Choose To"
-                }
-              ],
-              "name": "PvP"
-            },
-            {
-              "id": "6f38d784",
-              "items": [
-                {
-                  "criteria": {},
-                  "icon": "achievement_transmog_collections",
-                  "id": 11761,
-                  "points": 20
-                }
-              ],
-              "name": "Count"
-            }
-          ]
-        }
-      ],
-      "id": "8d854418",
-      "name": "Collections"
-    },
-    {
-      "cats": [
         {
           "id": "c1e52975",
           "name": "Heart of Azeroth",
@@ -31710,6 +30893,12 @@
                   "id": 13777,
                   "points": 10,
                   "title": "My Heart Container is Full"
+                },
+                {
+                  "icon": "spell_azerite_essence08",
+                  "id": 13998,
+                  "points": 10,
+                  "title": "Pure of Heart"
                 }
               ],
               "name": "Infuse"
@@ -31888,6 +31077,34 @@
               "id": "48d3d9ef",
               "items": [
                 {
+                  "icon": "inv_glaive_1h_warfrontsforsaken_d_01",
+                  "id": 13296,
+                  "points": 10,
+                  "side": "H",
+                  "title": "War for the Shore"
+                },
+                {
+                  "icon": "inv_staff_2h_warfrontsnightelf_d_01",
+                  "id": 13297,
+                  "points": 10,
+                  "side": "A",
+                  "title": "War for the Shore"
+                },
+                {
+                  "icon": "inv_glaive_1h_warfrontsforsaken_d_01",
+                  "id": 14149,
+                  "points": 10,
+                  "side": "H",
+                  "title": "Heroic: War for the Shore"
+                },
+                {
+                  "icon": "inv_staff_2h_warfrontsnightelf_d_01",
+                  "id": 14150,
+                  "points": 10,
+                  "side": "A",
+                  "title": "Heroic: War for the Shore"
+                },
+                {
                   "icon": "spell_shadow_nethercloak",
                   "id": 13305,
                   "points": 10,
@@ -31928,20 +31145,6 @@
                   "points": 10,
                   "side": "A",
                   "title": "By Nature's Call"
-                },
-                {
-                  "icon": "inv_glaive_1h_warfrontsforsaken_d_01",
-                  "id": 13296,
-                  "points": 10,
-                  "side": "H",
-                  "title": "War for the Shore"
-                },
-                {
-                  "icon": "inv_staff_2h_warfrontsnightelf_d_01",
-                  "id": 13297,
-                  "points": 10,
-                  "side": "A",
-                  "title": "War for the Shore"
                 },
                 {
                   "icon": "ability_rogue_nightblade",
@@ -35151,10 +34354,1243 @@
               "name": ""
             }
           ]
+        },
+        {
+          "id": "41f3de84",
+          "name": "Argent Tournament",
+          "subcats": [
+            {
+              "id": "01f03567",
+              "items": [
+                {
+                  "icon": "inv_misc_tournaments_symbol_human",
+                  "id": "2781",
+                  "points": 10,
+                  "side": "A"
+                },
+                {
+                  "icon": "inv_misc_tournaments_symbol_dwarf",
+                  "id": "2780",
+                  "points": 10,
+                  "side": "A"
+                },
+                {
+                  "icon": "inv_misc_tournaments_symbol_gnome",
+                  "id": "2779",
+                  "points": 10,
+                  "side": "A"
+                },
+                {
+                  "icon": "inv_misc_tournaments_symbol_nightelf",
+                  "id": "2777",
+                  "points": 10,
+                  "side": "A"
+                },
+                {
+                  "icon": "inv_misc_tournaments_symbol_draenei",
+                  "id": "2778",
+                  "points": 10,
+                  "side": "A"
+                },
+                {
+                  "criteria": {
+                    "9778": "2160",
+                    "9779": "2161",
+                    "9780": "2162",
+                    "9781": "2163",
+                    "9782": "2164"
+                  },
+                  "icon": "inv_misc_tournaments_banner_human",
+                  "id": "2782",
+                  "points": 10,
+                  "side": "A"
+                },
+                {
+                  "icon": "inv_misc_tournaments_symbol_orc",
+                  "id": "2783",
+                  "points": 10,
+                  "side": "H"
+                },
+                {
+                  "icon": "inv_misc_tournaments_symbol_troll",
+                  "id": "2784",
+                  "points": 10,
+                  "side": "H"
+                },
+                {
+                  "icon": "inv_misc_tournaments_symbol_tauren",
+                  "id": "2786",
+                  "points": 10,
+                  "side": "H"
+                },
+                {
+                  "icon": "inv_misc_tournaments_symbol_scourge",
+                  "id": "2787",
+                  "points": 10,
+                  "side": "H"
+                },
+                {
+                  "icon": "inv_misc_tournaments_symbol_bloodelf",
+                  "id": "2785",
+                  "points": 10,
+                  "side": "H"
+                },
+                {
+                  "criteria": {
+                    "9788": "3426",
+                    "9789": "3427",
+                    "9790": "3428",
+                    "9791": "3429",
+                    "9792": "3430"
+                  },
+                  "icon": "inv_misc_tournaments_banner_orc",
+                  "id": "2788",
+                  "points": 10,
+                  "side": "H"
+                }
+              ],
+              "name": "Champion"
+            },
+            {
+              "id": "5d16182b",
+              "items": [
+                {
+                  "criteria": {
+                    "11324": "10357",
+                    "5331": "10358"
+                  },
+                  "icon": "inv_misc_tournaments_symbol_human",
+                  "id": "2764",
+                  "points": 10,
+                  "side": "A"
+                },
+                {
+                  "criteria": {
+                    "11323": "11150",
+                    "5330": "11151"
+                  },
+                  "icon": "inv_misc_tournaments_symbol_dwarf",
+                  "id": "2763",
+                  "points": 10,
+                  "side": "A"
+                },
+                {
+                  "criteria": {
+                    "11322": "6992",
+                    "5329": "6993"
+                  },
+                  "icon": "inv_misc_tournaments_symbol_gnome",
+                  "id": "2762",
+                  "points": 10,
+                  "side": "A"
+                },
+                {
+                  "criteria": {
+                    "11320": "7111",
+                    "5328": "7112"
+                  },
+                  "icon": "inv_misc_tournaments_symbol_nightelf",
+                  "id": "2760",
+                  "points": 10,
+                  "side": "A"
+                },
+                {
+                  "criteria": {
+                    "11321": "7897",
+                    "5332": "7898"
+                  },
+                  "icon": "inv_misc_tournaments_symbol_draenei",
+                  "id": "2761",
+                  "points": 10,
+                  "side": "A"
+                },
+                {
+                  "criteria": {
+                    "9668": "8505",
+                    "9669": "8509",
+                    "9670": "8506",
+                    "9671": "8507",
+                    "9672": "8508"
+                  },
+                  "icon": "inv_misc_tournaments_banner_human",
+                  "id": "2770",
+                  "points": 10,
+                  "side": "A"
+                },
+                {
+                  "criteria": {
+                    "2024": "10739",
+                    "9668": "10740",
+                    "9669": "10741",
+                    "9670": "10736",
+                    "9671": "10737",
+                    "9672": "10738"
+                  },
+                  "icon": "inv_misc_tournaments_banner_human",
+                  "id": "2817",
+                  "points": 10,
+                  "side": "A"
+                },
+                {
+                  "criteria": {
+                    "5314": "7901",
+                    "9783": "7902"
+                  },
+                  "icon": "inv_misc_tournaments_symbol_orc",
+                  "id": "2765",
+                  "points": 10,
+                  "side": "H"
+                },
+                {
+                  "criteria": {
+                    "11326": "14357",
+                    "5313": "14358"
+                  },
+                  "icon": "inv_misc_tournaments_symbol_troll",
+                  "id": "2766",
+                  "points": 10,
+                  "side": "H"
+                },
+                {
+                  "criteria": {
+                    "11328": "8560",
+                    "5315": "8561"
+                  },
+                  "icon": "inv_misc_tournaments_symbol_tauren",
+                  "id": "2768",
+                  "points": 10,
+                  "side": "H"
+                },
+                {
+                  "criteria": {
+                    "11329": "8065",
+                    "5316": "8066"
+                  },
+                  "icon": "inv_misc_tournaments_symbol_scourge",
+                  "id": "2769",
+                  "points": 10,
+                  "side": "H"
+                },
+                {
+                  "criteria": {
+                    "5317": "8473",
+                    "9785": "8472"
+                  },
+                  "icon": "inv_misc_tournaments_symbol_bloodelf",
+                  "id": "2767",
+                  "points": 10,
+                  "side": "H"
+                },
+                {
+                  "criteria": {
+                    "9673": "8564",
+                    "9674": "8565",
+                    "9675": "8568",
+                    "9676": "8566",
+                    "9677": "8567"
+                  },
+                  "icon": "inv_misc_tournaments_banner_orc",
+                  "id": "2771",
+                  "points": 10,
+                  "side": "H"
+                },
+                {
+                  "criteria": {
+                    "2024": "10315",
+                    "9673": "10316",
+                    "9674": "10317",
+                    "9675": "10318",
+                    "9676": "10319",
+                    "9677": "10320"
+                  },
+                  "icon": "inv_misc_tournaments_banner_orc",
+                  "id": "2816",
+                  "points": 10,
+                  "side": "H"
+                }
+              ],
+              "name": "Exalted Champion"
+            },
+            {
+              "id": "c5fe5aa7",
+              "items": [
+                {
+                  "icon": "inv_elemental_primal_nether",
+                  "id": "3677",
+                  "points": 10,
+                  "side": "H"
+                },
+                {
+                  "icon": "INV_Spear_05",
+                  "id": "2772",
+                  "points": 10
+                },
+                {
+                  "icon": "inv_sword_155",
+                  "id": "4596",
+                  "points": 10
+                },
+                {
+                  "icon": "Ability_Mount_RidingHorse",
+                  "id": "3736",
+                  "points": 10
+                },
+                {
+                  "criteria": {
+                    "10224": "8520",
+                    "10225": "8521",
+                    "10226": "8522",
+                    "10227": "8523",
+                    "10228": "8524",
+                    "9918": "8518",
+                    "9919": "8515",
+                    "9920": "8519",
+                    "9921": "8517",
+                    "9922": "8516"
+                  },
+                  "icon": "INV_Spear_05",
+                  "id": "2836",
+                  "points": 10
+                },
+                {
+                  "icon": "INV_Helmet_44",
+                  "id": "2773",
+                  "points": 10
+                },
+                {
+                  "icon": "achievement_reputation_argentcrusader",
+                  "id": "2756",
+                  "points": 10
+                },
+                {
+                  "icon": "Achievement_Reputation_ArgentChampion",
+                  "id": "2758",
+                  "points": 10
+                },
+                {
+                  "icon": "INV_Elemental_Primal_Mana",
+                  "id": "3676",
+                  "points": 10,
+                  "side": "A"
+                }
+              ],
+              "name": "Other"
+            }
+          ]
         }
       ],
       "id": "df65df58",
       "name": "Expansion Features"
+    },
+    {
+      "cats": [
+        {
+          "id": "397263e3",
+          "name": "Collections",
+          "subcats": [
+            {
+              "id": "f54736be",
+              "items": [
+                {
+                  "criteria": {
+                    "24024": "34194",
+                    "24025": "34250",
+                    "24026": "34249",
+                    "24027": "34248",
+                    "24028": "34247",
+                    "24029": "34246",
+                    "24030": "34245",
+                    "24031": "34244",
+                    "24032": "34243",
+                    "24033": "34242",
+                    "24034": "34241",
+                    "24035": "34240",
+                    "24037": "34239",
+                    "24038": "34238",
+                    "24039": "34237",
+                    "24040": "34236",
+                    "24041": "34235",
+                    "24042": "34233",
+                    "24043": "34232",
+                    "24044": "34231",
+                    "24045": "34230",
+                    "24046": "34229",
+                    "24047": "34228",
+                    "24048": "34227",
+                    "24049": "34226",
+                    "24050": "34225",
+                    "24051": "34224",
+                    "24052": "34223",
+                    "24053": "34222",
+                    "24054": "34221",
+                    "24055": "34220",
+                    "24056": "34219",
+                    "24057": "34218",
+                    "24058": "34217",
+                    "24059": "34216",
+                    "24060": "34215",
+                    "24061": "34214",
+                    "24062": "34213",
+                    "24063": "34212",
+                    "24064": "34211",
+                    "24065": "34210",
+                    "24066": "34209",
+                    "24067": "34208",
+                    "24068": "34207",
+                    "24069": "34206",
+                    "24070": "34205",
+                    "24071": "34204",
+                    "24072": "34203",
+                    "24073": "34202",
+                    "24074": "34201",
+                    "24075": "34200",
+                    "24076": "34199",
+                    "24077": "34198",
+                    "24078": "34197",
+                    "24079": "34196",
+                    "24080": "34195",
+                    "24081": "34234"
+                  },
+                  "icon": "inv_misc_bag_16",
+                  "id": "8728",
+                  "points": 10
+                },
+                {
+                  "icon": "inv_misc_bag_27",
+                  "id": "1165",
+                  "points": 10
+                },
+                {
+                  "icon": "inv_jewelry_ring_73",
+                  "id": "2084",
+                  "points": 10
+                },
+                {
+                  "criteria": {
+                    "27625": "42809",
+                    "27626": "42810",
+                    "27627": "42811",
+                    "27628": "42812",
+                    "27629": "42813",
+                    "27630": "42814",
+                    "27631": "42815",
+                    "27632": "42816",
+                    "27633": "42823",
+                    "27634": "42833",
+                    "27635": "42817",
+                    "27636": "42818",
+                    "27637": "42819",
+                    "27638": "42820",
+                    "27639": "42821",
+                    "27640": "42822",
+                    "27641": "42825",
+                    "27642": "42824",
+                    "27643": "42826",
+                    "27644": "42827",
+                    "27645": "42828",
+                    "27646": "42829",
+                    "27647": "42830",
+                    "27648": "42831",
+                    "27649": "42832",
+                    "27650": "42836",
+                    "27651": "42834",
+                    "27652": "42835"
+                  },
+                  "icon": "ability_garrison_orangebird",
+                  "id": "9838",
+                  "points": 10
+                },
+                {
+                  "criteria": {
+                    "28182": "44034",
+                    "28183": "44033",
+                    "28184": "44032",
+                    "28185": "44031"
+                  },
+                  "icon": "ability_garrison_orangebird",
+                  "id": "10053",
+                  "points": 10
+                },
+                {
+                  "icon": "ability_garrison_orangebird",
+                  "id": "10770",
+                  "points": 5
+                }
+              ],
+              "name": "Items"
+            },
+            {
+              "id": "35c30faa",
+              "items": [
+                {
+                  "icon": "inv_shirt_guildtabard_01",
+                  "id": "621",
+                  "points": 10
+                },
+                {
+                  "icon": "inv_shirt_guildtabard_01",
+                  "id": "1020",
+                  "points": 10
+                },
+                {
+                  "icon": "inv_chest_cloth_30",
+                  "id": "1021",
+                  "points": 10
+                },
+                {
+                  "icon": "inv_chest_cloth_30",
+                  "id": "5755",
+                  "points": 10
+                }
+              ],
+              "name": "Tabards"
+            },
+            {
+              "id": "5bcc5ce1",
+              "items": [
+                {
+                  "icon": "inv_weapon_shortblade_05",
+                  "id": "9911",
+                  "points": 5
+                },
+                {
+                  "icon": "inv_sword_05",
+                  "id": "9906",
+                  "points": 10
+                },
+                {
+                  "icon": "inv_weapon_shortblade_58",
+                  "id": "9908",
+                  "points": 10
+                },
+                {
+                  "icon": "inv_sword_50",
+                  "id": "9909",
+                  "points": 10
+                }
+              ],
+              "name": "Heirlooms"
+            }
+          ]
+        },
+        {
+          "id": "271ecc05",
+          "name": "Toy Box",
+          "subcats": [
+            {
+              "id": "7fd9150e",
+              "items": [
+                {
+                  "icon": "inv_misc_toy_01",
+                  "id": "9670",
+                  "points": 10
+                },
+                {
+                  "icon": "inv_misc_toy_09",
+                  "id": "9671",
+                  "points": 10
+                },
+                {
+                  "icon": "inv_misc_toy_08",
+                  "id": "9672",
+                  "points": 10
+                },
+                {
+                  "icon": "inv_misc_toy_10",
+                  "id": "9673",
+                  "points": 10
+                },
+                {
+                  "icon": "inv_misc_toy_05",
+                  "id": "10354",
+                  "points": 10
+                },
+                {
+                  "icon": "inv_misc_football",
+                  "id": "11176",
+                  "points": 10
+                },
+                {
+                  "icon": "creatureportrait_robot_bulldog",
+                  "id": 12996,
+                  "points": 10,
+                  "title": "Toybox Tycoon"
+                }
+              ],
+              "name": "Toy Box"
+            },
+            {
+              "id": "3551ff40",
+              "items": [
+                {
+                  "icon": "trade_archaeology_tyrandesfavoritedoll",
+                  "id": 13708,
+                  "points": 10,
+                  "title": "Most Minis Wins"
+                }
+              ],
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": "6fca96ad",
+          "name": "Mounts",
+          "subcats": [
+            {
+              "id": "db0e6b80",
+              "items": [
+                {
+                  "icon": "ability_mount_polarbear_brown",
+                  "id": "2076",
+                  "points": 10
+                },
+                {
+                  "icon": "ability_mount_mammoth_brown",
+                  "id": "2077",
+                  "points": 10
+                },
+                {
+                  "icon": "ability_mount_mammoth_brown",
+                  "id": "2078",
+                  "points": 10
+                },
+                {
+                  "icon": "inv_misc_key_14",
+                  "id": "2097",
+                  "points": 10
+                },
+                {
+                  "icon": "ability_mount_camel_tan",
+                  "id": "4888",
+                  "points": 10
+                },
+                {
+                  "icon": "inv_alchemy_potion_06",
+                  "id": "5749",
+                  "points": 10
+                },
+                {
+                  "icon": "ability_mount_travellersyakmount",
+                  "id": "7386",
+                  "points": 10
+                },
+                {
+                  "criteria": {
+                    "26683": "40596",
+                    "26684": "40597",
+                    "26685": "40598",
+                    "26686": "40599",
+                    "26687": "40600",
+                    "26688": "40601",
+                    "26689": "40603",
+                    "26690": "40604",
+                    "26800": "40602"
+                  },
+                  "icon": "ability_mount_drake_blue",
+                  "id": "9713",
+                  "points": 5
+                }
+              ],
+              "name": "Mounts"
+            },
+            {
+              "id": "14d9c75d",
+              "items": [
+                {
+                  "icon": "ability_mount_ridingelekk",
+                  "id": "2141",
+                  "points": 10
+                },
+                {
+                  "icon": "ability_mount_ridingelekkelite_green",
+                  "id": "2142",
+                  "points": 10
+                },
+                {
+                  "icon": "ability_mount_mammoth_black",
+                  "id": "2143",
+                  "points": 10
+                },
+                {
+                  "icon": "ability_hunter_pet_dragonhawk",
+                  "id": "2537",
+                  "points": 10,
+                  "side": "H"
+                },
+                {
+                  "icon": "ability_hunter_pet_dragonhawk",
+                  "id": "2536",
+                  "points": 10,
+                  "side": "A"
+                },
+                {
+                  "icon": "ability_mount_pandarenkitemount_green",
+                  "id": "7860",
+                  "points": 10,
+                  "side": "A"
+                },
+                {
+                  "icon": "ability_mount_pandarenkitemount_green",
+                  "id": "7862",
+                  "points": 10,
+                  "side": "H"
+                },
+                {
+                  "icon": "ability_mount_dragonhawkarmorallliance",
+                  "id": "8304",
+                  "points": 10,
+                  "side": "A"
+                },
+                {
+                  "icon": "ability_mount_dragonhawkarmorhorde",
+                  "id": "8302",
+                  "points": 10,
+                  "side": "H"
+                },
+                {
+                  "icon": "ability_mount_fireravengodmountgreen",
+                  "id": "9599",
+                  "points": 10,
+                  "side": "H"
+                },
+                {
+                  "icon": "ability_mount_fireravengodmountgreen",
+                  "id": "9598",
+                  "points": 10,
+                  "side": "A"
+                },
+                {
+                  "icon": "inv_pandarenserpentmount_blue",
+                  "id": "10356",
+                  "points": 10,
+                  "side": "A"
+                },
+                {
+                  "icon": "inv_pandarenserpentmount_blue",
+                  "id": "10355",
+                  "points": 10,
+                  "side": "H"
+                },
+                {
+                  "icon": "inv_infernalmounice",
+                  "id": 12931,
+                  "points": 10,
+                  "side": "H",
+                  "title": "No Stable Big Enough"
+                },
+                {
+                  "icon": "inv_infernalmounice",
+                  "id": 12932,
+                  "points": 10,
+                  "side": "A",
+                  "title": "No Stable Big Enough"
+                },
+                {
+                  "icon": "ability_mount_fireravengodmountgreen",
+                  "id": 12933,
+                  "points": 10,
+                  "side": "A",
+                  "title": "A Horde of Hoofbeats"
+                },
+                {
+                  "icon": "ability_mount_fireravengodmountgreen",
+                  "id": 12934,
+                  "points": 10,
+                  "side": "H",
+                  "title": "A Horde of Hoofbeats"
+                }
+              ],
+              "name": "Mount Count"
+            },
+            {
+              "id": "4d1e4719",
+              "items": [
+                {
+                  "icon": "inv_ore_arcanite_01",
+                  "id": 13513,
+                  "points": 5,
+                  "title": "Available in Eight Colors"
+                }
+              ],
+              "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": "d70c2c1e",
+          "name": "Appearances",
+          "subcats": [
+            {
+              "id": "137378e0",
+              "items": [
+                {
+                  "icon": "inv_misc_cape_18",
+                  "id": "10687",
+                  "points": 5
+                },
+                {
+                  "icon": "inv_chest_cloth_07",
+                  "id": "10682",
+                  "points": 5
+                },
+                {
+                  "icon": "inv_boots_09",
+                  "id": "10685",
+                  "points": 5
+                },
+                {
+                  "icon": "inv_misc_desecrated_leatherglove",
+                  "id": "10693",
+                  "points": 5
+                },
+                {
+                  "icon": "inv_helmet_25",
+                  "id": "10681",
+                  "points": 5
+                },
+                {
+                  "icon": "inv_pants_11",
+                  "id": "10684",
+                  "points": 5
+                },
+                {
+                  "icon": "inv_shirt_01",
+                  "id": "10691",
+                  "points": 5
+                },
+                {
+                  "icon": "inv_shoulder_30",
+                  "id": "10692",
+                  "points": 5
+                },
+                {
+                  "icon": "inv_shirt_guildtabard_01",
+                  "id": "10690",
+                  "points": 5
+                },
+                {
+                  "icon": "inv_belt_04",
+                  "id": "10686",
+                  "points": 5
+                },
+                {
+                  "criteria": {
+                    "30574": "48883",
+                    "30575": "48884"
+                  },
+                  "icon": "inv_sword_159",
+                  "id": "10689",
+                  "points": 5
+                },
+                {
+                  "icon": "inv_bracer_06",
+                  "id": "10688",
+                  "points": 5
+                },
+                {
+                  "criteria": {
+                    "30580": "48894",
+                    "30581": "48895",
+                    "30582": "48896",
+                    "30583": "48897",
+                    "30584": "48898",
+                    "30585": "48899",
+                    "30586": "48900",
+                    "30587": "48901",
+                    "30588": "48902",
+                    "30589": "48903",
+                    "30590": "48904",
+                    "30591": "48905"
+                  },
+                  "icon": "inv_jewelry_ring_42",
+                  "id": "10694",
+                  "points": 10
+                }
+              ],
+              "name": "Appearances"
+            },
+            {
+              "id": "70b0ef48",
+              "items": [
+                {
+                  "criteria": {},
+                  "icon": "achievement_boss_ragnaros",
+                  "id": 11741,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "achievement_boss_nefarion",
+                  "id": 11742,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "achievement_boss_cthun",
+                  "id": 11743,
+                  "points": 10
+                }
+              ],
+              "name": "Classic"
+            },
+            {
+              "id": "94278d1a",
+              "items": [
+                {
+                  "criteria": {},
+                  "icon": "achievement_dungeon_outland_dungeonmaster",
+                  "id": 11746,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "achievement_boss_kael'thassunstrider_01",
+                  "id": 11747,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "achievement_boss_illidan",
+                  "id": 11748,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "achievement_boss_kiljaedan",
+                  "id": 11749,
+                  "points": 10
+                }
+              ],
+              "name": "Burning Crusade"
+            },
+            {
+              "id": "49349814",
+              "items": [
+                {
+                  "criteria": {},
+                  "icon": "achievement_boss_kelthuzad_01",
+                  "id": 11750,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "achievement_boss_yoggsaron_01",
+                  "id": 11751,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "achievement_reputation_argentchampion",
+                  "id": 11752,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "achievement_zone_icecrown_01",
+                  "id": 11753,
+                  "points": 10
+                }
+              ],
+              "name": "Wrath of the Lich King"
+            },
+            {
+              "id": "83a94219",
+              "items": [
+                {
+                  "criteria": {},
+                  "icon": "warlock_houroftwilight",
+                  "id": 11754,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "achievement_dungeon_firelandsraid",
+                  "id": 11755,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "achievment_boss_madnessofdeathwing",
+                  "id": 11756,
+                  "points": 10
+                }
+              ],
+              "name": "Cataclysm"
+            },
+            {
+              "id": "43aa6575",
+              "items": [
+                {
+                  "criteria": {},
+                  "icon": "ability_shawaterelemental_swirl",
+                  "id": 11757,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "achievement_raid_thunder_king",
+                  "id": 11758,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "achievement_boss_garrosh",
+                  "id": 11759,
+                  "points": 10
+                }
+              ],
+              "name": "Pandaria"
+            },
+            {
+              "id": "ee06d3b0",
+              "items": [
+                {
+                  "criteria": {},
+                  "icon": "ability_foundryraid_heatregulators",
+                  "id": 11740,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "achievement_boss_hellfire_zone",
+                  "id": 11631,
+                  "points": 10
+                }
+              ],
+              "name": "Draenor"
+            },
+            {
+              "id": "7b80118c",
+              "items": [
+                {
+                  "criteria": {},
+                  "icon": "achievement_thenighthold",
+                  "id": 11628,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "achievement_raid_trialofvalor",
+                  "id": 11762,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "achievement_raid_tombofsargeras",
+                  "id": 11760,
+                  "points": 10
+                },
+                {
+                  "icon": "achievement_raid_argusraid",
+                  "id": 12020,
+                  "points": 10
+                }
+              ],
+              "name": "Legion"
+            },
+            {
+              "id": "47b528b6",
+              "items": [
+                {
+                  "icon": "achievement_nazmir_zone",
+                  "id": 12991,
+                  "points": 10,
+                  "title": "New Mog, G'huun This?"
+                },
+                {
+                  "icon": "inv_zuldazar",
+                  "id": 13385,
+                  "points": 10,
+                  "title": "Daz'aling Attire"
+                },
+                {
+                  "icon": "achievement_boss_nagazone",
+                  "id": 13571,
+                  "points": 10,
+                  "title": "Under the Seams"
+                },
+                {
+                  "icon": "inv_belt_mail_nzothraid_d_01",
+                  "id": 14058,
+                  "points": 10,
+                  "title": "All Eyes On Me"
+                }
+              ],
+              "name": "Battle for Azeroth"
+            },
+            {
+              "id": "199d4aa3",
+              "items": [
+                {
+                  "criteria": {},
+                  "icon": "inv_axe_68",
+                  "id": 11706,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "inv_mace_47",
+                  "id": 11707,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "inv_axe_60",
+                  "id": 11708,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "inv_axe_73",
+                  "id": 11709,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "inv_axe_98",
+                  "id": 11710,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "inv_mace_17",
+                  "id": 11711,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "inv_axe_111",
+                  "id": 11712,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "inv_axe_115",
+                  "id": 11713,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "inv_axe_2h_pvp400_c_01",
+                  "id": 11714,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "inv_axe_2h_pvp410_c_01",
+                  "id": 11715,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "inv_axe_2h_pvpcataclysms3_c_01",
+                  "id": 11716,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "inv_axe_2h_pvppandarias1_d_01",
+                  "id": 11717,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "inv_axe_2h_pvppandarias2_c_01horde",
+                  "id": 11718,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "inv_axe_2h_pvppandarias3_c_01",
+                  "id": 11719,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "inv_mace_1h_pvppandarias3_c_02",
+                  "id": 11720,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "ability_druid_primaltenacity",
+                  "id": 11629,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "inv_axe_2h_pvpdraenors2_d_01",
+                  "id": 11721,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "inv_mace_1h_pvpdraenors2_d_02",
+                  "id": 11722,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "inv_cape_leather_raidrogue_q_01",
+                  "id": 11630,
+                  "points": 10
+                },
+                {
+                  "criteria": {},
+                  "icon": "inv_cape_leather_raiddemonhunter_r_01_long",
+                  "id": 11723,
+                  "points": 10
+                },
+                {
+                  "icon": "inv_chest_plate_raidpaladin_s_01",
+                  "id": 12021,
+                  "points": 10
+                },
+                {
+                  "icon": "inv__faction_alliancewareffort",
+                  "id": 12993,
+                  "points": 10,
+                  "title": "Don't Warfront Me"
+                },
+                {
+                  "icon": "inv_misc_tabard_forsaken",
+                  "id": 13433,
+                  "points": 10,
+                  "title": "Tall, Dark, and Sinister"
+                },
+                {
+                  "icon": "inv_helm_plate_nazjatar_c_01",
+                  "id": 13585,
+                  "points": 10,
+                  "title": "Never Lose, Never Choose To"
+                },
+                {
+                  "icon": "inv_chest_leatherraidnzoth_d_01",
+                  "id": 14059,
+                  "points": 10,
+                  "title": "The Eyes Have It"
+                }
+              ],
+              "name": "PvP"
+            },
+            {
+              "id": "6f38d784",
+              "items": [
+                {
+                  "criteria": {},
+                  "icon": "achievement_transmog_collections",
+                  "id": 11761,
+                  "points": 20
+                }
+              ],
+              "name": "Count"
+            }
+          ]
+        }
+      ],
+      "id": "8d854418",
+      "name": "Collections"
     },
     {
       "cats": [
@@ -37809,6 +38245,70 @@
           ]
         },
         {
+          "id": "d9695582",
+          "name": "Battlegrounds",
+          "subcats": [
+            {
+              "id": "1322c28a",
+              "items": [
+                {
+                  "icon": "achievement_bg_captureflag_eos",
+                  "id": "8359",
+                  "points": 10
+                },
+                {
+                  "criteria": {
+                    "23425": "33014",
+                    "23426": "33015",
+                    "23427": "33016",
+                    "23428": "33017"
+                  },
+                  "icon": "ability_warrior_intensifyrage",
+                  "id": "8358",
+                  "points": 20
+                },
+                {
+                  "criteria": {
+                    "23429": "33021",
+                    "23430": "33022",
+                    "23431": "33023",
+                    "23432": "33024",
+                    "23433": "33025",
+                    "23434": "33138",
+                    "23522": "33139",
+                    "23523": "33140",
+                    "23524": "33141"
+                  },
+                  "icon": "achievement_bg_dg_master_of_the_deepwind_gorge",
+                  "id": "8360",
+                  "points": 10
+                },
+                {
+                  "icon": "achievement_bg_winav_bothmines",
+                  "id": "8350",
+                  "points": 10
+                },
+                {
+                  "icon": "achievement_bg_tophealer_ab",
+                  "id": "8351",
+                  "points": 10
+                },
+                {
+                  "icon": "spell_magic_featherfall",
+                  "id": "8354",
+                  "points": 10
+                },
+                {
+                  "icon": "inv_stone_weightstone_06",
+                  "id": "8355",
+                  "points": 10
+                }
+              ],
+              "name": "Old Deepwind Gorge"
+            }
+          ]
+        },
+        {
           "id": "93237c95",
           "name": "Professions",
           "subcats": [
@@ -38011,6 +38511,12 @@
                   "points": 0,
                   "side": "H",
                   "title": "Immortal No More"
+                },
+                {
+                  "icon": "Achievement_Leader_Sylvanas",
+                  "id": "612",
+                  "points": 10,
+                  "side": "A"
                 }
               ],
               "name": "Cities"
@@ -39595,6 +40101,12 @@
                   "title": "Phenomenal Cosmic Power"
                 },
                 {
+                  "icon": "spell_nzinsanity_shortsighted",
+                  "id": 14140,
+                  "points": 0,
+                  "title": "Mad World"
+                },
+                {
                   "icon": "ability_warrior_innerrage",
                   "id": 4496,
                   "points": 0,
@@ -39763,6 +40275,12 @@
                   "id": 8092,
                   "points": 0,
                   "title": "I've Got 9999 Problems but a Bone-White Primal Raptor Ain't One"
+                },
+                {
+                  "icon": "inv_brontosaurusmount",
+                  "id": 14183,
+                  "points": 0,
+                  "title": "Conspicuous Consumption"
                 }
               ],
               "name": ""
@@ -39952,6 +40470,12 @@
                   "id": 13632,
                   "points": 0,
                   "title": "Notorious Gladiator's Proto-Drake"
+                },
+                {
+                  "icon": "inv_protodrakegladiatormount_black",
+                  "id": 13958,
+                  "points": 0,
+                  "title": "Corrupted Gladiator's Proto-Drake"
                 }
               ],
               "name": "PVP"
@@ -40142,6 +40666,18 @@
                   "id": 13781,
                   "points": 0,
                   "title": "Battle for Azeroth Keystone Master: Season Three"
+                },
+                {
+                  "icon": "achievement_challengemode_gold",
+                  "id": 14144,
+                  "points": 0,
+                  "title": "Battle for Azeroth Keystone Conqueror: Season Four"
+                },
+                {
+                  "icon": "achievement_challengemode_platinum",
+                  "id": 14145,
+                  "points": 0,
+                  "title": "Battle for Azeroth Keystone Master: Season Four"
                 }
               ],
               "name": "Mythic Keystone: Battle for Azeroth"
@@ -40457,6 +40993,18 @@
                   "id": 13785,
                   "points": 0,
                   "title": "Cutting Edge: Queen Azshara"
+                },
+                {
+                  "icon": "achievement_nzothraid_nzoth",
+                  "id": 14068,
+                  "points": 0,
+                  "title": "Ahead of the Curve: N'Zoth the Corruptor"
+                },
+                {
+                  "icon": "achievement_nzothraid_nzoth",
+                  "id": 14069,
+                  "points": 0,
+                  "title": "Cutting Edge: N'Zoth the Corruptor"
                 }
               ],
               "name": "Lost Content"
@@ -41337,6 +41885,48 @@
                   "id": 13676,
                   "points": 0,
                   "title": "Elite: Battle for Azeroth Season 3"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13957,
+                  "points": 0,
+                  "title": "Corrupted Gladiator: Battle for Azeroth Season 4"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13963,
+                  "points": 0,
+                  "title": "Rival: Battle for Azeroth Season 4"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13964,
+                  "points": 0,
+                  "title": "Duelist: Battle for Azeroth Season 4"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13959,
+                  "points": 0,
+                  "title": "Challenger: Battle for Azeroth Season 4"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13967,
+                  "points": 0,
+                  "title": "Gladiator: Battle for Azeroth Season 4"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13962,
+                  "points": 0,
+                  "title": "Combatant: Battle for Azeroth Season 4"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 13989,
+                  "points": 0,
+                  "title": "Elite: Battle for Azeroth Season 4"
                 }
               ],
               "name": "Rated Arena"
@@ -42043,6 +42633,20 @@
                   "points": 0,
                   "side": "H",
                   "title": "Hero of the Horde: Notorious"
+                },
+                {
+                  "icon": "achievement_pvp_h_h",
+                  "id": 13965,
+                  "points": 0,
+                  "side": "H",
+                  "title": "Hero of the Horde: Corrupted"
+                },
+                {
+                  "icon": "achievement_pvp_a_a",
+                  "id": 13966,
+                  "points": 0,
+                  "side": "A",
+                  "title": "Hero of the Alliance: Corrupted"
                 }
               ],
               "name": "Rated Battleground"
@@ -42087,6 +42691,12 @@
                   "points": 0,
                   "side": "H",
                   "title": "The Alliance Slayer"
+                },
+                {
+                  "icon": "inv_eyeofnzothpet",
+                  "id": 14191,
+                  "points": 0,
+                  "title": "Servant of N'Zoth"
                 }
               ],
               "name": "War Mode"
@@ -42724,6 +43334,12 @@
                   "id": 13138,
                   "points": 0,
                   "title": "Flying Colors"
+                },
+                {
+                  "icon": "inv_encrypted19",
+                  "id": 14027,
+                  "points": 0,
+                  "title": "Battle for Mrrglroth"
                 }
               ],
               "name": "Blizzcon"
