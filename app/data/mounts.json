@@ -181,6 +181,24 @@
             "itemId": 167171,
             "name": "Azshari Bloatray",
             "spellid": 292419
+          },
+          {
+            "icon": "inv_nzothserpentmount_purple",
+            "itemId": 174861,
+            "name": "Wriggling Parasite",
+            "spellid": 316343
+          },
+          {
+            "icon": "inv_nzothserpentmount_pale",
+            "itemId": 174836,
+            "name": "Awakened Mindborer",
+            "spellid": 316637
+          },
+          {
+            "icon": "inv_nzothserpentmount_black",
+            "itemId": 174654,
+            "name": "Black Serpent of N'Zoth",
+            "spellid": 305182
           }
         ]
       },
@@ -229,6 +247,12 @@
             "itemId": 169202,
             "name": "Crimson Tidestallion",
             "spellid": 300153
+          },
+          {
+            "icon": "inv_aqirflyingmount_red",
+            "itemId": 174770,
+            "name": "Wicked Swarmer",
+            "spellid": 316340
           }
         ]
       },
@@ -273,6 +297,18 @@
             "itemId": 170069,
             "name": "Honeyback Harvester",
             "spellid": 259741
+          },
+          {
+            "icon": "inv_alpacamount_yellow",
+            "itemId": 174859,
+            "name": "Reins of the Springfur Alpaca",
+            "spellid": 316802
+          },
+          {
+            "icon": "inv_aqirflyingmount_purple",
+            "itemId": 174771,
+            "name": "Shadowbarb Drone",
+            "spellid": 316339
           }
         ]
       },
@@ -281,13 +317,6 @@
         "id": "773df5f2",
         "items": [
           {
-            "icon": "ability_hunter_pet_bat",
-            "itemId": 166469,
-            "name": "Bloodthirsty Dreadwing",
-            "side": "H",
-            "spellid": 288714
-          },
-          {
             "icon": "inv_trilobitemount_red",
             "itemId": 166464,
             "name": "Rubyshell Krolusk",
@@ -295,18 +324,31 @@
             "spellid": 288735
           },
           {
-            "icon": "inv_saber3mount",
-            "itemId": 166463,
-            "name": "Priestess' Moonsaber",
-            "side": "A",
-            "spellid": 288740
-          },
-          {
             "icon": "inv_trilobitemount_blue",
             "itemId": 166465,
             "name": "Azureshell Krolusk",
             "side": "A",
             "spellid": 288736
+          },
+          {
+            "icon": "inv_nightsaber2mountyellow",
+            "itemId": 166436,
+            "name": "Sandy Nightsaber",
+            "spellid": 288506
+          },
+          {
+            "icon": "ability_hunter_pet_bat",
+            "itemId": 166469,
+            "name": "Bloodthirsty Dreadwing",
+            "side": "H",
+            "spellid": 288714
+          },
+          {
+            "icon": "inv_saber3mount",
+            "itemId": 166463,
+            "name": "Priestess' Moonsaber",
+            "side": "A",
+            "spellid": 288740
           }
         ]
       },
@@ -365,78 +407,20 @@
             "icon": "inv_triceratopszandalari",
             "spellid": "263707",
             "side": "H"
-          }
-        ]
-      },
-      {
-        "name": "Zone",
-        "id": "6f5b737b",
-        "items": [
-          {
-            "itemId": "163576",
-            "name": "Captured Dune Scavenger",
-            "icon": "inv_hyena2mount_tan",
-            "spellid": "237286"
           },
           {
-            "itemId": "163574",
-            "name": "Chewed-On Reins of the Terrified Pack Mule",
-            "icon": "ability_mount_ridinghorse",
-            "spellid": "260174"
+            "itemId": "174066",
+            "name": "Caravan Hyena",
+            "icon": "inv_vulperamount",
+            "spellid": "306423",
+            "side": "H"
           },
           {
-            "itemId": "163575",
-            "name": "Reins of a Tamed Bloodfeaster",
-            "icon": "ability_mount_bloodtick_red",
-            "spellid": "243795"
-          },
-          {
-            "itemId": "163573",
-            "name": "Goldenmane's Reins",
-            "icon": "ability_mount_ridinghorse",
-            "spellid": "260175"
-          }
-        ]
-      },
-      {
-        "name": "Rare Spawn",
-        "id": "a9a95eb4",
-        "items": [
-          {
-            "itemId": "161479",
-            "name": "Nazjatar Blood Serpent",
-            "icon": "inv_serpentmount_red",
-            "spellid": "275623"
-          },
-          {
-            "icon": "ability_mount_kodo_03",
-            "itemId": 166433,
-            "name": "Frightened Kodo",
-            "spellid": 288499
-          },
-          {
-            "icon": "ability_mount_seahorse",
-            "itemId": 169201,
-            "name": "Fabious",
-            "spellid": 300150
-          },
-          {
-            "icon": "inv_mechacycle",
-            "itemId": 168370,
-            "name": "Junkheap Drifter",
-            "spellid": 297157
-          },
-          {
-            "icon": "creatureportrait_babyspider",
-            "itemId": 168823,
-            "name": "Rusty Mechanocrawler",
-            "spellid": 291492
-          },
-          {
-            "icon": "inv_sharkraymount_4",
-            "itemId": 169163,
-            "name": "Silent Glider",
-            "spellid": 300149
+            "itemId": "174067",
+            "name": "Mechagon Mechanostrider",
+            "icon": "inv_mechagnomestrider",
+            "spellid": "305592",
+            "side": "A"
           }
         ]
       },
@@ -545,6 +529,12 @@
             "itemId": 168829,
             "name": "Rustbolt Resistor",
             "spellid": 299170
+          },
+          {
+            "icon": "inv_vulturemount_red",
+            "itemId": 174754,
+            "name": "Wastewander Skyterror",
+            "spellid": 316276
           }
         ]
       },
@@ -573,56 +563,92 @@
         ]
       },
       {
-        "name": "Dungeon Drop",
-        "id": "8e8e5c12",
+        "name": "Zone",
+        "id": "6f5b737b",
         "items": [
           {
-            "itemId": "159921",
-            "name": "Mummified Raptor Skull",
-            "icon": "inv_armoredraptorundead",
-            "spellid": "266058"
+            "itemId": "163576",
+            "name": "Captured Dune Scavenger",
+            "icon": "inv_hyena2mount_tan",
+            "spellid": "237286"
           },
           {
-            "itemId": "160829",
-            "name": "Underrot Crawg Harness",
-            "icon": "inv_archaeology_ogres_chimera_riding_harness",
-            "spellid": "273541"
+            "itemId": "163574",
+            "name": "Chewed-On Reins of the Terrified Pack Mule",
+            "icon": "ability_mount_ridinghorse",
+            "spellid": "260174"
           },
           {
-            "itemId": "159842",
-            "name": "Sharkbait's Favorite Crackers",
-            "icon": "inv_misc_food_wheat_02",
-            "spellid": "254813"
+            "itemId": "163575",
+            "name": "Reins of a Tamed Bloodfeaster",
+            "icon": "ability_mount_bloodtick_red",
+            "spellid": "243795"
           },
           {
-            "icon": "creatureportrait_babyspider",
-            "itemId": 168826,
-            "name": "Mechagon Peacekeeper",
-            "spellid": 299158
-          },
-          {
-            "icon": "achievement_dungeon_mogulrazdunk",
-            "itemId": 168830,
-            "name": "Aerial Unit R-21/X",
-            "spellid": 290718
+            "itemId": "163573",
+            "name": "Goldenmane's Reins",
+            "icon": "ability_mount_ridinghorse",
+            "spellid": "260175"
           }
         ]
       },
       {
-        "name": "Raid Drop",
-        "id": "6815d547",
+        "name": "Rare Spawn",
+        "id": "a9a95eb4",
         "items": [
           {
-            "icon": "achievement_dungeon_coinoperatedcrowdpummeler",
-            "itemId": 166518,
-            "name": "G.M.O.D.",
-            "spellid": 289083
+            "itemId": "161479",
+            "name": "Nazjatar Blood Serpent",
+            "icon": "inv_serpentmount_red",
+            "spellid": "275623"
           },
           {
-            "icon": "inv_waterelementalmount",
-            "itemId": 166705,
-            "name": "Glacial Tidestorm",
-            "spellid": 289555
+            "icon": "ability_mount_kodo_03",
+            "itemId": 166433,
+            "name": "Frightened Kodo",
+            "spellid": 288499
+          },
+          {
+            "icon": "ability_mount_seahorse",
+            "itemId": 169201,
+            "name": "Fabious",
+            "spellid": 300150
+          },
+          {
+            "icon": "inv_mechacycle",
+            "itemId": 168370,
+            "name": "Junkheap Drifter",
+            "spellid": 297157
+          },
+          {
+            "icon": "creatureportrait_babyspider",
+            "itemId": 168823,
+            "name": "Rusty Mechanocrawler",
+            "spellid": 291492
+          },
+          {
+            "icon": "inv_sharkraymount_4",
+            "itemId": 169163,
+            "name": "Silent Glider",
+            "spellid": 300149
+          },
+          {
+            "itemId": "174860",
+            "name": "Reins of the Elusive Quickhoof",
+            "icon": "inv_alpacamount_black",
+            "spellid": "316493"
+          }
+        ]
+      },
+      {
+        "name": "World Boss",
+        "id": "8b6de801",
+        "items": [
+          {
+            "icon": "inv_alpacamount_brown",
+            "itemId": 174842,
+            "name": "Mollie",
+            "spellid": 298367
           }
         ]
       },
@@ -708,6 +734,132 @@
         ]
       },
       {
+        "name": "Assault: Vale of Eternal Blossoms",
+        "id": "d2a9a923",
+        "items": [
+          {
+            "icon": "inv_thunderislebirdbossmount_blue",
+            "itemId": 173887,
+            "name": "Clutch of Ha-Li",
+            "spellid": 312751
+          },
+          {
+            "icon": "inv_pandarenserpentmount_white",
+            "itemId": 174752,
+            "name": "Ivory Cloud Serpent",
+            "spellid": 315014
+          },
+          {
+            "icon": "inv_quilenmount_red",
+            "itemId": 174841,
+            "name": "Ren's Stalwart Hound",
+            "spellid": 316722
+          },
+          {
+            "icon": "inv_quilenmount_gold",
+            "itemId": 174840,
+            "name": "Xinlao",
+            "spellid": 316723
+          },
+          {
+            "icon": "inv_pandarenserpentmount_white",
+            "itemId": 174649,
+            "name": "Rajani Warserpent",
+            "spellid": 315427
+          }
+        ]
+      },
+      {
+        "name": "Assault: Uldum",
+        "id": "86df5950",
+        "items": [
+          {
+            "icon": "inv_aqirflyingmount_black",
+            "itemId": 174769,
+            "name": "Malevolent Drone",
+            "spellid": 316337
+          },
+          {
+            "icon": "inv_dragonskywallmount_bronze",
+            "itemId": 174641,
+            "name": "Reins of the Drake of the Four Winds",
+            "spellid": 315847
+          },
+          {
+            "icon": "inv_vulturemount_black",
+            "itemId": 174753,
+            "name": "Waste Marauder",
+            "spellid": 316275
+          }
+        ]
+      },
+      {
+        "name": "Dungeon Drop",
+        "id": "8e8e5c12",
+        "items": [
+          {
+            "itemId": "159921",
+            "name": "Mummified Raptor Skull",
+            "icon": "inv_armoredraptorundead",
+            "spellid": "266058"
+          },
+          {
+            "itemId": "160829",
+            "name": "Underrot Crawg Harness",
+            "icon": "inv_archaeology_ogres_chimera_riding_harness",
+            "spellid": "273541"
+          },
+          {
+            "itemId": "159842",
+            "name": "Sharkbait's Favorite Crackers",
+            "icon": "inv_misc_food_wheat_02",
+            "spellid": "254813"
+          },
+          {
+            "icon": "creatureportrait_babyspider",
+            "itemId": 168826,
+            "name": "Mechagon Peacekeeper",
+            "spellid": 299158
+          },
+          {
+            "icon": "achievement_dungeon_mogulrazdunk",
+            "itemId": 168830,
+            "name": "Aerial Unit R-21/X",
+            "spellid": 290718
+          }
+        ]
+      },
+      {
+        "name": "Raid Drop",
+        "id": "6815d547",
+        "items": [
+          {
+            "icon": "achievement_dungeon_coinoperatedcrowdpummeler",
+            "itemId": 166518,
+            "name": "G.M.O.D.",
+            "spellid": 289083
+          },
+          {
+            "icon": "inv_waterelementalmount",
+            "itemId": 166705,
+            "name": "Glacial Tidestorm",
+            "spellid": 289555
+          },
+          {
+            "icon": "inv_eyeballjellyfishmount",
+            "itemId": 174872,
+            "name": "Ny'alotha Allseer",
+            "spellid": 308814
+          },
+          {
+            "icon": "inv_voiddragonmount",
+            "itemId": 174862,
+            "name": "Uncorrupted Voidwing",
+            "spellid": 302143
+          }
+        ]
+      },
+      {
         "name": "Island Expedition",
         "id": "da655cc0",
         "items": [
@@ -782,6 +934,18 @@
             "itemId": 166745,
             "name": "Siltwing Albatross",
             "spellid": 266925
+          }
+        ]
+      },
+      {
+        "name": "Visions",
+        "id": "f803956b",
+        "items": [
+          {
+            "icon": "inv_nzothserpentmount_red",
+            "itemId": 174653,
+            "name": "Mail Muncher",
+            "spellid": 315987
           }
         ]
       },
@@ -4038,6 +4202,20 @@
             "name": "Vicious Black Bonesteed",
             "side": "H",
             "spellid": 281890
+          },
+          {
+            "icon": "inv_skeletalwarhorse_01_purple",
+            "itemId": 173713,
+            "name": "Vicious White Bonesteed",
+            "side": "A",
+            "spellid": 281889
+          },
+          {
+            "icon": "ability_mount_warnightsaber",
+            "itemId": 173714,
+            "name": "Vicious White Warsaber",
+            "side": "H",
+            "spellid": 281888
           }
         ]
       },
@@ -4242,6 +4420,12 @@
             "icon": "ability_mount_protodrakegladiatormount",
             "spellid": "262022",
             "notObtainable": true
+          },
+          {
+            "icon": "inv_protodrakegladiatormount_black",
+            "itemId": 156884,
+            "name": "Corrupted Gladiator's Proto-Drake",
+            "spellid": 262027
           }
         ],
         "id": "deeb6401"
@@ -4558,13 +4742,13 @@
             "itemId": 166774,
             "name": "Hogrus, Swine of Good Fortune",
             "spellid": 290134
-          },		  
+          },
           {
             "icon": "2493157",
             "itemId": 166776,
             "name": "Sylverian Dreamer",
             "spellid": 290132
-          }	  
+          }
         ],
         "id": "a90a3293"
       },
@@ -4580,13 +4764,13 @@
             "icon": "inv_allianceshipmount",
             "spellid": 245723,
             "itemId": 151618,
-            "side": "A"					
+            "side": "A"
           },
           {
             "icon": "inv_hordezeppelinmount",
             "spellid": 245725,
             "itemId": 151617,
-            "side": "H"			
+            "side": "H"
           }
         ],
         "id": "6f31dfa2"
@@ -4611,20 +4795,20 @@
           },
           {
             "icon": "inv_dressedhorse",
-            "itemId": "153539",					
+            "itemId": "153539",
             "spellid": 255695,
-            "side": "A"					
+            "side": "A"
           },
           {
             "icon": "inv_armoredraptor",
-            "itemId": "153540",			
+            "itemId": "153540",
             "spellid": 255696,
-            "side": "H"				
+            "side": "H"
           },
           {
-            "icon": "3040844",		
-            "spellid": 307932		
-          }		  
+            "icon": "3040844",
+            "spellid": 307932
+          }
         ],
         "id": "259f733d"
       },
