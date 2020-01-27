@@ -227,6 +227,13 @@
             "itemId": 169349,
             "name": "Kelpfin",
             "spellid": 301020
+          },
+          {
+            "creatureId": 161967,
+            "icon": "spell_shadow_shadowfiend",
+            "itemId": 174463,
+            "name": "Reek",
+            "spellid": 315304
           }
         ],
         "name": "Achievement"
@@ -303,6 +310,13 @@
             "itemId": 169354,
             "name": "Brilliant Glimmershell",
             "spellid": 301025
+          },
+          {
+            "creatureId": 163646,
+            "icon": "ability_warlock_everlastingaffliction",
+            "itemId": 175049,
+            "name": "Shadowbarb Hatchling",
+            "spellid": 318300
           }
         ],
         "name": "Quest"
@@ -454,6 +468,34 @@
             "itemId": 172493,
             "name": "Snarling Butterfly Crate",
             "spellid": 309522
+          },
+          {
+            "creatureId": 162006,
+            "icon": "ability_mount_camel_gray",
+            "itemId": 174477,
+            "name": "Pygmy Camel",
+            "spellid": 315363
+          },
+          {
+            "creatureId": 162007,
+            "icon": "achievement_dungeon_halls-of-origination_anraphet",
+            "itemId": 174481,
+            "name": "Cursed Dune Watcher",
+            "spellid": 315367
+          },
+          {
+            "creatureId": 162014,
+            "icon": "inv_icon_feather03a",
+            "itemId": 174480,
+            "name": "Windfeather Quill",
+            "spellid": 315372
+          },
+          {
+            "creatureId": 162013,
+            "icon": "inv_jewelcrafting_gem_19",
+            "itemId": 174479,
+            "name": "Jade Defender",
+            "spellid": 315371
           }
         ],
         "name": "Reputation"
@@ -820,6 +862,41 @@
             "itemId": 169348,
             "name": "Zanj'ir Poker",
             "spellid": 301015
+          },
+          {
+            "creatureId": 161919,
+            "icon": "spell_warlock_darkregeneration",
+            "itemId": 174446,
+            "name": "Fractured Obsidian Claw",
+            "spellid": 315221
+          },
+          {
+            "creatureId": 161923,
+            "icon": "trade_archaeology_pendant-of-the-aqir",
+            "itemId": 174448,
+            "name": "Aqir Hivespawn",
+            "spellid": 315229
+          },
+          {
+            "creatureId": 161924,
+            "icon": "inv_icon_wing03b",
+            "itemId": 174449,
+            "name": "Ra'kim",
+            "spellid": 315231
+          },
+          {
+            "creatureId": 161921,
+            "icon": "inv_helm_armor_voidelf_d_01",
+            "itemId": 174447,
+            "name": "Void-Scarred Anubisath",
+            "spellid": 315225
+          },
+          {
+            "creatureId": 161946,
+            "icon": "inv_eyeofnzothpet",
+            "itemId": 174452,
+            "name": "Eye of Corruption",
+            "spellid": 315270
           }
         ],
         "name": "Raid Drop"
@@ -1519,6 +1596,115 @@
           }
         ],
         "name": "Unknown"
+      },
+      {
+        "id": "fe7a9032",
+        "items": [
+          {
+            "creatureId": 161964,
+            "icon": "inv_alchemy_elixir_empty",
+            "itemId": 174461,
+            "name": "Swirling Black Bottle",
+            "spellid": 315302
+          },
+          {
+            "creatureId": 161959,
+            "icon": "inv_giantboarmount_brown",
+            "itemId": 174457,
+            "name": "C'Thuffer",
+            "spellid": 315290
+          },
+          {
+            "creatureId": 160196,
+            "icon": "inv_pet_frostwolfpup_shadow",
+            "itemId": 174646,
+            "name": "Void-Link Frostwolf Collar",
+            "spellid": 312030
+          },
+          {
+            "creatureId": 160187,
+            "icon": "inv_pet_toad_black",
+            "itemId": 173726,
+            "name": "Box With Faintly Glowing 'Air' Holes",
+            "spellid": 312029
+          },
+          {
+            "creatureId": 161962,
+            "icon": "inv_misc_bandage_09",
+            "itemId": 174459,
+            "name": "Voidwoven Cat Collar",
+            "spellid": 315298
+          },
+          {
+            "creatureId": 161961,
+            "icon": "inv_rabbit2_greyblood",
+            "itemId": 174458,
+            "name": "Void-Scarred Hare",
+            "spellid": 315297
+          },
+          {
+            "creatureId": 161963,
+            "icon": "inv_crate_01",
+            "itemId": 174460,
+            "name": "Box Labeled \"Danger: Void Rat Inside\"",
+            "spellid": 315301
+          }
+        ],
+        "name": "Horrific Visions"
+      },
+      {
+        "id": "e62a6c49",
+        "items": [
+          {
+            "creatureId": 161954,
+            "icon": "inv_babytentacleface",
+            "itemId": 174473,
+            "name": "K'uddly",
+            "spellid": 315339
+          },
+          {
+            "creatureId": 161992,
+            "icon": "ability_deathwing_grasping_tendrils",
+            "itemId": 173726,
+            "name": "Corrupted Tentacle",
+            "spellid": 315353
+          }
+        ],
+        "name": "Assault: Vale of Eternal Blossoms"
+      },
+      {
+        "id": "c4e36c5b",
+        "items": [
+          {
+            "creatureId": 162004,
+            "icon": "inv_misc_monsterscales_07",
+            "itemId": 174476,
+            "name": "Black Chitinous Plate",
+            "spellid": 315360
+          },
+          {
+            "creatureId": 161997,
+            "icon": "inv_larva2_limegreen",
+            "itemId": 174475,
+            "name": "Stinky Sack",
+            "spellid": 315355
+          },
+          {
+            "creatureId": 162012,
+            "icon": "inv_misc_eye_04",
+            "itemId": 174478,
+            "name": "Wicked Lurker",
+            "spellid": 315370
+          },
+          {
+            "creatureId": 161966,
+            "icon": "inv_falcosauregg_purple",
+            "itemId": 174462,
+            "name": "Void Cocoon",
+            "spellid": 315303
+          }
+        ],
+        "name": "Assault: Uldum"
       }
     ]
   },
@@ -4719,6 +4905,13 @@
             "icon": "inv_pet_babyshark",
             "itemId": "152555",
             "spellid": "251191"
+          },
+          {
+            "creatureId": 161951,
+            "icon": "inv_misc_food_162_fish_90blue",
+            "itemId": 174456,
+            "name": "Bottle of Gloop",
+            "spellid": 315285
           }
         ],
         "name": "Fishing"
@@ -4878,6 +5071,33 @@
           }
         ],
         "name": "Challenge: Stratholme"
+      },
+      {
+        "id": "01768b54",
+        "items": [
+          {
+            "creatureId": 162663,
+            "icon": "ability_monk_tigerpalm",
+            "itemId": 174828,
+            "name": "Experiment 13",
+            "spellid": 316629
+          },
+          {
+            "creatureId": 162670,
+            "icon": "inv_pet_mechanicalbearcub",
+            "itemId": 174829,
+            "name": "Tinyclaw",
+            "spellid": 316628
+          },
+          {
+            "creatureId": 162677,
+            "icon": "inv_desertlasherorchid_yellow",
+            "itemId": 174827,
+            "name": "Wailing Lasher",
+            "spellid": 316627
+          }
+        ],
+        "name": "Challenge: Blackrock Depths"
       }
     ]
   },
