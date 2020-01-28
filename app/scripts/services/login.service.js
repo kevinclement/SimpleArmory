@@ -102,8 +102,9 @@
                     'A',  // Kul Tiran
                     '',
                     'A',  // Dark Iron Dwarf
-                    '',
+                    'H',  // Vulpera
                     'H',  // Mag'har Orc
+                    'A',  // Mechagnome
                   ][characterCached.race];
 
                   gRegion = $routeParams.region;
