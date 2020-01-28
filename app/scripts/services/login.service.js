@@ -75,11 +75,36 @@
                   // add region and faction to character
                   characterCached.region = $routeParams.region;
 
-                  characterCached.faction = ['',
-                    'A','H','A','A','H','H','A','H','H','H',
-                    'A','','','','','','','','','',
-                    '','A','','','A','H','H','H','A','A',
-                    'H','A','','A','','H'][characterCached.race];
+                  characterCached.faction = [
+                    '',
+                    'A',  // Human
+                    'H',  // Orc
+                    'A',  // Dwarf
+                    'A',  // Night Elf
+                    'H',  // Undead
+                    'H',  // Tauren
+                    'A',  // Gnome
+                    'H',  // Troll
+                    'H',  // Goblin
+                    'H',  // Blood Elf
+                    'A',  // Draenei
+                    '', '', '', '', '', '', '', '', '', '',
+                    'A',  // Worgen
+                    '',
+                    '',
+                    'A',  // Pandaren Alliance
+                    'H',  // Pandaren Horde
+                    'H',  // Nightborne
+                    'H',  // Highmountain Tauren
+                    'A',  // Void Elf
+                    'A',  // Lightforged Draenei
+                    'H',  // Zandalari Troll
+                    'A',  // Kul Tiran
+                    '',
+                    'A',  // Dark Iron Dwarf
+                    '',
+                    'H',  // Mag'har Orc
+                  ][characterCached.race];
 
                   gRegion = $routeParams.region;
                   gRealm = $routeParams.realm;
