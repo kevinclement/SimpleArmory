@@ -11,7 +11,7 @@
 
         // default to not logged in
         $scope.isLoggedIn = false;
-        $scope.isUsingDarkTheme = localStorage.getItem('darkTheme') == 'true';
+        $scope.isUsingDarkTheme = localStorage.getItem('darkTheme') === 'true';
 
         // Listen for path changed and then parse and fetch the character
         $scope.$on('$locationChangeSuccess', function(){
@@ -31,7 +31,7 @@
                 var rgr = new RegExp('([^\/]+)/([^\/]+)/([^\/]+)/?([^\/]+)?').exec($location.$$path);
                 rgr = rgr ? rgr : {};
 
-                LoginService.getCharacter({'region': rgr[1], 'realm':rgr[2], 'character':rgr[3]})
+                LoginService.getProfile({'region': rgr[1], 'realm':rgr[2], 'character':rgr[3]})
                     .then(function(character) {
                         $scope.character = character;
                         $scope.region = rgr[1];
@@ -66,7 +66,7 @@
         };
 
         $scope.updateTheme = function() {
-            $scope.isUsingDarkTheme = localStorage.getItem('darkTheme') == 'true';
+            $scope.isUsingDarkTheme = localStorage.getItem('darkTheme') === 'true';
         };
 
         // Helper to get the image id off an item

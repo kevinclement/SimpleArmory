@@ -8,7 +8,6 @@
 
     function LoginService($location, $log, $http, $q, $window, SettingsService) {
         //  cache results
-        var characterCached;
         var profileCached;
 
         // callbacks to call once we've logged in
@@ -16,10 +15,6 @@
         var callbacks = [];
 
         // saved from last time someone tried to use the login service
-        var gRegion;
-        var gRealm;
-        var gCharacter;
-
         var pRegion;
         var pRealm;
         var pCharacter;
@@ -31,11 +26,11 @@
               callbacks.push(callback);
             },
 
-            getCharacter: function($routeParams, noCache) {
+            getProfile: function($routeParams, noCache) {
                 // don't fetch if we've already got it
                 var sameUser = checkIfSameUser($routeParams.region, $routeParams.realm, $routeParams.character);
-                if (sameUser && characterCached) {
-                  return $q.when(characterCached);
+                if (sameUser && profileCached) {
+                  return $q.when(profileCached);
                 }
 
                 // notify others to clear their caches
@@ -49,33 +44,33 @@
 
                 return $http.get(
                   SettingsService.apiEndPoint +
-                  'character/' +
+                  'profile/' +
                   $routeParams.region + '/' +
                   $routeParams.realm + '/' +
                   $routeParams.character,
                   {cache: true})
-                  .error(getCharacterError)
-                  .then(getCharacterComplete);
+                  .error(getProfileError)
+                  .then(getProfileComplete);
 
-              function getCharacterError() {
-                $log.error('Trouble fetching character from battlenet');
-
-                // let's figure out what the errors are
-                $window.ga('send', 'event', 'LoginError', $routeParams.region + ':' + $routeParams.realm + ':' + $routeParams.character);
-
-                $location.url('error/' + $routeParams.realm + '/' + $routeParams.character);
+              function getProfileError() {
+                    $log.error('Trouble fetching character from battlenet');
+    
+                    // let's figure out what the errors are
+                    $window.ga('send', 'event', 'LoginError', $routeParams.region + ':' + $routeParams.realm + ':' + $routeParams.character);
+    
+                    $location.url('error/' + $routeParams.realm + '/' + $routeParams.character);
               }
 
-              function getCharacterComplete(data) {
+              function getProfileComplete(data) {
                   // lets figure out who uses the site
                   $window.ga('send', 'event', 'Login', $routeParams.region + ':' + $routeParams.realm + ':' + $routeParams.character);
 
-                  characterCached = data.data;
+                  profileCached = data.data;
 
                   // add region and faction to character
-                  characterCached.region = $routeParams.region;
-
-                  characterCached.faction = [
+                  profileCached.region = $routeParams.region;
+                  profileCached.realm = $routeParams.realm;
+                  profileCached.faction = [
                     '',
                     'A',  // Human
                     'H',  // Orc
@@ -105,64 +100,7 @@
                     'H',  // Vulpera
                     'H',  // Mag'har Orc
                     'A',  // Mechagnome
-                  ][characterCached.race];
-
-                  gRegion = $routeParams.region;
-                  gRealm = $routeParams.realm;
-                  gCharacter = $routeParams.character;
-
-                  return characterCached;
-              }
-
-              function checkIfSameUser(region, realm, character) {
-                if ((region && gRegion && region.toLowerCase() === gRegion.toLowerCase())  &&
-                    (realm && gRealm && realm.toLowerCase() === gRealm.toLowerCase())  &&
-                    (character && gCharacter && character.toLowerCase() === gCharacter.toLowerCase())) {
-                    return true;
-                }
-                return false;
-              }
-            },
-
-            getProfile: function($routeParams, noCache) {
-                // don't fetch if we've already got it
-                var sameUser = checkIfSameUser($routeParams.region, $routeParams.realm, $routeParams.character);
-                if (sameUser && profileCached) {
-                  return $q.when(profileCached);
-                }
-
-                // notify others to clear their caches
-                if (!sameUser) {
-                  for (var i=0; i<callbacks.length; i++) {
-                    callbacks[i]('logged in');
-                  }
-                }
-
-                $log.log('Fetching ' + $routeParams.character + ' from server ' + $routeParams.realm + '...');
-
-                return $http.get(
-                  SettingsService.apiEndPoint +
-                  'profile/' +
-                  $routeParams.region + '/' +
-                  $routeParams.realm + '/' +
-                  $routeParams.character,
-                  {cache: true})
-                  .then(getProfileComplete);
-
-              function getProfileComplete(data) {
-                  // lets figure out who uses the site
-                  $window.ga('send', 'event', 'Login', $routeParams.region + ':' + $routeParams.realm + ':' + $routeParams.character);
-
-                  profileCached = data.data;
-
-                  // add region and faction to character
-                  profileCached.region = $routeParams.region;
-
-                  profileCached.faction = ['',
-                    'A','H','A','A','H','H','A','H','H','H',
-                    'A','','','','','','','','','',
-                    '','A','','','A','H','H','H','A','A',
-                    'H','A','','A','','H'][profileCached.race.id];
+                  ][profileCached.race.id];
 
                   pRegion = $routeParams.region;
                   pRealm = $routeParams.realm;

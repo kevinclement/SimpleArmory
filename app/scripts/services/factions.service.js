@@ -19,7 +19,7 @@
                     return $q.when(parsedFactions);
                 }
                 
-                return LoginService.getCharacter(
+                return LoginService.getProfile(
                         {
                             'region': $routeParams.region,
                             'realm':$routeParams.realm,

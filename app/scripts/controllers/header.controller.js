@@ -20,7 +20,7 @@
         };
 
         $scope.toggleDarkTheme = function() {
-            var isUsingDarkTheme = localStorage.getItem('darkTheme') == 'true';
+            var isUsingDarkTheme = localStorage.getItem('darkTheme') === 'true';
             if(isUsingDarkTheme) {
                 localStorage.setItem('darkTheme', 'false');
             } else {

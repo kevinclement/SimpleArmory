@@ -39,23 +39,7 @@
                                 parsedAchievements = parseAchievementObject(data.data.supercats, profile, null, SettingsService, $window);
                                 return parsedAchievements;
                             });
-                    })
-                    // If the Profile API fails, use the old Community API
-                    .catch(function() {
-                        return LoginService.getCharacter(
-                            {
-                                'region': $routeParams.region,
-                                'realm':$routeParams.realm,
-                                'character':$routeParams.character
-                            })
-                        .then(function(character) {
-                            return $http.get('data/achievements.json', { cache: true })
-                                .then(function(data) {
-                                    parsedAchievements = parseAchievementObject(data.data.supercats, null, character, SettingsService, $window);
-                                    return parsedAchievements;
-                                });
-                        })
-                    })
+                    });
             }
         };
 

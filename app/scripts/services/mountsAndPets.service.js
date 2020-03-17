@@ -42,7 +42,7 @@
                     return $q.when(parsedToys);
                 }
 
-                return LoginService.getCharacter(
+                return LoginService.getProfile(
                         {
                             'region': $routeParams.region,
                             'realm':$routeParams.realm,
