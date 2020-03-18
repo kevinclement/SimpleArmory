@@ -22,28 +22,32 @@
         
         return {
             getAchievements: function() {
+                let my_achievements, profile;
+
                 if (parsedAchievements) {
                     return $q.when(parsedAchievements);
                 }
 
-                // Try getting data from the Profile API first
-                return LoginService.getProfile(
-                        {
-                            'region': $routeParams.region,
-                            'realm':$routeParams.realm,
-                            'character':$routeParams.character
-                        })
-                    .then(function(profile) {
-                        return $http.get('data/achievements.json', { cache: true })
-                            .then(function(data) {
-                                parsedAchievements = parseAchievementObject(data.data.supercats, profile, null, SettingsService, $window);
-                                return parsedAchievements;
-                            });
+                return LoginService.getProfile($routeParams)
+                    .then(function(p) {
+                        profile = p;
+                        // get achievements from service
+                        return $http.get(SettingsService.apiUrl($routeParams, 'achievements'), {cache: true})
+                    })
+                    .then(function(a) {
+                        my_achievements = a.data;
+
+                        // now get the json of all the achievements
+                        return $http.get('data/achievements.json', { cache: true });
+                    })
+                    .then(function(ach_json_data) {
+                        parsedAchievements = parseAchievementObject(ach_json_data.data.supercats, profile, my_achievements, SettingsService, $window);
+                        return parsedAchievements;
                     });
             }
         };
 
-        function parseAchievementObject(supercats, profile, character, settings, $window) {
+        function parseAchievementObject(supercats, profile, achievements, settings, $window) {
             var obj = {};
             var completed = {};
             var critCompleted = {};
@@ -56,56 +60,29 @@
             var faction = '';
             $log.log('Parsing achievements.json...');
 
-            // Parse achievements from the Profile API if available
-            if (profile) {
-                name = profile.name;
-                faction = profile.faction;
+            name = profile.name;
+            faction = profile.faction;
 
-                // Build up lookup for achievements that character has completed
-                angular.forEach(profile.achievements.achievements, function(ach, index) {
-                    if (ach.completed_timestamp) {
-                        // hash the achievement and its timestamp
-                        completed[ach.id] = ach.completed_timestamp;
+            // Build up lookup for achievements that character has completed
+            angular.forEach(achievements.achievements, function(ach, index) {
+                if (ach.completed_timestamp) {
+                    // hash the achievement and its timestamp
+                    completed[ach.id] = ach.completed_timestamp;
+                }
+
+                // Build up lookup for criteria that character has completed
+                angular.forEach(ach.criteria, function(crit, index) {
+                    if (crit.is_completed) {
+                        critCompleted[crit.id] = true;
                     }
 
-                    // Build up lookup for criteria that character has completed
-                    angular.forEach(ach.criteria, function(crit, index) {
-                        if (crit.is_completed) {
-                            critCompleted[crit.id] = true;
+                    angular.forEach(crit.child_criteria, function(child_crit, index) {
+                        if (child_crit.is_completed) {
+                            critCompleted[child_crit.id] = true;
                         }
-
-                        angular.forEach(crit.child_criteria, function(child_crit, index) {
-                            if (child_crit.is_completed) {
-                                critCompleted[child_crit.id] = true;
-                            }
-                        });
                     });
                 });
-            }
-            // The Profile API doesn't have achievement data if the character hasn't logged on since the release of 8.2,
-            // use the Community API for old characters instead
-            else {
-              name = character.name;
-              faction = character.faction;
-
-              // Build up lookup for criteria that character has completed
-              angular.forEach(character.achievements.criteria, function(crit, index) {
-                  critCompleted[crit] = true;
-              });
-
-              // Build up lookup for achievements that character has completed
-              angular.forEach(character.achievements.achievementsCompleted, function(ach, index) {
-                  // hash the achievement and its timestamp
-                  completed[ach] = character.achievements.achievementsCompletedTimestamp[index];
-
-                  // FoS will no longer have timestamps, so we need to fake their timestamp
-                  if (!character.achievements.achievementsCompletedTimestamp[index])
-                  {
-                      completed[ach] = settings.fakeCompletionTime;
-                  }
-                  found[ach] = false;
-              });
-            }
+            });
 
             // Lets parse out all the super categories and build out our structure
             angular.forEach(supercats, function(supercat) {
