@@ -16,9 +16,6 @@ async function handleRequest(request) {
   let debug = "";
 
   // simple bailout for any url I don't like
-  if (!request.url.match(/armorystats\.info\/(character|profile)\/.*/i)) {
-    return new Response('Hello, this is the api server for simplearmory.com');
-  }
 
   var now = new Date();
 
@@ -55,36 +52,25 @@ async function handleRequest(request) {
     debug = `EXISTING: ${access_token_expires_date}`;
   }
 
-  let url_match = request.url.match(/(character|profile)\/(.+)\/(.+)\/(.+)/i);
+  let url_match = request.url.match(/https?:\/\/.*\.(dev|info)\/(.*?)\/(.*?)\/(.*?)\/(.*)/i);
   if (!url_match) {
     return new Response('Bad Request', { status: 400, statusText: 'Bad Request' });
-  } 
+  }
 
   let region = url_match[2];
   let realm = url_match[3];
   let character = url_match[4];
-
-  console.log(`region: ${region} realm: ${realm} character: ${character}`)
-
-  let url;
-  let api_response;
-
-  if (url_match[1] === 'character') {
-    url = `https://${region}.api.blizzard.com/wow/character/${realm}/${character}?fields=pets,mounts,achievements,guild,reputation`;
-    api_response = await fetch(url, { headers: { 'Authorization': 'Bearer ' + access_token } } )
-
-    // Copy the response so that we can modify headers.
-    api_response = new Response(api_response.body, api_response)
-  } else if (url_match[1] === 'profile') {
-    url = `https://${region}.api.blizzard.com/profile/wow/character/${realm}/${character}?namespace=profile-${region}`;
-    api_response = await fetch(url, { headers: { 'Authorization': 'Bearer ' + access_token } } )
-    let json_response = await api_response.json()
-
-    let achievements_url = json_response.achievements.href
-    let achievements_response = await fetch(achievements_url, { headers: { 'Authorization': 'Bearer ' + access_token } } )
-    json_response.achievements = await achievements_response.json()
-    api_response = new Response(JSON.stringify(json_response), api_response)
+  let site = url_match[5];
+  if (site) {
+    site = `/${site}`
   }
+
+  console.log(`region: ${region} realm: ${realm} character: ${character} site: ${site}`)
+    
+  let url = `https://${region}.api.blizzard.com/profile/wow/character/${realm}/${character}${site}?namespace=profile-${region}`;
+  let resp = await fetch(url, { headers: { 'Authorization': 'Bearer ' + access_token } } )
+
+  let api_response = new Response(resp.body, resp);
 
   // Add CORS so we can call it from our site
   api_response.headers.set("Access-Control-Allow-Origin", "*")
