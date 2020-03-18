@@ -42,36 +42,42 @@
                     return $q.when(parsedToys);
                 }
 
-                return LoginService.getProfile(
-                        {
-                            'region': $routeParams.region,
-                            'realm':$routeParams.realm,
-                            'character':$routeParams.character
-                        })
-                    .then(function(character) {
-                        return $http.get(SettingsService.jsonFiles[jsonFile], { cache: true, isArray:true })
-                            .then(function(data) {
-                                
-                                $log.log('Parsing ' + jsonFile + '.json...');
-                                var parsed = parseItemsObject(data.data, character, characterProperty, collectedId);
+                var profile,jsonFile_data;
+                return LoginService.getProfile($routeParams)
+                    .then(function(p) {
+                        profile = p;
 
-                                if (jsonFile === 'pets') {
-                                    parsedCompanions = parsed; 
-                                } else if (jsonFile === 'battlepets') {
-                                    parsedPets = parsed; 
-                                } else if (jsonFile === 'mounts') {
-                                    parsedMounts = parsed;
-                                } else if (jsonFile === 'toys') {
-                                    parsedToys = parsed;
-                                }
+                        // parse json with all data
+                        $log.log('Parsing ' + jsonFile + '.json...');
+                        return $http.get(SettingsService.jsonFiles[jsonFile], { cache: true, isArray:true });
+                    })
+                    .then(function(data) {
+                        jsonFile_data = data;
 
-                                return parsed;
-                            });
+                        // TODO: other types here
+                        if (jsonFile === 'mounts') {
+                            return $http.get(SettingsService.apiUrl($routeParams, 'collections/mounts'), {cache: true});
+                        }
+                    })
+                    .then(function(collected_data) {
+                        var parsed = parseItemsObject(jsonFile_data.data, profile, collected_data.data, characterProperty, collectedId);
+
+                        if (jsonFile === 'pets') {
+                            parsedCompanions = parsed; 
+                        } else if (jsonFile === 'battlepets') {
+                            parsedPets = parsed; 
+                        } else if (jsonFile === 'mounts') {
+                            parsedMounts = parsed;
+                        } else if (jsonFile === 'toys') {
+                            parsedToys = parsed;
+                        }
+
+                        return parsed;
                     });
             }
         };
 
-        function parseItemsObject(categories, character, characterProperty, collectedId) {    
+        function parseItemsObject(categories, profile, collected_data, characterProperty, collectedId) {    
             var obj = { 'categories': [] };
             var collected = {};
             var totalCollected = 0;
@@ -81,20 +87,20 @@
             // Retrieve the toys from the localstorage
             // Remove this if Blizzard ever implements this in the API.
             var toys = JSON.parse(localStorage.getItem('toys'));
-            character.toys = {};
-            character.toys.collected = [];
+            profile.toys = {};
+            profile.toys.collected = [];
             angular.forEach(toys, function(item) {
-                character.toys.collected.push({'itemId': item});
+                profile.toys.collected.push({'itemId': item});
             });
 
             // Build up lookup for items that character has
-            angular.forEach(character[characterProperty].collected, function(item) {
-                collected[item[collectedId]] = item;
-                found[item[collectedId]] = false;
+            angular.forEach(collected_data[characterProperty], function(item) {
+                collected[item[collectedId].id] = item;
+                found[item[collectedId].id] = false;
             });
 
             // Fix any problems blizzard has introduced
-            applyHacks(character, characterProperty, collected, found);
+            applyHacks(profile, characterProperty, collected, found);
 
             // Lets parse out all the categories and build out our structure
             angular.forEach(categories, function(category) {
@@ -116,10 +122,10 @@
                         delete itm.spellid;
 
                         // Mark it found
-                        found[itm[collectedId]] = true;
+                        found[itm.ID] = true;
 
-                        if (collected[itm[collectedId]]) {
-                            var fullItem = collected[itm[collectedId]];
+                        if (collected[itm.ID]) {
+                            var fullItem = collected[itm.ID];
                             itm.collected =  true;
 
                             // Add pet info if we have it
@@ -211,9 +217,9 @@
                         // If the item id is available lets use that
                         if (item.itemId) {
                             link = 'item='+item.itemId;
-                        } else if (item.allianceId && (character.faction === 'A')) {
+                        } else if (item.allianceId && (profile.faction === 'A')) {
                             link = 'item='+item.allianceId;
-                        } else if (item.hordeId && (character.faction === 'H')) {
+                        } else if (item.hordeId && (profile.faction === 'H')) {
                             link = 'item='+item.hordeId;
                         } else if (item.creatureId) {
                             link = 'npc='+item.creatureId;
@@ -229,7 +235,7 @@
                         var hasthis = itm.collected;
                         var showthis = (hasthis || !item.notObtainable);
 
-                        if (item.side && item.side !== character.faction) {
+                        if (item.side && item.side !== profile.faction) {
                             showthis = false;
                         }
 
@@ -237,7 +243,7 @@
                         {
                             var foundRace = false;
                             angular.forEach(item.allowableRaces, function(race) {
-                                if (race === character.race) {
+                                if (race === profile.race) {
                                     foundRace = true;
                                 }
                             });
@@ -251,7 +257,7 @@
                         {
                             var foundClass = false;
                             angular.forEach(item.allowableClasses, function(allowedClass) {
-                                if (allowedClass === character.class) {
+                                if (allowedClass === profile.class) {
                                     foundClass = true;
                                 }
                             });
@@ -293,13 +299,13 @@
             obj.lookup = collected;
 
             // Add stuff that planner needs
-            obj.isAlliance = (character.faction === 'A');
+            obj.isAlliance = (profile.faction === 'A');
 
             // Data object we expose externally
             return obj;
         }
 
-        function applyHacks(character, characterProperty, collected, found) {
+        function applyHacks(profile, characterProperty, collected, found) {
             // No hacks needed right now! :-)
         }
     }

@@ -32,7 +32,7 @@
             return '//wow.zamimg.com/images/wow/icons/tiny/' + boss.icon + '.gif';
         };
 
-        MountsAndPetsService.getItems('mounts', 'mounts', 'spellId').then(function(items){
+        MountsAndPetsService.getItems('mounts', 'mounts', 'mount').then(function(items){
             $scope.items = items;
 
             // called when planner checkbox is clicked

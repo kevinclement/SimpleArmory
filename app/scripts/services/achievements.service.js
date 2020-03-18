@@ -22,7 +22,7 @@
         
         return {
             getAchievements: function() {
-                let my_achievements, profile;
+                var my_achievements, profile;
 
                 if (parsedAchievements) {
                     return $q.when(parsedAchievements);
@@ -31,8 +31,9 @@
                 return LoginService.getProfile($routeParams)
                     .then(function(p) {
                         profile = p;
+
                         // get achievements from service
-                        return $http.get(SettingsService.apiUrl($routeParams, 'achievements'), {cache: true})
+                        return $http.get(SettingsService.apiUrl($routeParams, 'achievements'), {cache: true});
                     })
                     .then(function(a) {
                         my_achievements = a.data;
