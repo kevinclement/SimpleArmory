@@ -43,11 +43,7 @@
                 $log.log('Fetching ' + $routeParams.character + ' from server ' + $routeParams.realm + '...');
 
                 return $http.get(
-                  SettingsService.apiEndPoint +
-                  'profile/' +
-                  $routeParams.region + '/' +
-                  $routeParams.realm + '/' +
-                  $routeParams.character,
+                  SettingsService.apiUrl($routeParams),
                   {cache: true})
                   .error(getProfileError)
                   .then(getProfileComplete);
