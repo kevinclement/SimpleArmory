@@ -88,19 +88,32 @@ class MountFixer:
         json.dump(mounts_to_add, sys.stdout, indent=2, sort_keys=True)
 
     def run(self):
+
+        # build up a lookup of found from the csv, so we can see if we're missing any
+        found = {}
+        for spellId in self.wowtools_mapping:
+            found[spellId] = False
+
         for cat in self.mounts:
             for subcat in cat['subcats']:
                 for item in subcat['items']:
                     spellid = int(item['spellid'])
 
                     if (spellid in self.wowtools_mapping):
+                        found[spellid] = True
                         item['ID'] = self.wowtools_mapping[spellid]
-                    #else:
-                    #    print("DIDNT FIND ", spellid)
-                        #json.dump(item, sys.stdout, indent=2, sort_keys=True)
+                    else:
+                        print("DIDNT FIND ", spellid)
+                        json.dump(item, sys.stdout, indent=2, sort_keys=True)
+                        print()
 
+        # dump json out of new json
+        # json.dump(self.mounts, sys.stdout, indent=2, sort_keys=True)
 
-        json.dump(self.mounts, sys.stdout, indent=2, sort_keys=True)
+        # check for missing stuff, starting from CSV side
+        # for spellId in found:
+        #     if (not found[spellId] and spellid not in IGNORE_MOUNT_SPELLIDS):
+        #         print('didnt find: ', spellId)
 
 
 if __name__ == '__main__':
