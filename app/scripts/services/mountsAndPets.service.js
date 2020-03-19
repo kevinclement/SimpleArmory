@@ -57,6 +57,8 @@
                         // TODO: other types here
                         if (jsonFile === 'mounts') {
                             return $http.get(SettingsService.apiUrl($routeParams, 'collections/mounts'), {cache: true});
+                        } else if (jsonFile === 'pets') {
+                            return $http.get(SettingsService.apiUrl($routeParams, 'collections/pets'), {cache: true});
                         }
                     })
                     .then(function(collected_data) {
