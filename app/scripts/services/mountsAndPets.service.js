@@ -57,12 +57,12 @@
                         // TODO: other types here
                         if (jsonFile === 'mounts') {
                             return $http.get(SettingsService.apiUrl($routeParams, 'collections/mounts'), {cache: true});
-                        } else if (jsonFile === 'pets') {
+                        } else if (jsonFile === 'pets' || jsonFile === 'battlepets') {
                             return $http.get(SettingsService.apiUrl($routeParams, 'collections/pets'), {cache: true});
                         }
                     })
                     .then(function(collected_data) {
-                        var parsed = parseItemsObject(jsonFile_data.data, profile, collected_data.data, characterProperty, collectedId);
+                        var parsed = parseItemsObject(jsonFile_data.data, profile, collected_data.data, characterProperty, collectedId, jsonFile);
 
                         if (jsonFile === 'pets') {
                             parsedCompanions = parsed; 
@@ -79,7 +79,7 @@
             }
         };
 
-        function parseItemsObject(categories, profile, collected_data, characterProperty, collectedId) {    
+        function parseItemsObject(categories, profile, collected_data, characterProperty, collectedId, jsonFile) {
             var obj = { 'categories': [] };
             var collected = {};
             var totalCollected = 0;
@@ -130,38 +130,15 @@
                             var fullItem = collected[itm.ID];
                             itm.collected =  true;
 
-                            // Add pet info if we have it
-                            if (fullItem.qualityId) {
-                                var quality = '';
-                                switch(fullItem.qualityId)
-                                {
-                                    case 0:
-                                        quality = 'poor';
-                                        break;
-                                    case 1:
-                                        quality = 'common';
-                                        break;
-                                    case 2:
-                                        quality = 'uncommon';
-                                        break;
-                                    case 3:
-                                        quality = 'rare';
-                                        break;
-                                    case 4:
-                                        quality = 'epic';
-                                        break;
-                                    case 5:
-                                        quality = 'legendary';
-                                        break;
-                                }
-
-                                itm.quality = quality;
+                            // only add quality info if on battlepets site
+                            if (jsonFile === "battlepets" && fullItem.quality) {
+                                itm.quality = fullItem.quality.type.toLowerCase();
                             }
 
                             if (fullItem.stats) {
-                                if (fullItem.stats.breedId) {
+                                if (fullItem.stats.breed_id) {
                                     var breed = '';
-                                    switch(fullItem.stats.breedId)
+                                    switch(fullItem.stats.breed_id)
                                     {
                                         case 4:
                                         case 14:
@@ -208,7 +185,7 @@
                                     itm.breed = breed;
                                 }
 
-                                itm.level = fullItem.stats.level;
+                                itm.level = fullItem.level;
                             }
                         }
 
@@ -285,15 +262,16 @@
                 });
             }); 
 
-            // don't do this check for battle pets, I'm lazy and don't want to figure it out
-            if (collectedId !== 'creatureId') {
-                for (var collId in found) {
-                    if (collId !== '0' && found.hasOwnProperty(collId) && !found[collId] && !ignoredFoundPets[collId]) {
-                        $window.ga('send', 'event', 'MissingCollection', collId);
-                        console.log('WARN: Found item "' + collId + '" from character but not in db.');
-                    }
-                }
-            }
+            // TODO: restore this given new APIs
+
+            // if (jsonFile !== 'battlepets') {
+            //     for (var collId in found) {
+            //         if (collId !== '0' && found.hasOwnProperty(collId) && !found[collId] && !ignoredFoundPets[collId]) {
+            //             $window.ga('send', 'event', 'MissingCollection', collId);
+            //             console.log('WARN: Found item "' + collId + '" from character but not in db.');
+            //         }
+            //     }
+            // }
 
             // Add totals
             obj.collected = totalCollected;
