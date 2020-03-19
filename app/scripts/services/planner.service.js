@@ -19,26 +19,22 @@
                     return $q.when(parsedStepsObject);
                 }
 
-                return LoginService.getProfile(
-                    {
-                        'region': $routeParams.region,
-                        'realm':$routeParams.realm,
-                        'character':$routeParams.character
+                var profile;
+                return LoginService.getProfile($routeParams)
+                    .then(function(p) {
+                        profile = p;
+                        $log.log('Parsing planner.json...');
+                        return $http.get('data/planner.json', { cache: true});
                     })
-                    .then(function(character) {
-                         return $http.get('data/planner.json', { cache: true })
-                             .then(function(data) {
-                                
-                                 $log.log('Parsing planner.json...');
-                                 parsedStepsObject = parseStepsObject(data.data.steps, items);
-                                 return parsedStepsObject;
-                             });
-                     });
+                    .then(function(data) {
+                        parsedStepsObject = parseStepsObject(data.data.steps, items);
+                        return parsedStepsObject;
+                    });
             }
         };
 
         // gotta love recursion
-        function parseStepsObject(steps, items) {    
+        function parseStepsObject(steps, items) {
             var neededSteps = [];
             angular.forEach(steps, function(step) {
                 if (step.steps) {
@@ -55,7 +51,7 @@
                     }
                 }
                 else if (!checkStepCompleted(step, items)) {
-                    neededSteps.push(step);        
+                    neededSteps.push(step);
                 }
             });
 
@@ -70,15 +66,15 @@
             // check to see if we've finished all the bosses
             if (step.bosses) {
                 angular.forEach(step.bosses, function(boss) {
-                    if (boss.allianceSpellId !== undefined && items.isAlliance && items.lookup[boss.allianceSpellId] === undefined) {
+                    if (boss.isAlliance && items.isAlliance && items.lookup[boss.ID] === undefined) {
                         neededBosses.push(boss);
                         completed = false;
                     }
-                    else if (boss.hordeSpellId !== undefined && !items.isAlliance && items.lookup[boss.hordeSpellId] === undefined) {
+                    else if (boss.isHorde && !items.isAlliance && items.lookup[boss.ID] === undefined) {
                         neededBosses.push(boss);
                         completed = false;
                     }
-                    else if ((boss.spellId !== undefined && items.lookup[boss.spellId] === undefined) || showAll) {
+                    else if ((boss.ID !== undefined && items.lookup[boss.ID] === undefined) || showAll) {
                         neededBosses.push(boss);
                         completed = false;
                     }

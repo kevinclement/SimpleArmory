@@ -10,6 +10,7 @@
 			  {
 				"bosses": [
 				  {
+					"ID": "395",
 					"epic": true,
 					"icon": "inv_misc_stormdragonpale",
 					"itemId": 63040,
@@ -24,6 +25,7 @@
 			  {
 				"bosses": [
 				  {
+					"ID": "396",
 					"epic": true,
 					"icon": "inv_misc_stormdragonpurple",
 					"itemId": 63041,
@@ -39,6 +41,7 @@
 				  {
 					"bosses": [
 					  {
+						"ID": "117",
 						"epic": false,
 						"icon": "inv_misc_qirajicrystal_04",
 						"itemId": 21218,
@@ -47,6 +50,7 @@
 						"spellId": 25953
 					  },
 					  {
+						"ID": "120",
 						"epic": false,
 						"icon": "inv_misc_qirajicrystal_03",
 						"itemId": 21323,
@@ -55,6 +59,7 @@
 						"spellId": 26056
 					  },
 					  {
+						"ID": "119",
 						"epic": false,
 						"icon": "inv_misc_qirajicrystal_01",
 						"itemId": 21324,
@@ -63,6 +68,7 @@
 						"spellId": 26055
 					  },
 					  {
+						"ID": "118",
 						"epic": false,
 						"icon": "inv_misc_qirajicrystal_02",
 						"itemId": 21321,
@@ -81,6 +87,7 @@
 				  {
 					"bosses": [
 					  {
+						"ID": "349",
 						"epic": true,
 						"icon": "achievement_boss_onyxia",
 						"itemId": 49636,
@@ -105,6 +112,7 @@
 				  {
 					"bosses": [
 					  {
+						"ID": "363",
 						"epic": true,
 						"icon": "ability_mount_pegasus",
 						"itemId": 50818,
@@ -124,7 +132,8 @@
 				  {
 					"bosses": [
 					  {
-						"allianceSpellId": 61465,
+						"ID": "286",
+						"isAlliance": true,
 						"epic": true,
 						"icon": "ability_mount_mammoth_black",
 						"itemId": 43959,
@@ -132,7 +141,8 @@
 						"name": "Koralon"
 					  },
 					  {
-						"allianceSpellId": 61465,
+						"ID": "286",
+						"isAlliance": true,
 						"epic": true,
 						"icon": "ability_mount_mammoth_black",
 						"itemId": 43959,
@@ -140,7 +150,8 @@
 						"name": "Toravon"
 					  },
 					  {
-						"allianceSpellId": 61465,
+						"ID": "286",
+						"isAlliance": true,
 						"epic": true,
 						"icon": "ability_mount_mammoth_black",
 						"itemId": 43959,
@@ -148,7 +159,8 @@
 						"name": "Archavon"
 					  },
 					  {
-						"allianceSpellId": 61465,
+						"ID": "286",
+						"isAlliance": true,
 						"epic": true,
 						"icon": "ability_mount_mammoth_black",
 						"itemId": 43959,
@@ -156,32 +168,36 @@
 						"name": "Emalon"
 					  },
 					  {
+						"ID": "287",
 						"epic": true,
-						"hordeSpellId": 61467,
+						"isHorde": true,
 						"icon": "ability_mount_mammoth_black",
 						"itemId": 44083,
 						"mount": "Grand Black War Mammoth",
 						"name": "Koralon"
 					  },
 					  {
+						"ID": "287",
 						"epic": true,
-						"hordeSpellId": 61467,
+						"isHorde": true,
 						"icon": "ability_mount_mammoth_black",
 						"itemId": 44083,
 						"mount": "Grand Black War Mammoth",
 						"name": "Toravon"
 					  },
 					  {
+						"ID": "287",
 						"epic": true,
-						"hordeSpellId": 61467,
+						"isHorde": true,
 						"icon": "ability_mount_mammoth_black",
 						"itemId": 44083,
 						"mount": "Grand Black War Mammoth",
 						"name": "Archavon"
 					  },
 					  {
+						"ID": "287",
 						"epic": true,
-						"hordeSpellId": 61467,
+						"isHorde": true,
 						"icon": "ability_mount_mammoth_black",
 						"itemId": 44083,
 						"mount": "Grand Black War Mammoth",
@@ -198,6 +214,7 @@
 				  {
 					"bosses": [
 					  {
+						"ID": "246",
 						"epic": true,
 						"icon": "ability_mount_drake_azure",
 						"itemId": 43952,
@@ -206,6 +223,7 @@
 						"spellId": 59567
 					  },
 					  {
+						"ID": "247",
 						"epic": true,
 						"icon": "ability_mount_drake_blue",
 						"itemId": 43953,
@@ -224,6 +242,7 @@
 				  {
 					"bosses": [
 					  {
+						"ID": "253",
 						"epic": true,
 						"icon": "ability_mount_drake_twilight",
 						"itemId": 43986,
@@ -233,6 +252,7 @@
 						"spellId": 59650
 					  },
 					  {
+						"ID": "250",
 						"epic": true,
 						"icon": "ability_mount_drake_twilight",
 						"itemId": 43954,
@@ -252,6 +272,7 @@
 				  {
 					"bosses": [
 					  {
+						"ID": "264",
 						"epic": true,
 						"icon": "ability_mount_drake_proto",
 						"itemId": 44151,
@@ -271,6 +292,7 @@
 				  {
 					"bosses": [
 					  {
+						"ID": "304",
 						"epic": true,
 						"icon": "inv_misc_enggizmos_03",
 						"itemId": 45693,
@@ -297,6 +319,7 @@
 				  {
 					"bosses": [
 					  {
+						"ID": "425",
 						"epic": true,
 						"icon": "ability_mount_fireravengodmount",
 						"itemId": 71665,
@@ -305,6 +328,7 @@
 						"spellId": 101542
 					  },
 					  {
+						"ID": "415",
 						"epic": true,
 						"icon": "inv_misc_orb_05",
 						"itemId": 69224,
@@ -330,6 +354,7 @@
 				  {
 					"bosses": [
 					  {
+						"ID": "248",
 						"epic": true,
 						"icon": "ability_mount_drake_bronze",
 						"itemId": 43951,
@@ -344,6 +369,7 @@
 				  {
 					"bosses": [
 					  {
+						"ID": "445",
 						"epic": true,
 						"icon": "ability_mount_drake_twilight",
 						"itemId": 78919,
@@ -352,6 +378,7 @@
 						"spellId": 110039
 					  },
 					  {
+						"ID": "442",
 						"epic": true,
 						"icon": "ability_mount_drake_red",
 						"itemId": 77067,
@@ -360,6 +387,7 @@
 						"spellId": 107842
 					  },
 					  {
+						"ID": "444",
 						"epic": true,
 						"icon": "ability_mount_drake_red",
 						"itemId": 77069,
@@ -386,6 +414,7 @@
 				  {
 					"bosses": [
 					  {
+						"ID": "397",
 						"epic": true,
 						"icon": "inv_misc_stonedragonblue",
 						"itemId": 63043,
@@ -411,6 +440,7 @@
 				  {
 					"bosses": [
 					  {
+						"ID": "185",
 						"epic": true,
 						"icon": "inv-mount_raven_54",
 						"itemId": 32768,
@@ -430,6 +460,7 @@
 				  {
 					"bosses": [
 					  {
+						"ID": "183",
 						"epic": true,
 						"icon": "inv_misc_summerfest_brazierorange",
 						"itemId": 32458,
@@ -450,6 +481,7 @@
 					  {
 						"bosses": [
 						  {
+							"ID": "213",
 							"epic": true,
 							"icon": "ability_mount_cockatricemountelite_white",
 							"itemId": 35513,
@@ -466,6 +498,7 @@
 						  {
 							"bosses": [
 							  {
+								"ID": "419",
 								"epic": true,
 								"icon": "ability_druid_challangingroar",
 								"itemId": 69747,
@@ -485,6 +518,7 @@
 						  {
 							"bosses": [
 							  {
+								"ID": "69",
 								"epic": true,
 								"icon": "ability_mount_undeadhorse",
 								"itemId": 13335,
@@ -518,6 +552,7 @@
 					  {
 						"bosses": [
 						  {
+							"ID": "168",
 							"epic": true,
 							"icon": "ability_mount_dreadsteed",
 							"itemId": 30480,
@@ -531,6 +566,7 @@
 					  {
 						"bosses": [
 						  {
+							"ID": "875",
 							"epic": true,
 							"icon": "inv_skeletalwarhorse_black",
 							"itemId": 142236,
@@ -550,6 +586,7 @@
 					  {
 						"bosses": [
 						  {
+							"ID": "411",
 							"epic": true,
 							"icon": "ability_mount_blackpanther",
 							"itemId": 68824,
@@ -559,6 +596,7 @@
 							"spellId": 96499
 						  },
 						  {
+							"ID": "410",
 							"epic": true,
 							"icon": "ability_mount_raptor",
 							"itemId": 68823,
@@ -584,6 +622,7 @@
 			  {
 				"bosses": [
 				  {
+					"ID": "515",
 					"epic": true,
 					"icon": "inv_mushanbeastmount",
 					"itemId": 89783,
@@ -603,6 +642,7 @@
 			  {
 				"bosses": [
 				  {
+					"ID": "473",
 					"epic": true,
 					"icon": "inv_pandarenserpentgodmount_black",
 					"itemId": 87771,
@@ -622,6 +662,7 @@
 			  {
 				"bosses": [
 				  {
+					"ID": "533",
 					"epic": true,
 					"icon": "ability_mount_triceratopsmount_blue",
 					"itemId": 94228,
@@ -642,6 +683,7 @@
 			  {
 				"bosses": [
 				  {
+					"ID": "478",
 					"epic": true,
 					"icon": "inv_celestialserpentmount",
 					"itemId": 87777,
@@ -663,6 +705,7 @@
 				  {
 					"bosses": [
 					  {
+						"ID": "542",
 						"epic": true,
 						"icon": "inv_pandarenserpentmount_lightning_blue",
 						"itemId": 95057,
@@ -677,6 +720,7 @@
 				  {
 					"bosses": [
 					  {
+						"ID": "531",
 						"epic": true,
 						"icon": "ability_mount_triceratopsmount",
 						"itemId": 93666,
@@ -685,6 +729,7 @@
 						"spellId": 136471
 					  },
 					  {
+						"ID": "543",
 						"epic": true,
 						"icon": "achievement_boss_ji-kun",
 						"itemId": 95059,
@@ -707,6 +752,7 @@
 			  {
 				"bosses": [
 				  {
+					"ID": "559",
 					"epic": true,
 					"icon": "inv_mount_hordescorpiong",
 					"itemId": 104253,
@@ -729,6 +775,7 @@
 				  {
 					"bosses": [
 					  {
+						"ID": "634",
 						"epic": true,
 						"icon": "inv_helm_suncrown_d_01",
 						"itemId": 116771,
@@ -749,6 +796,7 @@
 				  {
 					"bosses": [
 					  {
+						"ID": "751",
 						"epic": true,
 						"icon": "ability_mount_felreavermount",
 						"itemId": 123890,
@@ -768,6 +816,7 @@
 				  {
 					"bosses": [
 					  {
+						"ID": "613",
 						"epic": true,
 						"icon": "inv_ironhordeclefthoof",
 						"itemId": 116660,
@@ -791,6 +840,7 @@
 			  {
 				"bosses": [
 				  {
+					"ID": "791",
 					"epic": true,
 					"icon": "inv_infernalmountgreen",
 					"itemId": 137574,
@@ -799,6 +849,7 @@
 					"spellId": 213134
 				  },
 				  {
+					"ID": "633",
 					"epic": true,
 					"icon": "inv_infernalmountred",
 					"itemId": 137575,
@@ -819,6 +870,7 @@
 			  {
 				"bosses": [
 				  {
+					"ID": "899",
 					"epic": true,
 					"icon": "inv_serpentmount_green",
 					"itemId": 143643,
@@ -840,6 +892,7 @@
 				  {
 					"bosses": [
 					  {
+						"ID": "971",
 						"epic": true,
 						"icon": "inv_felhound3_shadow_fire",
 						"itemId": 152816,
@@ -848,6 +901,7 @@
 						"spellId": 253088
 					  },
 					  {
+						"ID": "954",
 						"epic": true,
 						"icon": "inv_soulhoundmount_blue",
 						"itemId": 152789,
@@ -871,6 +925,7 @@
 			  {
 				"bosses": [
 				  {
+					"ID": "1217",
 					"epic": true,
 					"icon": "achievement_dungeon_coinoperatedcrowdpummeler",
 					"itemId": 166518,
@@ -879,6 +934,7 @@
 					"spellId": 289083
 				  },
 				  {
+					"ID": "1219",
 					"epic": true,
 					"icon": "spell_frost_summonwaterelemental_2",
 					"itemId": 166705,
@@ -901,6 +957,7 @@
 				  {
 					"bosses": [
 					  {
+						"ID": "995",
 						"epic": true,
 						"icon": "inv_misc_food_wheat_02",
 						"itemId": 159842,
@@ -920,6 +977,7 @@
 				  {
 					"bosses": [
 					  {
+						"ID": "1040",
 						"epic": true,
 						"icon": "inv_armoredraptorundead",
 						"itemId": 159921,
@@ -939,6 +997,7 @@
 				  {
 					"bosses": [
 					  {
+						"ID": "1053",
 						"epic": true,
 						"icon": "inv_archaeology_ogres_chimera_riding_harness",
 						"itemId": 160829,
