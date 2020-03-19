@@ -54,7 +54,6 @@
                     .then(function(data) {
                         jsonFile_data = data;
 
-                        // TODO: other types here
                         if (jsonFile === 'mounts') {
                             return $http.get(SettingsService.apiUrl($routeParams, 'collections/mounts'), {cache: true});
                         } else if (jsonFile === 'pets' || jsonFile === 'battlepets') {
@@ -131,7 +130,7 @@
                             itm.collected =  true;
 
                             // only add quality info if on battlepets site
-                            if (jsonFile === "battlepets" && fullItem.quality) {
+                            if (jsonFile === 'battlepets' && fullItem.quality) {
                                 itm.quality = fullItem.quality.type.toLowerCase();
                             }
 
