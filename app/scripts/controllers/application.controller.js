@@ -37,6 +37,11 @@
                         $scope.region = rgr[1];
                         $scope.realm = rgr[2];
                         $scope.isLoggedIn = true;
+
+                    // fetch the profile image for the header as a seperate call as to not block initial render
+                    LoginService.getProfileMedia({'region': rgr[1], 'realm':rgr[2], 'character':rgr[3]}).then(function(pMedia) {
+                        $scope.characterMedia = pMedia.data.avatar_url;
+                    });
                 });
             }
         });

@@ -55,9 +55,8 @@
         };
 
         $scope.imgUrl = function() {
-            if ($scope.character) {
-                var c = $scope.character;
-                return window.location.protocol + '//render-' + c.region + '.worldofwarcraft.com/character/' + c.thumbnail;
+            if ($scope.characterMedia) {
+                return $scope.characterMedia;
             }
 
             return '';

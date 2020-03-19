@@ -114,6 +114,13 @@
                 return false;
               }
             },
+
+            getProfileMedia: function($routeParams) {
+              return $http.get(SettingsService.apiUrl($routeParams, 'character-media'), {cache: true})
+                .then(function(pMedia) {
+                  return pMedia;
+                });
+            },
         };
     }
 
