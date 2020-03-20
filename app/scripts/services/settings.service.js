@@ -7,8 +7,7 @@
         .factory('SettingsService', SettingsService);
 
     function SettingsService($log, $routeParams) {
-        // TODO: switch back to info site once this client change deploys
-        var endpoint = 'https://young-sun-5018.kevinc.workers.dev/';
+        var endpoint = 'https://armorystats.info/';
 
         return {
             'WowHeadUrl': 'wowhead.com',
