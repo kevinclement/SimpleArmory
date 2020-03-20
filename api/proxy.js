@@ -1,4 +1,3 @@
-
 // GLOBALS
 let access_token = undefined
 let access_token_expires = undefined
@@ -14,8 +13,6 @@ addEventListener('fetch', event => {
 
 async function handleRequest(request) {
   let debug = "";
-
-  // simple bailout for any url I don't like
 
   var now = new Date();
 
@@ -57,14 +54,13 @@ async function handleRequest(request) {
     return new Response('Bad Request', { status: 400, statusText: 'Bad Request' });
   }
 
-  let region = url_match[2];
-  let realm = url_match[3];
-  let character = url_match[4];
+  let region = url_match[2].toLowerCase();
+  let realm = url_match[3].toLowerCase();
+  let character = url_match[4].toLowerCase();
   let site = url_match[5];
   if (site) {
-    site = `/${site}`
+    site = `/${site.toLowerCase()}`
   }
-
   console.log(`region: ${region} realm: ${realm} character: ${character} site: ${site}`)
     
   let url = `https://${region}.api.blizzard.com/profile/wow/character/${realm}/${character}${site}?namespace=profile-${region}`;
@@ -78,4 +74,3 @@ async function handleRequest(request) {
 
   return api_response
 }
-
