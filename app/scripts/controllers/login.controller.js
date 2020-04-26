@@ -60,7 +60,7 @@
             $modalInstance.close({
                 'region': $scope.selectedRealm.selected.region,
                 'realm': $scope.selectedRealm.selected.slug,
-                'character': $scope.characterName
+                'character': $scope.characterName.toLowerCase() // Blizzard API doesn't place nice with chars like Ä at start of names
             });
         };
     }
