@@ -13,7 +13,7 @@
     	// Analytics for page
         $window.ga('send', 'pageview', 'Companions');
      
-        MountsAndPetsService.getItems('pets', 'pets', 'spellId').then(function(items){
+        MountsAndPetsService.getItems('pets', 'pets', 'species').then(function(items){
             $scope.items = items;
           });
     }

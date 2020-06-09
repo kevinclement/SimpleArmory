@@ -22,27 +22,33 @@
         
         return {
             getAchievements: function() {
+                var my_achievements, profile;
+
                 if (parsedAchievements) {
                     return $q.when(parsedAchievements);
                 }
 
-                return LoginService.getCharacter(
-                        {
-                            'region': $routeParams.region,
-                            'realm':$routeParams.realm,
-                            'character':$routeParams.character
-                        })
-                    .then(function(character) {
-                        return $http.get('data/achievements.json', { cache: true})
-                            .then(function(data) {
-                                parsedAchievements = parseAchievementObject(data.data.supercats, character, SettingsService, $window);
-                                return parsedAchievements;
-                            });
+                return LoginService.getProfile($routeParams)
+                    .then(function(p) {
+                        profile = p;
+
+                        // get achievements from service
+                        return $http.get(SettingsService.apiUrl($routeParams, 'achievements'), {cache: true});
+                    })
+                    .then(function(a) {
+                        my_achievements = a.data;
+
+                        // now get the json of all the achievements
+                        return $http.get('data/achievements.json', { cache: true });
+                    })
+                    .then(function(ach_json_data) {
+                        parsedAchievements = parseAchievementObject(ach_json_data.data.supercats, profile, my_achievements, SettingsService, $window);
+                        return parsedAchievements;
                     });
             }
         };
 
-        function parseAchievementObject(supercats, character, settings, $window) {    
+        function parseAchievementObject(supercats, profile, achievements, settings, $window) {
             var obj = {};
             var completed = {};
             var critCompleted = {};
@@ -51,24 +57,32 @@
             var totalFoS = 0;
             var totalLegacy = 0;
             var found = {};
+            var name = '';
+            var faction = '';
             $log.log('Parsing achievements.json...');
 
-            // Build up lookup for criteria that character has completed
-            angular.forEach(character.achievements.criteria, function(crit, index) {
-                critCompleted[crit] = true;
-            });
+            name = profile.name;
+            faction = profile.faction;
 
             // Build up lookup for achievements that character has completed
-            angular.forEach(character.achievements.achievementsCompleted, function(ach, index) {
-                // hash the achievement and its timestamp
-                completed[ach] = character.achievements.achievementsCompletedTimestamp[index];
-
-                // FoS will no longer have timestamps, so we need to fake their timestamp
-                if (!character.achievements.achievementsCompletedTimestamp[index])
-                {
-                    completed[ach] = settings.fakeCompletionTime;
+            angular.forEach(achievements.achievements, function(ach, index) {
+                if (ach.completed_timestamp) {
+                    // hash the achievement and its timestamp
+                    completed[ach.id] = ach.completed_timestamp;
                 }
-                found[ach] = false;
+
+                // Build up lookup for criteria that character has completed
+                angular.forEach(ach.criteria, function(crit, index) {
+                    if (crit.is_completed) {
+                        critCompleted[crit.id] = true;
+                    }
+
+                    angular.forEach(crit.child_criteria, function(child_crit, index) {
+                        if (child_crit.is_completed) {
+                            critCompleted[child_crit.id] = true;
+                        }
+                    });
+                });
             });
 
             // Lets parse out all the super categories and build out our structure
@@ -103,7 +117,7 @@
 
                             // Hack: until blizz fixes api, don't stamp with date
                             if (myAchievement.completed && myAchievement.completed !== settings.fakeCompletionTime) {
-                                myAchievement.rel = 'who=' + character.name + '&when=' + myAchievement.completed;
+                                myAchievement.rel = 'who=' + name + '&when=' + myAchievement.completed;
                             }
 
                             // Always add it if we've completed it, it should show up regardless if its available
@@ -138,7 +152,7 @@
 
                             // Update counts proper
                             if (supercat.name !== 'Feats of Strength' && supercat.name !== 'Legacy' && !ach.notObtainable && 
-                                (!ach.side || ach.side === character.faction)){
+                                (!ach.side || ach.side === faction)){
                                 possibleCount++;
                                 totalPossible++;
 

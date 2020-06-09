@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="no-js">
   <head>
-    <meta charset="utf-8"> 
+    <meta charset="utf-8">
     <title>Simple Armory</title>
  	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Simplified armory site for World of Warcraft">
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="simpleArmoryApp" ng-controller="ApplicationCtrl">
+  <body ng-app="simpleArmoryApp" ng-controller="ApplicationCtrl" ng-class="{dark: isUsingDarkTheme}">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -30,6 +30,10 @@
       <div ng-view class="view-frame"></div>
     </div>
 
+    <div class="bug-footer">
+        <a href="https://github.com/kevinclement/SimpleArmory/issues">Report a
+            bug, a missing mount/pet/toy/...</a>
+    </div>
     <div class="container footer">For another site designed by kevin and a killer experience in Olympia, WA try <a href="//exitpuzzles.com">exitpuzzles.com</a>.</div>
 
     <!-- Google Analytics -->
@@ -65,7 +69,7 @@
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/polyfill.js"></script>
     <script src="scripts/app.js"></script>
-    
+
     <script src="scripts/controllers/achievements.controller.js"></script>
     <script src="scripts/controllers/application.controller.js"></script>
     <script src="scripts/controllers/battlePets.controller.js"></script>

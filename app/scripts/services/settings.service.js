@@ -7,12 +7,11 @@
         .factory('SettingsService', SettingsService);
 
     function SettingsService($log, $routeParams) {
+        var endpoint = 'https://armorystats.info/';
 
         return {
             'WowHeadUrl': 'wowhead.com',
-            'apiEndPoint':'api.battle.net',
-            'apiKey': '&apikey=kwptv272nvrashj83xtxcdysghbkw6ep',
-            'apiProtocol': 'https://',
+            'apiEndPoint': endpoint, 
             'anchorTarget': '_blank',  // in case we want this to be a setting for _self
             'debug': $routeParams['debug'] && $routeParams['debug'] === '1' ? true : false,
             'fakeCompletionTime': 312,
@@ -22,6 +21,12 @@
                 'mounts': 'data/mounts.json',
                 'toys': 'data/toys.json',
                 'achievements': 'data/achievements.json'
+            },
+            apiUrl: function(rp, site) {
+                if (site === undefined) {
+                    site = '';
+                }
+                return endpoint + rp.region + '/' + rp.realm + '/' + rp.character + '/' + site;
             }
         };
     }

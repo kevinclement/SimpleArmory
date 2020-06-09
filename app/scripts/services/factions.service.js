@@ -6,7 +6,7 @@
         .module('simpleArmoryApp')
         .factory('FactionsService', FactionsService);
 
-    function FactionsService($http, $log, LoginService, $routeParams, $q) {
+    function FactionsService($http, $log, LoginService, $routeParams, $q, SettingsService) {
         //  cache results
         var parsedFactions;
         LoginService.onLogin(function() {
@@ -18,37 +18,41 @@
                 if (parsedFactions) {
                     return $q.when(parsedFactions);
                 }
-                
-                return LoginService.getCharacter(
-                        {
-                            'region': $routeParams.region,
-                            'realm':$routeParams.realm,
-                            'character':$routeParams.character
-                        })
-                    .then(function(character) {
-                        return $http.get('data/factions.json', { cache: true})
-                            .then(function(data) {
-                                parsedFactions =  parseFactions(data.data, character);
-                                return parsedFactions;
-                            });
+
+                var profile, all_factions;
+                return LoginService.getProfile($routeParams)
+                    .then(function(p) {
+                        profile = p;
+                        $log.log('Parsing factions.json...');
+                        return $http.get('data/factions.json', { cache: true});
+                    })
+                    .then(function(data) {
+                        all_factions = data.data;
+                        return $http.get(SettingsService.apiUrl($routeParams, 'reputations'), {cache: true});
+                    })
+                    .then(function(data) {
+                        var my_reputations = data.data.reputations;
+                        parsedFactions =  parseFactions(all_factions, my_reputations);
+                        return parsedFactions;
                     });
             }
         };
 
-        function parseFactions(factions, character) {    
+        function parseFactions(all_factions, my_reputations) {
             var obj = {};
             obj.categories = [];
 
             var standing = {};
-            $log.log('Parsing factions.json...');
 
             // Build up lookup for factions
-            angular.forEach(character.reputation, function(rep, index) {
-                standing[rep.id] = {
-                    level: rep.standing,
-                    perc: (rep.value / rep.max) * 100,
-                    value: rep.value,
-                    max: rep.max
+            angular.forEach(my_reputations, function(rep, index) {
+                var calculatedPerc = (rep.standing.value / rep.standing.max) * 100;
+
+                standing[rep.faction.id] = {
+                    level: rep.standing.tier,
+                    perc: (isNaN(calculatedPerc) ? 100 : calculatedPerc),
+                    value: rep.standing.value,
+                    max: rep.standing.max
                 };
             });
 
@@ -58,7 +62,7 @@
             // The controller takes those percentages and sizes the bars
 
             // Pull all the factions out of the json
-            angular.forEach(factions, function(factionCategory) {
+            angular.forEach(all_factions, function(factionCategory) {
                 var fc = {};
                 fc.name = factionCategory.name;
                 fc.factions = [];
@@ -101,7 +105,7 @@
                             f.max = stand.max;      
                         }
 
-                        fc.factions.push(f);                      
+                        fc.factions.push(f);
                     }
                 });
 

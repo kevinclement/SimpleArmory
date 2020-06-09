@@ -8,10 +8,10 @@
 
     function ReputationCtrl($scope, FactionsService, $window) {
 
-		// Analytics for page
+        // Analytics for page
         $window.ga('send', 'pageview', 'Reputation');
 
-    	FactionsService.getFactions().then(function(items){
+        FactionsService.getFactions().then(function(items){
             $scope.items = items;
         });
     }

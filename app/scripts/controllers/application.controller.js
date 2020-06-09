@@ -11,6 +11,7 @@
 
         // default to not logged in
         $scope.isLoggedIn = false;
+        $scope.isUsingDarkTheme = localStorage.getItem('darkTheme') === 'true';
 
         // Listen for path changed and then parse and fetch the character
         $scope.$on('$locationChangeSuccess', function(){
@@ -30,10 +31,17 @@
                 var rgr = new RegExp('([^\/]+)/([^\/]+)/([^\/]+)/?([^\/]+)?').exec($location.$$path);
                 rgr = rgr ? rgr : {};
 
-                LoginService.getCharacter({'region': rgr[1], 'realm':rgr[2], 'character':rgr[3]})
+                LoginService.getProfile({'region': rgr[1], 'realm':rgr[2], 'character':rgr[3]})
                     .then(function(character) {
                         $scope.character = character;
+                        $scope.region = rgr[1];
+                        $scope.realm = rgr[2];
                         $scope.isLoggedIn = true;
+
+                    // fetch the profile image for the header as a seperate call as to not block initial render
+                    LoginService.getProfileMedia({'region': rgr[1], 'realm':rgr[2], 'character':rgr[3]}).then(function(pMedia) {
+                        $scope.characterMedia = pMedia.data.avatar_url;
+                    });
                 });
             }
         });
@@ -62,6 +70,10 @@
             return '' + n + ' / ' + d + ' (' + perc + '%)';
         };
 
+        $scope.updateTheme = function() {
+            $scope.isUsingDarkTheme = localStorage.getItem('darkTheme') === 'true';
+        };
+
         // Helper to get the image id off an item
         $scope.getImageSrc = function(item, renderIcon) {
 
@@ -78,6 +90,27 @@
         $scope.createSimpleGuid = function() {
             return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1) +
                    (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
+        };
+
+        $scope.qualityToBackground = function(item) {
+            var bgColor = '#fff';
+
+            switch(item.quality) {
+                case 'poor':
+                    bgColor = '#7F7F7F';
+                    break;
+                case 'common':
+                    bgColor = '#F0F0F0';
+                    break;
+                case 'uncommon':
+                    bgColor = '#22B14C';
+                    break;
+                case 'rare':
+                    bgColor = '#3F48CC';
+                    break;
+            }
+
+            return 'background:' + bgColor;
         };
   }
 

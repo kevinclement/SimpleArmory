@@ -7,9 +7,9 @@
         .controller('HeaderCtrl' , HeaderCtrl);
 
     function HeaderCtrl($scope, $location) {
-     
+
         $scope.isCollapsed = true;
-        
+
         $scope.getUrl = function(subSite) {
             var url = '#' + getBaseUrl($scope.character);
             if (subSite !== '') {
@@ -19,10 +19,20 @@
             return url;
         };
 
+        $scope.toggleDarkTheme = function() {
+            var isUsingDarkTheme = localStorage.getItem('darkTheme') === 'true';
+            if(isUsingDarkTheme) {
+                localStorage.setItem('darkTheme', 'false');
+            } else {
+                localStorage.setItem('darkTheme', 'true');
+            }
+            $scope.$parent.updateTheme();
+        };
+
         $scope.isActive = function (viewLocation, subMenu) {
 
             // if its a submenu search, then just look for the location in the url
-            // and call it good      
+            // and call it good
             if (subMenu) {
                 return $location.path().indexOf(viewLocation) > 0;
             }
@@ -31,7 +41,7 @@
             var combinedUrl = getBaseUrl($scope.character);
             if (viewLocation !== '') {
                 combinedUrl += '/' + viewLocation;
-            } 
+            }
 
             return $location.path() === combinedUrl;
         };
@@ -45,31 +55,30 @@
         };
 
         $scope.imgUrl = function() {
-            if ($scope.character) {
-                var c = $scope.character;
-                return window.location.protocol + '//render-' + c.region + '.worldofwarcraft.com/character/' + c.thumbnail;
+            if ($scope.characterMedia) {
+                return $scope.characterMedia;
             }
 
-            return '';   
+            return '';
         };
 
         $scope.armoryUrl = function() {
             if ($scope.character) {
                 var c = $scope.character;
-                return window.location.protocol + '//' + 
-                       c.region + '.battle.net/wow/en/character/' + c.realm + '/' + c.name.toLowerCase() + '/advanced';
+                return window.location.protocol + '//' +
+                    'worldofwarcraft.com/character/' + c.region + '/' + $scope.$parent.realm + '/' + c.name.toLowerCase();
             }
 
-            return '#';   
+            return '#';
         };
 
-        function getBaseUrl(character) {    
+        function getBaseUrl(character) {
             if (!character) {
                 return '';
             }
 
-            return '/' + character.region.toLowerCase() + '/' + 
-                   character.realm.toLowerCase()  + '/' + 
+            return '/' + character.region.toLowerCase() + '/' +
+                   character.realm.toLowerCase()  + '/' +
                    character.name.toLowerCase();
         }
     }
