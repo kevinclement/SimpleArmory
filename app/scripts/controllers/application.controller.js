@@ -11,8 +11,8 @@
 
         // default to not logged in
         $scope.isLoggedIn = false;
-        $scope.isUsingDarkTheme = localStorage.getItem('darkTheme') === 'true';
-
+        $scope.isUsingDarkTheme = isUsingDarkTheme();
+        
         // Listen for path changed and then parse and fetch the character
         $scope.$on('$locationChangeSuccess', function(){
             // If there was an error we need to reset everything
@@ -71,7 +71,7 @@
         };
 
         $scope.updateTheme = function() {
-            $scope.isUsingDarkTheme = localStorage.getItem('darkTheme') === 'true';
+            $scope.isUsingDarkTheme = isUsingDarkTheme();
         };
 
         // Helper to get the image id off an item
@@ -112,6 +112,28 @@
 
             return 'background:' + bgColor;
         };
+
+        function isUsingDarkTheme() {
+            var darkTheme = localStorage.getItem('darkTheme');
+
+            if (darkTheme === 'true') {
+                return true;
+            } else if (darkTheme === 'false') {
+                return false;
+            }
+
+            // Theme preference not set, determine automatically
+            if (!window.matchMedia || window.matchMedia('(prefers-color-scheme)').media === 'not all') {
+                // prefers-color-scheme not supported, use light theme
+                return false;
+            }
+
+            if (window.matchMedia('(prefers-color-scheme: dark)'.match)) {
+                return true;
+            }
+
+            return false;
+        }
   }
 
 })();

@@ -20,7 +20,7 @@
         };
 
         $scope.toggleDarkTheme = function() {
-            var isUsingDarkTheme = localStorage.getItem('darkTheme') === 'true';
+            var isUsingDarkTheme = $scope.$parent.isUsingDarkTheme;
             if(isUsingDarkTheme) {
                 localStorage.setItem('darkTheme', 'false');
             } else {
