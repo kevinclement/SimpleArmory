@@ -596,3 +596,9 @@ body.dark .bnt-default:focus {
     background-color: #424242;
     color: #ffffff;
 }
+
+body.dark .alert.alert-danger {
+    color: #FFFFFF;
+    border: 1px solid #6f0000;
+    background-color: #7b1a1a;
+}
