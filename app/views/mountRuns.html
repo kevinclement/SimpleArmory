@@ -1,0 +1,55 @@
+<details class="planner-details" ng-open="filteredRuns.length > 0 && expanded">
+  <summary>
+    <h4>{{heading}} ({{ filteredRuns.length }})</h4>
+  </summary>
+
+  <table class="table table-condensed planner-table">
+    <thead>
+      <tr>
+        <th></th>
+        <th>#</th>
+        <th>Step</th>
+        <th class="mnt-plan-boss-col">Boss</th>
+        <th class="mnt-plan-mount-col" style="padding-left:0px;">Mount</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="step in filteredRuns" ng-class="{complete: step.hasRun}">
+        <td>
+            <input type="checkbox" ng-model="step.hasRun" ng-click="toggleRun(step)" />
+        </td>
+        <td>{{step.visualIndex}}</td>
+        <td>
+          <img ng-src="{{getPlanStepImageSrc(step)}}" ng-hide="getPlanStepImageSrc(step) == ''" class="mnt-icon-step"/>
+          {{getStepTitle(step)}}
+        </td>
+        <td colspan="2">
+          <table width="100%">
+            <tbody>
+              <tr ng-repeat="boss in step.bosses">
+                <td class="mnt-plan-boss-col">{{boss.name}}</td>
+                <td class="mnt-plan-mount-col">
+                  <a ng-show="boss.itemId" ng-class="anchorCss(boss)" target="{{settings.anchorTarget}}" ng-href="//{{settings.WowHeadUrl}}/item={{ boss.itemId }}">
+                    <img class="mnt-plan-icon" ng-src="{{getPlanImageSrc(boss)}}">
+                    {{boss.mount}}
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td>
+          {{step.notes}}
+          <table>
+            <tbody>
+              <tr ng-repeat="boss in step.bosses">
+                <td>{{boss.note}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</details>

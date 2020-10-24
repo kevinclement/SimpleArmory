@@ -19,15 +19,16 @@
                     return $q.when(parsedStepsObject);
                 }
 
-                var profile;
                 return LoginService.getProfile($routeParams)
                     .then(function(p) {
-                        profile = p;
                         $log.log('Parsing planner.json...');
                         return $http.get('data/planner.json', { cache: true});
                     })
                     .then(function(data) {
                         parsedStepsObject = parseStepsObject(data.data.steps, items);
+                        angular.forEach(parsedStepsObject, function (step, index) {
+                            step.visualIndex = index + 1;
+                        });
                         return parsedStepsObject;
                     });
             }
@@ -37,6 +38,7 @@
         function parseStepsObject(steps, items) {
             var neededSteps = [];
             angular.forEach(steps, function(step) {
+                step.hasRun = false;
                 if (step.steps) {
                     var neededChildSteps = parseStepsObject(step.steps, items);
 
@@ -46,7 +48,11 @@
                         neededSteps.push(step);
                         neededSteps = neededSteps.concat(neededChildSteps);
                         if (step.finalStep) {
-                            neededSteps.push({'title':step.finalStep, 'hearth':true});
+                            neededSteps.push({
+                                title: step.finalStep,
+                                hearth: true,
+                                hasRun: false
+                            });
                         }
                     }
                 }

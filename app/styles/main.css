@@ -344,7 +344,22 @@ body {
   top: -2px;
   margin-right: 3px;
 }
-/* ## Mounts Page ############################### */
+
+/* ## Planner Page ############################### */
+.planner-details summary {
+    cursor: pointer;
+    display: list-item;
+}
+
+.planner-details h4 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.planner-table .complete {
+    opacity: .5;
+    text-decoration: line-through;
+}
 
 /* Fix up the widths for bigger header */
 @media (min-width: 768px) {

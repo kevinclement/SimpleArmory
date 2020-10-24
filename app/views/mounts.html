@@ -20,50 +20,28 @@
     </div>
     <div class="clear" ng-repeat-end></div> 
   </div>
-  <div ng-show="showPlanner && plannerReturned && planner.length > 0">
-    <table class="table table-condensed">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Step</th>
-          <th class="mnt-plan-boss-col">Boss</th>
-          <th class="mnt-plan-mount-col" style="padding-left:0px;">Mount</th>
-          <th>Notes</th>
-        </tr>
-      </thead>
-      <tbody ng-repeat="step in planner">
-        <tr>
-          <td>{{$index + 1}}</td>
-          <td><img ng-src="{{getPlanStepImageSrc(step)}}" ng-hide="getPlanStepImageSrc(step) == ''" class="mnt-icon-step"/>{{getStepTitle(step)}}</td>
-          <td colspan="2">
-            <table width="100%">
-              <tbody ng-repeat="boss in step.bosses">
-                <tr>
-                  <td class="mnt-plan-boss-col">{{boss.name}}</td>
-                  <td class="mnt-plan-mount-col"><a ng-show="boss.itemId" ng-class="anchorCss(boss)" target="{{settings.anchorTarget}}" ng-href="//{{settings.WowHeadUrl}}/item={{ boss.itemId }}"><img class="mnt-plan-icon" ng-src="{{getPlanImageSrc(boss)}}">{{boss.mount}}</a></td>
-                </tr ng-repeat-end>
-              </tbody>
-            </table>
-          </td>
-          <td>
-            {{step.notes}}
-            <table>
-              <tbody ng-repeat="boss in step.bosses">
-                <tr>
-                  <td>{{boss.note}}&nbsp;</td>
-                </tr ng-repeat-end>
-              </tbody>
-            </table>
-          </td>
-        </tr ng-repeat-end>
-      </tbody>
-    </table>
-  </div>
-  <div ng-show="showPlanner && plannerReturned && planner.length == 0">
-    <img src="images/success.png" />
-    <p>
-      Grats! You've farmed all the mounts. <br/>
-      You should post on <a href="http://reddit.com/r/wow">/r/wow</a>!
-    </p>
-  </div>
+
+    <div ng-show="showPlanner && plannerReturned && planner.length > 0">
+        <mount-runs
+            faction="{{faction}}"
+            heading="Runs Complete"
+            runs="planner"
+            show-done="true"
+        ></mount-runs>
+        <mount-runs
+            faction="{{faction}}"
+            heading="Runs Remaining"
+            runs="planner"
+            show-done="false"
+            expanded="true"
+        ></mount-runs>
+    </div>
+
+    <div ng-show="showPlanner && plannerReturned && planner.length == 0">
+        <img src="images/success.png" />
+        <p>
+            Grats! You've farmed all the mounts. <br />
+            You should post on <a href="http://reddit.com/r/wow">/r/wow</a>!
+        </p>
+    </div>
 </div>
