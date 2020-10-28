@@ -33,16 +33,35 @@ class BnetClient:
 
     async def query(self, path, region='us', **kwargs):
         url = urljoin(self.api_url, path).format(region)
-        oauth = {'Authorization': 'Bearer ' + self.access_token}
-        r = await self.session.get(url, headers=oauth, **kwargs)
+        headers = {
+            'Authorization': 'Bearer ' + self.access_token,
+            'Battlenet-Namespace': 'static-us',
+        }
+        r = await self.session.get(url, headers=headers, **kwargs)
         res = await r.json(content_type=None)
         if 'status' in res and res['status'] == 'nok':
             raise RuntimeError("Request failed: " + res['reason']
                                + "\nURL: " + url)
         return res
 
-    async def achievements(self):
-        return (await self.query('wow/data/character/achievements'))
+    async def achievement_category(self, cat_id=None):
+        category = 'index' if cat_id is None else str(cat_id)
+        return (await self.query(
+            'data/wow/achievement-category/{}'.format(category),
+            params={'locale': 'en_US'},
+        ))
+
+    async def achievement(self, ach_id):
+        return (await self.query(
+            'data/wow/achievement/{}'.format(ach_id),
+            params={'locale': 'en_US'},
+        ))
+
+    async def achievement_media(self, ach_id):
+        return (await self.query(
+            'data/wow/media/achievement/{}'.format(ach_id),
+            params={'locale': 'en_US'},
+        ))
 
     async def mounts(self):
         return (await self.query('wow/mount/'))
@@ -68,7 +87,7 @@ class BnetClient:
 
 
 def get_master_list(name, *args, **kwargs):
-    assert name in ('mounts', 'pets', 'achievements', 'realms')
+    assert name in ('mounts', 'pets', 'realms')
 
     async def get():
         async with BnetClient() as client:
