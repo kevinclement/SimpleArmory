@@ -129,6 +129,541 @@
     ]
   },
   {
+    "name": "Shadowlands",
+    "subcats": [
+      {
+        "name": "Achievement",
+        "items": [
+          {
+            "ID": 1331,
+            "name": "Deathbringer's Flayedwing",
+            "spellid": 318052,
+            "icon": "inv_maldraxxusflyermount",
+            "itemId": 181817
+          },
+          {
+            "ID": 1443,
+            "name": "Voracious Gorger",
+            "spellid": 344659,
+            "icon": "inv_devourermediummount",
+            "itemId": 184183
+          },
+          {
+            "ID": 1377,
+            "name": "Rampart Screecher",
+            "spellid": 332903,
+            "icon": "inv_giantvampirebatmount_white",
+            "itemId": 182596
+          },
+          {
+            "ID": 1419,
+            "name": "Sintouched Deathwalker",
+            "spellid": 340068,
+            "icon": "inv_deathelementalmount_black",
+            "itemId": 182717
+          },
+          {
+            "ID": 1442,
+            "name": "Corridor Creeper",
+            "spellid": 344578,
+            "icon": "inv_jailerhoundmount_black",
+            "itemId": 184166
+          }
+        ]
+      },
+      {
+        "name": "Vendor",
+        "items": [
+          {
+            "ID": 1332,
+            "name": "Silky Shimmermoth",
+            "spellid": 318051,
+            "icon": "inv_mothardenwealdmount_blue",
+            "itemId": 180748
+          },
+          {
+            "ID": 1420,
+            "name": "Umbral Scythehorn",
+            "spellid": 340503,
+            "icon": "inv_decomposermountblack",
+            "itemId": 183053
+          }
+        ]
+      },
+      {
+        "name": "Quest",
+        "items": [
+          {
+            "ID": 1391,
+            "name": "Loyal Gorger",
+            "spellid": 333027,
+            "icon": "achievement_dungeon_sanguinedepths_kryxis",
+            "itemId": 182589
+          }
+        ]
+      },
+      {
+        "name": "Treasures",
+        "items": [
+          {
+            "ID": 1397,
+            "name": "Wildseed Cradle",
+            "spellid": 334352,
+            "icon": "inv_ardenwealdpod",
+            "itemId": 180731
+          },
+          {
+            "ID": 1404,
+            "name": "Silverwind Larion",
+            "spellid": 334433,
+            "icon": "inv_wingedlion2mount",
+            "itemId": 180772
+          },
+          {
+            "ID": 1426,
+            "name": "Ascended Skymane",
+            "spellid": 342335,
+            "icon": "inv_horse2bastionmount_blue",
+            "itemId": 183741
+          }
+        ]
+      },
+      {
+        "name": "Adventures",
+        "items": [
+          {
+            "ID": 1305,
+            "name": "Darkwarren Hardshell",
+            "spellid": 312763,
+            "icon": "inv_decomposermountpurple",
+            "itemId": 183052
+          },
+          {
+            "ID": 1309,
+            "name": "Chittering Animite",
+            "spellid": 312776,
+            "icon": "inv_devourersmallmount_dark",
+            "itemId": 183617
+          },
+          {
+            "ID": 1422,
+            "name": "Warstitched Darkhound",
+            "spellid": 341766,
+            "icon": "inv_darkhoundmount_draka",
+            "itemId": 183615
+          },
+          {
+            "ID": 1423,
+            "name": "Highwind Darkmane",
+            "spellid": 341776,
+            "icon": "inv_mount_wingedlion",
+            "itemId": 183618
+          }
+        ]
+      },
+      {
+        "name": "Reputation",
+        "items": [
+          {
+            "ID": 1361,
+            "name": "Duskflutter Ardenmoth",
+            "spellid": 332256,
+            "icon": "inv_mothardenwealdmount_dark",
+            "itemId": 180729
+          },
+          {
+            "ID": 1375,
+            "name": "Lurid Bloodtusk",
+            "spellid": 332484,
+            "icon": "inv_maldraxxusboarmount_purple",
+            "itemId": 182082
+          },
+          {
+            "ID": 1421,
+            "name": "Court Sinrunner",
+            "spellid": 341639,
+            "icon": "inv_horse3saddle003_evil",
+            "itemId": 183518
+          },
+          {
+            "ID": 1425,
+            "name": "Gilded Prowler",
+            "spellid": 342334,
+            "icon": "inv_wingedlion2mount",
+            "itemId": 183740
+          }
+        ]
+      },
+      {
+        "name": "Paragon Reputation",
+        "items": [
+          {
+            "ID": 1350,
+            "name": "Colossal Slaughterclaw",
+            "spellid": 327405,
+            "icon": "inv_rocmaldraxxusmountblack",
+            "itemId": 182081
+          },
+          {
+            "ID": 1428,
+            "name": "Amber Ardenmoth",
+            "spellid": 342666,
+            "icon": "inv_mothardenwealdmount_red",
+            "itemId": 183800
+          }
+        ]
+      },
+      {
+        "name": "Dungeon Drop",
+        "items": [
+          {
+            "ID": 1406,
+            "name": "Marrowfang",
+            "spellid": 336036,
+            "icon": "inv_maldraxxusflyermount",
+            "itemId": 181819
+          }
+        ]
+      },
+      {
+        "name": "The Maw",
+        "items": [
+          {
+            "ID": 1304,
+            "name": "Mawsworn Soulhunter",
+            "spellid": 312762,
+            "icon": "inv_jailerhoundmount_gray",
+            "itemId": 184167
+          }
+        ]
+      },
+      {
+        "name": "Rare Spawn",
+        "items": [
+          {
+            "ID": 1306,
+            "name": "Swift Gloomhoof",
+            "spellid": 312767,
+            "icon": "inv_horse2ardenwealdmount_dark",
+            "itemId": 180728
+          },
+          {
+            "ID": 1360,
+            "name": "Shimmermist Runner",
+            "spellid": 332252,
+            "icon": "inv_horse2ardenwealdmount_blue",
+            "itemId": 180727
+          },
+          {
+            "ID": 1362,
+            "name": "Spinemaw Gladechewer",
+            "spellid": 334364,
+            "icon": "inv_decomposermountyellow",
+            "itemId": 180725
+          },
+          {
+            "ID": 1393,
+            "name": "Wild Glimmerfur Prowler",
+            "spellid": 334366,
+            "icon": "inv_fox2_green",
+            "itemId": 180730
+          },
+          {
+            "ID": 1415,
+            "name": "Arboreal Gulper",
+            "spellid": 339632,
+            "icon": "inv_toadardenwealdmount",
+            "itemId": 182650
+          },
+          {
+            "ID": 1372,
+            "name": "Umbral Bloodtusk",
+            "spellid": 332478,
+            "icon": "inv_maldraxxusboarmount_black",
+            "itemId": 182085
+          },
+          {
+            "ID": 1373,
+            "name": "Gorespine",
+            "spellid": 332480,
+            "icon": "inv_maldraxxusboarmount_green",
+            "itemId": 182084
+          },
+          {
+            "ID": 1374,
+            "name": "Bonecleaver's Skullboar",
+            "spellid": 332482,
+            "icon": "inv_maldraxxusboarmount_grey",
+            "itemId": 182083
+          },
+          {
+            "ID": 1407,
+            "name": "Callow Flayedwing",
+            "spellid": 336038,
+            "icon": "inv_maldraxxusflyermount",
+            "itemId": 181818
+          },
+          {
+            "ID": 1410,
+            "name": "Hulking Deathroc",
+            "spellid": 336042,
+            "icon": "inv_rocmaldraxxusmountpurple",
+            "itemId": 182079
+          },
+          {
+            "ID": 1411,
+            "name": "Predatory Plagueroc",
+            "spellid": 336045,
+            "icon": "inv_rocmaldraxxusmountgreen",
+            "itemId": 182080
+          },
+          {
+            "ID": 1437,
+            "name": "Battle-Bound Warhound",
+            "spellid": 344228,
+            "icon": "inv_darkhoundmount_draka",
+            "itemId": 184062
+          },
+          {
+            "ID": 1307,
+            "name": "Sundancer",
+            "spellid": 312765,
+            "icon": "inv_horse2bastionmount_yellow",
+            "itemId": 180773
+          },
+          {
+            "ID": 1310,
+            "name": "Horrid Dredwing",
+            "spellid": 332882,
+            "icon": "inv_giantvampirebatmount_bronze",
+            "itemId": 180461
+          },
+          {
+            "ID": 1379,
+            "name": "Endmire Flyer",
+            "spellid": 332905,
+            "icon": "inv_devourersmallmount_dark",
+            "itemId": 180582
+          },
+          {
+            "ID": 1414,
+            "name": "Sinrunner Blanchy",
+            "spellid": 339588,
+            "icon": "inv_horse3saddle001_evil",
+            "itemId": 182614
+          }
+        ]
+      },
+      {
+        "name": "Night Fae",
+        "items": [
+          {
+            "ID": 1429,
+            "name": "Vibrant Flutterwing",
+            "spellid": 342667,
+            "icon": "inv_mothardenwealdmount_mint",
+            "itemId": 183801
+          },
+          {
+            "ID": 1302,
+            "name": "Dreamlight Runedeer",
+            "spellid": 312759,
+            "icon": "inv_ardenwealdstagmount_blue",
+            "itemId": 180263
+          },
+          {
+            "ID": 1303,
+            "name": "Dreamlight Runestag",
+            "spellid": 312761,
+            "icon": "inv_ardenwealdstagmount2_blue",
+            "itemId": 180721
+          },
+          {
+            "ID": 1357,
+            "name": "Umbral Runestag",
+            "spellid": 332246,
+            "icon": "inv_ardenwealdstagmount2_blue",
+            "itemId": 180722
+          },
+          {
+            "ID": 1356,
+            "name": "Winterborn Runedeer",
+            "spellid": 332245,
+            "icon": "inv_ardenwealdstagmount_white",
+            "itemId": 180415
+          },
+          {
+            "ID": 1354,
+            "name": "Umbral Runedeer",
+            "spellid": 332243,
+            "icon": "inv_ardenwealdstagmount_dark",
+            "itemId": 180413
+          },
+          {
+            "ID": 1355,
+            "name": "Wakener's Runedeer",
+            "spellid": 332244,
+            "icon": "inv_ardenwealdstagmount_teal",
+            "itemId": 180414
+          },
+          {
+            "ID": 1358,
+            "name": "Wakener's Runestag",
+            "spellid": 332247,
+            "icon": "inv_ardenwealdstagmount2_blue",
+            "itemId": 180723
+          }
+        ]
+      },
+      {
+        "name": "Necrolords",
+        "items": [
+          {
+            "ID": 1409,
+            "name": "Bonesewn Fleshroc",
+            "spellid": 336041,
+            "icon": "inv_rocmaldraxxusmountwhite",
+            "itemId": 182078
+          },
+          {
+            "ID": 1364,
+            "name": "War-Bred Bonehoof",
+            "spellid": 332455,
+            "icon": "inv_giantbeastmount",
+            "itemId": 182077
+          },
+          {
+            "ID": 1368,
+            "name": "Armored War-Bred Bonehoof",
+            "spellid": 332462,
+            "icon": "inv_giantbeastmount2",
+            "itemId": 181822
+          }
+        ]
+      },
+      {
+        "name": "Venthyr",
+        "items": [
+          {
+            "ID": 1298,
+            "name": "Harnessed Hopecrusher",
+            "spellid": 312753,
+            "icon": "inv_deathwargmountblack",
+            "itemId": 180581
+          },
+          {
+            "ID": 1299,
+            "name": "Vrednic",
+            "spellid": 312754,
+            "icon": "inv_deathwargmount2black",
+            "itemId": 180948
+          },
+          {
+            "ID": 1382,
+            "name": "Inquisition Intimidator",
+            "spellid": 332923,
+            "icon": "inv_deathwargmountpurple",
+            "itemId": 182954
+          },
+          {
+            "ID": 1384,
+            "name": "Sinfall Gargon",
+            "spellid": 332927,
+            "icon": "inv_deathwargmountred",
+            "itemId": 183715
+          },
+          {
+            "ID": 1385,
+            "name": "Crypt Guardian",
+            "spellid": 332932,
+            "icon": "inv_deathwargmountwhite",
+            "itemId": 180945
+          },
+          {
+            "ID": 1387,
+            "name": "Desire's Loyal Hound",
+            "spellid": 332949,
+            "icon": "inv_deathwargmount2purple",
+            "itemId": 182209
+          },
+          {
+            "ID": 1388,
+            "name": "Gravestone Battle Gargon",
+            "spellid": 333021,
+            "icon": "inv_deathwargmount2white",
+            "itemId": 182332
+          },
+          {
+            "ID": 1389,
+            "name": "Silessa",
+            "spellid": 333023,
+            "icon": "inv_deathwargmount2red",
+            "itemId": 183798
+          }
+        ]
+      },
+      {
+        "name": "Covenant Sanctum",
+        "items": [
+          {
+            "ID": 1392,
+            "name": "Pale Acidmaw",
+            "spellid": 334365,
+            "icon": "inv_decomposermountwhite",
+            "itemId": 180726
+          },
+          {
+            "ID": 1376,
+            "name": "Silvertip Dredwing",
+            "spellid": 312777,
+            "icon": "inv_giantvampirebatmount_silver",
+            "itemId": 181316
+          },
+          {
+            "ID": 1408,
+            "name": "Gruesome Flayedwing",
+            "spellid": 336039,
+            "icon": "inv_maldraxxusflyermount",
+            "itemId": 181300
+          },
+          {
+            "ID": 1413,
+            "name": "Dauntless Duskrunner",
+            "spellid": 336064,
+            "icon": "inv_horse2bastionmount_purple",
+            "itemId": 181317
+          }
+        ]
+      },
+      {
+        "name": "Oozing Necroray Egg",
+        "items": [
+          {
+            "ID": 1438,
+            "name": "Bulbous Necroray",
+            "spellid": 344574,
+            "icon": "inv_manaraymount_orange",
+            "itemId": 184160
+          },
+          {
+            "ID": 1439,
+            "name": "Infested Necroray",
+            "spellid": 344576,
+            "icon": "inv_manaraymount_black",
+            "itemId": 184161
+          },
+          {
+            "ID": 1440,
+            "name": "Pestilent Necroray",
+            "spellid": 344575,
+            "icon": "inv_manaraymount_blackfel",
+            "itemId": 184162
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Battle for Azeroth",
     "subcats": [
       {
@@ -1100,20 +1635,6 @@
           }
         ],
         "name": "Pre-launch Event"
-      },
-      {
-        "id": "eba1d3de",
-        "items": [
-          {
-            "ID": "925",
-            "icon": "inv_hyena2mount_dark",
-            "itemId": 166417,
-            "name": "Onyx War Hyena",
-            "notObtainable": true,
-            "spellid": 237288
-          }
-        ],
-        "name": "Unknown"
       }
     ]
   },
@@ -4816,6 +5337,22 @@
             "name": "Vicious White Warsaber",
             "side": "A",
             "spellid": 281888
+          },
+          {
+            "ID": 1351,
+            "name": "Vicious War Spider",
+            "spellid": 327407,
+            "icon": "inv_viciousalliancespider",
+            "side": "A",
+            "itemId": 184014
+          },
+          {
+            "ID": 1352,
+            "name": "Vicious War Spider",
+            "spellid": 327408,
+            "icon": "inv_vicioushordespider",
+            "side": "H",
+            "itemId": 184013
           }
         ],
         "name": "Vicious Saddle"
@@ -4999,33 +5536,12 @@
             "spellid": 243201
           },
           {
-            "icon": "ability_mount_protodrakegladiatormount",
-            "itemId": "156885",
-            "name": "Gold Gladiator's Proto-Drake",
-            "notObtainable": true,
-            "spellid": "262028"
-          },
-          {
             "ID": "1035",
             "icon": "ability_mount_protodrakegladiatormount",
             "itemId": "156884",
             "name": "Black Gladiator's Proto-Drake",
             "notObtainable": true,
             "spellid": "262027"
-          },
-          {
-            "icon": "ability_mount_protodrakegladiatormount",
-            "itemId": "156883",
-            "name": "Green Gladiator's Proto-Drake",
-            "notObtainable": true,
-            "spellid": "262026"
-          },
-          {
-            "icon": "ability_mount_protodrakegladiatormount",
-            "itemId": "156882",
-            "name": "Pale Gladiator's Proto-Drake",
-            "notObtainable": true,
-            "spellid": "262025"
           },
           {
             "ID": "1032",
@@ -5056,7 +5572,15 @@
             "icon": "inv_protodrakegladiatormount_black",
             "itemId": 156884,
             "name": "Corrupted Gladiator's Proto-Drake",
+            "notObtainable": true,
             "spellid": 262027
+          },
+          {
+              "ID": 1363,
+              "name": "Sinful Gladiator's Soul Eater",
+              "spellid": 332400,
+              "icon": "inv_shadebeastmount",
+              "itemId": 183937
           }
         ],
         "name": "Gladiator"
@@ -5919,6 +6443,30 @@
             ],
             "icon": "inv_zandalaripaladinmount",
             "spellid": "290608"
+          },
+          {
+            "ID": 1046,
+            "allowableClasses": [
+              2
+            ],
+            "allowableRaces": [
+              34
+            ],
+            "name": "Darkforge Ram",
+            "icon": "inv_dwarfpaladinram_red",
+            "spellid": "270562"
+          },
+          {
+            "ID": 1047,
+            "allowableClasses": [
+              2
+            ],
+            "allowableRaces": [
+              34
+            ],
+            "name": "Dawnforge Ram",
+            "icon": "inv_dwarfpaladinram_gold",
+            "spellid": "270564"
           }
         ],
         "name": "Paladin"
