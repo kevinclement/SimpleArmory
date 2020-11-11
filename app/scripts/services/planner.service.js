@@ -66,18 +66,41 @@
             // check to see if we've finished all the bosses
             if (step.bosses) {
                 angular.forEach(step.bosses, function(boss) {
-                    if (boss.isAlliance && items.isAlliance && items.lookup[boss.ID] === undefined) {
-                        neededBosses.push(boss);
-                        completed = false;
+
+                    var bossIsNeutral = !boss.isAlliance && !boss.isHorde,
+                        character = items, // aliasing for clarity
+                        characterNeedsBoss = function(id){ return !character.lookup[id]; },
+                        addBoss = function(boss) {
+                            neededBosses.push(boss);
+                            completed = false;
+                        };
+
+                    if (showAll) { addBoss(boss); return; }
+                    if (boss.ID === undefined) { return; } // continue the loop, bad boss data
+
+                    if (bossIsNeutral && characterNeedsBoss(boss.ID)) {
+                        addBoss(boss);
+                        return;
                     }
-                    else if (boss.isHorde && !items.isAlliance && items.lookup[boss.ID] === undefined) {
-                        neededBosses.push(boss);
-                        completed = false;
+
+                    if (boss.isAlliance && character.isAlliance) {
+                        if (characterNeedsBoss(boss.ID)) {
+                            addBoss(boss);
+                            return;
+                        } else {
+                            return; // already has boss
+                        }
                     }
-                    else if ((boss.ID !== undefined && items.lookup[boss.ID] === undefined) || showAll) {
-                        neededBosses.push(boss);
-                        completed = false;
+
+                    if (boss.isHorde && character.isHorde) {
+                        if (characterNeedsBoss(boss.ID)) {
+                            addBoss(boss);
+                            return;
+                        } else {
+                            return; // already has boss
+                        }
                     }
+
                 });
             }
 
