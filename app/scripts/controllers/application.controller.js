@@ -42,7 +42,7 @@
                     LoginService.getProfileMedia({'region': rgr[1], 'realm':rgr[2], 'character':rgr[3]}).then(function(pMedia) {
                         var avatarFallback = '?alt=/shadow/avatar/1-1.jpg';
                         if(pMedia.data.avatar_url) {
-                            $scope.characterMedia = pMedia.data.avatar_url + avatarFallback
+                            $scope.characterMedia = pMedia.data.avatar_url + avatarFallback;
                         } else {
                             $scope.characterMedia = pMedia.data.assets[0].value + avatarFallback;
                         }
