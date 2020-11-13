@@ -7,11 +7,18 @@
         .module('simpleArmoryApp')
         .controller('ApplicationCtrl' , ApplicationCtrl);
 
-    function ApplicationCtrl($scope, LoginService, $location, $filter, KeyboardService, KonamiService) {
+    function ApplicationCtrl($scope, $window, LoginService, $location, $filter, KeyboardService, KonamiService) {
 
         // default to not logged in
         $scope.isLoggedIn = false;
-        $scope.isUsingDarkTheme = localStorage.getItem('darkTheme') === 'true';
+
+        var darkTheme = localStorage.getItem('darkTheme');
+        if (darkTheme) {
+            $scope.isUsingDarkTheme = darkTheme === 'true';
+        } else {
+            $scope.isUsingDarkTheme = $window.matchMedia ?
+                $window.matchMedia('(prefers-color-scheme: dark)').matches : false;
+        }
 
         // Listen for path changed and then parse and fetch the character
         $scope.$on('$locationChangeSuccess', function(){
@@ -42,7 +49,7 @@
                     LoginService.getProfileMedia({'region': rgr[1], 'realm':rgr[2], 'character':rgr[3]}).then(function(pMedia) {
                         var avatarFallback = '?alt=/shadow/avatar/1-1.jpg';
                         if(pMedia.data.avatar_url) {
-                            $scope.characterMedia = pMedia.data.avatar_url + avatarFallback
+                            $scope.characterMedia = pMedia.data.avatar_url + avatarFallback;
                         } else {
                             $scope.characterMedia = pMedia.data.assets[0].value + avatarFallback;
                         }
