@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import asyncio
 import binascii
 import bnet
 import collections
@@ -7,6 +8,8 @@ import json
 import logging
 import os
 import sys
+import tqdm
+import tqdm.asyncio
 
 
 def changelog(*args, **kwargs):
@@ -68,16 +71,24 @@ class AchievementFixer:
                     for item in subcat['items']:
                         self.id_to_sa_ach[int(item['id'])] = item
 
+    def bnet_ach_to_icon(self, ach):
+        bnet_icon = ach['assets'][0]['value']
+        bnet_icon = bnet_icon[:-len('.jpg')]
+        bnet_icon = bnet_icon.split('/')[-1]
+        return bnet_icon
+
     def genach(self, ach_id):
         ach_id = int(ach_id)
         if ach_id in self.id_to_sa_ach:
             return self.id_to_sa_ach[ach_id]
         else:
             ach = self.id_to_ach[ach_id]
+            if 'assets' not in ach:
+                changelog(ach)
             return {
                 'id': int(ach['id']),
-                'title': ach['title'],
-                'icon': ach['icon'],
+                'title': ach['name'],
+                'icon': self.bnet_ach_to_icon(ach),
                 'points': ach['points'],
             }
 
@@ -260,6 +271,9 @@ class AchievementFixer:
                 continue
             path = self.id_to_cat[ach_id]
             ach = self.id_to_ach[ach_id]
+            # API returns 404 achievements
+            if ach.get('code') == 404:
+                continue
             cat = self.cat(*path, 'TODO', create_missing=True)
             cat['items'].append(self.genach(ach['id']))
 
@@ -272,13 +286,14 @@ class AchievementFixer:
                         # For some reason, the battle net API returns wrong
                         # results with missing dashes, so let's just ignore
                         # those for now.
+                        bnet_icon = self.bnet_ach_to_icon(ach)
                         if ((item['icon'].lower().replace('-', '')
-                             != ach['icon'].lower().replace('-', ''))):
+                             != bnet_icon.lower().replace('-', ''))):
                             changelog('* Fixed icon of achievement {} '
                                       '({} -> {})'
                                       .format(ach['id'], item['icon'],
-                                              ach['icon']))
-                            item['icon'] = ach['icon']
+                                              bnet_icon))
+                            item['icon'] = bnet_icon
 
     def fix_wrong_sides(self):
         for supercat in self.achievs['supercats']:
@@ -286,12 +301,19 @@ class AchievementFixer:
                 for subcat in cat['subcats']:
                     for item in subcat['items']:
                         ach = self.id_to_ach[int(item['id'])]
-                        faction = {0: 'A', 1: 'H', 2: None}[ach['factionId']]
+                        faction = None
+                        bnet_faction = (ach.get('requirements', {})
+                                        .get('faction'))
+                        if bnet_faction:
+                            faction = {
+                                'ALLIANCE': 'A',
+                                'HORDE': 'H'
+                            }[bnet_faction['type']]
                         oldfaction = item.get('side', None)
                         if oldfaction != faction:
                             changelog('* Fixed faction of achievement {} '
                                       '({} -> {})'
-                                      .format(ach['title'], oldfaction,
+                                      .format(ach['name'], oldfaction,
                                               faction))
                             if faction is not None:
                                 item['side'] = faction
@@ -353,6 +375,67 @@ class AchievementFixer:
         json.dump(self.achievs, sys.stdout, indent=2, sort_keys=True)
 
 
+async def build_achievement_master_list():
+    """
+    This builds an old API-style achievement master list which can then be
+    processed by the achievement fixer.
+    """
+    res = {}
+    semaphore = asyncio.Semaphore(30)  # concurrent reqs
+
+    async def enrich_achievement(ach):
+        async with semaphore:
+            data = await client.achievement(ach['id'])
+            media = await client.achievement_media(ach['id'])
+            ach.update(data)
+            ach.update(media)
+
+    async def enrich_achievement_list(achs):
+        tasks = [enrich_achievement(ach) for ach in achs]
+        for f in tqdm.asyncio.tqdm_asyncio.as_completed(
+            tasks,
+            position=2,
+            leave=False
+        ):
+            await f
+
+    async with bnet.BnetClient() as client:
+        index = await client.achievement_category()
+        res['achievements'] = index['root_categories']
+        res['achievements'] = [
+            i for i in res['achievements'] if i['name'] != 'Guild'
+        ]
+        for supercat in tqdm.tqdm(res['achievements'], position=0):
+            supercat_data = await client.achievement_category(supercat['id'])
+            supercat['display_order'] = supercat_data['display_order']
+            if 'achievements' in supercat_data:
+                supercat['achievements'] = supercat_data['achievements']
+                await enrich_achievement_list(supercat['achievements'])
+                supercat['achievements'].sort(
+                    key=lambda x: x.get('display_order', 0)
+                )
+            if 'subcategories' in supercat_data:
+                supercat['categories'] = supercat_data['subcategories']
+                for cat in tqdm.tqdm(
+                    supercat['categories'],
+                    position=1,
+                    leave=False
+                ):
+                    cat_data = await client.achievement_category(cat['id'])
+                    cat['display_order'] = cat_data['display_order']
+                    cat['achievements'] = cat_data['achievements']
+                    await enrich_achievement_list(cat['achievements'])
+                    cat['achievements'].sort(
+                        key=lambda x: x.get('display_order', 0)
+                    )
+                supercat['categories'].sort(
+                    key=lambda x: x.get('display_order', 0)
+                )
+        res['achievements'].sort(key=lambda x: x.get('display_order', 0))
+
+    return res
+
+
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)
 
@@ -360,7 +443,7 @@ if __name__ == '__main__':
         sys.exit("Usage: {} achievements.json")
 
     achievements = json.load(open(sys.argv[1]))
-    bnet_achievements = bnet.get_master_list('achievements')
+    bnet_achievements = asyncio.run(build_achievement_master_list())
 
     fixer = AchievementFixer(achievements, bnet_achievements)
     fixer.run()
