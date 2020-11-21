@@ -67,10 +67,10 @@
             if (step.bosses) {
                 angular.forEach(step.bosses, function(boss) {
 
-                    var bossIsNeutral = !boss.isAlliance && !boss.isHorde,
-                        character = items, // aliasing for clarity
-                        characterNeedsBoss = function(id){ return !character.lookup[id]; },
-                        addBoss = function(boss) {
+                    var bossIsNeutral = !boss.isAlliance && !boss.isHorde;
+                    var character = items; // aliasing for clarity
+                    var characterNeedsBoss = function(id){ return !character.lookup[id]; };
+                    var addBoss = function(boss) {
                             neededBosses.push(boss);
                             completed = false;
                         };
