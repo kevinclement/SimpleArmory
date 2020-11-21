@@ -79,17 +79,7 @@
                     if (boss.ID === undefined) { return; } // continue the loop, bad boss data
                     if (!characterNeedsBoss(boss.ID)) { return; }
 
-                    if (bossIsNeutral) {
-                        addBoss(boss);
-                        return;
-                    }
-
-                    if (boss.isAlliance && character.isAlliance) {
-                        addBoss(boss);
-                        return;
-                    }
-
-                    if (boss.isHorde && character.isHorde) {
+                    if ( bossIsNeutral || (boss.isAlliance && character.isAlliance) || (boss.isHorde && character.isHorde)) {
                         addBoss(boss);
                         return;
                     }
