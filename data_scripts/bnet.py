@@ -79,7 +79,16 @@ class BnetClient:
         return (await self.query('wow/pet/species/{}'.format(species_id)))
 
     async def item(self, item_id):
-        return (await self.query('wow/item/{}'.format(item_id)))
+        return (await self.query(
+            'data/wow/item/{}'.format(item_id),
+            params={'locale': 'en_US'}
+        ))
+
+    async def item_media(self, ach_id):
+        return (await self.query(
+            'data/wow/media/item/{}'.format(ach_id),
+            params={'locale': 'en_US'},
+        ))
 
     async def pet_source(self, species_id):
         species = await self.pets_species(species_id)

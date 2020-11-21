@@ -21,6 +21,13 @@ def genid():
     return binascii.b2a_hex(os.urandom(4)).decode('ascii')
 
 
+def media_to_icon(media):
+    bnet_icon = media['assets'][0]['value']
+    bnet_icon = bnet_icon[:-len('.jpg')]
+    bnet_icon = bnet_icon.split('/')[-1]
+    return bnet_icon
+
+
 class ToyFixer:
     def __init__(self, toys):
         self.toys = toys
@@ -54,7 +61,9 @@ class ToyFixer:
     async def retrieve_missing_toy(self, sem, bnetc, toy_id):
         async with sem:
             r = await bnetc.item(toy_id)
-            toy = {'itemId': toy_id, 'name': r['name'], 'icon': r['icon']}
+            media = await bnetc.item_media(toy_id)
+            icon = media_to_icon(media)
+            toy = {'itemId': toy_id, 'name': r['name'], 'icon': icon}
             self.cat(self.toys, 'TODO', 'TODO')['items'].append(toy)
 
     async def retrieve_missing_toys(self, missing):
@@ -70,7 +79,7 @@ class ToyFixer:
             await asyncio.gather(*tasks)
 
     def fix_missing(self):
-        answer = input('Paste the SA toy export string: ')
+        answer = input('Paste (or pipe if >4096) the SA toy export string: ')
         toy_list = json.loads(answer)
         asyncio.run(self.retrieve_missing_toys(toy_list))
 
