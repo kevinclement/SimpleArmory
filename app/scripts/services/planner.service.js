@@ -77,28 +77,21 @@
 
                     if (showAll) { addBoss(boss); return; }
                     if (boss.ID === undefined) { return; } // continue the loop, bad boss data
+                    if (!characterNeedsBoss(boss.ID)) { return; }
 
-                    if (bossIsNeutral && characterNeedsBoss(boss.ID)) {
+                    if (bossIsNeutral) {
                         addBoss(boss);
                         return;
                     }
 
                     if (boss.isAlliance && character.isAlliance) {
-                        if (characterNeedsBoss(boss.ID)) {
-                            addBoss(boss);
-                            return;
-                        } else {
-                            return; // already has boss
-                        }
+                        addBoss(boss);
+                        return;
                     }
 
                     if (boss.isHorde && character.isHorde) {
-                        if (characterNeedsBoss(boss.ID)) {
-                            addBoss(boss);
-                            return;
-                        } else {
-                            return; // already has boss
-                        }
+                        addBoss(boss);
+                        return;
                     }
 
                 });
