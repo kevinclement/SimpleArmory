@@ -8,53 +8,42 @@ import sys
 
 IGNORE_MOUNT_SPELLIDS = [
     # Never actually added
-    10788,   # Leopard https://www.wowhead.com/item=8633
-    10790,   # Tiger https://www.wowhead.com/item=8630
-    61289,   # Borrowed Broom https://www.wowhead.com/item=44604
-    123160,  # Crimson Riding Crane https://www.wowhead.com/item=84728
-    123182,  # White Riding Yak https://www.wowhead.com/item=84753
-    127178,  # Jungle Riding Crane https://www.wowhead.com/item=87784
-    127180,  # Albino Riding Crane https://www.wowhead.com/item=87785
-    127209,  # Black Riding Yak https://www.wowhead.com/item=87786
-    127213,  # Brown Riding Yak https://www.wowhead.com/item=87787
-    127272,  # Orange Water Strider https://www.wowhead.com/item=87792
-    127274,  # Jade Water Strider https://www.wowhead.com/item=87793
-    127278,  # Golden Water Strider https://www.wowhead.com/item=87794
-    147595,  # Stormcrow https://www.wowhead.com/item=104011
-    171618,  # Ancient Leatherhide https://www.wowhead.com/item=116657
-    176762,  # Iron Star Roller https://www.wowhead.com/item=119179
-    278656,  # Spectral Phoenix https://www.wowhead.com/item=163063
-    278966,  # Tempestuous Skystallion https://www.wowhead.com/item=163186
-
-    # Mounts that cannot be learned in the journal
-    47977,   # Magic Broom https://www.wowhead.com/item=37011
-    145133,  # Moonfang https://www.wowhead.com/item=101675
-    239766,  # Blue Qiraji War Tank https://www.wowhead.com/item=151626
-    239767,  # Red Qiraji War Tank https://www.wowhead.com/item=151625
-
-    # Consumable mounts
-    68768,   # Little White Stallion https://www.wowhead.com/item=49289
-    68769,   # Little Ivory Raptor https://www.wowhead.com/item=49288
-    130678,  # Unruly Behemoth https://www.wowhead.com/item=89682
-    130730,  # Kafa-Crazed Goat https://www.wowhead.com/item=89697
-    130895,  # Rampaging Yak https://www.wowhead.com/item=89770
-    304696,  # Wild Snapdragon https://www.wowhead.com/item=170178
-
-    # Toy mounts
-    254545,  # Baarut the Brisk https://www.wowhead.com/item=153193
-    176759,  # Goren "Log" Roller https://www.wowhead.com/item=119180
-    148626,  # Furious Ashhide Mushan https://www.wowhead.com/item=104329
-    174004,  # Spirit of Shinri https://www.wowhead.com/item=113543
-
-    # "GM mistake" mounts
-    17458,   # Fluorescent Green Mechanostrider
-             # https://www.wowhead.com/item=13325
-
-    # Mounts in armor/weapons
-    101641,  # Tarecgosa's Visage https://www.wowhead.com/item=71086
-
-    # Replaced mounts marked as [OLD]
-    48954,   # Swift Zhevra https://www.wowhead.com/item=37598
+    7,  # Gray Wolf https://www.wowhead.com/mount/7
+    8,  # White Stallion https://www.wowhead.com/mount/8
+    12,  # Black Wolf https://www.wowhead.com/mount/12
+    13,  # Red Wolf https://www.wowhead.com/mount/13
+    15,  # Winter Wolf https://www.wowhead.com/mount/15
+    22,  # Black Ram https://www.wowhead.com/mount/22
+    28,  # Skeletal Horse https://www.wowhead.com/mount/28
+    32,  # Tiger https://www.wowhead.com/mount/32
+    35,  # Ivory Raptor https://www.wowhead.com/mount/35
+    43,  # Green Mechanostrider https://www.wowhead.com/mount/43
+    70,  # Riding Kodo https://www.wowhead.com/mount/70
+    123,  # Nether Drake https://www.wowhead.com/mount/123
+    145,  # Blue Mechanostrider https://www.wowhead.com/mount/145
+    206,  # Merciless Nether Drake https://www.wowhead.com/mount/206
+    222,  # Swift Zhevra https://www.wowhead.com/mount/222
+    225,  # Brewfest Riding Kodo https://www.wowhead.com/mount/225
+    238,  # Swift Spectral Gryphon https://www.wowhead.com/mount/238
+    251,  # Black Polar Bear https://www.wowhead.com/mount/251
+    273,  # Grand Caravan Mammoth https://www.wowhead.com/mount/273
+    274,  # Grand Caravan Mammoth https://www.wowhead.com/mount/274
+    293,  # Black Dragonhawk Mount https://www.wowhead.com/mount/293
+    308,  # Blue Skeletal Warhorse https://www.wowhead.com/mount/308
+    333,  # Magic Rooster https://www.wowhead.com/mount/333
+    334,  # Magic Rooster https://www.wowhead.com/mount/334
+    335,  # Magic Rooster https://www.wowhead.com/mount/335
+    462,  # White Riding Yak https://www.wowhead.com/mount/462
+    484,  # Black Riding Yak https://www.wowhead.com/mount/484
+    485,  # Brown Riding Yak https://www.wowhead.com/mount/485
+    776,  # Swift Spectral Rylak https://www.wowhead.com/mount/776
+    934,  # Swift Spectral Hippogryph https://www.wowhead.com/mount/934
+    935,  # Blue Qiraji War Tank https://www.wowhead.com/mount/935
+    936,  # Red Qiraji War Tank https://www.wowhead.com/mount/936
+    1269,  # Swift Spectral Fathom Ray https://www.wowhead.com/mount/1269
+    1270,  # Swift Spectral Magnetocraft https://www.wowhead.com/mount/1270
+    1271,  # Swift Spectral Armored Gryphon https://www.wowhead.com/mount/1271
+    1272,  # Swift Spectral Pterrordax https://www.wowhead.com/mount/1272
 ]
 
 
@@ -64,7 +53,7 @@ def changelog(*args, **kwargs):
 
 class MountFixer:
     def __init__(self, bnet_mounts, mounts):
-        self.bnet_mounts = bnet_mounts
+        self.bnet_mounts = bnet_mounts['mounts']
         self.mounts = mounts
         self.id_to_old_mount = {}
 
@@ -74,25 +63,20 @@ class MountFixer:
         for cat in self.mounts:
             for subcat in cat['subcats']:
                 for item in subcat['items']:
-                    self.id_to_old_mount[int(item['spellid'])] = item
+                    self.id_to_old_mount[int(item['ID'])] = item
 
     def fix_missing(self):
         mounts_to_add = []
-        for mount in self.bnet_mounts['mounts']:
-            if not mount['itemId']:
-                # Not a real obtainable mount
-                continue
-            spellid = int(mount['spellId'])
-            if ((spellid not in self.id_to_old_mount
-                 and spellid not in IGNORE_MOUNT_SPELLIDS)):
+        for mount in self.bnet_mounts:
+            mount_id = int(mount['id'])
+            if ((mount_id not in self.id_to_old_mount
+                 and mount_id not in IGNORE_MOUNT_SPELLIDS)):
                 changelog('Mount {} missing: {} '
-                          'https://www.wowhead.com/item={}'
-                          .format(spellid, mount['name'], mount['itemId']))
+                          'https://www.wowhead.com/mount/{}'
+                          .format(mount_id, mount['name'], mount['id']))
                 mounts_to_add.append({
                     'name': mount['name'],
-                    'spellid': mount['spellId'],
-                    'itemId': mount['itemId'],
-                    'icon': mount['icon'],
+                    'ID': mount['id']
                 })
         json.dump(mounts_to_add, sys.stdout, indent=2, sort_keys=True)
 
