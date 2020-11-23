@@ -180,13 +180,6 @@
             "spellid": 318051,
             "icon": "inv_mothardenwealdmount_blue",
             "itemId": 180748
-          },
-          {
-            "ID": 1420,
-            "name": "Umbral Scythehorn",
-            "spellid": 340503,
-            "icon": "inv_decomposermountblack",
-            "itemId": 183053
           }
         ]
       },
@@ -322,12 +315,25 @@
             "spellid": 336036,
             "icon": "inv_maldraxxusflyermount",
             "itemId": 181819
+          },
+          {
+            "ID": 1445,
+            "name": "Slime Serpent",
+            "spellid": 346141,
+            "icon": "inv_nzothserpentmount_abomination"
           }
         ]
       },
       {
-        "name": "The Maw",
+        "name": "Zone",
         "items": [
+          {
+            "ID": 1437,
+            "name": "Battle-Bound Warhound",
+            "spellid": 344228,
+            "icon": "inv_darkhoundmount_draka",
+            "itemId": 184062
+          },
           {
             "ID": 1304,
             "name": "Mawsworn Soulhunter",
@@ -340,6 +346,13 @@
       {
         "name": "Rare Spawn",
         "items": [
+          {
+            "ID": 1414,
+            "name": "Sinrunner Blanchy",
+            "spellid": 339588,
+            "icon": "inv_horse3saddle001_evil",
+            "itemId": 182614
+          },
           {
             "ID": 1306,
             "name": "Swift Gloomhoof",
@@ -418,13 +431,6 @@
             "itemId": 182080
           },
           {
-            "ID": 1437,
-            "name": "Battle-Bound Warhound",
-            "spellid": 344228,
-            "icon": "inv_darkhoundmount_draka",
-            "itemId": 184062
-          },
-          {
             "ID": 1307,
             "name": "Sundancer",
             "spellid": 312765,
@@ -444,19 +450,45 @@
             "spellid": 332905,
             "icon": "inv_devourersmallmount_dark",
             "itemId": 180582
+          }
+        ]
+      },
+      {
+        "name": "Oozing Necroray Egg",
+        "items": [
+          {
+            "ID": 1438,
+            "name": "Bulbous Necroray",
+            "spellid": 344574,
+            "icon": "inv_manaraymount_orange",
+            "itemId": 184160
           },
           {
-            "ID": 1414,
-            "name": "Sinrunner Blanchy",
-            "spellid": 339588,
-            "icon": "inv_horse3saddle001_evil",
-            "itemId": 182614
+            "ID": 1439,
+            "name": "Infested Necroray",
+            "spellid": 344576,
+            "icon": "inv_manaraymount_black",
+            "itemId": 184161
+          },
+          {
+            "ID": 1440,
+            "name": "Pestilent Necroray",
+            "spellid": 344575,
+            "icon": "inv_manaraymount_blackfel",
+            "itemId": 184162
           }
         ]
       },
       {
         "name": "Night Fae",
         "items": [
+          {
+            "ID": 1420,
+            "name": "Umbral Scythehorn",
+            "spellid": 340503,
+            "icon": "inv_decomposermountblack",
+            "itemId": 183053
+          },
           {
             "ID": 1429,
             "name": "Vibrant Flutterwing",
@@ -512,6 +544,74 @@
             "spellid": 332247,
             "icon": "inv_ardenwealdstagmount2_blue",
             "itemId": 180723
+          },
+          {
+            "ID": 1359,
+            "name": "Enchanted Winterborn Runestag",
+            "spellid": 332248,
+            "icon": "inv_ardenwealdstagmount2_-white",
+            "itemId": 180724
+          }
+        ]
+      },
+      {
+        "name": "Kyrian",
+        "items": [
+          {
+            "ID": 1394,
+            "name": "Phalynx of Loyalty",
+            "spellid": 334382,
+            "icon": "inv_automatonlionmount_black",
+            "itemId": 180761
+          },
+          {
+            "ID": 1395,
+            "name": "Phalynx of Humility",
+            "spellid": 334386,
+            "icon": "inv_automatonlionmount_bronze",
+            "itemId": 180762
+          },
+          {
+            "ID": 1396,
+            "name": "Phalynx of Courage",
+            "spellid": 334391,
+            "icon": "inv_automatonlionmount",
+            "itemId": 180763
+          },
+          {
+            "ID": 1398,
+            "name": "Phalynx of Purity",
+            "spellid": 334398,
+            "icon": "inv_automatonlionmount_silver",
+            "itemId": 180764
+          },
+          {
+            "ID": 1399,
+            "name": "Eternal Phalynx of Purity",
+            "spellid": 334403,
+            "icon": "inv_automatonlionmount2_silver",
+            "itemId": 180765
+          },
+          {
+            "ID": 1400,
+            "name": "Eternal Phalynx of Courage",
+            "spellid": 334406,
+            "icon": "inv_automatonlionmount2",
+            "itemId": 180766
+          },
+          {
+            "ID": 1401,
+            "name": "Eternal Phalynx of Loyalty",
+            "spellid": 334408,
+            "icon": "inv_automatonlionmount2_black",
+            "itemId": 180767
+          },
+          {
+            "ID": 1402,
+            "spellid": 334409,
+            "name": "Eternal Phalynx of Humility",
+            "icon": "inv_automatonlionmount2_bronze",
+            "itemId": 180768
           }
         ]
       },
@@ -538,12 +638,61 @@
             "spellid": 332462,
             "icon": "inv_giantbeastmount2",
             "itemId": 181822
+          },
+          {
+            "ID": 1365,
+            "name": "Plaguerot Tauralus",
+            "spellid": 332456,
+            "icon": "inv_giantbeastmount_green",
+            "itemId": 182076
+          },
+          {
+            "ID": 1366,
+            "name": "Bonehoof Tauralus",
+            "spellid": 332457,
+            "icon": "inv_giantbeastmount",
+            "itemId": 182075
+          },
+          {
+            "ID": 1369,
+            "name": "Armored Plaguerot Tauralus",
+            "spellid": 332464,
+            "icon": "inv_giantbeastmount2_green",
+            "itemId": 181821
+          },
+          {
+            "ID": 1370,
+            "name": "Armored Bonehoof Tauralus",
+            "spellid": 332466,
+            "icon": "inv_giantbeastmount2",
+            "itemId": 181815
+          },
+          {
+            "ID": 1367,
+            "name": "Chosen Tauralus",
+            "spellid": 332460,
+            "icon": "inv_giantbeastmount_orange",
+            "itemId": 182074
+          },
+          {
+            "ID": 1371,
+            "name": "Armored Chosen Tauralus",
+            "spellid": 332467,
+            "icon": "inv_giantbeastmount2_orange",
+            "itemId": 181820
           }
         ]
       },
       {
         "name": "Venthyr",
         "items": [
+          {
+            "ID": 1382,
+            "name": "Inquisition Gargon",
+            "spellid": 332923,
+            "icon": "inv_deathwargmountpurple",
+            "itemId": 182954
+          },
           {
             "ID": 1298,
             "name": "Harnessed Hopecrusher",
@@ -557,13 +706,6 @@
             "spellid": 312754,
             "icon": "inv_deathwargmount2black",
             "itemId": 180948
-          },
-          {
-            "ID": 1382,
-            "name": "Inquisition Intimidator",
-            "spellid": 332923,
-            "icon": "inv_deathwargmountpurple",
-            "itemId": 182954
           },
           {
             "ID": 1384,
@@ -632,32 +774,6 @@
             "spellid": 336064,
             "icon": "inv_horse2bastionmount_purple",
             "itemId": 181317
-          }
-        ]
-      },
-      {
-        "name": "Oozing Necroray Egg",
-        "items": [
-          {
-            "ID": 1438,
-            "name": "Bulbous Necroray",
-            "spellid": 344574,
-            "icon": "inv_manaraymount_orange",
-            "itemId": 184160
-          },
-          {
-            "ID": 1439,
-            "name": "Infested Necroray",
-            "spellid": 344576,
-            "icon": "inv_manaraymount_black",
-            "itemId": 184161
-          },
-          {
-            "ID": 1440,
-            "name": "Pestilent Necroray",
-            "spellid": 344575,
-            "icon": "inv_manaraymount_blackfel",
-            "itemId": 184162
           }
         ]
       }
