@@ -431,7 +431,6 @@
           "name": "Shadowlands",
           "subcats": [
             {
-              "name": "Zones",
               "id": "ae9b9784",
               "items": [
                 {
@@ -488,10 +487,10 @@
                   "points": 10,
                   "title": "Loremaster of Shadowlands"
                 }
-              ]
+              ],
+              "name": "Zones"
             },
             {
-              "name": "Campaign",
               "id": "44dfdbbd",
               "items": [
                 {
@@ -506,10 +505,10 @@
                   "points": 10,
                   "title": "Covenant Campaign"
                 }
-              ]
+              ],
+              "name": "Campaign"
             },
             {
-              "name": "World",
               "id": "382a12e6",
               "items": [
                 {
@@ -518,10 +517,10 @@
                   "points": 10,
                   "title": "The World Beyond"
                 }
-              ]
+              ],
+              "name": "World"
             },
             {
-              "name": "Revendreth",
               "id": "b879dbd2",
               "items": [
                 {
@@ -537,36 +536,6 @@
                   "title": "Tea Tales"
                 },
                 {
-                  "icon": "achievement_bg_tophealer_soa",
-                  "id": 14272,
-                  "points": 5,
-                  "title": "Best Bud With Benefits"
-                },
-                {
-                  "icon": "achievement_bg_xkills_avgraveyard",
-                  "id": 14273,
-                  "points": 5,
-                  "title": "Crypt Kicker"
-                },
-                {
-                  "icon": "ability_paladin_beaconoflight",
-                  "id": 14274,
-                  "points": 5,
-                  "title": "Absolution for All"
-                },
-                {
-                  "icon": "spell_animarevendreth_buff",
-                  "id": 14276,
-                  "points": 5,
-                  "title": "It's Always Sinny in Revendreth"
-                },
-                {
-                  "icon": "ability_priest_darkness",
-                  "id": 14277,
-                  "points": 15,
-                  "title": "The Accuser's Avowed"
-                },
-                {
                   "icon": "archaeology_5_0_umbrellaofchiji",
                   "id": 14766,
                   "points": 10,
@@ -578,10 +547,10 @@
                   "points": 5,
                   "title": "Caught in a Bat Romance"
                 }
-              ]
+              ],
+              "name": "Revendreth"
             },
             {
-              "name": "Bastion",
               "id": "bff903a0",
               "items": [
                 {
@@ -608,10 +577,10 @@
                   "points": 5,
                   "title": "Breaking the Stratus Fear"
                 }
-              ]
+              ],
+              "name": "Bastion"
             },
             {
-              "name": "Ardenweald",
               "id": "641a4123",
               "items": [
                 {
@@ -626,31 +595,8 @@
                   "points": 10,
                   "title": "A Bit of This, A Bit of That"
                 }
-              ]
-            },
-            {
-              "name": "Maldraxxus",
-              "id": "2a487eba",
-              "items": [
-                {
-                  "icon": "ability_creature_amber_02",
-                  "id": 14721,
-                  "points": 10,
-                  "title": "It's In The Mix"
-                },
-                {
-                  "icon": "inv_sword_111",
-                  "id": 14626,
-                  "points": 5,
-                  "title": "Harvester of Sorrow"
-                },
-                {
-                  "icon": "ability_warrior_bloodfrenzy",
-                  "id": 14802,
-                  "points": 10,
-                  "title": "Bloodsport"
-                }
-              ]
+              ],
+              "name": "Ardenweald"
             }
           ]
         },
@@ -4817,7 +4763,18 @@
           "name": "Shadowlands",
           "subcats": [
             {
-              "name": "Area",
+              "id": "ccc5dbf1",
+              "items": [
+                {
+                  "icon": "spell_arcane_teleportoribos",
+                  "id": 14825,
+                  "points": 25,
+                  "title": "Explorer of the Shadowlands"
+                }
+              ],
+              "name": ""
+            },
+            {
               "id": "4a5e1304",
               "items": [
                 {
@@ -4850,10 +4807,10 @@
                   "points": 10,
                   "title": "Explore The Maw"
                 }
-              ]
+              ],
+              "name": "Area"
             },
             {
-              "name": "Treasures",
               "id": "a6d26b72",
               "items": [
                 {
@@ -4880,10 +4837,10 @@
                   "points": 10,
                   "title": "Treasures of Revendreth"
                 }
-              ]
+              ],
+              "name": "Treasures"
             },
             {
-              "name": "Encounters",
               "id": "1b78a6ec",
               "items": [
                 {
@@ -4910,10 +4867,10 @@
                   "points": 10,
                   "title": "Adventurer of Revendreth"
                 }
-              ]
+              ],
+              "name": "Encounters"
             },
             {
-              "name": "Revendreth",
               "id": "031c235f",
               "items": [
                 {
@@ -4933,11 +4890,41 @@
                   "id": 14771,
                   "points": 10,
                   "title": "The Afterlife Express"
+                },
+                {
+                  "icon": "achievement_bg_tophealer_soa",
+                  "id": 14272,
+                  "points": 5,
+                  "title": "Best Bud With Benefits"
+                },
+                {
+                  "icon": "achievement_bg_xkills_avgraveyard",
+                  "id": 14273,
+                  "points": 5,
+                  "title": "Crypt Kicker"
+                },
+                {
+                  "icon": "ability_paladin_beaconoflight",
+                  "id": 14274,
+                  "points": 5,
+                  "title": "Absolution for All"
+                },
+                {
+                  "icon": "spell_animarevendreth_buff",
+                  "id": 14276,
+                  "points": 5,
+                  "title": "It's Always Sinny in Revendreth"
+                },
+                {
+                  "icon": "ability_priest_darkness",
+                  "id": 14277,
+                  "points": 15,
+                  "title": "The Accuser's Avowed"
                 }
-              ]
+              ],
+              "name": "Revendreth"
             },
             {
-              "name": "Ardenweald",
               "id": "a7a32064",
               "items": [
                 {
@@ -4970,10 +4957,10 @@
                   "points": 0,
                   "title": "Toss a Seed to Your Hunter..."
                 }
-              ]
+              ],
+              "name": "Ardenweald"
             },
             {
-              "name": "Bastion",
               "id": "d8d91e80",
               "items": [
                 {
@@ -5006,10 +4993,10 @@
                   "points": 10,
                   "title": "In the Hot Seat"
                 }
-              ]
+              ],
+              "name": "Bastion"
             },
             {
-              "name": "Maldraxxus",
               "id": "6da89931",
               "items": [
                 {
@@ -5023,30 +5010,42 @@
                   "id": 14763,
                   "points": 10,
                   "title": "Crypt Couture"
+                },
+                {
+                  "icon": "ability_creature_amber_02",
+                  "id": 14721,
+                  "points": 10,
+                  "title": "It's In The Mix"
+                },
+                {
+                  "icon": "inv_sword_111",
+                  "id": 14626,
+                  "points": 5,
+                  "title": "Harvester of Sorrow"
+                },
+                {
+                  "icon": "ability_warrior_bloodfrenzy",
+                  "id": 14802,
+                  "points": 10,
+                  "title": "Bloodsport"
                 }
-              ]
+              ],
+              "name": "Maldraxxus"
             },
             {
-              "name": "The Maw",
               "id": "e6cd0f66",
               "items": [
                 {
-                  "icon": "inv_stygia",
-                  "id": 14756,
+                  "icon": "inv_belt_mail_raidhunter_p_01",
+                  "id": 14894,
                   "points": 10,
-                  "title": "Stygian Sample"
+                  "title": "To 'Ghast, Two Curios"
                 },
                 {
-                  "icon": "inv_stygia",
-                  "id": 14757,
+                  "icon": "spell_animamaw_buff",
+                  "id": 14895,
                   "points": 10,
-                  "title": "Stygian Supply"
-                },
-                {
-                  "icon": "inv_stygia",
-                  "id": 14657,
-                  "points": 10,
-                  "title": "Stygian Stockpile"
+                  "title": "'Ghast Five"
                 },
                 {
                   "icon": "spell_holy_guardianspirit",
@@ -5114,10 +5113,10 @@
                   "points": 10,
                   "title": "Deciphering Death's Intentions"
                 }
-              ]
+              ],
+              "name": "The Maw"
             },
             {
-              "name": "Critters",
               "id": "cb2ed149",
               "items": [
                 {
@@ -5126,7 +5125,8 @@
                   "points": 10,
                   "title": "To All the Squirrels I've Loved and Lost"
                 }
-              ]
+              ],
+              "name": "Critters"
             }
           ]
         },
@@ -13016,28 +13016,10 @@
                   "title": "Impressing Zo'Sorg"
                 },
                 {
-                  "icon": "spell_holy_weaponmastery",
-                  "id": 14517,
-                  "points": 5,
-                  "title": "First Trial, First Try"
-                },
-                {
-                  "icon": "spell_holy_sealofvengeance",
-                  "id": 14518,
-                  "points": 20,
-                  "title": "The Many Trials of Zo'Sorg"
-                },
-                {
                   "icon": "spell_misc_hellifrepvpcombatmorale",
                   "id": 14519,
                   "points": 10,
                   "title": "Covenant Combat"
-                },
-                {
-                  "icon": "ability_deathknight_aoedeathgrip",
-                  "id": 14520,
-                  "points": 25,
-                  "title": "Deathbringer"
                 }
               ],
               "name": "Shadowlands"
@@ -14371,7 +14353,6 @@
           "name": "Shadowlands Dungeon",
           "subcats": [
             {
-              "name": "Sanguine Depths",
               "id": "82575f94",
               "items": [
                 {
@@ -14410,10 +14391,10 @@
                   "points": 10,
                   "title": "I Only Have Eyes For You"
                 }
-              ]
+              ],
+              "name": "Sanguine Depths"
             },
             {
-              "name": "Spires of Ascension",
               "id": "8d584964",
               "items": [
                 {
@@ -14452,10 +14433,10 @@
                   "points": 10,
                   "title": "Goliath Offline"
                 }
-              ]
+              ],
+              "name": "Spires of Ascension"
             },
             {
-              "name": "The Necrotic Wake",
               "id": "539b9fd3",
               "items": [
                 {
@@ -14494,10 +14475,10 @@
                   "points": 10,
                   "title": "Surgeon's Supplies"
                 }
-              ]
+              ],
+              "name": "The Necrotic Wake"
             },
             {
-              "name": "De Other Side",
               "id": "9345fdba",
               "items": [
                 {
@@ -14536,10 +14517,10 @@
                   "points": 10,
                   "title": "Thinking with..."
                 }
-              ]
+              ],
+              "name": "De Other Side"
             },
             {
-              "name": "Halls of Atonement",
               "id": "848a20a1",
               "items": [
                 {
@@ -14578,10 +14559,10 @@
                   "points": 10,
                   "title": "Picking Up the Pieces"
                 }
-              ]
+              ],
+              "name": "Halls of Atonement"
             },
             {
-              "name": "Mists of Tirna Scithe",
               "id": "b5c8efeb",
               "items": [
                 {
@@ -14620,10 +14601,10 @@
                   "points": 10,
                   "title": "Hooked On Hydroponics"
                 }
-              ]
+              ],
+              "name": "Mists of Tirna Scithe"
             },
             {
-              "name": "Plaguefall",
               "id": "987d161b",
               "items": [
                 {
@@ -14662,10 +14643,10 @@
                   "points": 10,
                   "title": "Full Gores Meal"
                 }
-              ]
+              ],
+              "name": "Plaguefall"
             },
             {
-              "name": "Theater of Pain",
               "id": "81e0ddf5",
               "items": [
                 {
@@ -14704,7 +14685,8 @@
                   "points": 10,
                   "title": "Fresh Meat!"
                 }
-              ]
+              ],
+              "name": "Theater of Pain"
             }
           ]
         },
@@ -29354,142 +29336,6 @@
               "name": "Daily"
             },
             {
-              "id": "2a20d92f",
-              "items": [
-                {
-                  "icon": "inv_pet_achievement_defeatpettamer",
-                  "id": "6601",
-                  "points": 5
-                },
-                {
-                  "icon": "inv_pet_achievement_defeatpettamer",
-                  "id": "7498",
-                  "points": 5
-                },
-                {
-                  "icon": "inv_pet_achievement_defeatpettamer",
-                  "id": "7499",
-                  "points": 10
-                },
-                {
-                  "criteria": {
-                    "21402": "28498",
-                    "21403": "28497",
-                    "21404": "28499",
-                    "21405": "28500",
-                    "21406": "28501",
-                    "21407": "28502",
-                    "21408": "28503",
-                    "21409": "28504",
-                    "21410": "28505",
-                    "21411": "28506",
-                    "21415": "21526",
-                    "21416": "28507"
-                  },
-                  "icon": "achievement_zone_kalimdor_01",
-                  "id": "6602",
-                  "points": 5,
-                  "side": "H"
-                },
-                {
-                  "criteria": {
-                    "21396": "21536",
-                    "21397": "21533",
-                    "21398": "21534",
-                    "21399": "21535",
-                    "21400": "28508",
-                    "21401": "28509",
-                    "21598": "28922",
-                    "21599": "28923",
-                    "21600": "28924",
-                    "21601": "28925",
-                    "21602": "28926",
-                    "21603": "28927"
-                  },
-                  "icon": "achievement_zone_easternkingdoms_01",
-                  "id": "6603",
-                  "points": 5,
-                  "side": "A"
-                },
-                {
-                  "criteria": {
-                    "21604": "21538",
-                    "21605": "21539",
-                    "21606": "28928",
-                    "21607": "28929",
-                    "21847": "28931"
-                  },
-                  "icon": "achievement_zone_outland_01",
-                  "id": "6604",
-                  "points": 5
-                },
-                {
-                  "criteria": {
-                    "21848": "21544",
-                    "21849": "21545",
-                    "21850": "21546",
-                    "21851": "21543",
-                    "21852": "29396"
-                  },
-                  "icon": "achievement_zone_northrend_01",
-                  "id": "6605",
-                  "points": 5
-                },
-                {
-                  "criteria": {
-                    "21858": "29399",
-                    "21859": "29400",
-                    "21860": "29401",
-                    "21861": "29402"
-                  },
-                  "icon": "achievement_zone_cataclysm",
-                  "id": "7525",
-                  "points": 5
-                },
-                {
-                  "criteria": {
-                    "21853": "21548",
-                    "21854": "21549",
-                    "21855": "21550",
-                    "21856": "21551",
-                    "21857": "29397",
-                    "21870": "29526",
-                    "21871": "29527"
-                  },
-                  "icon": "inv_pet_achievement_pandaria",
-                  "id": "6606",
-                  "points": 5
-                },
-                {
-                  "criteria": {
-                    "19418": "30953",
-                    "19419": "30953",
-                    "19420": "21521",
-                    "19421": "21520",
-                    "19422": "21522",
-                    "21862": "29403"
-                  },
-                  "icon": "inv_pet_achievement_defeatpettamer_all",
-                  "id": "6607",
-                  "points": 10
-                },
-                {
-                  "criteria": {
-                    "27011": "40953",
-                    "27012": "40949",
-                    "27013": "40950",
-                    "27014": "40954",
-                    "27015": "40951",
-                    "27016": "40952"
-                  },
-                  "icon": "achievement_zone_draenor_01",
-                  "id": "9724",
-                  "points": 5
-                }
-              ],
-              "name": "Taming"
-            },
-            {
               "id": "abe10071",
               "items": [
                 {
@@ -30282,6 +30128,12 @@
                   "id": 13693,
                   "points": 5,
                   "title": "Mecha-Safari"
+                },
+                {
+                  "icon": "inv_aetherwyrm",
+                  "id": 14867,
+                  "points": 5,
+                  "title": "Shadowlands Safari"
                 }
               ],
               "name": "Zones"
@@ -30526,6 +30378,142 @@
                 }
               ],
               "name": "Count"
+            },
+            {
+              "id": "effc4eab",
+              "items": [
+                {
+                  "icon": "inv_pet_achievement_defeatpettamer",
+                  "id": "6601",
+                  "points": 5
+                },
+                {
+                  "icon": "inv_pet_achievement_defeatpettamer",
+                  "id": "7498",
+                  "points": 5
+                },
+                {
+                  "icon": "inv_pet_achievement_defeatpettamer",
+                  "id": "7499",
+                  "points": 10
+                },
+                {
+                  "criteria": {
+                    "21402": "28498",
+                    "21403": "28497",
+                    "21404": "28499",
+                    "21405": "28500",
+                    "21406": "28501",
+                    "21407": "28502",
+                    "21408": "28503",
+                    "21409": "28504",
+                    "21410": "28505",
+                    "21411": "28506",
+                    "21415": "21526",
+                    "21416": "28507"
+                  },
+                  "icon": "achievement_zone_kalimdor_01",
+                  "id": "6602",
+                  "points": 5,
+                  "side": "H"
+                },
+                {
+                  "criteria": {
+                    "21396": "21536",
+                    "21397": "21533",
+                    "21398": "21534",
+                    "21399": "21535",
+                    "21400": "28508",
+                    "21401": "28509",
+                    "21598": "28922",
+                    "21599": "28923",
+                    "21600": "28924",
+                    "21601": "28925",
+                    "21602": "28926",
+                    "21603": "28927"
+                  },
+                  "icon": "achievement_zone_easternkingdoms_01",
+                  "id": "6603",
+                  "points": 5,
+                  "side": "A"
+                },
+                {
+                  "criteria": {
+                    "21604": "21538",
+                    "21605": "21539",
+                    "21606": "28928",
+                    "21607": "28929",
+                    "21847": "28931"
+                  },
+                  "icon": "achievement_zone_outland_01",
+                  "id": "6604",
+                  "points": 5
+                },
+                {
+                  "criteria": {
+                    "21848": "21544",
+                    "21849": "21545",
+                    "21850": "21546",
+                    "21851": "21543",
+                    "21852": "29396"
+                  },
+                  "icon": "achievement_zone_northrend_01",
+                  "id": "6605",
+                  "points": 5
+                },
+                {
+                  "criteria": {
+                    "21858": "29399",
+                    "21859": "29400",
+                    "21860": "29401",
+                    "21861": "29402"
+                  },
+                  "icon": "achievement_zone_cataclysm",
+                  "id": "7525",
+                  "points": 5
+                },
+                {
+                  "criteria": {
+                    "21853": "21548",
+                    "21854": "21549",
+                    "21855": "21550",
+                    "21856": "21551",
+                    "21857": "29397",
+                    "21870": "29526",
+                    "21871": "29527"
+                  },
+                  "icon": "inv_pet_achievement_pandaria",
+                  "id": "6606",
+                  "points": 5
+                },
+                {
+                  "criteria": {
+                    "19418": "30953",
+                    "19419": "30953",
+                    "19420": "21521",
+                    "19421": "21520",
+                    "19422": "21522",
+                    "21862": "29403"
+                  },
+                  "icon": "inv_pet_achievement_defeatpettamer_all",
+                  "id": "6607",
+                  "points": 10
+                },
+                {
+                  "criteria": {
+                    "27011": "40953",
+                    "27012": "40949",
+                    "27013": "40950",
+                    "27014": "40954",
+                    "27015": "40951",
+                    "27016": "40952"
+                  },
+                  "icon": "achievement_zone_draenor_01",
+                  "id": "9724",
+                  "points": 5
+                }
+              ],
+              "name": "Taming"
             },
             {
               "id": "8ddee335",
@@ -31073,10 +31061,10 @@
                   "title": "Nautical Nuisances of Nazjatar"
                 },
                 {
-                  "icon": "inv_letter_04",
-                  "id": 13766,
+                  "icon": "inv_pet_batpetrevendreth_red",
+                  "id": 14881,
                   "points": 10,
-                  "title": "Malowned"
+                  "title": "Abhorrent Adversaries of the Afterlife"
                 }
               ],
               "name": "Zones"
@@ -31670,6 +31658,78 @@
               "name": "Species: Battle for Azeroth"
             },
             {
+              "name": "Species: Shadowlands",
+              "id": "f1ae258d",
+              "items": [
+                {
+                  "icon": "ability_mount_pandaranmountpurple",
+                  "id": 14868,
+                  "points": 5,
+                  "title": "Aquatic Apparitions"
+                },
+                {
+                  "icon": "inv_babyfox_black",
+                  "id": 14869,
+                  "points": 5,
+                  "title": "Beast Busters"
+                },
+                {
+                  "icon": "inv_squirrelardenweald_blue",
+                  "id": 14870,
+                  "points": 5,
+                  "title": "Creepy Critters"
+                },
+                {
+                  "icon": "inv_pet_dkwhelplingfrost",
+                  "id": 14871,
+                  "points": 5,
+                  "title": "Deathly Dragonkin"
+                },
+                {
+                  "icon": "inv_swamppet",
+                  "id": 14872,
+                  "points": 5,
+                  "title": "Eerie Elementals"
+                },
+                {
+                  "icon": "inv_pet_wingedlion2pet_dark",
+                  "id": 14873,
+                  "points": 5,
+                  "title": "Flickering Fliers"
+                },
+                {
+                  "icon": "inv_babysteward_gold",
+                  "id": 14874,
+                  "points": 5,
+                  "title": "Haunted Humanoids"
+                },
+                {
+                  "icon": "inv_catslime",
+                  "id": 14875,
+                  "points": 5,
+                  "title": "Mummified Magics"
+                },
+                {
+                  "icon": "inv_automatonlionmount2",
+                  "id": 14876,
+                  "points": 5,
+                  "title": "Macabre Mechanicals"
+                },
+                {
+                  "icon": "inv_mawhand_green",
+                  "id": 14877,
+                  "points": 5,
+                  "title": "Unholy Undead"
+                },
+                {
+                  "icon": "spell_holy_turnundead",
+                  "id": 14879,
+                  "points": 10,
+                  "title": "Family Exorcist"
+                }
+              ]
+            },
+            {
               "id": "4bbaf263",
               "items": [
                 {
@@ -31744,6 +31804,12 @@
                   "icon": "inv_pet_baby_elekk_blue",
                   "id": "9069",
                   "points": 10
+                },
+                {
+                  "icon": "inv_letter_04",
+                  "id": 13766,
+                  "points": 10,
+                  "title": "Malowned"
                 }
               ],
               "name": "Other"
@@ -32765,6 +32831,12 @@
                   "id": 14059,
                   "points": 10,
                   "title": "The Eyes Have It"
+                },
+                {
+                  "icon": "inv_cloth_revendrethraid_d_01_helm",
+                  "id": 14831,
+                  "points": 10,
+                  "title": "I Live, I Die, I Queue Again"
                 }
               ],
               "name": "PvP"
@@ -32796,12 +32868,6 @@
             {
               "id": "82ccc066",
               "items": [
-                {
-                  "icon": "inv_bastion",
-                  "id": 14502,
-                  "points": 5,
-                  "title": "Pursuing Loyalty"
-                },
                 {
                   "icon": "achievement_mythicdungeons_shadowlands",
                   "id": 14627,
@@ -32836,67 +32902,6 @@
               "name": ""
             },
             {
-              "name": "Path of Ascension",
-              "id": "2b4408a7",
-              "items": [
-                {
-                  "icon": "ui_sigil_kyrian",
-                  "id": 14340,
-                  "points": 5,
-                  "title": "The Path Towards Ascension 1"
-                },
-                {
-                  "icon": "ui_sigil_kyrian",
-                  "id": 14342,
-                  "points": 5,
-                  "title": "The Path Towards Ascension 3"
-                },
-                {
-                  "icon": "ui_sigil_kyrian",
-                  "id": 14343,
-                  "points": 5,
-                  "title": "The Path Towards Ascension 5"
-                },
-                {
-                  "icon": "ui_sigil_kyrian",
-                  "id": 14344,
-                  "points": 5,
-                  "title": "The Path Towards Ascension 7"
-                },
-                {
-                  "icon": "ui_sigil_kyrian",
-                  "id": 14345,
-                  "points": 5,
-                  "title": "The Path Towards Ascension 12"
-                },
-                {
-                  "icon": "ui_sigil_kyrian",
-                  "id": 14346,
-                  "points": 5,
-                  "title": "The Path Towards Ascension 16"
-                },
-                {
-                  "icon": "ui_sigil_kyrian",
-                  "id": 14348,
-                  "points": 5,
-                  "title": "The Path Towards Ascension 20"
-                },
-                {
-                  "icon": "ui_sigil_kyrian",
-                  "id": 14349,
-                  "points": 5,
-                  "title": "The Path Towards Ascension 24"
-                },
-                {
-                  "icon": "ui_sigil_kyrian",
-                  "id": 14351,
-                  "points": 5,
-                  "title": "The Path Towards Ascension 39"
-                }
-              ]
-            },
-            {
-              "name": "Ember Court",
               "id": "1c4c95b4",
               "items": [
                 {
@@ -32971,10 +32976,10 @@
                   "points": 5,
                   "title": "Rendle's Big Day"
                 }
-              ]
+              ],
+              "name": "Ember Court"
             },
             {
-              "name": "Renown",
               "id": "9c06611a",
               "items": [
                 {
@@ -33001,10 +33006,10 @@
                   "points": 10,
                   "title": "Champion of the Covenant"
                 }
-              ]
+              ],
+              "name": "Renown"
             },
             {
-              "name": "Anima Conductor",
               "id": "424f61cf",
               "items": [
                 {
@@ -33025,10 +33030,10 @@
                   "points": 10,
                   "title": "Dedication to the Restoration"
                 }
-              ]
+              ],
+              "name": "Anima Conductor"
             },
             {
-              "name": "Abominable Stitching",
               "id": "4367adf2",
               "items": [
                 {
@@ -33054,11 +33059,17 @@
                   "id": 14752,
                   "points": 10,
                   "title": "Things To Do When You're Dead"
+                },
+                {
+                  "icon": "tradeskill_abominationstitching_accessories",
+                  "id": 14833,
+                  "points": 10,
+                  "title": "Fashion Abomination"
                 }
-              ]
+              ],
+              "name": "Abominable Stitching"
             },
             {
-              "name": "Queen's Conservatory",
               "id": "2860ecd5",
               "items": [
                 {
@@ -33097,10 +33108,196 @@
                   "points": 10,
                   "title": "All Spirits Great and Small"
                 }
+              ],
+              "name": "Queen's Conservatory"
+            },
+            {
+              "name": "Soulbinds",
+              "id": "b4ff1c16",
+              "items": [
+                {
+                  "icon": "spell_animabastion_beam",
+                  "id": 14834,
+                  "points": 10,
+                  "title": "Bound with Purpose"
+                },
+                {
+                  "icon": "spell_animabastion_beam",
+                  "id": 14835,
+                  "points": 10,
+                  "title": "A Resolute Bond"
+                },
+                {
+                  "icon": "spell_animabastion_beam",
+                  "id": 14836,
+                  "points": 10,
+                  "title": "Unwavering Bond"
+                },
+                {
+                  "icon": "spell_animabastion_beam",
+                  "id": 14837,
+                  "points": 10,
+                  "title": "Nexus of Bonds"
+                }
               ]
             },
             {
-              "name": "Other",
+              "name": "Adventures",
+              "id": "f45b665a",
+              "items": [
+                {
+                  "icon": "achievement_arena_3v3_4",
+                  "id": 14839,
+                  "points": 10,
+                  "title": "Bound To Adventure"
+                },
+                {
+                  "icon": "inv_misc_rope_02",
+                  "id": 14840,
+                  "points": 10,
+                  "title": "Adventures: Learning the Ropes"
+                },
+                {
+                  "icon": "inv_cooking_80_minorfeast",
+                  "id": 14841,
+                  "points": 10,
+                  "title": "Adventures: Now You're Cooking"
+                },
+                {
+                  "icon": "spell_nature_strength",
+                  "id": 14842,
+                  "points": 10,
+                  "title": "Adventures: Strength and Resilience"
+                },
+                {
+                  "icon": "ability_paladin_blessedhands",
+                  "id": 14843,
+                  "points": 10,
+                  "title": "Adventures: Harmony of Purpose"
+                },
+                {
+                  "icon": "spell_shaman_earthquake",
+                  "id": 14844,
+                  "points": 10,
+                  "title": "Adventures: Into the Breach"
+                },
+                {
+                  "icon": "inv_boot_robe_pvpmage_e_01",
+                  "id": 14845,
+                  "points": 10,
+                  "title": "Adventures: A Step in the Right Direction"
+                },
+                {
+                  "icon": "inv_misc_herb_torngreentealeaf",
+                  "id": 14846,
+                  "points": 10,
+                  "title": "Adventures: Leaves in the Forest"
+                },
+                {
+                  "icon": "shield_draenorcrafted_d_02_a_alliance",
+                  "id": 14847,
+                  "points": 10,
+                  "title": "Adventures: Protector of the Shadowlands"
+                }
+              ]
+            },
+            {
+              "id": "f8537988",
+              "items": [
+                {
+                  "icon": "inv_shield_1h_bastion_d_01",
+                  "id": 14851,
+                  "points": 5,
+                  "title": "Bastion of Protection"
+                },
+                {
+                  "icon": "ability_kyrian_summonsteward",
+                  "id": 14852,
+                  "points": 5,
+                  "title": "The Hoot of the Issue"
+                },
+                {
+                  "icon": "ability_creature_disease_02",
+                  "id": 14853,
+                  "points": 5,
+                  "title": "All The Colors of the Painbow"
+                },
+                {
+                  "icon": "inv_70_dungeon_ring7c",
+                  "id": 14854,
+                  "points": 5,
+                  "title": "It's Not What You Wear"
+                },
+                {
+                  "icon": "achievement_dungeon_nexus80_heroic",
+                  "id": 14856,
+                  "points": 5,
+                  "title": "Charmed, I'm Sure"
+                },
+                {
+                  "icon": "inv_minespider2_green",
+                  "id": 14857,
+                  "points": 5,
+                  "title": "Itsy Bitsy Fighters"
+                },
+                {
+                  "icon": "spell_animarevendreth_debuff",
+                  "id": 14858,
+                  "points": 5,
+                  "title": "Curse of Thirst"
+                },
+                {
+                  "icon": "inv_babysteward_silver",
+                  "id": 14859,
+                  "points": 5,
+                  "title": "Inside the Park Home Run"
+                },
+                {
+                  "icon": "spell_magic_magearmor",
+                  "id": 14860,
+                  "points": 5,
+                  "title": "Bare Necessities"
+                },
+                {
+                  "icon": "ability_bastion_druid",
+                  "id": 14861,
+                  "points": 5,
+                  "title": "Learning from the Masters"
+                },
+                {
+                  "icon": "inv_helm_plate_bastion_d_01",
+                  "id": 14862,
+                  "points": 5,
+                  "title": "It's How You Wear It"
+                },
+                {
+                  "icon": "inv_drink_31_embalmingfluid",
+                  "id": 14863,
+                  "points": 5,
+                  "title": "Death Foursworn"
+                },
+                {
+                  "icon": "spell_animabastion_debuff",
+                  "id": 14864,
+                  "points": 5,
+                  "title": "Personal Nightmare"
+                },
+                {
+                  "icon": "achievement_dungeon_spireofascension_paragonofloyalty",
+                  "id": 14865,
+                  "points": 5,
+                  "title": "Disciple of Humility"
+                },
+                {
+                  "icon": "inv_trinket_bastion_02_purple",
+                  "id": 14866,
+                  "points": 5,
+                  "title": "Master of the Path"
+                }
+              ],
+              "name": "Trials"
+            },
+            {
               "id": "3b57b22f",
               "items": [
                 {
@@ -33120,8 +33317,15 @@
                   "id": 14775,
                   "points": 5,
                   "title": "Mush Appreciated"
+                },
+                {
+                  "icon": "inv_glove_plate_bastion_d_01",
+                  "id": 14887,
+                  "points": 0,
+                  "title": "To the Moon"
                 }
-              ]
+              ],
+              "name": "Other"
             }
           ]
         },
@@ -33130,7 +33334,6 @@
           "name": "Torghast",
           "subcats": [
             {
-              "name": "Wings",
               "id": "bebf8af7",
               "items": [
                 {
@@ -33169,10 +33372,10 @@
                   "points": 10,
                   "title": "The Upper Reaches"
                 }
-              ]
+              ],
+              "name": "Wings"
             },
             {
-              "name": "Wing Layers",
               "id": "6bf08cb9",
               "items": [
                 {
@@ -33193,10 +33396,10 @@
                   "points": 10,
                   "title": "Terror of Torghast"
                 }
-              ]
+              ],
+              "name": "Wing Layers"
             },
             {
-              "name": "Twisting Corridors",
               "id": "fd519ab4",
               "items": [
                 {
@@ -33247,10 +33450,10 @@
                   "points": 10,
                   "title": "Twisting Corridors: Layer 8"
                 }
-              ]
+              ],
+              "name": "Twisting Corridors"
             },
             {
-              "name": "Phantasma",
               "id": "08945a7b",
               "items": [
                 {
@@ -33271,10 +33474,10 @@
                   "points": 5,
                   "title": "Phanatical"
                 }
-              ]
+              ],
+              "name": "Phantasma"
             },
             {
-              "name": "Runecarver",
               "id": "be203ff0",
               "items": [
                 {
@@ -33307,7 +33510,8 @@
                   "points": 15,
                   "title": "Clearing the Fog"
                 }
-              ]
+              ],
+              "name": "Runecarver"
             },
             {
               "id": "c8c2c14c",
@@ -38306,6 +38510,12 @@
                   "id": 13958,
                   "points": 0,
                   "title": "Corrupted Gladiator's Proto-Drake"
+                },
+                {
+                  "icon": "inv_shadebeastmount",
+                  "id": 14816,
+                  "points": 0,
+                  "title": "Sinful Gladiator's Soul Eater"
                 }
               ],
               "name": "PVP"
@@ -39819,7 +40029,7 @@
                   "title": "Gladiator: Shadowlands Season 1"
                 },
                 {
-                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "icon": "achievement_featsofstrength_gladiator_07",
                   "id": 14690,
                   "points": 0,
                   "title": "Sinful Gladiator: Shadowlands Season 1"
