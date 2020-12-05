@@ -384,6 +384,181 @@
     ]
   },
   {
+    "name": "Shadowlands",
+    "subcats": [
+      {
+        "name": "Ardenweald",
+        "items": [
+          {
+              "ID": 2919,
+              "creatureId": 171229,
+              "icon": "inv_decomposermountyellow",
+              "name": "Gorm Rootstinger"
+          },
+          {
+              "ID": 2924,
+              "creatureId": 171228,
+              "icon": "ability_mount_cranemount",
+              "name": "Tranquil Wader"
+          },
+          {
+              "ID": 3021,
+              "creatureId": 173590,
+              "icon": "inv_squirrelardenweald_dark",
+              "name": "Deepwood Leaper"
+          },
+          {
+              "ID": 3080,
+              "creatureId": 176019,
+              "icon": "inv_babyfox_green",
+              "name": "Verdant Kit"
+          },
+          {
+              "ID": 3081,
+              "creatureId": 176020,
+              "icon": "inv_decomposersmallgreen",
+              "name": "Decay Grub"
+          },
+          {
+              "ID": 3082,
+              "creatureId": 176021,
+              "icon": "inv_mothardenwealdmount_mint",
+              "name": "Starmoth"
+          }
+        ]
+      },
+      {
+        "name": "Bastion",
+        "items": [
+          {
+              "ID": 2926,
+              "creatureId": 171567,
+              "icon": "ability_mount_pandarenphoenix",
+              "name": "Fledgling Teroclaw"
+          },
+          {
+              "ID": 2927,
+              "creatureId": 171664,
+              "icon": "inv_magicbutterfly_blue",
+              "name": "Fluttering Glimmerfly"
+          },
+          {
+              "ID": 2929,
+              "creatureId": 171668,
+              "icon": "inv_magicbutterfly_pink",
+              "name": "Vibrant Glimmerfly"
+          },
+          {
+              "ID": 2930,
+              "creatureId": 171670,
+              "icon": "ability_mount_pandaranmountepicblack",
+              "name": "Glimmerpool Hatchling"
+          },
+          {
+              "ID": 2936,
+              "creatureId": 171702,
+              "icon": "inv_babyfox_orange",
+              "name": "Copperfur Kit"
+          },
+          {
+              "ID": 2937,
+              "creatureId": 171703,
+              "icon": "inv_babyfox_red",
+              "name": "Rustfur Kit"
+          },
+          {
+              "ID": 2939,
+              "creatureId": 171712,
+              "icon": "ability_mount_cranemountblue",
+              "name": "Wader Chick"
+          },
+          {
+              "ID": 2943,
+              "creatureId": 171666,
+              "icon": "inv_aetherwyrm",
+              "name": "Wild Etherwyrm"
+          }
+        ]
+      },
+      {
+        "name": "Maldraxxus",
+        "items": [
+          {
+              "ID": 2950,
+              "creatureId": 172130,
+              "icon": "inv_skeletonhandpet_bone",
+              "name": "Clutch"
+          },
+          {
+              "ID": 3049,
+              "creatureId": 175021,
+              "icon": "inv_larva2_darkred",
+              "name": "Pulsating Maggot"
+          },
+          {
+              "ID": 3050,
+              "creatureId": 175022,
+              "icon": "inv_minespider2_green",
+              "name": "Bleak Skitterer"
+          },
+          {
+              "ID": 3051,
+              "creatureId": 175023,
+              "icon": "inv_maldraxxusslime_purple",
+              "name": "Animated Cruor"
+          },
+          {
+              "ID": 3052,
+              "creatureId": 175024,
+              "icon": "inv_manaraymount_black",
+              "name": "Necroray Spawnling"
+          },
+          {
+              "ID": 3083,
+              "creatureId": 176024,
+              "icon": "inv_pet_batpetmaldraxxus",
+              "name": "Crawbat"
+          }
+        ]
+      },
+      {
+        "name": "Revendreth",
+        "items": [
+          {
+              "ID": 2895,
+              "creatureId": 171123,
+              "icon": "sha_spell_warlock_demonsoul",
+              "name": "Lost Soul"
+          },
+          {
+              "ID": 2902,
+              "creatureId": 171149,
+              "icon": "inv_giantvampirebatmount_silver",
+              "name": "Dusky Dredwing Pup"
+          },
+          {
+              "ID": 3007,
+              "creatureId": 173506,
+              "icon": "inv_minespider2_wetlands",
+              "name": "Rosetipped Spiderling"
+          },
+          {
+              "ID": 3014,
+              "creatureId": 173555,
+              "icon": "inv_swamppet_green",
+              "name": "Mire Creeper"
+          },
+          {
+              "ID": 3015,
+              "creatureId": 173556,
+              "icon": "inv_swamppet",
+              "name": "Withering Creeper"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "becfd036",
     "name": "Battle for Azeroth",
     "subcats": [
