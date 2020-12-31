@@ -63,9 +63,10 @@
 
                   profileCached = data.data;
 
-                  // add region and faction to character
+                  // add region, faction and class to character
                   profileCached.region = $routeParams.region;
                   profileCached.realm = $routeParams.realm;
+                  profileCached.class = data.data.character_class.id;
                   profileCached.faction = [
                     '',
                     'A',  // Human
