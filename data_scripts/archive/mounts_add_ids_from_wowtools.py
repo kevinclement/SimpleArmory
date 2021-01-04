@@ -128,7 +128,7 @@ if __name__ == '__main__':
         for row in reader:
             # print(row['Name_lang'],row['ID'], row['SourceSpellID'])
             spellid_to_id[int(row['SourceSpellID'])] = row['ID']
-        
+
         mounts = json.load(open(sys.argv[1]))
 
         fixer = MountFixer(spellid_to_id, mounts)
