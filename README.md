@@ -15,20 +15,18 @@ This is the code used to build out [simplearmory.com](http://simplearmory.com) w
 ```shell
 git clone https://github.com/kevinclement/SimpleArmory.git SA
 cd SA
-npm install
-npm install -g grunt-cli bower
-bower install
+yarn
 ```
 
 ## Start Development
 
-- run `grunt serve`
+- run `yarn serve`
 - point your browser to [localhost:9001](http://localhost:9001)
 
 ## Dev Tasks
 
-- `grunt` builds the site full
-- `grunt serve` runs the app in dev mode
+- `yarn build` builds the site full
+- `yarn serve` runs the app in dev mode
 
 To test changes I usually use a character that has a lot of achievements, mounts and pets from both factions.  I usually check out rankings on guildox.
 - [Achievements - Horde](http://localhost:9001/#/us/Thrall/Ranklock)

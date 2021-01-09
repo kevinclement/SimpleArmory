@@ -92,6 +92,7 @@ module.exports = (env, options) => ({
     devServer: {
         publicPath: "/",
         contentBase: "./dist",
+        port: 9001,
         hot: true,
     },
     performance: {
