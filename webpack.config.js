@@ -56,7 +56,7 @@ const patterns = [
 ];
 
 module.exports = (env, options) => ({
-    mode: "production",
+    mode: options.mode,
     entry: {
         angular: [
             "./node_modules/angular/angular",
