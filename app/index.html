@@ -1,20 +1,15 @@
 <!doctype html>
-<html class="no-js">
+<html class='no-js'>
   <head>
     <meta charset="utf-8">
     <title>Simple Armory</title>
- 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	  <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Simplified armory site for World of Warcraft">
-    <meta name="author" content="Kevin Clement">   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="bower_components/angular-ui-select/dist/select.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
+    <meta name="author" content="Kevin Clement">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="bootstrap/select/select.css" />
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body ng-app="simpleArmoryApp" ng-controller="ApplicationCtrl" ng-class="{dark: isUsingDarkTheme}">
     <!--[if lt IE 7]>
@@ -46,68 +41,6 @@
        ga('create', 'UA-40763505-1', 'simplearmory.com');
        ga('send', 'pageview');
     </script>
-
-    <!-- build:js(.) scripts/oldieshim.js -->
-    <!--[if lt IE 9]>
-    <script src="bower_components/es5-shim/es5-shim.js"></script>
-    <script src="bower_components/json3/lib/json3.js"></script>
-    <![endif]-->
-    <!-- endbuild -->
-
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-    <script src="bower_components/angular-ui-select/dist/select.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-
-    <!-- build:js({.tmp,app}) scripts/scripts.js -->
-    <script src="scripts/polyfill.js"></script>
-    <script src="scripts/app.js"></script>
-
-    <script src="scripts/controllers/achievements.controller.js"></script>
-    <script src="scripts/controllers/application.controller.js"></script>
-    <script src="scripts/controllers/battlePets.controller.js"></script>
-    <script src="scripts/controllers/calendar.controller.js"></script>
-    <script src="scripts/controllers/companions.controller.js"></script>
-    <script src="scripts/controllers/error.controller.js"></script>
-    <script src="scripts/controllers/header.controller.js"></script>
-    <script src="scripts/controllers/login.controller.js"></script>
-    <script src="scripts/controllers/mounts.controller.js"></script>
-    <script src="scripts/controllers/overview.controller.js"></script>
-    <script src="scripts/controllers/reputation.controller.js"></script>
-    <script src="scripts/controllers/settings.controller.js"></script>
-    <script src="scripts/controllers/toys.controller.js"></script>
-
-    <script src="scripts/services/login.service.js"></script>
-    <script src="scripts/services/admin.service.js"></script>
-    <script src="scripts/services/achievements.service.js"></script>
-    <script src="scripts/services/blizzardRealm.service.js"></script>
-    <script src="scripts/services/mountsAndPets.service.js"></script>
-    <script src="scripts/services/toys.service.js"></script>
-    <script src="scripts/services/konami.service.js"></script>
-    <script src="scripts/services/keyboard.service.js"></script>
-    <script src="scripts/services/planner.service.js"></script>
-    <script src="scripts/services/factions.service.js"></script>
-    <script src="scripts/services/settings.service.js"></script>
-
-    <script src="scripts/filters/filters.js"></script>
-    <script src="scripts/directives/directives.js"></script>
-    <script src="scripts/directives/reputationRow.js"></script>
-    <!-- endbuild -->
-
-    <!-- build:DEV_ONLY -->
-    <script src="scripts/directives/dragdrop.js"></script>
-    <script src="scripts/controllers/admin.controller.js"></script>
-    <script src="scripts/controllers/admin.categories.controller.js"></script>
-    <script src="scripts/controllers/admin.mounts.controller.js"></script>
-    <script src="scripts/controllers/admin.missing.controller.js"></script>
-    <!-- endbuild -->
     <script type="text/javascript" src="//static.wowhead.com/widgets/power.js"></script>
 </body>
 </html>
