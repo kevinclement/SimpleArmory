@@ -1,37 +1,8 @@
-[ ] Prep to check-in
-
-  [ ] publish netlify on new branch
-  [ ] send out PR and request for feedback
-    [ ] full migration to modern framework - svelte
-    [ ] removed bunch of javascript, jquery, bootstrap, ui-select
-    [ ] perf differences
-      [ ] lighthouse score
-    [ ] added support for app as a PWA
-    [ ] added basic offline protection, no caching for now
-    [ ] added loading indicators to site
-    [ ] added ability to deeplink to planner
-    [ ] added ability to logout from profile
-    [ ] added bug reporting to profile dropdown
-    [ ] bunch of accessibility fixes
-    [ ] fixed some error/login pain points in router
-    [ ] save current character to localstorage and restore it if navigate to root
-    [ ] minor tweaks to title
-    [ ] updated favicon and its handling to be proper across browsers
-    [ ] full visual pass
-
-  [x] use branch in main git
-  [x] copy over data scripts
-  [x] copy and update Readme.md
-  [x] toys.test.txt - keep or move?
-    [x] move to test
-  [x] move perf to test folder
-
 [ ] see how expensive removing unused bootstrap css
 
 ## Punted for now #######
 [ ] split out css overrides so they sit next to components/views
 [ ] Update bootstrap version
-
 
 ## Finished #######
 [x] services
@@ -207,3 +178,14 @@
   [x] BUG: can't reselect same selected item
   [x] tab doesn't seem to work on safari
   [x] width fix
+[x] Prep to check-in
+  [x] publish netlify on new branch
+    https://601904761d3a3d00071470d0--simplearmory.netlify.app/#/
+  [x] send out PR and request for feedback
+    https://github.com/kevinclement/SimpleArmory/pull/348
+  [x] use branch in main git
+  [x] copy over data scripts
+  [x] copy and update Readme.md
+  [x] toys.test.txt - keep or move?
+    [x] move to test
+  [x] move perf to test folder
