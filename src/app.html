@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Simplified armory site for World of Warcraft">
+		<meta name="author" content="Kevin Clement">
+		<!-- Google / Search Engine Tags -->
+		<meta itemprop="name" content="Simple Armory" />
+		<meta itemprop="description" content="Simplified armory site for World of Warcraft" />
+		<title>Simple Armory</title>
+
+		<!-- TODO: either update bootstrap or use proper npm -->
+		<link rel="stylesheet" href="/css/bootstrap.min.css">
+		
+		<!-- TODO: split css out of global into sections per comp -->
+		<link rel="stylesheet" href="/css/global.css">
+
+		<link rel="apple-touch-icon"      sizes="180x180" href="/images/apple-touch-icon.png"  />
+	  	<link rel="icon" type="image/png" sizes="32x32"   href="/images/favicon-32x32.png"     />
+	    <link rel="icon" type="image/png" sizes="16x16"   href="/images/favicon-16x16.png"     />
+	    <link rel="mask-icon" color="#333333"             href="/images/safari-pinned-tab.svg" />
+	    <link rel="shortcut icon"                         href="/favicon.ico"                  />
+
+		<link rel="manifest" href="/manifest.json">
+		
+		<meta name="application-name" content="Simple Armory">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="apple-mobile-web-app-title" content="Simple Armory">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="theme-color" content="#686868">
+
+		<script src="//static.wowhead.com/widgets/power.js" async></script>
+
+		%svelte.head%
+	</head>
+	<body>
+		
+		<noscript>
+			<div>
+			  Oops! Javascript required here! Allow it and try again!
+			</div>
+		</noscript>
+
+		<div id="svelte">%svelte.body%</div>
+
+		<!-- Google Analytics -->
+		<script>
+			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+			// NOTE: to test with localhost use the below
+			//   ga('create', 'UA-40763505-1', 'simplearmory.com', {'cookieDomain': 'none'});
+			ga('create', 'UA-40763505-1', 'simplearmory.com');
+			ga('send', 'pageview');
+		</script>
+		<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+		<!-- PWA Stuff -->
+		<script>
+			window.addEventListener('appinstalled', (event) => {
+				ga('send', 'event', 'AppInstalled');
+			});
+			if ('serviceWorker' in navigator) {
+  				window.addEventListener('load', function() {
+    				navigator.serviceWorker.register('/service-worker.js');
+  				});
+			}
+		</script>
+	</body>
+</html>
