@@ -1,5 +1,5 @@
 [ ] Prep to check-in
-  [ ] use branch in main git
+
   [ ] publish netlify on new branch
   [ ] send out PR and request for feedback
     [ ] full migration to modern framework - svelte
@@ -19,6 +19,7 @@
     [ ] updated favicon and its handling to be proper across browsers
     [ ] full visual pass
 
+  [x] use branch in main git
   [x] copy over data scripts
   [x] copy and update Readme.md
   [x] toys.test.txt - keep or move?
