@@ -2,6 +2,23 @@
   [ ] use branch in main git
   [ ] publish netlify on new branch
   [ ] send out PR and request for feedback
+    [ ] full migration to modern framework - svelte
+    [ ] removed bunch of javascript, jquery, bootstrap, ui-select
+    [ ] perf differences
+      [ ] lighthouse score
+    [ ] added support for app as a PWA
+    [ ] added basic offline protection, no caching for now
+    [ ] added loading indicators to site
+    [ ] added ability to deeplink to planner
+    [ ] added ability to logout from profile
+    [ ] added bug reporting to profile dropdown
+    [ ] bunch of accessibility fixes
+    [ ] fixed some error/login pain points in router
+    [ ] save current character to localstorage and restore it if navigate to root
+    [ ] minor tweaks to title
+    [ ] updated favicon and its handling to be proper across browsers
+    [ ] full visual pass
+
   [x] copy over data scripts
   [x] copy and update Readme.md
   [x] toys.test.txt - keep or move?
