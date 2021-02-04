@@ -54,7 +54,7 @@
 	})
 
     function getCharInfoFromURL() {
-		let [,loc_region,loc_realm,loc_character,loc_page,loc_category,loc_subcat] = window.document.location.hash.slice(1).split("/");
+		let [,loc_region,loc_realm,loc_character,loc_page,loc_category,loc_subcat] = decodeURIComponent(window.document.location.hash).slice(1).split("/");
 
 		// NOTE: Might be totally overkill
 		//
