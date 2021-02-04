@@ -63,7 +63,7 @@
 		if (!e.target || 
 			 e.target.className === "signin-label" ||
 			 e.target.className === "signin-name" ||
-			 (e.target.className === "dropdown-menu" && e.target?.getAttribute('aria-labelledby') === "profileDrop")) {
+			(e.target.className === "dropdown-menu" && e.target.getAttribute('aria-labelledby') === "profileDrop")) {
 			 return;
 		}
 
