@@ -1,3 +1,5 @@
+[ ] There seems to be a weird race condition in the realm selection, when I type "arc really fast it sometimes selects Aegwynn.
+
 [ ] see how expensive removing unused bootstrap css
 
 ## Punted for now #######
@@ -189,3 +191,5 @@
   [x] toys.test.txt - keep or move?
     [x] move to test
   [x] move perf to test folder
+[x] URL encoding error in the profile: "Signed in as Ana%C3%Bfza @ Archimonde"
+[x] selecting text in the profile modal closes the window

@@ -54,10 +54,22 @@
 		// TODO: what behavior do we want for active when clicking and another one comes active
 		//       I'm doing the same thing I did before, but not sure I'm totally sold on it
 
-		window.document.addEventListener('click', closeMenus, false);
+		window.document.addEventListener('click', onDocumentClick, false);
 		window.document.addEventListener('keydown', onDocumentKeydown, false)
 	})
 	
+	function onDocumentClick(e) {		
+		// ignore clicks on the profile name as to allow text selection
+		if (!e.target || 
+			 e.target.className === "signin-label" ||
+			 e.target.className === "signin-name" ||
+			 (e.target.className === "dropdown-menu" && e.target?.getAttribute('aria-labelledby') === "profileDrop")) {
+			 return;
+		}
+
+		closeMenus();
+	}
+
 	function onDocumentKeydown(e) {
 		// if escape was pressed, close all menus
 		if (e.which === 27) {
