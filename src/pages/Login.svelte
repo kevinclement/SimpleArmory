@@ -94,7 +94,7 @@
 
     const keydown = (e) => {
         // check if enter pressed, and simulate ok click
-        if(e.which === 13) {
+        if(e.which === 13 && isValid) {
             e.preventDefault();
             ok();
         }
