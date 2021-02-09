@@ -49,9 +49,20 @@
 		<script>
 			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
 			// NOTE: to test with localhost use the below
-			//   ga('create', 'UA-40763505-1', 'simplearmory.com', {'cookieDomain': 'none'});
-			ga('create', 'UA-40763505-1', 'simplearmory.com');
+			// ga('create', 'UA-40763505-1', 'simplearmory.com', {'cookieDomain': 'none', 'siteSpeedSampleRate': 10});
+			ga('create', 'UA-40763505-1', 'simplearmory.com', {'siteSpeedSampleRate': 10});
 			ga('send', 'pageview');
+
+			// set rewrite up as an app version
+			ga('set', 'appVersion', 'svelte');
+
+			// hookup poor mans error tracking
+			window.onerror = function (err, url, line) {
+				ga('send', 'exception', {
+					'exDescription': line + " " + err
+					});
+			};
+	
 		</script>
 		<script async src='https://www.google-analytics.com/analytics.js'></script>
 
