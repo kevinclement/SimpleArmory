@@ -1,3 +1,7 @@
+[ ] BUG: LOGIN: type 'ARC<TAB><ENTER>' very fast, throws a script error
+[ ] BUG: LOGIN: "enter" doesn't submit the character selection form?
+
+[ ] prob need to do another update for all the wowhead hover states
 [ ] see how expensive removing unused bootstrap css
 
 ## Punted for now #######
@@ -193,3 +197,4 @@
 [x] selecting text in the profile modal closes the window
 [\] There seems to be a weird race condition in the realm selection, when I type "arc really fast it sometimes selects Aegwynn.
   [x] not repro, tried bunch of browsers and slowdown
+[x] BUG: LOGIN: type 'ARC<ENTER><TAB>' very fast.  Improperly selects 'Aegwynn'

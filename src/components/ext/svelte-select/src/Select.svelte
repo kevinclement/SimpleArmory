@@ -602,6 +602,8 @@
           resetFilter();
           selectedValue = selectedValue;
 
+          // kevinc: set closing to fix race when enter+tab quickly
+          list.$set({closing: true});
           setTimeout(() => {
             listOpen = false;
             activeSelectedValue = undefined;

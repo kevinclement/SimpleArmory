@@ -24,6 +24,7 @@
   export let isMulti = false;
   export let activeItemIndex = 0;
   export let filterText = '';
+  export let closing = false;
 
   let isScrollingTimer = 0;
   let isScrolling = false;
@@ -175,6 +176,12 @@
       case 'Tab':
         e.preventDefault();
         if (items.length === 0) break;
+
+        // kevinc: weird race condition bug if you press enter+tab real quick
+        // since close is set in a setTimeout it will trigger a select on first item in list
+        // didn't have time to fully track this down, so just watch for that case and return
+        if (closing) break;       
+
         if (selectedValue && selectedValue[optionIdentifier] === items[hoverItemIndex][optionIdentifier]) return closeList();
         activeItemIndex = hoverItemIndex;
         handleSelect(items[hoverItemIndex]);
