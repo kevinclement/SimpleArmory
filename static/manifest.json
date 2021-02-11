@@ -1,0 +1,38 @@
+{
+	"background_color": "#ffffff",
+	"theme_color": "#686868",
+	"name": "Simple Armory",
+	"short_name": "Simple Armory",
+	"display": "minimal-ui",
+	"description": "Simplified armory site for World of Warcraft",
+	"start_url": "/",
+	"scope": "/",
+	"icons": [
+		{
+			"src": "/images/favicon-24x24.png",
+			"type": "image/png",
+			"sizes": "24x24"
+		},
+		{
+			"src": "/images/favicon-48x48.png",
+			"type": "image/png",
+			"sizes": "48x48"
+		},
+		{
+			"src": "/images/favicon-192x192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "/images/favicon-192x192-maskable.png",
+			"sizes": "196x196",
+			"type": "image/png",
+			"purpose": "maskable"
+		},
+		{
+			"src": "/images/favicon-512x512.png",
+			"type": "image/png",
+      		"sizes": "512x512"
+		}
+	]
+}

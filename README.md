@@ -12,31 +12,29 @@ This is the code used to build out [simplearmory.com](http://simplearmory.com) w
 
 ## Clone App
 
-```shell
+```bash
 git clone https://github.com/kevinclement/SimpleArmory.git SA
 cd SA
 npm install
-npm install -g grunt-cli bower
-bower install
 ```
 
 ## Start Development
 
-- run `grunt serve`
-- point your browser to [localhost:9001](http://localhost:9001)
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
 
 ## Dev Tasks
 
-- `grunt` builds the site full
-- `grunt serve` runs the app in dev mode
+- `npm run build` Creates a production build of the site
+- `npm run start` Serves an already-built site
+- `npm run adapt` Prepares the production build for deployment to netlify
 
-To test changes I usually use a character that has a lot of achievements, mounts and pets from both factions.  I usually check out rankings on guildox.
-- [Achievements - Horde](http://localhost:9001/#/us/Thrall/Ranklock)
-- [Achievements - Alliance](http://localhost:9001/#/us/Proudmoore/Vanas)
-- [Mounts - Horde](http://localhost:9001/#/us/thrall/shaketank/collectable/mounts)
-- [Mounts - Alliance](http://localhost:9001/#/us/sargeras/Jramm/collectable/mounts)
-- [Pets - Horde](http://localhost:9001/#/us/burning%20blade/mastr/collectable/companions)
-- [Pets - Alliance](http://localhost:9001/#/eu/azuregos/%D0%BC%D0%B0%D1%80%D0%B8%D0%BE%D0%B4%D0%B0/collectable/companions)
+To test for missing icons you can do a `showall=true` from the url.
+- [Achievements - Quests](http://localhost:3000/?showall=true#/us/proudmoore/marko/achievements/quests)
 
 Authors:
 -------
