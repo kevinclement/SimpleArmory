@@ -9,9 +9,10 @@
 		"adapt": "svelte-kit build && svelte-kit adapt"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-static": "next",
-		"@sveltejs/kit": "next",
-		"@sveltejs/snowpack-config": "next",
-		"svelte": "^3.29.0"
-	}
+		"@sveltejs/adapter-static": "^1.0.0-next.2",
+		"@sveltejs/kit": "^1.0.0-next.34",
+		"@sveltejs/snowpack-config": "^1.0.0-next.3",
+		"svelte": "^3.32.3"
+	},
+	"type": "module"
 }
