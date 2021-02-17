@@ -81,6 +81,17 @@
 		category.set(loc_category);
 		subcat.set(loc_subcat);
 
+		if (Rollbar && loc_region && loc_realm && loc_character) {
+			Rollbar.configure({
+				payload: {
+					person: {
+						id: `${loc_region}_${loc_realm}_${loc_character}`,
+						email: `${loc_character}@${loc_realm}.${loc_region}`
+					}
+				}
+			});
+		}
+
 		// update local storage with current user
 		if (loc_region && localStorage.getItem('region') != loc_region &&
 		    loc_realm && localStorage.getItem('realm') != loc_realm && 
