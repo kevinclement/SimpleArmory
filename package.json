@@ -6,7 +6,8 @@
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
 		"start": "svelte-kit start",
-		"adapt": "svelte-kit build && svelte-kit adapt"
+		"adapt": "svelte-kit build && svelte-kit adapt",
+		"rollbar": "svelte-kit build && svelte-kit adapt && node rollbar.js"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^1.0.0-next.2",
