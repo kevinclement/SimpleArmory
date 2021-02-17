@@ -82,7 +82,9 @@
 		subcat.set(loc_subcat);
 
 		// update local storage with current user
-		if (loc_realm && loc_region && loc_character) {
+		if (loc_region && localStorage.getItem('region') != loc_region &&
+		    loc_realm && localStorage.getItem('realm') != loc_realm && 
+			loc_character && localStorage.getItem('character') != loc_character) {
 			console.log(`Updating local storage user to ${loc_region}.${loc_realm}.${loc_character}...`);
 			localStorage.setItem('region', loc_region);
 			localStorage.setItem('realm', loc_realm);
