@@ -49,6 +49,10 @@ export async function getProfileMedia(region, realm, character) {
         return _media.cache;
     }
 
+    // TODO: use race-id and gender-id as a fallback
+    // ?alt=/shadow/avatar/{race-id}-{gender-id}.jpg
+    // e.e. ?alt=/shadow/avatar/2-1.jpg
+
     let pMedia = await getData(region, realm, character, 'character-media');
     if (pMedia.status && pMedia.status === 404) {
         // update to a 1x1 empty

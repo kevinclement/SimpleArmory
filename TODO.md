@@ -1,5 +1,22 @@
-[ ] BUG: LOGIN: "enter" doesn't submit the character selection form?
+[ ] Investigate Rollbar breaks:
+  [ ] ie11 crashes
+    [ ] wow, people use this
+  
+  [ ] Uncaught SyntaxError: Unexpected token =>
+    [ ] Samsung Internet 12.1
+  [ ] Script Error
+    [ ] Samsung Internet 12.1
+  
+  [ ] Attempt to use history.replaceState() more than 100 times per 30 seconds
+    [ ] ios 14
 
+[ ] armoryinfo returns all locals, might want to trim that to save size?
+
+[ ] seems like I lost events in ga
+
+[ ] take a look at percy.io
+
+[ ] use race-id and gender-id as a fallback for char image
 [ ] prob need to do another update for all the wowhead hover states
 [ ] see how expensive removing unused bootstrap css
 
@@ -198,3 +215,9 @@
   [x] not repro, tried bunch of browsers and slowdown
 [x] BUG: LOGIN: type 'ARC<ENTER><TAB>' very fast.  Improperly selects 'Aegwynn'
 [x] BUG: LOGIN: type 'ARC<TAB><ENTER>' very fast, throws a script error
+[x] BUG: LOGIN: "enter" doesn't submit the character selection form?
+[x] Seeing multiple loglines when navigating
+   [x] Updating local storage user to us.proudmoore.marko...
+   [x] investigate if expected or doing too much work
+[x] update error page to include blurb about privacy
+[x] Cannot read property forEach of undefined/null expression

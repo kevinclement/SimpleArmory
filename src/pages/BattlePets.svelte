@@ -6,6 +6,7 @@
     import settings from '$util/settings'
     import ProgressBar from '$components/ProgressBar.svelte';
     import Loading from '$components/Loading.svelte';
+    import ErrorInline from '$components/ErrorInline.svelte';
 
     let showLevel
     let battlePets
@@ -89,6 +90,8 @@
   {/each}
   <div class="clear"/> 
 {/each}
+{:else}
+<ErrorInline page="pets"/>
 {/if}
 
 {/await}

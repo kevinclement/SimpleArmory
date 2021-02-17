@@ -1,13 +1,11 @@
 <script>
+    import ErrorInline from '$components/ErrorInline.svelte';
+
     export let region;
     export let realm;
     export let character;
 </script>
 <div class="container">
-    <div class="page-header">
-        <h2 class="errorMsg">
-            Error 
-        </h2>
-    </div>
-    Could not fetch '{ character }' from server '{ realm }'. Click <a href="#/">here</a> to try again.
+    
+    <ErrorInline page="profile"/>
 </div>

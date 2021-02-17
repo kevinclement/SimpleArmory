@@ -8,6 +8,7 @@
     import ProgressBar from '$components/ProgressBar.svelte';
     import MountsPlanner from '$components/MountsPlanner.svelte';
     import Loading from '$components/Loading.svelte';
+    import ErrorInline from '$components/ErrorInline.svelte';
 
     export let planner
 
@@ -95,6 +96,8 @@
         <div class="clear" />
     {/each}
     </div>
+{:else}
+<ErrorInline page="mounts"/>
 {/if}   
 {/await}
 </div>

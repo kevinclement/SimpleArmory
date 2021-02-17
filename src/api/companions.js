@@ -26,6 +26,9 @@ export async function getCompanions(region, realm, character) {
     
     // get character collected
     const collected = await getData(region, realm, character, 'collections/pets');
+    if (!collected || (collected.status && collected.status === 404)) {
+        return undefined;
+    }
     
     // combine
     _cache.update(
