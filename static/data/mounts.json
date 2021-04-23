@@ -177,6 +177,19 @@
         ]
       },
       {
+        "name": "Quest",
+        "id": "c2f6b2fe",
+        "items": [
+          {
+            "ID": 1441,
+            "name": "Bound Shadehound",
+            "spellid": 344577,
+            "icon": "inv_jailerhoundmount_white",
+            "itemId": 184168
+          }
+        ]
+      },
+      {
         "name": "Treasures",
         "items": [
           {
@@ -302,27 +315,6 @@
         "name": "Zone",
         "items": [
           {
-            "ID": 1437,
-            "name": "Battle-Bound Warhound",
-            "spellid": 344228,
-            "icon": "inv_darkhoundmount_draka",
-            "itemId": 184062
-          },
-          {
-            "ID": 1304,
-            "name": "Mawsworn Soulhunter",
-            "spellid": 312762,
-            "icon": "inv_jailerhoundmount_gray",
-            "itemId": 184167
-          },
-          {
-            "ID": 1441,
-            "name": "Bound Shadehound",
-            "spellid": 344577,
-            "icon": "inv_jailerhoundmount_white",
-            "itemId": 184168
-          },
-          {
             "ID": 1407,
             "name": "Callow Flayedwing",
             "spellid": 336038,
@@ -404,6 +396,13 @@
             "itemId": 182085
           },
           {
+            "ID": 1437,
+            "name": "Battle-Bound Warhound",
+            "spellid": 344228,
+            "icon": "inv_darkhoundmount_draka",
+            "itemId": 184062
+          },
+          {
             "ID": 1373,
             "name": "Gorespine",
             "spellid": 332480,
@@ -444,6 +443,13 @@
             "spellid": 342335,
             "icon": "inv_horse2bastionmount_blue",
             "itemId": 183741
+          },
+          {
+            "ID": 1304,
+            "name": "Mawsworn Soulhunter",
+            "spellid": 312762,
+            "icon": "inv_jailerhoundmount_gray",
+            "itemId": 184167
           }
         ]
       },
