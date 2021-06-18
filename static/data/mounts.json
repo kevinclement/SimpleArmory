@@ -135,6 +135,20 @@
         "name": "Achievement",
         "items": [
           {
+            "ID": 1504,
+            "name": "Hand of Salaranga",
+            "spellid": 354355,
+            "icon": "inv_mawguardhandmountblack",
+            "itemId": 186654
+          },
+          {
+            "ID": 1446,
+            "name": "Tazavesh Gearglider",
+            "spellid": 346554,
+            "icon": "inv_brokermount_brass",
+            "itemId": 186637
+          },
+          {
             "ID": 1443,
             "name": "Voracious Gorger",
             "spellid": 344659,
@@ -149,6 +163,13 @@
             "itemId": 182596
           },
           {
+            "ID": 1417,
+            "name": "Hand of Hrestimorak",
+            "spellid": 339957,
+            "icon": "inv_mawguardhandmountblue",
+            "itemId": 186653
+          },
+          {
             "ID": 1442,
             "name": "Corridor Creeper",
             "spellid": 344578,
@@ -156,11 +177,25 @@
             "itemId": 184166
           },
           {
+            "ID": 1416,
+            "name": "Mawsworn Charger",
+            "spellid": 339956,
+            "icon": "ability_mount_mawhorsespikes_blue",
+            "itemId": 186655
+          },
+          {
             "ID": 1419,
             "name": "Sintouched Deathwalker",
             "spellid": 340068,
             "icon": "inv_deathelementalmount_black",
             "itemId": 182717
+          },
+          {
+            "ID": 1520,
+            "name": "Soultwisted Deathwalker",
+            "spellid": 358319,
+            "icon": "inv_deathelementalmount_green",
+            "itemId": 187525
           }
         ]
       },
@@ -242,6 +277,46 @@
         ]
       },
       {
+        "name": "Puzzles",
+        "items": [
+          {
+            "ID": 1511,
+            "name": "Wandering Arden Doe",
+            "spellid": 354362,
+            "icon": "inv_horse2ardenwealdmount_doe",
+            "itemId": 186643
+          },
+          {
+            "ID": 1510,
+            "name": "Dusklight Razorwing",
+            "spellid": 354361,
+            "icon": "inv_mawexpansionfliermountpurple",
+            "itemId": 186651
+          },
+          {
+            "ID": 1507,
+            "name": "Darkmaul",
+            "spellid": 354358,
+            "icon": "inv_mawexpansionbearmount_purple",
+            "itemId": 186646
+          },
+          {
+            "ID": 1503,
+            "name": "Hand of Nilganihmaht",
+            "spellid": 354354,
+            "icon": "inv_mawguardhandmountgold",
+            "itemId": 186713
+          },
+          {
+            "ID": 1475,
+            "name": "Hand of Bahmethra",
+            "spellid": 352309,
+            "icon": "inv_mawguardhandmountpurple",
+            "itemId": 185973
+          }
+        ]
+      },
+      {
         "name": "Reputation",
         "items": [
           {
@@ -271,6 +346,20 @@
             "spellid": 342334,
             "icon": "inv_wingedlion2mount",
             "itemId": 183740
+          },
+          {
+            "ID": 1505,
+            "name": "Amber Shardhide",
+            "spellid": 354356,
+            "icon": "inv_mawexpansionbearmount_yellow",
+            "itemId": 186647
+          },
+          {
+            "ID": 1450,
+            "name": "Soaring Razorwing",
+            "spellid": 347251,
+            "icon": "inv_mawexpansionfliermountyellow",
+            "itemId": 186648
           }
         ]
       },
@@ -290,7 +379,36 @@
             "spellid": 342666,
             "icon": "inv_mothardenwealdmount_red",
             "itemId": 183800
+          },
+          {
+            "ID": 1508,
+            "name": "Fierce Razorwing",
+            "spellid": 354359,
+            "icon": "inv_mawexpansionfliermountgreen",
+            "itemId": 186649
+          },
+          {
+            "ID": 1455,
+            "name": "Beryl Shardhide",
+            "spellid": 347810,
+            "icon": "inv_mawexpansionbearmount_green",
+            "itemId": 186644
+          },
+          {
+            "ID": 1501,
+            "name": "Soulbound Gloomcharger",
+            "spellid": 354352,
+            "icon": "ability_mount_mawhorsespikes_teal",
+            "itemId": 186657
+          },
+          {
+            "ID": 1454,
+            "name": "Tamed Mauler",
+            "spellid": 347536,
+            "icon": "inv_devourerswarmer_blue",
+            "itemId": 186641
           }
+
         ]
       },
       {
@@ -308,6 +426,32 @@
             "name": "Slime Serpent",
             "spellid": 346141,
             "icon": "inv_nzothserpentmount_abomination"
+          },
+          {
+            "ID": 1481,
+            "name": "Cartel Master's Gearglider",
+            "spellid": 186638,
+            "icon": "inv_brokermount_dark",
+            "itemId": 186638
+          }
+        ]
+      },
+      {
+        "name": "Raid Drop",
+        "items": [
+          {
+            "ID": 1500,
+            "name": "Sanctum Gloomcharger",
+            "spellid": 354351,
+            "icon": "ability_mount_mawhorsespikes_purple",
+            "itemId": 186656
+          },
+          {
+            "ID": 1471,
+            "name": "Vengeance",
+            "spellid": 351195,
+            "icon": "inv_dragonhawkmountshadowlands",
+            "itemId": 186642
           }
         ]
       },
@@ -429,6 +573,34 @@
             "spellid": 312762,
             "icon": "inv_jailerhoundmount_gray",
             "itemId": 184167
+          },
+          {
+            "ID": 1514,
+            "name": "Rampaging Mauler",
+            "spellid": 356501,
+            "icon": "inv_devourerswarmermount_dark",
+            "itemId": 187183
+          },
+          {
+            "ID": 1509,
+            "name": "Garnet Razorwing",
+            "spellid": 354360,
+            "icon": "inv_mawexpansionfliermountred",
+            "itemId": 186652
+          },
+          {
+            "ID": 1506,
+            "name": "Crimson Shardhide",
+            "spellid": 354357,
+            "icon": "inv_mawexpansionbearmount_red",
+            "itemId": 186645
+          },
+          {
+            "ID": 1502,
+            "name": "Fallen Charger",
+            "spellid": 354353,
+            "icon": "ability_mount_mawhorsespikes_yellow",
+            "itemId": 186659
           }
         ]
       },
@@ -455,6 +627,32 @@
             "spellid": 344575,
             "icon": "inv_manaraymount_blackfel",
             "itemId": 184162
+          }
+        ]
+      },
+      {
+        "name": "Maw Assaults",
+        "items": [
+          {
+            "ID": 1378,
+            "name": "Harvester's Dredwing",
+            "spellid": 332904,
+            "icon": "inv_giantvampirebatmount_purple",
+            "itemId": 185996
+          },
+          {
+            "ID": 1476,
+            "name": "Wild Hunt Legsplitter",
+            "spellid": 352441,
+            "icon": "inv_decomposermountgreen",
+            "itemId": 186000
+          },
+          {
+            "ID": 1477,
+            "name": "Undying Darkhound",
+            "spellid": 352742,
+            "icon": "inv_darkhoundmount_draka_orange",
+            "itemId": 186103
           }
         ]
       },
@@ -537,6 +735,34 @@
             "spellid": 334366,
             "icon": "inv_fox2_green",
             "itemId": 180730
+          },
+          {
+            "ID": 1484,
+            "name": "Ardenweald Wilderling",
+            "spellid": 353856,
+            "icon": "inv_wolfserpentmountpurple",
+            "itemId": 186493
+          },
+          {
+            "ID": 1485,
+            "name": "Autumnal Wilderling",
+            "spellid": 353857,
+            "icon": "inv_wolfserpentmountyellow",
+            "itemId": 186494
+          },
+          {
+            "ID": 1486,
+            "name": "Winter Wilderling",
+            "spellid": 353858,
+            "icon": "inv_wolfserpentmountwhite",
+            "itemId": 186495
+          },
+          {
+            "ID": 1487,
+            "name": "Summer Wilderling",
+            "spellid": 353859,
+            "icon": "inv_wolfserpentmountgreen",
+            "itemId": 186492
           }
         ]
       },
@@ -598,6 +824,35 @@
             "name": "Eternal Phalynx of Humility",
             "icon": "inv_automatonlionmount2_bronze",
             "itemId": 180768
+          },
+
+          {
+            "ID": 1492,
+            "name": "Elysian Aquilon",
+            "spellid": 353875,
+            "icon": "inv_automatonfliermount",
+            "itemId": 186482
+          },
+          {
+            "ID": 1494,
+            "name": "Ascendant's Aquilon",
+            "spellid": 353880,
+            "icon": "inv_automatonfliermount_silver",
+            "itemId": 186485
+          },
+          {
+            "ID": 1436,
+            "name": "Battle-Hardened Aquilon",
+            "spellid": 343550,
+            "icon": "inv_automatonfliermount_copper",
+            "itemId": 186480
+          },
+          {
+            "ID": 1493,
+            "name": "Foresworn Aquilon",
+            "spellid": 353877,
+            "icon": "inv_automatonfliermount_dark",
+            "itemId": 186483
           }
         ]
       },
@@ -673,6 +928,35 @@
             "spellid": 336045,
             "icon": "inv_rocmaldraxxusmountgreen",
             "itemId": 182080
+          },
+
+          {
+            "ID": 1495,
+            "name": "Maldraxxian Corpsefly",
+            "spellid": 353883,
+            "icon": "inv_flymaldraxxusmount_green",
+            "itemId": 186487
+          },
+          {
+            "ID": 1496,
+            "name": "Regal Corpsefly",
+            "spellid": 353884,
+            "icon": "inv_flymaldraxxusmount_purple",
+            "itemId": 186488
+          },
+          {
+            "ID": 1497,
+            "name": "Battlefield Swarmer",
+            "spellid": 353885,
+            "icon": "inv_flymaldraxxusmount_copper",
+            "itemId": 186490
+          },
+          {
+            "ID": 1449,
+            "name": "Lord of the Corpseflies",
+            "spellid": 347250,
+            "icon": "inv_flymaldraxxusmount_black",
+            "itemId": 186489
           }
         ]
       },
@@ -741,6 +1025,35 @@
             "spellid": 332882,
             "icon": "inv_giantvampirebatmount_bronze",
             "itemId": 180461
+          },
+
+          {
+            "ID": 1490,
+            "name": "Sinfall Gravewing",
+            "spellid": 353872,
+            "icon": "inv_gargoylebrute2mount_gray",
+            "itemId": 186476
+          },
+          {
+            "ID": 1489,
+            "name": "Obsidian Gravewing",
+            "spellid": 353866,
+            "icon": "inv_gargoylebrute2mount_dark",
+            "itemId": 186478
+          },
+          {
+            "ID": 1491,
+            "name": "Pale Gravewing",
+            "spellid": 353873,
+            "icon": "inv_gargoylebrute2mount_pale",
+            "itemId": 186477
+          },
+          {
+            "ID": 9999, 
+            "name": "Mastercraft Gravewing",
+            "spellid": 215545,
+            "icon": "inv_gargoylebrute2mount_brown",
+            "itemId": 186479
           }
         ]
       },
@@ -5407,6 +5720,22 @@
             "icon": "inv_vicioushordespider",
             "side": "H",
             "itemId": 184013
+          },
+          {
+            "ID": 1460,
+            "name": "Vicious War Gorm",
+            "spellid": 348770,
+            "icon": "inv_viciousalliancegorm",
+            "side": "A",
+            "itemId": 186178
+          },
+          {
+            "ID": 1459,
+            "name": "Vicious War Gorm",
+            "spellid": 348769,
+            "icon": "inv_vicioushordegorm",
+            "side": "H",
+            "itemId": 186179
           }
         ],
         "name": "Vicious Saddle"
@@ -5624,9 +5953,17 @@
           {
             "ID": "1363",
             "name": "Sinful Gladiator's Soul Eater",
+            "notObtainable": true,
             "spellid": "332400",
             "icon": "inv_shadebeastmount",
             "itemId": "183937"
+          },
+          {
+            "ID": "1480",
+            "name": "Unchained Gladiator's Soul Eater",
+            "spellid": "353036",
+            "icon": "inv_shadebeastmount_blue",
+            "itemId": "186177"
           }
         ],
         "name": "Gladiator"
