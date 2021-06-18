@@ -5636,29 +5636,10 @@
             "spellid": 242897
           },
           {
-            "ID": "1027",
-            "icon": "inv_viciouswarbasiliskalliance",
-            "itemId": "163122",
-            "name": "Vicious War Basilisk",
-            "notObtainable": true,
-            "side": "A",
-            "spellid": "261433"
-          },
-          {
-            "ID": "1026",
-            "icon": "inv_viciouswarbasiliskhorde",
-            "itemId": "163121",
-            "name": "Vicious War Basilisk",
-            "notObtainable": true,
-            "side": "H",
-            "spellid": "261434"
-          },
-          {
             "ID": "1050",
             "icon": "inv_viciousalliancehippo",
             "itemId": "163123",
             "name": "Vicious War Riverbeast",
-            "notObtainable": true,
             "side": "A",
             "spellid": "272481"
           },
@@ -5667,7 +5648,6 @@
             "icon": "inv_vicioushordeclefthoof",
             "itemId": "163124",
             "name": "Vicious War Clefthoof",
-            "notObtainable": true,
             "side": "H",
             "spellid": "270560"
           },
@@ -5685,9 +5665,24 @@
             "icon": "inv_skeletalwarhorse_01_brown",
             "itemId": 165020,
             "name": "Vicious Black Bonesteed",
-            "notObtainable": true,
             "side": "H",
             "spellid": 281890
+          },
+          {
+            "ID": "1027",
+            "icon": "inv_viciouswarbasiliskalliance",
+            "itemId": "163122",
+            "name": "Vicious War Basilisk",
+            "side": "A",
+            "spellid": "261433"
+          },
+          {
+            "ID": "1026",
+            "icon": "inv_viciouswarbasiliskhorde",
+            "itemId": "163121",
+            "name": "Vicious War Basilisk",
+            "side": "H",
+            "spellid": "261434"
           },
           {
             "ID": "1197",
@@ -5710,6 +5705,7 @@
             "name": "Vicious War Spider",
             "spellid": 327407,
             "icon": "inv_viciousalliancespider",
+            "notObtainable": true,
             "side": "A",
             "itemId": 184014
           },
@@ -5718,6 +5714,7 @@
             "name": "Vicious War Spider",
             "spellid": 327408,
             "icon": "inv_vicioushordespider",
+            "notObtainable": true,
             "side": "H",
             "itemId": 184013
           },
