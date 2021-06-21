@@ -212,19 +212,6 @@
         ]
       },
       {
-        "name": "Quest",
-        "id": "c2f6b2fe",
-        "items": [
-          {
-            "ID": 1441,
-            "name": "Bound Shadehound",
-            "spellid": 344577,
-            "icon": "inv_jailerhoundmount_white",
-            "itemId": 184168
-          }
-        ]
-      },
-      {
         "name": "Treasures",
         "items": [
           {
@@ -280,25 +267,11 @@
         "name": "Puzzles",
         "items": [
           {
-            "ID": 1511,
-            "name": "Wandering Arden Doe",
-            "spellid": 354362,
-            "icon": "inv_horse2ardenwealdmount_doe",
-            "itemId": 186643
-          },
-          {
-            "ID": 1510,
-            "name": "Dusklight Razorwing",
-            "spellid": 354361,
-            "icon": "inv_mawexpansionfliermountpurple",
-            "itemId": 186651
-          },
-          {
-            "ID": 1507,
-            "name": "Darkmaul",
-            "spellid": 354358,
-            "icon": "inv_mawexpansionbearmount_purple",
-            "itemId": 186646
+            "ID": 1441,
+            "name": "Bound Shadehound",
+            "spellid": 344577,
+            "icon": "inv_jailerhoundmount_white",
+            "itemId": 184168
           },
           {
             "ID": 1503,
@@ -313,6 +286,32 @@
             "spellid": 352309,
             "icon": "inv_mawguardhandmountpurple",
             "itemId": 185973
+          }
+        ]
+      },
+      {
+        "name": "Maw Assaults",
+        "items": [
+          {
+            "ID": 1378,
+            "name": "Harvester's Dredwing",
+            "spellid": 332904,
+            "icon": "inv_giantvampirebatmount_purple",
+            "itemId": 185996
+          },
+          {
+            "ID": 1476,
+            "name": "Wild Hunt Legsplitter",
+            "spellid": 352441,
+            "icon": "inv_decomposermountgreen",
+            "itemId": 186000
+          },
+          {
+            "ID": 1477,
+            "name": "Undying Darkhound",
+            "spellid": 352742,
+            "icon": "inv_darkhoundmount_draka_orange",
+            "itemId": 186103
           }
         ]
       },
@@ -468,8 +467,7 @@
         ]
       },
       {
-        "name": "Rare Daily",
-        "id": "d50c3fac",
+        "name": "Daily Activities",
         "items": [
           {
             "ID": 1414,
@@ -484,9 +482,30 @@
             "spellid": 333027,
             "icon": "achievement_dungeon_sanguinedepths_kryxis",
             "itemId": 182589
-          }
+          },
+          {
+            "ID": 1511,
+            "name": "Wandering Arden Doe",
+            "spellid": 354362,
+            "icon": "inv_horse2ardenwealdmount_doe",
+            "itemId": 186643
+          },
+          {
+            "ID": 1510,
+            "name": "Dusklight Razorwing",
+            "spellid": 354361,
+            "icon": "inv_mawexpansionfliermountpurple",
+            "itemId": 186651
+          },
+          {
+            "ID": 1507,
+            "name": "Darkmaul",
+            "spellid": 354358,
+            "icon": "inv_mawexpansionbearmount_purple",
+            "itemId": 186646
+          }          
         ]
-      },
+      },    
       {
         "name": "Rare Spawn",
         "items": [
@@ -631,28 +650,35 @@
         ]
       },
       {
-        "name": "Maw Assaults",
+        "name": "Covenant Feature",
         "items": [
           {
-            "ID": 1378,
-            "name": "Harvester's Dredwing",
-            "spellid": 332904,
-            "icon": "inv_giantvampirebatmount_purple",
-            "itemId": 185996
+            "ID": 1392,
+            "name": "Pale Acidmaw",
+            "spellid": 334365,
+            "icon": "inv_decomposermountwhite",
+            "itemId": 180726
           },
           {
-            "ID": 1476,
-            "name": "Wild Hunt Legsplitter",
-            "spellid": 352441,
-            "icon": "inv_decomposermountgreen",
-            "itemId": 186000
+            "ID": 1376,
+            "name": "Silvertip Dredwing",
+            "spellid": 312777,
+            "icon": "inv_giantvampirebatmount_silver",
+            "itemId": 181316
           },
           {
-            "ID": 1477,
-            "name": "Undying Darkhound",
-            "spellid": 352742,
-            "icon": "inv_darkhoundmount_draka_orange",
-            "itemId": 186103
+            "ID": 1408,
+            "name": "Gruesome Flayedwing",
+            "spellid": 336039,
+            "icon": "inv_maldraxxusflyermount",
+            "itemId": 181300
+          },
+          {
+            "ID": 1413,
+            "name": "Dauntless Duskrunner",
+            "spellid": 336064,
+            "icon": "inv_horse2bastionmount_purple",
+            "itemId": 181317
           }
         ]
       },
@@ -1057,39 +1083,6 @@
           }
         ]
       },
-      {
-        "name": "Covenant Feature",
-        "items": [
-          {
-            "ID": 1392,
-            "name": "Pale Acidmaw",
-            "spellid": 334365,
-            "icon": "inv_decomposermountwhite",
-            "itemId": 180726
-          },
-          {
-            "ID": 1376,
-            "name": "Silvertip Dredwing",
-            "spellid": 312777,
-            "icon": "inv_giantvampirebatmount_silver",
-            "itemId": 181316
-          },
-          {
-            "ID": 1408,
-            "name": "Gruesome Flayedwing",
-            "spellid": 336039,
-            "icon": "inv_maldraxxusflyermount",
-            "itemId": 181300
-          },
-          {
-            "ID": 1413,
-            "name": "Dauntless Duskrunner",
-            "spellid": 336064,
-            "icon": "inv_horse2bastionmount_purple",
-            "itemId": 181317
-          }
-        ]
-      }
     ]
   },
   {
