@@ -94,9 +94,13 @@ class BnetClient:
         species = await self.pets_species(species_id)
         return species['source'].split(':')[0].strip()
 
+    async def factions(self):
+        params = {'locale': 'en_US', 'namespace': 'static-us'}
+        return await self.query('data/wow/reputation-faction/index', params=params)
+
 
 def get_master_list(name, *args, **kwargs):
-    assert name in ('mounts', 'pets', 'realms')
+    assert name in ('mounts', 'pets', 'realms', 'factions')
 
     async def get():
         async with BnetClient() as client:
