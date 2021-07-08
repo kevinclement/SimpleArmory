@@ -2,7 +2,7 @@ import asyncio
 import aiohttp
 from aiohttp.helpers import BasicAuth
 from urllib.parse import urljoin
-from settings import OAUTH_CLIENT_ID, OAUTH_CLIENT_SECRET, OAUTH_REGION
+from settings import OAUTH_CLIENT_ID, OAUTH_CLIENT_SECRET, LOCALE, OAUTH_REGION
 
 
 class BnetClient:
@@ -32,10 +32,9 @@ class BnetClient:
             self.access_token = await self.get_access_token()
 
     async def query(self, path, region='us', **kwargs):
-        url = urljoin(self.api_url, path).format(region)
+        url = urljoin(self.api_url, path).format(OAUTH_REGION.lower())
         headers = {
-            'Authorization': 'Bearer ' + self.access_token,
-            'Battlenet-Namespace': 'static-us',
+            'Authorization': 'Bearer ' + self.access_token
         }
         r = await self.session.get(url, headers=headers, **kwargs)
         res = await r.json(content_type=None)
@@ -48,30 +47,31 @@ class BnetClient:
         category = 'index' if cat_id is None else str(cat_id)
         return (await self.query(
             'data/wow/achievement-category/{}'.format(category),
-            params={'locale': 'en_US'},
+            params={'locale': LOCALE, 'namespace': get_namespace('dynamic')},
         ))
 
     async def achievement(self, ach_id):
         return (await self.query(
             'data/wow/achievement/{}'.format(ach_id),
-            params={'locale': 'en_US'},
+            params={'locale': LOCALE, 'namespace': get_namespace('static')},
         ))
 
     async def achievement_media(self, ach_id):
         return (await self.query(
             'data/wow/media/achievement/{}'.format(ach_id),
-            params={'locale': 'en_US'},
+            params={'locale': LOCALE, 'namespace': get_namespace('static')},
         ))
 
     async def mounts(self):
-        return (await self.query('wow/mount/'))
+        params = {'locale': LOCALE, 'namespace': get_namespace('static')}
+        return (await self.query('data/wow/mount/index', params=params))
 
     async def pets(self):
         return (await self.query('wow/pet/'))
 
     async def realms(self, region):
-        params = {'namespace': 'dynamic-' + region,
-                  'locale': 'en_US'}
+        params = {'namespace': get_namespace('dynamic'),
+                  'locale': LOCALE}
         return (await self.query('data/wow/realm/', region=region,
                                  params=params))
 
@@ -95,10 +95,14 @@ class BnetClient:
         return species['source'].split(':')[0].strip()
 
 
+def get_namespace(namespace):
+    return namespace + '-{}'.format(OAUTH_REGION.lower())
+
+
 def get_master_list(name, *args, **kwargs):
     assert name in ('mounts', 'pets', 'realms')
 
     async def get():
         async with BnetClient() as client:
             return (await getattr(client, name)(*args, **kwargs))
-    return asyncio.run(get())
+    return asyncio.get_event_loop().run_until_complete(get())
