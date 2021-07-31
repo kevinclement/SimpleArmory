@@ -279,7 +279,12 @@
             "spellid": 354354,
             "icon": "inv_mawguardhandmountgold",
             "itemId": 186713
-          },
+          }
+        ]
+      },
+      {
+        "name": "Tormentors",
+        "items": [
           {
             "ID": 1475,
             "name": "Hand of Bahmethra",
@@ -6353,10 +6358,10 @@
             "spellid": 308087
           },
           {
-            "ID": "1424",
-            "icon": "3753812",
-            "name": "Snowstorm",
-            "spellid": 341821
+            "ID": "1456",
+            "icon": "3851476",
+            "name": "Sapphire Skyblazer",
+            "spellid": 308087
           }
         ],
         "name": "Blizzard Store"
@@ -6383,6 +6388,12 @@
             "itemId": 151617,
             "side": "H",
             "spellid": 245725
+          },
+          {
+            "ID": "1424",
+            "icon": "3753812",
+            "name": "Snowstorm",
+            "spellid": 341821
           }
         ],
         "name": "Blizzcon"
