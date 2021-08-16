@@ -221,6 +221,16 @@
               "icon": "inv_trinket_ardenweald_02_green",
               "name": "Winterleaf Spriggan",
               "itemId": 184512
+          },
+          {
+              "ID": 3101,
+              "name": "Sly",
+              "icon": "inv_babyfox_blue"
+          },
+          {
+              "ID": 3132,
+              "name": "Mord'al Eveningstar",
+              "icon": "inv_mawguardpet_red"
           }
         ]
       },
@@ -275,7 +285,12 @@
               "icon": "talentspec_druid_feral_cat",
               "name": "Lucy",
               "itemId": 184507
-          }
+          },
+          {
+              "ID": 3127,
+              "name": "Chompy",
+              "icon": "inv_pet_batpetmaldraxxus_green"
+          }          
         ]
       },
       {
@@ -329,9 +344,43 @@
               "icon": "inv_babysteward_silver",
               "name": "Steward Featherling",
               "itemId": 184398
-          }
+          },
+          {
+              "ID": 3097,
+              "name": "Flawless Amethyst Baubleworm",
+              "icon": "inv_brokerworm_yellow"
+          },
+          {
+              "ID": 3138,
+              "name": "Domestic Aunian",
+              "icon": "inv_mawexpansionbearmount_yellow"
+          }          
         ]
       },
+      { "name": "Vendor",
+        "items": [
+          {
+              "ID": 3104,
+              "name": "Ruby Baubleworm",
+              "icon": "inv_brokerworm_white"
+          },
+          {
+              "ID": 3105,
+              "name": "Turquoise Baubleworm",
+              "icon": "inv_brokerworm_teal"
+          },
+          {
+              "ID": 3106,
+              "name": "Topaz Baubleworm",
+              "icon": "inv_brokerworm_purple"
+          },
+          {
+              "ID": 3113,
+              "name": "Rarity",
+              "icon": "inv_brokerrat_purple"
+          }          
+        ]
+      },        
       {
         "name": "Adventures",
         "items": [
@@ -365,6 +414,35 @@
           }
         ]
       },
+      { "name": "Maw Assaults",
+        "items": [
+          {
+              "ID": 3098,
+              "name": "Lil'Abom",
+              "icon": "tradeskill_abominationstitching_abominations_lesser"
+          },
+          {
+              "ID": 3099,
+              "name": "Infused Etherwyrm",
+              "icon": "inv_aetherwyrm"
+          },
+          {
+              "ID": 3103,
+              "name": "Copperback Etherwyrm",
+              "icon": "inv_aetherwyrm"
+          },
+          {
+              "ID": 3114,
+              "name": "Fodder",
+              "icon": "tradeskill_abominationstitching_abominations_mid"
+          },
+          {
+              "ID": 3116,
+              "name": "Invasive Buzzer",
+              "icon": "inv_decomposermountblack"
+          }          
+        ]        
+      },         
       {
         "name": "Treasure",
         "items": [
@@ -540,7 +618,17 @@
               "icon": "inv_pet_wingedlion2pet_gold",
               "name": "Courage",
               "itemId": 184400
-          }
+          },
+          {
+              "ID": 3121,
+              "name": "Grappling Gauntlet",
+              "icon": "inv_mawguardhand_grey"
+          },
+          {
+              "ID": 3125,
+              "name": "Golden Eye",
+              "icon": "inv_maweye_gold"
+          }          
         ]
       },
       { 
@@ -699,7 +787,17 @@
               "icon": "inv_pet_wingedlion2pet_dark",
               "name": "Larion Pouncer",
               "itemId": 184401
-          }
+          },
+          {
+              "ID": 3117,
+              "name": "Amaranthine Stinger",
+              "icon": "inv_decomposermountpurple"
+          },
+          {
+              "ID": 3136,
+              "name": "Korthian Specimen",
+              "icon": "inv_mawexpansionbearmount_purple"
+          }          
         ]
       },
       {
@@ -786,6 +884,21 @@
               "icon": "inv_giantvampirebatmount_white",
               "name": "Stoneskin Dredwing Pup",
               "itemId": 180601
+          },
+          {
+              "ID": 3133,
+              "name": "Rook",
+              "icon": "inv_mawguardpet_white"
+          },
+          {
+              "ID": 3137,
+              "name": "Mosscoated Gromit",
+              "icon": "inv_mawexpansionbearmount_green"
+          },
+          {
+              "ID": 3140,
+              "name": "Gnashtooth",
+              "icon": "inv_devourerswarmer_blue"
           }
         ]
       },
@@ -812,6 +925,11 @@
               "icon": "inv_decomposersmallblack",
               "name": "Spinemaw Gormling",
               "itemId": 183623
+          },
+          {
+              "ID": 3110,
+              "name": "Gizmo",
+              "icon": "inv_catbroker_brass"
           }
         ]
       },
@@ -824,7 +942,27 @@
             "icon": "creatureportrait_sword_2h_denathrius_d_01",
             "name": "Will of Remornia",
             "itemId": 183395
-          }
+          },
+          {
+            "ID": 3122,
+            "name": "Irongrasp",
+            "icon": "inv_mawguardhand_black"
+          },
+          {
+            "ID": 3128,
+            "name": "Eye of Allseeing",
+            "icon": "achievement_raid_torghast_theeyeofthejailer"
+          },
+          {
+            "ID": 3129,
+            "name": "Eye of Extermination",
+            "icon": "achievement_raid_torghast_theeyeofthejailer_red"
+          },
+          {
+            "ID": 3131,
+            "name": "Mawsworn Minion",
+            "icon": "inv_mawguardpet"
+          }          
         ]
       },
       {
@@ -885,6 +1023,11 @@
               "icon": "spell_shadow_skull",
               "name": "Torghast Lurker",
               "itemId": 183195
+          },
+          {
+              "ID": 3130,
+              "name": "Gilded Darknight",
+              "icon": "inv_mawguardpet_gold"
           }
         ]
       },
@@ -4032,7 +4175,12 @@
             "icon": "spell_nature_insectswarm",
             "itemId": "85222",
             "spellid": "123784"
-          }
+          },
+          {
+            "ID": 3092,
+            "name": "Squibbles",
+            "icon": "inv_mechanicalparrotpet"
+          }		  
         ],
         "name": "Reputation"
       },
@@ -7567,7 +7715,12 @@
               "name": "Finduin",
               "itemId": null,
               "side": "A"
-          }
+          },
+          {
+              "ID": 3053,
+              "name": "Moon-Touched Netherwhelp",
+              "icon": "inv_dragonwhelpoutland2_light"
+          }           
         ],
         "name": "Blizzcon"
       },
@@ -7632,7 +7785,12 @@
             "itemId": 172016,
             "name": "Lil' Nefarian",
             "spellid": 294206
-          }
+          },
+          {
+            "ID": 3100,
+            "name": "Timeless Mechanical Dragonling",
+            "icon": "inv_encrypted17"
+          }           
         ],
         "name": "Anniversary"
       },

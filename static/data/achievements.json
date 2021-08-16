@@ -486,6 +486,11 @@
                   "id": 14280,
                   "points": 10,
                   "title": "Loremaster of Shadowlands"
+                },
+                {
+                  "id": 15064,
+                  "name": "Breaking the Chains",
+                  "icon": "inv_mawguardhandmountwhite"
                 }
               ],
               "name": "Zones"
@@ -504,6 +509,11 @@
                   "id": 14790,
                   "points": 10,
                   "title": "Covenant Campaign"
+                },
+                {
+                  "id": 14961,
+                  "name": "Chains of Domination",
+                  "icon": "inv_maweye_black"
                 }
               ],
               "name": "Campaign"
@@ -597,6 +607,109 @@
                 }
               ],
               "name": "Ardenweald"
+            },
+            {
+              "id": "D8E9B647",
+              "items": [
+                {
+                  "id": 15107,
+                  "name": "Conquering Korthia",
+                  "icon": "inv_offhand_1h_mawraid_d_01"
+                },            
+                {
+                  "id": 15066,
+                  "name": "Reliquary Restoration",
+                  "icon": "inv_inscription_90_contract_korthia"
+                },
+                {
+                  "id": 15055,
+                  "name": "Friend of Ooz",
+                  "icon": "inv_maldraxxusslime"
+                },
+                {
+                  "id": 15056,
+                  "name": "Friend of Bloop",
+                  "icon": "sha_inv_misc_slime_01"
+                },
+                {
+                  "id": 15057,
+                  "name": "Friend of Plaguey",
+                  "icon": "inv_maldraxxusslime_purple"
+                }
+              ],
+              "name": "Korthia"
+            },
+            {
+              "id": "5093085C",
+              "items": [
+                {
+                  "id": 15000,
+                  "name": "United Front",
+                  "icon": "achievement_bg_getxflags_no_die"
+                },
+                {
+                  "id": 15033,
+                  "name": "Taking the Tremaculum",
+                  "icon": "ui_sigil_venthyr"
+                },
+                {
+                  "id": 15034,
+                  "name": "Wings Against the Flames",
+                  "icon": "ui_sigil_kyrian"
+                },
+                {
+                  "id": 15036,
+                  "name": "Rooting Out the Evil",
+                  "icon": "ui_sigil_nightfae"
+                },
+                {
+                  "id": 15032,
+                  "name": "Breaking Their Hold",
+                  "icon": "ui_sigil_necrolord"
+                },                
+                {
+                  "id": 15001,
+                  "name": "Jailer's Personal Stash",
+                  "icon": "inv_stygia"
+                },
+
+                {
+                  "id": 15037,
+                  "name": "This Army",
+                  "icon": "achievement_dungeon_theatreofpain_anaffrontofchallengers"
+                },
+                {
+                  "id": 15039,
+                  "name": "Up For Grabs",
+                  "icon": "item_maldraxxus_paragonchest_01"
+                },
+                {
+                  "id": 15041,
+                  "name": "The Zovaal Shuffle",
+                  "icon": "inv_summerfest_firespirit"
+                },            
+                {
+                  "id": 15042,
+                  "name": "Tea for the Troubled",
+                  "icon": "inv_misc_food_vendor_roastedbarlytea"
+                },
+                {
+                  "id": 15043,
+                  "name": "Hoarder of Torghast",
+                  "icon": "ui_torghast"
+                },
+                {
+                  "id": 15044,
+                  "name": "Krrprripripkraak's Heroes",
+                  "icon": "inv_squirrelardenweald"
+                },
+                {
+                  "id": 15035,
+                  "name": "On the Offensive",
+                  "icon": "achievement_bg_takexflags_ab"
+                }
+              ],
+              "name": "Maw Assaults"
             }
           ]
         },
@@ -4806,7 +4919,12 @@
                   "id": 14663,
                   "points": 10,
                   "title": "Explore The Maw"
-                }
+                },
+                {
+                  "id": 15053,
+                  "name": "Explore Korthia",
+                  "icon": "inv_inscription_scroll_fortitude"
+                }                
               ],
               "name": "Area"
             },
@@ -4836,7 +4954,12 @@
                   "id": 14314,
                   "points": 10,
                   "title": "Treasures of Revendreth"
-                }
+                },
+                {
+                  "id": 15099,
+                  "name": "Treasures of Korthia",
+                  "icon": "item_korthia_paragonchest_01"
+                }                
               ],
               "name": "Treasures"
             },
@@ -5112,7 +5235,17 @@
                   "id": 14761,
                   "points": 10,
                   "title": "Deciphering Death's Intentions"
-                }
+                },
+                {
+                  "id": 14943,
+                  "name": "Guarmageddon",
+                  "icon": "achievement_boss_guarm"
+                },
+                {
+                  "id": 15054,
+                  "name": "Minions of the Cold Dark",
+                  "icon": "spell_shadow_auraofdarkness"
+                }                
               ],
               "name": "The Maw"
             },
@@ -13286,7 +13419,12 @@
                   "id": 14355,
                   "points": 25,
                   "title": "Glory of the Nathria Raider"
-                }
+                },
+                {
+                  "id": 15130,
+                  "name": "Glory of the Dominant Raider",
+                  "icon": "achievement_raid_torghastraid"
+                }                
               ],
               "name": "Shadowlands"
             },
@@ -14333,7 +14471,148 @@
                 }
               ],
               "name": "Castle Nathria"
-            }
+            },
+            {
+              "id": "2F699E6B",
+              "items": [
+                {
+                  "id": 15122,
+                  "name": "The Jailer's Vanguard",
+                  "icon": "achievement_raid_torghast_thenine"
+                },
+                {
+                  "id": 15123,
+                  "name": "The Dark Bastille",
+                  "icon": "achievement_raid_torghast_painsmithraznal"
+                },
+                {
+                  "id": 15124,
+                  "name": "Shackles of Fate",
+                  "icon": "achievement_raid_torghast_kel-thuzad"
+                },
+                {
+                  "id": 15125,
+                  "name": "The Reckoning",
+                  "icon": "achievement_raid_torghast_sylvanaswindrunner"
+                },
+                {
+                  "id": 15126,
+                  "name": "Sanctum of Domination",
+                  "icon": "achievement_raid_torghastraid"
+                },
+                {
+                  "id": 15127,
+                  "name": "Heroic: Sanctum of Domination",
+                  "icon": "achievement_raid_torghastraid"
+                },
+                {
+                  "id": 15128,
+                  "name": "Mythic: Sanctum of Domination",
+                  "icon": "achievement_raid_torghastraid"
+                },                
+                {
+                  "id": 15112,
+                  "name": "Mythic: The Tarragrue",
+                  "icon": "achievement_raid_torghast_tarragrue"
+                },
+                {
+                  "id": 15113,
+                  "name": "Mythic: The Eye of the Jailer",
+                  "icon": "achievement_raid_torghast_theeyeofthejailer"
+                },
+                {
+                  "id": 15114,
+                  "name": "Mythic: The Nine",
+                  "icon": "achievement_raid_torghast_thenine"
+                },
+                {
+                  "id": 15115,
+                  "name": "Mythic: Remnant of Ner'zhul",
+                  "icon": "achievement_raid_torghast_shadowscourge_prisonofnerzhul"
+                },
+                {
+                  "id": 15116,
+                  "name": "Mythic: Soulrender Dormazain",
+                  "icon": "achievement_raid_torghast_soulrenderdormazain"
+                },
+                {
+                  "id": 15117,
+                  "name": "Mythic: Painsmith Raznal",
+                  "icon": "achievement_raid_torghast_painsmithraznal"
+                },
+                {
+                  "id": 15118,
+                  "name": "Mythic: Guardian of the First Ones",
+                  "icon": "achievement_raid_torghast_guardianofthefirstones"
+                },
+                {
+                  "id": 15119,
+                  "name": "Mythic: Fatescribe Roh-Kalo",
+                  "icon": "achievement_raid_torghast_fatescriberoh-talo"
+                },
+                {
+                  "id": 15120,
+                  "name": "Mythic: Kel'Thuzad",
+                  "icon": "achievement_raid_torghast_kel-thuzad"
+                },
+                {
+                  "id": 15121,
+                  "name": "Mythic: Sylvanas Windrunner",
+                  "icon": "achievement_raid_torghast_sylvanaswindrunner"
+                },                
+                {
+                  "id": 14998,
+                  "name": "Name A Better Duo, I'll Wait",
+                  "icon": "inv_valentinescandy"                  
+                },
+                {
+                  "id": 15065,
+                  "name": "Eye Wish You Were Here",
+                  "icon": "inv_misc_-selfiecamera_01"
+                },                
+                {
+                  "id": 15003,
+                  "name": "To the Nines",
+                  "icon": "inv_misc_permafrostshard"
+                },
+                {
+                  "id": 15058,
+                  "name": "I Used to Bullseye Deeprun Rats Back Home",
+                  "icon": "icon_petfamily_critter"
+                },
+                {
+                  "id": 15105,
+                  "name": "Tormentor's Tango",
+                  "icon": "ability_soulrenderdormazain_hellscream"
+                },
+                {
+                  "id": 15131,
+                  "name": "Whack-A-Soul",
+                  "icon": "ability_mage_burnout"
+                },
+                {
+                  "id": 15132,
+                  "name": "Knowledge is Power",
+                  "icon": "spell_shadow_brainwash"
+                },                
+                {
+                  "id": 15040,
+                  "name": "Flawless Fate",
+                  "icon": "ability_boss_fatescribe_rune6"
+                },
+                {
+                  "id": 15108,
+                  "name": "Together Forever",
+                  "icon": "ability_deathknight_heartstopaura"
+                },
+                {
+                  "id": 15133,
+                  "name": "This World is a Prism",
+                  "icon": "inv_jewelcrafting_prism"
+                }                
+              ],                
+              "name": "Sanctum of Domination"
+            }              
           ]
         },
         {
@@ -14675,7 +14954,43 @@
                 }
               ],
               "name": "Theater of Pain"
-            }
+            },
+            {
+              "id": "862C0C9B",
+              "items": [
+                {
+                  "id": 15177,
+                  "name": "Tazavesh, the Veiled Market",
+                  "icon": "achievement_dungeon_brokerdungeon"
+                },
+                {
+                  "id": 15178,
+                  "name": "Fake It 'Til You Make It",
+                  "icon": "inv_misc_note_02"
+                },                
+                {
+                  "id": 15109,
+                  "name": "Will it Blend?",
+                  "icon": "inv_sword_1h_broker2boss_d_01_blue"
+                },
+                {
+                  "id": 15106,
+                  "name": "Quality Control",
+                  "icon": "inv_misc_paperpackage01a"
+                },
+                {
+                  "id": 15179,
+                  "name": "This is Fine",
+                  "icon": "inv_drink_15"
+                },                
+                {
+                  "id": 15190,
+                  "name": "Mischief!",
+                  "icon": "inv_brokerrat_brown"
+                }                
+              ],
+              "name": "Tazavesh"
+            }            
           ]
         },
         {
@@ -25579,7 +25894,17 @@
                   "id": 14656,
                   "points": 10,
                   "title": "Better to be Envied"
-                }
+                },
+                {
+                  "id": 15059,
+                  "name": "Death's Advance",
+                  "icon": "inv_tabard_deathsadvance_b_01"
+                },
+                {
+                  "id": 15069,
+                  "name": "The Archivists' Codex",
+                  "icon": "inv_inscription_80_scroll"
+                }                
               ],
               "name": ""
             }
@@ -30311,7 +30636,12 @@
                   "id": 13715,
                   "points": 10,
                   "title": "From The Belly Of The Jelly"
-                }
+                },
+                {
+                  "id": 15004,
+                  "name": "A Sly Fox",
+                  "icon": "inv_babyfox_blue"
+                }                
               ],
               "name": "Other"
             }
@@ -32658,15 +32988,26 @@
                   "id": 14058,
                   "points": 10,
                   "title": "All Eyes On Me"
-                },
+                }
+              ],
+              "name": "Battle for Azeroth"
+            },
+            {
+              "id": "9762B4AC",
+              "items": [
                 {
                   "icon": "achievement_raid_revendrethraid_castlenathria",
                   "id": 14614,
                   "points": 10,
                   "title": "Castle Vain"
+                },
+                {
+                  "id": 15110,
+                  "name": "Dominating the Catwalk",
+                  "icon": "achievement_raid_torghastraid"
                 }
               ],
-              "name": "Battle for Azeroth"
+              "name": "Shadowlands"
             },
             {
               "id": "199d4aa3",
@@ -32825,7 +33166,12 @@
                   "id": 14831,
                   "points": 10,
                   "title": "I Live, I Die, I Queue Again"
-                }
+                },
+                {
+                  "id": 15102,
+                  "name": "It's Off the Chain!",
+                  "icon": "inv_chest_plate_mawraid_d_01"
+                }                 
               ],
               "name": "PvP"
             },
@@ -32885,7 +33231,22 @@
                   "id": 14777,
                   "points": 25,
                   "title": "Restoration Expert"
-                }
+                },
+                {
+                  "id": 15023,
+                  "name": "We Can Rebuild",
+                  "icon": "achievement_mythicdungeons_shadowlands"
+                },
+                {
+                  "id": 15024,
+                  "name": "Denying the Drought",
+                  "icon": "achievement_mythicdungeons_shadowlands"
+                },
+                {
+                  "id": 15025,
+                  "name": "Sanctum Superior",
+                  "icon": "achievement_mythicdungeons_shadowlands"
+                }                
               ],
               "name": ""
             },
@@ -33502,6 +33863,57 @@
               "name": "Runecarver"
             },
             {
+              "id": "E3C8957F",
+              "items": [
+                {
+                  "id": 15091,
+                  "name": "A Taste of Perfection",
+                  "icon": "warrior_skullbanner"
+                },              
+                {
+                  "id": 15067,
+                  "name": "Adamant Vaults",
+                  "icon": "inv_trinket_mawraid_04_red"
+                },
+                {
+                  "id": 15081,
+                  "name": "Flawless: Skoldus Hall",
+                  "icon": "inv_helm_plate_mawraid_d_01"
+                },
+                {
+                  "id": 15082,
+                  "name": "Flawless: Fracture Chambers",
+                  "icon": "inv_mail_mawraid_d_01_helm"
+                },
+                {
+                  "id": 15083,
+                  "name": "Flawless: Coldheart Interstitia",
+                  "icon": "inv_cloth_mawraid_d_01_helm"
+                },
+                {
+                  "id": 15084,
+                  "name": "Flawless: The Soulforges",
+                  "icon": "inv_helmet_plate_raiddeathknight_i_01"
+                },
+                {
+                  "id": 15087,
+                  "name": "Flawless: Mort'regar",
+                  "icon": "inv_helm_leather_mawraid_d_01"
+                },
+                {
+                  "id": 15088,
+                  "name": "Flawless: The Upper Reaches",
+                  "icon": "inv_helmet_plate_raiddeathknight_j_01"
+                },
+                {
+                  "id": 15089,
+                  "name": "Flawless Master",
+                  "icon": "inv_mawguardpet_red" 
+                }                
+              ],
+              "name": "Flawless"
+            },            
+            {
               "id": "c8c2c14c",
               "items": [
                 {
@@ -33527,7 +33939,52 @@
                   "id": 14778,
                   "points": 10,
                   "title": "Extremely Ravenous"
-                }
+                },
+                {
+                  "id": 15076,
+                  "name": "The Box of Many Things",
+                  "icon": "misc_torgast_theboxofmanythings"
+                },
+                {
+                  "id": 15080,
+                  "name": "So Blessed",
+                  "icon": "spell_chargepositive"
+                },                
+                {
+                  "id": 15079,
+                  "name": "Many, Many Things",
+                  "icon": "spell_broker_orb"
+                },                
+                {
+                  "id": 15075,
+                  "name": "Infiltrators",
+                  "icon": "achievement_thenighthold_tichondrius"
+                },              
+                {
+                  "id": 15093,
+                  "name": "Avenge Me!",
+                  "icon": "warrior_talent_icon_furyintheblood"
+                },
+                {
+                  "id": 15094,
+                  "name": "Rampage",
+                  "icon": "ability_ironmaidens_sorkasprey"
+                },
+                {
+                  "id": 15095,
+                  "name": "No Doubt",
+                  "icon": "ability_priest_darkness"
+                },
+                {
+                  "id": 15096,
+                  "name": "Crowd Pleaser",
+                  "icon": "ability_mage_massinvisibility"
+                },                
+                {
+                  "id": 15092,
+                  "name": "Master of Torment",
+                  "icon": "ability_warrior_endlessrage"
+                }                
               ],
               "name": "Other"
             }
@@ -38504,7 +38961,12 @@
                   "id": 14816,
                   "points": 0,
                   "title": "Sinful Gladiator's Soul Eater"
-                }
+                },
+                {
+                  "id": 14999,
+                  "name": "Unchained Gladiator's Soul Eater",
+                  "icon": "inv_shadebeastmount_blue"
+                }                
               ],
               "name": "PVP"
             },
@@ -38714,6 +39176,11 @@
               "id": "67665cd7",
               "items": [
                 {
+                  "id": 14938,
+                  "name": "Shadowlands Keystone Explorer: Season One",
+                  "icon": "achievement_challengemode_silver"
+                },                
+                {
                   "icon": "achievement_challengemode_gold",
                   "id": 14531,
                   "points": 0,
@@ -38724,7 +39191,62 @@
                   "id": 14532,
                   "points": 0,
                   "title": "Shadowlands Keystone Master: Season One"
-                }
+                },
+                {
+                  "id": 15073,
+                  "name": "Shadowlands Keystone Explorer: Season Two",
+                  "icon": "achievement_challengemode_silver"
+                },
+                {
+                  "id": 15077,
+                  "name": "Shadowlands Keystone Conqueror: Season Two",
+                  "icon": "achievement_challengemode_gold"
+                },
+                {
+                  "id": 15078,
+                  "name": "Shadowlands Keystone Master: Season Two",
+                  "icon": "achievement_challengemode_platinum"
+                },                
+                {
+                  "id": 15045,
+                  "name": "Keystone Hero: The Necrotic Wake",
+                  "icon": "achievement_dungeon_theneroticwake"
+                },
+                {
+                  "id": 15046,
+                  "name": "Keystone Hero: Plaguefall",
+                  "icon": "achievement_dungeon_plaguefall"
+                },
+                {
+                  "id": 15047,
+                  "name": "Keystone Hero: Mists of Tirna Scithe",
+                  "icon": "achievement_dungeon_mistsoftirnascithe"
+                },
+                {
+                  "id": 15048,
+                  "name": "Keystone Hero: Halls of Atonement",
+                  "icon": "achievement_dungeon_hallsofattonement"
+                },
+                {
+                  "id": 15049,
+                  "name": "Keystone Hero: Spires of Ascension",
+                  "icon": "achievement_dungeon_spireofascension"
+                },
+                {
+                  "id": 15050,
+                  "name": "Keystone Hero: Theater of Pain",
+                  "icon": "achievement_dungeon_theatreofpain"
+                },
+                {
+                  "id": 15051,
+                  "name": "Keystone Hero: De Other Side",
+                  "icon": "achievement_dungeon_theotherside"
+                },
+                {
+                  "id": 15052,
+                  "name": "Keystone Hero: Sanguine Depths",
+                  "icon": "achievement_dungeon_sanguinedepths"
+                }                
               ],
               "name": "Mythic Keystone: Shadowlands"
             },
@@ -39063,7 +39585,17 @@
                   "id": 14461,
                   "points": 0,
                   "title": "Cutting Edge: Sire Denathrius"
-                }
+                },
+                {
+                  "id": 15134,
+                  "name": "Ahead of the Curve: Sylvanas Windrunner",
+                  "icon": "achievement_raid_torghast_sylvanaswindrunner"
+                },
+                {
+                  "id": 15135,
+                  "name": "Cutting Edge: Sylvanas Windrunner",
+                  "icon": "achievement_raid_torghast_sylvanaswindrunner"
+                }                
               ],
               "name": "Lost Content"
             },
@@ -39125,7 +39657,12 @@
                   "icon": "inv_knife_1h_deathwingraid_e_03",
                   "id": "6181",
                   "points": 0
-                }
+                },
+                {
+                  "id": 15191,
+                  "name": "Rae'shalare, Death's Whisper",
+                  "icon": "inv_bow_1h_sylvanasshadowlands_d_01"
+                }                
               ],
               "name": "Legendary"
             },
@@ -40027,7 +40564,42 @@
                   "id": 14691,
                   "points": 0,
                   "title": "Elite: Shadowlands Season 1"
-                }
+                },
+                {
+                  "id": 14968,
+                  "name": "Combatant: Shadowlands Season 2",
+                  "icon": "achievement_featsofstrength_gladiator_10"
+                },
+                {
+                  "id": 14969,
+                  "name": "Challenger: Shadowlands Season 2",
+                  "icon": "achievement_featsofstrength_gladiator_09"
+                },
+                {
+                  "id": 14970,
+                  "name": "Rival: Shadowlands Season 2",
+                  "icon": "achievement_featsofstrength_gladiator_09"
+                },
+                {
+                  "id": 14971,
+                  "name": "Duelist: Shadowlands Season 2",
+                  "icon": "achievement_featsofstrength_gladiator_09"
+                },                
+                {
+                  "id": 14972,
+                  "name": "Gladiator: Shadowlands Season 2",
+                  "icon": "achievement_featsofstrength_gladiator_09"
+                },
+                {
+                  "id": 14973,
+                  "name": "Unchained Gladiator: Shadowlands Season 2",
+                  "icon": "achievement_featsofstrength_gladiator_07"
+                },
+                {
+                  "id": 14974,
+                  "name": "Elite: Shadowlands Season 2",
+                  "icon": "achievement_featsofstrength_gladiator_09"
+                }                
               ],
               "name": "Rated Arena"
             },
@@ -40761,7 +41333,19 @@
                   "points": 0,
                   "side": "H",
                   "title": "Hero of the Horde: Sinful"
-                }
+                },
+                {
+                  "id": 14975,
+                  "name": "Hero of the Alliance: Unchained",
+                  "icon": "achievement_pvp_a_a",
+                  "side": "A"
+                },
+                {
+                  "id": 14976,
+                  "name": "Hero of the Horde: Unchained",
+                  "icon": "achievement_pvp_h_h",
+                  "side": "H"
+                }                
               ],
               "name": "Rated Battleground"
             },
@@ -40946,7 +41530,12 @@
                   "id": 14271,
                   "points": 0,
                   "title": "WoW's 16th Anniversary"
-                }
+                },
+                {
+                  "id": 14942,
+                  "name": "WoW's 17th Anniversary",
+                  "icon": "inv_misc_celebrationcake_01"
+                }                
               ],
               "name": "Anniversary"
             },
@@ -41212,7 +41801,12 @@
                   "id": 13927,
                   "points": 0,
                   "title": "Crashin' Splashin'"
-                }
+                },
+                {
+                  "id": 14931,
+                  "name": "Flying Festivities",
+                  "icon": "inv_holiday_christmas_present_01"
+                }                
               ],
               "name": "Holidays"
             },
