@@ -76,7 +76,7 @@
                 <a 
                   class="thumbnail pbThumbnail" 
                   target="{settings.anchorTarget}"
-                  href="//{settings.WowHeadUrl}/{ item.link }"
+                  href="//{settings.WowHeadUrl}/battle-pet/{ item.ID }"
                   class:borderOn={!item.collected}
                   class:borderOff={item.collected}>
 	        	    <img height="36" width="36" src="{getImageSrc(item)}" alt>

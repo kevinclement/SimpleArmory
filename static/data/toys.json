@@ -65,6 +65,38 @@
         ]
       },
       {
+        "name": "Zone",
+        "id": "87B1B5F4",
+        "items": [
+          {
+            "icon": "Inv_6_0raid_necklace_1d",
+            "itemId": 187174,
+            "name": "Shaded Judgment Stone"
+          }
+        ]
+      },
+      {
+        "name": "Torghast",
+        "id": "A5F37CAB",
+        "items": [
+          {
+            "icon": "Spell_animamaw_nova",
+            "itemId": 186974,
+            "name": "Experimental Anima Cell"
+          },
+          {
+            "icon": "Inv_titanium_shield_spike",
+            "itemId": 187417,
+            "name": "Adamant Vaults Cell"
+          },
+          {
+            "icon": "Inv_neck_mawraid_02_blue",
+            "itemId": 187075,
+            "name": "Box of Rattling Chains"
+          }
+        ]
+      },
+      {
         "name": "Quest",
         "id": "70898c1b",
         "items": [
@@ -72,6 +104,31 @@
             "icon": "inv_pet_butterfly_blue",
             "itemId": 177951,
             "name": "Glimmerflies on Strings"
+          },
+          {
+            "icon": "Pvp_rune_random",
+            "itemId": 187154,
+            "name": "Ancient Korthian Runes"
+          },
+          {
+            "icon": "Inv_sword_25",
+            "itemId": 187159,
+            "name": "Shadow Slicing Shortsword"
+          },
+          {
+            "icon": "inv_ring_80_06b",
+            "itemId": 187140,
+            "name": "Ring of Duplicity"
+          },
+          {
+            "icon": "Inv_helm_mask_fittedalpha_b_01_nightborne_01",
+            "itemId": 187155,
+            "name": "Guise of the Changeling"
+          },
+          {
+            "icon": "inv_trinket_bastion_01_pinkgold",
+            "itemId": 187184,
+            "name": "Vesper of Clarity"
           }
         ]
       },
@@ -163,6 +220,31 @@
             "icon": "achievement_dungeon_theatreofpain_xav",
             "itemId": 184318,
             "name": "Battlecry of Krexus"
+          },
+          {
+            "icon": "Ability_priest_angelicfeather",
+            "itemId": 187051,
+            "name": "Forgotten Feather"
+          },
+          {
+            "icon": "Inv_gizmo_pipe_04",
+            "itemId": 187339,
+            "name": "Silver Shardhide Whistle"
+          },
+          {
+            "icon": "Inv_legion_paragoncache_argussianreach",
+            "itemId": 187344,
+            "name": "Offering Kit Maker"
+          },
+          {
+            "icon": "Inv_misc_steelweaponchain",
+            "itemId": 187416,
+            "name": "Jailer's Cage"
+          },
+          {
+            "icon": "inv_belt_18",
+            "itemId": 187113,
+            "name": "Personal Ball and Chain"
           }
         ]
       },
@@ -304,6 +386,26 @@
             "icon": "inv_ore_adamantium",
             "itemId": 184292,
             "name": "Ancient Elethium Coin"
+          },
+          {
+            "icon": "Sha_spell_shadow_shadesofdarkness",
+            "itemId": 187420,
+            "name": "Maw-Ocular Viewfinder"
+          },
+          {
+            "icon": "inv_potion_89",
+            "itemId": 187139,
+            "name": "Bottled Shade Heart"
+          },
+          {
+            "icon": "inv_skinning_80_calcifiedbone",
+            "itemId": 183901,
+            "name": "Bonestorm Top"
+          },
+          {
+            "icon": "inv_trinket_bastion_01_gold",
+            "itemId": 187176,
+            "name": "Vesper of Harmony"
           }
         ]
       },
@@ -325,6 +427,17 @@
             "icon": "creatureportrait_twilightshammer_dragonegg_01",
             "itemId": 184495,
             "name": "Infested Arachnid Casing"
+          }
+        ]
+      },
+      {
+        "name": "Maw Assaults",
+        "id": "DA82F1C4",
+        "items": [
+          {
+            "icon": "inv_trinket_bastion_01_silver",
+            "itemId": 187185,
+            "name": "Vesper of Faith"
           }
         ]
       }
@@ -3030,7 +3143,22 @@
             "icon": "inv_leatherworking_70_flaminghoop",
             "itemId": "129961",
             "name": "Flaming Hoop"
-          }
+          },
+          {
+            "icon": "inv_misc_bone_01",
+            "itemId": "186985",
+            "name": "Elusive Pet Treat"
+          },
+          {
+            "icon": "8xp_vulperaflute",
+            "itemId": "186702",
+            "name": "Pallid Bone Flute"
+          },
+          {
+            "icon": "inv_misc_rune_07",
+            "itemId": "186686",
+            "name": "Pallid Oracle Bones"
+          }             
         ],
         "name": "Leatherworking"
       },
@@ -3188,7 +3316,12 @@
             "icon": "spell_fire_twilightfire",
             "itemId": "128536",
             "name": "Leylight Brazier"
-          }
+          },
+          {
+            "icon": "Spell_animabastion_beam",
+            "itemId": "186973",
+            "name": "Anima-ted Leash"
+          }          
         ],
         "name": "Enchanting"
       },
@@ -4053,7 +4186,12 @@
             "icon": "inv_corgi2",
             "itemId": "158149",
             "name": "Overtuned Corgi Goggles"
-          }
+          },
+          {
+            "icon": "achievement_boss_argus_felreaver",
+            "itemId": "186501",
+            "name": "Doomwalker Trophy Stand"
+          }          
         ],
         "name": "WoW's Anniversary"
       }
