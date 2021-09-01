@@ -10,6 +10,7 @@
 	import Companions from '$pages/Companions.svelte';
 	import Toys from '$pages/Toys.svelte';
 	import BattlePets from '$pages/BattlePets.svelte';
+	import Titles from '$pages/Titles.svelte';
 	import Calendar from '$pages/Calendar.svelte';
 	import Reputations from '$pages/Reputations.svelte';
 	import Nav from '$components/Nav.svelte';
@@ -141,6 +142,10 @@
 			<!-- collectable/toys -->
 			{:else if $page === 'collectable' && $category === 'toys'} 
 			<Toys/>
+
+			<!-- collectable/titles -->
+			{:else if $page === 'collectable' && $category === 'titles'} 
+			<Titles/>
 
 			<!-- calendar -->
 			{:else if $page === 'calendar'}

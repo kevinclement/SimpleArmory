@@ -25,6 +25,7 @@ export async function getProfile(region, realm, character) {
     profile.factionMapped = profile.faction.type === "ALLIANCE" ? 'A' : 'H'
     profile.classMapped = profile.character_class.id;
     profile.raceMapped = profile.race.id;
+    profile.genderMapped = profile.gender.type === "MALE" ? 'M' : 'F'
 
     _cache.update(
         region,

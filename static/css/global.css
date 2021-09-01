@@ -38,8 +38,13 @@ body {
   font-weight: 500;
   line-height: 1.1;
   }
+  .title {
+    font-size: 6px;
+    text-align: center;
+  }
   .borderOn {
 	border: 1px dashed grey;
+  float: left;
   }
   .borderOff {
 	border: 0px;
