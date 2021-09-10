@@ -37,7 +37,15 @@ class BnetClient:
             'Authorization': 'Bearer ' + self.access_token,
             'Battlenet-Namespace': 'static-us',
         }
-        r = await self.session.get(url, headers=headers, **kwargs)
+        for i in range(5):  # retry 5 times if too many requests
+            r = await self.session.get(url, headers=headers, **kwargs)
+            if r.status == 429:
+                await asyncio.sleep(2)
+            else:
+                break
+        else:
+            raise RuntimeError("Doing requests too fast")
+
         res = await r.json(content_type=None)
         if 'status' in res and res['status'] == 'nok':
             raise RuntimeError("Request failed: " + res['reason']
