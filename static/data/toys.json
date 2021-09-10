@@ -18,12 +18,11 @@
     ]
   },
   {
-    "name": "Shadowlands",
     "id": "4111b843",
     "items": [],
+    "name": "Shadowlands",
     "subcats": [
       {
-        "name": "Achievements",
         "id": "c6193abb",
         "items": [
           {
@@ -51,10 +50,10 @@
             "itemId": 184223,
             "name": "Helm of the Dominated"
           }
-        ]
+        ],
+        "name": "Achievements"
       },
       {
-        "name": "Vendor",
         "id": "2c6625b2",
         "items": [
           {
@@ -62,22 +61,22 @@
             "itemId": 183989,
             "name": "Dredger Barrow Racer"
           }
-        ]
+        ],
+        "name": "Vendor"
       },
       {
-        "name": "Zone",
-        "id": "87B1B5F4",
+        "id": "87b1b5f4",
         "items": [
           {
             "icon": "Inv_6_0raid_necklace_1d",
             "itemId": 187174,
             "name": "Shaded Judgment Stone"
           }
-        ]
+        ],
+        "name": "Zone"
       },
       {
-        "name": "Torghast",
-        "id": "A5F37CAB",
+        "id": "a5f37cab",
         "items": [
           {
             "icon": "Spell_animamaw_nova",
@@ -94,10 +93,10 @@
             "itemId": 187075,
             "name": "Box of Rattling Chains"
           }
-        ]
+        ],
+        "name": "Torghast"
       },
       {
-        "name": "Quest",
         "id": "70898c1b",
         "items": [
           {
@@ -130,10 +129,10 @@
             "itemId": 187184,
             "name": "Vesper of Clarity"
           }
-        ]
+        ],
+        "name": "Quest"
       },
       {
-        "name": "Treasure",
         "id": "b33fa66c",
         "items": [
           {
@@ -246,10 +245,10 @@
             "itemId": 187113,
             "name": "Personal Ball and Chain"
           }
-        ]
+        ],
+        "name": "Treasure"
       },
       {
-        "name": "Reputation",
         "id": "f35398c5",
         "items": [
           {
@@ -272,10 +271,10 @@
             "itemId": 184218,
             "name": "Vulgarity Arbiter"
           }
-        ]
+        ],
+        "name": "Reputation"
       },
       {
-        "name": "Night Fae",
         "id": "dcbb36dd",
         "items": [
           {
@@ -293,10 +292,10 @@
             "itemId": 183856,
             "name": "Mystical Orb of Meditation"
           }
-        ]
+        ],
+        "name": "Night Fae"
       },
       {
-        "name": "Kyrian",
         "id": "c1bcfee0",
         "items": [
           {
@@ -304,10 +303,10 @@
             "itemId": 184353,
             "name": "Kyrian Hearthstone"
           }
-        ]
+        ],
+        "name": "Kyrian"
       },
       {
-        "name": "Necrolord",
         "id": "a0084651",
         "items": [
           {
@@ -320,10 +319,10 @@
             "itemId": 183847,
             "name": "Acolyte's Guise"
           }
-        ]
+        ],
+        "name": "Necrolord"
       },
       {
-        "name": "Venthyr",
         "id": "207b37b4",
         "items": [
           {
@@ -346,10 +345,10 @@
             "itemId": 182696,
             "name": "The Countess's Parasol"
           }
-        ]
+        ],
+        "name": "Venthyr"
       },
       {
-        "name": "Rare",
         "id": "02e2422a",
         "items": [
           {
@@ -407,10 +406,10 @@
             "itemId": 187176,
             "name": "Vesper of Harmony"
           }
-        ]
+        ],
+        "name": "Rare"
       },
       {
-        "name": "Paragon Reputation",
         "id": "afad88fc",
         "items": [
           {
@@ -428,18 +427,19 @@
             "itemId": 184495,
             "name": "Infested Arachnid Casing"
           }
-        ]
+        ],
+        "name": "Paragon Reputation"
       },
       {
-        "name": "Maw Assaults",
-        "id": "DA82F1C4",
+        "id": "da82f1c4",
         "items": [
           {
             "icon": "inv_trinket_bastion_01_silver",
             "itemId": 187185,
             "name": "Vesper of Faith"
           }
-        ]
+        ],
+        "name": "Maw Assaults"
       }
     ]
   },
@@ -3158,7 +3158,7 @@
             "icon": "inv_misc_rune_07",
             "itemId": "186686",
             "name": "Pallid Oracle Bones"
-          }             
+          }
         ],
         "name": "Leatherworking"
       },
@@ -3321,7 +3321,7 @@
             "icon": "Spell_animabastion_beam",
             "itemId": "186973",
             "name": "Anima-ted Leash"
-          }          
+          }
         ],
         "name": "Enchanting"
       },
@@ -3980,14 +3980,14 @@
           {
             "icon": "inv_garrison_hordedestroyer",
             "itemId": 172222,
-            "obtainSide": "H",
-            "name": "Crashin' Thrashin' Juggernaught"
+            "name": "Crashin' Thrashin' Juggernaught",
+            "obtainSide": "H"
           },
           {
             "icon": "inv_garrison_alliancedestroyer",
             "itemId": 172223,
-            "obtainSide": "A",
-            "name": "Crashin' Thrashin' Battleship"
+            "name": "Crashin' Thrashin' Battleship",
+            "obtainSide": "A"
           },
           {
             "icon": "achievement_worldevent_mistletoe",
@@ -4191,7 +4191,7 @@
             "icon": "achievement_boss_argus_felreaver",
             "itemId": "186501",
             "name": "Doomwalker Trophy Stand"
-          }          
+          }
         ],
         "name": "WoW's Anniversary"
       }
@@ -4358,7 +4358,6 @@
         "name": "Blizzard Store"
       },
       {
-        "name": "Collector's Edition",
         "id": "011e92ca",
         "items": [
           {
@@ -4366,7 +4365,8 @@
             "itemId": 172179,
             "name": "Eternal Traveler's Hearthstone"
           }
-        ]
+        ],
+        "name": "Collector's Edition"
       },
       {
         "id": "c0f754ff",
