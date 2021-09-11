@@ -123,9 +123,7 @@ export async function parseCollectablesObject(categories, profile, collected_dat
                 {
                     var foundRace = false;
                     item.allowableRaces.forEach((race) => {
-                        // TODO: there is a bug here, but if we fix it, its not correct
-                        // seems these might be dupped with classes at the end of the day
-                        if (race === profile.race) {
+                        if (race === profile.raceMapped) {
                             foundRace = true;
                         }
                     })
