@@ -310,39 +310,11 @@
             "name": "Gloober, as G'huun"
           },
           {
-            "ID": 2923,
-            "creatureId": 171227,
-            "icon": "ability_mount_cranemountblue",
-            "itemId": 180628,
-            "name": "Pearlwing Heron"
-          },
-          {
-            "ID": 2933,
-            "creatureId": 171568,
-            "icon": "inv_babyfox_black",
-            "itemId": 180814,
-            "name": "Sable"
-          },
-          {
-            "ID": 2965,
-            "creatureId": 172284,
-            "icon": "inv_minespider2_blood",
-            "itemId": 181315,
-            "name": "Bloodfeaster Spiderling"
-          },
-          {
             "ID": 3017,
             "creatureId": 173586,
             "icon": "inv_treepetorange",
             "itemId": 182662,
             "name": "Leafadore"
-          },
-          {
-            "ID": 3061,
-            "creatureId": 175561,
-            "icon": "inv_babysteward_silver",
-            "itemId": 184398,
-            "name": "Steward Featherling"
           },
           {
             "ID": 3097,
@@ -539,13 +511,6 @@
             "icon": "inv_pet_batpetrevendreth_purple",
             "itemId": 182612,
             "name": "The Count"
-          },
-          {
-            "ID": 3012,
-            "creatureId": 173536,
-            "icon": "inv_pet_batpetrevendreth_stone",
-            "itemId": 183855,
-            "name": "Stony"
           },
           {
             "ID": 3013,
@@ -1069,6 +1034,27 @@
             "icon": "inv_bloodlousepet_green",
             "itemId": 181264,
             "name": "Plaguelouse Larva"
+          },
+          {
+            "ID": 2923,
+            "creatureId": 171227,
+            "icon": "ability_mount_cranemountblue",
+            "itemId": 180628,
+            "name": "Pearlwing Heron"
+          },
+          {
+            "ID": 2933,
+            "creatureId": 171568,
+            "icon": "inv_babyfox_black",
+            "itemId": 180814,
+            "name": "Sable"
+          },
+          {
+            "ID": 2965,
+            "creatureId": 172284,
+            "icon": "inv_minespider2_blood",
+            "itemId": 181315,
+            "name": "Bloodfeaster Spiderling"
           }
         ],
         "name": "Covenant Sanctum"
@@ -1102,6 +1088,13 @@
             "icon": "inv_decomposersmallblue",
             "itemId": 180633,
             "name": "Grubby"
+          },
+          {
+            "ID": 3061,
+            "creatureId": 175561,
+            "icon": "inv_babysteward_silver",
+            "itemId": 184398,
+            "name": "Steward Featherling"
           }
         ],
         "name": "Kyrian"
@@ -1154,6 +1147,13 @@
             "icon": "inv_misc_powder_tin",
             "itemId": 183107,
             "name": "Char"
+          },
+          {
+            "ID": 3012,
+            "creatureId": 173536,
+            "icon": "inv_pet_batpetrevendreth_stone",
+            "itemId": 183855,
+            "name": "Stony"
           }
         ],
         "name": "Venthyr"
