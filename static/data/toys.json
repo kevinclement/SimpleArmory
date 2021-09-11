@@ -2602,6 +2602,18 @@
           }
         ],
         "name": "Treasure"
+      },
+      {
+        "id": "3c01691b",
+        "items": [
+          {
+            "icon": "inv_misc_orb_03",
+            "itemId": 89205,
+            "name": "Mini Mana Bomb",
+            "notObtainable": true
+          }
+        ],
+        "name": "Pre-launch Event"
       }
     ]
   },
@@ -2667,6 +2679,24 @@
           }
         ],
         "name": "Rare"
+      },
+      {
+        "id": "653cf16c",
+        "items": [
+          {
+            "icon": "inv_misc_tournaments_symbol_troll",
+            "itemId": 54653,
+            "name": "Darkspear Pride",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_misc_tournaments_symbol_gnome",
+            "itemId": 54651,
+            "name": "Gnomeregan Pride",
+            "notObtainable": true
+          }
+        ],
+        "name": "Pre-launch Event"
       }
     ]
   },
@@ -3305,6 +3335,11 @@
             "icon": "inv_trinket_80_kultiras02b",
             "itemId": 168807,
             "name": "Wormhole Generator: Kul Tiras"
+          },
+          {
+            "icon": "inv_engineering_90_wormholegenerator",
+            "itemId": 172924,
+            "name": "Wormhole Generator: Shadowlands"
           }
         ],
         "name": "Engineering"
@@ -4353,6 +4388,16 @@
             "icon": "inv_encrypted20",
             "itemId": 166779,
             "name": "Transmorpher Beacon"
+          },
+          {
+            "icon": "inv_8xp_encrypted11",
+            "itemId": 166778,
+            "name": "Horde's Might Firework"
+          },
+          {
+            "icon": "inv_8xp_encrypted10",
+            "itemId": 166777,
+            "name": "Lion's Pride Firework"
           }
         ],
         "name": "Blizzard Store"
