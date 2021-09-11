@@ -78,10 +78,10 @@ class AchievementFixer(WowToolsFixer):
             wt_ach = self.wt_achiev[ach_id]
             faction = self.get_faction(ach_id)
             return {
-                'id': ach_id,
+                'id': int(ach_id),
                 'title': wt_ach['Title_lang'],
                 'icon': self.get_icon_name(int(wt_ach['IconFileID'])),
-                'points': wt_ach['Points'],
+                'points': int(wt_ach['Points']),
                 **({'side': faction} if faction else {})
             }
 
@@ -236,10 +236,7 @@ class AchievementFixer(WowToolsFixer):
                 for subcat in cat['subcats']:
                     for item in subcat['items']:
                         wt_ach = self.wt_achiev[int(item['id'])]
-                        faction = {
-                            0: 'H',
-                            1: 'A',
-                        }.get(int(wt_ach['Faction']))
+                        faction = self.get_faction(int(item['id']))
                         oldfaction = item.get('side', None)
                         if oldfaction != faction:
                             changelog('* Fixed faction of achievement {} '
@@ -250,6 +247,19 @@ class AchievementFixer(WowToolsFixer):
                                 item['side'] = faction
                             else:
                                 item.pop('side', '')
+
+    def fix_types_data(self):
+        for supercat in self.achievs['supercats']:
+            for cat in supercat['cats']:
+                for subcat in cat['subcats']:
+                    for item in subcat['items']:
+                        ach_id = int(item['id'])
+                        wt_ach = self.wt_achiev[ach_id]
+                        item['id'] = int(ach_id)
+                        item['points'] = int(wt_ach['Points'])
+                        item['title'] = wt_ach['Title_lang']
+                        item.pop('criteria', None)
+                        item.pop('name', None)
 
     def reorder_categories(self):
         def get_name_order_for_category(cat_id):
@@ -319,6 +329,7 @@ class AchievementFixer(WowToolsFixer):
         self.add_missing_achievements()
         self.fix_broken_icons()
         self.fix_wrong_sides()
+        self.fix_types_data()
 
         self.del_empty()
 
