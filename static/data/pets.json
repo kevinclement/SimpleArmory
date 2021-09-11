@@ -408,6 +408,14 @@
             "ID": 3116,
             "icon": "inv_decomposermountblack",
             "name": "Invasive Buzzer"
+          },
+          {
+            "ID": 3010,
+            "creatureId": 173533,
+            "icon": "inv_pet_batpetrevendreth_red",
+            "itemId": "186544",
+            "name": "Sinfall Screecher",
+            "spellid": 339670
           }
         ],
         "name": "Maw Assaults"
@@ -1190,6 +1198,20 @@
           }
         ],
         "name": "Night Fae"
+      },
+      {
+        "id": "56de7977",
+        "items": [
+          {
+            "ID": 3046,
+            "creatureId": 174181,
+            "icon": "inv_helmet_149",
+            "itemId": "183621",
+            "name": "Putrid Geist",
+            "spellid": 341825
+          }
+        ],
+        "name": "Pre-launch Event"
       }
     ]
   },
@@ -3523,7 +3545,7 @@
             "spellid": "210699"
           }
         ],
-        "name": "Pre-launch event"
+        "name": "Pre-launch Event"
       }
     ]
   },
@@ -7589,6 +7611,13 @@
             "icon": "2735061",
             "name": "Dottie",
             "spellid": 294231
+          },
+          {
+            "ID": 2780,
+            "creatureId": 158142,
+            "icon": "3150958",
+            "name": "Daisy",
+            "spellid": 308369
           }
         ],
         "name": "Blizzard Store"
