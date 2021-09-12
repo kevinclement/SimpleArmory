@@ -56,6 +56,8 @@ class ToyFixer(WowToolsFixer):
                     self.id_to_old_toy[int(item['itemId'])] = item
 
     def get_toy(self, toy_id):
+        toy_id = str(toy_id)
+
         # Name
         if toy_id not in self.wt_itemsparse:
             return None
@@ -78,7 +80,6 @@ class ToyFixer(WowToolsFixer):
         )
 
     def fix_missing_toy(self, toy_id):
-        # Source
         toy = self.get_toy(toy_id)
         if toy is None:
             return
@@ -95,6 +96,18 @@ class ToyFixer(WowToolsFixer):
                     and int(toy_id) not in IGNORE_TOY_ITEMID):
                 self.fix_missing_toy(toy_id)
 
+    def fix_types_data(self):
+        for cat in self.toys:
+            for subcat in cat['subcats']:
+                for item in subcat['items']:
+                    fixed_toy = self.get_toy(int(item['itemId']))
+                    item['itemId'] = fixed_toy['itemId']
+                    item['name'] = fixed_toy['name']
+
+                    if (item['icon'].lower() != fixed_toy['icon'].lower()):
+                        item['icon'] = fixed_toy['icon']
+
     def run(self):
         self.fix_missing_toys()
+        self.fix_types_data()
         return [self.toys]
