@@ -1,4 +1,4 @@
-# [SimpleArmory](http://simplearmory.com) <img src="https://github.com/kevinclement/SimpleArmory/raw/master/app/images/shield.png?raw=true" align="left" height="32" width="32" style="max-width:100%;align-vertical: center;vertical-align: center;line-height: 20px;margin-top: 15px;margin-right: 5px;">
+# [SimpleArmory](http://simplearmory.com) <img src="https://github.com/kevinclement/SimpleArmory/raw/master/static/images/shield.png?raw=true" align="left" height="32" width="32" style="max-width:100%;align-vertical: center;vertical-align: center;line-height: 20px;margin-top: 15px;margin-right: 5px;">
 World of Warcraft armory site that presents your armory in a simple manor.
 
 ======================
