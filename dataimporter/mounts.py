@@ -64,7 +64,7 @@ class MountFixer(WowToolsFixer):
         self.id_to_old_mount = {}
 
         self.wt_mount = {
-            e['ID']: e for e in self.wt_get_table('mount')
+            int(e['ID']): e for e in self.wt_get_table('mount')
         }
         self.wt_itemeffectbyspell = {
             e['SpellID']: e for e in self.wt_get_table('itemeffect')
@@ -84,9 +84,9 @@ class MountFixer(WowToolsFixer):
                 for item in subcat['items']:
                     self.id_to_old_mount[int(item['ID'])] = item
 
-    def get_mount(self, mount_id):
-        spell_id = self.wt_mount[mount_id]['SourceSpellID']
-        name = self.wt_mount[mount_id]['Name_lang']
+    def get_mount(self, mount_id: int):
+        spell_id = self.wt_mount[int(mount_id)]['SourceSpellID']
+        name = self.wt_mount[int(mount_id)]['Name_lang']
 
         # Icon
         try:
@@ -111,13 +111,13 @@ class MountFixer(WowToolsFixer):
             **({'itemId': item_id} if item_id else {})
         }
 
-    def get_mount_source(self, mount_id):
+    def get_mount_source(self, mount_id: int):
         return MOUNT_SOURCE_ENUM.get(
             int(self.wt_mount[mount_id]['SourceTypeEnum']),
             'Unknown'
         )
 
-    def fix_missing_mount(self, mount_id):
+    def fix_missing_mount(self, mount_id: int):
         if (
             # No summon spell ID
             not int(self.wt_mount[mount_id]['SourceSpellID'])
@@ -142,8 +142,27 @@ class MountFixer(WowToolsFixer):
         for mount_id in self.wt_mount:
             if (int(mount_id) not in self.id_to_old_mount
                     and int(mount_id) not in IGNORE_MOUNT_ID):
-                self.fix_missing_mount(mount_id)
+                self.fix_missing_mount(int(mount_id))
+
+    def fix_types_data(self):
+        for cat in self.mounts:
+            for subcat in cat['subcats']:
+                for item in subcat['items']:
+                    fixed_mount = self.get_mount(int(item['ID']))
+                    item['ID'] = fixed_mount['ID']
+                    item['name'] = fixed_mount['name']
+                    item['spellid'] = fixed_mount['spellid']
+
+                    # There can be multiple valid itemID, do not overwrite
+                    if item.get('itemId'):
+                        item['itemId'] = int(item['itemId'])
+                    elif fixed_mount.get('itemId'):
+                        item['itemId'] = fixed_mount['itemId']
+
+                    if (item['icon'].lower() != fixed_mount['icon'].lower()):
+                        item['icon'] = fixed_mount['icon']
 
     def run(self):
         self.fix_missing_mounts()
+        self.fix_types_data()
         return [self.mounts]
