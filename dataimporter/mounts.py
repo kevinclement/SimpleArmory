@@ -159,7 +159,10 @@ class MountFixer(WowToolsFixer):
                     elif fixed_mount.get('itemId'):
                         item['itemId'] = fixed_mount['itemId']
 
-                    if (item['icon'].lower() != fixed_mount['icon'].lower()):
+                    if (
+                        fixed_mount['icon'] is not None
+                        and item['icon'].lower() != fixed_mount['icon'].lower()
+                    ):
                         item['icon'] = fixed_mount['icon']
 
     def run(self):
