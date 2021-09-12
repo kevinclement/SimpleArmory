@@ -55,6 +55,7 @@ class PetFixer(WowToolsFixer):
                     self.id_to_old_pet[int(item['ID'])] = item
 
     def get_pet(self, pet_id):
+        pet_id = str(pet_id)
         # Name
         spell_id = self.wt_battlepetspecies[pet_id]['SummonSpellID']
         creature_id = self.wt_battlepetspecies[pet_id]['CreatureID']
@@ -116,6 +117,26 @@ class PetFixer(WowToolsFixer):
                     and int(pet_id) not in IGNORE_PET_NPCID):
                 self.fix_missing_pet(pet_id)
 
+    def fix_types_data(self):
+        for cat in self.pets:
+            for subcat in cat['subcats']:
+                for item in subcat['items']:
+                    fixed_pet = self.get_pet(int(item['ID']))
+                    item['ID'] = fixed_pet['ID']
+                    item['name'] = fixed_pet['name']
+                    item['creatureId'] = fixed_pet['creatureId']
+                    item['spellid'] = fixed_pet['spellid']
+
+                    # There can be multiple valid itemID, do not overwrite
+                    if item.get('itemId'):
+                        item['itemId'] = int(item['itemId'])
+                    elif fixed_pet.get('itemId'):
+                        item['itemId'] = fixed_pet['itemId']
+
+                    if (item['icon'].lower() != fixed_pet['icon'].lower()):
+                        item['icon'] = fixed_pet['icon']
+
     def run(self):
         self.fix_missing_pets()
+        self.fix_types_data()
         return [self.pets, self.battlepets]
