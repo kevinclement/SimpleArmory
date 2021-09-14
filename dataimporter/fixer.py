@@ -24,10 +24,11 @@ class WowToolsFixer:
 
     def get_icon_name(self, icon_id: int):
         assert self.load_files
-        if icon_id not in self.wt_files:
-            icon_name = str(icon_id)
-        else:
+        icon_name = str(icon_id)
+        if icon_id in self.wt_files:
             icon_path = self.wt_files[icon_id]['Path']
-            icon_name = icon_path.split('/')[-1].rsplit('.', 1)[0].lower()
-            icon_name = icon_name.replace(' ', '-')
+            if 'encrypted' not in icon_path:
+                icon_name = icon_path.split('/')[-1].rsplit('.', 1)[0].lower()
+                icon_name = icon_name.replace(' ', '-')
+
         return icon_name
