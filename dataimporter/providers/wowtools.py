@@ -56,7 +56,7 @@ class WowToolsClient:
             self.export_url,
             params={'name': table_name, 'build': build}
         )
-        return csv_to_list(await table_response.text())
+        return csv_to_list(await table_response.text(encoding='utf-8'))
 
     async def get_file_list(self):
         files_url = f'{self.base_url}/casc/listfile/download/csv'
@@ -68,7 +68,7 @@ class WowToolsClient:
         )
 
 
-@functools.lru_cache
+@functools.lru_cache(maxsize=None)
 def get_table(table_name, build=None):
     async def _get_table():
         async with WowToolsClient() as c:
