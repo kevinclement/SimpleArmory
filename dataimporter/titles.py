@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import re
+
 from .tools import icat, changelog
 from .fixer import WowToolsFixer
 
@@ -59,17 +61,27 @@ class TitleFixer(WowToolsFixer):
                 for item in subcat['items']:
                     self.id_to_old_title[int(item['titleId'])] = item
 
+    def simplify_name(self, name):
+        name = re.sub(r'\s*%s,?\s*', '', name)
+        name = name[:1].upper() + name[1:]
+        return name
+
     def get_title(self, title_id: int):
         if int(title_id) not in self.wt_title:
             return None
         wt_title = self.wt_title[int(title_id)]
-        return {
+        name = self.simplify_name(wt_title['Name_lang'])
+        nameF = self.simplify_name(wt_title['Name1_lang'])
+        res = {
             'titleId': int(title_id),
-            'name': wt_title['Name_lang'],
+            'name': name,
             'type': 'title',
             'id': int(wt_title['ID']),
             'icon': 'inv_misc_questionmark',
         }
+        if nameF != name:
+            res['nameF'] = nameF
+        return res
 
     def fix_missing_title(self, title_id: int):
         title = self.get_title(title_id)
@@ -102,6 +114,8 @@ class TitleFixer(WowToolsFixer):
                         else:
                             item['id'] = int(fixed_title['id'])
                         item['name'] = fixed_title['name']
+                        if fixed_title.get('nameF'):
+                            item['nameF'] = fixed_title['nameF']
                     else:
                         item['id'] = int(item['id'])
                         item['titleId'] = int(item['titleId'])
