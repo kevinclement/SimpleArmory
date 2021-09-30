@@ -9,6 +9,7 @@ from .pets import PetFixer
 from .realms import RealmFixer
 from .toys import ToyFixer
 from .factions import FactionFixer
+from .titles import TitleFixer
 
 FIXERS = {
     'achievements': (AchievementFixer, ['achievements.json']),
@@ -17,6 +18,7 @@ FIXERS = {
     'realms': (RealmFixer, ['servers.eu.json', 'servers.us.json']),
     'reputations': (FactionFixer, ['factions.json']),
     'toys': (ToyFixer, ['toys.json']),
+    'titles': (TitleFixer, ['titles.json']),
 }
 
 
