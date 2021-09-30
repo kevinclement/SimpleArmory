@@ -11,13 +11,36 @@ IGNORE_TITLE_ID = [
     55,   # %s of the Emerald Dream https://www.wowhead.com/title=87
     58,   # %s the Malefic https://www.wowhead.com/title=90
     64,   # Grand Master Alchemist %s https://www.wowhead.com/title=96
+    65,   # Grand Master Blacksmith https://www.wowhead.com/title=97
+    66,   # Iron Chef https://www.wowhead.com/title=98
+    67,   # Grand Master Enchanter https://www.wowhead.com/title=99
+    68,   # Grand Master Engineer https://www.wowhead.com/title=100
+    70,   # Grand Master Angler https://www.wowhead.com/title=102
+    71,   # Grand Master Herbalist https://www.wowhead.com/title=103
+    72,   # Grand Master Scribe https://www.wowhead.com/title=104
+    73,   # Grand Master Jewelcrafter https://www.wowhead.com/title=105
     74,   # Grand Master Leatherworker %s https://www.wowhead.com/title=106
+    75,   # Grand Master Miner https://www.wowhead.com/title=107
     76,   # Grand Master Skinner %s https://www.wowhead.com/title=108
     77,   # Grand Master Tailor %s https://www.wowhead.com/title=109
+    82,   # The Lion Hearted https://www.wowhead.com/title=114
+    83,   # Champion of Elune https://www.wowhead.com/title=115
+    84,   # Hero of Orgrimmar https://www.wowhead.com/title=116
+    85,   # Plainsrunner https://www.wowhead.com/title=117
+    86,   # Of the Darkspear https://www.wowhead.com/title=118
+    91,   # Hero of Northrend https://www.wowhead.com/title=123
+    147,  # Slayer of Stupid, Incompet[...] https://www.wowhead.com/title=188
+    224,  # Gob Squad Recruit https://www.wowhead.com/title=344
+    226,  # Gob Squad Commando https://www.wowhead.com/title=347
+    231,  # The Poisoned Mind https://www.wowhead.com/title=354
     232,  # %s the Bloodseeker https://www.wowhead.com/title=355
+    233,  # The Locust https://www.wowhead.com/title=356
+    234,  # The Swarmkeeper https://www.wowhead.com/title=357
     235,  # %s the Prime https://www.wowhead.com/title=358
     236,  # %s the Manipulator https://www.wowhead.com/title=359
     237,  # %s the Dissector https://www.wowhead.com/title=360
+    238,  # The Lucid https://www.wowhead.com/title=361
+    239,  # The Wind-Reaver https://www.wowhead.com/title=362
     245,  # Darkmaster %s https://www.wowhead.com/title=370
     330,  # Master Assassin %s https://www.wowhead.com/title=473
     358,  # %s, Adventuring Instructor https://www.wowhead.com/title=507
@@ -46,6 +69,8 @@ IGNORE_TITLE_ID = [
 
 
 class TitleFixer(WowToolsFixer):
+    load_files = True
+
     def _store_init(self, titles):
         self.titles = titles
         self.id_to_old_title = {}
@@ -53,6 +78,9 @@ class TitleFixer(WowToolsFixer):
 
         self.wt_title = {
             int(e['Mask_ID']): e for e in self.wt_get_table('chartitles')
+        }
+        self.wt_achiev = {
+            int(e['ID']): e for e in self.wt_get_table('achievement')
         }
 
     def register_old_titles(self):
@@ -65,6 +93,41 @@ class TitleFixer(WowToolsFixer):
         name = re.sub(r'\s*%s,?\s*', '', name)
         name = name[:1].upper() + name[1:]
         return name
+
+    def fuzzy_find_achievement(self, wt_title):
+        def to_pattern(name):
+            name = self.simplify_name(name)
+            name = name.lower()
+            name = re.sub(r'^the\s*', '', name)
+            return name
+
+        lname = to_pattern(wt_title['Name_lang'])
+        lnameF = to_pattern(wt_title['Name1_lang'])
+
+        # We try to find the shortest achievement reward description containing
+        # the title we are looking for. This avoids problems of titles
+        # containing other titles (e.g., Champion / Champion of the Alliance)
+        matching_achievs = []
+        for achiev in self.wt_achiev.values():
+            lreward = achiev['Reward_lang'].lower()
+            if lname in lreward or lnameF in lreward:
+                matching_achievs.append(achiev)
+        if not matching_achievs:
+            # Second pass, now with achievement descriptions
+            for achiev in self.wt_achiev.values():
+                ldesc = achiev['Description_lang'].lower()
+                if lname in ldesc or lnameF in ldesc:
+                    matching_achievs.append(achiev)
+        if not matching_achievs:
+            return
+        matching_achievs.sort(
+            key=lambda a: (
+                bool(a['Reward_lang']),
+                len(a['Reward_lang']),
+                int(a['ID']),
+            )
+        )
+        return int(matching_achievs[0]['ID'])
 
     def get_title(self, title_id: int):
         if int(title_id) not in self.wt_title:
@@ -81,6 +144,12 @@ class TitleFixer(WowToolsFixer):
         }
         if nameF != name:
             res['nameF'] = nameF
+        ach_id = self.fuzzy_find_achievement(wt_title)
+        if ach_id:
+            wt_ach = self.wt_achiev[ach_id]
+            res['id'] = ach_id
+            res['type'] = 'achievement'
+            res['icon'] = self.get_icon_name(int(wt_ach['IconFileID']))
         return res
 
     def fix_missing_title(self, title_id: int):
@@ -116,6 +185,8 @@ class TitleFixer(WowToolsFixer):
                         item['name'] = fixed_title['name']
                         if fixed_title.get('nameF'):
                             item['nameF'] = fixed_title['nameF']
+                        if not item.get('icon'):
+                            item['icon'] = fixed_title['icon']
                     else:
                         item['id'] = int(item['id'])
                         item['titleId'] = int(item['titleId'])
