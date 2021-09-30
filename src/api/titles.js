@@ -77,6 +77,14 @@ function parseTitlesObject(db, profile, earned) {
                     showthis = false;
                 }
 
+                // Instead of having two titles, some titles have two name
+                // variants. If the profile gender is F and the name of the
+                // title has a feminine variant, we change the displayed title
+                // name to the nameF variant.
+                if (profile.genderMapped == 'F' && item.nameF !== undefined) {
+                    item.name = item.nameF;
+                }
+
                 if (showthis) {
                     subCat.items.push(item);
                     if (hasthis) {
