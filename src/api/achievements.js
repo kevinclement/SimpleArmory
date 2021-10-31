@@ -62,15 +62,20 @@ function parseAchievementObject(db, earned, character, faction) {
                 critCompleted[ach.criteria.id] = true;
             }
 
-            // Also mark child criteria as potentially completed
+            // Recursively mark child criteria as potentially completed
             critsOfAchiev[ach.id] = [];
-            if (ach.criteria.child_criteria) {
-                ach.criteria.child_criteria.forEach((child_crit, index) => {
-                    if (child_crit.is_completed) {
-                        critCompleted[child_crit.id] = true;
-                        critsOfAchiev[ach.id].push(child_crit.id);
-                    }
-                })
+            let stack = [ach.criteria];
+            while (stack.length > 0) {
+                let crit = stack.pop();
+                if (crit.is_completed) {
+                    critCompleted[crit.id] = true;
+                    critsOfAchiev[ach.id].push(crit.id);
+                }
+                if (crit.child_criteria) {
+                    crit.child_criteria.forEach((child_crit, index) => {
+                        stack.push(child_crit);
+                    });
+                }
             }
         }
     });
