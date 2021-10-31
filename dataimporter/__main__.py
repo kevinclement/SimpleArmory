@@ -61,6 +61,12 @@ def parse_args():
         help=("WoW build prefix (e.g., '9.1' or '9.1.5.40078')."
               " By default the most recent build is used."),
     )
+    parser.add_argument(
+        '--format-only',
+        action='store_true',
+        default=False,
+        help="Reformat the data files only, do not import any data"
+    )
     args = parser.parse_args()
     return args
 
@@ -69,12 +75,16 @@ def main():
     logging.basicConfig(level=logging.INFO)
     args = parse_args()
     for fixer_name in args.fixers:
-        logging.info(f"Running fixer '{fixer_name}'.")
         fixer_cls, paths = FIXERS[fixer_name]
         json_paths = [args.datadir / p for p in paths]
         jsons = [json.loads(p.read_text()) for p in json_paths]
-        fixer = fixer_cls(*jsons, build=args.build)
-        fixed_list = fixer.run()
+        if args.format_only:
+            logging.info(f"Reformatting {fixer_name}.")
+            fixed_list = jsons
+        else:
+            logging.info(f"Running fixer '{fixer_name}'.")
+            fixer = fixer_cls(*jsons, build=args.build)
+            fixed_list = fixer.run()
         for fixed_content, path in zip(fixed_list, json_paths):
             with path.open('w') as json_file:
                 json.dump(
