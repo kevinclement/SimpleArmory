@@ -185,14 +185,6 @@
             "spellid": 127815
           },
           {
-            "ID": 1411,
-            "creatureId": 80101,
-            "icon": "inv_pet_peacock_gold",
-            "itemId": 111866,
-            "name": "Royal Peachick",
-            "spellid": 161643
-          },
-          {
             "ID": 1605,
             "creatureId": 88830,
             "icon": "inv_pet_baby_elekk_blue",
@@ -3847,6 +3839,20 @@
     "id": "86863b16",
     "name": "Warlords of Draenor",
     "subcats": [
+      {
+        "id": "b8051dae",
+        "items": [
+          {
+            "ID": 1411,
+            "creatureId": 80101,
+            "icon": "inv_pet_peacock_gold",
+            "itemId": 111866,
+            "name": "Royal Peachick",
+            "spellid": 161643
+          }
+        ],
+        "name": "Achievement"
+      },
       {
         "items": [
           {
