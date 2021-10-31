@@ -19404,22 +19404,10 @@
                   "title": "Allied Races: Void Elf"
                 },
                 {
-                  "icon": "inv_chest_armor_voidelf_d_01",
-                  "id": 12291,
-                  "points": 10,
-                  "title": "Heritage of the Void"
-                },
-                {
                   "icon": "achievement_alliedrace_lightforgeddraenei",
                   "id": 12243,
                   "points": 10,
                   "title": "Allied Races: Lightforged Draenei"
-                },
-                {
-                  "icon": "inv_armor_chest_lightforgeddraenei_d_01",
-                  "id": 12414,
-                  "points": 10,
-                  "title": "Heritage of the Lightforged"
                 },
                 {
                   "icon": "achievement_alliedrace_nightborne",
@@ -19428,22 +19416,10 @@
                   "title": "Allied Races: Nightborne"
                 },
                 {
-                  "icon": "inv_chest_armor_nightborne_d_01",
-                  "id": 12413,
-                  "points": 10,
-                  "title": "Heritage of the Nightborne"
-                },
-                {
                   "icon": "achievement_alliedrace_highmountaintauren",
                   "id": 12245,
                   "points": 10,
                   "title": "Allied Races: Highmountain Tauren"
-                },
-                {
-                  "icon": "inv_chest_armor_highmountaintauren_d_01",
-                  "id": 12415,
-                  "points": 10,
-                  "title": "Heritage of Highmountain"
                 },
                 {
                   "icon": "achievement_alliedrace_darkirondwarf",
@@ -19452,22 +19428,10 @@
                   "title": "Allied Races: Dark Iron Dwarf"
                 },
                 {
-                  "icon": "inv_shield_1h_darkirondwarf_d_01",
-                  "id": 13076,
-                  "points": 10,
-                  "title": "Heritage of the Dark Iron"
-                },
-                {
                   "icon": "achievement_alliedrace_magharorc",
                   "id": 12518,
                   "points": 10,
                   "title": "Allied Races: Mag'har Orc"
-                },
-                {
-                  "icon": "inv_faction_hordewarfront_round_magharorc",
-                  "id": 13077,
-                  "points": 10,
-                  "title": "Heritage of the Mag'har"
                 },
                 {
                   "icon": "inv_tabard_kultiran",
@@ -19476,22 +19440,10 @@
                   "title": "Allied Races: Kul Tiran"
                 },
                 {
-                  "icon": "inv__faction_proudmooreadmiralty",
-                  "id": 13504,
-                  "points": 10,
-                  "title": "Heritage of the Kul Tirans"
-                },
-                {
                   "icon": "achievement_alliedrace_zandalaritroll",
                   "id": 13161,
                   "points": 10,
                   "title": "Allied Races: Zandalari Troll"
-                },
-                {
-                  "icon": "inv__faction_zandalariempire",
-                  "id": 13503,
-                  "points": 10,
-                  "title": "Heritage of the Zandalari"
                 },
                 {
                   "icon": "achievement_alliedrace_vulpera",
@@ -19500,16 +19452,70 @@
                   "title": "Allied Races: Vulpera"
                 },
                 {
-                  "icon": "inv_tabard_vulpera",
-                  "id": 14002,
-                  "points": 10,
-                  "title": "Heritage of the Vulpera"
-                },
-                {
                   "icon": "achievement_alliedrace_mechagnome",
                   "id": 14013,
                   "points": 10,
                   "title": "Allied Races: Mechagnome"
+                }
+              ],
+              "name": "Allied Races: Unlock"
+            },
+            {
+              "id": "16911b1c",
+              "items": [
+                {
+                  "icon": "inv_chest_armor_voidelf_d_01",
+                  "id": 12291,
+                  "points": 10,
+                  "title": "Heritage of the Void"
+                },
+                {
+                  "icon": "inv_armor_chest_lightforgeddraenei_d_01",
+                  "id": 12414,
+                  "points": 10,
+                  "title": "Heritage of the Lightforged"
+                },
+                {
+                  "icon": "inv_chest_armor_nightborne_d_01",
+                  "id": 12413,
+                  "points": 10,
+                  "title": "Heritage of the Nightborne"
+                },
+                {
+                  "icon": "inv_chest_armor_highmountaintauren_d_01",
+                  "id": 12415,
+                  "points": 10,
+                  "title": "Heritage of Highmountain"
+                },
+                {
+                  "icon": "inv_shield_1h_darkirondwarf_d_01",
+                  "id": 13076,
+                  "points": 10,
+                  "title": "Heritage of the Dark Iron"
+                },
+                {
+                  "icon": "inv_faction_hordewarfront_round_magharorc",
+                  "id": 13077,
+                  "points": 10,
+                  "title": "Heritage of the Mag'har"
+                },
+                {
+                  "icon": "inv__faction_proudmooreadmiralty",
+                  "id": 13504,
+                  "points": 10,
+                  "title": "Heritage of the Kul Tirans"
+                },
+                {
+                  "icon": "inv__faction_zandalariempire",
+                  "id": 13503,
+                  "points": 10,
+                  "title": "Heritage of the Zandalari"
+                },
+                {
+                  "icon": "inv_tabard_vulpera",
+                  "id": 14002,
+                  "points": 10,
+                  "title": "Heritage of the Vulpera"
                 },
                 {
                   "icon": "inv_plate_mechagnome_c_01chest",
@@ -19518,7 +19524,7 @@
                   "title": "Heritage of the Mechagnome"
                 }
               ],
-              "name": "Allied Races"
+              "name": "Allied Races: Level"
             }
           ]
         },
