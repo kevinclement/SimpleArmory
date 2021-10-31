@@ -63,7 +63,7 @@
                          class:borderOn={!item.collected}
                          class:borderOff={item.collected}>
                         <a 
-                        target="{settings.anchorTarget}}"
+                        target="{settings.anchorTarget}"
                         href="//{settings.WowHeadUrl}/{item.type}={item.id}"
                         >
                             <img height="36" width="36" src="{getImageSrc(item)}" alt>

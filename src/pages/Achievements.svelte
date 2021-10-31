@@ -112,7 +112,7 @@
                 <div class="subCatHeader">{ subcat.name }</div>
                 {#each subcat.achievements as achievement}
                     <a 
-                        target="{settings.anchorTarget}}"
+                        target="{settings.anchorTarget}"
                         href="//{settings.WowHeadUrl}/achievement={achievement.id}"
                         class="thumbnail"
                         class:borderOn={!achievement.completed}

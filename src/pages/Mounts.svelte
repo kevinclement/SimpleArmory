@@ -81,7 +81,7 @@
                 <div class="subCatHeader">{ subCategory.name }</div>
                 {#each subCategory.items as item}
                     <a 
-                      target="{settings.anchorTarget}}"
+                      target="{settings.anchorTarget}"
                       href="//{settings.WowHeadUrl}/{item.link}"
                       class:borderOn={!item.collected}
                       class:borderOff={item.collected}
