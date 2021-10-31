@@ -41,6 +41,7 @@ function parseAchievementObject(db, earned, character, faction) {
     let obj            = {}
      ,  completed      = {}
      ,  critCompleted  = {}
+     ,  critsOfAchiev  = {}
      ,  totalPossible  = 0
      ,  totalCompleted = 0
      ,  totalFoS       = 0
@@ -62,10 +63,12 @@ function parseAchievementObject(db, earned, character, faction) {
             }
 
             // Also mark child criteria as potentially completed
+            critsOfAchiev[ach.id] = [];
             if (ach.criteria.child_criteria) {
                 ach.criteria.child_criteria.forEach((child_crit, index) => {
                     if (child_crit.is_completed) {
                         critCompleted[child_crit.id] = true;
+                        critsOfAchiev[ach.id].push(child_crit.id);
                     }
                 })
             }
@@ -120,15 +123,14 @@ function parseAchievementObject(db, earned, character, faction) {
                             totalLegacy++;
                         }
                     }
-                    else if (ach.criteria) {
-
+                    else if (critsOfAchiev[ach.id]) {
                         // build up rel based on completed criteria for the achievement 
                         // and pass that along to wowhead
                         //cri=40635:40636:40637:40638:40640:40641:40642:40643:40644:40645
                         var criCom = [];
-                        Object.keys(ach.criteria).forEach((blizzCrit) => {
+                        critsOfAchiev[ach.id].forEach((blizzCrit) => {
                             if (critCompleted[blizzCrit]) {
-                                criCom.push(ach.criteria[blizzCrit]);
+                                criCom.push(blizzCrit);
                             }
                         })
                         
