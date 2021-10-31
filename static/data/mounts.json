@@ -891,7 +891,7 @@
             "ID": 1493,
             "icon": "inv_automatonfliermount_dark",
             "itemId": 186483,
-            "name": "Foresworn Aquilon",
+            "name": "Forsworn Aquilon",
             "spellid": 353877
           }
         ],
@@ -6592,9 +6592,9 @@
           },
           {
             "ID": 352,
-            "icon": "inv_valentinepinkrocket",
+            "icon": "inv_rocketmountpink",
             "itemId": 50250,
-            "name": "Big Love Rocket",
+            "name": "X-45 Heartbreaker",
             "spellid": 71342
           }
         ],
@@ -6726,6 +6726,20 @@
             "itemId": 167895,
             "name": "Beastlord's Warwolf",
             "spellid": 294569
+          },
+          {
+            "ID": 1521,
+            "icon": "inv_hippogryph2valsharah",
+            "itemId": 187595,
+            "name": "Val'sharah Hippogryph",
+            "spellid": 359013
+          },
+          {
+            "ID": 1532,
+            "icon": "4062012",
+            "itemId": 188674,
+            "name": "Soaring Spelltome",
+            "spellid": 359318
           },
           {
             "ID": 781,
@@ -6913,7 +6927,7 @@
           {
             "ID": 1330,
             "icon": "3232104",
-            "name": "Sunwarmed Purrkin",
+            "name": "Sunwarmed Furline",
             "spellid": 317177
           }
         ],
@@ -7027,7 +7041,7 @@
           },
           {
             "ID": 1292,
-            "icon": "ability_mount_mountainram",
+            "icon": "inv_stormpikebattlecharger",
             "itemId": 172022,
             "name": "Stormpike Battle Ram",
             "side": "A",
@@ -7480,6 +7494,18 @@
             "icon": "inv_dwarfpaladinram_gold",
             "name": "Dawnforge Ram",
             "spellid": 270564
+          },
+          {
+            "ID": 1568,
+            "allowableClasses": [
+              2
+            ],
+            "allowableRaces": [
+              30
+            ],
+            "icon": "inv_lightforgedtalbuk",
+            "name": "Lightforged Ruinstrider",
+            "spellid": 363613
           }
         ],
         "name": "Paladin"
