@@ -24,7 +24,6 @@ IGNORE_MOUNT_ID = [
     251,   # Black Polar Bear https://www.wowhead.com/mount/251
     273,   # Grand Caravan Mammoth https://www.wowhead.com/mount/273
     274,   # Grand Caravan Mammoth https://www.wowhead.com/mount/274
-    293,   # Illidari Doomhawk https://www.wowhead.com/mount/293
     308,   # Blue Skeletal Warhorse https://www.wowhead.com/mount/308
     333,   # Magic Rooster https://www.wowhead.com/mount/333
     334,   # Magic Rooster https://www.wowhead.com/mount/334
