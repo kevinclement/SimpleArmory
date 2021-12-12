@@ -80,7 +80,7 @@ class PetFixer(WowToolsFixer):
             'icon': icon_name,
             'creatureId': int(creature_id),
             'spellid': int(spell_id),
-            **({'itemId': item_id} if item_id else {})
+            **({'itemId': int(item_id)} if item_id else {})
         }
 
     def get_pet_source(self, pet_id):
@@ -118,14 +118,20 @@ class PetFixer(WowToolsFixer):
                 self.fix_missing_pet(pet_id)
 
     def fix_types_data(self):
-        for cat in self.pets:
+        for cat in list(self.pets) + list(self.battlepets):
             for subcat in cat['subcats']:
                 for item in subcat['items']:
                     fixed_pet = self.get_pet(int(item['ID']))
                     item['ID'] = fixed_pet['ID']
                     item['name'] = fixed_pet['name']
                     item['creatureId'] = fixed_pet['creatureId']
-                    item['spellid'] = fixed_pet['spellid']
+
+                    if fixed_pet.get('spellid'):
+                        item['spellid'] = fixed_pet['spellid']
+
+                    # Remove null/0 spellID
+                    if 'spellid' in item and not item['spellid']:
+                        item.pop('spellid')
 
                     # There can be multiple valid itemID, do not overwrite
                     if item.get('itemId'):
