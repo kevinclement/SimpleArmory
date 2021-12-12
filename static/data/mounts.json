@@ -363,6 +363,13 @@
             "spellid": 342334
           },
           {
+            "ID": 1420,
+            "icon": "inv_decomposermountblack",
+            "itemId": 183053,
+            "name": "Umbral Scythehorn",
+            "spellid": 340503
+          },
+          {
             "ID": 1505,
             "icon": "inv_mawexpansionbearmount_yellow",
             "itemId": 186647,
@@ -715,11 +722,11 @@
             "spellid": 312761
           },
           {
-            "ID": 1420,
-            "icon": "inv_decomposermountblack",
-            "itemId": 183053,
-            "name": "Umbral Scythehorn",
-            "spellid": 340503
+            "ID": 1354,
+            "icon": "inv_ardenwealdstagmount_dark",
+            "itemId": 180413,
+            "name": "Shadeleaf Runestag",
+            "spellid": 332243
           },
           {
             "ID": 1357,
@@ -729,11 +736,32 @@
             "spellid": 332246
           },
           {
-            "ID": 1354,
-            "icon": "inv_ardenwealdstagmount_dark",
-            "itemId": 180413,
-            "name": "Shadeleaf Runestag",
-            "spellid": 332243
+            "ID": 1484,
+            "icon": "inv_wolfserpentmountpurple",
+            "itemId": 186493,
+            "name": "Ardenweald Wilderling",
+            "spellid": 353856
+          },
+          {
+            "ID": 1485,
+            "icon": "inv_wolfserpentmountyellow",
+            "itemId": 186494,
+            "name": "Autumnal Wilderling",
+            "spellid": 353857
+          },
+          {
+            "ID": 1486,
+            "icon": "inv_wolfserpentmountwhite",
+            "itemId": 186495,
+            "name": "Winter Wilderling",
+            "spellid": 353858
+          },
+          {
+            "ID": 1487,
+            "icon": "inv_wolfserpentmountgreen",
+            "itemId": 186492,
+            "name": "Summer Wilderling",
+            "spellid": 353859
           },
           {
             "ID": 1356,
@@ -776,34 +804,6 @@
             "itemId": 180730,
             "name": "Wild Glimmerfur Prowler",
             "spellid": 334366
-          },
-          {
-            "ID": 1484,
-            "icon": "inv_wolfserpentmountpurple",
-            "itemId": 186493,
-            "name": "Ardenweald Wilderling",
-            "spellid": 353856
-          },
-          {
-            "ID": 1485,
-            "icon": "inv_wolfserpentmountyellow",
-            "itemId": 186494,
-            "name": "Autumnal Wilderling",
-            "spellid": 353857
-          },
-          {
-            "ID": 1486,
-            "icon": "inv_wolfserpentmountwhite",
-            "itemId": 186495,
-            "name": "Winter Wilderling",
-            "spellid": 353858
-          },
-          {
-            "ID": 1487,
-            "icon": "inv_wolfserpentmountgreen",
-            "itemId": 186492,
-            "name": "Summer Wilderling",
-            "spellid": 353859
           }
         ],
         "name": "Night Fae"
@@ -811,18 +811,11 @@
       {
         "items": [
           {
-            "ID": 1394,
-            "icon": "inv_automatonlionmount_black",
-            "itemId": 180761,
-            "name": "Phalynx of Loyalty",
-            "spellid": 334382
-          },
-          {
-            "ID": 1395,
-            "icon": "inv_automatonlionmount_bronze",
-            "itemId": 180762,
-            "name": "Phalynx of Humility",
-            "spellid": 334386
+            "ID": 1400,
+            "icon": "inv_automatonlionmount2",
+            "itemId": 180766,
+            "name": "Eternal Phalynx of Courage",
+            "spellid": 334406
           },
           {
             "ID": 1396,
@@ -839,39 +832,18 @@
             "spellid": 334398
           },
           {
-            "ID": 1399,
-            "icon": "inv_automatonlionmount_silver",
-            "itemId": 180765,
-            "name": "Eternal Phalynx of Purity",
-            "spellid": 334403
-          },
-          {
-            "ID": 1400,
-            "icon": "inv_automatonlionmount2",
-            "itemId": 180766,
-            "name": "Eternal Phalynx of Courage",
-            "spellid": 334406
-          },
-          {
-            "ID": 1401,
-            "icon": "inv_automatonlionmount2_black",
-            "itemId": 180767,
-            "name": "Eternal Phalynx of Loyalty",
-            "spellid": 334408
-          },
-          {
-            "ID": 1402,
-            "icon": "inv_automatonlionmount2_bronze",
-            "itemId": 180768,
-            "name": "Eternal Phalynx of Humility",
-            "spellid": 334409
-          },
-          {
             "ID": 1492,
             "icon": "inv_automatonfliermount",
             "itemId": 186482,
             "name": "Elysian Aquilon",
             "spellid": 353875
+          },
+          {
+            "ID": 1399,
+            "icon": "inv_automatonlionmount_silver",
+            "itemId": 180765,
+            "name": "Eternal Phalynx of Purity",
+            "spellid": 334403
           },
           {
             "ID": 1494,
@@ -893,19 +865,40 @@
             "itemId": 186483,
             "name": "Forsworn Aquilon",
             "spellid": 353877
+          },
+          {
+            "ID": 1394,
+            "icon": "inv_automatonlionmount_black",
+            "itemId": 180761,
+            "name": "Phalynx of Loyalty",
+            "spellid": 334382
+          },
+          {
+            "ID": 1401,
+            "icon": "inv_automatonlionmount2_black",
+            "itemId": 180767,
+            "name": "Eternal Phalynx of Loyalty",
+            "spellid": 334408
+          },
+          {
+            "ID": 1402,
+            "icon": "inv_automatonlionmount2_bronze",
+            "itemId": 180768,
+            "name": "Eternal Phalynx of Humility",
+            "spellid": 334409
+          },
+          {
+            "ID": 1395,
+            "icon": "inv_automatonlionmount_bronze",
+            "itemId": 180762,
+            "name": "Phalynx of Humility",
+            "spellid": 334386
           }
         ],
         "name": "Kyrian"
       },
       {
         "items": [
-          {
-            "ID": 1409,
-            "icon": "inv_rocmaldraxxusmountwhite",
-            "itemId": 182078,
-            "name": "Bonesewn Fleshroc",
-            "spellid": 336041
-          },
           {
             "ID": 1364,
             "icon": "inv_giantbeastmount_blue",
@@ -928,46 +921,11 @@
             "spellid": 332456
           },
           {
-            "ID": 1366,
-            "icon": "inv_giantbeastmount",
-            "itemId": 182075,
-            "name": "Bonehoof Tauralus",
-            "spellid": 332457
-          },
-          {
             "ID": 1369,
             "icon": "inv_giantbeastmount2_green",
             "itemId": 181821,
             "name": "Armored Plaguerot Tauralus",
             "spellid": 332464
-          },
-          {
-            "ID": 1370,
-            "icon": "inv_giantbeastmount2",
-            "itemId": 181815,
-            "name": "Armored Bonehoof Tauralus",
-            "spellid": 332466
-          },
-          {
-            "ID": 1367,
-            "icon": "inv_giantbeastmount_orange",
-            "itemId": 182074,
-            "name": "Chosen Tauralus",
-            "spellid": 332460
-          },
-          {
-            "ID": 1371,
-            "icon": "inv_giantbeastmount2_orange",
-            "itemId": 181820,
-            "name": "Armored Chosen Tauralus",
-            "spellid": 332467
-          },
-          {
-            "ID": 1411,
-            "icon": "inv_rocmaldraxxusmountgreen",
-            "itemId": 182080,
-            "name": "Predatory Plagueroc",
-            "spellid": 336045
           },
           {
             "ID": 1495,
@@ -996,6 +954,48 @@
             "itemId": 186489,
             "name": "Lord of the Corpseflies",
             "spellid": 347250
+          },
+          {
+            "ID": 1409,
+            "icon": "inv_rocmaldraxxusmountwhite",
+            "itemId": 182078,
+            "name": "Bonesewn Fleshroc",
+            "spellid": 336041
+          },
+          {
+            "ID": 1367,
+            "icon": "inv_giantbeastmount_orange",
+            "itemId": 182074,
+            "name": "Chosen Tauralus",
+            "spellid": 332460
+          },
+          {
+            "ID": 1371,
+            "icon": "inv_giantbeastmount2_orange",
+            "itemId": 181820,
+            "name": "Armored Chosen Tauralus",
+            "spellid": 332467
+          },
+          {
+            "ID": 1366,
+            "icon": "inv_giantbeastmount",
+            "itemId": 182075,
+            "name": "Bonehoof Tauralus",
+            "spellid": 332457
+          },
+          {
+            "ID": 1411,
+            "icon": "inv_rocmaldraxxusmountgreen",
+            "itemId": 182080,
+            "name": "Predatory Plagueroc",
+            "spellid": 336045
+          },
+          {
+            "ID": 1370,
+            "icon": "inv_giantbeastmount2",
+            "itemId": 181815,
+            "name": "Armored Bonehoof Tauralus",
+            "spellid": 332466
           }
         ],
         "name": "Necrolords"
@@ -1003,18 +1003,11 @@
       {
         "items": [
           {
-            "ID": 1382,
-            "icon": "inv_deathwargmountpurple",
-            "itemId": 182954,
-            "name": "Inquisition Gargon",
-            "spellid": 332923
-          },
-          {
-            "ID": 1298,
-            "icon": "inv_deathwargmountblack",
-            "itemId": 180581,
-            "name": "Hopecrusher Gargon",
-            "spellid": 312753
+            "ID": 1385,
+            "icon": "inv_deathwargmountwhite",
+            "itemId": 180945,
+            "name": "Crypt Gargon",
+            "spellid": 332932
           },
           {
             "ID": 1299,
@@ -1031,39 +1024,11 @@
             "spellid": 332927
           },
           {
-            "ID": 1385,
-            "icon": "inv_deathwargmountwhite",
-            "itemId": 180945,
-            "name": "Crypt Gargon",
-            "spellid": 332932
-          },
-          {
-            "ID": 1387,
-            "icon": "inv_deathwargmount2purple",
-            "itemId": 182209,
-            "name": "Desire's Battle Gargon",
-            "spellid": 332949
-          },
-          {
             "ID": 1388,
             "icon": "inv_deathwargmount2white",
             "itemId": 182332,
             "name": "Gravestone Battle Gargon",
             "spellid": 333021
-          },
-          {
-            "ID": 1389,
-            "icon": "inv_deathwargmount2red",
-            "itemId": 183798,
-            "name": "Battle Gargon Silessa",
-            "spellid": 333023
-          },
-          {
-            "ID": 1310,
-            "icon": "inv_giantvampirebatmount_bronze",
-            "itemId": 180461,
-            "name": "Horrid Dredwing",
-            "spellid": 332882
           },
           {
             "ID": 1490,
@@ -1092,6 +1057,41 @@
             "itemId": 186479,
             "name": "Mastercraft Gravewing",
             "spellid": 215545
+          },
+          {
+            "ID": 1382,
+            "icon": "inv_deathwargmountpurple",
+            "itemId": 182954,
+            "name": "Inquisition Gargon",
+            "spellid": 332923
+          },
+          {
+            "ID": 1298,
+            "icon": "inv_deathwargmountblack",
+            "itemId": 180581,
+            "name": "Hopecrusher Gargon",
+            "spellid": 312753
+          },
+          {
+            "ID": 1387,
+            "icon": "inv_deathwargmount2purple",
+            "itemId": 182209,
+            "name": "Desire's Battle Gargon",
+            "spellid": 332949
+          },
+          {
+            "ID": 1389,
+            "icon": "inv_deathwargmount2red",
+            "itemId": 183798,
+            "name": "Battle Gargon Silessa",
+            "spellid": 333023
+          },
+          {
+            "ID": 1310,
+            "icon": "inv_giantvampirebatmount_bronze",
+            "itemId": 180461,
+            "name": "Horrid Dredwing",
+            "spellid": 332882
           }
         ],
         "name": "Venthyr"
@@ -6735,7 +6735,7 @@
           },
           {
             "ID": 1521,
-            "icon": "inv_hippogryph2valsharah",
+            "icon": "inv_mount_hippogryph_arcane",
             "itemId": 187595,
             "name": "Val'sharah Hippogryph",
             "spellid": 359013

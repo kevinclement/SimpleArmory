@@ -1254,28 +1254,12 @@
       {
         "items": [
           {
-            "ID": 2941,
-            "creatureId": 171716,
-            "icon": "inv_babyhorse2_bastion_blue",
-            "itemId": 180871,
-            "name": "Indigo",
-            "spellid": 335085
-          },
-          {
             "ID": 3042,
             "creatureId": 174087,
             "icon": "inv_babysteward_gold",
             "itemId": 184350,
             "name": "Ruffle",
             "spellid": 341515
-          },
-          {
-            "ID": 3062,
-            "creatureId": 175560,
-            "icon": "inv_babysteward_dark",
-            "itemId": 184397,
-            "name": "Lost Featherling",
-            "spellid": 345741
           },
           {
             "ID": 2918,
@@ -1286,18 +1270,42 @@
             "spellid": 334145
           },
           {
+            "ID": 2941,
+            "creatureId": 171716,
+            "icon": "inv_babyhorse2_bastion_blue",
+            "itemId": 180871,
+            "name": "Indigo",
+            "spellid": 335085
+          },
+          {
             "ID": 3061,
             "creatureId": 175561,
             "icon": "inv_babysteward_silver",
             "itemId": 184398,
             "name": "Steward Featherling",
             "spellid": 345740
+          },
+          {
+            "ID": 3062,
+            "creatureId": 175560,
+            "icon": "inv_babysteward_dark",
+            "itemId": 184397,
+            "name": "Lost Featherling",
+            "spellid": 345741
           }
         ],
         "name": "Kyrian"
       },
       {
         "items": [
+          {
+            "ID": 3043,
+            "creatureId": 174088,
+            "icon": "inv_catslime",
+            "itemId": 183601,
+            "name": "Jiggles",
+            "spellid": 341516
+          },
           {
             "ID": 2958,
             "creatureId": 172140,
@@ -1313,14 +1321,6 @@
             "itemId": 181282,
             "name": "Mu'dud",
             "spellid": 336030
-          },
-          {
-            "ID": 3043,
-            "creatureId": 174088,
-            "icon": "inv_catslime",
-            "itemId": 183601,
-            "name": "Jiggles",
-            "spellid": 341516
           }
         ],
         "name": "Necrolords"
@@ -1365,6 +1365,14 @@
       {
         "items": [
           {
+            "ID": 3018,
+            "creatureId": 173587,
+            "icon": "inv_treepetpurple",
+            "itemId": 182663,
+            "name": "Trootie",
+            "spellid": 339982
+          },
+          {
             "ID": 2913,
             "creatureId": 171235,
             "icon": "inv_mothardenwealdmount_blue",
@@ -1379,14 +1387,6 @@
             "itemId": 182661,
             "name": "Fun Guss",
             "spellid": 339976
-          },
-          {
-            "ID": 3018,
-            "creatureId": 173587,
-            "icon": "inv_treepetpurple",
-            "itemId": 182663,
-            "name": "Trootie",
-            "spellid": 339982
           },
           {
             "ID": 3023,
