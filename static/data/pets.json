@@ -436,6 +436,14 @@
       {
         "items": [
           {
+            "ID": 3010,
+            "creatureId": 173533,
+            "icon": "inv_pet_batpetrevendreth_red",
+            "itemId": 186544,
+            "name": "Sinfall Screecher",
+            "spellid": 339670
+          },
+          {
             "ID": 3098,
             "creatureId": 179008,
             "icon": "tradeskill_abominationstitching_abominations_lesser",
@@ -474,14 +482,6 @@
             "itemId": 186547,
             "name": "Invasive Buzzer",
             "spellid": 353569
-          },
-          {
-            "ID": 3010,
-            "creatureId": 173533,
-            "icon": "inv_pet_batpetrevendreth_red",
-            "itemId": 186544,
-            "name": "Sinfall Screecher",
-            "spellid": 339670
           }
         ],
         "name": "Maw Assaults"
@@ -928,14 +928,6 @@
             "spellid": 336024
           },
           {
-            "ID": 3011,
-            "creatureId": 173535,
-            "icon": "inv_pet_batpetrevendreth_dark",
-            "itemId": 183854,
-            "name": "Battie",
-            "spellid": 339671
-          },
-          {
             "ID": 3019,
             "creatureId": 173588,
             "icon": "inv_treepetred",
@@ -1352,6 +1344,14 @@
             "spellid": 340710
           },
           {
+            "ID": 3011,
+            "creatureId": 173535,
+            "icon": "inv_pet_batpetrevendreth_dark",
+            "itemId": 183854,
+            "name": "Battie",
+            "spellid": 339671
+          },
+          {
             "ID": 3012,
             "creatureId": 173536,
             "icon": "inv_pet_batpetrevendreth_stone",
@@ -1741,30 +1741,6 @@
             "spellid": 301051
           },
           {
-            "ID": 2792,
-            "creatureId": 158681,
-            "icon": "inv_pet_butterfly_purple",
-            "itemId": 172491,
-            "name": "Papi",
-            "spellid": 309516
-          },
-          {
-            "ID": 2793,
-            "creatureId": 158683,
-            "icon": "inv_pet_butterfly_orange",
-            "itemId": 172492,
-            "name": "Sunsoaked Flitter",
-            "spellid": 309519
-          },
-          {
-            "ID": 2794,
-            "creatureId": 158685,
-            "icon": "inv_pet_butterfly_red",
-            "itemId": 172493,
-            "name": "Crimson Skipper",
-            "spellid": 309522
-          },
-          {
             "ID": 2849,
             "creatureId": 162006,
             "icon": "ability_mount_camel_gray",
@@ -2017,6 +1993,14 @@
             "spellid": 279213
           },
           {
+            "ID": 2685,
+            "creatureId": 154824,
+            "icon": "inv_crab2_orange",
+            "itemId": 169351,
+            "name": "Sandclaw Nestseeker",
+            "spellid": 301022
+          },
+          {
             "ID": 2765,
             "creatureId": 151631,
             "icon": "inv_seasluggreen",
@@ -2082,6 +2066,36 @@
           }
         ],
         "name": "Treasure"
+      },
+      {
+        "id": "770e4df7",
+        "items": [
+          {
+            "ID": 2792,
+            "creatureId": 158681,
+            "icon": "inv_pet_butterfly_purple",
+            "itemId": 172491,
+            "name": "Papi",
+            "spellid": 309516
+          },
+          {
+            "ID": 2793,
+            "creatureId": 158683,
+            "icon": "inv_pet_butterfly_orange",
+            "itemId": 172492,
+            "name": "Sunsoaked Flitter",
+            "spellid": 309519
+          },
+          {
+            "ID": 2794,
+            "creatureId": 158685,
+            "icon": "inv_pet_butterfly_red",
+            "itemId": 172493,
+            "name": "Crimson Skipper",
+            "spellid": 309522
+          }
+        ],
+        "name": "Honey Drop"
       },
       {
         "id": "8ad77163",
@@ -3322,6 +3336,20 @@
         "name": "Vendor"
       },
       {
+        "id": "b4e75823",
+        "items": [
+          {
+            "ID": 2042,
+            "creatureId": 120397,
+            "icon": "inv_weapon_crossbow_22",
+            "itemId": 146953,
+            "name": "Scraps",
+            "spellid": 240064
+          }
+        ],
+        "name": "Treasure"
+      },
+      {
         "id": "c520320a",
         "items": [
           {
@@ -3728,38 +3756,6 @@
             "itemId": 136901,
             "name": "Eye of Inquisition",
             "spellid": 210673
-          },
-          {
-            "ID": 1807,
-            "creatureId": 99513,
-            "icon": "inv_pet_spiderdemon",
-            "itemId": 136913,
-            "name": "Vicious Broodling",
-            "spellid": 0
-          },
-          {
-            "ID": 1722,
-            "creatureId": 97206,
-            "icon": "inv_misc_head_dragon_green",
-            "itemId": 136902,
-            "name": "Dream Whelpling",
-            "spellid": 210674
-          },
-          {
-            "ID": 1714,
-            "creatureId": 97126,
-            "icon": "inv_pet_wardenowl",
-            "itemId": 136897,
-            "name": "Northern Hawk Owl",
-            "spellid": 0
-          },
-          {
-            "ID": 2042,
-            "creatureId": 120397,
-            "icon": "inv_weapon_crossbow_22",
-            "itemId": 146953,
-            "name": "Scraps",
-            "spellid": 240064
           }
         ],
         "name": "World Drop"
