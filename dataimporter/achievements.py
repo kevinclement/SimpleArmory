@@ -279,15 +279,17 @@ class AchievementFixer(WowToolsFixer):
 
         # Sort subcategories
         for supercat in self.achievs['supercats']:
-            wt_supercat = list_find(
-                self.wt_achiev_category.values(),
-                lambda x: (
-                    x['Name_lang'] == supercat['name']
-                    and int(x['Parent']) == -1
-                ),
-            )
-
-            wt_order = get_name_order_for_category(int(wt_supercat['ID']))
+            try:
+                wt_supercat = list_find(
+                    self.wt_achiev_category.values(),
+                    lambda x: (
+                        x['Name_lang'] == supercat['name']
+                        and int(x['Parent']) == -1
+                    ),
+                )
+                wt_order = get_name_order_for_category(int(wt_supercat['ID']))
+            except StopIteration:
+                continue
 
             # We reverse-sort categories sorted by expansion to always have the
             # last one on top.
