@@ -5,6 +5,8 @@ from .tools import icat, changelog
 
 
 IGNORE_PET_NPCID = [
+    185475,     # Tezpet https://www.wowhead.com/npc=185475
+    125494,     # SpeedyNumberIII https://www.wowhead.com/npc=125494
 ]
 
 PET_SOURCE_ENUM = {
@@ -91,13 +93,14 @@ class PetFixer(WowToolsFixer):
 
     def fix_missing_pet(self, pet_id):
         if (
-            # No summon spell ID
-            not int(self.wt_battlepetspecies[pet_id]['SummonSpellID'])
             # Flag 0x20 : HideFromJournal
-            or int(self.wt_battlepetspecies[pet_id]['Flags']) & 0x20
+            int(self.wt_battlepetspecies[pet_id]['Flags']) & 0x20
+            or (
+                int(self.wt_battlepetspecies[pet_id]['CreatureID'])
+                in IGNORE_PET_NPCID
+            )
         ):
             return
-
         pet = self.get_pet(pet_id)
         if pet is None:
             return
@@ -113,8 +116,7 @@ class PetFixer(WowToolsFixer):
 
     def fix_missing_pets(self):
         for pet_id in self.wt_battlepetspecies:
-            if (int(pet_id) not in self.id_to_old_pet
-                    and int(pet_id) not in IGNORE_PET_NPCID):
+            if (int(pet_id) not in self.id_to_old_pet):
                 self.fix_missing_pet(pet_id)
 
     def fix_types_data(self):
