@@ -98,4 +98,12 @@ def main():
 
 
 if __name__ == '__main__':
+    # XXX: Fix asyncio.run() for Windows:
+    # https://bugs.python.org/issue39232
+    # https://stackoverflow.com/questions/63860576
+    import platform
+    import asyncio
+    if platform.system() == 'Windows':
+        asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+
     main()
