@@ -24,7 +24,7 @@
     }
 
     function qualityToBackground(item) {
-        var bgColor = '#fff';
+        var bgColor = 'transparent';
 
         switch(item.quality) {
             case 'poor':
