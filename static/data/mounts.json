@@ -557,6 +557,13 @@
             "itemId": 190768,
             "name": "Zereth Overseer",
             "spellid": 368158
+          },
+          {
+            "ID": 1552,
+            "icon": "inv_progenitorbotminemount",
+            "itemId": 190771,
+            "name": "Carcinized Zerethsteed",
+            "spellid": 359545
           }
         ],
         "name": "Raid Drop"
@@ -2204,6 +2211,7 @@
             "icon": "inv_voiddragonmount",
             "itemId": 174862,
             "name": "Uncorrupted Voidwing",
+            "notObtainable": true,
             "spellid": 302143
           }
         ],
@@ -2351,14 +2359,6 @@
       {
         "id": "3fc008dc",
         "items": [
-          {
-            "ID": 1552,
-            "icon": "inv_progenitorbotminemount",
-            "itemId": 190771,
-            "name": "Carcinized Zerethsteed",
-            "notObtainable": true,
-            "spellid": 359545
-          },
           {
             "ID": 1465,
             "icon": "inv_vicioushordewolf_mount",
