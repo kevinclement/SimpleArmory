@@ -21,6 +21,7 @@ npm install
 ## Start Development
 
 ```bash
+# start a development instance, default is http://localhost:3000/
 npm run dev
 
 # or start the server and open the app in a new browser tab
@@ -30,8 +31,7 @@ npm run dev -- --open
 ## Dev Tasks
 
 - `npm run build` Creates a production build of the site
-- `npm run start` Serves an already-built site
-- `npm run adapt` Prepares the production build for deployment to netlify
+- `npm run preview` Locally serves an already-built site
 
 To test for missing icons you can do a `showall=true` from the url.
 - [Achievements - Quests](http://localhost:3000/?showall=true#/us/proudmoore/marko/achievements/quests)
@@ -40,3 +40,4 @@ Authors:
 -------
 
   * Kevin Clement [@kevinclement](https://twitter.com/kevinclement) / [github](https://github.com/kevinclement)
+  * [Open source community](https://github.com/kevinclement/SimpleArmory/graphs/contributors)

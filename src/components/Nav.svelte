@@ -119,7 +119,7 @@
 	}
 </script>
 
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation" on:click={NavbarClicked}>
+<nav class="navbar navbar-default navbar-fixed-top" on:click={NavbarClicked}>
 	<div class="container">
 		<div class="navbar-header">
 			{#if isLoggedIn }
