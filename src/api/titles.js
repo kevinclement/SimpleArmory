@@ -52,7 +52,12 @@ function parseTitlesObject(db, profile, earned) {
     db.forEach((category) => {
 
         // Add the title category to the title list
-        var cat = { 'name': category.name, 'subCategories': [] };
+        var cat = {
+            'name': category.name,
+            'subCategories': [],
+            'notObtainable': (category.notObtainable !== undefined && category.notObtainable),
+        };
+
         obj.categories.push(cat);
 
         category.subcats.forEach((subCategory) => {
@@ -100,6 +105,11 @@ function parseTitlesObject(db, profile, earned) {
             }
         })
     })
+
+    // Completely remove categories that meet both conditions:
+    // - The category only contains non-obtainable items
+    // - None of the items are obtained
+    obj.categories = obj.categories.filter(cat => cat.notObtainable == false || cat.subCategories.length > 0)
 
     // Add totals
     obj.collected = totalCollected;
