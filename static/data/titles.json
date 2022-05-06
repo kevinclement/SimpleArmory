@@ -226,6 +226,19 @@
       {
         "items": [
           {
+            "icon": "achievement_zone_icecrown_06",
+            "id": 15654,
+            "name": "Veilstrider",
+            "titleId": 463,
+            "type": "achievement",
+            "notObtainable": true
+          }
+        ],
+        "name": "Completionist"
+      },
+      {
+        "items": [
+          {
             "icon": "sanctum_features_transportationnetwork_ardenweald",
             "id": 2463,
             "name": "Fun Guy",
@@ -299,6 +312,34 @@
             "name": "The Party Herald",
             "titleId": 433,
             "type": "achievement"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 699,
+            "name": "Protector of the Weald",
+            "titleId": 442,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 700,
+            "name": "Sword of the Primus",
+            "titleId": 443,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 701,
+            "name": "Sin Eater",
+            "titleId": 444,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 702,
+            "name": "Disciple of Devotion",
+            "titleId": 445,
+            "type": "title"
           }
         ],
         "name": "Covenants"
@@ -311,9 +352,35 @@
             "name": "Spirestalker",
             "titleId": 438,
             "type": "achievement"
+          },
+          {
+            "icon": "inv_inscription_darkmooncard_indomitable_3",
+            "id": 15253,
+            "name": "Gauntlet Runner",
+            "titleId": 449,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_torghast",
+            "id": 15324,
+            "name": "Tower Ranger",
+            "titleId": 450,
+            "type": "achievement"
           }
         ],
-        "name": "Twisted Corridors"
+        "name": "Torghast"
+      },
+      {
+        "items": [
+          {
+            "icon": "achievement_challengemode_gold",
+            "id": 15498,
+            "name": "The Cryptic",
+            "titleId": 457,
+            "type": "achievement"
+          }
+        ],
+        "name": "Mythic Plus"
       },
       {
         "items": [
@@ -337,6 +404,14 @@
             "name": "Guardian of the Pattern",
             "titleId": 455,
             "type": "achievement"
+          },
+          {
+            "icon": "achievement_mythicdungeons_shadowlands",
+            "id": 15685,
+            "name": "Hero of Fate",
+            "titleId": 464,
+            "type": "achievement",
+            "notObtainable": true
           }
         ],
         "name": "Raids"
@@ -349,6 +424,14 @@
             "name": "Cryptkeeper",
             "titleId": 423,
             "type": "achievement"
+          },
+          {
+            "icon": "inv_maweye_white",
+            "id": 15648,
+            "name": "Maw Walker",
+            "titleId": 462,
+            "type": "achievement",
+            "notObtainable": true
           }
         ],
         "name": "Exploration"
@@ -1583,6 +1666,25 @@
       {
         "items": [
           {
+            "icon": "achievement_profession_chefhat",
+            "id": 1563,
+            "name": "Chef",
+            "titleId": 52,
+            "type": "achievement"
+          }
+        ],
+        "name": "Cooking"
+      },
+      {
+        "items": [
+          {
+            "icon": "trade_archaeology_aqir_artifactfragment",
+            "id": 4854,
+            "name": "Assistant Professor",
+            "titleId": 148,
+            "type": "achievement"
+          },
+          {
             "icon": "trade_archaeology_dwarf_artifactfragment",
             "id": 4855,
             "name": "Associate Professor",
@@ -1594,6 +1696,20 @@
             "id": 4856,
             "name": "Professor",
             "titleId": 150,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_zone_ironforge",
+            "id": 7612,
+            "name": "Seeker of Knowledge",
+            "titleId": 208,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_misc_shovel_01",
+            "id": 10609,
+            "name": "The Groundbreaker",
+            "titleId": 333,
             "type": "achievement"
           },
           {
@@ -1764,11 +1880,44 @@
         "items": [
           {
             "icon": "achievement_featsofstrength_gladiator_10",
-            "id": 14968,
+            "id": 15348,
             "name": "Combatant",
             "titleId": 78,
             "type": "achievement"
           },
+          {
+            "icon": "achievement_featsofstrength_gladiator_09",
+            "id": 15349,
+            "name": "Challenger",
+            "titleId": 32,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_09",
+            "id": 15350,
+            "name": "Rival",
+            "titleId": 31,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_09",
+            "id": 15351,
+            "name": "Duelist",
+            "titleId": 30,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_09",
+            "id": 15352,
+            "name": "Gladiator",
+            "titleId": 29,
+            "type": "achievement"
+          }
+        ],
+        "name": "Arena (Temporary)"
+      },
+      {
+        "items": [
           {
             "icon": "achievement_pvp_h_01",
             "id": 5345,
@@ -1994,7 +2143,7 @@
             "type": "achievement"
           }
         ],
-        "name": "Ranked PVP"
+        "name": "Rated Battlegrounds"
       },
       {
         "items": [
@@ -2106,6 +2255,18 @@
           }
         ],
         "name": "Duels"
+      },
+      {
+        "items": [
+          {
+            "icon": "ability_pvp_hardiness",
+            "id": 15544,
+            "name": "Soloist",
+            "titleId": 456,
+            "type": "achievement"
+          }
+        ],
+        "name": "Solo Shuffle"
       }
     ]
   },
@@ -2216,6 +2377,857 @@
           }
         ],
         "name": "Recruit-a-Friend"
+      }
+    ]
+  },
+  {
+    "id": "fffffffe",
+    "name": "Legacy",
+    "notObtainable": true,
+    "subcats": [
+      {
+        "items": [
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 46,
+            "name": "Scarab Lord",
+            "titleId": 33,
+            "type": "title",
+            "notObtainable": true
+          }
+        ],
+        "name": "Classic"
+      },
+      {
+        "items": [
+          {
+            "icon": "inv_mace_51",
+            "id": 432,
+            "name": "Champion of the Naaru",
+            "titleId": 36,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_mace_25",
+            "id": 431,
+            "name": "Hand of A'dal",
+            "titleId": 39,
+            "type": "achievement",
+            "notObtainable": true
+          }
+        ],
+        "name": "The Burning Crusade"
+      },
+      {
+        "items": [
+          {
+            "icon": "inv_hand_1h_trollshaman_c_01",
+            "id": 8307,
+            "name": "Darkspear Revolutionary",
+            "side": "H",
+            "titleId": 228,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_hand_1h_trollshaman_c_01",
+            "id": 8306,
+            "name": "The Hordebreaker",
+            "side": "A",
+            "titleId": 230,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "spell_fire_felimmolation",
+            "id": 9016,
+            "name": "Of the Black Harvest",
+            "titleId": 256,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_legendary_theblackprince",
+            "id": 8325,
+            "name": "Legend of Pandaria",
+            "titleId": 306,
+            "type": "achievement",
+            "notObtainable": true
+          }
+        ],
+        "name": "Mists of Pandaria"
+      },
+      {
+        "items": [
+          {
+            "icon": "inv_axe_05",
+            "id": 9618,
+            "name": "Of the Iron Vanguard",
+            "titleId": 289,
+            "type": "achievement",
+            "notObtainable": true
+          }
+        ],
+        "name": "Warlords of Draenor"
+      },
+      {
+        "items": [
+          {
+            "icon": "inv_first_aid_70_medicalkit",
+            "id": 11139,
+            "name": "Field Medic",
+            "titleId": 340,
+            "type": "achievement",
+            "notObtainable": true
+          }
+        ],
+        "name": "Legion"
+      },
+      {
+        "items": [
+          {
+            "icon": "achievement_challengemode_bronze",
+            "id": 6374,
+            "name": "The Undaunted",
+            "titleId": 201,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 366,
+            "name": "Defender of the Wall",
+            "titleId": 241,
+            "type": "title",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 367,
+            "name": "Mogu-Slayer",
+            "titleId": 242,
+            "type": "title",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_helmet_52",
+            "id": 6760,
+            "name": "Flameweaver",
+            "titleId": 243,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 369,
+            "name": "Scarlet Commander",
+            "titleId": 244,
+            "type": "title",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 370,
+            "name": "Darkmaster",
+            "titleId": 245,
+            "type": "title",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 371,
+            "name": "Purified Defender",
+            "titleId": 246,
+            "type": "title",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 372,
+            "name": "Siegebreaker",
+            "titleId": 247,
+            "type": "title",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 373,
+            "name": "Stormbrewer",
+            "titleId": 248,
+            "type": "title",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 374,
+            "name": "Jade Protector",
+            "titleId": 249,
+            "type": "title",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_challengemode_platinum",
+            "id": 8903,
+            "name": "Mistwalker",
+            "titleId": 255,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_challengemode_bronze",
+            "id": 8897,
+            "name": "The Indomitable",
+            "titleId": 290,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 429,
+            "name": "The Mine Master",
+            "titleId": 291,
+            "type": "title",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 430,
+            "name": "Dockmaster",
+            "titleId": 292,
+            "type": "title",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 431,
+            "name": "The Soul Preserver",
+            "titleId": 293,
+            "type": "title",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 432,
+            "name": "Scion of Rukhmar",
+            "titleId": 294,
+            "type": "title",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 433,
+            "name": "Spiritwalker",
+            "titleId": 295,
+            "type": "title",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 434,
+            "name": "Lord of Blackrock",
+            "titleId": 296,
+            "type": "title",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 435,
+            "name": "Lady of Blackrock",
+            "titleId": 297,
+            "type": "title",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 436,
+            "name": "The Violet Guardian",
+            "titleId": 298,
+            "type": "title",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 437,
+            "name": "The Grimrail Suplexer",
+            "titleId": 299,
+            "type": "title",
+            "notObtainable": true
+          }
+        ],
+        "name": "Challenge Mode Dungeons"
+      },
+      {
+        "items": [
+          {
+            "icon": "achievement_challengemode_gold",
+            "id": 14144,
+            "name": "The Awakened",
+            "titleId": 418,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_challengemode_gold",
+            "id": 14531,
+            "name": "The Proud",
+            "titleId": 431,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_challengemode_gold",
+            "id": 15077,
+            "name": "The Tormented",
+            "titleId": 446,
+            "type": "achievement",
+            "notObtainable": true
+          }
+        ],
+        "name": "Mythic Plus"
+      },
+      {
+        "items": [
+          {
+            "icon": "achievement_challengemode_platinum",
+            "id": 15327,
+            "name": "The Tormented Hero",
+            "titleId": 451,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_challengemode_platinum",
+            "id": 15691,
+            "name": "The Cryptic Hero",
+            "titleId": 458,
+            "type": "achievement",
+            "notObtainable": true
+          }
+        ],
+        "name": "End-of-season Mythic Plus"
+      },
+      {
+        "items": [
+          {
+            "icon": "inv_misc_head_dragon_blue",
+            "id": 1400,
+            "name": "The Magic Seeker",
+            "titleId": 88,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_trinket_naxxramas06",
+            "id": 1402,
+            "name": "Conqueror of Naxxramas",
+            "titleId": 90,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_dungeon_coablackdragonflight_25man",
+            "id": 456,
+            "name": "Obsidian Slayer",
+            "titleId": 106,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_boss_yoggsaron_01",
+            "id": 3117,
+            "name": "Death's Demise",
+            "titleId": 124,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_boss_algalon_01",
+            "id": 3259,
+            "name": "The Celestial Defender",
+            "titleId": 125,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_reputation_argentcrusader",
+            "id": 4078,
+            "name": "Grand Crusader",
+            "titleId": 135,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_nazmir_boss_ghuun",
+            "id": 12542,
+            "name": "Famed Slayer of G'huun",
+            "titleId": 374,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_boss_zuldazar_jaina",
+            "id": 13326,
+            "name": "Famed Conqueror of Dazar'alor",
+            "titleId": 384,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_boss_zuldazar_jaina",
+            "id": 13327,
+            "name": "Famed Defender of Dazar'alor",
+            "titleId": 385,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_uunat",
+            "id": 13423,
+            "name": "Famed Slayer of the Harbinger",
+            "titleId": 400,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_boss_azshara",
+            "id": 13787,
+            "name": "Famed Slayer of Azshara",
+            "titleId": 409,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_nzothraid_nzoth",
+            "id": 14071,
+            "name": "Famed Slayer of N'Zoth",
+            "titleId": 416,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_raid_revendrethraid_siredenathrius",
+            "id": 14649,
+            "name": "Famed Slayer of Denathrius",
+            "titleId": 440,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_raid_torghast_sylvanaswindrunner",
+            "id": 15196,
+            "name": "Famed Bane of the Banshee Queen",
+            "titleId": 448,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_achievement_raid_progenitorraid_jailer",
+            "id": 15475,
+            "name": "Famed Slayer of The Banished One",
+            "titleId": 454,
+            "type": "achievement",
+            "notObtainable": true
+          }
+        ],
+        "name": "Competitive Raiding"
+      },
+      {
+        "items": [
+          {
+            "icon": "spell_holy_weaponmastery",
+            "id": 2186,
+            "name": "The Immortal",
+            "titleId": 108,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "spell_holy_sealofvengeance",
+            "id": 2187,
+            "name": "The Undying",
+            "titleId": 109,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "spell_holy_weaponmastery",
+            "id": 2904,
+            "name": "Conqueror of Ulduar",
+            "titleId": 126,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "spell_holy_sealofvengeance",
+            "id": 2903,
+            "name": "Champion of Ulduar",
+            "titleId": 127,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_reputation_argentcrusader",
+            "id": 4080,
+            "name": "The Argent Defender",
+            "titleId": 136,
+            "type": "achievement",
+            "notObtainable": true
+          }
+        ],
+        "name": "Raid Achievements"
+      },
+      {
+        "items": [
+          {
+            "icon": "achievement_featsofstrength_gladiator_08",
+            "id": 1174,
+            "name": "Arena Master",
+            "titleId": 50,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 128,
+            "name": "The Flawless Victor",
+            "titleId": 96,
+            "type": "title",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_zone_hillsbradfoothills",
+            "id": 9729,
+            "name": "Tarren Mill Terror",
+            "side": "A",
+            "titleId": 280,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_zone_hillsbradfoothills",
+            "id": 9566,
+            "name": "Southshore Slayer",
+            "side": "H",
+            "titleId": 281,
+            "type": "achievement",
+            "notObtainable": true
+          }
+        ],
+        "name": "PVP"
+      },
+      {
+        "items": [
+          {
+            "icon": "achievement_featsofstrength_gladiator_01",
+            "id": 418,
+            "name": "Merciless Gladiator",
+            "titleId": 37,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_02",
+            "id": 419,
+            "name": "Vengeful Gladiator",
+            "titleId": 40,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_03",
+            "id": 420,
+            "name": "Brutal Gladiator",
+            "titleId": 49,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "ability_mount_redfrostwyrm_01",
+            "id": 3096,
+            "name": "Deadly Gladiator",
+            "titleId": 56,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_05",
+            "id": 3436,
+            "name": "Furious Gladiator",
+            "titleId": 132,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "ability_mount_redfrostwyrm_01",
+            "id": 3757,
+            "name": "Relentless Gladiator",
+            "titleId": 134,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 4599,
+            "name": "Wrathful Gladiator",
+            "titleId": 142,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_09",
+            "id": 6002,
+            "name": "Vicious Gladiator",
+            "titleId": 191,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_10",
+            "id": 6124,
+            "name": "Ruthless Gladiator",
+            "titleId": 192,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "ability_mount_drake_twilight",
+            "id": 6741,
+            "name": "Cataclysmic Gladiator",
+            "titleId": 193,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_10",
+            "id": 8214,
+            "name": "Malevolent Gladiator",
+            "titleId": 223,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_pandarenserpentmount_blue",
+            "id": 8678,
+            "name": "Tyrannical Gladiator",
+            "titleId": 225,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_01",
+            "id": 8643,
+            "name": "Grievous Gladiator",
+            "titleId": 253,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_06",
+            "id": 8666,
+            "name": "Prideful Gladiator",
+            "titleId": 254,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_06",
+            "id": 9232,
+            "name": "Primal Gladiator",
+            "titleId": 308,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_08",
+            "id": 10096,
+            "name": "Wild Gladiator",
+            "titleId": 315,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 10097,
+            "name": "Warmongering Gladiator",
+            "titleId": 316,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_08",
+            "id": 11012,
+            "name": "Vindictive Gladiator",
+            "titleId": 353,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_04",
+            "id": 11014,
+            "name": "Fearless Gladiator",
+            "titleId": 355,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 11037,
+            "name": "Cruel Gladiator",
+            "titleId": 359,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 11062,
+            "name": "Ferocious Gladiator",
+            "titleId": 360,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 12010,
+            "name": "Fierce Gladiator",
+            "titleId": 363,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 12134,
+            "name": "Dominant Gladiator",
+            "titleId": 368,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 12185,
+            "name": "Demonic Gladiator",
+            "titleId": 370,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 12945,
+            "name": "Dread Gladiator",
+            "titleId": 79,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 13200,
+            "name": "Sinister Gladiator",
+            "titleId": 80,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 13630,
+            "name": "Notorious Gladiator",
+            "titleId": 402,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 13957,
+            "name": "Corrupted Gladiator",
+            "titleId": 411,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 14690,
+            "name": "Sinful Gladiator",
+            "titleId": 434,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 14973,
+            "name": "Unchained Gladiator",
+            "titleId": 441,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 15353,
+            "name": "Cosmic Gladiator",
+            "titleId": 452,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 15606,
+            "name": "Eternal Gladiator",
+            "titleId": 461,
+            "type": "achievement",
+            "notObtainable": true
+          }
+        ],
+        "name": "End-of-season Arena"
+      },
+      {
+        "items": [
+          {
+            "icon": "achievement_pvp_a_a",
+            "id": 6942,
+            "name": "Hero of the Alliance",
+            "side": "A",
+            "titleId": 182,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_pvp_h_h",
+            "id": 6941,
+            "name": "Hero of the Horde",
+            "side": "H",
+            "titleId": 183,
+            "type": "achievement",
+            "notObtainable": true
+          }
+        ],
+        "name": "End-of-season Rated Battlegrounds"
+      },
+      {
+        "items": [
+          {
+            "icon": "inv_helmet_plate_pvpwarrior_e_01",
+            "id": 8392,
+            "name": "Vanquisher",
+            "titleId": 128,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 469,
+            "name": "Patron of War",
+            "titleId": 326,
+            "type": "title",
+            "notObtainable": true
+          },
+          {
+            "icon": "achievement_bg_trueavshutout",
+            "id": 15594,
+            "name": "Fearless Spectator",
+            "titleId": 459,
+            "type": "achievement",
+            "notObtainable": true
+          }
+        ],
+        "name": "Tournaments"
       }
     ]
   }
