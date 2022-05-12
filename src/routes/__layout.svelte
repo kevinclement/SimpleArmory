@@ -117,7 +117,7 @@
 		<!-- error page -->
 		{#if $region === 'error'}
 			<!-- Little funky here, but with error in route, it offsets the other variables -->
-			<Error region={$realm} realm={$character} character={$page} />
+			<Error />
 		{:else if $realm !== undefined && $character !== undefined}
 			<!-- overview -->
 			{#if ($page === undefined || $page === '') && $category == undefined} 
