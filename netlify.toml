@@ -1,7 +1,5 @@
 [build]
   publish = "build/"
-
-[context.deploy-preview]
   command = "npm run build"
 
 [context.production]
