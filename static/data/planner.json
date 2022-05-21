@@ -845,6 +845,7 @@
 					"icon": "inv_infernalmountgreen",
 					"itemId": 137574,
 					"mount": "Living Infernal Core",
+					"note": "All 3 difficulties in same week",
 					"name": "Gul'dan",
 					"spellId": 213134
 				  },
@@ -897,6 +898,7 @@
 						"icon": "inv_felhound3_shadow_fire",
 						"itemId": 152816,
 						"mount": "Antoran Charhound",
+						"note": "All 3 difficulties in same week",
 						"name": "Felhounds of Sargeras",
 						"spellId": 253088
 					  },
@@ -1014,6 +1016,82 @@
 			  }
 			],
 			"title": "Portal to Zandalar / Kul'Tiras"
+		  },
+		  {
+			"finalStep": "Hearthstone to Oribos",
+			"steps": [
+			  {
+				"steps": [
+				  {
+					"bosses": [
+					  {
+						"ID": "1406",
+						"epic": true,
+						"icon": "inv_maldraxxusflyermount_red",
+						"itemId": 181819,
+						"mount": "Marrowfang",
+						"name": "Nalthor the Rimebinder",
+						"note": "Mythic only",
+						"spellId": 336036
+					  }
+					],
+					"title": "Run Necrotic Wake"
+				  }
+				],
+				"title": "Fly to Bastion"
+			  },
+			  {
+				"steps": [
+				  {
+					"bosses": [
+					  {
+						"ID": "1481",
+						"epic": true,
+						"icon": "inv_brokermount_dark",
+						"itemId": 186638,
+						"mount": "Cartel Master's Gearglider",
+						"name": "So'leah",
+						"note": "Mythic only",
+						"spellId": 353263
+					  }
+					],
+					"title": "Run Tazavesh the Veiled Market"
+				  }
+				],
+				"title": "Fly to Tazavesh"
+			  },
+			  {
+				"steps": [
+				  {
+					"bosses": [
+						{
+						  "ID": "1500",
+						  "epic": true,
+						  "icon": "ability_mount_mawhorsespikes_purple",
+						  "itemId": 186656,
+						  "mount": "Sanctum Gloomcharger",
+						  "name": "The Nine",
+						  "note": "All 3 difficulties in same week",
+						  "spellId": 354351
+						},
+						{
+						  "ID": "1471",
+						  "epic": true,
+						  "icon": "inv_dragonhawkmountshadowlands",
+						  "itemId": 186642,
+						  "mount": "Vengeance",
+						  "name": "Lady Sylvanas Windrunner",
+						  "note": "Mythic only",
+						  "spellId": 351195
+						}
+					  ],
+					"title": "Run Sanctum of Domination"
+				  }
+				],
+				"title": "Portal to Oribos, then The Maw"
+			  }
+			],
+			"title": "Hearthstone to Oribos"
 		  }
 		],
 		"title": "Start off in "
