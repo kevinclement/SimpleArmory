@@ -1734,6 +1734,16 @@
             "name": "Mechagon Mechanostrider",
             "side": "A",
             "spellid": 305592
+          },
+          {
+            "ID": 1597,
+            "allowableRaces": [
+              34
+            ],
+            "icon": "inv_darkhoundmount",
+            "itemId": 191123,
+            "name": "Grimhowl",
+            "spellid": 369666
           }
         ],
         "name": "Allied Races"
@@ -5808,6 +5818,14 @@
             "name": "Purple Hawkstrider",
             "side": "H",
             "spellid": 35018
+          },
+          {
+            "ID": 1600,
+            "icon": "ability_mount_cockatricemount_green",
+            "itemId": 191566,
+            "name": "Elusive Emerald Hawkstrider",
+            "side": "H",
+            "spellid": 370620
           }
         ],
         "name": "Blood Elf"
@@ -7359,6 +7377,12 @@
             "icon": "3040844",
             "name": "Ensorcelled Everwyrm",
             "spellid": 307932
+          },
+          {
+            "ID": 1556,
+            "icon": "4096390",
+            "name": "Tangled Dreamweaver",
+            "spellid": 359843
           }
         ],
         "name": "Collector's Edition"
