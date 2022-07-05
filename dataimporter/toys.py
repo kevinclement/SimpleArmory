@@ -16,6 +16,7 @@ IGNORE_TOY_ITEMID = [
     166851,
     174445,
     183810,
+    190196,
 ]
 
 TOY_SOURCE_ENUM = {
