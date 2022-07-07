@@ -1091,6 +1091,26 @@
 				  }
 				],
 				"title": "Fly to Oribos, then Portal to The Maw"
+			  },
+			  {
+				"steps": [
+				  {
+					"bosses": [
+					  {
+						"ID": "1587",
+						"epic": true,
+						"icon": "inv_progenitorbotminemount",
+						"itemId": 190768,
+						"mount": "Zereth Overseer",
+						"name": "The Jailer",
+						"note": "Mythic only",
+						"spellId": 368158
+					  }
+					],
+					"title": "Run Sepulcher of the First Ones"
+				  }
+				],
+				"title": "Teleport to Zereth Mortis"
 			  }
 			],
 			"title": "Hearthstone to Oribos"
