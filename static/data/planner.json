@@ -248,7 +248,7 @@
 						"itemId": 43986,
 						"mount": "Black Drake",
 						"name": "Sartharion",
-						"note": "10 man",
+						"note": "10 Man, All Purple Dragons Up",
 						"spellId": 59650
 					  },
 					  {
@@ -258,7 +258,7 @@
 						"itemId": 43954,
 						"mount": "Twilight Drake",
 						"name": "Sartharion",
-						"note": "25 man",
+						"note": "25 Man, All Purple Dragons Up",
 						"spellId": 59571
 					  }
 					],
@@ -612,7 +612,7 @@
 					"title": "Fly to Stranglethorn Vale"
 				  }
 				],
-				"title": "Portal to Blasted Lands"
+				"title": "Portal to Stormwind/Blimp to Stranglethorn Vale"
 			  }
 			],
 			"title": "Portal to "
@@ -845,6 +845,7 @@
 					"icon": "inv_infernalmountgreen",
 					"itemId": 137574,
 					"mount": "Living Infernal Core",
+					"note": "Normal/Heroic/Mythic",
 					"name": "Gul'dan",
 					"spellId": 213134
 				  },
@@ -875,6 +876,7 @@
 					"icon": "inv_serpentmount_green",
 					"itemId": 143643,
 					"mount": "Abyss Worm",
+					"note": "LFR/Normal/Heroic/Mythic",
 					"name": "Mistress Sassz'ine",
 					"spellId": 232519
 				  }
@@ -897,6 +899,7 @@
 						"icon": "inv_felhound3_shadow_fire",
 						"itemId": 152816,
 						"mount": "Antoran Charhound",
+						"note": "LFR/Normal/Heroic/Mythic",
 						"name": "Felhounds of Sargeras",
 						"spellId": 253088
 					  },
@@ -931,6 +934,7 @@
 					"itemId": 166518,
 					"mount": "G.M.O.D.",
 					"name": "High Tinker Mekkatorque",
+					"note": "Normal/Heroic/Mythic",
 					"spellId": 289083
 				  },
 				  {
@@ -1014,6 +1018,82 @@
 			  }
 			],
 			"title": "Portal to Zandalar / Kul'Tiras"
+		  },
+		  {
+			"finalStep": "Hearthstone to Oribos",
+			"steps": [
+			  {
+				"steps": [
+				  {
+					"bosses": [
+					  {
+						"ID": "1406",
+						"epic": true,
+						"icon": "inv_maldraxxusflyermount_red",
+						"itemId": 181819,
+						"mount": "Marrowfang",
+						"name": "Nalthor the Rimebinder",
+						"note": "Mythic only",
+						"spellId": 336036
+					  }
+					],
+					"title": "Run Necrotic Wake"
+				  }
+				],
+				"title": "Fly to Bastion"
+			  },
+			  {
+				"steps": [
+				  {
+					"bosses": [
+					  {
+						"ID": "1481",
+						"epic": true,
+						"icon": "inv_brokermount_dark",
+						"itemId": 186638,
+						"mount": "Cartel Master's Gearglider",
+						"name": "So'leah",
+						"note": "Mythic only",
+						"spellId": 353263
+					  }
+					],
+					"title": "Run Tazavesh the Veiled Market"
+				  }
+				],
+				"title": "Fly to Tazavesh"
+			  },
+			  {
+				"steps": [
+				  {
+					"bosses": [
+						{
+						  "ID": "1500",
+						  "epic": true,
+						  "icon": "ability_mount_mawhorsespikes_purple",
+						  "itemId": 186656,
+						  "mount": "Sanctum Gloomcharger",
+						  "name": "The Nine",
+						  "note": "LFR/Normal/Heroic/Mythic",
+						  "spellId": 354351
+						},
+						{
+						  "ID": "1471",
+						  "epic": true,
+						  "icon": "inv_dragonhawkmountshadowlands",
+						  "itemId": 186642,
+						  "mount": "Vengeance",
+						  "name": "Lady Sylvanas Windrunner",
+						  "note": "Mythic only",
+						  "spellId": 351195
+						}
+					  ],
+					"title": "Run Sanctum of Domination"
+				  }
+				],
+				"title": "Fly to Oribos, then Portal to The Maw"
+			  }
+			],
+			"title": "Hearthstone to Oribos"
 		  }
 		],
 		"title": "Start off in "
