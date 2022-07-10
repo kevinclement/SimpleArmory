@@ -51,9 +51,6 @@ IGNORE_FACTION_ID = [
     2459,  # Sika
     2460,  # Stonehead
     2461,  # Plague Deviser Marileth
-
-    # Necrolord Abomination Factory
-    2462,  # Stitchmasters
 ]
 
 
