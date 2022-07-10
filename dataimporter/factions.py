@@ -17,41 +17,6 @@ IGNORE_FACTION_ID = [
 
     # TODO: we probably should integrate those at some point, as they are all
     # real reputations that do display correctly in the reputation panel.
-
-    # Brawlpub
-    1691,  # Bizmo's Brawlpub (Season 2)
-    2011,  # Bizmo's Brawlpub (Season 3)
-    2371,  # Bizmo's Brawlpub
-    1690,  # Brawl'gar Arena (Season 2)
-    2010,  # Brawl'gar Arena (Season 3)
-    2372,  # Brawl'gar Arena
-
-    # Garrison Bodyguards
-    1733,  # Delvar Ironfist
-    1736,  # Tormmok
-    1737,  # Talonpriest Ishaal
-    1738,  # Defender Illona
-    1739,  # Vivianne
-    1740,  # Aeda Brightdawn
-    1741,  # Leorajh
-
-    # Venthyr Ember Court
-    2446,  # Baroness Vashj
-    2447,  # Lady Moonberry
-    2448,  # Mikanikos
-    2449,  # The Countess
-    2450,  # Alexandros Mograine
-    2451,  # Hunt-Captain Korayn
-    2452,  # Polemarch Adrestes
-    2453,  # Rendle and Cudgelface
-    2454,  # Choofa
-    2455,  # Cryptkeeper Kassir
-    2456,  # Droman Aliothe
-    2457,  # Grandmaster Vole
-    2458,  # Kleia and Pelagos
-    2459,  # Sika
-    2460,  # Stonehead
-    2461,  # Plague Deviser Marileth
 ]
 
 
