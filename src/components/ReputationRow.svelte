@@ -38,6 +38,27 @@
         }
     }
 
+    function tierProgressString(levelIdx) {
+        if (levelIdx == faction.levels.length -1) {
+            return ""
+        } else {
+            var levelMax = (
+                faction.levels[levelIdx + 1][0] - faction.levels[levelIdx][0]
+            );
+            var levelCur;
+            if (levelIdx === faction.level) {
+                levelCur = faction.value;
+            }
+            else if (levelIdx < faction.level) {
+                levelCur = levelMax;
+            }
+            else {
+                levelCur = 0;
+            }
+            return ": " + levelCur + " / " + levelMax;
+        }
+    }
+
     function getLevelWidth(levelIdx) {
         var startThreshold = faction.levels[levelIdx][0];
         if (levelIdx < faction.levels.length - 1) {
@@ -59,12 +80,12 @@
         <a target="{settings.anchorTarget}" href="//{settings.WowHeadUrl}/faction={faction.id}">{ faction.name }</a>
     </h4>
     {#each faction.levels as level, levelIdx}
-        <div title="{level[1]}" class="repProgressBlock" style="width: {getLevelWidth(levelIdx)}px; border: 1px solid {getBorderColor(levelIdx)};">
+        <div title="{level[1] + tierProgressString(levelIdx)}" class="repProgressBlock" style="width: {getLevelWidth(levelIdx)}px; border: 1px solid {getBorderColor(levelIdx)};">
             <div style="background-color: {getColor(faction.level)}; height: 100%; width: {calculateLevelRatio(levelIdx) * 100}%"></div>
         </div>
     {/each}
     <span>
         <b style="color: {getColor(faction.level)}">{faction.levels[faction.level][1]}</b>
-        {#if faction.max !== 0}[{faction.value} / {faction.max}]{/if}
+        {#if faction.max !== 0}<span style="color: grey">• {faction.value} / {faction.max}</span>{/if}
     </span>
 </div>
