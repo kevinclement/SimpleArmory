@@ -1,70 +1,66 @@
-<script>   
+<script>
     import settings from '$util/settings'
     export let faction;
 
-    let showHover = false;
-
-    // Pixel widths of the different level types
-    let levelWidths = {
-        'hated': 150,
-        'hostel': 25,
-        'unfriendly': 25,
-        'neutral': 25,
-        'friendly': 40,
-        'honored': 60,
-        'revered': 85,
-        'exalted': 10,
-        'stranger': 50,
-        'acquaintance': 50,
-        'buddy': 50,
-        'friend': 50,
-        'goodFriends': 50,
-        'bestFriends': 50
-    };
-
-    let levels = [
-        'hated',
-        'hostel',
-        'unfriendly',
-        'neutral',
-        'friendly',
-        'honored',
-        'revered',
-        'exalted',
+    let levelColors = [
+        '#c22',
+        'red',
+        '#e62',
+        '#d29d01',
+        '#55b101',
+        '#55b101',
+        '#55b101',
+        '#0ec077',
     ]
-    if (faction.isTiller) {
-        levels = [
-            'stranger',
-            'acquaintance',
-            'buddy',
-            'friend',
-            'goodFriends',
-            'bestFriends',
-        ]
+
+    function getColor() {
+        return levelColors[
+            Math.max(
+                0,
+                levelColors.length - (faction.levels.length - faction.level)
+            )
+        ];
     }
 
-    function getWidth(level) {
-        var num = faction[level] ? faction[level] : 0;
-
-        // pulls out the faction level percentage from the scope
-        // applies that percentage to the possible fixed width for the div
-        return (num / 100) * levelWidths[level] + 'px';
+    function calculateLevelRatio(levelIdx) {
+        if (levelIdx === faction.level) {
+            return faction.perc / 100.;
+        }
+        else if (levelIdx < faction.level) {
+            return 1;
+        }
+        else {
+            return 0;
+        }
     }
 
-    function handleMouseEnter(event) {
-		showHover = faction.max !== 0
+    function getLevelWidth(levelIdx) {
+        var startThreshold = faction.levels[levelIdx][0];
+        if (levelIdx < faction.levels.length - 1) {
+            var endThreshold = faction.levels[levelIdx + 1][0];
+            var maxThreshold = faction.levels[faction.levels.length - 1][0];
+            var baseRatio = (endThreshold - startThreshold) / maxThreshold;
+            return Math.max(
+                baseRatio * 400.0 - 1,
+                0
+            );
+        } else {
+            return 10;
+        }
     }
 </script>
 
-<div on:mouseenter={handleMouseEnter} on:mouseleave={e => showHover=false}>
+<div>
     <h4 class="factionLabel">
         <a target="{settings.anchorTarget}" href="//{settings.WowHeadUrl}/faction={faction.id}">{ faction.name }</a>
     </h4>
-    {#each levels as level, index}
-        <div class="{level}" style="width: {getWidth(level)}">
-            {#if index===0 && showHover}
-                <span class="repValue">{faction.value} / {faction.max}</span>
-            {/if}
+    {#each faction.levels as level, levelIdx}
+        <div title="{level[1]}" class="repProgressBlock" style="width: {getLevelWidth(levelIdx)}px; border: 1px solid black;">
+            <div style="background-color: {getColor(levelIdx)}; height: 100%; width: {calculateLevelRatio(levelIdx) * 100}%"></div>
         </div>
     {/each}
+    <span>
+        <b style="color: {getColor(faction.level)}">{faction.levels[faction.level][1]}</b>
+        {#if faction.max !== 0}[{faction.value} / {faction.max}]{/if}
+    </span>
 </div>

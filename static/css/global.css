@@ -231,87 +231,21 @@ body {
   .factionLabel {
 	display:inline-block;
 	margin: 0 15px 0 0;
-	text-align: right;
-	width: 175px;
+	text-align: left;
+	width: 10em;
 	font-size: 14px;
 	position:relative;
   }
   
-  /* all rules */
-  .hated,.hostel,.unfriendly,.neutral,.friendly,.honored,.revered,.exalted,
-  .stranger,.acquaintance,.buddy,.friend,.goodFriends,.bestFriends {
+  .repProgressBlock {
 	display:inline-block;
 	height: 10px;
 	border-radius: 2px;
 	margin-right:1px;
 	position: relative;
+	border: 1px solid black;
   }
   
-  /* Hated */
-  .hated, .stranger  {
-	background-color: #c22;
-	width: 150px;
-  }
-  .stranger {
-	width: 50px;
-  }
-  
-  /* Hostel */
-  .hostel, .acquaintance {
-	background-color: red;
-	width: 25px;
-  }
-  .acquaintance {
-	width: 50px;
-  }
-  
-  /* Unfriendly */
-  .unfriendly, .buddy {
-	background-color: #e62;
-	width: 25px;
-  }
-  .buddy {
-	width: 50px;
-  }
-  
-  /* Neutral  */
-  .neutral, .friend {
-	background-color: #D29D01;
-	width: 25px;
-  }
-  .friend {
-	width: 50px;
-  }
-  
-  /* Friendly */
-  .friendly, .goodFriends {
-	background-color: #55B101;
-	width: 40px;
-  }
-  .goodFriends {
-	width: 50px;
-  }
-  
-  /* Honored */
-  .honored, .bestFriends {
-	background-color: #55B101;
-	width: 60px;
-  }
-  .bestFriends {
-	width: 50px;
-  }
-  
-  /* Revered */
-  .revered {
-	background-color: #55B101;
-	width: 85px;
-  }
-  
-  /* Exalted */
-  .exalted {
-	background-color: #0EC077;
-	width: 10px;
-  }
   
   .repLabel {
 	font-size: 10px;
