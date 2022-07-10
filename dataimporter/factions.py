@@ -8,11 +8,12 @@ IGNORE_FACTION_ID = [
     949,   # Test Faction 1
 
     # Never implemented
-    1888,  # Jandvik Vryul
-    2111,  # Zandalari Dinosaurs
     1351,  # The Brewmasters
     1416,  # Akama's Trust
     1440,  # Darkspear Rebellion
+    1888,  # Jandvik Vryul
+    2111,  # Zandalari Dinosaurs
+    2469,  # Fractal Lore
 
     # TODO: we probably should integrate those at some point, as they are all
     # real reputations that do display correctly in the reputation panel.
