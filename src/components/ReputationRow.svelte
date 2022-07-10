@@ -13,13 +13,17 @@
         '#0ec077',
     ]
 
-    function getColor() {
+    function getColor(level) {
         return levelColors[
             Math.max(
                 0,
-                levelColors.length - (faction.levels.length - faction.level)
+                levelColors.length - (faction.levels.length - level)
             )
         ];
+    }
+
+    function getBorderColor(level) {
+        return level <= faction.level ? getColor(faction.level) : "lightgray";
     }
 
     function calculateLevelRatio(levelIdx) {
@@ -55,8 +59,8 @@
         <a target="{settings.anchorTarget}" href="//{settings.WowHeadUrl}/faction={faction.id}">{ faction.name }</a>
     </h4>
     {#each faction.levels as level, levelIdx}
-        <div title="{level[1]}" class="repProgressBlock" style="width: {getLevelWidth(levelIdx)}px; border: 1px solid black;">
-            <div style="background-color: {getColor(levelIdx)}; height: 100%; width: {calculateLevelRatio(levelIdx) * 100}%"></div>
+        <div title="{level[1]}" class="repProgressBlock" style="width: {getLevelWidth(levelIdx)}px; border: 1px solid {getBorderColor(levelIdx)};">
+            <div style="background-color: {getColor(faction.level)}; height: 100%; width: {calculateLevelRatio(levelIdx) * 100}%"></div>
         </div>
     {/each}
     <span>

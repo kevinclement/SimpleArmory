@@ -231,7 +231,7 @@ body {
   .factionLabel {
 	display:inline-block;
 	margin: 0 15px 0 0;
-	text-align: left;
+	text-align: right;
 	width: 10em;
 	font-size: 14px;
 	position:relative;
@@ -243,9 +243,7 @@ body {
 	border-radius: 2px;
 	margin-right:1px;
 	position: relative;
-	border: 1px solid black;
   }
-  
   
   .repLabel {
 	font-size: 10px;
