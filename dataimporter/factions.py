@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import collections
+
 from .tools import find_or_create_item, changelog
 from .fixer import WowToolsFixer
 
@@ -32,6 +34,10 @@ class FactionFixer(WowToolsFixer):
         self.register_old_factions()
 
     def register_wt_factions(self):
+        self.wt_friendship = collections.defaultdict(list)
+        for e in self.wt_get_table('friendshiprepreaction'):
+            self.wt_friendship[int(e['FriendshipRepID'])].append(e)
+
         wt_faction = {
             int(e['ID']): e for e in self.wt_get_table('faction')
         }
@@ -94,10 +100,19 @@ class FactionFixer(WowToolsFixer):
         if int(faction_id) not in self.wt_faction:
             return None
         name = self.wt_faction[int(faction_id)]['Name_lang']
-        return {
+        res = {
             'id': int(faction_id),
             'name': name,
         }
+        friendship_id = int(
+            self.wt_faction[int(faction_id)]['FriendshipRepID']
+        )
+        if friendship_id != 0:
+            res['levels'] = {
+                int(r['ReactionThreshold']): r['Reaction_lang']
+                for r in self.wt_friendship[friendship_id]
+            }
+        return res
 
     def fix_missing_faction(self, faction_id: int):
         faction = self.get_faction(faction_id)
@@ -119,6 +134,8 @@ class FactionFixer(WowToolsFixer):
                 if fixed_faction:
                     faction['id'] = fixed_faction['id']
                     faction['name'] = fixed_faction['name']
+                    if 'levels' in fixed_faction:
+                        faction['levels'] = fixed_faction['levels']
                 else:
                     faction['id'] = int(faction['id'])
 
