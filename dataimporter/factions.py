@@ -14,9 +14,6 @@ IGNORE_FACTION_ID = [
     1888,  # Jandvik Vryul
     2111,  # Zandalari Dinosaurs
     2469,  # Fractal Lore
-
-    # TODO: we probably should integrate those at some point, as they are all
-    # real reputations that do display correctly in the reputation panel.
 ]
 
 
