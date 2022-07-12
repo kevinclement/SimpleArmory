@@ -2,10 +2,10 @@
 	"steps": [
 	  {
 		"capital": true,
-		"notes": "Make sure you have hearth set to shrine",
+		"notes": "Set Hearthstone to Faction Capital",
 		"steps": [
 		  {
-			"finalStep": "Hearthstone back to shrine",
+			"finalStep": "Hearthstone back to Capital",
 			"steps": [
 			  {
 				"bosses": [
@@ -105,7 +105,7 @@
 			"title": "Portal to Uldum"
 		  },
 		  {
-			"finalStep": "Hearthstone back to shrine",
+			"capital": true,
 			"steps": [
 			  {
 				"steps": [
@@ -308,11 +308,10 @@
 				"title": "Fly to Storm Peaks"
 			  }
 			],
-			"title": "Portal to Dalaran"
+			"title": "Portal to Northrend Dalaran from "
 		  },
 		  {
 			"capital": true,
-			"finalStep": "Hearthstone back to shrine",
 			"steps": [
 			  {
 				"steps": [
@@ -343,11 +342,11 @@
 				"title": "Portal to Hyjal"
 			  }
 			],
-			"title": "Portal to "
+			"title": "Hearthstone to "
 		  },
 		  {
 			"capital": true,
-			"finalStep": "Hearthstone back to shrine",
+			"finalStep": "Hearthstone back to Capital",
 			"steps": [
 			  {
 				"steps": [
