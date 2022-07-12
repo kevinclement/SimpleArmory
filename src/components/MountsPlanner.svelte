@@ -46,7 +46,7 @@
 
     function getStepTitle(step) {
         if (step.capital) {
-            return step.title + (isAlliance ? 'Stormwind' : 'Orgrimmar');
+            return 'Hearthstone to ' + (isAlliance ? 'Stormwind ' : 'Orgrimmar ') + step.title;
         }
         else {
             return step.title;
