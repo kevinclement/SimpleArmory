@@ -5,7 +5,6 @@
 		"notes": "Set Hearthstone to Faction Capital",
 		"steps": [
 		  {
-			"finalStep": "Hearthstone back to Capital",
 			"steps": [
 			  {
 				"bosses": [
@@ -308,7 +307,7 @@
 				"title": "Fly to Storm Peaks"
 			  }
 			],
-			"title": "Portal to Northrend Dalaran from "
+			"title": "and Portal to Northrend Dalaran"
 		  },
 		  {
 			"capital": true,
@@ -342,11 +341,10 @@
 				"title": "Portal to Hyjal"
 			  }
 			],
-			"title": "Hearthstone to "
+			"title": ""
 		  },
 		  {
 			"capital": true,
-			"finalStep": "Hearthstone back to Capital",
 			"steps": [
 			  {
 				"steps": [
@@ -402,11 +400,10 @@
 				"title": "Portal to Caverns of Time"
 			  }
 			],
-			"title": "Portal to "
+			"title": ""
 		  },
 		  {
 			"capital": true,
-			"finalStep": "Hearthstone back to shrine",
 			"steps": [
 			  {
 				"steps": [
@@ -429,10 +426,10 @@
 				"title": "Portal to Deepholm"
 			  }
 			],
-			"title": "Portal to "
+			"title": ""
 		  },
 		  {
-			"finalStep": "Hearthstone back to shrine",
+			"capital":true,
 			"steps": [
 			  {
 				"steps": [
@@ -538,11 +535,10 @@
 				"title": "Fly to Shattrath"
 			  }
 			],
-			"title": "Portal to Shattrath"
+			"title": "and Portal to Shattrath"
 		  },
 		  {
 			"capital": true,
-			"finalStep": "Hearthstone back to shrine",
 			"steps": [
 			  {
 				"steps": [
@@ -611,12 +607,13 @@
 					"title": "Fly to Stranglethorn Vale"
 				  }
 				],
-				"title": "Portal to Stormwind/Blimp to Stranglethorn Vale"
+				"title": "Fly to Stranglethorn Vale / Blimp to Stranglethorn Vale"
 			  }
 			],
-			"title": "Portal to "
+			"title": ""
 		  },
 		  {
+			"capital":true,
 			"steps": [
 			  {
 				"bosses": [
@@ -634,7 +631,7 @@
 				"title": "Kill Galleon"
 			  }
 			],
-			"title": "Fly to Valley of the Four Winds"
+			"title": "and Portal to Jade Forest"
 		  },
 		  {
 			"steps": [
@@ -677,7 +674,6 @@
 			"title": "Fly to Isle of Giants"
 		  },
 		  {
-			"finalStep": "Hearthstone back to shrine",
 			"steps": [
 			  {
 				"bosses": [
@@ -688,6 +684,7 @@
 					"itemId": 87777,
 					"mount": "Reins of the Astral Cloud Serpent",
 					"name": "Elegon",
+					"note": "Normal/Heroic",
 					"spellId": 127170
 				  }
 				],
@@ -697,7 +694,7 @@
 			"title": "Fly to Kun-Lai Summit"
 		  },
 		  {
-			"finalStep": "Hearthstone back to shrine",
+			"capital":true,
 			"steps": [
 			  {
 				"steps": [
@@ -725,6 +722,7 @@
 						"itemId": 93666,
 						"mount": "Spawn of Horridon",
 						"name": "Horridon",
+						"note": "Normal/Heroic",
 						"spellId": 136471
 					  },
 					  {
@@ -734,6 +732,7 @@
 						"itemId": 95059,
 						"mount": "Clutch of Ji-Kun",
 						"name": "Ji-Kun",
+						"note": "Normal/Heroic",
 						"spellId": 139448
 					  }
 					],
@@ -743,10 +742,9 @@
 				"title": "Portal to Isle of Thunder"
 			  }
 			],
-			"title": "Fly to Townlong Steppes"
+			"title": "and Portal to Jade Forest"
 		  },
 		  {
-			"finalStep": "Hearthstone back to shrine",
 			"steps": [
 			  {
 				"bosses": [
@@ -767,7 +765,8 @@
 			"title": "Fly to Vale of the Eternal Blossoms"
 		  },
 		  {
-			"finalStep": "Hearthstone to Dalaran",
+			"finalStep": "Use Dalaran Hearthstone",
+			"notes":"Must Have Garrison Unlocked",
 			"steps": [
 			  {
 				"steps": [
@@ -831,10 +830,10 @@
 				"title": "Fly to Gorgrond"
 			  }
 			],
-			"title": "Portal to Garrison"
+			"title": "Use Garrison Hearthstone"
 		  },
 		  {
-			"finalStep": "Hearthstone to Dalaran",
+			"finalStep": "Use Dalaran Hearthstone",
 			"steps": [
 			  {
 				"bosses": [
@@ -865,7 +864,7 @@
 			"title": "Fly to Suramar"
 		  },
 		  {
-			"finalStep": "Hearthstone to Dalaran",
+			"finalStep": "Use Dalaran Hearthstone",
 			"steps": [
 			  {
 				"bosses": [
@@ -883,10 +882,10 @@
 				"title": "Run Tomb of Sargeras"
 			  }
 			],
-			"title": "Fly to Broke Shore"
+			"title": "Fly to Broken Shore"
 		  },
 		  {
-			"finalStep": "Hearthstone to Dalaran",
+			"finalStep": "Use Dalaran Hearthstone",
 			"steps": [
 			  {
 				"steps": [
@@ -922,7 +921,7 @@
 			"title": "Portal to Argus"
 		  },
 		  {
-			"finalStep": "Hearthstone to Zandalar / Kul'Tiras",
+			"notes": "Set Hearthstone to Zandalar / Kul'Tiras",
 			"steps": [
 			  {
 				"bosses": [
@@ -950,10 +949,9 @@
 				"title": "Run Battle of Dazar'alor"
 			  }
 			],
-			"title": "Portal to Zandalar / Kul'Tiras"
+			"title": "Hearthstone to Zandalar / Kul'Tiras"
 		  },
 		  {
-			"finalStep": "Hearthstone to Zandalar / Kul'Tiras",
 			"steps": [
 			  {
 				"steps": [
@@ -1014,12 +1012,34 @@
 				  }
 				],
 				"title": "Walk to Nazmir"
+			  },
+			  {
+				"capital":true,
+				"steps": [
+				  {
+					"bosses": [
+					  {
+						"ID": "1293",
+						"epic": true,
+						"icon": "inv_eyeballjellyfishmount",
+						"itemId": 174872,
+						"mount": "Ny'alotha Allseer",
+						"name": "N'zoth the Corruptor",
+						"note": "Mythic only",
+						"spellId": 308814
+					  }
+					],
+					"title": "Run Ny'alotha the Waking City"
+				  }
+				],
+				"title": "and Portal to Uldum"
 			  }
 			],
-			"title": "Portal to Zandalar / Kul'Tiras"
+			"title": "Hearthstone to Zandalar / Kul'Tiras"
 		  },
 		  {
-			"finalStep": "Hearthstone to Oribos",
+			"capital":true,
+			"notes":"Set Hearthstone to Faction Capital",
 			"steps": [
 			  {
 				"steps": [
@@ -1112,10 +1132,10 @@
 				"title": "Teleport to Zereth Mortis"
 			  }
 			],
-			"title": "Hearthstone to Oribos"
+			"title": "and Portal to Oribos"
 		  }
 		],
-		"title": "Start off in "
+		"title": ""
 	  }
 	]
   }
