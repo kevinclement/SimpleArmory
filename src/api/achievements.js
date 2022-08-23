@@ -21,10 +21,10 @@ export async function getAchievements(region, realm, character) {
 
     // get json
     const db = await getJsonDb('achievements');
-    
-    // get character earned  
+
+    // get character earned
     const earned = await getData(region, realm, character, 'achievements');
-    
+
     // combine and cache
     _cache.update(
         region,
@@ -50,7 +50,7 @@ function parseAchievementObject(db, earned, character, faction) {
 
     // Build up lookup for achievements that character has completed
     earned.achievements.forEach((ach, index) => {
-        
+
         if (ach.completed_timestamp) {
             // hash the achievement and its timestamp
             completed[ach.id] = ach.completed_timestamp;
@@ -84,7 +84,7 @@ function parseAchievementObject(db, earned, character, faction) {
     db.supercats.forEach((supercat) => {
         let possibleCount  = 0
          ,  completedCount = 0;
-    
+
         // Add the supercategory to the object, so we can do quick lookups on category
         obj[supercat.name] = {};
         obj[supercat.name].categories = [];
@@ -107,7 +107,7 @@ function parseAchievementObject(db, earned, character, faction) {
 
                     // if we're forcing all completed then set those up
                     if (!myAchievement.completed && settings.debug) {
-                        myAchievement.completed = settings.fakeCompletionTime;    
+                        myAchievement.completed = settings.fakeCompletionTime;
                     }
 
                     // Hack: until blizz fixes api, don't stamp with date
@@ -118,9 +118,9 @@ function parseAchievementObject(db, earned, character, faction) {
                     // Always add it if we've completed it, it should show up regardless if its available
                     if (myAchievement.completed) {
                         added = true;
-                        mySubCat.achievements.push(myAchievement);    
+                        mySubCat.achievements.push(myAchievement);
 
-                        // if this is feats of strength then I want to keep a seperate count for that 
+                        // if this is feats of strength then I want to keep a seperate count for that
                         // since its not a percentage thing
                         if (supercat.name === 'Feats of Strength') {
                             totalFoS++;
@@ -129,7 +129,7 @@ function parseAchievementObject(db, earned, character, faction) {
                         }
                     }
                     else if (critsOfAchiev[ach.id]) {
-                        // build up rel based on completed criteria for the achievement 
+                        // build up rel based on completed criteria for the achievement
                         // and pass that along to wowhead
                         //cri=40635:40636:40637:40638:40640:40641:40642:40643:40644:40645
                         var criCom = [];
@@ -138,14 +138,14 @@ function parseAchievementObject(db, earned, character, faction) {
                                 criCom.push(blizzCrit);
                             }
                         })
-                        
+
                         if (criCom.length > 0) {
                             myAchievement.rel = 'cri=' + criCom.join(':');
                         }
                     }
 
                     // Update counts proper
-                    if (supercat.name !== 'Feats of Strength' && supercat.name !== 'Legacy' && !ach.notObtainable && 
+                    if (subcat.name !== "Realm First!" && supercat.name !== 'Legacy' && !ach.notObtainable &&
                         (!ach.side || ach.side === faction)){
                         possibleCount++;
                         totalPossible++;
