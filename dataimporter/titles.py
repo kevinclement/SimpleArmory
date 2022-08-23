@@ -108,6 +108,10 @@ IGNORE_TITLE_ID = [
     408,  # Pilgrim %s the Mallet Bearer https://www.wowhead.com/title=660
     413,  # %s, As Themselves https://www.wowhead.com/title=666
     436,  # %s the Avowed https://www.wowhead.com/title=690
+    453,  # The [PH] TBD Title https://www.wowhead.com/title=713
+    464,  # Hero of Fate https://www.wowhead.com/title=15685
+    465,  # The Shrouded https://www.wowhead.com/title=15689
+    466,  # The Shrouded Hero https://www.wowhead.com/title=15756
 ]
 
 
