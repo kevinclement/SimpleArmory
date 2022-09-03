@@ -2385,28 +2385,6 @@
           }
         ],
         "name": "Pre-launch Event"
-      },
-      {
-        "id": "3fc008dc",
-        "items": [
-          {
-            "ID": 1465,
-            "icon": "inv_vicioushordewolf_mount",
-            "itemId": 187644,
-            "name": "Vicious Warstalker",
-            "notObtainable": true,
-            "spellid": 349824
-          },
-          {
-            "ID": 1466,
-            "icon": "inv_viciousalliancewolf_mount",
-            "itemId": 187642,
-            "name": "Vicious Warstalker",
-            "notObtainable": true,
-            "spellid": 349823
-          }
-        ],
-        "name": "Unknown"
       }
     ]
   },
@@ -6579,6 +6557,22 @@
             "name": "Vicious War Croaker",
             "side": "A",
             "spellid": 347256
+          },
+          {
+            "ID": 1465,
+            "icon": "inv_vicioushordewolf_mount",
+            "itemId": 187644,
+            "name": "Vicious Warstalker",
+            "side": "A",
+            "spellid": 349824
+          },
+          {
+            "ID": 1466,
+            "icon": "inv_viciousalliancewolf_mount",
+            "itemId": 187642,
+            "name": "Vicious Warstalker",
+            "side": "H",
+            "spellid": 349823
           }
         ],
         "name": "Vicious Saddle"
@@ -6839,6 +6833,7 @@
             "icon": "inv_shadebeastmount_red",
             "itemId": 189507,
             "name": "Cosmic Gladiator's Soul Eater",
+            "notObtainable": true,
             "spellid": 365559
           },
           {
