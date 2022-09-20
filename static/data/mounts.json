@@ -223,6 +223,13 @@
             "spellid": 363136
           },
           {
+            "ID": 1576,
+            "icon": "4216725",
+            "itemId": 190170,
+            "name": "Jigglesworth Sr.",
+            "spellid": 366791
+          },
+          {
             "ID": 1419,
             "icon": "inv_deathelementalmount_black",
             "itemId": 182717,
@@ -243,7 +250,15 @@
             "icon": "inv_deathelementalmount_red",
             "itemId": 187682,
             "name": "Wastewarped Deathwalker",
+            "notObtainable": true,
             "spellid": 359407
+          },
+          {
+            "ID": 1405,
+            "icon": "inv_deathelementalmount_purple",
+            "itemId": 192557,
+            "name": "Restoration Deathwalker",
+            "spellid": 334482
           }
         ],
         "name": "Achievement"
@@ -2370,28 +2385,6 @@
           }
         ],
         "name": "Pre-launch Event"
-      },
-      {
-        "id": "3fc008dc",
-        "items": [
-          {
-            "ID": 1465,
-            "icon": "inv_vicioushordewolf_mount",
-            "itemId": 187644,
-            "name": "Vicious Warstalker",
-            "notObtainable": true,
-            "spellid": 349824
-          },
-          {
-            "ID": 1466,
-            "icon": "inv_viciousalliancewolf_mount",
-            "itemId": 187642,
-            "name": "Vicious Warstalker",
-            "notObtainable": true,
-            "spellid": 349823
-          }
-        ],
-        "name": "Unknown"
       }
     ]
   },
@@ -6564,6 +6557,22 @@
             "name": "Vicious War Croaker",
             "side": "A",
             "spellid": 347256
+          },
+          {
+            "ID": 1465,
+            "icon": "inv_vicioushordewolf_mount",
+            "itemId": 187644,
+            "name": "Vicious Warstalker",
+            "side": "A",
+            "spellid": 349824
+          },
+          {
+            "ID": 1466,
+            "icon": "inv_viciousalliancewolf_mount",
+            "itemId": 187642,
+            "name": "Vicious Warstalker",
+            "side": "H",
+            "spellid": 349823
           }
         ],
         "name": "Vicious Saddle"
@@ -6824,7 +6833,15 @@
             "icon": "inv_shadebeastmount_red",
             "itemId": 189507,
             "name": "Cosmic Gladiator's Soul Eater",
+            "notObtainable": true,
             "spellid": 365559
+          },
+          {
+            "ID": 1599,
+            "icon": "inv_shadebeastmount_orange",
+            "itemId": 191290,
+            "name": "Eternal Gladiator's Soul Eater",
+            "spellid": 370346
           }
         ],
         "name": "Gladiator"
@@ -7291,6 +7308,13 @@
             "icon": "4180079",
             "name": "Wen Lo, the River's Edge",
             "spellid": 359317
+          },
+          {
+            "ID": 1581,
+            "icon": "4323958",
+            "itemId": 190581,
+            "name": "Nether-Gorged Greatwyrm",
+            "spellid": 367676
           }
         ],
         "name": "Blizzard Store"
@@ -7394,6 +7418,18 @@
             "icon": "3883761",
             "name": "Viridian Phase-Hunter",
             "spellid": 346136
+          },
+          {
+            "ID": 1602,
+            "icon": "4500249",
+            "name": "Tuskarr Shoreglider",
+            "spellid": 370770
+          },
+          {
+            "ID": 1679,
+            "icon": "4674846",
+            "name": "Frostbrood Proto-Wyrm",
+            "spellid": 386452
           }
         ],
         "name": "WoW Classic"
