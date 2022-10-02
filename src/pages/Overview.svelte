@@ -5,6 +5,7 @@
     import { percent, percentFormat, getTitle } from '$util/utils'
     import ProgressBar from '$components/ProgressBar.svelte';
     import { getUrl } from '$util/url'
+    import { t } from 'svelte-i18n'
 
     let promise;
     let overallWidth = 0;
@@ -61,20 +62,20 @@
 </script>
 
 <svelte:head>
-	<title>{getTitle($character, 'Overview')}</title>
+	<title>{getTitle($character, $t('overview'))}</title>
 </svelte:head>
 
 <div class="container">
     <!-- Progress Overview -->
     <div class="page-header">
-      <h2>Progress Overview</h2>
+      <h2>{$t('progressOverview')}</h2>
     </div>
-    <strong class="desc">Total Complete</strong>
+    <strong class="desc">{$t('totalComplete')}</strong>
     <ProgressBar width={overallWidth} percentage={overallPercentage} styleWidth="auto"/>
   
     {#each Object.keys(cats) as cat}
         <div class="achGrid">
-            <strong class="desc">{cat}</strong>
+            <strong class="desc">{$t(cats[cat].seg)}</strong>
             <ProgressBar name="{cat}" width={cats[cat].w} percentage={cats[cat].txt} url={cats[cat].url} styleWidth="auto" />
         </div>
     {/each}

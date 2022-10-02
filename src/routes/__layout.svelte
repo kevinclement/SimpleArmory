@@ -3,6 +3,8 @@
 	import { preferences } from '$stores/preferences'
 	import { navigate } from '$util/url'
 	import { getDarkMode } from '$util/utils'
+	import '$util/i18n.js';
+	import { isLoading } from 'svelte-i18n';
 
 	import Achievements from '$pages/Achievements.svelte';
 	import Overview from '$pages/Overview.svelte';
@@ -113,51 +115,53 @@
 
 <div>
 
-	{#if $region !== undefined}
-		<!-- error page -->
-		{#if $region === 'error'}
-			<!-- Little funky here, but with error in route, it offsets the other variables -->
-			<Error />
-		{:else if $realm !== undefined && $character !== undefined}
-			<!-- overview -->
-			{#if ($page === undefined || $page === '') && $category == undefined} 
-			<Overview/>
+	{#if !$isLoading}
+		{#if $region !== undefined}
+			<!-- error page -->
+			{#if $region === 'error'}
+				<!-- Little funky here, but with error in route, it offsets the other variables -->
+				<Error />
+			{:else if $realm !== undefined && $character !== undefined}
+				<!-- overview -->
+				{#if ($page === undefined || $page === '') && $category == undefined} 
+				<Overview/>
 
-			<!-- achievements/quests -->
-			{:else if $page === 'achievements'}
-			<Achievements/>
+				<!-- achievements/quests -->
+				{:else if $page === 'achievements'}
+				<Achievements/>
 
-			<!-- collectable/mounts -->
-			{:else if $page === 'collectable' && ($category === 'mounts')}
-			<Mounts planner={$subcat === 'planner'}/>
+				<!-- collectable/mounts -->
+				{:else if $page === 'collectable' && ($category === 'mounts')}
+				<Mounts planner={$subcat === 'planner'}/>
 
-			<!-- collectable/companions -->
-			{:else if $page === 'collectable' && $category === 'companions'} 
-			<Companions/>
+				<!-- collectable/companions -->
+				{:else if $page === 'collectable' && $category === 'companions'} 
+				<Companions/>
 
-			<!-- collectable/battlepets -->
-			{:else if $page === 'collectable' && $category === 'battlepets'} 
-			<BattlePets/>
+				<!-- collectable/battlepets -->
+				{:else if $page === 'collectable' && $category === 'battlepets'} 
+				<BattlePets/>
 
-			<!-- collectable/toys -->
-			{:else if $page === 'collectable' && $category === 'toys'} 
-			<Toys/>
+				<!-- collectable/toys -->
+				{:else if $page === 'collectable' && $category === 'toys'} 
+				<Toys/>
 
-			<!-- collectable/titles -->
-			{:else if $page === 'collectable' && $category === 'titles'} 
-			<Titles/>
+				<!-- collectable/titles -->
+				{:else if $page === 'collectable' && $category === 'titles'} 
+				<Titles/>
 
-			<!-- calendar -->
-			{:else if $page === 'calendar'}
-			<Calendar/>
+				<!-- calendar -->
+				{:else if $page === 'calendar'}
+				<Calendar/>
 
-			<!-- reputations -->
-			{:else if $page === 'reputation'}
-			<Reputations></Reputations>
+				<!-- reputations -->
+				{:else if $page === 'reputation'}
+				<Reputations></Reputations>
 
+				{/if}
+			{:else}
+				<Login></Login>
 			{/if}
-		{:else}
-			<Login></Login>
 		{/if}
 	{/if}
 
