@@ -4,35 +4,36 @@
 	import { getProfileMedia } from '$api/profile'
 	import { getUrl } from '$util/url'
 	import { onMount, onDestroy } from 'svelte'
+	import { t } from 'svelte-i18n'
 	
 	let menuCollapsed = true
 
 	let menuItems = {
 		'Achievements': {
 			items: [ 
-				{ txt: 'Character',          link: 'character'   },
-				{ txt: 'Quests',             link: 'quests'      },
-				{ txt: 'Exploration',        link: 'exploration' },
-				{ txt: 'Player vs. Player',  link: 'pvp'         },
-				{ txt: 'Dungeons & Raids',   link: 'dungeons'    },
-				{ txt: 'Professions',        link: 'professions' },
-				{ txt: 'Reputation',         link: 'reputation'  },
-				{ txt: 'World Events',       link: 'events'      },
-				{ txt: 'Pet Battles',        link: 'pets'        },
-				{ txt: 'Collections',        link: 'collections' },
-				{ txt: 'Expansion Features', link: 'expansions'  },
-				{ txt: 'Legacy',             link: 'legacy'      },
-				{ txt: 'Feats of Strength',  link: 'feats'       },
+				'character',
+				'quests',
+				'exploration',
+				'pvp',
+				'dungeons',
+				'professions',
+				'reputation',
+				'events',
+				'pets',
+				'collections',
+				'expansions',
+				'legacy',
+				'feats',
 			],
 			isOpen: false
 		},
 		'Collectable': {
 			items: [ 
-				{ txt: 'Mounts',      link: 'mounts'     },
-				{ txt: 'Companions',  link: 'companions' },
-				{ txt: 'Battle Pets', link: 'battlepets' },
-				{ txt: 'Toys',        link: 'toys'       },
-				{ txt: 'Titles',	  link: 'titles'     }
+				'mounts',
+				'companions',
+				'battlepets',
+				'toys',
+				'titles'
 			],
 			isOpen: false,
 		},
@@ -136,32 +137,32 @@
 		<div class="navbar-collapse" class:collapse="{menuCollapsed}">
 			{#if isLoggedIn }
 			<ul class="nav navbar-nav">
-				<li class:active="{$page === undefined}"><a href="{getUrl($region, $realm, $character, '')}">Overview</a></li>
+				<li class:active="{$page === undefined}"><a href="{getUrl($region, $realm, $character, '')}">{$t('overview')}</a></li>
 				
 				<li class:active="{$page === 'achievements'}" class="dropdown" class:open={menuItems.Achievements.isOpen} >
-					<a id="achDrop" href="#/" on:click="{(e) => toggleDropDown(e,menuItems.Achievements)}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Achievements
+					<a id="achDrop" href="#/" on:click="{(e) => toggleDropDown(e,menuItems.Achievements)}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{$t('achievements')}
 						<b class="caret"></b>
 					</a>
 					<ul class="dropdown-menu" aria-labelledby="achDrop">
 						{#each menuItems.Achievements.items as item} 
-							<li class:active="{$page === 'achievements' && $category === item.link}"><a href="{getUrl($region, $realm, $character, 'achievements/' + item.link)}">{item.txt}</a></li>	
+							<li class:active="{$page === 'achievements' && $category === item}"><a href="{getUrl($region, $realm, $character, 'achievements/' + item)}">{$t(item)}</a></li>	
 						{/each}
 					</ul>
 				</li>
 
 				<li class:active="{$page === 'collectable'}" class="dropdown" class:open={menuItems.Collectable.isOpen}>
-					<a id="collectDrop" href="#/" on:click="{(e) => toggleDropDown(e,menuItems.Collectable)}"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Collectable
+					<a id="collectDrop" href="#/" on:click="{(e) => toggleDropDown(e,menuItems.Collectable)}"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{$t('collectable')}
 						<b class="caret"></b>
 					</a>
 					<ul class="dropdown-menu" aria-labelledby="collectDrop">
 					  {#each menuItems.Collectable.items as item} 
-					    <li class:active="{$page === 'collectable' && $category === item.link}"><a href="{getUrl($region, $realm, $character, 'collectable/' + item.link)}">{item.txt}</a></li>	
+					    <li class:active="{$page === 'collectable' && $category === item}"><a href="{getUrl($region, $realm, $character, 'collectable/' + item)}">{$t(item)}</a></li>	
 					  {/each}
 					</ul>
 				</li>
 
-				<li class:active="{$page === 'calendar'}"><a href="{getUrl($region, $realm, $character, 'calendar')}">Calendar</a></li>
-				<li class:active="{$page === 'reputation'}"><a href="{getUrl($region, $realm, $character, 'reputation')}">Reputation</a></li>
+				<li class:active="{$page === 'calendar'}"><a href="{getUrl($region, $realm, $character, 'calendar')}">{$t('calendar')}</a></li>
+				<li class:active="{$page === 'reputation'}"><a href="{getUrl($region, $realm, $character, 'reputation')}">{$t('reputation')}</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown" class:open={menuItems.Profile.isOpen}>
@@ -173,15 +174,15 @@
 					</a>
 
 					<ul class="dropdown-menu" aria-labelledby="profileDrop">
-					  <li class="signin-label">Signed in as</li>
+					  <li class="signin-label">{$t('signedInAs')}</li>
 					  <li><strong class="signin-name">{$character} @ {$realm}</strong></li>
 					  <li role="separator" class="divider"></li> 
-					  <li><a href="/#/">Signout</a></li>
+					  <li><a href="/#/">{$t('signout')}</a></li>
 					  <li role="separator" class="divider"></li>
-					  <li><a href="{armoryUrl}" target="_blank">Armory profile</a></li>
-					  <li><a href="#/" on:click={toggleTheme} >Use {$preferences.theme === 'light' ? 'Dark' : 'Light'} Theme</a></li>
+					  <li><a href="{armoryUrl}" target="_blank">{$t('armoryProfile')}</a></li>
+					  <li><a href="#/" on:click={toggleTheme} >{$t('useTheme', { values: { theme: $preferences.theme === 'light' ? $t('dark') : $t('light') } })}</a></li>
 					  <li role="separator" class="divider"></li>
-					  <li><a href="https://github.com/kevinclement/SimpleArmory/issues" target="_blank">Report Bug</a></li>
+					  <li><a href="https://github.com/kevinclement/SimpleArmory/issues" target="_blank">{$t('reportBug')}</a></li>
 					</ul>
 				</li>
 			</ul>

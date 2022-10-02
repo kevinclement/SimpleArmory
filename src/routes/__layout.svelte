@@ -4,7 +4,7 @@
 	import { navigate } from '$util/url'
 	import { getDarkMode } from '$util/utils'
 	import '$util/i18n.js';
-	import { isLoading } from 'svelte-i18n';
+	import { isLoading, waitLocale } from 'svelte-i18n';
 
 	import Achievements from '$pages/Achievements.svelte';
 	import Overview from '$pages/Overview.svelte';
@@ -114,8 +114,7 @@
 <Nav></Nav>
 
 <div>
-
-	{#if !$isLoading}
+	{#await waitLocale() then}
 		{#if $region !== undefined}
 			<!-- error page -->
 			{#if $region === 'error'}
@@ -163,7 +162,7 @@
 				<Login></Login>
 			{/if}
 		{/if}
-	{/if}
+	{/await}
 
 	<slot />
 </div>
