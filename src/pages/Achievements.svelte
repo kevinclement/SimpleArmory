@@ -6,6 +6,7 @@
     import settings from '$util/settings'
     import ProgressBar from '$components/ProgressBar.svelte';
     import Loading from '$components/Loading.svelte';
+    import { t } from 'svelte-i18n'
 
     $: superCat = prettySuperCategory($category);
 
@@ -88,13 +89,13 @@
 </script>
 
 <svelte:head>
-	<title>{getTitle($character, 'Achievements')}</title>
+	<title>{getTitle($character, $t('achievements'))}</title>
 </svelte:head>
 
 <div class="container">
 <div class="page-header">
     <h2>
-        Achievements <small>{superCat}</small>
+        {$t('achievements')} <small>{$t($category)}</small>
         <ProgressBar rightSide={true} width={percWidth} percentage={percentage}/>
     </h2>
 </div>
@@ -105,11 +106,13 @@
 {#if achievements}
     {#each achievements.categories as category}
         {#if category.name != superCat}
-            <h3 class="categoryHeader">{ category.name }</h3>
+            <h3 class="categoryHeader">{$t(`${superCat}_Ach.${category.name}`)}</h3>
         {/if}
         {#each category.subcats as subcat}
             <div class="sect">
-                <div class="subCatHeader">{ subcat.name }</div>
+                <div class="subCatHeader">{
+                    subcat.name === '' ? '' : (subcat.name === ' ' ? '' : $t(`${superCat}_Ach.${subcat.name}`))
+                }</div>
                 {#each subcat.achievements as achievement}
                     <a 
                         target="{settings.anchorTarget}"
