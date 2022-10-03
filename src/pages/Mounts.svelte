@@ -1,5 +1,6 @@
 <script>
     import { onMount } from 'svelte'
+    import { t } from 'svelte-i18n'
     import { region, realm, character } from '$stores/user'
     import { getMounts } from '$api/mounts'
     import { percent, percentFormat, getTitle, getImageSrc } from '$util/utils'
@@ -42,15 +43,16 @@
 </script>
 
 <svelte:head>
-	<title>{getTitle($character, 'Mounts')}</title>
+	<title>{getTitle($character, $t('mounts'))}</title>
 </svelte:head>
 
 <div class="container">
 <div class="page-header">
     <h2>
-        Mounts
+        {$t('mounts')}
         <small class="pbSmall">
-            <input type="checkbox" id="planner" bind:checked={planner} on:click={togglePlanner}><label for="planner">Show Planner</label>
+            <input type="checkbox" id="planner" bind:checked={planner} on:click={togglePlanner}>
+            <label for="planner">{$t('showPlanner')}</label>
         </small>
         <ProgressBar 
             rightSide={true}
@@ -73,12 +75,12 @@
     {#each mounts.categories as category}
  
         {#if category.name !== "Mounts" }
-        <h3 class="categoryHeader">{ category.name }</h3>
+        <h3 class="categoryHeader">{ $t(category.name) }</h3>
         {/if}
         
         {#each category.subCategories as subCategory}
             <div class="sect">
-                <div class="subCatHeader">{ subCategory.name }</div>
+                <div class="subCatHeader">{ $t(subCategory.name) }</div>
                 {#each subCategory.items as item}
                     <a 
                       target="{settings.anchorTarget}"
