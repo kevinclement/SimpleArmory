@@ -122,9 +122,9 @@ function parseAchievementObject(db, earned, character, faction) {
 
                         // if this is feats of strength then I want to keep a seperate count for that 
                         // since its not a percentage thing
-                        if (supercat.name === 'Feats of Strength') {
+                        if (supercat.name === 'feats') {
                             totalFoS++;
-                        } else if (supercat.name === 'Legacy') {
+                        } else if (supercat.name === 'legacy') {
                             totalLegacy++;
                         }
                     }
@@ -145,7 +145,7 @@ function parseAchievementObject(db, earned, character, faction) {
                     }
 
                     // Update counts proper
-                    if (supercat.name !== 'Feats of Strength' && supercat.name !== 'Legacy' && !ach.notObtainable && 
+                    if (supercat.name !== 'feats' && supercat.name !== 'legacy' && !ach.notObtainable && 
                         (!ach.side || ach.side === faction)){
                         possibleCount++;
                         totalPossible++;
@@ -176,9 +176,9 @@ function parseAchievementObject(db, earned, character, faction) {
         obj[supercat.name].completed = completedCount;
 
         // Add the FoS count if this is the FoS
-        if (supercat.name === 'Feats of Strength') {
+        if (supercat.name === 'feats') {
             obj[supercat.name].foSTotal = totalFoS;
-        } else if (supercat.name === 'Legacy') {
+        } else if (supercat.name === 'legacy') {
             obj[supercat.name].legacyTotal = totalLegacy;
         }
     })

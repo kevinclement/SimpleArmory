@@ -74,7 +74,7 @@
     <div style="display: {planner ? 'none' : 'block' }">
     {#each mounts.categories as category}
  
-        {#if category.name !== "Mounts" }
+        {#if category.name !== "mounts" }
         <h3 class="categoryHeader">{ $t(category.name) }</h3>
         {/if}
         
