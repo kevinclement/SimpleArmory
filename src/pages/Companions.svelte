@@ -1,5 +1,6 @@
 <script>
     import { onMount } from 'svelte'
+    import { t } from 'svelte-i18n'
     import { region, realm, character } from '$stores/user'
     import { getCompanions } from '$api/companions'
     import { percent, percentFormat, getTitle, getImageSrc } from '$util/utils'
@@ -24,13 +25,13 @@
 </script>
 
 <svelte:head>
-	<title>{getTitle($character, 'Companions')}</title>
+	<title>{getTitle($character, $t('companions'))}</title>
 </svelte:head>
 
 <div class="container">
 <div class="page-header">
     <h2>
-        Companions
+        {$t('companions')}
         <ProgressBar 
             rightSide={true}
             width={companions ? percent(companions.collected, companions.possible) : 0} 
@@ -44,11 +45,11 @@
 
 {#if companions}
 {#each companions.categories as category}
-  <h3 class="categoryHeader">{ category.name }</h3>
+  <h3 class="categoryHeader">{ $t(category.name) }</h3>
 
   {#each category.subCategories as subCategory}
     <div class="sect">
-        <div class="subCatHeader">{ subCategory.name }</div>
+        <div class="subCatHeader">{ $t(subCategory.name) }</div>
         {#each subCategory.items as item}
             <div class="pbCell">
                 <a 
