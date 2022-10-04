@@ -7,6 +7,7 @@
     import ProgressBar from '$components/ProgressBar.svelte';
     import Loading from '$components/Loading.svelte';
     import ErrorInline from '$components/ErrorInline.svelte';
+    import { t } from 'svelte-i18n';
 
     let showLevel
     let battlePets
@@ -46,13 +47,13 @@
 </script>
 
 <svelte:head>
-	<title>{getTitle($character, 'Battle Pets')}</title>
+	<title>{getTitle($character, $t('pets'))}</title>
 </svelte:head>
 
 <div class="container">
 <div class="page-header">
     <h2>
-        Battle Pets <small class="pbSmall"><input type="checkbox" id="showlevels" bind:checked={showLevel}><label for="showlevels">Show levels and breeds</label></small>
+        {$t('pets')} <small class="pbSmall"><input type="checkbox" id="showlevels" bind:checked={showLevel}><label for="showlevels">{$t('showLevelsAndBreeds')}</label></small>
         <ProgressBar
             rightSide={true}
             width={battlePets ? percent(battlePets.collected, battlePets.possible) : 0} 
@@ -66,11 +67,11 @@
 
 {#if battlePets}
 {#each battlePets.categories as category}
-  <h3 class="categoryHeader">{ category.name }</h3>
+  <h3 class="categoryHeader">{ $t(category.name) }</h3>
 
   {#each category.subCategories as subCategory}
     <div class="sect">
-        <div class="subCatHeader">{ subCategory.name }</div>
+        <div class="subCatHeader">{ $t(subCategory.name) }</div>
         {#each subCategory.items as item}
             <div class="pbCell">
                 <a 
