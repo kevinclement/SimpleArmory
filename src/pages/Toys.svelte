@@ -1,5 +1,6 @@
 <script>
     import { onMount } from 'svelte'
+    import { t } from 'svelte-i18n'
     import { region, realm, character } from '$stores/user'
     import { getToys } from '$api/toys'
     import { percent, percentFormat, getTitle, getImageSrc } from '$util/utils'
@@ -44,16 +45,16 @@
 </script>
 
 <svelte:head>
-	<title>{getTitle($character, 'Toys')}</title>
+	<title>{getTitle($character, $t('toys'))}</title>
 </svelte:head>
 
 <div class="container">
 <div class="page-header">
     <h2>
-        Toys
+        {$t('toys')}
         {#if !showExport}
         <small class="pbSmall">
-            <a href class="tupd" on:click|preventDefault={() => showExport = true}>Update</a>
+            <a href class="tupd" on:click|preventDefault={() => showExport = true}>{$t('update')}</a>
         </small>
         {/if}
         <ProgressBar 
@@ -66,20 +67,23 @@
 {#if showExport}
 <div style="padding-bottom:10px">
     <p>
-        <strong>The Blizzard API doesn't currently support fetching toys.</strong>
-        To see what toys you have earned, you have to paste a <strong>toy export string</strong> in the field below.
-        You can get this string by downloading the <a href="https://wow.curseforge.com/projects/simple-armory">Simple Armory</a>
-        addon, then typing <code>/sa toys</code> in your chat window.
+        <strong>{$t('toysNoAPI')}</strong>
+        {$t('toysInstructions1')}
+        <strong>{$t('toysExportString')}</strong>
+        {$t('toysInstructions2')}
+        <a href="https://wow.curseforge.com/projects/simple-armory">Simple Armory</a>
+        {$t('toysInstructions3')}
+        <code>/sa toys</code>
+        {$t('toysInstructions4')}
     </p>
     <p>
-      <small>(If you find this frustrating, feel free to post on the forums to ask for
-      the Toys to be exported in the API along with the mounts and pets)</small>
+      <small>({$t('toysSmallMessage')})</small>
     </p>
 
-    <textarea name="toys" bind:value={toyString} cols="80" placeholder="Copy your export string here..."></textarea>
+    <textarea name="toys" bind:value={toyString} cols="80" placeholder={$t('toysExportPlaceholder')}></textarea>
     <div>
-      <button type="button" class="btn btn-default" on:click={save}>Save</button>
-      <button type="button" class="btn btn-default" on:click={cancel}>Cancel</button>
+      <button type="button" class="btn btn-default" on:click={save}>{$t('save')}</button>
+      <button type="button" class="btn btn-default" on:click={cancel}>{$t('cancel')}</button>
     </div>
   </div>
 {/if}
@@ -90,12 +94,12 @@
   <div>
     {#if toys}
     {#each toys.categories as category}
-        {#if category.name !== 'Toys'}
-            <h3 class="categoryHeader">{ category.name }</h3>
+        {#if category.name !== 'toys'}
+            <h3 class="categoryHeader">{ $t(category.name) }</h3>
         {/if}
         {#each category.subCategories as subCategory}
             <div class="sect">
-                <div class="subCatHeader">{ subCategory.name }</div>
+                <div class="subCatHeader">{ $t(subCategory.name) }</div>
                 {#each subCategory.items as item}
                     <a 
                       target="{settings.anchorTarget}" 
