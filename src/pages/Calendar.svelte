@@ -1,5 +1,6 @@
 <script>
     import { onMount } from 'svelte'
+    import { t } from 'svelte-i18n';
     import { region, realm, character } from '$stores/user'
     import { getAchievements } from '$api/achievements'
     import { getTitle } from '$util/utils'
@@ -94,8 +95,8 @@
 
     function buildMonthList(achByMonths) {
         let monthnames = [
-          '','January','February','March','April','May','June',
-          'July','August','September','October','November','December'
+          '',$t('january'),$t('february'),$t('march'),$t('april'),$t('may'),$t('june'),
+          $t('july'),$t('august'),$t('september'),$t('october'),$t('november'),$t('december')
         ];
         let today = new Date();
         let foundFirstMonth = false;
@@ -116,7 +117,7 @@
                 // Add the months to the list of months
                 months.push({
                     value: monthid,
-                    text: monthnames[month] + ' ' + year,
+                    text:  monthnames[month] + ' ' + year,
                     index: index++,
                     year: year,
                     month: month
@@ -194,13 +195,13 @@
 </script>
 
 <svelte:head>
-	<title>{getTitle($character, 'Calendar')}</title>
+	<title>{getTitle($character, $t('calendar'))}</title>
 </svelte:head>
 
 <div class="container cal">
 <div class="page-header">
     <h2>
-        Calendar 
+        {$t('calendar')}
         <small>
         <button type="button" class="btn btn-default" disabled={prevDisabled} on:click={leftOneMonth}>&laquo;</button>
         <select class="selMonth" bind:value={selectedMonth} on:change="{selectionChanged}">
@@ -216,7 +217,7 @@
             rightSide={true}
             width={100}
             styleWidth={175}
-            percentage={`${totalForMonth } (${totalPoints} points)`}/>
+            percentage={`${totalForMonth } (${totalPoints} ${$t('points')})`}/>
     </h2>
 </div>
 
