@@ -112,7 +112,7 @@
 </script>
 
 <svelte:head>
-	<title>{getTitle('', 'Login')}</title>
+	<title>{getTitle('', $t('login'))}</title>
 </svelte:head>
 
 <div class="modal fade" bind:this={modal} id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

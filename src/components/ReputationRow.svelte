@@ -1,4 +1,5 @@
 <script>
+    import { t } from 'svelte-i18n'
     import settings from '$util/settings'
     export let faction;
 
@@ -77,7 +78,7 @@
 
 <div>
     <h4 class="factionLabel">
-        <a target="{settings.anchorTarget}" href="//{settings.WowHeadUrl}/faction={faction.id}">{ faction.name }</a>
+        <a target="{settings.anchorTarget}" href="//{settings.WowHeadUrl}/faction={faction.id}">{ $t(faction.name) }</a>
     </h4>
     {#each faction.levels as level, levelIdx}
         <div title="{level[1] + tierProgressString(levelIdx)}" class="repProgressBlock" style="width: {getLevelWidth(levelIdx)}px; border: 1px solid {getBorderColor(levelIdx)};">
@@ -85,7 +86,7 @@
         </div>
     {/each}
     <span>
-        <b style="color: {getColor(faction.level)}">{faction.levels[faction.level][1]}</b>
+        <b style="color: {getColor(faction.level)}">{$t(faction.levels[faction.level][1])}</b>
         {#if faction.max !== 0}<span style="color: grey">• {faction.value} / {faction.max}</span>{/if}
     </span>
 </div>

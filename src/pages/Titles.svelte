@@ -30,7 +30,7 @@
 </script>
 
 <svelte:head>
-	<title>{getTitle($character, 'Titles')}</title>
+	<title>{getTitle($character, $t('titles'))}</title>
 </svelte:head>
 
 <div class="container">
