@@ -1,5 +1,6 @@
 <script>
     import { onMount } from 'svelte'
+    import { t, locale } from 'svelte-i18n';
     import { region, realm, character } from '$stores/user'
     import { getTitles } from '$api/titles'
     import { percent, percentFormat, getTitle, getImageSrc } from '$util/utils'
@@ -35,7 +36,7 @@
 <div class="container">
 <div class="page-header">
     <h2>
-        Titles
+        {$t('titles')}
         <ProgressBar 
             rightSide={true}
             width={titles ? percent(titles.collected, titles.possible) : 0} 
@@ -51,13 +52,13 @@
     <div>
     {#each titles.categories as category}
  
-        {#if category.name !== "Titles" }
-        <h3 class="categoryHeader">{ category.name }</h3>
+        {#if category.name !== "titles" }
+        <h3 class="categoryHeader">{ $t(category.name) }</h3>
         {/if}
         
         {#each category.subCategories as subCategory}
             <div class="sect">
-                <div class="subCatHeader">{ subCategory.name }</div>
+                <div class="subCatHeader">{ $t(subCategory.name) }</div>
                 {#each subCategory.items as item}
                     <div class="thumbnail" 
                          class:borderOn={!item.collected}
