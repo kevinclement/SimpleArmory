@@ -1,12 +1,13 @@
 <script>
     import { onMount } from 'svelte'
+    import { t, locale } from 'svelte-i18n'
     import { region, realm, character, category } from '$stores/user'
     import { getAchievements } from '$api/achievements'
     import { percent, percentFormat, getTitle, getImageSrc } from '$util/utils'
+    import { getWowHeadUrl } from '$util/url'
     import settings from '$util/settings'
     import ProgressBar from '$components/ProgressBar.svelte';
     import Loading from '$components/Loading.svelte';
-    import { t } from 'svelte-i18n'
 
     $: superCat = $category;
 
@@ -68,7 +69,7 @@
                 {#each subcat.achievements as achievement}
                     <a 
                         target="{settings.anchorTarget}"
-                        href="//{settings.WowHeadUrl}/achievement={achievement.id}"
+                        href="//{getWowHeadUrl($locale)}/achievement={achievement.id}"
                         class="thumbnail"
                         class:borderOn={!achievement.completed}
                         class:borderOff={achievement.completed}

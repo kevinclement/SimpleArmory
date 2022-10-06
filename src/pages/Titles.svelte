@@ -4,7 +4,7 @@
     import { region, realm, character } from '$stores/user'
     import { getTitles } from '$api/titles'
     import { percent, percentFormat, getTitle, getImageSrc } from '$util/utils'
-    import { navigate } from '$util/url'
+    import { getWowHeadUrl } from '$util/url'
     import settings from '$util/settings'
     import ProgressBar from '$components/ProgressBar.svelte';
     import Loading from '$components/Loading.svelte';
@@ -65,7 +65,7 @@
                          class:borderOff={item.collected}>
                         <a 
                         target="{settings.anchorTarget}"
-                        href="//{settings.WowHeadUrl}/{item.type}={item.id}"
+                        href="//{getWowHeadUrl($locale)}/{item.type}={item.id}"
                         >
                             <img height="36" width="36" src="{getImageSrc(item)}" alt>
                         </a>

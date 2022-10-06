@@ -1,9 +1,10 @@
 <script>
     import { onMount } from 'svelte'
-    import { t } from 'svelte-i18n';
+    import { t, locale } from 'svelte-i18n';
     import { region, realm, character } from '$stores/user'
     import { getAchievements } from '$api/achievements'
     import { getTitle } from '$util/utils'
+    import { getWowHeadUrl } from '$util/url'
     import settings from '$util/settings'
     import ProgressBar from '$components/ProgressBar.svelte';
     import Loading from '$components/Loading.svelte';
@@ -69,7 +70,7 @@
                 html += '<div>';
                 achievs.forEach((ach) => {
                     html += '<a target="' + settings.anchorTarget + '" href="//' + 
-                            settings.WowHeadUrl + '/achievement=' + ach.id + '" ' +
+                            getWowHeadUrl($locale) + '/achievement=' + ach.id + '" ' +
                             'rel="who=' + prettyName + '&amp;when=' + ach.completed +'">' +
                             '<img src="//wow.zamimg.com/images/wow/icons/medium/' + 
                             ach.icon.toLowerCase() + '.jpg" width="36" height="36" border="0"></a>';

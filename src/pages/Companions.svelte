@@ -1,9 +1,10 @@
 <script>
     import { onMount } from 'svelte'
-    import { t } from 'svelte-i18n'
+    import { t, locale } from 'svelte-i18n'
     import { region, realm, character } from '$stores/user'
     import { getCompanions } from '$api/companions'
     import { percent, percentFormat, getTitle, getImageSrc } from '$util/utils'
+    import { getWowHeadurl } from '$util/url'
     import settings from '$util/settings'
     import ProgressBar from '$components/ProgressBar.svelte';
     import Loading from '$components/Loading.svelte';
@@ -55,7 +56,7 @@
                 <a 
                   class="thumbnail pbThumbnail" 
                   target="{settings.anchorTarget}"
-                  href="//{settings.WowHeadUrl}/battle-pet/{ item.ID }"
+                  href="//{getWowHeadurl($locale)}/battle-pet/{ item.ID }"
                   class:borderOn={!item.collected}
                   class:borderOff={item.collected}>
 	        	    <img height="36" width="36" src="{getImageSrc(item)}" alt>

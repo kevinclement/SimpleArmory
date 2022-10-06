@@ -1,6 +1,7 @@
 <script>
-    import { t } from 'svelte-i18n'
+    import { t, locale } from 'svelte-i18n'
     import settings from '$util/settings'
+    import { getWowHeadUrl } from '$util/url'
     export let faction;
 
     let levelColors = [
@@ -78,7 +79,7 @@
 
 <div>
     <h4 class="factionLabel">
-        <a target="{settings.anchorTarget}" href="//{settings.WowHeadUrl}/faction={faction.id}">{ $t(faction.name) }</a>
+        <a target="{settings.anchorTarget}" href="//{getWowHeadUrl($locale)}/faction={faction.id}">{ $t(faction.name) }</a>
     </h4>
     {#each faction.levels as level, levelIdx}
         <div title="{level[1] + tierProgressString(levelIdx)}" class="repProgressBlock" style="width: {getLevelWidth(levelIdx)}px; border: 1px solid {getBorderColor(levelIdx)};">

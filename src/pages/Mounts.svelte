@@ -1,10 +1,10 @@
 <script>
     import { onMount } from 'svelte'
-    import { t } from 'svelte-i18n'
+    import { t, locale } from 'svelte-i18n'
     import { region, realm, character } from '$stores/user'
     import { getMounts } from '$api/mounts'
     import { percent, percentFormat, getTitle, getImageSrc } from '$util/utils'
-    import { navigate } from '$util/url'
+    import { navigate, getWowHeadUrl } from '$util/url'
     import settings from '$util/settings'
     import ProgressBar from '$components/ProgressBar.svelte';
     import MountsPlanner from '$components/MountsPlanner.svelte';
@@ -84,7 +84,7 @@
                 {#each subCategory.items as item}
                     <a 
                       target="{settings.anchorTarget}"
-                      href="//{settings.WowHeadUrl}/{item.link}"
+                      href="//{getWowHeadUrl($locale)}/{item.link}"
                       class:borderOn={!item.collected}
                       class:borderOff={item.collected}
                       class="thumbnail">

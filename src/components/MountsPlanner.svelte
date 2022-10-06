@@ -1,8 +1,10 @@
 <script>
-    import { region, realm, character } from '$stores/user'
     import { onMount } from 'svelte'
+    import { t, locale } from 'svelte-i18n'
+    import { region, realm, character } from '$stores/user'
     import { getPlannerSteps } from '$api/planner'
     import settings from '$util/settings'
+    import { getWowHeadUrl } from '$util/url'
     import Loading from '$components/Loading.svelte';
 
     export let mounts
@@ -103,7 +105,7 @@
                                     <td class="mnt-plan-boss-col">{boss.name}</td>
                                     <td class="mnt-plan-mount-col">
                                         {#if boss.itemId}
-                                            <a class="{anchorCss(boss)}" target="{settings.anchorTarget}" href="//{settings.WowHeadUrl}/item={ boss.itemId }">
+                                            <a class="{anchorCss(boss)}" target="{settings.anchorTarget}" href="//{getWowHeadUrl($locale)}/item={ boss.itemId }">
                                                 <img class="mnt-plan-icon" src="{getPlanImageSrc(boss)}" alt>{boss.mount}</a>
                                         {/if}
                                         
