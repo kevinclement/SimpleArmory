@@ -4,7 +4,7 @@
 	import { navigate } from '$util/url'
 	import { getDarkMode } from '$util/utils'
 	import '$util/i18n.js';
-	import { isLoading, waitLocale } from 'svelte-i18n';
+	import { locale, waitLocale } from 'svelte-i18n';
 
 	import Achievements from '$pages/Achievements.svelte';
 	import Overview from '$pages/Overview.svelte';
@@ -22,7 +22,7 @@
 	import { onMount } from 'svelte'
 
 	let _errorCount = 0;
-    onMount(() => {
+  onMount(() => {
 		preferences.subscribe(value => {
 			let isDark = value.theme === 'dark';
 			if (isDark) {
@@ -54,6 +54,11 @@
 		getDarkMode(window, (isDark) => {
 			$preferences.theme = isDark ? 'dark' : 'light'
 		})
+
+		const storedLocale = localStorage.getItem('locale');
+		if (storedLocale) {
+			locale.set(localStorage.getItem('locale'));
+		}
 	})
 
     function getCharInfoFromURL() {
