@@ -4,7 +4,7 @@
     import { region, realm, character } from '$stores/user'
     import { getToys } from '$api/toys'
     import { percent, percentFormat, getTitle, getImageSrc } from '$util/utils'
-    import { getWowHeadurl } from '$util/url'
+    import { getWowHeadUrl } from '$util/url'
     import settings from '$util/settings'
     import ProgressBar from '$components/ProgressBar.svelte';
     import Loading from '$components/Loading.svelte';
@@ -104,7 +104,7 @@
                 {#each subCategory.items as item}
                     <a 
                       target="{settings.anchorTarget}" 
-                      href="//{getWowHeadurl($locale)}/{ item.link }" 
+                      href="//{getWowHeadUrl($locale)}/{ item.link }" 
                       class="thumbnail"
                       class:borderOn={!item.collected}
                       class:borderOff={item.collected}>

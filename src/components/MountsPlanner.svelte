@@ -47,11 +47,19 @@
     };
 
     function getStepTitle(step) {
+        let translatedTitle = "";
+        // Step as an array with [verb, subject] (e.g. ["run", "firelands"]) to reduce key duplication
+        if (Array.isArray(step.title) && step.title.length === 2) {
+            translatedTitle = `${$t(step.title[0])} ${$t(step.title[1])}`;
+        } else {
+            translatedTitle = $t(step.title);
+        }
+
         if (step.capital) {
-            return 'Hearthstone to ' + (isAlliance ? 'Stormwind ' : 'Orgrimmar ') + step.title;
+            return `${$t('hearthstoneTo')} ${isAlliance ? $t('stormwind') : $t('orgrimmar')} ${$t(translatedTitle)}`;
         }
         else {
-            return step.title;
+            return translatedTitle;
         }
     }
 
@@ -71,8 +79,7 @@
 <div>
     <img src="/images/success.png" alt/>
     <p>
-      Grats! You've farmed all the mounts. <br/>
-      You should post on <a href="http://reddit.com/r/wow">/r/wow</a>!
+      {$t('gratsPlanner')}<a href="http://reddit.com/r/wow">/r/wow</a>!
     </p>
 </div>
 {:else}
@@ -80,10 +87,10 @@
     <thead>
       <tr>
         <th>#</th>
-        <th>Step</th>
-        <th class="mnt-plan-boss-col">Boss</th>
-        <th class="mnt-plan-mount-col" style="padding-left:0px;">Mount</th>
-        <th>Notes</th>
+        <th>{$t('step')}</th>
+        <th class="mnt-plan-boss-col">{$t('boss')}</th>
+        <th class="mnt-plan-mount-col" style="padding-left:0px;">{$t('mount')}</th>
+        <th>{$t('notes')}</th>
       </tr>
     </thead>
     {#each steps as step, index}
@@ -102,11 +109,11 @@
                         {#each step.bosses as boss}
                             <tbody>
                                 <tr>
-                                    <td class="mnt-plan-boss-col">{boss.name}</td>
+                                    <td class="mnt-plan-boss-col">{$t(boss.name)}</td>
                                     <td class="mnt-plan-mount-col">
                                         {#if boss.itemId}
                                             <a class="{anchorCss(boss)}" target="{settings.anchorTarget}" href="//{getWowHeadUrl($locale)}/item={ boss.itemId }">
-                                                <img class="mnt-plan-icon" src="{getPlanImageSrc(boss)}" alt>{boss.mount}</a>
+                                                <img class="mnt-plan-icon" src="{getPlanImageSrc(boss)}" alt>{$t(boss.mount)}</a>
                                         {/if}
                                         
                                     </td>
@@ -118,12 +125,12 @@
                   </table>
                 </td>
                 <td>
-                  {step.notes ? step.notes : ""}
+                  {$t(step.notes) ?? ""}
                   <table>
                       {#if step.bosses}
                         {#each step.bosses as boss}
                             <tbody>
-                                <tr><td>{boss.note ? boss.note : ""}&nbsp;</td></tr>
+                                <tr><td>{$t(boss.note) ?? ""}&nbsp;</td></tr>
                             </tbody>
                         {/each}
                       {/if}
