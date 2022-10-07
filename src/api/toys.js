@@ -105,7 +105,7 @@ function parseToys(all_toys, my_toys, profile) {
                         showthis = false;
                     }
                 }
-                showthis = true;
+
                 if (showthis) {
                     subCat.items.push(itm);
                     if (hasthis) {
