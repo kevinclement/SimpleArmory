@@ -10,6 +10,8 @@
     import Loading from '$components/Loading.svelte';
     import ErrorInline from '$components/ErrorInline.svelte';
 
+    const wowheadBaseUrl = getWowHeadUrl($locale)
+
     let promise
     let titles
     $: {
@@ -65,7 +67,7 @@
                          class:borderOff={item.collected}>
                         <a 
                         target="{settings.anchorTarget}"
-                        href="//{getWowHeadUrl($locale)}/{item.type}={item.id}"
+                        href="//{wowheadBaseUrl}/{item.type}={item.id}"
                         >
                             <img height="36" width="36" src="{getImageSrc(item)}" alt>
                         </a>

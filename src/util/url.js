@@ -28,6 +28,5 @@ export function navigate(path, region, realm, character) {
 }
 
 export function getWowHeadUrl(locale) {
-  console.log(locale);
   return `//${locale.substring(0, 2)}.${settings.WowHeadUrl}`;
 }

@@ -15,6 +15,8 @@
         '#0ec077',
     ]
 
+    const wowheadBaseUrl = getWowHeadUrl($locale);
+
     function getColor(level) {
         return levelColors[
             Math.max(
@@ -79,7 +81,7 @@
 
 <div>
     <h4 class="factionLabel">
-        <a target="{settings.anchorTarget}" href="//{getWowHeadUrl($locale)}/faction={faction.id}">{ $t(faction.name) }</a>
+        <a target="{settings.anchorTarget}" href="//{wowheadBaseUrl}/faction={faction.id}">{ $t(faction.name) }</a>
     </h4>
     {#each faction.levels as level, levelIdx}
         <div title="{level[1] + tierProgressString(levelIdx)}" class="repProgressBlock" style="width: {getLevelWidth(levelIdx)}px; border: 1px solid {getBorderColor(levelIdx)};">

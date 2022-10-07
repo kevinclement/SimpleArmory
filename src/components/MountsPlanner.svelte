@@ -11,6 +11,8 @@
     export let isAlliance;
     let promise;
     let steps;
+
+    const wowheadBaseUrl = getWowHeadUrl($locale);
     
     $: {
         promise = getPlannerSteps(mounts, $region, $realm, $character).then(_ => {           
@@ -112,7 +114,7 @@
                                     <td class="mnt-plan-boss-col">{$t(boss.name)}</td>
                                     <td class="mnt-plan-mount-col">
                                         {#if boss.itemId}
-                                            <a class="{anchorCss(boss)}" target="{settings.anchorTarget}" href="//{getWowHeadUrl($locale)}/item={ boss.itemId }">
+                                            <a class="{anchorCss(boss)}" target="{settings.anchorTarget}" href="//{wowheadBaseUrl}/item={ boss.itemId }">
                                                 <img class="mnt-plan-icon" src="{getPlanImageSrc(boss)}" alt>{$t(boss.mount)}</a>
                                         {/if}
                                         

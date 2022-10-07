@@ -13,6 +13,8 @@
 
     export let planner
 
+    const wowheadBaseUrl = getWowHeadUrl($locale)
+
     let promise
     let mounts
     $: {
@@ -84,7 +86,7 @@
                 {#each subCategory.items as item}
                     <a 
                       target="{settings.anchorTarget}"
-                      href="//{getWowHeadUrl($locale)}/{item.link}"
+                      href="//{wowheadBaseUrl}/{item.link}"
                       class:borderOn={!item.collected}
                       class:borderOff={item.collected}
                       class="thumbnail">

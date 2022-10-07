@@ -12,6 +12,9 @@
 
     let showLevel
     let battlePets
+
+    const wowheadBaseUrl = getWowHeadUrl($locale)
+
     $: promise = getBattlePets($region, $realm, $character).then(_ => {
         init(_);
     })
@@ -78,7 +81,7 @@
                 <a 
                   class="thumbnail pbThumbnail" 
                   target="{settings.anchorTarget}"
-                  href="//{getWowHeadUrl($locale)}/battle-pet/{ item.ID }"
+                  href="//{wowheadBaseUrl}/battle-pet/{ item.ID }"
                   class:borderOn={!item.collected}
                   class:borderOff={item.collected}>
 	        	    <img height="36" width="36" src="{getImageSrc(item)}" alt>

@@ -14,12 +14,15 @@
     // Note: we do this here and not in the promise so we don't have to wait for it to display 100 if FoS
     $: percWidth = superCat == 'feats' || superCat == 'legacy' ? 100 : percent(completed, possible);
 
+    const wowheadBaseUrl = getWowHeadUrl($locale);
+
     let promise;
     let completed = 0;
     let possible = 0;
     let percentage = "";
     let achievements;
     let all;
+
     $: {
         promise = getAchievements($region, $realm, $character).then(_ => {           
             // NOTE: don't use superCat here to populate other parts yet
@@ -69,7 +72,7 @@
                 {#each subcat.achievements as achievement}
                     <a 
                         target="{settings.anchorTarget}"
-                        href="//{getWowHeadUrl($locale)}/achievement={achievement.id}"
+                        href="//{wowheadBaseUrl}/achievement={achievement.id}"
                         class="thumbnail"
                         class:borderOn={!achievement.completed}
                         class:borderOff={achievement.completed}

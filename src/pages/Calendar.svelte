@@ -19,6 +19,8 @@
     $: prevDisabled = !selectedMonth || selectedMonth.index <=0
     $: nextDisabled = !selectedMonth || selectedMonth.index === months.length - 1
 
+    const wowheadBaseUrl = getWowHeadUrl($locale);
+
     $: promise = getAchievements($region, $realm, $character).then(_ => {
         // weird bug where if I do assignment here instead of in function
         // it will go into an infinite loop of achievement requests
@@ -70,7 +72,7 @@
                 html += '<div>';
                 achievs.forEach((ach) => {
                     html += '<a target="' + settings.anchorTarget + '" href="//' + 
-                            getWowHeadUrl($locale) + '/achievement=' + ach.id + '" ' +
+                            wowheadBaseUrl + '/achievement=' + ach.id + '" ' +
                             'rel="who=' + prettyName + '&amp;when=' + ach.completed +'">' +
                             '<img src="//wow.zamimg.com/images/wow/icons/medium/' + 
                             ach.icon.toLowerCase() + '.jpg" width="36" height="36" border="0"></a>';

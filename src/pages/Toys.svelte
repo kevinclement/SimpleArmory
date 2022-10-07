@@ -10,6 +10,8 @@
     import Loading from '$components/Loading.svelte';
 
     let showExport = localStorage.getItem('toys') === null;
+    const wowheadBaseUrl = getWowHeadUrl($locale)
+
     let toyString
     let toys
     $: promise = getToys($region, $realm, $character).then(_ => {
@@ -104,7 +106,7 @@
                 {#each subCategory.items as item}
                     <a 
                       target="{settings.anchorTarget}" 
-                      href="//{getWowHeadUrl($locale)}/{ item.link }" 
+                      href="//{wowheadBaseUrl}/{ item.link }" 
                       class="thumbnail"
                       class:borderOn={!item.collected}
                       class:borderOff={item.collected}>
