@@ -4,7 +4,7 @@
       "cats": [
         {
           "id": "f425cc5a",
-          "name": "Character",
+          "name": "character",
           "subcats": [
             {
               "id": "e0a6ebcd",
@@ -70,7 +70,7 @@
                   "title": "Double Agent"
                 }
               ],
-              "name": "Level"
+              "name": "level"
             },
             {
               "id": "22c02e31",
@@ -124,7 +124,7 @@
                   "title": "Got My Mind On My Money"
                 }
               ],
-              "name": "Gold"
+              "name": "gold"
             },
             {
               "id": "14f3563d",
@@ -154,7 +154,7 @@
                   "title": "Breaking the Sound Barrier"
                 }
               ],
-              "name": "Mounts"
+              "name": "mounts"
             },
             {
               "id": "c38ce9bd",
@@ -172,7 +172,7 @@
                   "title": "Epic"
                 }
               ],
-              "name": "Items"
+              "name": "itemLevel"
             },
             {
               "id": "ea171fdd",
@@ -190,19 +190,19 @@
                   "title": "Safe Deposit"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             }
           ]
         }
       ],
       "id": "2d6d3541",
-      "name": "Character"
+      "name": "character"
     },
     {
       "cats": [
         {
           "id": "9fd3290d",
-          "name": "Quests",
+          "name": "quests",
           "subcats": [
             {
               "id": "d911bace",
@@ -256,7 +256,7 @@
                   "title": "3000 Quests Completed"
                 }
               ],
-              "name": "Regular Counts"
+              "name": "questCounts"
             },
             {
               "id": "abafd571",
@@ -310,7 +310,7 @@
                   "title": "10000 Daily Quests Completed"
                 }
               ],
-              "name": "Daily Counts"
+              "name": "dailyQuestCounts"
             },
             {
               "id": "69b2f729",
@@ -328,7 +328,7 @@
                   "title": "20 Dungeon Quests Completed"
                 }
               ],
-              "name": "Dungeon Counts"
+              "name": "dungeonQuestCounts"
             },
             {
               "id": "949d63d9",
@@ -352,7 +352,7 @@
                   "title": "The First Rule of Ring of Blood is You Don't Talk About Ring of Blood"
                 }
               ],
-              "name": "Themes"
+              "name": "questThemes"
             },
             {
               "id": "8328962c",
@@ -400,7 +400,7 @@
                   "title": "10,000 World Quests Completed"
                 }
               ],
-              "name": "World"
+              "name": "worldQuests"
             },
             {
               "id": "97ac329c",
@@ -430,7 +430,7 @@
                   "title": "The Loremaster"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             },
             {
               "id": "82948265",
@@ -442,13 +442,13 @@
                   "title": "Exile's Reach"
                 }
               ],
-              "name": "Exile's Reach"
+              "name": "exilesReach"
             }
           ]
         },
         {
           "id": "f8c7a33d",
-          "name": "Shadowlands",
+          "name": "shadowlandsZone",
           "subcats": [
             {
               "id": "ae9b9784",
@@ -538,7 +538,7 @@
                   "title": "From A to Zereth"
                 }
               ],
-              "name": "Zones"
+              "name": "zones"
             },
             {
               "id": "44dfdbbd",
@@ -568,7 +568,7 @@
                   "title": "Chains of Domination"
                 }
               ],
-              "name": "Campaign"
+              "name": "campaign"
             },
             {
               "id": "382a12e6",
@@ -586,7 +586,7 @@
                   "title": "Return to Lordaeron"
                 }
               ],
-              "name": "World"
+              "name": "worldQuests"
             },
             {
               "id": "b879dbd2",
@@ -616,7 +616,7 @@
                   "title": "Caught in a Bat Romance"
                 }
               ],
-              "name": "Revendreth"
+              "name": "revendreth"
             },
             {
               "id": "bff903a0",
@@ -646,7 +646,7 @@
                   "title": "Breaking the Stratus Fear"
                 }
               ],
-              "name": "Bastion"
+              "name": "bastion"
             },
             {
               "id": "641a4123",
@@ -664,7 +664,7 @@
                   "title": "A Bit of This, A Bit of That"
                 }
               ],
-              "name": "Ardenweald"
+              "name": "ardenweald"
             },
             {
               "id": "d8e9b647",
@@ -700,7 +700,7 @@
                   "title": "Friend of Plaguey"
                 }
               ],
-              "name": "Korthia"
+              "name": "korthia"
             },
             {
               "id": "5093085c",
@@ -784,12 +784,12 @@
                   "title": "On the Offensive"
                 }
               ],
-              "name": "Maw Assaults"
+              "name": "mawAssaults"
             }
           ]
         },
         {
-          "name": "Battle for Azeroth",
+          "name": "battleForAzeroth",
           "subcats": [
             {
               "items": [
@@ -850,7 +850,7 @@
                   "title": "Loremaster of Zandalar"
                 }
               ],
-              "name": "Zones"
+              "name": "zones"
             },
             {
               "id": "e1b3d52d",
@@ -966,7 +966,7 @@
                   "title": "The Corruptor's End"
                 }
               ],
-              "name": "War Campaign"
+              "name": "warCampaign"
             },
             {
               "id": "ac6d870e",
@@ -1020,7 +1020,7 @@
                   "title": "Kul Tirans Don't Look at Explosions"
                 }
               ],
-              "name": "Events"
+              "name": "questEvents"
             },
             {
               "id": "52bc4a3a",
@@ -1053,7 +1053,7 @@
                   "title": "Drag Race"
                 }
               ],
-              "name": "Tiragarde Sound"
+              "name": "tiragardeSound"
             },
             {
               "id": "601e7d9e",
@@ -1103,7 +1103,7 @@
                   "title": "Let's Bee Friends"
                 }
               ],
-              "name": "Stormsong Valley"
+              "name": "stormsongValley"
             },
             {
               "id": "59c2aa41",
@@ -1136,7 +1136,7 @@
                   "title": "By de Power of de Loa!"
                 }
               ],
-              "name": "Zuldazar"
+              "name": "zuldazar"
             },
             {
               "id": "72dcdbf0",
@@ -1176,7 +1176,7 @@
                   "title": "Champion of the Vulpera"
                 }
               ],
-              "name": "Vol'dun"
+              "name": "voldun"
             },
             {
               "id": "75c47843",
@@ -1216,7 +1216,7 @@
                   "title": "A Most Efficient Apocalypse"
                 }
               ],
-              "name": "Nazmir"
+              "name": "nazmir"
             },
             {
               "id": "bde78d93",
@@ -1234,7 +1234,7 @@
                   "title": "Making the Mount"
                 }
               ],
-              "name": "Mechagon"
+              "name": "mechagon"
             },
             {
               "id": "a0fb1ec2",
@@ -1296,7 +1296,7 @@
                   "title": "Pushing the Payload"
                 }
               ],
-              "name": "War Assaults"
+              "name": "warAssaults"
             },
             {
               "id": "122e2144",
@@ -1320,7 +1320,7 @@
                   "title": "All Consuming"
                 }
               ],
-              "name": "Black Empire Assaults"
+              "name": "blackEmpireAssaults"
             },
             {
               "id": "d591e640",
@@ -1366,7 +1366,7 @@
                   "title": "Master Calligrapher"
                 }
               ],
-              "name": "World"
+              "name": "world"
             },
             {
               "id": "8c2ebe9a",
@@ -1386,13 +1386,13 @@
                   "title": "How to Train Your Direhorn"
                 }
               ],
-              "name": "Mount"
+              "name": "mount"
             }
           ]
         },
         {
           "id": "4ba61b47",
-          "name": "Legion",
+          "name": "legion",
           "subcats": [
             {
               "id": "672a8ed8",
@@ -1452,7 +1452,7 @@
                   "title": "Loremaster of Legion"
                 }
               ],
-              "name": "Zones"
+              "name": "zones"
             },
             {
               "id": "294ec4f5",
@@ -1476,7 +1476,7 @@
                   "title": "Zoom!"
                 }
               ],
-              "name": "Highmountain"
+              "name": "highmountain"
             },
             {
               "id": "6e40d2b1",
@@ -1500,7 +1500,7 @@
                   "title": "What a Ripoff!"
                 }
               ],
-              "name": "Stormheim"
+              "name": "stormheim"
             },
             {
               "id": "ddd22af2",
@@ -1524,7 +1524,7 @@
                   "title": "Why Can't I Hold All This Mana?"
                 }
               ],
-              "name": "Suramar"
+              "name": "suramar"
             },
             {
               "id": "7012350b",
@@ -1548,7 +1548,7 @@
                   "title": "Crate Expectations"
                 }
               ],
-              "name": "Broken Shore"
+              "name": "brokenShore"
             },
             {
               "id": "e84806a3",
@@ -1590,7 +1590,7 @@
                   "title": "It'll Nether Happen"
                 }
               ],
-              "name": "Broken Shore: Buildings"
+              "name": "brokenShoreBuildings"
             },
             {
               "id": "08b1fde6",
@@ -1614,7 +1614,7 @@
                   "title": "Locked and Loaded"
                 }
               ],
-              "name": "Argus"
+              "name": "argus"
             },
             {
               "id": "cbb22f58",
@@ -1656,7 +1656,7 @@
                   "title": "Priority Mail"
                 }
               ],
-              "name": "Events"
+              "name": "questEvents"
             },
             {
               "id": "72038014",
@@ -1668,13 +1668,13 @@
                   "title": "Variety is the Spice of Life"
                 }
               ],
-              "name": "World"
+              "name": "worldQuests"
             }
           ]
         },
         {
           "id": "8cff209c",
-          "name": "Draenor",
+          "name": "draenor",
           "subcats": [
             {
               "id": "ddf8fe25",
@@ -1816,7 +1816,7 @@
                   "title": "Loremaster of Draenor"
                 }
               ],
-              "name": "Zones"
+              "name": "zones"
             },
             {
               "id": "fb830167",
@@ -1870,7 +1870,7 @@
                   "title": "You Have Been Rylakinated!"
                 }
               ],
-              "name": "Shadowmoon Valley"
+              "name": "shadowmoonValley"
             },
             {
               "id": "3da0453f",
@@ -1946,7 +1946,7 @@
                   "title": "On the Shadow's Trail"
                 }
               ],
-              "name": "Frostfire Ridge"
+              "name": "frostfireRidge"
             },
             {
               "id": "1cd0e6ef",
@@ -2000,7 +2000,7 @@
                   "title": "Fight the Power"
                 }
               ],
-              "name": "Gorgrond"
+              "name": "gorgrond"
             },
             {
               "id": "a52da2f0",
@@ -2054,7 +2054,7 @@
                   "title": "United We Stand"
                 }
               ],
-              "name": "Shattrath"
+              "name": "shattrath"
             },
             {
               "id": "580d7ee9",
@@ -2090,7 +2090,7 @@
                   "title": "King of the Monsters"
                 }
               ],
-              "name": "Spires of Arak"
+              "name": "spiresOfArak"
             },
             {
               "id": "cb744cda",
@@ -2126,7 +2126,7 @@
                   "title": "The Song of Silence"
                 }
               ],
-              "name": "Nagrand"
+              "name": "nagrand"
             },
             {
               "id": "33333d5a",
@@ -2146,7 +2146,7 @@
                   "title": "Welcome to Draenor"
                 }
               ],
-              "name": "Events"
+              "name": "events"
             },
             {
               "id": "85f58a52",
@@ -2180,7 +2180,7 @@
                   "title": "Master Relic Hunter"
                 }
               ],
-              "name": "Garrison"
+              "name": "garrison"
             },
             {
               "id": "0e362ed4",
@@ -2228,13 +2228,13 @@
                   "title": "Rumble in the Jungle"
                 }
               ],
-              "name": "Tanaan Jungle"
+              "name": "tanaanJungle"
             }
           ]
         },
         {
           "id": "d4606b44",
-          "name": "Pandaria",
+          "name": "pandaria",
           "subcats": [
             {
               "id": "ceb09223",
@@ -2306,7 +2306,7 @@
                   "title": "Loremaster of Pandaria"
                 }
               ],
-              "name": "Zones"
+              "name": "zones"
             },
             {
               "id": "b1ae8a7e",
@@ -2318,7 +2318,7 @@
                   "title": "Every Day I'm Pand-a-ren"
                 }
               ],
-              "name": "Daily"
+              "name": "daily"
             },
             {
               "id": "58c28ed8",
@@ -2348,7 +2348,7 @@
                   "title": "Over Their Heads"
                 }
               ],
-              "name": "Klaxxi"
+              "name": "klaxxi"
             },
             {
               "id": "e312ee7c",
@@ -2402,7 +2402,7 @@
                   "title": "One Step at a Time"
                 }
               ],
-              "name": "The Golden Lotus"
+              "name": "theGoldenLotus"
             },
             {
               "id": "437e6ab1",
@@ -2450,7 +2450,7 @@
                   "title": "Defender of Gods"
                 }
               ],
-              "name": "Shado-Pan"
+              "name": "shadoPan"
             },
             {
               "id": "596f8a70",
@@ -2474,7 +2474,7 @@
                   "title": "Yak Attack"
                 }
               ],
-              "name": "The August Celestials"
+              "name": "theAugustCelestials"
             },
             {
               "id": "b7788c6c",
@@ -2510,7 +2510,7 @@
                   "title": "Ain't Lost No More"
                 }
               ],
-              "name": "The Tillers"
+              "name": "theTillers"
             },
             {
               "id": "ed76fe69",
@@ -2534,7 +2534,7 @@
                   "title": "In a Trail of Smoke"
                 }
               ],
-              "name": "Order of the Cloud Serpent"
+              "name": "orderOfTheCloudSerpent"
             },
             {
               "id": "dcd04992",
@@ -2547,7 +2547,7 @@
                   "title": "Dominance Offensive Campaign"
                 }
               ],
-              "name": "Dominance Offensive"
+              "name": "dominanceOffensive"
             },
             {
               "id": "21bd5172",
@@ -2560,7 +2560,7 @@
                   "title": "Operation: Shieldwall Campaign"
                 }
               ],
-              "name": "Operation: Shieldwall"
+              "name": "operationShieldwall"
             },
             {
               "id": "e182af7f",
@@ -2572,7 +2572,7 @@
                   "title": "Savior of Stoneplow"
                 }
               ],
-              "name": "Events"
+              "name": "questEvents"
             },
             {
               "id": "c5e776ff",
@@ -2698,13 +2698,13 @@
                   "title": "Stormbreaker"
                 }
               ],
-              "name": "Isle of Thunder"
+              "name": "isleOfThunder"
             }
           ]
         },
         {
           "id": "60f91284",
-          "name": "Cataclysm",
+          "name": "cataclysm",
           "subcats": [
             {
               "id": "3b690392",
@@ -2762,7 +2762,7 @@
                   "title": "Loremaster of Cataclysm"
                 }
               ],
-              "name": "Zones"
+              "name": "zones"
             },
             {
               "id": "2eaf1a33",
@@ -2774,7 +2774,7 @@
                   "title": "Breaking Out of Tol Barad"
                 }
               ],
-              "name": "Daily"
+              "name": "daily"
             },
             {
               "id": "097a97d8",
@@ -2798,7 +2798,7 @@
                   "title": "The 'Unbeatable?' Pterodactyl: BEATEN."
                 }
               ],
-              "name": "Hyjal"
+              "name": "hyjal"
             },
             {
               "id": "0fe8a250",
@@ -2824,7 +2824,7 @@
                   "title": "20,000 Leagues Under the Sea"
                 }
               ],
-              "name": "Vashj'ir"
+              "name": "vashjir"
             },
             {
               "id": "385ab9a1",
@@ -2860,7 +2860,7 @@
                   "title": "Fungal Frenzy"
                 }
               ],
-              "name": "Deepholm"
+              "name": "deepholm"
             },
             {
               "id": "f55da6fa",
@@ -2878,7 +2878,7 @@
                   "title": "Help the Bombardier! I'm the Bombardier!"
                 }
               ],
-              "name": "Uldum"
+              "name": "uldum"
             },
             {
               "id": "12ab2548",
@@ -2924,7 +2924,7 @@
                   "title": "King of the Mountain"
                 }
               ],
-              "name": "Twilight Highlands"
+              "name": "twilightHighlands"
             },
             {
               "id": "f0102e80",
@@ -3020,13 +3020,13 @@
                   "title": "Veteran of the Molten Front"
                 }
               ],
-              "name": "Molten Front"
+              "name": "moltenFront"
             }
           ]
         },
         {
           "id": "177d5360",
-          "name": "Northrend",
+          "name": "northrend",
           "subcats": [
             {
               "id": "8a69d3a1",
@@ -3118,7 +3118,7 @@
                   "title": "Loremaster of Northrend"
                 }
               ],
-              "name": "Zones"
+              "name": "zones"
             },
             {
               "id": "67a35dfa",
@@ -3160,7 +3160,7 @@
                   "title": "Veteran of the Wrathgate"
                 }
               ],
-              "name": "Events"
+              "name": "questEvents"
             },
             {
               "id": "0378afdc",
@@ -3178,13 +3178,13 @@
                   "title": "Honorary Frenzyheart"
                 }
               ],
-              "name": "Daily"
+              "name": "daily"
             }
           ]
         },
         {
           "id": "5a470eef",
-          "name": "Outland",
+          "name": "outland",
           "subcats": [
             {
               "id": "b4337157",
@@ -3262,7 +3262,7 @@
                   "title": "Loremaster of Outland"
                 }
               ],
-              "name": "Zones"
+              "name": "zones"
             },
             {
               "id": "7d81222e",
@@ -3286,13 +3286,13 @@
                   "title": "Blade's Edge Bomberman"
                 }
               ],
-              "name": "Events"
+              "name": "questEvents"
             }
           ]
         },
         {
           "id": "de4654b3",
-          "name": "Kalimdor",
+          "name": "kalimdor",
           "subcats": [
             {
               "id": "d2585146",
@@ -3444,7 +3444,7 @@
                   "title": "Loremaster of Kalimdor"
                 }
               ],
-              "name": "Zones"
+              "name": "zones"
             },
             {
               "id": "772d3f30",
@@ -3488,13 +3488,13 @@
                   "title": "E'ko Madness"
                 }
               ],
-              "name": "Events"
+              "name": "questEvents"
             }
           ]
         },
         {
           "id": "fc3ce76d",
-          "name": "Eastern Kingdoms",
+          "name": "easternKingdoms",
           "subcats": [
             {
               "id": "7666a2b1",
@@ -3628,7 +3628,7 @@
                   "title": "Loremaster of Eastern Kingdoms"
                 }
               ],
-              "name": "Zones"
+              "name": "zones"
             },
             {
               "id": "d908d8d9",
@@ -3652,19 +3652,19 @@
                   "title": "Ready, Set, Goat!"
                 }
               ],
-              "name": "Events"
+              "name": "questEvents"
             }
           ]
         }
       ],
       "id": "22f7a837",
-      "name": "Quests"
+      "name": "quests"
     },
     {
       "cats": [
         {
           "id": "51ac00bc",
-          "name": "Exploration",
+          "name": "exploration",
           "subcats": [
             {
               "id": "bbe0ee52",
@@ -3778,13 +3778,13 @@
                   "title": "Field Photographer"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             }
           ]
         },
         {
           "id": "c6a7a34a",
-          "name": "Shadowlands",
+          "name": "shadowlandsZone",
           "subcats": [
             {
               "id": "ccc5dbf1",
@@ -3844,7 +3844,7 @@
                   "title": "Explore Zereth Mortis"
                 }
               ],
-              "name": "Area"
+              "name": "area"
             },
             {
               "id": "a6d26b72",
@@ -3886,7 +3886,7 @@
                   "title": "Treasures of Zereth Mortis"
                 }
               ],
-              "name": "Treasures"
+              "name": "treasures"
             },
             {
               "id": "1b78a6ec",
@@ -3922,7 +3922,7 @@
                   "title": "Adventurer of Zereth Mortis"
                 }
               ],
-              "name": "Encounters"
+              "name": "encounters"
             },
             {
               "id": "031c235f",
@@ -3976,7 +3976,7 @@
                   "title": "The Accuser's Avowed"
                 }
               ],
-              "name": "Revendreth"
+              "name": "revendreth"
             },
             {
               "id": "a7a32064",
@@ -4012,7 +4012,7 @@
                   "title": "Toss a Seed to Your Hunter..."
                 }
               ],
-              "name": "Ardenweald"
+              "name": "ardenweald"
             },
             {
               "id": "d8d91e80",
@@ -4048,7 +4048,7 @@
                   "title": "In the Hot Seat"
                 }
               ],
-              "name": "Bastion"
+              "name": "bastion"
             },
             {
               "id": "6da89931",
@@ -4078,7 +4078,7 @@
                   "title": "Bloodsport"
                 }
               ],
-              "name": "Maldraxxus"
+              "name": "maldraxxus"
             },
             {
               "id": "e6cd0f66",
@@ -4180,7 +4180,7 @@
                   "title": "Walking in Maw-mphis"
                 }
               ],
-              "name": "The Maw"
+              "name": "theMaw"
             },
             {
               "id": "99a98b39",
@@ -4282,7 +4282,7 @@
                   "title": "Apocopocolypse Now"
                 }
               ],
-              "name": "Zereth Mortis"
+              "name": "zerethMortis"
             },
             {
               "id": "cb2ed149",
@@ -4294,12 +4294,12 @@
                   "title": "To All the Squirrels I've Loved and Lost"
                 }
               ],
-              "name": "Critters"
+              "name": "critters"
             }
           ]
         },
         {
-          "name": "Battle for Azeroth",
+          "name": "battleForAzeroth",
           "subcats": [
             {
               "items": [
@@ -4364,7 +4364,7 @@
                   "title": "Battle for Azeroth Pathfinder, Part Two"
                 }
               ],
-              "name": "Area"
+              "name": "area"
             },
             {
               "id": "e7baa68e",
@@ -4406,7 +4406,7 @@
                   "title": "Treasures of Stormsong Valley"
                 }
               ],
-              "name": "Treasure"
+              "name": "treasures"
             },
             {
               "id": "2dd75b4b",
@@ -4448,7 +4448,7 @@
                   "title": "Adventurer of Vol'dun"
                 }
               ],
-              "name": "Encounters"
+              "name": "encounters"
             },
             {
               "id": "039d4bcc",
@@ -4509,7 +4509,7 @@
                   "title": "Legends of the Tidesages"
                 }
               ],
-              "name": "Kul Tiras"
+              "name": "kulTiras"
             },
             {
               "id": "96d9e35f",
@@ -4569,7 +4569,7 @@
                   "title": "Dune Rider"
                 }
               ],
-              "name": "Zandalar"
+              "name": "zandalar"
             },
             {
               "id": "aa8b9a42",
@@ -4819,7 +4819,7 @@
                   "title": "Undersea Usurper"
                 }
               ],
-              "name": "Nazjatar"
+              "name": "nazjatar"
             },
             {
               "id": "b1b45d28",
@@ -4915,7 +4915,7 @@
                   "title": "Mecha-Done"
                 }
               ],
-              "name": "Mechagon"
+              "name": "mechagon"
             },
             {
               "id": "bbf49487",
@@ -4939,7 +4939,7 @@
                   "title": "Rare to Well Done"
                 }
               ],
-              "name": "Black Empire Assaults"
+              "name": "blackEmpireAssaults"
             },
             {
               "id": "62368b98",
@@ -4951,13 +4951,13 @@
                   "title": "To All the Squirrels I Set Sail to See"
                 }
               ],
-              "name": "Critters"
+              "name": "critters"
             }
           ]
         },
         {
           "id": "7c827fd0",
-          "name": "Legion",
+          "name": "legion",
           "subcats": [
             {
               "id": "0a424d88",
@@ -5017,7 +5017,7 @@
                   "title": "Explore Argus"
                 }
               ],
-              "name": "Area"
+              "name": "area"
             },
             {
               "id": "cd68fe64",
@@ -5053,7 +5053,7 @@
                   "title": "Treasures of Val'sharah"
                 }
               ],
-              "name": "Treasure"
+              "name": "treasures"
             },
             {
               "id": "99bff0fe",
@@ -5137,7 +5137,7 @@
                   "title": "And We're All Out of Mana Buns"
                 }
               ],
-              "name": "Encounters"
+              "name": "encounters"
             },
             {
               "id": "95e3b4fd",
@@ -5167,7 +5167,7 @@
                   "title": "Underbelly Tycoon"
                 }
               ],
-              "name": "Events"
+              "name": "questEvents"
             },
             {
               "id": "f67f40f8",
@@ -5203,7 +5203,7 @@
                   "title": "Paragon of Argus"
                 }
               ],
-              "name": "Argus"
+              "name": "argus"
             },
             {
               "id": "d7f42467",
@@ -5215,13 +5215,13 @@
                   "title": "To All the Squirrels I Love Despite Their Scars"
                 }
               ],
-              "name": "Critters"
+              "name": "critters"
             }
           ]
         },
         {
           "id": "0e9a3c3a",
-          "name": "Draenor",
+          "name": "draenor",
           "subcats": [
             {
               "id": "866b4bfb",
@@ -5233,7 +5233,7 @@
                   "title": "Draenor Pathfinder"
                 }
               ],
-              "name": "Pathfinder"
+              "name": "pathfinder"
             },
             {
               "id": "327c7d05",
@@ -5281,7 +5281,7 @@
                   "title": "Explore Tanaan Jungle"
                 }
               ],
-              "name": "Area"
+              "name": "area"
             },
             {
               "id": "fa50ece0",
@@ -5323,7 +5323,7 @@
                   "title": "Jungle Treasure Master"
                 }
               ],
-              "name": "Treasure"
+              "name": "treasures"
             },
             {
               "id": "987ac59f",
@@ -5347,7 +5347,7 @@
                   "title": "Shredder Maniac"
                 }
               ],
-              "name": "Gorgrond"
+              "name": "gorgrond"
             },
             {
               "id": "f263e33e",
@@ -5377,7 +5377,7 @@
                   "title": "Jungle Stalker"
                 }
               ],
-              "name": "Tanaan Jungle"
+              "name": "tanaanJungle"
             },
             {
               "id": "d40ebfad",
@@ -5389,7 +5389,7 @@
                   "title": "Draenor Cuisine"
                 }
               ],
-              "name": "Food"
+              "name": "food"
             },
             {
               "id": "f1db2e91",
@@ -5401,13 +5401,13 @@
                   "title": "To All the Squirrels Through Time and Space"
                 }
               ],
-              "name": "Critters"
+              "name": "critters"
             }
           ]
         },
         {
           "id": "eefb6e96",
-          "name": "Pandaria",
+          "name": "pandaria",
           "subcats": [
             {
               "id": "0720d0e2",
@@ -5455,7 +5455,7 @@
                   "title": "Explore Vale of Eternal Blossoms"
                 }
               ],
-              "name": "Area"
+              "name": "area"
             },
             {
               "id": "b64611b6",
@@ -5539,7 +5539,7 @@
                   "title": "Gods and Monsters"
                 }
               ],
-              "name": "Lore"
+              "name": "lore"
             },
             {
               "id": "004b9e5d",
@@ -5593,7 +5593,7 @@
                   "title": "Zul'Again"
                 }
               ],
-              "name": "Events"
+              "name": "questEvents"
             },
             {
               "id": "82bb599c",
@@ -5647,7 +5647,7 @@
                   "title": "Riches of Pandaria"
                 }
               ],
-              "name": "Treasure"
+              "name": "treasures"
             },
             {
               "id": "4976b60f",
@@ -5725,7 +5725,7 @@
                   "title": "Zarhym Altogether"
                 }
               ],
-              "name": "Timeless Isle"
+              "name": "timelessIsle"
             },
             {
               "id": "5a43ce33",
@@ -5767,7 +5767,7 @@
                   "title": "Fire-Watcher"
                 }
               ],
-              "name": "Coins"
+              "name": "coins"
             },
             {
               "id": "cd77dd05",
@@ -5779,7 +5779,7 @@
                   "title": "To All the Squirrels I Once Caressed?"
                 }
               ],
-              "name": "Critters"
+              "name": "critters"
             },
             {
               "id": "69d7db5d",
@@ -5797,13 +5797,13 @@
                   "title": "Pandaren Delicacies"
                 }
               ],
-              "name": "Food"
+              "name": "food"
             }
           ]
         },
         {
           "id": "9644edba",
-          "name": "Cataclysm",
+          "name": "cataclysm",
           "subcats": [
             {
               "id": "4528aab6",
@@ -5869,7 +5869,7 @@
                   "title": "To All the Squirrels Who Cared for Me"
                 }
               ],
-              "name": "Critters"
+              "name": "critters"
             },
             {
               "id": "4ffa0c56",
@@ -5887,13 +5887,13 @@
                   "title": "Cataclysmically Delicious"
                 }
               ],
-              "name": "Food"
+              "name": "food"
             }
           ]
         },
         {
           "id": "7d0d5626",
-          "name": "Northrend",
+          "name": "northrend",
           "subcats": [
             {
               "id": "eeef37be",
@@ -5989,13 +5989,13 @@
                   "title": "To All The Squirrels Who Shared My Life"
                 }
               ],
-              "name": "Critters"
+              "name": "critters"
             }
           ]
         },
         {
           "id": "d0f13b2f",
-          "name": "Outland",
+          "name": "outland",
           "subcats": [
             {
               "id": "695dda39",
@@ -6061,7 +6061,7 @@
         },
         {
           "id": "2133eaa0",
-          "name": "Kalimdor",
+          "name": "kalimdor",
           "subcats": [
             {
               "id": "65e367c7",
@@ -6199,7 +6199,7 @@
         },
         {
           "id": "51dae656",
-          "name": "Eastern Kingdoms",
+          "name": "easternKingdoms",
           "subcats": [
             {
               "id": "313bde5b",
@@ -6373,19 +6373,19 @@
                   "title": "To All The Squirrels I've Loved Before"
                 }
               ],
-              "name": "Critters"
+              "name": "critters"
             }
           ]
         }
       ],
       "id": "492bedc1",
-      "name": "Exploration"
+      "name": "exploration"
     },
     {
       "cats": [
         {
           "id": "e33b07f3",
-          "name": "Player vs. Player",
+          "name": "pvp",
           "subcats": [
             {
               "id": "6001d6b5",
@@ -6451,7 +6451,7 @@
                   "title": "250000 Honorable Kills"
                 }
               ],
-              "name": "Kills"
+              "name": "kills"
             },
             {
               "id": "1ef476ca",
@@ -6537,7 +6537,7 @@
                   "title": "Khan"
                 }
               ],
-              "name": "Battlegrounds"
+              "name": "battlegrounds"
             },
             {
               "id": "6264ad75",
@@ -6620,7 +6620,7 @@
                   "title": "For the Horde!"
                 }
               ],
-              "name": "Cities"
+              "name": "cities"
             },
             {
               "id": "549f401b",
@@ -6690,13 +6690,13 @@
                   "title": "Grizzled Veteran"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             }
           ]
         },
         {
           "id": "a2cc200b",
-          "name": "Honor",
+          "name": "honor",
           "subcats": [
             {
               "id": "d22ec80b",
@@ -6828,7 +6828,7 @@
                   "title": "Honor Level 500"
                 }
               ],
-              "name": "Honor"
+              "name": "honor"
             },
             {
               "id": "70219331",
@@ -6852,13 +6852,13 @@
                   "title": "Battlefield Master"
                 }
               ],
-              "name": "Battlefield"
+              "name": "battlefield"
             }
           ]
         },
         {
           "id": "c7b31c24",
-          "name": "Warsong Gulch",
+          "name": "warsongGulch",
           "subcats": [
             {
               "id": "79289469",
@@ -6992,7 +6992,7 @@
         },
         {
           "id": "4428bb9f",
-          "name": "Arathi Basin",
+          "name": "arathiBasin",
           "subcats": [
             {
               "id": "a2b78bbf",
@@ -7102,7 +7102,7 @@
         },
         {
           "id": "69f8056d",
-          "name": "Eye of the Storm",
+          "name": "eyeOfTheStorm",
           "subcats": [
             {
               "id": "19d39b7c",
@@ -7192,7 +7192,7 @@
         },
         {
           "id": "3a6509e0",
-          "name": "Alterac Valley",
+          "name": "alteracValley",
           "subcats": [
             {
               "id": "524e28e4",
@@ -7342,13 +7342,13 @@
                   "title": "Alterac Valley of Olde"
                 }
               ],
-              "name": "15th Anniversary"
+              "name": "15thAnniversary"
             }
           ]
         },
         {
           "id": "6af057aa",
-          "name": "Ashran",
+          "name": "ashran",
           "subcats": [
             {
               "id": "b432c41c",
@@ -7465,7 +7465,7 @@
                   "title": "Tour of Duty"
                 }
               ],
-              "name": "Ashran"
+              "name": "ashran"
             },
             {
               "id": "9e539439",
@@ -7485,7 +7485,7 @@
                   "title": "Wrynn's Vanguard"
                 }
               ],
-              "name": "Ashran Reputation"
+              "name": "ashranReputation"
             },
             {
               "id": "cb24c606",
@@ -7505,13 +7505,13 @@
                   "title": "Rescue Operation"
                 }
               ],
-              "name": "Ashran"
+              "name": "ashran"
             }
           ]
         },
         {
           "id": "4dd60def",
-          "name": "Isle of Conquest",
+          "name": "isleOfConquest",
           "subcats": [
             {
               "id": "5f6d56ca",
@@ -7645,7 +7645,7 @@
         },
         {
           "id": "b5c193bd",
-          "name": "Wintergrasp",
+          "name": "wintergrasp",
           "subcats": [
             {
               "id": "df9f6638",
@@ -7773,7 +7773,7 @@
         },
         {
           "id": "82d49a82",
-          "name": "Battle for Gilneas",
+          "name": "battleForGilneas",
           "subcats": [
             {
               "id": "8cce520b",
@@ -7875,7 +7875,7 @@
         },
         {
           "id": "df9c01f1",
-          "name": "Twin Peaks",
+          "name": "twinPeaks",
           "subcats": [
             {
               "id": "e4f61970",
@@ -8019,7 +8019,7 @@
         },
         {
           "id": "0855b0c2",
-          "name": "Silvershard Mines",
+          "name": "silvershardMines",
           "subcats": [
             {
               "id": "8d21d88f",
@@ -8097,7 +8097,7 @@
         },
         {
           "id": "37e38525",
-          "name": "Temple of Kotmogu",
+          "name": "templeOfKotmogu",
           "subcats": [
             {
               "id": "d99eb0d0",
@@ -8169,7 +8169,7 @@
         },
         {
           "id": "c90a048a",
-          "name": "Seething Shore",
+          "name": "seethingShore",
           "subcats": [
             {
               "items": [
@@ -8234,7 +8234,7 @@
         },
         {
           "id": "a7de5618",
-          "name": "Deepwind Gorge",
+          "name": "deepwindGorge",
           "subcats": [
             {
               "id": "1363cb3b",
@@ -8288,7 +8288,7 @@
         },
         {
           "id": "6108f828",
-          "name": "Rated Battleground",
+          "name": "ratedBattleground",
           "subcats": [
             {
               "id": "35e7c5d5",
@@ -8504,7 +8504,7 @@
                   "title": "Hero of the Alliance"
                 }
               ],
-              "name": "Ratings"
+              "name": "ratings"
             },
             {
               "id": "72289b9c",
@@ -8594,13 +8594,13 @@
                   "title": "Warbringer of the Horde"
                 }
               ],
-              "name": "Wins"
+              "name": "wins"
             }
           ]
         },
         {
           "id": "5a73eb3d",
-          "name": "Arena",
+          "name": "arena",
           "subcats": [
             {
               "id": "3500ce57",
@@ -8744,7 +8744,7 @@
                   "title": "Hotter Streak"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             },
             {
               "id": "38b722d8",
@@ -8786,13 +8786,13 @@
                   "title": "Supreme Soloist"
                 }
               ],
-              "name": "Solo Shuffle"
+              "name": "soloShuffle"
             }
           ]
         },
         {
           "id": "374d14ab",
-          "name": "World",
+          "name": "worldPvp",
           "subcats": [
             {
               "id": "43e55dbd",
@@ -8816,7 +8816,7 @@
                   "title": "Band of Brothers"
                 }
               ],
-              "name": "War Mode"
+              "name": "warMode"
             },
             {
               "id": "760a647e",
@@ -8870,7 +8870,7 @@
                   "title": "Trial by Combat"
                 }
               ],
-              "name": "Dueler's Guild"
+              "name": "duelersGuild"
             },
             {
               "id": "3ea56623",
@@ -8918,7 +8918,7 @@
                   "title": "Covenant Combat"
                 }
               ],
-              "name": "Shadowlands"
+              "name": "shadowlandsZone"
             },
             {
               "id": "6e22a234",
@@ -9058,7 +9058,7 @@
                   "title": "Supplying the Assassins"
                 }
               ],
-              "name": "Battle for Azeroth"
+              "name": "battleForAzeroth"
             },
             {
               "id": "b0b6c9e0",
@@ -9094,19 +9094,19 @@
                   "title": "Free For All, More For Me"
                 }
               ],
-              "name": "Legion"
+              "name": "legion"
             }
           ]
         }
       ],
       "id": "8ccd4cb7",
-      "name": "Player vs. Player"
+      "name": "pvp"
     },
     {
       "cats": [
         {
           "id": "59753096",
-          "name": "Dungeons & Raids",
+          "name": "dungeons",
           "subcats": [
             {
               "id": "812a31c4",
@@ -9130,7 +9130,7 @@
                   "title": "Looking For Multitudes"
                 }
               ],
-              "name": "Group Finder"
+              "name": "groupFinder"
             },
             {
               "id": "446ad439",
@@ -9160,7 +9160,7 @@
                   "title": "Keystone Master"
                 }
               ],
-              "name": "Keystone"
+              "name": "keystone"
             },
             {
               "id": "badb4895",
@@ -9196,7 +9196,7 @@
                   "title": "Glory of the Sepulcher Raider"
                 }
               ],
-              "name": "Shadowlands"
+              "name": "shadowlands"
             },
             {
               "id": "25a84428",
@@ -9238,7 +9238,7 @@
                   "title": "Glory of the Ny'alotha Raider"
                 }
               ],
-              "name": "Battle"
+              "name": "battleForAzeroth"
             },
             {
               "id": "8d20ffae",
@@ -9274,7 +9274,7 @@
                   "title": "Glory of the Argus Raider"
                 }
               ],
-              "name": "Legion"
+              "name": "legion"
             },
             {
               "id": "7733a0de",
@@ -9310,7 +9310,7 @@
                   "title": "Glory of the Hellfire Raider"
                 }
               ],
-              "name": "Draenor"
+              "name": "draenor"
             },
             {
               "id": "d45a65ff",
@@ -9352,7 +9352,7 @@
                   "title": "Glory of the Orgrimmar Raider"
                 }
               ],
-              "name": "Pandaria"
+              "name": "pandaria"
             },
             {
               "id": "7e49e3ed",
@@ -9394,7 +9394,7 @@
                   "title": "Glory of the Dragon Soul Raider"
                 }
               ],
-              "name": "Cataclysm"
+              "name": "cataclysm"
             },
             {
               "id": "4e5fce85",
@@ -9454,7 +9454,7 @@
                   "title": "Glory of the Icecrown Raider (25 player)"
                 }
               ],
-              "name": "Wrath of the Lich King"
+              "name": "wrathOfTheLichKing"
             },
             {
               "id": "5b22a264",
@@ -9478,7 +9478,7 @@
                   "title": "Outland Raider"
                 }
               ],
-              "name": "The Burning Crusade"
+              "name": "theBurningCrusade"
             },
             {
               "id": "a4847fdf",
@@ -9496,13 +9496,13 @@
                   "title": "Classic Raider"
                 }
               ],
-              "name": "Classic"
+              "name": "classic"
             }
           ]
         },
         {
           "id": "610f8678",
-          "name": "Shadowlands Raid",
+          "name": "shadowlandsRaid",
           "subcats": [
             {
               "id": "3a7391d5",
@@ -9646,7 +9646,7 @@
                   "title": "Pour Decision Making"
                 }
               ],
-              "name": "Castle Nathria"
+              "name": "castleNathria"
             },
             {
               "id": "2f699e6b",
@@ -9814,7 +9814,7 @@
                   "title": "This World is a Prism"
                 }
               ],
-              "name": "Sanctum of Domination"
+              "name": "sanctumOfDomination"
             },
             {
               "id": "46ceaa8d",
@@ -9994,7 +9994,7 @@
                   "title": "Damnation Aviation"
                 }
               ],
-              "name": "Sepulcher of the First Ones"
+              "name": "sepulcherOfTheFirstOnes"
             },
             {
               "id": "38b060a7",
@@ -10072,13 +10072,13 @@
                   "title": "Mythic: Fates of the Shadowlands Raids"
                 }
               ],
-              "name": "Fated Raids"
+              "name": "fatedRaids"
             }
           ]
         },
         {
           "id": "6961b30b",
-          "name": "Shadowlands Dungeon",
+          "name": "shadowlandsDungeon",
           "subcats": [
             {
               "id": "0705da98",
@@ -10132,7 +10132,7 @@
                   "title": "I Only Have Eyes For You"
                 }
               ],
-              "name": "Sanguine Depths"
+              "name": "sanguineDepths"
             },
             {
               "id": "8d584964",
@@ -10174,7 +10174,7 @@
                   "title": "Goliath Offline"
                 }
               ],
-              "name": "Spires of Ascension"
+              "name": "spiresOfAscension"
             },
             {
               "id": "539b9fd3",
@@ -10216,7 +10216,7 @@
                   "title": "Surgeon's Supplies"
                 }
               ],
-              "name": "The Necrotic Wake"
+              "name": "theNecroticWake"
             },
             {
               "id": "9345fdba",
@@ -10258,7 +10258,7 @@
                   "title": "Thinking with..."
                 }
               ],
-              "name": "De Other Side"
+              "name": "deOtherSide"
             },
             {
               "id": "848a20a1",
@@ -10300,7 +10300,7 @@
                   "title": "Picking Up the Pieces"
                 }
               ],
-              "name": "Halls of Atonement"
+              "name": "hallsOfAtonement"
             },
             {
               "id": "b5c8efeb",
@@ -10342,7 +10342,7 @@
                   "title": "Hooked On Hydroponics"
                 }
               ],
-              "name": "Mists of Tirna Scithe"
+              "name": "mistsOfTirnaScithe"
             },
             {
               "id": "987d161b",
@@ -10384,7 +10384,7 @@
                   "title": "Full Gores Meal"
                 }
               ],
-              "name": "Plaguefall"
+              "name": "plaguefall"
             },
             {
               "id": "81e0ddf5",
@@ -10426,7 +10426,7 @@
                   "title": "Fresh Meat!"
                 }
               ],
-              "name": "Theater of Pain"
+              "name": "theaterOfPain"
             },
             {
               "id": "862c0c9b",
@@ -10480,12 +10480,12 @@
                   "title": "Mischief!"
                 }
               ],
-              "name": "Tazavesh"
+              "name": "tazavesh"
             }
           ]
         },
         {
-          "name": "Battle Raid",
+          "name": "battleRaid",
           "subcats": [
             {
               "id": "ebe6fbbd",
@@ -10605,7 +10605,7 @@
                   "title": "Double Dribble"
                 }
               ],
-              "name": "Uldir"
+              "name": "uldir"
             },
             {
               "id": "554c4d24",
@@ -10769,7 +10769,7 @@
                   "title": "Mythic: Lady Jaina Proudmoore"
                 }
               ],
-              "name": "Siege of Dazar'alor"
+              "name": "battleOfDazarAlor"
             },
             {
               "id": "5d78c1f1",
@@ -10805,7 +10805,7 @@
                   "title": "Mythic: Uu'nat, Harbinger of the Void"
                 }
               ],
-              "name": "Crucible of Storms"
+              "name": "crucibleOfStorms"
             },
             {
               "id": "98a47fb1",
@@ -10925,7 +10925,7 @@
                   "title": "Mythic: Queen Azshara"
                 }
               ],
-              "name": "The Eternal Palace"
+              "name": "theEternalPalace"
             },
             {
               "id": "669e1d1f",
@@ -10937,7 +10937,7 @@
                   "title": "Unbound Monstrosities"
                 }
               ],
-              "name": "World"
+              "name": "worldBoss"
             },
             {
               "id": "ba6fd32a",
@@ -11111,12 +11111,12 @@
                   "title": "Mythic: N'Zoth the Corruptor"
                 }
               ],
-              "name": "Ny'alotha, the Waking City"
+              "name": "nyalothaTheWakingCity"
             }
           ]
         },
         {
-          "name": "Battle Dungeon",
+          "name": "battleDungeon",
           "subcats": [
             {
               "id": "50778888",
@@ -11158,7 +11158,7 @@
                   "title": "That Sweete Booty"
                 }
               ],
-              "name": "Freehold"
+              "name": "freehold"
             },
             {
               "id": "c9679119",
@@ -11200,7 +11200,7 @@
                   "title": "Alchemical Romance"
                 }
               ],
-              "name": "Waycrest Manor"
+              "name": "waycrestManor"
             },
             {
               "id": "5330f5d8",
@@ -11242,7 +11242,7 @@
                   "title": "Trust No One"
                 }
               ],
-              "name": "Shrine of the Storm"
+              "name": "shrineOfTheStorm"
             },
             {
               "id": "b7c6812e",
@@ -11284,7 +11284,7 @@
                   "title": "It's Lit!"
                 }
               ],
-              "name": "Atal'Dazar"
+              "name": "atalDazar"
             },
             {
               "id": "92a8611f",
@@ -11326,7 +11326,7 @@
                   "title": "Sporely Alive"
                 }
               ],
-              "name": "Underrot"
+              "name": "underrot"
             },
             {
               "id": "02ff5dbb",
@@ -11368,7 +11368,7 @@
                   "title": "Good Night, Sweet Prince"
                 }
               ],
-              "name": "Temple of Sethraliss"
+              "name": "templeOfSethraliss"
             },
             {
               "id": "05e0459b",
@@ -11404,7 +11404,7 @@
                   "title": "Shot Through the Heart"
                 }
               ],
-              "name": "Tol Dagor"
+              "name": "tolDagor"
             },
             {
               "id": "3e071a9b",
@@ -11440,7 +11440,7 @@
                   "title": "Pitch Invasion"
                 }
               ],
-              "name": "The MOTHERLODE!!"
+              "name": "theMotherlode"
             },
             {
               "id": "5a178eeb",
@@ -11464,7 +11464,7 @@
                   "title": "A Fish Out of Water"
                 }
               ],
-              "name": "Siege of Boralus"
+              "name": "siegeOfBoralus"
             },
             {
               "id": "8b6da771",
@@ -11494,7 +11494,7 @@
                   "title": "How to Keep a Mummy"
                 }
               ],
-              "name": "King's Rest"
+              "name": "kingsRest"
             },
             {
               "id": "06b82d1f",
@@ -11530,7 +11530,7 @@
                   "title": "M.C., Hammered"
                 }
               ],
-              "name": "Operation: Mechagon"
+              "name": "operationMechagon"
             },
             {
               "id": "ffbb538e",
@@ -11542,13 +11542,13 @@
                   "title": "Battle for Azeroth Keymaster"
                 }
               ],
-              "name": "Keystone"
+              "name": "keystone"
             }
           ]
         },
         {
           "id": "c75a3379",
-          "name": "Legion Raid",
+          "name": "legionRaid",
           "subcats": [
             {
               "id": "049bdaeb",
@@ -11656,7 +11656,7 @@
                   "title": "Mythic: Xavius"
                 }
               ],
-              "name": "The Emerald Nightmare"
+              "name": "theEmeraldNightmare"
             },
             {
               "id": "2528712f",
@@ -11710,7 +11710,7 @@
                   "title": "Mythic: Helya"
                 }
               ],
-              "name": "Trial of Valor"
+              "name": "trialOfValor"
             },
             {
               "id": "3d867a24",
@@ -11860,7 +11860,7 @@
                   "title": "Mythic: Gul'dan"
                 }
               ],
-              "name": "The Nighthold"
+              "name": "theNighthold"
             },
             {
               "id": "5b056a3a",
@@ -11998,7 +11998,7 @@
                   "title": "Mythic: Kil'jaeden"
                 }
               ],
-              "name": "Tomb of Sargeras"
+              "name": "tombOfSargeras"
             },
             {
               "id": "6f4bb116",
@@ -12160,7 +12160,7 @@
                   "title": "Mythic: Argus the Unmaker"
                 }
               ],
-              "name": "Antorus"
+              "name": "antorus"
             },
             {
               "id": "ca2c214a",
@@ -12178,13 +12178,13 @@
                   "title": "Terrors of the Shore"
                 }
               ],
-              "name": "World"
+              "name": "worldBoss"
             }
           ]
         },
         {
           "id": "a3b5f060",
-          "name": "Legion Dungeon",
+          "name": "legionDungeon",
           "subcats": [
             {
               "id": "01cfcfb8",
@@ -12226,7 +12226,7 @@
                   "title": "Ready for Raiding V"
                 }
               ],
-              "name": "Eye of Azshara"
+              "name": "eyeOfAzshara"
             },
             {
               "id": "9138abe7",
@@ -12268,7 +12268,7 @@
                   "title": "Surge Protector"
                 }
               ],
-              "name": "Halls of Valor"
+              "name": "hallsOfValor"
             },
             {
               "id": "d3e14599",
@@ -12298,7 +12298,7 @@
                   "title": "No Time to Waste"
                 }
               ],
-              "name": "The Arcway"
+              "name": "theArcway"
             },
             {
               "id": "41eaf133",
@@ -12340,7 +12340,7 @@
                   "title": "Poor Unfortunate Souls"
                 }
               ],
-              "name": "Maw of Souls"
+              "name": "mawOfSouls"
             },
             {
               "id": "49531a9f",
@@ -12376,7 +12376,7 @@
                   "title": "Burning Down the House"
                 }
               ],
-              "name": "Darkheart Thicket"
+              "name": "darkheartThicket"
             },
             {
               "id": "f1fdd009",
@@ -12400,7 +12400,7 @@
                   "title": "Dropping Some Eaves"
                 }
               ],
-              "name": "Court of Stars"
+              "name": "courtOfStars"
             },
             {
               "id": "5cd82b79",
@@ -12442,7 +12442,7 @@
                   "title": "Who's Afraid of the Dark?"
                 }
               ],
-              "name": "Vault of the Wardens"
+              "name": "vaultOfTheWardens"
             },
             {
               "id": "9c5ce6c0",
@@ -12478,7 +12478,7 @@
                   "title": "You're Just Making It WORSE!"
                 }
               ],
-              "name": "Violet Hold"
+              "name": "violetHold"
             },
             {
               "id": "a1ae20f0",
@@ -12520,7 +12520,7 @@
                   "title": "You Used to Scrawl Me In Your Fel Tome"
                 }
               ],
-              "name": "Black Rook Hold"
+              "name": "blackRookHold"
             },
             {
               "id": "b3d3cf39",
@@ -12556,7 +12556,7 @@
                   "title": "Got to Ketchum All"
                 }
               ],
-              "name": "Neltharions's Lair"
+              "name": "neltharionsLair"
             },
             {
               "id": "fb733385",
@@ -12610,7 +12610,7 @@
                   "title": "One Night in Karazhan"
                 }
               ],
-              "name": "Karazhan"
+              "name": "karazhan"
             },
             {
               "id": "2c3ec73a",
@@ -12652,7 +12652,7 @@
                   "title": "Master of Shadows"
                 }
               ],
-              "name": "Cathedral of Eternal Night"
+              "name": "cathedralOfEternalNight"
             },
             {
               "id": "9ec54bbb",
@@ -12688,13 +12688,13 @@
                   "title": "Darker Side"
                 }
               ],
-              "name": "Seat of the Triumvirate"
+              "name": "seatOfTheTriumvirate"
             }
           ]
         },
         {
           "id": "9d83ac8e",
-          "name": "Draenor Raid",
+          "name": "draenorRaid",
           "subcats": [
             {
               "id": "4fa4da03",
@@ -12802,7 +12802,7 @@
                   "title": "Mythic: Imperator's Fall"
                 }
               ],
-              "name": "Highmaul"
+              "name": "highmaul"
             },
             {
               "id": "6ed1376a",
@@ -12952,7 +12952,7 @@
                   "title": "Mythic: Blackhand's Crucible"
                 }
               ],
-              "name": "Blackrock Foundry"
+              "name": "blackrockFoundry"
             },
             {
               "id": "c314dc99",
@@ -13144,7 +13144,7 @@
                   "title": "Mythic: Archimonde"
                 }
               ],
-              "name": "Hellfire Citadel"
+              "name": "hellfireCitadel"
             },
             {
               "id": "46c47d91",
@@ -13168,13 +13168,13 @@
                   "title": "The Legion Will NOT Conquer All"
                 }
               ],
-              "name": "World"
+              "name": "worldBoss"
             }
           ]
         },
         {
           "id": "88551d8a",
-          "name": "Draenor Dungeon",
+          "name": "draenorDungeon",
           "subcats": [
             {
               "id": "cf330c2c",
@@ -13216,7 +13216,7 @@
                   "title": "Is Draenor on Fire?"
                 }
               ],
-              "name": "Bloodmaul Slag Mines"
+              "name": "bloodmaulSlagMines"
             },
             {
               "id": "4a15977e",
@@ -13258,7 +13258,7 @@
                   "title": "No Tag-backs!"
                 }
               ],
-              "name": "Auchindoun"
+              "name": "auchindoun"
             },
             {
               "id": "958f2842",
@@ -13300,7 +13300,7 @@
                   "title": "Weed Whacker"
                 }
               ],
-              "name": "The Everbloom"
+              "name": "theEverbloom"
             },
             {
               "id": "e1c134c7",
@@ -13342,7 +13342,7 @@
                   "title": "Souls of the Lost"
                 }
               ],
-              "name": "Shadowmoon Burial Grounds"
+              "name": "shadowmoonBurialGrounds"
             },
             {
               "id": "9d34dcac",
@@ -13384,7 +13384,7 @@
                   "title": "Take Cover!"
                 }
               ],
-              "name": "Iron Docks"
+              "name": "ironDocks"
             },
             {
               "id": "f717c248",
@@ -13432,7 +13432,7 @@
                   "title": "Monomania"
                 }
               ],
-              "name": "Skyreach"
+              "name": "skyreach"
             },
             {
               "id": "855332c3",
@@ -13468,7 +13468,7 @@
                   "title": "No Ticket"
                 }
               ],
-              "name": "Grimrail Depot"
+              "name": "grimrailDepot"
             },
             {
               "id": "7a412c9d",
@@ -13516,13 +13516,13 @@
                   "title": "Dragonmaw? More Like Dragonfall!"
                 }
               ],
-              "name": "Upper Blackrock Spire"
+              "name": "upperBlackrockSpire"
             }
           ]
         },
         {
           "id": "938f1ea6",
-          "name": "Pandaria Raid",
+          "name": "pandariaRaid",
           "subcats": [
             {
               "id": "6de6de43",
@@ -13618,7 +13618,7 @@
                   "title": "Heroic: Will of the Emperor"
                 }
               ],
-              "name": "Mogu'shan Vaults"
+              "name": "mogushanVaults"
             },
             {
               "id": "c60b4566",
@@ -13708,7 +13708,7 @@
                   "title": "Heroic: Grand Empress Shek'zeer"
                 }
               ],
-              "name": "Heart of Fear"
+              "name": "heartOfFear"
             },
             {
               "id": "49bfc2a1",
@@ -13768,7 +13768,7 @@
                   "title": "Heroic: Sha of Fear"
                 }
               ],
-              "name": "Terrace of Endless Spring"
+              "name": "terraceOfEndlessSpring"
             },
             {
               "id": "6cf45a1b",
@@ -13948,7 +13948,7 @@
                   "title": "Heroic: Dark Animus"
                 }
               ],
-              "name": "Throne of Thunder"
+              "name": "throneOfThunder"
             },
             {
               "id": "13bfb79b",
@@ -14160,7 +14160,7 @@
                   "title": "Mythic: Garrosh Hellscream"
                 }
               ],
-              "name": "Siege of Orgrimmar"
+              "name": "siegeOfOrgrimmar"
             },
             {
               "id": "ce08fda2",
@@ -14172,7 +14172,7 @@
                   "title": "Celestial Challenge"
                 }
               ],
-              "name": "Timeless Isle"
+              "name": "timelessIsle"
             },
             {
               "id": "b8465ad6",
@@ -14202,13 +14202,13 @@
                   "title": "Praise the Sun!"
                 }
               ],
-              "name": "World"
+              "name": "worldBoss"
             }
           ]
         },
         {
           "id": "c0d54e45",
-          "name": "Pandaria Dungeon",
+          "name": "pandariaDungeon",
           "subcats": [
             {
               "id": "16a8b719",
@@ -14244,7 +14244,7 @@
                   "title": "Mantid Swarm"
                 }
               ],
-              "name": "Gate of the Setting Sun"
+              "name": "gateOfTheSettingSun"
             },
             {
               "id": "4ee09c02",
@@ -14280,7 +14280,7 @@
                   "title": "What Does This Button Do?"
                 }
               ],
-              "name": "Mogu'shan Palace"
+              "name": "mogushanPalace"
             },
             {
               "id": "5cf65cbb",
@@ -14304,7 +14304,7 @@
                   "title": "Mosh Pit"
                 }
               ],
-              "name": "Scarlet Halls"
+              "name": "scarletHalls"
             },
             {
               "id": "d3f37a5c",
@@ -14334,7 +14334,7 @@
                   "title": "And Stay Dead!"
                 }
               ],
-              "name": "Scarlet Monastery"
+              "name": "scarletMonastery"
             },
             {
               "id": "f4a6ec32",
@@ -14376,7 +14376,7 @@
                   "title": "School's Out Forever"
                 }
               ],
-              "name": "Scholomance"
+              "name": "scholomance"
             },
             {
               "id": "26d000c9",
@@ -14412,7 +14412,7 @@
                   "title": "Respect"
                 }
               ],
-              "name": "Shado-Pan Monastery"
+              "name": "shadoPanMonastery"
             },
             {
               "id": "a5aeae86",
@@ -14448,7 +14448,7 @@
                   "title": "Run with the Wind"
                 }
               ],
-              "name": "Siege of Niuzao Temple"
+              "name": "siegeOfNiuzaoTemple"
             },
             {
               "id": "a6cb1ae5",
@@ -14490,7 +14490,7 @@
                   "title": "Hopocalypse Now!"
                 }
               ],
-              "name": "Stormstout Brewery"
+              "name": "stormstoutBrewery"
             },
             {
               "id": "6bb709e8",
@@ -14526,13 +14526,13 @@
                   "title": "Seeds of Doubt"
                 }
               ],
-              "name": "Temple of the Jade Serpent"
+              "name": "templeOfTheJadeSerpent"
             }
           ]
         },
         {
           "id": "2ec85f80",
-          "name": "Cataclysm Raid",
+          "name": "cataclysmRaid",
           "subcats": [
             {
               "id": "4b044dd7",
@@ -14598,7 +14598,7 @@
                   "title": "Heroic: Sinestra"
                 }
               ],
-              "name": "The Bastion of Twilight"
+              "name": "theBastionOfTwilight"
             },
             {
               "id": "7ce35cc5",
@@ -14634,7 +14634,7 @@
                   "title": "Heroic: Al'Akir"
                 }
               ],
-              "name": "Throne of the Four Winds"
+              "name": "throneOfTheFourWinds"
             },
             {
               "id": "2b6afab5",
@@ -14718,7 +14718,7 @@
                   "title": "Heroic: Nefarian"
                 }
               ],
-              "name": "Blackwing Descent"
+              "name": "blackwingDescent"
             },
             {
               "id": "2c98e050",
@@ -14814,7 +14814,7 @@
                   "title": "Heroic: Ragnaros"
                 }
               ],
-              "name": "Firelands"
+              "name": "firelands"
             },
             {
               "id": "c373d364",
@@ -14934,13 +14934,13 @@
                   "title": "Heroic: Madness of Deathwing"
                 }
               ],
-              "name": "Dragon Soul"
+              "name": "dragonSoul"
             }
           ]
         },
         {
           "id": "ba703dc9",
-          "name": "Cataclysm Dungeon",
+          "name": "cataclysmDungeon",
           "subcats": [
             {
               "id": "c3c43e87",
@@ -14982,7 +14982,7 @@
                   "title": "Ascendant Descending"
                 }
               ],
-              "name": "Blackrock Caverns"
+              "name": "blackrockCaverns"
             },
             {
               "id": "f67e33e8",
@@ -15012,7 +15012,7 @@
                   "title": "Prince of Tides"
                 }
               ],
-              "name": "Throne of the Tides"
+              "name": "throneOfTheTides"
             },
             {
               "id": "5ede9532",
@@ -15036,7 +15036,7 @@
                   "title": "Rotten to the Core"
                 }
               ],
-              "name": "The Stonecore"
+              "name": "theStonecore"
             },
             {
               "id": "23e12b6b",
@@ -15066,7 +15066,7 @@
                   "title": "No Static at All"
                 }
               ],
-              "name": "The Vortex Pinnacle"
+              "name": "theVortexPinnacle"
             },
             {
               "id": "fbf68a8a",
@@ -15096,7 +15096,7 @@
                   "title": "Don't Need to Break Eggs to Make an Omelet"
                 }
               ],
-              "name": "Grim Batol"
+              "name": "grimBatol"
             },
             {
               "id": "0a247d71",
@@ -15138,7 +15138,7 @@
                   "title": "Sun of a...."
                 }
               ],
-              "name": "Halls of Origination"
+              "name": "hallsOfOrigination"
             },
             {
               "id": "b41a20e0",
@@ -15174,7 +15174,7 @@
                   "title": "Headed South"
                 }
               ],
-              "name": "Lost City of the Tol'vir"
+              "name": "lostCityOfTheTolvir"
             },
             {
               "id": "b7e56b6a",
@@ -15222,7 +15222,7 @@
                   "title": "Vigorous VanCleef Vindicator"
                 }
               ],
-              "name": "Deadmines"
+              "name": "deadmines"
             },
             {
               "id": "adcac34c",
@@ -15240,7 +15240,7 @@
                   "title": "Eclipse"
                 }
               ],
-              "name": "Hour of Twilight"
+              "name": "hourOfTwilight"
             },
             {
               "id": "11ca042a",
@@ -15270,7 +15270,7 @@
                   "title": "Bullet Time"
                 }
               ],
-              "name": "Shadowfang Keep"
+              "name": "shadowfangKeep"
             },
             {
               "id": "e89c175b",
@@ -15306,7 +15306,7 @@
                   "title": "Ring Out!"
                 }
               ],
-              "name": "Zul'Aman"
+              "name": "zulAman"
             },
             {
               "id": "7b352759",
@@ -15348,7 +15348,7 @@
                   "title": "Spirit Twister"
                 }
               ],
-              "name": "Zul'Gurub"
+              "name": "zulGurub"
             },
             {
               "id": "9219709d",
@@ -15372,7 +15372,7 @@
                   "title": "Moon Guard"
                 }
               ],
-              "name": "End Time"
+              "name": "endTime"
             },
             {
               "id": "9043df26",
@@ -15396,13 +15396,13 @@
                   "title": "That's Not Canon!"
                 }
               ],
-              "name": "Well of Eternity"
+              "name": "wellOfEternity"
             }
           ]
         },
         {
           "id": "b9be1181",
-          "name": "Lich King Raid",
+          "name": "lichKingRaid",
           "subcats": [
             {
               "id": "bbca4692",
@@ -15516,7 +15516,7 @@
                   "title": "The Dedicated Few (10 player)"
                 }
               ],
-              "name": "Naxxramas (10 player)"
+              "name": "naxxramas10Player"
             },
             {
               "id": "45afd068",
@@ -15558,7 +15558,7 @@
                   "title": "The Twilight Zone (10 player)"
                 }
               ],
-              "name": "The Obsidian Sanctum (10 player)"
+              "name": "theObsidianSanctum10Player"
             },
             {
               "id": "7382adbd",
@@ -15588,7 +15588,7 @@
                   "title": "You Don't Have an Eternity (10 player)"
                 }
               ],
-              "name": "The Eye of Eternity (10 player)"
+              "name": "theEyeOfEternity10Player"
             },
             {
               "id": "00a5eac5",
@@ -15702,7 +15702,7 @@
                   "title": "The Dedicated Few (25 player)"
                 }
               ],
-              "name": "Naxxramas (25 player)"
+              "name": "naxxramas25Player"
             },
             {
               "id": "e4d354bb",
@@ -15744,7 +15744,7 @@
                   "title": "The Twilight Zone (25 player)"
                 }
               ],
-              "name": "The Obsidian Sanctum (25 player)"
+              "name": "theObsidianSanctum25Player"
             },
             {
               "id": "cf474c05",
@@ -15774,7 +15774,7 @@
                   "title": "You Don't Have an Eternity (25 player)"
                 }
               ],
-              "name": "The Eye of Eternity (25 player)"
+              "name": "theEyeOfEternity25Player"
             },
             {
               "id": "201abc40",
@@ -16188,7 +16188,7 @@
                   "title": "Supermassive"
                 }
               ],
-              "name": "Ulduar"
+              "name": "ulduar"
             },
             {
               "id": "3acb7c1d",
@@ -16206,7 +16206,7 @@
                   "title": "Earth, Wind & Fire (25 player)"
                 }
               ],
-              "name": "Wrath of the Lich King"
+              "name": "vaultOfArchavon"
             },
             {
               "id": "1ea8e3b6",
@@ -16260,7 +16260,7 @@
                   "title": "Call of the Grand Crusade (10 player)"
                 }
               ],
-              "name": "Trial of the Crusader (10 player)"
+              "name": "trialOfTheCrusader10Player"
             },
             {
               "id": "8007f09c",
@@ -16308,7 +16308,7 @@
                   "title": "Call of the Grand Crusade (25 player)"
                 }
               ],
-              "name": "Trial of the Crusader (25 player)"
+              "name": "trialOfTheCrusader25Player"
             },
             {
               "id": "ee6622c7",
@@ -16338,7 +16338,7 @@
                   "title": "She Deep Breaths More (10 player)"
                 }
               ],
-              "name": "Onyxia's Lair (10 player)"
+              "name": "onyxiasLair10Player"
             },
             {
               "id": "379d8ee8",
@@ -16368,7 +16368,7 @@
                   "title": "She Deep Breaths More (25 player)"
                 }
               ],
-              "name": "Onyxia's Lair (25 player)"
+              "name": "onyxiasLair25Player"
             },
             {
               "id": "93962c68",
@@ -16488,7 +16488,7 @@
                   "title": "Fall of the Lich King (10 player)"
                 }
               ],
-              "name": "Icecrown Citadel (Normal) (10 player)"
+              "name": "icecrownCitadelNormal10Player"
             },
             {
               "id": "29e5f824",
@@ -16530,7 +16530,7 @@
                   "title": "Heroic: Fall of the Lich King (10 player)"
                 }
               ],
-              "name": "Icecrown Citadel (Heroic) (10 player)"
+              "name": "icecrownCitadelHeroic10Player"
             },
             {
               "id": "3275e1d6",
@@ -16548,7 +16548,7 @@
                   "title": "Heroic: The Twilight Destroyer (10 player)"
                 }
               ],
-              "name": "The Ruby Sanctum (10 player)"
+              "name": "theRubySanctum10Player"
             },
             {
               "id": "84fe80fd",
@@ -16668,7 +16668,7 @@
                   "title": "Fall of the Lich King (25 player)"
                 }
               ],
-              "name": "Icecrown Citadel (Normal) (25 player)"
+              "name": "icecrownCitadelNormal25Player"
             },
             {
               "id": "cc8a11ae",
@@ -16710,7 +16710,7 @@
                   "title": "Heroic: Fall of the Lich King (25 player)"
                 }
               ],
-              "name": "Icecrown Citadel (Heroic) (25 player)"
+              "name": "icecrownCitadelHeroic25Player"
             },
             {
               "id": "c3f5b02c",
@@ -16728,13 +16728,13 @@
                   "title": "Heroic: The Twilight Destroyer (25 player)"
                 }
               ],
-              "name": "The Ruby Sanctum (25 player)"
+              "name": "theRubySanctum25Player"
             }
           ]
         },
         {
           "id": "d031e86e",
-          "name": "Lich King Dungeon",
+          "name": "lichKingDungeon",
           "subcats": [
             {
               "id": "44884b92",
@@ -16758,7 +16758,7 @@
                   "title": "On The Rocks"
                 }
               ],
-              "name": "Utgarde Keep"
+              "name": "utgardeKeep"
             },
             {
               "id": "fe15aab8",
@@ -16794,7 +16794,7 @@
                   "title": "Intense Cold"
                 }
               ],
-              "name": "The Nexus"
+              "name": "theNexus"
             },
             {
               "id": "1565258a",
@@ -16830,7 +16830,7 @@
                   "title": "Gotta Go!"
                 }
               ],
-              "name": "Azjol-Nerub"
+              "name": "azjolNerub"
             },
             {
               "id": "e1592135",
@@ -16866,7 +16866,7 @@
                   "title": "Volazj's Quick Demise"
                 }
               ],
-              "name": "Ahn'kahet: The Old Kingdom"
+              "name": "ahnkahetTheOldKingdom"
             },
             {
               "id": "64ae3aa0",
@@ -16902,7 +16902,7 @@
                   "title": "Better Off Dred"
                 }
               ],
-              "name": "Drak'Tharon Keep"
+              "name": "drakTharonKeep"
             },
             {
               "id": "22d439c5",
@@ -16944,7 +16944,7 @@
                   "title": "Lockdown!"
                 }
               ],
-              "name": "Violet Hold"
+              "name": "violetHold"
             },
             {
               "id": "b621f328",
@@ -16986,7 +16986,7 @@
                   "title": "Share The Love"
                 }
               ],
-              "name": "Gundrak"
+              "name": "gundrak"
             },
             {
               "id": "f93e2ae9",
@@ -17022,7 +17022,7 @@
                   "title": "Abuse the Ooze"
                 }
               ],
-              "name": "Halls of Stone"
+              "name": "hallsOfStone"
             },
             {
               "id": "1a2d8156",
@@ -17052,7 +17052,7 @@
                   "title": "The Culling of Time"
                 }
               ],
-              "name": "The Culling of Stratholme"
+              "name": "theCullingOfStratholme"
             },
             {
               "id": "dc0d9dee",
@@ -17100,7 +17100,7 @@
                   "title": "Make It Count"
                 }
               ],
-              "name": "The Oculus"
+              "name": "theOculus"
             },
             {
               "id": "f6f5ee08",
@@ -17136,7 +17136,7 @@
                   "title": "Timely Death"
                 }
               ],
-              "name": "Halls of Lightning"
+              "name": "hallsOfLightning"
             },
             {
               "id": "e6a94db5",
@@ -17178,7 +17178,7 @@
                   "title": "King's Bane"
                 }
               ],
-              "name": "Utgarde Pinnacle"
+              "name": "utgardePinnacle"
             },
             {
               "id": "ea750ce7",
@@ -17230,7 +17230,7 @@
                   "title": "I've Had Worse"
                 }
               ],
-              "name": "Trial of the Champion"
+              "name": "trialOfTheChampion"
             },
             {
               "id": "f8ea6a1d",
@@ -17260,7 +17260,7 @@
                   "title": "Three Faced"
                 }
               ],
-              "name": "The Forge of Souls"
+              "name": "theForgeOfSouls"
             },
             {
               "id": "5418900e",
@@ -17290,7 +17290,7 @@
                   "title": "Don't Look Up"
                 }
               ],
-              "name": "Pit of Saron"
+              "name": "pitOfSaron"
             },
             {
               "id": "765ef33e",
@@ -17314,13 +17314,13 @@
                   "title": "We're Not Retreating; We're Advancing in a Different Direction."
                 }
               ],
-              "name": "Halls of Reflection"
+              "name": "hallsOfReflection"
             }
           ]
         },
         {
           "id": "dc66a38c",
-          "name": "The Burning Crusade",
+          "name": "theBurningCrusade",
           "subcats": [
             {
               "id": "0acf3fb5",
@@ -17422,7 +17422,7 @@
                   "title": "Magister's Terrace"
                 }
               ],
-              "name": "Normal Dungeons"
+              "name": "normalDungeons"
             },
             {
               "id": "02274cdd",
@@ -17524,7 +17524,7 @@
                   "title": "Heroic: Magister's Terrace"
                 }
               ],
-              "name": "Heroic Dungeons"
+              "name": "heroicDungeons"
             },
             {
               "id": "b3dff1a0",
@@ -17578,13 +17578,13 @@
                   "title": "Sunwell Plateau"
                 }
               ],
-              "name": "Raids"
+              "name": "raids"
             }
           ]
         },
         {
           "id": "d9927b33",
-          "name": "Classic",
+          "name": "classic",
           "subcats": [
             {
               "id": "5004b7b4",
@@ -17662,7 +17662,7 @@
                   "title": "Lower Blackrock Spire"
                 }
               ],
-              "name": "Eastern Kingdoms Dungeons"
+              "name": "easternKingdomsDungeons"
             },
             {
               "id": "d69fc052",
@@ -17716,7 +17716,7 @@
                   "title": "Zul'Farrak"
                 }
               ],
-              "name": "Kalimdor Dungeons"
+              "name": "kalimdorDungeons"
             },
             {
               "id": "99a570ef",
@@ -17746,19 +17746,19 @@
                   "title": "Temple of Ahn'Qiraj"
                 }
               ],
-              "name": "Classic Raids"
+              "name": "classicRaids"
             }
           ]
         }
       ],
       "id": "62998308",
-      "name": "Dungeons & Raids"
+      "name": "dungeons"
     },
     {
       "cats": [
         {
           "id": "dc6ec216",
-          "name": "Professions",
+          "name": "professions",
           "subcats": [
             {
               "id": "b2a9dcb7",
@@ -17956,7 +17956,7 @@
                   "title": "Draenic Stone Collector"
                 }
               ],
-              "name": "Garrison"
+              "name": "garrison"
             },
             {
               "id": "c2cfe147",
@@ -17974,7 +17974,7 @@
                   "title": "The Shortest Distance"
                 }
               ],
-              "name": "Minigame"
+              "name": "minigame"
             },
             {
               "id": "03aa2fb5",
@@ -18012,7 +18012,7 @@
                   "title": "Full of Scrap!"
                 }
               ],
-              "name": "Scrap"
+              "name": "scrap"
             },
             {
               "id": "4b32f46d",
@@ -18030,13 +18030,13 @@
                   "title": "Massive Tool"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             }
           ]
         },
         {
           "id": "2b367800",
-          "name": "Cooking",
+          "name": "cooking",
           "subcats": [
             {
               "id": "d537243f",
@@ -18158,7 +18158,7 @@
                   "title": "Shadowlands Cook"
                 }
               ],
-              "name": "Skill"
+              "name": "skill"
             },
             {
               "id": "1f846a6f",
@@ -18238,7 +18238,7 @@
                   "title": "Everything Tastes Better"
                 }
               ],
-              "name": "Quests"
+              "name": "quests"
             },
             {
               "id": "a0065dfa",
@@ -18274,7 +18274,7 @@
                   "title": "100 Cooking Awards"
                 }
               ],
-              "name": "Awards"
+              "name": "awards"
             },
             {
               "id": "7fcf3ca0",
@@ -18322,7 +18322,7 @@
                   "title": "Ironpaw Chef"
                 }
               ],
-              "name": "Recipes"
+              "name": "recipes"
             },
             {
               "id": "da3bf44b",
@@ -18402,7 +18402,7 @@
                   "title": "The Zandalari Menu"
                 }
               ],
-              "name": "Gourmet"
+              "name": "gourmet"
             },
             {
               "id": "ca180fb2",
@@ -18480,13 +18480,13 @@
                   "title": "Catering for Combat"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             }
           ]
         },
         {
           "id": "3f05b4ea",
-          "name": "Fishing",
+          "name": "fishing",
           "subcats": [
             {
               "id": "ccc53106",
@@ -18566,7 +18566,7 @@
                   "title": "Shadowlands Fisherman"
                 }
               ],
-              "name": "Skill"
+              "name": "skill"
             },
             {
               "id": "d726758b",
@@ -18674,7 +18674,7 @@
                   "title": "Fish Me In the Moonlight"
                 }
               ],
-              "name": "Counts"
+              "name": "counts"
             },
             {
               "id": "dbf13bfa",
@@ -18776,7 +18776,7 @@
                   "title": "Secret Fish and Where to Find Them"
                 }
               ],
-              "name": "Quests"
+              "name": "quests"
             },
             {
               "id": "c64f74a2",
@@ -18836,7 +18836,7 @@
                   "title": "Bigger Fish to Fry"
                 }
               ],
-              "name": "Pools"
+              "name": "pools"
             },
             {
               "id": "894d6367",
@@ -18872,7 +18872,7 @@
                   "title": "The Wish Remover"
                 }
               ],
-              "name": "Coins"
+              "name": "coins"
             },
             {
               "id": "9b271fac",
@@ -18916,7 +18916,7 @@
                   "title": "Baiting the Enemy"
                 }
               ],
-              "name": "Cities"
+              "name": "cities"
             },
             {
               "id": "9de68640",
@@ -18976,7 +18976,7 @@
                   "title": "Catchin' Some Rays"
                 }
               ],
-              "name": "World"
+              "name": "world"
             },
             {
               "id": "fc2f7b1c",
@@ -18988,13 +18988,13 @@
                   "title": "Everything Is Awesome!"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             }
           ]
         },
         {
           "id": "0bc66963",
-          "name": "Archaeology",
+          "name": "archaeology",
           "subcats": [
             {
               "id": "21e8991f",
@@ -19068,7 +19068,7 @@
                   "title": "Zandalari Archaeologist"
                 }
               ],
-              "name": "Skill"
+              "name": "skill"
             },
             {
               "id": "dcf3be86",
@@ -19152,7 +19152,7 @@
                   "title": "Lengthy Legwork"
                 }
               ],
-              "name": "Counts"
+              "name": "counts"
             },
             {
               "id": "69a2692d",
@@ -19254,7 +19254,7 @@
                   "title": "Exotic Discoveries"
                 }
               ],
-              "name": "Lore"
+              "name": "lore"
             },
             {
               "id": "35699529",
@@ -19316,7 +19316,7 @@
                   "title": "Zandalari Curator"
                 }
               ],
-              "name": "Pristine"
+              "name": "pristine"
             },
             {
               "id": "e5718611",
@@ -19358,7 +19358,7 @@
                   "title": "Blue Streak"
                 }
               ],
-              "name": "Race"
+              "name": "race"
             },
             {
               "id": "c04f4d6c",
@@ -19484,7 +19484,7 @@
                   "title": "Collector: Walking Canes of Brewfather Ren Yun"
                 }
               ],
-              "name": "Collector: Pandaren"
+              "name": "collectorPandaren"
             },
             {
               "id": "7baf281e",
@@ -19610,7 +19610,7 @@
                   "title": "Collector: Worn Monument Ledgers"
                 }
               ],
-              "name": "Collector: Mogu"
+              "name": "collectorMogu"
             },
             {
               "id": "37e7cdcb",
@@ -19712,19 +19712,19 @@
                   "title": "Collector: Remains of Paragons"
                 }
               ],
-              "name": "Collector: Mantid"
+              "name": "collectorMantid"
             }
           ]
         }
       ],
       "id": "50407cce",
-      "name": "Professions"
+      "name": "professions"
     },
     {
       "cats": [
         {
           "id": "3092c06a",
-          "name": "Reputation",
+          "name": "reputation",
           "subcats": [
             {
               "id": "f9a2dea4",
@@ -19832,7 +19832,7 @@
                   "title": "100 Exalted Reputations"
                 }
               ],
-              "name": "Counts"
+              "name": "counts"
             },
             {
               "id": "e346f09b",
@@ -19884,7 +19884,7 @@
                   "title": "Time Flies When You're Having Fun"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             },
             {
               "id": "2aa228db",
@@ -19950,7 +19950,7 @@
                   "title": "Allied Races: Mechagnome"
                 }
               ],
-              "name": "Allied Races: Unlock"
+              "name": "alliedRacesUnlock"
             },
             {
               "id": "16911b1c",
@@ -20016,13 +20016,13 @@
                   "title": "Heritage of the Mechagnome"
                 }
               ],
-              "name": "Allied Races: Level"
+              "name": "alliedRacesLevel"
             }
           ]
         },
         {
           "id": "fc36113b",
-          "name": "Shadowlands",
+          "name": "shadowlands",
           "subcats": [
             {
               "id": "6a2fcf36",
@@ -20087,7 +20087,7 @@
           ]
         },
         {
-          "name": "Battle for Azeroth",
+          "name": "battleForAzeroth",
           "subcats": [
             {
               "id": "66e3c5b7",
@@ -20199,13 +20199,13 @@
                   "title": "The Rajani"
                 }
               ],
-              "name": " "
+              "name": ""
             }
           ]
         },
         {
           "id": "ff12b844",
-          "name": "Legion",
+          "name": "legion",
           "subcats": [
             {
               "id": "f4d614c0",
@@ -20277,13 +20277,13 @@
                   "title": "Highmountain Tribe"
                 }
               ],
-              "name": " "
+              "name": ""
             }
           ]
         },
         {
           "id": "53761ca0",
-          "name": "Draenor",
+          "name": "draenor",
           "subcats": [
             {
               "id": "f01e7be8",
@@ -20369,7 +20369,7 @@
         },
         {
           "id": "9d657dfc",
-          "name": "Pandaria",
+          "name": "pandaria",
           "subcats": [
             {
               "id": "82e1fbc9",
@@ -20507,7 +20507,7 @@
         },
         {
           "id": "fe98b33e",
-          "name": "Cataclysm",
+          "name": "cataclysm",
           "subcats": [
             {
               "id": "c899bca5",
@@ -20577,7 +20577,7 @@
         },
         {
           "id": "5c6ad518",
-          "name": "Wrath of the Lich King",
+          "name": "wrathOfTheLichKing",
           "subcats": [
             {
               "id": "524f79a6",
@@ -20675,7 +20675,7 @@
         },
         {
           "id": "0bc236b6",
-          "name": "The Burning Crusade",
+          "name": "theBurningCrusade",
           "subcats": [
             {
               "id": "6026c3b0",
@@ -20787,7 +20787,7 @@
         },
         {
           "id": "5fb14e53",
-          "name": "Classic",
+          "name": "classic",
           "subcats": [
             {
               "id": "c4e56e20",
@@ -20823,13 +20823,13 @@
         }
       ],
       "id": "3f5fc2e7",
-      "name": "Reputation"
+      "name": "reputation"
     },
     {
       "cats": [
         {
           "id": "bc60b6cd",
-          "name": "World Events",
+          "name": "events",
           "subcats": [
             {
               "id": "0809b8b9",
@@ -20939,7 +20939,7 @@
         },
         {
           "id": "140f24e4",
-          "name": "Lunar Festival",
+          "name": "lunarFestival",
           "subcats": [
             {
               "id": "2153f315",
@@ -20987,7 +20987,7 @@
                   "title": "Elders of Cataclysm"
                 }
               ],
-              "name": "Elders"
+              "name": "elders"
             },
             {
               "id": "9e12b048",
@@ -21023,7 +21023,7 @@
                   "title": "50 Coins of Ancestry"
                 }
               ],
-              "name": "Coins"
+              "name": "coins"
             },
             {
               "id": "74d71982",
@@ -21053,13 +21053,13 @@
                   "title": "The Rocket's Red Glare"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             }
           ]
         },
         {
           "id": "3ef0312f",
-          "name": "Love is in the Air",
+          "name": "loveIsInTheAir",
           "subcats": [
             {
               "id": "5d97f8d3",
@@ -21201,7 +21201,7 @@
         },
         {
           "id": "221a5d42",
-          "name": "Noblegarden",
+          "name": "noblegarden",
           "subcats": [
             {
               "id": "587217f0",
@@ -21295,7 +21295,7 @@
         },
         {
           "id": "2b1c3140",
-          "name": "Children's Week",
+          "name": "childrensWeek",
           "subcats": [
             {
               "id": "5da4c016",
@@ -21349,7 +21349,7 @@
         },
         {
           "id": "7a3687b5",
-          "name": "Midsummer",
+          "name": "midsummer",
           "subcats": [
             {
               "id": "f766eadd",
@@ -21495,7 +21495,7 @@
                   "title": "Extinguishing Zandalar"
                 }
               ],
-              "name": "Desecrate"
+              "name": "desecrate"
             },
             {
               "id": "29aa0cbd",
@@ -21641,7 +21641,7 @@
                   "title": "Flame Warden of Kul Tiras"
                 }
               ],
-              "name": "Honor"
+              "name": "honorFlame"
             },
             {
               "id": "f325ed8c",
@@ -21671,13 +21671,13 @@
                   "title": "Burning Hot Pole Dance"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             }
           ]
         },
         {
           "id": "d73021dc",
-          "name": "Brewfest",
+          "name": "brewfest",
           "subcats": [
             {
               "id": "f3ff2cfc",
@@ -21751,7 +21751,7 @@
         },
         {
           "id": "5b225270",
-          "name": "Hallow's End",
+          "name": "hallowsEnd",
           "subcats": [
             {
               "id": "aede7ee5",
@@ -21847,7 +21847,7 @@
                   "title": "Tricks and Treats of Pandaria"
                 }
               ],
-              "name": "Tricks and Treats"
+              "name": "tricksAndTreats"
             },
             {
               "id": "7e9fc53b",
@@ -21939,13 +21939,13 @@
                   "title": "A Frightening Friend"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             }
           ]
         },
         {
           "id": "195140a7",
-          "name": "Pilgrim's Bounty",
+          "name": "pilgrimsBounty",
           "subcats": [
             {
               "id": "e5922b74",
@@ -22043,7 +22043,7 @@
         },
         {
           "id": "080e3586",
-          "name": "Winter Veil",
+          "name": "winterVeil",
           "subcats": [
             {
               "id": "1efce7b9",
@@ -22189,7 +22189,7 @@
         },
         {
           "id": "93e7c386",
-          "name": "Darkmoon Faire",
+          "name": "darkmoonFaire",
           "subcats": [
             {
               "id": "7558b754",
@@ -22539,7 +22539,7 @@
                   "title": "Big Wanderluster: Gold"
                 }
               ],
-              "name": "Race"
+              "name": "darkmoonRace"
             },
             {
               "id": "b0bc6fc9",
@@ -22569,7 +22569,7 @@
                   "title": "Mosh Pit"
                 }
               ],
-              "name": "Concert"
+              "name": "concert"
             },
             {
               "id": "7c3bbb2e",
@@ -22629,13 +22629,13 @@
                   "title": "Dancing Machine"
                 }
               ],
-              "name": "Dance"
+              "name": "dance"
             }
           ]
         },
         {
           "id": "1aaf1482",
-          "name": "Timewalking",
+          "name": "timewalking",
           "subcats": [
             {
               "id": "fbaa9c00",
@@ -22653,19 +22653,19 @@
                   "title": "A Tour of Towers"
                 }
               ],
-              "name": "Legion Mage Tower"
+              "name": "legionMageTower"
             }
           ]
         }
       ],
       "id": "e27e3589",
-      "name": "World Events"
+      "name": "events"
     },
     {
       "cats": [
         {
           "id": "c2577b26",
-          "name": "Pet Battles",
+          "name": "pets",
           "subcats": [
             {
               "id": "09e5563c",
@@ -22677,7 +22677,7 @@
                   "title": "Team Aquashock"
                 }
               ],
-              "name": "Achievements"
+              "name": "achievements"
             },
             {
               "id": "22ece4aa",
@@ -22701,7 +22701,7 @@
                   "title": "Fabled Pandaren Tamer"
                 }
               ],
-              "name": "Quest"
+              "name": "quests"
             },
             {
               "id": "eebfa166",
@@ -22713,7 +22713,7 @@
                   "title": "The Longest Day"
                 }
               ],
-              "name": "Daily"
+              "name": "daily"
             },
             {
               "id": "abe10071",
@@ -22743,7 +22743,7 @@
                   "title": "Time to Open a Pet Store"
                 }
               ],
-              "name": "Points"
+              "name": "points"
             },
             {
               "id": "dcff9300",
@@ -22761,7 +22761,7 @@
                   "title": "Polished Pet Charmer"
                 }
               ],
-              "name": "Pet Charms"
+              "name": "petCharms"
             },
             {
               "id": "5cf97a8e",
@@ -22803,13 +22803,13 @@
                   "title": "The Shadows Revealed"
                 }
               ],
-              "name": "Challenges"
+              "name": "challenges"
             }
           ]
         },
         {
           "id": "0452fc49",
-          "name": "Collect",
+          "name": "collect",
           "subcats": [
             {
               "id": "be333d80",
@@ -22947,7 +22947,7 @@
                   "title": "Master of Minions"
                 }
               ],
-              "name": "Count"
+              "name": "counts"
             },
             {
               "id": "87900015",
@@ -23061,7 +23061,7 @@
                   "title": "Shadowlands Safari"
                 }
               ],
-              "name": "Zones"
+              "name": "zones"
             },
             {
               "id": "be84aa60",
@@ -23103,7 +23103,7 @@
                   "title": "Raiding with Leashes VI: Pets of Pandaria"
                 }
               ],
-              "name": "Leashes"
+              "name": "leashes"
             },
             {
               "id": "88a934ce",
@@ -23145,13 +23145,13 @@
                   "title": "A Sly Fox"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             }
           ]
         },
         {
           "id": "bed20369",
-          "name": "Battle",
+          "name": "battle",
           "subcats": [
             {
               "id": "2856b261",
@@ -23205,7 +23205,7 @@
                   "title": "Draenic Pet Battler"
                 }
               ],
-              "name": "Count"
+              "name": "counts"
             },
             {
               "id": "effc4eab",
@@ -23279,7 +23279,7 @@
                   "title": "Taming Draenor"
                 }
               ],
-              "name": "Taming"
+              "name": "taming"
             },
             {
               "id": "8ddee335",
@@ -23303,7 +23303,7 @@
                   "title": "Battle in the Shadowlands"
                 }
               ],
-              "name": "World Quests"
+              "name": "worldQuests"
             },
             {
               "id": "04f45fbe",
@@ -23513,7 +23513,7 @@
                   "title": "Abhorrent Adversaries of the Afterlife"
                 }
               ],
-              "name": "Zones"
+              "name": "zones"
             },
             {
               "id": "e035deb4",
@@ -23585,7 +23585,7 @@
                   "title": "Family Familiar"
                 }
               ],
-              "name": "Species: Broken Isles"
+              "name": "speciesBrokenIsles"
             },
             {
               "id": "0a481904",
@@ -23657,7 +23657,7 @@
                   "title": "Family Fighter"
                 }
               ],
-              "name": "Species: Argus"
+              "name": "speciesArgus"
             },
             {
               "id": "87d26795",
@@ -23729,7 +23729,7 @@
                   "title": "Family Battler"
                 }
               ],
-              "name": "Species: Battle for Azeroth"
+              "name": "speciesBattleForAzeroth"
             },
             {
               "id": "f1ae258d",
@@ -23801,7 +23801,7 @@
                   "title": "Family Exorcist"
                 }
               ],
-              "name": "Species: Shadowlands"
+              "name": "speciesShadowlands"
             },
             {
               "id": "4bbaf263",
@@ -23831,13 +23831,13 @@
                   "title": "Malowned"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             }
           ]
         },
         {
           "id": "cdf9ca03",
-          "name": "Level",
+          "name": "level",
           "subcats": [
             {
               "id": "c08c840f",
@@ -23885,7 +23885,7 @@
                   "title": "Overstuffed"
                 }
               ],
-              "name": "Raise"
+              "name": "raise"
             },
             {
               "id": "c3a9c1c2",
@@ -23939,19 +23939,19 @@
                   "title": "All Pets Allowed"
                 }
               ],
-              "name": "Count"
+              "name": "counts"
             }
           ]
         }
       ],
       "id": "3a2314d5",
-      "name": "Pet Battles"
+      "name": "pets"
     },
     {
       "cats": [
         {
           "id": "397263e3",
-          "name": "Collections",
+          "name": "collections",
           "subcats": [
             {
               "id": "f54736be",
@@ -23993,7 +23993,7 @@
                   "title": "The Tangerine Traveler"
                 }
               ],
-              "name": "Items"
+              "name": "items"
             },
             {
               "id": "35c30faa",
@@ -24023,7 +24023,7 @@
                   "title": "Thirty Tabards"
                 }
               ],
-              "name": "Tabards"
+              "name": "tabards"
             },
             {
               "id": "5bcc5ce1",
@@ -24053,13 +24053,13 @@
                   "title": "Heirloom Hoarder"
                 }
               ],
-              "name": "Heirlooms"
+              "name": "heirlooms"
             }
           ]
         },
         {
           "id": "271ecc05",
-          "name": "Toy Box",
+          "name": "toyBox",
           "subcats": [
             {
               "id": "7fd9150e",
@@ -24107,7 +24107,7 @@
                   "title": "Toybox Tycoon"
                 }
               ],
-              "name": "Toy Box"
+              "name": "toyBox"
             },
             {
               "id": "3551ff40",
@@ -24119,13 +24119,13 @@
                   "title": "Most Minis Wins"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             }
           ]
         },
         {
           "id": "6fca96ad",
-          "name": "Mounts",
+          "name": "mounts",
           "subcats": [
             {
               "id": "db0e6b80",
@@ -24179,7 +24179,7 @@
                   "title": "Awake the Drakes"
                 }
               ],
-              "name": "Mounts"
+              "name": "mounts"
             },
             {
               "id": "14d9c75d",
@@ -24301,7 +24301,7 @@
                   "title": "A Horde of Hoofbeats"
                 }
               ],
-              "name": "Mount Count"
+              "name": "mountCounts"
             },
             {
               "id": "4d1e4719",
@@ -24313,13 +24313,13 @@
                   "title": "Available in Eight Colors"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             }
           ]
         },
         {
           "id": "d70c2c1e",
-          "name": "Appearances",
+          "name": "appearances",
           "subcats": [
             {
               "id": "137378e0",
@@ -24403,7 +24403,7 @@
                   "title": "Fabulous"
                 }
               ],
-              "name": "Appearances"
+              "name": "appearances"
             },
             {
               "id": "70b0ef48",
@@ -24427,7 +24427,7 @@
                   "title": "Accessor-Eyes"
                 }
               ],
-              "name": "Classic"
+              "name": "classic"
             },
             {
               "id": "94278d1a",
@@ -24457,7 +24457,7 @@
                   "title": "Suns Out, Thori'dals Out"
                 }
               ],
-              "name": "Burning Crusade"
+              "name": "theBurningCrusade"
             },
             {
               "id": "49349814",
@@ -24487,7 +24487,7 @@
                   "title": "Winter Catalog"
                 }
               ],
-              "name": "Wrath of the Lich King"
+              "name": "wrathOfTheLichKing"
             },
             {
               "id": "83a94219",
@@ -24511,7 +24511,7 @@
                   "title": "Wardrobe of the Old Gods"
                 }
               ],
-              "name": "Cataclysm"
+              "name": "cataclysm"
             },
             {
               "id": "43aa6575",
@@ -24535,7 +24535,7 @@
                   "title": "Yaass'shaarj"
                 }
               ],
-              "name": "Pandaria"
+              "name": "pandaria"
             },
             {
               "id": "ee06d3b0",
@@ -24553,7 +24553,7 @@
                   "title": "Extreme Makeover: Fel Edition"
                 }
               ],
-              "name": "Draenor"
+              "name": "draenor"
             },
             {
               "id": "7b80118c",
@@ -24583,7 +24583,7 @@
                   "title": "Argussy Up"
                 }
               ],
-              "name": "Legion"
+              "name": "legion"
             },
             {
               "id": "47b528b6",
@@ -24613,7 +24613,7 @@
                   "title": "All Eyes On Me"
                 }
               ],
-              "name": "Battle for Azeroth"
+              "name": "battleForAzeroth"
             },
             {
               "id": "9762b4ac",
@@ -24637,7 +24637,7 @@
                   "title": "First Wonders"
                 }
               ],
-              "name": "Shadowlands"
+              "name": "shadowlands"
             },
             {
               "id": "199d4aa3",
@@ -24811,7 +24811,7 @@
                   "title": "Cosmic Chic"
                 }
               ],
-              "name": "PvP"
+              "name": "PVP"
             },
             {
               "id": "6f38d784",
@@ -24823,19 +24823,19 @@
                   "title": "Azeroth's Next Top Model"
                 }
               ],
-              "name": "Count"
+              "name": "counts"
             }
           ]
         }
       ],
       "id": "8d854418",
-      "name": "Collections"
+      "name": "collections"
     },
     {
       "cats": [
         {
           "id": "20845c7d",
-          "name": "Covenant Sanctums",
+          "name": "covenantSanctums",
           "subcats": [
             {
               "id": "82ccc066",
@@ -24937,7 +24937,7 @@
                   "title": "Re-Re-Re-Renowned"
                 }
               ],
-              "name": "Renown"
+              "name": "renown"
             },
             {
               "id": "424f61cf",
@@ -24961,7 +24961,7 @@
                   "title": "Dedication to the Restoration"
                 }
               ],
-              "name": "Anima Conductor"
+              "name": "animaConductor"
             },
             {
               "id": "b4ff1c16",
@@ -24991,7 +24991,7 @@
                   "title": "Nexus of Bonds"
                 }
               ],
-              "name": "Soulbinds"
+              "name": "soulbinds"
             },
             {
               "id": "f45b665a",
@@ -25051,7 +25051,7 @@
                   "title": "Adventures: Protector of the Shadowlands"
                 }
               ],
-              "name": "Adventures"
+              "name": "adventures"
             },
             {
               "id": "1c4c95b4",
@@ -25129,7 +25129,7 @@
                   "title": "Rendle's Big Day"
                 }
               ],
-              "name": "Venthyr"
+              "name": "venthyr"
             },
             {
               "id": "4367adf2",
@@ -25183,7 +25183,7 @@
                   "title": "Fashion Abomination"
                 }
               ],
-              "name": "Necrolord"
+              "name": "necrolord"
             },
             {
               "id": "2860ecd5",
@@ -25231,7 +25231,7 @@
                   "title": "All Spirits Great and Small"
                 }
               ],
-              "name": "Night Fae"
+              "name": "nightFae"
             },
             {
               "id": "f8537988",
@@ -25339,13 +25339,13 @@
                   "title": "Pursuing Loyalty"
                 }
               ],
-              "name": "Kyrian"
+              "name": "kyrian"
             }
           ]
         },
         {
           "id": "01a83860",
-          "name": "Torghast",
+          "name": "torghast",
           "subcats": [
             {
               "id": "090331ac",
@@ -25399,7 +25399,7 @@
                   "title": "The Upper Reaches"
                 }
               ],
-              "name": "Wings"
+              "name": "wings"
             },
             {
               "id": "08945a7b",
@@ -25423,7 +25423,7 @@
                   "title": "Phanatical"
                 }
               ],
-              "name": "Phantasma"
+              "name": "phantasma"
             },
             {
               "id": "be203ff0",
@@ -25459,7 +25459,7 @@
                   "title": "Clearing the Fog"
                 }
               ],
-              "name": "Runecarver"
+              "name": "runecarver"
             },
             {
               "id": "6bf08cb9",
@@ -25483,7 +25483,7 @@
                   "title": "Terror of Torghast"
                 }
               ],
-              "name": "Wing Layers"
+              "name": "wingLayers"
             },
             {
               "id": "fd519ab4",
@@ -25537,7 +25537,7 @@
                   "title": "Twisting Corridors: Layer 8"
                 }
               ],
-              "name": "Twisting Corridors"
+              "name": "twistingCorridors"
             },
             {
               "id": "bf0b0a57",
@@ -25591,7 +25591,7 @@
                   "title": "The Jailer's Gauntlet: Layer 8"
                 }
               ],
-              "name": "Jailer's Gauntlet"
+              "name": "jailersGauntlet"
             },
             {
               "id": "e3c8957f",
@@ -25693,7 +25693,7 @@
                   "title": "Flawless Master (Layer 16)"
                 }
               ],
-              "name": "Flawless"
+              "name": "flawless"
             },
             {
               "id": "c8c2c14c",
@@ -25777,13 +25777,13 @@
                   "title": "Master of Torment"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             }
           ]
         },
         {
           "id": "e24d70ab",
-          "name": "Visions of N'Zoth",
+          "name": "visionsOfNZoth",
           "subcats": [
             {
               "id": "2c96d6a1",
@@ -25837,7 +25837,7 @@
                   "title": "The Most Horrific Vision of Stormwind"
                 }
               ],
-              "name": "Stormwind"
+              "name": "stormwind"
             },
             {
               "id": "2701f008",
@@ -25861,7 +25861,7 @@
                   "title": "The Most Horrific Vision of Orgrimmar"
                 }
               ],
-              "name": "Orgrimmar"
+              "name": "orgrimmar"
             },
             {
               "id": "53d1dfeb",
@@ -25903,7 +25903,7 @@
                   "title": "Symphony of Masks"
                 }
               ],
-              "name": "Faceless Masks"
+              "name": "facelessMasks"
             },
             {
               "id": "f56a66f1",
@@ -25933,13 +25933,13 @@
                   "title": "A Mountain of Mementos"
                 }
               ],
-              "name": "Mementos"
+              "name": "mementos"
             }
           ]
         },
         {
           "id": "c1e52975",
-          "name": "Heart of Azeroth",
+          "name": "heartOfAzeroth",
           "subcats": [
             {
               "id": "2fce2cad",
@@ -25957,7 +25957,7 @@
                   "title": "The Heart Forge"
                 }
               ],
-              "name": "Quest"
+              "name": "quests"
             },
             {
               "id": "f108a1db",
@@ -26011,13 +26011,13 @@
                   "title": "Pure of Heart"
                 }
               ],
-              "name": "Infuse"
+              "name": "infuse"
             }
           ]
         },
         {
           "id": "91d22fae",
-          "name": "War Effort",
+          "name": "warEffort",
           "subcats": [
             {
               "id": "d8835789",
@@ -26071,7 +26071,7 @@
                   "title": "Azeroth at War: Kalimdor on Fire"
                 }
               ],
-              "name": "Missions"
+              "name": "missions"
             },
             {
               "id": "a7e5ea5e",
@@ -26181,7 +26181,7 @@
                   "title": "Heroic: Tour of War"
                 }
               ],
-              "name": "Warfront: Stromgarde"
+              "name": "warfrontStromgarde"
             },
             {
               "id": "48d3d9ef",
@@ -26271,13 +26271,13 @@
                   "title": "Under Cover of Darkness"
                 }
               ],
-              "name": "Warfront: Darkshore"
+              "name": "warfrontDarkshore"
             }
           ]
         },
         {
           "id": "2448254e",
-          "name": "Island Expeditions",
+          "name": "islandExpeditions",
           "subcats": [
             {
               "id": "43a2fc4a",
@@ -26571,7 +26571,7 @@
                   "title": "Snowblossom Scrapper"
                 }
               ],
-              "name": "Islands"
+              "name": "islands"
             },
             {
               "id": "bf8358e1",
@@ -26619,7 +26619,7 @@
                   "title": "Notorious"
                 }
               ],
-              "name": "Count"
+              "name": "counts"
             },
             {
               "id": "b656111f",
@@ -26637,7 +26637,7 @@
                   "title": "Metal Detector"
                 }
               ],
-              "name": "Dubloons"
+              "name": "dubloons"
             },
             {
               "id": "08e7ca48",
@@ -26693,13 +26693,13 @@
                   "title": "Team Deathmatch"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             }
           ]
         },
         {
           "id": "b3f2de37",
-          "name": "Legion Class Hall",
+          "name": "legionClassHall",
           "subcats": [
             {
               "id": "f0b083ce",
@@ -26723,7 +26723,7 @@
                   "title": "An Epic Campaign"
                 }
               ],
-              "name": "Campaign"
+              "name": "campaign"
             },
             {
               "id": "8e0f5bf5",
@@ -26785,7 +26785,7 @@
                   "title": "Fighting with Style: Hidden"
                 }
               ],
-              "name": "Artifact"
+              "name": "artifact"
             },
             {
               "id": "e59edd7a",
@@ -26803,7 +26803,7 @@
                   "title": "A Classy Outfit"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             },
             {
               "id": "fb11974b",
@@ -26869,7 +26869,7 @@
                   "title": "Champions of Power"
                 }
               ],
-              "name": "Champions"
+              "name": "champions"
             },
             {
               "id": "5d6ee04a",
@@ -26881,13 +26881,13 @@
                   "title": "Need Backup"
                 }
               ],
-              "name": "Quest"
+              "name": "quests"
             }
           ]
         },
         {
           "id": "2fef545e",
-          "name": "Draenor Garrison",
+          "name": "draenorGarrison",
           "subcats": [
             {
               "id": "bdc2d085",
@@ -26899,7 +26899,7 @@
                   "title": "Got My Mind On My Draenor Money"
                 }
               ],
-              "name": "Gold"
+              "name": "gold"
             },
             {
               "id": "c036af12",
@@ -26933,7 +26933,7 @@
                   "title": "Even More Plots"
                 }
               ],
-              "name": "Tier"
+              "name": "tier"
             },
             {
               "id": "f80ecd1f",
@@ -26981,7 +26981,7 @@
                   "title": "Full Discography"
                 }
               ],
-              "name": "Jukebox"
+              "name": "jukebox"
             },
             {
               "id": "c264200d",
@@ -27007,7 +27007,7 @@
                   "title": "Staying Regular"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             },
             {
               "id": "df97fa44",
@@ -27049,7 +27049,7 @@
                   "title": "Garrison Architect"
                 }
               ],
-              "name": "Buildings"
+              "name": "buildings"
             },
             {
               "id": "79b251e1",
@@ -27091,7 +27091,7 @@
                   "title": "Working Many Orders"
                 }
               ],
-              "name": "Blueprints"
+              "name": "blueprints"
             },
             {
               "id": "24b9b861",
@@ -27121,7 +27121,7 @@
                   "title": "Trap Superstar"
                 }
               ],
-              "name": "Barn"
+              "name": "barn"
             },
             {
               "id": "10fc1783",
@@ -27133,7 +27133,7 @@
                   "title": "Stay Awhile and Listen"
                 }
               ],
-              "name": "Inn"
+              "name": "inn"
             },
             {
               "id": "762a23d4",
@@ -27171,7 +27171,7 @@
                   "title": "Upgrading the Mill"
                 }
               ],
-              "name": "Lumber Mill"
+              "name": "lumberMill"
             },
             {
               "id": "932de670",
@@ -27301,7 +27301,7 @@
                   "title": "Warlord of Draenor"
                 }
               ],
-              "name": "Gladiator's Sanctum"
+              "name": "gladiatorsSanctum"
             },
             {
               "id": "2534f9ab",
@@ -27319,7 +27319,7 @@
                   "title": "Wingmen"
                 }
               ],
-              "name": "Barracks"
+              "name": "barracks"
             },
             {
               "id": "8f7e6aa7",
@@ -27331,7 +27331,7 @@
                   "title": "Finding Your Waystones"
                 }
               ],
-              "name": "Mage Tower"
+              "name": "mageTower"
             },
             {
               "id": "5e390aa5",
@@ -27377,7 +27377,7 @@
                   "title": "Advanced Husbandry"
                 }
               ],
-              "name": "Stables"
+              "name": "stables"
             },
             {
               "id": "440663cc",
@@ -27389,7 +27389,7 @@
                   "title": "Terrific Technology"
                 }
               ],
-              "name": "Workshop"
+              "name": "workshop"
             },
             {
               "id": "9593aa06",
@@ -27401,7 +27401,7 @@
                   "title": "Salvaging Pays Off"
                 }
               ],
-              "name": "Salvage"
+              "name": "salvage"
             },
             {
               "id": "4c31be40",
@@ -27437,7 +27437,7 @@
                   "title": "Naval Mechanics"
                 }
               ],
-              "name": "Shipyard"
+              "name": "shipyard"
             },
             {
               "id": "45ced092",
@@ -27535,7 +27535,7 @@
                   "title": "Item Level Force"
                 }
               ],
-              "name": "Followers"
+              "name": "followers"
             },
             {
               "id": "6fd706f1",
@@ -27649,7 +27649,7 @@
                   "title": "Shadowmoon Clan Invasion"
                 }
               ],
-              "name": "Invasions"
+              "name": "invasions"
             },
             {
               "id": "1feeb540",
@@ -27751,7 +27751,7 @@
                   "title": "Patrolling Draenor"
                 }
               ],
-              "name": "Missions"
+              "name": "missions"
             },
             {
               "id": "12e533d8",
@@ -27893,7 +27893,7 @@
                   "title": "Exploring the High Seas"
                 }
               ],
-              "name": "Naval Missions"
+              "name": "navalMissions"
             },
             {
               "id": "422d09c7",
@@ -27945,13 +27945,13 @@
                   "title": "Mythic Draenor Raider"
                 }
               ],
-              "name": "Monuments"
+              "name": "monuments"
             }
           ]
         },
         {
           "id": "a4dc555b",
-          "name": "Proving Grounds",
+          "name": "provingGrounds",
           "subcats": [
             {
               "id": "29972b78",
@@ -27993,7 +27993,7 @@
                   "title": "Proving Yourself: Endless Damage (Wave 30)"
                 }
               ],
-              "name": "Damage"
+              "name": "damage"
             },
             {
               "id": "61b7af6f",
@@ -28035,7 +28035,7 @@
                   "title": "Proving Yourself: Endless Healer (Wave 30)"
                 }
               ],
-              "name": "Healer"
+              "name": "healer"
             },
             {
               "id": "0be7ebbe",
@@ -28077,7 +28077,7 @@
                   "title": "Proving Yourself: Endless Tank (Wave 30)"
                 }
               ],
-              "name": "Tank"
+              "name": "tank"
             },
             {
               "id": "fad9284d",
@@ -28089,13 +28089,13 @@
                   "title": "You're Doing it Wrong"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             }
           ]
         },
         {
           "id": "d6890e6c",
-          "name": "Pandaria Scenarios",
+          "name": "pandariaScenarios",
           "subcats": [
             {
               "id": "2a2f9aa4",
@@ -28151,7 +28151,7 @@
                   "title": "Binan Village All-Star"
                 }
               ],
-              "name": "Brewmoon Festival"
+              "name": "brewmoonFestival"
             },
             {
               "id": "3cd1b5ef",
@@ -28187,7 +28187,7 @@
                   "title": "Monkey in the Middle"
                 }
               ],
-              "name": "Unga Ingoo"
+              "name": "ungaIngoo"
             },
             {
               "id": "281fb6eb",
@@ -28223,7 +28223,7 @@
                   "title": "Heroic: A Brewing Storm"
                 }
               ],
-              "name": "Brewing Storm"
+              "name": "brewingStorm"
             },
             {
               "id": "83758582",
@@ -28247,7 +28247,7 @@
                   "title": "Save it for Later"
                 }
               ],
-              "name": "Greenstone Village"
+              "name": "greenstoneVillage"
             },
             {
               "id": "bf6096da",
@@ -28271,7 +28271,7 @@
                   "title": "Beat the Heat"
                 }
               ],
-              "name": "Arena of Annihilation"
+              "name": "arenaOfAnnihilation"
             },
             {
               "id": "4fb913fd",
@@ -28307,7 +28307,7 @@
                   "title": "Heroic: Crypt of Forgotten Kings"
                 }
               ],
-              "name": "Crypt of Forgotten Kings"
+              "name": "cryptOfForgottenKings"
             },
             {
               "id": "85faa75f",
@@ -28337,7 +28337,7 @@
                   "title": "No Egg Left Behind"
                 }
               ],
-              "name": "Dagger in the Dark"
+              "name": "daggerInTheDark"
             },
             {
               "id": "cc882e66",
@@ -28379,7 +28379,7 @@
                   "title": "We've Been Dancin'"
                 }
               ],
-              "name": "A Little Patience"
+              "name": "aLittlePatience"
             },
             {
               "id": "4fb052ce",
@@ -28397,7 +28397,7 @@
                   "title": "For the Swarm"
                 }
               ],
-              "name": "Assault on Zan'vess"
+              "name": "assaultOnZanvess"
             },
             {
               "id": "7479e194",
@@ -28445,7 +28445,7 @@
                   "title": "No Tank You"
                 }
               ],
-              "name": "Theramore's Fall"
+              "name": "theramoresFall"
             },
             {
               "id": "24511741",
@@ -28472,7 +28472,7 @@
                   "title": "Waste Not, Want Not"
                 }
               ],
-              "name": "Lion's Landing"
+              "name": "lionsLanding"
             },
             {
               "id": "5c9ad292",
@@ -28499,7 +28499,7 @@
                   "title": "Waste Not, Want Not"
                 }
               ],
-              "name": "Domination Point"
+              "name": "dominationPoint"
             },
             {
               "id": "507ef4db",
@@ -28523,7 +28523,7 @@
                   "title": "Heroic: Dark Heart of Pandaria"
                 }
               ],
-              "name": "Dark Heart of Pandaria"
+              "name": "darkHeartOfPandaria"
             },
             {
               "id": "368ed148",
@@ -28553,7 +28553,7 @@
                   "title": "Heroic: Blood in the Snow"
                 }
               ],
-              "name": "Blood in the Snow"
+              "name": "bloodInTheSnow"
             },
             {
               "id": "3d084c5c",
@@ -28577,7 +28577,7 @@
                   "title": "The Few, the Proud, the Gob Squad"
                 }
               ],
-              "name": "Secrets of Ragefire"
+              "name": "secretsOfRagefire"
             },
             {
               "id": "8b8c1b1a",
@@ -28617,13 +28617,13 @@
                   "title": "Keep those Bombs Away! (From Me)"
                 }
               ],
-              "name": "Battle on the High Seas"
+              "name": "battleOnTheHighSeas"
             }
           ]
         },
         {
           "id": "454acc32",
-          "name": "Tol Barad",
+          "name": "tolBarad",
           "subcats": [
             {
               "id": "6f336bf9",
@@ -28725,7 +28725,7 @@
         },
         {
           "id": "41f3de84",
-          "name": "Argent Tournament",
+          "name": "argentTournament",
           "subcats": [
             {
               "id": "01f03567",
@@ -28815,7 +28815,7 @@
                   "title": "Champion of the Horde"
                 }
               ],
-              "name": "Champion"
+              "name": "champion"
             },
             {
               "id": "5d16182b",
@@ -28919,7 +28919,7 @@
                   "title": "Exalted Argent Champion of the Horde"
                 }
               ],
-              "name": "Exalted Champion"
+              "name": "exaltedChampion"
             },
             {
               "id": "c5fe5aa7",
@@ -28981,19 +28981,19 @@
                   "title": "A Silver Confidant"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             }
           ]
         }
       ],
       "id": "df65df58",
-      "name": "Expansion Features"
+      "name": "expansions"
     },
     {
       "cats": [
         {
           "id": "e19a8f82",
-          "name": "Feats of Strength",
+          "name": "feats",
           "subcats": [
             {
               "id": "886ea12c",
@@ -29611,7 +29611,7 @@
                   "title": "Realm First! Shadowlands Keystone Master"
                 }
               ],
-              "name": "Realm First!"
+              "name": "realmFirst"
             },
             {
               "id": "60436880",
@@ -29671,13 +29671,13 @@
                   "title": "Back from the Beyond"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             }
           ]
         },
         {
           "id": "29192e88",
-          "name": "Mounts",
+          "name": "mounts",
           "subcats": [
             {
               "id": "e491c5ab",
@@ -30057,7 +30057,7 @@
                   "title": "Scarab Lord"
                 }
               ],
-              "name": "Events"
+              "name": "questEvents"
             },
             {
               "id": "1c5bc3e9",
@@ -30075,13 +30075,13 @@
                   "title": "Onyx Panther"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             }
           ]
         },
         {
           "id": "ef7a774b",
-          "name": "Dungeons",
+          "name": "dungeonsInstance",
           "subcats": [
             {
               "id": "3766fdb3",
@@ -30147,7 +30147,7 @@
                   "title": "Mistwalker"
                 }
               ],
-              "name": "Realm First! Pandaria"
+              "name": "challengeMasterPandaria"
             },
             {
               "id": "be5a4ab6",
@@ -30201,7 +30201,7 @@
                   "title": "Challenge Master: Upper Blackrock Spire"
                 }
               ],
-              "name": "Challenge Master: Draenor"
+              "name": "challengeMasterDraenor"
             },
             {
               "id": "91952688",
@@ -30255,7 +30255,7 @@
                   "title": "Battle for Azeroth Keystone Master: Season Four"
                 }
               ],
-              "name": "Mythic Keystone: Battle for Azeroth"
+              "name": "mythicKeystoneBattleForAzeroth"
             },
             {
               "id": "67665cd7",
@@ -30435,7 +30435,7 @@
                   "title": "Shrouded Hero: Shadowlands Season 4"
                 }
               ],
-              "name": "Mythic Keystone: Shadowlands"
+              "name": "mythicKeystoneShadowlands"
             },
             {
               "id": "786c469d",
@@ -30447,13 +30447,13 @@
                   "title": "Hertz Locker"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             }
           ]
         },
         {
           "id": "39f2ab7d",
-          "name": "Raids",
+          "name": "raids",
           "subcats": [
             {
               "id": "7c0b027e",
@@ -30465,7 +30465,7 @@
                   "title": "The Chosen"
                 }
               ],
-              "name": "Trial of Valor"
+              "name": "trialOfValor"
             },
             {
               "id": "a5d3524e",
@@ -30798,7 +30798,7 @@
                   "title": "Cutting Edge: The Jailer"
                 }
               ],
-              "name": "Lost Content"
+              "name": "lostContent"
             },
             {
               "id": "0e7fd73d",
@@ -30810,7 +30810,7 @@
                   "title": "I'll Hold These For You Until You Get Out"
                 }
               ],
-              "name": "Timewalking"
+              "name": "timewalking"
             },
             {
               "id": "27a3d25a",
@@ -30876,7 +30876,7 @@
                   "title": "Rae'shalare, Death's Whisper"
                 }
               ],
-              "name": "Legendary"
+              "name": "legendary"
             },
             {
               "id": "85952479",
@@ -30888,7 +30888,7 @@
                   "title": "Time is a Flat Circle"
                 }
               ],
-              "name": "Events"
+              "name": "questEvents"
             },
             {
               "id": "ac37b26f",
@@ -30900,13 +30900,13 @@
                   "title": "Drop Dead, Gorgeous"
                 }
               ],
-              "name": "Appearances"
+              "name": "appearances"
             }
           ]
         },
         {
           "id": "e317f659",
-          "name": "Player vs. Player",
+          "name": "pvp",
           "subcats": [
             {
               "id": "94d3aa7a",
@@ -31032,7 +31032,7 @@
                   "title": "Fierce Combatant"
                 }
               ],
-              "name": "3v3 Combatant"
+              "name": "3v3Combatant"
             },
             {
               "id": "7a486d56",
@@ -31080,7 +31080,7 @@
                   "title": "Demonic Elite"
                 }
               ],
-              "name": "Ratings"
+              "name": "ratings"
             },
             {
               "id": "e0b1647d",
@@ -31908,7 +31908,7 @@
                   "title": "Elite: Shadowlands Season 4"
                 }
               ],
-              "name": "Rated Arena"
+              "name": "ratedArena"
             },
             {
               "id": "b1e0e831",
@@ -32684,7 +32684,7 @@
                   "title": "Hero of the Alliance: Eternal"
                 }
               ],
-              "name": "Rated Battleground"
+              "name": "ratedBattleground"
             },
             {
               "id": "5da56702",
@@ -32708,7 +32708,7 @@
                   "title": "Tournament Glory 2013"
                 }
               ],
-              "name": "Tournaments"
+              "name": "tournaments"
             },
             {
               "id": "bf90653f",
@@ -32734,7 +32734,7 @@
                   "title": "Servant of N'Zoth"
                 }
               ],
-              "name": "War Mode"
+              "name": "warMode"
             },
             {
               "id": "4fa9b10b",
@@ -32746,13 +32746,13 @@
                   "title": "The Last of Us"
                 }
               ],
-              "name": "Highmaul Coliseum"
+              "name": "highmaulColiseum"
             }
           ]
         },
         {
           "id": "963c010c",
-          "name": "Reputation",
+          "name": "reputation",
           "subcats": [
             {
               "id": "90f3d510",
@@ -32788,13 +32788,13 @@
                   "title": "Agent of the Shen'dralar"
                 }
               ],
-              "name": "Removed Reputations"
+              "name": "removedReputations"
             }
           ]
         },
         {
           "id": "e51d1fb6",
-          "name": "Events",
+          "name": "questEvents",
           "subcats": [
             {
               "id": "b24f217a",
@@ -32890,7 +32890,7 @@
                   "title": "WoW's 18th Anniversary"
                 }
               ],
-              "name": "Anniversary"
+              "name": "anniversaries"
             },
             {
               "id": "28c71a6c",
@@ -32922,7 +32922,7 @@
                   "title": "Veteran of the Shifting Sands"
                 }
               ],
-              "name": "Ahn'Qiraj"
+              "name": "ahnQiraj"
             },
             {
               "id": "1fbc8f39",
@@ -33041,7 +33041,7 @@
                   "title": "Death Rising"
                 }
               ],
-              "name": "Events"
+              "name": "questEvents"
             },
             {
               "id": "3f9339db",
@@ -33167,7 +33167,7 @@
                   "title": "The More You Know*"
                 }
               ],
-              "name": "Holidays"
+              "name": "holidays"
             },
             {
               "id": "0dd5a834",
@@ -33179,7 +33179,7 @@
                   "title": "Tower Overwhelming"
                 }
               ],
-              "name": "Legion Mage Tower"
+              "name": "legionMageTower"
             },
             {
               "id": "b3ae715a",
@@ -33191,13 +33191,13 @@
                   "title": "Did Someone Say...?"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             }
           ]
         },
         {
           "id": "8ee542df",
-          "name": "Promotions",
+          "name": "promotions",
           "subcats": [
             {
               "id": "d8509e3b",
@@ -33233,7 +33233,7 @@
                   "title": "Sarge's Tale"
                 }
               ],
-              "name": "Mounts"
+              "name": "mounts"
             },
             {
               "id": "3dc617cf",
@@ -33251,7 +33251,7 @@
                   "title": "Salute to StarCraft"
                 }
               ],
-              "name": "Pets"
+              "name": "pets"
             },
             {
               "id": "7ac9c6af",
@@ -33391,7 +33391,7 @@
                   "title": "Heroic Edition: Ensorcelled Everwyrm"
                 }
               ],
-              "name": "Collector's Edition"
+              "name": "collectorsEdition"
             },
             {
               "id": "68a7ed94",
@@ -33487,7 +33487,7 @@
                   "title": "Netherwhelp Online"
                 }
               ],
-              "name": "Blizzcon"
+              "name": "blizzcon"
             },
             {
               "id": "15cf908a",
@@ -33511,7 +33511,7 @@
                   "title": "Patron of War"
                 }
               ],
-              "name": "Events"
+              "name": "questEvents"
             },
             {
               "id": "24cfe521",
@@ -33529,19 +33529,19 @@
                   "title": "Fearless Spectator"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             }
           ]
         }
       ],
       "id": "7c01a7e8",
-      "name": "Feats of Strength"
+      "name": "feats"
     },
     {
       "cats": [
         {
           "id": "14abc602",
-          "name": "Legacy",
+          "name": "legacy",
           "subcats": [
             {
               "id": "b1308d7b",
@@ -33587,7 +33587,7 @@
                   "title": "The Balance of Light and Shadow"
                 }
               ],
-              "name": "Quests"
+              "name": "quests"
             },
             {
               "id": "1bfabfb4",
@@ -33600,7 +33600,7 @@
                   "title": "Hero of the Zandalar Tribe"
                 }
               ],
-              "name": "Raids"
+              "name": "raids"
             },
             {
               "id": "2bc347a7",
@@ -33896,7 +33896,7 @@
                   "title": "I Am Thrall's Complete Lack Of Surprise (Season 3)"
                 }
               ],
-              "name": "Brawler's Guild"
+              "name": "brawlersGuild"
             },
             {
               "id": "b114f4fd",
@@ -34035,7 +34035,7 @@
                   "title": "You're Doing it Wrong (Level 90)"
                 }
               ],
-              "name": "Proving Grounds"
+              "name": "provingGrounds"
             },
             {
               "id": "7f3105e2",
@@ -34048,7 +34048,7 @@
                   "title": "In the Hall of the Thunder King"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             },
             {
               "id": "5864bf69",
@@ -34066,13 +34066,13 @@
                   "title": "Swift Flight Form"
                 }
               ],
-              "name": "Mounts"
+              "name": "mounts"
             }
           ]
         },
         {
           "id": "2ed66521",
-          "name": "Character",
+          "name": "character",
           "subcats": [
             {
               "id": "f882e020",
@@ -34132,7 +34132,7 @@
                   "title": "Level 120 (Legacy)"
                 }
               ],
-              "name": "Level"
+              "name": "level"
             },
             {
               "id": "cc9c686c",
@@ -34144,7 +34144,7 @@
                   "title": "The Right Stuff"
                 }
               ],
-              "name": "Mounts"
+              "name": "mounts"
             },
             {
               "id": "f4868a67",
@@ -34234,7 +34234,7 @@
                   "title": "Epic (Battle)"
                 }
               ],
-              "name": "Items"
+              "name": "itemLevel"
             },
             {
               "id": "d6606da4",
@@ -34259,13 +34259,13 @@
                   "title": "Dual Talent Specialization"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             }
           ]
         },
         {
           "id": "91c9e316",
-          "name": "Quests",
+          "name": "quests",
           "subcats": [
             {
               "id": "a2338d73",
@@ -34347,7 +34347,7 @@
                   "title": "Darkspear Revolutionary"
                 }
               ],
-              "name": "Pandaria Legendary Cloak"
+              "name": "pandariaLegendaryCloak"
             },
             {
               "id": "9d6927b1",
@@ -34385,13 +34385,13 @@
                   "title": "Chapter IV: Darkness Incarnate"
                 }
               ],
-              "name": "Khadgar's Legendary Ring"
+              "name": "khadgarsLegendaryRing"
             }
           ]
         },
         {
           "id": "64f84a74",
-          "name": "Player vs. Player",
+          "name": "pvp",
           "subcats": [
             {
               "id": "0e9ee836",
@@ -34432,7 +34432,7 @@
                   "title": "Storming Stormwind"
                 }
               ],
-              "name": "Cities"
+              "name": "cities"
             },
             {
               "id": "d716ae7a",
@@ -34588,7 +34588,7 @@
                   "title": "Prestige Quartermaster"
                 }
               ],
-              "name": "Prestige"
+              "name": "prestige"
             },
             {
               "id": "d10af056",
@@ -34636,7 +34636,7 @@
                   "title": "Crest of Devastation"
                 }
               ],
-              "name": "Crest"
+              "name": "crest"
             },
             {
               "id": "1e9dfec9",
@@ -34656,7 +34656,7 @@
                   "title": "Freedom of the Horde"
                 }
               ],
-              "name": "Medaillon"
+              "name": "medaillon"
             },
             {
               "id": "82182f17",
@@ -34758,7 +34758,7 @@
                   "title": "Demonic Combatant"
                 }
               ],
-              "name": "Arena"
+              "name": "arena"
             },
             {
               "id": "3551ecfa",
@@ -34856,7 +34856,7 @@
                   "title": "Warmongering Conquest"
                 }
               ],
-              "name": "Conquest"
+              "name": "conquest"
             },
             {
               "id": "ac84e981",
@@ -35086,7 +35086,7 @@
                   "title": "High Warlord"
                 }
               ],
-              "name": "Classic PvP Ranks"
+              "name": "classicPvpRanks"
             },
             {
               "id": "5d1887da",
@@ -35106,7 +35106,7 @@
                   "title": "Hero of Warspear"
                 }
               ],
-              "name": "Ashran"
+              "name": "ashran"
             },
             {
               "id": "af969e3c",
@@ -35218,7 +35218,7 @@
                   "title": "Master of Strand of the Ancients"
                 }
               ],
-              "name": "Strand of the Ancients"
+              "name": "strandOfTheAncients"
             },
             {
               "id": "f0279bb5",
@@ -35266,7 +35266,7 @@
                   "title": "Weighed Down"
                 }
               ],
-              "name": "Old Deepwind Gorge"
+              "name": "oldDeepwindGorge"
             },
             {
               "id": "7062ecea",
@@ -35286,13 +35286,13 @@
                   "title": "The Prestige"
                 }
               ],
-              "name": "Artifact"
+              "name": "artifact"
             }
           ]
         },
         {
           "id": "190d2540",
-          "name": "Dungeons",
+          "name": "dungeons",
           "subcats": [
             {
               "id": "52ee06f9",
@@ -35330,7 +35330,7 @@
                   "title": "Legion Keymaster"
                 }
               ],
-              "name": "Legion"
+              "name": "legion"
             },
             {
               "id": "b5ea1e2e",
@@ -35616,7 +35616,7 @@
                   "title": "Challenge Conqueror: Gold"
                 }
               ],
-              "name": "Challenge Mode: Pandaria"
+              "name": "challengeModePandaria"
             },
             {
               "id": "762e2d9e",
@@ -35838,13 +35838,13 @@
                   "title": "Challenge Warlord: Gold"
                 }
               ],
-              "name": "Challenge Mode: Draenor"
+              "name": "challengeModeDraenor"
             }
           ]
         },
         {
           "id": "c4dcd4db",
-          "name": "Raids",
+          "name": "raids",
           "subcats": [
             {
               "id": "538bd62b",
@@ -35975,7 +35975,7 @@
                   "title": "Ordos"
                 }
               ],
-              "name": "Raids"
+              "name": "raids"
             },
             {
               "id": "47467c5a",
@@ -36395,7 +36395,7 @@
                   "title": "Glory of the Ulduar Raider (10 player)"
                 }
               ],
-              "name": "Ulduar: 10 Player"
+              "name": "ulduar10Player"
             },
             {
               "id": "3b6a6eb4",
@@ -36815,13 +36815,13 @@
                   "title": "Glory of the Ulduar Raider (25 player)"
                 }
               ],
-              "name": "Ulduar: 25 Player"
+              "name": "ulduar25Player"
             }
           ]
         },
         {
           "id": "93237c95",
-          "name": "Professions",
+          "name": "professions",
           "subcats": [
             {
               "id": "97a7ec71",
@@ -36857,7 +36857,7 @@
                   "title": "Heroic Skills to Pay the Bills"
                 }
               ],
-              "name": "Secondary Skills"
+              "name": "secondarySkills"
             },
             {
               "id": "d02b1f1d",
@@ -36947,7 +36947,7 @@
                   "title": "Field Medic"
                 }
               ],
-              "name": "First Aid"
+              "name": "firstAid"
             },
             {
               "id": "078b6f64",
@@ -36965,13 +36965,13 @@
                   "title": "Mass Obliteration"
                 }
               ],
-              "name": "Obliterum"
+              "name": "obliterum"
             }
           ]
         },
         {
           "id": "79a8661d",
-          "name": "Currencies",
+          "name": "currencies",
           "subcats": [
             {
               "id": "414c694a",
@@ -37091,7 +37091,7 @@
         },
         {
           "id": "0fe9b402",
-          "name": "World Events",
+          "name": "events",
           "subcats": [
             {
               "id": "4a38a714",
@@ -37103,7 +37103,7 @@
                   "title": "Down With The Dark Iron"
                 }
               ],
-              "name": "Brewfest"
+              "name": "brewfest"
             },
             {
               "id": "eea32618",
@@ -37189,13 +37189,13 @@
                   "title": "Rumble Club"
                 }
               ],
-              "name": "Brawling Guild"
+              "name": "brawlersGuild"
             }
           ]
         },
         {
           "id": "6bd4e1f5",
-          "name": "Expansion Features",
+          "name": "expansions",
           "subcats": [
             {
               "id": "0e5c1839",
@@ -37243,7 +37243,7 @@
                   "title": "Fighting with Style: Upgraded"
                 }
               ],
-              "name": "Artifact"
+              "name": "artifact"
             },
             {
               "id": "e7438c82",
@@ -37273,13 +37273,13 @@
                   "title": "Crucible's Promise"
                 }
               ],
-              "name": "Other"
+              "name": "other"
             }
           ]
         }
       ],
       "id": "691319bc",
-      "name": "Legacy"
+      "name": "legacy"
     }
   ]
 }

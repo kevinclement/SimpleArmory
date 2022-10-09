@@ -1,9 +1,10 @@
 <script>
     import { onMount } from 'svelte'
+    import { t, locale } from 'svelte-i18n'
     import { region, realm, character } from '$stores/user'
     import { getMounts } from '$api/mounts'
     import { percent, percentFormat, getTitle, getImageSrc } from '$util/utils'
-    import { navigate } from '$util/url'
+    import { navigate, getWowHeadUrl } from '$util/url'
     import settings from '$util/settings'
     import ProgressBar from '$components/ProgressBar.svelte';
     import MountsPlanner from '$components/MountsPlanner.svelte';
@@ -11,6 +12,8 @@
     import ErrorInline from '$components/ErrorInline.svelte';
 
     export let planner
+
+    const wowheadBaseUrl = getWowHeadUrl($locale)
 
     let promise
     let mounts
@@ -42,15 +45,16 @@
 </script>
 
 <svelte:head>
-	<title>{getTitle($character, 'Mounts')}</title>
+	<title>{getTitle($character, $t('mounts'))}</title>
 </svelte:head>
 
 <div class="container">
 <div class="page-header">
     <h2>
-        Mounts
+        {$t('mounts')}
         <small class="pbSmall">
-            <input type="checkbox" id="planner" bind:checked={planner} on:click={togglePlanner}><label for="planner">Show Planner</label>
+            <input type="checkbox" id="planner" bind:checked={planner} on:click={togglePlanner}>
+            <label for="planner">{$t('showPlanner')}</label>
         </small>
         <ProgressBar 
             rightSide={true}
@@ -72,17 +76,17 @@
     <div style="display: {planner ? 'none' : 'block' }">
     {#each mounts.categories as category}
  
-        {#if category.name !== "Mounts" }
-        <h3 class="categoryHeader">{ category.name }</h3>
+        {#if category.name !== "mounts" }
+        <h3 class="categoryHeader">{ $t(category.name) }</h3>
         {/if}
         
         {#each category.subCategories as subCategory}
             <div class="sect">
-                <div class="subCatHeader">{ subCategory.name }</div>
+                <div class="subCatHeader">{ $t(subCategory.name) }</div>
                 {#each subCategory.items as item}
                     <a 
                       target="{settings.anchorTarget}"
-                      href="//{settings.WowHeadUrl}/{item.link}"
+                      href="//{wowheadBaseUrl}/{item.link}"
                       class:borderOn={!item.collected}
                       class:borderOff={item.collected}
                       class="thumbnail">

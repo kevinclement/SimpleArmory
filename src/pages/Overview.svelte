@@ -5,27 +5,28 @@
     import { percent, percentFormat, getTitle } from '$util/utils'
     import ProgressBar from '$components/ProgressBar.svelte';
     import { getUrl } from '$util/url'
+    import { t } from 'svelte-i18n'
 
     let promise;
     let overallWidth = 0;
     let overallPercentage = "";
 
     // NOTE: crazy bug where I need have have url set to non null for animation transition to work
-    let cats = {
-        'Character':          { w:0, txt:'', url:'INIT', seg:'character', }, 
-        'Quests':             { w:0, txt:'', url:'INIT', seg:'quests' }, 
-        'Exploration':        { w:0, txt:'', url:'INIT', seg:'exploration' }, 
-        'Player vs. Player':  { w:0, txt:'', url:'INIT', seg:'pvp' }, 
-        'Dungeons & Raids':   { w:0, txt:'', url:'INIT', seg:'dungeons' }, 
-        'Professions':        { w:0, txt:'', url:'INIT', seg:'professions' }, 
-        'Reputation':         { w:0, txt:'', url:'INIT', seg:'reputation' }, 
-        'World Events':       { w:0, txt:'', url:'INIT', seg:'events' }, 
-        'Pet Battles':        { w:0, txt:'', url:'INIT', seg:'pets' }, 
-        'Collections':        { w:0, txt:'', url:'INIT', seg:'collections' }, 
-        'Expansion Features': { w:0, txt:'', url:'INIT', seg:'expansions' }, 
-        'Legacy':             { w:0, txt:'', url:'INIT', seg:'legacy' }, 
-        'Feats of Strength':  { w:0, txt:'', url:'INIT', seg:'feats' }, 
-    };
+    let cats = [
+        { w:0, txt:'', url:'INIT', seg:'character', }, 
+        { w:0, txt:'', url:'INIT', seg:'quests' }, 
+        { w:0, txt:'', url:'INIT', seg:'exploration' }, 
+        { w:0, txt:'', url:'INIT', seg:'pvp' }, 
+        { w:0, txt:'', url:'INIT', seg:'dungeons' }, 
+        { w:0, txt:'', url:'INIT', seg:'professions' }, 
+        { w:0, txt:'', url:'INIT', seg:'reputation' }, 
+        { w:0, txt:'', url:'INIT', seg:'events' }, 
+        { w:0, txt:'', url:'INIT', seg:'pets' }, 
+        { w:0, txt:'', url:'INIT', seg:'collections' }, 
+        { w:0, txt:'', url:'INIT', seg:'expansions' }, 
+        { w:0, txt:'', url:'INIT', seg:'legacy' }, 
+        { w:0, txt:'', url:'INIT', seg:'feats' }, 
+    ];
     
     $: {
         promise = getAchievements($region, $realm, $character).then(_ => {           
@@ -39,43 +40,46 @@
 
     function init(achievements){
         if (!achievements) return;
-        
+
         overallWidth = percent(achievements.completed, achievements.possible);
         overallPercentage = percentFormat(achievements.completed, achievements.possible);
 
-        Object.keys(cats).forEach((cat) => {
-            if (cats[cat].seg === 'legacy') {
-                cats[cat].w = 100;
-                cats[cat].txt = achievements[cat].legacyTotal;
-            } else if (cats[cat].seg === 'feats') {
-                cats[cat].w = 100;
-                cats[cat].txt = achievements[cat].foSTotal;
+        for (const cat of cats) {
+            if (cat.seg === 'legacy') {
+                cat.w = 100;
+                cat.txt = achievements[cat.seg].legacyTotal;
+            } else if (cat.seg === 'feats') {
+                cat.w = 100;
+                cat.txt = achievements[cat.seg].foSTotal;
             } else {
-                cats[cat].w = percent(achievements[cat].completed, achievements[cat].possible)
-                cats[cat].txt = percentFormat(achievements[cat].completed, achievements[cat].possible)
+                cat.w = percent(achievements[cat.seg].completed, achievements[cat.seg].possible);
+                cat.txt = percentFormat(achievements[cat.seg].completed, achievements[cat.seg].possible);
             }
-            
-            cats[cat].url = getUrl($region, $realm, $character, 'achievements/' + cats[cat].seg)
-        })
+
+            cat.url = getUrl($region, $realm, $character, 'achievements/' + cat.seg)
+        }
+
+        // Trigger re-render with initialized values
+        cats = cats;
     }
 </script>
 
 <svelte:head>
-	<title>{getTitle($character, 'Overview')}</title>
+	<title>{getTitle($character, $t('overview'))}</title>
 </svelte:head>
 
 <div class="container">
     <!-- Progress Overview -->
     <div class="page-header">
-      <h2>Progress Overview</h2>
+      <h2>{$t('progressOverview')}</h2>
     </div>
-    <strong class="desc">Total Complete</strong>
+    <strong class="desc">{$t('totalComplete')}</strong>
     <ProgressBar width={overallWidth} percentage={overallPercentage} styleWidth="auto"/>
   
-    {#each Object.keys(cats) as cat}
+    {#each cats as cat}
         <div class="achGrid">
-            <strong class="desc">{cat}</strong>
-            <ProgressBar name="{cat}" width={cats[cat].w} percentage={cats[cat].txt} url={cats[cat].url} styleWidth="auto" />
+            <strong class="desc">{$t(cat.seg)}</strong>
+            <ProgressBar name="{$t(cat.seg)}" width={cat.w} percentage={cat.txt} url={cat.url} styleWidth="auto" />
         </div>
     {/each}
     

@@ -1,5 +1,6 @@
 <script>
     import { onMount } from 'svelte'
+    import { t } from 'svelte-i18n'
     import { region, realm, character } from '$stores/user'
     import { getReputations } from '$api/reputations'
     import { getTitle } from '$util/utils'
@@ -19,13 +20,13 @@
 </script>
 
 <svelte:head>
-	<title>{getTitle($character, 'Reputation')}</title>
+	<title>{getTitle($character, $t('reputation'))}</title>
 </svelte:head>
 
 
 <div class="container rep">
     <div class="page-header">
-      <h2>Reputation</h2>
+      <h2>{$t('reputation')}</h2>
     </div>
 
 {#await promise}
@@ -33,7 +34,7 @@
 {:then value}
 
     {#each categories as category}
-        <h3>{ category.name }</h3>
+        <h3>{ $t(category.name) }</h3>
         <ul>
             {#each category.factions as faction}
                 <li>

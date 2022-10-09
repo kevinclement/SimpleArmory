@@ -4,39 +4,43 @@
 	import { getProfileMedia } from '$api/profile'
 	import { getUrl } from '$util/url'
 	import { onMount, onDestroy } from 'svelte'
+	import { t, locale, locales } from 'svelte-i18n'
 	
 	let menuCollapsed = true
 
 	let menuItems = {
 		'Achievements': {
 			items: [ 
-				{ txt: 'Character',          link: 'character'   },
-				{ txt: 'Quests',             link: 'quests'      },
-				{ txt: 'Exploration',        link: 'exploration' },
-				{ txt: 'Player vs. Player',  link: 'pvp'         },
-				{ txt: 'Dungeons & Raids',   link: 'dungeons'    },
-				{ txt: 'Professions',        link: 'professions' },
-				{ txt: 'Reputation',         link: 'reputation'  },
-				{ txt: 'World Events',       link: 'events'      },
-				{ txt: 'Pet Battles',        link: 'pets'        },
-				{ txt: 'Collections',        link: 'collections' },
-				{ txt: 'Expansion Features', link: 'expansions'  },
-				{ txt: 'Legacy',             link: 'legacy'      },
-				{ txt: 'Feats of Strength',  link: 'feats'       },
+				'character',
+				'quests',
+				'exploration',
+				'pvp',
+				'dungeons',
+				'professions',
+				'reputation',
+				'events',
+				'pets',
+				'collections',
+				'expansions',
+				'legacy',
+				'feats',
 			],
 			isOpen: false
 		},
 		'Collectable': {
 			items: [ 
-				{ txt: 'Mounts',      link: 'mounts'     },
-				{ txt: 'Companions',  link: 'companions' },
-				{ txt: 'Battle Pets', link: 'battlepets' },
-				{ txt: 'Toys',        link: 'toys'       },
-				{ txt: 'Titles',	  link: 'titles'     }
+				'mounts',
+				'companions',
+				'battlepets',
+				'toys',
+				'titles'
 			],
 			isOpen: false,
 		},
 		'Profile': {
+			isOpen: false
+		},
+		'Language': {
 			isOpen: false
 		}
 	}
@@ -78,14 +82,14 @@
 		}
 	}
 
-	const toggleDropDown = (e,menuItem) => {
+	const toggleDropDown = (e,menuItem,close=true) => {
 		// prevent anchor navigation and further propegatoin
 		e.preventDefault();
 		e.stopPropagation()
 
 		let alreadyOpened = menuItem.isOpen;
 
-		closeMenus();
+		if (close) closeMenus();
 
 		// toggle the one we want
 		menuItem.isOpen = !alreadyOpened;
@@ -111,12 +115,23 @@
 		localStorage.setItem('darkTheme', $preferences.theme !== 'light');
 	};
 
-    const NavbarClicked = (e) => {
+  const NavbarClicked = (e) => {
 		// if an anchor was clicked, collapse the overflow menu
 		if (e.target.tagName === "A") {
 			menuCollapsed = true;
 		}
 	}
+
+	const setLanguage = (e, loc) => {
+    console.log(`Changing locale to ${loc}...`);
+		e.preventDefault()
+		locale.set(loc)
+
+    localStorage.setItem('locale', loc);
+
+    closeMenus();
+	};
+
 </script>
 
 <nav class="navbar navbar-default navbar-fixed-top" on:click={NavbarClicked}>
@@ -136,32 +151,32 @@
 		<div class="navbar-collapse" class:collapse="{menuCollapsed}">
 			{#if isLoggedIn }
 			<ul class="nav navbar-nav">
-				<li class:active="{$page === undefined}"><a href="{getUrl($region, $realm, $character, '')}">Overview</a></li>
+				<li class:active="{$page === undefined}"><a href="{getUrl($region, $realm, $character, '')}">{$t('overview')}</a></li>
 				
 				<li class:active="{$page === 'achievements'}" class="dropdown" class:open={menuItems.Achievements.isOpen} >
-					<a id="achDrop" href="#/" on:click="{(e) => toggleDropDown(e,menuItems.Achievements)}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Achievements
+					<a id="achDrop" href="#/" on:click="{(e) => toggleDropDown(e,menuItems.Achievements)}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{$t('achievements')}
 						<b class="caret"></b>
 					</a>
 					<ul class="dropdown-menu" aria-labelledby="achDrop">
 						{#each menuItems.Achievements.items as item} 
-							<li class:active="{$page === 'achievements' && $category === item.link}"><a href="{getUrl($region, $realm, $character, 'achievements/' + item.link)}">{item.txt}</a></li>	
+							<li class:active="{$page === 'achievements' && $category === item}"><a href="{getUrl($region, $realm, $character, 'achievements/' + item)}">{$t(item)}</a></li>	
 						{/each}
 					</ul>
 				</li>
 
 				<li class:active="{$page === 'collectable'}" class="dropdown" class:open={menuItems.Collectable.isOpen}>
-					<a id="collectDrop" href="#/" on:click="{(e) => toggleDropDown(e,menuItems.Collectable)}"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Collectable
+					<a id="collectDrop" href="#/" on:click="{(e) => toggleDropDown(e,menuItems.Collectable)}"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{$t('collectable')}
 						<b class="caret"></b>
 					</a>
 					<ul class="dropdown-menu" aria-labelledby="collectDrop">
 					  {#each menuItems.Collectable.items as item} 
-					    <li class:active="{$page === 'collectable' && $category === item.link}"><a href="{getUrl($region, $realm, $character, 'collectable/' + item.link)}">{item.txt}</a></li>	
+					    <li class:active="{$page === 'collectable' && $category === item}"><a href="{getUrl($region, $realm, $character, 'collectable/' + item)}">{$t(item)}</a></li>	
 					  {/each}
 					</ul>
 				</li>
 
-				<li class:active="{$page === 'calendar'}"><a href="{getUrl($region, $realm, $character, 'calendar')}">Calendar</a></li>
-				<li class:active="{$page === 'reputation'}"><a href="{getUrl($region, $realm, $character, 'reputation')}">Reputation</a></li>
+				<li class:active="{$page === 'calendar'}"><a href="{getUrl($region, $realm, $character, 'calendar')}">{$t('calendar')}</a></li>
+				<li class:active="{$page === 'reputation'}"><a href="{getUrl($region, $realm, $character, 'reputation')}">{$t('reputation')}</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown" class:open={menuItems.Profile.isOpen}>
@@ -173,20 +188,69 @@
 					</a>
 
 					<ul class="dropdown-menu" aria-labelledby="profileDrop">
-					  <li class="signin-label">Signed in as</li>
+					  <li class="signin-label">{$t('signedInAs')}</li>
 					  <li><strong class="signin-name">{$character} @ {$realm}</strong></li>
 					  <li role="separator" class="divider"></li> 
-					  <li><a href="/#/">Signout</a></li>
+					  <li><a href="/#/">{$t('signout')}</a></li>
 					  <li role="separator" class="divider"></li>
-					  <li><a href="{armoryUrl}" target="_blank">Armory profile</a></li>
-					  <li><a href="#/" on:click={toggleTheme} >Use {$preferences.theme === 'light' ? 'Dark' : 'Light'} Theme</a></li>
+					  <li><a href="{armoryUrl}" target="_blank">{$t('armoryProfile')}</a></li>
+					  <li><a href="#/" on:click={toggleTheme} >{$t('useTheme', { values: { theme: $preferences.theme === 'light' ? $t('dark') : $t('light') } })}</a></li>
+            <li class="dropdown-submenu" class:open={menuItems.Language.isOpen}>
+              <a tabindex="-1" href="#/" on:click="{(e) => toggleDropDown(e,menuItems.Language,false)}" class="dropdown-submenu-toggle">{$t('language')}<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                  {#each $locales as loc}
+                    <li class:active={$locale === loc}>
+                      <a href="#/" on:click={(e) => setLanguage(e, loc)}>{loc.toUpperCase()}</a>
+                    </li>
+                  {/each}
+              </ul>
+          </li>
 					  <li role="separator" class="divider"></li>
-					  <li><a href="https://github.com/kevinclement/SimpleArmory/issues" target="_blank">Report Bug</a></li>
+					  <li><a href="https://github.com/kevinclement/SimpleArmory/issues" target="_blank">{$t('reportBug')}</a></li>
 					</ul>
 				</li>
 			</ul>
 			{/if}		
 		</div>
 	</div>
-
 </nav>
+
+<style>
+  /* Language dropdown sub-menu positionning */
+  .dropdown-submenu {
+    position: relative;
+  }
+
+  .dropdown-submenu .caret {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+
+  .dropdown-submenu > .dropdown-menu {
+    top:0;
+    left:100%;
+    margin-top:-6px;
+    margin-left:-1px;
+    max-width: 3rem;
+  }
+  
+  .dropdown-submenu.open > .dropdown-menu, .dropdown-submenu.open > .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-submenu .dropdown-menu {
+    margin-bottom: 8px;
+  }
+
+  .navbar .navbar-nav .open .dropdown-submenu .dropdown-menu > li > a {
+    padding-left: 30px;
+  }
+  @media screen and (min-width:992px) {
+      .dropdown-submenu .dropdown-menu{
+        margin-bottom: 2px;
+      }
+      .navbar .navbar-nav .open .dropdown-submenu .dropdown-menu > li > a {
+        padding-left: 25px;
+      }
+  }
+</style>

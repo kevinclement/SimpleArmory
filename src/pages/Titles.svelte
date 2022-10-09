@@ -1,13 +1,16 @@
 <script>
     import { onMount } from 'svelte'
+    import { t, locale } from 'svelte-i18n';
     import { region, realm, character } from '$stores/user'
     import { getTitles } from '$api/titles'
     import { percent, percentFormat, getTitle, getImageSrc } from '$util/utils'
-    import { navigate } from '$util/url'
+    import { getWowHeadUrl } from '$util/url'
     import settings from '$util/settings'
     import ProgressBar from '$components/ProgressBar.svelte';
     import Loading from '$components/Loading.svelte';
     import ErrorInline from '$components/ErrorInline.svelte';
+
+    const wowheadBaseUrl = getWowHeadUrl($locale)
 
     let promise
     let titles
@@ -29,13 +32,13 @@
 </script>
 
 <svelte:head>
-	<title>{getTitle($character, 'Titles')}</title>
+	<title>{getTitle($character, $t('titles'))}</title>
 </svelte:head>
 
 <div class="container">
 <div class="page-header">
     <h2>
-        Titles
+        {$t('titles')}
         <ProgressBar 
             rightSide={true}
             width={titles ? percent(titles.collected, titles.possible) : 0} 
@@ -51,20 +54,20 @@
     <div>
     {#each titles.categories as category}
  
-        {#if category.name !== "Titles" }
-        <h3 class="categoryHeader">{ category.name }</h3>
+        {#if category.name !== "titles" }
+        <h3 class="categoryHeader">{ $t(category.name) }</h3>
         {/if}
         
         {#each category.subCategories as subCategory}
             <div class="sect">
-                <div class="subCatHeader">{ subCategory.name }</div>
+                <div class="subCatHeader">{ $t(subCategory.name) }</div>
                 {#each subCategory.items as item}
                     <div class="thumbnail" 
                          class:borderOn={!item.collected}
                          class:borderOff={item.collected}>
                         <a 
                         target="{settings.anchorTarget}"
-                        href="//{settings.WowHeadUrl}/{item.type}={item.id}"
+                        href="//{wowheadBaseUrl}/{item.type}={item.id}"
                         >
                             <img height="36" width="36" src="{getImageSrc(item)}" alt>
                         </a>

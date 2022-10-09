@@ -1,16 +1,20 @@
 <script>
     import { onMount } from 'svelte'
+    import { t, locale } from 'svelte-i18n'
     import { region, realm, character, category } from '$stores/user'
     import { getAchievements } from '$api/achievements'
     import { percent, percentFormat, getTitle, getImageSrc } from '$util/utils'
+    import { getWowHeadUrl } from '$util/url'
     import settings from '$util/settings'
     import ProgressBar from '$components/ProgressBar.svelte';
     import Loading from '$components/Loading.svelte';
 
-    $: superCat = prettySuperCategory($category);
+    $: superCat = $category;
 
     // Note: we do this here and not in the promise so we don't have to wait for it to display 100 if FoS
-    $: percWidth = superCat == 'Feats of Strength' || superCat == 'Legacy' ? 100 : percent(completed, possible);
+    $: percWidth = superCat == 'feats' || superCat == 'legacy' ? 100 : percent(completed, possible);
+
+    const wowheadBaseUrl = getWowHeadUrl($locale);
 
     let promise;
     let completed = 0;
@@ -18,6 +22,7 @@
     let percentage = "";
     let achievements;
     let all;
+
     $: {
         promise = getAchievements($region, $realm, $character).then(_ => {           
             // NOTE: don't use superCat here to populate other parts yet
@@ -37,64 +42,16 @@
     onMount(async () => {
         window.ga('send', 'pageview', 'Achievements/' + $category);
     });
-
-    function prettySuperCategory(supercat) {
-        let prettyCatName = supercat;
-
-        switch(supercat) {
-            case 'character':
-                prettyCatName = 'Character';
-                break;
-            case 'quests':
-                prettyCatName = 'Quests';
-                break;
-            case 'exploration':
-                prettyCatName = 'Exploration';
-                break;
-            case 'pvp':
-                prettyCatName = 'Player vs. Player';
-                break;          
-            case 'dungeons':
-                prettyCatName = 'Dungeons & Raids';
-                break;          
-            case 'professions':
-                prettyCatName = 'Professions';
-                break;
-            case 'reputation':
-                prettyCatName = 'Reputation';
-                break;
-            case 'events':
-                prettyCatName = 'World Events';
-                break;
-            case 'pets':
-                prettyCatName = 'Pet Battles';
-                break;
-            case 'collections':
-                prettyCatName = 'Collections';
-                break;
-            case 'expansions':
-                prettyCatName = 'Expansion Features';
-                break;
-            case 'legacy':
-                prettyCatName = 'Legacy';
-                break;                       
-            case 'feats':
-                prettyCatName = 'Feats of Strength';
-                break;                    
-        }
-
-        return prettyCatName;
-    }
 </script>
 
 <svelte:head>
-	<title>{getTitle($character, 'Achievements')}</title>
+	<title>{getTitle($character, $t('achievements'))}</title>
 </svelte:head>
 
 <div class="container">
 <div class="page-header">
     <h2>
-        Achievements <small>{superCat}</small>
+        {$t('achievements')} <small>{$t($category)}</small>
         <ProgressBar rightSide={true} width={percWidth} percentage={percentage}/>
     </h2>
 </div>
@@ -105,15 +62,17 @@
 {#if achievements}
     {#each achievements.categories as category}
         {#if category.name != superCat}
-            <h3 class="categoryHeader">{ category.name }</h3>
+            <h3 class="categoryHeader">{$t(category.name)}</h3>
         {/if}
         {#each category.subcats as subcat}
             <div class="sect">
-                <div class="subCatHeader">{ subcat.name }</div>
+                <div class="subCatHeader">{
+                    subcat.name === '' ? '' : $t(subcat.name)
+                }</div>
                 {#each subcat.achievements as achievement}
                     <a 
                         target="{settings.anchorTarget}"
-                        href="//{settings.WowHeadUrl}/achievement={achievement.id}"
+                        href="//{wowheadBaseUrl}/achievement={achievement.id}"
                         class="thumbnail"
                         class:borderOn={!achievement.completed}
                         class:borderOff={achievement.completed}

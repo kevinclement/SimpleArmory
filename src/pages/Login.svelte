@@ -5,6 +5,7 @@
     import { onMount, onDestroy } from 'svelte'
     import { getTitle } from '$util/utils'
     import Select from '$components/ext/svelte-select/src/Select.svelte';
+    import { t, locale } from 'svelte-i18n';
 
     $: realms = getRealms()
     
@@ -111,21 +112,21 @@
 </script>
 
 <svelte:head>
-	<title>{getTitle('', 'Login')}</title>
+	<title>{getTitle('', $t('login'))}</title>
 </svelte:head>
 
 <div class="modal fade" bind:this={modal} id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document" style="z-index:1050">
     <div class="modal-content">
       <div class="modal-header">
-        <h3 class="modal-title" id="myModalLabel">Enter realm and character</h3>
+        <h3 class="modal-title" id="myModalLabel">{$t('realmAndCharacter')}</h3>
       </div>
       <div class="modal-body">
         <div class="input-group">
-          <label for="mySelect" class="input-group-addon input-group-label">Realm</label>
+          <label for="mySelect" class="input-group-addon input-group-label">{$t('realm')}</label>
           <div class="themed">
             {#await realms}
-            <div class="form-control" style="font-style: italic;">Loading realms...</div>
+            <div class="form-control" style="font-style: italic;">{$t('loadingRealms')}</div>
             {:then value}
             <Select 
                 on:select={handleSelect}
@@ -139,14 +140,14 @@
                 containerClasses="selRealm"
                 isClearable={false} 
                 showIndicator={true} 
-                noOptionsMessage="No realms found"
-                placeholder={"Enter a realm..."}></Select>
+                noOptionsMessage={$t('noRealmsFound')}
+                placeholder={$t('enterRealm')}></Select>
             {/await}           
           </div>
         </div>
         <br/>
         <div class="input-group">
-          <label for="myCharName" class="input-group-addon input-group-label">Character</label>
+          <label for="myCharName" class="input-group-addon input-group-label">{$t('character')}</label>
           <input id="myCharName" type="text" class="form-control" bind:this={characterNameInput} bind:value={characterName} on:keydown={keydown} style="z-index:1">
         </div>
       </div>

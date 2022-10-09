@@ -15,5 +15,8 @@
 		"@sveltejs/kit": "^1.0.0-next.314",
 		"svelte": "^3.49.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"svelte-i18n": "^3.4.0"
+	}
 }

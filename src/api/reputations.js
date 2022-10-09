@@ -1,3 +1,4 @@
+import { t } from 'svelte-i18n';
 import { getData } from '$api/_blizzard'
 import { getJsonDb } from '$api/_db'
 import Cache from '$api/_cache'
@@ -29,14 +30,14 @@ function parseFactions(all_factions, my_reputations) {
     var standing = {};
 
     let defaultLevels = {
-        0: 'Hated',
-        36000: 'Hostile',
-        39000: 'Unfriendly',
-        42000: 'Neutral',
-        45000: 'Friendly',
-        51000: 'Honored',
-        63000: 'Revered',
-        84000: 'Exalted',
+        0: 'hated',
+        36000: 'hostile',
+        39000: 'unfriendly',
+        42000: 'neutral',
+        45000: 'friendly',
+        51000: 'honored',
+        63000: 'revered',
+        84000: 'exalted',
     }
 
     // Build up lookup for factions
