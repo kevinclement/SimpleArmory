@@ -1,0 +1,48 @@
+diff --git a/node_modules/svelte-select/src/List.svelte b/node_modules/svelte-select/src/List.svelte
+index f9cea0e..9159656 100644
+--- a/node_modules/svelte-select/src/List.svelte
++++ b/node_modules/svelte-select/src/List.svelte
+@@ -37,6 +37,9 @@
+     let prev_items;
+ 
+     onMount(() => {
++        // KevinChange: always clear selected value when showing the list
++        value = undefined;
++
+         if (items.length > 0 && !isMulti && value) {
+             const _hoverItemIndex = items.findIndex(
+                 (item) => item[optionIdentifier] === value[optionIdentifier]
+@@ -65,7 +68,7 @@
+     beforeUpdate(() => {
+         if (!items) items = [];
+         if (items !== prev_items && items.length > 0) {
+-            hoverItemIndex = 0;
++            hoverItemIndex = 1;
+         }
+ 
+         prev_items = items;
+@@ -214,8 +217,8 @@
+ 
+     let listStyle;
+     function computePlacement() {
+-        const { height, width } = parent.getBoundingClientRect();
+-
++        // HACK to make it the size of my outer section
++        const { top, height, width } = container.parentNode.parentNode.parentNode.getBoundingClientRect();
+         listStyle = '';
+         listStyle += `min-width:${width}px;width:${
+             listAutoWidth ? 'auto' : '100%'
+diff --git a/node_modules/svelte-select/src/Select.svelte b/node_modules/svelte-select/src/Select.svelte
+index fbef1b9..419ce3e 100644
+--- a/node_modules/svelte-select/src/Select.svelte
++++ b/node_modules/svelte-select/src/Select.svelte
+@@ -490,7 +490,8 @@
+                 activeValue = undefined;
+                 break;
+             case 'Tab':
+-                if (!listOpen) isFocused = false;
++                // BUG: this prevented tabbing in safari
++                // if (!listOpen) isFocused = false;
+                 break;
+             case 'Backspace':
+                 if (!isMulti || filterText.length > 0) return;

@@ -4,7 +4,7 @@
     import { getUrl } from '$util/url'
     import { onMount, onDestroy } from 'svelte'
     import { getTitle } from '$util/utils'
-    import Select from '$components/ext/svelte-select/src/Select.svelte';
+    import Select from 'svelte-select';
 
     $: realms = getRealms()
     
@@ -140,7 +140,8 @@
                 isClearable={false} 
                 showIndicator={true} 
                 noOptionsMessage="No realms found"
-                placeholder={"Enter a realm..."}></Select>
+                placeholder={"Enter a realm..."}
+                listOffset={0}></Select>
             {/await}           
           </div>
         </div>
@@ -161,9 +162,6 @@
 <style>
 
     /* Missing feature in select that they don't expose these */
-    :global(.item.hover:not(.active)) {
-        color:#fff;
-    }
     :global(.selectContainer input:hover) {
         cursor: pointer !important;
     }
@@ -181,7 +179,7 @@
         --padding:6px 12px !important; 
         box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
     }
-    :global(.themed) {
+    .themed {
         --groupTitleColor: #777;
         --groupTitleFontSize: 12px;
         --groupTitleFontWeight: normal;
@@ -198,9 +196,10 @@
         --itemIsActiveBG:#3071a9;
         --itemIsActiveColor:#fff;
         --itemHoverBG:#428bca;
-
         --background: #fff;
         --listBackground: #fff;
+        --listLeft: -101px;
+        --itemHoverColor: #fff;
     }
 
     /* 

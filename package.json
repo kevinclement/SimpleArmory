@@ -8,12 +8,17 @@
 		"package": "svelte-kit package",
 		"preview": "svelte-kit preview",
 		"prepare": "svelte-kit sync",
-		"rollbar": "svelte-kit build && node rollbar.js"
+		"rollbar": "svelte-kit build && node rollbar.js",
+		"postinstall": "patch-package"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^1.0.0-next.29",
 		"@sveltejs/kit": "^1.0.0-next.314",
 		"svelte": "^3.49.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"patch-package": "^6.4.7",
+		"svelte-select": "^4.4.7"
+	}
 }
