@@ -40,6 +40,8 @@ IGNORE_MOUNT_ID = [
     1271,  # Swift Spectral Armored Gryphon https://www.wowhead.com/mount/1271
     1272,  # Swift Spectral Pterrordax https://www.wowhead.com/mount/1272
     1578,  # [DND] Test Mount JZB https://www.wowhead.com/mount/1578
+    1588,  # Winding Slitherdrake https://www.wowhead.com/mount/1588
+    1605,  # Dragon Isles Drake Model Test https://www.wowhead.com/mount/1605
 ]
 
 MOUNT_SOURCE_ENUM = {
