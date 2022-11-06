@@ -81,6 +81,13 @@
             "spellid": 280729
           },
           {
+            "ID": 1654,
+            "icon": "inv_riverotterlargemount02_white",
+            "itemId": 198654,
+            "name": "Otterworldly Ottuk Carrier",
+            "spellid": 376912
+          },
+          {
             "ID": 664,
             "icon": "ability_mount_drake_blue",
             "itemId": 118676,
@@ -137,6 +144,201 @@
           }
         ],
         "name": "Heirlooms"
+      }
+    ]
+  },
+  {
+    "id": "accb0486",
+    "name": "Dragonflight",
+    "subcats": [
+      {
+        "id": "c0bf4e7b",
+        "items": [
+          {
+            "ID": 1563,
+            "icon": "inv_companiondrake",
+            "itemId": 194705,
+            "name": "Highland Drake",
+            "spellid": 360954
+          },
+          {
+            "ID": 1589,
+            "icon": "inv_companionprotodragon",
+            "itemId": 194034,
+            "name": "Renewed Proto-Drake",
+            "spellid": 368896
+          },
+          {
+            "ID": 1590,
+            "icon": "inv_companionpterrordaxdrake",
+            "itemId": 194549,
+            "name": "Windborne Velocidrake",
+            "spellid": 368899
+          },
+          {
+            "ID": 1591,
+            "icon": "inv_companionwyvern",
+            "itemId": 194521,
+            "name": "Cliffside Wylderdrake",
+            "spellid": 368901
+          }
+        ],
+        "name": "Achievement"
+      },
+      {
+        "id": "e504fa83",
+        "items": [
+          {
+            "ID": 1469,
+            "icon": "inv_snailmount_orange",
+            "itemId": 192777,
+            "name": "Magmashell",
+            "spellid": 350219
+          },
+          {
+            "ID": 1553,
+            "icon": "inv_foxwyvernmountblack",
+            "itemId": 201440,
+            "name": "Liberated Slyvern",
+            "spellid": 359622
+          },
+          {
+            "ID": 1672,
+            "icon": "inv_eagle2windmount_red",
+            "itemId": 198825,
+            "name": "Zenet Hatchling",
+            "spellid": 385266
+          }
+        ],
+        "name": "Drop"
+      },
+      {
+        "id": "8dc7b48a",
+        "items": [
+          {
+            "ID": 1545,
+            "icon": "inv_eagle2windmount_white",
+            "name": "Divine Kiss of Ohn'ahra",
+            "spellid": 395644
+          },
+          {
+            "ID": 1639,
+            "icon": "inv_thunderlizardprimal_brown",
+            "itemId": 192799,
+            "name": "Lizi, Thunderspine Tramper",
+            "spellid": 374247
+          },
+          {
+            "ID": 1656,
+            "icon": "inv_riverotterlargemount01_blue",
+            "itemId": 198870,
+            "name": "Otto",
+            "spellid": 376873
+          }
+        ],
+        "name": "Quest"
+      },
+      {
+        "name": "Renown",
+        "id": "ccc05f3b",
+        "items": [
+          {
+            "ID": 1617,
+            "icon": "inv_primaldragonflymount_green",
+            "itemId": 192764,
+            "name": "Verdant Skitterfly",
+            "spellid": 374048
+          }
+        ]
+      },
+      {
+        "id": "8de51dfe",
+        "items": [
+          {
+            "ID": 1546,
+            "icon": "inv_riverotterlargemount01_black",
+            "itemId": 198871,
+            "name": "Iskaara Trader's Ottuk",
+            "spellid": 359409
+          },
+          {
+            "ID": 1612,
+            "icon": "inv_mammoth2lavamount_orange",
+            "itemId": 192601,
+            "name": "Loyal Magmammoth",
+            "spellid": 373859
+          },
+          {
+            "ID": 1615,
+            "icon": "inv_primaldragonflymount_black",
+            "itemId": 192761,
+            "name": "Tamed Skitterfly",
+            "spellid": 374032
+          },
+          {
+            "ID": 1616,
+            "icon": "inv_primaldragonflymount_blue",
+            "itemId": 192762,
+            "name": "Azure Skitterfly",
+            "spellid": 374034
+          },
+          {
+            "ID": 1622,
+            "icon": "inv_salamanderwatermount_purple",
+            "itemId": 192775,
+            "name": "Stormhide Salamanther",
+            "spellid": 374098
+          },
+          {
+            "ID": 1657,
+            "icon": "inv_riverotterlargemount01_brown",
+            "itemId": 198872,
+            "name": "Brown Scouting Ottuk",
+            "spellid": 376875
+          },
+          {
+            "ID": 1658,
+            "icon": "inv_riverotterlargemount01_white",
+            "itemId": 198873,
+            "name": "Ivory Trader's Ottuk",
+            "spellid": 376879
+          }
+        ],
+        "name": "Vendor"
+      },
+      {
+        "id": "9bd50489",
+        "items": [
+          {
+            "ID": 1635,
+            "icon": "inv_mammoth2mount_orange",
+            "itemId": 192791,
+            "name": "Plainswalker Bearer",
+            "spellid": 374196
+          }
+        ],
+        "name": "Grand Hunt"
+      },
+      {
+        "name": "Unknown",
+        "id": "7d999dce",
+        "items": [
+          {
+            "ID": 1681,
+            "icon": "inv_rhinoprimalmountice",
+            "itemId": 199412,
+            "name": "Hailstorm Armoredon",
+            "notObtainable": true,
+            "spellid": 387231
+          },
+          {
+            "ID": 1607,
+            "icon": "inv_pterrordax2mount_white",
+            "name": "Swift Spectral Drake",
+            "notObtainable": true,
+            "spellid": 372995
+          }
+        ]
       }
     ]
   },
@@ -5498,6 +5700,61 @@
         "name": "Pandaren"
       },
       {
+        "name": "Dracthyr",
+        "id": "d8c1c078",
+        "items": [
+          {
+            "ID": 1683,
+            "icon": "inv_kirinmountdracthyr_pale",
+            "itemId": 201702,
+            "name": "Crimson Vorquin",
+            "spellid": 394216
+          },
+          {
+            "ID": 1684,
+            "icon": "inv_kirinmountdracthyr_blue",
+            "itemId": 201704,
+            "name": "Sapphire Vorquin",
+            "spellid": 394218
+          },
+          {
+            "ID": 1685,
+            "icon": "inv_kirinmountdracthyr_bronze",
+            "itemId": 201720,
+            "name": "Bronze Vorquin",
+            "spellid": 394219
+          },
+          {
+            "ID": 1686,
+            "icon": "inv_kirinmountdracthyr_black",
+            "itemId": 201719,
+            "name": "Obsidian Vorquin",
+            "spellid": 394220
+          },
+          {
+            "ID": 1665,
+            "icon": "inv_kirinmount_bronze",
+            "itemId": 198811,
+            "name": "Swift Armored Vorquin",
+            "spellid": 385134
+          },
+          {
+            "ID": 1667,
+            "icon": "inv_kirinmount_blue",
+            "itemId": 198809,
+            "name": "Armored Vorquin Leystrider",
+            "spellid": 385131
+          },
+          {
+            "ID": 1668,
+            "icon": "inv_kirinmount_pale",
+            "itemId": 198810,
+            "name": "Majestic Armored Vorquin",
+            "spellid": 385115
+          }
+        ]
+      },
+      {
         "id": "238a21a8",
         "items": [
           {
@@ -6464,7 +6721,6 @@
             "icon": "ability_mount_warnightsaber",
             "itemId": 165019,
             "name": "Vicious Black Warsaber",
-            "notObtainable": true,
             "side": "A",
             "spellid": 281887
           },
@@ -6513,7 +6769,6 @@
             "icon": "inv_viciousalliancespider",
             "itemId": 184014,
             "name": "Vicious War Spider",
-            "notObtainable": true,
             "side": "A",
             "spellid": 327407
           },
@@ -6522,7 +6777,6 @@
             "icon": "inv_vicioushordespider",
             "itemId": 184013,
             "name": "Vicious War Spider",
-            "notObtainable": true,
             "side": "H",
             "spellid": 327408
           },
@@ -6573,6 +6827,22 @@
             "name": "Vicious Warstalker",
             "side": "H",
             "spellid": 349823
+          },
+          {
+            "ID": 1688,
+            "icon": "inv_vicioussabertoothalliance",
+            "itemId": 201789,
+            "name": "Vicious Sabertooth",
+            "side": "A",
+            "spellid": 394737
+          },
+          {
+            "ID": 1689,
+            "icon": "inv_vicioussabertoothhorde",
+            "itemId": 201788,
+            "name": "Vicious Sabertooth",
+            "side": "H",
+            "spellid": 394738
           }
         ],
         "name": "Vicious Saddle"
@@ -6842,6 +7112,13 @@
             "itemId": 191290,
             "name": "Eternal Gladiator's Soul Eater",
             "spellid": 370346
+          },
+          {
+            "ID": 1660,
+            "icon": "inv_drake2mountgladiator",
+            "itemId": 202086,
+            "name": "Crimson Gladiator's Drake",
+            "spellid": 377071
           }
         ],
         "name": "Gladiator"
