@@ -33,8 +33,6 @@ TOY_SOURCE_ENUM = {
 
 
 class ToyFixer(WowToolsFixer):
-    load_files = True
-
     def _store_init(self, toys):
         self.toys = toys
         self.id_to_old_toy = {}

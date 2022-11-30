@@ -15,8 +15,6 @@ IGNORE_ACHIEV_ID = [
 
 
 class AchievementFixer(WowToolsFixer):
-    load_files = True
-
     def _store_init(self, achievements):
         self.id_to_sa_ach = {}
         self.achievs = achievements

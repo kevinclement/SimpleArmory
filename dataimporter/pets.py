@@ -25,8 +25,6 @@ PET_SOURCE_ENUM = {
 
 
 class PetFixer(WowToolsFixer):
-    load_files = True
-
     def _store_init(self, pets, battlepets):
         self.pets = pets
         self.battlepets = battlepets

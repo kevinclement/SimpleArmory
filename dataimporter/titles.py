@@ -116,8 +116,6 @@ IGNORE_TITLE_ID = [
 
 
 class TitleFixer(WowToolsFixer):
-    load_files = True
-
     def _store_init(self, titles):
         self.titles = titles
         self.id_to_old_title = {}
