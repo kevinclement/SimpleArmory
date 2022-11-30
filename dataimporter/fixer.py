@@ -3,15 +3,10 @@ from .providers import wowtools
 
 class WowToolsFixer:
     """Base class for Wowtools-based data fixers."""
-    load_files = False
-
     def __init__(self, *args, build=None):
         self.build = build
         self._store_init(*args)
-        if self.load_files:
-            self.wt_files = {
-                int(e['ID']): e for e in self.wt_get_table('files')
-            }
+        self._wt_manifest_interface_data = None
 
     def _store_init(self, *args):
         raise NotImplementedError
@@ -23,12 +18,13 @@ class WowToolsFixer:
         return wowtools.get_table(table_name, self.build)
 
     def get_icon_name(self, icon_id: int):
-        assert self.load_files
+        if self._wt_manifest_interface_data is None:
+            self._wt_manifest_interface_data = {
+                int(e['ID']): e
+                for e in self.wt_get_table('manifestinterfacedata')
+            }
         icon_name = str(icon_id)
-        if icon_id in self.wt_files:
-            icon_path = self.wt_files[icon_id]['Path']
-            if 'encrypted' not in icon_path:
-                icon_name = icon_path.split('/')[-1].rsplit('.', 1)[0].lower()
-                icon_name = icon_name.replace(' ', '-')
-
+        if icon_id in self._wt_manifest_interface_data:
+            icon_path = self._wt_manifest_interface_data[icon_id]['FileName']
+            icon_name = icon_path.rsplit('.', 1)[0].lower().replace(' ', '-')
         return icon_name

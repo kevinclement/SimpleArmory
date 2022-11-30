@@ -48,24 +48,12 @@ class WowToolsClient:
             )
 
     async def get_table(self, table_name, build=None):
-        if table_name == 'files':
-            return await self.get_file_list()
-
         build = (await self.get_matching_build_version(table_name, build))
         table_response = await self.session.get(
             self.export_url,
             params={'name': table_name, 'build': build}
         )
         return csv_to_list(await table_response.text(encoding='utf-8'))
-
-    async def get_file_list(self):
-        files_url = f'{self.base_url}/casc/listfile/download/csv'
-        files_response = await self.session.get(files_url)
-        return csv_to_list(
-            await files_response.text(),
-            fieldnames=('ID', 'Path'),
-            delimiter=';',
-        )
 
 
 @functools.lru_cache(maxsize=None)
