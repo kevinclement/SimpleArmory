@@ -29,36 +29,36 @@ class FactionFixer(WowToolsFixer):
     def _store_init(self, factions):
         self.factions = factions
         self.id_to_old_faction = {}
-        self.wt_faction = {}
-        self.register_wt_factions()
+        self.dbc_faction = {}
+        self.register_dbc_factions()
         self.register_old_factions()
 
-    def register_wt_factions(self):
-        self.wt_friendship = collections.defaultdict(list)
-        for e in self.wt_get_table('friendshiprepreaction'):
-            self.wt_friendship[int(e['FriendshipRepID'])].append(e)
+    def register_dbc_factions(self):
+        self.dbc_friendship = collections.defaultdict(list)
+        for e in self.dbc_get_table('friendshiprepreaction'):
+            self.dbc_friendship[int(e['FriendshipRepID'])].append(e)
 
-        wt_faction = {
-            int(e['ID']): e for e in self.wt_get_table('faction')
+        dbc_faction = {
+            int(e['ID']): e for e in self.dbc_get_table('faction')
         }
 
         # Remove paragons
         paragons = {
-            int(row['ParagonFactionID']) for row in wt_faction.values()
+            int(row['ParagonFactionID']) for row in dbc_faction.values()
         }
-        for row in list(wt_faction.values()):
+        for row in list(dbc_faction.values()):
             if int(row['ID']) in paragons:
-                wt_faction.pop(int(row['ID']))
+                dbc_faction.pop(int(row['ID']))
 
         # Heuristic to remove hidden reputations
         def _recurse_rep(faction_id, level=0):
             children = [
-                row for row in wt_faction.values()
+                row for row in dbc_faction.values()
                 if int(row['ParentFactionID']) == faction_id
             ]
 
             if faction_id != 0:
-                rep = wt_faction[faction_id]
+                rep = dbc_faction[faction_id]
                 if (
                     # Filters most invalid reputations
                     int(rep['ReputationIndex']) == -1
@@ -84,7 +84,7 @@ class FactionFixer(WowToolsFixer):
                     return
 
             if not children:
-                self.wt_faction[int(rep['ID'])] = rep
+                self.dbc_faction[int(rep['ID'])] = rep
 
             for row in children:
                 _recurse_rep(int(row['ID']), level + 1)
@@ -97,20 +97,20 @@ class FactionFixer(WowToolsFixer):
                 self.id_to_old_faction[int(item['id'])] = item
 
     def get_faction(self, faction_id: int):
-        if int(faction_id) not in self.wt_faction:
+        if int(faction_id) not in self.dbc_faction:
             return None
-        name = self.wt_faction[int(faction_id)]['Name_lang']
+        name = self.dbc_faction[int(faction_id)]['Name_lang']
         res = {
             'id': int(faction_id),
             'name': name,
         }
         friendship_id = int(
-            self.wt_faction[int(faction_id)]['FriendshipRepID']
+            self.dbc_faction[int(faction_id)]['FriendshipRepID']
         )
         if friendship_id != 0:
             res['levels'] = {
                 int(r['ReactionThreshold']): r['Reaction_lang']
-                for r in self.wt_friendship[friendship_id]
+                for r in self.dbc_friendship[friendship_id]
             }
         return res
 
@@ -123,7 +123,7 @@ class FactionFixer(WowToolsFixer):
         fcat(self.factions, 'TODO')['factions'].append(faction)
 
     def fix_missing_factions(self):
-        for faction_id in self.wt_faction:
+        for faction_id in self.dbc_faction:
             if int(faction_id) not in self.id_to_old_faction:
                 self.fix_missing_faction(int(faction_id))
 

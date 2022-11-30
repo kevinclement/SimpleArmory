@@ -61,17 +61,17 @@ class MountFixer(WowToolsFixer):
         self.mounts = mounts
         self.id_to_old_mount = {}
 
-        self.wt_mount = {
-            int(e['ID']): e for e in self.wt_get_table('mount')
+        self.dbc_mount = {
+            int(e['ID']): e for e in self.dbc_get_table('mount')
         }
-        self.wt_itemeffectbyspell = {
-            e['SpellID']: e for e in self.wt_get_table('itemeffect')
+        self.dbc_itemeffectbyspell = {
+            e['SpellID']: e for e in self.dbc_get_table('itemeffect')
         }
-        self.wt_itembyeffect = {
-            e['ItemEffectID']: e for e in self.wt_get_table('itemxitemeffect')
+        self.dbc_itembyeffect = {
+            e['ItemEffectID']: e for e in self.dbc_get_table('itemxitemeffect')
         }
-        self.wt_spellmisc = {
-            e['SpellID']: e for e in self.wt_get_table('spellmisc')
+        self.dbc_spellmisc = {
+            e['SpellID']: e for e in self.dbc_get_table('spellmisc')
         }
 
         self.register_old_mounts()
@@ -83,12 +83,12 @@ class MountFixer(WowToolsFixer):
                     self.id_to_old_mount[int(item['ID'])] = item
 
     def get_mount(self, mount_id: int):
-        spell_id = self.wt_mount[int(mount_id)]['SourceSpellID']
-        name = self.wt_mount[int(mount_id)]['Name_lang']
+        spell_id = self.dbc_mount[int(mount_id)]['SourceSpellID']
+        name = self.dbc_mount[int(mount_id)]['Name_lang']
 
         # Icon
         try:
-            icon_id = self.wt_spellmisc[spell_id]['SpellIconFileDataID']
+            icon_id = self.dbc_spellmisc[spell_id]['SpellIconFileDataID']
         except KeyError:
             icon_name = None
         else:
@@ -96,8 +96,8 @@ class MountFixer(WowToolsFixer):
 
         # Item
         try:
-            item_effect_id = self.wt_itemeffectbyspell[spell_id]['ID']
-            item_id = self.wt_itembyeffect[item_effect_id]['ItemID']
+            item_effect_id = self.dbc_itemeffectbyspell[spell_id]['ID']
+            item_id = self.dbc_itembyeffect[item_effect_id]['ItemID']
         except KeyError:
             item_id = None
 
@@ -111,16 +111,16 @@ class MountFixer(WowToolsFixer):
 
     def get_mount_source(self, mount_id: int):
         return MOUNT_SOURCE_ENUM.get(
-            int(self.wt_mount[mount_id]['SourceTypeEnum']),
+            int(self.dbc_mount[mount_id]['SourceTypeEnum']),
             'Unknown'
         )
 
     def fix_missing_mount(self, mount_id: int):
         if (
             # No summon spell ID
-            not int(self.wt_mount[mount_id]['SourceSpellID'])
+            not int(self.dbc_mount[mount_id]['SourceSpellID'])
             # Flag 0x100 : Invalid mount
-            or int(self.wt_mount[mount_id]['Flags']) & 0x100
+            or int(self.dbc_mount[mount_id]['Flags']) & 0x100
         ):
             return
 
@@ -137,7 +137,7 @@ class MountFixer(WowToolsFixer):
         icat(self.mounts, 'TODO', source)['items'].append(mount)
 
     def fix_missing_mounts(self):
-        for mount_id in self.wt_mount:
+        for mount_id in self.dbc_mount:
             if (int(mount_id) not in self.id_to_old_mount
                     and int(mount_id) not in IGNORE_MOUNT_ID):
                 self.fix_missing_mount(int(mount_id))

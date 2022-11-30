@@ -20,36 +20,36 @@ class AchievementFixer(WowToolsFixer):
         self.achievs = achievements
 
         self.register_sa_achievs()
-        self.register_wt_achievs()
+        self.register_dbc_achievs()
 
-    def register_wt_achievs(self):
-        self.wt_achiev = {
-            int(e['ID']): e for e in self.wt_get_table('achievement')
+    def register_dbc_achievs(self):
+        self.dbc_achiev = {
+            int(e['ID']): e for e in self.dbc_get_table('achievement')
         }
-        self.wt_achiev_category = {
-            int(e['ID']): e for e in self.wt_get_table('achievement_category')
+        self.dbc_achiev_category = {
+            int(e['ID']): e for e in self.dbc_get_table('achievement_category')
         }
 
         # Remove hidden/ignored achievements from master list
-        for ach_id, ach in list(self.wt_achiev.items()):
+        for ach_id, ach in list(self.dbc_achiev.items()):
             blacklisted_flags = (
                 0x1  # COUNTER (Statistics)
                 | 0x4000  # GUILD
                 | 0x100000  # TRACKING_FLAG
             )
-            flags = int(self.wt_achiev[ach_id]['Flags'])
+            flags = int(self.dbc_achiev[ach_id]['Flags'])
             if (ach_id in IGNORE_ACHIEV_ID or flags & blacklisted_flags):
-                self.wt_achiev.pop(ach_id)
+                self.dbc_achiev.pop(ach_id)
                 continue
 
         # Build Achiev ID -> (supercat, cat) mapping
         self.id_to_cat = {}
-        for achiev in self.wt_achiev.values():
-            cat = self.wt_achiev_category[int(achiev['Category'])]
+        for achiev in self.dbc_achiev.values():
+            cat = self.dbc_achiev_category[int(achiev['Category'])]
             if int(cat['Parent']) == -1:
                 supercat = cat
             else:
-                supercat = self.wt_achiev_category[int(cat['Parent'])]
+                supercat = self.dbc_achiev_category[int(cat['Parent'])]
             self.id_to_cat[int(achiev['ID'])] = (
                 supercat['Name_lang'], cat['Name_lang'],
             )
@@ -62,24 +62,24 @@ class AchievementFixer(WowToolsFixer):
                         self.id_to_sa_ach[int(item['id'])] = item
 
     def get_faction(self, ach_id: int):
-        wt_ach = self.wt_achiev[int(ach_id)]
+        dbc_ach = self.dbc_achiev[int(ach_id)]
         return {
             0: 'H',
             1: 'A',
-        }.get(int(wt_ach['Faction']))
+        }.get(int(dbc_ach['Faction']))
 
     def genach(self, ach_id):
         ach_id = int(ach_id)
         if ach_id in self.id_to_sa_ach:
             return self.id_to_sa_ach[ach_id]
         else:
-            wt_ach = self.wt_achiev[ach_id]
+            dbc_ach = self.dbc_achiev[ach_id]
             faction = self.get_faction(ach_id)
             return {
                 'id': int(ach_id),
-                'title': wt_ach['Title_lang'],
-                'icon': self.get_icon_name(int(wt_ach['IconFileID'])),
-                'points': int(wt_ach['Points']),
+                'title': dbc_ach['Title_lang'],
+                'icon': self.get_icon_name(int(dbc_ach['IconFileID'])),
+                'points': int(dbc_ach['Points']),
                 **({'side': faction} if faction else {})
             }
 
@@ -219,28 +219,33 @@ class AchievementFixer(WowToolsFixer):
             for cat in supercat['cats']:
                 for subcat in cat['subcats']:
                     for item in subcat['items']:
-                        wt_ach = self.wt_achiev[int(item['id'])]
-                        wt_icon = self.get_icon_name(int(wt_ach['IconFileID']))
-                        if (item['icon'].lower() != wt_icon.lower()):
+                        dbc_ach = self.dbc_achiev[int(item['id'])]
+                        dbc_icon = self.get_icon_name(
+                            int(dbc_ach['IconFileID'])
+                        )
+                        if (item['icon'].lower() != dbc_icon.lower()):
                             changelog('* Fixed icon of achievement {} '
                                       '({} -> {})'
                                       .format(item['id'], item['icon'],
-                                              wt_icon))
-                            item['icon'] = wt_icon
+                                              dbc_icon))
+                            item['icon'] = dbc_icon
 
     def fix_wrong_sides(self):
         for supercat in self.achievs['supercats']:
             for cat in supercat['cats']:
                 for subcat in cat['subcats']:
                     for item in subcat['items']:
-                        wt_ach = self.wt_achiev[int(item['id'])]
+                        dbc_ach = self.dbc_achiev[int(item['id'])]
                         faction = self.get_faction(int(item['id']))
                         oldfaction = item.get('side', None)
                         if oldfaction != faction:
-                            changelog('* Fixed faction of achievement {} '
-                                      '({} -> {})'
-                                      .format(wt_ach['Title_lang'], oldfaction,
-                                              faction))
+                            changelog(
+                                '* Fixed faction of achievement {} ({} -> {})'
+                                .format(
+                                    dbc_ach['Title_lang'],
+                                    oldfaction,
+                                    faction,
+                                ))
                             if faction is not None:
                                 item['side'] = faction
                             else:
@@ -252,10 +257,10 @@ class AchievementFixer(WowToolsFixer):
                 for subcat in cat['subcats']:
                     for item in subcat['items']:
                         ach_id = int(item['id'])
-                        wt_ach = self.wt_achiev[ach_id]
+                        dbc_ach = self.dbc_achiev[ach_id]
                         item['id'] = int(ach_id)
-                        item['points'] = int(wt_ach['Points'])
-                        item['title'] = wt_ach['Title_lang']
+                        item['points'] = int(dbc_ach['Points'])
+                        item['title'] = dbc_ach['Title_lang']
                         item.pop('criteria', None)
                         item.pop('name', None)
 
@@ -263,7 +268,7 @@ class AchievementFixer(WowToolsFixer):
         def get_name_order_for_category(cat_id):
             subcats = [
                 e
-                for e in self.wt_achiev_category.values()
+                for e in self.dbc_achiev_category.values()
                 if int(e['Parent']) == int(cat_id)
             ]
             subcats.sort(key=lambda x: int(x['Ui_order']))
@@ -278,14 +283,16 @@ class AchievementFixer(WowToolsFixer):
         # Sort subcategories
         for supercat in self.achievs['supercats']:
             try:
-                wt_supercat = list_find(
-                    self.wt_achiev_category.values(),
+                dbc_supercat = list_find(
+                    self.dbc_achiev_category.values(),
                     lambda x: (
                         x['Name_lang'] == supercat['name']
                         and int(x['Parent']) == -1
                     ),
                 )
-                wt_order = get_name_order_for_category(int(wt_supercat['ID']))
+                dbc_order = get_name_order_for_category(
+                    int(dbc_supercat['ID'])
+                )
             except StopIteration:
                 continue
 
@@ -299,9 +306,9 @@ class AchievementFixer(WowToolsFixer):
                 'Expansion Features'
             )
             if supercat['name'] in revcat:
-                wt_order = list(reversed(wt_order))
+                dbc_order = list(reversed(dbc_order))
 
-            sort_try_respect_order(supercat['cats'], wt_order)
+            sort_try_respect_order(supercat['cats'], dbc_order)
             try:
                 top_cat_idx = next(
                     index for index, cat in enumerate(supercat['cats'])

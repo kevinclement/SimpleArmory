@@ -121,11 +121,11 @@ class TitleFixer(WowToolsFixer):
         self.id_to_old_title = {}
         self.register_old_titles()
 
-        self.wt_title = {
-            int(e['Mask_ID']): e for e in self.wt_get_table('chartitles')
+        self.dbc_title = {
+            int(e['Mask_ID']): e for e in self.dbc_get_table('chartitles')
         }
-        self.wt_achiev = {
-            int(e['ID']): e for e in self.wt_get_table('achievement')
+        self.dbc_achiev = {
+            int(e['ID']): e for e in self.dbc_get_table('achievement')
         }
 
     def register_old_titles(self):
@@ -139,27 +139,27 @@ class TitleFixer(WowToolsFixer):
         name = name[:1].upper() + name[1:]
         return name
 
-    def fuzzy_find_achievement(self, wt_title):
+    def fuzzy_find_achievement(self, dbc_title):
         def to_pattern(name):
             name = self.simplify_name(name)
             name = name.lower()
             name = re.sub(r'^the\s*', '', name)
             return name
 
-        lname = to_pattern(wt_title['Name_lang'])
-        lnameF = to_pattern(wt_title['Name1_lang'])
+        lname = to_pattern(dbc_title['Name_lang'])
+        lnameF = to_pattern(dbc_title['Name1_lang'])
 
         # We try to find the shortest achievement reward description containing
         # the title we are looking for. This avoids problems of titles
         # containing other titles (e.g., Champion / Champion of the Alliance)
         matching_achievs = []
-        for achiev in self.wt_achiev.values():
+        for achiev in self.dbc_achiev.values():
             lreward = achiev['Reward_lang'].lower()
             if lname in lreward or lnameF in lreward:
                 matching_achievs.append(achiev)
         if not matching_achievs:
             # Second pass, now with achievement descriptions
-            for achiev in self.wt_achiev.values():
+            for achiev in self.dbc_achiev.values():
                 ldesc = achiev['Description_lang'].lower()
                 if lname in ldesc or lnameF in ldesc:
                     matching_achievs.append(achiev)
@@ -175,26 +175,26 @@ class TitleFixer(WowToolsFixer):
         return int(matching_achievs[0]['ID'])
 
     def get_title(self, title_id: int):
-        if int(title_id) not in self.wt_title:
+        if int(title_id) not in self.dbc_title:
             return None
-        wt_title = self.wt_title[int(title_id)]
-        name = self.simplify_name(wt_title['Name_lang'])
-        nameF = self.simplify_name(wt_title['Name1_lang'])
+        dbc_title = self.dbc_title[int(title_id)]
+        name = self.simplify_name(dbc_title['Name_lang'])
+        nameF = self.simplify_name(dbc_title['Name1_lang'])
         res = {
             'titleId': int(title_id),
             'name': name,
             'type': 'title',
-            'id': int(wt_title['ID']),
+            'id': int(dbc_title['ID']),
             'icon': 'inv_misc_questionmark',
         }
         if nameF != name:
             res['nameF'] = nameF
-        ach_id = self.fuzzy_find_achievement(wt_title)
+        ach_id = self.fuzzy_find_achievement(dbc_title)
         if ach_id:
-            wt_ach = self.wt_achiev[ach_id]
+            dbc_ach = self.dbc_achiev[ach_id]
             res['id'] = ach_id
             res['type'] = 'achievement'
-            res['icon'] = self.get_icon_name(int(wt_ach['IconFileID']))
+            res['icon'] = self.get_icon_name(int(dbc_ach['IconFileID']))
         return res
 
     def fix_missing_title(self, title_id: int):
@@ -206,7 +206,7 @@ class TitleFixer(WowToolsFixer):
         icat(self.titles, 'TODO', 'TODO')['items'].append(title)
 
     def fix_missing_titles(self):
-        for title_id in self.wt_title:
+        for title_id in self.dbc_title:
             if (
                 int(title_id) not in self.id_to_old_title
                 and title_id not in IGNORE_TITLE_ID

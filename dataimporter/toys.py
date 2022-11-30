@@ -37,14 +37,14 @@ class ToyFixer(WowToolsFixer):
         self.toys = toys
         self.id_to_old_toy = {}
 
-        self.wt_toy = {
-            e['ItemID']: e for e in self.wt_get_table('toy')
+        self.dbc_toy = {
+            e['ItemID']: e for e in self.dbc_get_table('toy')
         }
-        self.wt_item = {
-            e['ID']: e for e in self.wt_get_table('item')
+        self.dbc_item = {
+            e['ID']: e for e in self.dbc_get_table('item')
         }
-        self.wt_itemsparse = {
-            e['ID']: e for e in self.wt_get_table('itemsparse')
+        self.dbc_itemsparse = {
+            e['ID']: e for e in self.dbc_get_table('itemsparse')
         }
         self.register_old_toys()
 
@@ -58,12 +58,12 @@ class ToyFixer(WowToolsFixer):
         toy_id = str(toy_id)
 
         # Name
-        if toy_id not in self.wt_itemsparse:
+        if toy_id not in self.dbc_itemsparse:
             return None
-        name = self.wt_itemsparse[toy_id]['Display_lang']
+        name = self.dbc_itemsparse[toy_id]['Display_lang']
 
         # Icon
-        icon_id = self.wt_item[toy_id]['IconFileDataID']
+        icon_id = self.dbc_item[toy_id]['IconFileDataID']
         icon_name = self.get_icon_name(int(icon_id))
 
         return {
@@ -74,7 +74,7 @@ class ToyFixer(WowToolsFixer):
 
     def get_toy_source(self, toy_id):
         return TOY_SOURCE_ENUM.get(
-            int(self.wt_toy[toy_id]['SourceTypeEnum']),
+            int(self.dbc_toy[toy_id]['SourceTypeEnum']),
             'Unknown'
         )
 
@@ -90,7 +90,7 @@ class ToyFixer(WowToolsFixer):
         icat(self.toys, 'TODO', source)['items'].append(toy)
 
     def fix_missing_toys(self):
-        for toy_id in self.wt_toy:
+        for toy_id in self.dbc_toy:
             if (int(toy_id) not in self.id_to_old_toy
                     and int(toy_id) not in IGNORE_TOY_ITEMID):
                 self.fix_missing_toy(toy_id)

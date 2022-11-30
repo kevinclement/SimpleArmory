@@ -30,20 +30,20 @@ class PetFixer(WowToolsFixer):
         self.battlepets = battlepets
         self.id_to_old_pet = {}
 
-        self.wt_battlepetspecies = {
+        self.dbc_battlepetspecies = {
             e['ID']: e
-            for e in self.wt_get_table('battlepetspecies')
+            for e in self.dbc_get_table('battlepetspecies')
         }
-        self.wt_creature = {
-            e['ID']: e for e in self.wt_get_table('creature')
+        self.dbc_creature = {
+            e['ID']: e for e in self.dbc_get_table('creature')
         }
-        self.wt_itemeffectbyspell = {
+        self.dbc_itemeffectbyspell = {
             e['SpellID']: e
-            for e in self.wt_get_table('itemeffect')
+            for e in self.dbc_get_table('itemeffect')
         }
-        self.wt_itembyeffect = {
+        self.dbc_itembyeffect = {
             e['ItemEffectID']: e
-            for e in self.wt_get_table('itemxitemeffect')
+            for e in self.dbc_get_table('itemxitemeffect')
         }
 
         self.register_old_pets()
@@ -57,20 +57,20 @@ class PetFixer(WowToolsFixer):
     def get_pet(self, pet_id):
         pet_id = str(pet_id)
         # Name
-        spell_id = self.wt_battlepetspecies[pet_id]['SummonSpellID']
-        creature_id = self.wt_battlepetspecies[pet_id]['CreatureID']
-        if creature_id not in self.wt_creature:
+        spell_id = self.dbc_battlepetspecies[pet_id]['SummonSpellID']
+        creature_id = self.dbc_battlepetspecies[pet_id]['CreatureID']
+        if creature_id not in self.dbc_creature:
             return
-        name = self.wt_creature[creature_id]['Name_lang']
+        name = self.dbc_creature[creature_id]['Name_lang']
 
         # Icon
-        icon_id = self.wt_battlepetspecies[pet_id]['IconFileDataID']
+        icon_id = self.dbc_battlepetspecies[pet_id]['IconFileDataID']
         icon_name = self.get_icon_name(int(icon_id))
 
         # Item
         try:
-            item_effect_id = self.wt_itemeffectbyspell[spell_id]['ID']
-            item_id = self.wt_itembyeffect[item_effect_id]['ItemID']
+            item_effect_id = self.dbc_itemeffectbyspell[spell_id]['ID']
+            item_id = self.dbc_itembyeffect[item_effect_id]['ItemID']
         except KeyError:
             item_id = None
 
@@ -85,16 +85,16 @@ class PetFixer(WowToolsFixer):
 
     def get_pet_source(self, pet_id):
         return PET_SOURCE_ENUM.get(
-            int(self.wt_battlepetspecies[pet_id]['SourceTypeEnum']),
+            int(self.dbc_battlepetspecies[pet_id]['SourceTypeEnum']),
             'Unknown'
         )
 
     def fix_missing_pet(self, pet_id):
         if (
             # Flag 0x20 : HideFromJournal
-            int(self.wt_battlepetspecies[pet_id]['Flags']) & 0x20
+            int(self.dbc_battlepetspecies[pet_id]['Flags']) & 0x20
             or (
-                int(self.wt_battlepetspecies[pet_id]['CreatureID'])
+                int(self.dbc_battlepetspecies[pet_id]['CreatureID'])
                 in IGNORE_PET_NPCID
             )
         ):
@@ -113,7 +113,7 @@ class PetFixer(WowToolsFixer):
             icat(self.pets, 'TODO', source)['items'].append(pet)
 
     def fix_missing_pets(self):
-        for pet_id in self.wt_battlepetspecies:
+        for pet_id in self.dbc_battlepetspecies:
             if (int(pet_id) not in self.id_to_old_pet):
                 self.fix_missing_pet(pet_id)
 
