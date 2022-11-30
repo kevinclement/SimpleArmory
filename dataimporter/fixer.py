@@ -1,4 +1,4 @@
-from .providers import wowtools
+from .providers import rawhttp
 
 
 class WowToolsFixer:
@@ -15,7 +15,7 @@ class WowToolsFixer:
         raise NotImplementedError
 
     def wt_get_table(self, table_name):
-        return wowtools.get_table(table_name, self.build)
+        return rawhttp.get_table(table_name, self.build)
 
     def get_icon_name(self, icon_id: int):
         if self._wt_manifest_interface_data is None:
