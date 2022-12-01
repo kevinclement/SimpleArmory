@@ -46,6 +46,12 @@
                   "title": "Level 60"
                 },
                 {
+                  "icon": "achievement_level_70",
+                  "id": 15805,
+                  "points": 10,
+                  "title": "Level 70"
+                },
+                {
                   "icon": "achievement_arena_2v2_7",
                   "id": 7382,
                   "points": 20,
@@ -443,6 +449,182 @@
                 }
               ],
               "name": "Exile's Reach"
+            }
+          ]
+        },
+        {
+          "id": "9da0c0d4",
+          "name": "Dragonflight",
+          "subcats": [
+            {
+              "id": "efef6628",
+              "items": [
+                {
+                  "icon": "achievement_zone_wakingshores",
+                  "id": 16334,
+                  "points": 10,
+                  "title": "Waking Hope"
+                },
+                {
+                  "icon": "achievement_zone_ohnahranplains",
+                  "id": 15394,
+                  "points": 10,
+                  "title": "Ohn'a'Roll"
+                },
+                {
+                  "icon": "achievement_zone_azurespan",
+                  "id": 16336,
+                  "points": 10,
+                  "title": "Azure Spanner"
+                },
+                {
+                  "icon": "achievement_zone_thaldraszus",
+                  "id": 16363,
+                  "points": 10,
+                  "title": "Just Don't Ask Me to Spell It"
+                },
+                {
+                  "icon": "inv_duck_yellow",
+                  "id": 16401,
+                  "points": 10,
+                  "title": "Sojourner of the Waking Shores"
+                },
+                {
+                  "icon": "ui_majorfaction_centaur",
+                  "id": 16405,
+                  "points": 10,
+                  "title": "Sojourner of Ohn'ahran Plains"
+                },
+                {
+                  "icon": "achievement_zone_azurespan",
+                  "id": 16428,
+                  "points": 10,
+                  "title": "Sojourner of Azure Span"
+                },
+                {
+                  "icon": "achievement_zone_thaldraszus",
+                  "id": 16398,
+                  "points": 10,
+                  "title": "Sojourner of Thaldraszus"
+                },
+                {
+                  "icon": "achievement_zone_wakingshores",
+                  "id": 16585,
+                  "points": 10,
+                  "title": "Loremaster of the Dragon Isles"
+                }
+              ],
+              "name": "Zones"
+            },
+            {
+              "id": "36680b63",
+              "items": [
+                {
+                  "icon": "inv_companionprotodragon",
+                  "id": 15794,
+                  "points": 10,
+                  "title": "A New Friend"
+                },
+                {
+                  "icon": "inv_companionpterrordaxdrake",
+                  "id": 15795,
+                  "points": 10,
+                  "title": "Together in the Skies"
+                },
+                {
+                  "icon": "inv_companiondrake",
+                  "id": 15797,
+                  "points": 10,
+                  "title": "An Azure Ally"
+                },
+                {
+                  "icon": "inv_companionwyvern",
+                  "id": 15796,
+                  "points": 10,
+                  "title": "Cliffside Companion"
+                }
+              ],
+              "name": "Dragon Riding"
+            },
+            {
+              "id": "18fd042d",
+              "items": [
+                {
+                  "icon": "achievement_zone_thaldraszus",
+                  "id": 16808,
+                  "points": 15,
+                  "title": "Friend of the Dragon Isles"
+                }
+              ],
+              "name": "Campaign"
+            },
+            {
+              "id": "2d747fb7",
+              "items": [
+                {
+                  "icon": "inv_misc_ancient_mana",
+                  "id": 16291,
+                  "points": 5,
+                  "title": "An Ancient Awakening"
+                },
+                {
+                  "icon": "ability_socererking_arcanemines",
+                  "id": 16292,
+                  "points": 5,
+                  "title": "Mastering the Waygates"
+                }
+              ],
+              "name": "World"
+            },
+            {
+              "id": "371f0726",
+              "items": [
+                {
+                  "icon": "achievement_boss_valithradreamwalker",
+                  "id": 16574,
+                  "points": 5,
+                  "title": "Sleeping on the Job"
+                }
+              ],
+              "name": "Ohn'ahran Plains"
+            },
+            {
+              "id": "2d75f3d8",
+              "items": [
+                {
+                  "icon": "inv_misc_net_01",
+                  "id": 15889,
+                  "points": 5,
+                  "title": "River Rapids Wrangler"
+                },
+                {
+                  "icon": "inv_engineering_815_uberspanner",
+                  "id": 16580,
+                  "points": 10,
+                  "title": "Lend a Helping Span"
+                }
+              ],
+              "name": "Azure Span"
+            },
+            {
+              "id": "3b0121a0",
+              "items": [
+                {
+                  "icon": "inv_dracthyrhead03",
+                  "id": 15325,
+                  "points": 10,
+                  "side": "A",
+                  "title": "Dracthyr, Awaken"
+                },
+                {
+                  "icon": "inv_dracthyrhead03",
+                  "id": 15638,
+                  "points": 10,
+                  "side": "H",
+                  "title": "Dracthyr, Awaken"
+                }
+              ],
+              "name": "Dracthyr"
             }
           ]
         },
