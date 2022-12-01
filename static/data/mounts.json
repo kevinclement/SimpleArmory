@@ -152,15 +152,20 @@
     "name": "Dragonflight",
     "subcats": [
       {
-        "id": "c0bf4e7b",
         "items": [
           {
-            "ID": 1563,
-            "icon": "inv_companiondrake",
-            "itemId": 194705,
-            "name": "Highland Drake",
-            "spellid": 360954
-          },
+            "ID": 1681,
+            "icon": "inv_rhinoprimalmountice",
+            "itemId": 199412,
+            "name": "Hailstorm Armoredon",
+            "spellid": 387231
+          }
+        ],
+        "name": "Achievement"
+      },
+      {
+        "id": "c0bf4e7b",
+        "items": [
           {
             "ID": 1589,
             "icon": "inv_companionprotodragon",
@@ -176,6 +181,13 @@
             "spellid": 368899
           },
           {
+            "ID": 1563,
+            "icon": "inv_companiondrake",
+            "itemId": 194705,
+            "name": "Highland Drake",
+            "spellid": 360954
+          },
+          {
             "ID": 1591,
             "icon": "inv_companionwyvern",
             "itemId": 194521,
@@ -183,7 +195,7 @@
             "spellid": 368901
           }
         ],
-        "name": "Achievement"
+        "name": "Campaign"
       },
       {
         "id": "e504fa83",
@@ -239,7 +251,6 @@
         "name": "Quest"
       },
       {
-        "name": "Renown",
         "id": "ccc05f3b",
         "items": [
           {
@@ -249,7 +260,8 @@
             "name": "Verdant Skitterfly",
             "spellid": 374048
           }
-        ]
+        ],
+        "name": "Renown"
       },
       {
         "id": "8de51dfe",
@@ -320,17 +332,7 @@
         "name": "Grand Hunt"
       },
       {
-        "name": "Unknown",
-        "id": "7d999dce",
         "items": [
-          {
-            "ID": 1681,
-            "icon": "inv_rhinoprimalmountice",
-            "itemId": 199412,
-            "name": "Hailstorm Armoredon",
-            "notObtainable": true,
-            "spellid": 387231
-          },
           {
             "ID": 1607,
             "icon": "inv_pterrordax2mount_white",
@@ -338,7 +340,8 @@
             "notObtainable": true,
             "spellid": 372995
           }
-        ]
+        ],
+        "name": "Unknown"
       }
     ]
   },
@@ -5700,7 +5703,6 @@
         "name": "Pandaren"
       },
       {
-        "name": "Dracthyr",
         "id": "d8c1c078",
         "items": [
           {
@@ -5751,8 +5753,16 @@
             "itemId": 198810,
             "name": "Majestic Armored Vorquin",
             "spellid": 385115
+          },
+          {
+            "ID": 1664,
+            "icon": "inv_kirinmount_dark",
+            "itemId": 198808,
+            "name": "Guardian Vorquin",
+            "spellid": 384963
           }
-        ]
+        ],
+        "name": "Dracthyr"
       },
       {
         "id": "238a21a8",
@@ -7708,7 +7718,7 @@
           },
           {
             "ID": 1602,
-            "icon": "4500249",
+            "icon": "inv_tuskarrglider",
             "name": "Tuskarr Shoreglider",
             "spellid": 370770
           },
