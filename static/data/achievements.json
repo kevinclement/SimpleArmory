@@ -544,7 +544,7 @@
                   "title": "Cliffside Companion"
                 }
               ],
-              "name": "Dragon Riding"
+              "name": "Dragonriding"
             },
             {
               "id": "18fd042d",
@@ -24209,6 +24209,12 @@
                   "id": 12996,
                   "points": 10,
                   "title": "Toybox Tycoon"
+                },
+                {
+                  "icon": "inv_misc_primitive_toy15",
+                  "id": 15781,
+                  "points": 10,
+                  "title": "The Joy of Toy"
                 }
               ],
               "name": "Toy Box"
@@ -24937,6 +24943,222 @@
     },
     {
       "cats": [
+        {
+          "id": "7ec541dc",
+          "name": "Dragonriding",
+          "subcats": [
+            {
+              "id": "20c34fc2",
+              "items": [
+                {
+                  "icon": "inv_checkered_flag",
+                  "id": 15939,
+                  "points": 20,
+                  "title": "Dragon Racing Completionist"
+                },
+                {
+                  "icon": "inv_checkered_flag",
+                  "id": 15940,
+                  "points": 20,
+                  "title": "Dragon Racing Completionist: Silver"
+                },
+                {
+                  "icon": "inv_checkered_flag",
+                  "id": 15941,
+                  "points": 20,
+                  "title": "Dragon Racing Completionist: Gold"
+                }
+              ],
+              "name": ""
+            },
+            {
+              "id": "9d982695",
+              "items": [
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 15915,
+                  "points": 10,
+                  "title": "Waking Shores: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 15918,
+                  "points": 10,
+                  "title": "Ohn'ahran Plains: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 15921,
+                  "points": 10,
+                  "title": "Azure Span: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 15924,
+                  "points": 10,
+                  "title": "Thaldraszus: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 15916,
+                  "points": 10,
+                  "title": "Waking Shores: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 15919,
+                  "points": 10,
+                  "title": "Ohn'ahran Plains: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 15922,
+                  "points": 10,
+                  "title": "Azure Span: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 15925,
+                  "points": 10,
+                  "title": "Thaldraszus: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 15917,
+                  "points": 10,
+                  "title": "Waking Shores: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 15920,
+                  "points": 10,
+                  "title": "Ohn'ahran Plains: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 15923,
+                  "points": 10,
+                  "title": "Azure Span: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 15926,
+                  "points": 10,
+                  "title": "Thaldraszus: Gold"
+                }
+              ],
+              "name": "Normal Races"
+            },
+            {
+              "id": "1666568d",
+              "items": [
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 15927,
+                  "points": 10,
+                  "title": "Waking Shores Advanced: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 15930,
+                  "points": 10,
+                  "title": "Ohn'ahran Plains Advanced: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 15933,
+                  "points": 10,
+                  "title": "Azure Span Advanced: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 15936,
+                  "points": 10,
+                  "title": "Thaldraszus Advanced: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 15928,
+                  "points": 10,
+                  "title": "Waking Shores Advanced: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 15931,
+                  "points": 10,
+                  "title": "Ohn'ahran Plains Advanced: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 15934,
+                  "points": 10,
+                  "title": "Azure Span Advanced: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 15937,
+                  "points": 10,
+                  "title": "Thaldraszus Advanced: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 15929,
+                  "points": 10,
+                  "title": "Waking Shores Advanced: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 15932,
+                  "points": 10,
+                  "title": "Ohn'ahran Plains Advanced: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 15935,
+                  "points": 10,
+                  "title": "Azure Span Advanced: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 15938,
+                  "points": 10,
+                  "title": "Thaldraszus Advanced: Gold"
+                }
+              ],
+              "name": "Advanced Races"
+            },
+            {
+              "id": "ce7230c2",
+              "items": [
+                {
+                  "icon": "achievement_zone_wakingshores",
+                  "id": 16575,
+                  "points": 20,
+                  "title": "Waking Shores Glyph Hunter"
+                },
+                {
+                  "icon": "achievement_zone_ohnahranplains",
+                  "id": 16576,
+                  "points": 20,
+                  "title": "Ohn'ahran Plains Glyph Hunter"
+                },
+                {
+                  "icon": "achievement_zone_azurespan",
+                  "id": 16577,
+                  "points": 20,
+                  "title": "Azure Span Glyph Hunter"
+                },
+                {
+                  "icon": "achievement_zone_thaldraszus",
+                  "id": 16578,
+                  "points": 20,
+                  "title": "Thaldraszus Glyph Hunter"
+                }
+              ],
+              "name": "Glyphs"
+            }
+          ]
+        },
         {
           "id": "20845c7d",
           "name": "Covenant Sanctums",
@@ -29713,6 +29935,12 @@
                   "id": 14662,
                   "points": 0,
                   "title": "Realm First! Shadowlands Keystone Master"
+                },
+                {
+                  "icon": "achievement_challengemode_platinum",
+                  "id": 16801,
+                  "points": 0,
+                  "title": "Realm First! Dragonflight Keystone Hero"
                 }
               ],
               "name": "Realm First!"
@@ -30147,6 +30375,12 @@
                   "id": 15612,
                   "points": 0,
                   "title": "Eternal Gladiator's Soul Eater"
+                },
+                {
+                  "icon": "inv_drake2mountgladiator",
+                  "id": 16730,
+                  "points": 0,
+                  "title": "Crimson Gladiator's Drake"
                 }
               ],
               "name": "PVP"
@@ -30540,6 +30774,114 @@
                 }
               ],
               "name": "Mythic Keystone: Shadowlands"
+            },
+            {
+              "id": "580bf734",
+              "items": [
+                {
+                  "icon": "achievement_challengemode_platinum",
+                  "id": 16429,
+                  "points": 0,
+                  "title": "Thundering Hero: Dragonflight Season 1"
+                },
+                {
+                  "icon": "achievement_dungeon_uldaman",
+                  "id": 16639,
+                  "points": 0,
+                  "title": "Keystone Hero: Uldaman: Legacy of Tyr"
+                },
+                {
+                  "icon": "achievement_dungeon_lifepools",
+                  "id": 16640,
+                  "points": 0,
+                  "title": "Keystone Hero: Ruby Life Pools"
+                },
+                {
+                  "icon": "achievement_dungeon_centaurplains",
+                  "id": 16641,
+                  "points": 0,
+                  "title": "Keystone Hero: The Nokhud Offensive"
+                },
+                {
+                  "icon": "achievement_dungeon_brackenhidehollow",
+                  "id": 16642,
+                  "points": 0,
+                  "title": "Keystone Hero: Brackenhide Hollow"
+                },
+                {
+                  "icon": "achievement_dungeon_dragonacademy",
+                  "id": 16643,
+                  "points": 0,
+                  "title": "Keystone Hero: Algeth'ar Academy"
+                },
+                {
+                  "icon": "achievement_dungeon_neltharus",
+                  "id": 16644,
+                  "points": 0,
+                  "title": "Keystone Hero: Neltharus"
+                },
+                {
+                  "icon": "achievement_dungeon_arcanevaults",
+                  "id": 16645,
+                  "points": 0,
+                  "title": "Keystone Hero: The Azure Vault"
+                },
+                {
+                  "icon": "achievement_dungeon_hallsofinfusion",
+                  "id": 16646,
+                  "points": 0,
+                  "title": "Keystone Hero: Halls of Infusion"
+                },
+                {
+                  "icon": "achievement_challengemode_silver",
+                  "id": 16647,
+                  "points": 0,
+                  "title": "Dragonflight Keystone Explorer: Season One"
+                },
+                {
+                  "icon": "achievement_challengemode_gold",
+                  "id": 16648,
+                  "points": 0,
+                  "title": "Dragonflight Keystone Conqueror: Season One"
+                },
+                {
+                  "icon": "achievement_challengemode_platinum",
+                  "id": 16649,
+                  "points": 0,
+                  "title": "Dragonflight Keystone Master: Season One"
+                },
+                {
+                  "icon": "achievement_challengemode_scholomance_platinum",
+                  "id": 16650,
+                  "points": 0,
+                  "title": "Dragonflight Keystone Hero: Season One"
+                },
+                {
+                  "icon": "achievement_dungeon_courtofstars",
+                  "id": 16658,
+                  "points": 0,
+                  "title": "Keystone Hero: Court of Stars"
+                },
+                {
+                  "icon": "achievement_dungeon_hallsofvalor",
+                  "id": 16659,
+                  "points": 0,
+                  "title": "Keystone Hero: Halls of Valor"
+                },
+                {
+                  "icon": "achievement_dungeon_shadowmoonhideout",
+                  "id": 16660,
+                  "points": 0,
+                  "title": "Keystone Hero: Shadowmoon Burial Grounds"
+                },
+                {
+                  "icon": "achievement_jadeserpent",
+                  "id": 16661,
+                  "points": 0,
+                  "title": "Keystone Hero: Temple of the Jade Serpent"
+                }
+              ],
+              "name": "Mythic Keystone: Dragonflight"
             },
             {
               "id": "786c469d",
@@ -30984,6 +31326,18 @@
                   "id": 15469,
                   "points": 0,
                   "title": "We Are All Made of Stars (Mythic)"
+                },
+                {
+                  "icon": "achievement_raidprimalist_raszageth",
+                  "id": 17107,
+                  "points": 0,
+                  "title": "Ahead of the Curve: Raszageth the Storm-Eater"
+                },
+                {
+                  "icon": "achievement_raidprimalist_raszageth",
+                  "id": 17108,
+                  "points": 0,
+                  "title": "Cutting Edge: Raszageth the Storm-Eater"
                 }
               ],
               "name": "Lost Content"
@@ -32094,6 +32448,72 @@
                   "id": 15639,
                   "points": 0,
                   "title": "Elite: Shadowlands Season 4"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_10",
+                  "id": 15960,
+                  "points": 0,
+                  "title": "Combatant I: Dragonflight Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_10",
+                  "id": 15961,
+                  "points": 0,
+                  "title": "Combatant II: Dragonflight Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 15955,
+                  "points": 0,
+                  "title": "Challenger I: Dragonflight Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 15956,
+                  "points": 0,
+                  "title": "Challenger II: Dragonflight Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 15952,
+                  "points": 0,
+                  "title": "Rival I: Dragonflight Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 15953,
+                  "points": 0,
+                  "title": "Rival II: Dragonflight Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 15954,
+                  "points": 0,
+                  "title": "Duelist: Dragonflight Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 15957,
+                  "points": 0,
+                  "title": "Gladiator: Dragonflight Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 15984,
+                  "points": 0,
+                  "title": "Elite: Dragonflight Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 15951,
+                  "points": 0,
+                  "title": "Crimson Gladiator: Dragonflight Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 16734,
+                  "points": 0,
+                  "title": "Crimson Soloist: Dragonflight Season 1"
                 }
               ],
               "name": "Rated Arena"
@@ -32870,6 +33290,20 @@
                   "points": 0,
                   "side": "A",
                   "title": "Hero of the Alliance: Eternal"
+                },
+                {
+                  "icon": "achievement_pvp_h_h",
+                  "id": 15958,
+                  "points": 0,
+                  "side": "H",
+                  "title": "Hero of the Horde: Crimson"
+                },
+                {
+                  "icon": "achievement_pvp_a_a",
+                  "id": 15959,
+                  "points": 0,
+                  "side": "A",
+                  "title": "Hero of the Alliance: Crimson"
                 }
               ],
               "name": "Rated Battleground"
@@ -33227,6 +33661,12 @@
                   "id": 14750,
                   "points": 0,
                   "title": "Death Rising"
+                },
+                {
+                  "icon": "inv_elemental_primal_air",
+                  "id": 16431,
+                  "points": 0,
+                  "title": "Against the Elements"
                 }
               ],
               "name": "Events"
@@ -33577,6 +34017,12 @@
                   "id": 14283,
                   "points": 0,
                   "title": "Heroic Edition: Ensorcelled Everwyrm"
+                },
+                {
+                  "icon": "4096390",
+                  "id": 17314,
+                  "points": 0,
+                  "title": "Heroic Edition: Tangled Dreamweaver"
                 }
               ],
               "name": "Collector's Edition"
