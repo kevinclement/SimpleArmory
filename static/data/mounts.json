@@ -201,13 +201,6 @@
         "id": "e504fa83",
         "items": [
           {
-            "ID": 1469,
-            "icon": "inv_snailmount_orange",
-            "itemId": 192777,
-            "name": "Magmashell",
-            "spellid": 350219
-          },
-          {
             "ID": 1553,
             "icon": "inv_foxwyvernmountblack",
             "itemId": 201440,
@@ -222,16 +215,17 @@
             "spellid": 385266
           }
         ],
-        "name": "Drop"
+        "name": "Rare Spawn"
       },
       {
         "id": "8dc7b48a",
         "items": [
           {
-            "ID": 1545,
-            "icon": "inv_eagle2windmount_white",
-            "name": "Divine Kiss of Ohn'ahra",
-            "spellid": 395644
+            "ID": 1612,
+            "icon": "inv_mammoth2lavamount_orange",
+            "itemId": 192601,
+            "name": "Loyal Magmammoth",
+            "spellid": 373859
           },
           {
             "ID": 1639,
@@ -241,45 +235,17 @@
             "spellid": 374247
           },
           {
-            "ID": 1656,
-            "icon": "inv_riverotterlargemount01_blue",
-            "itemId": 198870,
-            "name": "Otto",
-            "spellid": 376873
+            "ID": 1545,
+            "icon": "inv_eagle2windmount_white",
+            "name": "Divine Kiss of Ohn'ahra",
+            "spellid": 395644
           }
         ],
-        "name": "Quest"
+        "name": "Puzzle"
       },
       {
         "id": "ccc05f3b",
         "items": [
-          {
-            "ID": 1617,
-            "icon": "inv_primaldragonflymount_green",
-            "itemId": 192764,
-            "name": "Verdant Skitterfly",
-            "spellid": 374048
-          }
-        ],
-        "name": "Renown"
-      },
-      {
-        "id": "8de51dfe",
-        "items": [
-          {
-            "ID": 1546,
-            "icon": "inv_riverotterlargemount01_black",
-            "itemId": 198871,
-            "name": "Iskaara Trader's Ottuk",
-            "spellid": 359409
-          },
-          {
-            "ID": 1612,
-            "icon": "inv_mammoth2lavamount_orange",
-            "itemId": 192601,
-            "name": "Loyal Magmammoth",
-            "spellid": 373859
-          },
           {
             "ID": 1615,
             "icon": "inv_primaldragonflymount_black",
@@ -295,32 +261,37 @@
             "spellid": 374034
           },
           {
+            "ID": 1657,
+            "icon": "inv_riverotterlargemount01_brown",
+            "itemId": 198872,
+            "name": "Brown Scouting Ottuk",
+            "spellid": 376875
+          }
+        ],
+        "name": "Renown"
+      },
+      {
+        "items": [
+          {
+            "ID": 1617,
+            "icon": "inv_primaldragonflymount_green",
+            "itemId": 192764,
+            "name": "Verdant Skitterfly",
+            "spellid": 374048
+          }
+        ],
+        "name": "Treasure"
+      },
+      {
+        "id": "9bd50489",
+        "items": [
+          {
             "ID": 1622,
             "icon": "inv_salamanderwatermount_purple",
             "itemId": 192775,
             "name": "Stormhide Salamanther",
             "spellid": 374098
           },
-          {
-            "ID": 1657,
-            "icon": "inv_riverotterlargemount01_brown",
-            "itemId": 198872,
-            "name": "Brown Scouting Ottuk",
-            "spellid": 376875
-          },
-          {
-            "ID": 1658,
-            "icon": "inv_riverotterlargemount01_white",
-            "itemId": 198873,
-            "name": "Ivory Trader's Ottuk",
-            "spellid": 376879
-          }
-        ],
-        "name": "Vendor"
-      },
-      {
-        "id": "9bd50489",
-        "items": [
           {
             "ID": 1635,
             "icon": "inv_mammoth2mount_orange",
@@ -329,10 +300,50 @@
             "spellid": 374196
           }
         ],
-        "name": "Grand Hunt"
+        "name": "Events"
       },
       {
         "items": [
+          {
+            "ID": 1658,
+            "icon": "inv_riverotterlargemount01_white",
+            "itemId": 198873,
+            "name": "Ivory Trader's Ottuk",
+            "spellid": 376879
+          }
+        ],
+        "name": "Dungeon Drop"
+      },
+      {
+        "items": [
+          {
+            "ID": 1546,
+            "icon": "inv_riverotterlargemount01_black",
+            "itemId": 198871,
+            "name": "Iskaara Trader's Ottuk",
+            "spellid": 359409
+          }
+        ],
+        "name": "Raid Drop"
+      },
+      {
+        "items": [
+          {
+            "ID": 1469,
+            "icon": "inv_snailmount_orange",
+            "itemId": 192777,
+            "name": "Magmashell",
+            "notObtainable": true,
+            "spellid": 350219
+          },
+          {
+            "ID": 1656,
+            "icon": "inv_riverotterlargemount01_blue",
+            "itemId": 198870,
+            "name": "Otto",
+            "notObtainable": true,
+            "spellid": 376873
+          },
           {
             "ID": 1607,
             "icon": "inv_pterrordax2mount_white",
