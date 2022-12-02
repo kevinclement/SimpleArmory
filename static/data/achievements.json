@@ -9345,6 +9345,30 @@
               "name": "Keystone"
             },
             {
+              "id": "fcf9e8f0",
+              "items": [
+                {
+                  "icon": "inv_10_dungeonjewelry_dragon_trinket_5_black",
+                  "id": 16294,
+                  "points": 20,
+                  "title": "Dragonflight Dungeon Hero"
+                },
+                {
+                  "icon": "inv_plate_dragondungeon_c_01_helm",
+                  "id": 16295,
+                  "points": 25,
+                  "title": "Glory of the Dragonflight Hero"
+                },
+                {
+                  "icon": "achievement_raidprimalist_raid",
+                  "id": 16355,
+                  "points": 25,
+                  "title": "Glory of the Vault Raider"
+                }
+              ],
+              "name": "Dragonflight"
+            },
+            {
               "id": "badb4895",
               "items": [
                 {
@@ -9679,6 +9703,522 @@
                 }
               ],
               "name": "Classic"
+            }
+          ]
+        },
+        {
+          "id": "05dd8c7f",
+          "name": "Dragonflight Raid",
+          "subcats": [
+            {
+              "id": "118a9eb5",
+              "items": [
+                {
+                  "icon": "achievement_raidprimalist_windelemental",
+                  "id": 17110,
+                  "points": 10,
+                  "title": "The Primal Bulwark"
+                },
+                {
+                  "icon": "achievement_raidprimalist_kurog",
+                  "id": 17111,
+                  "points": 10,
+                  "title": "Caverns of Infusion"
+                },
+                {
+                  "icon": "achievement_raidprimalist_raszageth",
+                  "id": 17112,
+                  "points": 10,
+                  "title": "Fury of the Storm"
+                },
+                {
+                  "icon": "achievement_raidprimalist_raid",
+                  "id": 16343,
+                  "points": 10,
+                  "title": "Vault of the Incarnates"
+                },
+                {
+                  "icon": "achievement_raidprimalist_raid",
+                  "id": 16345,
+                  "points": 10,
+                  "title": "Heroic: Vault of the Incarnates"
+                },
+                {
+                  "icon": "achievement_raidprimalist_raid",
+                  "id": 16354,
+                  "points": 10,
+                  "title": "Mythic: Vault of the Incarnates"
+                },
+                {
+                  "icon": "achievement_raidprimalist_eranog",
+                  "id": 16346,
+                  "points": 10,
+                  "title": "Mythic: Eranog"
+                },
+                {
+                  "icon": "achievement_raidprimalist_terros",
+                  "id": 16347,
+                  "points": 10,
+                  "title": "Mythic: Terros"
+                },
+                {
+                  "icon": "achievement_raidprimalist_council",
+                  "id": 16348,
+                  "points": 10,
+                  "title": "Mythic: The Primal Council"
+                },
+                {
+                  "icon": "achievement_raidprimalist_sennarth",
+                  "id": 16349,
+                  "points": 10,
+                  "title": "Mythic: Sennarth, The Cold Breath"
+                },
+                {
+                  "icon": "achievement_raidprimalist_windelemental",
+                  "id": 16350,
+                  "points": 10,
+                  "title": "Mythic: Dathea, Ascended"
+                },
+                {
+                  "icon": "achievement_raidprimalist_kurog",
+                  "id": 16351,
+                  "points": 10,
+                  "title": "Mythic: Kurog Grimtotem"
+                },
+                {
+                  "icon": "achievement_raidprimalist_diurna",
+                  "id": 16352,
+                  "points": 10,
+                  "title": "Mythic: Broodkeeper Diurna"
+                },
+                {
+                  "icon": "achievement_raidprimalist_raszageth",
+                  "id": 16353,
+                  "points": 10,
+                  "title": "Mythic: Raszageth the Storm-Eater"
+                },
+                {
+                  "icon": "inv_iceelementalprimal_purple",
+                  "id": 16335,
+                  "points": 10,
+                  "title": "What Frozen Things Do"
+                },
+                {
+                  "icon": "inv_10_elementalspiritfoozles_earth",
+                  "id": 16365,
+                  "points": 10,
+                  "title": "Little Friends"
+                },
+                {
+                  "icon": "inv_toadswamp_orange",
+                  "id": 16364,
+                  "points": 10,
+                  "title": "The Lunker Below"
+                },
+                {
+                  "icon": "spell_mekkatorque_bot_purplechicken",
+                  "id": 16419,
+                  "points": 10,
+                  "title": "I Was Saving That For Later"
+                },
+                {
+                  "icon": "spell_frost_windwalkon",
+                  "id": 16458,
+                  "points": 10,
+                  "title": "Nothing But Air"
+                },
+                {
+                  "icon": "inv_10_elementalcombinedfoozles_primordial",
+                  "id": 16450,
+                  "points": 10,
+                  "title": "The Power is MINE!"
+                },
+                {
+                  "icon": "shaman_pvp_lightninglasso",
+                  "id": 16442,
+                  "points": 10,
+                  "title": "Incubation Extermination"
+                },
+                {
+                  "icon": "ability_socererking_forcenova",
+                  "id": 16451,
+                  "points": 10,
+                  "title": "The Ol Raszle Daszle"
+                }
+              ],
+              "name": "Vault of the Incarnates"
+            }
+          ]
+        },
+        {
+          "id": "a10d8892",
+          "name": "Dragonflight Dungeon",
+          "subcats": [
+            {
+              "id": "d8863364",
+              "items": [
+                {
+                  "icon": "inv_companionprotodragon",
+                  "id": 16339,
+                  "points": 10,
+                  "title": "Myths of the Dragonflight Dungeons"
+                }
+              ],
+              "name": ""
+            },
+            {
+              "id": "79fa2e7d",
+              "items": [
+                {
+                  "icon": "achievement_dungeon_dragonacademy",
+                  "id": 16269,
+                  "points": 10,
+                  "title": "Algeth'ar Academy"
+                },
+                {
+                  "icon": "achievement_dungeon_dragonacademy",
+                  "id": 16270,
+                  "points": 10,
+                  "title": "Heroic: Algeth'ar Academy"
+                },
+                {
+                  "icon": "achievement_dungeon_dragonacademy",
+                  "id": 16271,
+                  "points": 10,
+                  "title": "Mythic: Algeth'ar Academy"
+                },
+                {
+                  "icon": "spell_mage_arcaneorb",
+                  "id": 16434,
+                  "points": 10,
+                  "title": "See Me After Class"
+                },
+                {
+                  "icon": "inv_duck_green",
+                  "id": 16329,
+                  "points": 10,
+                  "title": "Duck, Duck, Spruce!"
+                },
+                {
+                  "icon": "achievement_general_dungeondiplomat",
+                  "id": 16441,
+                  "points": 10,
+                  "title": "Squad Goals"
+                }
+              ],
+              "name": "Algeth'ar Academy"
+            },
+            {
+              "id": "8f937a91",
+              "items": [
+                {
+                  "icon": "achievement_dungeon_brackenhidehollow",
+                  "id": 16255,
+                  "points": 10,
+                  "title": "Brackenhide Hollow"
+                },
+                {
+                  "icon": "achievement_dungeon_brackenhidehollow",
+                  "id": 16256,
+                  "points": 10,
+                  "title": "Heroic: Brackenhide Hollow"
+                },
+                {
+                  "icon": "achievement_dungeon_brackenhidehollow",
+                  "id": 16257,
+                  "points": 10,
+                  "title": "Mythic: Brackenhide Hollow"
+                },
+                {
+                  "icon": "inv_pet_butterfly_purple",
+                  "id": 16296,
+                  "points": 10,
+                  "title": "Growlbossify"
+                },
+                {
+                  "icon": "ability_creature_poison_01",
+                  "id": 16430,
+                  "points": 10,
+                  "title": "All Bark, All Bite"
+                },
+                {
+                  "icon": "inv_misc_food_96_zangarcaps",
+                  "id": 16404,
+                  "points": 10,
+                  "title": "So You Can Kill This in a Way That Matters..."
+                },
+                {
+                  "icon": "inv_10_dungeonjewelry_primitive_trinket_tuskarrplushie_color1",
+                  "id": 16762,
+                  "points": 10,
+                  "title": "The Vegetarian Diet"
+                },
+                {
+                  "icon": "inv_gnollkid_tan",
+                  "id": 16110,
+                  "points": 10,
+                  "title": "Subscribed to Hyena Facts"
+                }
+              ],
+              "name": "Brackenhide Hollow"
+            },
+            {
+              "id": "e20e8838",
+              "items": [
+                {
+                  "icon": "achievement_dungeon_hallsofinfusion",
+                  "id": 16260,
+                  "points": 10,
+                  "title": "Halls of Infusion"
+                },
+                {
+                  "icon": "achievement_dungeon_hallsofinfusion",
+                  "id": 16261,
+                  "points": 10,
+                  "title": "Heroic: Halls of Infusion"
+                },
+                {
+                  "icon": "achievement_dungeon_hallsofinfusion",
+                  "id": 16262,
+                  "points": 10,
+                  "title": "Mythic: Halls of Infusion"
+                },
+                {
+                  "icon": "spell_misc_emotionangry",
+                  "id": 16426,
+                  "points": 10,
+                  "title": "Hungry Hungry Hornswog"
+                },
+                {
+                  "icon": "spell_frost_summonwaterelemental",
+                  "id": 16427,
+                  "points": 10,
+                  "title": "Go With the Flow"
+                },
+                {
+                  "icon": "ability_creature_poison_02",
+                  "id": 16517,
+                  "points": 10,
+                  "title": "Toxicity Strike Team"
+                }
+              ],
+              "name": "Halls of Infusion"
+            },
+            {
+              "id": "4db8d372",
+              "items": [
+                {
+                  "icon": "achievement_dungeon_neltharus",
+                  "id": 16263,
+                  "points": 10,
+                  "title": "Neltharus"
+                },
+                {
+                  "icon": "achievement_dungeon_neltharus",
+                  "id": 16264,
+                  "points": 10,
+                  "title": "Heroic: Neltharus"
+                },
+                {
+                  "icon": "achievement_dungeon_neltharus",
+                  "id": 16265,
+                  "points": 10,
+                  "title": "Mythic: Neltharus"
+                },
+                {
+                  "icon": "inv_10_inscription2_book2_color1",
+                  "id": 16438,
+                  "points": 10,
+                  "title": "Knowledge is... Preserved?"
+                },
+                {
+                  "icon": "spell_shadow_rainoffire",
+                  "id": 16432,
+                  "points": 10,
+                  "title": "Ready for Raiding VIII"
+                },
+                {
+                  "icon": "inv_misc_herb_fireweed",
+                  "id": 16453,
+                  "points": 10,
+                  "title": "Liquid Hot Magma"
+                }
+              ],
+              "name": "Neltharus"
+            },
+            {
+              "id": "091a3af3",
+              "items": [
+                {
+                  "icon": "achievement_dungeon_lifepools",
+                  "id": 16266,
+                  "points": 10,
+                  "title": "Ruby Life Pools"
+                },
+                {
+                  "icon": "achievement_dungeon_lifepools",
+                  "id": 16267,
+                  "points": 10,
+                  "title": "Heroic: Ruby Life Pools"
+                },
+                {
+                  "icon": "achievement_dungeon_lifepools",
+                  "id": 16268,
+                  "points": 10,
+                  "title": "Mythic: Ruby Life Pools"
+                },
+                {
+                  "icon": "inv_dragonwhelp3_gemmed_red",
+                  "id": 16402,
+                  "points": 10,
+                  "title": "Dragon Kill Points"
+                },
+                {
+                  "icon": "inv_10_elementalcombinedfoozles_air",
+                  "id": 16320,
+                  "points": 10,
+                  "title": "Does Steam Do Fire Damage?"
+                },
+                {
+                  "icon": "inv_item_dragonegg_redbroken01",
+                  "id": 16440,
+                  "points": 10,
+                  "title": "Are You My Broodmother?"
+                }
+              ],
+              "name": "Ruby Life Pools"
+            },
+            {
+              "id": "552bca9f",
+              "items": [
+                {
+                  "icon": "achievement_dungeon_arcanevaults",
+                  "id": 16272,
+                  "points": 10,
+                  "title": "The Azure Vault"
+                },
+                {
+                  "icon": "achievement_dungeon_arcanevaults",
+                  "id": 16273,
+                  "points": 10,
+                  "title": "Heroic: The Azure Vault"
+                },
+                {
+                  "icon": "achievement_dungeon_arcanevaults",
+                  "id": 16274,
+                  "points": 10,
+                  "title": "Mythic: The Azure Vault"
+                },
+                {
+                  "icon": "inv_enchanting_80_veiledcrystal",
+                  "id": 16445,
+                  "points": 10,
+                  "title": "Icy What You Did There"
+                },
+                {
+                  "icon": "inv_datacrystal07",
+                  "id": 16331,
+                  "points": 10,
+                  "title": "The Cracked Crystal"
+                },
+                {
+                  "icon": "ability_stealth",
+                  "id": 16330,
+                  "points": 10,
+                  "title": "You Must Be Made of Hide"
+                }
+              ],
+              "name": "The Azure Vault"
+            },
+            {
+              "id": "948cbb46",
+              "items": [
+                {
+                  "icon": "achievement_dungeon_centaurplains",
+                  "id": 16275,
+                  "points": 10,
+                  "title": "The Nokhud Offensive"
+                },
+                {
+                  "icon": "achievement_dungeon_centaurplains",
+                  "id": 16276,
+                  "points": 10,
+                  "title": "Heroic: The Nokhud Offensive"
+                },
+                {
+                  "icon": "achievement_dungeon_centaurplains",
+                  "id": 16277,
+                  "points": 10,
+                  "title": "Mythic: The Nokhud Offensive"
+                },
+                {
+                  "icon": "inv_10_elementalspiritfoozles_lightning",
+                  "id": 16447,
+                  "points": 10,
+                  "title": "What Are The Chances..."
+                },
+                {
+                  "icon": "warlock_curse_weakness_aura",
+                  "id": 16456,
+                  "points": 10,
+                  "title": "Weapons of the Maruukai"
+                },
+                {
+                  "icon": "inv_eagle2wind",
+                  "id": 16602,
+                  "points": 10,
+                  "title": "Nokhud Deed Goes Unnoticed"
+                },
+                {
+                  "icon": "inv_egg_08",
+                  "id": 16620,
+                  "points": 10,
+                  "title": "Ohuna Incubation"
+                }
+              ],
+              "name": "The Nokhud Offensive"
+            },
+            {
+              "id": "b23c3413",
+              "items": [
+                {
+                  "icon": "achievement_dungeon_uldaman",
+                  "id": 16278,
+                  "points": 10,
+                  "title": "Uldaman: Legacy of Tyr"
+                },
+                {
+                  "icon": "achievement_dungeon_uldaman",
+                  "id": 16279,
+                  "points": 10,
+                  "title": "Heroic: Uldaman: Legacy of Tyr"
+                },
+                {
+                  "icon": "achievement_dungeon_uldaman",
+                  "id": 16280,
+                  "points": 10,
+                  "title": "Mythic: Uldaman: Legacy of Tyr"
+                },
+                {
+                  "icon": "inv_misc_food_68",
+                  "id": 16337,
+                  "points": 10,
+                  "title": "It's a Trogg Eat Trogg World"
+                },
+                {
+                  "icon": "inv_misc_seagullpet_01",
+                  "id": 16282,
+                  "points": 10,
+                  "title": "No, You're Stunning!"
+                },
+                {
+                  "icon": "inv_relics_hourglass",
+                  "id": 16281,
+                  "points": 10,
+                  "title": "Like Sands Through the Hourglass"
+                }
+              ],
+              "name": "Uldaman: Legacy of Tyr"
             }
           ]
         },
@@ -17942,6 +18482,12 @@
                   "title": "Professional Shadowlands Master"
                 },
                 {
+                  "icon": "inv_misc_note_01",
+                  "id": 16627,
+                  "points": 10,
+                  "title": "Professional Draconic Master"
+                },
+                {
                   "icon": "Ability_Repair",
                   "id": 735,
                   "points": 10,
@@ -17992,6 +18538,12 @@
                   "title": "Working the Afterlife"
                 },
                 {
+                  "icon": "ability_repair",
+                  "id": 16626,
+                  "points": 10,
+                  "title": "Working with Wyrms"
+                },
+                {
                   "icon": "ui_profession_blacksmithing",
                   "id": 7378,
                   "points": 25,
@@ -18034,6 +18586,12 @@
                   "id": 14330,
                   "points": 50,
                   "title": "Shadowlands Master of All"
+                },
+                {
+                  "icon": "inv_hammer_16",
+                  "id": 16630,
+                  "points": 50,
+                  "title": "Draconic Master of All"
                 },
                 {
                   "icon": "inv_recipe_70_-scroll2star",
@@ -18132,9 +18690,33 @@
                   "id": 13516,
                   "points": 10,
                   "title": "Massive Tool"
+                },
+                {
+                  "icon": "inv_10_elementalcombinedfoozles_titan",
+                  "id": 16683,
+                  "points": 15,
+                  "title": "In Tyr's Footsteps"
                 }
               ],
               "name": "Other"
+            },
+            {
+              "id": "886cb054",
+              "items": [
+                {
+                  "icon": "inv_tabard_craftingorder_c_01",
+                  "id": 16791,
+                  "points": 50,
+                  "title": "Merchant Artisan"
+                },
+                {
+                  "icon": "inv_tabard_craftingorder_c_01",
+                  "id": 16799,
+                  "points": 25,
+                  "title": "Personal Crafter"
+                }
+              ],
+              "name": "Crafting Orders"
             }
           ]
         },
@@ -18260,6 +18842,12 @@
                   "id": 14332,
                   "points": 10,
                   "title": "Shadowlands Cook"
+                },
+                {
+                  "icon": "ui_profession_cooking",
+                  "id": 16631,
+                  "points": 10,
+                  "title": "Dragon Isles Cook"
                 }
               ],
               "name": "Skill"
@@ -18668,6 +19256,12 @@
                   "id": 14333,
                   "points": 10,
                   "title": "Shadowlands Fisherman"
+                },
+                {
+                  "icon": "ui_profession_fishing",
+                  "id": 16632,
+                  "points": 10,
+                  "title": "Dragon Isles Fisherman"
                 }
               ],
               "name": "Skill"
