@@ -20125,6 +20125,354 @@
           ]
         },
         {
+          "id": "509c366a",
+          "name": "Dragonflight",
+          "subcats": [
+            {
+              "id": "285f7bcd",
+              "items": [
+                {
+                  "icon": "ui_majorfaction_expedition",
+                  "id": 16522,
+                  "points": 5,
+                  "title": "A True Explorer"
+                },
+                {
+                  "icon": "ui_majorfaction_centaur",
+                  "id": 16528,
+                  "points": 5,
+                  "title": "Joining the Khansguard"
+                },
+                {
+                  "icon": "ui_majorfaction_tuskarr",
+                  "id": 16529,
+                  "points": 5,
+                  "title": "Joining the Community"
+                },
+                {
+                  "icon": "ui_majorfaction_valdrakken",
+                  "id": 16530,
+                  "points": 5,
+                  "title": "Ally of the Flights"
+                },
+                {
+                  "icon": "spell_warrior_dragoncharge",
+                  "id": 16549,
+                  "points": 40,
+                  "title": "Popular Around the Isles"
+                },
+                {
+                  "icon": "inv_artifact_stolenpower",
+                  "id": 16537,
+                  "points": 5,
+                  "title": "Maximum Power!"
+                },
+                {
+                  "icon": "inv_misc_statue_04",
+                  "id": 16539,
+                  "points": 5,
+                  "title": "In High Esteem"
+                }
+              ],
+              "name": ""
+            },
+            {
+              "id": "d5d34c04",
+              "items": [
+                {
+                  "icon": "inv_misc_-selfiecamera_01",
+                  "id": 16758,
+                  "points": 5,
+                  "title": "Ready, Aim, Catalog!"
+                },
+                {
+                  "icon": "inv_misc_-selfiecamera_01",
+                  "id": 16560,
+                  "points": 10,
+                  "title": "Wildlife Photographer"
+                },
+                {
+                  "icon": "inv_misc_-selfiecamera_sketch",
+                  "id": 16566,
+                  "points": 5,
+                  "title": "Great Shot!"
+                },
+                {
+                  "icon": "inv_misc_-selfiecamera_sketch",
+                  "id": 16567,
+                  "points": 5,
+                  "title": "A Lot of Great Shots!"
+                },
+                {
+                  "icon": "inv_misc_-selfiecamera_sketch",
+                  "id": 16568,
+                  "points": 10,
+                  "title": "Great Shots Galore!"
+                },
+                {
+                  "icon": "inv_misc_-selfiecamera_normal",
+                  "id": 16572,
+                  "points": 5,
+                  "title": "Legendary Photograph"
+                },
+                {
+                  "icon": "inv_misc_-selfiecamera_normal",
+                  "id": 16573,
+                  "points": 5,
+                  "title": "Legendary Photographs"
+                },
+                {
+                  "icon": "inv_misc_-selfiecamera_normal",
+                  "id": 16570,
+                  "points": 10,
+                  "title": "A Legendary Album"
+                },
+                {
+                  "icon": "inv_misc_rope_02",
+                  "id": 16624,
+                  "points": 5,
+                  "title": "Which Knot Was It Again?"
+                },
+                {
+                  "icon": "ability_vehicle_launchplayer",
+                  "id": 16587,
+                  "points": 5,
+                  "title": "Lead Climber"
+                },
+                {
+                  "icon": "3056991",
+                  "id": 16600,
+                  "points": 10,
+                  "title": "Isles Ascender"
+                },
+                {
+                  "icon": "inv_misc_coinbag06",
+                  "id": 16588,
+                  "points": 5,
+                  "title": "How Did These Get Here?"
+                },
+                {
+                  "icon": "inv_misc_food_lunchbox_devilsaur",
+                  "id": 16571,
+                  "points": 10,
+                  "title": "Well Supplied"
+                },
+                {
+                  "icon": "inv_helmet_44",
+                  "id": 16591,
+                  "points": 5,
+                  "title": "The Gentleman Elemental"
+                },
+                {
+                  "icon": "inv_boot_armor_gnome_d_01",
+                  "id": 16623,
+                  "points": 10,
+                  "title": "Toe Tension"
+                },
+                {
+                  "icon": "achievement_reputation_01",
+                  "id": 16625,
+                  "points": 5,
+                  "title": "Belay On!"
+                }
+              ],
+              "name": "Dragonscale Expedition"
+            },
+            {
+              "id": "6ebe1592",
+              "items": [
+                {
+                  "icon": "ability_hunter_efficiency",
+                  "id": 16540,
+                  "points": 15,
+                  "title": "Hunt Master"
+                },
+                {
+                  "icon": "ability_hunter_improvedtracking",
+                  "id": 16541,
+                  "points": 10,
+                  "title": "Longhunter"
+                },
+                {
+                  "icon": "achievement_character_dwarf_male",
+                  "id": 16542,
+                  "points": 15,
+                  "title": "The Disgruntled Hunter"
+                },
+                {
+                  "icon": "ability_hunter_invigeration",
+                  "id": 16543,
+                  "points": 10,
+                  "title": "Tetrachromancer"
+                },
+                {
+                  "icon": "inv_misc_horn_04",
+                  "id": 16544,
+                  "points": 5,
+                  "title": "Grand Hunter"
+                },
+                {
+                  "icon": "ability_evoker_masterygiantkiller",
+                  "id": 16545,
+                  "points": 15,
+                  "title": "The Best at What I Do"
+                }
+              ],
+              "name": "Maruuk Centaur"
+            },
+            {
+              "id": "3d64ebc7",
+              "items": [
+                {
+                  "icon": "inv_10_tracking_fishing",
+                  "id": 16533,
+                  "points": 10,
+                  "title": "Lots of Lunkers"
+                },
+                {
+                  "icon": "inv_fish_blackbarracudagreen",
+                  "id": 16561,
+                  "points": 10,
+                  "title": "Lunkers, Lunkers Everywhere"
+                },
+                {
+                  "icon": "inv_fish_blackbarracudagreen",
+                  "id": 16531,
+                  "points": 10,
+                  "title": "A Whole Heap of Lunkers"
+                },
+                {
+                  "icon": "inv_10_dungeonjewelry_tuskarr_trinket_1_color3",
+                  "id": 16317,
+                  "points": 10,
+                  "title": "Secret Fishing Spots"
+                },
+                {
+                  "icon": "hunter_pvp_trackersnet",
+                  "id": 16321,
+                  "points": 10,
+                  "title": "Cutting Tusk Equipment"
+                },
+                {
+                  "icon": "inv_fishingpole_03",
+                  "id": 16322,
+                  "points": 10,
+                  "title": "Best in Slot"
+                },
+                {
+                  "icon": "inv_tradeskill_cooking_stonesouppot01",
+                  "id": 16443,
+                  "points": 10,
+                  "title": "Soupervisor"
+                },
+                {
+                  "icon": "inv_misc_1h_pa_spoon_a_01",
+                  "id": 16444,
+                  "points": 10,
+                  "title": "Leftovers' Revenge"
+                },
+                {
+                  "icon": "inv_fishing_frenziedfangtooth",
+                  "id": 16546,
+                  "points": 10,
+                  "title": "What's Down There?"
+                },
+                {
+                  "icon": "inv_fishing_frenziedfangtooth",
+                  "id": 16562,
+                  "points": 10,
+                  "title": "That's not a Fish..."
+                },
+                {
+                  "icon": "inv_fishing_frenziedfangtooth",
+                  "id": 16563,
+                  "points": 10,
+                  "title": "We're Going to Need a Bigger Harpoon"
+                },
+                {
+                  "icon": "spell_frost_stun",
+                  "id": 16547,
+                  "points": 10,
+                  "title": "Pulled!"
+                },
+                {
+                  "icon": "inv_polearm_2h_kultirasharpoon_a_01",
+                  "id": 16548,
+                  "points": 10,
+                  "title": "It Takes a Tuskarr Buddy"
+                },
+                {
+                  "icon": "inv_polearm_2h_kultirasharpoon_a_01",
+                  "id": 16564,
+                  "points": 10,
+                  "title": "It Takes a Tuskarr Family"
+                },
+                {
+                  "icon": "inv_polearm_2h_kultirasharpoon_a_01",
+                  "id": 16565,
+                  "points": 10,
+                  "title": "It Takes a Tuskarr Village"
+                },
+                {
+                  "icon": "achievement_profession_fishing_findfish",
+                  "id": 16550,
+                  "points": 10,
+                  "title": "Giving Back to Nature"
+                },
+                {
+                  "icon": "achievement_profession_fishing_findfish",
+                  "id": 16551,
+                  "points": 10,
+                  "title": "Giving More Back to Nature"
+                },
+                {
+                  "icon": "achievement_profession_fishing_findfish",
+                  "id": 16552,
+                  "points": 10,
+                  "title": "Giving Even More Back to Nature"
+                },
+                {
+                  "icon": "inv_fishing_netlinen02",
+                  "id": 16553,
+                  "points": 10,
+                  "title": "Taking From Nature"
+                }
+              ],
+              "name": "Iskaara Tuskarr"
+            },
+            {
+              "id": "65f54869",
+              "items": [
+                {
+                  "icon": "inv_artifact_dragonscales",
+                  "id": 16536,
+                  "points": 5,
+                  "title": "True Friends with Wrathion"
+                },
+                {
+                  "icon": "inv_crown_02",
+                  "id": 16494,
+                  "points": 10,
+                  "title": "Loyalty to the Prince"
+                },
+                {
+                  "icon": "inv_10_skinning_dragonscales_black",
+                  "id": 16532,
+                  "points": 5,
+                  "title": "Friends with Sabellian"
+                },
+                {
+                  "icon": "inv_crown_02",
+                  "id": 16760,
+                  "points": 10,
+                  "title": "The Obsidian Bloodline"
+                }
+              ],
+              "name": "Wrathion and Sabellian"
+            }
+          ]
+        },
+        {
           "id": "fc36113b",
           "name": "Shadowlands",
           "subcats": [
@@ -24025,7 +24373,7 @@
                   "title": "Family Battler of the Dragon Isles"
                 }
               ],
-              "name": "Species: Shadowlands"
+              "name": "Species: Dragonflight"
             },
             {
               "id": "4bbaf263",
