@@ -3912,6 +3912,12 @@
                   "title": "Shadowlands Explorer"
                 },
                 {
+                  "icon": "spell_arcane_teleportvaldrakken",
+                  "id": 16761,
+                  "points": 25,
+                  "title": "Dragon Isles Explorer"
+                },
+                {
                   "icon": "INV_Misc_Map02",
                   "id": 46,
                   "points": 50,
@@ -3958,9 +3964,483 @@
                   "id": 9924,
                   "points": 5,
                   "title": "Field Photographer"
+                },
+                {
+                  "icon": "inv_misc_coin_19",
+                  "id": 16789,
+                  "points": 5,
+                  "title": "Lucky Penny"
+                },
+                {
+                  "icon": "inv_misc_coin_08",
+                  "id": 16790,
+                  "points": 5,
+                  "title": "Curious Coin"
                 }
               ],
               "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": "0f15c147",
+          "name": "Dragon Isles",
+          "subcats": [
+            {
+              "id": "b336aae4",
+              "items": [
+                {
+                  "icon": "achievement_zone_wakingshores",
+                  "id": 16400,
+                  "points": 10,
+                  "title": "Explore the Waking Shores"
+                },
+                {
+                  "icon": "achievement_zone_ohnahranplains",
+                  "id": 16457,
+                  "points": 10,
+                  "title": "Explore the Ohn'ahran Plains"
+                },
+                {
+                  "icon": "achievement_zone_azurespan",
+                  "id": 16460,
+                  "points": 10,
+                  "title": "Explore the Azure Span"
+                },
+                {
+                  "icon": "achievement_zone_thaldraszus",
+                  "id": 16518,
+                  "points": 10,
+                  "title": "Explore Thaldraszus"
+                }
+              ],
+              "name": "Area"
+            },
+            {
+              "id": "7f620ec7",
+              "items": [
+                {
+                  "icon": "inv_10_fishing_dragonislescoins_gold",
+                  "id": 16298,
+                  "points": 10,
+                  "title": "Treasure Hunter of the Dragon Isles"
+                },
+                {
+                  "icon": "inv_misc_treasurechest04b",
+                  "id": 16297,
+                  "points": 5,
+                  "title": "Treasures of The Waking Shores"
+                },
+                {
+                  "icon": "inv_misc_treasurechest04a",
+                  "id": 16299,
+                  "points": 5,
+                  "title": "Treasures of the Ohn'ahran Plains"
+                },
+                {
+                  "icon": "inv_misc_treasurechest04c",
+                  "id": 16300,
+                  "points": 5,
+                  "title": "Treasures of The Azure Span"
+                },
+                {
+                  "icon": "inv_misc_treasurechest04d",
+                  "id": 16301,
+                  "points": 5,
+                  "title": "Treasures of Thaldraszus"
+                }
+              ],
+              "name": "Treasure"
+            },
+            {
+              "id": "b014ba26",
+              "items": [
+                {
+                  "icon": "inv_knife_1h_centaur_b_02",
+                  "id": 16676,
+                  "points": 5,
+                  "title": "Adventurer of The Waking Shores"
+                },
+                {
+                  "icon": "inv_knife_1h_centaur_b_02",
+                  "id": 16677,
+                  "points": 5,
+                  "title": "Adventurer of the Ohn'ahran Plains"
+                },
+                {
+                  "icon": "inv_knife_1h_centaur_b_02",
+                  "id": 16678,
+                  "points": 5,
+                  "title": "Adventurer of The Azure Span"
+                },
+                {
+                  "icon": "inv_knife_1h_centaur_b_02",
+                  "id": 16679,
+                  "points": 5,
+                  "title": "Adventurer of Thaldraszus"
+                }
+              ],
+              "name": "Encounter"
+            },
+            {
+              "id": "b575bdc3",
+              "items": [
+                {
+                  "icon": "ability_racial_mountaineer",
+                  "id": 15890,
+                  "points": 5,
+                  "title": "Dragonscale Expedition: The Highest Peaks"
+                },
+                {
+                  "icon": "inv_qirajidol_strife",
+                  "id": 16323,
+                  "points": 10,
+                  "title": "Fragments of History"
+                },
+                {
+                  "icon": "inv_misc_birdbeck_01",
+                  "id": 16446,
+                  "points": 10,
+                  "title": "That's Pretty Neat!"
+                }
+              ],
+              "name": "Dragon Isles"
+            },
+            {
+              "id": "6bd91c4b",
+              "items": [
+                {
+                  "icon": "inv_10_inscription2_book1_color1",
+                  "id": 16406,
+                  "points": 10,
+                  "title": "All Sides of the Story"
+                },
+                {
+                  "icon": "inv_duckbaby_yellow",
+                  "id": 16409,
+                  "points": 5,
+                  "title": "Let's Get Quacking"
+                },
+                {
+                  "icon": "inv_misc_dragonkite_01",
+                  "id": 16584,
+                  "points": 5,
+                  "title": "Symbols of Hope"
+                },
+                {
+                  "icon": "inv_misc_fork&knife",
+                  "id": 16410,
+                  "points": 5,
+                  "title": "Siege on Dragonbane Keep: Snack Attack"
+                },
+                {
+                  "icon": "inv_artifact_dragonscales",
+                  "id": 16411,
+                  "points": 10,
+                  "title": "Siege on Dragonbane Keep: Home Sweet Home"
+                },
+                {
+                  "icon": "inv_misc_stonetablet_01",
+                  "id": 16412,
+                  "points": 5,
+                  "title": "Siege on Dragonbane Keep: Chiseled Record"
+                },
+                {
+                  "icon": "inv_mammoth2lavamount_red",
+                  "id": 16493,
+                  "points": 5,
+                  "title": "Grand Theft Mammoth"
+                },
+                {
+                  "icon": "achievement_bg_getxflags_no_die",
+                  "id": 16497,
+                  "points": 5,
+                  "title": "I'm Playing All Sides"
+                },
+                {
+                  "icon": "achievement_arena_2v2_4",
+                  "id": 16496,
+                  "points": 5,
+                  "title": "Obsidian Champion"
+                },
+                {
+                  "icon": "inv_archaeology_70_keytonarthalasacademy",
+                  "id": 16495,
+                  "points": 10,
+                  "title": "Obsidian Keymaster"
+                }
+              ],
+              "name": "Waking Shores"
+            },
+            {
+              "id": "19072c33",
+              "items": [
+                {
+                  "icon": "spell_holy_prayerofspirit",
+                  "id": 16423,
+                  "points": 10,
+                  "title": "Honor Our Ancestors"
+                },
+                {
+                  "icon": "inv_stbernarddogpet",
+                  "id": 16424,
+                  "points": 10,
+                  "title": "Who's a Good Bakar?"
+                },
+                {
+                  "icon": "inv_misc_map06",
+                  "id": 16462,
+                  "points": 10,
+                  "title": "The Ohn'ahran Trail"
+                },
+                {
+                  "icon": "inv_icon_ability_retraining",
+                  "id": 16583,
+                  "points": 10,
+                  "title": "Knew You Nokhud Do It!"
+                }
+              ],
+              "name": "Ohn'ahran Plains"
+            },
+            {
+              "id": "f9ac2015",
+              "items": [
+                {
+                  "icon": "inv_pet_snowman",
+                  "id": 16474,
+                  "points": 5,
+                  "title": "Do You Wanna Build a Snowman?"
+                },
+                {
+                  "icon": "ability_socererking_arcanefortification",
+                  "id": 16569,
+                  "points": 5,
+                  "title": "Cobalt Enthusiast"
+                },
+                {
+                  "icon": "inv_icon_wing08b",
+                  "id": 16581,
+                  "points": 10,
+                  "title": "Seeing Blue"
+                },
+                {
+                  "icon": "spell_mage_focusingcrystal",
+                  "id": 16638,
+                  "points": 5,
+                  "title": "Ley Line in the Span"
+                }
+              ],
+              "name": "Azure Span"
+            },
+            {
+              "id": "eba9f277",
+              "items": [
+                {
+                  "icon": "inv_misc_head_dragon_01",
+                  "id": 16338,
+                  "points": 5,
+                  "title": "Fang Flap Fire Fighter"
+                },
+                {
+                  "icon": "achievement_cooking_pandarianmasterchef",
+                  "id": 16556,
+                  "points": 10,
+                  "title": "Great Gourmand of The Ruby Feast"
+                },
+                {
+                  "icon": "inv_misc_food_cooked_pabanquet_grill",
+                  "id": 16621,
+                  "points": 10,
+                  "title": "One of Everything, Please"
+                },
+                {
+                  "icon": "rogue_burstofspeed",
+                  "id": 16622,
+                  "points": 5,
+                  "title": "Three Minutes or It's Free"
+                },
+                {
+                  "icon": "inv_misc_-selfiecamera_01",
+                  "id": 16634,
+                  "points": 10,
+                  "title": "Framing a New Perspective"
+                }
+              ],
+              "name": "Thaldraszus"
+            },
+            {
+              "id": "5ea2a3e9",
+              "items": [
+                {
+                  "icon": "ability_shaman_echooftheelements",
+                  "id": 16492,
+                  "points": 20,
+                  "title": "Into the Storm"
+                },
+                {
+                  "icon": "spell_druid_astralstorm",
+                  "id": 16490,
+                  "points": 10,
+                  "title": "Storm Chaser"
+                },
+                {
+                  "icon": "achievement_zone_wakingshores",
+                  "id": 16468,
+                  "points": 10,
+                  "title": "Chasing Storms in The Waking Shores"
+                },
+                {
+                  "icon": "inv_elemental_primal_air",
+                  "id": 16463,
+                  "points": 5,
+                  "title": "Thunderstorms in The Waking Shores"
+                },
+                {
+                  "icon": "spell_shaman_earthquake",
+                  "id": 16465,
+                  "points": 5,
+                  "title": "Sandstorms in The Waking Shores"
+                },
+                {
+                  "icon": "ability_warlock_burningembers",
+                  "id": 16466,
+                  "points": 5,
+                  "title": "Firestorms in The Waking Shores"
+                },
+                {
+                  "icon": "spell_fire_blueflamestrike",
+                  "id": 16467,
+                  "points": 5,
+                  "title": "Snowstorms in The Waking Shores"
+                },
+                {
+                  "icon": "achievement_zone_ohnahranplains",
+                  "id": 16476,
+                  "points": 10,
+                  "title": "Chasing Storms in the Ohn'ahran Plains"
+                },
+                {
+                  "icon": "inv_elemental_primal_air",
+                  "id": 16475,
+                  "points": 5,
+                  "title": "Thunderstorms in the Ohn'ahran Plains"
+                },
+                {
+                  "icon": "spell_shaman_earthquake",
+                  "id": 16477,
+                  "points": 5,
+                  "title": "Sandstorms in the Ohn'ahran Plains"
+                },
+                {
+                  "icon": "ability_warlock_burningembers",
+                  "id": 16478,
+                  "points": 5,
+                  "title": "Firestorms in the Ohn'ahran Plains"
+                },
+                {
+                  "icon": "spell_fire_blueflamestrike",
+                  "id": 16479,
+                  "points": 5,
+                  "title": "Snowstorms in the Ohn'ahran Plains"
+                },
+                {
+                  "icon": "achievement_zone_azurespan",
+                  "id": 16484,
+                  "points": 10,
+                  "title": "Chasing Storms in The Azure Span"
+                },
+                {
+                  "icon": "inv_elemental_primal_air",
+                  "id": 16480,
+                  "points": 5,
+                  "title": "Thunderstorms in The Azure Span"
+                },
+                {
+                  "icon": "spell_shaman_earthquake",
+                  "id": 16481,
+                  "points": 5,
+                  "title": "Sandstorms in The Azure Span"
+                },
+                {
+                  "icon": "ability_warlock_burningembers",
+                  "id": 16482,
+                  "points": 5,
+                  "title": "Firestorms in The Azure Span"
+                },
+                {
+                  "icon": "spell_fire_blueflamestrike",
+                  "id": 16483,
+                  "points": 5,
+                  "title": "Snowstorms in The Azure Span"
+                },
+                {
+                  "icon": "achievement_zone_thaldraszus",
+                  "id": 16489,
+                  "points": 10,
+                  "title": "Chasing Storms in Thaldraszus"
+                },
+                {
+                  "icon": "inv_elemental_primal_air",
+                  "id": 16485,
+                  "points": 5,
+                  "title": "Thunderstorms in Thaldraszus"
+                },
+                {
+                  "icon": "spell_shaman_earthquake",
+                  "id": 16486,
+                  "points": 5,
+                  "title": "Sandstorms in Thaldraszus"
+                },
+                {
+                  "icon": "ability_warlock_burningembers",
+                  "id": 16487,
+                  "points": 5,
+                  "title": "Firestorms in Thaldraszus"
+                },
+                {
+                  "icon": "spell_fire_blueflamestrike",
+                  "id": 16488,
+                  "points": 5,
+                  "title": "Snowstorms in Thaldraszus"
+                },
+                {
+                  "icon": "inv_misc_powder_thorium",
+                  "id": 16498,
+                  "points": 5,
+                  "title": "Elemental Overflow"
+                },
+                {
+                  "icon": "inv_misc_powder_thorium",
+                  "id": 16499,
+                  "points": 5,
+                  "title": "Elemental Overflowing"
+                },
+                {
+                  "icon": "inv_misc_powder_thorium",
+                  "id": 16500,
+                  "points": 10,
+                  "title": "Elemental Overload"
+                },
+                {
+                  "icon": "spell_shaman_thunderstorm",
+                  "id": 16461,
+                  "points": 10,
+                  "title": "Stormed Off"
+                }
+              ],
+              "name": "Storm Events"
+            },
+            {
+              "id": "01ee341a",
+              "items": [
+                {
+                  "icon": "inv_jewelcrafting_crimsonhare",
+                  "id": 16729,
+                  "points": 10,
+                  "title": "To All the Squirrels Hidden Til Now"
+                }
+              ],
+              "name": "Critters"
             }
           ]
         },
@@ -9277,6 +9757,102 @@
                 }
               ],
               "name": "Legion"
+            },
+            {
+              "id": "f3982402",
+              "items": [
+                {
+                  "icon": "spell_warrior_gladiatorstance",
+                  "id": 16601,
+                  "points": 25,
+                  "title": "Dragonfight Club"
+                },
+                {
+                  "icon": "achievement_zone_wakingshores",
+                  "id": 16592,
+                  "points": 10,
+                  "title": "Tour of Duty: The Waking Shores"
+                },
+                {
+                  "icon": "achievement_zone_thaldraszus",
+                  "id": 16593,
+                  "points": 10,
+                  "title": "Tour of Duty: Thaldraszus"
+                },
+                {
+                  "icon": "achievement_zone_azurespan",
+                  "id": 16594,
+                  "points": 10,
+                  "title": "Tour of Duty: The Azure Span"
+                },
+                {
+                  "icon": "achievement_zone_ohnahranplains",
+                  "id": 16595,
+                  "points": 10,
+                  "title": "Tour of Duty: Ohn'ahran Plains"
+                },
+                {
+                  "icon": "inv_shield_1h_drakonid_c_01",
+                  "id": 16589,
+                  "points": 5,
+                  "title": "Malicia's Challenge"
+                },
+                {
+                  "icon": "inv_helm_armor_drakonid_c_01",
+                  "id": 16590,
+                  "points": 20,
+                  "title": "A Champion's Tour: Dragon Isles"
+                },
+                {
+                  "icon": "shaman_pvp_rockshield",
+                  "id": 16599,
+                  "points": 10,
+                  "title": "A Champion's Pursuit"
+                },
+                {
+                  "icon": "inv_bountyhunting",
+                  "id": 16603,
+                  "points": 10,
+                  "title": "Bounty Hunter"
+                },
+                {
+                  "icon": "inv_faction_warresources",
+                  "id": 16611,
+                  "points": 10,
+                  "title": "Resource Scavanger"
+                },
+                {
+                  "icon": "ability_hunter_assassinate",
+                  "id": 16612,
+                  "points": 10,
+                  "title": "Bounty Vigalante"
+                },
+                {
+                  "icon": "inv_box_02",
+                  "id": 16613,
+                  "points": 20,
+                  "title": "Finder's Keepers"
+                },
+                {
+                  "icon": "timelesscoin-bloody",
+                  "id": 16614,
+                  "points": 10,
+                  "title": "Bloodstained Bounty"
+                },
+                {
+                  "icon": "inv_10_elementalcombinedfoozles_blood",
+                  "id": 16615,
+                  "points": 10,
+                  "title": "Blood Bank"
+                },
+                {
+                  "icon": "inv_10_elementalspiritfoozles_blood",
+                  "id": 16616,
+                  "points": 10,
+                  "title": "Prosperously Bloody"
+                }
+              ],
+              "name": "Dragonflight"
             }
           ]
         }
