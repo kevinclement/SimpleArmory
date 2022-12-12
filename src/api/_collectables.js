@@ -1,3 +1,21 @@
+function getHigherQualityBattlePet(currentPet, newPet) {
+    function getPetsQuality(type) {
+        switch (type) {
+            case "RARE": return 5
+            case "UNCOMMON": return 4
+            case "COMMON": return 3
+            case "POOR": return 2
+            default: return 1
+        }
+    }
+
+    if (currentPet != undefined &&
+            getPetsQuality(currentPet.quality.type)
+            >= getPetsQuality(newPet.quality.type)) {
+        return currentPet
+    }
+    return newPet
+}
 
 export async function parseCollectablesObject(categories, profile, collected_data, collectedProperty, collectedId, isBattlePets) {
     var obj = { 'categories': [] };
@@ -7,7 +25,13 @@ export async function parseCollectablesObject(categories, profile, collected_dat
 
     // Build up lookup for items that character has
     collected_data[collectedProperty].forEach((item) => {
-        collected[item[collectedId].id] = item;
+        if (isBattlePets) {
+            collected[item[collectedId].id] = getHigherQualityBattlePet(
+                collected[item[collectedId].id], item
+            );
+        } else {
+            collected[item[collectedId].id] = item;
+        }
     });
 
     // Lets parse out all the categories and build out our structure
