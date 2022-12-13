@@ -88,7 +88,7 @@ def main():
             fixer = fixer_cls(*jsons, build=args.build)
             fixed_list = fixer.run()
         for fixed_content, path in zip(fixed_list, json_paths):
-            with path.open('w') as json_file:
+            with path.open('w', encoding='utf8') as json_file:
                 json.dump(
                     fixed_content,
                     json_file,
