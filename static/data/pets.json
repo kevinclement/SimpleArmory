@@ -421,14 +421,6 @@
             "itemId": 199326,
             "name": "Chip",
             "spellid": 386985
-          },
-          {
-            "ID": 3414,
-            "creatureId": 198316,
-            "icon": "inv_dragonwhelpproto_dark",
-            "itemId": 200930,
-            "name": "Obsidian Proto-Whelp",
-            "spellid": 393330
           }
         ],
         "name": "Vendor"
@@ -621,13 +613,7 @@
             "itemId": 199757,
             "name": "Magic Nibbler",
             "spellid": 388085
-          }
-        ],
-        "name": "Renown"
-      },
-      {
-        "id": "09ae7946",
-        "items": [
+          },
           {
             "ID": 3379,
             "creatureId": 196305,
@@ -637,21 +623,7 @@
             "spellid": 388086
           }
         ],
-        "name": "Obsidian Citadel"
-      },
-      {
-        "id": "ccca067e",
-        "items": [
-          {
-            "ID": 3348,
-            "creatureId": 191387,
-            "icon": "inv_10_elementalspiritfoozles_air",
-            "itemId": 199109,
-            "name": "Primal Stormling",
-            "spellid": 375713
-          }
-        ],
-        "name": "Pre-launch Event"
+        "name": "Renown"
       },
       {
         "id": "2aeb5179",
@@ -674,6 +646,48 @@
           }
         ],
         "name": "Grand Hunt"
+      },
+      {
+        "id": "e79f528b",
+        "items": [
+          {
+            "ID": 3360,
+            "creatureId": 192350,
+            "icon": "inv_babyturtle2_teal",
+            "itemId": 202085,
+            "name": "Bugbiter Tortoise",
+            "spellid": 377392
+          }
+        ],
+        "name": "Riddle"
+      },
+      {
+        "id": "09ae7946",
+        "items": [
+          {
+            "ID": 3414,
+            "creatureId": 198316,
+            "icon": "inv_dragonwhelpproto_dark",
+            "itemId": 200930,
+            "name": "Obsidian Proto-Whelp",
+            "spellid": 393330
+          }
+        ],
+        "name": "Obsidian Citadel"
+      },
+      {
+        "id": "ccca067e",
+        "items": [
+          {
+            "ID": 3348,
+            "creatureId": 191387,
+            "icon": "inv_10_elementalspiritfoozles_air",
+            "itemId": 199109,
+            "name": "Primal Stormling",
+            "spellid": 375713
+          }
+        ],
+        "name": "Pre-launch Event"
       }
     ]
   },
