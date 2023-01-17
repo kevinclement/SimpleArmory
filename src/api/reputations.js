@@ -44,7 +44,8 @@ function parseFactions(all_factions, my_reputations) {
         var calculatedPerc = (rep.standing.value / rep.standing.max) * 100;
 
         standing[rep.faction.id] = {
-            level: rep.standing.tier,
+            // tier is called renown_level for renown factions such as those in dragonflight
+            level: rep.standing.tier != undefined ? rep.standing.tier : rep.standing.renown_level,
             perc: (isNaN(calculatedPerc) ? 100 : calculatedPerc),
             value: rep.standing.value,
             max: rep.standing.max
@@ -69,6 +70,11 @@ function parseFactions(all_factions, my_reputations) {
                 name: faction.name,
                 levels: levelsAsList(faction.levels ? faction.levels : defaultLevels),
             };
+
+            // If it's a faction with renown such as Dragonflight factions
+            if (faction.maxRenown) {
+                f.levels = maxRenownToLevels(faction.maxRenown);
+            }
 
             var stand = standing[faction.id];
             if (stand)
@@ -99,6 +105,14 @@ function levelsAsList(levelsDict) {
     });
     for (i = 0; i < items.length; i++) {
         items[i][0] = parseInt(items[i][0]);
+    }
+    return items;
+}
+
+function maxRenownToLevels(maxRenown, step = 2500) {
+    var items = [];
+    for (i = 0; i <= maxRenown; i++) {
+        items.push([i * step, "Renown 0" + i])
     }
     return items;
 }
