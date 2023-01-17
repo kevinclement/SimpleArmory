@@ -8,6 +8,7 @@ from .fixer import WowToolsFixer
 
 IGNORE_FACTION_ID = [
     949,   # Test Faction 1
+    1072,  # [DNT] AC Major Faction Child Renown Test
 
     # Never implemented
     1351,  # The Brewmasters
