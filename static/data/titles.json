@@ -220,6 +220,163 @@
     ]
   },
   {
+    "id": "be2500f8",
+    "name": "Dragonflight",
+    "subcats": [
+      {
+        "items": [
+            {
+              "icon": "achievement_raidprimalist_raszageth",
+              "id": 17116,
+              "name": "Famed Slayer of Raszageth",
+              "titleId": 487,
+              "type": "achievement"
+            },
+            {
+              "icon": "achievement_raidprimalist_raszageth",
+              "id": 16353,
+              "name": "The Storm-Eater",
+              "titleId": 488,
+              "type": "achievement"
+            }
+        ],
+        "name": "Raids"
+      },
+      {
+        "items": [
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 734,
+            "name": "Khansguard",
+            "titleId": 473,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 735,
+            "name": "Ally of Dragons",
+            "titleId": 474,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 736,
+            "name": "Intrepid Explorer",
+            "titleId": 475,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 737,
+            "name": "Of Iskaara",
+            "titleId": 476,
+            "type": "title"
+          },
+          {
+            "icon": "inv_crown_02",
+            "id": 16760,
+            "name": "Paragon of the Obsidian Brood",
+            "titleId": 483,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_crown_02",
+            "id": 16494,
+            "name": "Agent of the Black Prince",
+            "titleId": 484,
+            "type": "achievement"
+          }
+        ],
+        "name": "Reputation"
+      },
+      {
+        "items": [
+          {
+            "icon": "achievement_challengemode_platinum",
+            "id": 16429,
+            "name": "The Thundering Hero",
+            "titleId": 470,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_challengemode_gold",
+            "id": 16648,
+            "name": "The Thundering",
+            "titleId": 477,
+            "type": "achievement"
+          }
+        ],
+        "name": "Mythic Plus"
+      },
+      {
+        "items": [
+          {
+            "icon": "inv_icon_feather02d",
+            "id": 16731,
+            "name": "Knight of Feathersworth",
+            "titleId": 480,
+            "type": "achievement"
+          }
+        ],
+        "name": "Battle Pets"
+      },
+      {
+        "items": [
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 728,
+            "name": "Honorary Dryad",
+            "titleId": 467,
+            "type": "title",
+            "notObtainable": true
+          },
+          {
+            "icon": "spell_nature_elementalabsorption",
+            "id": 13931,
+            "name": "The Worldbreaker",
+            "titleId": 469,
+            "type": "achievement",
+            "notObtainable": true
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 742,
+            "name": "The Elite Evoker",
+            "titleId": 481,
+            "type": "title"
+          }
+        ],
+        "name": "Unknown"
+      },
+      {
+        "items": [
+          {
+            "icon": "inv_tradeskill_cooking_stonesouppot01",
+            "id": 16443,
+            "name": "Soupervisor",
+            "titleId": 471,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_misc_birdbeck_01",
+            "id": 16446,
+            "name": "Birdwatcher",
+            "titleId": 472,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_checkered_flag",
+            "id": 15941,
+            "name": "Isles Racer",
+            "titleId": 478,
+            "type": "achievement"
+          }
+        ],
+        "name": "Exploration"
+      }
+    ]
+  },
+  {
     "id": "fffffffe",
     "name": "Shadowlands",
     "subcats": [
@@ -1753,6 +1910,25 @@
           }
         ],
         "name": "Skill"
+      },
+      {
+        "items": [
+          {
+            "icon": "inv_tabard_craftingorder_c_01",
+            "id": 16791,
+            "name": "Merchant Artisan",
+            "titleId": 485,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_tabard_craftingorder_c_01",
+            "id": 16799,
+            "name": "Personal Crafter",
+            "titleId": 486,
+            "type": "achievement"
+          }
+        ],
+        "name": "Crafting Orders"
       }
     ]
   },
@@ -1814,6 +1990,13 @@
             "name": "Conqueror of Azeroth",
             "side": "H",
             "titleId": 377,
+            "type": "achievement"
+          },
+          {
+            "icon": "spell_warrior_gladiatorstance",
+            "id": 16601,
+            "name": "Malicious",
+            "titleId": 479,
             "type": "achievement"
           }
         ],
@@ -2237,9 +2420,28 @@
             "name": "Soloist",
             "titleId": 456,
             "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 16734,
+            "name": "Crimson Soloist",
+            "titleId": 482,
+            "type": "achievement"
           }
         ],
         "name": "Solo Shuffle"
+      },
+      {
+        "items": [
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 15951,
+            "name": "Crimson Gladiator",
+            "titleId": 468,
+            "type": "achievement"
+          }
+        ],
+        "name": "Arena"
       }
     ]
   },
