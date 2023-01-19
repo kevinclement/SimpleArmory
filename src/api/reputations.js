@@ -112,7 +112,7 @@ function levelsAsList(levelsDict) {
 function maxRenownToLevels(maxRenown, step = 2500) {
     var items = [];
     for (i = 0; i <= maxRenown; i++) {
-        items.push([i * step, "Renown 0" + i])
+        items.push([i * step, "Renown " + i])
     }
     return items;
 }
