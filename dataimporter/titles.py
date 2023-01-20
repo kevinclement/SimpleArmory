@@ -112,6 +112,8 @@ IGNORE_TITLE_ID = [
     464,  # Hero of Fate https://www.wowhead.com/title=15685
     465,  # The Shrouded https://www.wowhead.com/title=15689
     466,  # The Shrouded Hero https://www.wowhead.com/title=15756
+    467,  # Honorary Dryad https://www.wowhead.com/title=728
+    469  # The Worldbreaker https://www.wowhead.com/title=13931
 ]
 
 
