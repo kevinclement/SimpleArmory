@@ -74,6 +74,7 @@ function parseFactions(all_factions, my_reputations) {
             // If it's a faction with renown such as Dragonflight factions
             if (faction.maxRenown) {
                 f.levels = maxRenownToLevels(faction.maxRenown);
+                f.renown = true;
             }
 
             var stand = standing[faction.id];
