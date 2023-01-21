@@ -17,7 +17,9 @@
         return levelColors[
             Math.max(
                 0,
-                levelColors.length - (faction.levels.length - level)
+                faction.renown ?
+                    Math.floor((level / faction.levels.length) * (levelColors.length - 1)) :
+                    levelColors.length - (faction.levels.length - level)
             )
         ];
     }
