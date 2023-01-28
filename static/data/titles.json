@@ -225,20 +225,20 @@
     "subcats": [
       {
         "items": [
-            {
-              "icon": "achievement_raidprimalist_raszageth",
-              "id": 17116,
-              "name": "Famed Slayer of Raszageth",
-              "titleId": 487,
-              "type": "achievement"
-            },
-            {
-              "icon": "achievement_raidprimalist_raszageth",
-              "id": 16353,
-              "name": "The Storm-Eater",
-              "titleId": 488,
-              "type": "achievement"
-            }
+          {
+            "icon": "achievement_raidprimalist_raszageth",
+            "id": 17116,
+            "name": "Famed Slayer of Raszageth",
+            "titleId": 487,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_raidprimalist_raszageth",
+            "id": 16353,
+            "name": "The Storm-Eater",
+            "titleId": 488,
+            "type": "achievement"
+          }
         ],
         "name": "Raids"
       },
@@ -326,9 +326,9 @@
             "icon": "inv_misc_questionmark",
             "id": 742,
             "name": "The Elite Evoker",
+            "notObtainable": true,
             "titleId": 481,
-            "type": "title",
-            "notObtainable": true
+            "type": "title"
           }
         ],
         "name": "Unknown"
@@ -354,6 +354,13 @@
             "id": 15941,
             "name": "Isles Racer",
             "titleId": 478,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_challengemode_arakkoaspires_gold",
+            "id": 17332,
+            "name": "Reverse Racer",
+            "titleId": 490,
             "type": "achievement"
           }
         ],
@@ -1983,6 +1990,13 @@
             "name": "Malicious",
             "titleId": 479,
             "type": "achievement"
+          },
+          {
+            "icon": "ability_dragonriding_barrelroll01",
+            "id": 17345,
+            "name": "Skyscourge",
+            "titleId": 492,
+            "type": "achievement"
           }
         ],
         "name": "World PVP"
@@ -2407,9 +2421,16 @@
             "type": "achievement"
           },
           {
+            "icon": "achievement_featsofstrength_gladiator_04",
+            "id": 17339,
+            "name": "Legend",
+            "titleId": 491,
+            "type": "achievement"
+          },
+          {
             "icon": "achievement_featsofstrength_gladiator_07",
             "id": 16734,
-            "name": "Crimson Soloist",
+            "name": "Crimson Legend",
             "titleId": 482,
             "type": "achievement"
           }
