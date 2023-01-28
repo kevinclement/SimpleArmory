@@ -72,8 +72,9 @@ function parseFactions(all_factions, my_reputations) {
             };
 
             // If it's a faction with renown such as Dragonflight factions
-            if (faction.maxRenown) {
-                f.levels = maxRenownToLevels(faction.maxRenown);
+            if (faction.renown) {
+                const step = faction.renown.step || 2500;
+                f.levels = renownToLevels(faction.renown.max, step);
                 f.renown = true;
             }
 
@@ -110,9 +111,9 @@ function levelsAsList(levelsDict) {
     return items;
 }
 
-function maxRenownToLevels(maxRenown, step = 2500) {
+function renownToLevels(max, step) {
     var items = [];
-    for (i = 0; i <= maxRenown; i++) {
+    for (i = 0; i <= max; i++) {
         items.push([i * step, "Renown " + i])
     }
     return items;
