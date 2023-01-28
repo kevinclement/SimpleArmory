@@ -12,23 +12,35 @@
     "factions": [
       {
         "id": 2507,
-        "maxRenown": 25,
-        "name": "Dragonscale Expedition"
+        "name": "Dragonscale Expedition",
+        "renown": {
+          "max": 25,
+          "step": 2500
+        }
       },
       {
         "id": 2503,
-        "maxRenown": 25,
-        "name": "Maruuk Centaur"
+        "name": "Maruuk Centaur",
+        "renown": {
+          "max": 25,
+          "step": 2500
+        }
       },
       {
         "id": 2511,
-        "maxRenown": 30,
-        "name": "Iskaara Tuskarr"
+        "name": "Iskaara Tuskarr",
+        "renown": {
+          "max": 30,
+          "step": 2500
+        }
       },
       {
         "id": 2510,
-        "maxRenown": 30,
-        "name": "Valdrakken Accord"
+        "name": "Valdrakken Accord",
+        "renown": {
+          "max": 30,
+          "step": 2500
+        }
       },
       {
         "id": 2523,

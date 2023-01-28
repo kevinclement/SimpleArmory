@@ -140,7 +140,53 @@ class FactionFixer(WowToolsFixer):
                 else:
                     faction['id'] = int(faction['id'])
 
+    def fix_max_renown(self):
+        # Add renown information to reputations with a renown system
+        # such as the main factions in Dragonflight.
+        dbc_faction_to_covenant = {
+            int(e['FactionID']): int(e['ID']) for e in self.dbc_get_table('covenant')
+        }
+
+        # Compute the maximum renown for each covenant
+        max_reward_for_covenant = {}
+        for row in self.dbc_get_table('renownrewards'):
+            covenant_id = int(row['CovenantID'])
+            if covenant_id not in max_reward_for_covenant:
+                max_reward_for_covenant[covenant_id] = int(row['Level'])
+            else:
+                max_reward_for_covenant[covenant_id] = max(int(row['Level']), max_reward_for_covenant[covenant_id])
+
+        # Populate the 'renown' object for every renown faction
+        for cat in self.factions:
+            for faction in cat['factions']:
+                faction_id = faction['id']
+
+                # DBC faction flag 2 indicates that it is a "renown faction".
+                # Some valid renown factions filtered from the self.dbc_faction
+                # (e.g. Maruuk Centaur and Valdrakken Accord which have child factions)
+                # but can still be computed automatically if they have a 'renown'
+                # property in the JSON.
+                if (
+                    faction_id in dbc_faction_to_covenant
+                    and (
+                        (
+                            faction_id in self.dbc_faction
+                            and int(self.dbc_faction[faction_id]['Flags']) == 2
+                        )
+
+                        or 'renown' in faction
+                    )
+                ):
+                    if 'renown' not in faction:
+                        faction['renown'] = dict()
+
+                    if faction_id in self.dbc_faction:
+                        faction['renown']['step'] = int(self.dbc_faction[faction_id]['ReputationMax[0]'])
+
+                    faction['renown']['max'] = max_reward_for_covenant[dbc_faction_to_covenant[faction_id]]
+
     def run(self):
         self.fix_missing_factions()
         self.fix_types_data()
+        self.fix_max_renown()
         return [self.factions]
