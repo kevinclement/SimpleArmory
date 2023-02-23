@@ -7,7 +7,7 @@ import aiohttp
 
 
 async def get_realm_list(session, region):
-    api_url = 'https://worldofwarcraft.com/graphql'
+    api_url = 'https://worldofwarcraft.blizzard.com/graphql'
     graphql_realm_query = {
         "operationName": "GetInitialRealmStatusData",
         "variables": {
