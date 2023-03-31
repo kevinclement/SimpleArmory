@@ -17,6 +17,18 @@
       },
       {
         "items": [
+        {
+            "icon": "inv_misc_questionmark",
+            "id": 760,
+            "name": "Lionguard",
+            "titleId": 493,
+            "type": "title"
+            }
+        ],
+        "name": "Heritage"
+      },
+      {
+        "items": [
           {
             "icon": "Achievement_Quests_Completed_07",
             "id": 978,
@@ -361,6 +373,27 @@
             "id": 17332,
             "name": "Reverse Racer",
             "titleId": 490,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_checkered_flag",
+            "id": 17298,
+            "name": "Forbidden Reach Racer",
+            "titleId": 489,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_treasurevault_key01",
+            "id": 17413,
+            "name": "The Key Master",
+            "titleId": 494,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_dracthyrhead05",
+            "id": 17543,
+            "name": "The Forbidden",
+            "titleId": 495,
             "type": "achievement"
           }
         ],
