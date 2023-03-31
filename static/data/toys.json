@@ -188,6 +188,21 @@
             "icon": "inv_jewelry_orgrimmarraid_trinket_18",
             "itemId": 200857,
             "name": "Talisman of Sargha"
+          },
+          {
+            "icon": "sha_spell_fire_felfire",
+            "itemId": 203757,
+            "name": "Brazier of Madness"
+          },
+          {
+            "icon": "inv_10_enchanting2_elementalswirl_color1",
+            "itemId": 200636,
+            "name": "Primal Invocation Quintessence"
+          },
+          {
+            "icon": "inv_60pvp_trinket4a",
+            "itemId": 200116,
+            "name": "Everlasting Horn of Lavaswimming"
           }
         ],
         "name": "Drop"
@@ -293,7 +308,17 @@
           {
             "icon": "inv_10_engineering_device_gadget3_color3",
             "itemId": 198156,
-            "name": "Wyrmhole Generator"
+            "name": "Wyrmhole Generator: Dragon Isles"
+          },
+          {
+            "icon": "inv_drink_21",
+            "itemId": 202360,
+            "name": "Dented Can"
+          },
+          {
+            "icon": "inv_10_engineering2_pvpflaregun_color1",
+            "itemId": 201930,
+            "name": "H.E.L.P."
           }
         ],
         "name": "Profession"
@@ -318,22 +343,6 @@
           }
         ],
         "name": "Achievement"
-      },
-      {
-        "id": "cb4379ff",
-        "items": [
-          {
-            "icon": "inv_10_enchanting2_elementalswirl_color1",
-            "itemId": 200636,
-            "name": "Primal Invocation Quintessence"
-          },
-          {
-            "icon": "inv_60pvp_trinket4a",
-            "itemId": 200116,
-            "name": "Everlasting Horn of Lavaswimming"
-          }
-        ],
-        "name": "Unknown"
       },
       {
         "id": "903f7671",
@@ -457,6 +466,26 @@
             "icon": "spell_lightning_lightningbolt01",
             "itemId": 202020,
             "name": "Chasing Storm"
+          },
+          {
+            "icon": "inv_10_misc_winterpeltfurbolg_toy",
+            "itemId": 202253,
+            "name": "Primal Stave of Claw and Fur"
+          },
+          {
+            "icon": "inv_helm_glasses_b_04_gold_black",
+            "itemId": 202283,
+            "name": "Reading Glasses"
+          },
+          {
+            "icon": "inv_fabric_frostweave_imbuedbolt",
+            "itemId": 203734,
+            "name": "Snow Blanket"
+          },
+          {
+            "icon": "inv_misc_spyglass_03",
+            "itemId": 199900,
+            "name": "Secondhand Survey Tools"
           }
         ],
         "name": "Vendor"
@@ -554,9 +583,55 @@
             "icon": "ability_nightfae_flicker",
             "itemId": 200960,
             "name": "Seed of Renewed Souls"
+          },
+          {
+            "icon": "ability_warrior_strengthofarms",
+            "itemId": 203725,
+            "name": "Display of Strength"
+          },
+          {
+            "icon": "achievement_general_hordeslayer",
+            "itemId": 204170,
+            "name": "Clan Banner"
+          },
+          {
+            "icon": "inv_10_dungeonjewelry_dragon_trinket_5_black",
+            "itemId": 204220,
+            "name": "Hraxian's Unbreakable Will",
+            "notObtainable": true
           }
         ],
         "name": "Quest"
+      },
+      {
+        "items": [
+            {
+                "icon": "inv_10_engineering_device_gadget2_color3",
+                "itemId": 204256,
+                "name": "Holoviewer: The Scarlet Queen"
+              },
+              {
+                "icon": "inv_10_engineering_device_gadget2_color1",
+                "itemId": 204257,
+                "name": "Holoviewer: The Lady of Dreams"
+              },
+              {
+                "icon": "inv_10_engineering_device_gadget2_color2",
+                "itemId": 204262,
+                "name": "Holoviewer: The Timeless One"
+              },
+              {
+                "icon": "inv_misc_food_96_zangarcaps",
+                "itemId": 203852,
+                "name": "Spore-Bound Essence"
+              },
+              {
+                "icon": "inv_misc_monsterhorn_03",
+                "itemId": 204687,
+                "name": "Obsidian Battle Horn"
+              }
+        ],
+        "name": "The Zskera Vaults"
       }
     ]
   },
@@ -4364,6 +4439,11 @@
             "icon": "inv_misc_easterbasket",
             "itemId": 188698,
             "name": "Eagger Basket"
+          },
+          {
+            "icon": "inv_misc_easterbasket",
+            "itemId": 204675,
+            "name": "A Drake's Big Basket of Eggs"
           }
         ],
         "name": "Noblegarden"

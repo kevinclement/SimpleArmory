@@ -16,7 +16,7 @@ def csv_to_list(csv_text, **kwargs):
 @functools.lru_cache(maxsize=None)
 def get_table(table_name, build=None):
     if build is None:
-        build='10.0.2.46999'
+        build='10.0.7.48838'
 
     async def _get_table():
         async with aiohttp.ClientSession() as session:

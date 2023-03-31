@@ -329,6 +329,46 @@
             "itemId": 198622,
             "name": "Spyragos",
             "spellid": 375707
+          },
+          {
+            "ID": 3290,
+            "creatureId": 189113,
+            "icon": "inv_mammoth2pet_orange",
+            "itemId": 193363,
+            "name": "Bunbo",
+            "spellid": 375045
+          },
+          {
+            "ID": 3292,
+            "creatureId": 189117,
+            "icon": "inv_phoenix2pet_orange",
+            "itemId": 193373,
+            "name": "Phoenix Wishwing",
+            "spellid": 375084
+          },
+          {
+            "ID": 3446,
+            "creatureId": 200769,
+            "icon": "inv_elemental_eternal_air",
+            "name": "Vortex"
+          },
+          {
+            "ID": 3447,
+            "creatureId": 200770,
+            "icon": "inv_elemental_eternal_earth",
+            "name": "Tremblor"
+          },
+          {
+            "ID": 3448,
+            "creatureId": 200771,
+            "icon": "inv_elemental_eternal_fire",
+            "name": "Wildfire"
+          },
+          {
+            "ID": 3449,
+            "creatureId": 200772,
+            "icon": "inv_elemental_eternal_water",
+            "name": "Flow"
           }
         ],
         "name": "Quest"
@@ -429,6 +469,30 @@
             "itemId": 199326,
             "name": "Chip",
             "spellid": 386985
+          },
+          {
+            "ID": 3259,
+            "creatureId": 188709,
+            "icon": "inv_rabbitshaggy_brown",
+            "itemId": 191915,
+            "name": "Shaggy",
+            "spellid": 371534
+          },
+          {
+            "ID": 3330,
+            "creatureId": 189661,
+            "icon": "inv_beaverprimalpet_yellow",
+            "itemId": 193850,
+            "name": "Buckie",
+            "spellid": 375499
+          },
+          {
+            "ID": 3427,
+            "creatureId": 200259,
+            "icon": "inv_snowelemental_02",
+            "itemId": 202255,
+            "name": "Driftling",
+            "spellid": 398170
           }
         ],
         "name": "Vendor"
@@ -529,6 +593,14 @@
             "itemId": 201838,
             "name": "Snowclaw Cub",
             "spellid": 377361
+          },
+          {
+            "ID": 3338,
+            "creatureId": 191435,
+            "icon": "inv_porcupinecrystal_blue",
+            "itemId": 193908,
+            "name": "Kobaldt",
+            "spellid": 375642
           }
         ],
         "name": "Treasure"
@@ -684,6 +756,104 @@
         "name": "Obsidian Citadel"
       },
       {
+        "items": [
+          {
+            "ID": 3261,
+            "creatureId": 188821,
+            "icon": "inv_phoenix2pet",
+            "itemId": 191930,
+            "name": "Wakyn",
+            "spellid": 371594
+          },
+          {
+            "ID": 3285,
+            "creatureId": 189106,
+            "icon": "inv_pet_riverotter_red",
+            "itemId": 193235,
+            "name": "Luvvy",
+            "spellid": 374895
+          },
+          {
+            "ID": 3291,
+            "creatureId": 189115,
+            "icon": "inv_mammoth2pet_yellow",
+            "itemId": 193364,
+            "name": "Scruffles",
+            "spellid": 375047
+          },
+          {
+            "ID": 3293,
+            "creatureId": 189118,
+            "icon": "inv_phoenix2pet_red",
+            "itemId": 193374,
+            "name": "Ashenwing",
+            "spellid": 375085
+          },
+          {
+            "ID": 3437,
+            "creatureId": 200685,
+            "icon": "inv_elemental_eternal_air",
+            "name": "Vortex"
+          },
+          {
+            "ID": 3438,
+            "creatureId": 200693,
+            "icon": "inv_elemental_eternal_earth",
+            "name": "Tremblor"
+          },
+          {
+            "ID": 3439,
+            "creatureId": 200689,
+            "icon": "inv_elemental_eternal_fire",
+            "name": "Wildfire"
+          },
+          {
+            "ID": 3440,
+            "creatureId": 200697,
+            "icon": "inv_elemental_eternal_water",
+            "name": "Flow"
+          }
+        ],
+        "name": "The Forbidden Reach"
+      },
+      {
+        "items": [
+          {
+            "ID": 3476,
+            "creatureId": 202484,
+            "icon": "inv_frog2_mechanical_gold",
+            "itemId": 204079,
+            "name": "Gilded Mechafrog",
+            "spellid": 403072
+          },
+          {
+            "ID": 3331,
+            "creatureId": 189694,
+            "icon": "inv_fishpterois_green",
+            "itemId": 193853,
+            "name": "Emmah",
+            "spellid": 375511
+          },
+          {
+            "ID": 3323,
+            "creatureId": 189158,
+            "icon": "inv_woodpecker_red",
+            "itemId": 193835,
+            "name": "Brightfeather",
+            "spellid": 375448
+          },
+          {
+            "ID": 3332,
+            "creatureId": 189696,
+            "icon": "inv_fishpterois_purple",
+            "itemId": 193851,
+            "name": "Patos",
+            "spellid": 375536
+          }
+        ],
+        "name": "Zskera Vaults"
+      },
+      {
         "id": "ccca067e",
         "items": [
           {
@@ -696,6 +866,26 @@
           }
         ],
         "name": "Pre-launch Event"
+      },
+      {
+        "id": "051294ae",
+        "items": [
+          {
+            "ID": 3333,
+            "creatureId": 191287,
+            "icon": "inv_kirinbaby_blue",
+            "itemId": 193854,
+            "name": "Berylmane",
+            "spellid": 375553
+          },
+          {
+            "ID": 3425,
+            "creatureId": 200004,
+            "icon": "inv_toadswamp_yellow",
+            "name": "[DNT] Storm Pet Boss - Rare"
+          }
+        ],
+        "name": "Unknown"
       }
     ]
   },
@@ -9265,7 +9455,16 @@
             "icon": "2991181",
             "itemId": 173296,
             "name": "Rikki",
+            "notObtainable": true,
             "spellid": 307264
+          },
+          {
+            "ID": 3475,
+            "creatureId": 202548,
+            "icon": "4679804",
+            "itemId": 204183,
+            "name": "Volatile Self-Driving Toolbox",
+            "spellid": 403243
           }
         ],
         "name": "Recruit-A-Friend"
@@ -9882,7 +10081,7 @@
           {
             "ID": 3252,
             "creatureId": 185606,
-            "icon": "4215254",
+            "icon": "inv_ogrepet",
             "itemId": 190607,
             "name": "Garrlok",
             "spellid": 367768
