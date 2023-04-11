@@ -4,19 +4,18 @@ from .fixer import WowToolsFixer
 from .tools import changelog, icat
 
 
-IGNORE_TOY_ITEMID = [
-    88587,
-    110586,
-    119220,
-    119221,
-    129111,
-    130249,
-    141300,
-    143545,
-    166851,
-    174445,
-    183810,
-    190196,
+IGNORE_TOY_ID = [
+    216,
+    290,
+    511,
+    929,
+    993,
+    310,
+    311,
+    443,
+    576,
+    603,
+    1175,
 ]
 
 TOY_SOURCE_ENUM = {
@@ -38,7 +37,7 @@ class ToyFixer(WowToolsFixer):
         self.id_to_old_toy = {}
 
         self.dbc_toy = {
-            e['ItemID']: e for e in self.dbc_get_table('toy')
+            e['ID']: e for e in self.dbc_get_table('toy')
         }
         self.dbc_item = {
             e['ID']: e for e in self.dbc_get_table('item')
@@ -52,23 +51,24 @@ class ToyFixer(WowToolsFixer):
         for cat in self.toys:
             for subcat in cat['subcats']:
                 for item in subcat['items']:
-                    self.id_to_old_toy[int(item['itemId'])] = item
+                    self.id_to_old_toy[int(item['ID'])] = item
 
     def get_toy(self, toy_id):
         toy_id = str(toy_id)
+        item_id = self.dbc_toy[toy_id]['ItemID']
 
         # Name
-        if toy_id not in self.dbc_itemsparse:
+        if item_id not in self.dbc_itemsparse:
             return None
-        name = self.dbc_itemsparse[toy_id]['Display_lang']
+        name = self.dbc_itemsparse[item_id]['Display_lang']
 
         # Icon
-        icon_id = self.dbc_item[toy_id]['IconFileDataID']
+        icon_id = self.dbc_item[item_id]['IconFileDataID']
         icon_name = self.get_icon_name(int(icon_id))
 
         return {
-            'ID': int(self.dbc_toy[toy_id]['ID']),
-            'itemId': int(toy_id),
+            'ID': int(toy_id),
+            'itemId': int(item_id),
             'name': name,
             'icon': icon_name,
         }
@@ -85,7 +85,7 @@ class ToyFixer(WowToolsFixer):
             return
 
         changelog('Toy {} missing: https://www.wowhead.com/item={}'
-                  .format(toy_id, toy_id))
+                  .format(toy_id, toy['itemId']))
 
         source = self.get_toy_source(toy_id)
         icat(self.toys, 'TODO', source)['items'].append(toy)
@@ -93,14 +93,14 @@ class ToyFixer(WowToolsFixer):
     def fix_missing_toys(self):
         for toy_id in self.dbc_toy:
             if (int(toy_id) not in self.id_to_old_toy
-                    and int(toy_id) not in IGNORE_TOY_ITEMID):
+                    and int(toy_id) not in IGNORE_TOY_ID):
                 self.fix_missing_toy(toy_id)
 
     def fix_types_data(self):
         for cat in self.toys:
             for subcat in cat['subcats']:
                 for item in subcat['items']:
-                    fixed_toy = self.get_toy(int(item['itemId']))
+                    fixed_toy = self.get_toy(int(item['ID']))
                     item['ID'] = fixed_toy['ID']
                     item['itemId'] = fixed_toy['itemId']
                     item['name'] = fixed_toy['name']
