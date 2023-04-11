@@ -4,21 +4,23 @@ import json
 from pathlib import Path
 
 from .achievements import AchievementFixer
+from .factions import FactionFixer
+from .heirlooms import HeirloomFixer
 from .mounts import MountFixer
 from .pets import PetFixer
 from .realms import RealmFixer
-from .toys import ToyFixer
-from .factions import FactionFixer
 from .titles import TitleFixer
+from .toys import ToyFixer
 
 FIXERS = {
     'achievements': (AchievementFixer, ['achievements.json']),
+    'heirlooms': (HeirloomFixer, ['heirlooms.json']),
     'mounts': (MountFixer, ['mounts.json']),
     'pets': (PetFixer, ['pets.json', 'battlepets.json']),
     'realms': (RealmFixer, ['servers.eu.json', 'servers.us.json']),
     'reputations': (FactionFixer, ['factions.json']),
-    'toys': (ToyFixer, ['toys.json']),
     'titles': (TitleFixer, ['titles.json']),
+    'toys': (ToyFixer, ['toys.json']),
 }
 
 
