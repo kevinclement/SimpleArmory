@@ -3,22 +3,21 @@
 	"version": "0.0.2",
 	"license": "MIT",
 	"scripts": {
-		"dev": "svelte-kit dev",
-		"build": "svelte-kit build",
-		"package": "svelte-kit package",
-		"preview": "svelte-kit preview",
-		"prepare": "svelte-kit sync",
-		"rollbar": "svelte-kit build && node rollbar.js",
+		"dev": "vite dev",
+		"build": "vite build",
+		"package": "vite package",
+		"preview": "vite preview",
+		"rollbar": "vite build && node rollbar.js",
 		"postinstall": "patch-package"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-static": "^1.0.0-next.29",
-		"@sveltejs/kit": "^1.0.0-next.314",
-		"svelte": "^3.49.0"
+		"@sveltejs/adapter-static": "^2.0.2",
+		"@sveltejs/kit": "^1.15.4",
+		"svelte": "^3.58.0"
 	},
 	"type": "module",
 	"dependencies": {
-		"patch-package": "^6.4.7",
+		"patch-package": "^6.5.1",
 		"svelte-select": "^4.4.7"
 	}
 }
