@@ -1,10 +1,9 @@
 [
   {
-    "name": "Dragonflight",
     "id": "e2a50a64",
+    "name": "Dragonflight",
     "subcats": [
       {
-        "name": "Primal Storms",
         "id": "41bec636",
         "items": [
           {
@@ -13,16 +12,16 @@
             "itemId": 199686,
             "name": "Unstable Elemental Confluence"
           }
-        ]
+        ],
+        "name": "Primal Storms"
       }
     ]
   },
   {
-    "name": "Battle for Azeroth",
     "id": "d63e2574",
+    "name": "Battle for Azeroth",
     "subcats": [
       {
-        "name": "Medals",
         "id": "196586fc",
         "items": [
           {
@@ -85,16 +84,16 @@
             "itemId": 166768,
             "name": "Hymnal of the 7th Legion"
           }
-        ]
+        ],
+        "name": "Medals"
       }
     ]
   },
   {
-    "name": "Legion",
     "id": "4ad0d209",
+    "name": "Legion",
     "subcats": [
       {
-        "name": "Mission",
         "id": "6a5c4a09",
         "items": [
           {
@@ -103,10 +102,10 @@
             "itemId": 153130,
             "name": "Man'ari Training Amulet"
           }
-        ]
+        ],
+        "name": "Mission"
       },
       {
-        "name": "Archaeology",
         "id": "9c2fd15d",
         "items": [
           {
@@ -115,16 +114,16 @@
             "itemId": 131733,
             "name": "Spear of Rethu"
           }
-        ]
+        ],
+        "name": "Archaeology"
       }
     ]
   },
   {
-    "name": "Draenor",
     "id": "7b5f6e5e",
+    "name": "Draenor",
     "subcats": [
       {
-        "name": "Mission",
         "id": "2afebec5",
         "items": [
           {
@@ -151,312 +150,312 @@
             "itemId": 128318,
             "name": "Touch of the Void"
           }
-        ]
+        ],
+        "name": "Mission"
       },
       {
-        "name": "Mythic Dungeon Bosses",
         "id": "ac988ed7",
         "items": [
           {
             "ID": 785,
             "icon": "inv_pet_naaru",
             "itemId": 133585,
-            "notObtainable": true,
-            "name": "Judgment of the Naaru"
+            "name": "Judgment of the Naaru",
+            "notObtainable": true
           },
           {
             "ID": 786,
             "icon": "inv_misc_trinket6oih_horn1",
             "itemId": 133595,
-            "notObtainable": true,
-            "name": "Gronntooth War Horn"
+            "name": "Gronntooth War Horn",
+            "notObtainable": true
           },
           {
             "ID": 787,
             "icon": "inv_icon_shadowcouncilorb_purple",
             "itemId": 133596,
-            "notObtainable": true,
-            "name": "Orb of Voidsight"
+            "name": "Orb of Voidsight",
+            "notObtainable": true
           },
           {
             "ID": 788,
             "icon": "inv_misc_trinket6oog_tablet3",
             "itemId": 133597,
-            "notObtainable": true,
-            "name": "Infallible Tracking Charm"
+            "name": "Infallible Tracking Charm",
+            "notObtainable": true
           },
           {
             "ID": 789,
             "icon": "inv_wand_14",
             "itemId": 133598,
-            "notObtainable": true,
-            "name": "Purified Shard of the Third Moon"
+            "name": "Purified Shard of the Third Moon",
+            "notObtainable": true
           }
-        ]
+        ],
+        "name": "Mythic Dungeon Bosses"
       }
     ]
   },
   {
-    "name": "Pandaria",
     "id": "49b51b60",
+    "name": "Pandaria",
     "subcats": [
       {
-        "name": "Siege of Orgrimmar: Normal",
         "id": "010ca9e0",
         "items": [
           {
             "ID": 735,
             "icon": "inv_bow_1h_pvphorde_a_01_upres",
             "itemId": 105670,
-            "notObtainable": true,
-            "name": "Hellscream's Warbow"
+            "name": "Hellscream's Warbow",
+            "notObtainable": true
           },
           {
             "ID": 736,
             "icon": "inv_knife_1h_pvphorde_a_01",
             "itemId": 105671,
-            "notObtainable": true,
-            "name": "Hellscream's Razor"
+            "name": "Hellscream's Razor",
+            "notObtainable": true
           },
           {
             "ID": 737,
             "icon": "inv_axe_1h_pvphorde_d_01_upres",
             "itemId": 105672,
-            "notObtainable": true,
-            "name": "Hellscream's Cleaver"
+            "name": "Hellscream's Cleaver",
+            "notObtainable": true
           },
           {
             "ID": 738,
             "icon": "inv_polearm_2h_pvphorde_a_01_upres",
             "itemId": 105673,
-            "notObtainable": true,
-            "name": "Hellscream's Pig Sticker"
+            "name": "Hellscream's Pig Sticker",
+            "notObtainable": true
           },
           {
             "ID": 739,
             "icon": "inv_shield_pvphorde_a_01_upres",
             "itemId": 105674,
-            "notObtainable": true,
-            "name": "Hellscream's Barrier"
+            "name": "Hellscream's Barrier",
+            "notObtainable": true
           },
           {
             "ID": 740,
             "icon": "inv_hammer_1h_pvphorde_a_01red_upres",
             "itemId": 105675,
-            "notObtainable": true,
-            "name": "Hellscream's Warmace"
+            "name": "Hellscream's Warmace",
+            "notObtainable": true
           },
           {
             "ID": 741,
             "icon": "inv_misc_1h_book_c_02red_upres",
             "itemId": 105676,
-            "notObtainable": true,
-            "name": "Hellscream's Tome of Destruction"
+            "name": "Hellscream's Tome of Destruction",
+            "notObtainable": true
           },
           {
             "ID": 742,
             "icon": "inv_stave_2h_pvphorde_a_01_upres",
             "itemId": 105677,
-            "notObtainable": true,
-            "name": "Hellscream's War Staff"
+            "name": "Hellscream's War Staff",
+            "notObtainable": true
           },
           {
             "ID": 743,
             "icon": "inv_sword_1h_pvphorde_a_01_upres",
             "itemId": 105678,
-            "notObtainable": true,
-            "name": "Hellscream's Doomblade"
+            "name": "Hellscream's Doomblade",
+            "notObtainable": true
           },
           {
             "ID": 744,
             "icon": "inv_axe_2h_pvphorde_a_01blackhigh",
             "itemId": 105679,
-            "notObtainable": true,
-            "name": "Hellscream's Decapitator"
+            "name": "Hellscream's Decapitator",
+            "notObtainable": true
           },
           {
             "ID": 745,
             "icon": "inv_shield_pvphorde_a_01_upres",
             "itemId": 105680,
-            "notObtainable": true,
-            "name": "Hellscream's Shield Wall"
+            "name": "Hellscream's Shield Wall",
+            "notObtainable": true
           }
-        ]
+        ],
+        "name": "Siege of Orgrimmar: Normal"
       },
       {
-        "name": "Siege of Orgrimmar: Heroic",
         "id": "269bd4eb",
         "items": [
           {
             "ID": 724,
             "icon": "inv_bow_1h_pvphorde_a_01_upres",
             "itemId": 104399,
-            "notObtainable": true,
-            "name": "Hellscream's Warbow"
+            "name": "Hellscream's Warbow",
+            "notObtainable": true
           },
           {
             "ID": 725,
             "icon": "inv_knife_1h_pvphorde_a_01",
             "itemId": 104400,
-            "notObtainable": true,
-            "name": "Hellscream's Razor"
+            "name": "Hellscream's Razor",
+            "notObtainable": true
           },
           {
             "ID": 726,
             "icon": "inv_sword_1h_pvphorde_a_01_upres",
             "itemId": 104401,
-            "notObtainable": true,
-            "name": "Hellscream's Doomblade"
+            "name": "Hellscream's Doomblade",
+            "notObtainable": true
           },
           {
             "ID": 727,
             "icon": "inv_hammer_1h_pvphorde_a_01red_upres",
             "itemId": 104402,
-            "notObtainable": true,
-            "name": "Hellscream's Warmace"
+            "name": "Hellscream's Warmace",
+            "notObtainable": true
           },
           {
             "ID": 728,
             "icon": "inv_polearm_2h_pvphorde_a_01_upres",
             "itemId": 104403,
-            "notObtainable": true,
-            "name": "Hellscream's Pig Sticker"
+            "name": "Hellscream's Pig Sticker",
+            "notObtainable": true
           },
           {
             "ID": 729,
             "icon": "inv_axe_1h_pvphorde_d_01_upres",
             "itemId": 104404,
-            "notObtainable": true,
-            "name": "Hellscream's Cleaver"
+            "name": "Hellscream's Cleaver",
+            "notObtainable": true
           },
           {
             "ID": 730,
             "icon": "inv_axe_2h_pvphorde_a_01blackhigh",
             "itemId": 104405,
-            "notObtainable": true,
-            "name": "Hellscream's Decapitator"
+            "name": "Hellscream's Decapitator",
+            "notObtainable": true
           },
           {
             "ID": 731,
             "icon": "inv_stave_2h_pvphorde_a_01_upres",
             "itemId": 104406,
-            "notObtainable": true,
-            "name": "Hellscream's War Staff"
+            "name": "Hellscream's War Staff",
+            "notObtainable": true
           },
           {
             "ID": 732,
             "icon": "inv_shield_pvphorde_a_01_upres",
             "itemId": 104407,
-            "notObtainable": true,
-            "name": "Hellscream's Shield Wall"
+            "name": "Hellscream's Shield Wall",
+            "notObtainable": true
           },
           {
             "ID": 733,
             "icon": "inv_misc_1h_book_c_02red_upres",
             "itemId": 104408,
-            "notObtainable": true,
-            "name": "Hellscream's Tome of Destruction"
+            "name": "Hellscream's Tome of Destruction",
+            "notObtainable": true
           },
           {
             "ID": 734,
             "icon": "inv_shield_pvphorde_a_01_upres",
             "itemId": 104409,
-            "notObtainable": true,
-            "name": "Hellscream's Barrier"
+            "name": "Hellscream's Barrier",
+            "notObtainable": true
           }
-        ]
+        ],
+        "name": "Siege of Orgrimmar: Heroic"
       },
       {
-        "name": "Siege of Orgrimmar: Mythic",
         "id": "79e350a8",
         "items": [
           {
             "ID": 746,
             "icon": "inv_bow_1h_pvphorde_a_01_upres",
-            "notObtainable": true,
             "itemId": 105683,
-            "name": "Hellscream's Warbow"
+            "name": "Hellscream's Warbow",
+            "notObtainable": true
           },
           {
             "ID": 747,
             "icon": "inv_knife_1h_pvphorde_a_01",
-            "notObtainable": true,
             "itemId": 105684,
-            "name": "Hellscream's Razor"
+            "name": "Hellscream's Razor",
+            "notObtainable": true
           },
           {
             "ID": 748,
             "icon": "inv_axe_1h_pvphorde_d_01_upres",
-            "notObtainable": true,
             "itemId": 105685,
-            "name": "Hellscream's Cleaver"
+            "name": "Hellscream's Cleaver",
+            "notObtainable": true
           },
           {
             "ID": 749,
             "icon": "inv_polearm_2h_pvphorde_a_01_upres",
-            "notObtainable": true,
             "itemId": 105686,
-            "name": "Hellscream's Pig Sticker"
+            "name": "Hellscream's Pig Sticker",
+            "notObtainable": true
           },
           {
             "ID": 750,
             "icon": "inv_shield_pvphorde_a_01_upres",
-            "notObtainable": true,
             "itemId": 105687,
-            "name": "Hellscream's Barrier"
+            "name": "Hellscream's Barrier",
+            "notObtainable": true
           },
           {
             "ID": 751,
             "icon": "inv_hammer_1h_pvphorde_a_01red_upres",
-            "notObtainable": true,
             "itemId": 105688,
-            "name": "Hellscream's Warmace"
+            "name": "Hellscream's Warmace",
+            "notObtainable": true
           },
           {
             "ID": 752,
             "icon": "inv_misc_1h_book_c_02red_upres",
-            "notObtainable": true,
             "itemId": 105689,
-            "name": "Hellscream's Tome of Destruction"
+            "name": "Hellscream's Tome of Destruction",
+            "notObtainable": true
           },
           {
             "ID": 753,
             "icon": "inv_stave_2h_pvphorde_a_01_upres",
-            "notObtainable": true,
             "itemId": 105690,
-            "name": "Hellscream's War Staff"
+            "name": "Hellscream's War Staff",
+            "notObtainable": true
           },
           {
             "ID": 754,
             "icon": "inv_sword_1h_pvphorde_a_01_upres",
-            "notObtainable": true,
             "itemId": 105691,
-            "name": "Hellscream's Doomblade"
+            "name": "Hellscream's Doomblade",
+            "notObtainable": true
           },
           {
             "ID": 755,
             "icon": "inv_axe_2h_pvphorde_a_01blackhigh",
-            "notObtainable": true,
             "itemId": 105692,
-            "name": "Hellscream's Decapitator"
+            "name": "Hellscream's Decapitator",
+            "notObtainable": true
           },
           {
             "ID": 756,
             "icon": "inv_shield_pvphorde_a_01_upres",
-            "notObtainable": true,
             "itemId": 105693,
-            "name": "Hellscream's Shield Wall"
+            "name": "Hellscream's Shield Wall",
+            "notObtainable": true
           }
-        ]
+        ],
+        "name": "Siege of Orgrimmar: Mythic"
       }
     ]
   },
   {
-    "name": "Azeroth",
     "id": "c59068ec",
+    "name": "Azeroth",
     "subcats": [
       {
-        "name": "Vendor",
         "id": "7f763f44",
         "items": [
           {
@@ -777,10 +776,10 @@
             "itemId": 140773,
             "name": "Eagletalon Spear"
           }
-        ]
+        ],
+        "name": "Vendor"
       },
       {
-        "name": "Guild Vendor",
         "id": "620ef116",
         "items": [
           {
@@ -903,10 +902,10 @@
             "itemId": 127012,
             "name": "Pristine Lightforge Helm"
           }
-        ]
+        ],
+        "name": "Guild Vendor"
       },
       {
-        "name": "Brawler's Guild",
         "id": "e177a991",
         "items": [
           {
@@ -915,10 +914,10 @@
             "itemId": 122396,
             "name": "Brawler's Razor Claws"
           }
-        ]
+        ],
+        "name": "Brawler's Guild"
       },
       {
-        "name": "Stranglethorn Fishing Contest",
         "id": "b1a92188",
         "items": [
           {
@@ -927,16 +926,16 @@
             "itemId": 122529,
             "name": "Dread Pirate Ring"
           }
-        ]
+        ],
+        "name": "Stranglethorn Fishing Contest"
       }
     ]
   },
   {
-    "name": "PVP",
     "id": "2215720f",
+    "name": "PVP",
     "subcats": [
       {
-        "name": "Gurubashi Arena",
         "id": "93fc210a",
         "items": [
           {
@@ -945,10 +944,10 @@
             "itemId": 126948,
             "name": "Defending Champion"
           }
-        ]
+        ],
+        "name": "Gurubashi Arena"
       },
       {
-        "name": "Darkmoon Deathmatch",
         "id": "36c58bf3",
         "items": [
           {
@@ -957,7 +956,8 @@
             "itemId": 126949,
             "name": "Returning Champion"
           }
-        ]
+        ],
+        "name": "Darkmoon Deathmatch"
       }
     ]
   }
