@@ -67,6 +67,7 @@ class ToyFixer(WowToolsFixer):
         icon_name = self.get_icon_name(int(icon_id))
 
         return {
+            'ID': int(self.dbc_toy[toy_id]['ID']),
             'itemId': int(toy_id),
             'name': name,
             'icon': icon_name,
@@ -100,6 +101,7 @@ class ToyFixer(WowToolsFixer):
             for subcat in cat['subcats']:
                 for item in subcat['items']:
                     fixed_toy = self.get_toy(int(item['itemId']))
+                    item['ID'] = fixed_toy['ID']
                     item['itemId'] = fixed_toy['itemId']
                     item['name'] = fixed_toy['name']
 
