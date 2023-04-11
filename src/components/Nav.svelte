@@ -32,7 +32,8 @@
 				{ txt: 'Companions',  link: 'companions' },
 				{ txt: 'Battle Pets', link: 'battlepets' },
 				{ txt: 'Toys',        link: 'toys'       },
-				{ txt: 'Titles',	  link: 'titles'     }
+				{ txt: 'Heirlooms',	  link: 'heirlooms'  },
+				{ txt: 'Titles',	  link: 'titles'     },
 			],
 			isOpen: false,
 		},

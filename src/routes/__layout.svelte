@@ -9,6 +9,7 @@
 	import Mounts from '$pages/Mounts.svelte';
 	import Companions from '$pages/Companions.svelte';
 	import Toys from '$pages/Toys.svelte';
+	import Heirlooms from '$pages/Heirlooms.svelte';
 	import BattlePets from '$pages/BattlePets.svelte';
 	import Titles from '$pages/Titles.svelte';
 	import Calendar from '$pages/Calendar.svelte';
@@ -142,6 +143,10 @@
 			<!-- collectable/toys -->
 			{:else if $page === 'collectable' && $category === 'toys'} 
 			<Toys/>
+
+			<!-- collectable/heirlooms -->
+			{:else if $page === 'collectable' && $category === 'heirlooms'}
+			<Heirlooms/>
 
 			<!-- collectable/titles -->
 			{:else if $page === 'collectable' && $category === 'titles'} 
