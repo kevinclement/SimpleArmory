@@ -5,11 +5,12 @@ from .tools import icat, changelog
 
 
 IGNORE_PET_NPCID = [
-    185475,     # Tezpet https://www.wowhead.com/npc=185475
     125494,     # SpeedyNumberIII https://www.wowhead.com/npc=125494
+    185475,     # Tezpet https://www.wowhead.com/npc=185475
+    200004,     # [DNT] Storm Pet Boss - Rare
     200685,     # Vortex https://www.wowhead.com/npc=200685
-    200693,     # Tremblor https://www.wowhead.com/npc=200693
     200689,     # Wildfire https://www.wowhead.com/npc=200689
+    200693,     # Tremblor https://www.wowhead.com/npc=200693
     200697,     # Flow https://www.wowhead.com/npc=200697
 ]
 
