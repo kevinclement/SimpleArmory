@@ -1,9 +1,9 @@
 <script>
-	import { region, realm, character, page, category, subcat } from '$stores/user'
+	import { region, realm, character, page, category } from '$stores/user'
 	import { preferences } from '$stores/preferences'
 	import { getProfileMedia } from '$api/profile'
 	import { getUrl } from '$util/url'
-	import { onMount, onDestroy } from 'svelte'
+	import { onMount } from 'svelte'
 	
 	let menuCollapsed = true
 

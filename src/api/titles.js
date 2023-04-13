@@ -67,7 +67,6 @@ function parseTitlesObject(db, profile, earned) {
             subCategory.items.forEach((item) => {
 
                 if (collected[item.titleId]) {
-                    var fullItem = collected[item.titleId];
                     item.collected =  true;
                 }
 
