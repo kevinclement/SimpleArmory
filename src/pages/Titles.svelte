@@ -3,7 +3,6 @@
     import { region, realm, character } from '$stores/user'
     import { getTitles } from '$api/titles'
     import { percent, percentFormat, getTitle, getImageSrc } from '$util/utils'
-    import { navigate } from '$util/url'
     import settings from '$util/settings'
     import ProgressBar from '$components/ProgressBar.svelte';
     import Loading from '$components/Loading.svelte';

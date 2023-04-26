@@ -68,10 +68,3 @@
 {/await}
 
 </div>
-
-<style>
-.tupd {
-  margin-left: 3px;
-  font-size:18px;
-}
-</style>

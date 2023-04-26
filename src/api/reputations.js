@@ -105,7 +105,7 @@ function levelsAsList(levelsDict) {
     items.sort(function(first, second) {
         return first[0] - second[0];
     });
-    for (i = 0; i < items.length; i++) {
+    for (var i = 0; i < items.length; i++) {
         items[i][0] = parseInt(items[i][0]);
     }
     return items;
@@ -113,7 +113,7 @@ function levelsAsList(levelsDict) {
 
 function renownToLevels(max, step) {
     var items = [];
-    for (i = 0; i <= max; i++) {
+    for (var i = 0; i <= max; i++) {
         items.push([i * step, "Renown " + i])
     }
     return items;

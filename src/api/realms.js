@@ -1,5 +1,4 @@
 import { getJsonDb } from '$api/_db'
-import Cache from '$api/_cache'
 
 let _cache;
 export async function getRealms() {

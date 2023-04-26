@@ -184,7 +184,7 @@ function parseAchievementObject(db, earned, character, faction) {
     })
 
     for (var achId in found) {
-        if (found.hasOwnProperty(achId) && !found[achId] && !ignoredFoundAchivements[achId]) {
+        if (found.hasOwnProperty(achId) && !found[achId]) {
             window.ga('send', 'event', 'MissingAchievement', achId);
             console.log('WARN: Found achievement "' + achId + '" from character but not in db.');
         }
