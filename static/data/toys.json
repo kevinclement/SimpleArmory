@@ -154,6 +154,18 @@
             "icon": "inv_babyturtle2",
             "itemId": 200999,
             "name": "The Super Shellkhan Gang"
+          },
+          {
+            "ID": 1320,
+            "icon": "inv_misc_drum_01",
+            "itemId": 205419,
+            "name": "Jrumm's Drum"
+          },
+          {
+            "ID": 1323,
+            "icon": "inv_alchemy_70_cauldron",
+            "itemId": 205796,
+            "name": "Molten Lava Pack"
           }
         ],
         "name": "Rare"
@@ -201,6 +213,12 @@
             "icon": "oshugun_crystalfragments",
             "itemId": 201927,
             "name": "Gleaming Arcanocrystal"
+          },
+          {
+            "ID": 1317,
+            "icon": "inv_shadowflame_nova",
+            "itemId": 205418,
+            "name": "Blazing Shadowflame Cinder"
           }
         ],
         "name": "Treasure"
@@ -249,186 +267,18 @@
             "icon": "inv_10_dungeonjewelry_dragon_trinket_3djardintrophy_black",
             "itemId": 202021,
             "name": "Breaker's Flag of Victory"
+          },
+          {
+            "ID": 1332,
+            "icon": "inv_alchemy_70_flask03orange",
+            "itemId": 205936,
+            "name": "New Niffen No-Sniffin' Tonic"
           }
         ],
         "name": "Vendor"
       },
       {
-        "id": "7dd60e6c",
         "items": [
-          {
-            "ID": 1203,
-            "icon": "achievement_profession_fishing_northrendangler",
-            "itemId": 198428,
-            "name": "Tuskarr Dinghy"
-          },
-          {
-            "ID": 1236,
-            "icon": "inv_eagle2wind",
-            "itemId": 200630,
-            "name": "Ohn'ir Windsage's Hearthstone"
-          },
-          {
-            "ID": 1238,
-            "icon": "inv_10_dungeonjewelry_primitive_trinket_tuskarrplushie_color1",
-            "itemId": 200631,
-            "name": "Happy Tuskarr Palooza"
-          },
-          {
-            "ID": 1276,
-            "icon": "achievement_profession_fishing_outlandangler",
-            "itemId": 202207,
-            "name": "Reusable Oversized Bobber"
-          }
-        ],
-        "name": "Achievement"
-      },
-      {
-        "id": "877c9d6c",
-        "items": [
-          {
-            "ID": 1191,
-            "icon": "inv_jewelry_necklace_15",
-            "itemId": 193032,
-            "name": "Jeweled Offering"
-          },
-          {
-            "ID": 1193,
-            "icon": "inv_10_jewelcrafting3_rainbowprism_color1",
-            "itemId": 193033,
-            "name": "Convergent Prism"
-          },
-          {
-            "ID": 1194,
-            "icon": "inv_misc_bag_10",
-            "itemId": 193478,
-            "name": "Tuskarr Beanbag"
-          },
-          {
-            "ID": 1195,
-            "icon": "inv_10_tailoring2_tent_color3",
-            "itemId": 193476,
-            "name": "Gnoll Tent"
-          },
-          {
-            "ID": 1196,
-            "icon": "inv_misc_clipboard01",
-            "itemId": 197719,
-            "name": "Artisan's Sign"
-          },
-          {
-            "ID": 1204,
-            "icon": "item_embercloth",
-            "itemId": 194052,
-            "name": "Forlorn Funeral Pall"
-          },
-          {
-            "ID": 1210,
-            "icon": "inv_10_tailoring2_tent_color5",
-            "itemId": 194060,
-            "name": "Dragonscale Expedition's Expedition Tent"
-          },
-          {
-            "ID": 1214,
-            "icon": "inv_duckbaby_white",
-            "itemId": 194056,
-            "name": "Duck-Stuffed Duck Lovie"
-          },
-          {
-            "ID": 1217,
-            "icon": "inv_10_tailoring2_pillow_yellow",
-            "itemId": 194057,
-            "name": "Cushion of Time Travel"
-          },
-          {
-            "ID": 1218,
-            "icon": "inv_10_tailoring2_pillow_blue",
-            "itemId": 194058,
-            "name": "Cold Cushion"
-          },
-          {
-            "ID": 1219,
-            "icon": "inv_10_tailoring2_tent_color1",
-            "itemId": 194059,
-            "name": "Market Tent"
-          },
-          {
-            "ID": 1230,
-            "icon": "inv_enchanting_70_toy_leyshocker",
-            "itemId": 200469,
-            "name": "Khadgar's Disenchanting Rod"
-          },
-          {
-            "ID": 1220,
-            "icon": "inv_gizmo_03",
-            "itemId": 199554,
-            "name": "S.E.A.T."
-          },
-          {
-            "ID": 1190,
-            "icon": "inv_misc_enggizmos_36",
-            "itemId": 192495,
-            "name": "Malfunctioning Stealthman 54"
-          },
-          {
-            "ID": 1245,
-            "icon": "ability_mount_rocketmount",
-            "itemId": 192443,
-            "name": "Element-Infused Rocket Helmet"
-          },
-          {
-            "ID": 1281,
-            "icon": "inv_mechacycle",
-            "itemId": 198173,
-            "name": "Atomic Recalibrator"
-          },
-          {
-            "ID": 1207,
-            "icon": "inv_gizmo_newgoggles",
-            "itemId": 198227,
-            "name": "Giggle Goggles"
-          },
-          {
-            "ID": 1211,
-            "icon": "inv_10_engineering_device_gadget3_color1",
-            "itemId": 198264,
-            "name": "Centralized Precipitation Emitter"
-          },
-          {
-            "ID": 1212,
-            "icon": "inv_10_engineering_device_gadget2_color1",
-            "itemId": 198206,
-            "name": "Environmental Emulator"
-          },
-          {
-            "ID": 1215,
-            "icon": "inv_10_engineering_device_gadget3_color3",
-            "itemId": 198156,
-            "name": "Wyrmhole Generator: Dragon Isles"
-          },
-          {
-            "ID": 1301,
-            "icon": "inv_drink_21",
-            "itemId": 202360,
-            "name": "Dented Can"
-          },
-          {
-            "ID": 1309,
-            "icon": "inv_10_engineering2_pvpflaregun_color1",
-            "itemId": 201930,
-            "name": "H.E.L.P."
-          },
-          {
-            "ID": 1237,
-            "icon": "inv_10_enchanting2_elementalswirl_color1",
-            "itemId": 200636,
-            "name": "Primal Invocation Quintessence"
-          }
-        ],
-        "name": "Profession"
-      },
-      {
-        "items":[
           {
             "ID": 1252,
             "icon": "inv_10_dungeonjewelry_explorer_trinket_1compass_color2",
@@ -469,7 +319,7 @@
         "name": "Renown: Dragonscale Expedition"
       },
       {
-        "items":[
+        "items": [
           {
             "ID": 1201,
             "icon": "inv_misc_cauldron_arcane",
@@ -498,7 +348,7 @@
         "name": "Renown: Maruuk Centaur"
       },
       {
-        "items":[
+        "items": [
           {
             "ID": 1258,
             "icon": "archaeology_5_0_pandarenteaset",
@@ -545,7 +395,7 @@
         "name": "Renown: Iskarra Tuskarr"
       },
       {
-        "items":[
+        "items": [
           {
             "ID": 1259,
             "icon": "inv_misc_pearlmilktea",
@@ -586,7 +436,24 @@
         "name": "Renown: Valdrakken Accord"
       },
       {
-        "items":[
+        "items": [
+          {
+            "ID": 1316,
+            "icon": "inv_10_specialreagentfoozles_tuskclaw-black",
+            "itemId": 205255,
+            "name": "Niffen Diggin' Mitts"
+          },
+          {
+            "ID": 1326,
+            "icon": "inv_misc_food_legion_flaked-sea-salt",
+            "itemId": 205963,
+            "name": "Sniffin' Salts"
+          }
+        ],
+        "name": "Renown: Loamm Niffen"
+      },
+      {
+        "items": [
           {
             "ID": 1102,
             "icon": "inv_item_dragonegg_black01",
@@ -620,7 +487,42 @@
         ],
         "name": "Reputation"
       },
-      
+      {
+        "id": "7dd60e6c",
+        "items": [
+          {
+            "ID": 1203,
+            "icon": "achievement_profession_fishing_northrendangler",
+            "itemId": 198428,
+            "name": "Tuskarr Dinghy"
+          },
+          {
+            "ID": 1236,
+            "icon": "inv_eagle2wind",
+            "itemId": 200630,
+            "name": "Ohn'ir Windsage's Hearthstone"
+          },
+          {
+            "ID": 1238,
+            "icon": "inv_10_dungeonjewelry_primitive_trinket_tuskarrplushie_color1",
+            "itemId": 200631,
+            "name": "Happy Tuskarr Palooza"
+          },
+          {
+            "ID": 1276,
+            "icon": "achievement_profession_fishing_outlandangler",
+            "itemId": 202207,
+            "name": "Reusable Oversized Bobber"
+          },
+          {
+            "ID": 1325,
+            "icon": "inv_misc_claw_deepcrab_ghost",
+            "itemId": 205904,
+            "name": "Vibrant Clacking Claw"
+          }
+        ],
+        "name": "Achievement"
+      },
       {
         "id": "45010d6e",
         "items": [
@@ -714,6 +616,12 @@
             "itemId": 204220,
             "name": "Hraxian's Unbreakable Will",
             "notObtainable": true
+          },
+          {
+            "ID": 1310,
+            "icon": "ability_earthen_pillar",
+            "itemId": 204389,
+            "name": "Stone Breaker"
           }
         ],
         "name": "Quest"
@@ -736,6 +644,24 @@
             "icon": "inv_60pvp_trinket4a",
             "itemId": 200116,
             "name": "Everlasting Horn of Lavaswimming"
+          },
+          {
+            "ID": 1322,
+            "icon": "inv_enchant_essencemagiclarge",
+            "itemId": 205688,
+            "name": "Glutinous Glitterscale Glob"
+          },
+          {
+            "ID": 1327,
+            "icon": "ability_evoker_deepbreath",
+            "itemId": 206043,
+            "name": "Fyrakk's Frenzy"
+          },
+          {
+            "ID": 1331,
+            "icon": "inv_misc_nightmarebanner",
+            "itemId": 206008,
+            "name": "Nightmare Banner"
           }
         ],
         "name": "Events"
@@ -4551,6 +4477,144 @@
         "name": "Archaeology"
       },
       {
+        "id": "bd30e8a9",
+        "items": [
+          {
+            "ID": 610,
+            "icon": "ability_garrison_orangebird",
+            "itemId": 143662,
+            "name": "Crate of Bobbers: Wooden Pepe"
+          },
+          {
+            "ID": 599,
+            "icon": "inv_garrison_cargoship",
+            "itemId": 142530,
+            "name": "Crate of Bobbers: Tugboat"
+          },
+          {
+            "ID": 600,
+            "icon": "inv_g_fishingbobber_05",
+            "itemId": 142531,
+            "name": "Crate of Bobbers: Squeaky Duck"
+          },
+          {
+            "ID": 601,
+            "icon": "inv_misc_head_murloc_01",
+            "itemId": 142532,
+            "name": "Crate of Bobbers: Murloc Head"
+          },
+          {
+            "ID": 598,
+            "icon": "trade_archaeology_catstatueemeraldeyes",
+            "itemId": 142529,
+            "name": "Crate of Bobbers: Cat Head"
+          },
+          {
+            "ID": 597,
+            "icon": "ability_hunter_pet_worm",
+            "itemId": 142528,
+            "name": "Crate of Bobbers: Can of Worms"
+          },
+          {
+            "ID": 485,
+            "icon": "inv_mace_27",
+            "itemId": 85973,
+            "name": "Ancient Pandaren Fishing Charm"
+          },
+          {
+            "ID": 486,
+            "icon": "inv_misc_fishing_raft",
+            "itemId": 85500,
+            "name": "Anglers Fishing Raft"
+          },
+          {
+            "ID": 103,
+            "icon": "inv_misc_coin_18",
+            "itemId": 44430,
+            "name": "Titanium Seal of Dalaran"
+          },
+          {
+            "ID": 139,
+            "icon": "inv_fishingchair",
+            "itemId": 86596,
+            "name": "Nat's Fishing Chair"
+          },
+          {
+            "ID": 250,
+            "icon": "inv_misc_idol_05",
+            "itemId": 45984,
+            "name": "Unusual Compass"
+          }
+        ],
+        "name": "Fishing"
+      },
+      {
+        "id": "4e4ffd58",
+        "items": [
+          {
+            "ID": 472,
+            "icon": "achievement_profession_chefhat",
+            "itemId": 134020,
+            "name": "Chef's Hat"
+          }
+        ],
+        "name": "Cooking"
+      },
+      {
+        "id": "79a66987",
+        "items": [
+          {
+            "ID": 352,
+            "icon": "inv_cask_03",
+            "itemId": 120857,
+            "name": "Barrel of Bandanas",
+            "obtainClasses": [
+              4
+            ]
+          },
+          {
+            "ID": 199,
+            "icon": "inv_misc_dice_01",
+            "itemId": 36863,
+            "name": "Decahedral Dwarven Dice",
+            "obtainClasses": [
+              4
+            ]
+          },
+          {
+            "ID": 223,
+            "icon": "inv_misc_dice_02",
+            "itemId": 63269,
+            "name": "Loaded Gnomish Dice",
+            "obtainClasses": [
+              4
+            ]
+          },
+          {
+            "ID": 257,
+            "icon": "inv_misc_dice_02",
+            "itemId": 36862,
+            "name": "Worn Troll Dice",
+            "obtainClasses": [
+              4
+            ]
+          }
+        ],
+        "name": "Pickpocketing"
+      },
+      {
+        "id": "b2f64016",
+        "items": [
+          {
+            "ID": 611,
+            "icon": "inv_knife_1h_common_b_01green",
+            "itemId": 130102,
+            "name": "Mother's Skinning Knife"
+          }
+        ],
+        "name": "Skinning"
+      },
+      {
         "id": "34d351da",
         "items": [
           {
@@ -4594,6 +4658,24 @@
             "icon": "inv_misc_rune_07",
             "itemId": 186686,
             "name": "Pallid Oracle Bones"
+          },
+          {
+            "ID": 1194,
+            "icon": "inv_misc_bag_10",
+            "itemId": 193478,
+            "name": "Tuskarr Beanbag"
+          },
+          {
+            "ID": 1195,
+            "icon": "inv_10_tailoring2_tent_color3",
+            "itemId": 193476,
+            "name": "Gnoll Tent"
+          },
+          {
+            "ID": 1196,
+            "icon": "inv_misc_clipboard01",
+            "itemId": 197719,
+            "name": "Artisan's Sign"
           }
         ],
         "name": "Leatherworking"
@@ -4612,9 +4694,111 @@
             "icon": "inv_jewelcrafting_70_songcrystal",
             "itemId": 130254,
             "name": "Chatterstone"
+          },
+          {
+            "ID": 1191,
+            "icon": "inv_jewelry_necklace_15",
+            "itemId": 193032,
+            "name": "Jeweled Offering"
+          },
+          {
+            "ID": 1193,
+            "icon": "inv_10_jewelcrafting3_rainbowprism_color1",
+            "itemId": 193033,
+            "name": "Convergent Prism"
+          },
+          {
+            "ID": 1315,
+            "icon": "creatureportrait_fomorhand",
+            "itemId": 205045,
+            "name": "B.B.F. Fist"
           }
         ],
         "name": "Jewelcrafting"
+      },
+      {
+        "id": "f5098ee7",
+        "items": [
+          {
+            "ID": 410,
+            "icon": "spell_fire_twilightfire",
+            "itemId": 128536,
+            "name": "Leylight Brazier"
+          },
+          {
+            "ID": 1117,
+            "icon": "Spell_animabastion_beam",
+            "itemId": 186973,
+            "name": "Anima-ted Leash"
+          },
+          {
+            "ID": 1230,
+            "icon": "inv_enchanting_70_toy_leyshocker",
+            "itemId": 200469,
+            "name": "Khadgar's Disenchanting Rod"
+          },
+          {
+            "ID": 1237,
+            "icon": "inv_10_enchanting2_elementalswirl_color1",
+            "itemId": 200636,
+            "name": "Primal Invocation Quintessence"
+          }
+        ],
+        "name": "Enchanting"
+      },
+      {
+        "id": "01d8754d",
+        "items": [
+          {
+            "ID": 531,
+            "icon": "70_inscription_steamy_romance_novel_kit",
+            "itemId": 129211,
+            "name": "Steamy Romance Novel Kit"
+          }
+        ],
+        "name": "Inscription"
+      },
+      {
+        "id": "01d8754d",
+        "items": [
+          {
+            "ID": 1204,
+            "icon": "item_embercloth",
+            "itemId": 194052,
+            "name": "Forlorn Funeral Pall"
+          },
+          {
+            "ID": 1210,
+            "icon": "inv_10_tailoring2_tent_color5",
+            "itemId": 194060,
+            "name": "Dragonscale Expedition's Expedition Tent"
+          },
+          {
+            "ID": 1214,
+            "icon": "inv_duckbaby_white",
+            "itemId": 194056,
+            "name": "Duck-Stuffed Duck Lovie"
+          },
+          {
+            "ID": 1217,
+            "icon": "inv_10_tailoring2_pillow_yellow",
+            "itemId": 194057,
+            "name": "Cushion of Time Travel"
+          },
+          {
+            "ID": 1218,
+            "icon": "inv_10_tailoring2_pillow_blue",
+            "itemId": 194058,
+            "name": "Cold Cushion"
+          },
+          {
+            "ID": 1219,
+            "icon": "inv_10_tailoring2_tent_color1",
+            "itemId": 194059,
+            "name": "Market Tent"
+          }
+        ],
+        "name": "Tailoring"
       },
       {
         "id": "9bf8d5f8",
@@ -4780,177 +4964,75 @@
             "icon": "inv_misc_bomb_04",
             "itemId": 202309,
             "name": "Defective Doomsday Device"
+          },
+          {
+            "ID": 1220,
+            "icon": "inv_gizmo_03",
+            "itemId": 199554,
+            "name": "S.E.A.T."
+          },
+          {
+            "ID": 1190,
+            "icon": "inv_misc_enggizmos_36",
+            "itemId": 192495,
+            "name": "Malfunctioning Stealthman 54"
+          },
+          {
+            "ID": 1245,
+            "icon": "ability_mount_rocketmount",
+            "itemId": 192443,
+            "name": "Element-Infused Rocket Helmet"
+          },
+          {
+            "ID": 1281,
+            "icon": "inv_mechacycle",
+            "itemId": 198173,
+            "name": "Atomic Recalibrator"
+          },
+          {
+            "ID": 1207,
+            "icon": "inv_gizmo_newgoggles",
+            "itemId": 198227,
+            "name": "Giggle Goggles"
+          },
+          {
+            "ID": 1211,
+            "icon": "inv_10_engineering_device_gadget3_color1",
+            "itemId": 198264,
+            "name": "Centralized Precipitation Emitter"
+          },
+          {
+            "ID": 1212,
+            "icon": "inv_10_engineering_device_gadget2_color1",
+            "itemId": 198206,
+            "name": "Environmental Emulator"
+          },
+          {
+            "ID": 1215,
+            "icon": "inv_10_engineering_device_gadget3_color3",
+            "itemId": 198156,
+            "name": "Wyrmhole Generator: Dragon Isles"
+          },
+          {
+            "ID": 1301,
+            "icon": "inv_drink_21",
+            "itemId": 202360,
+            "name": "Dented Can"
+          },
+          {
+            "ID": 1309,
+            "icon": "inv_10_engineering2_pvpflaregun_color1",
+            "itemId": 201930,
+            "name": "H.E.L.P."
+          },
+          {
+            "ID": 1314,
+            "icon": "inv_weapon_rifle_19",
+            "itemId": 204818,
+            "name": "Mallard Mortar"
           }
         ],
         "name": "Engineering"
-      },
-      {
-        "id": "f5098ee7",
-        "items": [
-          {
-            "ID": 410,
-            "icon": "spell_fire_twilightfire",
-            "itemId": 128536,
-            "name": "Leylight Brazier"
-          },
-          {
-            "ID": 1117,
-            "icon": "Spell_animabastion_beam",
-            "itemId": 186973,
-            "name": "Anima-ted Leash"
-          }
-        ],
-        "name": "Enchanting"
-      },
-      {
-        "id": "01d8754d",
-        "items": [
-          {
-            "ID": 531,
-            "icon": "70_inscription_steamy_romance_novel_kit",
-            "itemId": 129211,
-            "name": "Steamy Romance Novel Kit"
-          }
-        ],
-        "name": "Inscription"
-      },
-      {
-        "id": "bd30e8a9",
-        "items": [
-          {
-            "ID": 610,
-            "icon": "ability_garrison_orangebird",
-            "itemId": 143662,
-            "name": "Crate of Bobbers: Wooden Pepe"
-          },
-          {
-            "ID": 599,
-            "icon": "inv_garrison_cargoship",
-            "itemId": 142530,
-            "name": "Crate of Bobbers: Tugboat"
-          },
-          {
-            "ID": 600,
-            "icon": "inv_g_fishingbobber_05",
-            "itemId": 142531,
-            "name": "Crate of Bobbers: Squeaky Duck"
-          },
-          {
-            "ID": 601,
-            "icon": "inv_misc_head_murloc_01",
-            "itemId": 142532,
-            "name": "Crate of Bobbers: Murloc Head"
-          },
-          {
-            "ID": 598,
-            "icon": "trade_archaeology_catstatueemeraldeyes",
-            "itemId": 142529,
-            "name": "Crate of Bobbers: Cat Head"
-          },
-          {
-            "ID": 597,
-            "icon": "ability_hunter_pet_worm",
-            "itemId": 142528,
-            "name": "Crate of Bobbers: Can of Worms"
-          },
-          {
-            "ID": 485,
-            "icon": "inv_mace_27",
-            "itemId": 85973,
-            "name": "Ancient Pandaren Fishing Charm"
-          },
-          {
-            "ID": 486,
-            "icon": "inv_misc_fishing_raft",
-            "itemId": 85500,
-            "name": "Anglers Fishing Raft"
-          },
-          {
-            "ID": 103,
-            "icon": "inv_misc_coin_18",
-            "itemId": 44430,
-            "name": "Titanium Seal of Dalaran"
-          },
-          {
-            "ID": 139,
-            "icon": "inv_fishingchair",
-            "itemId": 86596,
-            "name": "Nat's Fishing Chair"
-          },
-          {
-            "ID": 250,
-            "icon": "inv_misc_idol_05",
-            "itemId": 45984,
-            "name": "Unusual Compass"
-          }
-        ],
-        "name": "Fishing"
-      },
-      {
-        "id": "4e4ffd58",
-        "items": [
-          {
-            "ID": 472,
-            "icon": "achievement_profession_chefhat",
-            "itemId": 134020,
-            "name": "Chef's Hat"
-          }
-        ],
-        "name": "Cooking"
-      },
-      {
-        "id": "79a66987",
-        "items": [
-          {
-            "ID": 352,
-            "icon": "inv_cask_03",
-            "itemId": 120857,
-            "name": "Barrel of Bandanas",
-            "obtainClasses": [
-              4
-            ]
-          },
-          {
-            "ID": 199,
-            "icon": "inv_misc_dice_01",
-            "itemId": 36863,
-            "name": "Decahedral Dwarven Dice",
-            "obtainClasses": [
-              4
-            ]
-          },
-          {
-            "ID": 223,
-            "icon": "inv_misc_dice_02",
-            "itemId": 63269,
-            "name": "Loaded Gnomish Dice",
-            "obtainClasses": [
-              4
-            ]
-          },
-          {
-            "ID": 257,
-            "icon": "inv_misc_dice_02",
-            "itemId": 36862,
-            "name": "Worn Troll Dice",
-            "obtainClasses": [
-              4
-            ]
-          }
-        ],
-        "name": "Pickpocketing"
-      },
-      {
-        "id": "b2f64016",
-        "items": [
-          {
-            "ID": 611,
-            "icon": "inv_knife_1h_common_b_01green",
-            "itemId": 130102,
-            "name": "Mother's Skinning Knife"
-          }
-        ],
-        "name": "Skinning"
       }
     ]
   },
@@ -5037,6 +5119,24 @@
           }
         ],
         "name": "Prestige"
+      },
+      {
+        "items": [
+          {
+            "ID": 1333,
+            "icon": "inv_soloshufflepennantreward_icons_red",
+            "itemId": 206343,
+            "name": "Crimson Legend's Pennant",
+            "notObtainable": true
+          },
+          {
+            "ID": 1330,
+            "icon": "inv_soloshufflepennantreward_icons_red",
+            "itemId": 206267,
+            "name": "Obsidian Legend's Pennant"
+          }
+        ],
+        "name": "Solo Shuffle"
       }
     ]
   },
@@ -5267,6 +5367,12 @@
             "icon": "inv_chest_cloth_72",
             "itemId": 188701,
             "name": "Fire Festival Batons"
+          },
+          {
+            "ID": 1328,
+            "icon": "inv_jewelry_ring_firelandsraid_03a",
+            "itemId": 206038,
+            "name": "Flamin' Ring of Flashiness"
           }
         ],
         "name": "Midsummer"

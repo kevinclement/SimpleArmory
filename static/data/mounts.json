@@ -169,11 +169,26 @@
             "spellid": 374275
           },
           {
+            "ID": 1734,
+            "icon": "inv_sporebatrock_deepred",
+            "itemId": 205205,
+            "name": "Shadowflame Shalewing",
+            "spellid": 408649
+          },
+          {
             "ID": 1681,
             "icon": "inv_rhinoprimalmountice",
             "itemId": 199412,
             "name": "Hailstorm Armoredon",
+            "notObtainable": true,
             "spellid": 387231
+          },
+          {
+            "ID": 1725,
+            "icon": "inv_rhinoprimalmountfire",
+            "itemId": 204798,
+            "name": "Inferno Armoredon",
+            "spellid": 406637
           }
         ],
         "name": "Achievement"
@@ -221,6 +236,13 @@
             "itemId": 192799,
             "name": "Lizi, Thunderspine Tramper",
             "spellid": 374247
+          },
+          {
+            "ID": 1729,
+            "icon": "inv_snailrockmount_pink",
+            "itemId": 205155,
+            "name": "Big Slick in the City",
+            "spellid": 408313
           }
         ],
         "name": "Daily Activities"
@@ -248,6 +270,13 @@
             "itemId": 192772,
             "name": "Ancient Salamanther",
             "spellid": 374090
+          },
+          {
+            "ID": 1732,
+            "icon": "inv_sporebatrock_blue",
+            "itemId": 205203,
+            "name": "Cobalt Shalewing",
+            "spellid": 408647
           }
         ],
         "name": "Rare Spawn"
@@ -274,17 +303,11 @@
             "itemId": 198870,
             "name": "Otto",
             "spellid": 376873
-          },
-          {
-            "ID": 1634,
-            "icon": "Inv_mammoth2mount_green",
-            "itemId": 192790,
-            "name": "Mossy Mammoth",
-            "spellid": 374194
           }
         ],
         "name": "Riddle"
       },
+
       {
         "id": "ccc05f3b",
         "items": [
@@ -329,6 +352,13 @@
             "itemId": 201425,
             "name": "Yellow War Ottuk",
             "spellid": 376913
+          },
+          {
+            "ID": 1738,
+            "icon": "inv_sporebatrock_stoneblack",
+            "itemId": 205207,
+            "name": "Morsel Sniffer",
+            "spellid": 408655
           }
         ],
         "name": "Renown"
@@ -361,6 +391,18 @@
         "name": "Obsidian Citadel"
       },
       {
+        "items": [
+          {
+            "ID": 1634,
+            "icon": "Inv_mammoth2mount_green",
+            "itemId": 192790,
+            "name": "Mossy Mammoth",
+            "spellid": 374194
+          }
+        ],
+        "name": "Zskera Vaults"
+      },
+      {
         "id": "4d7efe56",
         "items": [
           {
@@ -369,6 +411,13 @@
             "itemId": 192764,
             "name": "Verdant Skitterfly",
             "spellid": 374048
+          },
+          {
+            "ID": 1623,
+            "icon": "inv_slugmount_red",
+            "itemId": 192779,
+            "name": "Seething Slug",
+            "spellid": 374138
           }
         ],
         "name": "Treasure"
@@ -403,6 +452,13 @@
             "itemId": 192785,
             "name": "Gooey Snailemental",
             "spellid": 374157
+          },
+          {
+            "ID": 1735,
+            "icon": "inv_sporebatrock_orange",
+            "itemId": 205204,
+            "name": "Cataloged Shalewing",
+            "spellid": 408651
           }
         ],
         "name": "Events"
@@ -430,6 +486,27 @@
             "itemId": 204382,
             "name": "Noble Bruffalon",
             "spellid": 349935
+          },
+          {
+            "ID": 1603,
+            "icon": "inv_mammoth2lavamount_blue",
+            "itemId": 191838,
+            "name": "Subterranean Magmammoth",
+            "spellid": 371176
+          },
+          {
+            "ID": 1730,
+            "icon": "inv_sporebatrock_red",
+            "itemId": 205197,
+            "name": "Igneous Shalewing",
+            "spellid": 408627
+          },
+          {
+            "ID": 1736,
+            "icon": "inv_sporebatrock_stonered",
+            "itemId": 205209,
+            "name": "Boulder Hauler",
+            "spellid": 408653
           }
         ],
         "name": "Vendor"
@@ -6957,6 +7034,22 @@
             "name": "Vicious Sabertooth",
             "side": "H",
             "spellid": 394738
+          },
+          {
+            "ID": 1740,
+            "icon": "inv_vicioussnail_alliance",
+            "itemId": 205246,
+            "name": "Vicious War Snail",
+            "side": "A",
+            "spellid": 409034
+          },
+          {
+            "ID": 1741,
+            "icon": "inv_vicioussnail_horde",
+            "itemId": 205245,
+            "name": "Vicious War Snail",
+            "side": "H",
+            "spellid": 409032
           }
         ],
         "name": "Vicious Saddle"
@@ -7233,7 +7326,15 @@
             "icon": "inv_drake2mountgladiator",
             "itemId": 202086,
             "name": "Crimson Gladiator's Drake",
+            "notObtainable": true,
             "spellid": 377071
+          },
+          {
+            "ID": 1739,
+            "icon": "inv_serpentmountgladiator",
+            "itemId": 205233,
+            "name": "Obsidian Gladiator's Slitherdrake",
+            "spellid": 408977
           }
         ],
         "name": "Gladiator"
@@ -8227,6 +8328,20 @@
             "itemId": 189978,
             "name": "Magenta Cloud Serpent",
             "spellid": 366647
+          },
+          {
+            "ID": 1742,
+            "icon": "ability_mount_hordescorpiongreen",
+            "itemId": 206027,
+            "name": "Felcrystal Scorpion",
+            "spellid": 411565
+          },
+          {
+            "ID": 1582,
+            "icon": "4329767",
+            "itemId": 190613,
+            "name": "Savage Green Battle Turtle",
+            "spellid": 367826
           }
         ],
         "name": "Trading Post"

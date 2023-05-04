@@ -43,6 +43,14 @@
         }
       },
       {
+        "id": 2564,
+        "name": "Loamm Niffen",
+        "renown": {
+          "max": 20,
+          "step": 2500
+        }
+      },
+      {
         "id": 2523,
         "name": "Dark Talons"
       },
@@ -101,16 +109,27 @@
         "name": "Clan Nokhud"
       },
       {
-        "id": 2526,
-        "name": "Winterpelt Furbolg"
-      },
-      {
         "id": 2542,
         "name": "Clan Ukhel"
       },
       {
         "id": 2555,
         "name": "Clan Kaighan"
+      },
+      {
+        "id": 2526,
+        "name": "Winterpelt Furbolg"
+      },
+      {
+        "id": 2568,
+        "levels": {
+          "0": "Aspirational",
+          "700": "Ameteur",
+          "1400": "Competent",
+          "2100": "Skilled",
+          "2800": "Professional"
+        },
+        "name": "Glimmerogg Racer"
       }
     ],
     "name": "Dragonflight"
