@@ -43,6 +43,14 @@
         }
       },
       {
+        "id": 2564,
+        "name": "Loamm Niffen",
+        "renown": {
+          "max": 20,
+          "step": 2500
+        }
+      },
+      {
         "id": 2523,
         "name": "Dark Talons"
       },
@@ -54,11 +62,11 @@
         "id": 2517,
         "levels": {
           "0": "Acquaintance",
-          "8400": "Cohort",
           "16800": "Ally",
           "25200": "Fang",
           "33600": "Friend",
-          "42000": "True Friend"
+          "42000": "True Friend",
+          "8400": "Cohort"
         },
         "name": "Wrathion"
       },
@@ -66,11 +74,11 @@
         "id": 2518,
         "levels": {
           "0": "Acquaintance",
-          "8400": "Cohort",
           "16800": "Ally",
           "25200": "Fang",
           "33600": "Friend",
-          "42000": "True Friend"
+          "42000": "True Friend",
+          "8400": "Cohort"
         },
         "name": "Sabellian"
       },
@@ -78,10 +86,10 @@
         "id": 2544,
         "levels": {
           "0": "Neutral",
-          "500": "Preferred",
+          "12500": "Esteemed",
           "2500": "Respected",
-          "5500": "Valued",
-          "12500": "Esteemed"
+          "500": "Preferred",
+          "5500": "Valued"
         },
         "name": "Artisan's Consortium - Dragon Isles Branch"
       },
@@ -89,10 +97,10 @@
         "id": 2550,
         "levels": {
           "0": "Empty",
-          "300": "Low",
+          "10000": "Maximum",
           "1200": "Medium",
-          "3600": "High",
-          "10000": "Maximum"
+          "300": "Low",
+          "3600": "High"
         },
         "name": "Cobalt Assembly"
       },
@@ -101,16 +109,27 @@
         "name": "Clan Nokhud"
       },
       {
-        "id": 2526,
-        "name": "Winterpelt Furbolg"
-      },
-      {
         "id": 2542,
         "name": "Clan Ukhel"
       },
       {
         "id": 2555,
         "name": "Clan Kaighan"
+      },
+      {
+        "id": 2526,
+        "name": "Winterpelt Furbolg"
+      },
+      {
+        "id": 2568,
+        "levels": {
+          "0": "Aspirational",
+          "1400": "Competent",
+          "2100": "Skilled",
+          "2800": "Professional",
+          "700": "Ameteur"
+        },
+        "name": "Glimmerogg Racer"
       }
     ],
     "name": "Dragonflight"
@@ -138,10 +157,10 @@
         "levels": {
           "0": "Dubious",
           "1000": "Apprehensive",
-          "7000": "Tentative",
           "14000": "Ambivalent",
           "21000": "Cordial",
-          "42000": "Appreciative"
+          "42000": "Appreciative",
+          "7000": "Tentative"
         },
         "name": "Ve'nari"
       },
@@ -157,10 +176,10 @@
         "id": 2464,
         "levels": {
           "0": "Neutral",
-          "3000": "Friendly",
-          "9000": "Honored",
           "21000": "Revered",
-          "42000": "Exalted"
+          "3000": "Friendly",
+          "42000": "Exalted",
+          "9000": "Honored"
         },
         "name": "Court of Night"
       },
@@ -168,10 +187,10 @@
         "id": 2462,
         "levels": {
           "0": "Neutral",
-          "3000": "Friendly",
-          "9000": "Honored",
           "21000": "Revered",
-          "42000": "Exalted"
+          "3000": "Friendly",
+          "42000": "Exalted",
+          "9000": "Honored"
         },
         "name": "Stitchmasters"
       },
@@ -183,11 +202,11 @@
         "id": 2472,
         "levels": {
           "0": "Tier 1",
-          "3000": "Tier 2",
-          "7500": "Tier 3",
           "14000": "Tier 4",
           "25000": "Tier 5",
-          "41000": "Tier 6"
+          "3000": "Tier 2",
+          "41000": "Tier 6",
+          "7500": "Tier 3"
         },
         "name": "The Archivists' Codex"
       },
@@ -204,11 +223,11 @@
         "id": 2446,
         "levels": {
           "0": "Stranger",
-          "8400": "Acquaintance",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Acquaintance"
         },
         "name": "Baroness Vashj"
       },
@@ -216,11 +235,11 @@
         "id": 2447,
         "levels": {
           "0": "Stranger",
-          "8400": "Acquaintance",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Acquaintance"
         },
         "name": "Lady Moonberry"
       },
@@ -228,11 +247,11 @@
         "id": 2448,
         "levels": {
           "0": "Stranger",
-          "8400": "Acquaintance",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Acquaintance"
         },
         "name": "Mikanikos"
       },
@@ -240,11 +259,11 @@
         "id": 2449,
         "levels": {
           "0": "Stranger",
-          "8400": "Acquaintance",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Acquaintance"
         },
         "name": "The Countess"
       },
@@ -252,11 +271,11 @@
         "id": 2450,
         "levels": {
           "0": "Stranger",
-          "8400": "Acquaintance",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Acquaintance"
         },
         "name": "Alexandros Mograine"
       },
@@ -264,11 +283,11 @@
         "id": 2451,
         "levels": {
           "0": "Stranger",
-          "8400": "Acquaintance",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Acquaintance"
         },
         "name": "Hunt-Captain Korayn"
       },
@@ -276,11 +295,11 @@
         "id": 2452,
         "levels": {
           "0": "Stranger",
-          "8400": "Acquaintance",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Acquaintance"
         },
         "name": "Polemarch Adrestes"
       },
@@ -288,11 +307,11 @@
         "id": 2453,
         "levels": {
           "0": "Stranger",
-          "8400": "Acquaintance",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Acquaintance"
         },
         "name": "Rendle and Cudgelface"
       },
@@ -300,11 +319,11 @@
         "id": 2454,
         "levels": {
           "0": "Stranger",
-          "8400": "Acquaintance",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Acquaintance"
         },
         "name": "Choofa"
       },
@@ -312,11 +331,11 @@
         "id": 2455,
         "levels": {
           "0": "Stranger",
-          "8400": "Acquaintance",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Acquaintance"
         },
         "name": "Cryptkeeper Kassir"
       },
@@ -324,11 +343,11 @@
         "id": 2456,
         "levels": {
           "0": "Stranger",
-          "8400": "Acquaintance",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Acquaintance"
         },
         "name": "Droman Aliothe"
       },
@@ -336,11 +355,11 @@
         "id": 2457,
         "levels": {
           "0": "Stranger",
-          "8400": "Acquaintance",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Acquaintance"
         },
         "name": "Grandmaster Vole"
       },
@@ -348,11 +367,11 @@
         "id": 2458,
         "levels": {
           "0": "Stranger",
-          "8400": "Acquaintance",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Acquaintance"
         },
         "name": "Kleia and Pelagos"
       },
@@ -360,11 +379,11 @@
         "id": 2459,
         "levels": {
           "0": "Stranger",
-          "8400": "Acquaintance",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Acquaintance"
         },
         "name": "Sika"
       },
@@ -372,11 +391,11 @@
         "id": 2460,
         "levels": {
           "0": "Stranger",
-          "8400": "Acquaintance",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Acquaintance"
         },
         "name": "Stonehead"
       },
@@ -384,11 +403,11 @@
         "id": 2461,
         "levels": {
           "0": "Stranger",
-          "8400": "Acquaintance",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Acquaintance"
         },
         "name": "Plague Deviser Marileth"
       }
@@ -483,11 +502,11 @@
         "levels": {
           "0": "Whelpling",
           "1000": "Temporal Trainee",
+          "10000": "Epoch-Mender",
+          "15000": "Timelord",
           "2500": "Timehopper",
           "4500": "Chrono-Friend",
-          "7000": "Bronze Ally",
-          "10000": "Epoch-Mender",
-          "15000": "Timelord"
+          "7000": "Bronze Ally"
         },
         "name": "Chromie"
       },
@@ -550,11 +569,11 @@
         "id": 1975,
         "levels": {
           "0": "Stranger",
-          "8400": "Pal",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Pal"
         },
         "name": "Conjurer Margoss"
       },
@@ -562,11 +581,11 @@
         "id": 2097,
         "levels": {
           "0": "Stranger",
-          "8400": "Pal",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Pal"
         },
         "name": "Ilyssia of the Waters"
       },
@@ -574,11 +593,11 @@
         "id": 2098,
         "levels": {
           "0": "Stranger",
-          "8400": "Pal",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Pal"
         },
         "name": "Keeper Raynae"
       },
@@ -586,11 +605,11 @@
         "id": 2099,
         "levels": {
           "0": "Stranger",
-          "8400": "Pal",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Pal"
         },
         "name": "Akule Riverhorn"
       },
@@ -598,11 +617,11 @@
         "id": 2100,
         "levels": {
           "0": "Stranger",
-          "8400": "Curiosity",
           "16800": "Non-Threat",
           "25200": "Friend",
           "33600": "Helpful Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Curiosity"
         },
         "name": "Corbyn"
       },
@@ -610,11 +629,11 @@
         "id": 2101,
         "levels": {
           "0": "Stranger",
-          "8400": "Pal",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Pal"
         },
         "name": "Sha'leth"
       },
@@ -622,11 +641,11 @@
         "id": 2102,
         "levels": {
           "0": "Stranger",
-          "8400": "Pal",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Pal"
         },
         "name": "Impus"
       }
@@ -784,11 +803,11 @@
         "id": 1358,
         "levels": {
           "0": "Stranger",
-          "8400": "Pal",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Pal"
         },
         "name": "Nat Pagle"
       },
@@ -849,11 +868,11 @@
         "id": 1277,
         "levels": {
           "0": "Stranger",
-          "8400": "Acquaintance",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Acquaintance"
         },
         "name": "Chee Chee"
       },
@@ -861,11 +880,11 @@
         "id": 1275,
         "levels": {
           "0": "Stranger",
-          "8400": "Acquaintance",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Acquaintance"
         },
         "name": "Ella"
       },
@@ -873,11 +892,11 @@
         "id": 1283,
         "levels": {
           "0": "Stranger",
-          "8400": "Acquaintance",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Acquaintance"
         },
         "name": "Farmer Fung"
       },
@@ -885,11 +904,11 @@
         "id": 1282,
         "levels": {
           "0": "Stranger",
-          "8400": "Acquaintance",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Acquaintance"
         },
         "name": "Fish Fellreed"
       },
@@ -897,11 +916,11 @@
         "id": 1281,
         "levels": {
           "0": "Stranger",
-          "8400": "Acquaintance",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Acquaintance"
         },
         "name": "Gina Mudclaw"
       },
@@ -909,11 +928,11 @@
         "id": 1279,
         "levels": {
           "0": "Stranger",
-          "8400": "Acquaintance",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Acquaintance"
         },
         "name": "Haohan Mudclaw"
       },
@@ -921,11 +940,11 @@
         "id": 1273,
         "levels": {
           "0": "Stranger",
-          "8400": "Acquaintance",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Acquaintance"
         },
         "name": "Jogu the Drunk"
       },
@@ -937,11 +956,11 @@
         "id": 1276,
         "levels": {
           "0": "Stranger",
-          "8400": "Acquaintance",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Acquaintance"
         },
         "name": "Old Hillpaw"
       },
@@ -949,11 +968,11 @@
         "id": 1278,
         "levels": {
           "0": "Stranger",
-          "8400": "Acquaintance",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Acquaintance"
         },
         "name": "Sho"
       },
@@ -961,11 +980,11 @@
         "id": 1280,
         "levels": {
           "0": "Stranger",
-          "8400": "Acquaintance",
           "16800": "Buddy",
           "25200": "Friend",
           "33600": "Good Friend",
-          "42000": "Best Friend"
+          "42000": "Best Friend",
+          "8400": "Acquaintance"
         },
         "name": "Tina Mudclaw"
       }

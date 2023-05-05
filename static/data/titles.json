@@ -239,16 +239,32 @@
         "items": [
           {
             "icon": "achievement_raidprimalist_raszageth",
-            "id": 17116,
-            "name": "Famed Slayer of Raszageth",
-            "titleId": 487,
+            "id": 16353,
+            "name": "The Storm-Eater",
+            "notObtainable": true,
+            "titleId": 488,
             "type": "achievement"
           },
           {
             "icon": "achievement_raidprimalist_raszageth",
-            "id": 16353,
-            "name": "The Storm-Eater",
-            "titleId": 488,
+            "id": 17116,
+            "name": "Famed Slayer of Raszageth",
+            "notObtainable": true,
+            "titleId": 487,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_achievement_raiddragon_sarkareth",
+            "id": 18159,
+            "name": "Heir to the Void",
+            "titleId": 505,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_achievement_raiddragon_sarkareth",
+            "id": 18176,
+            "name": "Famed Slayer of Sarkareth",
+            "titleId": 506,
             "type": "achievement"
           }
         ],
@@ -304,17 +320,33 @@
       {
         "items": [
           {
+            "icon": "achievement_challengemode_gold",
+            "id": 16648,
+            "name": "The Thundering",
+            "notObtainable": true,
+            "titleId": 477,
+            "type": "achievement"
+          },
+          {
             "icon": "achievement_challengemode_platinum",
             "id": 16429,
             "name": "The Thundering Hero",
+            "notObtainable": true,
             "titleId": 470,
             "type": "achievement"
           },
           {
             "icon": "achievement_challengemode_gold",
-            "id": 16648,
-            "name": "The Thundering",
-            "titleId": 477,
+            "id": 17843,
+            "name": "The Smoldering",
+            "titleId": 503,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_challengemode_platinum",
+            "id": 17846,
+            "name": "The Smoldering Hero",
+            "titleId": 504,
             "type": "achievement"
           }
         ],
@@ -362,6 +394,53 @@
             "type": "achievement"
           },
           {
+            "icon": "inv_treasurevault_key01",
+            "id": 17413,
+            "name": "The Key Master",
+            "titleId": 494,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_dracthyrhead05",
+            "id": 17543,
+            "name": "The Forbidden",
+            "titleId": 495,
+            "type": "achievement"
+          },
+          {
+            "icon": "ability_evoker_dragonrage2_green",
+            "id": 17734,
+            "name": "The Reconciler",
+            "titleId": 498,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_helm_armor_moleperson_b_01",
+            "id": 17841,
+            "name": "Barter Boss",
+            "titleId": 502,
+            "type": "achievement"
+          },
+          {
+            "icon": "ability_racial_molemachine",
+            "id": 18284,
+            "name": "Sniffenseeker",
+            "titleId": 507,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_guildperk_chug-a-lug_rank2",
+            "id": 18200,
+            "name": "Field Researcher",
+            "titleId": 508,
+            "type": "achievement"
+          }
+        ],
+        "name": "Exploration"
+      },
+      {
+        "items": [
+          {
             "icon": "inv_checkered_flag",
             "id": 15941,
             "name": "Isles Racer",
@@ -383,21 +462,14 @@
             "type": "achievement"
           },
           {
-            "icon": "inv_treasurevault_key01",
-            "id": 17413,
-            "name": "The Key Master",
-            "titleId": 494,
-            "type": "achievement"
-          },
-          {
-            "icon": "inv_dracthyrhead05",
-            "id": 17543,
-            "name": "The Forbidden",
-            "titleId": 495,
+            "icon": "inv_checkered_flag",
+            "id": 17494,
+            "name": "Zaralek Cavern Racer",
+            "titleId": 509,
             "type": "achievement"
           }
         ],
-        "name": "Exploration"
+        "name": "Dragon Racing"
       }
     ]
   },
@@ -629,6 +701,18 @@
           }
         ],
         "name": "Exploration"
+      },
+      {
+        "items": [
+          {
+            "icon": "ability_creature_amber_02",
+            "id": 14721,
+            "name": "Smelly",
+            "titleId": 501,
+            "type": "achievement"
+          }
+        ],
+        "name": "Other"
       }
     ]
   },
@@ -2457,6 +2541,7 @@
             "icon": "achievement_featsofstrength_gladiator_04",
             "id": 17339,
             "name": "Legend",
+            "notObtainable": true,
             "titleId": 491,
             "type": "achievement"
           },
@@ -2464,7 +2549,15 @@
             "icon": "achievement_featsofstrength_gladiator_07",
             "id": 16734,
             "name": "Crimson Legend",
+            "notObtainable": true,
             "titleId": 482,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 17767,
+            "name": "Obsidian Legend",
+            "titleId": 500,
             "type": "achievement"
           }
         ],
@@ -2476,7 +2569,15 @@
             "icon": "achievement_featsofstrength_gladiator_07",
             "id": 15951,
             "name": "Crimson Gladiator",
+            "notObtainable": true,
             "titleId": 468,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 17764,
+            "name": "Obsidian Gladiator",
+            "titleId": 499,
             "type": "achievement"
           }
         ],
