@@ -530,6 +530,12 @@
                   "id": 16585,
                   "points": 10,
                   "title": "Loremaster of the Dragon Isles"
+                },
+                {
+                  "icon": "achievement_meta_zaralekcavern",
+                  "id": 17785,
+                  "points": 25,
+                  "title": "Que Zara(lek), Zara(lek)"
                 }
               ],
               "name": "Zones"
@@ -560,6 +566,12 @@
                   "id": 15796,
                   "points": 10,
                   "title": "Cliffside Companion"
+                },
+                {
+                  "icon": "inv_companionserpent",
+                  "id": 17779,
+                  "points": 10,
+                  "title": "A Serpentine Discovery"
                 }
               ],
               "name": "Dragonriding"
@@ -572,6 +584,12 @@
                   "id": 16808,
                   "points": 15,
                   "title": "Friend of the Dragon Isles"
+                },
+                {
+                  "icon": "achievement_zone_zaralekcavern",
+                  "id": 17739,
+                  "points": 10,
+                  "title": "Embers of Neltharion"
                 }
               ],
               "name": "Campaign"
@@ -666,6 +684,18 @@
                 }
               ],
               "name": "Storm's Fury"
+            },
+            {
+              "id": "1fed5c08",
+              "items": [
+                {
+                  "icon": "inv_elemental_mote_fire01",
+                  "id": 17735,
+                  "points": 5,
+                  "title": "We Didn't Start the Fire"
+                }
+              ],
+              "name": "Fyrakk Assaults"
             }
           ]
         },
@@ -4053,6 +4083,12 @@
                   "id": 16518,
                   "points": 10,
                   "title": "Explore Thaldraszus"
+                },
+                {
+                  "icon": "achievement_zone_zaralekcavern",
+                  "id": 17766,
+                  "points": 10,
+                  "title": "Explore Zaralek Cavern"
                 }
               ],
               "name": "Area"
@@ -4089,6 +4125,12 @@
                   "id": 16301,
                   "points": 5,
                   "title": "Treasures of Thaldraszus"
+                },
+                {
+                  "icon": "inv_misc_treasurechest04a",
+                  "id": 17786,
+                  "points": 5,
+                  "title": "Treasures of Zaralek Cavern"
                 }
               ],
               "name": "Treasure"
@@ -4119,6 +4161,18 @@
                   "id": 16679,
                   "points": 5,
                   "title": "Adventurer of Thaldraszus"
+                },
+                {
+                  "icon": "achievement_zone_zaralekcavern",
+                  "id": 17783,
+                  "points": 5,
+                  "title": "Adventurer of Zaralek Cavern"
+                },
+                {
+                  "icon": "inv_misc_claw_deepcrab_ghost",
+                  "id": 18100,
+                  "points": 10,
+                  "title": "Cavern Clawbbering"
                 }
               ],
               "name": "Encounter"
@@ -4143,6 +4197,42 @@
                   "id": 16446,
                   "points": 10,
                   "title": "That's Pretty Neat!"
+                },
+                {
+                  "icon": "inv_misc_stonetablet_07",
+                  "id": 17561,
+                  "points": 5,
+                  "title": "Ancient Stones of the Waking Shores"
+                },
+                {
+                  "icon": "inv_misc_stonetablet_07",
+                  "id": 17562,
+                  "points": 5,
+                  "title": "Ancient Stones of the Ohn'ahran Plains"
+                },
+                {
+                  "icon": "inv_misc_stonetablet_07",
+                  "id": 17563,
+                  "points": 5,
+                  "title": "Ancient Stones of the Azure Span"
+                },
+                {
+                  "icon": "inv_misc_stonetablet_07",
+                  "id": 17564,
+                  "points": 5,
+                  "title": "Ancient Stones of Thaldraszus"
+                },
+                {
+                  "icon": "inv_misc_stonetablet_07",
+                  "id": 17567,
+                  "points": 5,
+                  "title": "Ancient Stones of Zaralek"
+                },
+                {
+                  "icon": "inv_10_worlddroplevelingoptionalreagent_misc_stonetablet_color3",
+                  "id": 17560,
+                  "points": 20,
+                  "title": "Ancient Stones of the Dragon Isles"
                 }
               ],
               "name": "Dragon Isles"
@@ -4478,18 +4568,6 @@
               "name": "Storm Events"
             },
             {
-              "id": "01ee341a",
-              "items": [
-                {
-                  "icon": "inv_jewelcrafting_crimsonhare",
-                  "id": 16729,
-                  "points": 10,
-                  "title": "To All the Squirrels Hidden Til Now"
-                }
-              ],
-              "name": "Critters"
-            },
-            {
               "id": "ac1bda82",
               "items": [
                 {
@@ -4585,11 +4663,185 @@
                 {
                   "icon": "spell_holy_borrowedtime",
                   "id": 17509,
-                  "points": 10,
+                  "points": 0,
                   "title": "Every Door, Everywhere, All At Once"
                 }
               ],
               "name": "Zskera Vault"
+            },
+            {
+              "id": "53cbfa7f",
+              "items": [
+                {
+                  "icon": "archaeology_5_0_mogucoin",
+                  "id": 17781,
+                  "points": 5,
+                  "title": "The Smell of Money"
+                },
+                {
+                  "icon": "inv_10_gearupgrade_flightstone_currency",
+                  "id": 17830,
+                  "points": 10,
+                  "title": "Stones Can't Fly!"
+                },
+                {
+                  "icon": "inv_10_gearupgrade_flightstone_currency",
+                  "id": 17977,
+                  "points": 10,
+                  "title": "Stones Can Try To Fly!"
+                },
+                {
+                  "icon": "inv_10_gearupgrade_flightstone_currency",
+                  "id": 17978,
+                  "points": 10,
+                  "title": "Stones Can Fly!"
+                },
+                {
+                  "icon": "inv_snailrockmount_black",
+                  "id": 17741,
+                  "points": 10,
+                  "title": "Slow and Steady Wins the Race"
+                },
+                {
+                  "icon": "inv_10_fishing_fishlava_color1",
+                  "id": 17878,
+                  "points": 5,
+                  "title": "Me Want Bite"
+                },
+                {
+                  "icon": "shaman_talent_primalelementalist",
+                  "id": 18174,
+                  "points": 10,
+                  "title": "Contaminant Cleaner"
+                },
+                {
+                  "icon": "inv_shield_1h_revenantfire_d_01",
+                  "id": 18199,
+                  "points": 10,
+                  "title": "Zaqali Ritual Buster"
+                },
+                {
+                  "icon": "achievement_guildperk_chug-a-lug_rank2",
+                  "id": 18200,
+                  "points": 15,
+                  "title": "Cooling the Research Field"
+                },
+                {
+                  "icon": "achievement_dungeon_ulduarraid_titan_01",
+                  "id": 18201,
+                  "points": 5,
+                  "title": "Lockdown Mystery"
+                },
+                {
+                  "icon": "inv_ore_blackrock_ore",
+                  "id": 18202,
+                  "points": 10,
+                  "title": "Rockin Research"
+                },
+                {
+                  "icon": "inv_10_mining_traceore_color4",
+                  "id": 18203,
+                  "points": 5,
+                  "title": "A Research Sampler"
+                },
+                {
+                  "icon": "inv_crab2_vermillian",
+                  "id": 18204,
+                  "points": 5,
+                  "title": "Research Mishap"
+                },
+                {
+                  "icon": "ability_earthen_pillar",
+                  "id": 18205,
+                  "points": 5,
+                  "title": "A Pillar of the Research Community"
+                },
+                {
+                  "icon": "inv_relics_6orunestone_ogremissive",
+                  "id": 18206,
+                  "points": 10,
+                  "title": "A Djaradin Puzzle"
+                },
+                {
+                  "icon": "achievement_zone_burningsteppes_01",
+                  "id": 18207,
+                  "points": 10,
+                  "title": "Hot Research Zone"
+                },
+                {
+                  "icon": "inv_misc_claw_lobstrok_red",
+                  "id": 18208,
+                  "points": 10,
+                  "title": "The Small Disruptions"
+                },
+                {
+                  "icon": "inv_axe_1h_blackdragonoutdoor_d_01",
+                  "id": 18209,
+                  "points": 5,
+                  "title": "Nothing Stops the Research"
+                },
+                {
+                  "icon": "ui_majorfaction_niffen",
+                  "id": 17832,
+                  "points": 5,
+                  "title": "Sniffen Around"
+                },
+                {
+                  "icon": "ui_majorfaction_niffen",
+                  "id": 17833,
+                  "points": 10,
+                  "title": "Sniffen Sage"
+                },
+                {
+                  "icon": "inv_pet_mole",
+                  "id": 18255,
+                  "points": 5,
+                  "title": "Proof of Myrrit"
+                },
+                {
+                  "icon": "inv_misc_2h_farmshovel_a_01",
+                  "id": 18257,
+                  "points": 5,
+                  "title": "Can You Dig It?"
+                },
+                {
+                  "icon": "ability_hunter_aspectoftheviper",
+                  "id": 18271,
+                  "points": 15,
+                  "title": "He'sSss All Mine"
+                },
+                {
+                  "icon": "ability_racial_molemachine",
+                  "id": 18284,
+                  "points": 0,
+                  "title": "A Niffen's Best Buddy"
+                },
+                {
+                  "icon": "inv_fyrakk_dragonbreath",
+                  "id": 17506,
+                  "points": 10,
+                  "title": "Still Standing in the Fire"
+                }
+              ],
+              "name": "Zaralek Cavern"
+            },
+            {
+              "id": "01ee341a",
+              "items": [
+                {
+                  "icon": "inv_jewelcrafting_crimsonhare",
+                  "id": 16729,
+                  "points": 10,
+                  "title": "To All the Squirrels Hidden Til Now"
+                },
+                {
+                  "icon": "inv_jewelcrafting_crimsonhare",
+                  "id": 18361,
+                  "points": 10,
+                  "title": "To All the Squirrels Burrowed Beneath"
+                }
+              ],
+              "name": "Critters"
             }
           ]
         },
@@ -9604,24 +9856,6 @@
                 }
               ],
               "name": "Solo Shuffle"
-            },
-            {
-              "id": "c4185dcd",
-              "items": [
-                {
-                  "icon": "achievement_featsofstrength_gladiator_09",
-                  "id": 15957,
-                  "points": 0,
-                  "title": "Gladiator: Dragonflight Season 1"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_04",
-                  "id": 17339,
-                  "points": 0,
-                  "title": "Legend: Dragonflight Season 1"
-                }
-              ],
-              "name": "Rated Arena"
             }
           ]
         },
@@ -9965,6 +10199,12 @@
                   "title": "Tour of Duty: Ohn'ahran Plains"
                 },
                 {
+                  "icon": "achievement_zone_zaralekcavern",
+                  "id": 17851,
+                  "points": 10,
+                  "title": "Tour of Duty: Zaralek Cavern"
+                },
+                {
                   "icon": "inv_shield_1h_drakonid_c_01",
                   "id": 16589,
                   "points": 5,
@@ -10041,6 +10281,12 @@
                   "id": 17345,
                   "points": 5,
                   "title": "Airborne Tumbler"
+                },
+                {
+                  "icon": "inv_10_elementalcombinedfoozles_primordial",
+                  "id": 17852,
+                  "points": 10,
+                  "title": "Elemental Conjuror"
                 }
               ],
               "name": "Dragonflight"
@@ -10131,6 +10377,12 @@
                   "id": 16355,
                   "points": 25,
                   "title": "Glory of the Vault Raider"
+                },
+                {
+                  "icon": "inv_achievement_raiddragon_raid",
+                  "id": 18251,
+                  "points": 25,
+                  "title": "Glory of the Aberrus Raider"
                 }
               ],
               "name": "Dragonflight"
@@ -10614,6 +10866,162 @@
                 }
               ],
               "name": "Vault of the Incarnates"
+            },
+            {
+              "id": "fbecf2f5",
+              "items": [
+                {
+                  "icon": "inv_achievement_raiddragon_forgottenexperiments",
+                  "id": 18163,
+                  "points": 10,
+                  "title": "Discarded Works"
+                },
+                {
+                  "icon": "inv_achievement_raiddragon_zskarn",
+                  "id": 18164,
+                  "points": 10,
+                  "title": "Fury of Giants"
+                },
+                {
+                  "icon": "inv_achievement_raiddragon_neltharion",
+                  "id": 18165,
+                  "points": 10,
+                  "title": "Neltharion's Shadow"
+                },
+                {
+                  "icon": "inv_achievement_raiddragon_sarkareth",
+                  "id": 18167,
+                  "points": 10,
+                  "title": "Edge of the Void"
+                },
+                {
+                  "icon": "inv_achievement_raiddragon_raid",
+                  "id": 18160,
+                  "points": 10,
+                  "title": "Aberrus, the Shadowed Crucible"
+                },
+                {
+                  "icon": "inv_achievement_raiddragon_raid",
+                  "id": 18161,
+                  "points": 10,
+                  "title": "Heroic: Aberrus, the Shadowed Crucible"
+                },
+                {
+                  "icon": "inv_achievement_raiddragon_raid",
+                  "id": 18162,
+                  "points": 10,
+                  "title": "Mythic: Aberrus, the Shadowed Crucible"
+                },
+                {
+                  "icon": "inv_achievement_raiddragon_kazzara",
+                  "id": 18151,
+                  "points": 10,
+                  "title": "Mythic: Kazzara, the Hellforged"
+                },
+                {
+                  "icon": "inv_achievement_raiddragon_amalgamationchamber",
+                  "id": 18152,
+                  "points": 10,
+                  "title": "Mythic: The Amalgamation Chamber"
+                },
+                {
+                  "icon": "inv_achievement_raiddragon_forgottenexperiments",
+                  "id": 18153,
+                  "points": 10,
+                  "title": "Mythic: The Forgotten Experiments"
+                },
+                {
+                  "icon": "inv_achievement_raiddragon_zaqaliassault",
+                  "id": 18154,
+                  "points": 10,
+                  "title": "Mythic: Assault of the Zaqali"
+                },
+                {
+                  "icon": "inv_achievement_raiddragon_rashok",
+                  "id": 18155,
+                  "points": 10,
+                  "title": "Mythic: Rashok, the Elder"
+                },
+                {
+                  "icon": "inv_achievement_raiddragon_zskarn",
+                  "id": 18156,
+                  "points": 10,
+                  "title": "Mythic: The Vigilant Steward, Zskarn"
+                },
+                {
+                  "icon": "inv_achievement_raiddragon_magmorax",
+                  "id": 18157,
+                  "points": 10,
+                  "title": "Mythic: Magmorax"
+                },
+                {
+                  "icon": "inv_achievement_raiddragon_neltharion",
+                  "id": 18158,
+                  "points": 10,
+                  "title": "Mythic: Echo of Neltharion"
+                },
+                {
+                  "icon": "inv_achievement_raiddragon_sarkareth",
+                  "id": 18159,
+                  "points": 10,
+                  "title": "Mythic: Scalecommander Sarkareth"
+                },
+                {
+                  "icon": "inv_eng_crate",
+                  "id": 18149,
+                  "points": 10,
+                  "title": "Objects in Transit May Shatter"
+                },
+                {
+                  "icon": "inv_babyfireelemental_shadowflame",
+                  "id": 18168,
+                  "points": 10,
+                  "title": "I'll Make My Own Shadowflame"
+                },
+                {
+                  "icon": "inv_snailmount_orange",
+                  "id": 18172,
+                  "points": 10,
+                  "title": "Escar-Go-Go-Go"
+                },
+                {
+                  "icon": "inv_dracthyrhead08",
+                  "id": 18173,
+                  "points": 10,
+                  "title": "Tabula Rasa"
+                },
+                {
+                  "icon": "inv_item_dragonegg_black01",
+                  "id": 18193,
+                  "points": 0,
+                  "title": "Eggscellent Eggsecution"
+                },
+                {
+                  "icon": "shaman_pvp_rockshield",
+                  "id": 18228,
+                  "points": 10,
+                  "title": "Are You Even Trying?"
+                },
+                {
+                  "icon": "achievment_boss_spineofdeathwing",
+                  "id": 18229,
+                  "points": 10,
+                  "title": "Cosplate"
+                },
+                {
+                  "icon": "inv_babyhornswog_red",
+                  "id": 18230,
+                  "points": 10,
+                  "title": "Whac-A-Swog"
+                },
+                {
+                  "icon": "artifactability_blooddeathknight_umbilicuseternus",
+                  "id": 17877,
+                  "points": 10,
+                  "title": "We'll Never See That Again, Surely"
+                }
+              ],
+              "name": "Aberrus"
             }
           ]
         },
@@ -19951,6 +20359,12 @@
                   "id": 12747,
                   "points": 25,
                   "title": "Catering for Combat"
+                },
+                {
+                  "icon": "achievement_rat",
+                  "id": 17736,
+                  "points": 5,
+                  "title": "The Gift of Cheese"
                 }
               ],
               "name": "Other"
@@ -21565,6 +21979,12 @@
                   "id": 17427,
                   "points": 10,
                   "title": "Winterpelt Conversationalist"
+                },
+                {
+                  "icon": "ui_majorfaction_niffen",
+                  "id": 17763,
+                  "points": 5,
+                  "title": "There's No Place Like Loamm"
                 }
               ],
               "name": ""
@@ -23490,6 +23910,20 @@
                   "points": 10,
                   "side": "A",
                   "title": "Flame Warden of Kul Tiras"
+                },
+                {
+                  "icon": "inv_summerfest_firespirit",
+                  "id": 17737,
+                  "points": 10,
+                  "side": "A",
+                  "title": "Flame Warden of the Dragon Isles"
+                },
+                {
+                  "icon": "inv_summerfest_firespirit",
+                  "id": 17738,
+                  "points": 10,
+                  "side": "H",
+                  "title": "Flame Keeper of the Dragon Isles"
                 }
               ],
               "name": "Honor"
@@ -24940,6 +25374,12 @@
                   "id": 16519,
                   "points": 5,
                   "title": "Dragon Isles Safari"
+                },
+                {
+                  "icon": "inv_mouserock_teal",
+                  "id": 17879,
+                  "points": 5,
+                  "title": "Zaralek Cavern Safari"
                 }
               ],
               "name": "Zones"
@@ -25194,6 +25634,12 @@
                   "id": 17406,
                   "points": 10,
                   "title": "Battle on the Dragon Isles II"
+                },
+                {
+                  "icon": "inv_pet_achievement_pandaria",
+                  "id": 17880,
+                  "points": 10,
+                  "title": "Battle in Zaralek Cavern"
                 }
               ],
               "name": "World Quests"
@@ -25769,6 +26215,78 @@
               "name": "Species: Dragonflight"
             },
             {
+              "id": "b36461ed",
+              "items": [
+                {
+                  "icon": "icon_petfamily_water",
+                  "id": 17881,
+                  "points": 5,
+                  "title": "Aquatic Battler of Zaralek Cavern"
+                },
+                {
+                  "icon": "icon_petfamily_beast",
+                  "id": 17882,
+                  "points": 5,
+                  "title": "Beast Battler of Zaralek Cavern"
+                },
+                {
+                  "icon": "icon_petfamily_critter",
+                  "id": 17883,
+                  "points": 5,
+                  "title": "Critter Battler of Zaralek Cavern"
+                },
+                {
+                  "icon": "icon_petfamily_dragon",
+                  "id": 17890,
+                  "points": 5,
+                  "title": "Dragonkin Battler of Zaralek Cavern"
+                },
+                {
+                  "icon": "icon_petfamily_elemental",
+                  "id": 17904,
+                  "points": 5,
+                  "title": "Elemental Battler of Zaralek Cavern"
+                },
+                {
+                  "icon": "icon_petfamily_flying",
+                  "id": 17905,
+                  "points": 5,
+                  "title": "Flying Battler of Zaralek Cavern"
+                },
+                {
+                  "icon": "icon_petfamily_humanoid",
+                  "id": 17915,
+                  "points": 5,
+                  "title": "Humanoid Battler of Zaralek Cavern"
+                },
+                {
+                  "icon": "icon_petfamily_magical",
+                  "id": 17916,
+                  "points": 5,
+                  "title": "Magic Battler of Zaralek Cavern"
+                },
+                {
+                  "icon": "icon_petfamily_mechanical",
+                  "id": 17917,
+                  "points": 5,
+                  "title": "Mechanical Battler of Zaralek Cavern"
+                },
+                {
+                  "icon": "icon_petfamily_undead",
+                  "id": 17918,
+                  "points": 5,
+                  "title": "Undead Battler of Zaralek Caverm"
+                },
+                {
+                  "icon": "inv_phoenix2pet_yellow",
+                  "id": 17934,
+                  "points": 10,
+                  "title": "Family Battler of Zaralek Cavern"
+                }
+              ],
+              "name": "Species: Zaralek Cavern"
+            },
+            {
               "id": "4bbaf263",
               "items": [
                 {
@@ -26025,6 +26543,18 @@
                 }
               ],
               "name": "Heirlooms"
+            },
+            {
+              "id": "9956b9d1",
+              "items": [
+                {
+                  "icon": "inv_helm_armor_moleperson_b_01",
+                  "id": 17841,
+                  "points": 5,
+                  "title": "Pyramid Scheme"
+                }
+              ],
+              "name": "Other"
             }
           ]
         },
@@ -26656,6 +27186,12 @@
                   "id": 17119,
                   "points": 10,
                   "title": "Deep Cuts From the Vault"
+                },
+                {
+                  "icon": "inv_achievement_raiddragon_raid",
+                  "id": 17765,
+                  "points": 10,
+                  "title": "What We Wear In The Shadowflame"
                 }
               ],
               "name": "Dragonflight"
@@ -26836,6 +27372,12 @@
                   "id": 16764,
                   "points": 10,
                   "title": "Crimson Carpet Fashion"
+                },
+                {
+                  "icon": "inv_shirt_basic_a_04_purple",
+                  "id": 18249,
+                  "points": 10,
+                  "title": "Obsidian Tie Event"
                 }
               ],
               "name": "PvP"
@@ -27034,201 +27576,27 @@
                   "id": 17298,
                   "points": 20,
                   "title": "Forbidden Reach Racing Completionist: Gold"
+                },
+                {
+                  "icon": "inv_checkered_flag",
+                  "id": 17492,
+                  "points": 20,
+                  "title": "Zaralek Cavern Racing Completionist"
+                },
+                {
+                  "icon": "inv_checkered_flag",
+                  "id": 17493,
+                  "points": 20,
+                  "title": "Zaralek Cavern Racing Completionist: Silver"
+                },
+                {
+                  "icon": "inv_checkered_flag",
+                  "id": 17494,
+                  "points": 20,
+                  "title": "Zaralek Cavern Racing Completionist: Gold"
                 }
               ],
               "name": "Completionist"
-            },
-            {
-              "id": "9d982695",
-              "items": [
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_bronze",
-                  "id": 15915,
-                  "points": 10,
-                  "title": "Waking Shores: Bronze"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_bronze",
-                  "id": 15918,
-                  "points": 10,
-                  "title": "Ohn'ahran Plains: Bronze"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_bronze",
-                  "id": 15921,
-                  "points": 10,
-                  "title": "Azure Span: Bronze"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_bronze",
-                  "id": 15924,
-                  "points": 10,
-                  "title": "Thaldraszus: Bronze"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_silver",
-                  "id": 15916,
-                  "points": 10,
-                  "title": "Waking Shores: Silver"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_silver",
-                  "id": 15919,
-                  "points": 10,
-                  "title": "Ohn'ahran Plains: Silver"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_silver",
-                  "id": 15922,
-                  "points": 10,
-                  "title": "Azure Span: Silver"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_silver",
-                  "id": 15925,
-                  "points": 10,
-                  "title": "Thaldraszus: Silver"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_gold",
-                  "id": 15917,
-                  "points": 10,
-                  "title": "Waking Shores: Gold"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_gold",
-                  "id": 15920,
-                  "points": 10,
-                  "title": "Ohn'ahran Plains: Gold"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_gold",
-                  "id": 15923,
-                  "points": 10,
-                  "title": "Azure Span: Gold"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_gold",
-                  "id": 15926,
-                  "points": 10,
-                  "title": "Thaldraszus: Gold"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_bronze",
-                  "id": 17279,
-                  "points": 10,
-                  "title": "Forbidden Reach: Bronze"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_silver",
-                  "id": 17280,
-                  "points": 10,
-                  "title": "Forbidden Reach: Silver"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_gold",
-                  "id": 17281,
-                  "points": 10,
-                  "title": "Forbidden Reach: Gold"
-                }
-              ],
-              "name": "Normal Races"
-            },
-            {
-              "id": "1666568d",
-              "items": [
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_bronze",
-                  "id": 15927,
-                  "points": 10,
-                  "title": "Waking Shores Advanced: Bronze"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_bronze",
-                  "id": 15930,
-                  "points": 10,
-                  "title": "Ohn'ahran Plains Advanced: Bronze"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_bronze",
-                  "id": 15933,
-                  "points": 10,
-                  "title": "Azure Span Advanced: Bronze"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_bronze",
-                  "id": 15936,
-                  "points": 10,
-                  "title": "Thaldraszus Advanced: Bronze"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_silver",
-                  "id": 15928,
-                  "points": 10,
-                  "title": "Waking Shores Advanced: Silver"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_silver",
-                  "id": 15931,
-                  "points": 10,
-                  "title": "Ohn'ahran Plains Advanced: Silver"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_silver",
-                  "id": 15934,
-                  "points": 10,
-                  "title": "Azure Span Advanced: Silver"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_silver",
-                  "id": 15937,
-                  "points": 10,
-                  "title": "Thaldraszus Advanced: Silver"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_gold",
-                  "id": 15929,
-                  "points": 10,
-                  "title": "Waking Shores Advanced: Gold"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_gold",
-                  "id": 15932,
-                  "points": 10,
-                  "title": "Ohn'ahran Plains Advanced: Gold"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_gold",
-                  "id": 15935,
-                  "points": 10,
-                  "title": "Azure Span Advanced: Gold"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_gold",
-                  "id": 15938,
-                  "points": 10,
-                  "title": "Thaldraszus Advanced: Gold"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_bronze",
-                  "id": 17284,
-                  "points": 10,
-                  "title": "Forbidden Reach Advanced: Bronze"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_silver",
-                  "id": 17286,
-                  "points": 10,
-                  "title": "Forbidden Reach Advanced: Silver"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_gold",
-                  "id": 17287,
-                  "points": 10,
-                  "title": "Forbidden Reach Advanced: Gold"
-                }
-              ],
-              "name": "Advanced Races"
             },
             {
               "id": "ce7230c2",
@@ -27262,9 +27630,243 @@
                   "id": 17411,
                   "points": 20,
                   "title": "Forbidden Reach Glyph Hunter"
+                },
+                {
+                  "icon": "achievement_zone_zaralekcavern",
+                  "id": 18150,
+                  "points": 20,
+                  "title": "Zaralek Cavern Glyph Hunter"
                 }
               ],
               "name": "Glyphs"
+            },
+            {
+              "id": "9d982695",
+              "items": [
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 15915,
+                  "points": 10,
+                  "title": "Waking Shores: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 15918,
+                  "points": 10,
+                  "title": "Ohn'ahran Plains: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 15921,
+                  "points": 10,
+                  "title": "Azure Span: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 15924,
+                  "points": 10,
+                  "title": "Thaldraszus: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 17279,
+                  "points": 10,
+                  "title": "Forbidden Reach: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 17483,
+                  "points": 10,
+                  "title": "Zaralek Cavern: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 15916,
+                  "points": 10,
+                  "title": "Waking Shores: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 15919,
+                  "points": 10,
+                  "title": "Ohn'ahran Plains: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 15922,
+                  "points": 10,
+                  "title": "Azure Span: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 15925,
+                  "points": 10,
+                  "title": "Thaldraszus: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 17280,
+                  "points": 10,
+                  "title": "Forbidden Reach: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 17484,
+                  "points": 10,
+                  "title": "Zaralek Cavern: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 15917,
+                  "points": 10,
+                  "title": "Waking Shores: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 15920,
+                  "points": 10,
+                  "title": "Ohn'ahran Plains: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 15923,
+                  "points": 10,
+                  "title": "Azure Span: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 15926,
+                  "points": 10,
+                  "title": "Thaldraszus: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 17281,
+                  "points": 10,
+                  "title": "Forbidden Reach: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 17485,
+                  "points": 10,
+                  "title": "Zaralek Cavern: Gold"
+                }
+              ],
+              "name": "Normal Races"
+            },
+            {
+              "id": "1666568d",
+              "items": [
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 15927,
+                  "points": 10,
+                  "title": "Waking Shores Advanced: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 15930,
+                  "points": 10,
+                  "title": "Ohn'ahran Plains Advanced: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 15933,
+                  "points": 10,
+                  "title": "Azure Span Advanced: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 15936,
+                  "points": 10,
+                  "title": "Thaldraszus Advanced: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 17284,
+                  "points": 10,
+                  "title": "Forbidden Reach Advanced: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 17486,
+                  "points": 10,
+                  "title": "Zaralek Cavern Advanced: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 15928,
+                  "points": 10,
+                  "title": "Waking Shores Advanced: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 15931,
+                  "points": 10,
+                  "title": "Ohn'ahran Plains Advanced: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 15934,
+                  "points": 10,
+                  "title": "Azure Span Advanced: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 15937,
+                  "points": 10,
+                  "title": "Thaldraszus Advanced: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 17286,
+                  "points": 10,
+                  "title": "Forbidden Reach Advanced: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 17487,
+                  "points": 10,
+                  "title": "Zaralek Cavern Advanced: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 15929,
+                  "points": 10,
+                  "title": "Waking Shores Advanced: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 15932,
+                  "points": 10,
+                  "title": "Ohn'ahran Plains Advanced: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 15935,
+                  "points": 10,
+                  "title": "Azure Span Advanced: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 15938,
+                  "points": 10,
+                  "title": "Thaldraszus Advanced: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 17287,
+                  "points": 10,
+                  "title": "Forbidden Reach Advanced: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 17488,
+                  "points": 10,
+                  "title": "Zaralek Cavern Advanced: Gold"
+                }
+              ],
+              "name": "Advanced Races"
             },
             {
               "id": "e9685e48",
@@ -27276,34 +27878,10 @@
                   "title": "Waking Shores Reverse: Bronze"
                 },
                 {
-                  "icon": "achievement_challengemode_arakkoaspires_silver",
-                  "id": 17196,
-                  "points": 10,
-                  "title": "Waking Shores Reverse: Silver"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_gold",
-                  "id": 17197,
-                  "points": 10,
-                  "title": "Waking Shores Reverse: Gold"
-                },
-                {
                   "icon": "achievement_challengemode_arakkoaspires_bronze",
                   "id": 17198,
                   "points": 10,
                   "title": "Ohn'ahran Plains Reverse: Bronze"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_silver",
-                  "id": 17199,
-                  "points": 10,
-                  "title": "Ohn'ahran Plains Reverse: Silver"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_gold",
-                  "id": 17200,
-                  "points": 10,
-                  "title": "Ohn'ahran Plains Reverse: Gold"
                 },
                 {
                   "icon": "achievement_challengemode_arakkoaspires_bronze",
@@ -27312,52 +27890,10 @@
                   "title": "Azure Span Reverse: Bronze"
                 },
                 {
-                  "icon": "achievement_challengemode_arakkoaspires_silver",
-                  "id": 17202,
-                  "points": 10,
-                  "title": "Azure Span Reverse: Silver"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_gold",
-                  "id": 17203,
-                  "points": 10,
-                  "title": "Azure Span Reverse: Gold"
-                },
-                {
                   "icon": "achievement_challengemode_arakkoaspires_bronze",
                   "id": 17204,
                   "points": 10,
                   "title": "Thaldraszus Reverse: Bronze"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_silver",
-                  "id": 17205,
-                  "points": 10,
-                  "title": "Thaldraszus Reverse: Silver"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_gold",
-                  "id": 17206,
-                  "points": 10,
-                  "title": "Thaldraszus Reverse: Gold"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_bronze",
-                  "id": 17288,
-                  "points": 10,
-                  "title": "Forbidden Reach Reverse: Bronze"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_silver",
-                  "id": 17289,
-                  "points": 10,
-                  "title": "Forbidden Reach Reverse: Silver"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_gold",
-                  "id": 17290,
-                  "points": 10,
-                  "title": "Forbidden Reach Reverse: Gold"
                 },
                 {
                   "icon": "achievement_challengemode_arakkoaspires_bronze",
@@ -27366,16 +27902,100 @@
                   "title": "Reverse Racer: Bronze"
                 },
                 {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 17288,
+                  "points": 10,
+                  "title": "Forbidden Reach Reverse: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 17489,
+                  "points": 10,
+                  "title": "Zaralek Cavern Reverse: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 17196,
+                  "points": 10,
+                  "title": "Waking Shores Reverse: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 17199,
+                  "points": 10,
+                  "title": "Ohn'ahran Plains Reverse: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 17202,
+                  "points": 10,
+                  "title": "Azure Span Reverse: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 17205,
+                  "points": 10,
+                  "title": "Thaldraszus Reverse: Silver"
+                },
+                {
                   "icon": "achievement_challengemode_arakkoaspires_silver",
                   "id": 17331,
                   "points": 10,
                   "title": "Reverse Racer: Silver"
                 },
                 {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 17289,
+                  "points": 10,
+                  "title": "Forbidden Reach Reverse: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 17490,
+                  "points": 10,
+                  "title": "Zaralek Cavern Reverse: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 17197,
+                  "points": 10,
+                  "title": "Waking Shores Reverse: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 17200,
+                  "points": 10,
+                  "title": "Ohn'ahran Plains Reverse: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 17203,
+                  "points": 10,
+                  "title": "Azure Span Reverse: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 17206,
+                  "points": 10,
+                  "title": "Thaldraszus Reverse: Gold"
+                },
+                {
                   "icon": "achievement_challengemode_arakkoaspires_gold",
                   "id": 17332,
                   "points": 10,
                   "title": "Reverse Racer: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 17290,
+                  "points": 10,
+                  "title": "Forbidden Reach Reverse: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 17491,
+                  "points": 10,
+                  "title": "Zaralek Cavern Reverse: Gold"
                 }
               ],
               "name": "Reverse Races"
@@ -32682,6 +33302,12 @@
                   "id": 16730,
                   "points": 0,
                   "title": "Crimson Gladiator's Drake"
+                },
+                {
+                  "icon": "inv_serpentmountgladiator",
+                  "id": 17778,
+                  "points": 0,
+                  "title": "Obsidian Gladiator's Slitherdrake"
                 }
               ],
               "name": "PVP"
@@ -33180,6 +33806,60 @@
                   "id": 16661,
                   "points": 0,
                   "title": "Keystone Hero: Temple of the Jade Serpent"
+                },
+                {
+                  "icon": "achievement_challengemode_silver",
+                  "id": 17842,
+                  "points": 0,
+                  "title": "Dragonflight Keystone Explorer: Season Two"
+                },
+                {
+                  "icon": "achievement_challengemode_gold",
+                  "id": 17843,
+                  "points": 0,
+                  "title": "Dragonflight Keystone Conqueror: Season Two"
+                },
+                {
+                  "icon": "achievement_challengemode_platinum",
+                  "id": 17844,
+                  "points": 0,
+                  "title": "Dragonflight Keystone Master: Season Two"
+                },
+                {
+                  "icon": "achievement_challengemode_scholomance_platinum",
+                  "id": 17845,
+                  "points": 0,
+                  "title": "Dragonflight Keystone Hero: Season Two"
+                },
+                {
+                  "icon": "achievement_challengemode_platinum",
+                  "id": 17846,
+                  "points": 0,
+                  "title": "Smoldering Hero: Dragonflight Season 2"
+                },
+                {
+                  "icon": "achievement_dungeon_skywall",
+                  "id": 17847,
+                  "points": 0,
+                  "title": "Keystone Hero: The Vortex Pinnacle"
+                },
+                {
+                  "icon": "achievement_dungeon_freehold",
+                  "id": 17848,
+                  "points": 0,
+                  "title": "Keystone Hero: Freehold"
+                },
+                {
+                  "icon": "achievement_dungeon_underrot",
+                  "id": 17849,
+                  "points": 0,
+                  "title": "Keystone Hero: The Underrot"
+                },
+                {
+                  "icon": "achievement_dungeon_neltharionslair",
+                  "id": 17850,
+                  "points": 0,
+                  "title": "Keystone Hero: Neltharion's Lair"
                 }
               ],
               "name": "Mythic Keystone: Dragonflight"
@@ -33555,6 +34235,18 @@
                   "id": 17108,
                   "points": 0,
                   "title": "Cutting Edge: Raszageth the Storm-Eater"
+                },
+                {
+                  "icon": "inv_achievement_raiddragon_sarkareth",
+                  "id": 18253,
+                  "points": 0,
+                  "title": "Ahead of the Curve: Scalecommander Sarkareth"
+                },
+                {
+                  "icon": "inv_achievement_raiddragon_sarkareth",
+                  "id": 18254,
+                  "points": 0,
+                  "title": "Cutting Edge: Scalecommander Sarkareth"
                 }
               ],
               "name": "Lost Content"
@@ -35515,6 +36207,20 @@
                   "points": 0,
                   "side": "A",
                   "title": "Hero of the Alliance: Crimson"
+                },
+                {
+                  "icon": "achievement_pvp_a_a",
+                  "id": 17768,
+                  "points": 0,
+                  "side": "A",
+                  "title": "Hero of the Alliance: Obsidian"
+                },
+                {
+                  "icon": "achievement_pvp_h_h",
+                  "id": 17772,
+                  "points": 0,
+                  "side": "H",
+                  "title": "Hero of the Horde: Obsidian"
                 }
               ],
               "name": "Rated Battleground"
@@ -35580,6 +36286,96 @@
                 }
               ],
               "name": "Highmaul Coliseum"
+            },
+            {
+              "id": "ecc6c104",
+              "items": [
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 15957,
+                  "points": 0,
+                  "title": "Gladiator: Dragonflight Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_04",
+                  "id": 17339,
+                  "points": 0,
+                  "title": "Legend: Dragonflight Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 17740,
+                  "points": 0,
+                  "title": "Gladiator: Dragonflight Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_04",
+                  "id": 17801,
+                  "points": 0,
+                  "title": "Legend: Dragonflight Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 17764,
+                  "points": 0,
+                  "title": "Obsidian Gladiator: Dragonflight Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 17767,
+                  "points": 0,
+                  "title": "Obsidian Legend: Dragonflight Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 17794,
+                  "points": 0,
+                  "title": "Duelist: Dragonflight Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 17795,
+                  "points": 0,
+                  "title": "Rival I: Dragonflight Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 17796,
+                  "points": 0,
+                  "title": "Rival II: Dragonflight Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 17797,
+                  "points": 0,
+                  "title": "Challenger I: Dragonflight Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 17798,
+                  "points": 0,
+                  "title": "Challenger II: Dragonflight Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_10",
+                  "id": 17799,
+                  "points": 0,
+                  "title": "Combatant I: Dragonflight Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_10",
+                  "id": 17800,
+                  "points": 0,
+                  "title": "Combatant II: Dragonflight Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 17831,
+                  "points": 0,
+                  "title": "Elite: Dragonflight Season 2"
+                }
+              ],
+              "name": "[R]Rated Arena"
             }
           ]
         },
@@ -36072,10 +36868,10 @@
                   "title": "Sarge's Tale"
                 },
                 {
-                  "icon": "4679804",
-                  "id": 17426,
+                  "icon": "4396090",
+                  "id": 15640,
                   "points": 0,
-                  "title": "Toolbox Trouble"
+                  "title": "Return to Darkness"
                 }
               ],
               "name": "Mounts"
@@ -36094,6 +36890,18 @@
                   "id": 12454,
                   "points": 0,
                   "title": "Salute to StarCraft"
+                },
+                {
+                  "icon": "inv_demongoat",
+                  "id": 18258,
+                  "points": 0,
+                  "title": "Little Lord of Lies"
+                },
+                {
+                  "icon": "4679804",
+                  "id": 17426,
+                  "points": 0,
+                  "title": "Toolbox Trouble"
                 }
               ],
               "name": "Pets"
@@ -36378,12 +37186,6 @@
                   "id": 15594,
                   "points": 0,
                   "title": "Fearless Spectator"
-                },
-                {
-                  "icon": "4396090",
-                  "id": 15640,
-                  "points": 0,
-                  "title": "Return to Darkness"
                 }
               ],
               "name": "Other"
@@ -37277,7 +38079,7 @@
                 {
                   "icon": "Achievement_Leader_Cairne-Bloodhoof",
                   "id": 611,
-                  "points": 10,
+                  "points": 0,
                   "side": "A",
                   "title": "Bleeding Bloodhoof"
                 },
@@ -38183,7 +38985,7 @@
                 {
                   "icon": "inv_relics_hourglass",
                   "id": 11181,
-                  "points": 10,
+                  "points": 0,
                   "title": "Legion Keymaster"
                 }
               ],
@@ -40138,7 +40940,7 @@
                 {
                   "icon": "achievement_arena_5v5_2",
                   "id": 10747,
-                  "points": 10,
+                  "points": 0,
                   "title": "Fighting with Style: Upgraded"
                 }
               ],
