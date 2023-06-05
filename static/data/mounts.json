@@ -632,6 +632,7 @@
             "icon": "4216725",
             "itemId": 190170,
             "name": "Jigglesworth Sr.",
+            "notObtainable": true,
             "spellid": 366791
           },
           {
@@ -991,6 +992,7 @@
             "icon": "inv_progenitorbotminemount",
             "itemId": 190771,
             "name": "Carcinized Zerethsteed",
+            "notObtainable": true,
             "spellid": 359545
           }
         ],
@@ -1365,18 +1367,18 @@
             "spellid": 334398
           },
           {
-            "ID": 1492,
-            "icon": "inv_automatonfliermount",
-            "itemId": 186482,
-            "name": "Elysian Aquilon",
-            "spellid": 353875
-          },
-          {
             "ID": 1399,
             "icon": "inv_automatonlionmount_silver",
             "itemId": 180765,
             "name": "Eternal Phalynx of Purity",
             "spellid": 334403
+          },
+          {
+            "ID": 1492,
+            "icon": "inv_automatonfliermount",
+            "itemId": 186482,
+            "name": "Elysian Aquilon",
+            "spellid": 353875
           },
           {
             "ID": 1494,
