@@ -8337,6 +8337,7 @@
             "icon": "inv_aqirflyingmount_yellow",
             "itemId": 206976,
             "name": "Royal Swarmer",
+            "notObtainable": true,
             "spellid": 414986
           },
           {
@@ -8344,7 +8345,22 @@
             "icon": "inv_parrotmount_purple",
             "itemId": 190169,
             "name": "Quawks",
+            "notObtainable": true,
             "spellid": 366790
+          },
+          {
+            "ID": 1742,
+            "icon": "ability_mount_hordescorpiongreen",
+            "itemId": 206027,
+            "name": "Felcrystal Scorpion",
+            "spellid": 411565
+          },
+          {
+            "ID": 1744,
+            "icon": "5161800",
+            "itemId": 206156,
+            "name": "Grotto Netherwing Drake",
+            "spellid": 412088
           },
           {
             "ID": 1574,
@@ -8369,14 +8385,6 @@
             "name": "Armored Golden Pterrordax",
             "notObtainable": true,
             "spellid": 368126
-          },
-          {
-            "ID": 1742,
-            "icon": "ability_mount_hordescorpiongreen",
-            "itemId": 206027,
-            "name": "Felcrystal Scorpion",
-            "notObtainable": true,
-            "spellid": 411565
           }
         ],
         "name": "Trading Post"
