@@ -103,6 +103,18 @@
           }
         ],
         "name": "Heirlooms"
+      },
+      {
+        "id": "117dffb7",
+        "items": [
+          {
+            "ID": 1303,
+            "icon": "achievement_general_hordeslayer",
+            "itemId": 204170,
+            "name": "Clan Banner"
+          }
+        ],
+        "name": "Racial"
       }
     ]
   },
@@ -593,22 +605,10 @@
             "name": "Cloak of Many Faces"
           },
           {
-            "ID": 1243,
-            "icon": "ability_nightfae_flicker",
-            "itemId": 200960,
-            "name": "Seed of Renewed Souls"
-          },
-          {
             "ID": 1290,
             "icon": "ability_warrior_strengthofarms",
             "itemId": 203725,
             "name": "Display of Strength"
-          },
-          {
-            "ID": 1303,
-            "icon": "achievement_general_hordeslayer",
-            "itemId": 204170,
-            "name": "Clan Banner"
           },
           {
             "ID": 1302,
@@ -637,17 +637,6 @@
           }
         ],
         "name": "Quest"
-      },
-      {
-        "items": [
-          {
-            "ID": 1295,
-            "icon": "sha_spell_fire_felfire",
-            "itemId": 203757,
-            "name": "Brazier of Madness"
-          }
-        ],
-        "name": "Dungeon"
       },
       {
         "items": [
@@ -1153,6 +1142,12 @@
             "icon": "inv_wand_1h_ardenweald_d_01",
             "itemId": 187705,
             "name": "Choofa's Call"
+          },
+          {
+            "ID": 1243,
+            "icon": "ability_nightfae_flicker",
+            "itemId": 200960,
+            "name": "Seed of Renewed Souls"
           }
         ],
         "name": "Night Fae"
@@ -4351,9 +4346,15 @@
             "icon": "inv_misc_flute_01",
             "itemId": 13379,
             "name": "Piccolo of the Flaming Fire"
+          },
+          {
+            "ID": 1295,
+            "icon": "sha_spell_fire_felfire",
+            "itemId": 203757,
+            "name": "Brazier of Madness"
           }
         ],
-        "name": "Dungeon Drop"
+        "name": "Dungeon"
       },
       {
         "id": "2b03cbb4",
