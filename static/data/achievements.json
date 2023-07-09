@@ -4085,6 +4085,12 @@
                   "title": "Explore Thaldraszus"
                 },
                 {
+                  "icon": "achievement_zone_forbiddenreach",
+                  "id": 17534,
+                  "points": 10,
+                  "title": "Explore the Forbidden Reach"
+                },
+                {
                   "icon": "achievement_zone_zaralekcavern",
                   "id": 17766,
                   "points": 10,
@@ -4127,6 +4133,12 @@
                   "title": "Treasures of Thaldraszus"
                 },
                 {
+                  "icon": "inv_misc_treasurechest03b",
+                  "id": 17526,
+                  "points": 5,
+                  "title": "Treasures of the Forbidden Reach"
+                },
+                {
                   "icon": "inv_misc_treasurechest04a",
                   "id": 17786,
                   "points": 5,
@@ -4161,6 +4173,18 @@
                   "id": 16679,
                   "points": 5,
                   "title": "Adventurer of Thaldraszus"
+                },
+                {
+                  "icon": "inv_knife_1h_centaur_b_02",
+                  "id": 17524,
+                  "points": 5,
+                  "title": "Adventurer of the Forbidden Reach"
+                },
+                {
+                  "icon": "inv_knife_1h_dragonquest_b_01",
+                  "id": 17525,
+                  "points": 15,
+                  "title": "Champion of the Forbidden Reach"
                 },
                 {
                   "icon": "achievement_zone_zaralekcavern",
@@ -4233,6 +4257,18 @@
                   "id": 17560,
                   "points": 20,
                   "title": "Ancient Stones of the Dragon Isles"
+                },
+                {
+                  "icon": "inv_10_fishing_fishlava_color1",
+                  "id": 17878,
+                  "points": 5,
+                  "title": "Me Want Bite"
+                },
+                {
+                  "icon": "inv_fyrakk_dragonbreath",
+                  "id": 17506,
+                  "points": 10,
+                  "title": "Still Standing in the Fire"
                 }
               ],
               "name": "Dragon Isles"
@@ -4557,12 +4593,6 @@
                   "id": 16461,
                   "points": 10,
                   "title": "Stormed Off"
-                },
-                {
-                  "icon": "inv_misc_stormlordsfavor",
-                  "id": 17540,
-                  "points": 15,
-                  "title": "Under the Weather"
                 }
               ],
               "name": "Storm Events"
@@ -4571,28 +4601,16 @@
               "id": "ac1bda82",
               "items": [
                 {
+                  "icon": "inv_dracthyrhead05",
+                  "id": 17543,
+                  "points": 25,
+                  "title": "You Know How to Reach Me"
+                },
+                {
                   "icon": "inv_misc_rune_09",
                   "id": 17315,
                   "points": 10,
                   "title": "While We Were Sleeping"
-                },
-                {
-                  "icon": "inv_knife_1h_centaur_b_02",
-                  "id": 17524,
-                  "points": 5,
-                  "title": "Adventurer of the Forbidden Reach"
-                },
-                {
-                  "icon": "inv_knife_1h_dragonquest_b_01",
-                  "id": 17525,
-                  "points": 15,
-                  "title": "Champion of the Forbidden Reach"
-                },
-                {
-                  "icon": "inv_misc_treasurechest03b",
-                  "id": 17526,
-                  "points": 5,
-                  "title": "Treasures of the Forbidden Reach"
                 },
                 {
                   "icon": "inv_misc_treasurechest01b",
@@ -4631,16 +4649,10 @@
                   "title": "Scroll Hunter"
                 },
                 {
-                  "icon": "achievement_zone_forbiddenreach",
-                  "id": 17534,
-                  "points": 10,
-                  "title": "Explore the Forbidden Reach"
-                },
-                {
-                  "icon": "inv_dracthyrhead05",
-                  "id": 17543,
-                  "points": 25,
-                  "title": "You Know How to Reach Me"
+                  "icon": "inv_misc_stormlordsfavor",
+                  "id": 17540,
+                  "points": 15,
+                  "title": "Under the Weather"
                 }
               ],
               "name": "Forbidden Reach"
@@ -4703,10 +4715,16 @@
                   "title": "Slow and Steady Wins the Race"
                 },
                 {
-                  "icon": "inv_10_fishing_fishlava_color1",
-                  "id": 17878,
+                  "icon": "achievement_guildperk_chug-a-lug_rank2",
+                  "id": 18200,
+                  "points": 15,
+                  "title": "Cooling the Research Field"
+                },
+                {
+                  "icon": "inv_axe_1h_blackdragonoutdoor_d_01",
+                  "id": 18209,
                   "points": 5,
-                  "title": "Me Want Bite"
+                  "title": "Nothing Stops the Research"
                 },
                 {
                   "icon": "shaman_talent_primalelementalist",
@@ -4719,12 +4737,6 @@
                   "id": 18199,
                   "points": 10,
                   "title": "Zaqali Ritual Buster"
-                },
-                {
-                  "icon": "achievement_guildperk_chug-a-lug_rank2",
-                  "id": 18200,
-                  "points": 15,
-                  "title": "Cooling the Research Field"
                 },
                 {
                   "icon": "achievement_dungeon_ulduarraid_titan_01",
@@ -4775,10 +4787,10 @@
                   "title": "The Small Disruptions"
                 },
                 {
-                  "icon": "inv_axe_1h_blackdragonoutdoor_d_01",
-                  "id": 18209,
-                  "points": 5,
-                  "title": "Nothing Stops the Research"
+                  "icon": "ability_racial_molemachine",
+                  "id": 18284,
+                  "points": 0,
+                  "title": "A Niffen's Best Buddy"
                 },
                 {
                   "icon": "ui_majorfaction_niffen",
@@ -4809,18 +4821,6 @@
                   "id": 18271,
                   "points": 15,
                   "title": "He'sSss All Mine"
-                },
-                {
-                  "icon": "ability_racial_molemachine",
-                  "id": 18284,
-                  "points": 0,
-                  "title": "A Niffen's Best Buddy"
-                },
-                {
-                  "icon": "inv_fyrakk_dragonbreath",
-                  "id": 17506,
-                  "points": 10,
-                  "title": "Still Standing in the Fire"
                 }
               ],
               "name": "Zaralek Cavern"
