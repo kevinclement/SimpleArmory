@@ -41,6 +41,12 @@ IGNORE_MOUNT_ID = [
     1272,  # Swift Spectral Pterrordax https://www.wowhead.com/mount/1272
     1578,  # [DND] Test Mount JZB https://www.wowhead.com/mount/1578
     1605,  # Dragon Isles Drake Model Test https://www.wowhead.com/mount/1605
+    1771,  # Azeroth Dragonriding Highland Drake: https://www.wowhead.com/mount/1771
+    1786,  # Azeroth Dragonriding Renewed Proto-Drake: https://www.wowhead.com/mount/1786
+    1787,  # Azeroth Dragonriding Windborne Velocidrake: https://www.wowhead.com/mount/1787
+    1788,  # Azeroth Dragonriding Cliffside Wylderdrake: https://www.wowhead.com/mount/1788
+    1789,  # Azeroth Dragonriding Winding Slitherdrake: https://www.wowhead.com/mount/1789
+    1796,  # Temp: https://www.wowhead.com/mount/1796
 ]
 
 MOUNT_SOURCE_ENUM = {
