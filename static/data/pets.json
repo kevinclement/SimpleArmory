@@ -283,6 +283,14 @@
             "itemId": 205231,
             "name": "Roggy",
             "spellid": 408949
+          },
+          {
+            "ID": 3555,
+            "creatureId": 204369,
+            "icon": "inv_wyvernpetblackdragon_red",
+            "itemId": 205165,
+            "name": "Axel",
+            "spellid": 408330
           }
         ],
         "name": "Achievement"
@@ -401,6 +409,22 @@
             "itemId": 205937,
             "name": "Newsy",
             "spellid": 411110
+          },
+          {
+            "ID": 3596,
+            "creatureId": 207310,
+            "icon": "inv_babyfireelemental_blue",
+            "itemId": 206763,
+            "name": "Kabluey",
+            "spellid": 414533
+          },
+          {
+            "ID": 3553,
+            "creatureId": 204367,
+            "icon": "inv_wyvernpetblackdragon_black",
+            "itemId": 205162,
+            "name": "Nelthara",
+            "spellid": 408325
           }
         ],
         "name": "Quest"
@@ -565,6 +589,62 @@
             "itemId": 205120,
             "name": "Thimblerig",
             "spellid": 408158
+          },
+          {
+            "ID": 4255,
+            "creatureId": 208624,
+            "icon": "inv_titanutopiapet_green",
+            "itemId": 208012,
+            "name": "Briarhorn Hatchling",
+            "spellid": 418029
+          },
+          {
+            "ID": 4257,
+            "creatureId": 208630,
+            "icon": "inv_azmerlothmurlocpet_brown",
+            "itemId": 208009,
+            "name": "Gill'dan",
+            "spellid": 418036
+          },
+          {
+            "ID": 4258,
+            "creatureId": 208631,
+            "icon": "inv_oldgodpet_purple",
+            "itemId": 208010,
+            "name": "Jeepers",
+            "spellid": 418038
+          },
+          {
+            "ID": 4259,
+            "creatureId": 208634,
+            "icon": "inv_babydemonpet_green",
+            "itemId": 208008,
+            "name": "Doomrubble",
+            "spellid": 418039
+          },
+          {
+            "ID": 4260,
+            "creatureId": 208636,
+            "icon": "inv_pet_futurebotpet_brass",
+            "itemId": 208013,
+            "name": "Killbot 9000",
+            "spellid": 418041
+          },
+          {
+            "ID": 4261,
+            "creatureId": 208637,
+            "icon": "inv_apocalypticwhelp_black",
+            "itemId": 208011,
+            "name": "Obsidian Warwhelp",
+            "spellid": 418045
+          },
+          {
+            "ID": 4262,
+            "creatureId": 208639,
+            "icon": "inv_misc_nerubianchitin_01",
+            "itemId": 208138,
+            "name": "N'Ruby",
+            "spellid": 418050
           }
         ],
         "name": "Vendor"
@@ -990,6 +1070,14 @@
             "itemId": 205026,
             "name": "Devourer Lobstrok",
             "spellid": 408039
+          },
+          {
+            "ID": 4263,
+            "creatureId": 208643,
+            "icon": "inv_arfuspet",
+            "itemId": 208151,
+            "name": "Tobias",
+            "spellid": 418079
           }
         ],
         "name": "World Events"
@@ -1030,6 +1118,92 @@
           }
         ],
         "name": "Rare"
+      },
+      {
+        "id": "dddae67e",
+        "items": [
+          {
+            "ID": 3589,
+            "creatureId": 207176,
+            "icon": "inv_dragonwhelp3_black",
+            "itemId": 206682,
+            "name": "Rusziona",
+            "spellid": 414377
+          },
+          {
+            "ID": 3588,
+            "creatureId": 207064,
+            "icon": "inv_10_elementalspiritfoozles_earth",
+            "itemId": 205232,
+            "name": "Iggy",
+            "spellid": 375090
+          },
+          {
+            "ID": 3590,
+            "creatureId": 207220,
+            "icon": "inv_dragonwhelp3_red",
+            "itemId": 206758,
+            "name": "Belastrasza",
+            "spellid": 414428
+          },
+          {
+            "ID": 3597,
+            "creatureId": 207535,
+            "icon": "inv_kirinbaby_pale",
+            "itemId": 207019,
+            "name": "Princess Vorquistrasza",
+            "spellid": 414934
+          },
+          {
+            "ID": 3598,
+            "creatureId": 207552,
+            "icon": "inv_dragonwhelp3_bronze",
+            "itemId": 206971,
+            "name": "Zhusadormu",
+            "spellid": 414962
+          },
+          {
+            "ID": 3515,
+            "creatureId": 204225,
+            "icon": "inv_babyhornswog_orange",
+            "itemId": 205009,
+            "name": "Annuna",
+            "spellid": 407932
+          },
+          {
+            "ID": 3599,
+            "creatureId": 207556,
+            "icon": "inv_dragonwhelp3_blue",
+            "itemId": 206974,
+            "name": "Zalethgos",
+            "spellid": 414973
+          },
+          {
+            "ID": 3600,
+            "creatureId": 207558,
+            "icon": "inv_10_specialization_professionbook_inscription_color1",
+            "itemId": 206973,
+            "name": "Pallibrius",
+            "spellid": 414979
+          },
+          {
+            "ID": 3601,
+            "creatureId": 207568,
+            "icon": "inv_dragonwhelp3_green",
+            "itemId": 206979,
+            "name": "Posidriss",
+            "spellid": 414991
+          },
+          {
+            "ID": 3602,
+            "creatureId": 207571,
+            "icon": "inv_bearprimalcub_white",
+            "itemId": 206978,
+            "name": "Somnius",
+            "spellid": 414994
+          }
+        ],
+        "name": "Whelp Daycare"
       },
       {
         "id": "ccca067e",
@@ -1209,14 +1383,6 @@
             "spellid": 408323
           },
           {
-            "ID": 3553,
-            "creatureId": 204367,
-            "icon": "inv_wyvernpetblackdragon_black",
-            "itemId": 205162,
-            "name": "Nelthara",
-            "spellid": 408325
-          },
-          {
             "ID": 3554,
             "creatureId": 204368,
             "icon": "inv_wyvernpetblackdragon_blue",
@@ -1231,6 +1397,14 @@
             "itemId": 205166,
             "name": "Kromos",
             "spellid": 408332
+          },
+          {
+            "ID": 3582,
+            "creatureId": 205795,
+            "icon": "4777763",
+            "itemId": 206174,
+            "name": "Blub",
+            "spellid": 412389
           }
         ],
         "name": "Unknown"
