@@ -486,9 +486,9 @@
           },
           {
             "ID": 1300,
-            "icon": "inv_fabric_frostweave_imbuedbolt",
-            "itemId": 203734,
-            "name": "Snow Blanket"
+            "icon": "achievement_challengemode_scarlethalls_hourglass",
+            "itemId": 208058,
+            "name": "Minute Glass"
           },
           {
             "ID": 1277,
@@ -2099,6 +2099,85 @@
     "name": "Legion",
     "subcats": [
       {
+        "id": "d7104590",
+        "items": [
+          {
+            "ID": 1293,
+            "icon": "inv_misc_rune_15",
+            "itemId": 140192,
+            "name": "Dalaran Hearthstone"
+          },
+          {
+            "ID": 540,
+            "icon": "inv_stone_grindingstone_04",
+            "itemId": 138876,
+            "name": "Runas' Crystal Grinder"
+          },
+          {
+            "ID": 441,
+            "icon": "trade_archaeology_antleredcloakclasp",
+            "itemId": 129093,
+            "name": "Ravenbear Disguise",
+            "obtainSide": "H"
+          },
+          {
+            "ID": 541,
+            "icon": "inv_helm_cloth_witchhat_b_01",
+            "itemId": 138873,
+            "name": "Mystical Frosh Hat"
+          },
+          {
+            "ID": 565,
+            "icon": "inv_misc_note_01",
+            "itemId": 138878,
+            "name": "Copy of Daglop's Contract"
+          },
+          {
+            "ID": 584,
+            "icon": "inv_weapon_rifle_41",
+            "itemId": 131933,
+            "name": "Critter Hand Cannon"
+          },
+          {
+            "ID": 587,
+            "icon": "inv_pet_bluemurlocegg",
+            "itemId": 141879,
+            "name": "Berglrgl Perrgl Girggrlf"
+          },
+          {
+            "ID": 571,
+            "icon": "garrison_bronzechest",
+            "itemId": 130209,
+            "name": "Never Ending Toy Chest"
+          },
+          {
+            "ID": 593,
+            "icon": "inv_misc_bag_07",
+            "itemId": 142497,
+            "name": "Tiny Pack"
+          },
+          {
+            "ID": 596,
+            "icon": "inv_misc_flower_04",
+            "itemId": 142494,
+            "name": "Purple Blossom"
+          },
+          {
+            "ID": 595,
+            "icon": "inv_misc_bone_06",
+            "itemId": 142495,
+            "name": "Fake Teeth"
+          },
+          {
+            "ID": 594,
+            "icon": "inv_misc_1h_pa_spoon_a_01",
+            "itemId": 142496,
+            "name": "Dirty Spoon"
+          }
+        ],
+        "name": "Quest"
+      },
+      {
         "id": "3d583414",
         "items": [
           {
@@ -2193,79 +2272,6 @@
           }
         ],
         "name": "Missions"
-      },
-      {
-        "id": "d7104590",
-        "items": [
-          {
-            "ID": 540,
-            "icon": "inv_stone_grindingstone_04",
-            "itemId": 138876,
-            "name": "Runas' Crystal Grinder"
-          },
-          {
-            "ID": 441,
-            "icon": "trade_archaeology_antleredcloakclasp",
-            "itemId": 129093,
-            "name": "Ravenbear Disguise",
-            "obtainSide": "H"
-          },
-          {
-            "ID": 541,
-            "icon": "inv_helm_cloth_witchhat_b_01",
-            "itemId": 138873,
-            "name": "Mystical Frosh Hat"
-          },
-          {
-            "ID": 565,
-            "icon": "inv_misc_note_01",
-            "itemId": 138878,
-            "name": "Copy of Daglop's Contract"
-          },
-          {
-            "ID": 584,
-            "icon": "inv_weapon_rifle_41",
-            "itemId": 131933,
-            "name": "Critter Hand Cannon"
-          },
-          {
-            "ID": 587,
-            "icon": "inv_pet_bluemurlocegg",
-            "itemId": 141879,
-            "name": "Berglrgl Perrgl Girggrlf"
-          },
-          {
-            "ID": 571,
-            "icon": "garrison_bronzechest",
-            "itemId": 130209,
-            "name": "Never Ending Toy Chest"
-          },
-          {
-            "ID": 593,
-            "icon": "inv_misc_bag_07",
-            "itemId": 142497,
-            "name": "Tiny Pack"
-          },
-          {
-            "ID": 596,
-            "icon": "inv_misc_flower_04",
-            "itemId": 142494,
-            "name": "Purple Blossom"
-          },
-          {
-            "ID": 595,
-            "icon": "inv_misc_bone_06",
-            "itemId": 142495,
-            "name": "Fake Teeth"
-          },
-          {
-            "ID": 594,
-            "icon": "inv_misc_1h_pa_spoon_a_01",
-            "itemId": 142496,
-            "name": "Dirty Spoon"
-          }
-        ],
-        "name": "Quest"
       },
       {
         "id": "c8a37c8f",
@@ -2874,6 +2880,12 @@
       {
         "id": "a54a5fe4",
         "items": [
+          {
+            "ID": 1294,
+            "icon": "inv_garrison_hearthstone",
+            "itemId": 110560,
+            "name": "Garrison Hearthstone"
+          },
           {
             "ID": 391,
             "icon": "inv_cask_02",
