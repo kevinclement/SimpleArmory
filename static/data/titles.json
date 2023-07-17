@@ -315,11 +315,11 @@
             "type": "achievement"
           },
           {
-            "icon": "ability_creature_amber_02",
-            "id": 14721,
-            "name": "Smelly",
-            "titleId": 501,
-            "type": "achievement"
+            "icon": "inv_misc_questionmark",
+            "id": 781,
+            "name": "Unparalleled",
+            "titleId": 513,
+            "type": "title"
           }
         ],
         "name": "Reputation"
@@ -374,15 +374,14 @@
       {
         "items": [
           {
-            "icon": "inv_misc_questionmark",
-            "id": 742,
-            "name": "The Elite Evoker",
-            "notObtainable": true,
-            "titleId": 481,
-            "type": "title"
+            "icon": "achievement_boss_infinitecorruptor",
+            "id": 18705,
+            "name": "Of the Infinite",
+            "titleId": 514,
+            "type": "achievement"
           }
         ],
-        "name": "Unknown"
+        "name": "Dungeons"
       },
       {
         "items": [
@@ -696,6 +695,13 @@
             "id": 14277,
             "name": "Cryptkeeper",
             "titleId": 423,
+            "type": "achievement"
+          },
+          {
+            "icon": "ability_creature_amber_02",
+            "id": 14721,
+            "name": "Smelly",
+            "titleId": 501,
             "type": "achievement"
           },
           {
@@ -2560,6 +2566,14 @@
       },
       {
         "items": [
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 742,
+            "name": "The Elite Evoker",
+            "notObtainable": true,
+            "titleId": 481,
+            "type": "title"
+          },
           {
             "icon": "achievement_featsofstrength_gladiator_07",
             "id": 15951,
