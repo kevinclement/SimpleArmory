@@ -4,6 +4,7 @@
 	import { getProfileMedia } from '$api/profile'
 	import { getUrl } from '$util/url'
 	import { onMount } from 'svelte'
+	import settings from '$util/settings'
 	
 	let menuCollapsed = true
 
@@ -36,6 +37,19 @@
 				{ txt: 'Titles',	  link: 'titles'     },
 			],
 			isOpen: false,
+		},
+		'Locale': {
+			items: [
+				{ txt: 'EN',      link: 'wowhead.com'     },
+				{ txt: 'DE',      link: 'de.wowhead.com'  },
+				{ txt: 'ES',      link: 'es.wowhead.com'  },
+				{ txt: 'FR',      link: 'fr.wowhead.com'  },
+				{ txt: 'IT',	  link: 'it.wowhead.com'  },
+				{ txt: 'RU',	  link: 'ru.wowhead.com'  },
+				{ txt: 'KO',	  link: 'ko.wowhead.com'  },
+				{ txt: 'CN',	  link: 'cn.wowhead.com'  },
+			],
+			isOpen: false
 		},
 		'Profile': {
 			isOpen: false
@@ -118,6 +132,13 @@
 			menuCollapsed = true;
 		}
 	}
+
+	function setLocale(e, wowhead_url)
+	{
+		e.preventDefault()
+		localStorage.setItem('wowhead_url', wowhead_url);
+		window.location.reload();
+	};
 </script>
 
 <nav class="navbar navbar-default navbar-fixed-top" on:click={NavbarClicked}>
@@ -165,6 +186,17 @@
 				<li class:active="{$page === 'reputation'}"><a href="{getUrl($region, $realm, $character, 'reputation')}">Reputation</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown" class:open={menuItems.Locale.isOpen} >
+					<a id="achDrop" href="#/" on:click="{(e) => toggleDropDown(e,menuItems.Locale)}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						WowHead Locale
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="achDrop">
+						{#each menuItems.Locale.items as item}
+							<li><a href="#" on:click={(e) => setLocale(e, item.link)}>{item.txt}</a></li>
+						{/each}
+					</ul>
+				</li>
 				<li class="dropdown" class:open={menuItems.Profile.isOpen}>
 					<a id="profileDrop" href="#/" aria-label="Profile" on:click="{(e) => toggleDropDown(e,menuItems.Profile)}" class="navbar-char-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 						{#await imgUrl then value}
