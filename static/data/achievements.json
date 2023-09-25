@@ -163,17 +163,17 @@
               "name": "Mounts"
             },
             {
-              "id": "5ecf653d",
+              "id": "5d6a9d59",
               "items": [
                 {
                   "icon": "spell_frost_wizardmark",
-                  "id": 18365,
+                  "id": 18976,
                   "points": 10,
                   "title": "Draconically Superior"
                 },
                 {
                   "icon": "inv_enchant_voidcrystal",
-                  "id": 18366,
+                  "id": 18977,
                   "points": 10,
                   "title": "Draconically Epic"
                 }
@@ -614,6 +614,30 @@
                   "id": 17782,
                   "points": 10,
                   "title": "Daycare Derby"
+                },
+                {
+                  "icon": "inv_misc_head_dragon_blue",
+                  "id": 17773,
+                  "points": 10,
+                  "title": "A Blue Dawn"
+                },
+                {
+                  "icon": "achievement_boss_argus_femaleeredar",
+                  "id": 18854,
+                  "points": 10,
+                  "title": "Seeing Red"
+                },
+                {
+                  "icon": "inv_legion_faction_dreamweavers",
+                  "id": 19008,
+                  "points": 5,
+                  "title": "Dream Shaper"
+                },
+                {
+                  "icon": "inv_hand_1h_evokerlegendary_d_01",
+                  "id": 18804,
+                  "points": 25,
+                  "title": "Neltharion's Legacy"
                 }
               ],
               "name": "World"
@@ -718,6 +742,12 @@
             {
               "id": "1fed5c08",
               "items": [
+                {
+                  "icon": "ability_rhyolith_magmaflow_wave",
+                  "id": 18867,
+                  "points": 5,
+                  "title": "Through the Ashes and Flames"
+                },
                 {
                   "icon": "inv_elemental_mote_fire01",
                   "id": 17735,
@@ -4705,7 +4735,7 @@
                 {
                   "icon": "spell_holy_borrowedtime",
                   "id": 17509,
-                  "points": 0,
+                  "points": 10,
                   "title": "Every Door, Everywhere, All At Once"
                 }
               ],
@@ -4819,7 +4849,7 @@
                 {
                   "icon": "ability_racial_molemachine",
                   "id": 18284,
-                  "points": 0,
+                  "points": 10,
                   "title": "A Niffen's Best Buddy"
                 },
                 {
@@ -4915,31 +4945,31 @@
                 {
                   "icon": "inv_misc_questionmark",
                   "id": 18642,
-                  "points": 0,
+                  "points": 10,
                   "title": "The Inquisitive"
                 },
                 {
                   "icon": "spell_shadow_soothingkiss",
                   "id": 18643,
-                  "points": 0,
+                  "points": 10,
                   "title": "Community Rumors"
                 },
                 {
                   "icon": "spell_shadow_auraofdarkness",
                   "id": 18644,
-                  "points": 0,
+                  "points": 10,
                   "title": "Community Rumor Mill"
                 },
                 {
                   "icon": "inv_helm_armor_deerstalker_b_01_brown",
                   "id": 18645,
-                  "points": 0,
+                  "points": 10,
                   "title": "Tools of the Trade"
                 },
                 {
                   "icon": "inv_professions_inscription_scribesmagnifyingglass_silver",
                   "id": 18646,
-                  "points": 0,
+                  "points": 15,
                   "title": "Whodunnit?"
                 }
               ],
@@ -19882,6 +19912,18 @@
                   "title": "Professional Draconic Master"
                 },
                 {
+                  "icon": "ability_repair",
+                  "id": 18728,
+                  "points": 10,
+                  "title": "Working from the Start"
+                },
+                {
+                  "icon": "ability_repair",
+                  "id": 18729,
+                  "points": 10,
+                  "title": "Working in Hellfire"
+                },
+                {
                   "icon": "Ability_Repair",
                   "id": 735,
                   "points": 10,
@@ -19944,7 +19986,31 @@
                   "title": "Jack of All Trades"
                 },
                 {
-                  "icon": "inv_misc_mastersinscription",
+                  "icon": "inv_hammer_16",
+                  "id": 18720,
+                  "points": 50,
+                  "title": "Classic Master of All"
+                },
+                {
+                  "icon": "inv_hammer_16",
+                  "id": 18721,
+                  "points": 50,
+                  "title": "Outland Master of All"
+                },
+                {
+                  "icon": "inv_hammer_16",
+                  "id": 18722,
+                  "points": 50,
+                  "title": "Northrend Master of All"
+                },
+                {
+                  "icon": "inv_hammer_16",
+                  "id": 18719,
+                  "points": 50,
+                  "title": "Cataclysmic Master of All"
+                },
+                {
+                  "icon": "inv_hammer_16",
                   "id": 7379,
                   "points": 50,
                   "title": "Pandaren Master of All"
@@ -19997,42 +20063,6 @@
               "name": ""
             },
             {
-              "id": "a47e8186",
-              "items": [
-                {
-                  "icon": "inv_farm_pumpkinseed_yellow",
-                  "id": 9454,
-                  "points": 5,
-                  "title": "Draenic Seed Collector"
-                },
-                {
-                  "icon": "inv_stone_13",
-                  "id": 9453,
-                  "points": 5,
-                  "title": "Draenic Stone Collector"
-                }
-              ],
-              "name": "Garrison"
-            },
-            {
-              "id": "c2cfe147",
-              "items": [
-                {
-                  "icon": "inv_enchanting_wod_crystal2",
-                  "id": 10587,
-                  "points": 10,
-                  "title": "Hot Swapper"
-                },
-                {
-                  "icon": "inv_eng_gizmo3",
-                  "id": 10588,
-                  "points": 10,
-                  "title": "The Shortest Distance"
-                }
-              ],
-              "name": "Minigame"
-            },
-            {
               "id": "03aa2fb5",
               "items": [
                 {
@@ -20074,16 +20104,16 @@
               "id": "4b32f46d",
               "items": [
                 {
-                  "icon": "inv_misc_punchcards_white",
-                  "id": 9071,
-                  "points": 5,
-                  "title": "Inspector Gadgetzan"
-                },
-                {
                   "icon": "inv_inscription_80_scroll",
                   "id": 13516,
                   "points": 10,
                   "title": "Massive Tool"
+                },
+                {
+                  "icon": "inv_inscription_80_scroll",
+                  "id": 18778,
+                  "points": 25,
+                  "title": "Massive Toolshed"
                 },
                 {
                   "icon": "inv_10_elementalcombinedfoozles_titan",
@@ -20117,6 +20147,704 @@
                 }
               ],
               "name": "Crafting Orders"
+            }
+          ]
+        },
+        {
+          "id": "79aa2966",
+          "name": "Alchemy",
+          "subcats": [
+            {
+              "id": "d2805aa3",
+              "items": [
+                {
+                  "icon": "inv_10_specialization_alchemy_resourceful_routines_color1",
+                  "id": 18723,
+                  "points": 5,
+                  "title": "Look, You're Specialized!"
+                },
+                {
+                  "icon": "trade_alchemy_potiona2",
+                  "id": 18726,
+                  "points": 5,
+                  "title": "A Cure for All Ails I"
+                },
+                {
+                  "icon": "trade_alchemy_potiona2",
+                  "id": 18731,
+                  "points": 5,
+                  "title": "A Cure for All Ails II"
+                },
+                {
+                  "icon": "trade_alchemy_potiona2",
+                  "id": 18732,
+                  "points": 5,
+                  "title": "A Cure for All Ails III"
+                },
+                {
+                  "icon": "trade_alchemy_potiona2",
+                  "id": 18733,
+                  "points": 5,
+                  "title": "A Cure for All Ails IV"
+                },
+                {
+                  "icon": "inv_alchemy_80_elixir01purple",
+                  "id": 18734,
+                  "points": 5,
+                  "title": "Powerful Concoctions I"
+                },
+                {
+                  "icon": "inv_alchemy_80_elixir01purple",
+                  "id": 18735,
+                  "points": 5,
+                  "title": "Powerful Concoctions II"
+                },
+                {
+                  "icon": "inv_alchemy_80_elixir01purple",
+                  "id": 18736,
+                  "points": 5,
+                  "title": "Powerful Concoctions III"
+                },
+                {
+                  "icon": "inv_alchemy_80_elixir01purple",
+                  "id": 18737,
+                  "points": 5,
+                  "title": "Powerful Concoctions IV"
+                },
+                {
+                  "icon": "inv_alchemy_silussphere01",
+                  "id": 18770,
+                  "points": 10,
+                  "title": "Silas' Sphere of Transmutation"
+                },
+                {
+                  "icon": "inv_enchant_alchemistcauldron",
+                  "id": 18805,
+                  "points": 5,
+                  "title": "Draconic Phial Cabinet"
+                },
+                {
+                  "icon": "inv_alchemy_80_alchemiststone02",
+                  "id": 18904,
+                  "points": 5,
+                  "title": "Iron to Vendor Gold"
+                },
+                {
+                  "icon": "achievement_guildperk_chug-a-lug_rank2",
+                  "id": 18934,
+                  "points": 10,
+                  "title": "Excessive Experimentation"
+                },
+                {
+                  "icon": "inv_alchemy_80_elixir01purple",
+                  "id": 18963,
+                  "points": 5,
+                  "title": "Burst Damage"
+                }
+              ],
+              "name": ""
+            }
+          ]
+        },
+        {
+          "id": "5bb8f599",
+          "name": "Blacksmithing",
+          "subcats": [
+            {
+              "id": "485fa902",
+              "items": [
+                {
+                  "icon": "inv_hammer_unique_sulfuras",
+                  "id": 18765,
+                  "points": 5,
+                  "title": "Destined to be Legendary"
+                },
+                {
+                  "icon": "inv_hammer_1h_silverhand_b_01",
+                  "id": 18771,
+                  "points": 10,
+                  "title": "Khaz'gorian Smithing Hammer"
+                },
+                {
+                  "icon": "inv_misc_bone_humanskull_01",
+                  "id": 18851,
+                  "points": 5,
+                  "title": "Skeletons in the Lockbox"
+                },
+                {
+                  "icon": "inv_sword_1h_blacksmithing_03",
+                  "id": 18852,
+                  "points": 5,
+                  "title": "Weaponsmithing, Reborn"
+                },
+                {
+                  "icon": "inv_sword_55",
+                  "id": 18853,
+                  "points": 5,
+                  "title": "Seething Flames of Hatred"
+                },
+                {
+                  "icon": "inv_blacksmith_anvil",
+                  "id": 18862,
+                  "points": 10,
+                  "title": "Anvil Mastery I"
+                },
+                {
+                  "icon": "inv_blacksmith_anvil",
+                  "id": 18864,
+                  "points": 10,
+                  "title": "Anvil Mastery II"
+                },
+                {
+                  "icon": "inv_blacksmith_anvil",
+                  "id": 18865,
+                  "points": 10,
+                  "title": "Anvil Mastery III"
+                },
+                {
+                  "icon": "inv_blacksmith_anvil",
+                  "id": 18866,
+                  "points": 10,
+                  "title": "Anvil Mastery IV"
+                }
+              ],
+              "name": ""
+            }
+          ]
+        },
+        {
+          "id": "74ce806b",
+          "name": "Enchanting",
+          "subcats": [
+            {
+              "id": "572b194c",
+              "items": [
+                {
+                  "icon": "achievement_halloween_ghost_01",
+                  "id": 18763,
+                  "points": 5,
+                  "title": "Spectre of Spectacles"
+                },
+                {
+                  "icon": "inv_10_enchanting2_elementalswirl_color1",
+                  "id": 18764,
+                  "points": 5,
+                  "title": "Break Upon Your Body"
+                },
+                {
+                  "icon": "inv_enchant_disenchant",
+                  "id": 18766,
+                  "points": 10,
+                  "title": "Disenchantment I"
+                },
+                {
+                  "icon": "inv_enchant_disenchant",
+                  "id": 18767,
+                  "points": 10,
+                  "title": "Disenchantment II"
+                },
+                {
+                  "icon": "inv_enchant_disenchant",
+                  "id": 18768,
+                  "points": 10,
+                  "title": "Disenchantment III"
+                },
+                {
+                  "icon": "inv_enchant_disenchant",
+                  "id": 18769,
+                  "points": 10,
+                  "title": "Disenchantment IV"
+                },
+                {
+                  "icon": "inv_enchanting_815_drustrod",
+                  "id": 18775,
+                  "points": 10,
+                  "title": "Iwen's Enchanting Rod"
+                },
+                {
+                  "icon": "inv_misc_largeshard_superior",
+                  "id": 18785,
+                  "points": 5,
+                  "title": "Shattered Expectations"
+                },
+                {
+                  "icon": "inv_ingot_eternium",
+                  "id": 18789,
+                  "points": 5,
+                  "title": "Simply Enchanting"
+                },
+                {
+                  "icon": "inv_enchant_shardradientsmall",
+                  "id": 18868,
+                  "points": 10,
+                  "title": "Enchantment I"
+                },
+                {
+                  "icon": "inv_enchant_shardradientsmall",
+                  "id": 18869,
+                  "points": 10,
+                  "title": "Enchantment II"
+                },
+                {
+                  "icon": "inv_enchant_shardradientsmall",
+                  "id": 18870,
+                  "points": 10,
+                  "title": "Enchantment III"
+                },
+                {
+                  "icon": "inv_enchant_shardradientsmall",
+                  "id": 18871,
+                  "points": 10,
+                  "title": "Enchantment IV"
+                }
+              ],
+              "name": ""
+            }
+          ]
+        },
+        {
+          "id": "0b3ed0d7",
+          "name": "Engineering",
+          "subcats": [
+            {
+              "id": "7c0554f0",
+              "items": [
+                {
+                  "icon": "spell_mekkatorque_bot_bluegear",
+                  "id": 18730,
+                  "points": 5,
+                  "title": "Goblins vs Gnomes"
+                },
+                {
+                  "icon": "inv_engineering_815_uberspanner",
+                  "id": 18776,
+                  "points": 10,
+                  "title": "The Ub3r-Spanner"
+                },
+                {
+                  "icon": "inv_engineering_intradalaranwormholegenerator",
+                  "id": 18855,
+                  "points": 5,
+                  "title": "Portal to Everywhere"
+                },
+                {
+                  "icon": "inv_gizmo_zapthrottlegascollector",
+                  "id": 18856,
+                  "points": 5,
+                  "title": "Just an Ordinary Gas Cloud"
+                },
+                {
+                  "icon": "inv_10_engineering_device_flamethrower_air",
+                  "id": 18857,
+                  "points": 5,
+                  "title": "That's No Ordinary Gas Cloud!"
+                },
+                {
+                  "icon": "10prof_portabletable_engineering01",
+                  "id": 18872,
+                  "points": 10,
+                  "title": "Dangerous Devices I"
+                },
+                {
+                  "icon": "10prof_portabletable_engineering01",
+                  "id": 18873,
+                  "points": 10,
+                  "title": "Dangerous Devices II"
+                },
+                {
+                  "icon": "10prof_portabletable_engineering01",
+                  "id": 18874,
+                  "points": 10,
+                  "title": "Dangerous Devices III"
+                },
+                {
+                  "icon": "10prof_portabletable_engineering01",
+                  "id": 18875,
+                  "points": 10,
+                  "title": "Dangerous Devices IV"
+                },
+                {
+                  "icon": "inv_weapon_rifle_38",
+                  "id": 18895,
+                  "points": 5,
+                  "title": "You Had it Coming"
+                },
+                {
+                  "icon": "inv_gizmo_newgoggles",
+                  "id": 18901,
+                  "points": 5,
+                  "title": "Chromatic Calibration: Holo-Gogs"
+                },
+                {
+                  "icon": "inv_helmet_goggles_pandariatradeskill_d_01",
+                  "id": 18905,
+                  "points": 5,
+                  "title": "Chromatic Calibration: Retinal Armor"
+                },
+                {
+                  "icon": "inv_helm_goggles_legiontradeskill_d_01",
+                  "id": 18906,
+                  "points": 5,
+                  "title": "Chromatic Calibration: Cranial Cannons"
+                },
+                {
+                  "icon": "inv_helm_goggles_shadowlandstradeskill_d_01_green",
+                  "id": 18907,
+                  "points": 5,
+                  "title": "Chromatic Calibration: Ectoplasmic Specs"
+                },
+                {
+                  "icon": "inv_gizmo_newgoggles",
+                  "id": 18908,
+                  "points": 5,
+                  "title": "Chromatic Calibration: Bio-Optic Killshades"
+                }
+              ],
+              "name": ""
+            },
+            {
+              "id": "23acb9fb",
+              "items": [
+                {
+                  "icon": "inv_misc_punchcards_white",
+                  "id": 9071,
+                  "points": 5,
+                  "title": "Inspector Gadgetzan"
+                },
+                {
+                  "icon": "inv_eng_gizmo3",
+                  "id": 10588,
+                  "points": 10,
+                  "title": "The Shortest Distance"
+                }
+              ],
+              "name": "Blingtron"
+            }
+          ]
+        },
+        {
+          "id": "d18055e1",
+          "name": "Inscription",
+          "subcats": [
+            {
+              "id": "fe20eacc",
+              "items": [
+                {
+                  "icon": "70_inscription_vantus_rune_suramar",
+                  "id": 18724,
+                  "points": 5,
+                  "title": "Gaining an Advantus"
+                },
+                {
+                  "icon": "inv_misc_book_07",
+                  "id": 18725,
+                  "points": 5,
+                  "title": "Best Stellar"
+                },
+                {
+                  "icon": "inv_inscription_crane",
+                  "id": 18738,
+                  "points": 5,
+                  "title": "Population In-Crease"
+                },
+                {
+                  "icon": "inv_inscriptionlanathelquill",
+                  "id": 18772,
+                  "points": 10,
+                  "title": "Sanguine Feather Quill of Lana'thel"
+                },
+                {
+                  "icon": "inv_scroll_11",
+                  "id": 18858,
+                  "points": 5,
+                  "side": "H",
+                  "title": "Forge and Befuddle"
+                },
+                {
+                  "icon": "inv_scroll_11",
+                  "id": 18859,
+                  "points": 5,
+                  "side": "A",
+                  "title": "Forge and Befuddle"
+                },
+                {
+                  "icon": "inv_inscription_inkred01",
+                  "id": 18876,
+                  "points": 10,
+                  "title": "Ink and Quill I"
+                },
+                {
+                  "icon": "inv_inscription_inkred01",
+                  "id": 18877,
+                  "points": 10,
+                  "title": "Ink and Quill II"
+                },
+                {
+                  "icon": "inv_inscription_inkred01",
+                  "id": 18878,
+                  "points": 10,
+                  "title": "Ink and Quill III"
+                },
+                {
+                  "icon": "inv_inscription_inkred01",
+                  "id": 18879,
+                  "points": 10,
+                  "title": "Ink and Quill IV"
+                },
+                {
+                  "icon": "ability_miling",
+                  "id": 18892,
+                  "points": 5,
+                  "title": "Massive Mills"
+                }
+              ],
+              "name": ""
+            }
+          ]
+        },
+        {
+          "id": "34208815",
+          "name": "Jewelcrafting",
+          "subcats": [
+            {
+              "id": "0ee388f2",
+              "items": [
+                {
+                  "icon": "inv_10_jewelcrafting3_rainbowprism_color1",
+                  "id": 18727,
+                  "points": 5,
+                  "title": "Rave Leader"
+                },
+                {
+                  "icon": "inv_jewelcrafting_815_focusinglens",
+                  "id": 18773,
+                  "points": 10,
+                  "title": "Jewelhammer's Focus"
+                },
+                {
+                  "icon": "inv_jewelcrafting_nightseye_03",
+                  "id": 18880,
+                  "points": 10,
+                  "title": "Generations of Gemstones I"
+                },
+                {
+                  "icon": "inv_jewelcrafting_nightseye_03",
+                  "id": 18889,
+                  "points": 10,
+                  "title": "Generations of Gemstones II"
+                },
+                {
+                  "icon": "inv_jewelcrafting_nightseye_03",
+                  "id": 18890,
+                  "points": 10,
+                  "title": "Generations of Gemstones III"
+                },
+                {
+                  "icon": "inv_jewelcrafting_nightseye_03",
+                  "id": 18891,
+                  "points": 10,
+                  "title": "Generations of Gemstones IV"
+                },
+                {
+                  "icon": "inv_misc_gem_bloodgem_01",
+                  "id": 18893,
+                  "points": 5,
+                  "title": "Plentiful Prospects"
+                },
+                {
+                  "icon": "inv_jewelcrafting_gem_29",
+                  "id": 18897,
+                  "points": 5,
+                  "title": "Can't Crush These"
+                },
+                {
+                  "icon": "inv_jewelcrafting_truesilverboar",
+                  "id": 18909,
+                  "points": 5,
+                  "title": "Fantastic Figurines"
+                },
+                {
+                  "icon": "inv_dragonwhelp3_gemmed_green",
+                  "id": 18941,
+                  "points": 5,
+                  "title": "Dazzling Dragons"
+                }
+              ],
+              "name": ""
+            },
+            {
+              "id": "5dd4aa6a",
+              "items": [
+                {
+                  "icon": "inv_enchanting_wod_crystal2",
+                  "id": 10587,
+                  "points": 10,
+                  "title": "Hot Swapper"
+                }
+              ],
+              "name": "Minigame"
+            }
+          ]
+        },
+        {
+          "id": "c5fb8057",
+          "name": "Leatherworking",
+          "subcats": [
+            {
+              "id": "1700f0a6",
+              "items": [
+                {
+                  "icon": "inv_hammer_16",
+                  "id": 18777,
+                  "points": 10,
+                  "title": "Mallet of Thunderous Skins"
+                },
+                {
+                  "icon": "inv_10_tailoring2_tent_color1",
+                  "id": 18793,
+                  "points": 5,
+                  "title": "Always Be Camping"
+                },
+                {
+                  "icon": "inv_misc_monsterscales_09",
+                  "id": 18881,
+                  "points": 10,
+                  "title": "A Test of Scale I"
+                },
+                {
+                  "icon": "inv_misc_monsterscales_09",
+                  "id": 18882,
+                  "points": 10,
+                  "title": "A Test of Scale II"
+                },
+                {
+                  "icon": "inv_misc_monsterscales_09",
+                  "id": 18883,
+                  "points": 10,
+                  "title": "A Test of Scale III"
+                },
+                {
+                  "icon": "inv_misc_monsterscales_09",
+                  "id": 18884,
+                  "points": 10,
+                  "title": "A Test of Scale IV"
+                },
+                {
+                  "icon": "inv_helm_armor_buckledhat_b_01purple",
+                  "id": 18894,
+                  "points": 5,
+                  "title": "Free Stylin'"
+                },
+                {
+                  "icon": "inv_misc_head_dragon_black",
+                  "id": 18898,
+                  "points": 5,
+                  "title": "That's Just Cruel"
+                },
+                {
+                  "icon": "achievement_reputation_ogre",
+                  "id": 18899,
+                  "points": 5,
+                  "title": "You Saw Nothing"
+                },
+                {
+                  "icon": "inv_misc_archaeology_trolldrum",
+                  "id": 18900,
+                  "points": 5,
+                  "title": "Budget Bard"
+                }
+              ],
+              "name": ""
+            }
+          ]
+        },
+        {
+          "id": "4e7c9130",
+          "name": "Tailoring",
+          "subcats": [
+            {
+              "id": "d2dc3912",
+              "items": [
+                {
+                  "icon": "inv_tailoring_815_synchronousthread",
+                  "id": 18774,
+                  "points": 10,
+                  "title": "Synchronous Thread"
+                },
+                {
+                  "icon": "inv_chest_cloth_57",
+                  "id": 18815,
+                  "points": 5,
+                  "title": "Speed Dreamin'"
+                },
+                {
+                  "icon": "inv_fabric_celestial_cloth",
+                  "id": 18885,
+                  "points": 10,
+                  "title": "Quite the Quilt I"
+                },
+                {
+                  "icon": "inv_fabric_celestial_cloth",
+                  "id": 18886,
+                  "points": 10,
+                  "title": "Quite the Quilt II"
+                },
+                {
+                  "icon": "inv_fabric_celestial_cloth",
+                  "id": 18887,
+                  "points": 10,
+                  "title": "Quite the Quilt III"
+                },
+                {
+                  "icon": "inv_fabric_celestial_cloth",
+                  "id": 18888,
+                  "points": 10,
+                  "title": "Quite the Quilt IV"
+                },
+                {
+                  "icon": "achievement_bg_3flagcap_nodeaths",
+                  "id": 18896,
+                  "points": 5,
+                  "title": "United as Three"
+                },
+                {
+                  "icon": "inv_10_skinning_consumable_clothbandages_color2",
+                  "id": 18902,
+                  "points": 5,
+                  "title": "Uncertified Nurse"
+                },
+                {
+                  "icon": "inv_shirt_basic_a_04_purple",
+                  "id": 18903,
+                  "points": 5,
+                  "title": "Ton of Tops"
+                }
+              ],
+              "name": ""
+            },
+            {
+              "id": "a94585ab",
+              "items": [
+                {
+                  "icon": "INV_Misc_Bandage_04",
+                  "id": 137,
+                  "points": 5,
+                  "title": "Stocking Up"
+                },
+                {
+                  "icon": "inv_emberweavebandage2",
+                  "id": 5480,
+                  "points": 5,
+                  "title": "Preparing for Disaster"
+                },
+                {
+                  "icon": "INV_Misc_SurgeonGlove_01",
+                  "id": 141,
+                  "points": 5,
+                  "title": "Ultimate Triage"
+                }
+              ],
+              "name": "First Aid"
             }
           ]
         },
@@ -20408,10 +21136,22 @@
                   "title": "Iron Chef"
                 },
                 {
-                  "icon": "inv_misc_food_161_fish_89",
+                  "icon": "inv_misc_food_cooked_valleystirfry",
                   "id": 7328,
                   "points": 10,
                   "title": "Ironpaw Chef"
+                },
+                {
+                  "icon": "inv_misc_food_mango_ice",
+                  "id": 18816,
+                  "points": 10,
+                  "title": "Serious Chef"
+                },
+                {
+                  "icon": "inv_cooking_100_roastduck_color02",
+                  "id": 18817,
+                  "points": 10,
+                  "title": "Showoff Chef"
                 }
               ],
               "name": "Recipes"
@@ -21831,6 +22571,186 @@
               "name": "Collector: Mantid"
             }
           ]
+        },
+        {
+          "id": "6950b43b",
+          "name": "Mining",
+          "subcats": [
+            {
+              "id": "c7af3be9",
+              "items": [
+                {
+                  "icon": "inv_ore_tyrivite",
+                  "id": 18818,
+                  "points": 5,
+                  "title": "Geologist's Ledger - Serevite"
+                },
+                {
+                  "icon": "inv_ore_draconium",
+                  "id": 18819,
+                  "points": 5,
+                  "title": "Geologist's Ledger - Draconium"
+                },
+                {
+                  "icon": "inv_10_specialization_professionbook_mining_orig",
+                  "id": 18820,
+                  "points": 10,
+                  "title": "Geologist's Ledger: Dragon Isles"
+                },
+                {
+                  "icon": "inv_10_elementalshardfoozles_lightning",
+                  "id": 18821,
+                  "points": 5,
+                  "title": "Geologist's Ledger - Overloaded Elements"
+                },
+                {
+                  "icon": "inv_felslate",
+                  "id": 18839,
+                  "points": 10,
+                  "title": "Broken Isles Mining Techniques"
+                },
+                {
+                  "icon": "inv_ore_stormsilver",
+                  "id": 18840,
+                  "points": 10,
+                  "title": "Fourth War Mining Techniques"
+                },
+                {
+                  "icon": "inv_ingot_thorium",
+                  "id": 18841,
+                  "points": 5,
+                  "title": "Doing Your Share"
+                }
+              ],
+              "name": ""
+            },
+            {
+              "id": "ddd2802a",
+              "items": [
+                {
+                  "icon": "inv_stone_13",
+                  "id": 9453,
+                  "points": 5,
+                  "title": "Draenic Stone Collector"
+                }
+              ],
+              "name": "Garrison"
+            }
+          ]
+        },
+        {
+          "id": "300df1fc",
+          "name": "Skinning",
+          "subcats": [
+            {
+              "id": "89bc3b8b",
+              "items": [
+                {
+                  "icon": "inv_misc_food_meat_goatchops",
+                  "id": 18831,
+                  "points": 10,
+                  "title": "Elusive Beasts of the Dragon Isles"
+                },
+                {
+                  "icon": "spell_beastmaster_elekk",
+                  "id": 18832,
+                  "points": 5,
+                  "title": "Elusive Legend of the Dragon Isles"
+                },
+                {
+                  "icon": "spell_beastmaster_elekk",
+                  "id": 18833,
+                  "points": 10,
+                  "title": "Elusive Legends of the Dragon Isles"
+                },
+                {
+                  "icon": "inv_misc_leatherfelhide",
+                  "id": 18834,
+                  "points": 10,
+                  "title": "Broken Isles Skinning Techniques"
+                },
+                {
+                  "icon": "inv_skinning_80_shimmerscale",
+                  "id": 18835,
+                  "points": 10,
+                  "title": "Fourth War Skinning Techniques"
+                }
+              ],
+              "name": ""
+            }
+          ]
+        },
+        {
+          "id": "82ecbaee",
+          "name": "Herbalism",
+          "subcats": [
+            {
+              "id": "7309547f",
+              "items": [
+                {
+                  "icon": "inv_misc_herb_dragonsbreath",
+                  "id": 18822,
+                  "points": 5,
+                  "title": "Botanist's Log - Hochenblume"
+                },
+                {
+                  "icon": "inv_misc_herb_saxifrage",
+                  "id": 18823,
+                  "points": 5,
+                  "title": "Botanist's Log - Saxifrage"
+                },
+                {
+                  "icon": "inv_misc_herb_bubblepoppy",
+                  "id": 18824,
+                  "points": 5,
+                  "title": "Botanist's Log - Bubble Poppy"
+                },
+                {
+                  "icon": "inv_misc_herb_writhebark",
+                  "id": 18825,
+                  "points": 5,
+                  "title": "Botanist's Log - Writhebark"
+                },
+                {
+                  "icon": "inv_10_specialization_professionbook_herbalism_color1",
+                  "id": 18828,
+                  "points": 10,
+                  "title": "Botanist's Log: Dragon Isles"
+                },
+                {
+                  "icon": "inv_10_elementalshardfoozles_water",
+                  "id": 18829,
+                  "points": 5,
+                  "title": "Botanist's Log - Overloaded Elements"
+                },
+                {
+                  "icon": "inv_herbalism_70_starlightrosepetals",
+                  "id": 18837,
+                  "points": 10,
+                  "title": "Broken Isles Herbalism Techniques"
+                },
+                {
+                  "icon": "inv_misc_herb_starmoss",
+                  "id": 18838,
+                  "points": 10,
+                  "title": "Fourth War Herbalism Techniques"
+                }
+              ],
+              "name": ""
+            },
+            {
+              "id": "a6b2ece7",
+              "items": [
+                {
+                  "icon": "inv_farm_pumpkinseed_yellow",
+                  "id": 9454,
+                  "points": 5,
+                  "title": "Draenic Seed Collector"
+                }
+              ],
+              "name": "Garrison"
+            }
+          ]
         }
       ],
       "id": "50407cce",
@@ -22270,7 +23190,7 @@
                   "title": "Lead Climber"
                 },
                 {
-                  "icon": "3056991",
+                  "icon": "inv_cape_armor_explorer_d_01_backpack",
                   "id": 16600,
                   "points": 10,
                   "title": "Isles Ascender"
@@ -24245,6 +25165,12 @@
                   "id": 1183,
                   "points": 10,
                   "title": "Brew of the Year"
+                },
+                {
+                  "icon": "inv_cask_04",
+                  "id": 18579,
+                  "points": 10,
+                  "title": "A Round on the House"
                 }
               ],
               "name": ""
@@ -24392,12 +25318,6 @@
                   "title": "Check Your Head"
                 },
                 {
-                  "icon": "INV_Misc_Food_59",
-                  "id": 255,
-                  "points": 10,
-                  "title": "Bring Me The Head of... Oh Wait"
-                },
-                {
                   "icon": "Achievement_Halloween_RottenEgg_01",
                   "id": 1041,
                   "points": 10,
@@ -24445,6 +25365,24 @@
                   "id": 10365,
                   "points": 10,
                   "title": "A Frightening Friend"
+                },
+                {
+                  "icon": "inv_dressedhorse",
+                  "id": 18959,
+                  "points": 10,
+                  "title": "Don't Lose Your Head, Man"
+                },
+                {
+                  "icon": "inv_wickerbeastpet",
+                  "id": 18960,
+                  "points": 10,
+                  "title": "Kickin' With the Wick"
+                },
+                {
+                  "icon": "spell_fire_lavaspawn",
+                  "id": 18962,
+                  "points": 0,
+                  "title": "A Cleansing Fire"
                 }
               ],
               "name": "Other"
@@ -25159,9 +26097,15 @@
                   "id": 15310,
                   "points": 20,
                   "title": "A Tour of Towers"
+                },
+                {
+                  "icon": "ability_evoker_bronze_01",
+                  "id": 19079,
+                  "points": 20,
+                  "title": "Master of the Turbulent Timeways"
                 }
               ],
-              "name": "Mage Tower"
+              "name": ""
             }
           ]
         }
@@ -27847,6 +28791,42 @@
                   "id": 17723,
                   "points": 20,
                   "title": "Kalimdor Racing Completionist: Gold"
+                },
+                {
+                  "icon": "inv_checkered_flag",
+                  "id": 18939,
+                  "points": 20,
+                  "title": "Eastern Kingdoms Racing Completionist"
+                },
+                {
+                  "icon": "inv_checkered_flag",
+                  "id": 18940,
+                  "points": 20,
+                  "title": "Eastern Kingdoms Racing Completionist: Silver"
+                },
+                {
+                  "icon": "inv_checkered_flag",
+                  "id": 18942,
+                  "points": 20,
+                  "title": "Eastern Kingdoms Racing Completionist: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 18790,
+                  "points": 20,
+                  "title": "Dragonriding Challenge: Dragon Isles: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 18791,
+                  "points": 20,
+                  "title": "Dragonriding Challenge: Dragon Isles: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 18792,
+                  "points": 20,
+                  "title": "Dragonriding Challenge: Dragon Isles: Gold"
                 }
               ],
               "name": "Completionist"
@@ -27894,7 +28874,7 @@
               "name": "Glyphs"
             },
             {
-              "id": "9d982695",
+              "id": "ab9a2692",
               "items": [
                 {
                   "icon": "achievement_challengemode_arakkoaspires_bronze",
@@ -27921,24 +28901,6 @@
                   "title": "Thaldraszus: Bronze"
                 },
                 {
-                  "icon": "achievement_challengemode_arakkoaspires_bronze",
-                  "id": 17279,
-                  "points": 10,
-                  "title": "Forbidden Reach: Bronze"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_bronze",
-                  "id": 17483,
-                  "points": 10,
-                  "title": "Zaralek Cavern: Bronze"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_bronze",
-                  "id": 17712,
-                  "points": 10,
-                  "title": "Kalimdor: Bronze"
-                },
-                {
                   "icon": "achievement_challengemode_arakkoaspires_silver",
                   "id": 15916,
                   "points": 10,
@@ -27961,24 +28923,6 @@
                   "id": 15925,
                   "points": 10,
                   "title": "Thaldraszus: Silver"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_silver",
-                  "id": 17280,
-                  "points": 10,
-                  "title": "Forbidden Reach: Silver"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_silver",
-                  "id": 17484,
-                  "points": 10,
-                  "title": "Zaralek Cavern: Silver"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_silver",
-                  "id": 17713,
-                  "points": 10,
-                  "title": "Kalimdor: Silver"
                 },
                 {
                   "icon": "achievement_challengemode_arakkoaspires_gold",
@@ -28005,30 +28949,6 @@
                   "title": "Thaldraszus: Gold"
                 },
                 {
-                  "icon": "achievement_challengemode_arakkoaspires_gold",
-                  "id": 17281,
-                  "points": 10,
-                  "title": "Forbidden Reach: Gold"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_gold",
-                  "id": 17485,
-                  "points": 10,
-                  "title": "Zaralek Cavern: Gold"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_gold",
-                  "id": 17714,
-                  "points": 10,
-                  "title": "Kalimdor: Gold"
-                }
-              ],
-              "name": "Normal Races"
-            },
-            {
-              "id": "1666568d",
-              "items": [
-                {
                   "icon": "achievement_challengemode_arakkoaspires_bronze",
                   "id": 15927,
                   "points": 10,
@@ -28051,24 +28971,6 @@
                   "id": 15936,
                   "points": 10,
                   "title": "Thaldraszus Advanced: Bronze"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_bronze",
-                  "id": 17284,
-                  "points": 10,
-                  "title": "Forbidden Reach Advanced: Bronze"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_bronze",
-                  "id": 17486,
-                  "points": 10,
-                  "title": "Zaralek Cavern Advanced: Bronze"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_bronze",
-                  "id": 17715,
-                  "points": 10,
-                  "title": "Kalimdor Advanced: Bronze"
                 },
                 {
                   "icon": "achievement_challengemode_arakkoaspires_silver",
@@ -28095,24 +28997,6 @@
                   "title": "Thaldraszus Advanced: Silver"
                 },
                 {
-                  "icon": "achievement_challengemode_arakkoaspires_silver",
-                  "id": 17286,
-                  "points": 10,
-                  "title": "Forbidden Reach Advanced: Silver"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_silver",
-                  "id": 17487,
-                  "points": 10,
-                  "title": "Zaralek Cavern Advanced: Silver"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_silver",
-                  "id": 17716,
-                  "points": 10,
-                  "title": "Kalimdor Advanced: Silver"
-                },
-                {
                   "icon": "achievement_challengemode_arakkoaspires_gold",
                   "id": 15929,
                   "points": 10,
@@ -28136,30 +29020,6 @@
                   "points": 10,
                   "title": "Thaldraszus Advanced: Gold"
                 },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_gold",
-                  "id": 17287,
-                  "points": 10,
-                  "title": "Forbidden Reach Advanced: Gold"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_gold",
-                  "id": 17488,
-                  "points": 10,
-                  "title": "Zaralek Cavern Advanced: Gold"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_gold",
-                  "id": 17717,
-                  "points": 10,
-                  "title": "Kalimdor Advanced: Gold"
-                }
-              ],
-              "name": "Advanced Races"
-            },
-            {
-              "id": "e9685e48",
-              "items": [
                 {
                   "icon": "achievement_challengemode_arakkoaspires_bronze",
                   "id": 17195,
@@ -28189,24 +29049,6 @@
                   "id": 17330,
                   "points": 10,
                   "title": "Reverse Racer: Bronze"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_bronze",
-                  "id": 17288,
-                  "points": 10,
-                  "title": "Forbidden Reach Reverse: Bronze"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_bronze",
-                  "id": 17489,
-                  "points": 10,
-                  "title": "Zaralek Cavern Reverse: Bronze"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_bronze",
-                  "id": 17718,
-                  "points": 10,
-                  "title": "Kalimdor Reverse: Bronze"
                 },
                 {
                   "icon": "achievement_challengemode_arakkoaspires_silver",
@@ -28239,24 +29081,6 @@
                   "title": "Reverse Racer: Silver"
                 },
                 {
-                  "icon": "achievement_challengemode_arakkoaspires_silver",
-                  "id": 17289,
-                  "points": 10,
-                  "title": "Forbidden Reach Reverse: Silver"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_silver",
-                  "id": 17490,
-                  "points": 10,
-                  "title": "Zaralek Cavern Reverse: Silver"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_silver",
-                  "id": 17719,
-                  "points": 10,
-                  "title": "Kalimdor Reverse: Silver"
-                },
-                {
                   "icon": "achievement_challengemode_arakkoaspires_gold",
                   "id": 17197,
                   "points": 10,
@@ -28287,10 +29111,208 @@
                   "title": "Reverse Racer: Gold"
                 },
                 {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 18748,
+                  "points": 10,
+                  "title": "Waking Shores Challenge: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 18754,
+                  "points": 10,
+                  "title": "Ohn'ahran Plains Challenge: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 18757,
+                  "points": 10,
+                  "title": "Azure Span Challenge: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 18760,
+                  "points": 10,
+                  "title": "Thaldraszus Challenge: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 18749,
+                  "points": 10,
+                  "title": "Waking Shores Challenge: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 18755,
+                  "points": 10,
+                  "title": "Ohn'ahran Plains Challenge: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 18758,
+                  "points": 10,
+                  "title": "Azure Span Challenge: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 18761,
+                  "points": 10,
+                  "title": "Thaldraszus Challenge: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 18750,
+                  "points": 10,
+                  "title": "Waking Shores Challenge: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 18756,
+                  "points": 10,
+                  "title": "Ohn'ahran Plains Challenge: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 18759,
+                  "points": 10,
+                  "title": "Azure Span Challenge: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 18762,
+                  "points": 10,
+                  "title": "Thaldraszus Challenge: Gold"
+                }
+              ],
+              "name": "Races - Dragon Isles"
+            },
+            {
+              "id": "01a83861",
+              "items": [
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 17279,
+                  "points": 10,
+                  "title": "Forbidden Reach: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 17280,
+                  "points": 10,
+                  "title": "Forbidden Reach: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 17281,
+                  "points": 10,
+                  "title": "Forbidden Reach: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 17284,
+                  "points": 10,
+                  "title": "Forbidden Reach Advanced: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 17286,
+                  "points": 10,
+                  "title": "Forbidden Reach Advanced: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 17287,
+                  "points": 10,
+                  "title": "Forbidden Reach Advanced: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 17288,
+                  "points": 10,
+                  "title": "Forbidden Reach Reverse: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 17289,
+                  "points": 10,
+                  "title": "Forbidden Reach Reverse: Silver"
+                },
+                {
                   "icon": "achievement_challengemode_arakkoaspires_gold",
                   "id": 17290,
                   "points": 10,
                   "title": "Forbidden Reach Reverse: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 18779,
+                  "points": 10,
+                  "title": "Forbidden Reach Challenge: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 18780,
+                  "points": 10,
+                  "title": "Forbidden Reach Challenge: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 18781,
+                  "points": 10,
+                  "title": "Forbidden Reach Challenge: Gold"
+                }
+              ],
+              "name": "Races - Forbidden Reach"
+            },
+            {
+              "id": "01a83862",
+              "items": [
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 17483,
+                  "points": 10,
+                  "title": "Zaralek Cavern: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 17484,
+                  "points": 10,
+                  "title": "Zaralek Cavern: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 17485,
+                  "points": 10,
+                  "title": "Zaralek Cavern: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 17486,
+                  "points": 10,
+                  "title": "Zaralek Cavern Advanced: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 17487,
+                  "points": 10,
+                  "title": "Zaralek Cavern Advanced: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 17488,
+                  "points": 10,
+                  "title": "Zaralek Cavern Advanced: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 17489,
+                  "points": 10,
+                  "title": "Zaralek Cavern Reverse: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 17490,
+                  "points": 10,
+                  "title": "Zaralek Cavern Reverse: Silver"
                 },
                 {
                   "icon": "achievement_challengemode_arakkoaspires_gold",
@@ -28299,13 +29321,163 @@
                   "title": "Zaralek Cavern Reverse: Gold"
                 },
                 {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 18786,
+                  "points": 10,
+                  "title": "Zaralek Cavern Challenge: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 18787,
+                  "points": 10,
+                  "title": "Zaralek Cavern Challenge: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 18788,
+                  "points": 10,
+                  "title": "Zaralek Cavern Challenge: Gold"
+                }
+              ],
+              "name": "Races - Zaralek Cavern"
+            },
+            {
+              "id": "01a83863",
+              "items": [
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 17712,
+                  "points": 10,
+                  "title": "Kalimdor: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 17713,
+                  "points": 10,
+                  "title": "Kalimdor: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 17714,
+                  "points": 10,
+                  "title": "Kalimdor: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 17715,
+                  "points": 10,
+                  "title": "Kalimdor Advanced: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 17716,
+                  "points": 10,
+                  "title": "Kalimdor Advanced: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 17717,
+                  "points": 10,
+                  "title": "Kalimdor Advanced: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 17718,
+                  "points": 10,
+                  "title": "Kalimdor Reverse: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 17719,
+                  "points": 10,
+                  "title": "Kalimdor Reverse: Silver"
+                },
+                {
                   "icon": "achievement_challengemode_arakkoaspires_gold",
                   "id": 17720,
                   "points": 10,
                   "title": "Kalimdor Reverse: Gold"
                 }
               ],
-              "name": "Reverse Races"
+              "name": "Races - Kalimdor"
+            },
+            {
+              "id": "01a83864",
+              "items": [
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 18566,
+                  "points": 10,
+                  "title": "Eastern Kingdoms: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 18567,
+                  "points": 10,
+                  "title": "Eastern Kingdoms: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 18568,
+                  "points": 10,
+                  "title": "Eastern Kingdoms: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 18569,
+                  "points": 10,
+                  "title": "Eastern Kingdoms Advanced: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 18570,
+                  "points": 10,
+                  "title": "Eastern Kingdoms Advanced: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 18571,
+                  "points": 10,
+                  "title": "Eastern Kingdoms Advanced: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 18572,
+                  "points": 10,
+                  "title": "Eastern Kingdoms Reverse: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 18573,
+                  "points": 10,
+                  "title": "Eastern Kingdoms Reverse: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 18574,
+                  "points": 10,
+                  "title": "Eastern Kingdoms Reverse: Gold"
+                }
+              ],
+              "name": "Races - Eastern Kingdoms"
+            },
+            {
+              "id": "2fc4f2cd",
+              "items": [
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 18849,
+                  "points": 0,
+                  "title": "Fel Pit Fracas Reverse: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 18850,
+                  "points": 0,
+                  "title": "Fel Pit Fracas Reverse: Gold"
+                }
+              ],
+              "name": "Races - Outland"
             }
           ]
         },
@@ -36842,6 +38014,12 @@
                   "id": 15218,
                   "points": 0,
                   "title": "WoW's 18th Anniversary"
+                },
+                {
+                  "icon": "inv_misc_celebrationcake_01",
+                  "id": 18702,
+                  "points": 0,
+                  "title": "WoW's 19th Anniversary"
                 }
               ],
               "name": "Anniversary"
@@ -37149,6 +38327,12 @@
                   "id": 10335,
                   "points": 0,
                   "title": "Did Someone Say...?"
+                },
+                {
+                  "icon": "INV_Misc_Food_59",
+                  "id": 255,
+                  "points": 0,
+                  "title": "Bring Me The Head of... Oh Wait"
                 }
               ],
               "name": "Other"
@@ -37227,6 +38411,12 @@
                   "id": 17426,
                   "points": 0,
                   "title": "Toolbox Trouble"
+                },
+                {
+                  "icon": "inv_dragonwhelpcataclysm_blue",
+                  "id": 19192,
+                  "points": 0,
+                  "title": "Lil' Frostwing"
                 }
               ],
               "name": "Pets"
@@ -40917,24 +42107,6 @@
                   "id": 10599,
                   "points": 0,
                   "title": "Legion Medic"
-                },
-                {
-                  "icon": "INV_Misc_Bandage_04",
-                  "id": 137,
-                  "points": 0,
-                  "title": "Stocking Up"
-                },
-                {
-                  "icon": "inv_emberweavebandage2",
-                  "id": 5480,
-                  "points": 0,
-                  "title": "Preparing for Disaster"
-                },
-                {
-                  "icon": "INV_Misc_SurgeonGlove_01",
-                  "id": 141,
-                  "points": 0,
-                  "title": "Ultimate Triage"
                 },
                 {
                   "icon": "inv_first_aid_70_splint",
