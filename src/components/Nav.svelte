@@ -45,6 +45,7 @@
 				{ txt: 'ES',      link: 'es.wowhead.com'  },
 				{ txt: 'FR',      link: 'fr.wowhead.com'  },
 				{ txt: 'IT',	  link: 'it.wowhead.com'  },
+				{ txt: 'PT',	  link: 'pt.wowhead.com'  },
 				{ txt: 'RU',	  link: 'ru.wowhead.com'  },
 				{ txt: 'KO',	  link: 'ko.wowhead.com'  },
 				{ txt: 'CN',	  link: 'cn.wowhead.com'  },
