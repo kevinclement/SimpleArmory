@@ -203,12 +203,6 @@
               "items": [
                 {
                   "icon": "tradingpostcurrency",
-                  "id": 17305,
-                  "points": 10,
-                  "title": "Trading Post: Dragonflight"
-                },
-                {
-                  "icon": "tradingpostcurrency",
                   "id": 17334,
                   "points": 10,
                   "title": "Trading Post Enthusiast"
@@ -656,6 +650,12 @@
                   "id": 19318,
                   "points": 25,
                   "title": "Dream On"
+                },
+                {
+                  "icon": "5245774",
+                  "id": 18958,
+                  "points": 10,
+                  "title": "Of the Tyr's Guard"
                 }
               ],
               "name": "World"
@@ -4799,24 +4799,6 @@
                   "title": "The Smell of Money"
                 },
                 {
-                  "icon": "flightstone-dragonflight",
-                  "id": 17830,
-                  "points": 10,
-                  "title": "Stones Can't Fly!"
-                },
-                {
-                  "icon": "flightstone-dragonflight",
-                  "id": 17977,
-                  "points": 10,
-                  "title": "Stones Can Try To Fly!"
-                },
-                {
-                  "icon": "flightstone-dragonflight",
-                  "id": 17978,
-                  "points": 10,
-                  "title": "Stones Can Fly!"
-                },
-                {
                   "icon": "inv_snailrockmount_black",
                   "id": 17741,
                   "points": 10,
@@ -4932,6 +4914,30 @@
                 }
               ],
               "name": "Zaralek Cavern"
+            },
+            {
+              "id": "bz23cdc4",
+              "items": [
+                {
+                  "icon": "flightstone-dragonflight",
+                  "id": 17830,
+                  "points": 10,
+                  "title": "Stones Can't Fly!"
+                },
+                {
+                  "icon": "flightstone-dragonflight",
+                  "id": 17977,
+                  "points": 10,
+                  "title": "Stones Can Try To Fly!"
+                },
+                {
+                  "icon": "flightstone-dragonflight",
+                  "id": 17978,
+                  "points": 10,
+                  "title": "Stones Can Fly!"
+                }
+              ],
+              "name": "Flightstones"
             },
             {
               "id": "ba23cdc4",
@@ -8030,6 +8036,48 @@
                 }
               ],
               "name": "Other"
+            },
+            {
+              "id": "941c7db0",
+              "items": [
+                {
+                  "icon": "achievement_bg_trueavshutout",
+                  "id": 19411,
+                  "points": 5,
+                  "title": "Battleground Blitz Novice"
+                },
+                {
+                  "icon": "achievement_bg_trueavshutout",
+                  "id": 19412,
+                  "points": 10,
+                  "title": "Battleground Blitz Apprentice"
+                },
+                {
+                  "icon": "achievement_bg_trueavshutout",
+                  "id": 19413,
+                  "points": 15,
+                  "title": "Battleground Blitz Veteran"
+                },
+                {
+                  "icon": "achievement_bg_tophealer_soa",
+                  "id": 19416,
+                  "points": 15,
+                  "title": "Learning the Ropes"
+                },
+                {
+                  "icon": "achievement_bg_tophealer_soa",
+                  "id": 19417,
+                  "points": 10,
+                  "title": "Brawlroom Blitzer"
+                },
+                {
+                  "icon": "achievement_bg_tophealer_soa",
+                  "id": 19418,
+                  "points": 15,
+                  "title": "Battle-scarred Battler"
+                }
+              ],
+              "name": "[R]"
             }
           ]
         },
@@ -8192,54 +8240,6 @@
                 }
               ],
               "name": "Battlefield"
-            }
-          ]
-        },
-        {
-          "id": "c7b36c24",
-          "name": "Blitz",
-          "subcats": [
-            {
-              "id": "f0c6158c",
-              "items": [
-                {
-                  "icon": "achievement_bg_trueavshutout",
-                  "id": 19411,
-                  "points": 5,
-                  "title": "Battleground Blitz Novice"
-                },
-                {
-                  "icon": "achievement_bg_trueavshutout",
-                  "id": 19412,
-                  "points": 10,
-                  "title": "Battleground Blitz Apprentice"
-                },
-                {
-                  "icon": "achievement_bg_trueavshutout",
-                  "id": 19413,
-                  "points": 15,
-                  "title": "Battleground Blitz Veteran"
-                },
-                {
-                  "icon": "achievement_bg_tophealer_soa",
-                  "id": 19416,
-                  "points": 15,
-                  "title": "Learning the Ropes"
-                },
-                {
-                  "icon": "achievement_bg_tophealer_soa",
-                  "id": 19417,
-                  "points": 10,
-                  "title": "Brawlroom Blitzer"
-                },
-                {
-                  "icon": "achievement_bg_tophealer_soa",
-                  "id": 19418,
-                  "points": 15,
-                  "title": "Battle-scarred Battler"
-                }
-              ],
-              "name": ""
             }
           ]
         },
@@ -23773,6 +23773,18 @@
                 }
               ],
               "name": "Wrathion and Sabellian"
+            },
+            {
+              "id": "619d0089",
+              "items": [
+                {
+                  "icon": "inv_helm_armor_buckledhat_b_01_darkbrown",
+                  "id": 19685,
+                  "points": 10,
+                  "title": "Tenured Archivist"
+                }
+              ],
+              "name": "TODO"
             }
           ]
         },
@@ -24924,6 +24936,24 @@
                 }
               ],
               "name": ""
+            },
+            {
+              "id": "39c4b903",
+              "items": [
+                {
+                  "icon": "ability_racial_bestdealsanywhere",
+                  "id": 19400,
+                  "points": 10,
+                  "title": "Support Your Local Artisans"
+                },
+                {
+                  "icon": "inv_valentinesboxofchocolates02",
+                  "id": 19508,
+                  "points": 10,
+                  "title": "Love Language Expert"
+                }
+              ],
+              "name": "TODO"
             }
           ]
         },
@@ -28048,6 +28078,24 @@
                 }
               ],
               "name": "Heirlooms"
+            },
+            {
+              "id": "a6312857",
+              "items": [
+                {
+                  "icon": "item_hearthstone_card",
+                  "id": 19724,
+                  "points": 20,
+                  "title": "Hearthstone Card Collection"
+                },
+                {
+                  "icon": "inv_hearthstone_gameboard",
+                  "id": 20033,
+                  "points": 10,
+                  "title": "Hearthstone Beginner"
+                }
+              ],
+              "name": "TODO"
             }
           ]
         },
@@ -28152,7 +28200,7 @@
                   "icon": "5149985",
                   "id": 17349,
                   "points": 5,
-                  "title": "Warcraft Rumble Minis, Tauren's  New Look"
+                  "title": "Warcraft Rumble Minis, Tauren's New Look"
                 },
                 {
                   "icon": "5149866",
@@ -28164,7 +28212,7 @@
                   "icon": "5149947",
                   "id": 17351,
                   "points": 5,
-                  "title": "Warcraft Rumble Minis, Murloc's  New Look"
+                  "title": "Warcraft Rumble Minis, Murloc's New Look"
                 },
                 {
                   "icon": "5149993",
@@ -30116,6 +30164,84 @@
                 }
               ],
               "name": "Races - Outlands"
+            },
+            {
+              "id": "f2be239e",
+              "items": [
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 19674,
+                  "points": 10,
+                  "title": "Northrend: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 19675,
+                  "points": 10,
+                  "title": "Northrend: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 19676,
+                  "points": 10,
+                  "title": "Northrend: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 19677,
+                  "points": 10,
+                  "title": "Northrend Advanced: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 19679,
+                  "points": 10,
+                  "title": "Northrend Advanced: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 19681,
+                  "points": 10,
+                  "title": "Northrend Advanced: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 19682,
+                  "points": 10,
+                  "title": "Northrend Reverse: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 19683,
+                  "points": 10,
+                  "title": "Northrend Reverse: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 19684,
+                  "points": 10,
+                  "title": "Northrend Reverse: Gold"
+                },
+                {
+                  "icon": "inv_checkered_flag",
+                  "id": 19721,
+                  "points": 20,
+                  "title": "Northrend Racing Completionist"
+                },
+                {
+                  "icon": "inv_checkered_flag",
+                  "id": 19722,
+                  "points": 20,
+                  "title": "Northrend Racing Completionist: Silver"
+                },
+                {
+                  "icon": "inv_checkered_flag",
+                  "id": 19723,
+                  "points": 20,
+                  "title": "Northrend Racing Completionist: Gold"
+                }
+              ],
+              "name": "TODO"
             }
           ]
         },
@@ -34973,6 +35099,36 @@
                   "id": 18380,
                   "points": 0,
                   "title": "Dragonflight Season 2 Hero"
+                },
+                {
+                  "icon": "inv_tabard_denizens_b_01",
+                  "id": 19396,
+                  "points": 0,
+                  "title": "Dragonflight Season 3 Master"
+                },
+                {
+                  "icon": "inv_achievement_raidemeralddream_raid",
+                  "id": 19420,
+                  "points": 0,
+                  "title": "Dragonflight Season 3 Hero"
+                },
+                {
+                  "icon": "inv_10_gearupgrade_drakesdreamingcrest",
+                  "id": 19326,
+                  "points": 0,
+                  "title": "Dreaming of Drakes"
+                },
+                {
+                  "icon": "inv_10_gearupgrade_wyrmsdreamingcrest",
+                  "id": 19397,
+                  "points": 0,
+                  "title": "Dreaming of Wyrms"
+                },
+                {
+                  "icon": "inv_10_gearupgrade_aspectsdreamingcrest",
+                  "id": 19398,
+                  "points": 0,
+                  "title": "Dreaming of the Aspects"
                 }
               ],
               "name": "Other"
@@ -35066,6 +35222,12 @@
                 }
               ],
               "name": "[R]Pet Charms"
+            },
+            {
+              "id": "75d7a018",
+              "items": [
+              ],
+              "name": "[R]Mythic Keystone: Dragonflight"
             }
           ]
         },
@@ -36009,36 +36171,6 @@
                   "title": "Keystone Hero: Neltharion's Lair"
                 },
                 {
-                  "icon": "inv_10_gearupgrade_drakesdreamingcrest",
-                  "id": 19326,
-                  "points": 0,
-                  "title": "Dreaming of Drakes"
-                },
-                {
-                  "icon": "inv_tabard_denizens_b_01",
-                  "id": 19396,
-                  "points": 0,
-                  "title": "Dragonflight Season 3 Master"
-                },
-                {
-                  "icon": "inv_10_gearupgrade_wyrmsdreamingcrest",
-                  "id": 19397,
-                  "points": 0,
-                  "title": "Dreaming of Wyrms"
-                },
-                {
-                  "icon": "inv_10_gearupgrade_aspectsdreamingcrest",
-                  "id": 19398,
-                  "points": 0,
-                  "title": "Dreaming of the Aspects"
-                },
-                {
-                  "icon": "inv_achievement_raidemeralddream_raid",
-                  "id": 19420,
-                  "points": 0,
-                  "title": "Dragonflight Season 3 Hero"
-                },
-                {
                   "icon": "achievement_challengemode_platinum",
                   "id": 18542,
                   "points": 0,
@@ -36637,6 +36769,18 @@
                 }
               ],
               "name": "Appearances"
+            },
+            {
+              "id": "52feef6f",
+              "items": [
+                {
+                  "icon": "inv_axe_2h_fyrakk_d_01_shadowflame",
+                  "id": 19450,
+                  "points": 0,
+                  "title": "Fyr'alath the Dreamrender"
+                }
+              ],
+              "name": "TODO"
             }
           ]
         },
@@ -39250,6 +39394,24 @@
                 }
               ],
               "name": "Secrets of Azeroth"
+            },
+            {
+              "id": "38c1d2db",
+              "items": [
+                {
+                  "icon": "inv_holiday_christmas_present_01",
+                  "id": 19077,
+                  "points": 0,
+                  "title": "Catch Me If You Can!"
+                },
+                {
+                  "icon": "inv_holiday_christmas_present_01",
+                  "id": 19130,
+                  "points": 0,
+                  "title": "Junior Racing Champion"
+                }
+              ],
+              "name": "TODO"
             }
           ]
         },
@@ -39676,9 +39838,32 @@
                   "points": 0,
                   "title": "Storm Rider: Gold"
                 }
-
               ],
               "name": "Races"
+            },
+            {
+              "id": "19378f0e",
+              "items": [
+                {
+                  "icon": "tradingpostcurrency",
+                  "id": 17305,
+                  "points": 10,
+                  "title": "Trading Post: Dragonflight"
+                }
+              ],
+              "name": "[R]Trading Post"
+            },
+            {
+              "id": "8c547c03",
+              "items": [
+                {
+                  "icon": "inv_blacksmith_leystonehoofplates_red",
+                  "id": 19866,
+                  "points": 0,
+                  "title": "Hearthstoned: Fiery Edition"
+                }
+              ],
+              "name": "TODO"
             }
           ]
         }
