@@ -51,6 +51,14 @@
         }
       },
       {
+        "id": 2574,
+        "name": "Dream Wardens",
+        "renown": {
+          "max": 20,
+          "step": 2500
+        }
+      },
+      {
         "id": 2523,
         "name": "Dark Talons"
       },
@@ -141,6 +149,17 @@
           "42000": "Legend"
         },
         "name": "Soridormi"
+      },
+      {
+        "id": 2615,
+        "levels": {
+          "0": "Junior",
+          "10500": "Capable",
+          "21000": "Learned",
+          "32500": "Resident",
+          "42000": "Tenured"
+        },
+        "name": "Azerothian Archives"
       }
     ],
     "name": "Dragonflight"
