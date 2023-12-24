@@ -114,6 +114,7 @@
             "icon": "inv_muskox_white",
             "itemId": 191946,
             "name": "Mister Muskoxeles",
+            "notObtainable": true,
             "spellid": 371675
           }
         ],
@@ -291,6 +292,30 @@
             "itemId": 205165,
             "name": "Axel",
             "spellid": 408330
+          },
+          {
+            "ID": 4285,
+            "creatureId": 211939,
+            "icon": "achievement_legionpvptier1",
+            "itemId": 210347,
+            "name": "Sergeant Quackers",
+            "spellid": 425454
+          },
+          {
+            "ID": 4288,
+            "creatureId": 212206,
+            "icon": "inv_icon_feather01d",
+            "itemId": 210522,
+            "name": "Blueloo",
+            "spellid": 426060
+          },
+          {
+            "ID": 4291,
+            "creatureId": 212275,
+            "icon": "inv_dreamfawn",
+            "itemId": 210556,
+            "name": "Ivy",
+            "spellid": 426156
           }
         ],
         "name": "Achievement"
@@ -425,6 +450,22 @@
             "itemId": 205162,
             "name": "Nelthara",
             "spellid": 408325
+          },
+          {
+            "ID": 4297,
+            "creatureId": 212399,
+            "icon": "3071791",
+            "itemId": 210633,
+            "name": "Kal'andu",
+            "spellid": 426319
+          },
+          {
+            "ID": 3552,
+            "creatureId": 201008,
+            "icon": "inv_wyvernpetblackdragon_green",
+            "itemId": 205160,
+            "name": "Rithro",
+            "spellid": 408323
           }
         ],
         "name": "Quest"
@@ -645,6 +686,94 @@
             "itemId": 208138,
             "name": "N'Ruby",
             "spellid": 418050
+          },
+          {
+            "ID": 4287,
+            "creatureId": 212192,
+            "icon": "inv_duck_brown",
+            "itemId": 210505,
+            "name": "Reverie",
+            "spellid": 426037
+          },
+          {
+            "ID": 4289,
+            "creatureId": 212267,
+            "icon": "inv_beetleprimal_green",
+            "itemId": 210553,
+            "name": "Dreamborne Scarab",
+            "spellid": 426137
+          },
+          {
+            "ID": 4290,
+            "creatureId": 212273,
+            "icon": "ability_ardenweald_paladin_spring",
+            "itemId": 210555,
+            "name": "Dreamhoof",
+            "spellid": 426148
+          },
+          {
+            "ID": 4292,
+            "creatureId": 212315,
+            "icon": "ability_druid_healinginstincts",
+            "itemId": 210567,
+            "name": "Memorie",
+            "spellid": 426168
+          },
+          {
+            "ID": 4300,
+            "creatureId": 212417,
+            "icon": "inv_pineconecritter_brown",
+            "itemId": 210652,
+            "name": "Somnolet",
+            "spellid": 426357
+          },
+          {
+            "ID": 4307,
+            "creatureId": 212569,
+            "icon": "ability_ardenweald_paladin_autumn",
+            "itemId": 210691,
+            "name": "Spruce",
+            "spellid": 426544
+          },
+          {
+            "ID": 4308,
+            "creatureId": 212570,
+            "icon": "ability_ardenweald_paladin_winter",
+            "itemId": 210692,
+            "name": "Juniper",
+            "spellid": 426545
+          },
+          {
+            "ID": 4309,
+            "creatureId": 212877,
+            "icon": "ability_xavius_dreamsimulacrum",
+            "itemId": 210777,
+            "name": "Drowsey",
+            "spellid": 427044
+          },
+          {
+            "ID": 4310,
+            "creatureId": 212954,
+            "icon": "ability_evoker_dragonrage2_green",
+            "itemId": 210785,
+            "name": "Snorr",
+            "spellid": 427104
+          },
+          {
+            "ID": 3516,
+            "creatureId": 204226,
+            "icon": "inv_babyhornswog_red",
+            "itemId": 205010,
+            "name": "Crimson Swoglet",
+            "spellid": 407933
+          },
+          {
+            "ID": 3523,
+            "creatureId": 204268,
+            "icon": "inv_makruralava_orange",
+            "itemId": 205024,
+            "name": "Cheddar",
+            "spellid": 408036
           }
         ],
         "name": "Vendor"
@@ -1206,6 +1335,60 @@
         "name": "Whelp Daycare"
       },
       {
+        "id": "caca067e",
+        "items": [
+          {
+            "ID": 4295,
+            "creatureId": 212328,
+            "icon": "inv_dreampanda_red",
+            "itemId": 210570,
+            "name": "Napps",
+            "spellid": 426187
+          },
+          {
+            "ID": 4296,
+            "creatureId": 212329,
+            "icon": "inv_dreampanda_polar",
+            "itemId": 210571,
+            "name": "Snoozles",
+            "spellid": 426193
+          },
+          {
+            "ID": 4298,
+            "creatureId": 212408,
+            "icon": "inv_pineconecritter_green",
+            "itemId": 210648,
+            "name": "Seedle",
+            "spellid": 426343
+          },
+          {
+            "ID": 4299,
+            "creatureId": 212413,
+            "icon": "inv_pineconecritter_yellow",
+            "itemId": 210651,
+            "name": "Dustite",
+            "spellid": 426355
+          },
+          {
+            "ID": 4305,
+            "creatureId": 212562,
+            "icon": "inv_babysabretoothraptor_blue",
+            "itemId": 210689,
+            "name": "Snoots",
+            "spellid": 426539
+          },
+          {
+            "ID": 4306,
+            "creatureId": 212567,
+            "icon": "inv_babysabretoothraptor_green",
+            "itemId": 210690,
+            "name": "Elmer",
+            "spellid": 426540
+          }
+        ],
+        "name": "Emerald Bounty"
+      },
+      {
         "id": "ccca067e",
         "items": [
           {
@@ -1237,14 +1420,6 @@
             "itemId": 205008,
             "name": "Emerald Swoglet",
             "spellid": 407930
-          },
-          {
-            "ID": 3516,
-            "creatureId": 204226,
-            "icon": "inv_babyhornswog_red",
-            "itemId": 205010,
-            "name": "Crimson Swoglet",
-            "spellid": 407933
           },
           {
             "ID": 3517,
@@ -1285,14 +1460,6 @@
             "itemId": 205023,
             "name": "Savage Lobstrok",
             "spellid": 408032
-          },
-          {
-            "ID": 3523,
-            "creatureId": 204268,
-            "icon": "inv_makruralava_orange",
-            "itemId": 205024,
-            "name": "Cheddar",
-            "spellid": 408036
           },
           {
             "ID": 3531,
@@ -1373,14 +1540,6 @@
             "itemId": 205157,
             "name": "Undermoth",
             "spellid": 408314
-          },
-          {
-            "ID": 3552,
-            "creatureId": 201008,
-            "icon": "inv_wyvernpetblackdragon_green",
-            "itemId": 205160,
-            "name": "Rithro",
-            "spellid": 408323
           },
           {
             "ID": 3554,
@@ -7778,6 +7937,14 @@
             "itemId": 151269,
             "name": "Naxxy",
             "spellid": 233649
+          },
+          {
+            "ID": 3491,
+            "creatureId": 203463,
+            "icon": "inv_arfuspet",
+            "itemId": 211271,
+            "name": "Arfus",
+            "spellid": 406225
           }
         ],
         "name": "Hallow's End"
@@ -7889,6 +8056,14 @@
             "itemId": 178533,
             "name": "Jingles",
             "spellid": 294211
+          },
+          {
+            "ID": 4311,
+            "creatureId": 213111,
+            "icon": "inv_helm_cloth_holiday_christmas_a_03",
+            "itemId": 210870,
+            "name": "Mitzy",
+            "spellid": 427289
           }
         ],
         "name": "Feast of Winter Veil"
@@ -8800,6 +8975,7 @@
             "icon": "inv_nzothfish_green",
             "itemId": 205032,
             "name": "Bestial Lurker",
+            "notObtainable": true,
             "spellid": 408048
           },
           {
@@ -8808,6 +8984,7 @@
             "icon": "inv_nzothfish",
             "itemId": 205035,
             "name": "Snapjaw Lurker",
+            "notObtainable": true,
             "spellid": 408062
           },
           {
@@ -8816,6 +8993,7 @@
             "icon": "inv_nzothfish_void",
             "itemId": 205037,
             "name": "Void Lurker",
+            "notObtainable": true,
             "spellid": 408063
           }
         ],
@@ -9952,6 +10130,22 @@
             "itemId": 190601,
             "name": "Sunny",
             "spellid": 333570
+          },
+          {
+            "ID": 4267,
+            "creatureId": 210058,
+            "icon": "inv_pitlordpet_red",
+            "itemId": 208850,
+            "name": "Lil' Maggz",
+            "spellid": 421516
+          },
+          {
+            "ID": 3253,
+            "creatureId": 185611,
+            "icon": "inv_kodopet",
+            "itemId": 190608,
+            "name": "Crushhoof",
+            "spellid": 367778
           }
         ],
         "name": "Blizzard Store"
@@ -10126,6 +10320,13 @@
             "icon": "inv_dragonwhelpoutland2_light",
             "name": "Moon-Touched Netherwhelp",
             "spellid": 344755
+          },
+          {
+            "ID": 3579,
+            "creatureId": 205467,
+            "icon": "4755147",
+            "name": "Ysergle",
+            "spellid": 411448
           }
         ],
         "name": "Blizzcon"
@@ -10329,6 +10530,14 @@
             "icon": "4186101",
             "name": "Drakks",
             "spellid": 359855
+          },
+          {
+            "ID": 4266,
+            "creatureId": 209681,
+            "icon": "5333904",
+            "itemId": 208751,
+            "name": "Squally",
+            "spellid": 420759
           }
         ],
         "name": "Collector's Edition"
@@ -10421,6 +10630,31 @@
           }
         ],
         "name": "HotS"
+      },
+      {
+        "items": [
+          {
+            "ID": 4316,
+            "creatureId": 213407,
+            "icon": "5210737",
+            "itemId": 210964,
+            "name": "Lil' Wrathion",
+            "spellid": 427682
+          }
+        ],
+        "name": "WoW Classic"
+      },
+      {
+        "items": [
+          {
+            "ID": 3236,
+            "creatureId": 184285,
+            "icon": "inv_gnometoy",
+            "name": "Gnomelia Gearheart",
+            "spellid": 364451
+          }
+        ],
+        "name": "Warcraft Rumble"
       },
       {
         "items": [
@@ -10673,14 +10907,6 @@
             "itemId": 190607,
             "name": "Garrlok",
             "spellid": 367768
-          },
-          {
-            "ID": 3253,
-            "creatureId": 185611,
-            "icon": "4205812",
-            "itemId": 190608,
-            "name": "Crushhoof",
-            "spellid": 367778
           },
           {
             "ID": 3254,
