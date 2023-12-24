@@ -137,6 +137,12 @@
 
 	function setLocale(e, wowhead_url) {
 		e.preventDefault()
+
+		// if clicked on same locale already set ignore it
+		if (getWowheadUrl() === wowhead_url) {
+			return;
+		}
+
 		localStorage.setItem('wowhead_url', wowhead_url);
 		window.location.reload();
 	};
