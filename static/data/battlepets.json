@@ -464,13 +464,15 @@
             "ID": 3301,
             "creatureId": 189136,
             "icon": "inv_duckbaby_black",
-            "name": "Wild Duckling"
+            "name": "Wild Duckling",
+            "spellid": 429055
           },
           {
             "ID": 3307,
             "creatureId": 189144,
             "icon": "inv_duckbaby_white",
-            "name": "Plucky Duckling"
+            "name": "Plucky Duckling",
+            "spellid": 429053
           },
           {
             "ID": 3313,
@@ -686,7 +688,8 @@
             "ID": 3480,
             "creatureId": 203292,
             "icon": "inv_beetleprimal_black",
-            "name": "Endmite"
+            "name": "Endmite",
+            "spellid": 429058
           },
           {
             "ID": 3481,
@@ -698,7 +701,8 @@
             "ID": 3482,
             "creatureId": 203310,
             "icon": "inv_snailrockmount_black",
-            "name": "Cobbleshell"
+            "name": "Cobbleshell",
+            "spellid": 429074
           },
           {
             "ID": 3483,
@@ -728,7 +732,8 @@
             "ID": 3487,
             "creatureId": 203364,
             "icon": "inv_snailrockmount_red",
-            "name": "Scarlapod"
+            "name": "Scarlapod",
+            "spellid": 429073
           },
           {
             "ID": 3488,
@@ -750,6 +755,69 @@
           }
         ],
         "name": "Zaralek Cavern"
+      },
+      {
+        "id": "9b161339",
+        "items": [
+          {
+            "ID": 4275,
+            "creatureId": 211110,
+            "icon": "inv_icon_feather01c",
+            "name": "Flooftalon"
+          },
+          {
+            "ID": 4276,
+            "creatureId": 211177,
+            "icon": "inv_dreampanda_dark",
+            "name": "Fol'ya Pup",
+            "spellid": 429068
+          },
+          {
+            "ID": 4277,
+            "creatureId": 211182,
+            "icon": "inv_pineconecritter_red",
+            "name": "Sapnibbler",
+            "spellid": 429070
+          },
+          {
+            "ID": 4278,
+            "creatureId": 211288,
+            "icon": "ability_ardenweald_paladin_summer",
+            "name": "Leyhart",
+            "spellid": 429064
+          },
+          {
+            "ID": 4279,
+            "creatureId": 211295,
+            "icon": "inv_babysabretoothraptor_purple",
+            "name": "Slumbertooth"
+          },
+          {
+            "ID": 4280,
+            "creatureId": 211302,
+            "icon": "inv_skunk2_black",
+            "name": "Pewling"
+          },
+          {
+            "ID": 4302,
+            "creatureId": 212437,
+            "icon": "inv_babysabretoothraptor_white",
+            "name": "Pale Slumbertooth"
+          },
+          {
+            "ID": 4303,
+            "creatureId": 212459,
+            "icon": "inv_icon_feather01a",
+            "name": "Snaggletoof"
+          },
+          {
+            "ID": 4304,
+            "creatureId": 212557,
+            "icon": "inv_skunk2_brown",
+            "name": "Dream Badger"
+          }
+        ],
+        "name": "The Emerald Dream"
       }
     ]
   },
