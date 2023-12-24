@@ -456,7 +456,8 @@ body {
 	  color: rgba(255, 255, 255, .7);
   }
   
-  body.dark .dropdown-menu > li > a:hover {
+  body.dark .dropdown-menu > li > a:hover,
+  body.dark .dropdown-menu > li > a:focus {
 	  background-color: #424242;
 	  color: #ffffff;
   }

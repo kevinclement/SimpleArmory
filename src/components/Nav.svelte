@@ -3,9 +3,8 @@
 	import { preferences } from '$stores/preferences'
 	import { getProfileMedia } from '$api/profile'
 	import { getUrl } from '$util/url'
+	import { getWowheadUrl } from '$util/utils'
 	import { onMount } from 'svelte'
-	import settings from '$util/settings'
-	
 	let menuCollapsed = true
 
 	let menuItems = {
@@ -97,7 +96,7 @@
 	}
 
 	const toggleDropDown = (e,menuItem) => {
-		// prevent anchor navigation and further propegatoin
+		// prevent anchor navigation and further propagation
 		e.preventDefault();
 		e.stopPropagation()
 
@@ -208,7 +207,7 @@
 						</a>
 						<ul class="dropdown-menu dropdown-submenu">
 						  {#each menuItems.Profile.locales as locale}
-							<li><a class="dropdown-item" href="#/" on:click={(e) => setLocale(e, locale.link)}>{locale.txt}</a></li>
+							<li class:active="{getWowheadUrl() === locale.link}"><a class="dropdown-item" href="#/" on:click={(e) => setLocale(e, locale.link)}>{locale.txt}</a></li>
 						  {/each}
 						</ul>
 					  </li>

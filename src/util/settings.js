@@ -1,10 +1,4 @@
-function getWowheadUrl(){
-    if (typeof window !== 'undefined') {
-        if(localStorage.getItem('wowhead_url'))
-            return localStorage.getItem('wowhead_url');
-    }
-    return 'wowhead.com';
-}
+import { getWowheadUrl } from '$util/utils'  
 
 export default {
     WowHeadUrl: getWowheadUrl(),
