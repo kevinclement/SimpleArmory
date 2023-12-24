@@ -96,6 +96,29 @@ body {
   }
   
   /* ## Header ############################### */
+  .dropdown-menu li {
+    position: relative;
+  }
+  .dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    right: 100%;
+    top: -7px;
+    min-width: 50px;
+  }
+  .dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+  }
+  .caret-right {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 4px;
+    vertical-align: middle;
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;
+    border-left: 4px solid;
+  }
   .navbar {
 	  min-height:0px !important;
   }
@@ -430,7 +453,8 @@ body {
 	  color: rgba(255, 255, 255, .7);
   }
   
-  body.dark .dropdown-menu > li > a:hover {
+  body.dark .dropdown-menu > li > a:hover,
+  body.dark .dropdown-menu > li > a:focus {
 	  background-color: #424242;
 	  color: #ffffff;
   }

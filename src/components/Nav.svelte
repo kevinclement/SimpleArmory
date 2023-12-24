@@ -3,8 +3,8 @@
 	import { preferences } from '$stores/preferences'
 	import { getProfileMedia } from '$api/profile'
 	import { getUrl } from '$util/url'
+	import { getWowheadUrl } from '$util/utils'
 	import { onMount } from 'svelte'
-	
 	let menuCollapsed = true
 
 	let menuItems = {
@@ -38,6 +38,17 @@
 			isOpen: false,
 		},
 		'Profile': {
+			locales: [
+				{ txt: 'EN',      link: 'wowhead.com'     },
+				{ txt: 'DE',      link: 'de.wowhead.com'  },
+				{ txt: 'ES',      link: 'es.wowhead.com'  },
+				{ txt: 'FR',      link: 'fr.wowhead.com'  },
+				{ txt: 'IT',	  link: 'it.wowhead.com'  },
+				{ txt: 'PT',	  link: 'pt.wowhead.com'  },
+				{ txt: 'RU',	  link: 'ru.wowhead.com'  },
+				{ txt: 'KO',	  link: 'ko.wowhead.com'  },
+				{ txt: 'CN',	  link: 'cn.wowhead.com'  },
+			],
 			isOpen: false
 		}
 	}
@@ -69,6 +80,11 @@
 			 return;
 		}
 
+		// ignore clicks on the locale submenu
+		if (e.target.id === "localeSubmenu") {
+			return;
+		}
+
 		closeMenus();
 	}
 
@@ -80,7 +96,7 @@
 	}
 
 	const toggleDropDown = (e,menuItem) => {
-		// prevent anchor navigation and further propegatoin
+		// prevent anchor navigation and further propagation
 		e.preventDefault();
 		e.stopPropagation()
 
@@ -118,8 +134,21 @@
 			menuCollapsed = true;
 		}
 	}
+
+	function setLocale(e, wowhead_url) {
+		e.preventDefault()
+
+		// if clicked on same locale already set ignore it
+		if (getWowheadUrl() === wowhead_url) {
+			return;
+		}
+
+		localStorage.setItem('wowhead_url', wowhead_url);
+		window.location.reload();
+	};
 </script>
 
+<!-- svelte-ignore a11y-click-events-have-key-events -->
 <nav class="navbar navbar-default navbar-fixed-top" on:click={NavbarClicked}>
 	<div class="container">
 		<div class="navbar-header">
@@ -181,6 +210,17 @@
 					  <li role="separator" class="divider"></li>
 					  <li><a href="{armoryUrl}" target="_blank">Armory profile</a></li>
 					  <li><a href="#/" on:click={toggleTheme} >Use {$preferences.theme === 'light' ? 'Dark' : 'Light'} Theme</a></li>
+					  <li>
+						<a id="localeSubmenu" class="dropdown-item" href="#/" on:click={(e) => e.preventDefault()}>
+							Locale
+							<b class="caret-right"></b>
+						</a>
+						<ul class="dropdown-menu dropdown-submenu">
+						  {#each menuItems.Profile.locales as locale}
+							<li class:active="{getWowheadUrl() === locale.link}"><a class="dropdown-item" href="#/" on:click={(e) => setLocale(e, locale.link)}>{locale.txt}</a></li>
+						  {/each}
+						</ul>
+					  </li>
 					  <li role="separator" class="divider"></li>
 					  <li><a href="https://github.com/kevinclement/SimpleArmory/issues" target="_blank">Report Bug</a></li>
 					</ul>

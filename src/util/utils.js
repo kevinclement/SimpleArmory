@@ -72,3 +72,11 @@ export function getDarkMode(window, cb) {
         }
     }
 }
+
+export function getWowheadUrl() {
+    if (typeof window !== 'undefined') {
+        if(localStorage.getItem('wowhead_url'))
+            return localStorage.getItem('wowhead_url');
+    }
+    return 'wowhead.com';
+}
