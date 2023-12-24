@@ -84,6 +84,11 @@
 			 return;
 		}
 
+		// ignore clicks on the locale submenu
+		if (e.target.id === "localeSubmenu") {
+			return;
+		}
+
 		closeMenus();
 	}
 
@@ -134,14 +139,14 @@
 		}
 	}
 
-	function setLocale(e, wowhead_url)
-	{
+	function setLocale(e, wowhead_url) {
 		e.preventDefault()
 		localStorage.setItem('wowhead_url', wowhead_url);
 		window.location.reload();
 	};
 </script>
 
+<!-- svelte-ignore a11y-click-events-have-key-events -->
 <nav class="navbar navbar-default navbar-fixed-top" on:click={NavbarClicked}>
 	<div class="container">
 		<div class="navbar-header">
@@ -209,6 +214,18 @@
 					<ul class="dropdown-menu" aria-labelledby="profileDrop">
 					  <li class="signin-label">Signed in as</li>
 					  <li><strong class="signin-name">{$character} @ {$realm}</strong></li>
+					  <li role="separator" class="divider"></li> 
+					  <li>
+						<a id="localeSubmenu" class="dropdown-item" href="#/" on:click={(e) => e.preventDefault()}>
+							Locale
+							<b class="caret-right"></b>
+						</a>
+						<ul class="dropdown-menu dropdown-submenu">
+						  {#each menuItems.Locale.items as item}
+							<li><a class="dropdown-item" href="#/" on:click={(e) => setLocale(e, item.link)}>{item.txt}</a></li>
+						  {/each}
+						</ul>
+					  </li>
 					  <li role="separator" class="divider"></li> 
 					  <li><a href="/#/">Signout</a></li>
 					  <li role="separator" class="divider"></li>
