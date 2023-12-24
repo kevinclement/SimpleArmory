@@ -206,6 +206,10 @@
 					  <li class="signin-label">Signed in as</li>
 					  <li><strong class="signin-name">{$character} @ {$realm}</strong></li>
 					  <li role="separator" class="divider"></li> 
+					  <li><a href="/#/">Signout</a></li>
+					  <li role="separator" class="divider"></li>
+					  <li><a href="{armoryUrl}" target="_blank">Armory profile</a></li>
+					  <li><a href="#/" on:click={toggleTheme} >Use {$preferences.theme === 'light' ? 'Dark' : 'Light'} Theme</a></li>
 					  <li>
 						<a id="localeSubmenu" class="dropdown-item" href="#/" on:click={(e) => e.preventDefault()}>
 							Locale
@@ -217,11 +221,6 @@
 						  {/each}
 						</ul>
 					  </li>
-					  <li role="separator" class="divider"></li> 
-					  <li><a href="/#/">Signout</a></li>
-					  <li role="separator" class="divider"></li>
-					  <li><a href="{armoryUrl}" target="_blank">Armory profile</a></li>
-					  <li><a href="#/" on:click={toggleTheme} >Use {$preferences.theme === 'light' ? 'Dark' : 'Light'} Theme</a></li>
 					  <li role="separator" class="divider"></li>
 					  <li><a href="https://github.com/kevinclement/SimpleArmory/issues" target="_blank">Report Bug</a></li>
 					</ul>
