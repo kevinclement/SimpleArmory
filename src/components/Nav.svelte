@@ -38,8 +38,8 @@
 			],
 			isOpen: false,
 		},
-		'Locale': {
-			items: [
+		'Profile': {
+			locales: [
 				{ txt: 'EN',      link: 'wowhead.com'     },
 				{ txt: 'DE',      link: 'de.wowhead.com'  },
 				{ txt: 'ES',      link: 'es.wowhead.com'  },
@@ -50,9 +50,6 @@
 				{ txt: 'KO',	  link: 'ko.wowhead.com'  },
 				{ txt: 'CN',	  link: 'cn.wowhead.com'  },
 			],
-			isOpen: false
-		},
-		'Profile': {
 			isOpen: false
 		}
 	}
@@ -192,17 +189,6 @@
 				<li class:active="{$page === 'reputation'}"><a href="{getUrl($region, $realm, $character, 'reputation')}">Reputation</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li class="dropdown" class:open={menuItems.Locale.isOpen} >
-					<a id="achDrop" href="#/" on:click="{(e) => toggleDropDown(e,menuItems.Locale)}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-						WowHead Locale
-						<b class="caret"></b>
-					</a>
-					<ul class="dropdown-menu" aria-labelledby="achDrop">
-						{#each menuItems.Locale.items as item}
-							<li><a href="#" on:click={(e) => setLocale(e, item.link)}>{item.txt}</a></li>
-						{/each}
-					</ul>
-				</li>
 				<li class="dropdown" class:open={menuItems.Profile.isOpen}>
 					<a id="profileDrop" href="#/" aria-label="Profile" on:click="{(e) => toggleDropDown(e,menuItems.Profile)}" class="navbar-char-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 						{#await imgUrl then value}
@@ -221,8 +207,8 @@
 							<b class="caret-right"></b>
 						</a>
 						<ul class="dropdown-menu dropdown-submenu">
-						  {#each menuItems.Locale.items as item}
-							<li><a class="dropdown-item" href="#/" on:click={(e) => setLocale(e, item.link)}>{item.txt}</a></li>
+						  {#each menuItems.Profile.locales as locale}
+							<li><a class="dropdown-item" href="#/" on:click={(e) => setLocale(e, locale.link)}>{locale.txt}</a></li>
 						  {/each}
 						</ul>
 					  </li>
