@@ -176,6 +176,13 @@
             "spellid": 408649
           },
           {
+            "ID": 1814,
+            "icon": "inv_dreamsabermount_purple",
+            "itemId": 210060,
+            "name": "Shadow Dusk Dreamsaber",
+            "spellid": 424474
+          },
+          {
             "ID": 1681,
             "icon": "inv_rhinoprimalmountice",
             "itemId": 199412,
@@ -189,9 +196,27 @@
             "itemId": 204798,
             "name": "Inferno Armoredon",
             "spellid": 406637
+          },
+          {
+            "ID": 1801,
+            "icon": "inv_rhinoprimalmountdream",
+            "itemId": 209060,
+            "name": "Verdant Armoredon",
+            "spellid": 422486
           }
         ],
         "name": "Achievement"
+      },
+      {
+        "items": [
+          {
+            "ID": 1818,
+            "icon": "inv_dreamowl_firemount",
+            "name": "Anu'relos, Flame's Guidance",
+            "spellid": 424484
+          }
+        ],
+        "name": "Raid Drop"
       },
       {
         "id": "c0bf4e7b",
@@ -230,6 +255,13 @@
             "itemId": 204361,
             "name": "Winding Slitherdrake",
             "spellid": 368893
+          },
+          {
+            "ID": 1830,
+            "icon": "inv_companionfaeriedragon",
+            "itemId": 210412,
+            "name": "Flourishing Whimsydrake",
+            "spellid": 425338
           }
         ],
         "name": "Campaign"
@@ -263,6 +295,13 @@
             "itemId": 205155,
             "name": "Big Slick in the City",
             "spellid": 408313
+          },
+          {
+            "ID": 1834,
+            "icon": "inv_sabretoothraptormount_green",
+            "itemId": 210774,
+            "name": "Ochre Dreamtalon",
+            "spellid": 427041
           }
         ],
         "name": "Daily Activities"
@@ -385,6 +424,20 @@
             "itemId": 205207,
             "name": "Morsel Sniffer",
             "spellid": 408655
+          },
+          {
+            "ID": 1809,
+            "icon": "inv_emeralddreamstagmount_golden",
+            "itemId": 209949,
+            "name": "Suntouched Dreamstag",
+            "spellid": 423873
+          },
+          {
+            "ID": 1811,
+            "icon": "inv_emeralddreamstagmount_frost",
+            "itemId": 209951,
+            "name": "Lunar Dreamstag",
+            "spellid": 423891
           }
         ],
         "name": "Renown"
@@ -415,6 +468,107 @@
           }
         ],
         "name": "Obsidian Citadel"
+      },
+      {
+        "items": [
+          {
+            "ID": 1808,
+            "icon": "inv_emeralddreamstagmount_green",
+            "itemId": 209947,
+            "name": "Blossoming Dreamstag",
+            "spellid": 423871
+          },
+          {
+            "ID": 1810,
+            "icon": "inv_emeralddreamstagmount_ashes",
+            "itemId": 209950,
+            "name": "Rekindled Dreamstag",
+            "spellid": 423877
+          },
+          {
+            "ID": 1816,
+            "icon": "inv_dreamsabermount_yellow",
+            "itemId": 210058,
+            "name": "Evening Sun Dreamsaber",
+            "spellid": 424479
+          },
+          {
+            "ID": 1817,
+            "icon": "inv_dreamsabermount_green",
+            "itemId": 210057,
+            "name": "Morning Flourish Dreamsaber",
+            "spellid": 424482
+          },
+          {
+            "ID": 1835,
+            "icon": "inv_sabretoothraptormount_purple",
+            "itemId": 210775,
+            "name": "Snowfluff Dreamtalon",
+            "spellid": 427043
+          },
+          {
+            "ID": 1833,
+            "icon": "inv_sabretoothraptormount_white",
+            "itemId": 210769,
+            "name": "Springtide Dreamtalon",
+            "spellid": 426955
+          },
+          {
+            "ID": 1815,
+            "icon": "inv_dreamsabermount_blue",
+            "itemId": 210059,
+            "name": "Winter Night Dreamsaber",
+            "spellid": 424476
+          }
+        ],
+        "name": "Dreamseeds"
+      },
+      {
+        "items": [
+          {
+            "ID": 1837,
+            "icon": "inv_riverotterlargemount01_yellow",
+            "itemId": 210831,
+            "name": "Delugen",
+            "spellid": 427222
+          },
+          {
+            "ID": 1838,
+            "icon": "inv_sabretoothraptormount",
+            "itemId": 210833,
+            "name": "Talont",
+            "spellid": 427224
+          },
+          {
+            "ID": 1839,
+            "icon": "inv_emeralddreamstagmount_green",
+            "itemId": 210945,
+            "name": "Stargrazer",
+            "spellid": 427226
+          },
+          {
+            "ID": 1938,
+            "icon": "inv_mammoth2lavamount_orange",
+            "itemId": 210946,
+            "name": "Mammyth",
+            "spellid": 427546
+          },
+          {
+            "ID": 1939,
+            "icon": "inv_sporebatrock_orange",
+            "itemId": 210948,
+            "name": "Imagiwing",
+            "spellid": 427549
+          },
+          {
+            "ID": 1940,
+            "icon": "inv_salamanderwatermount_green",
+            "itemId": 210969,
+            "name": "Salatrancer",
+            "spellid": 427724
+          }
+        ],
+        "name": "Dream Infusion"
       },
       {
         "items": [
@@ -7164,6 +7318,22 @@
             "name": "Vicious War Snail",
             "side": "H",
             "spellid": 409032
+          },
+          {
+            "ID": 1819,
+            "icon": "inv_viciousowlbearmountalliance",
+            "itemId": 210070,
+            "name": "Vicious Moonbeast",
+            "side": "A",
+            "spellid": 424534
+          },
+          {
+            "ID": 1820,
+            "icon": "inv_viciousowlbearmounthorde",
+            "itemId": 210069,
+            "name": "Vicious Moonbeast",
+            "side": "H",
+            "spellid": 424535
           }
         ],
         "name": "Vicious Saddle"
@@ -7448,7 +7618,16 @@
             "icon": "inv_serpentmountgladiator",
             "itemId": 205233,
             "name": "Obsidian Gladiator's Slitherdrake",
+            "notObtainable": true,
             "spellid": 408977
+          },
+          {
+            "ID": 1831,
+            "icon": "inv_serpentmountgladiator_green",
+            "itemId": 210345,
+            "name": "Verdant Gladiator's Slitherdrake",
+            "notObtainable": false,
+            "spellid": 425416
           }
         ],
         "name": "Gladiator"
@@ -7895,14 +8074,16 @@
           },
           {
             "ID": 1266,
-            "icon": "2957417",
+            "icon": "inv_encrypted21",
+            "itemId": 207964,
             "name": "Alabaster Stormtalon",
             "side": "A",
             "spellid": 302361
           },
           {
             "ID": 1267,
-            "icon": "2974019",
+            "icon": "inv_encrypted22",
+            "itemId": 207963,
             "name": "Alabaster Thunderwing",
             "side": "H",
             "spellid": 302362
@@ -7972,7 +8153,7 @@
             "ID": 1692,
             "icon": "5059959",
             "itemId": 206167,
-            "name": "Wonderous Wavewhisker",
+            "name": "Wondrous Wavewhisker",
             "spellid": 397406
           },
           {
@@ -7980,6 +8161,13 @@
             "icon": "inv_murlocmount_purple",
             "name": "Ginormous Grrloc",
             "spellid": 419567
+          },
+          {
+            "ID": 1699,
+            "icon": "inv_magicalowlbearmount",
+            "itemId": 203727,
+            "name": "Gleaming Moonbeast",
+            "spellid": 400976
           },
           {
             "ID": 1583,
@@ -8022,6 +8210,12 @@
             "icon": "3939983",
             "name": "Wandering Ancient",
             "spellid": 348162
+          },
+          {
+            "ID": 1517,
+            "icon": "4054329",
+            "name": "Bound Blizzard",
+            "spellid": 358072
           }
         ],
         "name": "Blizzcon"
@@ -8077,6 +8271,12 @@
             "icon": "4096390",
             "name": "Tangled Dreamweaver",
             "spellid": 359843
+          },
+          {
+            "ID": 1792,
+            "icon": "5306251",
+            "name": "Algarian Stormrider",
+            "spellid": 417888
           }
         ],
         "name": "Collector's Edition"
@@ -8100,6 +8300,13 @@
             "icon": "inv_protodragonfrostwyrm",
             "name": "Frostbrood Proto-Wyrm",
             "spellid": 386452
+          },
+          {
+            "ID": 1812,
+            "icon": null,
+            "itemId": 210008,
+            "name": "Runebound Firelord",
+            "spellid": 424009
           }
         ],
         "name": "WoW Classic"
@@ -8498,7 +8705,7 @@
           },
           {
             "ID": 1744,
-            "icon": "5161800",
+            "icon": "inv_companiondrake_netherwing_teal",
             "itemId": 206156,
             "name": "Grotto Netherwing Drake",
             "spellid": 412088
@@ -8551,6 +8758,27 @@
             "itemId": 208598,
             "name": "Eve's Ghastly Rider",
             "spellid": 419345
+          },
+          {
+            "ID": 1841,
+            "icon": "inv_fox2_darkred",
+            "itemId": 210919,
+            "name": "Crimson Glimmerfur",
+            "spellid": 427435
+          },
+          {
+            "ID": 1942,
+            "icon": "inv_scarabmount_copper",
+            "itemId": 211074,
+            "name": "Jeweled Copper Scarab",
+            "spellid": 428005
+          },
+          {
+            "ID": 1944,
+            "icon": "inv_scarabmount_gold",
+            "itemId": 211084,
+            "name": "Golden Regal Scarab",
+            "spellid": 428060
           }
         ],
         "name": "Trading Post"
