@@ -11,6 +11,7 @@
 <a
   target={settings.anchorTarget}
   {href}
+  rel={item.rel}
   class:notCollected={!(item.collected || item.completed)}
   class="thumbnail"
 >
