@@ -2,13 +2,13 @@
     import { onMount } from 'svelte'
     import { region, realm, character } from '$stores/user'
     import { getMounts } from '$api/mounts'
-    import { percent, percentFormat, getTitle, getImageSrc } from '$util/utils'
+    import { percent, percentFormat, getTitle } from '$util/utils'
     import { navigate } from '$util/url'
-    import settings from '$util/settings'
     import ProgressBar from '$components/ProgressBar.svelte';
     import MountsPlanner from '$components/MountsPlanner.svelte';
     import Loading from '$components/Loading.svelte';
     import ErrorInline from '$components/ErrorInline.svelte';
+    import Category from '$components/Category/Category.svelte';
 
     export let planner
 
@@ -71,29 +71,7 @@
          condition since it is faster to toggle it -->
     <div style="display: {planner ? 'none' : 'block' }">
     {#each mounts.categories as category}
- 
-        {#if category.name !== "Mounts" }
-        <h3 class="categoryHeader">{ category.name }</h3>
-        {/if}
-        
-        {#each category.subCategories as subCategory}
-            <div class="sect">
-                <div class="subCatHeader">{ subCategory.name }</div>
-                {#each subCategory.items as item}
-                    <a 
-                      target="{settings.anchorTarget}"
-                      href="//{settings.WowHeadUrl}/{item.link}"
-                      class:borderOn={!item.collected}
-                      class:borderOff={item.collected}
-                      class="thumbnail">
-                        <img height="36" width="36" src="{getImageSrc(item)}" alt>
-                    </a>
-                {/each}
-            </div>
-
-        {/each}
-        
-        <div class="clear" />
+        <Category {category}  superCat="Mounts"></Category>
     {/each}
     </div>
 {:else}

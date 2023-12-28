@@ -2,11 +2,11 @@
     import { onMount } from 'svelte'
     import { region, realm, character } from '$stores/user'
     import { getTitles } from '$api/titles'
-    import { percent, percentFormat, getTitle, getImageSrc } from '$util/utils'
-    import settings from '$util/settings'
+    import { percent, percentFormat, getTitle } from '$util/utils'
     import ProgressBar from '$components/ProgressBar.svelte';
     import Loading from '$components/Loading.svelte';
     import ErrorInline from '$components/ErrorInline.svelte';
+    import Category from '$components/Category/Category.svelte';
 
     let promise
     let titles
@@ -49,32 +49,7 @@
 
     <div>
     {#each titles.categories as category}
- 
-        {#if category.name !== "Titles" }
-        <h3 class="categoryHeader">{ category.name }</h3>
-        {/if}
-        
-        {#each category.subCategories as subCategory}
-            <div class="sect">
-                <div class="subCatHeader">{ subCategory.name }</div>
-                {#each subCategory.items as item}
-                    <div class="thumbnail" 
-                         class:borderOn={!item.collected}
-                         class:borderOff={item.collected}>
-                        <a 
-                        target="{settings.anchorTarget}"
-                        href="//{settings.WowHeadUrl}/{item.type}={item.id}"
-                        >
-                            <img height="36" width="36" src="{getImageSrc(item)}" alt>
-                        </a>
-                        <div class="title">{item.name}</div>
-                    </div>
-                {/each}
-            </div>
-
-        {/each}
-        
-        <div class="clear" />
+     <Category {category} getItemPath={item => `${item.type}=${item.id}`} superCat="Titles"></Category>
     {/each}
     </div>
 {:else}

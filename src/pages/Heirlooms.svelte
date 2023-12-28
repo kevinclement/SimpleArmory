@@ -2,10 +2,10 @@
     import { onMount } from 'svelte'
     import { region, realm, character } from '$stores/user'
     import { getHeirlooms } from '$api/heirlooms'
-    import { percent, percentFormat, getTitle, getImageSrc } from '$util/utils'
-    import settings from '$util/settings'
+    import { percent, percentFormat, getTitle } from '$util/utils'
     import ProgressBar from '$components/ProgressBar.svelte';
     import Loading from '$components/Loading.svelte';
+    import Category from '$components/Category/Category.svelte';
 
     let heirlooms
     $: promise = getHeirlooms($region, $realm, $character).then(_ => {
@@ -43,25 +43,7 @@
   <div>
     {#if heirlooms}
     {#each heirlooms.categories as category}
-        {#if category.name !== 'Heirlooms'}
-            <h3 class="categoryHeader">{ category.name }</h3>
-        {/if}
-        {#each category.subCategories as subCategory}
-            <div class="sect">
-                <div class="subCatHeader">{ subCategory.name }</div>
-                {#each subCategory.items as item}
-                    <a 
-                      target="{settings.anchorTarget}" 
-                      href="//{settings.WowHeadUrl}/{ item.link }" 
-                      class="thumbnail"
-                      class:borderOn={!item.collected}
-                      class:borderOff={item.collected}>
-                        <img height="36" width="36" src="{getImageSrc(item)}" alt>
-                    </a>
-                {/each}
-            </div>
-        {/each}
-        <div class="clear"/>
+        <Category {category} superCat="Heirlooms"></Category>
     {/each}
     {/if}
   </div>

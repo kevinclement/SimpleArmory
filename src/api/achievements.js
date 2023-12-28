@@ -168,6 +168,8 @@ function parseAchievementObject(db, earned, character, faction) {
                 }
             })
 
+            myCat.subCategories = cat.subcats
+
             // Add the category to the obj
             obj[supercat.name].categories.push(myCat);
         })
