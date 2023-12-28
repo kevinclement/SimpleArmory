@@ -67,7 +67,7 @@
 
 {#if battlePets}
 {#each battlePets.categories as category}
-    <Category {category} getItemPath={item => `battle-pet/${ item.ID }`}>
+    <Category {category}>
         <div class="pbCell" slot="item" let:item>
             <a 
             class="thumbnail pbThumbnail" 

@@ -5,7 +5,7 @@
   export let item;
   export let getItemPath;
 
-  $: href = "//" + settings.WowHeadUrl + "/" + getItemPath(item);
+  const href = "//" + settings.WowHeadUrl + "/" + getItemPath(item);
 </script>
 
 <a
