@@ -73,9 +73,9 @@
             class="thumbnail pbThumbnail" 
             target="{settings.anchorTarget}"
             href="//{settings.WowHeadUrl}/battle-pet/{ item.ID }"
-            class:borderOn={!item.collected}
-            class:borderOff={item.collected}>
-                <img height="36" width="36" src="{getImageSrc(item)}" alt>
+            class:notCollected={!item.collected}
+            >
+                <img height="36" width="36" src="{ getImageSrc(item, true) }" alt>
                 <div class="pbLevel" class:opacityOn={showLevel}>{ item.level }</div>
                 <div class="pbBreed" class:opacityOn={showLevel}>{ item.breed }</div>
             </a> 

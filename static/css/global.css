@@ -42,13 +42,6 @@ body {
     font-size: 6px;
     text-align: center;
   }
-  .borderOn {
-	border: 1px dashed grey;
-  float: left;
-  }
-  .borderOff {
-	border: 0px;
-  }
   .progressRight {
 	float:right;
 	margin-top:10px;
@@ -175,6 +168,7 @@ body {
 	  float:left;
 	  margin-bottom:5px;
 	  margin-top:0px;
+    border:0px;
   }
   .pbThumbnail {
 	margin-bottom:0px;
@@ -473,14 +467,13 @@ body {
 	  background-color: rgba(255, 255, 255, .25);
   }
   
-  body.dark .borderOn {
-	  border: 1px dashed rgba(255, 255, 255, .25);
+  .notCollected {
+    filter: grayscale(1) opacity(0.2);
+    transition: filter .25s ease
   }
-  
-  body.dark a.thumbnail.borderOn:hover,
-  body.dark a.thumbnail.borderOn:focus,
-  body.dark a.thumbnail.active {
-	  border: 1px dashed rgba(255, 255, 255, .75);
+
+  .notCollected:hover {
+    filter: grayscale(0) opacity(1);
   }
   
   body.dark .signin-label,

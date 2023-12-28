@@ -11,9 +11,8 @@
 <a
   target={settings.anchorTarget}
   {href}
-  class:borderOn={!(item.collected || item.completed)}
-  class:borderOff={item.collected || item.completed}
+  class:notCollected={!(item.collected || item.completed)}
   class="thumbnail"
 >
-  <img height="36" width="36" src={getImageSrc(item)} alt />
+  <img height="36" width="36" src={ getImageSrc(item, true) } alt />
 </a>
