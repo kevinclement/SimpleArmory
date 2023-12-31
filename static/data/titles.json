@@ -348,9 +348,42 @@
             "name": "Unparalleled",
             "titleId": 513,
             "type": "title"
+          },
+          {
+            "icon": "inv_helm_armor_buckledhat_b_01_darkbrown",
+            "id": 19790,
+            "name": "Isles Archivist",
+            "titleId": 536,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_tabard_denizens_b_01",
+            "id": 801,
+            "name": "Dream Defender",
+            "titleId": 532,
+            "type": "title"
           }
         ],
         "name": "Reputation"
+      },
+      {
+        "items": [
+          {
+            "icon": "5245774",
+            "id": 18958,
+            "name": "Of the Tyr's Guard",
+            "titleId": 516,
+            "type": "achievement"
+          },
+          {
+            "icon": "ability_evoker_dragonrage2_green",
+            "id": 17734,
+            "name": "The Reconciler",
+            "titleId": 498,
+            "type": "achievement"
+          }
+        ],
+        "name": "Quests"
       },
       {
         "items": [
@@ -442,13 +475,6 @@
             "type": "achievement"
           },
           {
-            "icon": "ability_evoker_dragonrage2_green",
-            "id": 17734,
-            "name": "The Reconciler",
-            "titleId": 498,
-            "type": "achievement"
-          },
-          {
             "icon": "inv_helm_armor_moleperson_b_01",
             "id": 17841,
             "name": "Barter Boss",
@@ -491,11 +517,11 @@
             "type": "achievement"
           },
           {
-            "icon": "inv_helm_armor_buckledhat_b_01_darkbrown",
-            "id": 19685,
-            "name": "Isles Archivist",
-            "titleId": 536,
-            "type": "achievement"
+            "icon": "inv_helm_armor_buckledhat_b_01_red",
+            "id": 787,
+            "name": "Honorary Historian",
+            "titleId": 518,
+            "type": "title"
           }
         ],
         "name": "Exploration"
@@ -2657,6 +2683,13 @@
             "id": 17767,
             "name": "Obsidian Legend",
             "titleId": 500,
+            "type": "achievement"
+          },
+          {
+            "icon": "ability_paladin_blessedmending",
+            "id": 19443,
+            "name": "Battle Mender",
+            "titleId": 529,
             "type": "achievement"
           }
         ],
