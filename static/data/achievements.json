@@ -203,6 +203,12 @@
               "items": [
                 {
                   "icon": "tradingpostcurrency",
+                  "id": 17305,
+                  "points": 10,
+                  "title": "Trading Post: Dragonflight"
+                },
+                {
+                  "icon": "tradingpostcurrency",
                   "id": 17334,
                   "points": 10,
                   "title": "Trading Post Enthusiast"
@@ -24827,10 +24833,10 @@
               "id": "5d97f8d3",
               "items": [
                 {
-                  "icon": "INV_Ammo_Arrow_02",
-                  "id": 1700,
+                  "icon": "inv_jewelry_necklace_43",
+                  "id": 260,
                   "points": 10,
-                  "title": "Perma-Peddle"
+                  "title": "Charming"
                 },
                 {
                   "icon": "INV_Ammo_Arrow_02",
@@ -24839,46 +24845,18 @@
                   "title": "Shafted!"
                 },
                 {
-                  "icon": "INV_ValentinesChocolate02",
-                  "id": 1702,
+                  "icon": "INV_ValentinePerfumeBottle",
+                  "id": 1279,
                   "points": 10,
-                  "title": "Sweet Tooth"
+                  "side": "A",
+                  "title": "Flirt With Disaster"
                 },
                 {
-                  "icon": "INV_Misc_Head_Undead_01",
-                  "id": 4624,
+                  "icon": "INV_ValentinePerfumeBottle",
+                  "id": 1280,
                   "points": 10,
-                  "title": "Tough Love"
-                },
-                {
-                  "icon": "inv_rocketmountpink",
-                  "id": 1696,
-                  "points": 10,
-                  "title": "The Rocket's Pink Glare"
-                },
-                {
-                  "icon": "INV_RoseBouquet01",
-                  "id": 1703,
-                  "points": 10,
-                  "title": "My Love is Like a Red, Red Rose"
-                },
-                {
-                  "icon": "INV_Chest_Cloth_50",
-                  "id": 1694,
-                  "points": 10,
-                  "title": "Lovely Luck Is On Your Side"
-                },
-                {
-                  "icon": "INV_Misc_Dust_04",
-                  "id": 1699,
-                  "points": 10,
-                  "title": "Fistful of Love"
-                },
-                {
-                  "icon": "Spell_BrokenHeart",
-                  "id": 1695,
-                  "points": 10,
-                  "title": "Dangerous Love"
+                  "side": "H",
+                  "title": "Flirt With Disaster"
                 },
                 {
                   "icon": "INV_Misc_Basket_01",
@@ -24887,10 +24865,42 @@
                   "title": "Lonely?"
                 },
                 {
-                  "icon": "INV_Crate_03",
-                  "id": 1704,
+                  "icon": "INV_Chest_Cloth_50",
+                  "id": 1694,
                   "points": 10,
-                  "title": "I Pitied The Fool"
+                  "title": "Lovely Luck Is On Your Side"
+                },
+                {
+                  "icon": "Spell_BrokenHeart",
+                  "id": 1695,
+                  "points": 10,
+                  "title": "Dangerous Love"
+                },
+                {
+                  "icon": "inv_rocketmountpink",
+                  "id": 1696,
+                  "points": 10,
+                  "title": "The Rocket's Pink Glare"
+                },
+                {
+                  "icon": "INV_ValentinesCard02",
+                  "id": 1697,
+                  "points": 10,
+                  "side": "A",
+                  "title": "Nation of Adoration"
+                },
+                {
+                  "icon": "INV_ValentinesCard02",
+                  "id": 1698,
+                  "points": 10,
+                  "side": "H",
+                  "title": "Nation of Adoration"
+                },
+                {
+                  "icon": "INV_Misc_Dust_04",
+                  "id": 1699,
+                  "points": 10,
+                  "title": "Fistful of Love"
                 },
                 {
                   "icon": "INV_ValentinesCandy",
@@ -24899,10 +24909,34 @@
                   "title": "Be Mine!"
                 },
                 {
-                  "icon": "inv_staff_52",
-                  "id": 9393,
+                  "icon": "INV_Crate_03",
+                  "id": 1704,
                   "points": 10,
-                  "title": "Beacon of Love"
+                  "title": "I Pitied The Fool"
+                },
+                {
+                  "icon": "INV_Ammo_Arrow_02",
+                  "id": 1700,
+                  "points": 10,
+                  "title": "Perma-Peddle"
+                },
+                {
+                  "icon": "INV_ValentinesChocolate02",
+                  "id": 1702,
+                  "points": 10,
+                  "title": "Sweet Tooth"
+                },
+                {
+                  "icon": "INV_RoseBouquet01",
+                  "id": 1703,
+                  "points": 10,
+                  "title": "My Love is Like a Red, Red Rose"
+                },
+                {
+                  "icon": "INV_Misc_Head_Undead_01",
+                  "id": 4624,
+                  "points": 10,
+                  "title": "Tough Love"
                 },
                 {
                   "icon": "inv_6_0raid_necklace_2a",
@@ -24915,6 +24949,12 @@
                   "id": 9392,
                   "points": 10,
                   "title": "Love Magnet"
+                },
+                {
+                  "icon": "inv_staff_52",
+                  "id": 9393,
+                  "points": 10,
+                  "title": "Beacon of Love"
                 },
                 {
                   "icon": "inv_staff_52",
@@ -26526,6 +26566,12 @@
             {
               "id": "dcff9300",
               "items": [
+                {
+                  "icon": "achievement_guildperk_honorablemention",
+                  "id": 9712,
+                  "points": 5,
+                  "title": "Shiny Pet Charmer"
+                },
                 {
                   "icon": "inv_currency_petbattle",
                   "id": 12927,
@@ -28152,7 +28198,7 @@
                   "icon": "5149985",
                   "id": 17349,
                   "points": 5,
-                  "title": "Warcraft Rumble Minis, Tauren's New Look"
+                  "title": "Warcraft Rumble Minis, Tauren's  New Look"
                 },
                 {
                   "icon": "5149866",
@@ -28164,7 +28210,7 @@
                   "icon": "5149947",
                   "id": 17351,
                   "points": 5,
-                  "title": "Warcraft Rumble Minis, Murloc's New Look"
+                  "title": "Warcraft Rumble Minis, Murloc's  New Look"
                 },
                 {
                   "icon": "5149993",
@@ -29270,24 +29316,6 @@
                 },
                 {
                   "icon": "inv_checkered_flag",
-                  "id": 19105,
-                  "points": 20,
-                  "title": "Outland Racing Completionist"
-                },
-                {
-                  "icon": "inv_checkered_flag",
-                  "id": 19106,
-                  "points": 20,
-                  "title": "Outland Racing Completionist: Silver"
-                },
-                {
-                  "icon": "inv_checkered_flag",
-                  "id": 19107,
-                  "points": 20,
-                  "title": "Outland Racing Completionist: Gold"
-                },
-                {
-                  "icon": "inv_checkered_flag",
                   "id": 19118,
                   "points": 20,
                   "title": "Emerald Dream Racing Completionist"
@@ -30058,61 +30086,19 @@
               "name": "Races - Eastern Kingdoms"
             },
             {
-              "id": "be44b5bc",
+              "id": "42efaa39",
               "items": [
                 {
-                  "icon": "achievement_challengemode_arakkoaspires_bronze",
-                  "id": 19092,
-                  "points": 10,
-                  "title": "Outland: Bronze"
-                },
-                {
                   "icon": "achievement_challengemode_arakkoaspires_silver",
-                  "id": 19097,
-                  "points": 10,
-                  "title": "Outland: Silver"
+                  "id": 18849,
+                  "points": 0,
+                  "title": "Fel Pit Fracas Reverse: Silver"
                 },
                 {
                   "icon": "achievement_challengemode_arakkoaspires_gold",
-                  "id": 19098,
-                  "points": 10,
-                  "title": "Outland: Gold"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_bronze",
-                  "id": 19099,
-                  "points": 10,
-                  "title": "Outland Advanced: Bronze"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_silver",
-                  "id": 19100,
-                  "points": 10,
-                  "title": "Outland Advanced: Silver"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_gold",
-                  "id": 19101,
-                  "points": 10,
-                  "title": "Outland Advanced: Gold"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_bronze",
-                  "id": 19102,
-                  "points": 10,
-                  "title": "Outland Reverse: Bronze"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_silver",
-                  "id": 19103,
-                  "points": 10,
-                  "title": "Outland Reverse: Silver"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_gold",
-                  "id": 19104,
-                  "points": 10,
-                  "title": "Outland Reverse: Gold"
+                  "id": 18850,
+                  "points": 0,
+                  "title": "Fel Pit Fracas Reverse: Gold"
                 }
               ],
               "name": "Races - Outlands"
@@ -35084,24 +35070,6 @@
                 }
               ],
               "name": "Fated Raids"
-            },
-            {
-              "id": "59d3d4ff",
-              "items": [
-                {
-                  "icon": "achievement_guildperk_honorablemention",
-                  "id": 9712,
-                  "points": 0,
-                  "title": "Shiny Pet Charmer"
-                }
-              ],
-              "name": "[R]Pet Charms"
-            },
-            {
-              "id": "75d7a018",
-              "items": [
-              ],
-              "name": "[R]Mythic Keystone: Dragonflight"
             }
           ]
         },
@@ -36616,6 +36584,12 @@
                   "id": 18256,
                   "points": 0,
                   "title": "Nasz'uro, the Unbound Legacy"
+                },
+                {
+                  "icon": "inv_axe_2h_fyrakk_d_01_shadowflame",
+                  "id": 19450,
+                  "points": 0,
+                  "title": "Fyr'alath the Dreamrender"
                 }
               ],
               "name": "Legendary"
@@ -39171,6 +39145,18 @@
                   "id": 15653,
                   "points": 0,
                   "title": "The More You Know*"
+                },
+                {
+                  "icon": "inv_holiday_christmas_present_01",
+                  "id": 19077,
+                  "points": 0,
+                  "title": "Catch Me If You Can!"
+                },
+                {
+                  "icon": "inv_holiday_christmas_present_01",
+                  "id": 19130,
+                  "points": 0,
+                  "title": "Junior Racing Champion"
                 }
               ],
               "name": "Holidays"
@@ -39204,46 +39190,6 @@
                 }
               ],
               "name": "Other"
-            },
-            {
-              "id": "379c0c78",
-              "items": [
-                {
-                  "icon": "INV_ValentinesCard02",
-                  "id": 1698,
-                  "points": 0,
-                  "side": "H",
-                  "title": "Nation of Adoration"
-                },
-                {
-                  "icon": "INV_ValentinesCard02",
-                  "id": 1697,
-                  "points": 0,
-                  "side": "A",
-                  "title": "Nation of Adoration"
-                },
-                {
-                  "icon": "inv_jewelry_necklace_43",
-                  "id": 260,
-                  "points": 0,
-                  "title": "Charming"
-                },
-                {
-                  "icon": "INV_ValentinePerfumeBottle",
-                  "id": 1279,
-                  "points": 0,
-                  "side": "A",
-                  "title": "Flirt With Disaster"
-                },
-                {
-                  "icon": "INV_ValentinePerfumeBottle",
-                  "id": 1280,
-                  "points": 0,
-                  "side": "H",
-                  "title": "Flirt With Disaster"
-                }
-              ],
-              "name": "[R]"
             },
             {
               "id": "9aa24528",
@@ -39684,18 +39630,6 @@
                 }
               ],
               "name": "Races"
-            },
-            {
-              "id": "19378f0e",
-              "items": [
-                {
-                  "icon": "tradingpostcurrency",
-                  "id": 17305,
-                  "points": 10,
-                  "title": "Trading Post: Dragonflight"
-                }
-              ],
-              "name": "[R]Trading Post"
             }
           ]
         }

@@ -17,12 +17,18 @@ FIXERS = {
     'heirlooms': (HeirloomFixer, ['heirlooms.json']),
     'mounts': (MountFixer, ['mounts.json']),
     'pets': (PetFixer, ['pets.json', 'battlepets.json']),
-    'realms': (RealmFixer, ['servers.eu.json', 'servers.us.json']),
     'reputations': (FactionFixer, ['factions.json']),
     'titles': (TitleFixer, ['titles.json']),
     'toys': (ToyFixer, ['toys.json']),
 }
 
+# BUG: #569: looks like realm graphql API isn't working anymore
+# I'm getting error: PersistedQueryNotSupported, which seems to suggest
+# that maybe it needs auth now too?  I haven't found documentation anywhere 
+# for the graphql API, so kind of blocked here.  I suspect we'll need to switch to
+# official wow api with a token, which is a bit of a pain. 
+#
+#    'realms': (RealmFixer, ['servers.eu.json', 'servers.us.json']),
 
 def parse_args():
     def fixer_arg(value: str):
