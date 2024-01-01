@@ -33,3 +33,20 @@ data, by specifying `--build`, with various degrees of precision:
 
 The data importer will use the most recent build beginning with the given
 build argument. If no argument is given, it always takes the most recent build.
+
+## Debug
+VSCode has a launch.json setup so that you can set breakpoints and then run the tool from the command line to attach to it and step through.  
+
+1) Make sure you have debugpy module installed.
+```
+pip3 install debugpy
+```
+
+2) Set a breakpoint inside VSCode in the module you're looking to debug or inside main.
+
+3) Run the command with appropriate importer and debugging.
+```
+python3 -m debugpy --listen 5678 --wait-for-client -m dataimporter --build 10.2.0.52649 --fixer mounts
+```
+
+4) From inside VSCode, click on 'Run and Debug' command on sidebar, and then "Start Debugging" for the "Python:Attach" configuration.
