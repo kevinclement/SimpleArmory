@@ -2,7 +2,7 @@
   import Item from "./Item.svelte";
 
   export let category;
-  export let getItemPath = (item) => item.link;
+  export let getItemPath;
   export let superCat = "";
 </script>
 

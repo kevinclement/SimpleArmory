@@ -30,6 +30,15 @@
 			} else {
 				document.body.classList.remove('dark')
 			}
+
+			const isClassic= value.itemSkin === 'classic';
+			if (isClassic) {
+				document.body.classList.add('itemSkinClassic')
+				document.body.classList.remove('itemSkinNew')
+			} else {
+				document.body.classList.add('itemSkinNew')
+				document.body.classList.remove('itemSkinClassic')
+			}
 		});
 
         getCharInfoFromURL();
@@ -54,6 +63,8 @@
 		getDarkMode(window, (isDark) => {
 			$preferences.theme = isDark ? 'dark' : 'light'
 		})
+
+		$preferences.itemSkin = localStorage.getItem('itemSkin') ?? 'classic';
 	})
 
     function getCharInfoFromURL() {

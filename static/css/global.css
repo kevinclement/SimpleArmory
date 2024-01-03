@@ -468,14 +468,32 @@ body {
 	  background-color: rgba(255, 255, 255, .25);
   }
   
-  .notCollected {
-    filter: grayscale(1) opacity(0.2);
-    transition: filter .25s ease
-  }
+.itemSkinNew .notCollected {
+  filter: grayscale(1) opacity(0.2);
+  transition: filter .25s ease
+}
 
-  .notCollected:hover {
-    filter: grayscale(0) opacity(1);
-  }
+.itemSkinNew .notCollected:hover {
+  filter: grayscale(0) opacity(1);
+}
+
+.itemSkinClassic .notCollected {
+  border: 1px dashed grey;
+}
+
+.itemSkinClassic .notCollected img {
+  display: none;
+}
+
+body.dark.itemSkinClassic .notCollected {
+  border: 1px dashed rgba(255, 255, 255, .25);
+}
+
+body.dark.itemSkinClassic a.thumbnail.notCollected:hover,
+body.dark.itemSkinClassic a.thumbnail.notCollected:focus,
+body.dark.itemSkinClassic a.thumbnail.active {
+  border: 1px dashed rgba(255, 255, 255, .75);
+}
   
   body.dark .signin-label,
   body.dark .signin-name {

@@ -3,7 +3,7 @@
   import { getImageSrc } from "$util/utils";
 
   export let item;
-  export let getItemPath;
+  export let getItemPath = (item) => item.link;
 
   const href = "//" + settings.WowHeadUrl + "/" + getItemPath(item);
 </script>
