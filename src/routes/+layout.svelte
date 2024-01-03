@@ -19,6 +19,7 @@
 	import Error from '$pages/Error.svelte';
 	
 	import { onMount } from 'svelte'
+  import Settings from '../pages/Settings.svelte';
 
 	let _errorCount = 0;
     onMount(() => {
@@ -159,6 +160,10 @@
 			<!-- reputations -->
 			{:else if $page === 'reputation'}
 			<Reputations></Reputations>
+
+			<!-- settings -->
+			{:else if $page === 'settings'}
+			<Settings></Settings>
 
 			{/if}
 		{:else}

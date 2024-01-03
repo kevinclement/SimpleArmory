@@ -102,6 +102,9 @@ body {
   .dropdown-menu > li:hover > .dropdown-submenu {
     display: block;
   }
+  .dropdown-menu>li>* {
+    padding: 3px 20px
+  }
   .caret-right {
     display: inline-block;
     width: 0;
@@ -152,12 +155,10 @@ body {
   }
   .signin-label {
 	  color: #767676;
-	  padding: 3px 20px;
   }
   .signin-name {
 	  color: #767676;
 	  font-weight: 600;
-	  padding: 3px 20px;
     white-space: nowrap;
     text-transform: capitalize;
   }
