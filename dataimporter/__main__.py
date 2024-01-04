@@ -12,6 +12,8 @@ from .realms import RealmFixer
 from .titles import TitleFixer
 from .toys import ToyFixer
 
+from .providers import wago
+
 FIXERS = {
     'achievements': (AchievementFixer, ['achievements.json']),
     'heirlooms': (HeirloomFixer, ['heirlooms.json']),
@@ -77,6 +79,11 @@ def parse_args():
         default=False,
         help="Reformat the data files only, do not import any data"
     )
+    parser.add_argument(
+        '--print-versions',
+        action='store_true',
+        help="Print the available versions we can update to"
+    )
     args = parser.parse_args()
     return args
 
@@ -84,6 +91,11 @@ def parse_args():
 def main():
     logging.basicConfig(level=logging.INFO)
     args = parse_args()
+
+    if args.print_versions:
+        wago.get_available_build_versions()
+        return
+
     for fixer_name in args.fixers:
         fixer_cls, paths = FIXERS[fixer_name]
         json_paths = [args.datadir / p for p in paths]

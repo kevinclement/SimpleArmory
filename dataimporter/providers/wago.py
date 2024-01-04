@@ -6,7 +6,6 @@ import html
 import json
 import re
 
-
 def csv_to_list(csv_text, **kwargs):
     return list(csv.DictReader(csv_text.splitlines(), **kwargs))
 
@@ -61,6 +60,31 @@ class WowToolsClient:
                 f"No matching version found for build {build} in table"
                 f" {table_name}. Available versions: [{versions_error_msg}]."
             )
+    
+    async def get_available_build_versions(self):
+        # NOTE: passing in mount here for table, I think any table we 
+        # pass or use should be the same, shouldn't need to specify
+        versions = (await self.get_table_versions('mount'))
+        versions.sort(
+            key=lambda s: list(map(int, s.split('.'))),
+            reverse=True
+        )
+
+        mainBuilds = {}
+        print("Versions available:")
+        for v in versions:
+            vparts = v.split('.')
+            mainBuild =  vparts[0] + "." + vparts[1] + "." + vparts[2]
+            
+            if mainBuild not in mainBuilds:
+                mainBuilds[mainBuild] = []
+
+            mainBuilds[mainBuild].append(vparts[3])
+        
+        for mainBuild in list(mainBuilds):
+            print(mainBuild)
+            for minorBuild in mainBuilds[mainBuild]:
+                print("  " + mainBuild + "." + minorBuild + " ")
 
     async def get_table(self, table_name, build=None):
         build = (await self.get_matching_build_version(table_name, build))
@@ -79,3 +103,11 @@ def get_table(table_name, build=None):
         async with WowToolsClient() as c:
             return (await c.get_table(table_name, build=build))
     return asyncio.run(_get_table())
+
+@functools.lru_cache(maxsize=None)
+def get_available_build_versions():
+    print("Getting available versions from wago...")
+    async def _get_available_build_versions():
+        async with WowToolsClient() as c:
+            return (await c.get_available_build_versions())
+    return asyncio.run(_get_available_build_versions())
