@@ -42,13 +42,6 @@ body {
     font-size: 6px;
     text-align: center;
   }
-  .borderOn {
-	border: 1px dashed grey;
-  float: left;
-  }
-  .borderOff {
-	border: 0px;
-  }
   .progressRight {
 	float:right;
 	margin-top:10px;
@@ -109,6 +102,9 @@ body {
   .dropdown-menu > li:hover > .dropdown-submenu {
     display: block;
   }
+  .dropdown-menu>li>* {
+    padding: 3px 20px
+  }
   .caret-right {
     display: inline-block;
     width: 0;
@@ -159,12 +155,10 @@ body {
   }
   .signin-label {
 	  color: #767676;
-	  padding: 3px 20px;
   }
   .signin-name {
 	  color: #767676;
 	  font-weight: 600;
-	  padding: 3px 20px;
     white-space: nowrap;
     text-transform: capitalize;
   }
@@ -175,6 +169,7 @@ body {
 	  float:left;
 	  margin-bottom:5px;
 	  margin-top:0px;
+    border:0px;
   }
   .pbThumbnail {
 	margin-bottom:0px;
@@ -473,15 +468,32 @@ body {
 	  background-color: rgba(255, 255, 255, .25);
   }
   
-  body.dark .borderOn {
-	  border: 1px dashed rgba(255, 255, 255, .25);
-  }
-  
-  body.dark a.thumbnail.borderOn:hover,
-  body.dark a.thumbnail.borderOn:focus,
-  body.dark a.thumbnail.active {
-	  border: 1px dashed rgba(255, 255, 255, .75);
-  }
+.itemSkinNew .notCollected {
+  filter: grayscale(1) opacity(0.2);
+  transition: filter .25s ease
+}
+
+.itemSkinNew .notCollected:hover {
+  filter: grayscale(0) opacity(1);
+}
+
+.itemSkinClassic .notCollected {
+  border: 1px dashed grey;
+}
+
+.itemSkinClassic .notCollected img {
+  display: none;
+}
+
+body.dark.itemSkinClassic .notCollected {
+  border: 1px dashed rgba(255, 255, 255, .25);
+}
+
+body.dark.itemSkinClassic a.thumbnail.notCollected:hover,
+body.dark.itemSkinClassic a.thumbnail.notCollected:focus,
+body.dark.itemSkinClassic a.thumbnail.active {
+  border: 1px dashed rgba(255, 255, 255, .75);
+}
   
   body.dark .signin-label,
   body.dark .signin-name {

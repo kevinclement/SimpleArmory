@@ -203,7 +203,7 @@
 					</a>
 
 					<ul class="dropdown-menu" aria-labelledby="profileDrop">
-					  <li class="signin-label">Signed in as</li>
+					  <li class="signin-label"><span>Signed in as</span></li>
 					  <li><strong class="signin-name">{$character} @ {$realm}</strong></li>
 					  <li role="separator" class="divider"></li> 
 					  <li><a href="/#/">Signout</a></li>
@@ -221,6 +221,7 @@
 						  {/each}
 						</ul>
 					  </li>
+					  <li><a href="{getUrl($region, $realm, $character, 'settings')}">Settings</a></li>
 					  <li role="separator" class="divider"></li>
 					  <li><a href="https://github.com/kevinclement/SimpleArmory/issues" target="_blank">Report Bug</a></li>
 					</ul>
