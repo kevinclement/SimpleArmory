@@ -64,7 +64,7 @@
 			$preferences.theme = isDark ? 'dark' : 'light'
 		})
 
-		$preferences.itemSkin = localStorage.getItem('itemSkin') ?? 'classic';
+		$preferences.itemSkin = localStorage.getItem('itemSkin') ?? 'new';
 	})
 
     function getCharInfoFromURL() {
