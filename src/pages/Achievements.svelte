@@ -104,7 +104,7 @@
 {:then value}
 {#if achievements}
     {#each achievements.categories as category}
-        <Category {category} getItemPath={item => `achievement=${item.id}`} {superCat}></Category>
+        <Category {category} getItemPath={item => `achievement=${item.id}`} {superCat} subCategoriesKey={'subcats'} itemsKey={'achievements'}></Category>
     {/each}
 {/if}   
 {/await}
