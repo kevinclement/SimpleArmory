@@ -4,16 +4,18 @@
   export let category;
   export let getItemPath;
   export let superCat = "";
+  export let subCategoriesKey = "subCategories"
+  export let itemsKey = "items"
 </script>
 
 {#if category.name != superCat}
   <h3 class="categoryHeader">{category.name}</h3>
 {/if}
 
-{#each category.subCategories as subCategory}
+{#each category[subCategoriesKey] as subCategory}
   <div class="sect">
     <div class="subCatHeader">{subCategory.name}</div>
-    {#each subCategory.items as item}
+    {#each subCategory[itemsKey] as item}
       {#if $$slots.item}
         <slot name="item" {item} />
       {:else}
