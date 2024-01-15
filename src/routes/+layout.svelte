@@ -19,6 +19,7 @@
 	import Error from '$pages/Error.svelte';
 	
 	import { onMount } from 'svelte'
+  import Settings from '../pages/Settings.svelte';
 
 	let _errorCount = 0;
     onMount(() => {
@@ -28,6 +29,15 @@
 				document.body.classList.add('dark')
 			} else {
 				document.body.classList.remove('dark')
+			}
+
+			const isClassic= value.itemSkin === 'classic';
+			if (isClassic) {
+				document.body.classList.add('itemSkinClassic')
+				document.body.classList.remove('itemSkinNew')
+			} else {
+				document.body.classList.add('itemSkinNew')
+				document.body.classList.remove('itemSkinClassic')
 			}
 		});
 
@@ -53,6 +63,8 @@
 		getDarkMode(window, (isDark) => {
 			$preferences.theme = isDark ? 'dark' : 'light'
 		})
+
+		$preferences.itemSkin = localStorage.getItem('itemSkin') ?? 'new';
 	})
 
     function getCharInfoFromURL() {
@@ -159,6 +171,10 @@
 			<!-- reputations -->
 			{:else if $page === 'reputation'}
 			<Reputations></Reputations>
+
+			<!-- settings -->
+			{:else if $page === 'settings'}
+			<Settings></Settings>
 
 			{/if}
 		{:else}

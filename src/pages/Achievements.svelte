@@ -2,10 +2,10 @@
     import { onMount } from 'svelte'
     import { region, realm, character, category } from '$stores/user'
     import { getAchievements } from '$api/achievements'
-    import { percent, percentFormat, getTitle, getImageSrc } from '$util/utils'
-    import settings from '$util/settings'
+    import { percent, percentFormat, getTitle } from '$util/utils'
     import ProgressBar from '$components/ProgressBar.svelte';
     import Loading from '$components/Loading.svelte';
+    import Category from '$components/Category/Category.svelte';
 
     $: superCat = prettySuperCategory($category);
 
@@ -104,26 +104,7 @@
 {:then value}
 {#if achievements}
     {#each achievements.categories as category}
-        {#if category.name != superCat}
-            <h3 class="categoryHeader">{ category.name }</h3>
-        {/if}
-        {#each category.subcats as subcat}
-            <div class="sect">
-                <div class="subCatHeader">{ subcat.name }</div>
-                {#each subcat.achievements as achievement}
-                    <a 
-                        target="{settings.anchorTarget}"
-                        href="//{settings.WowHeadUrl}/achievement={achievement.id}"
-                        class="thumbnail"
-                        class:borderOn={!achievement.completed}
-                        class:borderOff={achievement.completed}
-                        rel={achievement.rel}>
-                        <img height="36" width="36" src="{getImageSrc(achievement)}" alt={achievement.icon}>
-                    </a>
-                {/each}
-            </div>
-        {/each}
-        <div class="clear"/>
+        <Category {category} getItemPath={item => `achievement=${item.id}`} {superCat} subCategoriesKey={'subcats'} itemsKey={'achievements'}></Category>
     {/each}
 {/if}   
 {/await}

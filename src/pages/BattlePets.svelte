@@ -7,6 +7,7 @@
     import ProgressBar from '$components/ProgressBar.svelte';
     import Loading from '$components/Loading.svelte';
     import ErrorInline from '$components/ErrorInline.svelte';
+    import Category from '$components/Category/Category.svelte';
 
     let showLevel
     let battlePets
@@ -66,29 +67,21 @@
 
 {#if battlePets}
 {#each battlePets.categories as category}
-  <h3 class="categoryHeader">{ category.name }</h3>
-
-  {#each category.subCategories as subCategory}
-    <div class="sect">
-        <div class="subCatHeader">{ subCategory.name }</div>
-        {#each subCategory.items as item}
-            <div class="pbCell">
-                <a 
-                  class="thumbnail pbThumbnail" 
-                  target="{settings.anchorTarget}"
-                  href="//{settings.WowHeadUrl}/battle-pet/{ item.ID }"
-                  class:borderOn={!item.collected}
-                  class:borderOff={item.collected}>
-	        	    <img height="36" width="36" src="{getImageSrc(item)}" alt>
-	        	    <div class="pbLevel" class:opacityOn={showLevel}>{ item.level }</div>
-	        	    <div class="pbBreed" class:opacityOn={showLevel}>{ item.breed }</div>
-	      	    </a> 
-	   		    <div class="pbQual" style="{ qualityToBackground(item) }"></div>        		      	
-            </div>
-        {/each}
-    </div>
-  {/each}
-  <div class="clear"/> 
+    <Category {category}>
+        <div class="pbCell" slot="item" let:item>
+            <a 
+            class="thumbnail pbThumbnail" 
+            target="{settings.anchorTarget}"
+            href="//{settings.WowHeadUrl}/battle-pet/{ item.ID }"
+            class:notCollected={!item.collected}
+            >
+                <img height="36" width="36" src="{ getImageSrc(item, true) }" alt>
+                <div class="pbLevel" class:opacityOn={showLevel}>{ item.level }</div>
+                <div class="pbBreed" class:opacityOn={showLevel}>{ item.breed }</div>
+            </a> 
+            <div class="pbQual" style="{ qualityToBackground(item) }"></div>        		      	
+        </div>
+    </Category>
 {/each}
 {:else}
 <ErrorInline page="pets"/>
