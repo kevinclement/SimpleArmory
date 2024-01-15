@@ -6592,16 +6592,22 @@
         "id": "c1d734dd",
         "items": [
           {
-            "ID": 1450,
-            "icon": "item_hearthstone_card",
-            "itemId": 211946,
-            "name": "Hearthstone Game Table"
-          },
-          {
             "ID": 1351,
             "icon": "5333528",
             "itemId": 208704,
             "name": "Deepdweller's Earthen Hearthstone"
+          },
+          {
+            "ID": 1450,
+            "icon": "inv_hearthstone_gameboard",
+            "itemId": 211946,
+            "name": "Hearthstone Game Table"
+          },
+          {
+            "ID": 1456,
+            "icon": "inv_hearthstone_gold",
+            "itemId": 212337,
+            "name": "Stone of the Hearth"
           }
         ],
         "name": "Hearthstone"
