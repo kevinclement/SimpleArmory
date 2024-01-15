@@ -1403,6 +1403,28 @@
         "name": "Pre-launch Event"
       },
       {
+        "id": "ccda057e",
+        "items": [
+          {
+            "ID": 4411,
+            "creatureId": 216930,
+            "icon": "inv_squirrelflying_silver",
+            "itemId": 213133,
+            "name": "Reese",
+            "spellid": 433791
+          },
+          {
+            "ID": 4412,
+            "creatureId": 216933,
+            "icon": "inv_riverotterlargemount01_blue",
+            "itemId": 213134,
+            "name": "Hap'he",
+            "spellid": 433802
+          }
+        ],
+        "name": "Archive"
+      },
+      {
         "id": "332ea2f0",
         "items": [
           {
@@ -1560,11 +1582,19 @@
           {
             "ID": 3582,
             "creatureId": 205795,
-            "icon": "4777763",
+            "icon": "inv_magicalfishpet",
             "itemId": 206174,
             "name": "Blub",
             "spellid": 412389
-          }
+          },
+          {
+            "ID": 4264,
+            "creatureId": 209163,
+            "icon": "5003505",
+            "itemId": 208446,
+            "name": "Fyrn",
+            "spellid": 419467
+          }          
         ],
         "name": "Unknown"
       }
@@ -7702,6 +7732,14 @@
             "itemId": 141532,
             "name": "Noblegarden Bunny",
             "spellid": 227113
+          },
+          {
+            "ID": 4409,
+            "creatureId": 215565,
+            "icon": "inv_duckbaby_pink",
+            "itemId": 212786,
+            "name": "Lovely Duckling",
+            "spellid": 433085
           }
         ],
         "name": "Noblegarden"
@@ -10146,6 +10184,14 @@
             "itemId": 190608,
             "name": "Crushhoof",
             "spellid": 367778
+          },
+          {
+            "ID": 4421,
+            "creatureId": 217530,
+            "icon": "inv_lunarrabbitpet",
+            "itemId": 213556,
+            "name": "Hoplet",
+            "spellid": 434792
           }
         ],
         "name": "Blizzard Store"
@@ -10608,6 +10654,19 @@
       {
         "items": [
           {
+            "ID": 4406,
+            "creatureId": 216179,
+            "icon": "inv_mousehearthstone",
+            "itemId": 212606,
+            "name": "Sarge",
+            "spellid": 432486
+          }
+        ],
+        "name": "Hearthstone"
+      },
+      {
+        "items": [
+          {
             "ID": 1828,
             "creatureId": 103159,
             "icon": "inv_pet_babywinston",
@@ -10939,6 +10998,38 @@
             "itemId": 210409,
             "name": "Aura",
             "spellid": 425472
+          },
+          {
+            "ID": 4402,
+            "creatureId": 214286,
+            "icon": "inv_mouserock_teal",
+            "itemId": 211432,
+            "name": "Teele",
+            "spellid": 429423
+          },
+          {
+            "ID": 4407,
+            "creatureId": 216345,
+            "icon": "inv_ladybugpet_red",
+            "itemId": 212700,
+            "name": "Nelle",
+            "spellid": 432844
+          },
+          {
+            "ID": 4408,
+            "creatureId": 216379,
+            "icon": "inv_ladybugpet_pink",
+            "itemId": 212722,
+            "name": "Buggsy",
+            "spellid": 432888
+          },
+          {
+            "ID": 4410,
+            "creatureId": 216455,
+            "icon": "inv_ladybugpet_yellow",
+            "itemId": 212791,
+            "name": "Beetriz",
+            "spellid": 433098
           }
         ],
         "name": "Trading Post"
