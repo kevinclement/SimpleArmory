@@ -12,17 +12,25 @@ from .realms import RealmFixer
 from .titles import TitleFixer
 from .toys import ToyFixer
 
+from .providers import wago
+
 FIXERS = {
     'achievements': (AchievementFixer, ['achievements.json']),
     'heirlooms': (HeirloomFixer, ['heirlooms.json']),
     'mounts': (MountFixer, ['mounts.json']),
     'pets': (PetFixer, ['pets.json', 'battlepets.json']),
-    'realms': (RealmFixer, ['servers.eu.json', 'servers.us.json']),
     'reputations': (FactionFixer, ['factions.json']),
     'titles': (TitleFixer, ['titles.json']),
     'toys': (ToyFixer, ['toys.json']),
 }
 
+# BUG: #569: looks like realm graphql API isn't working anymore
+# I'm getting error: PersistedQueryNotSupported, which seems to suggest
+# that maybe it needs auth now too?  I haven't found documentation anywhere 
+# for the graphql API, so kind of blocked here.  I suspect we'll need to switch to
+# official wow api with a token, which is a bit of a pain. 
+#
+#    'realms': (RealmFixer, ['servers.eu.json', 'servers.us.json']),
 
 def parse_args():
     def fixer_arg(value: str):
@@ -71,6 +79,11 @@ def parse_args():
         default=False,
         help="Reformat the data files only, do not import any data"
     )
+    parser.add_argument(
+        '--print-versions',
+        action='store_true',
+        help="Print the available versions we can update to"
+    )
     args = parser.parse_args()
     return args
 
@@ -78,6 +91,11 @@ def parse_args():
 def main():
     logging.basicConfig(level=logging.INFO)
     args = parse_args()
+
+    if args.print_versions:
+        wago.get_available_build_versions()
+        return
+
     for fixer_name in args.fixers:
         fixer_cls, paths = FIXERS[fixer_name]
         json_paths = [args.datadir / p for p in paths]
