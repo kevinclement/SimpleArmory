@@ -8028,6 +8028,48 @@
               "name": "Cities"
             },
             {
+              "id": "941c7db0",
+              "items": [
+                {
+                  "icon": "achievement_bg_trueavshutout",
+                  "id": 19411,
+                  "points": 5,
+                  "title": "Battleground Blitz Novice"
+                },
+                {
+                  "icon": "achievement_bg_trueavshutout",
+                  "id": 19412,
+                  "points": 10,
+                  "title": "Battleground Blitz Apprentice"
+                },
+                {
+                  "icon": "achievement_bg_trueavshutout",
+                  "id": 19413,
+                  "points": 15,
+                  "title": "Battleground Blitz Veteran"
+                },
+                {
+                  "icon": "achievement_bg_tophealer_soa",
+                  "id": 19416,
+                  "points": 15,
+                  "title": "Learning the Ropes"
+                },
+                {
+                  "icon": "achievement_bg_tophealer_soa",
+                  "id": 19417,
+                  "points": 10,
+                  "title": "Brawlroom Blitzer"
+                },
+                {
+                  "icon": "achievement_bg_tophealer_soa",
+                  "id": 19418,
+                  "points": 15,
+                  "title": "Battle-scarred Battler"
+                }
+              ],
+              "name": "Battleground Blitz"
+            },
+            {
               "id": "549f401b",
               "items": [
                 {
@@ -8090,48 +8132,6 @@
                 }
               ],
               "name": "Other"
-            },
-            {
-              "id": "941c7db0",
-              "items": [
-                {
-                  "icon": "achievement_bg_trueavshutout",
-                  "id": 19411,
-                  "points": 5,
-                  "title": "Battleground Blitz Novice"
-                },
-                {
-                  "icon": "achievement_bg_trueavshutout",
-                  "id": 19412,
-                  "points": 10,
-                  "title": "Battleground Blitz Apprentice"
-                },
-                {
-                  "icon": "achievement_bg_trueavshutout",
-                  "id": 19413,
-                  "points": 15,
-                  "title": "Battleground Blitz Veteran"
-                },
-                {
-                  "icon": "achievement_bg_tophealer_soa",
-                  "id": 19416,
-                  "points": 15,
-                  "title": "Learning the Ropes"
-                },
-                {
-                  "icon": "achievement_bg_tophealer_soa",
-                  "id": 19417,
-                  "points": 10,
-                  "title": "Brawlroom Blitzer"
-                },
-                {
-                  "icon": "achievement_bg_tophealer_soa",
-                  "id": 19418,
-                  "points": 15,
-                  "title": "Battle-scarred Battler"
-                }
-              ],
-              "name": "[R]"
             }
           ]
         },
@@ -41722,13 +41722,7 @@
                   "notObtainable": true,
                   "points": 0,
                   "title": "Upper Blackrock Spire (Classic)"
-                }
-              ],
-              "name": ""
-            },
-            {
-              "id": "21d3b8d8",
-              "items": [
+                },
                 {
                   "icon": "achievement_garrison_horde_pve",
                   "id": 11218,
@@ -41736,13 +41730,31 @@
                   "title": "There's a Boss In There"
                 },
                 {
+                  "icon": "inv_jewelry_ring_65",
+                  "id": 9493,
+                  "points": 0,
+                  "title": "They Burn, Burn, Burn"
+                }                
+              ],
+              "name": ""
+            },
+            {
+              "id": "84b001dc",
+              "items": [
+                {
                   "icon": "inv_relics_hourglass",
                   "id": 11181,
                   "points": 0,
                   "title": "Legion Keymaster"
+                },
+                {
+                  "icon": "inv_relics_hourglass",
+                  "id": 13075,
+                  "points": 0,
+                  "title": "Battle for Azeroth Keymaster"
                 }
               ],
-              "name": "Legion"
+              "name": "Keystones"
             },
             {
               "id": "b5ea1e2e",
@@ -42251,31 +42263,7 @@
                 }
               ],
               "name": "Challenge Mode: Draenor"
-            },
-            {
-              "id": "1b0e4702",
-              "items": [
-                {
-                  "icon": "inv_relics_hourglass",
-                  "id": 13075,
-                  "points": 0,
-                  "title": "Battle for Azeroth Keymaster"
-                }
-              ],
-              "name": "[R]Keystone"
-            },
-            {
-              "id": "84b001dc",
-              "items": [
-                {
-                  "icon": "inv_jewelry_ring_65",
-                  "id": 9493,
-                  "points": 0,
-                  "title": "They Burn, Burn, Burn"
-                }
-              ],
-              "name": "[R]The Everbloom"
-            }
+            }            
           ]
         },
         {
