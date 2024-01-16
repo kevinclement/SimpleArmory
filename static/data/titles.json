@@ -271,6 +271,7 @@
             "icon": "inv_achievement_raiddragon_sarkareth",
             "id": 18176,
             "name": "Famed Slayer of Sarkareth",
+            "notObtainable": true,
             "titleId": 506,
             "type": "achievement"
           },
@@ -414,9 +415,24 @@
             "icon": "achievement_challengemode_platinum",
             "id": 17846,
             "name": "The Smoldering Hero",
+            "notObtainable": true,
             "titleId": 504,
             "type": "achievement"
-          }
+          },
+          {
+            "icon": "achievement_challengemode_gold",
+            "id": 19010,
+            "name": "The Dreaming",
+            "titleId": 517,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_challengemode_platinum",
+            "id": 19449,
+            "name": "The Dreaming Hero",
+            "titleId": 531,
+            "type": "achievement"
+          }          
         ],
         "name": "Mythic Plus"
       },
@@ -2682,6 +2698,7 @@
             "icon": "achievement_featsofstrength_gladiator_07",
             "id": 17767,
             "name": "Obsidian Legend",
+            "notObtainable": true,
             "titleId": 500,
             "type": "achievement"
           },
@@ -2690,6 +2707,13 @@
             "id": 19443,
             "name": "Battle Mender",
             "titleId": 529,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 19131,
+            "name": "Verdant Legend",
+            "titleId": 525,
             "type": "achievement"
           }
         ],
@@ -2717,7 +2741,15 @@
             "icon": "achievement_featsofstrength_gladiator_07",
             "id": 17764,
             "name": "Obsidian Gladiator",
+            "notObtainable": true,
             "titleId": 499,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 19132,
+            "name": "Verdant Gladiator",
+            "titleId": 526,
             "type": "achievement"
           }
         ],
@@ -3144,13 +3176,6 @@
             "notObtainable": true,
             "titleId": 446,
             "type": "achievement"
-          },
-          {
-            "icon": "achievement_challengemode_gold",
-            "id": 19010,
-            "name": "The Dreaming",
-            "titleId": 517,
-            "type": "achievement"
           }
         ],
         "name": "Mythic Plus"
@@ -3171,13 +3196,6 @@
             "name": "The Cryptic Hero",
             "notObtainable": true,
             "titleId": 458,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_challengemode_platinum",
-            "id": 19449,
-            "name": "The Dreaming Hero",
-            "titleId": 531,
             "type": "achievement"
           }
         ],
@@ -3649,21 +3667,7 @@
             "notObtainable": true,
             "titleId": 461,
             "type": "achievement"
-          },
-          {
-            "icon": "achievement_featsofstrength_gladiator_07",
-            "id": 19131,
-            "name": "Verdant Legend",
-            "titleId": 525,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_featsofstrength_gladiator_07",
-            "id": 19132,
-            "name": "Verdant Gladiator",
-            "titleId": 526,
-            "type": "achievement"
-          }
+          }          
         ],
         "name": "End-of-season Arena"
       },
