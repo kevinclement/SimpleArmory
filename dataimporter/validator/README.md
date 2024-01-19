@@ -1,0 +1,1 @@
+Wrote these simple validator scripts to just make sure our DB when compared against live blizzard APIs db we aren't missing anything.  Thought I should just check this work in for maybe later use as well.
