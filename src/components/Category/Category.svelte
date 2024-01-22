@@ -2,7 +2,7 @@
   import Item from "./Item.svelte";
 
   export let category;
-  export let getItemPath;
+  export let getItemPath = undefined;
   export let superCat = "";
   export let subCategoriesKey = "subCategories"
   export let itemsKey = "items"
