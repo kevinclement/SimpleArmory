@@ -8882,59 +8882,34 @@
         "items": [
           {
             "ID": 41,
-            "allowableClasses": [
-              2
-            ],
-            "allowableRaces": [
-              1,
-              3
-            ],
+            "side": "A",
             "icon": "Spell_Nature_Swiftness",
             "name": "Warhorse",
             "spellid": 13819
           },
           {
             "ID": 84,
-            "allowableClasses": [
-              2
-            ],
-            "allowableRaces": [
-              1,
-              3
-            ],
+            "side": "A",
             "icon": "Ability_Mount_Charger",
             "name": "Charger",
             "spellid": 23214
           },
           {
             "ID": 150,
-            "allowableClasses": [
-              2
-            ],
-            "allowableRaces": [
-              10
-            ],
+            "side": "H",
             "icon": "Spell_Nature_Swiftness",
             "name": "Thalassian Warhorse",
             "spellid": 34769
           },
           {
             "ID": 149,
-            "allowableClasses": [
-              2
-            ],
-            "allowableRaces": [
-              10
-            ],
+            "side": "H",
             "icon": "Ability_Mount_Charger",
             "name": "Thalassian Charger",
             "spellid": 34767
           },
           {
             "ID": 338,
-            "allowableClasses": [
-              2
-            ],
             "icon": "Ability_Mount_Charger",
             "itemId": 47179,
             "name": "Argent Charger",
@@ -8942,96 +8917,56 @@
           },
           {
             "ID": 350,
-            "allowableClasses": [
-              2
-            ],
-            "allowableRaces": [
-              6
-            ],
+            "side": "H",
             "icon": "Ability_Mount_Kodo_03",
             "name": "Sunwalker Kodo",
             "spellid": 69820
           },
           {
             "ID": 351,
-            "allowableClasses": [
-              2
-            ],
-            "allowableRaces": [
-              6
-            ],
+            "side": "H",
             "icon": "ability_mount_kodosunwalkerelite",
             "name": "Great Sunwalker Kodo",
             "spellid": 69826
           },
           {
             "ID": 367,
-            "allowableClasses": [
-              2
-            ],
-            "allowableRaces": [
-              11
-            ],
             "icon": "Spell_Nature_Swiftness",
             "name": "Exarch's Elekk",
+            "side": "A",
             "spellid": 73629
           },
           {
             "ID": 368,
-            "allowableClasses": [
-              2
-            ],
-            "allowableRaces": [
-              11
-            ],
+            "side": "A",
             "icon": "Ability_Mount_Charger",
             "name": "Great Exarch's Elekk",
             "spellid": 73630
           },
           {
             "ID": 1225,
-            "allowableClasses": [
-              2
-            ],
-            "allowableRaces": [
-              31
-            ],
+            "side": "H",
             "icon": "inv_zandalaripaladinmount",
             "name": "Crusader's Direhorn",
             "spellid": 290608
           },
           {
             "ID": 1046,
-            "allowableClasses": [
-              2
-            ],
-            "allowableRaces": [
-              34
-            ],
+            "side": "A",
             "icon": "inv_dwarfpaladinram_red",
             "name": "Darkforge Ram",
             "spellid": 270562
           },
           {
             "ID": 1047,
-            "allowableClasses": [
-              2
-            ],
-            "allowableRaces": [
-              34
-            ],
+            "side": "A",
             "icon": "inv_dwarfpaladinram_gold",
             "name": "Dawnforge Ram",
             "spellid": 270564
           },
           {
             "ID": 1568,
-            "allowableClasses": [
-              2
-            ],
-            "allowableRaces": [
-              30
-            ],
+            "side": "A",
             "icon": "inv_lightforgedtalbuk",
             "name": "Lightforged Ruinstrider",
             "spellid": 363613
@@ -9042,11 +8977,8 @@
       {
         "id": "1fadff8c",
         "items": [
-          {
+          { 
             "ID": 780,
-            "allowableClasses": [
-              12
-            ],
             "icon": "inv_dhmount_felsaber",
             "name": "Felsaber",
             "spellid": 200175
@@ -9059,18 +8991,12 @@
         "items": [
           {
             "ID": 17,
-            "allowableClasses": [
-              9
-            ],
             "icon": "Spell_Nature_Swiftness",
             "name": "Felsteed",
             "spellid": 5784
           },
           {
             "ID": 83,
-            "allowableClasses": [
-              9
-            ],
             "icon": "Ability_Mount_Dreadsteed",
             "name": "Dreadsteed",
             "spellid": 23161
@@ -9083,18 +9009,12 @@
         "items": [
           {
             "ID": 221,
-            "allowableClasses": [
-              6
-            ],
             "icon": "Spell_DeathKnight_SummonDeathCharger",
             "name": "Acherus Deathcharger",
             "spellid": 48778
           },
           {
             "ID": 236,
-            "allowableClasses": [
-              6
-            ],
             "icon": "ability_mount_ebonblade",
             "itemId": 40775,
             "name": "Winged Steed of the Ebon Blade",
