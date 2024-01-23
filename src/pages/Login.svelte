@@ -116,6 +116,7 @@
 
 <svelte:head>
 	<title>{tmpTitle()}</title>
+  <meta property="kevinprop" content="clement" />
 </svelte:head>
 
 <div class="modal fade" bind:this={modal} id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
