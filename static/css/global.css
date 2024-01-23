@@ -324,6 +324,9 @@ body {
 		  width:1170px
 	  }
   }
+  .dropdown.open {
+	  background-color: #f8f8f8;
+  }
   
   /* ## Setting Page ############################### */
   .settingsPage .input-group {
@@ -485,6 +488,42 @@ body {
   display: none;
 }
 
+.a-dot {
+  fill: #111;
+}
+
+/* TODO: MOVE TO CALENDAR */
+.cal table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.cal td {	
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
+  color: #333;
+  border: 1px solid #ccc;
+  font-weight: normal;
+  vertical-align: top;
+  text-align: left;	
+}
+.cal td div 
+{
+  width: 96px;
+  height: 72px;
+  margin: 2px;
+  overflow-y: auto
+}
+.cal td.dayspacer {
+  border: 0
+}   
+
+
+/* ## DARK MODE RULES ####################################### */
+body.dark .a-dot {
+  fill: #fff;
+}
+
 body.dark.itemSkinClassic .notCollected {
   border: 1px dashed rgba(255, 255, 255, .25);
 }
@@ -495,108 +534,118 @@ body.dark.itemSkinClassic a.thumbnail.active {
   border: 1px dashed rgba(255, 255, 255, .75);
 }
   
-  body.dark .signin-label,
-  body.dark .signin-name {
-	  color: rgba(255, 255, 255, .7);
-  }
-  
-  body.dark .table > thead > tr > th {
-	  border-bottom: 2px solid #646464;
-  }
-  
-  body.dark .cal td:not(.dayspacer) {
-	  border: 1px solid #646464;
-  }
-  
-  body.dark .table > thead > tr > th,
-  body.dark .table > tbody > tr > th,
-  body.dark .table > tfoot > tr > th,
-  body.dark .table > thead > tr > td,
-  body.dark .table > tbody > tr > td,
-  body.dark .table > tfoot > tr > td {
-	  border-top: 1px solid #646464;
-  }
-  
-  body.dark .table > tbody + tbody {
-	  border-top: 2px solid #646464;
-  }
-  
-  body.dark code {
-	  background-color: #212121;
-  }
-  
-  body.dark .bug-footer {
-	  background-color: #212121;
-	  border-color: #424242;
-  }
-  
-  /* Dark modal */
-  body.dark .modal-content {
-	  background-color: #303030;
-  }
-  
-  body.dark .modal-header {
-	  border-bottom: 1px solid #424242;
-  }
-  
-  body.dark .modal-footer {
-	  border-top: 1px solid #424242;
-  }
-  
-  /* Dark input */
-  body.dark .input-group-label {
-	  background-color: #303030;
-	  border-color: #424242;
-	  color: #ffffff;
-  }
-  
-  body.dark .ui-select-bootstrap .ui-select-choices-row.active > a {
-	  background-color: #424242;
-  }
-  
-  body.dark .ui-select-choices-row-inner div {
-	  color: #ffffff;
-  }
-  
-  body.dark textarea,
-  body.dark .btn-default,
-  body.dark select,
-  body.dark .form-control,
-  body.dark .cal select {
-	  background-color: #212121;
-	  border-color: #424242 !important;
-	  color: #ffffff;
-  }
-  
-  body.dark .btn-default:active,
-  body.dark .btn-default:hover,
-  body.dark .bnt-default:focus {
-	  background-color: #424242;
-	  color: #ffffff;
-  }
+body.dark .signin-label,
+body.dark .signin-name {
+  color: rgba(255, 255, 255, .7);
+}
 
-/* TODO: MOVE TO CALENDAR */
-.cal table {
-    border-collapse: collapse;
-    border-spacing: 0;
+body.dark .table > thead > tr > th {
+  border-bottom: 2px solid #646464;
 }
-.cal td {	
-    width: 100px;
-    min-width: 100px;
-    height: 100px;
-    color: #333;
-    border: 1px solid #ccc;
-    font-weight: normal;
-    vertical-align: top;
-    text-align: left;	
+
+body.dark .cal td:not(.dayspacer) {
+  border: 1px solid #646464;
 }
-.cal td div 
-{
-    width: 96px;
-    height: 72px;
-    margin: 2px;
-    overflow-y: auto
+
+body.dark .table > thead > tr > th,
+body.dark .table > tbody > tr > th,
+body.dark .table > tfoot > tr > th,
+body.dark .table > thead > tr > td,
+body.dark .table > tbody > tr > td,
+body.dark .table > tfoot > tr > td {
+  border-top: 1px solid #646464;
 }
-.cal td.dayspacer {
-    border: 0
-}   
+
+body.dark .table > tbody + tbody {
+  border-top: 2px solid #646464;
+}
+
+body.dark .table .table {
+  background-color: #212121;
+}
+
+body.dark table {
+  background-color: transparent;
+}
+body.dark code {
+  background-color: #212121;
+}
+
+body.dark .bug-footer {
+  background-color: #212121;
+  border-color: #424242;
+}
+
+/* Dark modal */
+body.dark .modal-content {
+  background-color: #303030 !important;
+  border: 1px solid #444 !important;
+}
+
+body.dark .modal-header {
+  border-bottom: 1px solid #424242 !important;;
+}
+
+body.dark .modal-footer {
+  border-top: 1px solid #424242 !important;
+}
+
+/* Dark input */
+body.dark .input-group-label {
+  background-color: #303030;
+  border-color: #424242;
+  color: #ffffff;
+}
+
+body.dark .ui-select-bootstrap .ui-select-choices-row.active > a {
+  background-color: #424242;
+}
+
+body.dark .ui-select-choices-row-inner div {
+  color: #ffffff;
+}
+
+body.dark textarea,
+body.dark .btn-default,
+body.dark select,
+body.dark .form-control,
+body.dark .cal select {
+  background-color: #212121;
+  border-color: #424242 !important;
+  color: #ffffff;
+}
+
+body.dark .btn-default:active,
+body.dark .btn-default:hover,
+body.dark .bnt-default:focus {
+  background-color: #424242;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+body.dark .btn:active,
+body.dark .btn.active {
+    background-image: none;
+    outline: 0;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+body.dark .btn.disabled,
+body.dark .btn[disabled],
+body.dark fieldset[disabled] .btn {
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    opacity: 0.65;
+    box-shadow: none;
+}
+
+body.dark a.btn.disabled,
+body.dark fieldset[disabled] a.btn {
+    pointer-events: none;
+}
+
+body.dark .cal td {	
+  color: #fff;
+}
+
+/* ########################################################## */
