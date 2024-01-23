@@ -108,10 +108,14 @@
       return option.name.replace(new RegExp(escapeRegexp(filterText), 'gi'), '<b>$&</b>');
     };
 
+    const tmpTitle = () => {
+      return "hash: '" + window.document.location.hash + "' loc: " + window.document.location;
+    }
+
 </script>
 
 <svelte:head>
-	<title>{getTitle('', 'Login')}</title>
+	<title>{tmpTitle()}</title>
 </svelte:head>
 
 <div class="modal fade" bind:this={modal} id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

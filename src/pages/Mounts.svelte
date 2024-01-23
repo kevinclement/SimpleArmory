@@ -37,7 +37,7 @@
         }
         else {
             navigate("collectable/mounts/planner", $region, $realm, $character)
-        }        
+        }
     }
 </script>
 
