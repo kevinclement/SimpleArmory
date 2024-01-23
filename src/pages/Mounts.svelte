@@ -44,6 +44,7 @@
 <svelte:head>
 	<title>{getTitle($character, 'Mounts')}</title>
     <meta property="og:title" content={getTitle($character, 'Mounts')} />
+    <meta property="og:description" content="Simplified armory site for World of Warcraft" />
 	<meta property="og:type" content="website" />
 	<meta property="og:image" content="https://github.com/kevinclement/SimpleArmory/raw/master/screenshot.png" />
 </svelte:head>
