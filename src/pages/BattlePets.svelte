@@ -76,8 +76,8 @@
             class:notCollected={!item.collected}
             >
                 <img height="36" width="36" src="{ getImageSrc(item, true) }" alt>
-                <div class="pbLevel" class:opacityOn={showLevel}>{ item.level }</div>
-                <div class="pbBreed" class:opacityOn={showLevel}>{ item.breed }</div>
+                {#if item.level}<div class="pbLevel" class:opacityOn={showLevel}>{ item.level }</div>{/if}
+                {#if item.breed}<div class="pbBreed" class:opacityOn={showLevel}>{ item.breed }</div>{/if}
             </a> 
             <div class="pbQual" style="{ qualityToBackground(item) }"></div>        		      	
         </div>
