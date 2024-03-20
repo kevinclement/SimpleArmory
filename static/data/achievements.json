@@ -530,6 +530,12 @@
                   "id": 17785,
                   "points": 25,
                   "title": "Que Zara(lek), Zara(lek)"
+                },
+                {
+                  "icon": "achievement_zone_forbiddenreach",
+                  "id": 19463,
+                  "points": 20,
+                  "title": "Dragon Quests"
                 }
               ],
               "name": "Zones"
@@ -590,6 +596,12 @@
                   "id": 19026,
                   "points": 10,
                   "title": "Defenders of the Dream"
+                },
+                {
+                  "icon": "ability_dragonriding_dragonriding01",
+                  "id": 20206,
+                  "points": 5,
+                  "title": "Champion of the Dragonflights"
                 }
               ],
               "name": "Campaign"
@@ -762,6 +774,17 @@
                 }
               ],
               "name": "Storm's Fury"
+            },
+            {
+              "items": [
+                {
+                  "icon": "ability_evoker_rewind2",
+                  "id": 19507,
+                  "points": 5,
+                  "title": "Fringe Benefits"
+                }
+              ],
+              "name":"Eon's Fringe"
             },
             {
               "id": "1fed5c08",
@@ -4196,6 +4219,47 @@
           "name": "Dragon Isles",
           "subcats": [
             {
+              "items": [
+                {
+                  "icon": "ability_dragonriding_evasivemaneuvers01",
+                  "id": 19486,
+                  "points": 40,
+                  "title": "Across the Isles"
+                },
+                {
+                  "icon": "achievement_zone_wakingshores",
+                  "id": 19479,
+                  "points": 20,
+                  "title": "Wake Me Up"
+                },
+                {
+                  "icon": "achievement_dungeon_centaurplains",
+                  "id": 19481,
+                  "points": 20,
+                  "title": "Centaur of Attention"
+                },
+                {
+                  "icon": "inv_tabard_tuskarr_c_01",
+                  "id": 19482,
+                  "points": 20,
+                  "title": "Army of the Fed"
+                },
+                {
+                  "icon": "achievement_dungeon_dragonacademy",
+                  "id": 19483,
+                  "points": 20,
+                  "title": "Flight Club"
+                },
+                {
+                  "icon": "inv_tabard_a_75timewalker",
+                  "id": 19485,
+                  "points": 20,
+                  "title": "Closing Time"
+                }
+              ],
+              "name": "Meta"
+            },
+            {
               "id": "b336aae4",
               "items": [
                 {
@@ -5165,7 +5229,7 @@
                   "title": "Super Duper Bloom"
                 },
                 {
-                  "icon": "inv_jewelcrafting_crimsonowl",
+                  "icon": "inv_magicalowlbearmount",
                   "id": 19313,
                   "points": 5,
                   "title": "Bloom Man Group"
@@ -10252,16 +10316,16 @@
               "items": [
                 {
                   "icon": "achievement_featsofstrength_gladiator_04",
-                  "id": 17801,
-                  "notObtainable": true,
-                  "points": 0,
-                  "title": "Legend: Dragonflight Season 2"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_04",
                   "id": 19304,
                   "points": 0,
                   "title": "Legend: Dragonflight Season 3"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_04",
+                  "id": 19500,
+                  "points": 0,
+                  "notObtainable":true,
+                  "title": "Legend: Dragonflight Season 4"
                 }
               ],
               "name": "Rated Arena"
@@ -12430,7 +12494,7 @@
                   "id": 15399,
                   "points": 10,
                   "title": "Coming to Terms"
-                },              
+                },
                 {
                   "icon": "ability_paladin_handoflight",
                   "id": 15315,
@@ -13322,14 +13386,12 @@
                   "points": 10,
                   "title": "If It Pleases the Court"
                 },
-                
                 {
                   "icon": "spell_nature_polymorph_cow",
                   "id": 13716,
                   "points": 10,
                   "title": "Lactose Intolerant"
                 },
-                
                 {
                   "icon": "spell_azerite_essence08",
                   "id": 13768,
@@ -17062,7 +17124,7 @@
                   "id": 5305,
                   "points": 10,
                   "title": "Four Play"
-                },               
+                },
                 {
                   "icon": "Ability_Druid_GaleWinds",
                   "id": 5122,
@@ -23447,6 +23509,17 @@
           "name": "Dragonflight",
           "subcats": [
             {
+              "items": [
+                {
+                  "icon": "ability_dragonriding_ridealong01",
+                  "id": 19466,
+                  "points": 40,
+                  "title": "Oh My God, They Were Clutchmates"
+                }
+              ],
+            "name":"Meta"
+            },
+            {
               "id": "285f7bcd",
               "items": [
                 {
@@ -23552,7 +23625,7 @@
                   "title": "Freshscales Fifteen"
                 }
               ],
-              "name": ""
+              "name": "Renown"
             },
             {
               "id": "d5d34c04",
@@ -25113,6 +25186,12 @@
                   "id": 2576,
                   "points": 10,
                   "title": "Blushing Bride"
+                },
+                {
+                  "icon": "inv_duck_green",
+                  "id": 20209,
+                  "points": 10,
+                  "title": "Quacked Killer"
                 }
               ],
               "name": ""
@@ -29270,9 +29349,47 @@
     {
       "cats": [
         {
+          "name":"Expansion Meta Achievements",
+          "subcats": [
+            {
+              "items": [
+                {
+                  "icon": "inv_torghast",
+                  "id": 20501,
+                  "points": 100,
+                  "title": "Back from the Beyond"
+                }
+              ],
+              "name":"Shadowlands"
+            },
+            {
+              "items": [
+                {
+                  "icon": "ability_evoker_furyoftheaspects",
+                  "id": 19458,
+                  "points": 100,
+                  "title": "A World Awoken"
+                }
+              ],
+              "name":"Dragonflight"
+            }
+          ]
+        },
+        {
           "id": "7ec541dc",
           "name": "Dragonriding",
           "subcats": [
+            {
+              "items": [
+                {
+                  "icon": "ability_dragonriding_dragonriding01",
+                  "id": 19478,
+                  "points": 30,
+                  "title": "Now THIS is Dragon Racing!"
+                }
+              ],
+              "name":"Meta"
+            },
             {
               "id": "20c34fc2",
               "items": [
@@ -29280,7 +29397,7 @@
                   "icon": "inv_checkered_flag",
                   "id": 15939,
                   "points": 20,
-                  "title": "Dragon Racing Completionist"
+                  "title": "Dragon Racing Completionist: Bronze"
                 },
                 {
                   "icon": "inv_checkered_flag",
@@ -35184,7 +35301,7 @@
                   "icon": "achievement_zone_icecrown_06",
                   "id": 15654,
                   "points": 0,
-                  "title": "Back from the Beyond"
+                  "title": "Back from the Beyond (Legacy)"
                 },
                 {
                   "icon": "inv_tabard_pvp_10season2_d_01",
@@ -35227,6 +35344,12 @@
                   "id": 19398,
                   "points": 0,
                   "title": "Dreaming of the Aspects"
+                },
+                {
+                  "icon": "10_2_raidability_bronze",
+                  "id": 20481,
+                  "points": 0,
+                  "title": "Dragonflight Season 4 Master"
                 }
               ],
               "name": "Other"
@@ -35308,6 +35431,83 @@
                 }
               ],
               "name": "Fated Raids"
+            },
+            {
+              "items": [
+                {
+                  "icon": "achievement_raidprimalist_raid",
+                  "id": 19564,
+                  "points": 0,
+                  "title": "Awakened Storms"
+                },
+                {
+                  "icon": "achievement_raidprimalist_raid",
+                  "id": 19565,
+                  "points": 0,
+                  "title": "Heroic: Awakened Storms"
+                },
+                {
+                  "icon": "achievement_raidprimalist_raid",
+                  "id": 19566,
+                  "points": 0,
+                  "title": "Mythic: Awakened Storms"
+                },
+                {
+                  "icon": "inv_achievement_raiddragon_raid",
+                  "id": 19567,
+                  "points": 0,
+                  "title": "Awakened Shadows"
+                },
+                {
+                  "icon": "inv_achievement_raiddragon_raid",
+                  "id": 19568,
+                  "points": 0,
+                  "title": "Heroic: Awakened Shadows"
+                },
+                {
+                  "icon": "inv_achievement_raiddragon_raid",
+                  "id": 19569,
+                  "points": 0,
+                  "title": "Mythic: Awakened Shadows"
+                },
+                {
+                  "icon": "inv_achievement_raidemeralddream_raid",
+                  "id": 19570,
+                  "points": 0,
+                  "title": "Awakened Flames"
+                },
+                {
+                  "icon": "inv_achievement_raidemeralddream_raid",
+                  "id": 19571,
+                  "points": 0,
+                  "title": "Heroic: Awakened Flames"
+                },
+                {
+                  "icon": "inv_achievement_raidemeralddream_raid",
+                  "id": 19572,
+                  "points": 0,
+                  "title": "Mythic: Awakened Flames"
+                },
+                {
+                  "icon": "inv_10_enchanting2_elementalswirl_color1",
+                  "id": 19574,
+                  "points": 0,
+                  "title": "Awakening the Dragonflight Raids"
+                },
+                {
+                  "icon": "inv_10_enchanting2_elementalswirl_color1",
+                  "id": 19575,
+                  "points": 0,
+                  "title": "Heroic: Awakening the Dragonflight Raids"
+                },
+                {
+                  "icon": "inv_10_enchanting2_elementalswirl_color1",
+                  "id": 19576,
+                  "points": 0,
+                  "title": "Mythic: Awakening the Dragonflight Raids"
+                }
+              ],
+              "name": "Awakened Raids"
             },
             {
               "id": "596abc61",
@@ -35709,6 +35909,12 @@
                   "id": 19295,
                   "points": 0,
                   "title": "Verdant Gladiator's Slitherdrake"
+                },
+                {
+                  "icon": "inv_drake2mountgladiator_purple",
+                  "id": 19503,
+                  "points": 0,
+                  "title": "Draconic Gladiator's Drake"
                 }
               ],
               "name": "PVP"
@@ -36339,6 +36545,36 @@
                   "id": 19449,
                   "points": 0,
                   "title": "Dreaming Hero: Dragonflight Season 3"
+                },
+                {
+                  "icon": "achievement_challengemode_silver",
+                  "id": 19780,
+                  "points": 0,
+                  "title": "Dragonflight Keystone Explorer: Season Four"
+                },
+                {
+                  "icon": "achievement_challengemode_gold",
+                  "id": 19781,
+                  "points": 0,
+                  "title": "Dragonflight Keystone Conqueror: Season Four"
+                },
+                {
+                  "icon": "achievement_challengemode_platinum",
+                  "id": 19782,
+                  "points": 0,
+                  "title": "Dragonflight Keystone Master: Season Four"
+                },
+                {
+                  "icon": "achievement_challengemode_scholomance_platinum",
+                  "id": 19783,
+                  "points": 0,
+                  "title": "Dragonflight Keystone Hero: Season Four"
+                },
+                {
+                  "icon": "achievement_challengemode_platinum",
+                  "id": 19785,
+                  "points": 0,
+                  "title": "Draconic Hero: Dragonflight Season 4"
                 }
               ],
               "name": "Mythic Keystone: Dragonflight"
@@ -38096,7 +38332,94 @@
                   "id": 19443,
                   "points": 0,
                   "title": "Battle Mender: Dragonflight Season 3"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_10",
+                  "id": 19494,
+                  "points": 0,
+                  "title": "Combatant I: Dragonflight Season 4"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_10",
+                  "id": 19495,
+                  "points": 0,
+                  "title": "Combatant II: Dragonflight Season 4"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 19497,
+                  "points": 0,
+                  "title": "Challenger I: Dragonflight Season 4"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 19499,
+                  "points": 0,
+                  "title": "Challenger II: Dragonflight Season 4"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 19493,
+                  "points": 0,
+                  "title": "Rival I: Dragonflight Season 4"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 19498,
+                  "points": 0,
+                  "title": "Rival II: Dragonflight Season 4"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 19492,
+                  "points": 0,
+                  "title": "Duelist: Dragonflight Season 4"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 19509,
+                  "points": 0,
+                  "title": "Elite: Dragonflight Season 4"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 19490,
+                  "points": 0,
+                  "title": "Gladiator: Dragonflight Season 4"
+                },
+                {
+                  "icon": "ability_paladin_blessedmending",
+                  "id": 19513,
+                  "points": 0,
+                  "title": "Battle Mender: Dragonflight Season 4"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 19454,
+                  "points": 0,
+                  "title": "Draconic Gladiator: Dragonflight Season 4"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 19453,
+                  "points": 0,
+                  "title": "Draconic Legend: Dragonflight Season 4"
+                },
+                {
+                  "icon": "achievement_pvp_h_h",
+                  "id": 19456,
+                  "points": 0,
+                  "side": "H",
+                  "title": "Hero of the Horde: Draconic"
+                },
+                {
+                  "icon": "achievement_pvp_a_a",
+                  "id": 19455,
+                  "points": 0,
+                  "side": "A",
+                  "title": "Hero of the Alliance: Draconic"
                 }
+                
               ],
               "name": "Rated Arena"
             },
@@ -38965,6 +39288,19 @@
                 }
               ],
               "name": "Highmaul Coliseum"
+            },
+            {
+              "id": "858acb31",
+              "items": [
+                {
+                  "icon": "achievement_featsofstrength_gladiator_04",
+                  "id": 17801,
+                  "notObtainable": true,
+                  "points": 0,
+                  "title": "Legend: Dragonflight Season 2"
+                }
+              ],
+              "name": "[R]Rated Arena"
             }
           ]
         },
@@ -39492,6 +39828,23 @@
                 }
               ],
               "name": "Secrets of Azeroth"
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_helm_armor_pirateeyepatch_b_01_piratespecial",
+                  "id": 20508,
+                  "points": 0,
+                  "title": "Plunder Wonder"
+                },
+                {
+                  "icon": "inv_cape_special_treasure_c_01",
+                  "id": 20509,
+                  "points": 0,
+                  "title": "Plunderkind"
+                }
+              ],
+              "name": "Plunderstorm"
             }
           ]
         },
