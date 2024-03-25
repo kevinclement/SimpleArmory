@@ -382,6 +382,13 @@
             "name": "The Reconciler",
             "titleId": 498,
             "type": "achievement"
+          },
+          {
+            "icon": "ability_dragonriding_dragonriding01",
+            "id": 20206,
+            "name": "Champion of the Dragonflights",
+            "titleId": 547,
+            "type": "achievement"
           }
         ],
         "name": "Quests"
@@ -432,7 +439,23 @@
             "name": "The Dreaming Hero",
             "titleId": 531,
             "type": "achievement"
-          }          
+          },
+          {
+            "icon": "achievement_challengemode_gold",
+            "id": 19781,
+            "name": "The Draconic",
+            "notObtainable":true,
+            "titleId": 537,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_challengemode_platinum",
+            "id": 19785,
+            "name": "The Draconic Hero",
+            "notObtainable":true,
+            "titleId": 538,
+            "type": "achievement"
+          }
         ],
         "name": "Mythic Plus"
       },
@@ -598,6 +621,13 @@
             "id": 19107,
             "name": "Outland Racer",
             "titleId": 521,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_checkered_flag",
+            "id": 19723,
+            "name": "Northrend Racer",
+            "titleId": 540,
             "type": "achievement"
           },
           {
@@ -2715,6 +2745,14 @@
             "name": "Verdant Legend",
             "titleId": 525,
             "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 19453,
+            "name": "Draconic Legend",
+            "notObtainable":true,
+            "titleId": 535,
+            "type": "achievement"
           }
         ],
         "name": "Solo Shuffle"
@@ -2750,6 +2788,14 @@
             "id": 19132,
             "name": "Verdant Gladiator",
             "titleId": 526,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 19454,
+            "name": "Draconic Gladiator",
+            "notObtainable": true,
+            "titleId": 534,
             "type": "achievement"
           }
         ],
@@ -2871,6 +2917,53 @@
           }
         ],
         "name": "Recruit-a-Friend"
+      },
+      {
+        "items": [
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 810,
+            "name": "Plunderlord",
+            "titleId": 541,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 815,
+            "name": "Swabbie",
+            "titleId": 542,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 816,
+            "name": "Deck Hand",
+            "titleId": 543,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 817,
+            "name": "Swashbuckler",
+            "titleId": 544,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 818,
+            "name": "Buccaneer",
+            "titleId": 545,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 819,
+            "name": "First Mate",
+            "titleId": 546,
+            "type": "title"
+          }
+        ],
+        "name": "Plunderstorm"
       }
     ]
   },
@@ -3667,7 +3760,7 @@
             "notObtainable": true,
             "titleId": 461,
             "type": "achievement"
-          }          
+          }
         ],
         "name": "End-of-season Arena"
       },

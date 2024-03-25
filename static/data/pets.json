@@ -1867,7 +1867,7 @@
             "creatureId": 179008,
             "icon": "tradeskill_abominationstitching_abominations_lesser",
             "itemId": 186188,
-            "name": "Lil'Abom",
+            "name": "Lil' Abom",
             "spellid": 353206
           },
           {
@@ -8195,7 +8195,7 @@
           {
             "ID": 1666,
             "creatureId": 93814,
-            "icon": "inv_misc_fish_03",
+            "icon": "inv_misc_fish_57",
             "itemId": 126925,
             "name": "Blorp",
             "spellid": 185601
@@ -10706,6 +10706,32 @@
       {
         "items": [
           {
+            "ID": 4435,
+            "creatureId": 218977,
+            "icon": "inv_misc_fish_58",
+            "name": "Happy",
+            "spellid": 438543
+          },
+          {
+            "ID": 4426,
+            "creatureId": 218646,
+            "icon": "inv_hermitcrab_truesilver",
+            "name": "Bubbles",
+            "spellid": 437600
+          },
+          {
+            "ID": 4425,
+            "creatureId": 218647,
+            "icon": "inv_treasurecrabpet_red",
+            "name": "Glamrok",
+            "spellid": 437601
+          }
+        ],
+        "name": "Plunderstorm"
+      },
+      {
+        "items": [
+          {
             "ID": 3236,
             "creatureId": 184285,
             "icon": "inv_gnometoy",
@@ -10909,6 +10935,18 @@
         "name": "Trading Card Game"
       },
       {
+        "items": [
+          {
+            "ID": 4437,
+            "creatureId": 218060,
+            "icon": "inv_treasurecrabpet_purple",
+            "name": "Fathom",
+            "spellid": 439994
+          }
+        ],
+        "name": "Twitch Drops"
+      },
+      {
         "id": "231e8d27",
         "items": [
           {
@@ -11030,6 +11068,14 @@
             "itemId": 212791,
             "name": "Beetriz",
             "spellid": 433098
+          },
+          {
+            "ID": 4436,
+            "creatureId": 219134,
+            "icon": "inv_needledollpet_green",
+            "itemId": 217043,
+            "name": "Pokee",
+            "spellid": 438775
           }
         ],
         "name": "Trading Post"
