@@ -454,18 +454,6 @@
       {
         "items": [
           {
-            "icon": "achievement_boss_infinitecorruptor",
-            "id": 18705,
-            "name": "Of the Infinite",
-            "titleId": 514,
-            "type": "achievement"
-          }
-        ],
-        "name": "Dungeons"
-      },
-      {
-        "items": [
-          {
             "icon": "inv_tradeskill_cooking_stonesouppot01",
             "id": 16443,
             "name": "Soupervisor",
@@ -662,14 +650,6 @@
             "id": 15489,
             "name": "Guardian of the Pattern",
             "titleId": 455,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_mythicdungeons_shadowlands",
-            "id": 15685,
-            "name": "Hero of Fate",
-            "notObtainable":true,
-            "titleId": 464,
             "type": "achievement"
           }
         ],
@@ -3055,6 +3035,14 @@
             "notObtainable": true,
             "titleId": 463,
             "type": "achievement"
+          },
+          {
+            "icon": "achievement_mythicdungeons_shadowlands",
+            "id": 15685,
+            "name": "Hero of Fate",
+            "notObtainable":true,
+            "titleId": 464,
+            "type": "achievement"
           }
         ],
         "name": "Shadowlands"
@@ -3231,6 +3219,19 @@
           }
         ],
         "name": "Challenge Mode Dungeons"
+      },
+      {
+        "items": [
+          {
+            "icon": "achievement_boss_infinitecorruptor",
+            "id": 18705,
+            "name": "Of the Infinite",
+            "notObtainable":true,
+            "titleId": 514,
+            "type": "achievement"
+          }
+        ],
+        "name": "Dungeon Curves"
       },
       {
         "items": [
