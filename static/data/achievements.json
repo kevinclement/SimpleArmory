@@ -784,7 +784,7 @@
                   "title": "Fringe Benefits"
                 }
               ],
-              "name":"Eon's Fringe"
+              "name": "Eon's Fringe"
             },
             {
               "id": "1fed5c08",
@@ -10323,8 +10323,8 @@
                 {
                   "icon": "achievement_featsofstrength_gladiator_04",
                   "id": 19500,
+                  "notObtainable": true,
                   "points": 0,
-                  "notObtainable":true,
                   "title": "Legend: Dragonflight Season 4"
                 }
               ],
@@ -23517,7 +23517,7 @@
                   "title": "Oh My God, They Were Clutchmates"
                 }
               ],
-            "name":"Meta"
+              "name": "Meta"
             },
             {
               "id": "285f7bcd",
@@ -29349,9 +29349,11 @@
     {
       "cats": [
         {
-          "name":"Expansion Meta Achievements",
+          "id": "0ce10252",
+          "name": "Expansion Meta Achievements",
           "subcats": [
             {
+              "id": "14819911",
               "items": [
                 {
                   "icon": "inv_torghast",
@@ -29360,9 +29362,10 @@
                   "title": "Back from the Beyond"
                 }
               ],
-              "name":"Shadowlands"
+              "name": "Shadowlands"
             },
             {
+              "id": "d929d63b",
               "items": [
                 {
                   "icon": "ability_evoker_furyoftheaspects",
@@ -29371,7 +29374,7 @@
                   "title": "A World Awoken"
                 }
               ],
-              "name":"Dragonflight"
+              "name": "Dragonflight"
             }
           ]
         },
@@ -29388,7 +29391,7 @@
                   "title": "Now THIS is Dragon Racing!"
                 }
               ],
-              "name":"Meta"
+              "name": "Meta"
             },
             {
               "id": "20c34fc2",
@@ -30522,7 +30525,7 @@
                   "title": "Shadowlands Dilettante"
                 }
               ],
-              "name": ""
+              "name": "Covenant Sanctums"
             },
             {
               "id": "9c06611a",
@@ -30984,7 +30987,7 @@
                   "title": "Tower Ranger"
                 }
               ],
-              "name": ""
+              "name": "Meta"
             },
             {
               "id": "bebf8af7",
@@ -38419,7 +38422,6 @@
                   "side": "A",
                   "title": "Hero of the Alliance: Draconic"
                 }
-                
               ],
               "name": "Rated Arena"
             },
