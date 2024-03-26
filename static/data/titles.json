@@ -21,6 +21,7 @@
             "icon": "inv_misc_questionmark",
             "id": 760,
             "name": "Lionguard",
+            "side":"A",
             "titleId": 493,
             "type": "title"
           },
@@ -28,6 +29,7 @@
             "icon": "inv_misc_questionmark",
             "id": 778,
             "name": "Ama'shan",
+            "side":"A",
             "titleId": 511,
             "type": "title"
           }
@@ -248,16 +250,7 @@
             "icon": "achievement_raidprimalist_raszageth",
             "id": 16353,
             "name": "The Storm-Eater",
-            "notObtainable": true,
             "titleId": 488,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_raidprimalist_raszageth",
-            "id": 17116,
-            "name": "Famed Slayer of Raszageth",
-            "notObtainable": true,
-            "titleId": 487,
             "type": "achievement"
           },
           {
@@ -265,21 +258,6 @@
             "id": 18159,
             "name": "Heir to the Void",
             "titleId": 505,
-            "type": "achievement"
-          },
-          {
-            "icon": "inv_achievement_raiddragon_sarkareth",
-            "id": 18176,
-            "name": "Famed Slayer of Sarkareth",
-            "notObtainable": true,
-            "titleId": 506,
-            "type": "achievement"
-          },
-          {
-            "icon": "inv_achievement_raidemeralddream_fyrakk",
-            "id": 19392,
-            "name": "Famed Slayer of Fyrakk",
-            "titleId": 528,
             "type": "achievement"
           },
           {
@@ -415,6 +393,7 @@
             "icon": "achievement_challengemode_gold",
             "id": 17843,
             "name": "The Smoldering",
+            "notObtainable": true,
             "titleId": 503,
             "type": "achievement"
           },
@@ -444,7 +423,7 @@
             "icon": "achievement_challengemode_gold",
             "id": 19781,
             "name": "The Draconic",
-            "notObtainable":true,
+            "notObtainable": true,
             "titleId": 537,
             "type": "achievement"
           },
@@ -452,7 +431,7 @@
             "icon": "achievement_challengemode_platinum",
             "id": 19785,
             "name": "The Draconic Hero",
-            "notObtainable":true,
+            "notObtainable": true,
             "titleId": 538,
             "type": "achievement"
           }
@@ -465,6 +444,7 @@
             "icon": "inv_icon_feather02d",
             "id": 16731,
             "name": "Knight of Feathersworth",
+            "notObtainable": true,
             "titleId": 480,
             "type": "achievement"
           }
@@ -510,7 +490,7 @@
             "icon": "inv_dracthyrhead05",
             "id": 17543,
             "name": "The Forbidden",
-            "titleId": 495,
+            "titleId": 533,
             "type": "achievement"
           },
           {
@@ -559,6 +539,7 @@
             "icon": "inv_helm_armor_buckledhat_b_01_red",
             "id": 787,
             "name": "Honorary Historian",
+            "notObtainable":true,
             "titleId": 518,
             "type": "title"
           }
@@ -663,15 +644,36 @@
       {
         "items": [
           {
-            "icon": "achievement_zone_icecrown_06",
-            "id": 15654,
-            "name": "Veilstrider",
-            "notObtainable": true,
-            "titleId": 463,
+            "icon": "achievement_raid_revendrethraid_siredenathrius",
+            "id": 14365,
+            "name": "Sinbreaker",
+            "titleId": 432,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_raid_torghast_sylvanaswindrunner",
+            "id": 15121,
+            "name": "Breaker of Chains",
+            "titleId": 447,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_achievement_raid_progenitorraid_jailer",
+            "id": 15489,
+            "name": "Guardian of the Pattern",
+            "titleId": 455,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_mythicdungeons_shadowlands",
+            "id": 15685,
+            "name": "Hero of Fate",
+            "notObtainable":true,
+            "titleId": 464,
             "type": "achievement"
           }
         ],
-        "name": "Completionist"
+        "name": "Raids"
       },
       {
         "items": [
@@ -823,51 +825,6 @@
       {
         "items": [
           {
-            "icon": "achievement_challengemode_gold",
-            "id": 15498,
-            "name": "The Cryptic",
-            "titleId": 457,
-            "type": "achievement"
-          }
-        ],
-        "name": "Mythic Plus"
-      },
-      {
-        "items": [
-          {
-            "icon": "achievement_raid_revendrethraid_siredenathrius",
-            "id": 14365,
-            "name": "Sinbreaker",
-            "titleId": 432,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_raid_torghast_sylvanaswindrunner",
-            "id": 15121,
-            "name": "Breaker of Chains",
-            "titleId": 447,
-            "type": "achievement"
-          },
-          {
-            "icon": "inv_achievement_raid_progenitorraid_jailer",
-            "id": 15489,
-            "name": "Guardian of the Pattern",
-            "titleId": 455,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_mythicdungeons_shadowlands",
-            "id": 15685,
-            "name": "Hero of Fate",
-            "titleId": 724,
-            "type": "achievement"
-          }
-        ],
-        "name": "Raids"
-      },
-      {
-        "items": [
-          {
             "icon": "ability_priest_darkness",
             "id": 14277,
             "name": "Cryptkeeper",
@@ -968,18 +925,6 @@
       {
         "items": [
           {
-            "icon": "inv_heartofazeroth",
-            "id": 13779,
-            "name": "Azeroth's Champion",
-            "titleId": 407,
-            "type": "achievement"
-          }
-        ],
-        "name": "Heart of Azeroth"
-      },
-      {
-        "items": [
-          {
             "icon": "inv_cape_plate_kultirasdungeon_c_01",
             "id": 56250,
             "name": "Trashmaster",
@@ -1016,6 +961,54 @@
     "id": "fffffffe",
     "name": "Legion",
     "subcats": [
+      {
+        "items": [
+          {
+            "icon": "achievement_raid_trialofvalor",
+            "id": 11387,
+            "name": "The Chosen",
+            "notObtainable":true,
+            "titleId": 347,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_thenighthold_guldan",
+            "id": 10850,
+            "name": "Vengeance Incarnate",
+            "titleId": 342,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_boss_kiljaeden2",
+            "id": 11781,
+            "name": "The Darkener",
+            "titleId": 357,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_emeraldnightmare_xavius",
+            "id": 10827,
+            "name": "The Dreamer",
+            "titleId": 341,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_boss_argus_worldsoul",
+            "id": 12002,
+            "name": "Titanslayer",
+            "titleId": 364,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_helm_cloth_raidpriest_o_01",
+            "id": 11763,
+            "name": "The Tomb Raider",
+            "titleId": 362,
+            "type": "achievement"
+          }
+        ],
+        "name": "Raids"
+      },
       {
         "items": [
           {
@@ -1111,53 +1104,6 @@
           }
         ],
         "name": "Class Halls"
-      },
-      {
-        "items": [
-          {
-            "icon": "achievement_raid_trialofvalor",
-            "id": 11387,
-            "name": "The Chosen",
-            "titleId": 347,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_thenighthold_guldan",
-            "id": 10850,
-            "name": "Vengeance Incarnate",
-            "titleId": 342,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_boss_kiljaeden2",
-            "id": 11781,
-            "name": "The Darkener",
-            "titleId": 357,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_emeraldnightmare_xavius",
-            "id": 10827,
-            "name": "The Dreamer",
-            "titleId": 341,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_boss_argus_worldsoul",
-            "id": 12002,
-            "name": "Titanslayer",
-            "titleId": 364,
-            "type": "achievement"
-          },
-          {
-            "icon": "inv_helm_cloth_raidpriest_o_01",
-            "id": 11763,
-            "name": "The Tomb Raider",
-            "titleId": 362,
-            "type": "achievement"
-          }
-        ],
-        "name": "Raids"
       },
       {
         "items": [
@@ -1295,23 +1241,12 @@
             "name": "Captain",
             "titleId": 317,
             "type": "achievement"
-          },
-          {
-            "gender": "M",
-            "icon": "inv_misc_trophy_argent",
-            "id": 9725,
-            "name": "Lord of War",
-            "titleId": 302,
-            "type": "achievement"
-          },
-          {
-            "gender": "F",
-            "icon": "inv_misc_trophy_argent",
-            "id": 9725,
-            "name": "Lady of War",
-            "titleId": 303,
-            "type": "achievement"
-          },
+          }
+        ],
+        "name": "Garrisons"
+      },
+      {
+        "items": [
           {
             "icon": "achievement_character_orc_male",
             "id": 9519,
@@ -1425,6 +1360,22 @@
             "type": "achievement"
           },
           {
+            "gender": "M",
+            "icon": "inv_misc_trophy_argent",
+            "id": 9725,
+            "name": "Lord of War",
+            "titleId": 302,
+            "type": "achievement"
+          },
+          {
+            "gender": "F",
+            "icon": "inv_misc_trophy_argent",
+            "id": 9725,
+            "name": "Lady of War",
+            "titleId": 303,
+            "type": "achievement"
+          },
+          {
             "icon": "warrior_talent_icon_furyintheblood",
             "id": 9738,
             "name": "Warlord of Draenor",
@@ -1441,7 +1392,7 @@
             "type": "achievement"
           }
         ],
-        "name": "Garrisons"
+        "name": "Gladiator's Sanctum"
       },
       {
         "items": [
@@ -2120,6 +2071,13 @@
             "name": "Chef",
             "titleId": 52,
             "type": "achievement"
+          },
+          {
+            "icon": "inv_misc_food_15",
+            "id": 7306,
+            "name": "Master of the Ways",
+            "titleId": 202,
+            "type": "achievement"
           }
         ],
         "name": "Cooking"
@@ -2174,13 +2132,6 @@
       },
       {
         "items": [
-          {
-            "icon": "inv_misc_food_15",
-            "id": 7306,
-            "name": "Master of the Ways",
-            "titleId": 202,
-            "type": "achievement"
-          },
           {
             "icon": "inv_misc_note_01",
             "id": 9464,
@@ -2237,6 +2188,7 @@
             "icon": "inv_eyeofnzothpet",
             "id": 14191,
             "name": "Servant of N'Zoth",
+            "notObtainable":true,
             "titleId": 414,
             "type": "achievement"
           },
@@ -2335,25 +2287,10 @@
           },
           {
             "icon": "achievement_pvp_p_15",
-            "id": 5363,
-            "name": "The Bloodthirsty",
-            "titleId": 184,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_pvp_p_15",
             "id": 870,
             "name": "Of the Alliance",
             "side": "A",
             "titleId": 94,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_pvp_p_250k",
-            "id": 5363,
-            "name": "Of the Horde",
-            "side": "H",
-            "titleId": 95,
             "type": "achievement"
           }
         ],
@@ -2361,6 +2298,58 @@
       },
       {
         "items": [
+          {
+            "icon": "achievement_pvp_p_250k",
+            "id": 870,
+            "name": "Of the Horde",
+            "side": "H",
+            "titleId": 95,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_pvp_p_15",
+            "id": 5363,
+            "name": "The Bloodthirsty",
+            "titleId": 184,
+            "type": "achievement"
+          }
+        ],
+        "name": "Honorable Kills"
+      },
+      {
+        "items": [
+          {
+            "icon": "inv_bannerpvp_01",
+            "id": 5325,
+            "name": "Veteran of the Horde",
+            "side": "H",
+            "titleId": 153,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_bannerpvp_02",
+            "id": 5328,
+            "name": "Veteran of the Alliance",
+            "side": "A",
+            "titleId": 152,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_bannerpvp_02",
+            "id": 5329,
+            "name": "Warbound",
+            "side": "A",
+            "titleId": 145,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_bannerpvp_01",
+            "id": 5326,
+            "name": "Warbringer",
+            "side": "H",
+            "titleId": 144,
+            "type": "achievement"
+          },
           {
             "icon": "achievement_pvp_h_01",
             "id": 5345,
@@ -2651,38 +2640,6 @@
             "side": "H",
             "titleId": 220,
             "type": "achievement"
-          },
-          {
-            "icon": "inv_bannerpvp_02",
-            "id": 5329,
-            "name": "Warbound",
-            "side": "A",
-            "titleId": 145,
-            "type": "achievement"
-          },
-          {
-            "icon": "inv_bannerpvp_01",
-            "id": 5325,
-            "name": "Veteran of the Horde",
-            "side": "H",
-            "titleId": 153,
-            "type": "achievement"
-          },
-          {
-            "icon": "inv_bannerpvp_02",
-            "id": 5328,
-            "name": "Veteran of the Alliance",
-            "side": "A",
-            "titleId": 152,
-            "type": "achievement"
-          },
-          {
-            "icon": "inv_bannerpvp_01",
-            "id": 5326,
-            "name": "Warbringer",
-            "side": "H",
-            "titleId": 144,
-            "type": "achievement"
           }
         ],
         "name": "Battlegrounds"
@@ -2750,7 +2707,7 @@
             "icon": "achievement_featsofstrength_gladiator_07",
             "id": 19453,
             "name": "Draconic Legend",
-            "notObtainable":true,
+            "notObtainable": true,
             "titleId": 535,
             "type": "achievement"
           }
@@ -2931,6 +2888,7 @@
             "icon": "inv_misc_questionmark",
             "id": 815,
             "name": "Swabbie",
+            "notObtainable":true,
             "titleId": 542,
             "type": "title"
           },
@@ -2938,6 +2896,7 @@
             "icon": "inv_misc_questionmark",
             "id": 816,
             "name": "Deck Hand",
+            "notObtainable":true,
             "titleId": 543,
             "type": "title"
           },
@@ -2945,6 +2904,7 @@
             "icon": "inv_misc_questionmark",
             "id": 817,
             "name": "Swashbuckler",
+            "notObtainable":true,
             "titleId": 544,
             "type": "title"
           },
@@ -2952,6 +2912,7 @@
             "icon": "inv_misc_questionmark",
             "id": 818,
             "name": "Buccaneer",
+            "notObtainable":true,
             "titleId": 545,
             "type": "title"
           },
@@ -2959,6 +2920,7 @@
             "icon": "inv_misc_questionmark",
             "id": 819,
             "name": "First Mate",
+            "notObtainable":true,
             "titleId": 546,
             "type": "title"
           }
@@ -3070,6 +3032,32 @@
           }
         ],
         "name": "Legion"
+      },
+      {
+        "items": [
+          {
+            "icon": "inv_heartofazeroth",
+            "id": 13779,
+            "name": "Azeroth's Champion",
+            "notObtainable":true,
+            "titleId": 407,
+            "type": "achievement"
+          }
+        ],
+        "name": "Battle for Azeroth"
+      },
+      {
+        "items": [
+          {
+            "icon": "achievement_zone_icecrown_06",
+            "id": 15654,
+            "name": "Veilstrider",
+            "notObtainable": true,
+            "titleId": 463,
+            "type": "achievement"
+          }
+        ],
+        "name": "Shadowlands"
       },
       {
         "items": [
@@ -3269,6 +3257,22 @@
             "notObtainable": true,
             "titleId": 446,
             "type": "achievement"
+          },
+          {
+            "icon": "achievement_challengemode_gold",
+            "id": 15498,
+            "name": "The Cryptic",
+            "notObtainable": true,
+            "titleId": 457,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_challengemode_gold",
+            "id": 15689,
+            "name": "The Shrouded",
+            "notObtainable": true,
+            "titleId": 465,
+            "type": "achievement"
           }
         ],
         "name": "Mythic Plus"
@@ -3289,6 +3293,14 @@
             "name": "The Cryptic Hero",
             "notObtainable": true,
             "titleId": 458,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_challengemode_platinum",
+            "id": 15756,
+            "name": "The Shrouded Hero",
+            "notObtainable": true,
+            "titleId": 466,
             "type": "achievement"
           }
         ],
@@ -3414,6 +3426,30 @@
             "name": "Famed Slayer of The Banished One",
             "notObtainable": true,
             "titleId": 454,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_raidprimalist_raszageth",
+            "id": 17116,
+            "name": "Famed Slayer of Raszageth",
+            "notObtainable": true,
+            "titleId": 487,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_achievement_raiddragon_sarkareth",
+            "id": 18176,
+            "name": "Famed Slayer of Sarkareth",
+            "notObtainable": true,
+            "titleId": 506,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_achievement_raidemeralddream_fyrakk",
+            "id": 19392,
+            "name": "Famed Slayer of Fyrakk",
+            "notObtainable":true,
+            "titleId": 528,
             "type": "achievement"
           }
         ],
