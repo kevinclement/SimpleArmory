@@ -27,9 +27,13 @@
 <div class="categoryHeader">
   <h3>
     {category.name !== superCat ? category.name : "General"}
-    {#if totalItems > 0}
-      <small class="pbSmall">({`${totalItemsCompleted}/${totalItems}`})</small>
-    {/if}
+    <small class="pbSmall">
+      {#if superCat === 'Feats of Strength' || superCat === 'Legacy'}
+        ({`${totalItemsCompleted}`})
+      {:else}
+        ({`${totalItemsCompleted}/${totalItems}`})
+      {/if}
+    </small>
   </h3>
 </div>
 
