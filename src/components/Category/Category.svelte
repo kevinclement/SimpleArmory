@@ -9,18 +9,28 @@
 
   let totalItems = 0;
   let totalItemsCompleted = 0;
-  category[subCategoriesKey].forEach((subCategory) => {
-    subCategory[itemsKey].forEach((item) => {
-      totalItems += 1;
-      if (item.completed || item.collected) {
-        totalItemsCompleted += 1;
-      }
+
+  $: {
+    totalItems = 0;
+    totalItemsCompleted = 0;
+    category[subCategoriesKey].forEach((subCategory) => {
+      subCategory[itemsKey].forEach((item) => {
+        totalItems += 1;
+        if (item.completed || item.collected) {
+          totalItemsCompleted += 1;
+        }
+      });
     });
-  });
+  }
 </script>
 
 <div class="categoryHeader">
-  <h3>{category.name !== superCat ? category.name : "General"}</h3>
+  <h3>
+    {category.name !== superCat ? category.name : "General"}
+    {#if totalItems > 0}
+      <small class="pbSmall">({`${totalItemsCompleted}/${totalItems}`})</small>
+    {/if}
+  </h3>
 </div>
 
 {#each category[subCategoriesKey] as subCategory}
