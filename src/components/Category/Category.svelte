@@ -1,7 +1,5 @@
 <script>
   import Item from "./Item.svelte";
-  import ProgressBar from '$components/ProgressBar.svelte';
-  import { percent, percentFormat } from '$util/utils'
 
   export let category;
   export let getItemPath = undefined;
@@ -23,14 +21,6 @@
 
 <div class="categoryHeader">
   <h3>{category.name !== superCat ? category.name : "General"}</h3>
-
-  <ProgressBar
-    rightSide={true}
-    width={percent(totalItemsCompleted, totalItems)}
-    percentage={percentFormat(totalItemsCompleted, totalItems)}
-    isEmpty={totalItemsCompleted === 0}
-    emptyValue={`${totalItemsCompleted} / ${totalItems} (${percent(totalItemsCompleted, totalItems)}%)`}
-  />
 </div>
 
 {#each category[subCategoriesKey] as subCategory}
