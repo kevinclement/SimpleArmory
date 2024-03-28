@@ -724,6 +724,12 @@
             "icon": "inv_misc_herb_jadetealeaf",
             "itemId": 210864,
             "name": "Improvised Leafbed"
+          },
+          {
+            "ID": 1446,
+            "icon": "inv_misc_flower_02",
+            "itemId": 211788,
+            "name": "Tess's Peacebloom"
           }
         ],
         "name": "Quest"
@@ -824,6 +830,13 @@
             "icon": "inv_mdi_awc_bannerreward_icons_blue",
             "itemId": 211424,
             "name": "Dreaming Banner of the Aspects"
+          },
+          {
+            "ID": 1472,
+            "icon": "inv_mdi_awc_bannerreward_icons_red",
+            "itemId": 218128,
+            "name": "Draconic Banner of the Aspects",
+            "notObtainable": true
           }
         ],
         "name": "Mythic Dungeon Invitational"
@@ -1494,13 +1507,6 @@
             "icon": "inv_misc_mdi_banner03",
             "itemId": 187958,
             "name": "Shrouded Banner of the Opportune",
-            "notObtainable": true
-          },
-          {
-            "ID": 1164,
-            "icon": "inv_misc_mdi_banner04",
-            "itemId": 187959,
-            "name": "PH - Banner of the Opportune",
             "notObtainable": true
           }
         ],
@@ -5320,13 +5326,21 @@
             "ID": 1330,
             "icon": "inv_soloshufflepennantreward_icons_red",
             "itemId": 206267,
-            "name": "Obsidian Legend's Pennant"
+            "name": "Obsidian Legend's Pennant",
+            "notObtainable": true
           },
           {
             "ID": 1434,
             "icon": "inv_soloshufflepennantreward_icons_red",
             "itemId": 210497,
             "name": "Verdant Legend's Pennant"
+          },
+          {
+            "ID": 1448,
+            "icon": "inv_soloshufflepennantreward_icons_red",
+            "itemId": 211869,
+            "name": "Draconic Legend's Pennant",
+            "notObtainable": true
           }
         ],
         "name": "Solo Shuffle"
@@ -5506,6 +5520,12 @@
             "icon": "inv_misc_easterbasket",
             "itemId": 204675,
             "name": "A Drake's Big Basket of Eggs"
+          },
+          {
+            "ID": 1461,
+            "icon": "inv_10_specialreagentfoozles_coolegg_bronze",
+            "itemId": 216881,
+            "name": "Duck Disguiser"
           }
         ],
         "name": "Noblegarden"
@@ -6232,6 +6252,17 @@
         "name": "Secrets of Azeroth"
       },
       {
+        "items": [
+          {
+            "ID": 1466,
+            "icon": "inv_misc_craftingreagent_vial01",
+            "itemId": 212518,
+            "name": "Vial of Endless Draconic Scales"
+          }
+        ],
+        "name":"Dragonriding Cup"
+      },
+      {
         "id": "abab0c56",
         "items": [
           {
@@ -6617,6 +6648,17 @@
           }
         ],
         "name": "Hearthstone"
+      },
+      {
+        "items": [
+          {
+            "ID": 1464,
+            "icon": "inv_helm_cloth_b_01pirate_black",
+            "itemId": 170197,
+            "name": "Swarthy Warning Sign"
+          }
+        ],
+        "name":"Plunderstorm"
       }
     ]
   }
