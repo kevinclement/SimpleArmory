@@ -28,7 +28,19 @@ body {
 	  float: left;
   }
   .categoryHeader {
-	margin-bottom:0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    column-gap: 20px;
+    flex-wrap: wrap;
+  }
+  .categoryHeader h3 {
+    margin-bottom: 0px;
+    white-space: nowrap;
+  }
+  .categoryHeader .progressRight {
+    float: none;
+    margin-bottom: 5px;
   }
   .subCatHeader {
 	margin-bottom:0px;
@@ -357,7 +369,13 @@ body {
   .footer {
 	display:none;
   }
-  
+
+  /* Progress bar */
+  .progress-bar span {
+    white-space: nowrap;
+    padding: 0 10px;
+  }
+
   /* Darkmode overwrites */
   .toggleTheme {
 	  cursor: pointer;
