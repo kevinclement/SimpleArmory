@@ -6,11 +6,36 @@
   export let superCat = "";
   export let subCategoriesKey = "subCategories"
   export let itemsKey = "items"
+
+  let totalItems = 0;
+  let totalItemsCompleted = 0;
+
+  $: {
+    totalItems = 0;
+    totalItemsCompleted = 0;
+    category[subCategoriesKey].forEach((subCategory) => {
+      subCategory[itemsKey].forEach((item) => {
+        totalItems += 1;
+        if (item.completed || item.collected) {
+          totalItemsCompleted += 1;
+        }
+      });
+    });
+  }
 </script>
 
-{#if category.name != superCat}
-  <h3 class="categoryHeader">{category.name}</h3>
-{/if}
+<div class="categoryHeader">
+  <h3>
+    {category.name !== superCat ? category.name : "General"}
+    <small class="pbSmall">
+      {#if superCat === 'Feats of Strength' || superCat === 'Legacy'}
+        ({`${totalItemsCompleted}`})
+      {:else}
+        ({`${totalItemsCompleted}/${totalItems}`})
+      {/if}
+    </small>
+  </h3>
+</div>
 
 {#each category[subCategoriesKey] as subCategory}
   <div class="sect">

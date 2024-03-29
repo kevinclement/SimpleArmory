@@ -1,4 +1,4 @@
-<script>   
+<script>
     export let width = 0;
     export let styleWidth = 250;
     export let percentage = "";
