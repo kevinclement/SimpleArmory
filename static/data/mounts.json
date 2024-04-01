@@ -3616,6 +3616,18 @@
         "name": "Raid Drop"
       },
       {
+        "items": [
+          {
+            "ID": 1532,
+            "icon": "4062012",
+            "itemId": 188674,
+            "name": "Soaring Spelltome",
+            "spellid": 359318
+          }
+        ],
+        "name": "Mage Tower"
+      },
+      {
         "id": "4a850111",
         "items": [
           {
@@ -8138,16 +8150,10 @@
             "spellid": 359013
           },
           {
-            "ID": 1532,
-            "icon": "4062012",
-            "itemId": 188674,
-            "name": "Soaring Spelltome",
-            "spellid": 359318
-          },
-          {
             "ID": 1737,
             "icon": "inv_sporebatrock_stoneorange",
             "itemId": 205208,
+            "notObtainable":true,
             "name": "Sandy Shalewing",
             "spellid": 408654
           },
@@ -8404,6 +8410,7 @@
             "ID": 1958,
             "icon": "inv_lovefoxmount_purple",
             "itemId": 212229,
+            "notObtainable":true,
             "name": "Twilight Sky Prowler",
             "spellid": 431360
           }
@@ -8795,13 +8802,6 @@
             "spellid": 65917
           },
           {
-            "ID": 371,
-            "icon": "ability_mount_warhippogryph",
-            "itemId": 54069,
-            "name": "Blazing Hippogryph",
-            "spellid": 74856
-          },
-          {
             "ID": 408,
             "icon": "ability_mount_drake_bronze",
             "itemId": 68008,
@@ -8883,6 +8883,13 @@
             "itemId": 54811,
             "name": "Celestial Steed",
             "spellid": 75614
+          },
+          {
+            "ID": 371,
+            "icon": "ability_mount_warhippogryph",
+            "itemId": 54069,
+            "name": "Blazing Hippogryph",
+            "spellid": 74856
           },
           {
             "ID": 441,
