@@ -1610,14 +1610,6 @@
             "spellid": 408265
           },
           {
-            "ID": 3549,
-            "creatureId": 204360,
-            "icon": "inv_mothunderlight_pink",
-            "itemId": 205156,
-            "name": "Heartseeker Moth",
-            "spellid": 408311
-          },
-          {
             "ID": 3550,
             "creatureId": 204361,
             "icon": "inv_mothunderlight_red",
@@ -7770,6 +7762,14 @@
             "itemId": 116155,
             "name": "Lovebird Hatchling",
             "spellid": 132762
+          },
+          {
+            "ID": 3549,
+            "creatureId": 204360,
+            "icon": "inv_mothunderlight_pink",
+            "itemId": 205156,
+            "name": "Heartseeker Moth",
+            "spellid": 408311
           }
         ],
         "name": "Love is in the Air"
@@ -10047,22 +10047,6 @@
             "spellid": 69536
           },
           {
-            "ID": 249,
-            "creatureId": 36979,
-            "icon": "achievement_boss_kelthuzad_01",
-            "itemId": 49693,
-            "name": "Lil' K.T.",
-            "spellid": 69677
-          },
-          {
-            "ID": 248,
-            "creatureId": 36911,
-            "icon": "inv_misc_pet_03",
-            "itemId": 49665,
-            "name": "Pandaren Monk",
-            "spellid": 69541
-          },
-          {
             "ID": 256,
             "creatureId": 40703,
             "icon": "achievement_boss_xt002deconstructor_01",
@@ -11000,16 +10984,38 @@
         "name": "Twitch Drops"
       },
       {
-        "id": "231e8d27",
         "items": [
           {
-            "ID": 3242,
-            "creatureId": 185322,
-            "icon": "inv_brontosaurusmount",
-            "itemId": 190173,
-            "name": "Lil' Maka'jin",
-            "spellid": 366833
+            "ID": 249,
+            "creatureId": 36979,
+            "icon": "achievement_boss_kelthuzad_01",
+            "itemId": 49693,
+            "name": "Lil' K.T.",
+            "spellid": 69677
           },
+          {
+            "ID": 248,
+            "creatureId": 36911,
+            "icon": "inv_misc_pet_03",
+            "itemId": 49665,
+            "name": "Pandaren Monk",
+            "spellid": 69541
+          },
+          {
+            "ID": 179,
+            "creatureId": 27217,
+            "icon": "inv_jewelry_amulet_03",
+            "itemId": 37297,
+            "name": "Spirit of Competition",
+            "notObtainable": true,
+            "spellid": 48406
+          }
+        ],
+        "name": "Trading Post Re-Releases"
+      },
+      {
+        "id": "231e8d27",
+        "items": [
           {
             "ID": 3243,
             "creatureId": 183686,
@@ -11057,14 +11063,6 @@
             "itemId": 190607,
             "name": "Garrlok",
             "spellid": 367768
-          },
-          {
-            "ID": 3254,
-            "creatureId": 185621,
-            "icon": "inv_jewelcrafting_jadeowl",
-            "itemId": 190609,
-            "name": "Watcher of the Huntress",
-            "spellid": 367800
           },
           {
             "ID": 3255,
@@ -11195,19 +11193,10 @@
             "spellid": 449286
           }
         ],
-        "name": "Trading Post"
+        "name": "Trading Post Originals"
       },
       {
         "items": [
-          {
-            "ID": 179,
-            "creatureId": 27217,
-            "icon": "inv_jewelry_amulet_03",
-            "itemId": 37297,
-            "name": "Spirit of Competition",
-            "notObtainable": true,
-            "spellid": 48406
-          },
           {
             "ID": 192,
             "creatureId": 29726,
