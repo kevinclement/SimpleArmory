@@ -21,6 +21,7 @@
 				{ txt: 'Pet Battles',        link: 'pets'        },
 				{ txt: 'Collections',        link: 'collections' },
 				{ txt: 'Expansion Features', link: 'expansions'  },
+				{ txt: 'Pandaria: Remix',    link: 'remix'       },
 				{ txt: 'Legacy',             link: 'legacy'      },
 				{ txt: 'Feats of Strength',  link: 'feats'       },
 			],

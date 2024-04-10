@@ -115,6 +115,48 @@
           }
         ],
         "name": "Racial"
+      },
+      {
+        "id": "6edf78f8",
+        "items": [
+          {
+            "ID": 1467,
+            "icon": "monk_stance_redcrane",
+            "itemId": 217724,
+            "name": "Kindness of Chi-ji"
+          },
+          {
+            "ID": 1468,
+            "icon": "monk_stance_drunkenox",
+            "itemId": 217726,
+            "name": "Fortitude of Niuzao"
+          },
+          {
+            "ID": 1469,
+            "icon": "monk_stance_whitetiger",
+            "itemId": 217723,
+            "name": "Fury of Xuen"
+          },
+          {
+            "ID": 1470,
+            "icon": "monk_stance_wiseserpent",
+            "itemId": 217725,
+            "name": "Essence of Yu'lon"
+          },
+          {
+            "ID": 1476,
+            "icon": "inv_misc_herb_talandrasrose",
+            "itemId": 220777,
+            "name": "Cherry Blossom Trail"
+          },
+          {
+            "ID": 1479,
+            "icon": "inv_misc_bag_herbpouch",
+            "itemId": 223146,
+            "name": "Satchel of Stormborn Seeds"
+          }
+        ],
+        "name": "Limited Time: Timerunning Pandamonium"
       }
     ]
   },
@@ -699,7 +741,7 @@
             "ID": 1312,
             "icon": "inv_10_dungeonjewelry_titan_necklace_1_color3",
             "itemId": 204686,
-            "name": "Titan's Containment Device"
+            "name": "Titan Containment Device"
           },
           {
             "ID": 1347,
@@ -5318,15 +5360,22 @@
           },
           {
             "ID": 1330,
-            "icon": "inv_soloshufflepennantreward_icons_red",
+            "icon": "inv_soloshufflepennantreward_icons_blue",
             "itemId": 206267,
             "name": "Obsidian Legend's Pennant"
           },
           {
             "ID": 1434,
-            "icon": "inv_soloshufflepennantreward_icons_red",
+            "icon": "inv_soloshufflepennantreward_icons_green",
             "itemId": 210497,
             "name": "Verdant Legend's Pennant"
+          },
+          {
+            "ID": 1448,
+            "icon": "inv_soloshufflepennantreward_icons_purple",
+            "itemId": 211869,
+            "name": "Draconic Legend's Pennant",
+            "notObtainable": true
           }
         ],
         "name": "Solo Shuffle"
@@ -6542,6 +6591,18 @@
             "icon": "inv_misc_1h_umbrella_b_01",
             "itemId": 212525,
             "name": "Delicate Ebony Parasol"
+          },
+          {
+            "ID": 1471,
+            "icon": "inv_fishingchair",
+            "itemId": 218112,
+            "name": "Colorful Beach Chair"
+          },
+          {
+            "ID": 1475,
+            "icon": "inv_firearm_2h_waterblaster_c_01",
+            "itemId": 220692,
+            "name": "X-treme Water Blaster Display"
           }
         ],
         "name": "Trading Post"
