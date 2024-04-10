@@ -117,6 +117,17 @@
         "name": "Racial"
       },
       {
+        "items": [
+          {
+            "ID": 1464,
+            "icon": "inv_helm_cloth_b_01pirate_black",
+            "itemId": 170197,
+            "name": "Swarthy Warning Sign"
+          }
+        ],
+        "name": "Limited Time: Plunderstorm"
+      },
+      {
         "id": "6edf78f8",
         "items": [
           {
@@ -866,6 +877,13 @@
             "icon": "inv_mdi_awc_bannerreward_icons_blue",
             "itemId": 211424,
             "name": "Dreaming Banner of the Aspects"
+          },
+          {
+            "ID": 1472,
+            "icon": "inv_mdi_awc_bannerreward_icons_red",
+            "itemId": 218128,
+            "name": "Draconic Banner of the Aspects",
+            "notObtainable": true
           }
         ],
         "name": "Mythic Dungeon Invitational"
@@ -877,8 +895,13 @@
             "ID": 1329,
             "icon": "inv_pet_naaru_purple",
             "itemId": 206195,
-            "name": "Path of the Naaru",
-            "notObtainable": true
+            "name": "Path of the Naaru"
+          },
+          {
+            "ID": 1446,
+            "icon": "inv_misc_flower_02",
+            "itemId": 211788,
+            "name": "Tess's Peacebloom"
           }
         ],
         "name": "World"
@@ -5362,7 +5385,8 @@
             "ID": 1330,
             "icon": "inv_soloshufflepennantreward_icons_blue",
             "itemId": 206267,
-            "name": "Obsidian Legend's Pennant"
+            "name": "Obsidian Legend's Pennant",
+            "notObtainable": true
           },
           {
             "ID": 1434,
@@ -5555,6 +5579,12 @@
             "icon": "inv_misc_easterbasket",
             "itemId": 204675,
             "name": "A Drake's Big Basket of Eggs"
+          },
+          {
+            "ID": 1461,
+            "icon": "inv_10_specialreagentfoozles_coolegg_bronze",
+            "itemId": 216881,
+            "name": "Duck Disguiser"
           }
         ],
         "name": "Noblegarden"
@@ -6255,6 +6285,17 @@
           }
         ],
         "name": "Timewalking"
+      },
+      {
+        "items": [
+          {
+            "ID": 1466,
+            "icon": "inv_misc_craftingreagent_vial01",
+            "itemId": 212518,
+            "name": "Vial of Endless Draconic Scales"
+          }
+        ],
+        "name": "Dragonriding Cup"
       },
       {
         "id": "69fd463c",
