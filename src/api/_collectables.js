@@ -141,7 +141,7 @@ export async function parseCollectablesObject(categories, profile, collected_dat
                 //    3) You meet the class restriction
                 //    4) You meet the race restriction
                 var hasthis = itm.collected;
-                var showthis = (hasthis || !item.notObtainable || (showHiddenItems == "true" && !item.notReleased));
+                var showthis = (hasthis || !item.notObtainable || (showHiddenItems == "shown" && !item.notReleased));
 
                 if (item.side && item.side !== profile.factionMapped) {
                     showthis = false;

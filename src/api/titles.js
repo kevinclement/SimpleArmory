@@ -72,7 +72,7 @@ function parseTitlesObject(db, profile, earned) {
                 }
 
                 var hasthis = item.collected;
-                var showthis = (hasthis || !item.notObtainable || (getShowHiddenSetting() == "true" && !item.notReleased));
+                var showthis = (hasthis || !item.notObtainable || (getShowHiddenSetting() == "shown" && !item.notReleased));
 
                 if (item.side && item.side !== profile.factionMapped) {
                     showthis = false;

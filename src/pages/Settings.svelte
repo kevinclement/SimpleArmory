@@ -54,7 +54,7 @@
 
   const toggleHidden = (e) => {
 		e.preventDefault();
-		$preferences.showHidden = $preferences.showHidden ? false : true;
+		$preferences.showHidden = $preferences.showHidden == "hidden" ? "shown" : "hidden";
 
 		localStorage.setItem('showHidden', $preferences.showHidden);
 	}
@@ -102,7 +102,7 @@
 
     <div>
       <a href="#/" on:click={toggleHidden}
-        >{$preferences.showHidden === false ? "Show Unobtainable Collectibles" : "Hide Unobtainable Collectibles"}
+        >{$preferences.showHidden === "hidden" ? "Show Unobtainable Collectibles" : "Hide Unobtainable Collectibles"}
     </div>
 
     <div>
