@@ -245,6 +245,7 @@
             "id": 40226,
             "name": "Mistrunner",
             "notObtainable": true,
+            "notReleased":true,
             "titleId": 539,
             "type": "achievement"
           },
@@ -253,6 +254,7 @@
             "id": 20004,
             "name": "Timerunner",
             "notObtainable": true,
+            "notReleased":true,
             "titleId": 551,
             "type": "achievement"
           },
@@ -261,6 +263,7 @@
             "id": 40227,
             "name": "Paragon of the Mists",
             "notObtainable": true,
+            "notReleased":true,
             "titleId": 552,
             "type": "achievement"
           },
@@ -269,6 +272,7 @@
             "id": 20007,
             "name": "Claw of Eternus",
             "notObtainable": true,
+            "notReleased":true,
             "titleId": 553,
             "type": "achievement"
           }
@@ -572,6 +576,7 @@
             "id": 787,
             "name": "Honorary Historian",
             "notObtainable": true,
+            "notReleased":true,
             "titleId": 518,
             "type": "title"
           }
@@ -2742,14 +2747,6 @@
       {
         "items": [
           {
-            "icon": "inv_misc_questionmark",
-            "id": 742,
-            "name": "The Elite Evoker",
-            "notObtainable": true,
-            "titleId": 481,
-            "type": "title"
-          },
-          {
             "icon": "achievement_featsofstrength_gladiator_07",
             "id": 15951,
             "name": "Crimson Gladiator",
@@ -2914,6 +2911,7 @@
             "id": 815,
             "name": "Swabbie",
             "notObtainable": true,
+            "notReleased":true,
             "titleId": 542,
             "type": "title"
           },
@@ -2922,6 +2920,7 @@
             "id": 816,
             "name": "Deck Hand",
             "notObtainable": true,
+            "notReleased":true,
             "titleId": 543,
             "type": "title"
           },
@@ -2930,6 +2929,7 @@
             "id": 817,
             "name": "Swashbuckler",
             "notObtainable": true,
+            "notReleased":true,
             "titleId": 544,
             "type": "title"
           },
@@ -2938,6 +2938,7 @@
             "id": 818,
             "name": "Buccaneer",
             "notObtainable": true,
+            "notReleased":true,
             "titleId": 545,
             "type": "title"
           },
@@ -2946,6 +2947,7 @@
             "id": 819,
             "name": "First Mate",
             "notObtainable": true,
+            "notReleased":true,
             "titleId": 546,
             "type": "title"
           }
@@ -2962,7 +2964,7 @@
       {
         "items": [
           {
-            "icon": "inv_misc_questionmark",
+            "icon": "achievement_zone_silithus_01",
             "id": 46,
             "name": "Scarab Lord",
             "notObtainable": true,
@@ -3103,7 +3105,7 @@
             "type": "achievement"
           },
           {
-            "icon": "inv_misc_questionmark",
+            "icon": "achievement_challengemode_gateofthesettingsun_platinum",
             "id": 366,
             "name": "Defender of the Wall",
             "notObtainable": true,
@@ -3111,7 +3113,7 @@
             "type": "title"
           },
           {
-            "icon": "inv_misc_questionmark",
+            "icon": "achievement_challengemode_mogushanpalace_platinum",
             "id": 367,
             "name": "Mogu-Slayer",
             "notObtainable": true,
@@ -3119,7 +3121,7 @@
             "type": "title"
           },
           {
-            "icon": "inv_helmet_52",
+            "icon": "achievement_challengemode_scarlethalls_platinum",
             "id": 6760,
             "name": "Flameweaver",
             "notObtainable": true,
@@ -3127,7 +3129,7 @@
             "type": "achievement"
           },
           {
-            "icon": "inv_misc_questionmark",
+            "icon": "achievement_challengemode_scarletmonastery_platinum",
             "id": 369,
             "name": "Scarlet Commander",
             "notObtainable": true,
@@ -3135,7 +3137,7 @@
             "type": "title"
           },
           {
-            "icon": "inv_misc_questionmark",
+            "icon": "achievement_challengemode_scholomance_platinum",
             "id": 370,
             "name": "Darkmaster",
             "notObtainable": true,
@@ -3143,7 +3145,7 @@
             "type": "title"
           },
           {
-            "icon": "inv_misc_questionmark",
+            "icon": "achievement_challengemode_shadopanmonastery_platinum",
             "id": 371,
             "name": "Purified Defender",
             "notObtainable": true,
@@ -3151,7 +3153,7 @@
             "type": "title"
           },
           {
-            "icon": "inv_misc_questionmark",
+            "icon": "achievement_challengemode_seigeofniuzaotemple_platinum",
             "id": 372,
             "name": "Siegebreaker",
             "notObtainable": true,
@@ -3159,7 +3161,7 @@
             "type": "title"
           },
           {
-            "icon": "inv_misc_questionmark",
+            "icon": "achievement_challengemode_stormstoutbrewery_platinum",
             "id": 373,
             "name": "Stormbrewer",
             "notObtainable": true,
@@ -3167,7 +3169,7 @@
             "type": "title"
           },
           {
-            "icon": "inv_misc_questionmark",
+            "icon": "achievement_challengemode_templeofthejadeserpent_platinum",
             "id": 374,
             "name": "Jade Protector",
             "notObtainable": true,
@@ -3191,7 +3193,7 @@
             "type": "achievement"
           },
           {
-            "icon": "inv_misc_questionmark",
+            "icon": "achievement_challengemode_ogreslagmines_gold",
             "id": 429,
             "name": "The Mine Master",
             "notObtainable": true,
@@ -3199,7 +3201,7 @@
             "type": "title"
           },
           {
-            "icon": "inv_misc_questionmark",
+            "icon": "achievement_challengemode_blackrockdocks_gold",
             "id": 430,
             "name": "Dockmaster",
             "notObtainable": true,
@@ -3207,7 +3209,7 @@
             "type": "title"
           },
           {
-            "icon": "inv_misc_questionmark",
+            "icon": "achievement_challengemode_auchindoun_gold",
             "id": 431,
             "name": "The Soul Preserver",
             "notObtainable": true,
@@ -3215,7 +3217,7 @@
             "type": "title"
           },
           {
-            "icon": "inv_misc_questionmark",
+            "icon": "achievement_challengemode_arakkoaspires_gold",
             "id": 432,
             "name": "Scion of Rukhmar",
             "notObtainable": true,
@@ -3223,7 +3225,7 @@
             "type": "title"
           },
           {
-            "icon": "inv_misc_questionmark",
+            "icon": "achievement_challengemode_shadowmoonhideout_gold",
             "id": 433,
             "name": "Spiritwalker",
             "notObtainable": true,
@@ -3231,7 +3233,7 @@
             "type": "title"
           },
           {
-            "icon": "inv_misc_questionmark",
+            "icon": "achievement_challengemode_upperbrspire_gold",
             "id": 434,
             "name": "Lord of Blackrock",
             "notObtainable": true,
@@ -3239,7 +3241,7 @@
             "type": "title"
           },
           {
-            "icon": "inv_misc_questionmark",
+            "icon": "achievement_challengemode_upperbrspire_gold",
             "id": 435,
             "name": "Lady of Blackrock",
             "notObtainable": true,
@@ -3247,7 +3249,7 @@
             "type": "title"
           },
           {
-            "icon": "inv_misc_questionmark",
+            "icon": "achievement_challengemode_everbloom_gold",
             "id": 436,
             "name": "The Violet Guardian",
             "notObtainable": true,
@@ -3255,7 +3257,7 @@
             "type": "title"
           },
           {
-            "icon": "inv_misc_questionmark",
+            "icon": "achievement_challengemode_blackrockdepot_gold",
             "id": 437,
             "name": "The Grimrail Suplexer",
             "notObtainable": true,

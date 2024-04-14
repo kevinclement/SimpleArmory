@@ -65,6 +65,7 @@
 		})
 
 		$preferences.itemSkin = localStorage.getItem('itemSkin') ?? 'new';
+		$preferences.showHidden = localStorage.getItem('showHidden') ?? false;
 	})
 
     function getCharInfoFromURL() {

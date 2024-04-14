@@ -103,15 +103,13 @@ IGNORE_TITLE_ID = [
     396,  # %s the Elite Shaman https://www.wowhead.com/title=646
     397,  # %s the Elite Warlock https://www.wowhead.com/title=647
     398,  # %s the Elite Warrior https://www.wowhead.com/title=648
+    481,  # %s the Elite Evoker https://www.wowhead.com/title=742
     399,  # %s the T-Shirt Enthusiast https://www.wowhead.com/title=649
     406,  # Sparking %s https://www.wowhead.com/title=658
     408,  # Pilgrim %s the Mallet Bearer https://www.wowhead.com/title=660
     413,  # %s, As Themselves https://www.wowhead.com/title=666
     436,  # %s the Avowed https://www.wowhead.com/title=690
     453,  # The [PH] TBD Title https://www.wowhead.com/title=713
-    464,  # Hero of Fate https://www.wowhead.com/title=15685
-    465,  # The Shrouded https://www.wowhead.com/title=15689
-    466,  # The Shrouded Hero https://www.wowhead.com/title=15756
     467,  # Honorary Dryad https://www.wowhead.com/title=728
     469  # The Worldbreaker https://www.wowhead.com/title=13931
 ]

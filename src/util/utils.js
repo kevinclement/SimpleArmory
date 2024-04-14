@@ -73,6 +73,10 @@ export function getDarkMode(window, cb) {
     }
 }
 
+export function getShowHiddenSetting() {
+    return(localStorage.getItem("showHidden"));
+}
+
 export function getWowheadUrl() {
     if (typeof window !== 'undefined') {
         if(localStorage.getItem('wowhead_url'))
