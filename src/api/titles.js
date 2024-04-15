@@ -44,6 +44,8 @@ function parseTitlesObject(db, profile, earned) {
     var totalCollected = 0;
     var totalPossible = 0;
 
+    var showHiddenItems = getShowHiddenSetting();
+
     // Build up lookup for titles that character has
     earned.forEach((title) => {
         collected[title.id] = title;
@@ -72,7 +74,7 @@ function parseTitlesObject(db, profile, earned) {
                 }
 
                 var hasthis = item.collected;
-                var showthis = (hasthis || !item.notObtainable || (getShowHiddenSetting() == "shown" && !item.notReleased));
+                var showthis = (hasthis || !item.notObtainable || (showHiddenItems == "shown" && !item.notReleased));
 
                 if (item.side && item.side !== profile.factionMapped) {
                     showthis = false;
