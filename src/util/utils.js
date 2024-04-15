@@ -77,6 +77,10 @@ export function getShowHiddenSetting() {
     return(localStorage.getItem("showHidden"));
 }
 
+export function getShowHiddenUpdated() {
+    return(localStorage.getItem("showHiddenUpdated"));
+}
+
 export function getWowheadUrl() {
     if (typeof window !== 'undefined') {
         if(localStorage.getItem('wowhead_url'))

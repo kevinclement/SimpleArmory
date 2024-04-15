@@ -56,6 +56,7 @@
 		e.preventDefault();
 		$preferences.showHidden = $preferences.showHidden == "hidden" ? "shown" : "hidden";
 
+    localStorage.setItem('showHiddenUpdated',Date.now());
 		localStorage.setItem('showHidden', $preferences.showHidden);
 	}
 
