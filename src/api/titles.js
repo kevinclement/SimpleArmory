@@ -2,6 +2,7 @@ import { getData } from '$api/_blizzard'
 import { getProfile } from '$api/profile'
 import { getJsonDb } from '$api/_db'
 import Cache from '$api/_cache'
+import { getShowHiddenSetting } from '../util/utils'
 
 let _cache;
 export async function getTitles(region, realm, character) {   
@@ -43,6 +44,8 @@ function parseTitlesObject(db, profile, earned) {
     var totalCollected = 0;
     var totalPossible = 0;
 
+    var showHiddenItems = getShowHiddenSetting();
+
     // Build up lookup for titles that character has
     earned.forEach((title) => {
         collected[title.id] = title;
@@ -71,7 +74,7 @@ function parseTitlesObject(db, profile, earned) {
                 }
 
                 var hasthis = item.collected;
-                var showthis = (hasthis || !item.notObtainable);
+                var showthis = (hasthis || !item.notObtainable || (showHiddenItems == "shown" && !item.notReleased));
 
                 if (item.side && item.side !== profile.factionMapped) {
                     showthis = false;

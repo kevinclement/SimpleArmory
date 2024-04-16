@@ -52,6 +52,14 @@
     localStorage.setItem("itemSkin", $preferences.itemSkin);
   };
 
+  const toggleHidden = (e) => {
+		e.preventDefault();
+		$preferences.showHidden = $preferences.showHidden == "hidden" ? "shown" : "hidden";
+
+    localStorage.setItem('showHiddenUpdated',Date.now());
+		localStorage.setItem('showHidden', $preferences.showHidden);
+	}
+
   function setLocale(e, wowhead_url) {
     e.preventDefault();
 
@@ -91,6 +99,11 @@
       <a href="#/" on:click={toggleItemSkin}
         >Use {$preferences.itemSkin === "classic" ? "New" : "Classic"} Item Skin
       </a>
+    </div>
+
+    <div>
+      <a href="#/" on:click={toggleHidden}
+        >{$preferences.showHidden === "hidden" ? "Show Unobtainable Collectibles" : "Hide Unobtainable Collectibles"}
     </div>
 
     <div>

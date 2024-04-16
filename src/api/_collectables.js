@@ -1,3 +1,5 @@
+import { getShowHiddenSetting } from "../util/utils"
+
 function getHigherQualityBattlePet(currentPet, newPet) {
     function getPetsQuality(type) {
         switch (type) {
@@ -22,6 +24,8 @@ export async function parseCollectablesObject(categories, profile, collected_dat
     var collected = {};
     var totalCollected = 0;
     var totalPossible = 0;
+
+    var showHiddenItems = getShowHiddenSetting();
 
     // Build up lookup for items that character has
     collected_data[collectedProperty].forEach((item) => {
@@ -137,7 +141,7 @@ export async function parseCollectablesObject(categories, profile, collected_dat
                 //    3) You meet the class restriction
                 //    4) You meet the race restriction
                 var hasthis = itm.collected;
-                var showthis = (hasthis || !item.notObtainable);
+                var showthis = (hasthis || !item.notObtainable || (showHiddenItems == "shown" && !item.notReleased));
 
                 if (item.side && item.side !== profile.factionMapped) {
                     showthis = false;
