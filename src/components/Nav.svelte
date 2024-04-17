@@ -1,7 +1,6 @@
 <script>
-	import { region, realm, character, page, category } from '$stores/user'
+	import { region, realm, character, avatar, page, category } from '$stores/user'
 	import { preferences } from '$stores/preferences'
-	import { getProfileMedia } from '$api/profile'
 	import { getUrl } from '$util/url'
 	import { getWowheadUrl } from '$util/utils'
 	import { onMount } from 'svelte'
@@ -58,7 +57,6 @@
 	    $realm && $realm !== '' && 
 	    $character && $character !== ''
 	$: armoryUrl = !$character ? '' : 'https://worldofwarcraft.com/character/' + $region + '/' + $realm + '/' + $character.toLowerCase();
-	$: imgUrl = getProfileMedia($region, $realm, $character)
 
 	const toggleCollapsed = (e) => {
 		menuCollapsed = !menuCollapsed;
@@ -197,9 +195,7 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown" class:open={menuItems.Profile.isOpen}>
 					<a id="profileDrop" href="#/" aria-label="Profile" on:click="{(e) => toggleDropDown(e,menuItems.Profile)}" class="navbar-char-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-						{#await imgUrl then value}
-						<img width="32" height="32" class="navbar-char-image" src="{value}" alt="Profile"/>
-						{/await}
+						<img width="32" height="32" class="navbar-char-image" src="{$avatar}" alt="Profile"/>					
 						<b class="caret"></b>
 					</a>
 
