@@ -1,3 +1,4 @@
+import { region, realm, character, avatar, page, category, subcat } from '$stores/user.js';
 import { getData } from '$api/_blizzard'
 import Cache from '$api/_cache'
 
@@ -27,6 +28,9 @@ export async function getProfile(region, realm, character) {
     profile.raceMapped = profile.race.id;
     profile.genderMapped = profile.gender.type === "MALE" ? 'M' : 'F'
 
+    // set the character media url based on profile information
+    avatar.set(getAvatar(region, realm, profile.id));
+
     _cache.update(
         region,
         realm,
@@ -36,46 +40,9 @@ export async function getProfile(region, realm, character) {
     return _cache.cache;
 }
 
-let _media;
-export async function getProfileMedia(region, realm, character) {
-    // if we don't have a character, return 1x1 white pixel
-    if (!character || region === 'error') {
-        return 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=';
-    }
+function getAvatar(region, realm, characterId) {
+    // This is some secret sauce that isn't really documented anywhere.  Found on discord support channel.
+    let charCat = characterId % 256;
 
-    if (!_media) {
-        _media = new Cache(region, realm, character);
-    }
-    else if (_media.isValid(region, realm, character)) {
-        return _media.cache;
-    }
-
-    // TODO: use race-id and gender-id as a fallback
-    // ?alt=/shadow/avatar/{race-id}-{gender-id}.jpg
-    // e.e. ?alt=/shadow/avatar/2-1.jpg
-
-    let pMedia = await getData(region, realm, character, 'character-media');
-    if (pMedia.status && pMedia.status === 404) {
-        // update to a 1x1 empty
-        _media.update(
-            region,
-            realm,
-            character,
-            'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII='
-        )
-        return _media.cache; 
-    }
-    
-    var avatarFallback = '?alt=/shadow/avatar/1-1.jpg';
-    let profileMedia = pMedia.avatar_url ?
-        pMedia.avatar_url + avatarFallback : 
-        pMedia.assets[0].value + avatarFallback;
-    
-    _media.update(
-        region,
-        realm,
-        character,
-        profileMedia
-    )
-    return _media.cache;
+    return(`https://render.worldofwarcraft.com/${region}/character/${realm}/${charCat}/${characterId}-avatar.jpg`)
 }
