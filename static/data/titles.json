@@ -7,10 +7,10 @@
         "items": [
           {
             "icon": "achievement_boss_illidan",
-            "id": 12,
+            "id": 458,
             "name": "Illidari",
             "titleId": 344,
-            "type": "class"
+            "type": "title"
           }
         ],
         "name": "Class"
@@ -223,6 +223,7 @@
             "icon": "spell_holy_fistofjustice",
             "id": 13191,
             "name": "Brawler",
+            "notObtainable": true,
             "side": "A",
             "titleId": 209,
             "type": "achievement"
@@ -231,6 +232,7 @@
             "icon": "spell_holy_fistofjustice",
             "id": 13192,
             "name": "Brawler",
+            "notObtainable": true,
             "side": "H",
             "titleId": 209,
             "type": "achievement"
@@ -245,7 +247,7 @@
             "id": 40226,
             "name": "Mistrunner",
             "notObtainable": true,
-            "notReleased":true,
+            "notReleased": true,
             "titleId": 539,
             "type": "achievement"
           },
@@ -254,7 +256,7 @@
             "id": 20004,
             "name": "Timerunner",
             "notObtainable": true,
-            "notReleased":true,
+            "notReleased": true,
             "titleId": 551,
             "type": "achievement"
           },
@@ -263,7 +265,7 @@
             "id": 40227,
             "name": "Paragon of the Mists",
             "notObtainable": true,
-            "notReleased":true,
+            "notReleased": true,
             "titleId": 552,
             "type": "achievement"
           },
@@ -272,7 +274,7 @@
             "id": 20007,
             "name": "Claw of Eternus",
             "notObtainable": true,
-            "notReleased":true,
+            "notReleased": true,
             "titleId": 553,
             "type": "achievement"
           }
@@ -314,32 +316,32 @@
       {
         "items": [
           {
-            "icon": "inv_misc_questionmark",
-            "id": 734,
+            "icon": "ui_majorfaction_centaur",
+            "id": 16528,
             "name": "Khansguard",
             "titleId": 473,
-            "type": "title"
+            "type": "achievement"
           },
           {
-            "icon": "inv_misc_questionmark",
-            "id": 735,
+            "icon": "ui_majorfaction_valdrakken",
+            "id": 16530,
             "name": "Ally of Dragons",
             "titleId": 474,
-            "type": "title"
+            "type": "achievement"
           },
           {
-            "icon": "inv_misc_questionmark",
-            "id": 736,
+            "icon": "ui_majorfaction_expedition",
+            "id": 16522,
             "name": "Intrepid Explorer",
             "titleId": 475,
-            "type": "title"
+            "type": "achievement"
           },
           {
-            "icon": "inv_misc_questionmark",
-            "id": 737,
+            "icon": "ui_majorfaction_tuskarr",
+            "id": 16529,
             "name": "Of Iskaara",
             "titleId": 476,
-            "type": "title"
+            "type": "achievement"
           },
           {
             "icon": "inv_crown_02",
@@ -363,11 +365,11 @@
             "type": "achievement"
           },
           {
-            "icon": "inv_misc_questionmark",
-            "id": 781,
+            "icon": "inv_shield_timewalker_b_01",
+            "id": 18615,
             "name": "Unparalleled",
             "titleId": 513,
-            "type": "title"
+            "type": "achievement"
           },
           {
             "icon": "inv_helm_armor_buckledhat_b_01_darkbrown",
@@ -559,10 +561,10 @@
           },
           {
             "icon": "inv_misc_questionmark",
-            "id": 782,
+            "id": 18642,
             "name": "The Inquisitive",
             "titleId": 512,
-            "type": "title"
+            "type": "achievement"
           },
           {
             "icon": "inv_farm_pumpkinseed_purple",
@@ -576,7 +578,7 @@
             "id": 787,
             "name": "Honorary Historian",
             "notObtainable": true,
-            "notReleased":true,
+            "notReleased": true,
             "titleId": 518,
             "type": "title"
           }
@@ -938,18 +940,6 @@
           }
         ],
         "name": "Quests"
-      },
-      {
-        "items": [
-          {
-            "icon": "spell_nzinsanity_shortsighted",
-            "id": 14140,
-            "name": "The Faceless One",
-            "titleId": 419,
-            "type": "achievement"
-          }
-        ],
-        "name": "Horrific Visions"
       },
       {
         "items": [
@@ -1573,6 +1563,7 @@
             "icon": "ability_garrosh_hellscreams_warsong",
             "id": 8680,
             "name": "Liberator of Orgrimmar",
+            "side": "H",
             "titleId": 212,
             "type": "achievement"
           },
@@ -2313,7 +2304,12 @@
             "name": "The Tactician",
             "titleId": 369,
             "type": "achievement"
-          },
+          }
+        ],
+        "name": "Honor Level"
+      },
+      {
+        "items": [
           {
             "icon": "achievement_pvp_p_15",
             "id": 870,
@@ -2321,12 +2317,7 @@
             "side": "A",
             "titleId": 94,
             "type": "achievement"
-          }
-        ],
-        "name": "Honor Level"
-      },
-      {
-        "items": [
+          },
           {
             "icon": "achievement_pvp_p_250k",
             "id": 870,
@@ -2348,19 +2339,19 @@
       {
         "items": [
           {
-            "icon": "inv_bannerpvp_01",
-            "id": 5325,
-            "name": "Veteran of the Horde",
-            "side": "H",
-            "titleId": 153,
-            "type": "achievement"
-          },
-          {
             "icon": "inv_bannerpvp_02",
             "id": 5328,
             "name": "Veteran of the Alliance",
             "side": "A",
             "titleId": 152,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_bannerpvp_01",
+            "id": 5325,
+            "name": "Veteran of the Horde",
+            "side": "H",
+            "titleId": 153,
             "type": "achievement"
           },
           {
@@ -2384,7 +2375,7 @@
             "id": 5345,
             "name": "Scout",
             "side": "H",
-            "titleId": 15,
+            "titleId": 168,
             "type": "achievement"
           },
           {
@@ -2392,7 +2383,7 @@
             "id": 5346,
             "name": "Grunt",
             "side": "H",
-            "titleId": 16,
+            "titleId": 169,
             "type": "achievement"
           },
           {
@@ -2400,7 +2391,7 @@
             "id": 5347,
             "name": "Sergeant",
             "side": "H",
-            "titleId": 17,
+            "titleId": 170,
             "type": "achievement"
           },
           {
@@ -2408,7 +2399,7 @@
             "id": 5348,
             "name": "Senior Sergeant",
             "side": "H",
-            "titleId": 18,
+            "titleId": 171,
             "type": "achievement"
           },
           {
@@ -2416,7 +2407,7 @@
             "id": 5349,
             "name": "First Sergeant",
             "side": "H",
-            "titleId": 19,
+            "titleId": 172,
             "type": "achievement"
           },
           {
@@ -2424,7 +2415,7 @@
             "id": 5350,
             "name": "Stone Guard",
             "side": "H",
-            "titleId": 20,
+            "titleId": 173,
             "type": "achievement"
           },
           {
@@ -2432,7 +2423,7 @@
             "id": 5351,
             "name": "Blood Guard",
             "side": "H",
-            "titleId": 21,
+            "titleId": 174,
             "type": "achievement"
           },
           {
@@ -2440,7 +2431,7 @@
             "id": 5352,
             "name": "Legionnaire",
             "side": "H",
-            "titleId": 22,
+            "titleId": 175,
             "type": "achievement"
           },
           {
@@ -2448,7 +2439,7 @@
             "id": 5338,
             "name": "Centurion",
             "side": "H",
-            "titleId": 23,
+            "titleId": 176,
             "type": "achievement"
           },
           {
@@ -2456,7 +2447,7 @@
             "id": 5353,
             "name": "Champion",
             "side": "H",
-            "titleId": 24,
+            "titleId": 177,
             "type": "achievement"
           },
           {
@@ -2464,7 +2455,7 @@
             "id": 5354,
             "name": "Lieutenant General",
             "side": "H",
-            "titleId": 25,
+            "titleId": 178,
             "type": "achievement"
           },
           {
@@ -2472,7 +2463,7 @@
             "id": 5355,
             "name": "General",
             "side": "H",
-            "titleId": 26,
+            "titleId": 179,
             "type": "achievement"
           },
           {
@@ -2480,7 +2471,7 @@
             "id": 5342,
             "name": "Warlord",
             "side": "H",
-            "titleId": 27,
+            "titleId": 180,
             "type": "achievement"
           },
           {
@@ -2488,7 +2479,7 @@
             "id": 5356,
             "name": "High Warlord",
             "side": "H",
-            "titleId": 28,
+            "titleId": 181,
             "type": "achievement"
           },
           {
@@ -2496,7 +2487,7 @@
             "id": 5330,
             "name": "Private",
             "side": "A",
-            "titleId": 1,
+            "titleId": 154,
             "type": "achievement"
           },
           {
@@ -2504,7 +2495,7 @@
             "id": 5331,
             "name": "Corporal",
             "side": "A",
-            "titleId": 2,
+            "titleId": 155,
             "type": "achievement"
           },
           {
@@ -2512,7 +2503,7 @@
             "id": 5332,
             "name": "Sergeant",
             "side": "A",
-            "titleId": 3,
+            "titleId": 156,
             "type": "achievement"
           },
           {
@@ -2520,7 +2511,7 @@
             "id": 5333,
             "name": "Master Sergeant",
             "side": "A",
-            "titleId": 4,
+            "titleId": 157,
             "type": "achievement"
           },
           {
@@ -2528,7 +2519,7 @@
             "id": 5334,
             "name": "Sergeant Major",
             "side": "A",
-            "titleId": 5,
+            "titleId": 158,
             "type": "achievement"
           },
           {
@@ -2536,7 +2527,7 @@
             "id": 5335,
             "name": "Knight",
             "side": "A",
-            "titleId": 6,
+            "titleId": 159,
             "type": "achievement"
           },
           {
@@ -2544,7 +2535,7 @@
             "id": 5336,
             "name": "Knight-Lieutenant",
             "side": "A",
-            "titleId": 7,
+            "titleId": 160,
             "type": "achievement"
           },
           {
@@ -2552,7 +2543,7 @@
             "id": 5337,
             "name": "Knight-Captain",
             "side": "A",
-            "titleId": 8,
+            "titleId": 161,
             "type": "achievement"
           },
           {
@@ -2560,7 +2551,7 @@
             "id": 5359,
             "name": "Knight-Champion",
             "side": "A",
-            "titleId": 9,
+            "titleId": 162,
             "type": "achievement"
           },
           {
@@ -2568,7 +2559,7 @@
             "id": 5339,
             "name": "Lieutenant Commander",
             "side": "A",
-            "titleId": 10,
+            "titleId": 163,
             "type": "achievement"
           },
           {
@@ -2576,7 +2567,7 @@
             "id": 5340,
             "name": "Commander",
             "side": "A",
-            "titleId": 11,
+            "titleId": 164,
             "type": "achievement"
           },
           {
@@ -2584,7 +2575,7 @@
             "id": 5341,
             "name": "Marshal",
             "side": "A",
-            "titleId": 12,
+            "titleId": 165,
             "type": "achievement"
           },
           {
@@ -2592,7 +2583,7 @@
             "id": 5357,
             "name": "Field Marshal",
             "side": "A",
-            "titleId": 13,
+            "titleId": 166,
             "type": "achievement"
           },
           {
@@ -2600,7 +2591,7 @@
             "id": 5343,
             "name": "Grand Marshal",
             "side": "A",
-            "titleId": 14,
+            "titleId": 167,
             "type": "achievement"
           }
         ],
@@ -2911,7 +2902,7 @@
             "id": 815,
             "name": "Swabbie",
             "notObtainable": true,
-            "notReleased":true,
+            "notReleased": true,
             "titleId": 542,
             "type": "title"
           },
@@ -2920,7 +2911,7 @@
             "id": 816,
             "name": "Deck Hand",
             "notObtainable": true,
-            "notReleased":true,
+            "notReleased": true,
             "titleId": 543,
             "type": "title"
           },
@@ -2929,7 +2920,7 @@
             "id": 817,
             "name": "Swashbuckler",
             "notObtainable": true,
-            "notReleased":true,
+            "notReleased": true,
             "titleId": 544,
             "type": "title"
           },
@@ -2938,7 +2929,7 @@
             "id": 818,
             "name": "Buccaneer",
             "notObtainable": true,
-            "notReleased":true,
+            "notReleased": true,
             "titleId": 545,
             "type": "title"
           },
@@ -2947,7 +2938,7 @@
             "id": 819,
             "name": "First Mate",
             "notObtainable": true,
-            "notReleased":true,
+            "notReleased": true,
             "titleId": 546,
             "type": "title"
           }
@@ -3068,6 +3059,14 @@
             "name": "Azeroth's Champion",
             "notObtainable": true,
             "titleId": 407,
+            "type": "achievement"
+          },
+          {
+            "icon": "spell_nzinsanity_shortsighted",
+            "id": 14140,
+            "name": "The Faceless One",
+            "notObtainable": true,
+            "titleId": 419,
             "type": "achievement"
           }
         ],
