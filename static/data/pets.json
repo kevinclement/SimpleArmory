@@ -239,32 +239,6 @@
       {
         "items": [
           {
-            "ID": 4435,
-            "creatureId": 218977,
-            "icon": "inv_misc_fish_58",
-            "name": "Happy",
-            "spellid": 438543
-          },
-          {
-            "ID": 4426,
-            "creatureId": 218646,
-            "icon": "inv_hermitcrab_truesilver",
-            "name": "Bubbles",
-            "spellid": 437600
-          },
-          {
-            "ID": 4425,
-            "creatureId": 218647,
-            "icon": "inv_treasurecrabpet_red",
-            "name": "Glamrok",
-            "spellid": 437601
-          }
-        ],
-        "name": "Limited Time: Plunderstorm"
-      },
-      {
-        "items": [
-          {
             "ID": 4579,
             "creatureId": 223785,
             "icon": "inv_yakpet",
@@ -10547,6 +10521,35 @@
           }
         ],
         "name": "Anniversary"
+      },
+      {
+        "items": [
+          {
+            "ID": 4435,
+            "creatureId": 218977,
+            "icon": "inv_misc_fish_58",
+            "name": "Happy",
+            "notObtainable":true,
+            "spellid": 438543
+          },
+          {
+            "ID": 4426,
+            "creatureId": 218646,
+            "icon": "inv_hermitcrab_truesilver",
+            "name": "Bubbles",
+            "notObtainable":true,
+            "spellid": 437600
+          },
+          {
+            "ID": 4425,
+            "creatureId": 218647,
+            "icon": "inv_treasurecrabpet_red",
+            "name": "Glamrok",
+            "notObtainable":true,
+            "spellid": 437601
+          }
+        ],
+        "name": "Plunderstorm"
       },
       {
         "items": [

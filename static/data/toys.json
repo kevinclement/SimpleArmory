@@ -117,17 +117,6 @@
         "name": "Racial"
       },
       {
-        "items": [
-          {
-            "ID": 1464,
-            "icon": "inv_helm_cloth_b_01pirate_black",
-            "itemId": 170197,
-            "name": "Swarthy Warning Sign"
-          }
-        ],
-        "name": "Limited Time: Plunderstorm"
-      },
-      {
         "id": "6edf78f8",
         "items": [
           {
@@ -6679,6 +6668,18 @@
           }
         ],
         "name": "Trading Post Originals"
+      },
+      {
+        "items": [
+          {
+            "ID": 1464,
+            "icon": "inv_helm_cloth_b_01pirate_black",
+            "itemId": 170197,
+            "notObtainable":true,
+            "name": "Swarthy Warning Sign"
+          }
+        ],
+        "name": "Plunderstorm"
       },
       {
         "id": "41659622",
