@@ -76,7 +76,7 @@
                 prettyCatName = 'Expansion Features';
                 break;
             case 'remix':
-                prettyCatName = 'Pandaria: Remix';
+                prettyCatName = 'Remix: Pandaria';
                 break;
             case 'legacy':
                 prettyCatName = 'Legacy';

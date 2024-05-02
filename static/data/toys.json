@@ -30,28 +30,28 @@
             "icon": "inv_misc_map09",
             "itemId": 150744,
             "name": "Scouting Map: Walking Kalimdor with the Earthmother",
-            "obtainSide": "H"
+            "side": "H"
           },
           {
             "ID": 647,
             "icon": "inv_misc_map09",
             "itemId": 150743,
             "name": "Scouting Map: Surviving Kalimdor",
-            "obtainSide": "A"
+            "side": "A"
           },
           {
             "ID": 657,
             "icon": "inv_misc_map09",
             "itemId": 150745,
             "name": "Scouting Map: The Eastern Kingdoms Campaign",
-            "obtainSide": "H"
+            "side": "H"
           },
           {
             "ID": 651,
             "icon": "inv_misc_map09",
             "itemId": 150746,
             "name": "Scouting Map: Modern Provisioning of the Eastern Kingdoms",
-            "obtainSide": "A"
+            "side": "A"
           },
           {
             "ID": 1158,
@@ -117,17 +117,6 @@
         "name": "Racial"
       },
       {
-        "items": [
-          {
-            "ID": 1464,
-            "icon": "inv_helm_cloth_b_01pirate_black",
-            "itemId": 170197,
-            "name": "Swarthy Warning Sign"
-          }
-        ],
-        "name": "Limited Time: Plunderstorm"
-      },
-      {
         "id": "6edf78f8",
         "items": [
           {
@@ -136,7 +125,7 @@
             "itemId": 217724,
             "name": "Kindness of Chi-ji",
             "notObtainable": true,
-            "notReleased":true
+            "notReleased": true
           },
           {
             "ID": 1468,
@@ -144,7 +133,7 @@
             "itemId": 217726,
             "name": "Fortitude of Niuzao",
             "notObtainable": true,
-            "notReleased":true
+            "notReleased": true
           },
           {
             "ID": 1469,
@@ -152,7 +141,7 @@
             "itemId": 217723,
             "name": "Fury of Xuen",
             "notObtainable": true,
-            "notReleased":true
+            "notReleased": true
           },
           {
             "ID": 1470,
@@ -160,7 +149,7 @@
             "itemId": 217725,
             "name": "Essence of Yu'lon",
             "notObtainable": true,
-            "notReleased":true
+            "notReleased": true
           },
           {
             "ID": 1476,
@@ -168,7 +157,7 @@
             "itemId": 220777,
             "name": "Cherry Blossom Trail",
             "notObtainable": true,
-            "notReleased":true
+            "notReleased": true
           },
           {
             "ID": 1479,
@@ -176,7 +165,7 @@
             "itemId": 223146,
             "name": "Satchel of Stormborn Seeds",
             "notObtainable": true,
-            "notReleased":true
+            "notReleased": true
           }
         ],
         "name": "Limited Time: Timerunning Pandamonium"
@@ -812,12 +801,6 @@
             "icon": "ability_evoker_deepbreath",
             "itemId": 206043,
             "name": "Fyrakk's Frenzy"
-          },
-          {
-            "ID": 1331,
-            "icon": "inv_misc_nightmarebanner",
-            "itemId": 206008,
-            "name": "Nightmare Banner"
           }
         ],
         "name": "Events"
@@ -1572,13 +1555,6 @@
             "itemId": 187958,
             "name": "Shrouded Banner of the Opportune",
             "notObtainable": true
-          },
-          {
-            "ID": 1164,
-            "icon": "inv_misc_mdi_banner04",
-            "itemId": 187959,
-            "name": "PH - Banner of the Opportune",
-            "notObtainable": true
           }
         ],
         "name": "Mythic Dungeon Invitational"
@@ -1985,28 +1961,28 @@
             "icon": "achievement_bg_3flagcap_nodeaths",
             "itemId": 169276,
             "name": "Horde War Banner",
-            "obtainSide": "H"
+            "side": "H"
           },
           {
             "ID": 959,
             "icon": "achievement_general_hordeslayer",
             "itemId": 169277,
             "name": "Horde War Standard",
-            "obtainSide": "H"
+            "side": "H"
           },
           {
             "ID": 956,
             "icon": "achievement_bg_3flagcap_nodeaths",
             "itemId": 169275,
             "name": "Alliance War Banner",
-            "obtainSide": "A"
+            "side": "A"
           },
           {
             "ID": 958,
             "icon": "inv_bannerpvp_02",
             "itemId": 169278,
             "name": "Alliance War Standard",
-            "obtainSide": "A"
+            "side": "A"
           }
         ],
         "name": "Nazjatar PvP"
@@ -2085,14 +2061,14 @@
             "icon": "inv_bannerpvp_02",
             "itemId": 163828,
             "name": "Toy Siege Tower",
-            "obtainSide": "A"
+            "side": "A"
           },
           {
             "ID": 821,
             "icon": "inv_bannerpvp_01",
             "itemId": 163829,
             "name": "Toy War Machine",
-            "obtainSide": "H"
+            "side": "H"
           }
         ],
         "name": "Warfront: Arathi"
@@ -3107,7 +3083,7 @@
             "icon": "trade_archaeology_dignified-draenei-portrait",
             "itemId": 119144,
             "name": "Touch of the Naaru",
-            "obtainSide": "A"
+            "side": "A"
           },
           {
             "ID": 351,
@@ -3167,28 +3143,28 @@
             "icon": "spell_frost_frost",
             "itemId": 115468,
             "name": "Permanent Frost Essence",
-            "obtainSide": "H"
+            "side": "H"
           },
           {
             "ID": 542,
             "icon": "creatureportrait_bubble",
             "itemId": 115472,
             "name": "Permanent Time Bubble",
-            "obtainSide": "A"
+            "side": "A"
           },
           {
             "ID": 409,
             "icon": "inv_chest_cloth_draenei_c_01",
             "itemId": 128462,
             "name": "Karabor Councilor's Attire",
-            "obtainSide": "A"
+            "side": "A"
           },
           {
             "ID": 408,
             "icon": "inv_frostwolfpup",
             "itemId": 128471,
             "name": "Frostwolf Grunt's Battlegear",
-            "obtainSide": "H"
+            "side": "H"
           },
           {
             "ID": 366,
@@ -3201,14 +3177,14 @@
             "icon": "inv_misc_flute_01",
             "itemId": 116396,
             "name": "LeBlanc's Recorder",
-            "obtainSide": "A"
+            "side": "A"
           },
           {
             "ID": 947,
             "icon": "inv_misc_flute_01",
             "itemId": 115505,
             "name": "LeBlanc's Recorder",
-            "obtainSide": "H"
+            "side": "H"
           },
           {
             "ID": 945,
@@ -3317,14 +3293,14 @@
             "icon": "inv_banner_03",
             "itemId": 119217,
             "name": "Alliance Flag of Victory",
-            "obtainSide": "A"
+            "side": "A"
           },
           {
             "ID": 308,
             "icon": "inv_banner_03",
             "itemId": 119218,
             "name": "Horde Flag of Victory",
-            "obtainSide": "H"
+            "side": "H"
           },
           {
             "ID": 309,
@@ -3746,14 +3722,14 @@
             "icon": "achievement_reputation_kirintor_offensive",
             "itemId": 95567,
             "name": "Kirin Tor Beacon",
-            "obtainSide": "A"
+            "side": "A"
           },
           {
             "ID": 498,
             "icon": "achievement_faction_sunreaveronslaught",
             "itemId": 95568,
             "name": "Sunreaver Beacon",
-            "obtainSide": "H"
+            "side": "H"
           },
           {
             "ID": 248,
@@ -3826,14 +3802,14 @@
             "icon": "achievement_faction_sunreaveronslaught",
             "itemId": 95590,
             "name": "Glorious Standard of the Sunreaver Onslaught",
-            "obtainSide": "H"
+            "side": "H"
           },
           {
             "ID": 206,
             "icon": "achievement_reputation_kirintor_offensive",
             "itemId": 95589,
             "name": "Glorious Standard of the Kirin Tor Offensive",
-            "obtainSide": "A"
+            "side": "A"
           },
           {
             "ID": 154,
@@ -4106,14 +4082,14 @@
             "icon": "inv_misc_tolbaradsearchlight",
             "itemId": 64997,
             "name": "Tol Barad Searchlight",
-            "obtainSide": "H"
+            "side": "H"
           },
           {
             "ID": 246,
             "icon": "inv_misc_tolbaradsearchlight",
             "itemId": 63141,
             "name": "Tol Barad Searchlight",
-            "obtainSide": "A"
+            "side": "A"
           },
           {
             "ID": 222,
@@ -4245,70 +4221,70 @@
             "icon": "inv_misc_tournaments_banner_human",
             "itemId": 45011,
             "name": "Stormwind Banner",
-            "obtainSide": "A"
+            "side": "A"
           },
           {
             "ID": 217,
             "icon": "inv_misc_tournaments_banner_dwarf",
             "itemId": 45018,
             "name": "Ironforge Banner",
-            "obtainSide": "A"
+            "side": "A"
           },
           {
             "ID": 208,
             "icon": "inv_misc_tournaments_banner_gnome",
             "itemId": 45019,
             "name": "Gnomeregan Banner",
-            "obtainSide": "A"
+            "side": "A"
           },
           {
             "ID": 200,
             "icon": "inv_misc_tournaments_banner_draenei",
             "itemId": 45020,
             "name": "Exodar Banner",
-            "obtainSide": "A"
+            "side": "A"
           },
           {
             "ID": 198,
             "icon": "inv_misc_tournaments_banner_nightelf",
             "itemId": 45021,
             "name": "Darnassus Banner",
-            "obtainSide": "A"
+            "side": "A"
           },
           {
             "ID": 249,
             "icon": "inv_misc_tournaments_banner_scourge",
             "itemId": 45016,
             "name": "Undercity Banner",
-            "obtainSide": "H"
+            "side": "H"
           },
           {
             "ID": 244,
             "icon": "inv_misc_tournaments_banner_tauren",
             "itemId": 45013,
             "name": "Thunder Bluff Banner",
-            "obtainSide": "H"
+            "side": "H"
           },
           {
             "ID": 237,
             "icon": "inv_misc_tournaments_banner_bloodelf",
             "itemId": 45017,
             "name": "Silvermoon City Banner",
-            "obtainSide": "H"
+            "side": "H"
           },
           {
             "ID": 234,
             "icon": "inv_misc_tournaments_banner_troll",
             "itemId": 45015,
             "name": "Sen'jin Banner",
-            "obtainSide": "H"
+            "side": "H"
           },
           {
             "ID": 228,
             "icon": "inv_misc_tournaments_banner_orc",
             "itemId": 45014,
             "name": "Orgrimmar Banner",
-            "obtainSide": "H"
+            "side": "H"
           },
           {
             "ID": 189,
@@ -5957,28 +5933,28 @@
             "icon": "inv_shield_1h_alliancetoy_a_01",
             "itemId": 151349,
             "name": "Toy Weapon Set",
-            "obtainSide": "A"
+            "side": "A"
           },
           {
             "ID": 662,
             "icon": "inv_shield_1h_hordetoy_a_01",
             "itemId": 151348,
             "name": "Toy Weapon Set",
-            "obtainSide": "H"
+            "side": "H"
           },
           {
             "ID": 643,
             "icon": "inv_misc_gobstationx",
             "itemId": 151344,
             "name": "Hearthstation",
-            "obtainSide": "H"
+            "side": "H"
           },
           {
             "ID": 644,
             "icon": "inv_misc_gnomefundo86",
             "itemId": 151343,
             "name": "Hearthstation",
-            "obtainSide": "A"
+            "side": "A"
           },
           {
             "ID": 195,
@@ -5997,14 +5973,14 @@
             "icon": "inv_helm_alliancetoy_a_01",
             "itemId": 162643,
             "name": "Toy Armor Set",
-            "obtainSide": "A"
+            "side": "A"
           },
           {
             "ID": 790,
             "icon": "inv_helm_hordetoy_a_01",
             "itemId": 162642,
             "name": "Toy Armor Set",
-            "obtainSide": "H"
+            "side": "H"
           },
           {
             "ID": 984,
@@ -6017,14 +5993,14 @@
             "icon": "inv_garrison_hordedestroyer",
             "itemId": 172222,
             "name": "Crashin' Thrashin' Juggernaught",
-            "obtainSide": "H"
+            "side": "H"
           },
           {
             "ID": 982,
             "icon": "inv_garrison_alliancedestroyer",
             "itemId": 172223,
             "name": "Crashin' Thrashin' Battleship",
-            "obtainSide": "A"
+            "side": "A"
           },
           {
             "ID": 1062,
@@ -6422,12 +6398,6 @@
             "name": "Instant Statue Pedestal"
           },
           {
-            "ID": 214,
-            "icon": "inv_potion_27",
-            "itemId": 32542,
-            "name": "Imp in a Ball"
-          },
-          {
             "ID": 12,
             "icon": "spell_fire_twilightfire",
             "itemId": 67097,
@@ -6450,12 +6420,6 @@
             "icon": "inv_misc_gem_goldendraenite_01",
             "itemId": 69227,
             "name": "Fool's Gold"
-          },
-          {
-            "ID": 202,
-            "icon": "ability_warrior_challange",
-            "itemId": 45063,
-            "name": "Foam Sword Rack"
           },
           {
             "ID": 5,
@@ -6535,7 +6499,8 @@
             "ID": 281,
             "icon": "inv_misc_steel_hitching_post2",
             "itemId": 112324,
-            "name": "Nightmarish Hitching Post"
+            "name": "Nightmarish Hitching Post",
+            "notObtainable": true
           },
           {
             "ID": 926,
@@ -6547,13 +6512,17 @@
             "ID": 913,
             "icon": "2530046",
             "itemId": 166778,
-            "name": "Horde's Might Firework"
+            "name": "Horde's Might Firework",
+            "notObtainable": true,
+            "side": "H"
           },
           {
             "ID": 914,
             "icon": "2530045",
             "itemId": 166777,
-            "name": "Lion's Pride Firework"
+            "name": "Lion's Pride Firework",
+            "notObtainable": true,
+            "side": "A"
           },
           {
             "ID": 1438,
@@ -6584,6 +6553,12 @@
             "icon": "5344195",
             "itemId": 208883,
             "name": "Sandbox Storm Gryphon"
+          },
+          {
+            "ID": 1351,
+            "icon": "5333528",
+            "itemId": 208704,
+            "name": "Deepdweller's Earthen Hearthstone"
           }
         ],
         "name": "Collector's Edition"
@@ -6595,16 +6570,42 @@
             "ID": 609,
             "icon": "diabloanniversary_tomeoftownportal",
             "itemId": 142542,
-            "name": "Tome of Town Portal"
+            "name": "Tome of Town Portal",
+            "notObtainable": true
           },
           {
             "ID": 605,
             "icon": "inv_axe_2h_undeadguitar_c_01",
             "itemId": 143543,
-            "name": "Twelve-String Guitar"
+            "name": "Twelve-String Guitar",
+            "notObtainable": true
+          },
+          {
+            "ID": 1331,
+            "icon": "inv_misc_nightmarebanner",
+            "itemId": 206008,
+            "name": "Nightmare Banner",
+            "notObtainable": true
           }
         ],
         "name": "Diablo 20th Anniversary"
+      },
+      {
+        "items": [
+          {
+            "ID": 214,
+            "icon": "inv_potion_27",
+            "itemId": 32542,
+            "name": "Imp in a Ball"
+          },
+          {
+            "ID": 202,
+            "icon": "ability_warrior_challange",
+            "itemId": 45063,
+            "name": "Foam Sword Rack"
+          }
+        ],
+        "name": "Trading Post Re-releases"
       },
       {
         "id": "c1d734dd",
@@ -6639,7 +6640,7 @@
             "itemId": 212524,
             "name": "Delicate Crimson Parasol",
             "notObtainable": true,
-            "notReleased":true
+            "notReleased": true
           },
           {
             "ID": 1455,
@@ -6647,7 +6648,7 @@
             "itemId": 212525,
             "name": "Delicate Ebony Parasol",
             "notObtainable": true,
-            "notReleased":true
+            "notReleased": true
           },
           {
             "ID": 1471,
@@ -6655,7 +6656,7 @@
             "itemId": 218112,
             "name": "Colorful Beach Chair",
             "notObtainable": true,
-            "notReleased":true
+            "notReleased": true
           },
           {
             "ID": 1475,
@@ -6663,10 +6664,22 @@
             "itemId": 220692,
             "name": "X-treme Water Blaster Display",
             "notObtainable": true,
-            "notReleased":true
+            "notReleased": true
           }
         ],
-        "name": "Trading Post"
+        "name": "Trading Post Originals"
+      },
+      {
+        "items": [
+          {
+            "ID": 1464,
+            "icon": "inv_helm_cloth_b_01pirate_black",
+            "itemId": 170197,
+            "notObtainable":true,
+            "name": "Swarthy Warning Sign"
+          }
+        ],
+        "name": "Plunderstorm"
       },
       {
         "id": "41659622",
@@ -6720,22 +6733,18 @@
         "id": "c1d734dd",
         "items": [
           {
-            "ID": 1351,
-            "icon": "5333528",
-            "itemId": 208704,
-            "name": "Deepdweller's Earthen Hearthstone"
-          },
-          {
             "ID": 1450,
             "icon": "inv_hearthstone_gameboard",
             "itemId": 211946,
-            "name": "Hearthstone Game Table"
+            "name": "Hearthstone Game Table",
+            "notObtainable": true
           },
           {
             "ID": 1456,
             "icon": "inv_hearthstone_gold",
             "itemId": 212337,
-            "name": "Stone of the Hearth"
+            "name": "Stone of the Hearth",
+            "notObtainable": true
           }
         ],
         "name": "Hearthstone"
