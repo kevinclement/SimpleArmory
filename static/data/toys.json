@@ -136,7 +136,7 @@
             "itemId": 217724,
             "name": "Kindness of Chi-ji",
             "notObtainable": true,
-            "notReleased":true
+            "notReleased": true
           },
           {
             "ID": 1468,
@@ -144,7 +144,7 @@
             "itemId": 217726,
             "name": "Fortitude of Niuzao",
             "notObtainable": true,
-            "notReleased":true
+            "notReleased": true
           },
           {
             "ID": 1469,
@@ -152,7 +152,7 @@
             "itemId": 217723,
             "name": "Fury of Xuen",
             "notObtainable": true,
-            "notReleased":true
+            "notReleased": true
           },
           {
             "ID": 1470,
@@ -160,7 +160,7 @@
             "itemId": 217725,
             "name": "Essence of Yu'lon",
             "notObtainable": true,
-            "notReleased":true
+            "notReleased": true
           },
           {
             "ID": 1476,
@@ -168,7 +168,7 @@
             "itemId": 220777,
             "name": "Cherry Blossom Trail",
             "notObtainable": true,
-            "notReleased":true
+            "notReleased": true
           },
           {
             "ID": 1479,
@@ -176,7 +176,7 @@
             "itemId": 223146,
             "name": "Satchel of Stormborn Seeds",
             "notObtainable": true,
-            "notReleased":true
+            "notReleased": true
           }
         ],
         "name": "Limited Time: Timerunning Pandamonium"
@@ -1565,13 +1565,6 @@
             "icon": "inv_misc_mdi_banner03",
             "itemId": 187958,
             "name": "Shrouded Banner of the Opportune",
-            "notObtainable": true
-          },
-          {
-            "ID": 1164,
-            "icon": "inv_misc_mdi_banner04",
-            "itemId": 187959,
-            "name": "PH - Banner of the Opportune",
             "notObtainable": true
           }
         ],
@@ -5403,7 +5396,7 @@
           },
           {
             "ID": 1448,
-            "icon": "inv_soloshufflepennantreward_icons_red",
+            "icon": "inv_soloshufflepennantreward_icons_purple",
             "itemId": 211869,
             "name": "Draconic Legend's Pennant"
           }
@@ -6517,8 +6510,8 @@
             "ID": 281,
             "icon": "inv_misc_steel_hitching_post2",
             "itemId": 112324,
-            "notObtainable":true,
-            "name": "Nightmarish Hitching Post"
+            "name": "Nightmarish Hitching Post",
+            "notObtainable": true
           },
           {
             "ID": 926,
@@ -6530,17 +6523,17 @@
             "ID": 913,
             "icon": "2530046",
             "itemId": 166778,
-            "side": "H",
-            "notObtainable":true,
-            "name": "Horde's Might Firework"
+            "name": "Horde's Might Firework",
+            "notObtainable": true,
+            "side": "H"
           },
           {
             "ID": 914,
             "icon": "2530045",
             "itemId": 166777,
-            "side": "A",
-            "notObtainable":true,
-            "name": "Lion's Pride Firework"
+            "name": "Lion's Pride Firework",
+            "notObtainable": true,
+            "side": "A"
           },
           {
             "ID": 1438,
@@ -6588,22 +6581,22 @@
             "ID": 609,
             "icon": "diabloanniversary_tomeoftownportal",
             "itemId": 142542,
-            "notObtainable":true,
-            "name": "Tome of Town Portal"
+            "name": "Tome of Town Portal",
+            "notObtainable": true
           },
           {
             "ID": 605,
             "icon": "inv_axe_2h_undeadguitar_c_01",
             "itemId": 143543,
-            "notObtainable":true,
-            "name": "Twelve-String Guitar"
+            "name": "Twelve-String Guitar",
+            "notObtainable": true
           },
           {
             "ID": 1331,
             "icon": "inv_misc_nightmarebanner",
             "itemId": 206008,
             "name": "Nightmare Banner",
-            "notObtainable":true
+            "notObtainable": true
           }
         ],
         "name": "Diablo 20th Anniversary"
@@ -6658,7 +6651,7 @@
             "itemId": 212524,
             "name": "Delicate Crimson Parasol",
             "notObtainable": true,
-            "notReleased":true
+            "notReleased": true
           },
           {
             "ID": 1455,
@@ -6666,7 +6659,7 @@
             "itemId": 212525,
             "name": "Delicate Ebony Parasol",
             "notObtainable": true,
-            "notReleased":true
+            "notReleased": true
           },
           {
             "ID": 1471,
@@ -6674,7 +6667,7 @@
             "itemId": 218112,
             "name": "Colorful Beach Chair",
             "notObtainable": true,
-            "notReleased":true
+            "notReleased": true
           },
           {
             "ID": 1475,
@@ -6682,7 +6675,7 @@
             "itemId": 220692,
             "name": "X-treme Water Blaster Display",
             "notObtainable": true,
-            "notReleased":true
+            "notReleased": true
           }
         ],
         "name": "Trading Post Originals"
@@ -6738,20 +6731,19 @@
       {
         "id": "c1d734dd",
         "items": [
-          
           {
             "ID": 1450,
             "icon": "inv_hearthstone_gameboard",
             "itemId": 211946,
-            "notObtainable":true,
-            "name": "Hearthstone Game Table"
+            "name": "Hearthstone Game Table",
+            "notObtainable": true
           },
           {
             "ID": 1456,
             "icon": "inv_hearthstone_gold",
             "itemId": 212337,
-            "notObtainable":true,
-            "name": "Stone of the Hearth"
+            "name": "Stone of the Hearth",
+            "notObtainable": true
           }
         ],
         "name": "Hearthstone"
