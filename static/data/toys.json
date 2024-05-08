@@ -154,12 +154,6 @@
             "icon": "inv_misc_herb_talandrasrose",
             "itemId": 220777,
             "name": "Cherry Blossom Trail"
-          },
-          {
-            "ID": 1479,
-            "icon": "inv_misc_bag_herbpouch",
-            "itemId": 223146,
-            "name": "Satchel of Stormborn Seeds"
           }
         ],
         "name": "Limited Time: Remix: Pandaria"
@@ -772,6 +766,12 @@
             "icon": "inv_misc_herb_jadetealeaf",
             "itemId": 210864,
             "name": "Improvised Leafbed"
+          },
+          {
+            "ID": 1479,
+            "icon": "inv_misc_bag_herbpouch",
+            "itemId": 223146,
+            "name": "Satchel of Stormborn Seeds"
           }
         ],
         "name": "Quest"
@@ -872,7 +872,8 @@
             "ID": 1472,
             "icon": "inv_mdi_awc_bannerreward_icons_red",
             "itemId": 218128,
-            "name": "Draconic Banner of the Aspects"
+            "name": "Draconic Banner of the Aspects",
+            "notObtainable": true
           }
         ],
         "name": "Mythic Dungeon Invitational"
