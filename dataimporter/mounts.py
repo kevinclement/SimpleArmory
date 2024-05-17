@@ -28,9 +28,6 @@ IGNORE_MOUNT_ID = [
     333,   # Magic Rooster https://www.wowhead.com/mount/333
     334,   # Magic Rooster https://www.wowhead.com/mount/334
     335,   # Magic Rooster https://www.wowhead.com/mount/335
-    462,   # White Riding Yak https://www.wowhead.com/mount/462
-    484,   # Black Riding Yak https://www.wowhead.com/mount/484
-    485,   # Brown Riding Yak https://www.wowhead.com/mount/485
     776,   # Swift Spectral Rylak https://www.wowhead.com/mount/776
     934,   # Swift Spectral Hippogryph https://www.wowhead.com/mount/934
     935,   # Blue Qiraji War Tank https://www.wowhead.com/mount/935
