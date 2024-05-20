@@ -2259,18 +2259,6 @@
           }
         ],
         "name": "Horrific Visions"
-      },
-      {
-        "id": "dd8ef1ca",
-        "items": [
-          {
-            "ID": 986,
-            "icon": "inv_knife_1h_grimbatolraid_d_03",
-            "itemId": 173951,
-            "name": "N'lyeth, Sliver of N'Zoth"
-          }
-        ],
-        "name": "World PvP"
       }
     ]
   },
@@ -3166,26 +3154,6 @@
             "icon": "inv_jewelry_necklace_109",
             "itemId": 122283,
             "name": "Rukhmar's Sacred Memory"
-          },
-          {
-            "ID": 946,
-            "icon": "inv_misc_flute_01",
-            "itemId": 116396,
-            "name": "LeBlanc's Recorder",
-            "side": "A"
-          },
-          {
-            "ID": 947,
-            "icon": "inv_misc_flute_01",
-            "itemId": 115505,
-            "name": "LeBlanc's Recorder",
-            "side": "H"
-          },
-          {
-            "ID": 945,
-            "icon": "trade_archaeology_delicatemusicbox",
-            "itemId": 115501,
-            "name": "Kowalski's Music Box"
           }
         ],
         "name": "Reputation"
@@ -5320,6 +5288,31 @@
     "name": "PVP",
     "subcats": [
       {
+        "items": [
+          {
+            "ID": 946,
+            "icon": "inv_misc_flute_01",
+            "itemId": 116396,
+            "name": "LeBlanc's Recorder",
+            "side": "A"
+          },
+          {
+            "ID": 947,
+            "icon": "inv_misc_flute_01",
+            "itemId": 115505,
+            "name": "LeBlanc's Recorder",
+            "side": "H"
+          },
+          {
+            "ID": 945,
+            "icon": "trade_archaeology_delicatemusicbox",
+            "itemId": 115501,
+            "name": "Kowalski's Music Box"
+          }
+        ],
+        "name": "Ashran"
+      },
+      {
         "id": "1d8ed9dc",
         "items": [
           {
@@ -5354,6 +5347,18 @@
           }
         ],
         "name": "Prestige"
+      },
+      {
+        "items": [
+          {
+            "ID": 986,
+            "icon": "inv_knife_1h_grimbatolraid_d_03",
+            "itemId": 173951,
+            "name": "N'lyeth, Sliver of N'Zoth",
+            "notObtainable": true
+          }
+        ],
+        "name": "N'Zoth"
       },
       {
         "items": [
