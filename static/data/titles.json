@@ -1,5 +1,36 @@
 [
   {
+    "name": "Limited Time",
+    "subcats": [
+      {
+        "items": [
+          {
+            "icon": "ability_evoker_timedilation",
+            "id": 40223,
+            "name": "Timerunner",
+            "titleId": 551,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_boss_garrosh",
+            "id": 19961,
+            "name": "Paragon of the Mists",
+            "titleId": 552,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_raid_terraceofendlessspring04",
+            "id": 20007,
+            "name": "Claw of Eternus",
+            "titleId": 553,
+            "type": "achievement"
+          }
+        ],
+        "name": "Remix: Pandaria"
+      }
+    ]
+  },
+  {
     "id": "fffffffe",
     "name": "Titles",
     "subcats": [
@@ -239,39 +270,6 @@
           }
         ],
         "name": "Brawler's Guild"
-      },
-      {
-        "items": [
-          {
-            "icon": "inv_celestialpandarenserpentpet_gold",
-            "id": 40226,
-            "name": "Mistrunner",
-            "titleId": 539,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_scenario_greenstone",
-            "id": 20004,
-            "name": "Timerunner",
-            "titleId": 551,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_boss_garrosh",
-            "id": 40227,
-            "name": "Paragon of the Mists",
-            "titleId": 552,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_raid_terraceofendlessspring04",
-            "id": 20007,
-            "name": "Claw of Eternus",
-            "titleId": 553,
-            "type": "achievement"
-          }
-        ],
-        "name": "Limited Time: Remix: Pandaria"
       }
     ]
   },
@@ -1646,7 +1644,12 @@
             "side": "H",
             "titleId": 206,
             "type": "achievement"
-          },
+          }
+        ],
+        "name": "Scenarios"
+      },
+      {
+        "items": [
           {
             "icon": "achievement_challengemode_platinum",
             "id": 9589,
@@ -1669,7 +1672,7 @@
             "type": "achievement"
           }
         ],
-        "name": "Scenarios"
+        "name": "Proving Grounds"
       }
     ]
   },
