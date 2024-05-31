@@ -1,5 +1,75 @@
 [
   {
+    "name": "Limited Time",
+    "subcats": [
+      {
+        "id": "6edf78f8",
+        "items": [
+          {
+            "ID": 1467,
+            "icon": "monk_stance_redcrane",
+            "itemId": 217724,
+            "name": "Kindness of Chi-ji"
+          },
+          {
+            "ID": 1468,
+            "icon": "monk_stance_drunkenox",
+            "itemId": 217726,
+            "name": "Fortitude of Niuzao"
+          },
+          {
+            "ID": 1469,
+            "icon": "monk_stance_whitetiger",
+            "itemId": 217723,
+            "name": "Fury of Xuen"
+          },
+          {
+            "ID": 1470,
+            "icon": "monk_stance_wiseserpent",
+            "itemId": 217725,
+            "name": "Essence of Yu'lon"
+          },
+          {
+            "ID": 1476,
+            "icon": "inv_misc_herb_talandrasrose",
+            "itemId": 220777,
+            "name": "Cherry Blossom Trail"
+          },
+          {
+            "ID": 359,
+            "icon": "inv_misc_orb_03",
+            "itemId": 89205,
+            "name": "Mini Mana Bomb"
+          }
+        ],
+        "name": "Remix: Pandaria"
+      },
+      {
+        "items": [
+          {
+            "ID": 1454,
+            "icon": "inv_misc_1h_umbrella_b_01",
+            "itemId": 212524,
+            "name": "Delicate Crimson Parasol"
+          },
+          {
+            "ID": 1471,
+            "icon": "inv_fishingchair",
+            "itemId": 218112,
+            "name": "Colorful Beach Chair"
+          },
+          {
+            "ID": 1475,
+            "icon": "inv_firearm_2h_waterblaster_c_01",
+            "itemId": 220692,
+            "name": "X-treme Water Blaster Display"
+          }
+        ],
+        "name": "Trading Post: June"
+      }
+    ]
+  },
+  {
     "id": "8610320b",
     "items": [],
     "name": "Toys",
@@ -121,42 +191,6 @@
           }
         ],
         "name": "Racial"
-      },
-      {
-        "id": "6edf78f8",
-        "items": [
-          {
-            "ID": 1467,
-            "icon": "monk_stance_redcrane",
-            "itemId": 217724,
-            "name": "Kindness of Chi-ji"
-          },
-          {
-            "ID": 1468,
-            "icon": "monk_stance_drunkenox",
-            "itemId": 217726,
-            "name": "Fortitude of Niuzao"
-          },
-          {
-            "ID": 1469,
-            "icon": "monk_stance_whitetiger",
-            "itemId": 217723,
-            "name": "Fury of Xuen"
-          },
-          {
-            "ID": 1470,
-            "icon": "monk_stance_wiseserpent",
-            "itemId": 217725,
-            "name": "Essence of Yu'lon"
-          },
-          {
-            "ID": 1476,
-            "icon": "inv_misc_herb_talandrasrose",
-            "itemId": 220777,
-            "name": "Cherry Blossom Trail"
-          }
-        ],
-        "name": "Limited Time: Remix: Pandaria"
       }
     ]
   },
@@ -4016,19 +4050,6 @@
           }
         ],
         "name": "Treasure"
-      },
-      {
-        "id": "3c01691b",
-        "items": [
-          {
-            "ID": 359,
-            "icon": "inv_misc_orb_03",
-            "itemId": 89205,
-            "name": "Mini Mana Bomb",
-            "notObtainable": true
-          }
-        ],
-        "name": "Pre-launch Event"
       }
     ]
   },
@@ -6605,7 +6626,7 @@
             "name": "Foam Sword Rack"
           }
         ],
-        "name": "Trading Post Re-releases"
+        "name": "Trading Post Re-Releases"
       },
       {
         "id": "c1d734dd",
@@ -6635,34 +6656,10 @@
             "name": "Delicate Jade Parasol"
           },
           {
-            "ID": 1454,
-            "icon": "inv_misc_1h_umbrella_b_01",
-            "itemId": 212524,
-            "name": "Delicate Crimson Parasol",
-            "notObtainable": true,
-            "notReleased": true
-          },
-          {
             "ID": 1455,
             "icon": "inv_misc_1h_umbrella_b_01",
             "itemId": 212525,
             "name": "Delicate Ebony Parasol",
-            "notObtainable": true,
-            "notReleased": true
-          },
-          {
-            "ID": 1471,
-            "icon": "inv_fishingchair",
-            "itemId": 218112,
-            "name": "Colorful Beach Chair",
-            "notObtainable": true,
-            "notReleased": true
-          },
-          {
-            "ID": 1475,
-            "icon": "inv_firearm_2h_waterblaster_c_01",
-            "itemId": 220692,
-            "name": "X-treme Water Blaster Display",
             "notObtainable": true,
             "notReleased": true
           }
