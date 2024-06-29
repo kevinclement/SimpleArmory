@@ -1,4 +1,4 @@
-[  
+[
   {
     "id": "8610320b",
     "items": [],
@@ -168,29 +168,6 @@
           }
         ],
         "name": "Remix: Pandaria"
-      },
-      {
-        "items": [
-          {
-            "ID": 1454,
-            "icon": "inv_misc_1h_umbrella_b_01",
-            "itemId": 212524,
-            "name": "Delicate Crimson Parasol"
-          },
-          {
-            "ID": 1471,
-            "icon": "inv_fishingchair",
-            "itemId": 218112,
-            "name": "Colorful Beach Chair"
-          },
-          {
-            "ID": 1475,
-            "icon": "inv_firearm_2h_waterblaster_c_01",
-            "itemId": 220692,
-            "name": "X-treme Water Blaster Display"
-          }
-        ],
-        "name": "Trading Post: June"
       }
     ]
   },
@@ -6346,7 +6323,97 @@
             "name": "Doomwalker Trophy Stand"
           }
         ],
-        "name": "WoW's Anniversary"
+        "name": "Anniversary"
+      }
+    ]
+  },
+  {
+    "name": "Past Limited Time",
+    "subcats": [
+      {
+        "id": "c1d734dd",
+        "items": [
+          {
+            "ID": 1345,
+            "icon": "ability_racial_etherealconnection",
+            "itemId": 206268,
+            "name": "Ethereal Transmogrifier"
+          },
+          {
+            "ID": 1334,
+            "icon": "tradingpostcurrency",
+            "itemId": 206347,
+            "name": "Mannequin Charm"
+          },
+          {
+            "ID": 1452,
+            "icon": "inv_misc_1h_umbrella_b_01",
+            "itemId": 212500,
+            "name": "Delicate Silk Parasol"
+          },
+          {
+            "ID": 1453,
+            "icon": "inv_misc_1h_umbrella_b_01",
+            "itemId": 212523,
+            "name": "Delicate Jade Parasol"
+          },
+          {
+            "ID": 1454,
+            "icon": "inv_misc_1h_umbrella_b_01",
+            "itemId": 212524,
+            "name": "Delicate Crimson Parasol"
+          },
+          {
+            "ID": 1471,
+            "icon": "inv_fishingchair",
+            "itemId": 218112,
+            "name": "Colorful Beach Chair"
+          },
+          {
+            "ID": 1475,
+            "icon": "inv_firearm_2h_waterblaster_c_01",
+            "itemId": 220692,
+            "name": "X-treme Water Blaster Display"
+          },
+          {
+            "ID": 1455,
+            "icon": "inv_misc_1h_umbrella_b_01",
+            "itemId": 212525,
+            "name": "Delicate Ebony Parasol",
+            "notObtainable": true,
+            "notReleased": true
+          }
+        ],
+        "name": "Trading Post Originals"
+      },
+      {
+        "items": [
+          {
+            "ID": 214,
+            "icon": "inv_potion_27",
+            "itemId": 32542,
+            "name": "Imp in a Ball"
+          },
+          {
+            "ID": 202,
+            "icon": "ability_warrior_challange",
+            "itemId": 45063,
+            "name": "Foam Sword Rack"
+          }
+        ],
+        "name": "Trading Post Re-Releases"
+      },
+      {
+        "items": [
+          {
+            "ID": 1464,
+            "icon": "inv_helm_cloth_b_01pirate_black",
+            "itemId": 170197,
+            "name": "Swarthy Warning Sign",
+            "notObtainable": true
+          }
+        ],
+        "name": "Plunderstorm"
       }
     ]
   },
@@ -6610,73 +6677,6 @@
           }
         ],
         "name": "Diablo 20th Anniversary"
-      },
-      {
-        "items": [
-          {
-            "ID": 214,
-            "icon": "inv_potion_27",
-            "itemId": 32542,
-            "name": "Imp in a Ball"
-          },
-          {
-            "ID": 202,
-            "icon": "ability_warrior_challange",
-            "itemId": 45063,
-            "name": "Foam Sword Rack"
-          }
-        ],
-        "name": "Trading Post Re-Releases"
-      },
-      {
-        "id": "c1d734dd",
-        "items": [
-          {
-            "ID": 1345,
-            "icon": "ability_racial_etherealconnection",
-            "itemId": 206268,
-            "name": "Ethereal Transmogrifier"
-          },
-          {
-            "ID": 1334,
-            "icon": "tradingpostcurrency",
-            "itemId": 206347,
-            "name": "Mannequin Charm"
-          },
-          {
-            "ID": 1452,
-            "icon": "inv_misc_1h_umbrella_b_01",
-            "itemId": 212500,
-            "name": "Delicate Silk Parasol"
-          },
-          {
-            "ID": 1453,
-            "icon": "inv_misc_1h_umbrella_b_01",
-            "itemId": 212523,
-            "name": "Delicate Jade Parasol"
-          },
-          {
-            "ID": 1455,
-            "icon": "inv_misc_1h_umbrella_b_01",
-            "itemId": 212525,
-            "name": "Delicate Ebony Parasol",
-            "notObtainable": true,
-            "notReleased": true
-          }
-        ],
-        "name": "Trading Post Originals"
-      },
-      {
-        "items": [
-          {
-            "ID": 1464,
-            "icon": "inv_helm_cloth_b_01pirate_black",
-            "itemId": 170197,
-            "name": "Swarthy Warning Sign",
-            "notObtainable": true
-          }
-        ],
-        "name": "Plunderstorm"
       },
       {
         "id": "41659622",
