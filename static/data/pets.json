@@ -310,7 +310,7 @@
             "spellid": 442327
           }
         ],
-        "name": "Pre-Patch"
+        "name": "Pre-Patch Event"
       }
     ]
   },
@@ -324,6 +324,7 @@
             "creatureId": 222711,
             "icon": "inv_candlepet",
             "itemId": 221821,
+            "notObtainable":true,
             "name": "Waxwick",
             "spellid": 446734
           },
@@ -332,6 +333,7 @@
             "creatureId": 223859,
             "icon": "inv_nerubianbeetlepet_purple",
             "itemId": 223802,
+            "notObtainable":true,
             "name": "Purple Stagshell",
             "spellid": 449807
           }
@@ -346,6 +348,7 @@
             "creatureId": 222046,
             "icon": "inv_achievement_raidnerubian_swarmmother",
             "itemId": 221486,
+            "notObtainable":true,
             "name": "Rak-Ush Threadling",
             "spellid": 446820
           },
@@ -354,6 +357,7 @@
             "creatureId": 222203,
             "icon": "inv_babyarathilynx_gold",
             "itemId": 220782,
+            "notObtainable":true,
             "name": "Thunder",
             "spellid": 445822
           },
@@ -362,6 +366,7 @@
             "creatureId": 222717,
             "icon": "inv_seaslugpink",
             "itemId": 222964,
+            "notObtainable":true,
             "name": "Fathom Incher",
             "spellid": 446755
           },
@@ -370,6 +375,7 @@
             "creatureId": 223138,
             "icon": "inv_seaeel_dark",
             "itemId": 222980,
+            "notObtainable":true,
             "name": "Slim",
             "spellid": 447900
           },
@@ -378,6 +384,7 @@
             "creatureId": 223351,
             "icon": "inv_firebeemount_black",
             "itemId": 223625,
+            "notObtainable":true,
             "name": "Cinderwold Sizzlestinger",
             "spellid": 449511
           }
@@ -391,6 +398,7 @@
           "creatureId": 222583,
           "icon": "inv_caveborercritter_forest",
           "itemId": 225934,
+          "notObtainable":true,
           "name": "Lil' Bonechewer",
           "spellid": 446493
         },
@@ -398,6 +406,7 @@
           "ID": 4502,
           "creatureId": 222585,
           "icon": "inv_caveborercritter_blue",
+          "notObtainable":true,
           "name": "Kaheti Bull Worm",
           "spellid": 446491
         },
@@ -406,6 +415,7 @@
           "creatureId": 222200,
           "icon": "inv_babyarathilynx_red",
           "itemId": 221848,
+          "notObtainable":true,
           "name": "Tiberius",
           "spellid": 445823
         },
@@ -414,6 +424,7 @@
           "creatureId": 222202,
           "icon": "inv_babyarathilynx_black",
           "itemId": 221850,
+          "notObtainable":true,
           "name": "Bean",
           "spellid": 445824
         },
@@ -422,6 +433,7 @@
           "creatureId": 222341,
           "icon": "inv_babycryptfiend_tan",
           "itemId": 222968,
+          "notObtainable":true,
           "name": "Itchbite",
           "spellid": 446049
         },
@@ -429,6 +441,7 @@
           "ID": 4478,
           "creatureId": 222348,
           "icon": "inv_maldraxxusslime_green",
+          "notObtainable":true,
           "name": "Caustic Oozeling",
           "spellid": 446055
         },
@@ -437,6 +450,7 @@
           "creatureId": 222575,
           "icon": "inv_spiderpet_blue",
           "itemId": 222972,
+          "notObtainable":true,
           "name": "Jump Jump",
           "spellid": 446438
         },
@@ -445,6 +459,7 @@
           "creatureId": 222576,
           "icon": "inv_spiderpet_yellow",
           "itemId": 222973,
+          "notObtainable":true,
           "name": "Fringe",
           "spellid": 446440
         },
@@ -453,6 +468,7 @@
           "creatureId": 222079,
           "icon": "inv_blindcaveskipper_blue",
           "itemId": 221494,
+          "notObtainable":true,
           "name": "Skippy",
           "spellid": 446463
         },
@@ -461,6 +477,7 @@
           "creatureId": 222607,
           "icon": "inv_flyingnerubian2_green",
           "itemId": 221761,
+          "notObtainable":true,
           "name": "Venomwing",
           "spellid": 446512
         },
@@ -469,6 +486,7 @@
           "creatureId": 222764,
           "icon": "inv_frog2_red",
           "itemId": 221811,
+          "notObtainable":true,
           "name": "Starkstripe Hopper",
           "spellid": 446791
         },
@@ -477,6 +495,7 @@
           "creatureId": 222779,
           "icon": "inv_collections_armor_flowerbracelet_a_01",
           "itemId": 222965,
+          "notObtainable":true,
           "name": "Loamy",
           "spellid": 446801
         },
@@ -485,6 +504,7 @@
           "creatureId": 223135,
           "icon": "spell_holy_prayerofshadowprotection",
           "itemId": 222974,
+          "notObtainable":true,
           "name": "Sir Shady Mrgglton Junior",
           "spellid": 447902
         },
@@ -493,6 +513,7 @@
           "creatureId": 223088,
           "icon": "inv_protoramearthen_sand",
           "itemId": 222978,
+          "notObtainable":true,
           "name": "Sandstone Ramolith",
           "spellid": 447934
         },
@@ -501,6 +522,7 @@
           "creatureId": 223717,
           "icon": "inv_babymolepet_green",
           "itemId": 223623,
+          "notObtainable":true,
           "name": "Guacamole",
           "spellid": 449477
         },
@@ -509,6 +531,7 @@
           "creatureId": 223861,
           "icon": "inv_nerubianbeetlepet_blue",
           "itemId": 225935,
+          "notObtainable":true,
           "name": "Rak-Ush Battleshell",
           "spellid": 449808
         },
@@ -517,6 +540,7 @@
           "creatureId": 224090,
           "icon": "inv_leafbug_brown",
           "itemId": 224101,
+          "notObtainable":true,
           "name": "Brown Leafbug",
           "spellid": 451193
         },
@@ -525,6 +549,7 @@
           "creatureId": 225632,
           "icon": "inv_babymolepet_light",
           "itemId": 224760,
+          "notObtainable":true,
           "name": "Wobbles",
           "spellid": 453913
         }
@@ -540,6 +565,7 @@
             "creatureId": 222069,
             "icon": "inv_achievement_raidnerubian_swarmmother",
             "itemId": 221195,
+            "notObtainable":true,
             "name": "Illskitter",
             "spellid": 445488
           },
@@ -548,6 +574,7 @@
             "creatureId": 222298,
             "icon": "inv_babyfireflypet_yellow",
             "itemId": 220771,
+            "notObtainable":true,
             "name": "Hallowed Glowfly",
             "spellid": 446004
           },
@@ -556,6 +583,7 @@
             "creatureId": 222318,
             "icon": "inv_bee_default",
             "itemId": 223155,
+            "notObtainable":true,
             "name": "Bop",
             "spellid": 446024
           },
@@ -564,6 +592,7 @@
             "creatureId": 222319,
             "icon": "inv_babyoctopus_ghuun",
             "itemId": 224439,
+            "notObtainable":true,
             "name": "Oop'lajax",
             "spellid": 446027
           },
@@ -572,6 +601,7 @@
             "creatureId": 222339,
             "icon": "inv_babycryptfiend_bluegray",
             "itemId": 222966,
+            "notObtainable":true,
             "name": "Spinner",
             "spellid": 446046
           },
@@ -580,6 +610,7 @@
             "creatureId": 222532,
             "icon": "inv_spiderpet_black",
             "itemId": 222971,
+            "notObtainable":true,
             "name": "Bouncer",
             "spellid": 446434
           },
@@ -588,6 +619,7 @@
             "creatureId": 222078,
             "icon": "inv_blindcaveskipper_purple",
             "itemId": 221496,
+            "notObtainable":true,
             "name": "Wriggle",
             "spellid": 446464
           },
@@ -596,6 +628,7 @@
             "creatureId": 222590,
             "icon": "inv_purple_sporecreature2",
             "itemId": 225337,
+            "notObtainable":true,
             "name": "Violet Sporbit",
             "spellid": 446498
           },
@@ -604,6 +637,7 @@
             "creatureId": 222606,
             "icon": "inv_flyingnerubian2_tan",
             "itemId": 221760,
+            "notObtainable":true,
             "name": "Pillarnest Bonedrinker",
             "spellid": 446514
           },
@@ -612,6 +646,7 @@
             "creatureId": 222782,
             "icon": "inv_collections_armor_flowerbracelet_a_01",
             "itemId": 224450,
+            "notObtainable":true,
             "name": "Lil' Moss Rosy",
             "spellid": 446798
           },
@@ -620,6 +655,7 @@
             "creatureId": 222880,
             "icon": "inv_desertlasherorchid_blue",
             "itemId": 221546,
+            "notObtainable":true,
             "name": "Nightfarm Growthling",
             "spellid": 447009
           },
@@ -628,6 +664,7 @@
             "creatureId": 222879,
             "icon": "inv_desertlasherorchid_purple",
             "itemId": 221548,
+            "notObtainable":true,
             "name": "Blightbud",
             "spellid": 447012
           },
@@ -636,6 +673,7 @@
             "creatureId": 222883,
             "icon": "inv_misc_head_kobold_01",
             "itemId": 221820,
+            "notObtainable":true,
             "name": "Chester",
             "spellid": 447016
           },
@@ -644,6 +682,7 @@
             "creatureId": 223718,
             "icon": "inv_babymolepet_blue",
             "itemId": 223624,
+            "notObtainable":true,
             "name": "Sneef",
             "spellid": 449475
           },
@@ -652,6 +691,7 @@
             "creatureId": 226125,
             "icon": "inv_maldraxxusslime_purple",
             "itemId": 225544,
+            "notObtainable":true,
             "name": "Mind Slurp",
             "spellid": 455184
           }
