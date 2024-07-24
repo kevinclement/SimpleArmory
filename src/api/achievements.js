@@ -3,6 +3,7 @@ import { getProfile } from '$api/profile'
 import { getJsonDb } from '$api/_db'
 import settings from '$util/settings'
 import Cache from '$api/_cache'
+import { getShowHiddenSetting } from '../util/utils'
 
 let _cache;
 export async function getAchievements(region, realm, character) {
@@ -37,6 +38,7 @@ export async function getAchievements(region, realm, character) {
 
 function parseAchievementObject(db, earned, character, faction) {
     console.log(`Parsing achievements.json...`)
+    var showHiddenItems = getShowHiddenSetting();
 
     let obj            = {}
      ,  completed      = {}
@@ -145,7 +147,8 @@ function parseAchievementObject(db, earned, character, faction) {
                     }
 
                     // Update counts proper
-                    if (supercat.name !== 'Feats of Strength' && supercat.name !== 'Legacy' && !ach.notObtainable && 
+                    
+                    if (supercat.name !== 'Feats of Strength' && supercat.name !== 'Legacy' && ((showHiddenItems == "shown" && ach.notObtainable) || !ach.notObtainable) && 
                         (!ach.side || ach.side === faction)){
                         possibleCount++;
                         totalPossible++;
