@@ -46,6 +46,8 @@ IGNORE_MOUNT_ID = [
     1796,  # Temp: https://www.wowhead.com/mount/1796
     1953,  # Grotto Netherwing Drake: https://www.wowhead.com/mount/1953 : dupe of 1744
     1954,  # Flourishing Whimsydrake: https://www.wowhead.com/mount/1954 : dupe of 1830
+    2115,  # Dracthyr Racial
+    1715,  # Placeholder Mecha-Done Mount - Never Added
 ]
 
 MOUNT_SOURCE_ENUM = {

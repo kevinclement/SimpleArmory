@@ -3,11 +3,11 @@
     {
       "cats": [
         {
-          "id": "f425cc5a",
-          "name": "Character",
+          "id": "ce7e3aa2",
+          "name": "Characters",
           "subcats": [
             {
-              "id": "e0a6ebcd",
+              "id": "a494a038",
               "items": [
                 {
                   "icon": "Achievement_Level_10",
@@ -52,6 +52,42 @@
                   "title": "Level 70"
                 },
                 {
+                  "icon": "achievement_level_80",
+                  "id": 19459,
+                  "points": 10,
+                  "title": "Level 80"
+                },
+                {
+                  "icon": "achievement_level_80",
+                  "id": 19460,
+                  "points": 10,
+                  "title": "Two Warband Mentors: The War Within"
+                },
+                {
+                  "icon": "achievement_level_80",
+                  "id": 19470,
+                  "points": 10,
+                  "title": "One Warband Mentor: The War Within"
+                },
+                {
+                  "icon": "achievement_level_80",
+                  "id": 19475,
+                  "points": 10,
+                  "title": "Three Warband Mentors: The War Within"
+                },
+                {
+                  "icon": "achievement_level_80",
+                  "id": 19476,
+                  "points": 10,
+                  "title": "Four Warband Mentors: The War Within"
+                },
+                {
+                  "icon": "achievement_level_80",
+                  "id": 19477,
+                  "points": 10,
+                  "title": "Five Warband Mentors: The War Within"
+                },
+                {
                   "icon": "achievement_arena_2v2_7",
                   "id": 7382,
                   "points": 20,
@@ -79,7 +115,7 @@
               "name": "Level"
             },
             {
-              "id": "22c02e31",
+              "id": "c88effbd",
               "items": [
                 {
                   "icon": "inv_misc_coin_06",
@@ -133,14 +169,8 @@
               "name": "Gold"
             },
             {
-              "id": "14f3563d",
+              "id": "a0ba9a16",
               "items": [
-                {
-                  "icon": "Ability_Mount_RidingHorse",
-                  "id": 891,
-                  "points": 10,
-                  "title": "Giddy Up!"
-                },
                 {
                   "icon": "Ability_Mount_BlackPanther",
                   "id": 889,
@@ -163,25 +193,24 @@
               "name": "Mounts"
             },
             {
-              "id": "5d6a9d59",
               "items": [
                 {
-                  "icon": "spell_frost_wizardmark",
-                  "id": 18976,
+                  "icon": "inv_misc_treasurechest04b",
+                  "id": 40142,
                   "points": 10,
-                  "title": "Draconically Superior"
+                  "title": "Learning to Share"
                 },
                 {
-                  "icon": "inv_enchant_voidcrystal",
-                  "id": 18977,
-                  "points": 10,
-                  "title": "Draconically Epic"
+                  "icon": "inv_cape_special_treasure_c_01",
+                  "id": 40145,
+                  "points": 20,
+                  "title": "So Much Sharing"
                 }
               ],
-              "name": "Items"
+              "name": "Warband Bank"
             },
             {
-              "id": "ea171fdd",
+              "id": "a11f094a",
               "items": [
                 {
                   "icon": "inv_misc_comb_02",
@@ -199,7 +228,7 @@
               "name": "Other"
             },
             {
-              "id": "51671ba2",
+              "id": "4f5cec93",
               "items": [
                 {
                   "icon": "tradingpostcurrency",
@@ -209,12 +238,31 @@
                 }
               ],
               "name": "Trading Post"
+            },
+            {
+              "id": "7e214e79",
+              "items": [
+                
+                {
+                  "icon": "spell_frost_wizardmark",
+                  "id": 40146,
+                  "points": 10,
+                  "title": "War Within Superior"
+                },
+                {
+                  "icon": "inv_enchant_voidcrystal",
+                  "id": 40147,
+                  "points": 10,
+                  "title": "War Within Epic"
+                }
+              ],
+              "name": "Gear"
             }
           ]
         }
       ],
-      "id": "2d6d3541",
-      "name": "Character"
+      "id": "019740f4",
+      "name": "Characters"
     },
     {
       "cats": [
@@ -461,6 +509,190 @@
                 }
               ],
               "name": "Exile's Reach"
+            }
+          ]
+        },
+        {
+          "id": "2124836e",
+          "name": "War Within",
+          "subcats": [
+            {
+              "items": [
+                {
+                  "icon": "achievement_zone_isleofdorn",
+                  "id": 20118,
+                  "points": 10,
+                  "title": "The Isle of Dorn"
+                },
+                {
+                  "icon": "achievement_zone_theringingdeeps",
+                  "id": 19560,
+                  "points": 10,
+                  "title": "The Ringing Deeps"
+                },
+                {
+                  "icon": "achievement_zone_hallowfall",
+                  "id": 20598,
+                  "points": 10,
+                  "title": "Hallowfall"
+                },
+                {
+                  "icon": "achievement_zone_azjkahet",
+                  "id": 19559,
+                  "points": 10,
+                  "title": "Azj-Kahet"
+                },
+                {
+                  "icon": "ui_majorfactions_storm",
+                  "id": 20595,
+                  "points": 10,
+                  "title": "Sojourner of Isle of Dorn"
+                },
+                {
+                  "icon": "ui_majorfactions_candle",
+                  "id": 40799,
+                  "points": 10,
+                  "title": "Sojourner of The Ringing Deeps"
+                },
+                {
+                  "icon": "ui_majorfactions_flame",
+                  "id": 40844,
+                  "points": 10,
+                  "title": "Sojourner of Hallowfall"
+                },
+                {
+                  "icon": "inv_nerubianspiderling2_black",
+                  "id": 40636,
+                  "points": 10,
+                  "title": "Sojourner of Azj-Kahet"
+                },
+                {
+                  "icon": "achievement_zone_isleofdorn",
+                  "id": 20596,
+                  "points": 10,
+                  "title": "Loremaster of Khaz Algar"
+                },
+                {
+                  "icon": "ability_paladin_blindinglight2",
+                  "id": 20597,
+                  "points": 10,
+                  "title": "The War Within"
+                }
+              ],
+              "name": "Zones"
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_fishing_frenziedfangtooth",
+                  "id": 40082,
+                  "points": 5,
+                  "title": "Never Enough"
+                },
+                {
+                  "icon": "inv_misc_toy_02",
+                  "id": 40150,
+                  "points": 5,
+                  "title": "Children's Entertainer"
+                },
+                {
+                  "icon": "spell_holy_holynova",
+                  "id": 40308,
+                  "points": 10,
+                  "title": "Beacon of Hope"
+                },
+                {
+                  "icon": "inv_misc_arathorhandtorch01",
+                  "id": 40311,
+                  "points": 10,
+                  "title": "Sharing the Light"
+                },
+                {
+                  "icon": "spell_fire_fire",
+                  "id": 40312,
+                  "points": 5,
+                  "title": "Starting the Flames"
+                },
+                {
+                  "icon": "inv_shadowflames_wave",
+                  "id": 40313,
+                  "points": 5,
+                  "title": "Igniting the Keyflames"
+                },
+                {
+                  "icon": "inv_misc_shovel_01",
+                  "id": 40360,
+                  "points": 10,
+                  "title": "Life on the Farm"
+                },
+                {
+                  "icon": "ability_warrior_titansgrip",
+                  "id": 40507,
+                  "points": 5,
+                  "title": "Hanging Tight"
+                },
+                {
+                  "icon": "spell_misc_emotionhappy",
+                  "id": 40524,
+                  "points": 5,
+                  "title": "Good Deed Delver"
+                },
+                {
+                  "icon": "inv_10_dungeonjewelry_explorer_trinket_1compass_color5",
+                  "id": 40618,
+                  "points": 5,
+                  "title": "Lost and Found"
+                },
+                {
+                  "icon": "ability_warrior_titansgrip",
+                  "id": 40623,
+                  "points": 5,
+                  "title": "I Only Need One Trip"
+                },
+                {
+                  "icon": "garrison_building_workshop",
+                  "id": 40630,
+                  "points": 0,
+                  "title": "For the Collective"
+                },
+                {
+                  "icon": "inv_misc_noodle_cart_intermediate_level",
+                  "id": 40727,
+                  "points": 5,
+                  "title": "Skittershaw Spin"
+                },
+                {
+                  "icon": "spell_holy_weaponmastery",
+                  "id": 40729,
+                  "points": 10,
+                  "title": "Light's Gambit Champion"
+                },
+                {
+                  "icon": "achievement_cooking_masterofthegrill",
+                  "id": 40731,
+                  "points": 0,
+                  "title": "Panhandled"
+                },
+                {
+                  "icon": "ui_notoriety_thegeneral",
+                  "id": 40833,
+                  "points": 5,
+                  "title": "The General's Salute"
+                },
+                {
+                  "icon": "ui_notoriety_thevizier",
+                  "id": 40835,
+                  "points": 5,
+                  "title": "Vizier than Ever"
+                },
+                {
+                  "icon": "ui_notoriety_theweaver",
+                  "id": 40832,
+                  "points": 5,
+                  "title": "Leave it to Weaver"
+                }
+              ],
+              "name": "World"
             }
           ]
         },
@@ -4156,6 +4388,12 @@
                   "title": "Dragon Isles Explorer"
                 },
                 {
+                  "icon": "inv_spell_arcane_telepotdornogal",
+                  "id": 40790,
+                  "points": 25,
+                  "title": "Khaz Algar Explorer"
+                },
+                {
                   "icon": "INV_Misc_Map02",
                   "id": 46,
                   "points": 50,
@@ -4217,6 +4455,364 @@
                 }
               ],
               "name": "Other"
+            }
+          ]
+        },
+        {
+          "id": "9c7ced1b",
+          "name": "War Within",
+          "subcats": [
+            {
+              "items": [
+                {
+                  "icon": "inv_misc_map07",
+                  "id": 40231,
+                  "points": 0,
+                  "title": "The War Within Pathfinder"
+                },
+                {
+                  "icon": "inv_gryphon_air_mount_grey",
+                  "id": 40430,
+                  "points": 10,
+                  "title": "Khaz Algar Flight Master"
+                }
+              ],
+              "name": "Meta"
+            },
+            {
+              "items": [
+                {
+                  "icon": "achievement_zone_isleofdorn",
+                  "id": 40831,
+                  "points": 10,
+                  "title": "Explore the Isle of Dorn"
+                },
+                {
+                  "icon": "achievement_zone_theringingdeeps",
+                  "id": 40825,
+                  "points": 10,
+                  "title": "Explore The Ringing Deeps"
+                },
+                {
+                  "icon": "achievement_zone_hallowfall",
+                  "id": 40826,
+                  "points": 10,
+                  "title": "Explore Hallowfall"
+                },
+                {
+                  "icon": "achievement_zone_azjkahet",
+                  "id": 40822,
+                  "points": 10,
+                  "title": "Explore Azj-Kahet"
+                }
+              ],
+              "name": "Area"
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_misc_lockchest02",
+                  "id": 40434,
+                  "points": 5,
+                  "title": "Treasures of the Isle of Dorn"
+                },
+                {
+                  "icon": "inv_misc_treasurechest04d",
+                  "id": 40724,
+                  "points": 5,
+                  "title": "Treasures of The Ringing Deeps"
+                },
+                {
+                  "icon": "inv_misc_treasurechest05d",
+                  "id": 40848,
+                  "points": 10,
+                  "title": "Treasures of Hallowfall"
+                },
+                {
+                  "icon": "inv_misc_treasurechest04d",
+                  "id": 40828,
+                  "points": 10,
+                  "title": "Treasures of Azj-Kahet"
+                }
+              ],
+              "name": "Treasures"
+            },
+            {
+              "items": [
+                {
+                  "icon": "achievement_zone_isleofdorn",
+                  "id": 40435,
+                  "points": 5,
+                  "title": "Adventurer of the Isle of Dorn"
+                },
+                {
+                  "icon": "achievement_zone_theringingdeeps",
+                  "id": 40837,
+                  "points": 5,
+                  "title": "Adventurer of The Ringing Deeps"
+                },
+                {
+                  "icon": "achievement_zone_hallowfall",
+                  "id": 40851,
+                  "points": 5,
+                  "title": "Adventurer of Hallowfall"
+                },
+                {
+                  "icon": "achievement_zone_azjkahet",
+                  "id": 40840,
+                  "points": 5,
+                  "title": "Adventurer of Azj-Kahet"
+                }
+              ],
+              "name": "Encounter"
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_ability_skyriding_glyph",
+                  "id": 40702,
+                  "points": 20,
+                  "title": "Khaz Algar Glyph Hunter"
+                },
+                {
+                  "icon": "inv_ability_skyriding_glyph",
+                  "id": 40166,
+                  "points": 10,
+                  "title": "Isle of Dorn Glyph Hunter"
+                },
+                {
+                  "icon": "inv_ability_skyriding_glyph",
+                  "id": 40703,
+                  "points": 10,
+                  "title": "The Ringing Deeps Glyph Hunter"
+                },
+                {
+                  "icon": "inv_ability_skyriding_glyph",
+                  "id": 40704,
+                  "points": 10,
+                  "title": "Hallowfall Glyph Hunter"
+                },
+                {
+                  "icon": "inv_ability_skyriding_glyph",
+                  "id": 40705,
+                  "points": 10,
+                  "title": "Azj-Kahet Glyph Hunter"
+                }
+              ],
+              "name": "Glyphs"
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_maldraxxusslime_yellow",
+                  "id": 40475,
+                  "points": 5,
+                  "title": "To All the Slimes I Love"
+                }
+              ],
+              "name": "Critters"
+            },
+            {
+              "items": [
+                {
+                  "icon": "spell_azerite_essence08",
+                  "id": 40250,
+                  "points": 5,
+                  "title": "The First Echo"
+                },
+                {
+                  "icon": "spell_azerite_essence08",
+                  "id": 40251,
+                  "points": 10,
+                  "title": "Many Echoes"
+                },
+                {
+                  "icon": "spell_azerite_essence06",
+                  "id": 40252,
+                  "points": 5,
+                  "title": "A Series of Echoes"
+                },
+                {
+                  "icon": "spell_azerite_essence09",
+                  "id": 40314,
+                  "points": 5,
+                  "title": "Fragments of Memories"
+                },
+                {
+                  "icon": "achievement_dungeon_gloryofthehero",
+                  "id": 40222,
+                  "points": 15,
+                  "title": "Echoes of Danger"
+                }
+              ],
+              "name": "Worldsoul Memory"
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_cape_armor_earthencivilian_d_02_copper",
+                  "id": 40509,
+                  "points": 5,
+                  "title": "Awakening The Machine: Wave 10"
+                },
+                {
+                  "icon": "inv_cape_armor_earthencivilian_d_02_dark",
+                  "id": 40586,
+                  "points": 5,
+                  "title": "Awakening The Machine: Wave 20"
+                },
+                {
+                  "icon": "inv_tabard_pvp_10season3_d_01",
+                  "id": 40587,
+                  "points": 5,
+                  "title": "Awakening The Machine: Wave 30"
+                },
+                {
+                  "icon": "inv_armor_earthenisle_c_01_shoulder",
+                  "id": 40588,
+                  "points": 5,
+                  "title": "Awakening The Machine: Wave 40"
+                },
+                {
+                  "icon": "inv_armor_earthenisle_c_01_cape",
+                  "id": 40589,
+                  "points": 10,
+                  "title": "Awakening The Machine: Wave 50"
+                },
+                {
+                  "icon": "inv_dwarvenmechboss_bronze",
+                  "id": 40662,
+                  "points": 10,
+                  "title": "It's Not Much, But It's Honest Work"
+                }
+              ],
+              "name": "Awakening the Machine"
+            },
+            {
+              "id": "9dcec9d0",
+              "items": [
+                {
+                  "icon": "inv_stone_06",
+                  "id": 40151,
+                  "points": 5,
+                  "title": "Mereldar Menace"
+                },
+                {
+                  "icon": "inv_misc_gear_05",
+                  "id": 40473,
+                  "points": 5,
+                  "title": "Not So Quick Fix"
+                },               
+                {
+                  "icon": "ability_earthen_wideeyedwonder",
+                  "id": 40504,
+                  "points": 5,
+                  "title": "Rocked to Sleep"
+                },          
+                {
+                  "icon": "inv_10_inscription2_book1_color5",
+                  "id": 40542,
+                  "points": 5,
+                  "title": "Smelling History"
+                },
+                {
+                  "icon": "inv_molemount",
+                  "id": 40585,
+                  "points": 5,
+                  "title": "Super Size Snuffling"
+                },      
+                {
+                  "icon": "ui_profession_blacksmithing",
+                  "id": 40606,
+                  "points": 5,
+                  "title": "Flat Earthen"
+                },
+                {
+                  "icon": "inv_blindcaveskipper_purple",
+                  "id": 40614,
+                  "points": 5,
+                  "title": "Gobblin' with Glublurp"
+                },
+                {
+                  "icon": "inv_misc_blackironbomb",
+                  "id": 40619,
+                  "points": 0,
+                  "title": "Mine Poppin'"
+                },
+                {
+                  "icon": "achievement_reputation_01",
+                  "id": 40620,
+                  "points": 0,
+                  "title": "Back to the Wall"
+                },
+                {
+                  "icon": "inv_toy_booklibrary",
+                  "id": 40622,
+                  "points": 5,
+                  "title": "Biblo Archivist"
+                },
+                {
+                  "icon": "inv_nerubianspiderling2_black",
+                  "id": 40624,
+                  "points": 0,
+                  "title": "Itsy Bitsy Spider"
+                },
+                {
+                  "icon": "inv_arathilynxmount_yellow",
+                  "id": 40625,
+                  "points": 10,
+                  "title": "The Missing Lynx"
+                },
+                {
+                  "icon": "inv_misc_paperbundle02a",
+                  "id": 40628,
+                  "points": 5,
+                  "title": "Notable Machines"
+                },
+                {
+                  "icon": "inv_10_inscription2_book1_color4",
+                  "id": 40629,
+                  "points": 5,
+                  "title": "Bookworm"
+                },
+                {
+                  "icon": "spell_warlock_demonsoul",
+                  "id": 40632,
+                  "points": 5,
+                  "title": "No Harm Ever Came From Reading A Book"
+                },
+                {
+                  "icon": "spell_priest_void-flay",
+                  "id": 40633,
+                  "points": 5,
+                  "title": "The Unseeming"
+                },
+                {
+                  "icon": "inv_misc_web_02",
+                  "id": 40634,
+                  "points": 0,
+                  "title": "You Can't Hang With Us"
+                },       
+                {
+                  "icon": "inv_professions_inscription_scribesmagnifyingglass_gold",
+                  "id": 40762,
+                  "points": 10,
+                  "title": "Khaz Algar Lore Hunter"
+                },
+                {
+                  "icon": "inv_misc_bomb_02",
+                  "id": 40843,
+                  "points": 5,
+                  "title": "Mine Poppin'"
+                },
+                {
+                  "icon": "inv_misc_emberweavebandage",
+                  "id": 20594,
+                  "points": 10,
+                  "title": "Flamegard's Hope"
+                }
+              ],
+              "name": "World"
             }
           ]
         },
@@ -7877,6 +8473,495 @@
     {
       "cats": [
         {
+          "id": "dfb815fc",
+          "name": "Delves",
+          "subcats": [
+            {
+              "id": "16596670",
+              "items": [
+                {
+                  "icon": "inv_cape_special_explorer_b_03",
+                  "id": 40436,
+                  "points": 5,
+                  "title": "You're Getting a Delve!"
+                },
+                {
+                  "icon": "achievement_guild_challenge_10",
+                  "id": 40460,
+                  "points": 10,
+                  "title": "Delve Deep"
+                },
+                {
+                  "icon": "achievement_guild_challenge_50",
+                  "id": 40462,
+                  "points": 10,
+                  "title": "Delve Deeper"
+                },
+                {
+                  "icon": "achievement_guild_challenge_100",
+                  "id": 40463,
+                  "points": 10,
+                  "title": "Delve Deepest"
+                }
+              ],
+              "name": "Count"
+            },
+            {
+              "items": [
+                {
+                  "icon": "achievement_level_20",
+                  "id": 40450,
+                  "points": 10,
+                  "title": "Buddy System II"
+                },
+                {
+                  "icon": "achievement_level_30",
+                  "id": 40451,
+                  "points": 10,
+                  "title": "Buddy System III"
+                },
+                {
+                  "icon": "achievement_level_10",
+                  "id": 40455,
+                  "points": 10,
+                  "title": "Buddy System"
+                },
+                {
+                  "icon": "achievement_level_40",
+                  "id": 40456,
+                  "points": 10,
+                  "title": "Buddy System IV"
+                },
+                {
+                  "icon": "achievement_level_50",
+                  "id": 40457,
+                  "points": 10,
+                  "title": "Buddy System V"
+                },
+                {
+                  "icon": "achievement_level_60",
+                  "id": 40461,
+                  "points": 10,
+                  "title": "Buddy System VI"
+                }
+              ],
+              "name": "Companion"
+            },
+            {
+              "items": [
+                {
+                  "icon": "racial_dwarf_findtreasure",
+                  "id": 40763,
+                  "points": 10,
+                  "title": "I'm not a Thief, I'm a Treasure Hunter"
+                },
+                {
+                  "icon": "inv_10_blacksmithing_consumable_key_color1",
+                  "id": 40788,
+                  "points": 10,
+                  "title": "I Got the Keys"
+                },
+                {
+                  "icon": "inv_10_blacksmithing_consumable_key_color2",
+                  "id": 40819,
+                  "points": 5,
+                  "title": "Ready to Turn"
+                }
+              ],
+              "name": "Treasures"
+            }
+          ]
+        },
+        {
+          "id": "2a089bee",
+          "name": "The War Within",
+          "subcats": [
+            {
+              "items": [
+                {
+                  "icon": "achievement_faction_lorewalkers",
+                  "id": 40537,
+                  "points": 25,
+                  "title": "Delve Loremaster: War Within"
+                },
+                {
+                  "icon": "ability_racial_dungeondelver",
+                  "id": 40437,
+                  "points": 10,
+                  "title": "Delver of the Depths"
+                },
+                {
+                  "icon": "trade_archaeology",
+                  "id": 40438,
+                  "points": 25,
+                  "title": "Glory of the Delver"
+                },
+                {
+                  "icon": "ability_racial_dungeondelver",
+                  "id": 40447,
+                  "points": 10,
+                  "title": "Delver of the Depths II"
+                },
+                {
+                  "icon": "ability_racial_dungeondelver",
+                  "id": 40448,
+                  "points": 25,
+                  "title": "Delver of the Depths III"
+                },
+                {
+                  "icon": "ability_racial_dungeondelver",
+                  "id": 40449,
+                  "points": 25,
+                  "title": "Delver of the Depths IV"
+                },
+                {
+                  "icon": "inv_cape_special_explorer_b_03",
+                  "id": 40725,
+                  "points": 10,
+                  "title": "War Within Delves: Endgame"
+                },
+                {
+                  "icon": "spell_magic_managain",
+                  "id": 40458,
+                  "points": 10,
+                  "title": "Stranger Delves"
+                },
+                {
+                  "icon": "inv_bow_1h_nerubianraid_d_01",
+                  "id": 40732,
+                  "points": 10,
+                  "title": "Heavy-Handed"
+                },    
+                {
+                  "icon": "icon_treasuremap",
+                  "id": 40817,
+                  "points": 10,
+                  "title": "A Delver's Bounty"
+                }
+              ],
+              "name": "General"
+            },
+            {
+              "items": [
+                {
+                  "icon": "achievement_dungeon_hordeairship",
+                  "id": 40459,
+                  "points": 10,
+                  "title": "I've Got a Flying Machine!"
+                },
+                {
+                  "icon": "inv_mechagon_blueprints",
+                  "id": 40789,
+                  "points": 10,
+                  "title": "I've Got More Flying Machine?!"
+                }
+              ],
+              "name": "Mount"
+            },
+            {
+              "items": [
+                {
+                  "icon": "achievement_challengemode_bronze",
+                  "id": 40631,
+                  "points": 10,
+                  "title": "War Within Delves: Tier 1"
+                },
+                {
+                  "icon": "achievement_challengemode_bronze",
+                  "id": 40512,
+                  "points": 10,
+                  "title": "War Within Delves: Tier 2"
+                },
+                {
+                  "icon": "achievement_challengemode_bronze",
+                  "id": 40514,
+                  "points": 10,
+                  "title": "War Within Delves: Tier 3"
+                },
+                {
+                  "icon": "achievement_challengemode_silver",
+                  "id": 40515,
+                  "points": 10,
+                  "title": "War Within Delves: Tier 4"
+                },
+                {
+                  "icon": "achievement_challengemode_silver",
+                  "id": 40516,
+                  "points": 10,
+                  "title": "War Within Delves: Tier 5"
+                },
+                {
+                  "icon": "achievement_challengemode_silver",
+                  "id": 40517,
+                  "points": 10,
+                  "title": "War Within Delves: Tier 6"
+                },
+                {
+                  "icon": "achievement_challengemode_silver",
+                  "id": 40518,
+                  "points": 10,
+                  "title": "War Within Delves: Tier 7"
+                },
+                {
+                  "icon": "achievement_challengemode_gold",
+                  "id": 40519,
+                  "points": 10,
+                  "title": "War Within Delves: Tier 8"
+                },
+                {
+                  "icon": "achievement_challengemode_gold",
+                  "id": 40520,
+                  "points": 10,
+                  "title": "War Within Delves: Tier 9"
+                },
+                {
+                  "icon": "achievement_challengemode_gold",
+                  "id": 40521,
+                  "points": 10,
+                  "title": "War Within Delves: Tier 10"
+                },
+                {
+                  "icon": "achievement_challengemode_gold",
+                  "id": 40726,
+                  "points": 10,
+                  "title": "War Within Delves: Tier 11"
+                }
+              ],
+              "name": "Tiers"
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_green_sporecreature2",
+                  "id": 40525,
+                  "points": 5,
+                  "title": "Fungal Folly Stories"
+                },
+                {
+                  "icon": "inv_cape_special_kobold_b_01",
+                  "id": 40526,
+                  "points": 5,
+                  "title": "Kriegval's Rest Stories"
+                },
+                {
+                  "icon": "inv_misc_profession_book_mining",
+                  "id": 40527,
+                  "points": 5,
+                  "title": "Earthcrawl Mines Stories"
+                },
+                {
+                  "icon": "shaman_pvp_ripplingwaters",
+                  "id": 40528,
+                  "points": 5,
+                  "title": "The Waterworks Stories"
+                },
+                {
+                  "icon": "inv_viciousflyingnerubian2_purple",
+                  "id": 40529,
+                  "points": 5,
+                  "title": "The Dread Pit Stories"
+                },
+                {
+                  "icon": "ability_rogue_nightblade",
+                  "id": 40530,
+                  "points": 5,
+                  "title": "Nightfall Sanctum Stories"
+                },
+                {
+                  "icon": "inv_purple_sporecreature2",
+                  "id": 40531,
+                  "points": 5,
+                  "title": "Mycomancer Cavern Stories"
+                },
+                {
+                  "icon": "inv_misc_volatilewater",
+                  "id": 40532,
+                  "points": 5,
+                  "title": "The Sinkhole Stories"
+                },
+                {
+                  "icon": "inv_spiderundergroundmount_yellow",
+                  "id": 40533,
+                  "points": 5,
+                  "title": "Skittering Breach Stories"
+                },
+                {
+                  "icon": "inv_achievement_raidnerubian_nerubianevolved",
+                  "id": 40534,
+                  "points": 5,
+                  "title": "The Underkeep Stories"
+                },
+                {
+                  "icon": "inv_helm_armor_kobyssangler_d_01",
+                  "id": 40535,
+                  "points": 5,
+                  "title": "Tak-Rethan Abyss Stories"
+                },
+                {
+                  "icon": "ui_notoriety_theweaver",
+                  "id": 40536,
+                  "points": 5,
+                  "title": "The Spiral Weave Stories"
+                }
+              ],
+              "name": "Story"
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_red_sporecreature2",
+                  "id": 40445,
+                  "points": 10,
+                  "title": "Sporesweeper"
+                },
+                {
+                  "icon": "inv_helm_misc_candle_a_01",
+                  "id": 40446,
+                  "points": 10,
+                  "title": "I TAKE Candle!"
+                },
+                {
+                  "icon": "spell_shadow_demonbreath",
+                  "id": 40452,
+                  "points": 10,
+                  "title": "Just Keep Swimming"
+                },
+                {
+                  "icon": "spell_arcane_focusedpower",
+                  "id": 40453,
+                  "points": 10,
+                  "title": "Spider Senses"
+                },
+                {
+                  "icon": "achievement_dungeon_lordstormsong",
+                  "id": 40454,
+                  "points": 10,
+                  "title": "Daystormer"
+                }
+              ],
+              "name": "Challenge"
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_cape_special_treasure_c_01",
+                  "id": 40506,
+                  "points": 25,
+                  "title": "Leave No Treasure Unfound"
+                },
+                {
+                  "icon": "inv_cape_special_treasure_c_01",
+                  "id": 40803,
+                  "points": 5,
+                  "title": "Fungal Folly Discoveries"
+                },
+                {
+                  "icon": "inv_cape_special_treasure_c_01",
+                  "id": 40806,
+                  "points": 5,
+                  "title": "Earthcrawl Mines Discoveries"
+                },
+                {
+                  "icon": "inv_cape_special_treasure_c_01",
+                  "id": 40807,
+                  "points": 5,
+                  "title": "Kriegval's Rest Discoveries"
+                },
+                {
+                  "icon": "inv_cape_special_treasure_c_01",
+                  "id": 40808,
+                  "points": 5,
+                  "title": "Mycomancer Cavern Discoveries"
+                },
+                {
+                  "icon": "inv_cape_special_treasure_c_01",
+                  "id": 40809,
+                  "points": 5,
+                  "title": "Nightfall Sanctum Discoveries"
+                },
+                {
+                  "icon": "inv_cape_special_treasure_c_01",
+                  "id": 40810,
+                  "points": 5,
+                  "title": "Skittering Breach Discoveries"
+                },
+                {
+                  "icon": "inv_cape_special_treasure_c_01",
+                  "id": 40811,
+                  "points": 5,
+                  "title": "Tak-Rethan Abyss Discoveries"
+                },
+                {
+                  "icon": "inv_cape_special_treasure_c_01",
+                  "id": 40812,
+                  "points": 5,
+                  "title": "The Dread Pit Discoveries"
+                },
+                {
+                  "icon": "inv_cape_special_treasure_c_01",
+                  "id": 40813,
+                  "points": 5,
+                  "title": "The Sinkhole Discoveries"
+                },
+                {
+                  "icon": "inv_cape_special_treasure_c_01",
+                  "id": 40814,
+                  "points": 5,
+                  "title": "The Spiral Weave Discoveries"
+                },
+                {
+                  "icon": "inv_cape_special_treasure_c_01",
+                  "id": 40815,
+                  "points": 5,
+                  "title": "The Underkeep Discoveries"
+                },
+                {
+                  "icon": "inv_cape_special_treasure_c_01",
+                  "id": 40816,
+                  "points": 5,
+                  "title": "The Waterworks Discoveries"
+                }
+              ],
+              "name": "Chests"
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_misc_trinket6oog_idol1",
+                  "id": 40523,
+                  "points": 10,
+                  "title": "On Brand"
+                },
+                {
+                  "icon": "inv_helm_armor_bronzebeard_b_01",
+                  "id": 40538,
+                  "points": 25,
+                  "title": "Brann Development"
+                },
+                {
+                  "icon": "inv_misc_trinket6oog_idol3",
+                  "id": 40635,
+                  "points": 15,
+                  "title": "Branntastic"
+                },
+                {
+                  "icon": "ability_druid_lunarguidance",
+                  "id": 40820,
+                  "points": 5,
+                  "title": "Raisin' Brann"
+                }
+              ],
+              "name": "Brann"
+            }
+          ]
+        }
+      ],
+      "id": "c5316cd1",
+      "name": "Delves"
+    },
+    {
+      "cats": [
+        {
           "id": "e33b07f3",
           "name": "Player vs. Player",
           "subcats": [
@@ -9774,6 +10859,84 @@
           ]
         },
         {
+          "id": "229309dd",
+          "name": "Deephaul Ravine",
+          "subcats": [
+            {
+              "id": "0e9ac3d7",
+              "items": [
+                {
+                  "icon": "inv_achievement_battleground_earthen",
+                  "id": 40210,
+                  "points": 5,
+                  "title": "Deephaul Ravine Victory"
+                },
+                {
+                  "icon": "inv_achievement_battleground_earthen",
+                  "id": 40211,
+                  "points": 10,
+                  "title": "Deephaul Ravine Veteran"
+                },
+                {
+                  "icon": "achievement_bg_abshutout",
+                  "id": 40215,
+                  "points": 20,
+                  "title": "Deepwind Ravine Shutout"
+                },
+                {
+                  "icon": "achievement_bg_winwsg_underxminutes",
+                  "id": 40216,
+                  "points": 10,
+                  "title": "Deephaul Ravine Expedience"
+                },
+                {
+                  "icon": "inv_armor_earthencivilian_d_01_boot",
+                  "id": 40607,
+                  "points": 5,
+                  "title": "Wandering in the Ravine"
+                },
+                {
+                  "icon": "inv_armor_earthencivilian_d_01_boot",
+                  "id": 40608,
+                  "points": 5,
+                  "title": "Running in the Ravine"
+                },
+                {
+                  "icon": "inv_armor_earthencivilian_d_01_boot",
+                  "id": 40612,
+                  "points": 10,
+                  "title": "Sprinting in the Ravine"
+                },
+                {
+                  "icon": "inv_boot_mail_earthendungeon_c_01",
+                  "id": 40613,
+                  "points": 10,
+                  "title": "Resilient Runner"
+                },
+                {
+                  "icon": "ability_foundryraid_traindeath",
+                  "id": 40615,
+                  "points": 5,
+                  "title": "Unexpected Arrival"
+                },
+                {
+                  "icon": "ability_foundryraid_traindeath",
+                  "id": 40616,
+                  "points": 10,
+                  "title": "Unexpected Arrivals"
+                },
+                {
+                  "icon": "inv_achievement_battleground_earthen",
+                  "id": 40617,
+                  "points": 0,
+                  "title": "Deepholla"
+                }
+              ],
+              "name": ""
+            }
+          ]
+        },
+        {
           "id": "6108f828",
           "name": "Rated Battleground",
           "subcats": [
@@ -10082,6 +11245,78 @@
                 }
               ],
               "name": "Wins"
+            },
+            {
+              "id": "c0f3abff",
+              "items": [
+                {
+                  "icon": "achievement_bg_trueavshutout",
+                  "id": 19411,
+                  "points": 5,
+                  "title": "Battleground Blitz Novice"
+                },
+                {
+                  "icon": "achievement_bg_trueavshutout",
+                  "id": 19412,
+                  "points": 10,
+                  "title": "Battleground Blitz Apprentice"
+                },
+                {
+                  "icon": "achievement_bg_trueavshutout",
+                  "id": 19413,
+                  "points": 15,
+                  "title": "Battleground Blitz Veteran"
+                },
+                {
+                  "icon": "achievement_bg_trueavshutout",
+                  "id": 40221,
+                  "points": 15,
+                  "title": "Battleground Blitz Master"
+                },
+                {
+                  "icon": "achievement_bg_tophealer_soa",
+                  "id": 40220,
+                  "points": 15,
+                  "title": "Setting Records"
+                },
+                {
+                  "icon": "achievement_bg_tophealer_soa",
+                  "id": 19416,
+                  "points": 15,
+                  "title": "Learning the Ropes"
+                },
+                {
+                  "icon": "achievement_bg_tophealer_soa",
+                  "id": 19417,
+                  "points": 10,
+                  "title": "Brawlroom Blitzer"
+                },
+                {
+                  "icon": "achievement_bg_tophealer_soa",
+                  "id": 19418,
+                  "points": 15,
+                  "title": "Battle-scarred Battler"
+                }
+              ],
+              "name": "Battleground Blitz"
+            },
+            {
+              "id": "8d8d8764",
+              "items": [
+                {
+                  "icon": "achievement_bg_winab_underxminutes",
+                  "id": 40217,
+                  "points": 5,
+                  "title": "Battleground Blitzer"
+                },
+                {
+                  "icon": "achievement_bg_winab_underxminutes",
+                  "id": 40219,
+                  "points": 10,
+                  "title": "Battleground Blitzest"
+                }
+              ],
+              "name": "Blitz"
             }
           ]
         },
@@ -10274,68 +11509,6 @@
                 }
               ],
               "name": "Solo Shuffle"
-            },
-            {
-              "id": "59f91cea",
-              "items": [
-                {
-                  "icon": "achievement_bg_trueavshutout",
-                  "id": 19411,
-                  "points": 5,
-                  "title": "Battleground Blitz Novice"
-                },
-                {
-                  "icon": "achievement_bg_trueavshutout",
-                  "id": 19412,
-                  "points": 10,
-                  "title": "Battleground Blitz Apprentice"
-                },
-                {
-                  "icon": "achievement_bg_trueavshutout",
-                  "id": 19413,
-                  "points": 15,
-                  "title": "Battleground Blitz Veteran"
-                },
-                {
-                  "icon": "achievement_bg_tophealer_soa",
-                  "id": 19416,
-                  "points": 15,
-                  "title": "Learning the Ropes"
-                },
-                {
-                  "icon": "achievement_bg_tophealer_soa",
-                  "id": 19417,
-                  "points": 10,
-                  "title": "Brawlroom Blitzer"
-                },
-                {
-                  "icon": "achievement_bg_tophealer_soa",
-                  "id": 19418,
-                  "points": 15,
-                  "title": "Battle-scarred Battler"
-                }
-              ],
-              "name": "Battleground Blitz"
-            },
-            {
-              "id": "a08a25e0",
-              "items": [
-                {
-                  "icon": "achievement_featsofstrength_gladiator_04",
-                  "id": 19304,
-                  "notObtainable": true,
-                  "points": 0,
-                  "title": "Legend: Dragonflight Season 3"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_04",
-                  "id": 19500,
-                  "notObtainable": true,
-                  "points": 0,
-                  "title": "Legend: Dragonflight Season 4"
-                }
-              ],
-              "name": "Rated Arena"
             }
           ]
         },
@@ -10776,6 +11949,114 @@
                 }
               ],
               "name": "Dragonflight"
+            },
+            {
+              "id": "09c84533",
+              "items": [
+                {
+                  "icon": "achievement_zone_isleofdorn",
+                  "id": 40083,
+                  "points": 10,
+                  "title": "Tour of Duty: Isle of Dorn"
+                },
+                {
+                  "icon": "achievement_zone_theringingdeeps",
+                  "id": 40084,
+                  "points": 10,
+                  "title": "Tour of Duty: The Ringing Deeps"
+                },
+                {
+                  "icon": "achievement_zone_hallowfall",
+                  "id": 40085,
+                  "points": 10,
+                  "title": "Tour of Duty: Hallowfall"
+                },
+                {
+                  "icon": "achievement_zone_azjkahet",
+                  "id": 40086,
+                  "points": 10,
+                  "title": "Tour of Duty: Azj-Kahet"
+                },
+                {
+                  "icon": "inv_crossbow_2h_earthendungeon_c_01",
+                  "id": 40087,
+                  "points": 5,
+                  "title": "Unbound Battle"
+                },
+                {
+                  "icon": "inv_shield_1h_earthendungeon_c_01",
+                  "id": 40088,
+                  "points": 20,
+                  "title": "A Champion's Tour: The War Within"
+                },
+                {
+                  "icon": "inv_misc_treasurechest04b",
+                  "id": 40089,
+                  "points": 5,
+                  "title": "Spoiled Goods"
+                },
+                {
+                  "icon": "inv_misc_treasurechest04b",
+                  "id": 40090,
+                  "points": 15,
+                  "title": "Spoiled Goods"
+                },
+                {
+                  "icon": "inv_cape_special_treasure_c_01",
+                  "id": 40091,
+                  "points": 10,
+                  "title": "Slightly Spoiled"
+                },
+                {
+                  "icon": "ability_dualwield",
+                  "id": 40095,
+                  "points": 5,
+                  "title": "Sparking Battle"
+                },
+                {
+                  "icon": "ability_dualwield",
+                  "id": 40096,
+                  "points": 10,
+                  "title": "Sparking Battle"
+                },
+                {
+                  "icon": "inv_axe_1h_earthendungeon_c_01",
+                  "id": 40097,
+                  "points": 25,
+                  "title": "Ruffious's Bid"
+                },
+                {
+                  "icon": "ability_blackhand_marked4death",
+                  "id": 40464,
+                  "points": 20,
+                  "title": "Bounty Master"
+                },
+                {
+                  "icon": "inv_bountyhunting",
+                  "id": 40465,
+                  "points": 5,
+                  "title": "Unbound Bounty"
+                },
+                {
+                  "icon": "inv_box_02",
+                  "id": 40466,
+                  "points": 10,
+                  "title": "Unbound Glory"
+                },
+                {
+                  "icon": "inv_box_02",
+                  "id": 40467,
+                  "points": 20,
+                  "title": "Unbound Glory"
+                },
+                {
+                  "icon": "inv_box_02",
+                  "id": 40468,
+                  "points": 5,
+                  "title": "Unbound Glory"
+                }
+              ],
+              "name": "The War Within"
             }
           ]
         }
@@ -10842,6 +12123,17 @@
                 }
               ],
               "name": "Keystone"
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_achievement_raidnerubian_queenansurek",
+                  "id": 40232,
+                  "points": 25,
+                  "title": "Glory of the Nerub-ar Raider"
+                }
+              ],
+              "name": "The War Within"
             },
             {
               "id": "fcf9e8f0",
@@ -11214,6 +12506,375 @@
                 }
               ],
               "name": "Classic"
+            }
+          ]
+        },
+        {
+          "id": "fd676ffb",
+          "name": "War Within Raid",
+          "subcats": [
+            {
+              "id": "d0c04d47",
+              "items": [
+                {
+                  "icon": "inv_achievement_raidnerubian_nerubianevolved",
+                  "id": 40247,
+                  "points": 10,
+                  "title": "The Skittering Battlements"
+                },
+                {
+                  "icon": "inv_achievement_raidnerubian_etherealassasin",
+                  "id": 40248,
+                  "points": 10,
+                  "title": "Secrets of Nerub-ar Palace"
+                },
+                {
+                  "icon": "inv_achievement_raidnerubian_queenansurek",
+                  "id": 40249,
+                  "points": 10,
+                  "title": "A Queen's Fall"
+                },
+                {
+                  "icon": "inv_achievement_raidnerubian_queenansurek",
+                  "id": 40244,
+                  "points": 10,
+                  "title": "Nerub-ar Palace"
+                },
+                {
+                  "icon": "inv_achievement_raidnerubian_queenansurek",
+                  "id": 40245,
+                  "points": 10,
+                  "title": "Heroic: Nerub-ar Palace"
+                },
+                {
+                  "icon": "inv_achievement_raidnerubian_queenansurek",
+                  "id": 40246,
+                  "points": 10,
+                  "title": "Mythic: Nerub-ar Palace"
+                },
+                {
+                  "icon": "ability_parry",
+                  "id": 40255,
+                  "points": 10,
+                  "title": "Sik Parry Bro"
+                },
+                {
+                  "icon": "inv_caterpillarpetlarva",
+                  "id": 40261,
+                  "points": 10,
+                  "title": "Slimy Yet Satisfying"
+                },
+                {
+                  "icon": "inv_achievement_raidnerubian_etherealassasin",
+                  "id": 40264,
+                  "points": 10,
+                  "title": "Kill Streak"
+                },
+                {
+                  "icon": "ability_monk_uplift",
+                  "id": 40260,
+                  "points": 10,
+                  "title": "You Can't See Me"
+                },
+                {
+                  "icon": "inv_ability_poison_wave",
+                  "id": 40262,
+                  "points": 0,
+                  "title": "Cowabunga"
+                },
+                {
+                  "icon": "inv_achievement_raidnerubian_swarmmother",
+                  "id": 40263,
+                  "points": 10,
+                  "title": "Would You Still /love Me if I Was a Worm..."
+                },
+                {
+                  "icon": "inv_achievement_raidnerubian_council",
+                  "id": 40265,
+                  "points": 0,
+                  "title": "[PH] The Silken Court Achievement"
+                },
+                {
+                  "icon": "inv_achievement_raidnerubian_queenansurek",
+                  "id": 40266,
+                  "points": 10,
+                  "title": "Missed 'Em by That Much"
+                },
+                {
+                  "icon": "inv_valentinesboxofchocolates02",
+                  "id": 40730,
+                  "points": 0,
+                  "title": "Love is in the Lair"
+                },
+                {
+                  "icon": "inv_achievement_raidnerubian_nerubianhulk",
+                  "id": 40236,
+                  "points": 10,
+                  "title": "Mythic: Ulgrax the Devourer"
+                },
+                {
+                  "icon": "inv_achievement_raidnerubian_blackblood",
+                  "id": 40237,
+                  "points": 10,
+                  "title": "Mythic: The Bloodbound Horror"
+                },
+                {
+                  "icon": "inv_achievement_raidnerubian_nerubianevolved",
+                  "id": 40238,
+                  "points": 10,
+                  "title": "Mythic: Sikran, Captain of the Sureki"
+                },
+                {
+                  "icon": "inv_achievement_raidnerubian_flyingnerubianevolved",
+                  "id": 40239,
+                  "points": 10,
+                  "title": "Mythic: Rasha'nan"
+                },
+                {
+                  "icon": "inv_achievement_raidnerubian_swarmmother",
+                  "id": 40240,
+                  "points": 10,
+                  "title": "Mythic: Broodtwister Ovi'nax"
+                },
+                {
+                  "icon": "inv_achievement_raidnerubian_etherealassasin",
+                  "id": 40241,
+                  "points": 10,
+                  "title": "Mythic: Nexus-Princess Ky'veza"
+                },
+                {
+                  "icon": "inv_achievement_raidnerubian_council",
+                  "id": 40242,
+                  "points": 10,
+                  "title": "Mythic: The Silken Court"
+                },
+                {
+                  "icon": "inv_achievement_raidnerubian_queenansurek",
+                  "id": 40243,
+                  "points": 10,
+                  "title": "Mythic: Queen Ansurek"
+                }
+              ],
+              "name": "Nerub-ar Palace"
+            }
+          ]
+        },
+        {
+          "id": "33ef186c",
+          "name": "War Within Dungeon",
+          "subcats": [
+            {
+              "items": [
+                {
+                  "icon": "garrison_building_armory",
+                  "id": 40138,
+                  "points": 30,
+                  "title": "Algari Dungeoneer"
+                },
+                {
+                  "icon": "inv_shield_04",
+                  "id": 40141,
+                  "points": 10,
+                  "title": "Algari Dungeon Tank"
+                },
+                {
+                  "icon": "inv_weapon_shortblade_84",
+                  "id": 40139,
+                  "points": 10,
+                  "title": "Algari Dungeon Damage Dealer"
+                },
+                {
+                  "icon": "petbattle_health",
+                  "id": 40140,
+                  "points": 10,
+                  "title": "Algari Dungeon Healer"
+                }
+              ],
+              "name": "Role"
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_achievement_dungeon_cinderbrewmeadery",
+                  "id": 40361,
+                  "points": 10,
+                  "title": "Cinderbrew Meadery"
+                },
+                {
+                  "icon": "inv_achievement_dungeon_cinderbrewmeadery",
+                  "id": 40363,
+                  "points": 10,
+                  "title": "Heroic: Cinderbrew Meadery"
+                },
+                {
+                  "icon": "inv_achievement_dungeon_cinderbrewmeadery",
+                  "id": 40366,
+                  "points": 10,
+                  "title": "Mythic: Cinderbrew Meadery"
+                }
+              ],
+              "name": "Cinderbrew Meadery"
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_achievement_dungeon_arak-ara",
+                  "id": 40370,
+                  "points": 10,
+                  "title": "Ara-Kara, City of Echoes"
+                },
+                {
+                  "icon": "inv_achievement_dungeon_arak-ara",
+                  "id": 40374,
+                  "points": 10,
+                  "title": "Heroic: Ara-Kara, City of Echoes"
+                },
+                {
+                  "icon": "inv_achievement_dungeon_arak-ara",
+                  "id": 40375,
+                  "points": 10,
+                  "title": "Mythic: Ara-Kara, City of Echoes"
+                }
+              ],
+              "name": "Ara-Kara, City of Echoes"
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_achievement_dungeon_cityofthreads",
+                  "id": 40376,
+                  "points": 10,
+                  "title": "City of Threads"
+                },
+                {
+                  "icon": "inv_achievement_dungeon_cityofthreads",
+                  "id": 40377,
+                  "points": 10,
+                  "title": "Heroic: City of Threads"
+                },
+                {
+                  "icon": "inv_achievement_dungeon_cityofthreads",
+                  "id": 40379,
+                  "points": 10,
+                  "title": "Mythic: City of Threads"
+                }
+              ],
+              "name": "City of Threads"
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_achievement_dungeon_darkflamecleft",
+                  "id": 40427,
+                  "points": 10,
+                  "title": "Darkflame Cleft"
+                },
+                {
+                  "icon": "inv_achievement_dungeon_darkflamecleft",
+                  "id": 40428,
+                  "points": 10,
+                  "title": "Heroic: Darkflame Cleft"
+                },
+                {
+                  "icon": "inv_achievement_dungeon_darkflamecleft",
+                  "id": 40429,
+                  "points": 10,
+                  "title": "Mythic: Darkflame Cleft"
+                }
+              ],
+              "name": "Darkflame Cleft"
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_achievement_dungeon_prioryofthesacredflame",
+                  "id": 40590,
+                  "points": 10,
+                  "title": "Priory of the Sacred Flame"
+                },
+                {
+                  "icon": "inv_achievement_dungeon_prioryofthesacredflame",
+                  "id": 40592,
+                  "points": 10,
+                  "title": "Heroic: Priory of the Sacred Flame"
+                },
+                {
+                  "icon": "inv_achievement_dungeon_prioryofthesacredflame",
+                  "id": 40596,
+                  "points": 10,
+                  "title": "Mythic: Priory of the Sacred Flame"
+                }
+              ],
+              "name": "Phiory of the Sacred Flame"
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_achievement_dungeon_dawnbreaker",
+                  "id": 40599,
+                  "points": 10,
+                  "title": "The Dawnbreaker"
+                },
+                {
+                  "icon": "inv_achievement_dungeon_dawnbreaker",
+                  "id": 40601,
+                  "points": 10,
+                  "title": "Heroic: The Dawnbreaker"
+                },
+                {
+                  "icon": "inv_achievement_dungeon_dawnbreaker",
+                  "id": 40604,
+                  "points": 10,
+                  "title": "Mythic: The Dawnbreaker"
+                }
+              ],
+              "name": "The Dawnbreaker"
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_achievement_dungeon_rookery",
+                  "id": 40621,
+                  "points": 10,
+                  "title": "The Rookery"
+                },
+                {
+                  "icon": "inv_achievement_dungeon_rookery",
+                  "id": 40637,
+                  "points": 0,
+                  "title": "Heroic: The Rookery"
+                },
+                {
+                  "icon": "inv_achievement_dungeon_rookery",
+                  "id": 40642,
+                  "points": 0,
+                  "title": "Mythic: The Rookery"
+                }
+              ],
+              "name": "The Rookery"
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_achievement_dungeon_stonevault",
+                  "id": 40643,
+                  "points": 0,
+                  "title": "The Stonevault"
+                },
+                {
+                  "icon": "inv_achievement_dungeon_stonevault",
+                  "id": 40644,
+                  "points": 0,
+                  "title": "Heroic: The Stonevault"
+                },
+                {
+                  "icon": "inv_achievement_dungeon_stonevault",
+                  "id": 40648,
+                  "points": 0,
+                  "title": "Mythic: The Stonevault"
+                }
+              ],
+              "name": "The Stonevault"
             }
           ]
         },
@@ -20361,6 +22022,12 @@
                   "title": "Professional Draconic Master"
                 },
                 {
+                  "icon": "inv_misc_note_01",
+                  "id": 19408,
+                  "points": 10,
+                  "title": "Professional Algari Master"
+                },
+                {
                   "icon": "ability_repair",
                   "id": 18728,
                   "points": 10,
@@ -20429,10 +22096,22 @@
                   "title": "Working with Wyrms"
                 },
                 {
+                  "icon": "ability_repair",
+                  "id": 19409,
+                  "points": 10,
+                  "title": "Working Underground"
+                },
+                {
                   "icon": "ui_profession_blacksmithing",
                   "id": 7378,
                   "points": 25,
                   "title": "Jack of All Trades"
+                },
+                {
+                  "icon": "inv_blacksmithing_modifiedcraftingreagent_silver",
+                  "id": 19515,
+                  "points": 30,
+                  "title": "Algari Master of Many"
                 },
                 {
                   "icon": "inv_hammer_16",
@@ -20501,6 +22180,12 @@
                   "id": 16630,
                   "points": 50,
                   "title": "Draconic Master of All"
+                },
+                {
+                  "icon": "inv_hammer_16",
+                  "id": 19410,
+                  "points": 50,
+                  "title": "Algari Master of All"
                 },
                 {
                   "icon": "inv_recipe_70_-scroll2star",
@@ -20689,6 +22374,18 @@
                   "id": 18963,
                   "points": 5,
                   "title": "Burst Damage"
+                },
+                {
+                  "icon": "inv_11_alchemy_profession_cauldron04",
+                  "id": 19704,
+                  "points": 5,
+                  "title": "Overflowing Algari Flasks"
+                },
+                {
+                  "icon": "inv_11_alchemy_profession_cauldron01",
+                  "id": 19716,
+                  "points": 5,
+                  "title": "Plentiful Algari Potions"
                 }
               ],
               "name": ""
@@ -21605,6 +23302,12 @@
                   "id": 16631,
                   "points": 10,
                   "title": "Dragon Isles Cook"
+                },
+                {
+                  "icon": "ui_profession_cooking",
+                  "id": 19414,
+                  "points": 10,
+                  "title": "Algari Cook"
                 }
               ],
               "name": "Skill"
@@ -22037,6 +23740,12 @@
                   "id": 16632,
                   "points": 10,
                   "title": "Dragon Isles Fisherman"
+                },
+                {
+                  "icon": "ui_profession_fishing",
+                  "id": 19415,
+                  "points": 10,
+                  "title": "Algari Fisherman"
                 }
               ],
               "name": "Skill"
@@ -22459,6 +24168,12 @@
                   "id": 17367,
                   "points": 10,
                   "title": "Deadliest Cache"
+                },
+                {
+                  "icon": "inv_oldgodfishmount_red",
+                  "id": 40539,
+                  "points": 10,
+                  "title": "The Derby Dash"
                 }
               ],
               "name": "World"
@@ -22474,6 +24189,137 @@
                 }
               ],
               "name": "Other"
+            },
+            {
+              "id": "52414966",
+              "items": [
+                {
+                  "icon": "inv_tailoring_modifiedcraftingreagent_green",
+                  "id": 40476,
+                  "points": 10,
+                  "title": "10 Algari Seekerthread"
+                },
+                {
+                  "icon": "inv_tailoring_modifiedcraftingreagent_green",
+                  "id": 40480,
+                  "points": 10,
+                  "title": "20 Algari Seekerthread"
+                },
+                {
+                  "icon": "inv_tailoring_modifiedcraftingreagent_green",
+                  "id": 40484,
+                  "points": 10,
+                  "title": "30 Algari Seekerthread"
+                },
+                {
+                  "icon": "inv_tailoring_modifiedcraftingreagent_green",
+                  "id": 40485,
+                  "points": 10,
+                  "title": "40 Algari Seekerthread"
+                },
+                {
+                  "icon": "inv_tailoring_modifiedcraftingreagent_green",
+                  "id": 40487,
+                  "points": 10,
+                  "title": "50 Algari Seekerthread"
+                },
+                {
+                  "icon": "inv_tailoring_modifiedcraftingreagent_green",
+                  "id": 40488,
+                  "points": 10,
+                  "title": "60 Algari Seekerthread"
+                },
+                {
+                  "icon": "inv_tailoring_modifiedcraftingreagent_green",
+                  "id": 40489,
+                  "points": 10,
+                  "title": "70 Algari Seekerthread"
+                },
+                {
+                  "icon": "inv_tailoring_modifiedcraftingreagent_green",
+                  "id": 40490,
+                  "points": 10,
+                  "title": "80 Algari Seekerthread"
+                },
+                {
+                  "icon": "inv_tailoring_modifiedcraftingreagent_green",
+                  "id": 40491,
+                  "points": 10,
+                  "title": "90 Algari Seekerthread"
+                },
+                {
+                  "icon": "inv_tailoring_modifiedcraftingreagent_green",
+                  "id": 40492,
+                  "points": 10,
+                  "title": "100 Algari Seekerthread"
+                }
+              ],
+              "name": "Seekerthread"
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_tailoring_modifiedcraftingreagent_yellow",
+                  "id": 40494,
+                  "points": 10,
+                  "title": "10 Algari Anglerthread"
+                },
+                {
+                  "icon": "inv_tailoring_modifiedcraftingreagent_yellow",
+                  "id": 40495,
+                  "points": 10,
+                  "title": "20 Algari Anglerthread"
+                },
+                {
+                  "icon": "inv_tailoring_modifiedcraftingreagent_yellow",
+                  "id": 40496,
+                  "points": 10,
+                  "title": "60 Algari Anglerthread"
+                },
+                {
+                  "icon": "inv_tailoring_modifiedcraftingreagent_yellow",
+                  "id": 40497,
+                  "points": 10,
+                  "title": "30 Algari Anglerthread"
+                },
+                {
+                  "icon": "inv_tailoring_modifiedcraftingreagent_yellow",
+                  "id": 40498,
+                  "points": 10,
+                  "title": "70 Algari Anglerthread"
+                },
+                {
+                  "icon": "inv_tailoring_modifiedcraftingreagent_yellow",
+                  "id": 40499,
+                  "points": 10,
+                  "title": "40 Algari Anglerthread"
+                },
+                {
+                  "icon": "inv_tailoring_modifiedcraftingreagent_yellow",
+                  "id": 40500,
+                  "points": 10,
+                  "title": "80 Algari Anglerthread"
+                },
+                {
+                  "icon": "inv_tailoring_modifiedcraftingreagent_yellow",
+                  "id": 40501,
+                  "points": 10,
+                  "title": "100 Algari Anglerthread"
+                },
+                {
+                  "icon": "inv_tailoring_modifiedcraftingreagent_yellow",
+                  "id": 40502,
+                  "points": 10,
+                  "title": "50 Algari Anglerthread"
+                },
+                {
+                  "icon": "inv_tailoring_modifiedcraftingreagent_yellow",
+                  "id": 40503,
+                  "points": 10,
+                  "title": "90 Algari Anglerthread"
+                }
+              ],
+              "name": "Anglerthread"
             }
           ]
         },
@@ -23439,6 +25285,12 @@
                   "id": 13206,
                   "points": 10,
                   "title": "Allied Races: Vulpera"
+                },
+                {
+                  "icon": "inv_achievement_alliedrace_earthen",
+                  "id": 40307,
+                  "points": 10,
+                  "title": "Allied Races: Earthen"
                 }
               ],
               "name": "Allied Races: Unlock"
@@ -23505,9 +25357,51 @@
                   "id": 14002,
                   "points": 10,
                   "title": "Heritage of the Vulpera"
+                },
+                {
+                  "icon": "inv_tabard_vulpera",
+                  "id": 40309,
+                  "points": 10,
+                  "title": "Heritage of the Earthen"
                 }
               ],
               "name": "Allied Races: Level"
+            }
+          ]
+        },
+        {
+          "id": "a06bb7c6",
+          "name": "War Within",
+          "subcats": [
+            {
+              "id": "782bb9aa",
+              "items": [
+                {
+                  "icon": "achievement_reputation_02",
+                  "id": 40591,
+                  "points": 0,
+                  "title": "Khaz Algar Diplomat"
+                },
+                {
+                  "icon": "ui_majorfactions_candle",
+                  "id": 40836,
+                  "points": 5,
+                  "title": "Forging Deep Friendships"
+                },
+                {
+                  "icon": "ui_notoriety_theweaver",
+                  "id": 40838,
+                  "points": 10,
+                  "title": "The Severed Threads"
+                },
+                {
+                  "icon": "ui_majorfactions_flame",
+                  "id": 40845,
+                  "points": 10,
+                  "title": "Hallowfall Arathi"
+                }
+              ],
+              "name": "Renown"
             }
           ]
         },
@@ -26131,6 +28025,22 @@
                   "id": 15181,
                   "points": 10,
                   "title": "Rock n' Roll"
+                },
+                {
+                  "icon": "inv_holiday_christmas_present_01",
+                  "id": 20510,
+                  "points": 0,
+                  "notObtainable": true,
+                  "notReleased": true,
+                  "title": "What Could it be?"
+                },
+                {
+                  "icon": "ability_kick",
+                  "id": 20511,
+                  "points": 0,
+                  "notObtainable": true,
+                  "notReleased": true,
+                  "title": "Gotta Punt em' All"
                 }
               ],
               "name": ""
@@ -27051,6 +28961,12 @@
                   "id": 19401,
                   "points": 5,
                   "title": "Emerald Dream Safari"
+                },
+                {
+                  "icon": "inv_babymolepet_yellow",
+                  "id": 40194,
+                  "points": 5,
+                  "title": "Khaz Algar Safari"
                 }
               ],
               "name": "Zones"
@@ -27323,6 +29239,12 @@
                   "id": 17880,
                   "points": 10,
                   "title": "Battle in Zaralek Cavern"
+                },
+                {
+                  "icon": "inv_pet_achievement_pandaria",
+                  "id": 40153,
+                  "points": 10,
+                  "title": "Battle on Khaz Algar"
                 }
               ],
               "name": "World Quests"
@@ -27968,6 +29890,72 @@
                 }
               ],
               "name": "Species: Zaralek Cavern"
+            },
+            {
+              "id": "1917227e",
+              "items": [
+                {
+                  "icon": "icon_petfamily_water",
+                  "id": 40154,
+                  "points": 5,
+                  "title": "Aquatic Battler of Khaz Algar"
+                },
+                {
+                  "icon": "icon_petfamily_beast",
+                  "id": 40155,
+                  "points": 5,
+                  "title": "Beast Battler of Khaz Algar"
+                },
+                {
+                  "icon": "icon_petfamily_critter",
+                  "id": 40156,
+                  "points": 5,
+                  "title": "Critter Battler of Khaz Algar"
+                },
+                {
+                  "icon": "icon_petfamily_dragon",
+                  "id": 40157,
+                  "points": 5,
+                  "title": "Dragonkin Battler of Khaz Algar"
+                },
+                {
+                  "icon": "icon_petfamily_elemental",
+                  "id": 40158,
+                  "points": 5,
+                  "title": "Elemental Battler of Khaz Algar"
+                },
+                {
+                  "icon": "icon_petfamily_flying",
+                  "id": 40161,
+                  "points": 5,
+                  "title": "Flying Battler of Khaz Algar"
+                },
+                {
+                  "icon": "icon_petfamily_humanoid",
+                  "id": 40162,
+                  "points": 5,
+                  "title": "Humanoid Battler of Khaz Algar"
+                },
+                {
+                  "icon": "icon_petfamily_magical",
+                  "id": 40163,
+                  "points": 5,
+                  "title": "Magic Battler of Khaz Algar"
+                },
+                {
+                  "icon": "icon_petfamily_mechanical",
+                  "id": 40164,
+                  "points": 5,
+                  "title": "Mechanical Battler of Khaz Algar"
+                },
+                {
+                  "icon": "icon_petfamily_undead",
+                  "id": 40165,
+                  "points": 5,
+                  "title": "Undead Battler of Khaz Algar"
+                }
+              ],
+              "name": "Species: Khaz Algar"
             },
             {
               "id": "4bbaf263",
@@ -29012,6 +31000,23 @@
               "name": "Dragonflight"
             },
             {
+              "items": [
+                {
+                  "icon": "inv_achievement_raid_nerubar",
+                  "id": 40469,
+                  "points": 10,
+                  "title": "I'm Bringing Nerub-ack"
+                },
+                {
+                  "icon": "inv_achievement_raid_nerubar",
+                  "id": 40723,
+                  "points": 10,
+                  "title": "Web-Wrapped in the Finest Silks"
+                }
+              ],
+              "name": "The War Within"
+            },
+            {
               "id": "199d4aa3",
               "items": [
                 {
@@ -29199,6 +31204,12 @@
                   "id": 19276,
                   "points": 10,
                   "title": "Verdant Vogue"
+                },
+                {
+                  "icon": "inv_chest_leather_raidroguenerubian_d_01",
+                  "id": 40728,
+                  "points": 10,
+                  "title": "Forged Finery"
                 }
               ],
               "name": "PvP"
@@ -29386,10 +31397,11 @@
           ]
         },
         {
-          "id": "7ec541dc",
-          "name": "Dragonriding",
+          "id": "794879ae",
+          "name": "Skyriding",
           "subcats": [
             {
+              "id": "8a17da43",
               "items": [
                 {
                   "icon": "ability_dragonriding_dragonriding01",
@@ -29401,7 +31413,7 @@
               "name": "Meta"
             },
             {
-              "id": "20c34fc2",
+              "id": "13aa7658",
               "items": [
                 {
                   "icon": "inv_checkered_flag",
@@ -29564,12 +31576,30 @@
                   "id": 19723,
                   "points": 20,
                   "title": "Northrend Racing Completionist: Gold"
+                },
+                {
+                  "icon": "inv_checkered_flag",
+                  "id": 40352,
+                  "points": 20,
+                  "title": "Khaz Algar Completionist: Bronze"
+                },
+                {
+                  "icon": "inv_checkered_flag",
+                  "id": 40353,
+                  "points": 20,
+                  "title": "Khaz Algar Completionist: Silver"
+                },
+                {
+                  "icon": "inv_checkered_flag",
+                  "id": 40354,
+                  "points": 20,
+                  "title": "Khaz Algar Completionist: Gold"
                 }
               ],
               "name": "Completionist"
             },
             {
-              "id": "df7330c2",
+              "id": "7a3ebe2a",
               "items": [
                 {
                   "icon": "achievement_challengemode_arakkoaspires_bronze",
@@ -29593,7 +31623,7 @@
               "name": "Challenge"
             },
             {
-              "id": "ce7230c2",
+              "id": "d8515ce9",
               "items": [
                 {
                   "icon": "achievement_zone_wakingshores",
@@ -29641,7 +31671,7 @@
               "name": "Glyphs"
             },
             {
-              "id": "ab9a2692",
+              "id": "73b67b61",
               "items": [
                 {
                   "icon": "achievement_challengemode_arakkoaspires_bronze",
@@ -29665,7 +31695,7 @@
               "name": "Reverse Racer"
             },
             {
-              "id": "ab9a2692",
+              "id": "7cddf5c4",
               "items": [
                 {
                   "icon": "achievement_challengemode_arakkoaspires_bronze",
@@ -29743,7 +31773,7 @@
               "name": "Races: Waking Shores"
             },
             {
-              "id": "ab9a2692",
+              "id": "6d3458a7",
               "items": [
                 {
                   "icon": "achievement_challengemode_arakkoaspires_bronze",
@@ -29821,7 +31851,7 @@
               "name": "Races: Ohn'ahran Plains"
             },
             {
-              "id": "ab9a2692",
+              "id": "a441ae90",
               "items": [
                 {
                   "icon": "achievement_challengemode_arakkoaspires_bronze",
@@ -29899,7 +31929,7 @@
               "name": "Races: Azure Span"
             },
             {
-              "id": "ab9a2692",
+              "id": "44203498",
               "items": [
                 {
                   "icon": "achievement_challengemode_arakkoaspires_bronze",
@@ -29977,7 +32007,7 @@
               "name": "Races: Thaldraszus"
             },
             {
-              "id": "01a83861",
+              "id": "68575cba",
               "items": [
                 {
                   "icon": "achievement_challengemode_arakkoaspires_bronze",
@@ -30055,7 +32085,7 @@
               "name": "Races: Forbidden Reach"
             },
             {
-              "id": "01a83862",
+              "id": "be368c10",
               "items": [
                 {
                   "icon": "achievement_challengemode_arakkoaspires_bronze",
@@ -30133,7 +32163,7 @@
               "name": "Races: Zaralek Cavern"
             },
             {
-              "id": "a282f6ac",
+              "id": "aacf6428",
               "items": [
                 {
                   "icon": "achievement_challengemode_arakkoaspires_bronze",
@@ -30229,7 +32259,7 @@
               "name": "Races: Emerald Dream"
             },
             {
-              "id": "01a83863",
+              "id": "6a6afc59",
               "items": [
                 {
                   "icon": "achievement_challengemode_arakkoaspires_bronze",
@@ -30289,7 +32319,7 @@
               "name": "Races: Kalimdor"
             },
             {
-              "id": "01a83864",
+              "id": "5a13e621",
               "items": [
                 {
                   "icon": "achievement_challengemode_arakkoaspires_bronze",
@@ -30349,7 +32379,7 @@
               "name": "Races: Eastern Kingdoms"
             },
             {
-              "id": "01b96864",
+              "id": "2586ef3a",
               "items": [
                 {
                   "icon": "achievement_challengemode_arakkoaspires_bronze",
@@ -30409,7 +32439,7 @@
               "name": "Races: Outland"
             },
             {
-              "id": "a7cb89ca",
+              "id": "0e49bf42",
               "items": [
                 {
                   "icon": "achievement_challengemode_arakkoaspires_bronze",
@@ -30467,6 +32497,243 @@
                 }
               ],
               "name": "Races: Northrend"
+            },
+            {
+              "id": "fc52cf55",
+              "items": [
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 40316,
+                  "points": 10,
+                  "title": "Isle of Dorn: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 40317,
+                  "points": 10,
+                  "title": "Isle of Dorn: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 40318,
+                  "points": 10,
+                  "title": "Isle of Dorn: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 40319,
+                  "points": 10,
+                  "title": "Isle of Dorn Advanced: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 40320,
+                  "points": 10,
+                  "title": "Isle of Dorn Advanced: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 40321,
+                  "points": 10,
+                  "title": "Isle of Dorn Advanced: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 40322,
+                  "points": 10,
+                  "title": "Isle of Dorn Reverse: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 40323,
+                  "points": 10,
+                  "title": "Isle of Dorn Reverse: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 40324,
+                  "points": 10,
+                  "title": "Isle of Dorn Reverse: Gold"
+                }
+              ],
+              "name": "Races: Isle of Dorn"
+            },
+            {
+              "items": [
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 40325,
+                  "points": 10,
+                  "title": "The Ringing Deeps: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 40326,
+                  "points": 10,
+                  "title": "The Ringing Deeps: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 40327,
+                  "points": 10,
+                  "title": "The Ringing Deeps: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 40328,
+                  "points": 10,
+                  "title": "The Ringing Deeps Advanced: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 40329,
+                  "points": 10,
+                  "title": "The Ringing Deeps Advanced: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 40330,
+                  "points": 10,
+                  "title": "The Ringing Deeps Advanced: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 40331,
+                  "points": 10,
+                  "title": "The Ringing Deeps Reverse: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 40332,
+                  "points": 10,
+                  "title": "The Ringing Deeps Reverse: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 40333,
+                  "points": 10,
+                  "title": "The Ringing Deeps Reverse: Gold"
+                }
+              ],
+              "name": "Races: The Ringing Deeps"
+            },
+            {
+              "items": [
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 40334,
+                  "points": 10,
+                  "title": "Hallowfall: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 40335,
+                  "points": 10,
+                  "title": "Hallowfall: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 40336,
+                  "points": 10,
+                  "title": "Hallowfall: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 40337,
+                  "points": 10,
+                  "title": "Hallowfall Advanced: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 40338,
+                  "points": 10,
+                  "title": "Hallowfall Advanced: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 40339,
+                  "points": 10,
+                  "title": "Hallowfall Advanced: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 40340,
+                  "points": 10,
+                  "title": "Hallowfall Reverse: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 40341,
+                  "points": 10,
+                  "title": "Hallowfall Reverse: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 40342,
+                  "points": 10,
+                  "title": "Hallowfall Reverse: Gold"
+                }
+              ],
+              "name": "Races: Hallowfall"
+            },
+            {
+              "items": [
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 40343,
+                  "points": 10,
+                  "title": "Azj-Kahet: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 40344,
+                  "points": 10,
+                  "title": "Azj-Kahet: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 40345,
+                  "points": 10,
+                  "title": "Azj-Kahet: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 40346,
+                  "points": 10,
+                  "title": "Azj-Kahet Advanced: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 40347,
+                  "points": 10,
+                  "title": "Azj-Kahet Advanced: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 40348,
+                  "points": 10,
+                  "title": "Azj-Kahet Advanced: Gold"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 40349,
+                  "points": 10,
+                  "title": "Azj-Kahet Reverse: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 40350,
+                  "points": 10,
+                  "title": "Azj-Kahet Reverse: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 40351,
+                  "points": 10,
+                  "title": "Azj-Kahet Reverse: Gold"
+                }
+              ],
+              "name": "Races: Azj-Kahet"
             }
           ]
         },
@@ -35885,308 +38152,308 @@
                   "id": 457,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 80"
+                  "title": "Realm First! Level 80 (Legacy)"
                 },
                 {
                   "icon": "achievement_level_85",
                   "id": 4999,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 85"
+                  "title": "Realm First! Level 85 (Legacy)"
                 },
                 {
                   "icon": "achievement_level_90",
                   "id": 6524,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 90"
+                  "title": "Realm First! Level 90 (Legacy)"
                 },
                 {
                   "icon": "Achievement_Character_Bloodelf_Female",
                   "id": 1405,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 80 Blood Elf"
+                  "title": "Realm First! Level 80 Blood Elf (Legacy)"
                 },
                 {
                   "icon": "Achievement_Character_Draenei_Female",
                   "id": 1406,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 80 Draenei"
+                  "title": "Realm First! Level 80 Draenei (Legacy)"
                 },
                 {
                   "icon": "Achievement_Character_Dwarf_Male",
                   "id": 1407,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 80 Dwarf"
+                  "title": "Realm First! Level 80 Dwarf (Legacy)"
                 },
                 {
                   "icon": "Achievement_Character_Undead_Male",
                   "id": 1413,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 80 Forsaken"
+                  "title": "Realm First! Level 80 Forsaken (Legacy)"
                 },
                 {
                   "icon": "Achievement_Character_Gnome_Male",
                   "id": 1404,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 80 Gnome"
+                  "title": "Realm First! Level 80 Gnome (Legacy)"
                 },
                 {
                   "icon": "Achievement_Character_Human_Female",
                   "id": 1408,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 80 Human"
+                  "title": "Realm First! Level 80 Human (Legacy)"
                 },
                 {
                   "icon": "Achievement_Character_Nightelf_Male",
                   "id": 1409,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 80 Night Elf"
+                  "title": "Realm First! Level 80 Night Elf (Legacy)"
                 },
                 {
                   "icon": "Achievement_Character_Orc_Male",
                   "id": 1410,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 80 Orc"
+                  "title": "Realm First! Level 80 Orc (Legacy)"
                 },
                 {
                   "icon": "Achievement_Character_Tauren_Female",
                   "id": 1411,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 80 Tauren"
+                  "title": "Realm First! Level 80 Tauren (Legacy)"
                 },
                 {
                   "icon": "Achievement_Character_Troll_Male",
                   "id": 1412,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 80 Troll"
+                  "title": "Realm First! Level 80 Troll (Legacy)"
                 },
                 {
                   "icon": "Spell_Deathknight_ClassIcon",
                   "id": 461,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 80 Death Knight"
+                  "title": "Realm First! Level 80 Death Knight (Legacy)"
                 },
                 {
                   "icon": "Spell_Deathknight_ClassIcon",
                   "id": 5005,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 85 Death Knight"
+                  "title": "Realm First! Level 85 Death Knight (Legacy)"
                 },
                 {
                   "icon": "Spell_Deathknight_ClassIcon",
                   "id": 6748,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 90 Death Knight"
+                  "title": "Realm First! Level 90 Death Knight (Legacy)"
                 },
                 {
                   "icon": "Ability_Druid_Maul",
                   "id": 466,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 80 Druid"
+                  "title": "Realm First! Level 80 Druid (Legacy)"
                 },
                 {
                   "icon": "Ability_Druid_Maul",
                   "id": 5000,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 85 Druid"
+                  "title": "Realm First! Level 85 Druid (Legacy)"
                 },
                 {
                   "icon": "Ability_Druid_Maul",
                   "id": 6743,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 90 Druid"
+                  "title": "Realm First! Level 90 Druid (Legacy)"
                 },
                 {
                   "icon": "INV_Weapon_Bow_07",
                   "id": 462,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 80 Hunter"
+                  "title": "Realm First! Level 80 Hunter (Legacy)"
                 },
                 {
                   "icon": "INV_Weapon_Bow_07",
                   "id": 5004,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 85 Hunter"
+                  "title": "Realm First! Level 85 Hunter (Legacy)"
                 },
                 {
                   "icon": "INV_Weapon_Bow_07",
                   "id": 6747,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 90 Hunter"
+                  "title": "Realm First! Level 90 Hunter (Legacy)"
                 },
                 {
                   "icon": "INV_Staff_13",
                   "id": 460,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 80 Mage"
+                  "title": "Realm First! Level 80 Mage (Legacy)"
                 },
                 {
                   "icon": "INV_Staff_13",
                   "id": 5006,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 85 Mage"
+                  "title": "Realm First! Level 85 Mage (Legacy)"
                 },
                 {
                   "icon": "INV_Staff_13",
                   "id": 6749,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 90 Mage"
+                  "title": "Realm First! Level 90 Mage (Legacy)"
                 },
                 {
                   "icon": "Ability_ThunderBolt",
                   "id": 465,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 80 Paladin"
+                  "title": "Realm First! Level 80 Paladin (Legacy)"
                 },
                 {
                   "icon": "Ability_ThunderBolt",
                   "id": 5001,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 85 Paladin"
+                  "title": "Realm First! Level 85 Paladin (Legacy)"
                 },
                 {
                   "icon": "Ability_ThunderBolt",
                   "id": 6744,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 90 Paladin"
+                  "title": "Realm First! Level 90 Paladin (Legacy)"
                 },
                 {
                   "icon": "INV_Staff_30",
                   "id": 464,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 80 Priest"
+                  "title": "Realm First! Level 80 Priest (Legacy)"
                 },
                 {
                   "icon": "INV_Staff_30",
                   "id": 5002,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 85 Priest"
+                  "title": "Realm First! Level 85 Priest (Legacy)"
                 },
                 {
                   "icon": "INV_Staff_30",
                   "id": 6745,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 90 Priest"
+                  "title": "Realm First! Level 90 Priest (Legacy)"
                 },
                 {
                   "icon": "INV_ThrowingKnife_04",
                   "id": 458,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 80 Rogue"
+                  "title": "Realm First! Level 80 Rogue (Legacy)"
                 },
                 {
                   "icon": "INV_ThrowingKnife_04",
                   "id": 5008,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 85 Rogue"
+                  "title": "Realm First! Level 85 Rogue (Legacy)"
                 },
                 {
                   "icon": "INV_ThrowingKnife_04",
                   "id": 6751,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 90 Rogue"
+                  "title": "Realm First! Level 90 Rogue (Legacy)"
                 },
                 {
                   "icon": "Spell_Nature_BloodLust",
                   "id": 467,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 80 Shaman"
+                  "title": "Realm First! Level 80 Shaman (Legacy)"
                 },
                 {
                   "icon": "Spell_Nature_BloodLust",
                   "id": 4998,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 85 Shaman"
+                  "title": "Realm First! Level 85 Shaman (Legacy)"
                 },
                 {
                   "icon": "Spell_Nature_BloodLust",
                   "id": 6523,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 90 Shaman"
+                  "title": "Realm First! Level 90 Shaman (Legacy)"
                 },
                 {
                   "icon": "Spell_Nature_Drowsy",
                   "id": 463,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 80 Warlock"
+                  "title": "Realm First! Level 80 Warlock (Legacy)"
                 },
                 {
                   "icon": "Spell_Nature_Drowsy",
                   "id": 5003,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 85 Warlock"
+                  "title": "Realm First! Level 85 Warlock (Legacy)"
                 },
                 {
                   "icon": "Spell_Nature_Drowsy",
                   "id": 6746,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 90 Warlock"
+                  "title": "Realm First! Level 90 Warlock (Legacy)"
                 },
                 {
                   "icon": "INV_Sword_27",
                   "id": 459,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 80 Warrior"
+                  "title": "Realm First! Level 80 Warrior (Legacy)"
                 },
                 {
                   "icon": "INV_Sword_27",
                   "id": 5007,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 85 Warrior"
+                  "title": "Realm First! Level 85 Warrior (Legacy)"
                 },
                 {
                   "icon": "INV_Sword_27",
                   "id": 6750,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 90 Warrior"
+                  "title": "Realm First! Level 90 Warrior (Legacy)"
                 },
                 {
                   "icon": "class_monk",
                   "id": 6752,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Realm First! Level 90 Monk"
+                  "title": "Realm First! Level 90 Monk (Legacy)"
                 },
                 {
                   "icon": "Spell_Misc_HellifrePVPCombatMorale",
@@ -36555,6 +38822,17 @@
                   "title": "Back from the Beyond (Legacy)"
                 },
                 {
+                  "icon": "ability_hunter_displacement",
+                  "id": 19489,
+                  "points": 0,
+                  "title": "Class Connoisseur"
+                }
+              ],
+              "name": "Other"
+            },
+            {
+              "items": [
+                {
                   "icon": "inv_tabard_pvp_10season2_d_01",
                   "id": 18027,
                   "points": 0,
@@ -36604,9 +38882,15 @@
                   "id": 20481,
                   "points": 0,
                   "title": "Dragonflight Season 4 Master"
+                },
+                {
+                  "icon": "inv_tabard_blue_armor_azjkahet_c_01",
+                  "id": 40660,
+                  "points": 0,
+                  "title": "The War Within Season 1: Spelunker Supreme"
                 }
               ],
-              "name": "Other"
+              "name": "Seasonal"
             },
             {
               "id": "1e3a0c6f",
@@ -37223,8 +39507,15 @@
                 {
                   "icon": "inv_drake2mountgladiator_purple",
                   "id": 19503,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Draconic Gladiator's Drake"
+                },
+                {
+                  "icon": "inv_felbatgladiatormount_gold",
+                  "id": 40398,
+                  "points": 0,
+                  "title": "Forged Gladiator's Fel Bat"
                 }
               ],
               "name": "PVP"
@@ -37265,6 +39556,48 @@
           ]
         },
         {
+          "id": "b1c6c05e",
+          "name": "Delves",
+          "subcats": [
+            {
+              "id": "74620222",
+              "items": [
+                {
+                  "icon": "ui_followerdungeon_followme",
+                  "id": 40098,
+                  "points": 0,
+                  "title": "Immortal Spelunker"
+                },
+                {
+                  "icon": "ability_rogue_combatreadiness",
+                  "id": 40100,
+                  "points": 0,
+                  "title": "Undying Caver"
+                },
+                {
+                  "icon": "inv_nerubianbeetlepet_tan",
+                  "id": 40103,
+                  "points": 0,
+                  "title": "Nemesis"
+                },
+                {
+                  "icon": "inv_nerubianbeetlepet_purple",
+                  "id": 40431,
+                  "points": 0,
+                  "title": "Hunting the Hunter"
+                },
+                {
+                  "icon": "inv_nerubianbeetlepet_purple",
+                  "id": 40433,
+                  "points": 0,
+                  "title": "Hunting the Hunter (Solo)"
+                }
+              ],
+              "name": "Delves"
+            }
+          ]
+        },
+        {
           "id": "ef7a774b",
           "name": "Dungeons",
           "subcats": [
@@ -37283,6 +39616,12 @@
                   "notObtainable": true,
                   "points": 0,
                   "title": "Keystone Hero: Throne of the Tides"
+                },
+                {
+                  "icon": "achievement_dungeon_grimbatol",
+                  "id": 20588,
+                  "points": 0,
+                  "title": "Keystone Hero: Grim Batol"
                 }
               ],
               "name": "Dungeon Portals: Cataclysm"
@@ -37615,6 +39954,12 @@
                   "notObtainable": true,
                   "points": 0,
                   "title": "Keystone Hero: Atal'Dazar"
+                },
+                {
+                  "icon": "achievement_dungeon_siegeofboralus",
+                  "id": 20587,
+                  "points": 0,
+                  "title": "Keystone Hero: Siege of Boralus"
                 }
               ],
               "name": "Dungeon Portals: Battle for Azeroth"
@@ -37927,7 +40272,7 @@
                   "title": "Dragonflight Keystone Explorer: Season Four"
                 },
                 {
-                  "icon": "achievement_challengemode_gold",
+                  "icon": "achievement_challengemode_silver",
                   "id": 19781,
                   "points": 0,
                   "title": "Dragonflight Keystone Conqueror: Season Four"
@@ -37948,6 +40293,7 @@
                   "icon": "achievement_challengemode_platinum",
                   "id": 19785,
                   "points": 0,
+                  "notObtainable": true,
                   "title": "Draconic Hero: Dragonflight Season 4"
                 }
               ],
@@ -38012,6 +40358,102 @@
                 }
               ],
               "name": "Dungeon Portals: Dragonflight"
+            },
+            {
+              "items": [
+                {
+                  "icon": "achievement_challengemode_silver",
+                  "id": 20523,
+                  "points": 0,
+                  "title": "The War Within Keystone Explorer: Season One"
+                },
+                {
+                  "icon": "achievement_challengemode_silver",
+                  "id": 20524,
+                  "points": 0,
+                  "title": "The War Within Keystone Conqueror: Season One"
+                },
+                {
+                  "icon": "achievement_challengemode_platinum",
+                  "id": 20525,
+                  "points": 0,
+                  "title": "The War Within Keystone Master: Season One"
+                },
+                {
+                  "icon": "achievement_challengemode_scholomance_platinum",
+                  "id": 20526,
+                  "points": 0,
+                  "title": "The War Within Keystone Hero: Season One"
+                },
+                {
+                  "icon": "achievement_challengemode_platinum",
+                  "id": 20589,
+                  "points": 0,
+                  "title": "[PH] Hero: The War Within Season 1"
+                }
+              ],
+              "name": "Mythic Keystone: The War Within"
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_achievement_dungeon_rookery",
+                  "id": 20579,
+                  "points": 0,
+                  "notObtainable": true,
+                  "title": "Keystone Hero: The Rookery"
+                },
+                {
+                  "icon": "inv_achievement_dungeon_stonevault",
+                  "id": 20580,
+                  "points": 0,
+                  "notObtainable": true,
+                  "title": "Keystone Hero: The Stonevault"
+                },
+                {
+                  "icon": "inv_achievement_dungeon_prioryofthesacredflame",
+                  "id": 20581,
+                  "points": 0,
+                  "notObtainable": true,
+                  "title": "Keystone Hero: Priory of the Sacred Flame"
+                },
+                {
+                  "icon": "inv_achievement_dungeon_cityofthreads",
+                  "id": 20582,
+                  "points": 0,
+                  "notObtainable": true,
+                  "title": "Keystone Hero: City of Threads"
+                },
+                {
+                  "icon": "inv_achievement_dungeon_cinderbrewmeadery",
+                  "id": 20583,
+                  "points": 0,
+                  "notObtainable": true,
+                  "title": "Keystone Hero: Cinderbrew Meadery"
+                },
+                {
+                  "icon": "inv_achievement_dungeon_darkflamecleft",
+                  "id": 20584,
+                  "points": 0,
+                  "notObtainable": true,
+                  "title": "Keystone Hero: Darkflame Cleft"
+                },
+                {
+                  "icon": "inv_achievement_dungeon_dawnbreaker",
+                  "id": 20585,
+                  "points": 0,
+                  "notObtainable": true,
+                  "title": "Keystone Hero: The Dawnbreaker"
+                },
+                {
+                  "icon": "inv_achievement_dungeon_arak-ara",
+                  "id": 20586,
+                  "points": 0,
+                  "notObtainable": true,
+                  "title": "Keystone Hero: Ara-Kara, City of Echoes"
+                }
+              ],
+              "name": "Dungeon Portals: The War Within"
             },
             {
               "id": "a0bd3c10",
@@ -38473,6 +40915,18 @@
                   "notObtainable": true,
                   "points": 0,
                   "title": "Cutting Edge: Fyrakk the Blazing"
+                },
+                {
+                  "icon": "inv_achievement_raidnerubian_queenansurek",
+                  "id": 40253,
+                  "points": 0,
+                  "title": "Ahead of the Curve: Queen Ansurek"
+                },
+                {
+                  "icon": "inv_achievement_raidnerubian_queenansurek",
+                  "id": 40254,
+                  "points": 0,
+                  "title": "Cutting Edge: Queen Ansurek"
                 }
               ],
               "name": "Lost Content"
@@ -41094,6 +43548,13 @@
                   "title": "Obsidian Legend: Dragonflight Season 2"
                 },
                 {
+                  "icon": "achievement_featsofstrength_gladiator_04",
+                  "id": 19304,
+                  "notObtainable": true,
+                  "points": 0,
+                  "title": "Legend: Dragonflight Season 3"
+                },
+                {
                   "icon": "achievement_featsofstrength_gladiator_07",
                   "id": 19131,
                   "notObtainable": true,
@@ -41106,6 +43567,13 @@
                   "notObtainable": true,
                   "points": 0,
                   "title": "Battle Mender: Dragonflight Season 3"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_04",
+                  "id": 19500,
+                  "notObtainable": true,
+                  "points": 0,
+                  "title": "Legend: Dragonflight Season 4"
                 },
                 {
                   "icon": "achievement_featsofstrength_gladiator_07",
@@ -41121,6 +43589,150 @@
                 }
               ],
               "name": "Solo Shuffle: Dragonflight"
+            },
+            {
+              "items": [
+                {
+                  "icon": "achievement_featsofstrength_gladiator_10",
+                  "id": 40385,
+                  "points": 0,
+                  "title": "Combatant I: The War Within Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_10",
+                  "id": 40386,
+                  "points": 0,
+                  "title": "Combatant II: The War Within Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 40387,
+                  "points": 0,
+                  "title": "Challenger I: The War Within Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 40388,
+                  "points": 0,
+                  "title": "Challenger II: The War Within Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 40389,
+                  "points": 0,
+                  "title": "Rival I: The War Within Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 40390,
+                  "points": 0,
+                  "title": "Rival II: The War Within Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 40391,
+                  "points": 0,
+                  "title": "Duelist: The War Within Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 40392,
+                  "points": 0,
+                  "title": "Elite: The War Within Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 40393,
+                  "points": 0,
+                  "title": "Gladiator: The War Within Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 40380,
+                  "points": 0,
+                  "title": "Forged Gladiator: The War Within Season 1"
+                }
+              ],
+              "name": "Rated Arena: The War Within"
+            },
+            {
+              "items": [
+                {
+                  "icon": "achievement_pvp_a_a",
+                  "id": 40383,
+                  "points": 0,
+                  "side": "A",
+                  "title": "Hero of the Alliance: Forged"
+                },
+                {
+                  "icon": "achievement_pvp_h_h",
+                  "id": 40384,
+                  "points": 0,
+                  "side": "H",
+                  "title": "Hero of the Horde: Forged"
+                }
+              ],
+              "name": "Rated Battleground: The War Within"
+            },
+            {
+              "items": [
+                {
+                  "icon": "achievement_featsofstrength_gladiator_04",
+                  "id": 40395,
+                  "points": 0,
+                  "title": "Legend: The War Within Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 40381,
+                  "points": 0,
+                  "title": "Forged Legend: The War Within Season 1"
+                },
+                {
+                  "icon": "ability_paladin_blessedmending",
+                  "id": 40472,
+                  "points": 0,
+                  "title": "Battle Mender: The War Within Season 1"
+                },
+                {
+                  "icon": "spell_holy_heal",
+                  "id": 40792,
+                  "points": 0,
+                  "title": "Solo Shuffle Medic: The War Within"
+                }
+              ],
+              "name": "Solo Shuffle: The War Within"
+            },
+            {
+              "items": [
+                {
+                  "icon": "achievement_featsofstrength_gladiator_04",
+                  "id": 40233,
+                  "points": 0,
+                  "title": "Strategist: The War Within Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 40234,
+                  "points": 0,
+                  "side": "H",
+                  "title": "Forged Warlord: The War Within Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 40235,
+                  "points": 0,
+                  "side": "A",
+                  "title": "Forged Marshall: The War Within Season 1"
+                },
+                {
+                  "icon": "spell_holy_heal",
+                  "id": 40795,
+                  "points": 0,
+                  "title": "Battleground Blitz Medic: The War Within"
+                }
+              ],
+              "name": "Battleground Blitz: The War Within"
             },
             {
               "id": "5da56702",
@@ -41529,6 +44141,12 @@
                   "notObtainable": true,
                   "points": 0,
                   "title": "Against the Elements"
+                },
+                {
+                  "icon": "spell_azerite_essence11",
+                  "id": 40796,
+                  "points": 0,
+                  "title": "This Takes Me Back"
                 }
               ],
               "name": "Events"
@@ -42958,6 +45576,18 @@
                   "id": 14797,
                   "points": 0,
                   "title": "Epic (Shadowlands)"
+                },
+                {
+                  "icon": "spell_frost_wizardmark",
+                  "id": 18976,
+                  "points": 0,
+                  "title": "Draconically Superior"
+                },
+                {
+                  "icon": "inv_enchant_voidcrystal",
+                  "id": 18977,
+                  "points": 0,
+                  "title": "Draconically Epic"
                 }
               ],
               "name": "Items"

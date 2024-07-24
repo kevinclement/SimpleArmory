@@ -1,4 +1,4 @@
-[ 
+[
   {
     "id": "fffffffe",
     "name": "Titles",
@@ -267,9 +267,123 @@
             "name": "Paragon of the Mists",
             "titleId": 552,
             "type": "achievement"
-          }          
+          }
         ],
         "name": "Remix: Pandaria"
+      }
+    ]
+  },
+  {
+    "name": "The War Within",
+    "subcats": [
+      {
+        "items": [
+          {
+            "icon": "inv_achievement_raidnerubian_queenansurek",
+            "id": 40243,
+            "name": "Queenslayer",
+            "titleId": 556,
+            "type": "achievement"
+          }
+        ],
+        "name": "Raids"
+      },
+      {
+        "items": [
+          {
+            "icon": "inv_cape_special_treasure_c_01",
+            "id": 40506,
+            "name": "Seeker of Loot",
+            "titleId": 570,
+            "type": "achievement"
+          },
+          {
+            "icon": "ui_followerdungeon_followme",
+            "id": 40098,
+            "name": "Immortal Spelunker",
+            "titleId": 549,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_challengemode_gold",
+            "id": 40726,
+            "name": "High Explorer",
+            "titleId": 550,
+            "type": "achievement"
+          }
+        ],
+        "name": "Delves"
+      },
+      {
+        "items": [
+          {
+            "icon": "achievement_challengemode_platinum",
+            "id": 20589,
+            "name": "The [PH] Hero",
+            "titleId": 548,
+            "notObtainable": true,
+            "type": "achievement"
+          }
+        ],
+        "name": "Mythic Plus"
+      },
+      {
+        "items": [
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 839,
+            "name": "Machine Whisperer",
+            "titleId": 564,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 840,
+            "name": "Honorary Councilmember",
+            "titleId": 565,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 841,
+            "name": "Lamplighter",
+            "titleId": 566,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 842,
+            "name": "Thread-Spinner",
+            "titleId": 567,
+            "type": "title"
+          }
+        ],
+        "name": "Reputation"
+      },
+      {
+        "items": [
+          {
+            "icon": "inv_tabard_pvp_10season3_d_01",
+            "id": 40587,
+            "name": "Machine-Warden",
+            "titleId": 568,
+            "type": "achievement"
+          }
+        ],
+        "name": "Exploration"
+      },
+      {
+        "items": [
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 835,
+            "name": "Ascension Breaker",
+            "titleId": 560,
+            "notObtainable":true,
+            "type": "title"
+          }
+        ],
+        "name": "Unknown"
       }
     ]
   },
@@ -1239,7 +1353,7 @@
           {
             "icon": "garrison_building_lumbermill",
             "id": 9080,
-            "name": "Timber Lord",
+            "name": "Echochaser",
             "side": "H",
             "titleId": 258,
             "type": "achievement"
@@ -2253,6 +2367,13 @@
             "name": "Skyscourge",
             "titleId": 492,
             "type": "achievement"
+          },
+          {
+            "icon": "inv_axe_1h_earthendungeon_c_01",
+            "id": 40097,
+            "name": "Slayer of the Deeps",
+            "titleId": 562,
+            "type": "achievement"
           }
         ],
         "name": "World PVP"
@@ -2656,6 +2777,13 @@
             "side": "H",
             "titleId": 220,
             "type": "achievement"
+          },
+          {
+            "icon": "inv_achievement_battleground_earthen",
+            "id": 40617,
+            "name": "Deephauler",
+            "titleId": 563,
+            "type": "achievement"
           }
         ],
         "name": "Battlegrounds"
@@ -2682,50 +2810,10 @@
             "type": "achievement"
           },
           {
-            "icon": "achievement_featsofstrength_gladiator_04",
-            "id": 17339,
-            "name": "Legend",
-            "notObtainable": true,
-            "titleId": 491,
-            "type": "achievement"
-          },
-          {
             "icon": "achievement_featsofstrength_gladiator_07",
-            "id": 16734,
-            "name": "Crimson Legend",
-            "notObtainable": true,
-            "titleId": 482,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_featsofstrength_gladiator_07",
-            "id": 17767,
-            "name": "Obsidian Legend",
-            "notObtainable": true,
-            "titleId": 500,
-            "type": "achievement"
-          },
-          {
-            "icon": "ability_paladin_blessedmending",
-            "id": 19443,
-            "name": "Battle Mender",
-            "notObtainable": true,
-            "titleId": 529,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_featsofstrength_gladiator_07",
-            "id": 19131,
-            "name": "Verdant Legend",
-            "notObtainable": true,
-            "titleId": 525,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_featsofstrength_gladiator_07",
-            "id": 19453,
-            "name": "Draconic Legend",
-            "titleId": 535,
+            "id": 40381,
+            "name": "Forged Legend",
+            "titleId": 559,
             "type": "achievement"
           }
         ],
@@ -2733,39 +2821,44 @@
       },
       {
         "items": [
+          
           {
             "icon": "achievement_featsofstrength_gladiator_07",
-            "id": 15951,
-            "name": "Crimson Gladiator",
-            "notObtainable": true,
-            "titleId": 468,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_featsofstrength_gladiator_07",
-            "id": 17764,
-            "name": "Obsidian Gladiator",
-            "notObtainable": true,
-            "titleId": 499,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_featsofstrength_gladiator_07",
-            "id": 19132,
-            "name": "Verdant Gladiator",
-            "notObtainable": true,
-            "titleId": 526,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_featsofstrength_gladiator_07",
-            "id": 19454,
-            "name": "Draconic Gladiator",
-            "titleId": 534,
+            "id": 40380,
+            "name": "Forged Gladiator",
+            "titleId": 558,
             "type": "achievement"
           }
         ],
         "name": "Arena"
+      },
+      {
+        "items": [
+          {
+            "icon": "spell_holy_heal",
+            "id": 40795,
+            "name": "Strategist",
+            "titleId": 539,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 40234,
+            "name": "Forged Warlord",
+            "titleId": 554,
+            "side": "H",
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 40235,
+            "name": "Forged Marshall",
+            "titleId": 555,
+            "side": "A",
+            "type": "achievement"
+          }
+        ],
+        "name": "Battleground Blitz"
       }
     ]
   },
@@ -3507,6 +3600,14 @@
             "notObtainable": true,
             "titleId": 528,
             "type": "achievement"
+          },
+          {
+            "icon": "inv_achievement_raidnerubian_queenansurek",
+            "id": 40259,
+            "name": "Famed Slayer of Ansurek",
+            "notObtainable": true,
+            "titleId": 561,
+            "type": "achievement"
           }
         ],
         "name": "Competitive Raiding"
@@ -3852,9 +3953,94 @@
             "notObtainable": true,
             "titleId": 461,
             "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 15951,
+            "name": "Crimson Gladiator",
+            "notObtainable": true,
+            "titleId": 468,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 17764,
+            "name": "Obsidian Gladiator",
+            "notObtainable": true,
+            "titleId": 499,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 19132,
+            "name": "Verdant Gladiator",
+            "notObtainable": true,
+            "titleId": 526,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 19454,
+            "name": "Draconic Gladiator",
+            "notObtainable": true,
+            "titleId": 534,
+            "type": "achievement"
           }
         ],
-        "name": "End-of-season Arena"
+        "name": "Arena"
+      },
+      {
+        "items": [
+          {
+            "icon": "achievement_featsofstrength_gladiator_04",
+            "id": 17339,
+            "name": "Legend",
+            "notObtainable": true,
+            "titleId": 491,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 16734,
+            "name": "Crimson Legend",
+            "notObtainable": true,
+            "titleId": 482,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 17767,
+            "name": "Obsidian Legend",
+            "notObtainable": true,
+            "titleId": 500,
+            "type": "achievement"
+          },
+          {
+            "icon": "ability_paladin_blessedmending",
+            "id": 19443,
+            "name": "Battle Mender",
+            "notObtainable": true,
+            "titleId": 529,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 19131,
+            "name": "Verdant Legend",
+            "notObtainable": true,
+            "titleId": 525,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 19453,
+            "name": "Draconic Legend",
+            "notObtainable": true,
+            "titleId": 535,
+            "type": "achievement"
+          }
+        ],
+        "name": "Solo Shuffle"
       },
       {
         "items": [
@@ -3877,7 +4063,7 @@
             "type": "achievement"
           }
         ],
-        "name": "End-of-season Rated Battlegrounds"
+        "name": "Rated Battlegrounds"
       },
       {
         "items": [
