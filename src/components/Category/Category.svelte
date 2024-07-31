@@ -25,16 +25,18 @@
 </script>
 
 <div class="categoryHeader">
-  <h3>
-    {category.name !== superCat ? category.name : "General"}
-    <small class="pbSmall">
-      {#if superCat === 'Feats of Strength' || superCat === 'Legacy'}
-        ({`${totalItemsCompleted}`})
-      {:else}
-        ({`${totalItemsCompleted}/${totalItems}`})
-      {/if}
-    </small>
-  </h3>
+  {#if totalItems > 0}
+    <h3>
+      {category.name !== superCat ? category.name : "General"}
+      <small class="pbSmall">
+        {#if superCat === 'Feats of Strength' || superCat === 'Legacy'}
+          ({`${totalItemsCompleted}`})
+        {:else}
+          ({`${totalItemsCompleted}/${totalItems}`})
+        {/if}
+      </small>
+    </h3>
+  {/if}
 </div>
 
 {#each category[subCategoriesKey] as subCategory}

@@ -382,21 +382,272 @@
       {
         "items": [
           {
-            "ID": 1841,
-            "icon": "inv_fox2_darkred",
-            "itemId": 210919,
-            "name": "Crimson Glimmerfur",
-            "spellid": 427435
+            "ID": 376,
+            "icon": "ability_mount_celestialhorse",
+            "itemId": 54811,
+            "name": "Celestial Steed",
+            "spellid": 75614
           },
           {
-            "ID": 2189,
-            "icon": "inv_oldgodfishmount_purple",
-            "itemId": 223285,
-            "name": "Underlight Corrupted Behemoth",
-            "spellid": 448851
+            "ID": 454,
+            "icon": "inv_lavahorse",
+            "itemId": 118515,
+            "name": "Cindermane Charger",
+            "spellid": 171847
+          },
+          {
+            "ID": 2201,
+            "icon": "inv_alliancewolfmount2_white",
+            "itemId": 223469,
+            "name": "Sentinel War Wolf",
+            "spellid": 449140
+          },
+          {
+            "ID": 2198,
+            "icon": "inv_nightsaberhordemount_red",
+            "itemId": 223449,
+            "name": "Kor'kron Warsaber",
+            "spellid": 449126
           }
         ],
-        "name": "Trading Post: July"
+        "name": "Trading Post: August"
+      },
+      {
+        "items": [
+          {
+            "ID": 2116,
+            "icon": "ability_mount_goldengryphon",
+            "itemId": 217985,
+            "name": "Remembered Golden Gryphon",
+            "side": "A",
+            "spellid": 441324
+          },
+          {
+            "ID": 2117,
+            "icon": "ability_mount_tawnywindrider",
+            "itemId": 217987,
+            "name": "Remembered Wind Rider",
+            "side": "H",
+            "spellid": 441325
+          }
+        ],
+        "name": "Pre-Patch Event"
+      }
+    ]
+  },
+  {
+    "name": "The War Within",
+    "subcats": [
+      {
+        "items": [
+          {
+            "ID": 2159,
+            "icon": "inv_dwarvenmechboss_bronze",
+            "itemId": 223269,
+            "notObtainable":true,
+            "name": "Machine Defense Unit 1-11",
+            "spellid": 448188
+          },
+          {
+            "ID": 2180,
+            "icon": "inv_flyingnerubian2mount_black",
+            "itemId": 223266,
+            "notObtainable":true,
+            "name": "Shadowed Swarmite",
+            "spellid": 447190
+          },
+          {
+            "ID": 2230,
+            "icon": "inv_nerubianbeetlelargemount_tan",
+            "itemId": 224415,
+            "notObtainable":true,
+            "name": "Ivory Goliathus",
+            "spellid": 452779
+          },
+          {
+            "ID": 2244,
+            "icon": "inv_crystalmech_teal",
+            "itemId": 226357,
+            "notObtainable":true,
+            "name": "Diamond Mechsuit",
+            "spellid": 458335
+          }
+        ],
+        "name": "Achievement"
+      },
+      {
+        "items": [
+          {
+            "ID": 2219,
+            "icon": "inv_nerubianwarbeastmount_blue",
+            "itemId": 224147,
+            "notObtainable":true,
+            "name": "Sureki Skyrazor",
+            "spellid": 451486
+          },
+          {
+            "ID": 2223,
+            "icon": "inv_nerubianwarbeastmount_white",
+            "itemId": 224151,
+            "notObtainable":true,
+            "name": "Ascendant Skyrazor",
+            "spellid": 451491
+          }
+        ],
+        "name": "Raid Drop"
+      },
+      {
+        "items": [
+          {
+            "ID": 2204,
+            "icon": "inv_molemount_brown",
+            "itemId": 225548,
+            "notObtainable":true,
+            "name": "Wick",
+            "spellid": 449264
+          },
+          {
+            "ID": 2119,
+            "icon": "inv_dwarvenmechboss",
+            "itemId": 221765,
+            "notObtainable":true,
+            "name": "Stonevault Mechsuit",
+            "spellid": 442358
+          }
+        ],
+        "name": "Dungeon Drop"
+      },
+      {
+        "items": [
+          {
+            "ID": 2144,
+            "icon": "ability_mount_gyrocoptorelite",
+            "itemId": 219391,
+            "notObtainable":true,
+            "name": "Delver's Dirigible",
+            "spellid": 446052
+          }
+        ],
+        "name": "Quest"
+      },
+      {
+        "items": [
+          {
+            "ID": 2176,
+            "icon": "inv_gryphon_air_mount_grey",
+            "itemId": 223270,
+            "notObtainable":true,
+            "name": "Alunira",
+            "spellid": 447213
+          },
+          {
+            "ID": 2192,
+            "icon": "inv_shadowelementalmount_purple",
+            "itemId": 223315,
+            "notObtainable":true,
+            "name": "Beledar's Spawn",
+            "spellid": 448941
+          },
+          {
+            "ID": 2205,
+            "icon": "inv_molemount_dark",
+            "itemId": 223501,
+            "notObtainable":true,
+            "name": "Ol' Mole Rufus",
+            "spellid": 449258
+          },
+          {
+            "ID": 2222,
+            "icon": "inv_nerubianwarbeastmount_dark",
+            "itemId": 224150,
+            "notObtainable":true,
+            "name": "Siesbarg",
+            "spellid": 451489
+          }
+        ],
+        "name": "Rare Spawn"
+      },
+      {
+        "items": [
+          {
+            "ID": 2214,
+            "icon": "inv_protoramearthen_grey",
+            "itemId": 223572,
+            "notObtainable":true,
+            "name": "Slatestone Ramolith",
+            "spellid": 449415
+          }
+        ],
+        "name": "Allied Race"
+      },
+      {
+        "items": [
+          {
+            "ID": 2148,
+            "icon": "inv_firebeemount_",
+            "itemId": 221753,
+            "notObtainable":true,
+            "name": "Smoldering Cinderbee",
+            "spellid": 447057
+          },
+          {
+            "ID": 2162,
+            "icon": "inv_firefly2mount_blue",
+            "itemId": 222989,
+            "notObtainable":true,
+            "name": "Cyan Glowmite",
+            "spellid": 447176
+          },
+          {
+            "ID": 2177,
+            "icon": "inv_flyingnerubian2mount_green",
+            "itemId": 223264,
+            "notObtainable":true,
+            "name": "Aquamarine Swarmite",
+            "spellid": 447185
+          },
+          {
+            "ID": 2184,
+            "icon": "inv_caveborerwormmount_orange",
+            "itemId": 223274,
+            "notObtainable":true,
+            "name": "Ferocious Jawcrawler",
+            "spellid": 447957
+          },
+          {
+            "ID": 2191,
+            "icon": "inv_shadowelementalmount_gold",
+            "itemId": 223314,
+            "notObtainable":true,
+            "name": "Shackled Shadow",
+            "spellid": 448939
+          },
+          {
+            "ID": 2193,
+            "icon": "inv_arathilynxmount_red",
+            "itemId": 223317,
+            "notObtainable":true,
+            "name": "Vermillion Imperial Lynx",
+            "spellid": 448978
+          },
+          {
+            "ID": 2209,
+            "icon": "inv_molemount_light",
+            "itemId": 223505,
+            "notObtainable":true,
+            "name": "Crimson Mudnose",
+            "spellid": 449269
+          },
+          {
+            "ID": 2213,
+            "icon": "inv_protoramearthen_blue",
+            "itemId": 223571,
+            "notObtainable":true,
+            "name": "Shale Ramolith",
+            "spellid": 449418
+          }
+        ],
+        "name": "Vendor"
       }
     ]
   },
@@ -7096,6 +7347,13 @@
             "itemId": 153594,
             "name": "Xiwyllag ATV",
             "spellid": 256123
+          },
+          {
+            "ID": 2158,
+            "icon": "inv_dwarvenmechboss_gold",
+            "itemId": 221967,
+            "name": "Crowd Pummeler 2-30",
+            "spellid": 448186
           }
         ],
         "name": "Engineering"
@@ -7860,6 +8118,24 @@
             "name": "Vicious Dreamtalon",
             "side": "H",
             "spellid": 434477
+          },
+          {
+            "ID": 2211,
+            "icon": "inv_viciousflyingnerubian2_alliance",
+            "itemId": 223511,
+            "notObtainable": true,
+            "name": "Vicious Skyflayer",
+            "side": "A",
+            "spellid": 449325
+          },
+          {
+            "ID": 2150,
+            "icon": "inv_viciousflyingnerubian2_horde",
+            "itemId": 221813,
+            "notObtainable": true,
+            "name": "Vicious Skyflayer",
+            "side": "H",
+            "spellid": 447405
           }
         ],
         "name": "Vicious Saddle"
@@ -8162,6 +8438,14 @@
             "name": "Draconic Gladiator's Drake",
             "notObtainable": true,
             "spellid": 424539
+          },
+          {
+            "ID": 2218,
+            "icon": "inv_felbatgladiatormount_gold",
+            "itemId": 223586,
+            "name": "Forged Gladiator's Fel Bat",
+            "notObtainable": true,
+            "spellid": 449466
           }
         ],
         "name": "Gladiator"
@@ -8502,13 +8786,6 @@
             "spellid": 75973
           },
           {
-            "ID": 376,
-            "icon": "ability_mount_celestialhorse",
-            "itemId": 54811,
-            "name": "Celestial Steed",
-            "spellid": 75614
-          },
-          {
             "ID": 371,
             "icon": "ability_mount_warhippogryph",
             "itemId": 54069,
@@ -8537,13 +8814,6 @@
             "itemId": 76755,
             "name": "Tyrael's Charger",
             "spellid": 107203
-          },
-          {
-            "ID": 454,
-            "icon": "inv_lavahorse",
-            "itemId": 118515,
-            "name": "Cindermane Charger",
-            "spellid": 171847
           },
           {
             "ID": 1051,
@@ -8645,6 +8915,13 @@
             "spellid": 419345
           },
           {
+            "ID": 1841,
+            "icon": "inv_fox2_darkred",
+            "itemId": 210919,
+            "name": "Crimson Glimmerfur",
+            "spellid": 427435
+          },
+          {
             "ID": 1586,
             "icon": "inv_pterrordax2mount_gold",
             "itemId": 190767,
@@ -8692,6 +8969,13 @@
             "itemId": 221814,
             "name": "Pearlescent Goblin Wave Shredder",
             "spellid": 447413
+          },
+          {
+            "ID": 2189,
+            "icon": "inv_oldgodfishmount_purple",
+            "itemId": 223285,
+            "name": "Underlight Corrupted Behemoth",
+            "spellid": 448851
           },
           {
             "ID": 799,
@@ -8748,15 +9032,6 @@
             "spellid": 448850
           },
           {
-            "ID": 2198,
-            "icon": "inv_nightsaberhordemount_red",
-            "itemId": 223449,
-            "name": "Kor'kron Warsaber",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 449126
-          },
-          {
             "ID": 2199,
             "icon": "inv_nightsaberhordemount_black",
             "itemId": 223459,
@@ -8775,15 +9050,6 @@
             "spellid": 449133
           },
           {
-            "ID": 2201,
-            "icon": "inv_alliancewolfmount2_white",
-            "itemId": 223469,
-            "name": "Sentinel War Wolf",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 449140
-          },
-          {
             "ID": 2202,
             "icon": "inv_alliancewolfmount2_red",
             "itemId": 223470,
@@ -8800,6 +9066,60 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 449142
+          },
+          {
+            "ID": 1550,
+            "icon": "ability_mount_progenitorjellyfish_dark",
+            "itemId": 187674,
+            "name": "Depthstalker",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 359380
+          },
+          {
+            "ID": 2238,
+            "icon": "inv_treasurebasiliskmount_tan",
+            "itemId": 226040,
+            "name": "Plunderlord's Golden Crocolisk",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 457650
+          },
+          {
+            "ID": 2239,
+            "icon": "inv_treasurebasiliskmount_green",
+            "itemId": 226041,
+            "name": "Keg Leg's Radiant Crocolisk",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 457654
+          },
+          {
+            "ID": 2240,
+            "icon": "inv_treasurebasiliskmount_black",
+            "itemId": 226042,
+            "name": "Plunderlord's Midnight Crocolisk",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 457656
+          },
+          {
+            "ID": 2241,
+            "icon": "inv_treasurebasiliskmount_white",
+            "itemId": 226044,
+            "name": "Plunderlord's Weathered Crocolisk",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 457659
+          },
+          {
+            "ID": 2249,
+            "icon": "inv_mawguardhandmountwhite",
+            "itemId": 226506,
+            "name": "Hand of Reshkigaal",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 459193
           }
         ],
         "name": "Trading Post Originals"
@@ -9567,6 +9887,13 @@
             "name": "Lightforged Ruinstrider",
             "side": "A",
             "spellid": 363613
+          },
+          {
+            "ID": 2233,
+            "icon": "inv_earthenpaladinmount",
+            "name": "Earthen Ordinant's Ramolith",
+            "notObtainable": true,
+            "spellid": 453785
           }
         ],
         "name": "Paladin"

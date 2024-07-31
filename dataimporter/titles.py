@@ -111,7 +111,8 @@ IGNORE_TITLE_ID = [
     436,  # %s the Avowed https://www.wowhead.com/title=690
     453,  # The [PH] TBD Title https://www.wowhead.com/title=713
     467,  # Honorary Dryad https://www.wowhead.com/title=728
-    469  # The Worldbreaker https://www.wowhead.com/title=13931
+    469,  # The Worldbreaker https://www.wowhead.com/title=13931
+    146,  # Blessed Defender of Nordrassil https://www.wowhead.com/title/266
 ]
 
 
