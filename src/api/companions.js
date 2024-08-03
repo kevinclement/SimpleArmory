@@ -35,7 +35,7 @@ export async function getCompanions(region, realm, character) {
         region,
         realm,
         character,
-        parseCollectablesObject(db, profile, collected, 'pets', 'species')
+        parseCollectablesObject(db, profile, collected, 'pets', 'species', true)
     )
     return _cache.cache;
 }

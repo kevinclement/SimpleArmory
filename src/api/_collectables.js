@@ -19,7 +19,7 @@ function getHigherQualityBattlePet(currentPet, newPet) {
     return newPet
 }
 
-export async function parseCollectablesObject(categories, profile, collected_data, collectedProperty, collectedId, isBattlePets) {
+export async function parseCollectablesObject(categories, profile, collected_data, collectedProperty, collectedId, isPet) {
     var obj = { 'categories': [] };
     var collected = {};
     var totalCollected = 0;
@@ -29,7 +29,7 @@ export async function parseCollectablesObject(categories, profile, collected_dat
 
     // Build up lookup for items that character has
     collected_data[collectedProperty].forEach((item) => {
-        if (isBattlePets) {
+        if (isPet) {
             collected[item[collectedId].id] = getHigherQualityBattlePet(
                 collected[item[collectedId].id], item
             );
@@ -59,8 +59,8 @@ export async function parseCollectablesObject(categories, profile, collected_dat
                     var fullItem = collected[itm.ID];
                     itm.collected =  true;
 
-                    // only add quality info if on battlepets site
-                    if (isBattlePets && fullItem.quality) {
+                    // only add quality info if on battlepets or companions site
+                    if (isPet && fullItem.quality) {
                         itm.quality = fullItem.quality.type.toLowerCase();
                     }
 
