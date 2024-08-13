@@ -669,7 +669,7 @@
                   "icon": "garrison_building_workshop",
                   "id": 40630,
                   "notObtainable": true,
-                  "points": 0,
+                  "points": 10,
                   "title": "For the Collective"
                 },
                 {
@@ -690,7 +690,7 @@
                   "icon": "achievement_cooking_masterofthegrill",
                   "id": 40731,
                   "notObtainable": true,
-                  "points": 0,
+                  "points": 5,
                   "title": "Panhandled"
                 },
                 {
@@ -4584,14 +4584,14 @@
                   "icon": "inv_misc_treasurechest05d",
                   "id": 40848,
                   "notObtainable": true,
-                  "points": 10,
+                  "points": 5,
                   "title": "Treasures of Hallowfall"
                 },
                 {
                   "icon": "inv_misc_treasurechest04d",
                   "id": 40828,
                   "notObtainable": true,
-                  "points": 10,
+                  "points": 5,
                   "title": "Treasures of Azj-Kahet"
                 }
               ],
@@ -4911,6 +4911,27 @@
                   "notObtainable": true,
                   "points": 10,
                   "title": "Flamegard's Hope"
+                },
+                {
+                  "icon": "inv_helm_misc_candle_a_01",
+                  "id": 40859,
+                  "notObtainable": true,
+                  "points": 5,
+                  "title": "We're Here All Night"
+                },
+                {
+                  "icon": "inv_caveborercritter_forest",
+                  "id": 40869,
+                  "notObtainable": true,
+                  "points": 0,
+                  "title": "Worm Theory"
+                },
+                {
+                  "icon": "inv_rosebouquet01",
+                  "id": 40860,
+                  "notObtainable": true,
+                  "points": 5,
+                  "title": "A Star of Dorn"
                 }
               ],
               "name": "World"
@@ -8581,26 +8602,30 @@
               "id": "16596670",
               "items": [
                 {
-                  "icon": "inv_cape_special_explorer_b_03",
+                  "icon": "trade_archaeology",
                   "id": 40436,
+                  "notObtainable": true,
                   "points": 5,
                   "title": "You're Getting a Delve!"
                 },
                 {
                   "icon": "achievement_guild_challenge_10",
                   "id": 40460,
+                  "notObtainable": true,
                   "points": 10,
                   "title": "Delve Deep"
                 },
                 {
                   "icon": "achievement_guild_challenge_50",
                   "id": 40462,
+                  "notObtainable": true,
                   "points": 10,
                   "title": "Delve Deeper"
                 },
                 {
                   "icon": "achievement_guild_challenge_100",
                   "id": 40463,
+                  "notObtainable": true,
                   "points": 10,
                   "title": "Delve Deepest"
                 }
@@ -8612,36 +8637,42 @@
                 {
                   "icon": "achievement_level_20",
                   "id": 40450,
+                  "notObtainable": true,
                   "points": 10,
                   "title": "Buddy System II"
                 },
                 {
                   "icon": "achievement_level_30",
                   "id": 40451,
+                  "notObtainable": true,
                   "points": 10,
                   "title": "Buddy System III"
                 },
                 {
                   "icon": "achievement_level_10",
                   "id": 40455,
+                  "notObtainable": true,
                   "points": 10,
                   "title": "Buddy System"
                 },
                 {
                   "icon": "achievement_level_40",
                   "id": 40456,
+                  "notObtainable": true,
                   "points": 10,
                   "title": "Buddy System IV"
                 },
                 {
                   "icon": "achievement_level_50",
                   "id": 40457,
+                  "notObtainable": true,
                   "points": 10,
                   "title": "Buddy System V"
                 },
                 {
                   "icon": "achievement_level_60",
                   "id": 40461,
+                  "notObtainable": true,
                   "points": 10,
                   "title": "Buddy System VI"
                 }
@@ -8651,22 +8682,39 @@
             {
               "items": [
                 {
-                  "icon": "racial_dwarf_findtreasure",
+                  "icon": "inv_cape_special_treasuregoblin_d_01",
                   "id": 40763,
+                  "notObtainable": true,
                   "points": 10,
                   "title": "I'm not a Thief, I'm a Treasure Hunter"
                 },
                 {
-                  "icon": "inv_10_blacksmithing_consumable_key_color2",
+                  "icon": "inv__blacksmithing_skeletonkey",
                   "id": 40819,
+                  "notObtainable": true,
                   "points": 5,
                   "title": "Ready to Turn"
                 },
                 {
-                  "icon": "inv_10_blacksmithing_consumable_key_color1",
+                  "icon": "item_pyriumkey",
                   "id": 40788,
+                  "notObtainable": true,
                   "points": 10,
                   "title": "I Got the Keys"
+                },
+                {
+                  "icon": "inv_10_blacksmithing_consumable_key_color1",
+                  "id": 40882,
+                  "notObtainable": true,
+                  "points": 10,
+                  "title": "Copious Coffers"
+                },
+                {
+                  "icon": "inv_10_blacksmithing_consumable_key_color2",
+                  "id": 40885,
+                  "notObtainable": true,
+                  "points": 25,
+                  "title": "The Key to Madness"
                 }
               ],
               "name": "Treasures"
@@ -8689,7 +8737,7 @@
                   "title": "Delver of the Depths"
                 },
                 {
-                  "icon": "trade_archaeology",
+                  "icon": "ui_delves",
                   "id": 40438,
                   "notObtainable": true,
                   "points": 25,
@@ -8718,6 +8766,38 @@
                 }
               ],
               "name": "The War Within"
+            },
+            {
+              "id": "ee78ad6d",
+              "items": [
+                {
+                  "icon": "icon_treasuremap",
+                  "id": 40817,
+                  "notObtainable": true,
+                  "points": 10,
+                  "title": "A Delver's Bounty"
+                }
+              ],
+              "name": "Treasures"
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_prg_icon_puzzle03",
+                  "id": 40863,
+                  "notObtainable": true,
+                  "points": 10,
+                  "title": "Perplexing Puzzle"
+                },
+                {
+                  "icon": "inv_prg_icon_puzzle14",
+                  "id": 40864,
+                  "notObtainable": true,
+                  "points": 25,
+                  "title": "Plentiful Perplexing Puzzles"
+                }
+              ],
+              "name": "Puzzles"
             }
           ]
         },
@@ -8728,7 +8808,7 @@
             {
               "items": [
                 {
-                  "icon": "inv_cape_special_explorer_b_03",
+                  "icon": "ui_delves",
                   "id": 40725,
                   "notObtainable": true,
                   "points": 10,
@@ -8754,18 +8834,18 @@
             {
               "items": [
                 {
-                  "icon": "achievement_dungeon_hordeairship",
+                  "icon": "inv_companiondelvesairship",
                   "id": 40459,
                   "notObtainable": true,
                   "points": 10,
                   "title": "I've Got a Flying Machine!"
                 },
                 {
-                  "icon": "inv_mechagon_blueprints",
+                  "icon": "ability_mount_gyrocoptorelite",
                   "id": 40789,
                   "notObtainable": true,
                   "points": 10,
-                  "title": "I've Got More Flying Machine?!"
+                  "title": "Flying in Style"
                 }
               ],
               "name": "Mount"
@@ -8773,77 +8853,77 @@
             {
               "items": [
                 {
-                  "icon": "achievement_challengemode_bronze",
+                  "icon": "ui_delves",
                   "id": 40631,
                   "notObtainable": true,
                   "points": 10,
                   "title": "War Within Delves: Tier 1"
                 },
                 {
-                  "icon": "achievement_challengemode_bronze",
+                  "icon": "ui_delves",
                   "id": 40512,
                   "notObtainable": true,
                   "points": 10,
                   "title": "War Within Delves: Tier 2"
                 },
                 {
-                  "icon": "achievement_challengemode_bronze",
+                  "icon": "ui_delves",
                   "id": 40514,
                   "notObtainable": true,
                   "points": 10,
                   "title": "War Within Delves: Tier 3"
                 },
                 {
-                  "icon": "achievement_challengemode_silver",
+                  "icon": "ui_delves",
                   "id": 40515,
                   "notObtainable": true,
                   "points": 10,
                   "title": "War Within Delves: Tier 4"
                 },
                 {
-                  "icon": "achievement_challengemode_silver",
+                  "icon": "ui_delves",
                   "id": 40516,
                   "notObtainable": true,
                   "points": 10,
                   "title": "War Within Delves: Tier 5"
                 },
                 {
-                  "icon": "achievement_challengemode_silver",
+                  "icon": "ui_delves",
                   "id": 40517,
                   "notObtainable": true,
                   "points": 10,
                   "title": "War Within Delves: Tier 6"
                 },
                 {
-                  "icon": "achievement_challengemode_silver",
+                  "icon": "ui_delves",
                   "id": 40518,
                   "notObtainable": true,
                   "points": 10,
                   "title": "War Within Delves: Tier 7"
                 },
                 {
-                  "icon": "achievement_challengemode_gold",
+                  "icon": "ui_delves",
                   "id": 40519,
                   "notObtainable": true,
                   "points": 10,
                   "title": "War Within Delves: Tier 8"
                 },
                 {
-                  "icon": "achievement_challengemode_gold",
+                  "icon": "ui_delves",
                   "id": 40520,
                   "notObtainable": true,
                   "points": 10,
                   "title": "War Within Delves: Tier 9"
                 },
                 {
-                  "icon": "achievement_challengemode_gold",
+                  "icon": "ui_delves",
                   "id": 40521,
                   "notObtainable": true,
                   "points": 10,
                   "title": "War Within Delves: Tier 10"
                 },
                 {
-                  "icon": "achievement_challengemode_gold",
+                  "icon": "ui_delves",
                   "id": 40726,
                   "notObtainable": true,
                   "points": 10,
@@ -9109,19 +9189,6 @@
                 }
               ],
               "name": "Brann"
-            },
-            {
-              "id": "e9f4da53",
-              "items": [
-                {
-                  "icon": "icon_treasuremap",
-                  "id": 40817,
-                  "notObtainable": true,
-                  "points": 10,
-                  "title": "A Delver's Bounty"
-                }
-              ],
-              "name": "Treasures"
             }
           ]
         }
@@ -9578,19 +9645,19 @@
                 {
                   "icon": "spell_holy_fistofjustice",
                   "id": 13701,
-                  "points": 0,
+                  "points": 5,
                   "title": "Battlefield Brawler"
                 },
                 {
                   "icon": "inv_misc_map08",
                   "id": 13702,
-                  "points": 0,
+                  "points": 10,
                   "title": "Battlefield Tactician"
                 },
                 {
                   "icon": "icon_treasuremap",
                   "id": 13703,
-                  "points": 0,
+                  "points": 20,
                   "title": "Battlefield Master"
                 }
               ],
@@ -11053,7 +11120,7 @@
                   "id": 40215,
                   "notObtainable": true,
                   "points": 20,
-                  "title": "Deepwind Ravine Shutout"
+                  "title": "Deephaul Ravine Shutout"
                 },
                 {
                   "icon": "achievement_bg_winwsg_underxminutes",
@@ -11108,7 +11175,7 @@
                   "icon": "inv_achievement_battleground_earthen",
                   "id": 40617,
                   "notObtainable": true,
-                  "points": 0,
+                  "points": 25,
                   "title": "Deepholla"
                 }
               ],
@@ -12780,7 +12847,7 @@
                   "icon": "inv_ability_poison_wave",
                   "id": 40262,
                   "notObtainable": true,
-                  "points": 0,
+                  "points": 10,
                   "title": "Cowabunga"
                 },
                 {
@@ -12791,7 +12858,7 @@
                   "title": "Would You Still /love Me if I Was a Worm..."
                 },
                 {
-                  "icon": "inv_achievement_raidnerubian_etherealassasin",
+                  "icon": "ability_hunter_snipertraining",
                   "id": 40264,
                   "notObtainable": true,
                   "points": 10,
@@ -12801,7 +12868,7 @@
                   "icon": "inv_valentinesboxofchocolates02",
                   "id": 40730,
                   "notObtainable": true,
-                  "points": 0,
+                  "points": 10,
                   "title": "Love is in the Lair"
                 },
                 {
@@ -13078,14 +13145,14 @@
                   "icon": "inv_achievement_dungeon_rookery",
                   "id": 40637,
                   "notObtainable": true,
-                  "points": 0,
+                  "points": 10,
                   "title": "Heroic: The Rookery"
                 },
                 {
                   "icon": "inv_achievement_dungeon_rookery",
                   "id": 40642,
                   "notObtainable": true,
-                  "points": 0,
+                  "points": 10,
                   "title": "Mythic: The Rookery"
                 }
               ],
@@ -25645,7 +25712,7 @@
                   "id": 40836,
                   "notObtainable": true,
                   "points": 5,
-                  "title": "Forging Deep Friendships"
+                  "title": "Assembly of the Deeps"
                 },
                 {
                   "icon": "ui_notoriety_theweaver",
@@ -25660,9 +25727,42 @@
                   "notObtainable": true,
                   "points": 10,
                   "title": "Hallowfall Arathi"
+                },
+                {
+                  "icon": "ui_majorfactions_storm",
+                  "id": 40856,
+                  "notObtainable": true,
+                  "points": 10,
+                  "title": "Council of Dornogal"
                 }
               ],
               "name": "Renown"
+            },
+            {
+              "items": [
+                {
+                  "icon": "ui_notoriety_theweaver",
+                  "id": 40874,
+                  "notObtainable": true,
+                  "points": 10,
+                  "title": "The Grand Tapestry"
+                },
+                {
+                  "icon": "ui_notoriety_thegeneral",
+                  "id": 40875,
+                  "notObtainable": true,
+                  "points": 10,
+                  "title": "True Strength"
+                },
+                {
+                  "icon": "ui_notoriety_thevizier",
+                  "id": 40876,
+                  "notObtainable": true,
+                  "points": 10,
+                  "title": "Vox Arachni"
+                }
+              ],
+              "name": "Reputation"
             }
           ]
         },
@@ -25684,6 +25784,18 @@
             {
               "id": "285f7bcd",
               "items": [
+                {
+                  "icon": "inv_dragonwhelp3_purple",
+                  "id": 19308,
+                  "points": 25,
+                  "title": "Freshscales Fifteen"
+                },
+                {
+                  "icon": "spell_warrior_dragoncharge",
+                  "id": 16549,
+                  "points": 40,
+                  "title": "Popular Around the Isles"
+                },
                 {
                   "icon": "ui_majorfaction_expedition",
                   "id": 16884,
@@ -25733,30 +25845,6 @@
                   "title": "Ally of the Flights"
                 },
                 {
-                  "icon": "spell_warrior_dragoncharge",
-                  "id": 16549,
-                  "points": 40,
-                  "title": "Popular Around the Isles"
-                },
-                {
-                  "icon": "inv_artifact_stolenpower",
-                  "id": 16537,
-                  "points": 5,
-                  "title": "Maximum Power!"
-                },
-                {
-                  "icon": "inv_misc_statue_04",
-                  "id": 16539,
-                  "points": 5,
-                  "title": "In High Esteem"
-                },
-                {
-                  "icon": "inv_10_misc_winterpeltfurbolg_totem",
-                  "id": 17427,
-                  "points": 10,
-                  "title": "Winterpelt Conversationalist"
-                },
-                {
                   "icon": "ui_majorfaction_niffen",
                   "id": 17756,
                   "points": 0,
@@ -25779,15 +25867,32 @@
                   "id": 19235,
                   "points": 5,
                   "title": "Warden of the Dream"
-                },
-                {
-                  "icon": "inv_dragonwhelp3_purple",
-                  "id": 19308,
-                  "points": 25,
-                  "title": "Freshscales Fifteen"
                 }
               ],
               "name": "Renown"
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_artifact_stolenpower",
+                  "id": 16537,
+                  "points": 5,
+                  "title": "Maximum Power!"
+                },
+                {
+                  "icon": "inv_misc_statue_04",
+                  "id": 16539,
+                  "points": 5,
+                  "title": "In High Esteem"
+                },
+                {
+                  "icon": "inv_10_misc_winterpeltfurbolg_totem",
+                  "id": 17427,
+                  "points": 10,
+                  "title": "Winterpelt Conversationalist"
+                }
+              ],
+              "name": "Reputation"
             },
             {
               "id": "d5d34c04",
@@ -27938,6 +28043,13 @@
                   "id": 18360,
                   "points": 10,
                   "title": "Tricks and Treats of the Dragon Isles"
+                },
+                {
+                  "icon": "inv_misc_food_legion_goochoco_lgchunk",
+                  "id": 40862,
+                  "notObtainable": true,
+                  "points": 10,
+                  "title": "Tricks and Treats of Khaz Algar"
                 }
               ],
               "name": "Tricks and Treats"
@@ -39917,7 +40029,7 @@
                   "id": 40433,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Hunting the Hunter (Solo)"
+                  "title": "Let Me Solo Him"
                 }
               ],
               "name": "Delves"
