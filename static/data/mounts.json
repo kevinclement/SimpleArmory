@@ -432,6 +432,18 @@
           }
         ],
         "name": "Pre-Patch Event"
+      },
+      {
+        "items": [
+          {
+            "ID": 532,
+            "icon": "inv_ghostlycharger",
+            "itemId": 93671,
+            "name": "Ghastly Charger",
+            "spellid": 136505
+          }
+        ],
+        "name": "Twitch Drops"
       }
     ]
   },
@@ -9473,6 +9485,7 @@
             "ID": 1602,
             "icon": "inv_tuskarrglider",
             "name": "Tuskarr Shoreglider",
+            "notObtainable": true,
             "spellid": 370770
           },
           {
@@ -9540,6 +9553,7 @@
             "icon": "inv_pegasusmountred",
             "itemId": 163186,
             "name": "Fiery Hearthsteed",
+            "notObtainable": true,
             "spellid": 278966
           },
           {
@@ -9547,6 +9561,7 @@
             "icon": "inv_hearthstonemount",
             "itemId": 212522,
             "name": "Compass Rose",
+            "notObtainable": true,
             "spellid": 431992
           }
         ],
@@ -9573,6 +9588,7 @@
             "icon": "inv_cerberusmount",
             "itemId": 191114,
             "name": "Amalgam of Rage",
+            "notObtainable": true,
             "spellid": 369476
           }
         ],
@@ -9602,6 +9618,7 @@
             "icon": "inv_camelmount2",
             "itemId": 173297,
             "name": "Explorer's Dunetrekker",
+            "notObtainable": true,
             "spellid": 307263
           },
           {
@@ -9609,6 +9626,7 @@
             "icon": "inv_explorergyrocopter",
             "itemId": 173299,
             "name": "Explorer's Jungle Hopper",
+            "notObtainable": true,
             "spellid": 307256
           },
           {
@@ -9744,13 +9762,6 @@
             "itemId": 79771,
             "name": "Feldrake",
             "spellid": 113120
-          },
-          {
-            "ID": 532,
-            "icon": "inv_ghostlycharger",
-            "itemId": 93671,
-            "name": "Ghastly Charger",
-            "spellid": 136505
           }
         ],
         "name": "Trading Card Game / Auction House"

@@ -9599,570 +9599,6 @@
           ]
         },
         {
-          "id": "374d14ab",
-          "name": "World",
-          "subcats": [
-            {
-              "id": "43e55dbd",
-              "items": [
-                {
-                  "icon": "inv_crate_03",
-                  "id": 12572,
-                  "points": 10,
-                  "title": "War Supplied"
-                },
-                {
-                  "icon": "ability_blackhand_marked4death",
-                  "id": 12571,
-                  "points": 10,
-                  "title": "Bounty Hunting"
-                },
-                {
-                  "icon": "ability_blackhand_marked4death",
-                  "id": 40464,
-                  "points": 20,
-                  "title": "Bounty Master"
-                },
-                {
-                  "icon": "inv_bandofbrothers",
-                  "id": 12573,
-                  "points": 15,
-                  "title": "Band of Brothers"
-                },
-                {
-                  "icon": "ability_dragonriding_barrelroll01",
-                  "id": 17335,
-                  "points": 5,
-                  "title": "Airborne Tumbler"
-                },
-                {
-                  "icon": "ability_dragonriding_barrelroll01",
-                  "id": 17336,
-                  "points": 5,
-                  "title": "Airborne Tumbler"
-                },
-                {
-                  "icon": "ability_dragonriding_barrelroll01",
-                  "id": 17345,
-                  "points": 5,
-                  "title": "Airborne Tumbler"
-                }
-              ],
-              "name": "War Mode"
-            },
-            {
-              "id": "760a647e",
-              "items": [
-                {
-                  "icon": "warrior_skullbanner",
-                  "id": 12856,
-                  "points": 5,
-                  "title": "The First Rule of Dueler's Guild"
-                },
-                {
-                  "icon": "inv_misc_desecrated_leatherglove",
-                  "id": 12858,
-                  "points": 5,
-                  "title": "Slugfest"
-                },
-                {
-                  "icon": "achievement_arena_2v2_5",
-                  "id": 12860,
-                  "points": 5,
-                  "title": "Contender"
-                },
-                {
-                  "icon": "ability_dualwield",
-                  "id": 12863,
-                  "points": 5,
-                  "title": "Dueling Master"
-                },
-                {
-                  "icon": "ability_pvp_hardiness",
-                  "id": 12859,
-                  "points": 5,
-                  "title": "Prize Fighter"
-                },
-                {
-                  "icon": "ability_parry",
-                  "id": 12861,
-                  "points": 10,
-                  "title": "Master of Duels"
-                },
-                {
-                  "icon": "achievement_arena_3v3_4",
-                  "id": 12862,
-                  "points": 10,
-                  "title": "Thirty Six and Two"
-                },
-                {
-                  "icon": "spell_misc_warsongfocus",
-                  "id": 12857,
-                  "points": 5,
-                  "title": "Trial by Combat"
-                }
-              ],
-              "name": "Dueler's Guild"
-            },
-            {
-              "id": "b0b6c9e0",
-              "items": [
-                {
-                  "icon": "inv_babymurloc3_yellow",
-                  "id": 11475,
-                  "points": 10,
-                  "title": "Mission Accomplished"
-                },
-                {
-                  "icon": "inv_pet_-goat",
-                  "id": 11476,
-                  "points": 10,
-                  "title": "Saddle Sore"
-                },
-                {
-                  "icon": "achievement_dungeon_blackrookhold",
-                  "id": 11477,
-                  "points": 10,
-                  "title": "Off the Top Rook"
-                },
-                {
-                  "icon": "misc_drogbarhead",
-                  "id": 11478,
-                  "points": 10,
-                  "title": "The Darkbrul-oh"
-                },
-                {
-                  "icon": "achievement_bg_kill_on_mount",
-                  "id": 11474,
-                  "points": 20,
-                  "title": "Free For All, More For Me"
-                }
-              ],
-              "name": "Legion"
-            },
-            {
-              "id": "6e22a234",
-              "items": [
-                {
-                  "icon": "inv_tourofdutynazmir",
-                  "id": 12574,
-                  "points": 10,
-                  "title": "Tour of Duty: Nazmir"
-                },
-                {
-                  "icon": "inv_tourofdutyzuldazar",
-                  "id": 12575,
-                  "points": 10,
-                  "title": "Tour of Duty: Zuldazar"
-                },
-                {
-                  "icon": "inv_tourofdutyvoldun",
-                  "id": 12576,
-                  "points": 10,
-                  "title": "Tour of Duty: Vol'dun"
-                },
-                {
-                  "icon": "inv_tourofdutytiragardesound",
-                  "id": 12577,
-                  "points": 10,
-                  "title": "Tour of Duty: Tiragarde Sound"
-                },
-                {
-                  "icon": "inv_tourofdutystormsongvalley",
-                  "id": 12578,
-                  "points": 10,
-                  "title": "Tour of Duty: Stormsong Valley"
-                },
-                {
-                  "icon": "inv_tourofdutydrustvar",
-                  "id": 12579,
-                  "points": 10,
-                  "title": "Tour of Duty: Drustvar"
-                },
-                {
-                  "icon": "inv_belt_mail_nazjatarraid_d_01",
-                  "id": 13569,
-                  "points": 10,
-                  "title": "Tour of Duty: Nazjatar"
-                },
-                {
-                  "icon": "inv_mechagon_blueprints",
-                  "id": 13570,
-                  "points": 10,
-                  "title": "Tour of Duty: Mechagon"
-                },
-                {
-                  "icon": "inv_conquerorifazeroth_horde",
-                  "id": 12604,
-                  "points": 20,
-                  "side": "H",
-                  "title": "Conqueror of Azeroth"
-                },
-                {
-                  "icon": "inv_conquerorifazeroth_alliance",
-                  "id": 12605,
-                  "points": 20,
-                  "side": "A",
-                  "title": "Conqueror of Azeroth"
-                },
-                {
-                  "icon": "inv_misc_treasurechest04b",
-                  "id": 13317,
-                  "points": 5,
-                  "title": "Supplied and Ready"
-                },
-                {
-                  "icon": "achievement_garrison_invasion_gold",
-                  "id": 13387,
-                  "points": 10,
-                  "side": "A",
-                  "title": "Frontline Veteran"
-                },
-                {
-                  "icon": "achievement_garrison_invasion_gold",
-                  "id": 13388,
-                  "points": 10,
-                  "side": "H",
-                  "title": "Frontline Veteran"
-                },
-                {
-                  "icon": "ability_warrior_improveddisciplines",
-                  "id": 13402,
-                  "points": 5,
-                  "side": "A",
-                  "title": "Frontline Slayer"
-                },
-                {
-                  "icon": "ability_warrior_improveddisciplines",
-                  "id": 13403,
-                  "points": 5,
-                  "side": "H",
-                  "title": "Frontline Slayer"
-                },
-                {
-                  "icon": "inv_azeriteempoweredstate",
-                  "id": 13429,
-                  "points": 5,
-                  "title": "Azerfighter"
-                },
-                {
-                  "icon": "ability_butcher_heavyhanded",
-                  "id": 13438,
-                  "points": 5,
-                  "side": "H",
-                  "title": "Boxing Match"
-                },
-                {
-                  "icon": "achievement_character_orc_male",
-                  "id": 13439,
-                  "points": 5,
-                  "side": "A",
-                  "title": "Boxing Match"
-                },
-                {
-                  "icon": "inv_misc_nagafemale",
-                  "id": 13568,
-                  "points": 10,
-                  "title": "For Nazjatar!"
-                },
-                {
-                  "icon": "spell_misc_hellifrepvpcombatmorale",
-                  "id": 13623,
-                  "points": 5,
-                  "title": "Fighting on Two Fronts"
-                },
-                {
-                  "icon": "inv_misc_treasurechest04b",
-                  "id": 13720,
-                  "points": 10,
-                  "title": "Supplying the Assassins"
-                }
-              ],
-              "name": "Battle for Azeroth"
-            },
-            {
-              "id": "3ea56623",
-              "items": [
-                {
-                  "icon": "inv_ardenweald",
-                  "id": 14511,
-                  "points": 10,
-                  "title": "Tour of Duty: Ardenweald"
-                },
-                {
-                  "icon": "achievement_raid_revendrethraid_castlenathria",
-                  "id": 14512,
-                  "points": 10,
-                  "title": "Tour of Duty: Revendreth"
-                },
-                {
-                  "icon": "inv_maldraxxus",
-                  "id": 14513,
-                  "points": 10,
-                  "title": "Tour of Duty: Maldraxxus"
-                },
-                {
-                  "icon": "inv_bastion",
-                  "id": 14514,
-                  "points": 10,
-                  "title": "Tour of Duty: Bastion"
-                },
-                {
-                  "icon": "inv_helm_leather_oribosdungeon_c_01",
-                  "id": 14515,
-                  "points": 5,
-                  "title": "Zo'Sorg's Bidding"
-                },
-                {
-                  "icon": "inv_helm_cloth_oribosdungeon_c_01",
-                  "id": 14516,
-                  "points": 20,
-                  "title": "Impressing Zo'Sorg"
-                },
-                {
-                  "icon": "spell_misc_hellifrepvpcombatmorale",
-                  "id": 14519,
-                  "points": 10,
-                  "title": "Covenant Combat"
-                }
-              ],
-              "name": "Shadowlands"
-            },
-            {
-              "id": "f3982402",
-              "items": [
-                {
-                  "icon": "spell_warrior_gladiatorstance",
-                  "id": 16601,
-                  "points": 25,
-                  "title": "Dragonfight Club"
-                },
-                {
-                  "icon": "achievement_zone_wakingshores",
-                  "id": 16592,
-                  "points": 10,
-                  "title": "Tour of Duty: The Waking Shores"
-                },
-                {
-                  "icon": "achievement_zone_thaldraszus",
-                  "id": 16593,
-                  "points": 10,
-                  "title": "Tour of Duty: Thaldraszus"
-                },
-                {
-                  "icon": "achievement_zone_azurespan",
-                  "id": 16594,
-                  "points": 10,
-                  "title": "Tour of Duty: The Azure Span"
-                },
-                {
-                  "icon": "achievement_zone_ohnahranplains",
-                  "id": 16595,
-                  "points": 10,
-                  "title": "Tour of Duty: Ohn'ahran Plains"
-                },
-                {
-                  "icon": "achievement_zone_zaralekcavern",
-                  "id": 17851,
-                  "points": 10,
-                  "title": "Tour of Duty: Zaralek Cavern"
-                },
-                {
-                  "icon": "achievement_zone_emeralddream",
-                  "id": 19294,
-                  "points": 10,
-                  "title": "Tour of Duty: Emerald Dream"
-                },
-                {
-                  "icon": "inv_shield_1h_drakonid_c_01",
-                  "id": 16589,
-                  "points": 5,
-                  "title": "Malicia's Challenge"
-                },
-                {
-                  "icon": "inv_helm_armor_drakonid_c_01",
-                  "id": 16590,
-                  "points": 20,
-                  "title": "A Champion's Tour: Dragon Isles"
-                },
-                {
-                  "icon": "shaman_pvp_rockshield",
-                  "id": 16599,
-                  "points": 10,
-                  "title": "A Champion's Pursuit"
-                },
-                {
-                  "icon": "inv_bountyhunting",
-                  "id": 16603,
-                  "points": 10,
-                  "title": "Bounty Hunter"
-                },
-                {
-                  "icon": "inv_faction_warresources",
-                  "id": 16611,
-                  "points": 10,
-                  "title": "Resource Scavanger"
-                },
-                {
-                  "icon": "ability_hunter_assassinate",
-                  "id": 16612,
-                  "points": 10,
-                  "title": "Bounty Vigalante"
-                },
-                {
-                  "icon": "inv_box_02",
-                  "id": 16613,
-                  "points": 20,
-                  "title": "Finder's Keepers"
-                },
-                {
-                  "icon": "timelesscoin-bloody",
-                  "id": 16614,
-                  "points": 10,
-                  "title": "Bloodstained Bounty"
-                },
-                {
-                  "icon": "inv_10_elementalspiritfoozles_blood",
-                  "id": 16616,
-                  "points": 10,
-                  "title": "Prosperously Bloody"
-                },
-                {
-                  "icon": "inv_10_elementalcombinedfoozles_blood",
-                  "id": 16615,
-                  "points": 10,
-                  "title": "Blood Bank"
-                },
-                {
-                  "icon": "inv_10_elementalcombinedfoozles_primordial",
-                  "id": 17852,
-                  "points": 10,
-                  "title": "Elemental Conjuror"
-                }
-              ],
-              "name": "Dragonflight"
-            },
-            {
-              "id": "09c84533",
-              "items": [
-                {
-                  "icon": "achievement_zone_isleofdorn",
-                  "id": 40083,
-                  "notObtainable": true,
-                  "points": 10,
-                  "title": "Tour of Duty: Isle of Dorn"
-                },
-                {
-                  "icon": "achievement_zone_theringingdeeps",
-                  "id": 40084,
-                  "notObtainable": true,
-                  "points": 10,
-                  "title": "Tour of Duty: The Ringing Deeps"
-                },
-                {
-                  "icon": "achievement_zone_hallowfall",
-                  "id": 40085,
-                  "notObtainable": true,
-                  "points": 10,
-                  "title": "Tour of Duty: Hallowfall"
-                },
-                {
-                  "icon": "achievement_zone_azjkahet",
-                  "id": 40086,
-                  "notObtainable": true,
-                  "points": 10,
-                  "title": "Tour of Duty: Azj-Kahet"
-                },
-                {
-                  "icon": "inv_crossbow_2h_earthendungeon_c_01",
-                  "id": 40087,
-                  "notObtainable": true,
-                  "points": 5,
-                  "title": "Unbound Battle"
-                },
-                {
-                  "icon": "inv_shield_1h_earthendungeon_c_01",
-                  "id": 40088,
-                  "notObtainable": true,
-                  "points": 20,
-                  "title": "A Champion's Tour: The War Within"
-                },
-                {
-                  "icon": "inv_misc_treasurechest04b",
-                  "id": 40089,
-                  "notObtainable": true,
-                  "points": 5,
-                  "title": "Spoiled Goods"
-                },
-                {
-                  "icon": "inv_misc_treasurechest04b",
-                  "id": 40090,
-                  "notObtainable": true,
-                  "points": 15,
-                  "title": "Spoiled Goods"
-                },
-                {
-                  "icon": "inv_cape_special_treasure_c_01",
-                  "id": 40091,
-                  "notObtainable": true,
-                  "points": 10,
-                  "title": "Slightly Spoiled"
-                },
-                {
-                  "icon": "ability_dualwield",
-                  "id": 40095,
-                  "notObtainable": true,
-                  "points": 5,
-                  "title": "Sparking Battle"
-                },
-                {
-                  "icon": "ability_dualwield",
-                  "id": 40096,
-                  "notObtainable": true,
-                  "points": 10,
-                  "title": "Sparking Battle"
-                },
-                {
-                  "icon": "inv_axe_1h_earthendungeon_c_01",
-                  "id": 40097,
-                  "notObtainable": true,
-                  "points": 25,
-                  "title": "Ruffious's Bid"
-                },
-                {
-                  "icon": "inv_bountyhunting",
-                  "id": 40465,
-                  "notObtainable": true,
-                  "points": 5,
-                  "title": "Unbound Bounty"
-                },
-                {
-                  "icon": "inv_box_02",
-                  "id": 40468,
-                  "notObtainable": true,
-                  "points": 5,
-                  "title": "Unbound Glory"
-                },
-                {
-                  "icon": "inv_box_02",
-                  "id": 40466,
-                  "notObtainable": true,
-                  "points": 10,
-                  "title": "Unbound Glory"
-                },
-                {
-                  "icon": "inv_box_02",
-                  "id": 40467,
-                  "notObtainable": true,
-                  "points": 20,
-                  "title": "Unbound Glory"
-                }
-              ],
-              "name": "The War Within"
-            }
-          ]
-        },
-        {
           "id": "c7b31c24",
           "name": "Warsong Gulch",
           "subcats": [
@@ -12253,6 +11689,570 @@
                 }
               ],
               "name": "Solo Shuffle"
+            }
+          ]
+        },
+        {
+          "id": "374d14ab",
+          "name": "World",
+          "subcats": [
+            {
+              "id": "43e55dbd",
+              "items": [
+                {
+                  "icon": "inv_crate_03",
+                  "id": 12572,
+                  "points": 10,
+                  "title": "War Supplied"
+                },
+                {
+                  "icon": "ability_blackhand_marked4death",
+                  "id": 12571,
+                  "points": 10,
+                  "title": "Bounty Hunting"
+                },
+                {
+                  "icon": "ability_blackhand_marked4death",
+                  "id": 40464,
+                  "points": 20,
+                  "title": "Bounty Master"
+                },
+                {
+                  "icon": "inv_bandofbrothers",
+                  "id": 12573,
+                  "points": 15,
+                  "title": "Band of Brothers"
+                },
+                {
+                  "icon": "ability_dragonriding_barrelroll01",
+                  "id": 17335,
+                  "points": 5,
+                  "title": "Airborne Tumbler"
+                },
+                {
+                  "icon": "ability_dragonriding_barrelroll01",
+                  "id": 17336,
+                  "points": 5,
+                  "title": "Airborne Tumbler"
+                },
+                {
+                  "icon": "ability_dragonriding_barrelroll01",
+                  "id": 17345,
+                  "points": 5,
+                  "title": "Airborne Tumbler"
+                }
+              ],
+              "name": "War Mode"
+            },
+            {
+              "id": "760a647e",
+              "items": [
+                {
+                  "icon": "warrior_skullbanner",
+                  "id": 12856,
+                  "points": 5,
+                  "title": "The First Rule of Dueler's Guild"
+                },
+                {
+                  "icon": "inv_misc_desecrated_leatherglove",
+                  "id": 12858,
+                  "points": 5,
+                  "title": "Slugfest"
+                },
+                {
+                  "icon": "achievement_arena_2v2_5",
+                  "id": 12860,
+                  "points": 5,
+                  "title": "Contender"
+                },
+                {
+                  "icon": "ability_dualwield",
+                  "id": 12863,
+                  "points": 5,
+                  "title": "Dueling Master"
+                },
+                {
+                  "icon": "ability_pvp_hardiness",
+                  "id": 12859,
+                  "points": 5,
+                  "title": "Prize Fighter"
+                },
+                {
+                  "icon": "ability_parry",
+                  "id": 12861,
+                  "points": 10,
+                  "title": "Master of Duels"
+                },
+                {
+                  "icon": "achievement_arena_3v3_4",
+                  "id": 12862,
+                  "points": 10,
+                  "title": "Thirty Six and Two"
+                },
+                {
+                  "icon": "spell_misc_warsongfocus",
+                  "id": 12857,
+                  "points": 5,
+                  "title": "Trial by Combat"
+                }
+              ],
+              "name": "Dueler's Guild"
+            },
+            {
+              "id": "b0b6c9e0",
+              "items": [
+                {
+                  "icon": "inv_babymurloc3_yellow",
+                  "id": 11475,
+                  "points": 10,
+                  "title": "Mission Accomplished"
+                },
+                {
+                  "icon": "inv_pet_-goat",
+                  "id": 11476,
+                  "points": 10,
+                  "title": "Saddle Sore"
+                },
+                {
+                  "icon": "achievement_dungeon_blackrookhold",
+                  "id": 11477,
+                  "points": 10,
+                  "title": "Off the Top Rook"
+                },
+                {
+                  "icon": "misc_drogbarhead",
+                  "id": 11478,
+                  "points": 10,
+                  "title": "The Darkbrul-oh"
+                },
+                {
+                  "icon": "achievement_bg_kill_on_mount",
+                  "id": 11474,
+                  "points": 20,
+                  "title": "Free For All, More For Me"
+                }
+              ],
+              "name": "Legion"
+            },
+            {
+              "id": "6e22a234",
+              "items": [
+                {
+                  "icon": "inv_tourofdutynazmir",
+                  "id": 12574,
+                  "points": 10,
+                  "title": "Tour of Duty: Nazmir"
+                },
+                {
+                  "icon": "inv_tourofdutyzuldazar",
+                  "id": 12575,
+                  "points": 10,
+                  "title": "Tour of Duty: Zuldazar"
+                },
+                {
+                  "icon": "inv_tourofdutyvoldun",
+                  "id": 12576,
+                  "points": 10,
+                  "title": "Tour of Duty: Vol'dun"
+                },
+                {
+                  "icon": "inv_tourofdutytiragardesound",
+                  "id": 12577,
+                  "points": 10,
+                  "title": "Tour of Duty: Tiragarde Sound"
+                },
+                {
+                  "icon": "inv_tourofdutystormsongvalley",
+                  "id": 12578,
+                  "points": 10,
+                  "title": "Tour of Duty: Stormsong Valley"
+                },
+                {
+                  "icon": "inv_tourofdutydrustvar",
+                  "id": 12579,
+                  "points": 10,
+                  "title": "Tour of Duty: Drustvar"
+                },
+                {
+                  "icon": "inv_belt_mail_nazjatarraid_d_01",
+                  "id": 13569,
+                  "points": 10,
+                  "title": "Tour of Duty: Nazjatar"
+                },
+                {
+                  "icon": "inv_mechagon_blueprints",
+                  "id": 13570,
+                  "points": 10,
+                  "title": "Tour of Duty: Mechagon"
+                },
+                {
+                  "icon": "inv_conquerorifazeroth_horde",
+                  "id": 12604,
+                  "points": 20,
+                  "side": "H",
+                  "title": "Conqueror of Azeroth"
+                },
+                {
+                  "icon": "inv_conquerorifazeroth_alliance",
+                  "id": 12605,
+                  "points": 20,
+                  "side": "A",
+                  "title": "Conqueror of Azeroth"
+                },
+                {
+                  "icon": "inv_misc_treasurechest04b",
+                  "id": 13317,
+                  "points": 5,
+                  "title": "Supplied and Ready"
+                },
+                {
+                  "icon": "achievement_garrison_invasion_gold",
+                  "id": 13387,
+                  "points": 10,
+                  "side": "A",
+                  "title": "Frontline Veteran"
+                },
+                {
+                  "icon": "achievement_garrison_invasion_gold",
+                  "id": 13388,
+                  "points": 10,
+                  "side": "H",
+                  "title": "Frontline Veteran"
+                },
+                {
+                  "icon": "ability_warrior_improveddisciplines",
+                  "id": 13402,
+                  "points": 5,
+                  "side": "A",
+                  "title": "Frontline Slayer"
+                },
+                {
+                  "icon": "ability_warrior_improveddisciplines",
+                  "id": 13403,
+                  "points": 5,
+                  "side": "H",
+                  "title": "Frontline Slayer"
+                },
+                {
+                  "icon": "inv_azeriteempoweredstate",
+                  "id": 13429,
+                  "points": 5,
+                  "title": "Azerfighter"
+                },
+                {
+                  "icon": "ability_butcher_heavyhanded",
+                  "id": 13438,
+                  "points": 5,
+                  "side": "H",
+                  "title": "Boxing Match"
+                },
+                {
+                  "icon": "achievement_character_orc_male",
+                  "id": 13439,
+                  "points": 5,
+                  "side": "A",
+                  "title": "Boxing Match"
+                },
+                {
+                  "icon": "inv_misc_nagafemale",
+                  "id": 13568,
+                  "points": 10,
+                  "title": "For Nazjatar!"
+                },
+                {
+                  "icon": "spell_misc_hellifrepvpcombatmorale",
+                  "id": 13623,
+                  "points": 5,
+                  "title": "Fighting on Two Fronts"
+                },
+                {
+                  "icon": "inv_misc_treasurechest04b",
+                  "id": 13720,
+                  "points": 10,
+                  "title": "Supplying the Assassins"
+                }
+              ],
+              "name": "Battle for Azeroth"
+            },
+            {
+              "id": "3ea56623",
+              "items": [
+                {
+                  "icon": "inv_ardenweald",
+                  "id": 14511,
+                  "points": 10,
+                  "title": "Tour of Duty: Ardenweald"
+                },
+                {
+                  "icon": "achievement_raid_revendrethraid_castlenathria",
+                  "id": 14512,
+                  "points": 10,
+                  "title": "Tour of Duty: Revendreth"
+                },
+                {
+                  "icon": "inv_maldraxxus",
+                  "id": 14513,
+                  "points": 10,
+                  "title": "Tour of Duty: Maldraxxus"
+                },
+                {
+                  "icon": "inv_bastion",
+                  "id": 14514,
+                  "points": 10,
+                  "title": "Tour of Duty: Bastion"
+                },
+                {
+                  "icon": "inv_helm_leather_oribosdungeon_c_01",
+                  "id": 14515,
+                  "points": 5,
+                  "title": "Zo'Sorg's Bidding"
+                },
+                {
+                  "icon": "inv_helm_cloth_oribosdungeon_c_01",
+                  "id": 14516,
+                  "points": 20,
+                  "title": "Impressing Zo'Sorg"
+                },
+                {
+                  "icon": "spell_misc_hellifrepvpcombatmorale",
+                  "id": 14519,
+                  "points": 10,
+                  "title": "Covenant Combat"
+                }
+              ],
+              "name": "Shadowlands"
+            },
+            {
+              "id": "f3982402",
+              "items": [
+                {
+                  "icon": "spell_warrior_gladiatorstance",
+                  "id": 16601,
+                  "points": 25,
+                  "title": "Dragonfight Club"
+                },
+                {
+                  "icon": "achievement_zone_wakingshores",
+                  "id": 16592,
+                  "points": 10,
+                  "title": "Tour of Duty: The Waking Shores"
+                },
+                {
+                  "icon": "achievement_zone_thaldraszus",
+                  "id": 16593,
+                  "points": 10,
+                  "title": "Tour of Duty: Thaldraszus"
+                },
+                {
+                  "icon": "achievement_zone_azurespan",
+                  "id": 16594,
+                  "points": 10,
+                  "title": "Tour of Duty: The Azure Span"
+                },
+                {
+                  "icon": "achievement_zone_ohnahranplains",
+                  "id": 16595,
+                  "points": 10,
+                  "title": "Tour of Duty: Ohn'ahran Plains"
+                },
+                {
+                  "icon": "achievement_zone_zaralekcavern",
+                  "id": 17851,
+                  "points": 10,
+                  "title": "Tour of Duty: Zaralek Cavern"
+                },
+                {
+                  "icon": "achievement_zone_emeralddream",
+                  "id": 19294,
+                  "points": 10,
+                  "title": "Tour of Duty: Emerald Dream"
+                },
+                {
+                  "icon": "inv_shield_1h_drakonid_c_01",
+                  "id": 16589,
+                  "points": 5,
+                  "title": "Malicia's Challenge"
+                },
+                {
+                  "icon": "inv_helm_armor_drakonid_c_01",
+                  "id": 16590,
+                  "points": 20,
+                  "title": "A Champion's Tour: Dragon Isles"
+                },
+                {
+                  "icon": "shaman_pvp_rockshield",
+                  "id": 16599,
+                  "points": 10,
+                  "title": "A Champion's Pursuit"
+                },
+                {
+                  "icon": "inv_bountyhunting",
+                  "id": 16603,
+                  "points": 10,
+                  "title": "Bounty Hunter"
+                },
+                {
+                  "icon": "inv_faction_warresources",
+                  "id": 16611,
+                  "points": 10,
+                  "title": "Resource Scavanger"
+                },
+                {
+                  "icon": "ability_hunter_assassinate",
+                  "id": 16612,
+                  "points": 10,
+                  "title": "Bounty Vigalante"
+                },
+                {
+                  "icon": "inv_box_02",
+                  "id": 16613,
+                  "points": 20,
+                  "title": "Finder's Keepers"
+                },
+                {
+                  "icon": "timelesscoin-bloody",
+                  "id": 16614,
+                  "points": 10,
+                  "title": "Bloodstained Bounty"
+                },
+                {
+                  "icon": "inv_10_elementalspiritfoozles_blood",
+                  "id": 16616,
+                  "points": 10,
+                  "title": "Prosperously Bloody"
+                },
+                {
+                  "icon": "inv_10_elementalcombinedfoozles_blood",
+                  "id": 16615,
+                  "points": 10,
+                  "title": "Blood Bank"
+                },
+                {
+                  "icon": "inv_10_elementalcombinedfoozles_primordial",
+                  "id": 17852,
+                  "points": 10,
+                  "title": "Elemental Conjuror"
+                }
+              ],
+              "name": "Dragonflight"
+            },
+            {
+              "id": "09c84533",
+              "items": [
+                {
+                  "icon": "achievement_zone_isleofdorn",
+                  "id": 40083,
+                  "notObtainable": true,
+                  "points": 10,
+                  "title": "Tour of Duty: Isle of Dorn"
+                },
+                {
+                  "icon": "achievement_zone_theringingdeeps",
+                  "id": 40084,
+                  "notObtainable": true,
+                  "points": 10,
+                  "title": "Tour of Duty: The Ringing Deeps"
+                },
+                {
+                  "icon": "achievement_zone_hallowfall",
+                  "id": 40085,
+                  "notObtainable": true,
+                  "points": 10,
+                  "title": "Tour of Duty: Hallowfall"
+                },
+                {
+                  "icon": "achievement_zone_azjkahet",
+                  "id": 40086,
+                  "notObtainable": true,
+                  "points": 10,
+                  "title": "Tour of Duty: Azj-Kahet"
+                },
+                {
+                  "icon": "inv_crossbow_2h_earthendungeon_c_01",
+                  "id": 40087,
+                  "notObtainable": true,
+                  "points": 5,
+                  "title": "Unbound Battle"
+                },
+                {
+                  "icon": "inv_shield_1h_earthendungeon_c_01",
+                  "id": 40088,
+                  "notObtainable": true,
+                  "points": 20,
+                  "title": "A Champion's Tour: The War Within"
+                },
+                {
+                  "icon": "inv_misc_treasurechest04b",
+                  "id": 40089,
+                  "notObtainable": true,
+                  "points": 5,
+                  "title": "Spoiled Goods"
+                },
+                {
+                  "icon": "inv_misc_treasurechest04b",
+                  "id": 40090,
+                  "notObtainable": true,
+                  "points": 15,
+                  "title": "Spoiled Goods"
+                },
+                {
+                  "icon": "inv_cape_special_treasure_c_01",
+                  "id": 40091,
+                  "notObtainable": true,
+                  "points": 10,
+                  "title": "Slightly Spoiled"
+                },
+                {
+                  "icon": "ability_dualwield",
+                  "id": 40095,
+                  "notObtainable": true,
+                  "points": 5,
+                  "title": "Sparking Battle"
+                },
+                {
+                  "icon": "ability_dualwield",
+                  "id": 40096,
+                  "notObtainable": true,
+                  "points": 10,
+                  "title": "Sparking Battle"
+                },
+                {
+                  "icon": "inv_axe_1h_earthendungeon_c_01",
+                  "id": 40097,
+                  "notObtainable": true,
+                  "points": 25,
+                  "title": "Ruffious's Bid"
+                },
+                {
+                  "icon": "inv_bountyhunting",
+                  "id": 40465,
+                  "notObtainable": true,
+                  "points": 5,
+                  "title": "Unbound Bounty"
+                },
+                {
+                  "icon": "inv_box_02",
+                  "id": 40468,
+                  "notObtainable": true,
+                  "points": 5,
+                  "title": "Unbound Glory"
+                },
+                {
+                  "icon": "inv_box_02",
+                  "id": 40466,
+                  "notObtainable": true,
+                  "points": 10,
+                  "title": "Unbound Glory"
+                },
+                {
+                  "icon": "inv_box_02",
+                  "id": 40467,
+                  "notObtainable": true,
+                  "points": 20,
+                  "title": "Unbound Glory"
+                }
+              ],
+              "name": "The War Within"
             }
           ]
         }
