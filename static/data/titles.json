@@ -314,6 +314,14 @@
             "notObtainable": true,
             "titleId": 550,
             "type": "achievement"
+          },
+          {
+            "icon": "inv_10_blacksmithing_consumable_key_color1",
+            "id": 40882,
+            "name": "The Bountiful",
+            "notObtainable": true,
+            "titleId": 575,
+            "type": "achievement"
           }
         ],
         "name": "Delves"
@@ -366,6 +374,35 @@
             "type": "title"
           }
         ],
+        "name": "Renown"
+      },
+      {
+        "items": [
+          {
+            "icon": "ui_notoriety_theweaver",
+            "id": 40874,
+            "name": "Silksinger",
+            "notObtainable": true,
+            "titleId": 572,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_trinket_naxxramas04",
+            "id": 40875,
+            "name": "Anub'",
+            "notObtainable": true,
+            "titleId": 573,
+            "type": "achievement"
+          },
+          {
+            "icon": "ui_notoriety_thevizier",
+            "id": 40876,
+            "name": "Hand of the Vizier",
+            "notObtainable": true,
+            "titleId": 574,
+            "type": "achievement"
+          }
+        ],
         "name": "Reputation"
       },
       {
@@ -376,6 +413,14 @@
             "name": "Machine-Warden",
             "notObtainable": true,
             "titleId": 568,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_dungeon_gloryofthehero",
+            "id": 40222,
+            "name": "Echochaser",
+            "notObtainable": true,
+            "titleId": 576,
             "type": "achievement"
           }
         ],
