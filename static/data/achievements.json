@@ -4725,42 +4725,7 @@
             {
               "items": [
                 {
-                  "icon": "inv_cape_armor_earthencivilian_d_02_copper",
-                  "id": 40509,
-                  "notObtainable": true,
-                  "points": 5,
-                  "title": "Awakening The Machine: Wave 10"
-                },
-                {
-                  "icon": "inv_cape_armor_earthencivilian_d_02_dark",
-                  "id": 40586,
-                  "notObtainable": true,
-                  "points": 5,
-                  "title": "Awakening The Machine: Wave 20"
-                },
-                {
-                  "icon": "inv_tabard_pvp_10season3_d_01",
-                  "id": 40587,
-                  "notObtainable": true,
-                  "points": 5,
-                  "title": "Awakening The Machine: Wave 30"
-                },
-                {
-                  "icon": "inv_armor_earthenisle_c_01_shoulder",
-                  "id": 40588,
-                  "notObtainable": true,
-                  "points": 5,
-                  "title": "Awakening The Machine: Wave 40"
-                },
-                {
-                  "icon": "inv_armor_earthenisle_c_01_cape",
-                  "id": 40589,
-                  "notObtainable": true,
-                  "points": 10,
-                  "title": "Awakening The Machine: Wave 50"
-                },
-                {
-                  "icon": "inv_dwarvenmechboss_bronze",
+                  "icon": "ability_golemthunderclap",
                   "id": 40662,
                   "notObtainable": true,
                   "points": 10,
@@ -13164,21 +13129,21 @@
                   "icon": "inv_achievement_dungeon_stonevault",
                   "id": 40643,
                   "notObtainable": true,
-                  "points": 0,
+                  "points": 10,
                   "title": "The Stonevault"
                 },
                 {
                   "icon": "inv_achievement_dungeon_stonevault",
                   "id": 40644,
                   "notObtainable": true,
-                  "points": 0,
+                  "points": 10,
                   "title": "Heroic: The Stonevault"
                 },
                 {
                   "icon": "inv_achievement_dungeon_stonevault",
                   "id": 40648,
                   "notObtainable": true,
-                  "points": 0,
+                  "points": 10,
                   "title": "Mythic: The Stonevault"
                 }
               ],
@@ -25711,8 +25676,15 @@
                   "icon": "ui_majorfactions_candle",
                   "id": 40836,
                   "notObtainable": true,
-                  "points": 5,
+                  "points": 10,
                   "title": "Assembly of the Deeps"
+                },
+                {
+                  "icon": "ui_majorfactions_candle",
+                  "id": 40905,
+                  "notObtainable": true,
+                  "points": 10,
+                  "title": "From Many, One"
                 },
                 {
                   "icon": "ui_notoriety_theweaver",
@@ -25722,6 +25694,13 @@
                   "title": "The Severed Threads"
                 },
                 {
+                  "icon": "ui_notoriety_theweaver",
+                  "id": 40907,
+                  "notObtainable": true,
+                  "points": 10,
+                  "title": "We Rise Anew"
+                },
+                {
                   "icon": "ui_majorfactions_flame",
                   "id": 40845,
                   "notObtainable": true,
@@ -25729,11 +25708,25 @@
                   "title": "Hallowfall Arathi"
                 },
                 {
+                  "icon": "ui_majorfactions_flame",
+                  "id": 40906,
+                  "notObtainable": true,
+                  "points": 10,
+                  "title": "The Flame Burns Within"
+                },
+                {
                   "icon": "ui_majorfactions_storm",
                   "id": 40856,
                   "notObtainable": true,
                   "points": 10,
                   "title": "Council of Dornogal"
+                },
+                {
+                  "icon": "ui_majorfactions_storm",
+                  "id": 40904,
+                  "notObtainable": true,
+                  "points": 10,
+                  "title": "Cornerstone of Dornogal"
                 }
               ],
               "name": "Renown"
@@ -40835,7 +40828,7 @@
                   "id": 20589,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "[PH] Hero: The War Within Season 1"
+                  "title": "Tempered Hero: The War Within Season 1"
                 }
               ],
               "name": "Mythic Keystone: The War Within"
