@@ -257,7 +257,6 @@
             "icon": "inv_achievement_raidnerubian_queenansurek",
             "id": 40243,
             "name": "Queenslayer",
-            "notObtainable": true,
             "titleId": 556,
             "type": "achievement"
           }
@@ -270,7 +269,6 @@
             "icon": "inv_cape_special_treasure_c_01",
             "id": 40506,
             "name": "Seeker of Loot",
-            "notObtainable": true,
             "titleId": 570,
             "type": "achievement"
           },
@@ -278,7 +276,6 @@
             "icon": "ui_followerdungeon_followme",
             "id": 40098,
             "name": "Immortal Spelunker",
-            "notObtainable": true,
             "titleId": 549,
             "type": "achievement"
           },
@@ -286,7 +283,6 @@
             "icon": "achievement_challengemode_gold",
             "id": 40726,
             "name": "High Explorer",
-            "notObtainable": true,
             "titleId": 550,
             "type": "achievement"
           },
@@ -294,7 +290,6 @@
             "icon": "inv_10_blacksmithing_consumable_key_color1",
             "id": 40882,
             "name": "The Bountiful",
-            "notObtainable": true,
             "titleId": 575,
             "type": "achievement"
           }
@@ -304,31 +299,9 @@
       {
         "items": [
           {
-            "icon": "achievement_challengemode_silver",
-            "id": 20524,
-            "name": "The Tempered",
-            "notObtainable": true,
-            "titleId": 579,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_challengemode_platinum",
-            "id": 20589,
-            "name": "The Tempered Hero",
-            "notObtainable": true,
-            "titleId": 548,
-            "type": "achievement"
-          }
-        ],
-        "name": "Mythic Plus"
-      },
-      {
-        "items": [
-          {
             "icon": "inv_misc_questionmark",
             "id": 839,
             "name": "Machine Whisperer",
-            "notObtainable": true,
             "titleId": 564,
             "type": "title"
           },
@@ -336,7 +309,6 @@
             "icon": "inv_misc_questionmark",
             "id": 840,
             "name": "Honorary Councilmember",
-            "notObtainable": true,
             "titleId": 565,
             "type": "title"
           },
@@ -344,7 +316,6 @@
             "icon": "inv_misc_questionmark",
             "id": 841,
             "name": "Lamplighter",
-            "notObtainable": true,
             "titleId": 566,
             "type": "title"
           },
@@ -352,7 +323,6 @@
             "icon": "inv_misc_questionmark",
             "id": 842,
             "name": "Thread-Spinner",
-            "notObtainable": true,
             "titleId": 567,
             "type": "title"
           }
@@ -365,7 +335,6 @@
             "icon": "ui_notoriety_theweaver",
             "id": 40874,
             "name": "Silksinger",
-            "notObtainable": true,
             "titleId": 572,
             "type": "achievement"
           },
@@ -373,7 +342,6 @@
             "icon": "inv_trinket_naxxramas04",
             "id": 40875,
             "name": "Anub'",
-            "notObtainable": true,
             "titleId": 573,
             "type": "achievement"
           },
@@ -381,7 +349,6 @@
             "icon": "ui_notoriety_thevizier",
             "id": 40876,
             "name": "Hand of the Vizier",
-            "notObtainable": true,
             "titleId": 574,
             "type": "achievement"
           }
@@ -394,7 +361,6 @@
             "icon": "inv_tabard_pvp_10season3_d_01",
             "id": 40587,
             "name": "Machine-Warden",
-            "notObtainable": true,
             "titleId": 568,
             "type": "achievement"
           },
@@ -402,7 +368,6 @@
             "icon": "achievement_dungeon_gloryofthehero",
             "id": 40222,
             "name": "Echochaser",
-            "notObtainable": true,
             "titleId": 576,
             "type": "achievement"
           }
@@ -416,11 +381,32 @@
             "id": 835,
             "name": "Ascension Breaker",
             "notObtainable": true,
+            "notReleased": true,
             "titleId": 560,
             "type": "title"
           }
         ],
         "name": "Unknown"
+      },
+      {
+        "items": [
+          {
+            "icon": "achievement_challengemode_silver",
+            "id": 20524,
+            "name": "The Tempered",
+            "titleId": 579,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_challengemode_platinum",
+            "id": 20589,
+            "name": "The Tempered Hero",
+            "notObtainable": true,
+            "titleId": 548,
+            "type": "achievement"
+          }
+        ],
+        "name": "Mythic Plus"
       }
     ]
   },
@@ -609,6 +595,7 @@
             "icon": "achievement_challengemode_gold",
             "id": 19781,
             "name": "The Draconic",
+            "notObtainable": true,
             "titleId": 537,
             "type": "achievement"
           },
