@@ -244,27 +244,6 @@
       {
         "items": [
           {
-            "ID": 4579,
-            "creatureId": 223785,
-            "icon": "inv_yakpet",
-            "itemId": 221817,
-            "name": "Muskpaw Calf",
-            "spellid": 449550
-          },
-          {
-            "ID": 4580,
-            "creatureId": 223810,
-            "icon": "inv_celestialpandarenserpentpet_gold",
-            "itemId": 221818,
-            "name": "Astral Emperor's Serpentling",
-            "spellid": 449626
-          }
-        ],
-        "name": "Remix: Pandaria"
-      },
-      {
-        "items": [
-          {
             "ID": 4566,
             "creatureId": 223645,
             "icon": "inv_murlocsurrender",
@@ -10955,6 +10934,7 @@
             "icon": "achievement_boss_kelthuzad_01",
             "itemId": 49693,
             "name": "Lil' K.T.",
+            "notObtainable": true,
             "spellid": 69677
           },
           {
@@ -10963,6 +10943,7 @@
             "icon": "inv_misc_pet_03",
             "itemId": 49665,
             "name": "Pandaren Monk",
+            "notObtainable": true,
             "spellid": 69541
           },
           {
@@ -11005,6 +10986,29 @@
           }
         ],
         "name": "Plunderstorm"
+      },
+      {
+        "items": [
+          {
+            "ID": 4579,
+            "creatureId": 223785,
+            "icon": "inv_yakpet",
+            "itemId": 221817,
+            "name": "Muskpaw Calf",
+            "notObtainable": true,
+            "spellid": 449550
+          },
+          {
+            "ID": 4580,
+            "creatureId": 223810,
+            "icon": "inv_celestialpandarenserpentpet_gold",
+            "itemId": 221818,
+            "name": "Astral Emperor's Serpentling",
+            "notObtainable": true,
+            "spellid": 449626
+          }
+        ],
+        "name": "Remix: Pandaria"
       }
     ]
   },
