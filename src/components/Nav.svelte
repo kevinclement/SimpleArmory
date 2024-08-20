@@ -12,7 +12,7 @@
 				{ txt: 'Character',          link: 'character'   },
 				{ txt: 'Quests',             link: 'quests'      },
 				{ txt: 'Exploration',        link: 'exploration' },
-				//{ txt: 'Delves',             link: 'delves'      },
+				{ txt: 'Delves',             link: 'delves'      },
 				{ txt: 'Player vs. Player',  link: 'pvp'         },
 				{ txt: 'Dungeons & Raids',   link: 'dungeons'    },
 				{ txt: 'Professions',        link: 'professions' },
