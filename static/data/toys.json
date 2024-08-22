@@ -215,6 +215,12 @@
             "icon": "archaeology_5_0_anatomicaldummy",
             "itemId": 225556,
             "name": "Ancient Construct"
+          },
+          {
+            "ID": 1493,
+            "icon": "inv_tailoring_modifiedcraftingreagent_indigo",
+            "itemId": 225347,
+            "name": "Web-Vandal's Spinning Wheel"
           }
         ],
         "name": "Treasure"
@@ -222,40 +228,10 @@
       {
         "items": [
           {
-            "ID": 1490,
-            "icon": "inv_helm_misc_candle_a_01",
-            "itemId": 224643,
-            "name": "Pet-Sized Candle"
-          },
-          {
-            "ID": 1502,
-            "icon": "inv_ability_web_beam",
-            "itemId": 226191,
-            "name": "Web Pet Leash"
-          },
-          {
-            "ID": 1503,
-            "icon": "inv_10_inscription2_book2_color1",
-            "itemId": 226519,
-            "name": "General's Expertise"
-          },
-          {
             "ID": 1480,
             "icon": "inv_helm_armor_luckyhat_c_01_brown",
             "itemId": 223312,
             "name": "Trusty Hat"
-          },
-          {
-            "ID": 1493,
-            "icon": "inv_tailoring_modifiedcraftingreagent_indigo",
-            "itemId": 225347,
-            "name": "Web-Vandal's Spinning Wheel"
-          },
-          {
-            "ID": 1504,
-            "icon": "achievement_boss_triumvirate_shadowguardetherealmelee",
-            "itemId": 226810,
-            "name": "Infiltrator's Shroud"
           },
           {
             "ID": 1449,
@@ -274,7 +250,12 @@
             "icon": "inv_misc_trinket6oih_lanternb1",
             "itemId": 228413,
             "name": "Lampyridae Lure"
-          },
+          }
+        ],
+        "name": "Delves"
+      },
+      {
+        "items": [
           {
             "ID": 1509,
             "icon": "creatureportrait_altarofearth_01",
@@ -298,6 +279,41 @@
             "icon": "inv_alchemy_70_potion2",
             "itemId": 228705,
             "name": "Arachnoserum"
+          }
+        ],
+        "name": "Renown"
+      },
+      {
+        "items": [
+          
+          {
+            "ID": 1504,
+            "icon": "achievement_boss_triumvirate_shadowguardetherealmelee",
+            "itemId": 226810,
+            "name": "Infiltrator's Shroud"
+          }
+        ],
+        "name": "Secret"
+      },
+      {
+        "items": [
+          {
+            "ID": 1490,
+            "icon": "inv_helm_misc_candle_a_01",
+            "itemId": 224643,
+            "name": "Pet-Sized Candle"
+          },
+          {
+            "ID": 1502,
+            "icon": "inv_ability_web_beam",
+            "itemId": 226191,
+            "name": "Web Pet Leash"
+          },
+          {
+            "ID": 1503,
+            "icon": "inv_10_inscription2_book2_color1",
+            "itemId": 226519,
+            "name": "General's Expertise"
           },
           {
             "ID": 1513,
