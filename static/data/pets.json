@@ -257,35 +257,6 @@
       {
         "items": [
           {
-            "ID": 4450,
-            "creatureId": 220420,
-            "icon": "inv_misc_head_gnoll_01",
-            "itemId": 218086,
-            "name": "Remembered Riverpaw",
-            "spellid": 441643
-          },
-          {
-            "ID": 4452,
-            "creatureId": 220680,
-            "icon": "inv_misc_head_dragon_black",
-            "itemId": 218246,
-            "name": "Remembered Spawn",
-            "spellid": 442337
-          },
-          {
-            "ID": 4451,
-            "creatureId": 220675,
-            "icon": "ui_darkshore_warfront_horde_abomination",
-            "itemId": 218245,
-            "name": "Remembered Construct",
-            "spellid": 442327
-          }
-        ],
-        "name": "Pre-Patch Event"
-      },
-      {
-        "items": [
-          {
             "ID": 4615,
             "creatureId": 229846,
             "icon": "inv_ogrepet",
@@ -691,6 +662,38 @@
           }
         ],
         "name": "Drop"
+      },
+      {
+        "items": [
+          {
+            "ID": 4450,
+            "creatureId": 220420,
+            "icon": "inv_misc_head_gnoll_01",
+            "itemId": 218086,
+            "name": "Remembered Riverpaw",
+            "notObtainable": true,
+            "spellid": 441643
+          },
+          {
+            "ID": 4452,
+            "creatureId": 220680,
+            "icon": "inv_misc_head_dragon_black",
+            "itemId": 218246,
+            "name": "Remembered Spawn",
+            "notObtainable": true,
+            "spellid": 442337
+          },
+          {
+            "ID": 4451,
+            "creatureId": 220675,
+            "icon": "ui_darkshore_warfront_horde_abomination",
+            "itemId": 218245,
+            "name": "Remembered Construct",
+            "notObtainable": true,
+            "spellid": 442327
+          }
+        ],
+        "name": "Pre-Patch Event"
       },
       {
         "id": "fad5d824",
