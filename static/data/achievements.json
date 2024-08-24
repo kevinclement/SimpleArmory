@@ -1664,7 +1664,7 @@
                 {
                   "icon": "ability_druid_manatree",
                   "id": 13251,
-                  "points": 0,
+                  "points": 10,
                   "side": "A",
                   "title": "In Teldrassil's Shadow"
                 },
@@ -4479,7 +4479,7 @@
                 {
                   "icon": "inv_misc_map07",
                   "id": 40231,
-                  "points": 0,
+                  "points": 10,
                   "title": "The War Within Pathfinder"
                 },
                 {
@@ -4784,12 +4784,6 @@
                   "title": "Smelling History"
                 },
                 {
-                  "icon": "inv_misc_blackironbomb",
-                  "id": 40619,
-                  "points": 0,
-                  "title": "Mine Poppin'"
-                },
-                {
                   "icon": "inv_misc_bomb_02",
                   "id": 40843,
                   "points": 5,
@@ -4798,13 +4792,13 @@
                 {
                   "icon": "achievement_reputation_01",
                   "id": 40620,
-                  "points": 0,
+                  "points": 10,
                   "title": "Back to the Wall"
                 },
                 {
                   "icon": "inv_nerubianspiderling2_black",
                   "id": 40624,
-                  "points": 0,
+                  "points": 10,
                   "title": "Itsy Bitsy Spider"
                 },
                 {
@@ -4822,13 +4816,13 @@
                 {
                   "icon": "inv_misc_web_02",
                   "id": 40634,
-                  "points": 0,
+                  "points": 10,
                   "title": "You Can't Hang With Us"
                 },
                 {
                   "icon": "inv_caveborercritter_forest",
                   "id": 40869,
-                  "points": 0,
+                  "points": 10,
                   "title": "Worm Theory"
                 }
               ],
@@ -14230,20 +14224,6 @@
                   "title": "We Are All Made of Stars"
                 },
                 {
-                  "icon": "achievement_boss_algalon_01",
-                  "id": 15468,
-                  "notObtainable": true,
-                  "points": 0,
-                  "title": "We Are All Made of Stars (Heroic)"
-                },
-                {
-                  "icon": "achievement_boss_algalon_01",
-                  "id": 15469,
-                  "notObtainable": true,
-                  "points": 0,
-                  "title": "We Are All Made of Stars (Mythic)"
-                },
-                {
                   "icon": "spell_progenitor_orb2",
                   "id": 15494,
                   "points": 10,
@@ -19224,18 +19204,6 @@
                   "id": 5061,
                   "points": 10,
                   "title": "Heroic: Throne of the Tides"
-                },
-                {
-                  "icon": "Achievement_Boss_LadyVashj",
-                  "id": 5285,
-                  "points": 0,
-                  "title": "Old Faithful"
-                },
-                {
-                  "icon": "achievement_dungeon_throne-of-the-tides_ozumat",
-                  "id": 5286,
-                  "points": 0,
-                  "title": "Prince of Tides"
                 }
               ],
               "name": "Throne of the Tides"
@@ -25421,7 +25389,7 @@
                 {
                   "icon": "achievement_reputation_02",
                   "id": 40591,
-                  "points": 0,
+                  "points": 10,
                   "title": "Khaz Algar Diplomat"
                 },
                 {
@@ -25533,7 +25501,7 @@
                 {
                   "icon": "ui_majorfaction_expedition",
                   "id": 16884,
-                  "points": 0,
+                  "points": 5,
                   "title": "Friends in the Field"
                 },
                 {
@@ -25545,7 +25513,7 @@
                 {
                   "icon": "ui_majorfaction_centaur",
                   "id": 17064,
-                  "points": 0,
+                  "points": 5,
                   "title": "Friends in the Plains"
                 },
                 {
@@ -25557,7 +25525,7 @@
                 {
                   "icon": "ui_majorfaction_tuskarr",
                   "id": 16944,
-                  "points": 0,
+                  "points": 5,
                   "title": "Friend of the Family"
                 },
                 {
@@ -25569,7 +25537,7 @@
                 {
                   "icon": "ui_majorfaction_valdrakken",
                   "id": 16994,
-                  "points": 0,
+                  "points": 5,
                   "title": "Friends in the Accord"
                 },
                 {
@@ -25581,7 +25549,7 @@
                 {
                   "icon": "ui_majorfaction_niffen",
                   "id": 17756,
-                  "points": 0,
+                  "points": 5,
                   "title": "Friends in Loamm Places"
                 },
                 {
@@ -27885,7 +27853,7 @@
                 {
                   "icon": "spell_fire_lavaspawn",
                   "id": 18962,
-                  "points": 0,
+                  "points": 10,
                   "title": "A Cleansing Fire"
                 }
               ],
@@ -28137,7 +28105,7 @@
                   "id": 20510,
                   "notObtainable": true,
                   "notReleased": true,
-                  "points": 0,
+                  "points": 10,
                   "title": "What Could it be?"
                 },
                 {
@@ -28145,7 +28113,7 @@
                   "id": 20511,
                   "notObtainable": true,
                   "notReleased": true,
-                  "points": 0,
+                  "points": 10,
                   "title": "Gotta Punt em' All"
                 }
               ],
@@ -33339,7 +33307,7 @@
                 {
                   "icon": "inv_glove_plate_bastion_d_01",
                   "id": 14887,
-                  "points": 0,
+                  "points": 10,
                   "title": "To the Moon"
                 },
                 {
@@ -41190,6 +41158,26 @@
                 }
               ],
               "name": "Appearances"
+            },
+            {
+              "id": "bc8f4abf",
+              "items": [
+                {
+                  "icon": "achievement_boss_algalon_01",
+                  "id": 15468,
+                  "notObtainable": true,
+                  "points": 0,
+                  "title": "We Are All Made of Stars (Heroic)"
+                },
+                {
+                  "icon": "achievement_boss_algalon_01",
+                  "id": 15469,
+                  "notObtainable": true,
+                  "points": 0,
+                  "title": "We Are All Made of Stars (Mythic)"
+                }
+              ],
+              "name": "Sepulcher of the First Ones"
             }
           ]
         },
@@ -47357,6 +47345,24 @@
                 }
               ],
               "name": "Challenge Mode: Draenor"
+            },
+            {
+              "id": "468b4fbc",
+              "items": [
+                {
+                  "icon": "Achievement_Boss_LadyVashj",
+                  "id": 5285,
+                  "points": 0,
+                  "title": "Old Faithful"
+                },
+                {
+                  "icon": "achievement_dungeon_throne-of-the-tides_ozumat",
+                  "id": 5286,
+                  "points": 0,
+                  "title": "Prince of Tides"
+                }
+              ],
+              "name": "[R]Throne of the Tides"
             }
           ]
         },
