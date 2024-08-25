@@ -203,13 +203,6 @@
       {
         "items": [
           {
-            "ID": 2159,
-            "icon": "inv_dwarvenmechboss_bronze",
-            "itemId": 223269,
-            "name": "Machine Defense Unit 1-11",
-            "spellid": 448188
-          },
-          {
             "ID": 2181,
             "icon": "inv_flyingnerubian2mount_purple",
             "itemId": 223267,
@@ -307,46 +300,18 @@
       {
         "items": [
           {
+            "ID": 2213,
+            "icon": "inv_protoramearthen_blue",
+            "itemId": 223571,
+            "name": "Shale Ramolith",
+            "spellid": 449418
+          },
+          {
             "ID": 2148,
             "icon": "inv_firebeemount_",
             "itemId": 221753,
             "name": "Smoldering Cinderbee",
             "spellid": 447057
-          },
-          {
-            "ID": 2162,
-            "icon": "inv_firefly2mount_blue",
-            "itemId": 222989,
-            "name": "Cyan Glowmite",
-            "spellid": 447176
-          },
-          {
-            "ID": 2177,
-            "icon": "inv_flyingnerubian2mount_green",
-            "itemId": 223264,
-            "name": "Aquamarine Swarmite",
-            "spellid": 447185
-          },
-          {
-            "ID": 2184,
-            "icon": "inv_caveborerwormmount_orange",
-            "itemId": 223274,
-            "name": "Ferocious Jawcrawler",
-            "spellid": 447957
-          },
-          {
-            "ID": 2191,
-            "icon": "inv_shadowelementalmount_gold",
-            "itemId": 223314,
-            "name": "Shackled Shadow",
-            "spellid": 448939
-          },
-          {
-            "ID": 2193,
-            "icon": "inv_arathilynxmount_red",
-            "itemId": 223317,
-            "name": "Vermillion Imperial Lynx",
-            "spellid": 448978
           },
           {
             "ID": 2209,
@@ -356,11 +321,39 @@
             "spellid": 449269
           },
           {
-            "ID": 2213,
-            "icon": "inv_protoramearthen_blue",
-            "itemId": 223571,
-            "name": "Shale Ramolith",
-            "spellid": 449418
+            "ID": 2162,
+            "icon": "inv_firefly2mount_blue",
+            "itemId": 222989,
+            "name": "Cyan Glowmite",
+            "spellid": 447176
+          },
+          {
+            "ID": 2193,
+            "icon": "inv_arathilynxmount_red",
+            "itemId": 223317,
+            "name": "Vermillion Imperial Lynx",
+            "spellid": 448978
+          },
+          {
+            "ID": 2191,
+            "icon": "inv_shadowelementalmount_gold",
+            "itemId": 223314,
+            "name": "Shackled Shadow",
+            "spellid": 448939
+          },
+          {
+            "ID": 2184,
+            "icon": "inv_caveborerwormmount_orange",
+            "itemId": 223274,
+            "name": "Ferocious Jawcrawler",
+            "spellid": 447957
+          },
+          {
+            "ID": 2177,
+            "icon": "inv_flyingnerubian2mount_green",
+            "itemId": 223264,
+            "name": "Aquamarine Swarmite",
+            "spellid": 447185
           }
         ],
         "name": "Renown"
@@ -387,7 +380,19 @@
             "spellid": 448979
           }
         ],
-        "name": "World Event"
+        "name": "Zone Event"
+      },
+      {
+        "items": [
+          {
+            "ID": 2159,
+            "icon": "inv_dwarvenmechboss_bronze",
+            "itemId": 223269,
+            "name": "Machine Defense Unit 1-11",
+            "spellid": 448188
+          }
+        ],
+        "name": "Awakening the Machine"
       },
       {
         "items": [
