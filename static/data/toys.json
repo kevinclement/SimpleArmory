@@ -128,15 +128,8 @@
     "name": "Limited Time",
     "subcats": [
       {
-        "items": [
-          {
-            "ID": 1345,
-            "icon": "ability_racial_etherealconnection",
-            "itemId": 206268,
-            "name": "Ethereal Transmogrifier"
-          }
-        ],
-        "name": "Trading Post: August"
+        "items": [],
+        "name": "Trading Post"
       }
     ]
   },
@@ -6577,6 +6570,12 @@
       {
         "id": "c1d734dd",
         "items": [
+          {
+            "ID": 1345,
+            "icon": "ability_racial_etherealconnection",
+            "itemId": 206268,
+            "name": "Ethereal Transmogrifier"
+          },
           {
             "ID": 1334,
             "icon": "tradingpostcurrency",

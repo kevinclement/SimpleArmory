@@ -244,15 +244,15 @@
       {
         "items": [
           {
-            "ID": 4566,
-            "creatureId": 223645,
-            "icon": "inv_murlocsurrender",
-            "itemId": 223474,
-            "name": "Worgli the Apprehensive",
-            "spellid": 449173
+            "ID": 4602,
+            "creatureId": 227414,
+            "icon": "inv_treasurecrabpet_yellow",
+            "itemId": 226104,
+            "name": "Claudius",
+            "spellid": 457689
           }
         ],
-        "name": "Trading Post: August"
+        "name": "Trading Post: September"
       },
       {
         "items": [
@@ -10857,6 +10857,14 @@
             "spellid": 449046
           },
           {
+            "ID": 4566,
+            "creatureId": 223645,
+            "icon": "inv_murlocsurrender",
+            "itemId": 223474,
+            "name": "Worgli the Apprehensive",
+            "spellid": 449173
+          },
+          {
             "ID": 3242,
             "creatureId": 185322,
             "icon": "inv_brontosaurusmount",
@@ -10885,26 +10893,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 449286
-          },
-          {
-            "ID": 4595,
-            "creatureId": 225354,
-            "icon": "inv_pitlordpet_fire",
-            "itemId": 224576,
-            "name": "Lil' Flameo",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 453266
-          },
-          {
-            "ID": 4602,
-            "creatureId": 227414,
-            "icon": "inv_treasurecrabpet_yellow",
-            "itemId": 226104,
-            "name": "Claudius",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 457689
           }
         ],
         "name": "Trading Post Originals"
@@ -11931,6 +11919,34 @@
       {
         "items": [
           {
+            "ID": 4616,
+            "creatureId": 229860,
+            "icon": "inv_brokerworm_pink",
+            "itemId": 228765,
+            "name": "Gummi",
+            "notObtainable": true,
+            "spellid": 463148
+          }
+        ],
+        "name": "Trolli"
+      },
+      {
+        "items": [
+          {
+            "ID": 4595,
+            "creatureId": 225354,
+            "icon": "inv_pitlordpet_fire",
+            "itemId": 224576,
+            "name": "Lil' Flameo",
+            "notObtainable": true,
+            "spellid": 453266
+          }
+        ],
+        "name": "Steelseries"
+      },
+      {
+        "items": [
+          {
             "ID": 192,
             "creatureId": 29726,
             "icon": "inv_misc_penguinpet",
@@ -11983,16 +11999,6 @@
             "name": "Murki",
             "notObtainable": true,
             "spellid": 25018
-          },
-          {
-            "ID": 4616,
-            "creatureId": 229860,
-            "icon": "inv_brokerworm_pink",
-            "itemId": 228765,
-            "name": "Gummi",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 463148
           }
         ],
         "name": "Other"
