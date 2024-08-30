@@ -8538,6 +8538,12 @@
             {
               "items": [
                 {
+                  "icon": "achievement_level_10",
+                  "id": 40455,
+                  "points": 10,
+                  "title": "Buddy System"
+                },
+                {
                   "icon": "achievement_level_20",
                   "id": 40450,
                   "points": 10,
@@ -8548,12 +8554,6 @@
                   "id": 40451,
                   "points": 10,
                   "title": "Buddy System III"
-                },
-                {
-                  "icon": "achievement_level_10",
-                  "id": 40455,
-                  "points": 10,
-                  "title": "Buddy System"
                 },
                 {
                   "icon": "achievement_level_40",
@@ -46824,12 +46824,14 @@
                 {
                   "icon": "achievement_garrison_horde_pve",
                   "id": 11218,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "There's a Boss In There"
                 },
                 {
                   "icon": "inv_jewelry_ring_65",
                   "id": 9493,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "They Burn, Burn, Burn"
                 }
@@ -46842,12 +46844,14 @@
                 {
                   "icon": "inv_relics_hourglass",
                   "id": 11181,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Legion Keymaster"
                 },
                 {
                   "icon": "inv_relics_hourglass",
                   "id": 13075,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Battle for Azeroth Keymaster"
                 }
@@ -47146,216 +47150,252 @@
                 {
                   "icon": "achievement_challengemode_ogreslagmines_hourglass",
                   "id": 8875,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Bloodmaul Slag Mines Challenger"
                 },
                 {
                   "icon": "achievement_challengemode_ogreslagmines_bronze",
                   "id": 8876,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Bloodmaul Slag Mines: Bronze"
                 },
                 {
                   "icon": "achievement_challengemode_ogreslagmines_silver",
                   "id": 8877,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Bloodmaul Slag Mines: Silver"
                 },
                 {
                   "icon": "achievement_challengemode_ogreslagmines_gold",
                   "id": 8878,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Bloodmaul Slag Mines: Gold"
                 },
                 {
                   "icon": "achievement_challengemode_auchindoun_hourglass",
                   "id": 8879,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Auchindoun Challenger"
                 },
                 {
                   "icon": "achievement_challengemode_auchindoun_bronze",
                   "id": 8880,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Auchindoun: Bronze"
                 },
                 {
                   "icon": "achievement_challengemode_auchindoun_silver",
                   "id": 8881,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Auchindoun: Silver"
                 },
                 {
                   "icon": "achievement_challengemode_auchindoun_gold",
                   "id": 8882,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Auchindoun: Gold"
                 },
                 {
                   "icon": "achievement_challengemode_everbloom_hourglass",
                   "id": 9001,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "The Everbloom Challenger"
                 },
                 {
                   "icon": "achievement_challengemode_everbloom_bronze",
                   "id": 9002,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "The Everbloom: Bronze"
                 },
                 {
                   "icon": "achievement_challengemode_everbloom_silver",
                   "id": 9003,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "The Everbloom: Silver"
                 },
                 {
                   "icon": "achievement_challengemode_everbloom_gold",
                   "id": 9004,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "The Everbloom: Gold"
                 },
                 {
                   "icon": "achievement_challengemode_shadowmoonhideout_hourglass",
                   "id": 8883,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Shadowmoon Burial Grounds Challenger"
                 },
                 {
                   "icon": "achievement_challengemode_shadowmoonhideout_bronze",
                   "id": 8884,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Shadowmoon Burial Grounds: Bronze"
                 },
                 {
                   "icon": "achievement_challengemode_shadowmoonhideout_silver",
                   "id": 8885,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Shadowmoon Burial Grounds: Silver"
                 },
                 {
                   "icon": "achievement_challengemode_shadowmoonhideout_gold",
                   "id": 8886,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Shadowmoon Burial Grounds: Gold"
                 },
                 {
                   "icon": "achievement_challengemode_blackrockdocks_hourglass",
                   "id": 8997,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Iron Docks Challenger"
                 },
                 {
                   "icon": "achievement_challengemode_blackrockdocks_bronze",
                   "id": 8998,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Iron Docks: Bronze"
                 },
                 {
                   "icon": "achievement_challengemode_blackrockdocks_silver",
                   "id": 8999,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Iron Docks: Silver"
                 },
                 {
                   "icon": "achievement_challengemode_blackrockdocks_gold",
                   "id": 9000,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Iron Docks: Gold"
                 },
                 {
                   "icon": "achievement_challengemode_arakkoaspires_hourglass",
                   "id": 8871,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Skyreach Challenger"
                 },
                 {
                   "icon": "achievement_challengemode_arakkoaspires_bronze",
                   "id": 8872,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Skyreach: Bronze"
                 },
                 {
                   "icon": "achievement_challengemode_seigeofniuzaotemple_silver",
                   "id": 8873,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Skyreach: Silver"
                 },
                 {
                   "icon": "achievement_challengemode_seigeofniuzaotemple_gold",
                   "id": 8874,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Skyreach: Gold"
                 },
                 {
                   "icon": "achievement_challengemode_blackrockdepot_hourglass",
                   "id": 8887,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Grimrail Depot Challenger"
                 },
                 {
                   "icon": "achievement_challengemode_blackrockdepot_bronze",
                   "id": 8888,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Grimrail Depot: Bronze"
                 },
                 {
                   "icon": "achievement_challengemode_blackrockdepot_silver",
                   "id": 8889,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Grimrail Depot: Silver"
                 },
                 {
                   "icon": "achievement_challengemode_blackrockdepot_gold",
                   "id": 8890,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Grimrail Depot: Gold"
                 },
                 {
                   "icon": "achievement_challengemode_upperbrspire_hourglass",
                   "id": 8891,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Upper Blackrock Spire Challenger"
                 },
                 {
                   "icon": "achievement_challengemode_upperbrspire_bronze",
                   "id": 8892,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Upper Blackrock Spire: Bronze"
                 },
                 {
                   "icon": "achievement_challengemode_upperbrspire_silver",
                   "id": 8893,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Upper Blackrock Spire: Silver"
                 },
                 {
                   "icon": "achievement_challengemode_upperbrspire_gold",
                   "id": 8894,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Upper Blackrock Spire: Gold"
                 },
                 {
                   "icon": "achievement_guildperk_honorablemention",
                   "id": 8895,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Challenge Warlord"
                 },
                 {
                   "icon": "achievement_challengemode_bronze",
                   "id": 8897,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Challenge Warlord: Bronze"
                 },
                 {
                   "icon": "achievement_challengemode_silver",
                   "id": 8898,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Challenge Warlord: Silver"
                 },
                 {
                   "icon": "achievement_challengemode_gold",
                   "id": 8899,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Challenge Warlord: Gold"
                 }
@@ -47368,17 +47408,19 @@
                 {
                   "icon": "Achievement_Boss_LadyVashj",
                   "id": 5285,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Old Faithful"
                 },
                 {
                   "icon": "achievement_dungeon_throne-of-the-tides_ozumat",
                   "id": 5286,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Prince of Tides"
                 }
               ],
-              "name": "[R]Throne of the Tides"
+              "name": "Throne of the Tides"
             }
           ]
         },
