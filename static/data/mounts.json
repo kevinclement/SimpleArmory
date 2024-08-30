@@ -153,35 +153,21 @@
       {
         "items": [
           {
-            "ID": 376,
-            "icon": "ability_mount_celestialhorse",
-            "itemId": 54811,
-            "name": "Celestial Steed",
-            "spellid": 75614
+            "ID": 2238,
+            "icon": "inv_treasurebasiliskmount_tan",
+            "itemId": 226040,
+            "name": "Plunderlord's Golden Crocolisk",
+            "spellid": 457650
           },
           {
-            "ID": 454,
-            "icon": "inv_lavahorse",
-            "itemId": 118515,
-            "name": "Cindermane Charger",
-            "spellid": 171847
-          },
-          {
-            "ID": 2201,
-            "icon": "inv_alliancewolfmount2_white",
-            "itemId": 223469,
-            "name": "Sentinel War Wolf",
-            "spellid": 449140
-          },
-          {
-            "ID": 2198,
-            "icon": "inv_nightsaberhordemount_red",
-            "itemId": 223449,
-            "name": "Kor'kron Warsaber",
-            "spellid": 449126
+            "ID": 2239,
+            "icon": "inv_treasurebasiliskmount_green",
+            "itemId": 226041,
+            "name": "Keg Leg's Radiant Crocolisk",
+            "spellid": 457654
           }
         ],
-        "name": "Trading Post: August"
+        "name": "Trading Post: September"
       },
       {
         "items": [
@@ -259,6 +245,7 @@
             "icon": "inv_molemount_brown",
             "itemId": 225548,
             "name": "Wick",
+            "notObtainable": true,
             "spellid": 449264
           },
           {
@@ -378,12 +365,7 @@
             "itemId": 223318,
             "name": "Dauntless Imperial Lynx",
             "spellid": 448979
-          }
-        ],
-        "name": "Zone Event"
-      },
-      {
-        "items": [
+          },
           {
             "ID": 2159,
             "icon": "inv_dwarvenmechboss_bronze",
@@ -392,7 +374,7 @@
             "spellid": 448188
           }
         ],
-        "name": "Awakening the Machine"
+        "name": "Zone Feature"
       },
       {
         "items": [
@@ -8614,6 +8596,13 @@
             "spellid": 49322
           },
           {
+            "ID": 376,
+            "icon": "ability_mount_celestialhorse",
+            "itemId": 54811,
+            "name": "Celestial Steed",
+            "spellid": 75614
+          },
+          {
             "ID": 382,
             "icon": "ability_mount_rocketmount2",
             "itemId": 54860,
@@ -8649,6 +8638,13 @@
             "itemId": 76755,
             "name": "Tyrael's Charger",
             "spellid": 107203
+          },
+          {
+            "ID": 454,
+            "icon": "inv_lavahorse",
+            "itemId": 118515,
+            "name": "Cindermane Charger",
+            "spellid": 171847
           },
           {
             "ID": 1051,
@@ -8813,6 +8809,20 @@
             "spellid": 448851
           },
           {
+            "ID": 2201,
+            "icon": "inv_alliancewolfmount2_white",
+            "itemId": 223469,
+            "name": "Sentinel War Wolf",
+            "spellid": 449140
+          },
+          {
+            "ID": 2198,
+            "icon": "inv_nightsaberhordemount_red",
+            "itemId": 223449,
+            "name": "Kor'kron Warsaber",
+            "spellid": 449126
+          },
+          {
             "ID": 799,
             "icon": "inv_infernalmountlava",
             "itemId": 137615,
@@ -8901,24 +8911,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 359380
-          },
-          {
-            "ID": 2238,
-            "icon": "inv_treasurebasiliskmount_tan",
-            "itemId": 226040,
-            "name": "Plunderlord's Golden Crocolisk",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 457650
-          },
-          {
-            "ID": 2239,
-            "icon": "inv_treasurebasiliskmount_green",
-            "itemId": 226041,
-            "name": "Keg Leg's Radiant Crocolisk",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 457654
           },
           {
             "ID": 2240,
