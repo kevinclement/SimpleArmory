@@ -24,7 +24,6 @@
         'Pet Battles':        { w:0, txt:'', url:'INIT', seg:'pets' }, 
         'Collections':        { w:0, txt:'', url:'INIT', seg:'collections' }, 
         'Expansion Features': { w:0, txt:'', url:'INIT', seg:'expansions' },
-        'Remix: Pandaria':    { w:0, txt:'', url:'INIT', seg:'remix' }, 
         'Legacy':             { w:0, txt:'', url:'INIT', seg:'legacy' }, 
         'Feats of Strength':  { w:0, txt:'', url:'INIT', seg:'feats' }, 
     };

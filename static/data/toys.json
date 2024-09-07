@@ -278,6 +278,12 @@
             "icon": "inv_10_inscription2_book2_color1",
             "itemId": 226519,
             "name": "General's Expertise"
+          },
+          {
+            "ID": 1530,
+            "icon": "ui_majorfactions_web_256",
+            "itemId": 228940,
+            "name": "Notorious Thread's Hearthstone"
           }
         ],
         "name": "Renown"
@@ -315,6 +321,27 @@
           }
         ],
         "name": "Vendor"
+      },
+      {
+        "items": [
+          {
+            "ID": 1517,
+            "icon": "inv_11xp_mdi_banner01",
+            "itemId": 232301,
+            "notObtainable": true,
+            "notReleased": true,
+            "name": "Tempered Banner of the Algari"
+          },
+          {
+            "ID": 1518,
+            "icon": "inv_11xp_awc_banner01",
+            "itemId": 232305,            
+            "notObtainable": true,
+            "notReleased": true,
+            "name": "Forged Champion's Prestigious Banner"
+          }
+        ],
+        "name": "Mythic Dungeon Invitational"
       }
     ]
   },
@@ -6550,6 +6577,30 @@
             "icon": "achievement_boss_argus_felreaver",
             "itemId": 186501,
             "name": "Doomwalker Trophy Stand"
+          },
+          {
+            "ID": 1482,
+            "icon": "inv_weapon_halberd_05",
+            "itemId": 224192,
+            "notObtainable": true,
+            "notReleased": true,
+            "name": "Practice Ravager"
+          },
+          {
+            "ID": 1514,
+            "icon": "inv_11xp_generic_blizzardphoenixring01",
+            "itemId": 228789,
+            "notObtainable": true,
+            "notReleased": true,
+            "name": "Coldflame Ring"
+          },
+          {
+            "ID": 1516,
+            "icon": "inv_11xp_wow20year_balloonchest01",
+            "itemId": 229828,
+            "notObtainable": true,
+            "notReleased": true,
+            "name": "20th Anniversary Balloon Chest"
           }
         ],
         "name": "Anniversary"
@@ -6850,7 +6901,7 @@
           },
           {
             "ID": 1430,
-            "icon": "5358887",
+            "icon": "item_blizzconbanner01",
             "itemId": 210042,
             "name": "Chilling Celebration Banner"
           }
@@ -6915,13 +6966,13 @@
           },
           {
             "ID": 1356,
-            "icon": "5344195",
+            "icon": "inv_sandbox_gryphon",
             "itemId": 208883,
             "name": "Sandbox Storm Gryphon"
           },
           {
             "ID": 1351,
-            "icon": "5333528",
+            "icon": "inv_hearthstone_storm",
             "itemId": 208704,
             "name": "Deepdweller's Earthen Hearthstone"
           }
