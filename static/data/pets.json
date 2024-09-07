@@ -257,19 +257,6 @@
       {
         "items": [
           {
-            "ID": 4615,
-            "creatureId": 229846,
-            "icon": "inv_ogrepet",
-            "itemId": 228758,
-            "name": "Parrlok",
-            "spellid": 463079
-          }
-        ],
-        "name": "Discord Quest"
-      },
-      {
-        "items": [
-          {
             "ID": 3254,
             "creatureId": 185621,
             "icon": "inv_jewelcrafting_jadeowl",
@@ -11040,6 +11027,20 @@
           }
         ],
         "name": "Remix: Pandaria"
+      },
+      {
+        "items": [
+          {
+            "ID": 4615,
+            "creatureId": 229846,
+            "icon": "inv_ogrepet",
+            "itemId": 228758,
+            "notObtainable": true,
+            "name": "Parrlok",
+            "spellid": 463079
+          }
+        ],
+        "name": "Discord Quest"
       }
     ]
   },
