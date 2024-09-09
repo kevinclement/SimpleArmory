@@ -257,19 +257,6 @@
       {
         "items": [
           {
-            "ID": 4615,
-            "creatureId": 229846,
-            "icon": "inv_ogrepet",
-            "itemId": 228758,
-            "name": "Parrlok",
-            "spellid": 463079
-          }
-        ],
-        "name": "Discord Quest"
-      },
-      {
-        "items": [
-          {
             "ID": 3254,
             "creatureId": 185621,
             "icon": "inv_jewelcrafting_jadeowl",
@@ -413,7 +400,7 @@
           {
             "ID": 4534,
             "creatureId": 222880,
-            "icon": "inv_desertlasherorchid_blue",
+            "icon": "inv_fungallasher_purple",
             "itemId": 221546,
             "name": "Nightfarm Growthling",
             "spellid": 447009
@@ -421,7 +408,7 @@
           {
             "ID": 4536,
             "creatureId": 222879,
-            "icon": "inv_desertlasherorchid_purple",
+            "icon": "inv_fungallasher_magenta",
             "itemId": 221548,
             "name": "Blightbud",
             "spellid": 447012
@@ -2240,7 +2227,7 @@
             "creatureId": 204354,
             "icon": "inv_viperrock2_green",
             "itemId": 205153,
-            "name": "Mikah",
+            "name": "Jade Cragviper",
             "notObtainable": true,
             "notReleased": true,
             "spellid": 408265
@@ -8840,6 +8827,46 @@
             "itemId": 143954,
             "name": "Paradox Spirit",
             "spellid": 234556
+          },
+          {
+            "ID": 4592,
+            "creatureId": 224915,
+            "icon": "ability_hunter_pet_gorilla",
+            "itemId": 224406,
+            "notObtainable": true,
+            "notReleased": true,
+            "name": "Misty",
+            "spellid": 452706
+          },
+          {
+            "ID": 4593,
+            "creatureId": 224916,
+            "icon": "inv_jewelcrafting_azureboar",
+            "itemId": 224410,
+            "notObtainable": true,
+            "notReleased": true,
+            "name": "Craggles",
+            "spellid": 452711
+          },
+          {
+            "ID": 4686,
+            "creatureId": 232579,
+            "icon": "ability_mount_whitedirewolf",
+            "itemId": 231356,
+            "notObtainable": true,
+            "notReleased": true,
+            "name": "Specter",
+            "spellid": 468317
+          },
+          {
+            "ID": 4689,
+            "creatureId": 232585,
+            "icon": "inv_elemental_mote_mana",
+            "itemId": 231365,
+            "notObtainable": true,
+            "notReleased": true,
+            "name": "Karazhan Syphoner",
+            "spellid": 468338
           }
         ],
         "name": "Timewalking"
@@ -9079,6 +9106,26 @@
             "name": "Lil' Frostwing",
             "notObtainable": true,
             "spellid": 419773
+          },
+          {
+            "ID": 4678,
+            "creatureId": 231840,
+            "icon": "inv_doomguardpet_black",
+            "itemId": 228781,
+            "notObtainable": true,
+            "notReleased": true,
+            "name": "Lil'Doomy",
+            "spellid": 466575
+          },
+          {
+            "ID": 4679,
+            "creatureId": 231841,
+            "icon": "inv_doomguardpet_orange",
+            "itemId": 230011,
+            "notObtainable": true,
+            "notReleased": true,
+            "name": "Lil'Kaz",
+            "spellid": 466576
           }
         ],
         "name": "Anniversary"
@@ -10980,6 +11027,20 @@
           }
         ],
         "name": "Remix: Pandaria"
+      },
+      {
+        "items": [
+          {
+            "ID": 4615,
+            "creatureId": 229846,
+            "icon": "inv_ogrepet",
+            "itemId": 228758,
+            "notObtainable": true,
+            "name": "Parrlok",
+            "spellid": 463079
+          }
+        ],
+        "name": "Discord Quest"
       }
     ]
   },
@@ -11415,7 +11476,7 @@
           {
             "ID": 3579,
             "creatureId": 205467,
-            "icon": "4755147",
+            "icon": "inv_murkyysera",
             "name": "Ysergle",
             "spellid": 411448
           }
@@ -11552,7 +11613,7 @@
           {
             "ID": 4266,
             "creatureId": 209681,
-            "icon": "5333904",
+            "icon": "inv_gryphonstormpet_blue",
             "itemId": 208751,
             "name": "Squally",
             "spellid": 420759
@@ -11642,6 +11703,7 @@
             "icon": "inv_demongoat_crimson",
             "itemId": 206018,
             "name": "Baa'lial",
+            "notObtainable": true,
             "spellid": 411791
           }
         ],
@@ -11668,6 +11730,7 @@
             "icon": "inv_pet_babywinston",
             "itemId": 134047,
             "name": "Baby Winston",
+            "notObtainable": true,
             "spellid": 204148
           }
         ],
@@ -11691,7 +11754,7 @@
           {
             "ID": 4316,
             "creatureId": 213407,
-            "icon": "5210737",
+            "icon": "inv_dragonwhelpwrathionclassic",
             "itemId": 210964,
             "name": "Lil' Wrathion",
             "spellid": 427682
@@ -11911,6 +11974,7 @@
             "creatureId": 218060,
             "icon": "inv_treasurecrabpet_purple",
             "name": "Fathom",
+            "notObtainable": true,
             "spellid": 439994
           }
         ],
@@ -11924,7 +11988,6 @@
             "icon": "inv_brokerworm_pink",
             "itemId": 228765,
             "name": "Gummi",
-            "notObtainable": true,
             "spellid": 463148
           }
         ],
@@ -12102,6 +12165,21 @@
           }
         ],
         "name": "BMAH"
+      },
+      {
+        "items": [
+          {
+            "ID": 4669,
+            "creatureId": 231713,
+            "icon": "inv_needledollpet_blue",
+            "itemId": 229993,
+            "notObtainable": true,
+            "notReleased": true,
+            "name": "Bluedoo",
+            "spellid": 466179
+          }
+        ],
+        "name": "Unknown"
       }
     ]
   }
