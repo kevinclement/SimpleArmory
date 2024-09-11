@@ -43,7 +43,14 @@ export function getImageSrc(item, renderIcon) {
     
     if (renderIcon) {
         // wowhead img
-        return '//wow.zamimg.com/images/wow/icons/medium/' + item.icon.toLowerCase() + '.jpg';
+        let url = '//wow.zamimg.com/images/wow/icons/medium/' + item.icon.toLowerCase() + '.jpg'
+        
+        // support for local hosting img for when wowhead hasn't fully exported assets
+        if (item.iconLocal && item.iconLocal != "") {
+            url = '/images/' + item.iconLocal.toLowerCase() + '.png'
+        } 
+        
+        return url;
     } else {
         // TODO: move to settings
         // 1x1 gif
