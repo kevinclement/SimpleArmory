@@ -84,6 +84,10 @@ export function getShowHiddenSetting() {
     return(localStorage.getItem("showHidden"));
 }
 
+export function getShowHiddenFeatSetting() {
+    return(localStorage.getItem("showHiddenFeat"));
+}
+
 export function getShowHiddenUpdated() {
     return(localStorage.getItem("showHiddenUpdated"));
 }
