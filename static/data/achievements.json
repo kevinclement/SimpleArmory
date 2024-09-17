@@ -2524,6 +2524,12 @@
                   "title": "One of Us! One of Us!"
                 },
                 {
+                  "icon": "trade_archaeology_highborne_scroll",
+                  "id": 9432,
+                  "points": 10,
+                  "title": "Would You Like a Pamphlet?"
+                },
+                {
                   "icon": "inv_gizmo_adamantiteframe",
                   "id": 9483,
                   "points": 10,
@@ -2760,12 +2766,6 @@
                   "id": 9601,
                   "points": 10,
                   "title": "King of the Monsters"
-                },
-                {
-                  "icon": "trade_archaeology_highborne_scroll",
-                  "id": 9432,
-                  "points": 10,
-                  "title": "Would You Like a Pamphlet?"
                 }
               ],
               "name": "Spires of Arak"
@@ -4596,6 +4596,41 @@
             {
               "items": [
                 {
+                  "icon": "inv_ability_skyriding_glyph",
+                  "id": 40702,
+                  "points": 20,
+                  "title": "Khaz Algar Glyph Hunter"
+                },
+                {
+                  "icon": "inv_ability_skyriding_glyph",
+                  "id": 40166,
+                  "points": 10,
+                  "title": "Isle of Dorn Glyph Hunter"
+                },
+                {
+                  "icon": "inv_ability_skyriding_glyph",
+                  "id": 40703,
+                  "points": 10,
+                  "title": "The Ringing Deeps Glyph Hunter"
+                },
+                {
+                  "icon": "inv_ability_skyriding_glyph",
+                  "id": 40704,
+                  "points": 10,
+                  "title": "Hallowfall Glyph Hunter"
+                },
+                {
+                  "icon": "inv_ability_skyriding_glyph",
+                  "id": 40705,
+                  "points": 10,
+                  "title": "Azj-Kahet Glyph Hunter"
+                }
+              ],
+              "name": "Glyphs"
+            },
+            {
+              "items": [
+                {
                   "icon": "inv_maldraxxusslime_yellow",
                   "id": 40475,
                   "points": 5,
@@ -4653,6 +4688,12 @@
             {
               "id": "9dcec9d0",
               "items": [
+                {
+                  "icon": "inv_professions_inscription_scribesmagnifyingglass_gold",
+                  "id": 40762,
+                  "points": 10,
+                  "title": "Khaz Algar Lore Hunter"
+                },
                 {
                   "icon": "inv_blindcaveskipper_purple",
                   "id": 40614,
@@ -8574,12 +8615,6 @@
               "id": "bb5764d4",
               "items": [
                 {
-                  "icon": "ui_delves",
-                  "id": 40438,
-                  "points": 25,
-                  "title": "Glory of the Delver"
-                },
-                {
                   "icon": "achievement_faction_lorewalkers",
                   "id": 40537,
                   "points": 25,
@@ -8590,6 +8625,12 @@
                   "id": 40437,
                   "points": 10,
                   "title": "Delver of the Depths"
+                },
+                {
+                  "icon": "ui_delves",
+                  "id": 40438,
+                  "points": 25,
+                  "title": "Glory of the Delver"
                 },
                 {
                   "icon": "ability_racial_dungeondelver",
@@ -8622,7 +8663,7 @@
                   "title": "A Delver's Bounty"
                 }
               ],
-              "name": "Bounties"
+              "name": "Treasures"
             },
             {
               "items": [
@@ -8956,28 +8997,28 @@
             {
               "items": [
                 {
-                  "icon": "inv_helm_armor_bronzebeard_b_01",
-                  "id": 40538,
-                  "points": 25,
-                  "title": "Brann Development"
-                },
-                {
-                  "icon": "ability_druid_lunarguidance",
-                  "id": 40820,
-                  "points": 5,
-                  "title": "Raisin' Brann"
-                },
-                {
                   "icon": "inv_misc_trinket6oog_idol1",
                   "id": 40523,
                   "points": 10,
                   "title": "On Brand"
                 },
                 {
+                  "icon": "inv_helm_armor_bronzebeard_b_01",
+                  "id": 40538,
+                  "points": 25,
+                  "title": "Brann Development"
+                },
+                {
                   "icon": "inv_misc_trinket6oog_idol3",
                   "id": 40635,
                   "points": 15,
                   "title": "Branntastic"
+                },
+                {
+                  "icon": "ability_druid_lunarguidance",
+                  "id": 40820,
+                  "points": 5,
+                  "title": "Raisin' Brann"
                 }
               ],
               "name": "Brann"
@@ -30606,15 +30647,9 @@
                 },
                 {
                   "icon": "5149946",
-                  "id": 17360,
-                  "points": 10,
-                  "title": "Warcraft Rumble Minis, New Looks!"
-                },
-                {
-                  "icon": "5149946",
-                  "id": 17361,
-                  "points": 10,
-                  "title": "Rumble Minis, All the Looks!"
+                  "id": 17346,
+                  "points": 5,
+                  "title": "Warcraft Rumble Minis, Maiev's New Look"
                 },
                 {
                   "icon": "5149948",
@@ -30623,16 +30658,34 @@
                   "title": "Warcraft Rumble Minis, Sneed's New Look"
                 },
                 {
-                  "icon": "5149948",
-                  "id": 17354,
+                  "icon": "5149868",
+                  "id": 17348,
                   "points": 5,
-                  "title": "Warcraft Rumble Minis, Sneed's Newer Look"
+                  "title": "Warcraft Rumble Minis, Huntress' New Look"
                 },
                 {
-                  "icon": "5149946",
-                  "id": 17346,
+                  "icon": "5149985",
+                  "id": 17349,
                   "points": 5,
-                  "title": "Warcraft Rumble Minis, Maiev's New Look"
+                  "title": "Warcraft Rumble Minis, Tauren's New Look"
+                },
+                {
+                  "icon": "5149866",
+                  "id": 17350,
+                  "points": 5,
+                  "title": "Warcraft Rumble Minis, Ghoul's New Look"
+                },
+                {
+                  "icon": "5149947",
+                  "id": 17351,
+                  "points": 5,
+                  "title": "Warcraft Rumble Minis, Murloc's New Look"
+                },
+                {
+                  "icon": "5149993",
+                  "id": 17352,
+                  "points": 5,
+                  "title": "Warcraft Rumble Minis, Whelp Egg's New Look"
                 },
                 {
                   "icon": "5149946",
@@ -30641,10 +30694,10 @@
                   "title": "Warcraft Rumble Minis, Maiev's Newer Look"
                 },
                 {
-                  "icon": "5149868",
-                  "id": 17348,
+                  "icon": "5149948",
+                  "id": 17354,
                   "points": 5,
-                  "title": "Warcraft Rumble Minis, Huntress' New Look"
+                  "title": "Warcraft Rumble Minis, Sneed's Newer Look"
                 },
                 {
                   "icon": "5149868",
@@ -30654,21 +30707,9 @@
                 },
                 {
                   "icon": "5149985",
-                  "id": 17349,
-                  "points": 5,
-                  "title": "Warcraft Rumble Minis, Tauren's New Look"
-                },
-                {
-                  "icon": "5149985",
                   "id": 17356,
                   "points": 5,
                   "title": "Warcraft Rumble Minis, Tauren's Newer Look"
-                },
-                {
-                  "icon": "5149866",
-                  "id": 17350,
-                  "points": 5,
-                  "title": "Warcraft Rumble Minis, Ghoul's New Look"
                 },
                 {
                   "icon": "5149866",
@@ -30678,27 +30719,27 @@
                 },
                 {
                   "icon": "5149947",
-                  "id": 17351,
-                  "points": 5,
-                  "title": "Warcraft Rumble Minis, Murloc's New Look"
-                },
-                {
-                  "icon": "5149947",
                   "id": 17358,
                   "points": 5,
                   "title": "Warcraft Rumble Minis, Murloc's Newer Look"
                 },
                 {
                   "icon": "5149993",
-                  "id": 17352,
-                  "points": 5,
-                  "title": "Warcraft Rumble Minis, Whelp Egg's New Look"
-                },
-                {
-                  "icon": "5149993",
                   "id": 17359,
                   "points": 5,
                   "title": "Warcraft Rumble Minis, Whelp Egg's Newer Look"
+                },
+                {
+                  "icon": "5149946",
+                  "id": 17360,
+                  "points": 10,
+                  "title": "Warcraft Rumble Minis, New Looks!"
+                },
+                {
+                  "icon": "5149946",
+                  "id": 17361,
+                  "points": 10,
+                  "title": "Rumble Minis, All the Looks!"
                 }
               ],
               "name": "Warcraft Rumble"
@@ -31883,6 +31924,30 @@
               "name": "Completionist"
             },
             {
+              "id": "7a3ebe2a",
+              "items": [
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_bronze",
+                  "id": 18790,
+                  "points": 20,
+                  "title": "Dragonriding Challenge: Dragon Isles: Bronze"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_silver",
+                  "id": 18791,
+                  "points": 20,
+                  "title": "Dragonriding Challenge: Dragon Isles: Silver"
+                },
+                {
+                  "icon": "achievement_challengemode_arakkoaspires_gold",
+                  "id": 18792,
+                  "points": 20,
+                  "title": "Dragonriding Challenge: Dragon Isles: Gold"
+                }
+              ],
+              "name": "Challenge"
+            },
+            {
               "id": "d8515ce9",
               "items": [
                 {
@@ -31928,67 +31993,7 @@
                   "title": "Emerald Dream Glyph Hunter"
                 }
               ],
-              "name": "Dragonflight Glyphs"
-            },
-            {
-              "id": "bac6ce1a",
-              "items": [
-                {
-                  "icon": "inv_ability_skyriding_glyph",
-                  "id": 40702,
-                  "points": 20,
-                  "title": "Khaz Algar Glyph Hunter"
-                },
-                {
-                  "icon": "inv_ability_skyriding_glyph",
-                  "id": 40166,
-                  "points": 10,
-                  "title": "Isle of Dorn Glyph Hunter"
-                },
-                {
-                  "icon": "inv_ability_skyriding_glyph",
-                  "id": 40703,
-                  "points": 10,
-                  "title": "The Ringing Deeps Glyph Hunter"
-                },
-                {
-                  "icon": "inv_ability_skyriding_glyph",
-                  "id": 40704,
-                  "points": 10,
-                  "title": "Hallowfall Glyph Hunter"
-                },
-                {
-                  "icon": "inv_ability_skyriding_glyph",
-                  "id": 40705,
-                  "points": 10,
-                  "title": "Azj-Kahet Glyph Hunter"
-                }
-              ],
-              "name": "War Within Glyphs"
-            },
-            {
-              "id": "7a3ebe2a",
-              "items": [
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_bronze",
-                  "id": 18790,
-                  "points": 20,
-                  "title": "Dragonriding Challenge: Dragon Isles: Bronze"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_silver",
-                  "id": 18791,
-                  "points": 20,
-                  "title": "Dragonriding Challenge: Dragon Isles: Silver"
-                },
-                {
-                  "icon": "achievement_challengemode_arakkoaspires_gold",
-                  "id": 18792,
-                  "points": 20,
-                  "title": "Dragonriding Challenge: Dragon Isles: Gold"
-                }
-              ],
-              "name": "Dragon Isles: Challenge"
+              "name": "Glyphs"
             },
             {
               "id": "73b67b61",
@@ -32012,7 +32017,7 @@
                   "title": "Reverse Racer: Gold"
                 }
               ],
-              "name": "Dragon Isles: Reverse Racer"
+              "name": "Reverse Racer"
             },
             {
               "id": "7cddf5c4",
@@ -33054,6 +33059,42 @@
                 }
               ],
               "name": "Races: Azj-Kahet"
+            },
+            {
+              "id": "bac6ce1a",
+              "items": [
+                {
+                  "icon": "inv_ability_skyriding_glyph",
+                  "id": 40702,
+                  "points": 20,
+                  "title": "Khaz Algar Glyph Hunter"
+                },
+                {
+                  "icon": "inv_ability_skyriding_glyph",
+                  "id": 40166,
+                  "points": 10,
+                  "title": "Isle of Dorn Glyph Hunter"
+                },
+                {
+                  "icon": "inv_ability_skyriding_glyph",
+                  "id": 40703,
+                  "points": 10,
+                  "title": "The Ringing Deeps Glyph Hunter"
+                },
+                {
+                  "icon": "inv_ability_skyriding_glyph",
+                  "id": 40704,
+                  "points": 10,
+                  "title": "Hallowfall Glyph Hunter"
+                },
+                {
+                  "icon": "inv_ability_skyriding_glyph",
+                  "id": 40705,
+                  "points": 10,
+                  "title": "Azj-Kahet Glyph Hunter"
+                }
+              ],
+              "name": "Glyphs"
             }
           ]
         },
@@ -33221,6 +33262,12 @@
               "id": "f45b665a",
               "items": [
                 {
+                  "icon": "achievement_arena_3v3_4",
+                  "id": 14839,
+                  "points": 10,
+                  "title": "Adventures: Off To Adventure"
+                },
+                {
                   "icon": "inv_misc_rope_02",
                   "id": 14840,
                   "points": 10,
@@ -33237,12 +33284,6 @@
                   "id": 14842,
                   "points": 10,
                   "title": "Adventures: Strength and Resilience"
-                },
-                {
-                  "icon": "achievement_arena_3v3_4",
-                  "id": 14839,
-                  "points": 10,
-                  "title": "Adventures: Off To Adventure"
                 },
                 {
                   "icon": "ability_paladin_blessedhands",
@@ -33282,12 +33323,6 @@
               "items": [
                 {
                   "icon": "ui_sigil_venthyr",
-                  "id": 14682,
-                  "points": 5,
-                  "title": "The Party Herald"
-                },
-                {
-                  "icon": "ui_sigil_venthyr",
                   "id": 14678,
                   "points": 10,
                   "title": "Court Favors"
@@ -33309,6 +33344,12 @@
                   "id": 14681,
                   "points": 5,
                   "title": "Dredger Academy"
+                },
+                {
+                  "icon": "ui_sigil_venthyr",
+                  "id": 14682,
+                  "points": 5,
+                  "title": "The Party Herald"
                 },
                 {
                   "icon": "ui_sigil_venthyr",
@@ -38305,32 +38346,6 @@
                 }
               ],
               "name": "Pet Charms"
-            },
-            {
-              "id": "5d1f5085",
-              "items": [
-                {
-                  "icon": "inv_motorcyclefelreavermount_fel",
-                  "id": 40967,
-                  "notObtainable": true,
-                  "points": 0,
-                  "title": "Ratts' Revenge"
-                }
-              ],
-              "name": "Anniversary"
-            },
-            {
-              "id": "df3372f6",
-              "items": [
-                {
-                  "icon": "achievement_guildperk_everybodysfriend",
-                  "id": 40910,
-                  "notObtainable": true,
-                  "points": 0,
-                  "title": "Successfully Stress Test CN Realms"
-                }
-              ],
-              "name": "Other"
             }
           ]
         },
@@ -42879,7 +42894,6 @@
                 {
                   "icon": "achievement_pvp_h_h",
                   "id": 19456,
-                  "notObtainable": true,
                   "points": 0,
                   "side": "H",
                   "title": "Hero of the Horde: Draconic"
@@ -42887,7 +42901,6 @@
                 {
                   "icon": "achievement_pvp_a_a",
                   "id": 19455,
-                  "notObtainable": true,
                   "points": 0,
                   "side": "A",
                   "title": "Hero of the Alliance: Draconic"
@@ -43687,16 +43700,26 @@
             {
               "items": [
                 {
+                  "icon": "inv_motorcyclefelreavermount_fel",
+                  "id": 40967,
+                  "notObtainable": true,
+                  "points": 0,
+                  "title": "Ratts' Revenge"
+                }
+              ],
+              "name": "Anniversary"
+            },
+            {
+              "items": [
+                {
                   "icon": "inv_helm_armor_pirateeyepatch_b_01_piratespecial",
                   "id": 20508,
-                  "notObtainable": true,
                   "points": 0,
                   "title": "Plunder Wonder"
                 },
                 {
                   "icon": "inv_cape_special_treasure_c_01",
                   "id": 20509,
-                  "notObtainable": true,
                   "points": 0,
                   "title": "Plunderkind"
                 }
@@ -43747,7 +43770,6 @@
                 {
                   "icon": "inv_cerberusmount",
                   "id": 15640,
-                  "notObtainable": true,
                   "points": 0,
                   "title": "Return to Darkness"
                 },
@@ -44168,6 +44190,18 @@
                 }
               ],
               "name": "Trading Post"
+            },
+            {
+              "items": [
+                {
+                  "icon": "achievement_guildperk_everybodysfriend",
+                  "id": 40910,
+                  "notObtainable": true,
+                  "points": 0,
+                  "title": "Successfully Stress Test CN Realms"
+                }
+              ],
+              "name": "Other"
             }
           ]
         }
