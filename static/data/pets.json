@@ -451,6 +451,41 @@
       {
         "items": [
           {
+            "ID": 4472,
+            "creatureId": 222326,
+            "icon": "inv_frog2_tropicalblue",
+            "itemId": 221819,
+            "name": "Shadowbog Hopper",
+            "spellid": 446031
+          },
+          {
+            "ID": 4485,
+            "creatureId": 222499,
+            "icon": "inv_snailrockmount_black",
+            "name": "Mossy Snail",
+            "spellid": 446247
+          },
+          {
+            "ID": 4515,
+            "creatureId": 222614,
+            "icon": "inv_babyfireflypet_blue",
+            "name": "Azure Flickerfly",
+            "spellid": 446584
+          },
+          {
+            "ID": 4516,
+            "creatureId": 222615,
+            "icon": "inv_babyfireflypet_purple",
+            "itemId": 228096,
+            "name": "Vibrant Glowfly",
+            "spellid": 446585
+          }
+        ],
+        "name": "World"
+      },
+      {
+        "items": [
+          {
             "ID": 4463,
             "creatureId": 222200,
             "icon": "inv_babyarathilynx_red",
@@ -648,7 +683,7 @@
             "spellid": 446024
           }
         ],
-        "name": "Drop"
+        "name": "Dungeon Drop"
       },
       {
         "items": [
@@ -734,16 +769,6 @@
             "spellid": 445828
           },
           {
-            "ID": 4472,
-            "creatureId": 222326,
-            "icon": "inv_frog2_tropicalblue",
-            "itemId": 221819,
-            "name": "Shadowbog Hopper",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 446031
-          },
-          {
             "ID": 4474,
             "creatureId": 222340,
             "icon": "inv_babycryptfiend_black",
@@ -772,15 +797,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 446119
-          },
-          {
-            "ID": 4485,
-            "creatureId": 222499,
-            "icon": "inv_snailrockmount_black",
-            "name": "Mossy Snail",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 446247
           },
           {
             "ID": 4490,
@@ -821,25 +837,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 446513
-          },
-          {
-            "ID": 4515,
-            "creatureId": 222614,
-            "icon": "inv_babyfireflypet_blue",
-            "name": "Azure Flickerfly",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 446584
-          },
-          {
-            "ID": 4516,
-            "creatureId": 222615,
-            "icon": "inv_babyfireflypet_purple",
-            "itemId": 228096,
-            "name": "Vibrant Glowfly",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 446585
           },
           {
             "ID": 4519,
