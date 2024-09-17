@@ -66,6 +66,7 @@
 
 		$preferences.itemSkin = localStorage.getItem('itemSkin') ?? 'new';
 		$preferences.showHidden = localStorage.getItem('showHidden') ?? "hidden";
+		$preferences.showHiddenFeat = localStorage.getItem('showHiddenFeat') ?? "hidden";
 	})
 
     function getCharInfoFromURL() {

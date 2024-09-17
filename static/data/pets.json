@@ -451,6 +451,41 @@
       {
         "items": [
           {
+            "ID": 4472,
+            "creatureId": 222326,
+            "icon": "inv_frog2_tropicalblue",
+            "itemId": 221819,
+            "name": "Shadowbog Hopper",
+            "spellid": 446031
+          },
+          {
+            "ID": 4485,
+            "creatureId": 222499,
+            "icon": "inv_snailrockmount_black",
+            "name": "Mossy Snail",
+            "spellid": 446247
+          },
+          {
+            "ID": 4515,
+            "creatureId": 222614,
+            "icon": "inv_babyfireflypet_blue",
+            "name": "Azure Flickerfly",
+            "spellid": 446584
+          },
+          {
+            "ID": 4516,
+            "creatureId": 222615,
+            "icon": "inv_babyfireflypet_purple",
+            "itemId": 228096,
+            "name": "Vibrant Glowfly",
+            "spellid": 446585
+          }
+        ],
+        "name": "World"
+      },
+      {
+        "items": [
+          {
             "ID": 4463,
             "creatureId": 222200,
             "icon": "inv_babyarathilynx_red",
@@ -648,7 +683,7 @@
             "spellid": 446024
           }
         ],
-        "name": "Drop"
+        "name": "Dungeon Drop"
       },
       {
         "items": [
@@ -734,16 +769,6 @@
             "spellid": 445828
           },
           {
-            "ID": 4472,
-            "creatureId": 222326,
-            "icon": "inv_frog2_tropicalblue",
-            "itemId": 221819,
-            "name": "Shadowbog Hopper",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 446031
-          },
-          {
             "ID": 4474,
             "creatureId": 222340,
             "icon": "inv_babycryptfiend_black",
@@ -772,15 +797,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 446119
-          },
-          {
-            "ID": 4485,
-            "creatureId": 222499,
-            "icon": "inv_snailrockmount_black",
-            "name": "Mossy Snail",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 446247
           },
           {
             "ID": 4490,
@@ -821,25 +837,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 446513
-          },
-          {
-            "ID": 4515,
-            "creatureId": 222614,
-            "icon": "inv_babyfireflypet_blue",
-            "name": "Azure Flickerfly",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 446584
-          },
-          {
-            "ID": 4516,
-            "creatureId": 222615,
-            "icon": "inv_babyfireflypet_purple",
-            "itemId": 228096,
-            "name": "Vibrant Glowfly",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 446585
           },
           {
             "ID": 4519,
@@ -8833,9 +8830,9 @@
             "creatureId": 224915,
             "icon": "ability_hunter_pet_gorilla",
             "itemId": 224406,
+            "name": "Misty",
             "notObtainable": true,
             "notReleased": true,
-            "name": "Misty",
             "spellid": 452706
           },
           {
@@ -8843,9 +8840,9 @@
             "creatureId": 224916,
             "icon": "inv_jewelcrafting_azureboar",
             "itemId": 224410,
+            "name": "Craggles",
             "notObtainable": true,
             "notReleased": true,
-            "name": "Craggles",
             "spellid": 452711
           },
           {
@@ -8853,9 +8850,9 @@
             "creatureId": 232579,
             "icon": "ability_mount_whitedirewolf",
             "itemId": 231356,
+            "name": "Specter",
             "notObtainable": true,
             "notReleased": true,
-            "name": "Specter",
             "spellid": 468317
           },
           {
@@ -8863,9 +8860,9 @@
             "creatureId": 232585,
             "icon": "inv_elemental_mote_mana",
             "itemId": 231365,
+            "name": "Karazhan Syphoner",
             "notObtainable": true,
             "notReleased": true,
-            "name": "Karazhan Syphoner",
             "spellid": 468338
           }
         ],
@@ -9112,9 +9109,9 @@
             "creatureId": 231840,
             "icon": "inv_doomguardpet_black",
             "itemId": 228781,
+            "name": "Lil'Doomy",
             "notObtainable": true,
             "notReleased": true,
-            "name": "Lil'Doomy",
             "spellid": 466575
           },
           {
@@ -9122,9 +9119,9 @@
             "creatureId": 231841,
             "icon": "inv_doomguardpet_orange",
             "itemId": 230011,
+            "name": "Lil'Kaz",
             "notObtainable": true,
             "notReleased": true,
-            "name": "Lil'Kaz",
             "spellid": 466576
           }
         ],
@@ -9199,7 +9196,6 @@
             "icon": "inv_maldraxxusslime_yellow",
             "itemId": 223487,
             "name": "Writhing Transmutagen",
-            "notObtainable": true,
             "spellid": 446059
           }
         ],
@@ -9829,8 +9825,6 @@
             "icon": "inv_nzothfish_green",
             "itemId": 205032,
             "name": "Abyssal Lurker",
-            "notObtainable": true,
-            "notReleased": true,
             "spellid": 408048
           },
           {
@@ -11035,8 +11029,8 @@
             "creatureId": 229846,
             "icon": "inv_ogrepet",
             "itemId": 228758,
-            "notObtainable": true,
             "name": "Parrlok",
+            "notObtainable": true,
             "spellid": 463079
           }
         ],
@@ -11621,7 +11615,7 @@
           {
             "ID": 4589,
             "creatureId": 224717,
-            "icon": "5333905",
+            "icon": "inv_gryphonstormpet_purple",
             "itemId": 224261,
             "name": "Gale",
             "spellid": 452221
@@ -11629,7 +11623,7 @@
           {
             "ID": 4590,
             "creatureId": 224716,
-            "icon": "5333906",
+            "icon": "inv_gryphonstormpet_red",
             "itemId": 224259,
             "name": "Flash",
             "spellid": 452222
@@ -11637,7 +11631,7 @@
           {
             "ID": 4591,
             "creatureId": 224718,
-            "icon": "5333907",
+            "icon": "inv_gryphonstormpet_yellow",
             "itemId": 224260,
             "name": "Thundo",
             "spellid": 452223
@@ -12173,9 +12167,9 @@
             "creatureId": 231713,
             "icon": "inv_needledollpet_blue",
             "itemId": 229993,
+            "name": "Bluedoo",
             "notObtainable": true,
             "notReleased": true,
-            "name": "Bluedoo",
             "spellid": 466179
           }
         ],
