@@ -244,7 +244,28 @@
   },
   {
     "name": "Limited Time",
-    "subcats": []
+    "subcats": [
+      {
+        "items": [
+          {
+            "icon": "achievement_challengemode_silver",
+            "id": 20524,
+            "name": "The Tempered",
+            "titleId": 579,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_challengemode_platinum",
+            "id": 20589,
+            "name": "The Tempered Hero",
+            "notObtainable": true,
+            "titleId": 548,
+            "type": "achievement"
+          }
+        ],
+        "name": "War Within: Season 1"
+      }
+    ]
   },
   {
     "name": "The War Within",
@@ -289,6 +310,13 @@
             "id": 40882,
             "name": "The Bountiful",
             "titleId": 575,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_nerubianbeetlepet_purple",
+            "id": 40431,
+            "name": "Ascension Breaker",
+            "titleId": 560,
             "type": "achievement"
           }
         ],
@@ -376,35 +404,6 @@
       },
       {
         "items": [
-          {
-            "icon": "inv_misc_questionmark",
-            "id": 835,
-            "name": "Ascension Breaker",
-            "notObtainable": true,
-            "notReleased": true,
-            "titleId": 560,
-            "type": "title"
-          }
-        ],
-        "name": "Unknown"
-      },
-      {
-        "items": [
-          {
-            "icon": "achievement_challengemode_silver",
-            "id": 20524,
-            "name": "The Tempered",
-            "titleId": 579,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_challengemode_platinum",
-            "id": 20589,
-            "name": "The Tempered Hero",
-            "notObtainable": true,
-            "titleId": 548,
-            "type": "achievement"
-          }
         ],
         "name": "Mythic Plus"
       },
@@ -3046,7 +3045,7 @@
           {
             "icon": "inv_misc_questionmark",
             "id": 859,
-            "name": "Cataclsym Enthusiast",
+            "name": "Cataclysm Enthusiast",
             "notObtainable": true,
             "notReleased": true,
             "titleId": 584,
