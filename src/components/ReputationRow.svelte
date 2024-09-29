@@ -18,7 +18,7 @@
             Math.max(
                 0,
                 faction.renown ?
-                    Math.floor((level / faction.levels.length) * (levelColors.length - 1)) :
+                    Math.floor((level / (faction.levels.length-1)) * (levelColors.length - 1)) :
                     levelColors.length - (faction.levels.length - level)
             )
         ];
@@ -29,6 +29,12 @@
     }
 
     function calculateLevelRatio(levelIdx) {
+        if(faction.renown) {
+            if(faction.level == faction.levels.length-1) {
+                return 1;
+            }
+        }
+        
         if (levelIdx === faction.level) {
             return faction.perc / 100.;
         }
@@ -88,6 +94,6 @@
     {/each}
     <span>
         <b style="color: {getColor(faction.level)}">{faction.levels[faction.level][1]}</b>
-        {#if faction.max !== 0}<span style="color: grey">• {faction.value} / {faction.max}</span>{/if}
+        {#if faction.max !== 0 && !(faction.renown && faction.level == faction.levels.length-1)}<span style="color: grey">• {faction.value} / {faction.max}</span>{/if}
     </span>
 </div>

@@ -128,8 +128,21 @@
     "name": "Limited Time",
     "subcats": [
       {
-        "items": [],
-        "name": "Trading Post"
+        "items": [
+          {
+            "ID": 1452,
+            "icon": "inv_misc_1h_umbrella_b_01",
+            "itemId": 212500,
+            "name": "Delicate Silk Parasol"
+          },
+          {
+            "ID": 1455,
+            "icon": "inv_misc_1h_umbrella_b_01",
+            "itemId": 212525,
+            "name": "Delicate Ebony Parasol"
+          }
+        ],
+        "name": "Trading Post: October"
       }
     ]
   },
@@ -281,7 +294,7 @@
           },
           {
             "ID": 1530,
-            "icon": "ui_majorfactions_web_256",
+            "icon": "ui_majorfactions_web",
             "itemId": 228940,
             "name": "Notorious Thread's Hearthstone"
           }
@@ -331,7 +344,12 @@
             "name": "Tempered Banner of the Algari",
             "notObtainable": true,
             "notReleased": true
-          },
+          }
+        ],
+        "name": "Mythic Dungeon Invitational"
+      },
+      {
+        "items": [
           {
             "ID": 1518,
             "icon": "inv_11xp_awc_banner01",
@@ -341,7 +359,7 @@
             "notReleased": true
           }
         ],
-        "name": "Mythic Dungeon Invitational"
+        "name": "Arena World Championship"
       }
     ]
   },
@@ -6626,12 +6644,6 @@
             "name": "Mannequin Charm"
           },
           {
-            "ID": 1452,
-            "icon": "inv_misc_1h_umbrella_b_01",
-            "itemId": 212500,
-            "name": "Delicate Silk Parasol"
-          },
-          {
             "ID": 1453,
             "icon": "inv_misc_1h_umbrella_b_01",
             "itemId": 212523,
@@ -6654,14 +6666,6 @@
             "icon": "inv_firearm_2h_waterblaster_c_01",
             "itemId": 220692,
             "name": "X-treme Water Blaster Display"
-          },
-          {
-            "ID": 1455,
-            "icon": "inv_misc_1h_umbrella_b_01",
-            "itemId": 212525,
-            "name": "Delicate Ebony Parasol",
-            "notObtainable": true,
-            "notReleased": true
           }
         ],
         "name": "Trading Post Originals"
