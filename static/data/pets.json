@@ -279,6 +279,59 @@
           }
         ],
         "name": "SteelSeries Promotion"
+      },
+      {
+        "items": [
+          {
+            "ID": 202,
+            "creatureId": 32841,
+            "icon": "inv_pet_babyblizzardbear",
+            "itemId": 44819,
+            "name": "Baby Blizzard Bear",
+            "spellid": 61855
+          },
+          {
+            "ID": 243,
+            "creatureId": 36607,
+            "icon": "inv_misc_head_dragon_black",
+            "itemId": 49362,
+            "name": "Onyxian Whelpling",
+            "spellid": 69002
+          },
+          {
+            "ID": 1451,
+            "creatureId": 84915,
+            "icon": "inv_moltencorgi",
+            "itemId": 115301,
+            "name": "Molten Corgi",
+            "spellid": 169695
+          },
+          {
+            "ID": 1544,
+            "creatureId": 87669,
+            "icon": "spell_fire_ragnaros_supernova",
+            "itemId": 118574,
+            "name": "Hatespark the Tiny",
+            "spellid": 170268
+          },
+          {
+            "ID": 2621,
+            "creatureId": 151779,
+            "icon": "2615850",
+            "itemId": 172016,
+            "name": "Lil' Nefarian",
+            "spellid": 294206
+          },
+          {
+            "ID": 4678,
+            "creatureId": 231840,
+            "icon": "inv_doomguardpet_black",
+            "itemId": 228781,
+            "name": "Lil'Doomy",
+            "spellid": 466575
+          }
+        ],
+        "name": "20th Anniversary"
       }
     ]
   },
@@ -9012,42 +9065,6 @@
       {
         "items": [
           {
-            "ID": 202,
-            "creatureId": 32841,
-            "icon": "inv_pet_babyblizzardbear",
-            "itemId": 44819,
-            "name": "Baby Blizzard Bear",
-            "notObtainable": true,
-            "spellid": 61855
-          },
-          {
-            "ID": 243,
-            "creatureId": 36607,
-            "icon": "inv_misc_head_dragon_black",
-            "itemId": 49362,
-            "name": "Onyxian Whelpling",
-            "notObtainable": true,
-            "spellid": 69002
-          },
-          {
-            "ID": 1451,
-            "creatureId": 84915,
-            "icon": "inv_moltencorgi",
-            "itemId": 115301,
-            "name": "Molten Corgi",
-            "notObtainable": true,
-            "spellid": 169695
-          },
-          {
-            "ID": 1544,
-            "creatureId": 87669,
-            "icon": "spell_fire_ragnaros_supernova",
-            "itemId": 118574,
-            "name": "Hatespark the Tiny",
-            "notObtainable": true,
-            "spellid": 170268
-          },
-          {
             "ID": 1890,
             "creatureId": 106283,
             "icon": "inv_corgi2",
@@ -9071,16 +9088,6 @@
             "name": "Lil' Frostwing",
             "notObtainable": true,
             "spellid": 419773
-          },
-          {
-            "ID": 4678,
-            "creatureId": 231840,
-            "icon": "inv_doomguardpet_black",
-            "itemId": 228781,
-            "name": "Lil'Doomy",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 466575
           },
           {
             "ID": 4679,
@@ -12106,14 +12113,6 @@
             "itemId": 85513,
             "name": "Thundering Serpent Hatchling",
             "spellid": 127813
-          },
-          {
-            "ID": 2621,
-            "creatureId": 151779,
-            "icon": "2615850",
-            "itemId": 172016,
-            "name": "Lil' Nefarian",
-            "spellid": 294206
           }
         ],
         "name": "BMAH"
