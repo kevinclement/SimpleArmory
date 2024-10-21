@@ -143,6 +143,23 @@
           }
         ],
         "name": "Trading Post: October"
+      },
+      {
+        "items": [
+          {
+            "ID": 1514,
+            "icon": "inv_11xp_generic_blizzardphoenixring01",
+            "itemId": 228789,
+            "name": "Coldflame Ring"
+          },
+          {
+            "ID": 1516,
+            "icon": "inv_11xp_wow20year_balloonchest01",
+            "itemId": 229828,
+            "name": "20th Anniversary Balloon Chest"
+          }
+        ],
+        "name": "20th Anniversary"
       }
     ]
   },
@@ -6585,6 +6602,12 @@
         "id": "abab0c56",
         "items": [
           {
+            "ID": 1482,
+            "icon": "inv_weapon_halberd_05",
+            "itemId": 224192,
+            "name": "Practice Ravager"
+          },
+          {
             "ID": 683,
             "icon": "inv_corgi2",
             "itemId": 158149,
@@ -6595,30 +6618,6 @@
             "icon": "achievement_boss_argus_felreaver",
             "itemId": 186501,
             "name": "Doomwalker Trophy Stand"
-          },
-          {
-            "ID": 1482,
-            "icon": "inv_weapon_halberd_05",
-            "itemId": 224192,
-            "name": "Practice Ravager",
-            "notObtainable": true,
-            "notReleased": true
-          },
-          {
-            "ID": 1514,
-            "icon": "inv_11xp_generic_blizzardphoenixring01",
-            "itemId": 228789,
-            "name": "Coldflame Ring",
-            "notObtainable": true,
-            "notReleased": true
-          },
-          {
-            "ID": 1516,
-            "icon": "inv_11xp_wow20year_balloonchest01",
-            "itemId": 229828,
-            "name": "20th Anniversary Balloon Chest",
-            "notObtainable": true,
-            "notReleased": true
           }
         ],
         "name": "Anniversary"
