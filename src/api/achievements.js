@@ -148,7 +148,7 @@ function parseAchievementObject(db, earned, character, faction) {
                     }
 
                     // Update counts proper
-                    if ((supercat.name !== 'Feats of Strength' || showHiddenFeats == "shown") && supercat.name !== 'Legacy' && ((showHiddenItems == "shown" && ach.notObtainable) || !ach.notObtainable) && 
+                    if ((supercat.name !== 'Feats of Strength' || showHiddenFeats == "shown") && supercat.name !== 'Legacy' && !ach.notReleased &&((showHiddenItems == "shown" && ach.notObtainable) || !ach.notObtainable) && 
                         (!ach.side || ach.side === faction)){
 
                         if (supercat.name !== 'Feats of Strength') {
