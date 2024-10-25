@@ -4976,30 +4976,6 @@
               "name": "Critters"
             },
             {
-              "id": "bz23cdc4",
-              "items": [
-                {
-                  "icon": "flightstone-dragonflight",
-                  "id": 17830,
-                  "points": 10,
-                  "title": "Stones Can't Fly!"
-                },
-                {
-                  "icon": "flightstone-dragonflight",
-                  "id": 17977,
-                  "points": 10,
-                  "title": "Stones Can Try To Fly!"
-                },
-                {
-                  "icon": "flightstone-dragonflight",
-                  "id": 17978,
-                  "points": 10,
-                  "title": "Stones Can Fly!"
-                }
-              ],
-              "name": "Flightstones"
-            },
-            {
               "id": "b014ba26",
               "items": [
                 {
@@ -28577,20 +28553,7 @@
           "name": "Anniversary Celebration",
           "subcats": [
             {
-              "id": "820a207a",
               "items": [
-                {
-                  "icon": "petbattle_speed",
-                  "id": 40661,
-                  "points": 10,
-                  "title": "Zoomies!"
-                },
-                {
-                  "icon": "inv_helm_armor_gnomish_c_01_red",
-                  "id": 40872,
-                  "points": 10,
-                  "title": "I Saved the Party and All I Got Was This Lousy Hat"
-                },
                 {
                   "icon": "inv_11xp_wow20year_balloonchest01",
                   "id": 40976,
@@ -28604,46 +28567,90 @@
                   "title": "Codex Editor: Ahn'Qiraj"
                 },
                 {
-                  "icon": "inv_crate_01",
-                  "id": 40979,
+                  "icon": "inv_plate_raidpaladint2_d_01_chest",
+                  "id": 41013,
+                  "points": 5,
+                  "title": "Upgraded Apparel"
+                },
+                {
+                  "icon": "inv_leather_raidmonkt2_d_01_chest",
+                  "id": 41033,
                   "points": 10,
-                  "title": "No Crate Left Behind"
+                  "title": "Classy Dresser"
                 },
                 {
-                  "icon": "achievement_boss_cyanigosa",
-                  "id": 40995,
+                  "icon": "inv_10_dungeonjewelry_dragon_necklace_1_bronze",
+                  "id": 41038,
                   "points": 0,
-                  "title": "The Originals"
+                  "title": "Token Collector"
+                }
+              ],
+              "name": ""
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_helm_armor_enchantinghat_b_01",
+                  "id": 40987,
+                  "points": 10,
+                  "title": "Fashion Critic"
                 },
                 {
-                  "icon": "achievement_boss_hellfire_felreaver",
-                  "id": 40996,
-                  "points": 0,
-                  "title": "A Gatecrasher"
+                  "icon": "inv_misc_ribbon_01",
+                  "id": 40984,
+                  "points": 10,
+                  "title": "Big Fan"
+                }
+              ],
+              "name": "Fashion Frenzy"
+            },
+            {
+              "items": [
+                {
+                  "icon": "ability_mount_blackdirewolf",
+                  "id": 40985,
+                  "points": 10,
+                  "title": "I Have That One!"
                 },
                 {
-                  "icon": "achievement_boss_chiefukorzsandscalp",
-                  "id": 40998,
-                  "points": 0,
-                  "title": "A Timewalking Step Back to a Classic Dungeon Time"
+                  "icon": "inv_lunardragonmount",
+                  "id": 40986,
+                  "points": 10,
+                  "title": "Mount Master"
+                }
+              ],
+              "name": "Mount Mania"
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_misc_book_02",
+                  "id": 40993,
+                  "points": 10,
+                  "title": "Avid Listener"
                 },
                 {
-                  "icon": "achievement_zone_blackrock_01",
-                  "id": 40999,
-                  "points": 0,
-                  "title": "You're in Your Blackrock Depths"
-                },
-                {
-                  "icon": "achievement_boss_edwinvancleef",
-                  "id": 41000,
-                  "points": 0,
-                  "title": "A Timewalking Journey Back to a Classic Dungeon Time"
-                },
+                  "icon": "ability_warrior_battleshout",
+                  "id": 40992,
+                  "points": 10,
+                  "title": "Peanut Gallery"
+                }
+              ],
+              "name": "Story Time"
+            },
+            {
+              "items": [
                 {
                   "icon": "inv_helm_armor_deerstalker_b_01_orange",
                   "id": 40870,
                   "points": 25,
                   "title": "Azeroth's Greatest Detective"
+                },
+                {
+                  "icon": "inv_helm_armor_gnomish_c_01_red",
+                  "id": 40872,
+                  "points": 10,
+                  "title": "I Saved the Party and All I Got Was This Lousy Hat"
                 },
                 {
                   "icon": "ui_embercourt-emoji-veryhappy",
@@ -28658,28 +28665,84 @@
                   "title": "Crate Insurance Agent"
                 },
                 {
-                  "icon": "inv_misc_ribbon_01",
-                  "id": 40984,
+                  "icon": "inv_crate_01",
+                  "id": 40979,
                   "points": 10,
-                  "title": "Big Fan"
+                  "title": "No Crate Left Behind"
+                }
+              ],
+              "name": "Guest Relations"
+            },
+            {
+              "items": [
+                {
+                  "icon": "achievement_boss_hellfire_felreaver",
+                  "id": 40996,
+                  "points": 5,
+                  "title": "A Gatecrasher"
                 },
                 {
-                  "icon": "ability_mount_blackdirewolf",
-                  "id": 40985,
+                  "icon": "achievement_dungeon_ulduarraid_icegiant_01",
+                  "id": 40997,
                   "points": 10,
-                  "title": "I Have That One!"
+                  "title": "The Gatecrashers"
                 },
                 {
-                  "icon": "inv_lunardragonmount",
-                  "id": 40986,
-                  "points": 10,
-                  "title": "Mount Master"
+                  "icon": "achievement_boss_shadeoferanikus",
+                  "id": 40994,
+                  "points": 5,
+                  "title": "An Original"
                 },
                 {
-                  "icon": "inv_helm_armor_enchantinghat_b_01",
-                  "id": 40987,
+                  "icon": "achievement_boss_cyanigosa",
+                  "id": 40995,
                   "points": 10,
-                  "title": "Fashion Critic"
+                  "title": "The Originals"
+                }
+              ],
+              "name": "World Bosses"
+            },
+            {
+              "items": [
+                {
+                  "icon": "achievement_boss_chiefukorzsandscalp",
+                  "id": 40998,
+                  "points": 5,
+                  "title": "A Timewalking Step Back to a Classic Dungeon Time"
+                },
+                {
+                  "icon": "achievement_boss_edwinvancleef",
+                  "id": 41000,
+                  "points": 10,
+                  "title": "A Timewalking Journey Back to a Classic Dungeon Time"
+                }
+              ],
+              "name": "Classic Timewalking"
+            },
+            {
+              "items": [
+                {
+                  "icon": "achievement_alliedrace_darkirondwarf",
+                  "id": 41015,
+                  "points": 5,
+                  "title": "A Dark Iron Past"
+                },
+                {
+                  "icon": "achievement_zone_blackrock_01",
+                  "id": 40999,
+                  "points": 10,
+                  "title": "You're in Your Blackrock Depths"
+                }
+              ],
+              "name": "Blackrock Depths"
+            },
+            {
+              "items": [
+                {
+                  "icon": "petbattle_speed",
+                  "id": 40661,
+                  "points": 10,
+                  "title": "Zoomies!"
                 },
                 {
                   "icon": "inv_misc_-selfiecamera_01",
@@ -28700,49 +28763,13 @@
                   "title": "Frequent Flyer"
                 },
                 {
-                  "icon": "inv_misc_book_02",
-                  "id": 40993,
-                  "points": 10,
-                  "title": "Avid Listener"
-                },
-                {
-                  "icon": "achievement_boss_shadeoferanikus",
-                  "id": 40994,
-                  "points": 0,
-                  "title": "An Original"
-                },
-                {
-                  "icon": "achievement_dungeon_ulduarraid_icegiant_01",
-                  "id": 40997,
-                  "points": 0,
-                  "title": "The Gatecrashers"
-                },
-                {
                   "icon": "ability_hunter_mendpet",
                   "id": 40989,
                   "points": 10,
                   "title": "Pet Mischief"
-                },
-                {
-                  "icon": "ability_warrior_battleshout",
-                  "id": 40992,
-                  "points": 10,
-                  "title": "Peanut Gallery"
-                },
-                {
-                  "icon": "inv_plate_raidpaladint2_d_01_chest",
-                  "id": 41013,
-                  "points": 0,
-                  "title": "Upgraded Apparel"
-                },
-                {
-                  "icon": "achievement_alliedrace_darkirondwarf",
-                  "id": 41015,
-                  "points": 0,
-                  "title": "A Dark Iron Past"
                 }
               ],
-              "name": "20th Anniversary"
+              "name": "Other"
             }
           ]
         }
@@ -29298,8 +29325,6 @@
                 {
                   "icon": "inv_icon_feather02d",
                   "id": 16731,
-                  "notObtainable": true,
-                  "notReleased": true,
                   "points": 10,
                   "title": "Court is Now in Session"
                 }
@@ -38049,6 +38074,12 @@
                   "title": "The War Within Season 1: Spelunker Supreme"
                 },
                 {
+                  "icon": "inv_misc_token_pvp02",
+                  "id": 41044,
+                  "points": 0,
+                  "title": "Forged Weapons of Conquest"
+                },
+                {
                   "icon": "inv_crestupgrade_xalatath_weathered",
                   "id": 40107,
                   "points": 0,
@@ -41583,25 +41614,11 @@
                   "title": "Gladiator: Dragonflight Season 1"
                 },
                 {
-                  "icon": "achievement_featsofstrength_gladiator_04",
-                  "id": 17339,
-                  "notObtainable": true,
-                  "points": 0,
-                  "title": "Legend: Dragonflight Season 1"
-                },
-                {
                   "icon": "achievement_featsofstrength_gladiator_07",
                   "id": 15951,
                   "notObtainable": true,
                   "points": 0,
                   "title": "Crimson Gladiator: Dragonflight Season 1"
-                },
-                {
-                  "icon": "achievement_featsofstrength_gladiator_07",
-                  "id": 16734,
-                  "notObtainable": true,
-                  "points": 0,
-                  "title": "Crimson Legend: Dragonflight Season 1"
                 },
                 {
                   "icon": "achievement_featsofstrength_gladiator_10",
@@ -42883,6 +42900,20 @@
             {
               "id": "858acb31",
               "items": [
+                {
+                  "icon": "achievement_featsofstrength_gladiator_04",
+                  "id": 17339,
+                  "notObtainable": true,
+                  "points": 0,
+                  "title": "Legend: Dragonflight Season 1"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 16734,
+                  "notObtainable": true,
+                  "points": 0,
+                  "title": "Crimson Legend: Dragonflight Season 1"
+                },
                 {
                   "icon": "achievement_featsofstrength_gladiator_04",
                   "id": 17801,
@@ -44199,7 +44230,6 @@
                 {
                   "icon": "inv_bijou_green",
                   "id": 957,
-                  "notObtainable": true,
                   "points": 0,
                   "title": "Hero of the Zandalar Tribe"
                 }
@@ -47816,6 +47846,30 @@
                 }
               ],
               "name": ""
+            },
+            {
+              "id": "147afcde",
+              "items": [
+                {
+                  "icon": "flightstone-dragonflight",
+                  "id": 17830,
+                  "points": 10,
+                  "title": "Stones Can't Fly!"
+                },
+                {
+                  "icon": "flightstone-dragonflight",
+                  "id": 17977,
+                  "points": 10,
+                  "title": "Stones Can Try To Fly!"
+                },
+                {
+                  "icon": "flightstone-dragonflight",
+                  "id": 17978,
+                  "points": 10,
+                  "title": "Stones Can Fly!"
+                }
+              ],
+              "name": "[R]Flightstones"
             }
           ]
         },
