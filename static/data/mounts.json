@@ -151,30 +151,8 @@
     "name": "Limited Time",
     "subcats": [
       {
-        "items": [
-          {
-            "ID": 224,
-            "icon": "ability_mount_charger",
-            "itemId": 37719,
-            "name": "Swift Zhevra",
-            "spellid": 49322
-          },
-          {
-            "ID": 2249,
-            "icon": "inv_mawguardhandmountwhite",
-            "itemId": 226506,
-            "name": "Hand of Reshkigaal",
-            "spellid": 459193
-          },
-          {
-            "ID": 1550,
-            "icon": "ability_mount_progenitorjellyfish_dark",
-            "itemId": 187674,
-            "name": "Depthstalker",
-            "spellid": 359380
-          }
-        ],
-        "name": "Trading Post: October"
+        "items": [],
+        "name": "Trading Post"
       },
       {
         "items": [
@@ -194,6 +172,18 @@
           }
         ],
         "name": "SteelSeries Promotion"
+      },
+      {
+        "items": [
+          {
+            "ID": 1947,
+            "icon": "inv_motorcyclefelreavermount_fire",
+            "itemId": 211087,
+            "name": "Hateforged Blazecycle",
+            "spellid": 428067
+          }
+        ],
+        "name": "Mountain Dew Promotion"
       },
       {
         "items": [
@@ -255,28 +245,28 @@
             "icon": "6126079",
             "itemId": 230184,
             "name": "Chaos-Forged Gryphon",
-            "spellid": 465235
+            "spellid": 466811
           },
           {
             "ID": 2305,
             "icon": "6036388",
             "itemId": 230185,
             "name": "Chaos-Forged Hippogryph",
-            "spellid": 465235
+            "spellid": 466812
           },
           {
             "ID": 2307,
             "icon": "6036401",
             "itemId": 230200,
             "name": "Chaos-Forged Dreadwing",
-            "spellid": 465235
+            "spellid": 466838
           },
           {
             "ID": 2308,
             "icon": "6080694",
             "itemId": 230201,
-            "name": "Chaos-Forged Wind-Rider",
-            "spellid": 465235
+            "name": "Chaos-Forged Wind Rider",
+            "spellid": 466845
           }
         ],
         "name": "Blizzard Store"
@@ -8702,6 +8692,13 @@
       {
         "items": [
           {
+            "ID": 224,
+            "icon": "ability_mount_charger",
+            "itemId": 37719,
+            "name": "Swift Zhevra",
+            "spellid": 49322
+          },
+          {
             "ID": 376,
             "icon": "ability_mount_celestialhorse",
             "itemId": 54811,
@@ -8941,6 +8938,20 @@
             "itemId": 226041,
             "name": "Keg Leg's Radiant Crocolisk",
             "spellid": 457654
+          },
+          {
+            "ID": 2249,
+            "icon": "inv_mawguardhandmountwhite",
+            "itemId": 226506,
+            "name": "Hand of Reshkigaal",
+            "spellid": 459193
+          },
+          {
+            "ID": 1550,
+            "icon": "ability_mount_progenitorjellyfish_dark",
+            "itemId": 187674,
+            "name": "Depthstalker",
+            "spellid": 359380
           },
           {
             "ID": 799,
@@ -10453,15 +10464,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 464443
-          },
-          {
-            "ID": 1947,
-            "icon": "inv_motorcyclefelreavermount_fire",
-            "itemId": 211087,
-            "name": "Hateforged Blazecycle",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 428067
           }
         ],
         "name": "Unknown"

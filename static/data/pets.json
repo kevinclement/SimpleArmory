@@ -114,7 +114,6 @@
             "icon": "inv_muskox_white",
             "itemId": 191946,
             "name": "Mister Muskoxeles",
-            "notObtainable": true,
             "spellid": 371675
           }
         ],
@@ -243,16 +242,36 @@
     "subcats": [
       {
         "items": [
+        ],
+        "name": "Trading Post"
+      },
+      {
+        "id": "0e1fb9ca",
+        "items": [
           {
-            "ID": 3542,
-            "creatureId": 204340,
-            "icon": "inv_sporebatrock_stoneblack",
-            "itemId": 205148,
-            "name": "Soot-Stained Shalewing",
-            "spellid": 408252
+            "ID": 4682,
+            "creatureId": 232502,
+            "icon": "6075526",
+            "itemId": 231294,
+            "name": "Reven",
+            "spellid": 468186
           }
         ],
-        "name": "Trading Post: October"
+        "name": "Charity Bundle"
+      },
+      {
+        "id": "a969d4a1",
+        "items": [
+          {
+            "ID": 4629,
+            "creatureId": 198987,
+            "icon": "inv_babymurlo3frost",
+            "itemId": 229366,
+            "name": "Brrrgl",
+            "spellid": 464798
+          }
+        ],
+        "name": "Blizzard Gear Store"
       },
       {
         "items": [
@@ -344,7 +363,7 @@
             "spellid": 466575
           }
         ],
-        "name": "20th Anniversary"
+        "name": "20th Anniversary Event"
       }
     ]
   },
@@ -9108,8 +9127,6 @@
             "icon": "inv_doomguardpet_orange",
             "itemId": 230011,
             "name": "Lil'Kaz",
-            "notObtainable": true,
-            "notReleased": true,
             "spellid": 466576
           }
         ],
@@ -10900,6 +10917,14 @@
             "itemId": 226104,
             "name": "Claudius",
             "spellid": 457689
+          },
+          {
+            "ID": 3542,
+            "creatureId": 204340,
+            "icon": "inv_sporebatrock_stoneblack",
+            "itemId": 205148,
+            "name": "Soot-Stained Shalewing",
+            "spellid": 408252
           },
           {
             "ID": 3242,
