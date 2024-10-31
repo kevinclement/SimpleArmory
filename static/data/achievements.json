@@ -29083,8 +29083,6 @@
                 {
                   "icon": "inv_box_petcarrier_01",
                   "id": 15644,
-                  "notObtainable": true,
-                  "notReleased": true,
                   "points": 10,
                   "title": "Good Things Come in Small Packages"
                 }
@@ -38074,12 +38072,6 @@
                   "title": "The War Within Season 1: Spelunker Supreme"
                 },
                 {
-                  "icon": "inv_misc_token_pvp02",
-                  "id": 41044,
-                  "points": 0,
-                  "title": "Forged Weapons of Conquest"
-                },
-                {
                   "icon": "inv_crestupgrade_xalatath_weathered",
                   "id": 40107,
                   "points": 0,
@@ -43098,6 +43090,18 @@
                 }
               ],
               "name": "Highmaul Coliseum"
+            },
+            {
+              "id": "090d16f0",
+              "items": [
+                {
+                  "icon": "inv_misc_token_pvp02",
+                  "id": 41044,
+                  "points": 0,
+                  "title": "Forged Weapons of Conquest"
+                }
+              ],
+              "name": "War Within Seasonal"
             }
           ]
         },
@@ -47869,7 +47873,7 @@
                   "title": "Stones Can Fly!"
                 }
               ],
-              "name": "[R]Flightstones"
+              "name": "Flightstones"
             }
           ]
         },
