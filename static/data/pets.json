@@ -241,8 +241,7 @@
     "name": "Limited Time",
     "subcats": [
       {
-        "items": [
-        ],
+        "items": [],
         "name": "Trading Post"
       },
       {
@@ -276,19 +275,6 @@
       {
         "items": [
           {
-            "ID": 665,
-            "creatureId": 54745,
-            "icon": "inv_scarab_clay",
-            "itemId": 72153,
-            "name": "Sand Scarab",
-            "spellid": 102353
-          }
-        ],
-        "name": "Twitch Drops"
-      },
-      {
-        "items": [
-          {
             "ID": 4616,
             "creatureId": 229860,
             "icon": "inv_brokerworm_pink",
@@ -311,6 +297,27 @@
           }
         ],
         "name": "SteelSeries Promotion"
+      },
+      {
+        "items": [
+          {
+            "ID": 4617,
+            "creatureId": 229890,
+            "icon": "inv_pet_futurebotpet_orange",
+            "itemId": 228790,
+            "name": "Thrillbot 9000",
+            "spellid": 463242
+          },
+          {
+            "ID": 4618,
+            "creatureId": 229901,
+            "icon": "inv_pet_futurebotpet_purple",
+            "itemId": 228793,
+            "name": "Chillbot 9000",
+            "spellid": 463251
+          }
+        ],
+        "name": "Mountain Dew Promotion"
       },
       {
         "items": [
@@ -11971,6 +11978,14 @@
             "itemId": 79744,
             "name": "Eye of the Legion",
             "spellid": 112994
+          },
+          {
+            "ID": 665,
+            "creatureId": 54745,
+            "icon": "inv_scarab_clay",
+            "itemId": 72153,
+            "name": "Sand Scarab",
+            "spellid": 102353
           },
           {
             "ID": 1174,
