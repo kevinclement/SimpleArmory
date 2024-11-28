@@ -341,7 +341,7 @@
           {
             "icon": "inv_misc_questionmark",
             "id": 863,
-            "name": "Zuldazar Enthusiast",
+            "name": "Zandalar Enthusiast",
             "titleId": 588,
             "type": "title"
           },
@@ -513,6 +513,15 @@
             "id": 40222,
             "name": "Echochaser",
             "titleId": 576,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_reputation_kirintor",
+            "id": 40791,
+            "name": "Witness of the Kirin Tor",
+            "notObtainable": true,
+            "notReleased": true,
+            "titleId": 569,
             "type": "achievement"
           }
         ],
@@ -3200,6 +3209,24 @@
             "notObtainable": true,
             "notReleased": true,
             "titleId": 546,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 875,
+            "name": "Landlubber",
+            "notObtainable": true,
+            "notReleased": true,
+            "titleId": 600,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 876,
+            "name": "The Treasured",
+            "notObtainable": true,
+            "notReleased": true,
+            "titleId": 601,
             "type": "title"
           }
         ],

@@ -564,6 +564,14 @@
                   "id": 20597,
                   "points": 10,
                   "title": "The War Within"
+                },
+                {
+                  "icon": "achievement_reputation_kirintor",
+                  "id": 40791,
+                  "points": 0,
+                  "title": "Fate of the Kirin Tor",
+                  "notObtainable": true,
+                  "notReleased": true
                 }
               ],
               "name": "Campaign"
@@ -695,6 +703,43 @@
                 }
               ],
               "name": "Azj-Kahet"
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_misc_map08",
+                  "id": 41042,
+                  "points": 10,
+                  "title": "Siren-ity Now!",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "icon_treasuremap",
+                  "id": 41043,
+                  "points": 5,
+                  "title": "Excavation Projects",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "inv_misc_book_09",
+                  "id": 41045,
+                  "points": 10,
+                  "title": "A Song of Secrets",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "spell_shaman_thunderstorm",
+                  "id": 41185,
+                  "points": 5,
+                  "title": "Siren's Squall",
+                  "notObtainable": true,
+                  "notReleased": true
+                }
+              ],
+              "name": "Siren Isle"
             },
             {
               "id": "8b73aed1",
@@ -1469,6 +1514,27 @@
         {
           "name": "Battle for Azeroth",
           "subcats": [
+            {
+              "items": [
+                {
+                  "icon": "vas_guildfactionchange",
+                  "id": 40955,
+                  "points": 20,
+                  "title": "War Stories",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "inv_helm_plate_nzothraidmythic_d_01",
+                  "id": 40959,
+                  "points": 30,
+                  "title": "Black Empire State of Mind",
+                  "notObtainable": true,
+                  "notReleased": true
+                }
+              ],
+              "name": "Meta"
+            },
             {
               "items": [
                 {
@@ -4502,6 +4568,62 @@
                   "id": 40430,
                   "points": 10,
                   "title": "Khaz Algar Flight Master"
+                },
+                {
+                  "icon": "inv_professions_inscription_scribesmagnifyingglass_gold",
+                  "id": 40762,
+                  "points": 10,
+                  "title": "Khaz Algar Lore Hunter",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "inv_cosmicvoid_buff",
+                  "id": 41201,
+                  "points": 40,
+                  "title": "You Xal Not Pass",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "achievement_zone_isleofdorn",
+                  "id": 41186,
+                  "points": 20,
+                  "title": "Slate of the Union",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "achievement_zone_theringingdeeps",
+                  "id": 41187,
+                  "points": 20,
+                  "title": "Rage Aside the Machine",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "achievement_zone_hallowfall",
+                  "id": 41188,
+                  "points": 20,
+                  "title": "Crystal Chronicled",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "achievement_zone_azjkahet",
+                  "id": 41189,
+                  "points": 20,
+                  "title": "Azj the World Turns",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "inv_siren_isle_singing_fragments",
+                  "id": 41133,
+                  "points": 15,
+                  "title": "Isle Remember You",
+                  "notObtainable": true,
+                  "notReleased": true
                 }
               ],
               "name": "Meta"
@@ -4518,7 +4640,7 @@
                   "icon": "achievement_zone_theringingdeeps",
                   "id": 40825,
                   "points": 10,
-                  "title": "Explore The Ringing Deeps"
+                  "title": "Explore the Ringing Deeps"
                 },
                 {
                   "icon": "achievement_zone_hallowfall",
@@ -4560,6 +4682,14 @@
                   "id": 40828,
                   "points": 5,
                   "title": "Treasures of Azj-Kahet"
+                },
+                {
+                  "icon": "inv_misc_treasurechest04b",
+                  "id": 41131,
+                  "points": 5,
+                  "title": "Treasures of the Storm",
+                  "notObtainable": true,
+                  "notReleased": true
                 }
               ],
               "name": "Treasure"
@@ -4589,6 +4719,14 @@
                   "id": 40840,
                   "points": 5,
                   "title": "Adventurer of Azj-Kahet"
+                },
+                {
+                  "icon": "ability_dualwield",
+                  "id": 41046,
+                  "points": 15,
+                  "title": "Clean Up on Isle Siren",
+                  "notObtainable": true,
+                  "notReleased": true
                 }
               ],
               "name": "Encounter"
@@ -4801,6 +4939,19 @@
                 }
               ],
               "name": "Azj-Kahet"
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_siren_isle_stormcharged_citrine_turquoise",
+                  "id": 41050,
+                  "points": 10,
+                  "title": "A Choir of Citrines",
+                  "notObtainable": true,
+                  "notReleased": true
+                }
+              ],
+              "name": "Siren Isle"
             }
           ]
         },
@@ -5789,7 +5940,7 @@
                   "title": "Fruit of the Bloom"
                 },
                 {
-                  "icon": "3939983",
+                  "icon": "inv_ancientmount",
                   "id": 19312,
                   "points": 5,
                   "title": "Super Duper Bloom"
@@ -6333,6 +6484,67 @@
             {
               "items": [
                 {
+                  "icon": "achievement_zone_sholazar_01",
+                  "id": 40956,
+                  "points": 40,
+                  "title": "I'm On Island Time",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "inv_zuldazar",
+                  "id": 41202,
+                  "points": 20,
+                  "title": "Hot Tropic",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "inv_nazmir",
+                  "id": 41203,
+                  "points": 20,
+                  "title": "Bwon Voyage",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "inv_voldun",
+                  "id": 41204,
+                  "points": 20,
+                  "title": "Dune Squad",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "inv_tiragardesound",
+                  "id": 41205,
+                  "points": 20,
+                  "title": "Sound Off",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "inv_stormsongvalley",
+                  "id": 41206,
+                  "points": 20,
+                  "title": "Songs of Storms",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "inv_tourofdutydrustvar",
+                  "id": 41207,
+                  "points": 20,
+                  "title": "When the Drust Settles",
+                  "notObtainable": true,
+                  "notReleased": true
+                }
+              ],
+              "name": "Meta"
+            },
+            {
+              "items": [
+                {
                   "icon": "inv_tiragardesound",
                   "id": 12556,
                   "points": 10,
@@ -6492,7 +6704,7 @@
                   "icon": "inv_misc_scrollrolled02b",
                   "id": 13057,
                   "points": 5,
-                  "title": "Shanty Raid"
+                  "title": "Sailed in Sea Minor"
                 },
                 {
                   "icon": "ability_monk_tigerslust",
@@ -14683,6 +14895,14 @@
                   "title": "Heart of Corruption"
                 },
                 {
+                  "icon": "achievement_nazmir_zone",
+                  "id": 40960,
+                  "points": 10,
+                  "title": "Uldir",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
                   "icon": "inv_gizmo_goblinboombox_01",
                   "id": 12937,
                   "points": 10,
@@ -14825,6 +15045,14 @@
                   "points": 10,
                   "side": "H",
                   "title": "Victory or Death"
+                },
+                {
+                  "icon": "inv_zuldazar",
+                  "id": 40961,
+                  "points": 10,
+                  "title": "Battle of Dazar'alor",
+                  "notObtainable": true,
+                  "notReleased": true
                 },
                 {
                   "icon": "inv_compy_purple",
@@ -15003,6 +15231,14 @@
                   "title": "The Circle of Stars"
                 },
                 {
+                  "icon": "achievement_boss_nagazone",
+                  "id": 40962,
+                  "points": 10,
+                  "title": "The Eternal Palace",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
                   "icon": "achievement_boss_warlord_kalithresh",
                   "id": 13684,
                   "points": 10,
@@ -15139,6 +15375,14 @@
                   "id": 14196,
                   "points": 10,
                   "title": "The Waking Dream"
+                },
+                {
+                  "icon": "achievement_nzothraid_nyalothaguildrun",
+                  "id": 40963,
+                  "points": 10,
+                  "title": "Ny'alotha, the Waking City",
+                  "notObtainable": true,
+                  "notReleased": true
                 },
                 {
                   "icon": "ability_rogue_smoke",
@@ -25334,7 +25578,7 @@
           "name": "War Within",
           "subcats": [
             {
-              "id": "782bb9aa",
+              "id": "79d5a865",
               "items": [
                 {
                   "icon": "achievement_reputation_02",
@@ -26825,6 +27069,14 @@
                   "id": 17321,
                   "points": 10,
                   "title": "Elders of the Dragon Isles"
+                },
+                {
+                  "icon": "spell_holy_symbolofhope",
+                  "id": 41130,
+                  "points": 10,
+                  "title": "Elders of Khaz Algar",
+                  "notObtainable": true,
+                  "notReleased": true
                 }
               ],
               "name": "Elders"
@@ -28051,14 +28303,6 @@
                   "title": "Rock n' Roll"
                 },
                 {
-                  "icon": "inv_holiday_christmas_present_01",
-                  "id": 20510,
-                  "notObtainable": true,
-                  "notReleased": true,
-                  "points": 10,
-                  "title": "What Could it be?"
-                },
-                {
                   "icon": "ability_kick",
                   "id": 20511,
                   "notObtainable": true,
@@ -28537,11 +28781,10 @@
                   "title": "A Tour of Towers"
                 },
                 {
-                  "icon": "ability_evoker_bronze_01",
-                  "id": 19079,
-                  "notObtainable": true,
+                  "icon": "inv_belt_armor_waistoftime_d_01",
+                  "id": 41056,
                   "points": 20,
-                  "title": "Master of the Turbulent Timeways"
+                  "title": "Master of the Turbulent Timeways II"
                 }
               ],
               "name": ""
@@ -31181,6 +31424,14 @@
               "id": "47b528b6",
               "items": [
                 {
+                  "icon": "inv_misc_tabard_explorersguild",
+                  "id": 41209,
+                  "points": 20,
+                  "title": "Dressed to Kill: Battle for Azeroth",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
                   "icon": "achievement_nazmir_zone",
                   "id": 12991,
                   "points": 10,
@@ -31661,6 +31912,20 @@
                 }
               ],
               "name": "Dragonflight"
+            },
+            {
+              "id": "9a7c4830",
+              "items": [
+                {
+                  "icon": "inv_radientazeriteheart",
+                  "id": 40953,
+                  "points": 100,
+                  "title": "A Farewell to Arms",
+                  "notObtainable": true,
+                  "notReleased": true
+                }
+              ],
+              "name": "Battle for Azeroth"
             }
           ]
         },
@@ -34150,6 +34415,17 @@
           "name": "Heart of Azeroth",
           "subcats": [
             {
+              "items": [
+                {
+                  "icon": "inv_radientazeritematrix",
+                  "id": 40958,
+                  "points": 30,
+                  "title": "Full Heart, Can't Lose"
+                }
+              ],
+              "name": "Meta"
+            },
+            {
               "id": "2fce2cad",
               "items": [
                 {
@@ -34227,6 +34503,17 @@
           "id": "91d22fae",
           "name": "War Effort",
           "subcats": [
+            {
+              "items": [
+                {
+                  "icon": "vas_factionchange",
+                  "id": 40957,
+                  "points": 30,
+                  "title": "Maximum Effort"
+                }
+              ],
+              "name": "Meta"
+            },
             {
               "id": "d8835789",
               "items": [
@@ -38796,6 +39083,19 @@
                 }
               ],
               "name": "Other"
+            },
+            {
+              "id": "acd9a2c1",
+              "items": [
+                {
+                  "icon": "ability_evoker_bronze_01",
+                  "id": 19079,
+                  "notObtainable": true,
+                  "points": 0,
+                  "title": "Master of the Turbulent Timeways"
+                }
+              ],
+              "name": "[R]"
             }
           ]
         },
@@ -43266,6 +43566,12 @@
                   "notObtainable": true,
                   "points": 0,
                   "title": "WoW's 19th Anniversary"
+                },
+                {
+                  "icon": "inv_11xp_wow20year_balloonchest01",
+                  "id": 41220,
+                  "points": 0,
+                  "title": "WoW's 20th Anniversary"
                 }
               ],
               "name": "Anniversary"
@@ -43592,6 +43898,14 @@
                   "id": 19130,
                   "points": 0,
                   "title": "Junior Racing Champion"
+                },
+                {
+                  "icon": "inv_holiday_christmas_present_01",
+                  "id": 20510,
+                  "notObtainable": true,
+                  "notReleased": true,
+                  "points": 0,
+                  "title": "What Could it be?"
                 }
               ],
               "name": "Holidays"
@@ -43696,6 +44010,55 @@
                 },
                 {
                   "icon": "inv_cape_special_treasure_c_01",
+                  "id": 41152,
+                  "notObtainable": true,
+                  "points": 0,
+                  "title": "Lub and Plunder"
+                },
+                {
+                  "icon": "inv_cape_special_treasure_c_01",
+                  "id": 41153,
+                  "notObtainable": true,
+                  "points": 0,
+                  "title": "Swabbie Swag"
+                },
+                {
+                  "icon": "inv_cape_special_treasure_c_01",
+                  "id": 41154,
+                  "notObtainable": true,
+                  "points": 0,
+                  "title": "Decked Out"
+                },
+                {
+                  "icon": "inv_cape_special_treasure_c_01",
+                  "id": 41156,
+                  "notObtainable": true,
+                  "points": 0,
+                  "title": "Buckled Up"
+                },
+                {
+                  "icon": "inv_cape_special_treasure_c_01",
+                  "id": 41157,
+                  "notObtainable": true,
+                  "points": 0,
+                  "title": "Plunder Siege"
+                },
+                {
+                  "icon": "inv_cape_special_treasure_c_01",
+                  "id": 41160,
+                  "notObtainable": true,
+                  "points": 0,
+                  "title": "It's a Plunderful Life"
+                },
+                {
+                  "icon": "inv_cape_special_treasure_c_01",
+                  "id": 41163,
+                  "notObtainable": true,
+                  "points": 0,
+                  "title": "Lord of the Bling"
+                },
+                {
+                  "icon": "inv_cape_special_treasure_c_01",
                   "id": 20509,
                   "notObtainable": true,
                   "points": 0,
@@ -43740,7 +44103,7 @@
                   "title": "Meat Marauder"
                 },
                 {
-                  "icon": "4178535",
+                  "icon": "inv_ratmounthearthstone",
                   "id": 15323,
                   "points": 0,
                   "title": "Sarge's Tale"
@@ -43959,13 +44322,13 @@
                   "title": "Collector's Edition: Tottle"
                 },
                 {
-                  "icon": "3040844",
+                  "icon": "inv_aetherserpentmount",
                   "id": 14283,
                   "points": 0,
                   "title": "Heroic Edition: Ensorcelled Everwyrm"
                 },
                 {
-                  "icon": "4096390",
+                  "icon": "inv_drakemountemerald",
                   "id": 17314,
                   "points": 0,
                   "title": "Heroic Edition: Tangled Dreamweaver"
@@ -44061,13 +44424,13 @@
                   "title": "Rides of War"
                 },
                 {
-                  "icon": "2060704",
+                  "icon": "inv_8xp_encrypted01",
                   "id": 13138,
                   "points": 0,
                   "title": "Flying Colors"
                 },
                 {
-                  "icon": "2925012",
+                  "icon": "inv_encrypted19",
                   "id": 14027,
                   "points": 0,
                   "title": "Battle for Mrrglroth"
@@ -47857,19 +48220,19 @@
                 {
                   "icon": "flightstone-dragonflight",
                   "id": 17830,
-                  "points": 10,
+                  "points": 0,
                   "title": "Stones Can't Fly!"
                 },
                 {
                   "icon": "flightstone-dragonflight",
                   "id": 17977,
-                  "points": 10,
+                  "points": 0,
                   "title": "Stones Can Try To Fly!"
                 },
                 {
                   "icon": "flightstone-dragonflight",
                   "id": 17978,
-                  "points": 10,
+                  "points": 0,
                   "title": "Stones Can Fly!"
                 }
               ],

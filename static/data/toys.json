@@ -356,6 +356,59 @@
           }
         ],
         "name": "Arena World Championship"
+      },
+      {
+        "items": [
+          {
+            "ID": 1537,
+            "icon": "inv_siren_isle_ring",
+            "itemId": 235041,
+            "name": "Cyrce's Circlet",
+            "notObtainable": true,
+            "notReleased": true
+          },
+          {
+            "ID": 1538,
+            "icon": "inv_10_all_memorycrystal_color2",
+            "itemId": 235017,
+            "name": "Glittering Vault Shard",
+            "notObtainable": true,
+            "notReleased": true
+          },
+          {
+            "ID": 1539,
+            "icon": "inv_bfa_paragoncache_orderofembers",
+            "itemId": 233486,
+            "name": "Hallowfall Supply Cache",
+            "notObtainable": true,
+            "notReleased": true
+          },
+          {
+            "ID": 1541,
+            "icon": "inv_legion_cache_hightmountaintribes",
+            "itemId": 235015,
+            "name": "Awakened Supply Crate",
+            "notObtainable": true,
+            "notReleased": true
+          },
+          {
+            "ID": 1543,
+            "icon": "inv_leatherworking_70_loveseat",
+            "itemId": 234473,
+            "name": "Soweezi's Comfy Lawn Chair",
+            "notObtainable": true,
+            "notReleased": true
+          },
+          {
+            "ID": 1545,
+            "icon": "inv_10_blacksmithing_craftedoptional_engineering_uprez",
+            "itemId": 235016,
+            "name": "Redeployment Module",
+            "notObtainable": true,
+            "notReleased": true
+          }
+        ],
+        "name": "Unknown"
       }
     ]
   },
@@ -6306,9 +6359,17 @@
           },
           {
             "ID": 1473,
-            "icon": "inv_misc_gift_01",
+            "icon": "inv_holiday_christmas_present_01",
             "itemId": 218310,
             "name": "Box of Puntables",
+            "notObtainable": true,
+            "notReleased": true
+          },
+          {
+            "ID": 1533,
+            "icon": "inv_11xp_holiday_xmascracker01",
+            "itemId": 218308,
+            "name": "Winter Veil Cracker",
             "notObtainable": true,
             "notReleased": true
           }
@@ -6881,14 +6942,14 @@
           },
           {
             "ID": 823,
-            "icon": "2147912",
+            "icon": "inv_misc_8xp_encrypted03",
             "itemId": 163987,
             "name": "Stormwind Champion's War Banner",
             "notObtainable": true
           },
           {
             "ID": 824,
-            "icon": "2147913",
+            "icon": "inv_misc_8xp_encrypted04",
             "itemId": 163986,
             "name": "Orgrimmar Hero's War Banner",
             "notObtainable": true
@@ -6920,7 +6981,7 @@
           },
           {
             "ID": 913,
-            "icon": "2530046",
+            "icon": "inv_8xp_encrypted11",
             "itemId": 166778,
             "name": "Horde's Might Firework",
             "notObtainable": true,
@@ -6928,7 +6989,7 @@
           },
           {
             "ID": 914,
-            "icon": "2530045",
+            "icon": "inv_8xp_encrypted10",
             "itemId": 166777,
             "name": "Lion's Pride Firework",
             "notObtainable": true,
@@ -6948,13 +7009,13 @@
         "items": [
           {
             "ID": 981,
-            "icon": "3084684",
+            "icon": "inv_hearthstone_aether",
             "itemId": 172179,
             "name": "Eternal Traveler's Hearthstone"
           },
           {
             "ID": 1192,
-            "icon": "4571434",
+            "icon": "inv_hearthstonebronze",
             "itemId": 193588,
             "name": "Timewalker's Hearthstone"
           },
