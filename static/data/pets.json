@@ -241,8 +241,25 @@
     "name": "Limited Time",
     "subcats": [
       {
-        "items": [],
-        "name": "Trading Post"
+        "items": [
+          {
+            "ID": 4311,
+            "creatureId": 213111,
+            "icon": "inv_helm_cloth_holiday_christmas_a_03",
+            "itemId": 210870,
+            "name": "Mitzy",
+            "spellid": 427289
+          },
+          {
+            "ID": 4669,
+            "creatureId": 231713,
+            "icon": "inv_needledollpet_blue",
+            "itemId": 229993,
+            "name": "Bluedoo",
+            "spellid": 466179
+          }
+        ],
+        "name": "Trading Post: December"
       },
       {
         "id": "0e1fb9ca",
@@ -10880,14 +10897,6 @@
             "spellid": 367768
           },
           {
-            "ID": 4311,
-            "creatureId": 213111,
-            "icon": "inv_helm_cloth_holiday_christmas_a_03",
-            "itemId": 210870,
-            "name": "Mitzy",
-            "spellid": 427289
-          },
-          {
             "ID": 3255,
             "creatureId": 185756,
             "icon": "inv_pet_babymoose_white",
@@ -12307,16 +12316,6 @@
       },
       {
         "items": [
-          {
-            "ID": 4669,
-            "creatureId": 231713,
-            "icon": "inv_needledollpet_blue",
-            "itemId": 229993,
-            "name": "Bluedoo",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 466179
-          },
           {
             "ID": 4690,
             "creatureId": 233481,
