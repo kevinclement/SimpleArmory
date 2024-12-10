@@ -298,12 +298,7 @@
             "itemId": 228765,
             "name": "Gummi",
             "spellid": 463148
-          }
-        ],
-        "name": "Trolli Promotion"
-      },
-      {
-        "items": [
+          },
           {
             "ID": 4595,
             "creatureId": 225354,
@@ -311,12 +306,7 @@
             "itemId": 224576,
             "name": "Lil' Flameo",
             "spellid": 453266
-          }
-        ],
-        "name": "SteelSeries Promotion"
-      },
-      {
-        "items": [
+          },
           {
             "ID": 4617,
             "creatureId": 229890,
@@ -332,9 +322,17 @@
             "itemId": 228793,
             "name": "Chillbot 9000",
             "spellid": 463251
+          },
+          {
+            "ID": 4690,
+            "creatureId": 233481,
+            "icon": "inv_babynaga2_purple",
+            "itemId": 232519,
+            "name": "Razeshi B.",
+            "spellid": 470914
           }
         ],
-        "name": "Mountain Dew Promotion"
+        "name": "Promotions"
       },
       {
         "items": [
@@ -12313,21 +12311,6 @@
           }
         ],
         "name": "BMAH"
-      },
-      {
-        "items": [
-          {
-            "ID": 4690,
-            "creatureId": 233481,
-            "icon": "inv_babynaga2_purple",
-            "itemId": 232519,
-            "name": "Razeshi B.",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 470914
-          }
-        ],
-        "name": "Unknown"
       }
     ]
   }
