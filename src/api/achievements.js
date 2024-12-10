@@ -3,7 +3,7 @@ import { getProfile } from '$api/profile'
 import { getJsonDb } from '$api/_db'
 import settings from '$util/settings'
 import Cache from '$api/_cache'
-import { getShowHiddenSetting, getShowHiddenFeatSetting } from '../util/utils'
+import { getShowHiddenSetting, getShowHiddenFeatSetting, getShowUnobtainedSetting } from '../util/utils'
 
 let _cache;
 export async function getAchievements(region, realm, character) {
@@ -40,6 +40,7 @@ function parseAchievementObject(db, earned, character, faction) {
     console.log(`Parsing achievements.json...`)
     var showHiddenItems = getShowHiddenSetting();
     var showHiddenFeats = getShowHiddenFeatSetting();
+    var showOnlyUnobtained = getShowUnobtainedSetting();
 
     let obj            = {}
      ,  completed      = {}
@@ -120,8 +121,10 @@ function parseAchievementObject(db, earned, character, faction) {
 
                     // Always add it if we've completed it, it should show up regardless if its available
                     if (myAchievement.completed) {
-                        added = true;
-                        mySubCat.achievements.push(myAchievement);    
+                        if(showOnlyUnobtained == "false") {
+                            added = true;
+                            mySubCat.achievements.push(myAchievement);  
+                        }
 
                         // if this is feats of strength then I want to keep a seperate count for that 
                         // since its not a percentage thing
@@ -163,7 +166,13 @@ function parseAchievementObject(db, earned, character, faction) {
                         // if we haven't already added it, then this is one that should show up in the page of achievements
                         // so add it
                         if (!added) {
-                            mySubCat.achievements.push(myAchievement);
+                            if(showOnlyUnobtained == "true") {
+                                if(!myAchievement.completed) {
+                                    mySubCat.achievements.push(myAchievement);                                
+                                }
+                            } else {
+                                mySubCat.achievements.push(myAchievement);
+                            }
                         }
                     }
                 })

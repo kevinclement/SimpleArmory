@@ -1,4 +1,4 @@
-import { getShowHiddenSetting } from "../util/utils"
+import { getShowHiddenSetting, getShowUnobtainedSetting } from "../util/utils"
 
 function getHigherQualityBattlePet(currentPet, newPet) {
     function getPetsQuality(type) {
@@ -26,6 +26,7 @@ export async function parseCollectablesObject(categories, profile, collected_dat
     var totalPossible = 0;
 
     var showHiddenItems = getShowHiddenSetting();
+    var showUnobtainedOnly = getShowUnobtainedSetting();
 
     // Build up lookup for items that character has
     collected_data[collectedProperty].forEach((item) => {
@@ -147,6 +148,10 @@ export async function parseCollectablesObject(categories, profile, collected_dat
                     showthis = false;
                 }
 
+                if(hasthis && showUnobtainedOnly == "true") {
+                    showthis = false;
+                }
+
                 if (item.allowableRaces && item.allowableRaces.length > 0)
                 {
                     var foundRace = false;
@@ -180,9 +185,9 @@ export async function parseCollectablesObject(categories, profile, collected_dat
                     if (hasthis) {
                         totalCollected++;
                     }
-
                     totalPossible++;
                 }
+                
                 });
 
             if (subCat.items.length > 0) {
