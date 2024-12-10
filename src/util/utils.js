@@ -88,6 +88,10 @@ export function getShowHiddenFeatSetting() {
     return(localStorage.getItem("showHiddenFeat"));
 }
 
+export function getShowUnobtainedSetting() {
+    return(localStorage.getItem("showUnobtainedOnly"));
+}
+
 export function getShowHiddenUpdated() {
     return(localStorage.getItem("showHiddenUpdated"));
 }

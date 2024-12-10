@@ -68,6 +68,14 @@
 		localStorage.setItem('showHiddenFeat', $preferences.showHiddenFeat);
 	}
 
+  const toggleShowUnobtained = (e) => {
+    e.preventDefault();
+		$preferences.showUnobtainedOnly = $preferences.showUnobtainedOnly == "false" ? "true" : "false";
+
+    localStorage.setItem('showHiddenUpdated',Date.now());
+		localStorage.setItem('showUnobtainedOnly', $preferences.showUnobtainedOnly);
+  }
+
   function setLocale(e, wowhead_url) {
     e.preventDefault();
 
@@ -117,6 +125,11 @@
     <div>
       <a href="#/" on:click={toggleHiddenFeat}
         >{$preferences.showHiddenFeat === "hidden" ? "Show Obtainable Feat of Strengths" : "Hide Obtainable Feat of Strengths"}
+    </div>
+
+    <div>
+      <a href="#/" on:click={toggleShowUnobtained}
+        >{$preferences.showUnobtainedOnly === "false" ? "Show Only Unobtained" : "Show Obtained and Unobtained"}
     </div>
 
     <div>
