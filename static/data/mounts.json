@@ -333,8 +333,6 @@
             "icon": "inv_shipmount",
             "itemId": 232991,
             "name": "The Breaker's Song",
-            "notObtainable": true,
-            "notReleased": true,
             "spellid": 472752
           },
           {
@@ -342,8 +340,6 @@
             "icon": "inv_shadowelementalmount_black",
             "itemId": 223313,
             "name": "Shadow of Doubt",
-            "notObtainable": true,
-            "notReleased": true,
             "spellid": 448934
           },
           {
@@ -494,6 +490,7 @@
           {
             "ID": 1943,
             "icon": "inv_motorcyclefelreavermount_fel",
+            "itemId": "229348",
             "name": "Incognitro, the Indecipherable Felcycle",
             "spellid": 428013
           }
@@ -584,19 +581,12 @@
             "itemId": 223153,
             "name": "Soaring Meaderbee",
             "spellid": 447151
-          }
-        ],
-        "name": "Zone"
-      },
-      {
-        "items": [
+          },
           {
             "ID": 2322,
             "icon": "ability_mount_stormcrowmount",
             "itemId": 232639,
             "name": "Thrayir, Eyes of the Siren",
-            "notObtainable": true,
-            "notReleased": true,
             "spellid": 471562
           },
           {
@@ -604,21 +594,22 @@
             "icon": "inv_goblinsurfboardmount_red",
             "itemId": 233058,
             "name": "Soweezi's Vintage Waveshredder",
-            "notObtainable": true,
-            "notReleased": true,
             "spellid": 473137
-          },
+          }
+        ],
+        "name": "Zone"
+      },
+      {
+        "items": [
           {
             "ID": 2469,
             "icon": "inv_seaeel_teal",
             "itemId": 233489,
             "name": "Prismatic Snapdragon",
-            "notObtainable": true,
-            "notReleased": true,
             "spellid": 474086
           }
         ],
-        "name": "Siren Isle"
+        "name": "Daily Activities"
       },
       {
         "items": [
@@ -2750,8 +2741,6 @@
             "icon": "inv_compy_purple",
             "itemId": 235515,
             "name": "Jani's Trashpile",
-            "notObtainable": true,
-            "notReleased": true,
             "spellid": 473472
           },
           {
@@ -2759,8 +2748,6 @@
             "icon": "inv_bee_black",
             "itemId": 170070,
             "name": "Honeyback Hivemother",
-            "notObtainable": true,
-            "notReleased": true,
             "spellid": 303767
           },
           {
@@ -8612,7 +8599,8 @@
             "icon": "inv_lunarrocketmount",
             "itemId": 232901,
             "name": "Lunar Launcher",
-            "notObtainable":true,
+            "notObtainable": true,
+            "notReleased": true,
             "spellid": 472253
           }
         ],
@@ -8725,8 +8713,6 @@
             "icon": "ability_mount_drake_twilight",
             "itemId": 234730,
             "name": "Broodling of Sinestra",
-            "notObtainable": true,
-            "notReleased": true,
             "spellid": 1214946
           },
           {
@@ -8741,8 +8727,6 @@
             "icon": "ability_mount_quilenflyingmount",
             "itemId": 234740,
             "name": "Copper-Maned Quilen",
-            "notObtainable": true,
-            "notReleased": true,
             "spellid": 1214974
           },
           {
@@ -8764,8 +8748,6 @@
             "icon": "ability_mount_ironchimera",
             "itemId": 234716,
             "name": "Nightfall Skyreaver",
-            "notObtainable": true,
-            "notReleased": true,
             "spellid": 1214920
           },
           {
@@ -8780,14 +8762,12 @@
             "icon": "inv_soulhoundmount_red",
             "itemId": 234721,
             "name": "Ur'zul Fleshripper",
-            "notObtainable": true,
-            "notReleased": true,
             "spellid": 1214940
           },
           {
             "ID": 1737,
             "icon": "inv_sporebatrock_stoneorange",
-            "itemId": "205208",
+            "itemId": 205208,
             "name": "Sandy Shalewing",
             "spellid": 408654
           },
@@ -8796,8 +8776,6 @@
             "icon": "inv_sandbeemount",
             "itemId": 232624,
             "name": "Timely Buzzbee",
-            "notObtainable": true,
-            "notReleased": true,
             "spellid": 471538
           },
           {
@@ -9234,7 +9212,7 @@
           {
             "ID": 1259,
             "icon": "inv_hippocampusmount_white",
-            "itemId": "233243",
+            "itemId": 233243,
             "name": "Silver Tidestallion",
             "notObtainable": true,
             "spellid": 300154
@@ -9242,7 +9220,7 @@
           {
             "ID": 994,
             "icon": "inv_parrotmount_blue",
-            "itemId": "233242",
+            "itemId": 233242,
             "name": "Royal Seafeather",
             "notObtainable": true,
             "spellid": 254812
@@ -9250,7 +9228,7 @@
           {
             "ID": 2090,
             "icon": "inv_parrotpiratemount_blue",
-            "itemId": "233240",
+            "itemId": 233240,
             "name": "Polly Roger",
             "notObtainable": true,
             "spellid": 437162
