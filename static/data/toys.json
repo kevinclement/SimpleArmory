@@ -261,6 +261,23 @@
       {
         "items": [
           {
+            "ID": 1538,
+            "icon": "inv_10_all_memorycrystal_color2",
+            "itemId": 235017,
+            "name": "Glittering Vault Shard"
+          },
+          {
+            "ID": 1543,
+            "icon": "inv_leatherworking_70_loveseat",
+            "itemId": 234473,
+            "name": "Soweezi's Comfy Lawn Chair"
+          }
+        ],
+        "name": "Rare"
+      },
+      {
+        "items": [
+          {
             "ID": 1509,
             "icon": "creatureportrait_altarofearth_01",
             "itemId": 228706,
@@ -329,6 +346,18 @@
             "icon": "inv_spiderpet_yellow",
             "itemId": 228914,
             "name": "Arachnophile Spectacles"
+          },
+          {
+            "ID": 1539,
+            "icon": "inv_bfa_paragoncache_orderofembers",
+            "itemId": 233486,
+            "name": "Hallowfall Supply Cache"
+          },
+          {
+            "ID": 1541,
+            "icon": "inv_legion_cache_hightmountaintribes",
+            "itemId": 235015,
+            "name": "Awakened Supply Crate"
           }
         ],
         "name": "Vendor"
@@ -366,33 +395,11 @@
             "name": "Cyrce's Circlet"
           },
           {
-            "ID": 1538,
-            "icon": "inv_10_all_memorycrystal_color2",
-            "itemId": 235017,
-            "name": "Glittering Vault Shard"
-          },
-          {
-            "ID": 1539,
-            "icon": "inv_bfa_paragoncache_orderofembers",
-            "itemId": 233486,
-            "name": "Hallowfall Supply Cache"
-          },
-          {
-            "ID": 1541,
-            "icon": "inv_legion_cache_hightmountaintribes",
-            "itemId": 235015,
-            "name": "Awakened Supply Crate"
-          },
-          {
-            "ID": 1543,
-            "icon": "inv_leatherworking_70_loveseat",
-            "itemId": 234473,
-            "name": "Soweezi's Comfy Lawn Chair"
-          },
-          {
             "ID": 1545,
             "icon": "inv_10_blacksmithing_craftedoptional_engineering_uprez",
             "itemId": 235016,
+            "notObtainable": true,
+            "notReleased": true,
             "name": "Redeployment Module"
           }
         ],
@@ -1152,6 +1159,29 @@
           }
         ],
         "name": "Raid"
+      },
+      {
+        "items": [
+          {
+            "ID": 1341,
+            "icon": "inv_helm_armor_gnomish_c_01_blue",
+            "itemId": 206696,
+            "name": "Tricked-Out Thinking Cap"
+          },
+          {
+            "ID": 1342,
+            "icon": "inv_misc_1h_torchbearersflame_b_01_blue",
+            "itemId": 208092,
+            "name": "Torch of Pyrreth"
+          },
+          {
+            "ID": 1343,
+            "icon": "trade_archaeology_apexisstatue",
+            "itemId": 207730,
+            "name": "Idol of Ohn'ahra"
+          }
+        ],
+        "name": "Riddle"
       }
     ]
   },
@@ -6601,30 +6631,6 @@
           }
         ],
         "name": "Dragonriding Cup"
-      },
-      {
-        "id": "69fd463c",
-        "items": [
-          {
-            "ID": 1341,
-            "icon": "inv_helm_armor_gnomish_c_01_blue",
-            "itemId": 206696,
-            "name": "Tricked-Out Thinking Cap"
-          },
-          {
-            "ID": 1342,
-            "icon": "inv_misc_1h_torchbearersflame_b_01_blue",
-            "itemId": 208092,
-            "name": "Torch of Pyrreth"
-          },
-          {
-            "ID": 1343,
-            "icon": "trade_archaeology_apexisstatue",
-            "itemId": 207730,
-            "name": "Idol of Ohn'ahra"
-          }
-        ],
-        "name": "Secrets of Azeroth"
       },
       {
         "id": "abab0c56",

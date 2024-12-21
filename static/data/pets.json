@@ -267,27 +267,13 @@
           {
             "ID": 4682,
             "creatureId": 232502,
-            "icon": "inv_foxpetdetective",
+            "icon": "6075526",
             "itemId": 231294,
             "name": "Reven",
             "spellid": 468186
           }
         ],
         "name": "Charity Bundle"
-      },
-      {
-        "id": "a969d4a1",
-        "items": [
-          {
-            "ID": 4629,
-            "creatureId": 198987,
-            "icon": "inv_babymurlo3frost",
-            "itemId": 229366,
-            "name": "Brrrgl",
-            "spellid": 464798
-          }
-        ],
-        "name": "Blizzard Gear Store"
       },
       {
         "items": [
@@ -425,6 +411,14 @@
             "itemId": 225934,
             "name": "Lil' Bonechewer",
             "spellid": 446493
+          },
+          {
+            "ID": 4490,
+            "creatureId": 222574,
+            "icon": "inv_spiderpet_brown",
+            "itemId": 222970,
+            "name": "Fuzzy",
+            "spellid": 446435
           }
         ],
         "name": "Achievement"
@@ -580,14 +574,6 @@
             "itemId": 221819,
             "name": "Shadowbog Hopper",
             "spellid": 446031
-          },
-          {
-            "ID": 4726,
-            "creatureId": 235124,
-            "icon": "ability_mount_bluewindrider",
-            "itemId": 234379,
-            "name": "Crackleroar",
-            "spellid": 1213821
           }
         ],
         "name": "Treasure"
@@ -805,6 +791,19 @@
       {
         "items": [
           {
+            "ID": 4726,
+            "creatureId": 235124,
+            "icon": "ability_mount_bluewindrider",
+            "itemId": 234379,
+            "name": "Crackleroar",
+            "spellid": 1213821
+          }
+        ],
+        "name": "Siren Isle"
+      },
+      {
+        "items": [
+          {
             "ID": 4450,
             "creatureId": 220420,
             "icon": "inv_misc_head_gnoll_01",
@@ -914,16 +913,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 446119
-          },
-          {
-            "ID": 4490,
-            "creatureId": 222574,
-            "icon": "inv_spiderpet_brown",
-            "itemId": 222970,
-            "name": "Fuzzy",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 446435
           },
           {
             "ID": 4493,
@@ -2325,26 +2314,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 408254
-          },
-          {
-            "ID": 3547,
-            "creatureId": 204354,
-            "icon": "inv_viperrock2_green",
-            "itemId": 205153,
-            "name": "Jade Cragviper",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 408265
-          },
-          {
-            "ID": 3550,
-            "creatureId": 204361,
-            "icon": "inv_mothunderlight_red",
-            "itemId": 205157,
-            "name": "Undermoth",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 408314
           },
           {
             "ID": 3554,
@@ -8912,8 +8881,6 @@
             "icon": "6027035",
             "itemId": 232531,
             "name": "Grunch",
-            "notObtainable": true,
-            "notReleased": true,
             "spellid": 471121
           }
         ],
@@ -11209,24 +11176,6 @@
       {
         "items": [
           {
-            "ID": 245,
-            "creatureId": 36908,
-            "icon": "inv_misc_pet_02",
-            "itemId": 49662,
-            "name": "Gryphon Hatchling",
-            "notObtainable": true,
-            "spellid": 69535
-          },
-          {
-            "ID": 246,
-            "creatureId": 36909,
-            "icon": "inv_misc_pet_04",
-            "itemId": 49663,
-            "name": "Wind Rider Cub",
-            "notObtainable": true,
-            "spellid": 69536
-          },
-          {
             "ID": 256,
             "creatureId": 40703,
             "icon": "achievement_boss_xt002deconstructor_01",
@@ -12147,12 +12096,36 @@
       {
         "items": [
           {
+            "ID": 245,
+            "creatureId": 36908,
+            "icon": "inv_misc_pet_02",
+            "itemId": 49662,
+            "name": "Gryphon Hatchling",
+            "spellid": 69535
+          },
+          {
+            "ID": 246,
+            "creatureId": 36909,
+            "icon": "inv_misc_pet_04",
+            "itemId": 49663,
+            "name": "Wind Rider Cub",
+            "spellid": 69536
+          },
+          {
             "ID": 4630,
             "creatureId": 230834,
             "icon": "5834819",
             "itemId": 229368,
             "name": "Gill'el",
             "spellid": 464808
+          },
+          {
+            "ID": 4629,
+            "creatureId": 198987,
+            "icon": "inv_babymurlo3frost",
+            "itemId": 229366,
+            "name": "Brrrgl",
+            "spellid": 464798
           }
         ],
         "name": "Blizzard Gear Store"

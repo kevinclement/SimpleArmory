@@ -172,25 +172,6 @@
       {
         "items": [
           {
-            "ID": 2199,
-            "icon": "inv_nightsaberhordemount_black",
-            "itemId": 223459,
-            "name": "Blackrock Warsaber",
-            "spellid": 449132
-          },
-          {
-            "ID": 2203,
-            "icon": "inv_alliancewolfmount2_purple",
-            "itemId": 223471,
-            "name": "Kaldorei War Wolf",
-            "spellid": 449142
-          }
-        ],
-        "name": "Twitch Drops"
-      },
-      {
-        "items": [
-          {
             "ID": 594,
             "icon": "ability_mount_ravager2mount",
             "itemId": 112327,
@@ -210,6 +191,13 @@
             "itemId": 211087,
             "name": "Hateforged Blazecycle",
             "spellid": 428067
+          },
+          {
+            "ID": 571,
+            "icon": "ability_mount_ironchimera",
+            "itemId": 107951,
+            "name": "Iron Skyreaver",
+            "spellid": 153489
           },
           {
             "ID": 1579,
@@ -490,7 +478,7 @@
           {
             "ID": 1943,
             "icon": "inv_motorcyclefelreavermount_fel",
-            "itemId": "229348",
+            "itemId": 229348,
             "name": "Incognitro, the Indecipherable Felcycle",
             "spellid": 428013
           }
@@ -9577,14 +9565,6 @@
             "spellid": 155741
           },
           {
-            "ID": 571,
-            "icon": "ability_mount_ironchimera",
-            "itemId": 107951,
-            "name": "Iron Skyreaver",
-            "notObtainable": true,
-            "spellid": 153489
-          },
-          {
             "ID": 593,
             "icon": "ability_mount_clockworkhorse",
             "itemId": 112326,
@@ -10174,6 +10154,27 @@
           }
         ],
         "name": "Annual Subscription"
+      },
+      {
+        "items": [
+          {
+            "ID": 2199,
+            "icon": "inv_nightsaberhordemount_black",
+            "itemId": 223459,
+            "name": "Blackrock Warsaber",
+            "notObtainable": true,
+            "spellid": 449132
+          },
+          {
+            "ID": 2203,
+            "icon": "inv_alliancewolfmount2_purple",
+            "itemId": 223471,
+            "name": "Kaldorei War Wolf",
+            "notObtainable": true,
+            "spellid": 449142
+          }
+        ],
+        "name": "Twitch Drops"
       }
     ]
   },
