@@ -121,7 +121,7 @@ function parseAchievementObject(db, earned, character, faction) {
 
                     // Always add it if we've completed it, it should show up regardless if its available
                     if (myAchievement.completed) {
-                        if(showOnlyUnobtained == "false") {
+                        if(showOnlyUnobtained != "true") {
                             added = true;
                             mySubCat.achievements.push(myAchievement);  
                         }
