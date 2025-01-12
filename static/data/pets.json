@@ -270,20 +270,6 @@
         "name": "Trading Post: January"
       },
       {
-        "id": "0e1fb9ca",
-        "items": [
-          {
-            "ID": 4682,
-            "creatureId": 232502,
-            "icon": "6075526",
-            "itemId": 231294,
-            "name": "Reven",
-            "spellid": 468186
-          }
-        ],
-        "name": "Charity Bundle"
-      },
-      {
         "items": [
           {
             "ID": 4616,
@@ -331,63 +317,46 @@
       {
         "items": [
           {
-            "ID": 202,
-            "creatureId": 32841,
-            "icon": "inv_pet_babyblizzardbear",
-            "itemId": 44819,
-            "name": "Baby Blizzard Bear",
-            "spellid": 61855
+            "ID": 4435,
+            "creatureId": 218977,
+            "icon": "inv_misc_fish_58",
+            "itemId": 233252,
+            "name": "Happy",
+            "spellid": 438543
           },
           {
-            "ID": 243,
-            "creatureId": 36607,
-            "icon": "inv_misc_head_dragon_black",
-            "itemId": 49362,
-            "name": "Onyxian Whelpling",
-            "spellid": 69002
+            "ID": 4426,
+            "creatureId": 218646,
+            "icon": "inv_hermitcrab_truesilver",
+            "itemId": 233251,
+            "name": "Bubbles",
+            "spellid": 437600
           },
           {
-            "ID": 1451,
-            "creatureId": 84915,
-            "icon": "inv_moltencorgi",
-            "itemId": 115301,
-            "name": "Molten Corgi",
-            "spellid": 169695
+            "ID": 4425,
+            "creatureId": 218647,
+            "icon": "inv_treasurecrabpet_red",
+            "itemId": 233248,
+            "name": "Glamrok",
+            "spellid": 437601
           },
           {
-            "ID": 1544,
-            "creatureId": 87669,
-            "icon": "spell_fire_ragnaros_supernova",
-            "itemId": 118574,
-            "name": "Hatespark the Tiny",
-            "spellid": 170268
+            "ID": 4692,
+            "creatureId": 233797,
+            "icon": "inv_treasurecrabpet_blue",
+            "itemId": 233247,
+            "name": "Sparklesnap",
+            "spellid": 471479
           },
           {
-            "ID": 2621,
-            "creatureId": 151779,
-            "icon": "2615850",
-            "itemId": 172016,
-            "name": "Lil' Nefarian",
-            "spellid": 294206
-          },
-          {
-            "ID": 4678,
-            "creatureId": 231840,
-            "icon": "inv_doomguardpet_black",
-            "itemId": 228781,
-            "name": "Lil'Doomy",
-            "spellid": 466575
-          },
-          {
-            "ID": 4614,
-            "creatureId": 229779,
-            "icon": "inv_pet_raccoon",
-            "itemId": 228740,
-            "name": "Gizmo the Pure",
-            "spellid": 462942
+            "ID": 4695,
+            "creatureId": 233967,
+            "icon": "inv_parrotmount_purple",
+            "name": "Parley",
+            "spellid": 471798
           }
         ],
-        "name": "20th Anniversary Event"
+        "name": "Plunderstorm"
       }
     ]
   },
@@ -813,6 +782,14 @@
             "itemId": 234379,
             "name": "Crackleroar",
             "spellid": 1213821
+          },
+          {
+            "ID": 2541,
+            "creatureId": 148542,
+            "icon": "inv_parrotmount_green",
+            "itemId": 166358,
+            "name": "Proper Parrot",
+            "spellid": 288054
           }
         ],
         "name": "Siren Isle"
@@ -5456,22 +5433,6 @@
         "name": "Paragon Reputation"
       },
       {
-        "id": "da59c1f3",
-        "items": [
-          {
-            "ID": 2541,
-            "creatureId": 148542,
-            "icon": "inv_parrotmount_green",
-            "itemId": 166358,
-            "name": "Proper Parrot",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 288054
-          }
-        ],
-        "name": "Unknown"
-      },
-      {
         "id": "fe7a9032",
         "items": [
           {
@@ -9156,6 +9117,42 @@
       {
         "items": [
           {
+            "ID": 202,
+            "creatureId": 32841,
+            "icon": "inv_pet_babyblizzardbear",
+            "itemId": 44819,
+            "name": "Baby Blizzard Bear",
+            "notObtainable": true,
+            "spellid": 61855
+          },
+          {
+            "ID": 243,
+            "creatureId": 36607,
+            "icon": "inv_misc_head_dragon_black",
+            "itemId": 49362,
+            "name": "Onyxian Whelpling",
+            "notObtainable": true,
+            "spellid": 69002
+          },
+          {
+            "ID": 1451,
+            "creatureId": 84915,
+            "icon": "inv_moltencorgi",
+            "itemId": 115301,
+            "name": "Molten Corgi",
+            "notObtainable": true,
+            "spellid": 169695
+          },
+          {
+            "ID": 1544,
+            "creatureId": 87669,
+            "icon": "spell_fire_ragnaros_supernova",
+            "itemId": 118574,
+            "name": "Hatespark the Tiny",
+            "notObtainable": true,
+            "spellid": 170268
+          },
+          {
             "ID": 1890,
             "creatureId": 106283,
             "icon": "inv_corgi2",
@@ -9187,6 +9184,24 @@
             "itemId": 230011,
             "name": "Lil'Kaz",
             "spellid": 466576
+          },
+          {
+            "ID": 4678,
+            "creatureId": 231840,
+            "icon": "inv_doomguardpet_black",
+            "itemId": 228781,
+            "name": "Lil'Doomy",
+            "notObtainable": true,
+            "spellid": 466575
+          },
+          {
+            "ID": 4614,
+            "creatureId": 229779,
+            "icon": "inv_pet_raccoon",
+            "itemId": 228740,
+            "name": "Gizmo the Pure",
+            "notObtainable": true,
+            "spellid": 462942
           }
         ],
         "name": "Anniversary"
@@ -11073,57 +11088,6 @@
       {
         "items": [
           {
-            "ID": 4435,
-            "creatureId": 218977,
-            "icon": "inv_misc_fish_58",
-            "itemId": 233252,
-            "name": "Happy",
-            "notObtainable": true,
-            "spellid": 438543
-          },
-          {
-            "ID": 4426,
-            "creatureId": 218646,
-            "icon": "inv_hermitcrab_truesilver",
-            "itemId": 233251,
-            "name": "Bubbles",
-            "notObtainable": true,
-            "spellid": 437600
-          },
-          {
-            "ID": 4425,
-            "creatureId": 218647,
-            "icon": "inv_treasurecrabpet_red",
-            "itemId": 233248,
-            "name": "Glamrok",
-            "notObtainable": true,
-            "spellid": 437601
-          },
-          {
-            "ID": 4692,
-            "creatureId": 233797,
-            "icon": "inv_treasurecrabpet_blue",
-            "itemId": 233247,
-            "name": "Sparklesnap",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 471479
-          },
-          {
-            "ID": 4695,
-            "creatureId": 233967,
-            "icon": "inv_parrotmount_purple",
-            "name": "Parley",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 471798
-          }
-        ],
-        "name": "Plunderstorm"
-      },
-      {
-        "items": [
-          {
             "ID": 4579,
             "creatureId": 223785,
             "icon": "inv_yakpet",
@@ -11143,20 +11107,6 @@
           }
         ],
         "name": "Remix: Pandaria"
-      },
-      {
-        "items": [
-          {
-            "ID": 4615,
-            "creatureId": 229846,
-            "icon": "inv_ogrepet",
-            "itemId": 228758,
-            "name": "Parrlok",
-            "notObtainable": true,
-            "spellid": 463079
-          }
-        ],
-        "name": "Discord Quest"
       }
     ]
   },
@@ -11387,6 +11337,15 @@
             "name": "Hoplet",
             "notObtainable": true,
             "spellid": 434792
+          },
+          {
+            "ID": 4682,
+            "creatureId": 232502,
+            "icon": "6075526",
+            "itemId": 231294,
+            "name": "Reven",
+            "notObtainable": true,
+            "spellid": 468186
           },
           {
             "ID": 4568,
@@ -12100,6 +12059,20 @@
       {
         "items": [
           {
+            "ID": 4615,
+            "creatureId": 229846,
+            "icon": "inv_ogrepet",
+            "itemId": 228758,
+            "name": "Parrlok",
+            "notObtainable": true,
+            "spellid": 463079
+          }
+        ],
+        "name": "Discord Quest"
+      },
+      {
+        "items": [
+          {
             "ID": 245,
             "creatureId": 36908,
             "icon": "inv_misc_pet_02",
@@ -12281,6 +12254,14 @@
             "itemId": 85513,
             "name": "Thundering Serpent Hatchling",
             "spellid": 127813
+          },
+          {
+            "ID": 2621,
+            "creatureId": 151779,
+            "icon": "2615850",
+            "itemId": 172016,
+            "name": "Lil' Nefarian",
+            "spellid": 294206
           }
         ],
         "name": "BMAH"

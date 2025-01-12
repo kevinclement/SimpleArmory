@@ -130,23 +130,6 @@
       {
         "items": [],
         "name": "Trading Post"
-      },
-      {
-        "items": [
-          {
-            "ID": 1514,
-            "icon": "inv_11xp_generic_blizzardphoenixring01",
-            "itemId": 228789,
-            "name": "Coldflame Ring"
-          },
-          {
-            "ID": 1516,
-            "icon": "inv_11xp_wow20year_balloonchest01",
-            "itemId": 229828,
-            "name": "20th Anniversary Balloon Chest"
-          }
-        ],
-        "name": "20th Anniversary Event"
       }
     ]
   },
@@ -265,12 +248,6 @@
             "icon": "inv_10_all_memorycrystal_color2",
             "itemId": 235017,
             "name": "Glittering Vault Shard"
-          },
-          {
-            "ID": 1543,
-            "icon": "inv_leatherworking_70_loveseat",
-            "itemId": 234473,
-            "name": "Soweezi's Comfy Lawn Chair"
           }
         ],
         "name": "Rare"
@@ -358,6 +335,12 @@
             "icon": "inv_legion_cache_hightmountaintribes",
             "itemId": 235015,
             "name": "Awakened Supply Crate"
+          },
+          {
+            "ID": 1543,
+            "icon": "inv_leatherworking_70_loveseat",
+            "itemId": 234473,
+            "name": "Soweezi's Comfy Lawn Chair"
           }
         ],
         "name": "Vendor"
@@ -403,7 +386,7 @@
             "name": "Redeployment Module"
           }
         ],
-        "name": "Unknown"
+        "name": "Quest"
       }
     ]
   },
@@ -6652,6 +6635,20 @@
             "icon": "achievement_boss_argus_felreaver",
             "itemId": 186501,
             "name": "Doomwalker Trophy Stand"
+          },
+          {
+            "ID": 1514,
+            "icon": "inv_11xp_generic_blizzardphoenixring01",
+            "itemId": 228789,
+            "name": "Coldflame Ring",
+            "notObtainable": true
+          },
+          {
+            "ID": 1516,
+            "icon": "inv_11xp_wow20year_balloonchest01",
+            "itemId": 229828,
+            "name": "20th Anniversary Balloon Chest",
+            "notObtainable": true
           }
         ],
         "name": "Anniversary"
