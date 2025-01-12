@@ -352,6 +352,7 @@
             "ID": 4695,
             "creatureId": 233967,
             "icon": "inv_parrotmount_purple",
+            "itemId": 235989,
             "name": "Parley",
             "spellid": 471798
           }
@@ -11341,7 +11342,7 @@
           {
             "ID": 4682,
             "creatureId": 232502,
-            "icon": "6075526",
+            "icon": "inv_foxpetdetective",
             "itemId": 231294,
             "name": "Reven",
             "notObtainable": true,
@@ -12265,6 +12266,28 @@
           }
         ],
         "name": "BMAH"
+      }
+    ]
+  },
+  {
+    "id": "1fc84644",
+    "name": "Unknown",
+    "subcats": [
+      {
+        "id": "10fc7843",
+        "items": [
+          {
+            "ID": 4717,
+            "creatureId": 234439,
+            "icon": "6310496",
+            "itemId": 233190,
+            "name": "Wanderer Liu",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 473300
+          }
+        ],
+        "name": "Promotion"
       }
     ]
   }
