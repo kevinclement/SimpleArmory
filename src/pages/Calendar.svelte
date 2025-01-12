@@ -52,9 +52,21 @@
             if ((day === 1) && (d.getDay() > 0)) {
                 html += '<td colspan="'+(d.getDay())+'" class="dayspacer"></td>';
             }
-            html += '<td>' + day;
 
             let selMonth = achByMonths[selectedMonth.value];
+            let dayPoints = 0;
+            if(selMonth[day]) {
+                selMonth[day].forEach((ach) => {
+                    dayPoints += ach.points;
+                })
+            }
+            if(dayPoints > 0) {
+                html += '<td>' + day + `<small> - ${dayPoints} points </small>`;
+            } else {
+                html += '<td>' + day;
+            }
+
+            
             if (selMonth && selMonth[day]) {
                 let achievs = selMonth[day];
                 achievs.sort((achieve1, achieve2) => {
