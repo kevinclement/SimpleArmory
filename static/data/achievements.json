@@ -27023,8 +27023,6 @@
                 {
                   "icon": "spell_holy_symbolofhope",
                   "id": 41130,
-                  "notObtainable": true,
-                  "notReleased": true,
                   "points": 10,
                   "title": "Elders of Khaz Algar"
                 }
@@ -31836,6 +31834,18 @@
           "name": "Expansion Features",
           "subcats": [
             {
+              "id": "9a7c4830",
+              "items": [
+                {
+                  "icon": "inv_radientazeriteheart",
+                  "id": 40953,
+                  "points": 100,
+                  "title": "A Farewell to Arms"
+                }
+              ],
+              "name": "Battle for Azeroth"
+            },
+            {
               "id": "4f39a17a",
               "items": [
                 {
@@ -31858,18 +31868,6 @@
                 }
               ],
               "name": "Dragonflight"
-            },
-            {
-              "id": "9a7c4830",
-              "items": [
-                {
-                  "icon": "inv_radientazeriteheart",
-                  "id": 40953,
-                  "points": 100,
-                  "title": "A Farewell to Arms"
-                }
-              ],
-              "name": "Battle for Azeroth"
             }
           ]
         },
