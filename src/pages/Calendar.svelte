@@ -55,7 +55,7 @@
 
             let selMonth = achByMonths[selectedMonth.value];
             let dayPoints = 0;
-            if(selMonth[day]) {
+            if(selMonth && selMonth[day]) {
                 selMonth[day].forEach((ach) => {
                     dayPoints += ach.points;
                 })
