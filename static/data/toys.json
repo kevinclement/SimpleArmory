@@ -128,8 +128,27 @@
     "name": "Limited Time",
     "subcats": [
       {
-        "items": [],
-        "name": "Trading Post"
+        "items": [
+          {
+            "ID": 214,
+            "icon": "inv_potion_27",
+            "itemId": 32542,
+            "name": "Imp in a Ball"
+          },
+          {
+            "ID": 202,
+            "icon": "ability_warrior_challange",
+            "itemId": 45063,
+            "name": "Foam Sword Rack"
+          },
+          {
+            "ID": 1345,
+            "icon": "ability_racial_etherealconnection",
+            "itemId": 206268,
+            "name": "Ethereal Transmogrifier"
+          }
+        ],
+        "name": "Trading Post Anniversary"
       }
     ]
   },
@@ -6668,12 +6687,6 @@
         "id": "c1d734dd",
         "items": [
           {
-            "ID": 1345,
-            "icon": "ability_racial_etherealconnection",
-            "itemId": 206268,
-            "name": "Ethereal Transmogrifier"
-          },
-          {
             "ID": 1334,
             "icon": "tradingpostcurrency",
             "itemId": 206347,
@@ -6720,18 +6733,6 @@
       },
       {
         "items": [
-          {
-            "ID": 214,
-            "icon": "inv_potion_27",
-            "itemId": 32542,
-            "name": "Imp in a Ball"
-          },
-          {
-            "ID": 202,
-            "icon": "ability_warrior_challange",
-            "itemId": 45063,
-            "name": "Foam Sword Rack"
-          }
         ],
         "name": "Trading Post Re-Releases"
       },
