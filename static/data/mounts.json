@@ -161,7 +161,7 @@
           },
           {
             "ID": 2329,
-            "icon": "inv_lovebroom_pink",
+            "icon": "inv_lovebroom_red",
             "itemId": 233023,
             "name": "Silvermoon Sweeper",
             "spellid": 472487
@@ -354,6 +354,35 @@
       {
         "items": [
           {
+            "ID": 2480,
+            "icon": "inv_goblinspidertank",
+            "itemId": 235549,
+            "name": "Crimson Shreddertank",
+            "new": true,
+            "spellid": 1217235
+          },
+          {
+            "ID": 2508,
+            "icon": "inv_goblinspidertank",
+            "itemId": 237141,
+            "name": "Enterprising Shreddertank",
+            "new": true,
+            "spellid": 1221694
+          },
+          {
+            "ID": 2298,
+            "icon": "inv_felbatgladiatormount_copper",
+            "itemId": 229987,
+            "name": "Prized Gladiator's Fel Bat",
+            "new": true,
+            "spellid": 466144
+          }
+        ],
+        "name": "War Within: Season 2"
+      },
+      {
+        "items": [
+          {
             "ID": 1957,
             "icon": "inv_lovefoxmount_blue",
             "itemId": 212228,
@@ -369,7 +398,7 @@
           },
           {
             "ID": 2331,
-            "icon": "inv_lovebroom_pink",
+            "icon": "inv_lovebroom_blue",
             "itemId": 233019,
             "name": "Sky Witch's Sweeper",
             "spellid": 472489
@@ -418,6 +447,14 @@
             "itemId": 223266,
             "name": "Shadowed Swarmite",
             "spellid": 447190
+          },
+          {
+            "ID": 2313,
+            "icon": "inv_goblinshreddermechboss",
+            "itemId": 231173,
+            "name": "Junkmaestro's Magnetomech",
+            "new": true,
+            "spellid": 468068
           }
         ],
         "name": "Achievement"
@@ -437,6 +474,22 @@
             "itemId": 224151,
             "name": "Ascendant Skyrazor",
             "spellid": 451491
+          },
+          {
+            "ID": 2507,
+            "icon": "inv_goblinflyingmachine",
+            "itemId": 236960,
+            "name": "Prototype A.S.M.R.",
+            "new": true,
+            "spellid": 1221155
+          },
+          {
+            "ID": 2487,
+            "icon": "inv_gallywixmechmount",
+            "itemId": 235626,
+            "name": "The Big G",
+            "new": true,
+            "spellid": 1217760
           }
         ],
         "name": "Raid Drop"
@@ -483,6 +536,46 @@
             "itemId": 223279,
             "name": "Royal Court Undercrawler",
             "spellid": 448689
+          },
+          {
+            "ID": 2272,
+            "icon": "inv_red_hyena2goblinmount",
+            "itemId": 229935,
+            "name": "Crimson Armored Growler",
+            "new": true,
+            "spellid": 465999
+          },
+          {
+            "ID": 2294,
+            "icon": "inv_goblinflyingmachine_green",
+            "itemId": 229956,
+            "name": "Mean Green Flying Machine",
+            "new": true,
+            "spellid": 466028
+          },
+          {
+            "ID": 2286,
+            "icon": "inv_goblinshreddermech_blue",
+            "itemId": 229948,
+            "name": "Blackwater Shredder Deluxe Mk 2",
+            "new": true,
+            "spellid": 466019
+          },
+          {
+            "ID": 2284,
+            "icon": "inv_yellow_rocketmount5",
+            "itemId": 229946,
+            "name": "Ocher Delivery Rocket",
+            "new": true,
+            "spellid": 466013
+          },
+          {
+            "ID": 2287,
+            "icon": "inv_goblinshreddermech_black",
+            "itemId": 229950,
+            "name": "Darkfuse Demolisher",
+            "new": true,
+            "spellid": 466018
           }
         ],
         "name": "Reputation"
@@ -544,9 +637,106 @@
             "itemId": 223264,
             "name": "Aquamarine Swarmite",
             "spellid": 447185
+          },
+          {
+            "ID": 2277,
+            "icon": "inv_purple_hyena2goblinmount",
+            "itemId": 229936,
+            "name": "Violet Armored Growler",
+            "new": true,
+            "spellid": 466002
+          },
+          {
+            "ID": 2280,
+            "icon": "inv_purple_rocketmount5",
+            "itemId": 229944,
+            "name": "The Topskimmer Special",
+            "new": true,
+            "spellid": 466016
           }
         ],
         "name": "Renown"
+      },
+      {
+        "items" : [
+          {
+            "ID": 2274,
+            "icon": "inv_blue_hyena2goblinmount",
+            "name": "Blackwater Bonecrusher",
+            "new": true,
+            "spellid": 466001
+          },
+          {
+            "ID": 2281,
+            "icon": "inv_green_rocketmount5",
+            "itemId": 229943,
+            "name": "Steamwheedle Supplier",
+            "new": true,
+            "spellid": 466014
+          },
+          {
+            "ID": 2303,
+            "icon": "inv_goblinshreddermech_purple",
+            "itemId": 229947,
+            "name": "Violet Goblin Shredder",
+            "new": true,
+            "spellid": 466021
+          },
+          {
+            "ID": 2295,
+            "icon": "inv_goblinflyingmachine_red",
+            "itemId": 229957,
+            "name": "Bilgewater Bombardier",
+            "new": true,
+            "spellid": 466024
+          },
+          {
+            "ID": 2289,
+            "icon": "inv_goblinshreddermech_yellow",
+            "itemId": 229951,
+            "name": "Venture Co-ordinator",
+            "new": true,
+            "spellid": 466022
+          },
+          {
+            "ID": 2334,
+            "icon": "inv_goblinsurfboardmount_green",
+            "itemId": 233064,
+            "name": "Bronze Goblin Waveshredder",
+            "new": true,
+            "spellid": 473188
+          }
+        ],
+        "name": "Paragon"
+      },
+      {
+        "items": [
+          {
+            "ID": 2279,
+            "icon": "inv_red_rocketmount5",
+            "itemId": 229945,
+            "name": "Thunderdrum Misfire",
+            "new": true,
+            "spellid": 466012
+          },
+          {
+            "ID": 2276,
+            "icon": "inv_black_hyena2goblinmount",
+            "itemId": 229924,
+            "name": "Darkfuse Chompactor",
+            "new": true,
+            "spellid": 466000
+          },
+          {
+            "ID": 2278,
+            "icon": "inv_mechadevilsaurmount_yellow",
+            "itemId": 229940,
+            "name": "Flarendo the Furious",
+            "new": true,
+            "spellid": 466011
+          }
+        ],
+        "name": "Raid Renown"
       },
       {
         "items": [
@@ -568,6 +758,20 @@
             "itemId": 219391,
             "name": "Delver's Dirigible",
             "spellid": 446052
+          },
+          {
+            "ID": 2296,
+            "icon": "inv_airshipmountgoblin",
+            "itemId": 229974,
+            "name": "Delver's Gob-Trotter",
+            "spellid": 466133
+          },
+          {
+            "ID": 2293,
+            "icon": "inv_goblinflyingmachine_black",
+            "itemId": 229955,
+            "name": "Darkfuse Spy-Eye",
+            "spellid": 466027
           }
         ],
         "name": "Quest"
@@ -658,6 +862,45 @@
             "itemId": 233058,
             "name": "Soweezi's Vintage Waveshredder",
             "spellid": 473137
+          },
+          {
+            "ID": 2283,
+            "icon": "inv_black_rocketmount5",
+            "itemId": 229941,
+            "name": "Innovation Investigator",
+            "new": true,
+            "spellid": 466017
+          },
+          {
+            "ID": 2290,
+            "icon": "inv_goblinshreddermech",
+            "itemId": 229952,
+            "name": "Asset Advocator",
+            "new": true,
+            "spellid": 466023
+          },
+          {
+            "ID": 2292,
+            "icon": "inv_goblinflyingmachine_blue",
+            "itemId": 229954,
+            "name": "Margin Manipulator",
+            "new": true,
+            "spellid": 466025
+          },
+          {
+            "ID": 2288,
+            "icon": "inv_goblinshreddermech_green",
+            "name": "Personalized Goblin S.C.R.A.Per",
+            "new": true,
+            "spellid": 466020
+          },
+          {
+            "ID": 2291,
+            "icon": "inv_goblinflyingmachine_yellow",
+            "itemId": 229953,
+            "name": "Salvaged Goblin Gazillionaire's Flying Machine",
+            "new": true,
+            "spellid": 466026
           }
         ],
         "name": "Zone"
@@ -4178,7 +4421,7 @@
         "items": [
           {
             "ID": 1532,
-            "icon": "4062012",
+            "icon": "inv_bookmount",
             "itemId": 188674,
             "name": "Soaring Spelltome",
             "spellid": 359318
@@ -8206,6 +8449,24 @@
             "name": "Vicious Skyflayer",
             "side": "H",
             "spellid": 447405
+          },
+          {
+            "ID": 2299,
+            "icon": "inv_electriceelviciousmount_red",
+            "itemId": 229988,
+            "name": "Vicious Electro Eel",
+            "side": "H",
+            "new": true,
+            "spellid": 466145
+          },
+          {
+            "ID": 2300,
+            "icon": "inv_electriceelviciousmount_blue",
+            "itemId": 229989,
+            "name": "Vicious Electro Eel",
+            "side": "A",
+            "new": true,
+            "spellid": 466146
           }
         ],
         "name": "Vicious Saddle"
@@ -9189,6 +9450,96 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 457659
+          },
+          {
+            "ID": 2481,
+            "icon": "inv_darkmoonhorsemount_black",
+            "itemId": 235554,
+            "name": "Midnight Darkmoon Charger",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1217340
+          },
+          {
+            "ID": 2482,
+            "icon": "inv_darkmoonhorsemount_green",
+            "itemId": 235555,
+            "name": "Lively Darkmoon Charger",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1217341
+          },
+          {
+            "ID": 2483,
+            "icon": "inv_darkmoonhorsemount_purple",
+            "itemId": 235556,
+            "name": "Violet Darkmoon Charger",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1217342
+          },
+          {
+            "ID": 2484,
+            "icon": "inv_darkmoonhorsemount_white",
+            "itemId": 235557,
+            "name": "Snowy Darkmoon Charger",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1217343
+          },
+          {
+            "ID": 2488,
+            "icon": "inv_horse2ardenwealdmount_blue",
+            "itemId": 235646,
+            "name": "Shimmermist Free Runner",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1217965
+          },
+          {
+            "ID": 2489,
+            "icon": "inv_butterflymount_pearl",
+            "itemId": 235650,
+            "name": "Pearlescent Butterfly",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1217994
+          },
+          {
+            "ID": 2491,
+            "icon": "inv_butterflymount_red",
+            "itemId": 235657,
+            "name": "Ruby Butterfly",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1218012
+          },
+          {
+            "ID": 2492,
+            "icon": "inv_butterflymount_pink",
+            "itemId": 235658,
+            "name": "Spring Butterfly",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1218013
+          },
+          {
+            "ID": 2494,
+            "icon": "inv_butterflymount_purple",
+            "itemId": 235659,
+            "name": "Midnight Butterfly",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1218014
+          },
+          {
+            "ID": 2495,
+            "icon": "inv_snailrockmount_green",
+            "itemId": 235662,
+            "name": "Emerald Snail",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1218069
           }
         ],
         "name": "Trading Post Originals"
@@ -9811,7 +10162,7 @@
           },
           {
             "ID": 1812,
-            "icon": "5332199",
+            "icon": "inv_ragnarosmount",
             "itemId": 210008,
             "name": "Runebound Firelord",
             "spellid": 424009
@@ -10643,6 +10994,22 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1216542
+          },
+          {
+            "ID": 2301,
+            "icon": "ability_mount_rocketmount",
+            "name": "Unstable Rocket",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 466423
+          },
+          {
+            "ID": 2302,
+            "icon": "ability_mount_rocketmount",
+            "name": "Unstable Rocket",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 466464
           }
         ],
         "name": "Unknown"
