@@ -40,8 +40,8 @@ export function getImageSrc(item, renderIcon) {
             renderIcon = true;
         }        
     }
-    
-    if (renderIcon) {
+
+    if (renderIcon && item.icon) {
         // wowhead img
         let url = '//wow.zamimg.com/images/wow/icons/medium/' + item.icon.toLowerCase() + '.jpg'
         
@@ -90,6 +90,10 @@ export function getShowHiddenFeatSetting() {
 
 export function getShowUnobtainedSetting() {
     return(localStorage.getItem("showUnobtainedOnly"));
+}
+
+export function getShowUpcomingSetting() {
+    return(localStorage.getItem("showUpcoming"));
 }
 
 export function getShowHiddenUpdated() {

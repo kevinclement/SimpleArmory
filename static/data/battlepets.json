@@ -607,6 +607,14 @@
             "itemId": 205153,
             "name": "Jade Cragviper",
             "spellid": 408265
+          },
+          {
+            "ID": 4507,
+            "creatureId": 222592,
+            "icon": "inv_grey_sporecreature2",
+            "name": "Hemospore",
+            "new": true,
+            "spellid": 446500
           }
         ],
         "name": "The Ringing Deeps"
@@ -743,6 +751,128 @@
           }
         ],
         "name": "Siren Isle"
+      },
+      {
+        "items": [
+          {
+            "ID": 4651,
+            "creatureId": 231477,
+            "icon": "inv_111_rat_brown",
+            "name": "Wily Rat",
+            "new": true,
+            "spellid": 471893
+          },
+          {
+            "ID": 4652,
+            "creatureId": 231470,
+            "icon": "inv_111_rat_radioactive",
+            "name": "Acid-Drenched Rat",
+            "new": true,
+            "spellid": 471896
+          },
+          {
+            "ID": 4654,
+            "creatureId": 231481,
+            "icon": "inv_cockroach2_brown",
+            "name": "Underroach",
+            "new": true,
+            "spellid": 471897
+          },
+          {
+            "ID": 4656,
+            "creatureId": 231550,
+            "icon": "inv_crabbomb_blue",
+            "name": "Bombshell Crab",
+            "new": true,
+            "spellid": 471909
+          },
+          {
+            "ID": 4657,
+            "creatureId": 231567,
+            "icon": "inv_crabbomb_yellow",
+            "name": "Venture Bombshell",
+            "new": true,
+            "spellid": 471908
+          },
+          {
+            "ID": 4658,
+            "creatureId": 231570,
+            "icon": "inv_crabcave_blue",
+            "name": "Cave Crab",
+            "new": true,
+            "spellid": 471910
+          },
+          {
+            "ID": 4660,
+            "creatureId": 231574,
+            "icon": "inv_crabcave_white",
+            "name": "Paleshell Crab",
+            "new": true,
+            "spellid": 471917
+          },
+          {
+            "ID": 4662,
+            "creatureId": 231577,
+            "icon": "inv_mechanicalprairiedog_green",
+            "name": "Varmint MK II",
+            "new": true,
+            "spellid": 471932
+          },
+          {
+            "ID": 4663,
+            "creatureId": 231579,
+            "icon": "inv_chicken2_mechanical",
+            "name": "Lime Roboclucker",
+            "new": true,
+            "spellid": 471934
+          },
+          {
+            "ID": 4667,
+            "creatureId": 231684,
+            "icon": "inv_frog2_mechanical_yellow",
+            "name": "Spring-Loaded Ribbitron",
+            "new": true,
+            "spellid": 471943
+          },
+          {
+            "ID": 4668,
+            "creatureId": 231686,
+            "icon": "inv_frog2_mechanical_black",
+            "name": "Ultrahopper EX",
+            "new": true,
+            "spellid": 471937
+          },
+          {
+            "ID": 4693,
+            "creatureId": 231728,
+            "icon": "inv_maldraxxusslime_purple",
+            "name": "Alchemical Runoff",
+            "new": true,
+            "spellid": 471898
+          }
+        ],
+        "name": "Undermine"
+      },
+      {
+        "items": [
+          {
+            "ID": 4659,
+            "creatureId": 231572,
+            "icon": "inv_crabcave_green",
+            "name": "Kaja Crab",
+            "new": true,
+            "spellid": 471911
+          },
+          {
+            "ID": 4666,
+            "creatureId": 231616,
+            "icon": "inv_frog2_black",
+            "name": "Tropical Frog",
+            "new": true,
+            "spellid": 471912
+          }
+        ],
+        "name": "Zuldazar"
       }
     ]
   },
@@ -1590,6 +1720,24 @@
     "name": "Battle for Azeroth",
     "subcats": [
       {
+        "id": "266a23b6",
+        "items": [
+          {
+            "ID": 2378,
+            "creatureId": 143037,
+            "icon": "inv_pet_otter",
+            "name": "River Otter"
+          },
+          {
+            "ID": 2377,
+            "creatureId": 143036,
+            "icon": "inv_crab2_blue",
+            "name": "Sandyback Crawler"
+          }
+        ],
+        "name": "Multiple Zones"
+      },
+      {
         "id": "79b6dbe7",
         "items": [
           {
@@ -2026,30 +2174,71 @@
           }
         ],
         "name": "Assault: Vale of Eternal Blossoms"
-      },
-      {
-        "id": "266a23b6",
-        "items": [
-          {
-            "ID": 2378,
-            "creatureId": 143037,
-            "icon": "inv_pet_otter",
-            "name": "River Otter"
-          },
-          {
-            "ID": 2377,
-            "creatureId": 143036,
-            "icon": "inv_crab2_blue",
-            "name": "Sandyback Crawler"
-          }
-        ],
-        "name": ""
       }
     ]
   },
   {
     "name": "Legion",
     "subcats": [
+      {
+        "items": [
+          {
+            "ID": 1743,
+            "creatureId": 97741,
+            "icon": "inv_misc_foxkit",
+            "name": "Black-Footed Fox Kit"
+          },
+          {
+            "ID": 1914,
+            "creatureId": 110826,
+            "icon": "inv_pet_thunderislebabybird",
+            "name": "Coastal Sandpiper"
+          },
+          {
+            "ID": 1708,
+            "creatureId": 97018,
+            "icon": "inv_misc_seagullpet_01",
+            "name": "Albatross Chick"
+          },
+          {
+            "ID": 1731,
+            "creatureId": 97323,
+            "icon": "inv_misc_monsterspidercarapace_01",
+            "name": "Felspider"
+          },
+          {
+            "ID": 1728,
+            "creatureId": 97283,
+            "icon": "ability_hunter_pet_crab",
+            "name": "Juvenile Scuttleback"
+          },
+          {
+            "ID": 1713,
+            "creatureId": 97118,
+            "icon": "inv_pet_wardenowl",
+            "name": "Long-Eared Owl"
+          },
+          {
+            "ID": 1744,
+            "creatureId": 97743,
+            "icon": "inv_misc_foxkit_white",
+            "name": "Mist Fox Kit"
+          },
+          {
+            "ID": 1729,
+            "creatureId": 97294,
+            "icon": "inv_misc_rabbit",
+            "name": "Olivetail Hare"
+          },
+          {
+            "ID": 1736,
+            "creatureId": 97542,
+            "icon": "spell_nature_guardianward",
+            "name": "Slithering Brownscale"
+          }
+        ],
+        "name": "Multiple Zones"
+      },
       {
         "items": [
           {
@@ -2349,65 +2538,6 @@
           }
         ],
         "name": "Emerald Nightmare"
-      },
-      {
-        "items": [
-          {
-            "ID": 1743,
-            "creatureId": 97741,
-            "icon": "inv_misc_foxkit",
-            "name": "Black-Footed Fox Kit"
-          },
-          {
-            "ID": 1914,
-            "creatureId": 110826,
-            "icon": "inv_pet_thunderislebabybird",
-            "name": "Coastal Sandpiper"
-          },
-          {
-            "ID": 1708,
-            "creatureId": 97018,
-            "icon": "inv_misc_seagullpet_01",
-            "name": "Albatross Chick"
-          },
-          {
-            "ID": 1731,
-            "creatureId": 97323,
-            "icon": "inv_misc_monsterspidercarapace_01",
-            "name": "Felspider"
-          },
-          {
-            "ID": 1728,
-            "creatureId": 97283,
-            "icon": "ability_hunter_pet_crab",
-            "name": "Juvenile Scuttleback"
-          },
-          {
-            "ID": 1713,
-            "creatureId": 97118,
-            "icon": "inv_pet_wardenowl",
-            "name": "Long-Eared Owl"
-          },
-          {
-            "ID": 1744,
-            "creatureId": 97743,
-            "icon": "inv_misc_foxkit_white",
-            "name": "Mist Fox Kit"
-          },
-          {
-            "ID": 1729,
-            "creatureId": 97294,
-            "icon": "inv_misc_rabbit",
-            "name": "Olivetail Hare"
-          },
-          {
-            "ID": 1736,
-            "creatureId": 97542,
-            "icon": "spell_nature_guardianward",
-            "name": "Slithering Brownscale"
-          }
-        ],
-        "name": ""
       }
     ]
   },
@@ -2415,16 +2545,27 @@
     "name": "Draenor",
     "subcats": [
       {
-        "items": [],
-        "name": "Ashran"
-      },
-      {
-        "items": [],
-        "name": "Frostwall"
-      },
-      {
-        "items": [],
-        "name": "Lunarfall"
+        "items": [
+          {
+            "ID": 1587,
+            "creatureId": 88417,
+            "icon": "ability_hunter_pet_moth",
+            "name": "Royal Moth"
+          },
+          {
+            "ID": 1464,
+            "creatureId": 85253,
+            "icon": "inv_dragonflypet_blue",
+            "name": "Twilight Wasp"
+          },
+          {
+            "ID": 1593,
+            "creatureId": 88355,
+            "icon": "ability_hunter_pet_wasp",
+            "name": "Waterfly"
+          }
+        ],
+        "name": "Multiple Zones"
       },
       {
         "items": [
@@ -2645,35 +2786,29 @@
           }
         ],
         "name": "Garrison"
-      },
-      {
-        "items": [
-          {
-            "ID": 1587,
-            "creatureId": 88417,
-            "icon": "ability_hunter_pet_moth",
-            "name": "Royal Moth"
-          },
-          {
-            "ID": 1464,
-            "creatureId": 85253,
-            "icon": "inv_dragonflypet_blue",
-            "name": "Twilight Wasp"
-          },
-          {
-            "ID": 1593,
-            "creatureId": 88355,
-            "icon": "ability_hunter_pet_wasp",
-            "name": "Waterfly"
-          }
-        ],
-        "name": ""
       }
     ]
   },
   {
     "name": "Pandaria",
     "subcats": [
+      {
+        "items": [
+          {
+            "ID": 708,
+            "creatureId": 63094,
+            "icon": "inv_misc_monstertail_01",
+            "name": "Malayan Quillrat"
+          },
+          {
+            "ID": 740,
+            "creatureId": 63957,
+            "icon": "inv_misc_monstertail_03",
+            "name": "Yakrat"
+          }
+        ],
+        "name": "Multiple Zones"
+      },
       {
         "items": [
           {
@@ -3135,23 +3270,6 @@
           }
         ],
         "name": "Valley of the Four Winds"
-      },
-      {
-        "items": [
-          {
-            "ID": 708,
-            "creatureId": 63094,
-            "icon": "inv_misc_monstertail_01",
-            "name": "Malayan Quillrat"
-          },
-          {
-            "ID": 740,
-            "creatureId": 63957,
-            "icon": "inv_misc_monstertail_03",
-            "name": "Yakrat"
-          }
-        ],
-        "name": ""
       }
     ]
   },
@@ -3330,17 +3448,39 @@
       {
         "items": [
           {
-            "ID": 558,
-            "creatureId": 62864,
-            "icon": "inv_misc_foxkit_white",
-            "name": "Arctic Fox Kit"
-          },
-          {
             "ID": 641,
             "creatureId": 62693,
             "icon": "inv_misc_rabbit",
             "name": "Arctic Hare"
           },
+          {
+            "ID": 536,
+            "creatureId": 62835,
+            "icon": "inv_pet_babypengu",
+            "name": "Tundra Penguin"
+          },
+          {
+            "ID": 1238,
+            "creatureId": 71163,
+            "icon": "inv_valkierpet",
+            "name": "Unborn Val'kyr"
+          }
+        ],
+        "name": "Multiple Zones"
+      },
+      {
+        "items": [
+          {
+            "ID": 558,
+            "creatureId": 62864,
+            "icon": "inv_misc_foxkit_white",
+            "name": "Arctic Fox Kit"
+          }
+        ],
+        "name": "The Storm Peaks"
+      },
+      {
+        "items": [
           {
             "ID": 649,
             "creatureId": 62815,
@@ -3348,28 +3488,44 @@
             "name": "Biletoad"
           },
           {
+            "ID": 1167,
+            "creatureId": 68850,
+            "icon": "ability_mount_feldrake",
+            "name": "Emerald Proto-Whelp"
+          },
+          {
+            "ID": 532,
+            "creatureId": 62816,
+            "icon": "ability_hunter_pet_rhino",
+            "name": "Stunted Shardhorn"
+          }
+        ],
+        "name": "Sholazar Basin"
+      },
+      {
+        "items": [
+          {
             "ID": 639,
             "creatureId": 62695,
             "icon": "inv_prairiedog_brown",
             "name": "Borean Marmot"
           },
           {
+            "ID": 530,
+            "creatureId": 62697,
+            "icon": "inv_misc_slime_02",
+            "name": "Oily Slimeling"
+          }
+        ],
+        "name": "Borean Tundra"
+      },
+      {
+        "items": [
+          {
             "ID": 523,
             "creatureId": 62640,
             "icon": "inv_qiraj_skinsandworm",
             "name": "Devouring Maggot"
-          },
-          {
-            "ID": 537,
-            "creatureId": 62852,
-            "icon": "ability_hunter_pet_vulture",
-            "name": "Dragonbone Hatchling"
-          },
-          {
-            "ID": 1167,
-            "creatureId": 68850,
-            "icon": "ability_mount_feldrake",
-            "name": "Emerald Proto-Whelp"
           },
           {
             "ID": 644,
@@ -3384,53 +3540,60 @@
             "name": "Fjord Worg Pup"
           },
           {
-            "ID": 534,
-            "creatureId": 62819,
-            "icon": "ability_hunter_eagleeye",
-            "name": "Imperial Eagle Chick"
-          },
+            "ID": 525,
+            "creatureId": 62648,
+            "icon": "inv_thanksgiving_turkey",
+            "name": "Turkey"
+          }
+        ],
+        "name": "Howling Fjord"
+      },
+      {
+        "items": [
+          {
+            "ID": 537,
+            "creatureId": 62852,
+            "icon": "ability_hunter_pet_vulture",
+            "name": "Dragonbone Hatchling"
+          }
+        ],
+        "name": "Dragonblight"
+      },
+      {
+        "items": [
           {
             "ID": 1165,
             "creatureId": 68845,
             "icon": "inv_misc_head_dragon_nexus",
             "name": "Nexus Whelpling"
-          },
+          }
+        ],
+        "name": "Coldarra"
+      },
+      {
+        "items": [
           {
-            "ID": 530,
-            "creatureId": 62697,
-            "icon": "inv_misc_slime_02",
-            "name": "Oily Slimeling"
-          },
+            "ID": 534,
+            "creatureId": 62819,
+            "icon": "ability_hunter_eagleeye",
+            "name": "Imperial Eagle Chick"
+          }
+        ],
+        "name": "Grizzly Hills"
+      },
+      {
+        "items": [
           {
             "ID": 538,
             "creatureId": 62854,
             "icon": "inv_misc_head_dragon_black",
             "name": "Scourged Whelpling"
-          },
-          {
-            "ID": 532,
-            "creatureId": 62816,
-            "icon": "ability_hunter_pet_rhino",
-            "name": "Stunted Shardhorn"
-          },
-          {
-            "ID": 536,
-            "creatureId": 62835,
-            "icon": "inv_pet_babypengu",
-            "name": "Tundra Penguin"
-          },
-          {
-            "ID": 525,
-            "creatureId": 62648,
-            "icon": "inv_thanksgiving_turkey",
-            "name": "Turkey"
-          },
-          {
-            "ID": 1238,
-            "creatureId": 71163,
-            "icon": "inv_valkierpet",
-            "name": "Unborn Val'kyr"
-          },
+          }
+        ],
+        "name": "Icecrown"
+      },
+      {
+        "items": [
           {
             "ID": 535,
             "creatureId": 62820,
@@ -3438,7 +3601,7 @@
             "name": "Water Waveling"
           }
         ],
-        "name": ""
+        "name": "Zul'Drak"
       }
     ]
   },
@@ -3452,19 +3615,12 @@
             "creatureId": 62620,
             "icon": "inv_misc_foot_centaur",
             "name": "Clefthoof Runt"
-          },
-          {
-            "ID": 1164,
-            "creatureId": 68841,
-            "icon": "inv_pet_mechanicalraptorpet",
-            "name": "Cogblade Raptor"
-          },
-          {
-            "ID": 514,
-            "creatureId": 62555,
-            "icon": "ability_racial_flayer",
-            "name": "Flayer Youngling"
-          },
+          }
+        ],
+        "name": "Nagrand"
+      },
+      {
+        "items": [
           {
             "ID": 521,
             "creatureId": 62627,
@@ -3476,6 +3632,17 @@
             "creatureId": 62625,
             "icon": "inv_pet_cockroach",
             "name": "Nether Roach"
+          }
+        ],
+        "name": "Netherstorm"
+      },
+      {
+        "items": [
+          {
+            "ID": 1164,
+            "creatureId": 68841,
+            "icon": "inv_pet_mechanicalraptorpet",
+            "name": "Cogblade Raptor"
           },
           {
             "ID": 528,
@@ -3488,13 +3655,34 @@
             "creatureId": 62638,
             "icon": "ability_hunter_pet_spider",
             "name": "Skittering Cavern Crawler"
-          },
+          }
+        ],
+        "name": "Blade's Edge Mountains"
+      },
+      {
+        "items": [
+          {
+            "ID": 514,
+            "creatureId": 62555,
+            "icon": "ability_racial_flayer",
+            "name": "Flayer Youngling"
+          }
+        ],
+        "name": "Hellfire Peninsula"
+      },
+      {
+        "items": [
           {
             "ID": 515,
             "creatureId": 62564,
             "icon": "inv_mushroom_11",
             "name": "Sporeling Sprout"
-          },
+          }
+        ],
+        "name": "Zangarmarsh"
+      },
+      {
+        "items": [
           {
             "ID": 517,
             "creatureId": 62583,
@@ -3502,7 +3690,7 @@
             "name": "Warpstalker Hatchling"
           }
         ],
-        "name": ""
+        "name": "Terokkar Forest"
       }
     ]
   },

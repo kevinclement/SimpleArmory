@@ -1,4 +1,4 @@
-import { getShowHiddenSetting, getShowUnobtainedSetting } from "../util/utils"
+import { getShowHiddenSetting, getShowUnobtainedSetting, getShowUpcomingSetting } from "../util/utils"
 
 function getHigherQualityBattlePet(currentPet, newPet) {
     function getPetsQuality(type) {
@@ -27,6 +27,7 @@ export async function parseCollectablesObject(categories, profile, collected_dat
 
     var showHiddenItems = getShowHiddenSetting();
     var showUnobtainedOnly = getShowUnobtainedSetting();
+    var showUpcoming = getShowUpcomingSetting();
 
     // Build up lookup for items that character has
     collected_data[collectedProperty].forEach((item) => {
@@ -145,6 +146,10 @@ export async function parseCollectablesObject(categories, profile, collected_dat
                 var showthis = (hasthis || !item.notObtainable || (showHiddenItems == "shown" && !item.notReleased));
 
                 if (item.side && item.side !== profile.factionMapped) {
+                    showthis = false;
+                }
+
+                if(item.new && showUpcoming != "true") {
                     showthis = false;
                 }
 

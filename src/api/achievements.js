@@ -3,7 +3,7 @@ import { getProfile } from '$api/profile'
 import { getJsonDb } from '$api/_db'
 import settings from '$util/settings'
 import Cache from '$api/_cache'
-import { getShowHiddenSetting, getShowHiddenFeatSetting, getShowUnobtainedSetting } from '../util/utils'
+import { getShowHiddenSetting, getShowHiddenFeatSetting, getShowUnobtainedSetting, getShowUpcomingSetting } from '../util/utils'
 
 let _cache;
 export async function getAchievements(region, realm, character) {
@@ -41,6 +41,7 @@ function parseAchievementObject(db, earned, character, faction) {
     var showHiddenItems = getShowHiddenSetting();
     var showHiddenFeats = getShowHiddenFeatSetting();
     var showOnlyUnobtained = getShowUnobtainedSetting();
+    var showUpcoming = getShowUpcomingSetting();
 
     let obj            = {}
      ,  completed      = {}
@@ -166,6 +167,9 @@ function parseAchievementObject(db, earned, character, faction) {
                         // if we haven't already added it, then this is one that should show up in the page of achievements
                         // so add it
                         if (!added) {
+                            if(myAchievement.new && showUpcoming != "true") {
+                                return;
+                            }
                             if(showOnlyUnobtained == "true") {
                                 if(!myAchievement.completed) {
                                     mySubCat.achievements.push(myAchievement);                                
