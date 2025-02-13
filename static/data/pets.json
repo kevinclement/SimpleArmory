@@ -442,6 +442,24 @@
             "itemId": 222970,
             "name": "Fuzzy",
             "spellid": 446435
+          },
+          {
+            "ID": 4631,
+            "creatureId": 231469,
+            "icon": "inv_babyhyena_yellow",
+            "itemId": 232855,
+            "name": "Foreman",
+            "new": true,
+            "spellid": 471902
+          },
+          {
+            "ID": 4664,
+            "creatureId": 231621,
+            "icon": "inv_chicken2_mechanical",
+            "itemId": 232807,
+            "name": "Iron Chick",
+            "new": true,
+            "spellid": 471946
           }
         ],
         "name": "Achievement"
@@ -504,6 +522,15 @@
             "itemId": 233056,
             "name": "Marmaduke",
             "spellid": 472536
+          },
+          {
+            "ID": 4642,
+            "creatureId": 231451,
+            "icon": "inv_toygorilla_blue",
+            "itemId": 232843,
+            "name": "Gorillion",
+            "new": true,
+            "spellid": 471935
           }
         ],
         "name": "Quest"
@@ -681,6 +708,70 @@
       {
         "items": [
           {
+            "ID": 4640,
+            "creatureId": 231454,
+            "icon": "inv_babydevilsaur_yellow",
+            "itemId": 232844,
+            "name": "Fun-Size Flarendo",
+            "new": true,
+            "spellid": 471933
+          },
+          {
+            "ID": 4643,
+            "creatureId": 231448,
+            "icon": "inv_toygorilla_red",
+            "itemId": 232806,
+            "name": "Tiny Torq",
+            "new": true,
+            "spellid": 471945
+          }
+        ],
+        "name": "Raid Renown"
+      },
+      {
+        "items": [
+          {
+            "ID": 4645,
+            "creatureId": 231458,
+            "icon": "inv_111_sapper_bilgewater",
+            "itemId": 232845,
+            "name": "Bilgewater Junkhauler",
+            "new": true,
+            "spellid": 471925
+          },
+          {
+            "ID": 4632,
+            "creatureId": 231468,
+            "icon": "inv_babyhyena_green",
+            "itemId": 232853,
+            "name": "Eepy",
+            "new": true,
+            "spellid": 471904
+          },
+          {
+            "ID": 4637,
+            "creatureId": 231457,
+            "icon": "inv_babydevilsaur_blue",
+            "itemId": 232839,
+            "name": "Wavebreaker Mechasaur",
+            "new": true,
+            "spellid": 471942
+          },
+          {
+            "ID": 4641,
+            "creatureId": 231450,
+            "icon": "inv_toygorilla_yellow",
+            "itemId": 232851,
+            "name": "Rocketfist",
+            "new": true,
+            "spellid": 471918
+          }
+        ],
+        "name": "Reputation"
+      },
+      {
+        "items": [
+          {
             "ID": 4543,
             "creatureId": 223135,
             "icon": "spell_holy_prayerofshadowprotection",
@@ -727,6 +818,15 @@
             "itemId": 223624,
             "name": "Sneef",
             "spellid": 449475
+          },
+          {
+            "ID": 4647,
+            "creatureId": 231462,
+            "icon": "inv_111_sapper_darkfuse",
+            "itemId": 232848,
+            "name": "Mr. DELVER",
+            "new": true,
+            "spellid": 471922
           }
         ],
         "name": "Delves"
@@ -756,9 +856,95 @@
             "itemId": 234395,
             "name": "Skitterbite",
             "spellid": 1213831
+          },
+          {
+            "ID": 4661,
+            "creatureId": 231622,
+            "icon": "inv_mechanicalprairiedog_black",
+            "itemId": 232840,
+            "name": "Mechagopher",
+            "new": true,
+            "spellid": 471941
+          },
+          {
+            "ID": 4648,
+            "creatureId": 231461,
+            "icon": "inv_111_sapper_steamwheedle",
+            "itemId": 232846,
+            "name": "Steamwheedle Flunkie",
+            "new": true,
+            "spellid": 471924
+          },
+          {
+            "ID": 4649,
+            "creatureId": 231459,
+            "icon": "inv_111_sapper_blackwater",
+            "itemId": 232850,
+            "name": "Blackwater Kegmover",
+            "new": true,
+            "spellid": 471920
+          },
+          {
+            "ID": 4650,
+            "creatureId": 231460,
+            "icon": "inv_111_sapper_ventureco",
+            "itemId": 232849,
+            "name": "Venture Companyman",
+            "new": true,
+            "spellid": 471921
+          },
+          {
+            "ID": 4644,
+            "creatureId": 231453,
+            "icon": "inv_toygorilla_green",
+            "itemId": 232841,
+            "name": "Professor Punch",
+            "new": true,
+            "spellid": 471940
+          },
+          {
+            "ID": 4638,
+            "creatureId": 231455,
+            "icon": "inv_babydevilsaur_red",
+            "itemId": 232842,
+            "name": "Crimson Mechasaur",
+            "new": true,
+            "spellid": 471939
           }
         ],
         "name": "Vendor"
+      },
+      {
+        "items": [
+          {
+            "ID": 4653,
+            "creatureId": 231479,
+            "icon": "inv_111_rat_white",
+            "itemId": 232859,
+            "name": "Lab Rat",
+            "new": true,
+            "spellid": 471895
+          },
+          {
+            "ID": 4655,
+            "creatureId": 231548,
+            "icon": "inv_cockroach2_black",
+            "itemId": 232858,
+            "name": "Cruncher",
+            "new": true,
+            "spellid": 471899
+          },
+          {
+            "ID": 4639,
+            "creatureId": 231456,
+            "icon": "inv_babydevilsaur_green",
+            "itemId": 232838,
+            "name": "Viridian Mechasaur",
+            "new": true,
+            "spellid": 471944
+          }
+        ],
+        "name": "S.C.R.A.P."
       },
       {
         "items": [
@@ -815,6 +1001,15 @@
             "itemId": 223155,
             "name": "Bop",
             "spellid": 446024
+          },
+          {
+            "ID": 4759,
+            "creatureId": 238393,
+            "icon": "inv_crabbomb_black",
+            "itemId": 236768,
+            "name": "Craboom",
+            "new": true,
+            "spellid": 1220834
           }
         ],
         "name": "Dungeon Drop"
@@ -1029,6 +1224,66 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 449810
+          },
+          {
+            "ID": 4633,
+            "creatureId": 231467,
+            "icon": "inv_babyhyena_blue",
+            "itemId": 232856,
+            "name": "Scruff",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 471901
+          },
+          {
+            "ID": 4634,
+            "creatureId": 231465,
+            "icon": "inv_babyhyena_black",
+            "itemId": 232854,
+            "name": "Grinner",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 471903
+          },
+          {
+            "ID": 4635,
+            "creatureId": 231466,
+            "icon": "inv_babyhyena_red",
+            "itemId": 232857,
+            "name": "Goggles",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 471900
+          },
+          {
+            "ID": 4636,
+            "creatureId": 231464,
+            "icon": "inv_babyhyena_purple",
+            "itemId": 232852,
+            "name": "Mutt",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 471907
+          },
+          {
+            "ID": 4646,
+            "creatureId": 231463,
+            "icon": "inv_111_sapper_darkfuse",
+            "itemId": 232847,
+            "name": "Personal-Use Sapper",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 471923
+          },
+          {
+            "ID": 4701,
+            "creatureId": 234071,
+            "icon": "inv_rat2undermine_redpatchy",
+            "itemId": 232895,
+            "name": "Spotty",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 472194
           }
         ],
         "name": "Unknown"
@@ -8899,7 +9154,7 @@
           {
             "ID": 4691,
             "creatureId": 233564,
-            "icon": "6027035",
+            "icon": "inv_yetigreench2pet",
             "itemId": 232531,
             "name": "Grunch",
             "spellid": 471121
@@ -11023,7 +11278,7 @@
           {
             "ID": 4719,
             "creatureId": 234664,
-            "icon": "inv_clockworkbeagle_gold",
+            "icon": "inv_clockworkbeagle_green",
             "itemId": 233366,
             "name": "Wind-Up Woofer",
             "spellid": 473945
@@ -11380,6 +11635,16 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1215317
+          },
+          {
+            "ID": 4762,
+            "creatureId": 240137,
+            "icon": "inv_clockworkbeagle_blue",
+            "itemId": 238261,
+            "name": "Tock the Clocker Spaniel",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1224569
           }
         ],
         "name": "Blizzard Store"
