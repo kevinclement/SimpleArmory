@@ -5,8 +5,8 @@
   export let item;
   export let getItemPath = (item) => item.link;
 
-  $: href = "//" + settings.WowHeadUrl + "/" + getItemPath(item);
-  $: src = getImageSrc(item, true)
+  $: href = item.new ? "//" + settings.WowHeadUrl + "/ptr-2/" + getItemPath(item) : "//" + settings.WowHeadUrl + "/" + getItemPath(item);
+  $: src = getImageSrc(item, true);
 </script>
 
 <a
