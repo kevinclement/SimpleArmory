@@ -155,6 +155,10 @@ function parseAchievementObject(db, earned, character, faction) {
                     if ((supercat.name !== 'Feats of Strength' || showHiddenFeats == "shown") && supercat.name !== 'Legacy' && !ach.notReleased && ((showHiddenItems == "shown" && ach.notObtainable) || !ach.notObtainable) && 
                         (!ach.side || ach.side === faction)){
 
+                        if(myAchievement.new && showUpcoming != "true") {
+                            return;
+                        }
+
                         if (supercat.name !== 'Feats of Strength') {
                             possibleCount++;
                             totalPossible++;
@@ -167,9 +171,6 @@ function parseAchievementObject(db, earned, character, faction) {
                         // if we haven't already added it, then this is one that should show up in the page of achievements
                         // so add it
                         if (!added) {
-                            if(myAchievement.new && showUpcoming != "true") {
-                                return;
-                            }
                             if(showOnlyUnobtained == "true") {
                                 if(!myAchievement.completed) {
                                     mySubCat.achievements.push(myAchievement);                                
