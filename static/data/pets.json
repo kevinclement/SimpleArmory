@@ -243,6 +243,19 @@
       {
         "items": [
           {
+            "ID": 4762,
+            "creatureId": 240137,
+            "icon": "inv_clockworkbeagle_blue",
+            "itemId": 238261,
+            "name": "Tock the Clocker Spaniel",
+            "spellid": 1224569
+          }
+        ],
+        "name": "Twitch Drops"
+      },
+      {
+        "items": [
+          {
             "ID": 4729,
             "creatureId": 235159,
             "icon": "inv_redpandapet_orange",
@@ -331,22 +344,6 @@
             "itemId": 224576,
             "name": "Lil' Flameo",
             "spellid": 453266
-          },
-          {
-            "ID": 4617,
-            "creatureId": 229890,
-            "icon": "inv_pet_futurebotpet_orange",
-            "itemId": 228790,
-            "name": "Thrillbot 9000",
-            "spellid": 463242
-          },
-          {
-            "ID": 4618,
-            "creatureId": 229901,
-            "icon": "inv_pet_futurebotpet_purple",
-            "itemId": 228793,
-            "name": "Chillbot 9000",
-            "spellid": 463251
           },
           {
             "ID": 4690,
@@ -11615,16 +11612,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1215317
-          },
-          {
-            "ID": 4762,
-            "creatureId": 240137,
-            "icon": "inv_clockworkbeagle_blue",
-            "itemId": 238261,
-            "name": "Tock the Clocker Spaniel",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1224569
           }
         ],
         "name": "Blizzard Store"
@@ -12118,6 +12105,27 @@
           }
         ],
         "name": "Warcraft Rumble"
+      },
+      {
+        "items": [
+          {
+            "ID": 4617,
+            "creatureId": 229890,
+            "icon": "inv_pet_futurebotpet_orange",
+            "itemId": 228790,
+            "name": "Thrillbot 9000",
+            "spellid": 463242
+          },
+          {
+            "ID": 4618,
+            "creatureId": 229901,
+            "icon": "inv_pet_futurebotpet_purple",
+            "itemId": 228793,
+            "name": "Chillbot 9000",
+            "spellid": 463251
+          }
+        ],
+        "name": "Mountain Dew"
       },
       {
         "items": [
