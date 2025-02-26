@@ -39727,6 +39727,7 @@
                 {
                   "icon": "inv_helm_misc_candle_a_01",
                   "id": 40446,
+                  "notObtainable": true,
                   "points": 10,
                   "title": "I TAKE Candle!"
                 }
@@ -44687,6 +44688,13 @@
                   "title": "Against the Elements"
                 },
                 {
+                  "icon": "ability_racial_arcaneaffinity",
+                  "id": 19080,
+                  "notObtainable": true,
+                  "points": 0,
+                  "title": "Arcane Influence"
+                },
+                {
                   "icon": "spell_azerite_essence11",
                   "id": 40796,
                   "notObtainable": true,
@@ -44920,19 +44928,6 @@
               "name": "Other"
             },
             {
-              "id": "9aa24528",
-              "items": [
-                {
-                  "icon": "ability_racial_arcaneaffinity",
-                  "id": 19080,
-                  "notObtainable": true,
-                  "points": 0,
-                  "title": "Arcane Influence"
-                }
-              ],
-              "name": "Secrets of Azeroth"
-            },
-            {
               "items": [
                 {
                   "icon": "inv_helm_armor_pirateeyepatch_b_01_piratespecial",
@@ -44972,15 +44967,15 @@
                 },
                 {
                   "icon": "inv_cape_special_treasure_c_01",
-                  "id": 41160,
-                  "points": 0,
-                  "title": "It's a Plunderful Life"
-                },
-                {
-                  "icon": "inv_cape_special_treasure_c_01",
                   "id": 41163,
                   "points": 0,
                   "title": "Lord of the Bling"
+                },
+                {
+                  "icon": "inv_cape_special_treasure_c_01",
+                  "id": 41160,
+                  "points": 0,
+                  "title": "It's a Plunderful Life"
                 },
                 {
                   "icon": "inv_cape_special_treasure_c_01",

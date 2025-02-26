@@ -330,14 +330,6 @@
       {
         "items": [
           {
-            "ID": 4616,
-            "creatureId": 229860,
-            "icon": "inv_brokerworm_pink",
-            "itemId": 228765,
-            "name": "Gummi",
-            "spellid": 463148
-          },
-          {
             "ID": 4595,
             "creatureId": 225354,
             "icon": "inv_pitlordpet_fire",
@@ -355,51 +347,6 @@
           }
         ],
         "name": "Promotions"
-      },
-      {
-        "items": [
-          {
-            "ID": 4435,
-            "creatureId": 218977,
-            "icon": "inv_misc_fish_58",
-            "itemId": 233252,
-            "name": "Happy",
-            "spellid": 438543
-          },
-          {
-            "ID": 4426,
-            "creatureId": 218646,
-            "icon": "inv_hermitcrab_truesilver",
-            "itemId": 233251,
-            "name": "Bubbles",
-            "spellid": 437600
-          },
-          {
-            "ID": 4425,
-            "creatureId": 218647,
-            "icon": "inv_treasurecrabpet_red",
-            "itemId": 233248,
-            "name": "Glamrok",
-            "spellid": 437601
-          },
-          {
-            "ID": 4692,
-            "creatureId": 233797,
-            "icon": "inv_treasurecrabpet_blue",
-            "itemId": 233247,
-            "name": "Sparklesnap",
-            "spellid": 471479
-          },
-          {
-            "ID": 4695,
-            "creatureId": 233967,
-            "icon": "inv_parrotmount_purple",
-            "itemId": 235989,
-            "name": "Parley",
-            "spellid": 471798
-          }
-        ],
-        "name": "Plunderstorm"
       }
     ]
   },
@@ -9124,8 +9071,6 @@
             "icon": "inv_holiday_christmas_present_01",
             "itemId": 232653,
             "name": "Portentous Present",
-            "notObtainable": true,
-            "notReleased": true,
             "spellid": 471751
           },
           {
@@ -11328,6 +11273,56 @@
       {
         "items": [
           {
+            "ID": 4435,
+            "creatureId": 218977,
+            "icon": "inv_misc_fish_58",
+            "itemId": 233252,
+            "name": "Happy",
+            "notObtainable": true,
+            "spellid": 438543
+          },
+          {
+            "ID": 4426,
+            "creatureId": 218646,
+            "icon": "inv_hermitcrab_truesilver",
+            "itemId": 233251,
+            "name": "Bubbles",
+            "notObtainable": true,
+            "spellid": 437600
+          },
+          {
+            "ID": 4425,
+            "creatureId": 218647,
+            "icon": "inv_treasurecrabpet_red",
+            "itemId": 233248,
+            "name": "Glamrok",
+            "notObtainable": true,
+            "spellid": 437601
+          },
+          {
+            "ID": 4692,
+            "creatureId": 233797,
+            "icon": "inv_treasurecrabpet_blue",
+            "itemId": 233247,
+            "name": "Sparklesnap",
+            "notObtainable": true,
+            "spellid": 471479
+          },
+          {
+            "ID": 4695,
+            "creatureId": 233967,
+            "icon": "inv_parrotmount_purple",
+            "itemId": 235989,
+            "name": "Parley",
+            "notObtainable": true,
+            "spellid": 471798
+          }
+        ],
+        "name": "Plunderstorm"
+      },
+      {
+        "items": [
+          {
             "ID": 4579,
             "creatureId": 223785,
             "icon": "inv_yakpet",
@@ -12126,6 +12121,19 @@
           }
         ],
         "name": "Mountain Dew"
+      },
+      {
+        "items": [
+          {
+            "ID": 4616,
+            "creatureId": 229860,
+            "icon": "inv_brokerworm_pink",
+            "itemId": 228765,
+            "name": "Gummi",
+            "spellid": 463148
+          }
+        ],
+        "name": "Trolli"
       },
       {
         "items": [
