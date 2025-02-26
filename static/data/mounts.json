@@ -275,58 +275,6 @@
       {
         "items": [
           {
-            "ID": 2321,
-            "icon": "inv_sandbeemount",
-            "itemId": 232624,
-            "name": "Timely Buzzbee",
-            "spellid": 471538
-          }
-        ],
-        "name": "Turbulent Timeways"
-      },
-      {
-        "items": [
-          {
-            "ID": 1259,
-            "icon": "inv_hippocampusmount_white",
-            "itemId": 233243,
-            "name": "Silver Tidestallion",
-            "spellid": 300154
-          },
-          {
-            "ID": 994,
-            "icon": "inv_parrotmount_blue",
-            "itemId": 233242,
-            "name": "Royal Seafeather",
-            "spellid": 254812
-          },
-          {
-            "ID": 2090,
-            "icon": "inv_parrotpiratemount_blue",
-            "itemId": 233240,
-            "name": "Polly Roger",
-            "spellid": 437162
-          },
-          {
-            "ID": 2324,
-            "icon": "inv_parrotpiratemount_purple",
-            "itemId": 233241,
-            "name": "Hooktalon",
-            "spellid": 471696
-          },
-          {
-            "ID": 2240,
-            "icon": "inv_treasurebasiliskmount_black",
-            "itemId": 226042,
-            "name": "Plunderlord's Midnight Crocolisk",
-            "spellid": 457656
-          }
-        ],
-        "name": "Plunderstorm"
-      },
-      {
-        "items": [
-          {
             "ID": 2244,
             "icon": "inv_crystalmech_teal",
             "itemId": 226357,
@@ -364,6 +312,7 @@
             "icon": "inv_felbatgladiatormount_copper",
             "itemId": 229987,
             "name": "Prized Gladiator's Fel Bat",
+            "notObtainable": true,
             "spellid": 466144
           }
         ],
@@ -539,18 +488,21 @@
           {
             "ID": 2286,
             "icon": "inv_goblinshreddermech_blue",
+            "itemId": "229948",
             "name": "Blackwater Shredder Deluxe Mk 2",
             "spellid": 466019
           },
           {
             "ID": 2284,
             "icon": "inv_yellow_rocketmount5",
+            "itemId": "229946",
             "name": "Ocher Delivery Rocket",
             "spellid": 466013
           },
           {
             "ID": 2287,
             "icon": "inv_goblinshreddermech_black",
+            "itemId": "229950",
             "name": "Darkfuse Demolisher",
             "spellid": 466018
           }
@@ -618,12 +570,14 @@
           {
             "ID": 2277,
             "icon": "inv_purple_hyena2goblinmount",
+            "itemId": "229936",
             "name": "Violet Armored Growler",
             "spellid": 466002
           },
           {
             "ID": 2280,
             "icon": "inv_purple_rocketmount5",
+            "itemId": "229944",
             "name": "The Topskimmer Special",
             "spellid": 466016
           }
@@ -678,7 +632,6 @@
           {
             "ID": 2276,
             "icon": "inv_black_hyena2goblinmount",
-            "itemId": 229924,
             "name": "Darkfuse Chompactor",
             "spellid": 466000
           },
@@ -750,8 +703,8 @@
             "ID": 2303,
             "icon": "inv_goblinshreddermech_purple",
             "itemId": 229947,
-            "ptr": true,
             "name": "Violet Goblin Shredder",
+            "ptr": true,
             "spellid": 466021
           }
         ],
@@ -835,18 +788,21 @@
           {
             "ID": 2283,
             "icon": "inv_black_rocketmount5",
+            "itemId": "229941",
             "name": "Innovation Investigator",
             "spellid": 466017
           },
           {
             "ID": 2290,
             "icon": "inv_goblinshreddermech",
+            "itemId": "229952",
             "name": "Asset Advocator",
             "spellid": 466023
           },
           {
             "ID": 2292,
             "icon": "inv_goblinflyingmachine_blue",
+            "itemId": "229954",
             "name": "Margin Manipulator",
             "spellid": 466025
           },
@@ -8407,7 +8363,6 @@
           {
             "ID": 2299,
             "icon": "inv_electriceelviciousmount_red",
-            "itemId": 229988,
             "name": "Vicious Electro Eel",
             "side": "H",
             "spellid": 466145
@@ -8415,7 +8370,6 @@
           {
             "ID": 2300,
             "icon": "inv_electriceelviciousmount_blue",
-            "itemId": 229989,
             "name": "Vicious Electro Eel",
             "side": "A",
             "spellid": 466146
@@ -9495,6 +9449,64 @@
           }
         ],
         "name": "Trading Post Originals"
+      },
+      {
+        "items": [
+          {
+            "ID": 1259,
+            "icon": "inv_hippocampusmount_white",
+            "itemId": 233243,
+            "name": "Silver Tidestallion",
+            "notObtainable": true,
+            "spellid": 300154
+          },
+          {
+            "ID": 994,
+            "icon": "inv_parrotmount_blue",
+            "itemId": 233242,
+            "name": "Royal Seafeather",
+            "notObtainable": true,
+            "spellid": 254812
+          },
+          {
+            "ID": 2090,
+            "icon": "inv_parrotpiratemount_blue",
+            "itemId": 233240,
+            "name": "Polly Roger",
+            "notObtainable": true,
+            "spellid": 437162
+          },
+          {
+            "ID": 2324,
+            "icon": "inv_parrotpiratemount_purple",
+            "itemId": 233241,
+            "name": "Hooktalon",
+            "notObtainable": true,
+            "spellid": 471696
+          },
+          {
+            "ID": 2240,
+            "icon": "inv_treasurebasiliskmount_black",
+            "itemId": 226042,
+            "name": "Plunderlord's Midnight Crocolisk",
+            "notObtainable": true,
+            "spellid": 457656
+          }
+        ],
+        "name": "Plunderstorm"
+      },
+      {
+        "items": [
+          {
+            "ID": 2321,
+            "icon": "inv_sandbeemount",
+            "itemId": 232624,
+            "name": "Timely Buzzbee",
+            "notObtainable": true,
+            "spellid": 471538
+          }
+        ],
+        "name": "Turbulent Timeways"
       },
       {
         "items": [
