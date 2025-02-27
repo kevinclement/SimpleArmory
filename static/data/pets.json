@@ -402,6 +402,14 @@
             "itemId": 232807,
             "name": "Iron Chick",
             "spellid": 471946
+          },
+          {
+            "ID": 3518,
+            "creatureId": 204237,
+            "icon": "inv_caveswallow_green",
+            "itemId": 205013,
+            "name": "Lettuce",
+            "spellid": 407946
           }
         ],
         "name": "Achievement"
@@ -472,6 +480,14 @@
             "itemId": 232843,
             "name": "Gorillion",
             "spellid": 471935
+          },
+          {
+            "ID": 4701,
+            "creatureId": 234071,
+            "icon": "inv_rat2undermine_redpatchy",
+            "itemId": 232895,
+            "name": "Spotty",
+            "spellid": 472194
           }
         ],
         "name": "Quest"
@@ -874,6 +890,27 @@
       {
         "items": [
           {
+            "ID": 4646,
+            "creatureId": 231463,
+            "icon": "inv_111_sapper_darkfuse",
+            "itemId": 232847,
+            "name": "Personal-Use Sapper",
+            "spellid": 471923
+          },
+          {
+            "ID": 4636,
+            "creatureId": 231464,
+            "icon": "inv_babyhyena_purple",
+            "itemId": 232852,
+            "name": "Mutt",
+            "spellid": 471907
+          }
+        ],
+        "name": "Shipping and Handling"
+      },
+      {
+        "items": [
+          {
             "ID": 4495,
             "creatureId": 222079,
             "icon": "inv_blindcaveskipper_blue",
@@ -1063,16 +1100,6 @@
             "spellid": 446048
           },
           {
-            "ID": 4484,
-            "creatureId": 222420,
-            "icon": "inv_bloodticklarvaedarkred",
-            "itemId": 221762,
-            "name": "Frenzied Bloodtick",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 446119
-          },
-          {
             "ID": 4493,
             "creatureId": 222080,
             "icon": "inv_blindcaveskipper_red",
@@ -1178,36 +1205,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 471900
-          },
-          {
-            "ID": 4636,
-            "creatureId": 231464,
-            "icon": "inv_babyhyena_purple",
-            "itemId": 232852,
-            "name": "Mutt",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 471907
-          },
-          {
-            "ID": 4646,
-            "creatureId": 231463,
-            "icon": "inv_111_sapper_darkfuse",
-            "itemId": 232847,
-            "name": "Personal-Use Sapper",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 471923
-          },
-          {
-            "ID": 4701,
-            "creatureId": 234071,
-            "icon": "inv_rat2undermine_redpatchy",
-            "itemId": 232895,
-            "name": "Spotty",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 472194
           }
         ],
         "name": "Unknown"
@@ -2432,16 +2429,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 407935
-          },
-          {
-            "ID": 3518,
-            "creatureId": 204237,
-            "icon": "inv_caveswallow_green",
-            "itemId": 205013,
-            "name": "Lettuce",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 407946
           },
           {
             "ID": 3519,
