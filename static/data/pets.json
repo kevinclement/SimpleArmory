@@ -254,78 +254,8 @@
         "name": "Twitch Drops"
       },
       {
-        "items": [
-          {
-            "ID": 4729,
-            "creatureId": 235159,
-            "icon": "inv_redpandapet_orange",
-            "itemId": 234397,
-            "name": "Fullbelly Rollingpaw",
-            "spellid": 1213933
-          },
-          {
-            "ID": 4728,
-            "creatureId": 235152,
-            "icon": "inv_redpandapet_red",
-            "itemId": 234396,
-            "name": "Teatuft Tamer",
-            "spellid": 1213903
-          }
-        ],
-        "name": "Trading Post: February"
-      },
-      {
-        "items": [
-          {
-            "ID": 242,
-            "creatureId": 36511,
-            "icon": "ability_mount_spectraltiger",
-            "itemId": 49343,
-            "name": "Spectral Tiger Cub",
-            "spellid": 68810
-          },
-          {
-            "ID": 3255,
-            "creatureId": 185756,
-            "icon": "inv_pet_babymoose_white",
-            "itemId": 190925,
-            "name": "Buttercup",
-            "spellid": 368314
-          },
-          {
-            "ID": 3244,
-            "creatureId": 185324,
-            "icon": "inv_mummypet",
-            "itemId": 190176,
-            "name": "Drazka'zet the Wrathful",
-            "spellid": 366842
-          },
-          {
-            "ID": 3250,
-            "creatureId": 183708,
-            "icon": "inv_pet_egbert",
-            "itemId": 190603,
-            "name": "Egbob",
-            "spellid": 367732
-          },
-          {
-            "ID": 3251,
-            "creatureId": 185604,
-            "icon": "inv_bee_red",
-            "itemId": 190604,
-            "name": "Buzzworth",
-            "spellid": 367748
-          },
-          {
-            "ID": 4253,
-            "creatureId": 208436,
-            "icon": "inv_pet_celestialfoxwyvern",
-            "itemId": 208045,
-            "name": "Slyvy",
-            "spellid": 417464
-          }
-        ],
-        "name": "Trading Post Anniversary"
+        "items": [],
+        "name": "Trading Post: "
       },
       {
         "items": [
@@ -11049,6 +10979,22 @@
         "id": "231e8d27",
         "items": [
           {
+            "ID": 3252,
+            "creatureId": 185606,
+            "icon": "inv_ogrepet",
+            "itemId": 190607,
+            "name": "Garrlok",
+            "spellid": 367768
+          },
+          {
+            "ID": 3250,
+            "creatureId": 183708,
+            "icon": "inv_pet_egbert",
+            "itemId": 190603,
+            "name": "Egbob",
+            "spellid": 367732
+          },
+          {
             "ID": 3243,
             "creatureId": 183686,
             "icon": "creatureportrait_robot_doberman",
@@ -11057,12 +11003,36 @@
             "spellid": 366841
           },
           {
-            "ID": 3252,
-            "creatureId": 185606,
-            "icon": "inv_ogrepet",
-            "itemId": 190607,
-            "name": "Garrlok",
-            "spellid": 367768
+            "ID": 3251,
+            "creatureId": 185604,
+            "icon": "inv_bee_red",
+            "itemId": 190604,
+            "name": "Buzzworth",
+            "spellid": 367748
+          },
+          {
+            "ID": 4253,
+            "creatureId": 208436,
+            "icon": "inv_pet_celestialfoxwyvern",
+            "itemId": 208045,
+            "name": "Slyvy",
+            "spellid": 417464
+          },
+          {
+            "ID": 3244,
+            "creatureId": 185324,
+            "icon": "inv_mummypet",
+            "itemId": 190176,
+            "name": "Drazka'zet the Wrathful",
+            "spellid": 366842
+          },
+          {
+            "ID": 3255,
+            "creatureId": 185756,
+            "icon": "inv_pet_babymoose_white",
+            "itemId": 190925,
+            "name": "Buttercup",
+            "spellid": 368314
           },
           {
             "ID": 4311,
@@ -11081,14 +11051,6 @@
             "spellid": 375235
           },
           {
-            "ID": 4402,
-            "creatureId": 214286,
-            "icon": "inv_mouserock_teal",
-            "itemId": 211432,
-            "name": "Teele",
-            "spellid": 429423
-          },
-          {
             "ID": 4407,
             "creatureId": 216345,
             "icon": "inv_ladybugpet_red",
@@ -11103,6 +11065,14 @@
             "itemId": 212722,
             "name": "Buggsy",
             "spellid": 432888
+          },
+          {
+            "ID": 4402,
+            "creatureId": 214286,
+            "icon": "inv_mouserock_teal",
+            "itemId": 211432,
+            "name": "Teele",
+            "spellid": 429423
           },
           {
             "ID": 4286,
@@ -11193,6 +11163,22 @@
             "spellid": 473945
           },
           {
+            "ID": 4729,
+            "creatureId": 235159,
+            "icon": "inv_redpandapet_orange",
+            "itemId": 234397,
+            "name": "Fullbelly Rollingpaw",
+            "spellid": 1213933
+          },
+          {
+            "ID": 4728,
+            "creatureId": 235152,
+            "icon": "inv_redpandapet_red",
+            "itemId": 234396,
+            "name": "Teatuft Tamer",
+            "spellid": 1213903
+          },
+          {
             "ID": 3242,
             "creatureId": 185322,
             "icon": "inv_brontosaurusmount",
@@ -11228,12 +11214,19 @@
       {
         "items": [
           {
+            "ID": 179,
+            "creatureId": 27217,
+            "icon": "inv_jewelry_amulet_03",
+            "itemId": 37297,
+            "name": "Spirit of Competition",
+            "spellid": 48406
+          },
+          {
             "ID": 249,
             "creatureId": 36979,
             "icon": "achievement_boss_kelthuzad_01",
             "itemId": 49693,
             "name": "Lil' K.T.",
-            "notObtainable": true,
             "spellid": 69677
           },
           {
@@ -11242,17 +11235,15 @@
             "icon": "inv_misc_pet_03",
             "itemId": 49665,
             "name": "Pandaren Monk",
-            "notObtainable": true,
             "spellid": 69541
           },
           {
-            "ID": 179,
-            "creatureId": 27217,
-            "icon": "inv_jewelry_amulet_03",
-            "itemId": 37297,
-            "name": "Spirit of Competition",
-            "notObtainable": true,
-            "spellid": 48406
+            "ID": 242,
+            "creatureId": 36511,
+            "icon": "ability_mount_spectraltiger",
+            "itemId": 49343,
+            "name": "Spectral Tiger Cub",
+            "spellid": 68810
           }
         ],
         "name": "Trading Post Re-Releases"
