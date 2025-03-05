@@ -268,33 +268,6 @@
         "items": [
           {
             "icon": "achievement_challengemode_silver",
-            "id": 20524,
-            "name": "The Tempered",
-            "titleId": 579,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_challengemode_platinum",
-            "id": 20589,
-            "name": "The Tempered Hero",
-            "notObtainable": true,
-            "titleId": 548,
-            "type": "achievement"
-          },
-          {
-            "icon": "inv_nerubianbeetlepet_purple",
-            "id": 40431,
-            "name": "Ascension Breaker",
-            "titleId": 560,
-            "type": "achievement"
-          }
-        ],
-        "name": "War Within: Season 1"
-      },
-      {
-        "items": [
-          {
-            "icon": "achievement_challengemode_silver",
             "id": 40950,
             "name": "The Enterprising",
             "titleId": 592,
@@ -363,6 +336,27 @@
       {
         "items": [
           {
+            "icon": "achievement_challengemode_silver",
+            "id": 20524,
+            "name": "The Tempered",
+            "notObtainable": true,
+            "titleId": 579,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_challengemode_platinum",
+            "id": 20589,
+            "name": "The Tempered Hero",
+            "notObtainable": true,
+            "titleId": 548,
+            "type": "achievement"
+          }
+        ],
+        "name": "Mythic Plus"
+      },
+      {
+        "items": [
+          {
             "icon": "inv_cape_special_treasure_c_01",
             "id": 40506,
             "name": "Seeker of Loot",
@@ -388,6 +382,14 @@
             "id": 40882,
             "name": "The Bountiful",
             "titleId": 575,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_nerubianbeetlepet_purple",
+            "id": 40431,
+            "notObtainable": true,
+            "name": "Ascension Breaker",
+            "titleId": 560,
             "type": "achievement"
           }
         ],
@@ -2535,7 +2537,6 @@
             "icon": "inv_axe_1h_earthendungeon_c_01",
             "id": 40097,
             "name": "Slayer of the Deeps",
-            "notObtainable": true,
             "titleId": 562,
             "type": "achievement"
           }
