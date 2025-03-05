@@ -219,26 +219,6 @@
       {
         "items": [
           {
-            "ID": 2244,
-            "icon": "inv_crystalmech_teal",
-            "itemId": 226357,
-            "name": "Diamond Mechsuit",
-            "spellid": 458335
-          },
-          {
-            "ID": 2218,
-            "icon": "inv_felbatgladiatormount_gold",
-            "itemId": 223586,
-            "name": "Forged Gladiator's Fel Bat",
-            "notObtainable": true,
-            "spellid": 449466
-          }
-        ],
-        "name": "War Within: Season 1"
-      },
-      {
-        "items": [
-          {
             "ID": 2480,
             "icon": "inv_goblinspidertank",
             "name": "Crimson Shreddertank",
@@ -250,6 +230,22 @@
             "itemId": 237141,
             "name": "Enterprising Shreddertank",
             "spellid": 1221694
+          },
+          {
+            "ID": 2299,
+            "icon": "inv_electriceelviciousmount_red",
+            "itemId": 229988,
+            "name": "Vicious Electro Eel",
+            "side": "H",
+            "spellid": 466145
+          },
+          {
+            "ID": 2300,
+            "icon": "inv_electriceelviciousmount_blue",
+            "itemId": 229989,
+            "name": "Vicious Electro Eel",
+            "side": "A",
+            "spellid": 466146
           },
           {
             "ID": 2298,
@@ -364,6 +360,14 @@
             "itemId": 231173,
             "name": "Junkmaestro's Magnetomech",
             "spellid": 468068
+          },
+          {
+            "ID": 2244,
+            "icon": "inv_crystalmech_teal",
+            "itemId": 226357,
+            "notObtainable": true,
+            "name": "Diamond Mechsuit",
+            "spellid": 458335
           }
         ],
         "name": "Achievement"
@@ -414,6 +418,7 @@
             "ID": 2119,
             "icon": "inv_dwarvenmechboss",
             "itemId": 221765,
+            "notObtainable": true,
             "name": "Stonevault Mechsuit",
             "spellid": 442358
           }
@@ -676,7 +681,6 @@
             "icon": "inv_goblinshreddermech_purple",
             "itemId": 229947,
             "name": "Violet Goblin Shredder",
-            "ptr": true,
             "spellid": 466021
           }
         ],
@@ -8321,6 +8325,7 @@
             "ID": 2211,
             "icon": "inv_viciousflyingnerubian2_alliance",
             "itemId": 223511,
+            "notObtainable": true,
             "name": "Vicious Skyflayer",
             "side": "A",
             "spellid": 449325
@@ -8329,23 +8334,10 @@
             "ID": 2150,
             "icon": "inv_viciousflyingnerubian2_horde",
             "itemId": 221813,
+            "notObtainable": true,
             "name": "Vicious Skyflayer",
             "side": "H",
             "spellid": 447405
-          },
-          {
-            "ID": 2299,
-            "icon": "inv_electriceelviciousmount_red",
-            "name": "Vicious Electro Eel",
-            "side": "H",
-            "spellid": 466145
-          },
-          {
-            "ID": 2300,
-            "icon": "inv_electriceelviciousmount_blue",
-            "name": "Vicious Electro Eel",
-            "side": "A",
-            "spellid": 466146
           }
         ],
         "name": "Vicious Saddle"
@@ -8648,6 +8640,14 @@
             "name": "Draconic Gladiator's Drake",
             "notObtainable": true,
             "spellid": 424539
+          },
+          {
+            "ID": 2218,
+            "icon": "inv_felbatgladiatormount_gold",
+            "itemId": 223586,
+            "name": "Forged Gladiator's Fel Bat",
+            "notObtainable": true,
+            "spellid": 449466
           }
         ],
         "name": "Gladiator"
