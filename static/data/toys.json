@@ -149,8 +149,8 @@
             "ID": 1495,
             "icon": "inv_ability_poison_buff",
             "itemId": 225547,
-            "notObtainable": true,
-            "name": "Toxic Victory"
+            "name": "Toxic Victory",
+            "notObtainable": true
           },
           {
             "ID": 1515,
@@ -468,6 +468,20 @@
             "icon": "inv_10_engineering2_boxofbombs_friendly_color2",
             "itemId": 237382,
             "name": "Undermine Supply Crate"
+          },
+          {
+            "ID": 1578,
+            "icon": "inv_11_0_misc_whistle_color1",
+            "itemId": 239693,
+            "new": true,
+            "name": "Radiant Lynx Whistle"
+          },
+          {
+            "ID": 1571,
+            "icon": "inv_guild_standard_alliance_a",
+            "itemId": 238852,
+            "new": true,
+            "name": "Flame's Radiance Banner"
           }
         ],
         "name": "Vendor"
@@ -480,6 +494,13 @@
             "itemId": 232301,
             "name": "Tempered Banner of the Algari",
             "notObtainable": true
+          },
+          {
+            "ID": 1524,
+            "icon": "inv_11xp_mdi_banner04",
+            "itemId": 232302,
+            "name": "Prized Banner of the Algari",
+            "notObtainable": true
           }
         ],
         "name": "Mythic Dungeon Invitational"
@@ -491,6 +512,13 @@
             "icon": "inv_11xp_awc_banner01",
             "itemId": 232305,
             "name": "Forged Champion's Prestigious Banner",
+            "notObtainable": true
+          },
+          {
+            "ID": 1525,
+            "icon": "inv_11xp_awc_banner04",
+            "itemId": 232306,
+            "name": "Prized Champion's Prestigious Banner",
             "notObtainable": true
           }
         ],
@@ -547,22 +575,11 @@
             "name": "Take-Home Torq"
           },
           {
-            "ID": 1567,
-            "icon": "inv_111_fishingbobber_meat",
-            "itemId": 237347,
-            "name": "Organically-Sourced Wellington Bobber"
-          },
-          {
-            "ID": 1568,
-            "icon": "inv_111_fishingbobber_can",
-            "itemId": 237346,
-            "name": "Artisan Beverage Goblet Bobber"
-          },
-          {
-            "ID": 1569,
-            "icon": "inv_111_fishingbobber_rocket",
-            "itemId": 237345,
-            "name": "Limited Edition Rocket Bobber"
+            "ID": 1570,
+            "icon": "inv_misc_orb_05",
+            "itemId": 238850,
+            "new": true,
+            "name": "Arathi Entertainer's Flame"
           }
         ],
         "name": "Unknown"
@@ -2012,6 +2029,13 @@
             "icon": "inv_misc_archaeology_vrykuldrinkinghorn",
             "itemId": 166247,
             "name": "Citizens Brigade Whistle"
+          },
+          {
+            "ID": 1579,
+            "icon": "inv_gizmo_newgoggles",
+            "itemId": 167698,
+            "new": true,
+            "name": "Secret Fish Goggles"
           }
         ],
         "name": "Achievement"
@@ -5168,6 +5192,24 @@
             "icon": "inv_elemental_primal_water",
             "itemId": 168016,
             "name": "Hyper-Compressed Ocean"
+          },
+          {
+            "ID": 1567,
+            "icon": "inv_111_fishingbobber_meat",
+            "itemId": 237347,
+            "name": "Organically-Sourced Wellington Bobber"
+          },
+          {
+            "ID": 1568,
+            "icon": "inv_111_fishingbobber_can",
+            "itemId": 237346,
+            "name": "Artisan Beverage Goblet Bobber"
+          },
+          {
+            "ID": 1569,
+            "icon": "inv_111_fishingbobber_rocket",
+            "itemId": 237345,
+            "name": "Limited Edition Rocket Bobber"
           }
         ],
         "name": "Fishing"
@@ -6918,6 +6960,25 @@
         "name": "Plunderstorm"
       },
       {
+        "items": [
+          {
+            "ID": 1573,
+            "icon": "inv_banner_01",
+            "itemId": 239007,
+            "new": true,
+            "name": "Dastardly Banner"
+          },
+          {
+            "ID": 1574,
+            "icon": "inv_11xp_event_dastardlyduos_podium01_nocollision",
+            "itemId": 239018,
+            "new": true,
+            "name": "Winner's Podium"
+          }
+        ],
+        "name": "Dastardly Duos"
+      },
+      {
         "id": "6edf78f8",
         "items": [
           {
@@ -7302,7 +7363,7 @@
         "items": [
           {
             "ID": 1542,
-            "icon": "6246537",
+            "icon": "inv_11xp_generic_shateaset01",
             "itemId": 235288,
             "name": "Sha-Warped Tea Set"
           }
