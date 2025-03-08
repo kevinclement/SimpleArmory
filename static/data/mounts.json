@@ -221,6 +221,7 @@
           {
             "ID": 2480,
             "icon": "inv_goblinspidertank",
+            "itemId": 235549,
             "name": "Crimson Shreddertank",
             "spellid": 1217235
           },
@@ -283,28 +284,28 @@
           },
           {
             "ID": 2343,
-            "icon": "6310147",
+            "icon": "inv_redpandamount_gray",
             "itemId": 233283,
             "name": "Meeksi Softpaw",
             "spellid": 473741
           },
           {
             "ID": 2342,
-            "icon": "6310146",
+            "icon": "inv_redpandamount_blue",
             "itemId": 233282,
             "name": "Meeksi Rufflefur",
             "spellid": 473739
           },
           {
             "ID": 2344,
-            "icon": "6310148",
+            "icon": "inv_redpandamount_orange",
             "itemId": 233284,
             "name": "Meeksi Rollingpaw",
             "spellid": 473743
           },
           {
             "ID": 2346,
-            "icon": "6310150",
+            "icon": "inv_redpandamount_violet",
             "itemId": 233286,
             "name": "Meeksi Brewthief",
             "spellid": 473745
@@ -341,6 +342,14 @@
             "spellid": 448934
           },
           {
+            "ID": 2500,
+            "icon": "inv_serpentmount_blue",
+            "itemId": 235709,
+            "name": "Ny'alothan Shadow Worm",
+            "new": true,
+            "spellid": 1218314
+          },
+          {
             "ID": 2230,
             "icon": "inv_nerubianbeetlelargemount_tan",
             "itemId": 224415,
@@ -365,8 +374,8 @@
             "ID": 2244,
             "icon": "inv_crystalmech_teal",
             "itemId": 226357,
-            "notObtainable": true,
             "name": "Diamond Mechsuit",
+            "notObtainable": true,
             "spellid": 458335
           }
         ],
@@ -418,8 +427,8 @@
             "ID": 2119,
             "icon": "inv_dwarvenmechboss",
             "itemId": 221765,
-            "notObtainable": true,
             "name": "Stonevault Mechsuit",
+            "notObtainable": true,
             "spellid": 442358
           }
         ],
@@ -465,21 +474,21 @@
           {
             "ID": 2286,
             "icon": "inv_goblinshreddermech_blue",
-            "itemId": "229948",
+            "itemId": 229948,
             "name": "Blackwater Shredder Deluxe Mk 2",
             "spellid": 466019
           },
           {
             "ID": 2284,
             "icon": "inv_yellow_rocketmount5",
-            "itemId": "229946",
-            "name": "Ocher Delivery Rocket",
+            "itemId": 229946,
+            "name": "Ochre Delivery Rocket",
             "spellid": 466013
           },
           {
             "ID": 2287,
             "icon": "inv_goblinshreddermech_black",
-            "itemId": "229950",
+            "itemId": 229950,
             "name": "Darkfuse Demolisher",
             "spellid": 466018
           }
@@ -547,14 +556,14 @@
           {
             "ID": 2277,
             "icon": "inv_purple_hyena2goblinmount",
-            "itemId": "229936",
+            "itemId": 229936,
             "name": "Violet Armored Growler",
             "spellid": 466002
           },
           {
             "ID": 2280,
             "icon": "inv_purple_rocketmount5",
-            "itemId": "229944",
+            "itemId": 229944,
             "name": "The Topskimmer Special",
             "spellid": 466016
           }
@@ -566,6 +575,7 @@
           {
             "ID": 2274,
             "icon": "inv_blue_hyena2goblinmount",
+            "itemId": "229937",
             "name": "Blackwater Bonecrusher",
             "spellid": 466001
           },
@@ -578,12 +588,14 @@
           {
             "ID": 2295,
             "icon": "inv_goblinflyingmachine_red",
+            "itemId": "229957",
             "name": "Bilgewater Bombardier",
             "spellid": 466024
           },
           {
             "ID": 2289,
             "icon": "inv_goblinshreddermech_yellow",
+            "itemId": "229951",
             "name": "Venture Co-ordinator",
             "spellid": 466022
           },
@@ -609,6 +621,7 @@
           {
             "ID": 2276,
             "icon": "inv_black_hyena2goblinmount",
+            "itemId": "229924",
             "name": "Darkfuse Chompactor",
             "spellid": 466000
           },
@@ -736,6 +749,67 @@
       {
         "items": [
           {
+            "ID": 1948,
+            "icon": "inv_motorcyclefelreavermount_shadow",
+            "itemId": 211089,
+            "name": "Voidfire Deathcycle",
+            "new": true,
+            "spellid": 428068
+          },
+          {
+            "ID": 2535,
+            "icon": "inv_arathilynxmount_nightfall",
+            "itemId": 239563,
+            "name": "Void-Scarred Lynx",
+            "new": true,
+            "spellid": 1228865
+          },
+          {
+            "ID": 2178,
+            "icon": "inv_flyingnerubian2mount_tan",
+            "itemId": 223265,
+            "name": "Nesting Swarmite",
+            "new": true,
+            "spellid": 447189
+          },
+          {
+            "ID": 2496,
+            "icon": "inv_misc_elitegryphon",
+            "itemId": 235700,
+            "name": "Void-Scarred Gryphon",
+            "new": true,
+            "spellid": 1218229
+          },
+          {
+            "ID": 2497,
+            "icon": "ability_mount_nightmarehorse",
+            "itemId": 235705,
+            "name": "Void-Forged Stallion",
+            "new": true,
+            "spellid": 1218305
+          },
+          {
+            "ID": 2498,
+            "icon": "ability_mount_blackdirewolf",
+            "itemId": 235706,
+            "name": "Void-Scarred Pack Mother",
+            "new": true,
+            "spellid": 1218306
+          },
+          {
+            "ID": 2499,
+            "icon": "ability_mount_wyvern_01",
+            "itemId": 235707,
+            "name": "Void-Scarred Windrider",
+            "new": true,
+            "spellid": 1218307
+          }
+        ],
+        "name": "Visions Revisited"
+      },
+      {
+        "items": [
+          {
             "ID": 2214,
             "icon": "inv_protoramearthen_grey",
             "itemId": 223572,
@@ -764,21 +838,21 @@
           {
             "ID": 2283,
             "icon": "inv_black_rocketmount5",
-            "itemId": "229941",
+            "itemId": 229941,
             "name": "Innovation Investigator",
             "spellid": 466017
           },
           {
             "ID": 2290,
             "icon": "inv_goblinshreddermech",
-            "itemId": "229952",
+            "itemId": 229952,
             "name": "Asset Advocator",
             "spellid": 466023
           },
           {
             "ID": 2292,
             "icon": "inv_goblinflyingmachine_blue",
-            "itemId": "229954",
+            "itemId": 229954,
             "name": "Margin Manipulator",
             "spellid": 466025
           },
@@ -786,8 +860,24 @@
             "ID": 2288,
             "icon": "inv_goblinshreddermech_green",
             "itemId": 229949,
-            "name": "Personalized Goblin S.C.R.A.Per",
+            "name": "Personalized Goblin S.C.R.A.P.per",
             "spellid": 466020
+          },
+          {
+            "ID": 2501,
+            "icon": "inv_dragonchromaticmount",
+            "itemId": 235711,
+            "name": "Corruption of the Aspects",
+            "new": true,
+            "spellid": 1218316
+          },
+          {
+            "ID": 2519,
+            "icon": "inv_arathilynxmount_nightfall",
+            "itemId": 238829,
+            "name": "Radiant Imperial Lynx",
+            "new": true,
+            "spellid": 1226421
           }
         ],
         "name": "Vendor"
@@ -7629,6 +7719,14 @@
             "itemId": 82453,
             "name": "Jeweled Onyx Panther",
             "spellid": 120043
+          },
+          {
+            "ID": 2502,
+            "icon": "ability_mount_onyxpanther_black",
+            "itemId": 235712,
+            "name": "Void-Crystal Panther",
+            "new": true,
+            "spellid": 1218317
           }
         ],
         "name": "Jewelcrafting"
@@ -8325,8 +8423,8 @@
             "ID": 2211,
             "icon": "inv_viciousflyingnerubian2_alliance",
             "itemId": 223511,
-            "notObtainable": true,
             "name": "Vicious Skyflayer",
+            "notObtainable": true,
             "side": "A",
             "spellid": 449325
           },
@@ -8334,8 +8432,8 @@
             "ID": 2150,
             "icon": "inv_viciousflyingnerubian2_horde",
             "itemId": 221813,
-            "notObtainable": true,
             "name": "Vicious Skyflayer",
+            "notObtainable": true,
             "side": "H",
             "spellid": 447405
           }
@@ -9464,6 +9562,87 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1218069
+          },
+          {
+            "ID": 1824,
+            "icon": "inv_dogprimalmount",
+            "itemId": 210141,
+            "name": "Brown-Furred Spiky Bakar",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 424601
+          },
+          {
+            "ID": 2504,
+            "icon": "ability_mount_goatmountblack",
+            "itemId": 236415,
+            "name": "Spotted Black Riding Goat",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1219705
+          },
+          {
+            "ID": 2520,
+            "icon": "inv_hedgehogmount_green",
+            "itemId": 238897,
+            "name": "Spring Harvesthog",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1226511
+          },
+          {
+            "ID": 2521,
+            "icon": "inv_hedgehogmount_pink",
+            "itemId": 238900,
+            "name": "Summer Harvesthog",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1226531
+          },
+          {
+            "ID": 2522,
+            "icon": "inv_hedgehogmount_purple",
+            "itemId": 238901,
+            "name": "Winter Harvesthog",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1226532
+          },
+          {
+            "ID": 2523,
+            "icon": "inv_hedgehogmount_red",
+            "itemId": 238902,
+            "name": "Autumn Harvesthog",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1226533
+          },
+          {
+            "ID": 2524,
+            "icon": "inv_chimerafiremount_blue",
+            "itemId": 238941,
+            "name": "Lavaborn Azure Chimaera",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1226740
+          },
+          {
+            "ID": 2527,
+            "icon": "inv_chimerafiremount_red",
+            "itemId": 238967,
+            "name": "Lavaborn Ruby Chimaera",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1226855
+          },
+          {
+            "ID": 2528,
+            "icon": "inv_chimerafiremount_yellow",
+            "itemId": 238968,
+            "name": "Lavaborn Citrine Chimaera",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1226856
           }
         ],
         "name": "Trading Post Originals"
@@ -9525,6 +9704,19 @@
           }
         ],
         "name": "Turbulent Timeways"
+      },
+      {
+        "items": [
+          {
+            "ID": 2531,
+            "icon": "inv_misc_fish_turtle_01",
+            "itemId": 239020,
+            "name": "Tyrannotort",
+            "new": true,
+            "spellid": 1227076
+          }
+        ],
+        "name": "Dastardly Duos"
       },
       {
         "items": [
@@ -9999,7 +10191,7 @@
           },
           {
             "ID": 2345,
-            "icon": "6310149",
+            "icon": "inv_redpandamount_red",
             "itemId": 233285,
             "name": "Meeksi Teatuft",
             "spellid": 473744
@@ -10117,14 +10309,14 @@
           },
           {
             "ID": 2477,
-            "icon": "6243518",
+            "icon": "inv_shatigermount",
             "itemId": 235287,
             "name": "Sha-Warped Riding Tiger",
             "spellid": 1216430
           },
           {
             "ID": 2476,
-            "icon": "6238482",
+            "icon": "inv_shaserpentmount",
             "itemId": 235286,
             "name": "Sha-Warped Cloud Serpent",
             "spellid": 1216422
@@ -11029,6 +11221,15 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 466464
+          },
+          {
+            "ID": 2526,
+            "icon": "inv_chimerafiremount_green",
+            "itemId": 238966,
+            "name": "Lavaborn Emerald Chimaera",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1226851
           }
         ],
         "name": "Unknown"
