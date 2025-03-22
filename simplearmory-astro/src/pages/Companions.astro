@@ -1,0 +1,277 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getTitle } from '../utils/utils';
+import ProgressBar from '../components/ProgressBar.astro';
+---
+
+<Layout title={getTitle('Character', 'Companions')}>
+  <div class="container">
+    <div class="page-header">
+      <h2>
+        Companions
+        <ProgressBar 
+          rightSide={true}
+          width={0} 
+          percentage="Loading..." 
+          styleWidth="200px" 
+        />
+      </h2>
+    </div>
+
+    <div id="loading-indicator" class="loading-placeholder">
+      <div class="spinner"></div>
+      <p>Loading companion data...</p>
+    </div>
+
+    <div id="companions-error" class="error-message" style="display: none;">
+      <p>Failed to load companion data. Please try again later.</p>
+    </div>
+    
+    <div id="companions-categories">
+      <!-- Companion categories will be loaded here -->
+    </div>
+  </div>
+</Layout>
+
+<script>
+  import { initializeState, getUserState, subscribeToUserState } from '../utils/state.js';
+  import { getCompanions } from '../utils/api/companions.js';
+  import { percent, percentFormat } from '../utils/utils.js';
+  
+  // Initialize state and data
+  document.addEventListener('DOMContentLoaded', () => {
+    // Initialize state
+    initializeState();
+    
+    // Get current user state
+    const userState = getUserState();
+    
+    // Load companions data
+    loadCompanionsData(userState);
+    
+    // Subscribe to user state changes
+    subscribeToUserState((state) => {
+      loadCompanionsData(state);
+    });
+    
+    // Send page view to analytics
+    if (window.ga) {
+      window.ga('send', 'pageview', 'Companions');
+    }
+  });
+  
+  // Load companions data
+  async function loadCompanionsData(state) {
+    if (!state.region || !state.realm || !state.character) return;
+    
+    const loadingIndicator = document.getElementById('loading-indicator');
+    const companionsError = document.getElementById('companions-error');
+    const companionsCategories = document.getElementById('companions-categories');
+    
+    if (loadingIndicator) loadingIndicator.style.display = 'block';
+    if (companionsError) companionsError.style.display = 'none';
+    
+    try {
+      // Fetch companions data
+      const companions = await getCompanions(state.region, state.realm, state.character);
+      
+      if (loadingIndicator) loadingIndicator.style.display = 'none';
+      
+      if (companions) {
+        // Update progress bar
+        updateProgressBar(companions.collected, companions.possible);
+        
+        // Render companions categories
+        renderCompanionsCategories(companions, companionsCategories);
+      }
+    } catch (error) {
+      console.error('Error loading companions:', error);
+      if (loadingIndicator) loadingIndicator.style.display = 'none';
+      if (companionsError) companionsError.style.display = 'block';
+    }
+  }
+  
+  // Update progress bar
+  function updateProgressBar(collected, possible) {
+    const progressBar = document.querySelector('.progress-bar');
+    const percentageEl = progressBar?.querySelector('span');
+    
+    if (!progressBar || !percentageEl) return;
+    
+    const width = percent(collected, possible);
+    const percentage = percentFormat(collected, possible);
+    
+    progressBar.style.width = width + '%';
+    progressBar.setAttribute('aria-valuenow', width.toString());
+    percentageEl.textContent = percentage;
+  }
+  
+  // Render companions categories
+  function renderCompanionsCategories(companions, container) {
+    if (!container || !companions || !companions.categories) return;
+    
+    // Clear container
+    container.innerHTML = '';
+    
+    // Create a document fragment to minimize reflows
+    const fragment = document.createDocumentFragment();
+    
+    // Process each category
+    companions.categories.forEach(category => {
+      const categoryElement = document.createElement('div');
+      categoryElement.className = 'category-container';
+      
+      // Create category header
+      const categoryHeader = document.createElement('h3');
+      categoryHeader.className = 'category-header';
+      categoryHeader.textContent = category.name;
+      categoryElement.appendChild(categoryHeader);
+      
+      // Process each subcategory
+      category.subcats.forEach(subcat => {
+        const subcategoryElement = document.createElement('div');
+        subcategoryElement.className = 'subcategory-container';
+        
+        // Create subcategory header
+        const subcategoryHeader = document.createElement('h4');
+        subcategoryHeader.className = 'subcategory-header';
+        subcategoryHeader.textContent = subcat.name;
+        subcategoryElement.appendChild(subcategoryHeader);
+        
+        // Create companions grid
+        const companionsGrid = document.createElement('div');
+        companionsGrid.className = 'companions-grid';
+        
+        // Render companions
+        if (subcat.companions && subcat.companions.length > 0) {
+          subcat.companions.forEach(companion => {
+            const companionItem = document.createElement('div');
+            companionItem.className = `companion-item ${companion.collected ? 'collected' : 'not-collected'}`;
+            
+            // Companion icon
+            const companionLink = document.createElement('a');
+            companionLink.href = companion.id ? `//www.wowhead.com/item=${companion.id}` : '#';
+            companionLink.target = '_blank';
+            
+            const companionIcon = document.createElement('img');
+            companionIcon.src = companion.icon ? `//wow.zamimg.com/images/wow/icons/small/${companion.icon}.jpg` : '';
+            companionIcon.alt = companion.name;
+            companionIcon.title = companion.name;
+            
+            companionLink.appendChild(companionIcon);
+            companionItem.appendChild(companionLink);
+            
+            // Add tooltip data attributes
+            companionItem.dataset.companionId = companion.id.toString();
+            companionItem.dataset.companionName = companion.name;
+            companionItem.dataset.companionCollected = companion.collected.toString();
+            
+            companionsGrid.appendChild(companionItem);
+          });
+        }
+        
+        subcategoryElement.appendChild(companionsGrid);
+        categoryElement.appendChild(subcategoryElement);
+      });
+      
+      fragment.appendChild(categoryElement);
+    });
+    
+    container.appendChild(fragment);
+    
+    // Initialize tooltips (if WoWhead API is available)
+    if (window.WH && window.WH.Tooltip) {
+      window.WH.Tooltip.refresh();
+    }
+  }
+</script>
+
+<style>
+  .container {
+    padding-top: 20px;
+  }
+  
+  .loading-placeholder {
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: #09f;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 15px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .category-container {
+    margin-bottom: 30px;
+  }
+  
+  .category-header {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .subcategory-container {
+    margin-bottom: 20px;
+  }
+  
+  .subcategory-header {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .companions-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .companion-item {
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .companion-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .companion-item.not-collected {
+    opacity: 0.4;
+  }
+  
+  .companion-item.not-collected:hover {
+    opacity: 0.8;
+  }
+  
+  .error-message {
+    color: #a94442;
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 20px 0;
+  }
+  
+  /* Dark mode adjustments */
+  :global(body.dark) .category-header {
+    border-bottom-color: #444;
+  }
+</style>

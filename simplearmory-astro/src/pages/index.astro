@@ -1,0 +1,289 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getTitle } from '../utils/utils';
+---
+
+<Layout title={getTitle('', 'Login')}>
+  <div id="main-container">
+    <!-- Client-side routing will handle displaying the appropriate component -->
+    <div id="content-container">
+      <!-- Content will be dynamically injected here based on route -->
+    </div>
+  </div>
+</Layout>
+
+<script>
+  // Client-side script for initial routing
+  import { initializeState, getUserState, subscribeToUserState } from '../utils/state.js';
+  import { parseUrlHash, navigate } from '../utils/url.js';
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    // Initialize state from localStorage and URL
+    initializeState();
+    
+    // Get current user state
+    const userState = getUserState();
+    
+    // Initial routing
+    handleRouting(userState);
+    
+    // Subscribe to user state changes for future navigation
+    subscribeToUserState(handleRouting);
+  });
+  
+  // Handle routing based on user state
+  function handleRouting(state) {
+    const contentContainer = document.getElementById('content-container');
+    if (!contentContainer) return;
+    
+    // Check if user is logged in
+    const isLoggedIn = state.region && state.region !== '' && state.region !== 'error' &&
+                     state.realm && state.realm !== '' && 
+                     state.character && state.character !== '';
+    
+    if (isLoggedIn) {
+      // User is logged in, handle regular page navigation
+      loadPageContent(state);
+    } else {
+      // User is not logged in, show login component
+      loadLoginComponent(contentContainer);
+    }
+  }
+  
+  // Load the appropriate page content based on route
+  async function loadPageContent(state) {
+    const contentContainer = document.getElementById('content-container');
+    if (!contentContainer) return;
+    
+    try {
+      // Handle error route special case
+      if (state.region === 'error') {
+        const { default: ErrorComponent } = await import('./Error.astro');
+        renderComponent(ErrorComponent, contentContainer);
+        return;
+      }
+      
+      // Default to overview if no specific page
+      if (!state.page || state.page === '') {
+        const { default: OverviewComponent } = await import('./Overview.astro');
+        renderComponent(OverviewComponent, contentContainer);
+        return;
+      }
+      
+      // Handle specific pages based on route
+      switch (state.page) {
+        case 'achievements':
+          const { default: AchievementsComponent } = await import('./Achievements.astro');
+          renderComponent(AchievementsComponent, contentContainer);
+          break;
+          
+        case 'collectable':
+          // Handle different collectible types
+          switch (state.category) {
+            case 'mounts':
+              const { default: MountsComponent } = await import('./Mounts.astro');
+              renderComponent(MountsComponent, contentContainer, { planner: state.subcat === 'planner' });
+              break;
+              
+            case 'companions':
+              const { default: CompanionsComponent } = await import('./Companions.astro');
+              renderComponent(CompanionsComponent, contentContainer);
+              break;
+              
+            case 'battlepets':
+              const { default: BattlePetsComponent } = await import('./BattlePets.astro');
+              renderComponent(BattlePetsComponent, contentContainer);
+              break;
+              
+            case 'toys':
+              const { default: ToysComponent } = await import('./Toys.astro');
+              renderComponent(ToysComponent, contentContainer);
+              break;
+              
+            case 'heirlooms':
+              const { default: HeirloomsComponent } = await import('./Heirlooms.astro');
+              renderComponent(HeirloomsComponent, contentContainer);
+              break;
+              
+            case 'titles':
+              const { default: TitlesComponent } = await import('./Titles.astro');
+              renderComponent(TitlesComponent, contentContainer);
+              break;
+              
+            default:
+              // Unknown collectable type, show error
+              showError(contentContainer, `Unknown collectable type: ${state.category}`);
+              break;
+          }
+          break;
+          
+        case 'calendar':
+          const { default: CalendarComponent } = await import('./Calendar.astro');
+          renderComponent(CalendarComponent, contentContainer);
+          break;
+          
+        case 'reputation':
+          const { default: ReputationsComponent } = await import('./Reputations.astro');
+          renderComponent(ReputationsComponent, contentContainer);
+          break;
+          
+        case 'settings':
+          const { default: SettingsComponent } = await import('./Settings.astro');
+          renderComponent(SettingsComponent, contentContainer);
+          break;
+          
+        default:
+          // Unknown page, show error
+          showError(contentContainer, `Unknown page: ${state.page}`);
+          break;
+      }
+    } catch (error) {
+      console.error('Error loading page content:', error);
+      showError(contentContainer, 'Failed to load content');
+    }
+  }
+  
+  // Load the login component
+  async function loadLoginComponent(container) {
+    try {
+      const { default: LoginComponent } = await import('../components/Login.astro');
+      renderComponent(LoginComponent, container);
+    } catch (error) {
+      console.error('Error loading login component:', error);
+      showError(container, 'Failed to load login form');
+    }
+  }
+  
+  // Render a component into a container
+  async function renderComponent(Component, container, props = {}) {
+    try {
+      // Show loading state
+      container.innerHTML = `<div class="loading-placeholder">Loading ${Component.name || 'component'}...</div>`;
+      
+      if (!Component) {
+        throw new Error('Component not found');
+      }
+      
+      // If it's an Astro component, we need to manually render it
+      // This is a simple approach - for complex components, you'd want to use a proper client-side framework
+      
+      // First, create a temporary container where we'll render the component
+      const tempContainer = document.createElement('div');
+      document.body.appendChild(tempContainer);
+      tempContainer.style.display = 'none';
+      
+      // Add the component's HTML to the container
+      // For Astro components, we can use the pathname to fetch the rendered HTML
+      const pagePath = getComponentPath(Component.name);
+      
+      // If we have a full page component, fetch its HTML
+      if (pagePath) {
+        // Fetch the HTML for the component
+        const response = await fetch(pagePath);
+        if (!response.ok) {
+          throw new Error(`Failed to fetch component HTML: ${response.status}`);
+        }
+        
+        const html = await response.text();
+        
+        // Extract the main content from the HTML (without layout)
+        const contentMatch = html.match(/<div id="main-container">([\s\S]*?)<\/div>/);
+        if (contentMatch && contentMatch[1]) {
+          container.innerHTML = contentMatch[1];
+        } else {
+          // If we couldn't extract the content, just use the whole HTML
+          container.innerHTML = html;
+        }
+      } else {
+        // Handle non-page components
+        // Just display their name for now - in a real implementation, you'd render them properly
+        container.innerHTML = `<div class="component-placeholder">${Component.name} would render here</div>`;
+      }
+      
+      // Clean up
+      document.body.removeChild(tempContainer);
+      
+      // Re-run any scripts in the component
+      const scripts = container.querySelectorAll('script');
+      scripts.forEach(script => {
+        const newScript = document.createElement('script');
+        Array.from(script.attributes).forEach(attr => {
+          newScript.setAttribute(attr.name, attr.value);
+        });
+        newScript.textContent = script.textContent;
+        script.parentNode.replaceChild(newScript, script);
+      });
+      
+      // Apply props if needed (for client-side rendered components)
+      if (container.dataset) {
+        Object.entries(props).forEach(([key, value]) => {
+          container.dataset[key] = typeof value === 'object' ? JSON.stringify(value) : String(value);
+        });
+      }
+    } catch (error) {
+      console.error('Error rendering component:', error);
+      container.innerHTML = `
+        <div class="error-message">
+          <h3>Error Loading Component</h3>
+          <p>${error.message}</p>
+        </div>
+      `;
+    }
+  }
+  
+  // Get the path for a component based on its name
+  function getComponentPath(componentName) {
+    // Map component names to their page paths
+    const pathMap = {
+      'OverviewComponent': '/',
+      'MountsComponent': '/mounts',
+      'CompanionsComponent': '/companions',
+      'BattlePetsComponent': '/battlepets',
+      'ToysComponent': '/toys',
+      'HeirloomsComponent': '/heirlooms',
+      'TitlesComponent': '/titles',
+      'CalendarComponent': '/calendar',
+      'ReputationsComponent': '/reputations',
+      'SettingsComponent': '/settings',
+      'ErrorComponent': '/error',
+      'AchievementsComponent': '/achievements'
+    };
+    
+    if (componentName && pathMap[componentName]) {
+      return pathMap[componentName];
+    }
+    
+    return null;
+  }
+  
+  // Show an error message
+  function showError(container, message) {
+    container.innerHTML = `
+      <div class="error-message">
+        <h3>Error</h3>
+        <p>${message}</p>
+      </div>
+    `;
+  }
+</script>
+
+<style>
+  #main-container {
+    padding-top: 70px; /* Space for fixed navbar */
+  }
+  
+  .loading-placeholder {
+    text-align: center;
+    padding: 2rem;
+    font-style: italic;
+    color: #777;
+  }
+  
+  .error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    margin: 1rem;
+  }
+</style>

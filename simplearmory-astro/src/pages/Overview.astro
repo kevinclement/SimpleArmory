@@ -1,0 +1,251 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getTitle } from '../utils/utils';
+---
+
+<Layout title={getTitle('Character', 'Overview')}>
+  <div class="container">
+    <!-- Progress Overview -->
+    <div class="page-header">
+      <h2>Progress Overview</h2>
+    </div>
+    <strong class="desc">Total Complete</strong>
+    <div class="progress" style="width: auto;">
+      <div id="overall-progress" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+        <span id="overall-percentage">Loading...</span>
+      </div>
+    </div>
+    
+    <div id="categories-container">
+      <!-- Categories will be loaded here by client script -->
+      <div class="loading-placeholder">Loading achievement data...</div>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  import { initializeState, getUserState, subscribeToUserState } from '../utils/state.js';
+  import { getAchievements } from '../utils/api/achievements.js';
+  import { percent, percentFormat } from '../utils/utils.js';
+  import { getUrl } from '../utils/url.js';
+  
+  // Achievement categories with segments
+  const categories = {
+    'Characters':         { w:0, txt:'', url:'INIT', seg:'character', }, 
+    'Quests':             { w:0, txt:'', url:'INIT', seg:'quests' }, 
+    'Exploration':        { w:0, txt:'', url:'INIT', seg:'exploration' }, 
+    'Delves':             { w:0, txt:'', url:'INIT', seg:'delves'},
+    'Player vs. Player':  { w:0, txt:'', url:'INIT', seg:'pvp' }, 
+    'Dungeons & Raids':   { w:0, txt:'', url:'INIT', seg:'dungeons' }, 
+    'Professions':        { w:0, txt:'', url:'INIT', seg:'professions' }, 
+    'Reputation':         { w:0, txt:'', url:'INIT', seg:'reputation' }, 
+    'World Events':       { w:0, txt:'', url:'INIT', seg:'events' }, 
+    'Pet Battles':        { w:0, txt:'', url:'INIT', seg:'pets' }, 
+    'Collections':        { w:0, txt:'', url:'INIT', seg:'collections' }, 
+    'Expansion Features': { w:0, txt:'', url:'INIT', seg:'expansions' },
+    'Legacy':             { w:0, txt:'', url:'INIT', seg:'legacy' }, 
+    'Feats of Strength':  { w:0, txt:'', url:'INIT', seg:'feats' }, 
+  };
+  
+  // Initialize state and data
+  document.addEventListener('DOMContentLoaded', () => {
+    // Initialize state
+    initializeState();
+    
+    // Get current user state
+    const userState = getUserState();
+    
+    // Load achievements data
+    loadAchievements(userState);
+    
+    // Subscribe to user state changes
+    subscribeToUserState(loadAchievements);
+    
+    // Send page view to analytics
+    if (window.ga) {
+      window.ga('send', 'pageview', 'Overview');
+    }
+  });
+  
+  // Load achievement data
+  async function loadAchievements(state) {
+    if (!state.region || !state.realm || !state.character) return;
+    
+    try {
+      // Fetch achievements data
+      const achievements = await getAchievements(state.region, state.realm, state.character);
+      
+      // Process achievements data
+      if (achievements) {
+        // Update overall progress
+        const overallWidth = percent(achievements.completed, achievements.possible);
+        const overallPercentage = percentFormat(achievements.completed, achievements.possible);
+        
+        updateOverallProgress(overallWidth, overallPercentage);
+        
+        // Update category data
+        Object.keys(categories).forEach((cat) => {
+          if (categories[cat].seg === 'legacy') {
+            categories[cat].w = 100;
+            categories[cat].txt = achievements[cat].legacyTotal;
+          } else if (categories[cat].seg === 'feats') {
+            categories[cat].w = 100;
+            categories[cat].txt = achievements[cat].foSTotal;
+          } else {
+            categories[cat].w = percent(achievements[cat].completed, achievements[cat].possible);
+            categories[cat].txt = percentFormat(achievements[cat].completed, achievements[cat].possible);
+          }
+          
+          categories[cat].url = getUrl(state.region, state.realm, state.character, 'achievements/' + categories[cat].seg);
+        });
+        
+        // Render categories
+        renderCategories();
+      }
+    } catch (error) {
+      console.error('Error loading achievements:', error);
+      showError('Failed to load achievement data');
+    }
+  }
+  
+  // Update overall progress bar
+  function updateOverallProgress(width, percentage) {
+    const progressBar = document.getElementById('overall-progress');
+    const percentageEl = document.getElementById('overall-percentage');
+    
+    if (progressBar) {
+      progressBar.style.width = width + '%';
+      progressBar.setAttribute('aria-valuenow', width.toString());
+    }
+    
+    if (percentageEl) {
+      percentageEl.textContent = percentage;
+    }
+  }
+  
+  // Render category progress bars
+  function renderCategories() {
+    const container = document.getElementById('categories-container');
+    if (!container) return;
+    
+    // Clear container
+    container.innerHTML = '';
+    
+    // Add progress bar for each category
+    Object.keys(categories).forEach(cat => {
+      const category = categories[cat];
+      
+      const categoryDiv = document.createElement('div');
+      categoryDiv.className = 'achGrid';
+      
+      const label = document.createElement('strong');
+      label.className = 'desc';
+      label.textContent = cat;
+      categoryDiv.appendChild(label);
+      
+      // Create progress bar component
+      const progressBar = createProgressBar(cat, category.w, category.txt, category.url);
+      categoryDiv.appendChild(progressBar);
+      
+      container.appendChild(categoryDiv);
+    });
+  }
+  
+  // Create a progress bar element
+  function createProgressBar(name, width, percentage, url) {
+    const progressContainer = document.createElement('div');
+    progressContainer.className = 'progress';
+    progressContainer.style.width = 'auto';
+    
+    const progressBar = document.createElement('div');
+    progressBar.className = 'progress-bar';
+    progressBar.setAttribute('role', 'progressbar');
+    progressBar.setAttribute('aria-valuenow', width.toString());
+    progressBar.setAttribute('aria-valuemin', '0');
+    progressBar.setAttribute('aria-valuemax', '100');
+    progressBar.style.width = width + '%';
+    
+    // Add link if URL is available
+    if (url && url !== 'INIT') {
+      const link = document.createElement('a');
+      link.href = url;
+      link.className = 'progress-bar-link';
+      link.textContent = percentage;
+      progressBar.appendChild(link);
+    } else {
+      const span = document.createElement('span');
+      span.textContent = percentage;
+      progressBar.appendChild(span);
+    }
+    
+    progressContainer.appendChild(progressBar);
+    return progressContainer;
+  }
+  
+  // Show error message
+  function showError(message) {
+    const container = document.getElementById('categories-container');
+    if (!container) return;
+    
+    container.innerHTML = `
+      <div class="error-message">
+        <p>${message}</p>
+        <p>Please try again later or check your character information.</p>
+      </div>
+    `;
+  }
+</script>
+
+<style>
+  .container {
+    padding-top: 20px;
+  }
+  
+  .desc {
+    display: inline-block;
+    width: 140px;
+    margin-right: 10px;
+    text-align: right;
+  }
+  
+  .progress {
+    display: inline-block;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    width: calc(100% - 160px);
+    min-width: 100px;
+  }
+  
+  .achGrid {
+    margin-bottom: 5px;
+  }
+  
+  .loading-placeholder {
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    color: #777;
+  }
+  
+  .error-message {
+    color: #a94442;
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 20px 0;
+  }
+  
+  .progress-bar-link {
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+  }
+  
+  .progress-bar-link:hover {
+    text-decoration: none;
+    color: white;
+  }
+</style>

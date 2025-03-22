@@ -1,0 +1,553 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getTitle } from '../utils/utils';
+
+// Define props for this page
+interface Props {
+  planner?: boolean;
+}
+
+// Get props with default values
+const { planner = false } = Astro.props;
+---
+
+<Layout title={getTitle('Character', 'Mounts')}>
+  <div class="container">
+    <div class="page-header">
+      <h2>
+        Mounts
+        <small class="pbSmall">
+          <input type="checkbox" id="planner-toggle" checked={planner}><label for="planner-toggle">Show Planner</label>
+        </small>
+        <div class="progress-container" style="float: right;">
+          <div class="progress" style="width: 200px; margin-bottom: 0; margin-top: 5px;">
+            <div id="mounts-progress" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+              <span id="mounts-percentage">Loading...</span>
+            </div>
+          </div>
+        </div>
+      </h2>
+    </div>
+
+    <div id="loading-indicator" class="loading-placeholder">
+      <div class="spinner"></div>
+      <p>Loading mount data...</p>
+    </div>
+
+    <div id="mounts-error" class="error-message" style="display: none;">
+      <p>Failed to load mount data. Please try again later.</p>
+    </div>
+
+    <div id="planner-view" style={planner ? "" : "display: none;"}>
+      <!-- Planner content will be loaded here -->
+    </div>
+    
+    <div id="mounts-categories" style={planner ? "display: none;" : ""}>
+      <!-- Mount categories will be loaded here -->
+    </div>
+  </div>
+</Layout>
+
+<script>
+  import { initializeState, getUserState, subscribeToUserState } from '../utils/state.js';
+  import { getMounts } from '../utils/api/mounts.js';
+  import { percent, percentFormat } from '../utils/utils.js';
+  import { navigate, getUrl } from '../utils/url.js';
+  
+  // Initialize state and data
+  document.addEventListener('DOMContentLoaded', () => {
+    // Initialize state
+    initializeState();
+    
+    // Get current user state
+    const userState = getUserState();
+    
+    // Set up planner toggle
+    setupPlannerToggle(userState);
+    
+    // Load mounts data
+    loadMountsData(userState);
+    
+    // Subscribe to user state changes
+    subscribeToUserState((state) => {
+      loadMountsData(state);
+    });
+    
+    // Send page view to analytics
+    if (window.ga) {
+      window.ga('send', 'pageview', 'Mounts');
+    }
+  });
+  
+  // Set up planner toggle
+  function setupPlannerToggle(userState) {
+    const plannerToggle = document.getElementById('planner-toggle');
+    if (!plannerToggle) return;
+    
+    plannerToggle.addEventListener('change', (e) => {
+      const isPlanner = e.target.checked;
+      
+      // Update URL based on planner state
+      if (isPlanner) {
+        navigate("collectable/mounts/planner", userState.region, userState.realm, userState.character);
+      } else {
+        navigate("collectable/mounts/", userState.region, userState.realm, userState.character);
+      }
+      
+      // Toggle visibility
+      const plannerView = document.getElementById('planner-view');
+      const mountsCategories = document.getElementById('mounts-categories');
+      
+      if (plannerView) plannerView.style.display = isPlanner ? 'block' : 'none';
+      if (mountsCategories) mountsCategories.style.display = isPlanner ? 'none' : 'block';
+    });
+  }
+  
+  // Load mounts data
+  async function loadMountsData(state) {
+    if (!state.region || !state.realm || !state.character) return;
+    
+    const loadingIndicator = document.getElementById('loading-indicator');
+    const mountsError = document.getElementById('mounts-error');
+    const mountsCategories = document.getElementById('mounts-categories');
+    const plannerView = document.getElementById('planner-view');
+    
+    if (loadingIndicator) loadingIndicator.style.display = 'block';
+    if (mountsError) mountsError.style.display = 'none';
+    
+    try {
+      // Fetch mounts data
+      const mounts = await getMounts(state.region, state.realm, state.character);
+      
+      if (loadingIndicator) loadingIndicator.style.display = 'none';
+      
+      if (mounts) {
+        // Update progress bar
+        updateProgressBar(mounts.collected, mounts.possible);
+        
+        // Render mounts categories
+        renderMountsCategories(mounts, mountsCategories);
+        
+        // Load planner if needed
+        if (state.subcat === 'planner') {
+          loadPlanner(mounts, plannerView, state);
+          
+          // Update the toggle
+          const plannerToggle = document.getElementById('planner-toggle');
+          if (plannerToggle) plannerToggle.checked = true;
+          
+          // Toggle visibility
+          if (plannerView) plannerView.style.display = 'block';
+          if (mountsCategories) mountsCategories.style.display = 'none';
+        }
+      }
+    } catch (error) {
+      console.error('Error loading mounts:', error);
+      if (loadingIndicator) loadingIndicator.style.display = 'none';
+      if (mountsError) mountsError.style.display = 'block';
+    }
+  }
+  
+  // Update progress bar
+  function updateProgressBar(collected, possible) {
+    const progressBar = document.getElementById('mounts-progress');
+    const percentageEl = document.getElementById('mounts-percentage');
+    
+    if (!progressBar || !percentageEl) return;
+    
+    const width = percent(collected, possible);
+    const percentage = percentFormat(collected, possible);
+    
+    progressBar.style.width = width + '%';
+    progressBar.setAttribute('aria-valuenow', width.toString());
+    percentageEl.textContent = percentage;
+  }
+  
+  // Render mounts categories
+  function renderMountsCategories(mounts, container) {
+    if (!container || !mounts || !mounts.categories) return;
+    
+    // Clear container
+    container.innerHTML = '';
+    
+    // Render each category
+    mounts.categories.forEach(category => {
+      const categoryElement = document.createElement('div');
+      categoryElement.className = 'mount-category';
+      
+      // Category header
+      const categoryHeader = document.createElement('h3');
+      categoryHeader.className = 'category-header';
+      categoryHeader.textContent = category.name;
+      categoryElement.appendChild(categoryHeader);
+      
+      // Render subcategories
+      if (category.subcats && category.subcats.length > 0) {
+        category.subcats.forEach(subcat => {
+          const subcatElement = document.createElement('div');
+          subcatElement.className = 'mount-subcategory';
+          
+          // Subcategory header
+          const subcatHeader = document.createElement('h4');
+          subcatHeader.className = 'subcategory-header';
+          subcatHeader.textContent = subcat.name;
+          subcatElement.appendChild(subcatHeader);
+          
+          // Create mounts grid
+          const mountsGrid = document.createElement('div');
+          mountsGrid.className = 'mounts-grid';
+          
+          // Render mounts
+          if (subcat.mounts && subcat.mounts.length > 0) {
+            subcat.mounts.forEach(mount => {
+              const mountItem = document.createElement('div');
+              mountItem.className = `mount-item ${mount.collected ? 'collected' : 'not-collected'}`;
+              
+              // Mount icon
+              const mountIcon = document.createElement('img');
+              mountIcon.src = mount.icon ? `//wow.zamimg.com/images/wow/icons/small/${mount.icon}.jpg` : '';
+              mountIcon.alt = mount.name;
+              mountIcon.title = mount.name;
+              mountItem.appendChild(mountIcon);
+              
+              // Add tooltip data attributes
+              mountItem.dataset.mountId = mount.id.toString();
+              mountItem.dataset.mountName = mount.name;
+              mountItem.dataset.mountCollected = mount.collected.toString();
+              
+              mountsGrid.appendChild(mountItem);
+            });
+          }
+          
+          subcatElement.appendChild(mountsGrid);
+          categoryElement.appendChild(subcatElement);
+        });
+      }
+      
+      container.appendChild(categoryElement);
+    });
+    
+    // Initialize tooltips (if WoWhead API is available)
+    if (window.WH && window.WH.Tooltip) {
+      window.WH.Tooltip.refresh();
+    }
+  }
+  
+  // Load planner
+  async function loadPlanner(mounts, container, state) {
+    if (!container || !mounts) return;
+    
+    try {
+      // Import planner functionality (dynamic import for code splitting)
+      const { getPlannerSteps } = await import('../utils/api/planner.js');
+      
+      // Get planner steps
+      const steps = await getPlannerSteps(mounts, state.region, state.realm, state.character);
+      
+      // Render planner UI
+      renderPlanner(steps, container, mounts.isAlliance);
+    } catch (error) {
+      console.error('Error loading planner:', error);
+      container.innerHTML = '<div class="error-message">Failed to load planner data.</div>';
+    }
+  }
+  
+  // Render planner
+  function renderPlanner(steps, container, isAlliance) {
+    if (!container) return;
+    
+    // Clear container
+    container.innerHTML = '';
+    
+    // Check if all mounts are collected
+    if (steps && steps.length === 0) {
+      container.innerHTML = `
+        <div class="success-message">
+          <img src="/images/success.png" alt="Success"/>
+          <p>
+            Grats! You've farmed all the mounts. <br/>
+            You should post on <a href="http://reddit.com/r/wow">/r/wow</a>!
+          </p>
+        </div>
+      `;
+      return;
+    }
+    
+    // Create planner table
+    const table = document.createElement('table');
+    table.className = 'table table-condensed';
+    
+    // Create table header
+    const thead = document.createElement('thead');
+    thead.innerHTML = `
+      <tr>
+        <th>#</th>
+        <th>Step</th>
+        <th class="mnt-plan-boss-col">Boss</th>
+        <th class="mnt-plan-mount-col" style="padding-left:0px;">Mount</th>
+        <th>Notes</th>
+      </tr>
+    `;
+    table.appendChild(thead);
+    
+    // Create table body with steps
+    const tbody = document.createElement('tbody');
+    
+    if (steps && steps.length > 0) {
+      steps.forEach((step, index) => {
+        const row = document.createElement('tr');
+        
+        // Step number
+        const numberCell = document.createElement('td');
+        numberCell.textContent = (index + 1).toString();
+        row.appendChild(numberCell);
+        
+        // Step title
+        const titleCell = document.createElement('td');
+        // Add icon if needed
+        if (step.capital) {
+          const icon = document.createElement('img');
+          icon.src = isAlliance ? '/images/alliance.png' : '/images/horde.png';
+          icon.className = 'mnt-icon-step';
+          icon.alt = '';
+          titleCell.appendChild(icon);
+        } else if (step.hearth) {
+          const icon = document.createElement('img');
+          icon.src = '/images/hearth.png';
+          icon.className = 'mnt-icon-step';
+          icon.alt = '';
+          titleCell.appendChild(icon);
+        }
+        
+        // Step title text
+        const titleText = document.createTextNode(
+          step.capital 
+            ? `Hearthstone to ${isAlliance ? 'Stormwind ' : 'Orgrimmar '}${step.title}`
+            : step.title
+        );
+        titleCell.appendChild(titleText);
+        row.appendChild(titleCell);
+        
+        // Bosses and mounts combined cell
+        const bossesCell = document.createElement('td');
+        bossesCell.colSpan = 2;
+        
+        if (step.bosses && step.bosses.length > 0) {
+          const bossesTable = document.createElement('table');
+          bossesTable.width = '100%';
+          
+          step.bosses.forEach(boss => {
+            const bossRow = document.createElement('tr');
+            
+            // Boss name
+            const bossNameCell = document.createElement('td');
+            bossNameCell.className = 'mnt-plan-boss-col';
+            bossNameCell.textContent = boss.name;
+            bossRow.appendChild(bossNameCell);
+            
+            // Mount name
+            const mountCell = document.createElement('td');
+            mountCell.className = 'mnt-plan-mount-col';
+            
+            if (boss.itemId) {
+              const mountLink = document.createElement('a');
+              mountLink.className = boss.epic ? 'mnt-plan-epic' : 'mnt-plan-rare';
+              mountLink.target = '_blank';
+              mountLink.href = `//wowhead.com/item=${boss.itemId}`;
+              
+              if (boss.icon) {
+                const mountIcon = document.createElement('img');
+                mountIcon.className = 'mnt-plan-icon';
+                mountIcon.src = `//wow.zamimg.com/images/wow/icons/tiny/${boss.icon}.gif`;
+                mountIcon.alt = '';
+                mountLink.appendChild(mountIcon);
+              }
+              
+              mountLink.appendChild(document.createTextNode(boss.mount));
+              mountCell.appendChild(mountLink);
+            }
+            
+            bossRow.appendChild(mountCell);
+            bossesTable.appendChild(bossRow);
+          });
+          
+          bossesCell.appendChild(bossesTable);
+        }
+        
+        row.appendChild(bossesCell);
+        
+        // Notes cell
+        const notesCell = document.createElement('td');
+        
+        if (step.notes) {
+          notesCell.textContent = step.notes;
+        }
+        
+        // Add boss-specific notes if any
+        if (step.bosses && step.bosses.length > 0) {
+          const bossNotesTable = document.createElement('table');
+          
+          step.bosses.forEach(boss => {
+            if (boss.note) {
+              const bossNoteRow = document.createElement('tr');
+              const bossNoteCell = document.createElement('td');
+              bossNoteCell.textContent = boss.note;
+              bossNoteRow.appendChild(bossNoteCell);
+              bossNotesTable.appendChild(bossNoteRow);
+            } else {
+              // Add empty row for spacing
+              const emptyRow = document.createElement('tr');
+              const emptyCell = document.createElement('td');
+              emptyCell.innerHTML = '&nbsp;';
+              emptyRow.appendChild(emptyCell);
+              bossNotesTable.appendChild(emptyRow);
+            }
+          });
+          
+          notesCell.appendChild(bossNotesTable);
+        }
+        
+        row.appendChild(notesCell);
+        tbody.appendChild(row);
+      });
+    }
+    
+    table.appendChild(tbody);
+    container.appendChild(table);
+    
+    // Initialize tooltips (if WoWhead API is available)
+    if (window.WH && window.WH.Tooltip) {
+      window.WH.Tooltip.refresh();
+    }
+  }
+</script>
+
+<style>
+  .container {
+    padding-top: 20px;
+  }
+  
+  .pbSmall {
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 10px;
+  }
+  
+  .loading-placeholder {
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: #09f;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 15px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .mount-category {
+    margin-bottom: 30px;
+  }
+  
+  .category-header {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .subcategory-header {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .mounts-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .mount-item {
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .mount-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .mount-item.not-collected {
+    opacity: 0.4;
+  }
+  
+  .mount-item.not-collected:hover {
+    opacity: 0.7;
+  }
+  
+  .error-message {
+    color: #a94442;
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 20px 0;
+  }
+  
+  .success-message {
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .success-message img {
+    max-width: 100px;
+    margin-bottom: 15px;
+  }
+  
+  .mnt-plan-boss-col {
+    min-width: 150px;
+  }
+  
+  .mnt-plan-mount-col {
+    min-width: 200px;
+  }
+  
+  .mnt-icon-step {
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .mnt-plan-icon {
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  
+  .mnt-plan-epic {
+    color: #a335ee;
+  }
+  
+  .mnt-plan-rare {
+    color: #0070dd;
+  }
+  
+  /* Dark mode adjustments */
+  :global(body.dark) .category-header {
+    border-bottom-color: #444;
+  }
+</style>

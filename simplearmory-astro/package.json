@@ -1,0 +1,22 @@
+{
+  "name": "simplearmory-astro",
+  "version": "0.0.1",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "postinstall": "patch-package"
+  },
+  "dependencies": {
+    "astro": "^4.0.0",
+    "svelte-select": "^4.4.7",
+    "patch-package": "^6.5.1"
+  },
+  "devDependencies": {
+    "@astrojs/svelte": "^5.0.0",
+    "svelte": "^4.2.0"
+  }
+}

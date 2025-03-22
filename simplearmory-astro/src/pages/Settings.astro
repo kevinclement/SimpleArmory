@@ -1,0 +1,403 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getTitle } from '../utils/utils';
+---
+
+<Layout title={getTitle(null, 'Settings')}>
+  <div class="container">
+    <div class="page-header">
+      <h2>Settings</h2>
+    </div>
+    <div class="sect">
+      <div>
+        Signed in as
+        <strong class="signin-name" id="user-info">
+          Loading...
+        </strong>
+        <a class="ml-2" href="/#/">Signout</a>
+      </div>
+
+      <div>
+        <input type="checkbox" id="useDarkMode">
+        <label for="useDarkMode">&nbsp; Use Dark Mode</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="useClassicSkin">
+        <label for="useClassicSkin">&nbsp; Use Classic Appearance</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="showHidden">
+        <label for="showHidden">&nbsp; Show Unobtainable Collectibles</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="showFeats">
+        <label for="showFeats">&nbsp; Show Obtainable Feat of Strengths</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="showUnobtainedOnly">
+        <label for="showUnobtainedOnly">&nbsp; Show Only Unobtained Collectibles</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="showUpcoming">
+        <label for="showUpcoming">&nbsp; Show Upcoming Content</label>
+      </div>
+
+      <div>
+        Locale
+        <select id="locale-select" name="locale">
+          <option value="wowhead.com">EN</option>
+          <option value="de.wowhead.com">DE</option>
+          <option value="es.wowhead.com">ES</option>
+          <option value="fr.wowhead.com">FR</option>
+          <option value="it.wowhead.com">IT</option>
+          <option value="pt.wowhead.com">PT</option>
+          <option value="ru.wowhead.com">RU</option>
+          <option value="ko.wowhead.com">KO</option>
+          <option value="cn.wowhead.com">CN</option>
+        </select>
+      </div>
+    </div>
+    <div class="clear"></div>
+    
+    <div id="example-container">
+      <h3>Example Category</h3>
+      <div class="subcategory">
+        <h4>Example Subcategory</h4>
+        <div class="items">
+          <a href="#" class="item collected" style="background-image: url(//wow.zamimg.com/images/wow/icons/large/inv_infernalmount.jpg)"></a>
+          <a href="#" class="item" style="background-image: url(//wow.zamimg.com/images/wow/icons/large/inv_infernalmount.jpg)"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  import { getUserState, getPreferencesState, updatePreferences } from '../utils/state';
+  import { getTitle, getWowheadUrl } from '../utils/utils';
+
+  // Initialize once the DOM is loaded
+  document.addEventListener('DOMContentLoaded', async () => {
+    try {
+      // Track page view
+      if (window.ga) {
+        window.ga('send', 'pageview', 'Settings');
+      }
+
+      // Get the user from state management
+      const user = getUserState();
+      const preferences = getPreferencesState();
+
+      if (!user || !user.region || !user.realm || !user.character) {
+        showError('Missing character information');
+        return;
+      }
+      
+      // Update title with character name
+      document.title = getTitle(user.character, 'Settings');
+
+      // Update user info display
+      updateUserInfo(user);
+      
+      // Initialize settings
+      initializeSettings(preferences);
+      
+      // Setup event listeners
+      setupEventListeners();
+    } catch (error) {
+      console.error('Error loading settings:', error);
+      showError(error.message || 'Failed to load settings');
+    }
+  });
+
+  function updateUserInfo(user) {
+    const userInfoElement = document.getElementById('user-info');
+    if (userInfoElement) {
+      userInfoElement.innerHTML = `
+        ${user.character} @ ${user.realm}
+        <span class="text-uppercase">(${user.region})</span>
+      `;
+    }
+  }
+
+  function initializeSettings(preferences) {
+    // Dark mode setting
+    const darkModeCheckbox = document.getElementById('useDarkMode');
+    if (darkModeCheckbox) {
+      darkModeCheckbox.checked = preferences.theme === 'dark';
+    }
+    
+    // Classic skin setting
+    const classicSkinCheckbox = document.getElementById('useClassicSkin');
+    if (classicSkinCheckbox) {
+      classicSkinCheckbox.checked = preferences.itemSkin === 'classic';
+    }
+    
+    // Show hidden collectibles
+    const showHiddenCheckbox = document.getElementById('showHidden');
+    if (showHiddenCheckbox) {
+      showHiddenCheckbox.checked = preferences.showHidden === 'shown';
+    }
+    
+    // Show feat of strengths
+    const showFeatsCheckbox = document.getElementById('showFeats');
+    if (showFeatsCheckbox) {
+      showFeatsCheckbox.checked = preferences.showHiddenFeat === 'shown';
+    }
+    
+    // Show only unobtained
+    const showUnobtainedCheckbox = document.getElementById('showUnobtainedOnly');
+    if (showUnobtainedCheckbox) {
+      showUnobtainedCheckbox.checked = preferences.showUnobtainedOnly === 'true';
+    }
+    
+    // Show upcoming content
+    const showUpcomingCheckbox = document.getElementById('showUpcoming');
+    if (showUpcomingCheckbox) {
+      showUpcomingCheckbox.checked = preferences.showUpcoming === 'true';
+    }
+    
+    // Locale selection
+    const localeSelect = document.getElementById('locale-select');
+    if (localeSelect) {
+      localeSelect.value = getWowheadUrl();
+    }
+    
+    // Update example display based on current settings
+    updateExampleDisplay(preferences);
+  }
+
+  function setupEventListeners() {
+    // Dark mode toggle
+    const darkModeCheckbox = document.getElementById('useDarkMode');
+    if (darkModeCheckbox) {
+      darkModeCheckbox.addEventListener('change', function(e) {
+        const newTheme = this.checked ? 'dark' : 'light';
+        updatePreferences({ theme: newTheme });
+        localStorage.setItem('darkTheme', this.checked);
+        updateExampleDisplay(getPreferencesState());
+        updateBodyClass();
+      });
+    }
+    
+    // Classic skin toggle
+    const classicSkinCheckbox = document.getElementById('useClassicSkin');
+    if (classicSkinCheckbox) {
+      classicSkinCheckbox.addEventListener('change', function(e) {
+        const newSkin = this.checked ? 'classic' : 'new';
+        updatePreferences({ itemSkin: newSkin });
+        localStorage.setItem('itemSkin', newSkin);
+        updateExampleDisplay(getPreferencesState());
+      });
+    }
+    
+    // Show hidden toggle
+    const showHiddenCheckbox = document.getElementById('showHidden');
+    if (showHiddenCheckbox) {
+      showHiddenCheckbox.addEventListener('change', function(e) {
+        const newValue = this.checked ? 'shown' : 'hidden';
+        updatePreferences({ showHidden: newValue });
+        localStorage.setItem('showHiddenUpdated', Date.now());
+        localStorage.setItem('showHidden', newValue);
+        updateExampleDisplay(getPreferencesState());
+      });
+    }
+    
+    // Show feats toggle
+    const showFeatsCheckbox = document.getElementById('showFeats');
+    if (showFeatsCheckbox) {
+      showFeatsCheckbox.addEventListener('change', function(e) {
+        const newValue = this.checked ? 'shown' : 'hidden';
+        updatePreferences({ showHiddenFeat: newValue });
+        localStorage.setItem('showHiddenUpdated', Date.now());
+        localStorage.setItem('showHiddenFeat', newValue);
+        updateExampleDisplay(getPreferencesState());
+      });
+    }
+    
+    // Show unobtained only toggle
+    const showUnobtainedCheckbox = document.getElementById('showUnobtainedOnly');
+    if (showUnobtainedCheckbox) {
+      showUnobtainedCheckbox.addEventListener('change', function(e) {
+        const newValue = this.checked ? 'true' : 'false';
+        updatePreferences({ showUnobtainedOnly: newValue });
+        localStorage.setItem('showHiddenUpdated', Date.now());
+        localStorage.setItem('showUnobtainedOnly', newValue);
+        updateExampleDisplay(getPreferencesState());
+      });
+    }
+    
+    // Show upcoming toggle
+    const showUpcomingCheckbox = document.getElementById('showUpcoming');
+    if (showUpcomingCheckbox) {
+      showUpcomingCheckbox.addEventListener('change', function(e) {
+        const newValue = this.checked ? 'true' : 'false';
+        updatePreferences({ showUpcoming: newValue });
+        localStorage.setItem('showHiddenUpdated', Date.now());
+        localStorage.setItem('showUpcoming', newValue);
+        updateExampleDisplay(getPreferencesState());
+      });
+    }
+    
+    // Locale selection
+    const localeSelect = document.getElementById('locale-select');
+    if (localeSelect) {
+      localeSelect.addEventListener('change', function(e) {
+        const currentLocale = getWowheadUrl();
+        if (this.value !== currentLocale) {
+          localStorage.setItem('wowhead_url', this.value);
+          window.location.reload();
+        }
+      });
+    }
+  }
+
+  function updateExampleDisplay(preferences) {
+    const container = document.getElementById('example-container');
+    if (!container) return;
+    
+    // Update container class based on itemSkin
+    if (preferences.itemSkin === 'classic') {
+      container.classList.add('classic-skin');
+    } else {
+      container.classList.remove('classic-skin');
+    }
+    
+    // If showing only unobtained, update display
+    const exampleItems = container.querySelectorAll('.item');
+    if (exampleItems.length > 0) {
+      if (preferences.showUnobtainedOnly === 'true') {
+        exampleItems.forEach(item => {
+          if (item.classList.contains('collected')) {
+            item.style.display = 'none';
+          } else {
+            item.style.display = 'block';
+          }
+        });
+      } else {
+        exampleItems.forEach(item => {
+          item.style.display = 'block';
+        });
+      }
+    }
+  }
+  
+  function updateBodyClass() {
+    const preferences = getPreferencesState();
+    if (preferences.theme === 'dark') {
+      document.body.classList.add('dark-theme');
+    } else {
+      document.body.classList.remove('dark-theme');
+    }
+  }
+
+  function showError(message) {
+    console.error(message);
+    // Could display error message on the page if needed
+  }
+
+  // Handle route changes for client-side navigation
+  document.addEventListener('router:update', async () => {
+    const user = getUserState();
+    if (window.location.hash.startsWith('#/settings') && user.region && user.realm && user.character) {
+      // Update title with character name
+      document.title = getTitle(user.character, 'Settings');
+      
+      // Update user info and settings
+      updateUserInfo(user);
+      initializeSettings(getPreferencesState());
+    }
+  });
+</script>
+
+<style>
+  .sect {
+    margin-bottom: 30px;
+  }
+  
+  .sect div {
+    margin-bottom: 10px;
+  }
+  
+  .signin-name {
+    margin-right: 10px;
+  }
+  
+  .ml-2 {
+    margin-left: 10px;
+  }
+  
+  .clear {
+    clear: both;
+  }
+  
+  /* Example display styles */
+  #example-container {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  #example-container h3 {
+    margin-top: 0;
+  }
+  
+  .subcategory {
+    margin-bottom: 20px;
+  }
+  
+  .subcategory h4 {
+    margin-bottom: 10px;
+  }
+  
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .item {
+    width: 36px;
+    height: 36px;
+    background-size: cover;
+    border: 1px solid #333;
+    border-radius: 4px;
+    opacity: 0.4;
+    transition: opacity 0.2s;
+  }
+  
+  .item.collected {
+    opacity: 1;
+  }
+  
+  .classic-skin .item {
+    border-radius: 0;
+    border-color: #000;
+  }
+  
+  /* Dark theme styles */
+  :global(body.dark-theme) {
+    background-color: #222;
+    color: #eee;
+  }
+  
+  :global(body.dark-theme) #example-container {
+    background-color: #333;
+    border-color: #555;
+  }
+  
+  :global(body.dark-theme) .page-header h2 {
+    color: #fff;
+  }
+  
+  :global(body.dark-theme) a {
+    color: #4da6ff;
+  }
+</style>

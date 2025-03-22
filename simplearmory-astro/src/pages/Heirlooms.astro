@@ -1,0 +1,367 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getTitle } from '../utils/utils';
+---
+
+<Layout title={getTitle(null, 'Heirlooms')}>
+  <div class="container">
+    <div class="page-header">
+      <h2>
+        Heirlooms
+        <div id="progress-container" class="progress-right"></div>
+      </h2>
+    </div>
+
+    <div id="heirlooms-container">
+      <div class="loading">
+        <div class="spinner"></div>
+        <div class="loading-text">Loading...</div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  import { getUserState } from '../utils/state';
+  import { percent, percentFormat } from '../utils/utils';
+  import { getHeirlooms } from '../utils/api/heirlooms';
+
+  // Initialize once the DOM is loaded
+  document.addEventListener('DOMContentLoaded', async () => {
+    try {
+      // Track page view
+      if (window.ga) {
+        window.ga('send', 'pageview', 'Heirlooms');
+      }
+
+      // Get the user from state management
+      const user = getUserState();
+
+      if (!user || !user.region || !user.realm || !user.character) {
+        showError('Missing character information');
+        return;
+      }
+      
+      // Update title with character name
+      document.title = getTitle(user.character, 'Heirlooms');
+
+      // Fetch heirlooms data
+      const heirlooms = await getHeirlooms(user.region, user.realm, user.character);
+      
+      if (!heirlooms) {
+        showError('Failed to load heirlooms data');
+        return;
+      }
+
+      // Update progress bar
+      updateProgressBar(heirlooms);
+      
+      // Render heirlooms
+      renderHeirlooms(heirlooms);
+    } catch (error) {
+      console.error('Error loading heirlooms:', error);
+      showError(error.message || 'Failed to load heirlooms');
+    }
+  });
+
+  function updateProgressBar(heirlooms) {
+    const progressContainer = document.getElementById('progress-container');
+    
+    if (progressContainer) {
+      // Create progress bar structure
+      const progressBarHtml = `
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: ${percent(heirlooms.collected, heirlooms.possible)}%;" aria-valuenow="${heirlooms.collected}" aria-valuemin="0" aria-valuemax="${heirlooms.possible}"></div>
+        </div>
+        <div class="progress-text">${percentFormat(heirlooms.collected, heirlooms.possible)}</div>
+      `;
+      
+      progressContainer.innerHTML = progressBarHtml;
+    }
+  }
+
+  function renderHeirlooms(heirlooms) {
+    const container = document.getElementById('heirlooms-container');
+    
+    if (!container) return;
+    
+    // Clear loading indicator
+    container.innerHTML = '';
+    
+    // Create HTML for each category
+    for (const category of heirlooms.categories) {
+      const categoryElement = document.createElement('div');
+      categoryElement.className = 'category';
+      
+      // Add category header
+      const categoryHeader = document.createElement('h3');
+      categoryHeader.textContent = category.name;
+      categoryElement.appendChild(categoryHeader);
+      
+      // Process each subcategory
+      for (const subcat of category.subcats) {
+        const subcatElement = document.createElement('div');
+        subcatElement.className = 'subcategory';
+        
+        // Add subcategory header
+        const subcatHeader = document.createElement('h4');
+        subcatHeader.textContent = subcat.name;
+        subcatElement.appendChild(subcatHeader);
+        
+        // Create items container
+        const itemsContainer = document.createElement('div');
+        itemsContainer.className = 'items';
+        
+        // Add each heirloom
+        for (const heirloom of subcat.heirlooms) {
+          const itemElement = document.createElement('a');
+          itemElement.className = `item${heirloom.collected ? ' collected' : ''}`;
+          itemElement.href = heirloom.source?.link || '#';
+          itemElement.target = '_blank';
+          itemElement.rel = 'noopener noreferrer';
+          
+          // Create tooltip content
+          const tooltipContent = `
+            <div class="tooltip-content">
+              <div class="tooltip-title">${heirloom.name}</div>
+              <div class="tooltip-description">${heirloom.description || ''}</div>
+              ${heirloom.source ? `<div class="tooltip-source">Source: ${heirloom.source.text}</div>` : ''}
+            </div>
+          `;
+          
+          // Set data attributes for tooltip
+          itemElement.setAttribute('data-tooltip', tooltipContent);
+          
+          // Set item icon
+          itemElement.style.backgroundImage = `url(https://wow.zamimg.com/images/wow/icons/large/${heirloom.icon}.jpg)`;
+          
+          // Add to container
+          itemsContainer.appendChild(itemElement);
+        }
+        
+        subcatElement.appendChild(itemsContainer);
+        categoryElement.appendChild(subcatElement);
+      }
+      
+      container.appendChild(categoryElement);
+    }
+    
+    // Initialize tooltips
+    initializeTooltips();
+  }
+
+  function showError(message) {
+    const container = document.getElementById('heirlooms-container');
+    
+    if (container) {
+      container.innerHTML = `
+        <div class="error">
+          <i class="glyphicon glyphicon-exclamation-sign"></i>
+          <p>${message}</p>
+        </div>
+      `;
+    }
+  }
+
+  function initializeTooltips() {
+    const items = document.querySelectorAll('.item[data-tooltip]');
+    
+    items.forEach(item => {
+      item.addEventListener('mouseenter', function() {
+        const tooltipContent = this.getAttribute('data-tooltip');
+        showTooltip(this, tooltipContent);
+      });
+      
+      item.addEventListener('mouseleave', function() {
+        hideTooltip();
+      });
+    });
+  }
+
+  function showTooltip(element, content) {
+    // Check if tooltip already exists
+    let tooltip = document.getElementById('item-tooltip');
+    
+    if (!tooltip) {
+      // Create tooltip element
+      tooltip = document.createElement('div');
+      tooltip.id = 'item-tooltip';
+      tooltip.className = 'tooltip';
+      document.body.appendChild(tooltip);
+    }
+    
+    // Set tooltip content
+    tooltip.innerHTML = content;
+    
+    // Position tooltip
+    const rect = element.getBoundingClientRect();
+    const tooltipRect = tooltip.getBoundingClientRect();
+    
+    // Calculate position
+    let top = rect.top - tooltipRect.height - 10;
+    let left = rect.left + (rect.width / 2) - (tooltipRect.width / 2);
+    
+    // Adjust if would go off screen
+    if (top < 0) top = rect.bottom + 10;
+    if (left < 0) left = 0;
+    if (left + tooltipRect.width > window.innerWidth) left = window.innerWidth - tooltipRect.width;
+    
+    // Set position
+    tooltip.style.top = `${top + window.scrollY}px`;
+    tooltip.style.left = `${left}px`;
+    tooltip.style.display = 'block';
+  }
+
+  function hideTooltip() {
+    const tooltip = document.getElementById('item-tooltip');
+    if (tooltip) {
+      tooltip.style.display = 'none';
+    }
+  }
+
+  // Handle route changes for client-side navigation
+  document.addEventListener('router:update', async () => {
+    const user = getUserState();
+    if (window.location.hash.startsWith('#/heirlooms') && user.region && user.realm && user.character) {
+      // Update title with character name
+      document.title = getTitle(user.character, 'Heirlooms');
+      
+      try {
+        // Fetch and render
+        const heirlooms = await getHeirlooms(user.region, user.realm, user.character);
+        
+        if (!heirlooms) {
+          showError('Failed to load heirlooms data');
+          return;
+        }
+
+        // Update progress bar
+        updateProgressBar(heirlooms);
+        
+        // Render heirlooms
+        renderHeirlooms(heirlooms);
+      } catch (error) {
+        console.error('Error loading heirlooms:', error);
+        showError(error.message || 'Failed to load heirlooms');
+      }
+    }
+  });
+</script>
+
+<style>
+  .progress-right {
+    float: right;
+    width: 200px;
+    margin-top: 8px;
+  }
+  
+  .progress {
+    margin-bottom: 0;
+    float: left;
+    width: 85%;
+  }
+  
+  .progress-text {
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #09f;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 15px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .loading-text {
+    color: #777;
+  }
+  
+  .error {
+    text-align: center;
+    color: #d9534f;
+    padding: 50px;
+  }
+  
+  .error i {
+    font-size: 48px;
+    margin-bottom: 15px;
+  }
+  
+  .category {
+    margin-bottom: 30px;
+  }
+  
+  .subcategory {
+    margin-bottom: 20px;
+  }
+  
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .item {
+    width: 36px;
+    height: 36px;
+    background-size: cover;
+    border: 1px solid #333;
+    border-radius: 4px;
+    opacity: 0.4;
+    transition: opacity 0.2s;
+  }
+  
+  .item.collected {
+    opacity: 1;
+  }
+  
+  .item:hover {
+    border-color: #ffd100;
+  }
+  
+  /* Tooltip styles */
+  .tooltip {
+    position: absolute;
+    z-index: 1000;
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 10px;
+    color: #fff;
+    font-size: 14px;
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    display: none;
+  }
+  
+  .tooltip-title {
+    color: #ffd100;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .tooltip-description {
+    margin-bottom: 5px;
+  }
+  
+  .tooltip-source {
+    font-style: italic;
+    color: #aaa;
+    font-size: 12px;
+  }
+</style>

@@ -1,0 +1,149 @@
+---
+/**
+ * Category component
+ * Used to display a category of collectibles with its subcategories and items
+ */
+
+interface CollectibleItem {
+  id: number;
+  name: string;
+  icon: string;
+  collected: boolean;
+  description?: string;
+  source?: {
+    text: string;
+    link: string;
+  };
+}
+
+interface Subcategory {
+  name: string;
+  mounts?: CollectibleItem[];
+  items?: CollectibleItem[];
+  toys?: CollectibleItem[];
+  companions?: CollectibleItem[];
+  heirlooms?: CollectibleItem[];
+  titles?: CollectibleItem[];
+  achievements?: CollectibleItem[];
+}
+
+interface CategoryProps {
+  name: string;
+  subcats: Subcategory[];
+}
+
+interface Props {
+  category: CategoryProps;
+  superCat: string; // The parent category type (Mounts, Toys, etc.)
+}
+
+const { category, superCat } = Astro.props;
+
+// Determine which item property to use based on the superCat
+function getItems(subcat: Subcategory): CollectibleItem[] {
+  switch (superCat.toLowerCase()) {
+    case 'mounts':
+      return subcat.mounts || [];
+    case 'toys':
+      return subcat.toys || [];
+    case 'companions':
+    case 'battle pets':
+      return subcat.companions || [];
+    case 'heirlooms':
+      return subcat.heirlooms || [];
+    case 'titles':
+      return subcat.titles || [];
+    case 'achievements':
+      return subcat.achievements || [];
+    default:
+      return subcat.items || [];
+  }
+}
+---
+
+<div class="category">
+  <h3 class="categoryHeader">{category.name}</h3>
+  {category.subcats.map((subcat) => (
+    <div class="subcategory">
+      <h4 class="subcategoryHeader">{subcat.name}</h4>
+      <div class="items">
+        {getItems(subcat).map((item) => (
+          <div class={`item ${item.collected ? 'collected' : 'notCollected'}`} data-id={item.id}>
+            <a href={`//www.wowhead.com/item=${item.id}`} target="_blank" rel="noopener">
+              <img 
+                src={item.icon ? `//wow.zamimg.com/images/wow/icons/small/${item.icon}.jpg` : ''} 
+                alt={item.name} 
+                title={item.name}
+                class="itemImg"
+              />
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  ))}
+</div>
+
+<style>
+  .category {
+    margin-bottom: 30px;
+  }
+  
+  .categoryHeader {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .subcategory {
+    margin-bottom: 20px;
+  }
+  
+  .subcategoryHeader {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .item {
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .item.notCollected {
+    opacity: 0.4;
+  }
+  
+  .item.notCollected:hover {
+    opacity: 0.8;
+  }
+  
+  .itemImg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  /* Dark mode adjustments */
+  :global(body.dark) .categoryHeader {
+    border-bottom-color: #444;
+  }
+</style>
+
+<script>
+  // Client-side script to refresh WowHead tooltips
+  document.addEventListener('DOMContentLoaded', () => {
+    // Refresh WowHead tooltips if available
+    if (window.WH && window.WH.Tooltip) {
+      window.WH.Tooltip.refresh();
+    }
+  });
+</script>

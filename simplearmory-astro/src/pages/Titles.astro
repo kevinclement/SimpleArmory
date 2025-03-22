@@ -1,0 +1,374 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getTitle } from '../utils/utils';
+---
+
+<Layout title={getTitle(null, 'Titles')}>
+  <div class="container">
+    <div class="page-header">
+      <h2>
+        Titles
+        <div id="progress-container" class="progress-right"></div>
+      </h2>
+    </div>
+
+    <div id="titles-container">
+      <div class="loading">
+        <div class="spinner"></div>
+        <div class="loading-text">Loading...</div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  import { getUserState } from '../utils/state';
+  import { percent, percentFormat } from '../utils/utils';
+  import { getTitles } from '../utils/api/titles';
+
+  // Initialize once the DOM is loaded
+  document.addEventListener('DOMContentLoaded', async () => {
+    try {
+      // Track page view
+      if (window.ga) {
+        window.ga('send', 'pageview', 'Titles');
+      }
+
+      // Get the user from state management
+      const user = getUserState();
+
+      if (!user || !user.region || !user.realm || !user.character) {
+        showError('Missing character information');
+        return;
+      }
+      
+      // Update title with character name
+      document.title = getTitle(user.character, 'Titles');
+
+      // Fetch titles data
+      const titles = await getTitles(user.region, user.realm, user.character);
+      
+      if (!titles) {
+        showError('Failed to load titles data');
+        return;
+      }
+
+      // Update progress bar
+      updateProgressBar(titles);
+      
+      // Render titles
+      renderTitles(titles);
+    } catch (error) {
+      console.error('Error loading titles:', error);
+      showError(error.message || 'Failed to load titles');
+    }
+  });
+
+  function updateProgressBar(titles) {
+    const progressContainer = document.getElementById('progress-container');
+    
+    if (progressContainer) {
+      // Create progress bar structure
+      const progressBarHtml = `
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: ${percent(titles.collected, titles.possible)}%;" aria-valuenow="${titles.collected}" aria-valuemin="0" aria-valuemax="${titles.possible}"></div>
+        </div>
+        <div class="progress-text">${percentFormat(titles.collected, titles.possible)}</div>
+      `;
+      
+      progressContainer.innerHTML = progressBarHtml;
+    }
+  }
+
+  function renderTitles(titles) {
+    const container = document.getElementById('titles-container');
+    
+    if (!container) return;
+    
+    // Clear loading indicator
+    container.innerHTML = '';
+    
+    // Create HTML for each category
+    for (const category of titles.categories) {
+      const categoryElement = document.createElement('div');
+      categoryElement.className = 'category';
+      
+      // Add category header
+      const categoryHeader = document.createElement('h3');
+      categoryHeader.textContent = category.name;
+      categoryElement.appendChild(categoryHeader);
+      
+      // Process each subcategory
+      for (const subcat of category.subcats) {
+        const subcatElement = document.createElement('div');
+        subcatElement.className = 'subcategory';
+        
+        // Add subcategory header
+        const subcatHeader = document.createElement('h4');
+        subcatHeader.textContent = subcat.name;
+        subcatElement.appendChild(subcatHeader);
+        
+        // Create items container
+        const itemsContainer = document.createElement('div');
+        itemsContainer.className = 'items';
+        
+        // Add each title
+        for (const title of subcat.titles) {
+          const itemElement = document.createElement('div');
+          itemElement.className = `title-item${title.collected ? ' collected' : ''}`;
+          
+          // Create title link if source exists
+          const titleLink = document.createElement('a');
+          titleLink.href = title.source?.link || '#';
+          titleLink.target = '_blank';
+          titleLink.rel = 'noopener noreferrer';
+          titleLink.textContent = title.name.replace('%s', '');
+          
+          // Add title to item
+          itemElement.appendChild(titleLink);
+          
+          // Create tooltip content
+          const tooltipContent = `
+            <div class="tooltip-content">
+              <div class="tooltip-title">${title.name.replace('%s', '[Character]')}</div>
+              <div class="tooltip-description">${title.description || ''}</div>
+              ${title.source ? `<div class="tooltip-source">Source: ${title.source.text}</div>` : ''}
+            </div>
+          `;
+          
+          // Set data attributes for tooltip
+          itemElement.setAttribute('data-tooltip', tooltipContent);
+          
+          // Add event listeners for tooltip
+          itemElement.addEventListener('mouseenter', function() {
+            const tooltipContent = this.getAttribute('data-tooltip');
+            showTooltip(this, tooltipContent);
+          });
+          
+          itemElement.addEventListener('mouseleave', function() {
+            hideTooltip();
+          });
+          
+          // Add to container
+          itemsContainer.appendChild(itemElement);
+        }
+        
+        subcatElement.appendChild(itemsContainer);
+        categoryElement.appendChild(subcatElement);
+      }
+      
+      container.appendChild(categoryElement);
+    }
+  }
+
+  function showError(message) {
+    const container = document.getElementById('titles-container');
+    
+    if (container) {
+      container.innerHTML = `
+        <div class="error">
+          <i class="glyphicon glyphicon-exclamation-sign"></i>
+          <p>${message}</p>
+        </div>
+      `;
+    }
+  }
+
+  function showTooltip(element, content) {
+    // Check if tooltip already exists
+    let tooltip = document.getElementById('title-tooltip');
+    
+    if (!tooltip) {
+      // Create tooltip element
+      tooltip = document.createElement('div');
+      tooltip.id = 'title-tooltip';
+      tooltip.className = 'tooltip';
+      document.body.appendChild(tooltip);
+    }
+    
+    // Set tooltip content
+    tooltip.innerHTML = content;
+    
+    // Position tooltip
+    const rect = element.getBoundingClientRect();
+    const tooltipRect = tooltip.getBoundingClientRect();
+    
+    // Calculate position
+    let top = rect.top - tooltipRect.height - 10;
+    let left = rect.left + (rect.width / 2) - (tooltipRect.width / 2);
+    
+    // Adjust if would go off screen
+    if (top < 0) top = rect.bottom + 10;
+    if (left < 0) left = 0;
+    if (left + tooltipRect.width > window.innerWidth) left = window.innerWidth - tooltipRect.width;
+    
+    // Set position
+    tooltip.style.top = `${top + window.scrollY}px`;
+    tooltip.style.left = `${left}px`;
+    tooltip.style.display = 'block';
+  }
+
+  function hideTooltip() {
+    const tooltip = document.getElementById('title-tooltip');
+    if (tooltip) {
+      tooltip.style.display = 'none';
+    }
+  }
+
+  // Handle route changes for client-side navigation
+  document.addEventListener('router:update', async () => {
+    const user = getUserState();
+    if (window.location.hash.startsWith('#/titles') && user.region && user.realm && user.character) {
+      // Update title with character name
+      document.title = getTitle(user.character, 'Titles');
+      
+      try {
+        // Fetch and render
+        const titles = await getTitles(user.region, user.realm, user.character);
+        
+        if (!titles) {
+          showError('Failed to load titles data');
+          return;
+        }
+
+        // Update progress bar
+        updateProgressBar(titles);
+        
+        // Render titles
+        renderTitles(titles);
+      } catch (error) {
+        console.error('Error loading titles:', error);
+        showError(error.message || 'Failed to load titles');
+      }
+    }
+  });
+</script>
+
+<style>
+  .progress-right {
+    float: right;
+    width: 200px;
+    margin-top: 8px;
+  }
+  
+  .progress {
+    margin-bottom: 0;
+    float: left;
+    width: 85%;
+  }
+  
+  .progress-text {
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #09f;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 15px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .loading-text {
+    color: #777;
+  }
+  
+  .error {
+    text-align: center;
+    color: #d9534f;
+    padding: 50px;
+  }
+  
+  .error i {
+    font-size: 48px;
+    margin-bottom: 15px;
+  }
+  
+  .category {
+    margin-bottom: 30px;
+  }
+  
+  .subcategory {
+    margin-bottom: 20px;
+  }
+  
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .title-item {
+    padding: 5px 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    opacity: 0.6;
+    transition: opacity 0.2s, background-color 0.2s;
+  }
+  
+  .title-item.collected {
+    opacity: 1;
+    background-color: #e7f5e7;
+    border-color: #c3e3c3;
+  }
+  
+  .title-item:hover {
+    border-color: #ffd100;
+  }
+  
+  .title-item a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .title-item.collected a {
+    color: #337ab7;
+    font-weight: 500;
+  }
+  
+  /* Tooltip styles */
+  .tooltip {
+    position: absolute;
+    z-index: 1000;
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 10px;
+    color: #fff;
+    font-size: 14px;
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    display: none;
+  }
+  
+  .tooltip-title {
+    color: #ffd100;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .tooltip-description {
+    margin-bottom: 5px;
+  }
+  
+  .tooltip-source {
+    font-style: italic;
+    color: #aaa;
+    font-size: 12px;
+  }
+</style>

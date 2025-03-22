@@ -1,0 +1,277 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getTitle } from '../utils/utils';
+import ProgressBar from '../components/ProgressBar.astro';
+---
+
+<Layout title={getTitle('Character', 'Toys')}>
+  <div class="container">
+    <div class="page-header">
+      <h2>
+        Toys
+        <ProgressBar 
+          rightSide={true}
+          width={0} 
+          percentage="Loading..." 
+          styleWidth="200px" 
+        />
+      </h2>
+    </div>
+
+    <div id="loading-indicator" class="loading-placeholder">
+      <div class="spinner"></div>
+      <p>Loading toy data...</p>
+    </div>
+
+    <div id="toys-error" class="error-message" style="display: none;">
+      <p>Failed to load toy data. Please try again later.</p>
+    </div>
+    
+    <div id="toys-categories">
+      <!-- Toy categories will be loaded here -->
+    </div>
+  </div>
+</Layout>
+
+<script>
+  import { initializeState, getUserState, subscribeToUserState } from '../utils/state.js';
+  import { getToys } from '../utils/api/toys.js';
+  import { percent, percentFormat } from '../utils/utils.js';
+  
+  // Initialize state and data
+  document.addEventListener('DOMContentLoaded', () => {
+    // Initialize state
+    initializeState();
+    
+    // Get current user state
+    const userState = getUserState();
+    
+    // Load toys data
+    loadToysData(userState);
+    
+    // Subscribe to user state changes
+    subscribeToUserState((state) => {
+      loadToysData(state);
+    });
+    
+    // Send page view to analytics
+    if (window.ga) {
+      window.ga('send', 'pageview', 'Toys');
+    }
+  });
+  
+  // Load toys data
+  async function loadToysData(state) {
+    if (!state.region || !state.realm || !state.character) return;
+    
+    const loadingIndicator = document.getElementById('loading-indicator');
+    const toysError = document.getElementById('toys-error');
+    const toysCategories = document.getElementById('toys-categories');
+    
+    if (loadingIndicator) loadingIndicator.style.display = 'block';
+    if (toysError) toysError.style.display = 'none';
+    
+    try {
+      // Fetch toys data
+      const toys = await getToys(state.region, state.realm, state.character);
+      
+      if (loadingIndicator) loadingIndicator.style.display = 'none';
+      
+      if (toys) {
+        // Update progress bar
+        updateProgressBar(toys.collected, toys.possible);
+        
+        // Render toys categories
+        renderToysCategories(toys, toysCategories);
+      }
+    } catch (error) {
+      console.error('Error loading toys:', error);
+      if (loadingIndicator) loadingIndicator.style.display = 'none';
+      if (toysError) toysError.style.display = 'block';
+    }
+  }
+  
+  // Update progress bar
+  function updateProgressBar(collected, possible) {
+    const progressBar = document.querySelector('.progress-bar');
+    const percentageEl = progressBar?.querySelector('span');
+    
+    if (!progressBar || !percentageEl) return;
+    
+    const width = percent(collected, possible);
+    const percentage = percentFormat(collected, possible);
+    
+    progressBar.style.width = width + '%';
+    progressBar.setAttribute('aria-valuenow', width.toString());
+    percentageEl.textContent = percentage;
+  }
+  
+  // Render toys categories
+  function renderToysCategories(toys, container) {
+    if (!container || !toys || !toys.categories) return;
+    
+    // Clear container
+    container.innerHTML = '';
+    
+    // Create a document fragment to minimize reflows
+    const fragment = document.createDocumentFragment();
+    
+    // Process each category
+    toys.categories.forEach(category => {
+      const categoryElement = document.createElement('div');
+      categoryElement.className = 'category-container';
+      
+      // Create category header
+      const categoryHeader = document.createElement('h3');
+      categoryHeader.className = 'category-header';
+      categoryHeader.textContent = category.name;
+      categoryElement.appendChild(categoryHeader);
+      
+      // Process each subcategory
+      category.subcats.forEach(subcat => {
+        const subcategoryElement = document.createElement('div');
+        subcategoryElement.className = 'subcategory-container';
+        
+        // Create subcategory header
+        const subcategoryHeader = document.createElement('h4');
+        subcategoryHeader.className = 'subcategory-header';
+        subcategoryHeader.textContent = subcat.name;
+        subcategoryElement.appendChild(subcategoryHeader);
+        
+        // Create toys grid
+        const toysGrid = document.createElement('div');
+        toysGrid.className = 'toys-grid';
+        
+        // Render toys
+        if (subcat.toys && subcat.toys.length > 0) {
+          subcat.toys.forEach(toy => {
+            const toyItem = document.createElement('div');
+            toyItem.className = `toy-item ${toy.collected ? 'collected' : 'not-collected'}`;
+            
+            // Toy icon
+            const toyLink = document.createElement('a');
+            toyLink.href = toy.id ? `//www.wowhead.com/item=${toy.id}` : '#';
+            toyLink.target = '_blank';
+            
+            const toyIcon = document.createElement('img');
+            toyIcon.src = toy.icon ? `//wow.zamimg.com/images/wow/icons/small/${toy.icon}.jpg` : '';
+            toyIcon.alt = toy.name;
+            toyIcon.title = toy.name;
+            
+            toyLink.appendChild(toyIcon);
+            toyItem.appendChild(toyLink);
+            
+            // Add tooltip data attributes
+            toyItem.dataset.toyId = toy.id.toString();
+            toyItem.dataset.toyName = toy.name;
+            toyItem.dataset.toyCollected = toy.collected.toString();
+            
+            toysGrid.appendChild(toyItem);
+          });
+        }
+        
+        subcategoryElement.appendChild(toysGrid);
+        categoryElement.appendChild(subcategoryElement);
+      });
+      
+      fragment.appendChild(categoryElement);
+    });
+    
+    container.appendChild(fragment);
+    
+    // Initialize tooltips (if WoWhead API is available)
+    if (window.WH && window.WH.Tooltip) {
+      window.WH.Tooltip.refresh();
+    }
+  }
+</script>
+
+<style>
+  .container {
+    padding-top: 20px;
+  }
+  
+  .loading-placeholder {
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: #09f;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 15px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .category-container {
+    margin-bottom: 30px;
+  }
+  
+  .category-header {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .subcategory-container {
+    margin-bottom: 20px;
+  }
+  
+  .subcategory-header {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .toys-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .toy-item {
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .toy-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .toy-item.not-collected {
+    opacity: 0.4;
+  }
+  
+  .toy-item.not-collected:hover {
+    opacity: 0.8;
+  }
+  
+  .error-message {
+    color: #a94442;
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 20px 0;
+  }
+  
+  /* Dark mode adjustments */
+  :global(body.dark) .category-header {
+    border-bottom-color: #444;
+  }
+</style>

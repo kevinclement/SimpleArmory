@@ -1,0 +1,321 @@
+---
+import { getTitle } from '../utils/utils';
+---
+
+<div class="login-container">
+  <div class="modal fade in" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" style="display: block;">
+    <div class="modal-dialog" role="document" style="z-index:1050">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="loginModalLabel">Enter realm and character</h3>
+        </div>
+        <div class="modal-body">
+          <div class="input-group">
+            <label for="realmSelect" class="input-group-addon input-group-label">Realm</label>
+            <div class="themed">
+              <div id="realmSelectContainer" class="form-control">
+                <span id="realmLoadingText" style="font-style: italic;">Loading realms...</span>
+                <!-- The realm select will be injected here by client script -->
+              </div>
+            </div>
+          </div>
+          <br/>
+          <div class="input-group">
+            <label for="characterName" class="input-group-addon input-group-label">Character</label>
+            <input id="characterName" type="text" class="form-control" style="z-index:1">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button id="loginButton" class="btn btn-primary" disabled>Go</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-backdrop fade in" style="z-index:1040"></div>
+</div>
+
+<script>
+  import { getProfile } from '../utils/api/profile.js';
+  import { navigate, getUrl } from '../utils/url.js';
+  
+  let realms = [];
+  let selectedRealm = null;
+  let characterName = '';
+  
+  // Initialize login form
+  document.addEventListener('DOMContentLoaded', () => {
+    // Add body class for modal styling
+    document.body.classList.add('modal-open');
+    
+    // Clear local storage on login page load
+    console.log(`Clearing local storage of user...`);
+    localStorage.removeItem('region');
+    localStorage.removeItem('realm');
+    localStorage.removeItem('character');
+    
+    // Set up event listeners
+    setupEventListeners();
+    
+    // Load realms data
+    loadRealms();
+  });
+  
+  // Clean up when component is destroyed
+  window.addEventListener('beforeunload', () => {
+    // Only remove if we're on the login page
+    if (window.location.hash === '#/' || window.location.hash === '') {
+      document.body.classList.remove('modal-open');
+    }
+  });
+  
+  // Set up event listeners
+  function setupEventListeners() {
+    // Login button click handler
+    const loginButton = document.getElementById('loginButton');
+    if (loginButton) {
+      loginButton.addEventListener('click', handleLogin);
+    }
+    
+    // Character input keydown handler
+    const characterInput = document.getElementById('characterName');
+    if (characterInput) {
+      characterInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' && !loginButton.disabled) {
+          e.preventDefault();
+          handleLogin();
+        }
+      });
+      
+      // Update button state on input
+      characterInput.addEventListener('input', () => {
+        characterName = characterInput.value;
+        updateLoginButtonState();
+      });
+    }
+  }
+  
+  // Load realms data
+  async function loadRealms() {
+    try {
+      // In a real implementation, this would fetch from an API
+      // For now, we'll mock some realm data
+      const response = await fetch('/data/servers.us.json');
+      if (!response.ok) throw new Error('Failed to load realms');
+      
+      realms = await response.json();
+      
+      // Create and render the select
+      createRealmSelect(realms);
+    } catch (error) {
+      console.error('Error loading realms:', error);
+      const container = document.getElementById('realmSelectContainer');
+      if (container) {
+        container.innerHTML = '<div class="error">Failed to load realms. Please try again later.</div>';
+      }
+    }
+  }
+  
+  // Create and render the realm select
+  function createRealmSelect(realms) {
+    const container = document.getElementById('realmSelectContainer');
+    if (!container) return;
+    
+    // Clear loading text
+    container.innerHTML = '';
+    
+    // Create a select element
+    const select = document.createElement('select');
+    select.id = 'realmSelect';
+    select.className = 'form-control';
+    
+    // Add empty option
+    const emptyOption = document.createElement('option');
+    emptyOption.value = '';
+    emptyOption.textContent = 'Select a realm...';
+    select.appendChild(emptyOption);
+    
+    // Group by region
+    const grouped = realms.reduce((acc, realm) => {
+      if (!acc[realm.region]) {
+        acc[realm.region] = [];
+      }
+      acc[realm.region].push(realm);
+      return acc;
+    }, {});
+    
+    // Add options grouped by region
+    Object.keys(grouped).forEach(region => {
+      const group = document.createElement('optgroup');
+      group.label = region.toUpperCase();
+      
+      grouped[region].forEach(realm => {
+        const option = document.createElement('option');
+        option.value = JSON.stringify({ region: realm.region, slug: realm.slug, name: realm.name });
+        option.textContent = realm.name;
+        group.appendChild(option);
+      });
+      
+      select.appendChild(group);
+    });
+    
+    // Add event listener
+    select.addEventListener('change', (e) => {
+      try {
+        selectedRealm = JSON.parse(e.target.value);
+        
+        // Focus the character input when realm is selected
+        setTimeout(() => {
+          const characterInput = document.getElementById('characterName');
+          if (characterInput) {
+            characterInput.focus();
+          }
+        }, 0);
+        
+        updateLoginButtonState();
+      } catch (err) {
+        console.error('Error parsing selected realm:', err);
+        selectedRealm = null;
+      }
+    });
+    
+    // Append select to container
+    container.appendChild(select);
+  }
+  
+  // Update login button state
+  function updateLoginButtonState() {
+    const loginButton = document.getElementById('loginButton');
+    if (loginButton) {
+      const isValid = selectedRealm && characterName && characterName.trim() !== '';
+      loginButton.disabled = !isValid;
+    }
+  }
+  
+  // Handle login form submission
+  async function handleLogin() {
+    if (!selectedRealm || !characterName || characterName.trim() === '') {
+      return;
+    }
+    
+    const region = selectedRealm.region;
+    const realm = selectedRealm.slug;
+    const char = characterName.trim().toLowerCase(); // Blizzard API doesn't place nice with chars like Ä at start of names
+    
+    try {
+      console.log(`Logging in as ${region}/${realm}/${char}`);
+      
+      // Try to fetch the profile first, then navigate if successful
+      // This mirrors the behavior in the original code
+      const profile = await getProfile(region, realm, char);
+      
+      if (profile && (!profile.status || profile.status != 404)) {
+        // Navigate to the character's page
+        window.document.location.hash = getUrl(region, realm, char);
+      }
+    } catch (error) {
+      console.error('Login error:', error);
+      // Error handling would go here
+    }
+  }
+</script>
+
+<style>
+  /* Additional styles for the login modal */
+  .login-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1040;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    outline: 0;
+  }
+  
+  .modal.in {
+    display: block;
+  }
+  
+  .modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px auto;
+    max-width: 600px;
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    outline: 0;
+  }
+  
+  .modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+  }
+  
+  .modal-backdrop.in {
+    opacity: 0.5;
+  }
+  
+  .modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  .modal-body {
+    position: relative;
+    padding: 15px;
+  }
+  
+  .modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+  }
+
+  /* Override dark mode */
+  :global(body.dark) .modal-content {
+    background-color: #212121;
+    color: #fff;
+  }
+  
+  :global(body.dark) .input-group-addon {
+    background-color: #303030;
+    color: #fff;
+    border-color: #0f0f0f;
+  }
+  
+  :global(body.dark) .form-control {
+    background-color: #212121;
+    color: #fff;
+    border-color: #0f0f0f;
+  }
+  
+  :global(body.dark) .themed {
+    --background: #212121;
+    --inputColor: #fff;
+    --placeholderColor: #777;
+    --border: 1px solid #0f0f0f;
+    --borderFocusColor: #66afe9;
+    --groupTitleColor: #777;
+  }
+</style>

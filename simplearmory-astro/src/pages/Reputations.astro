@@ -1,0 +1,377 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getTitle } from '../utils/utils';
+import ReputationRow from '../components/ReputationRow.astro';
+---
+
+<Layout title={getTitle(null, 'Reputation')}>
+  <div class="container rep">
+    <div class="page-header">
+      <h2>Reputation</h2>
+    </div>
+
+    <div id="reputations-container">
+      <div class="loading">
+        <div class="spinner"></div>
+        <div class="loading-text">Loading...</div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  import { getUserState } from '../utils/state';
+  import { getTitle } from '../utils/utils';
+  import { getReputations } from '../utils/api/reputations';
+
+  // Initialize once the DOM is loaded
+  document.addEventListener('DOMContentLoaded', async () => {
+    try {
+      // Track page view
+      if (window.ga) {
+        window.ga('send', 'pageview', 'Reputation');
+      }
+
+      // Get the user from state management
+      const user = getUserState();
+
+      if (!user || !user.region || !user.realm || !user.character) {
+        showError('Missing character information');
+        return;
+      }
+      
+      // Update title with character name
+      document.title = getTitle(user.character, 'Reputation');
+
+      // Fetch reputations data
+      const reputations = await getReputations(user.region, user.realm, user.character);
+      
+      if (!reputations || !reputations.categories) {
+        showError('Failed to load reputation data');
+        return;
+      }
+
+      // Render reputations
+      renderReputations(reputations.categories);
+    } catch (error) {
+      console.error('Error loading reputations:', error);
+      showError(error.message || 'Failed to load reputations');
+    }
+  });
+
+  function renderReputations(categories) {
+    const container = document.getElementById('reputations-container');
+    
+    if (!container) return;
+    
+    // Clear loading indicator
+    container.innerHTML = '';
+    
+    // Create HTML for each category
+    for (const category of categories) {
+      // Create category header
+      const categoryHeader = document.createElement('h3');
+      categoryHeader.textContent = category.name;
+      container.appendChild(categoryHeader);
+      
+      // Create faction list
+      const factionList = document.createElement('ul');
+      factionList.className = 'faction-list';
+      
+      // Add each faction
+      for (const faction of category.factions) {
+        const factionItem = document.createElement('li');
+        factionItem.className = 'faction-item';
+        
+        // This is where we would normally use the ReputationRow component
+        // Since we can't dynamically create Astro components in client JS,
+        // we'll create the reputation row structure manually
+        const factionRow = createReputationRow(faction);
+        factionItem.appendChild(factionRow);
+        
+        factionList.appendChild(factionItem);
+      }
+      
+      container.appendChild(factionList);
+    }
+  }
+
+  function createReputationRow(faction) {
+    // Create a reputation row div
+    const rowDiv = document.createElement('div');
+    rowDiv.className = 'reputation-row';
+    
+    // Create faction label
+    const factionLabel = document.createElement('h4');
+    factionLabel.className = 'faction-label';
+    
+    const factionLink = document.createElement('a');
+    factionLink.href = `https://www.wowhead.com/faction=${faction.id}`;
+    factionLink.target = '_blank';
+    factionLink.textContent = faction.name;
+    
+    factionLabel.appendChild(factionLink);
+    rowDiv.appendChild(factionLabel);
+    
+    // Create reputation progress
+    const progressDiv = document.createElement('div');
+    progressDiv.className = 'reputation-progress';
+    
+    // Calculate reputation values and create progress blocks
+    for (let levelIdx = 0; levelIdx < faction.levels.length; levelIdx++) {
+      const level = faction.levels[levelIdx];
+      
+      // Create progress block
+      const progressBlock = document.createElement('div');
+      progressBlock.className = 'rep-progress-block';
+      progressBlock.title = `${level[1]}${tierProgressString(faction, levelIdx)}`;
+      progressBlock.style.width = `${getLevelWidth(faction, levelIdx)}px`;
+      progressBlock.style.border = `1px solid ${getBorderColor(faction, levelIdx)}`;
+      
+      // Create fill div
+      const fillDiv = document.createElement('div');
+      fillDiv.style.backgroundColor = getColor(faction, faction.level);
+      fillDiv.style.height = '100%';
+      fillDiv.style.width = `${calculateLevelRatio(faction, levelIdx) * 100}%`;
+      
+      progressBlock.appendChild(fillDiv);
+      progressDiv.appendChild(progressBlock);
+    }
+    
+    rowDiv.appendChild(progressDiv);
+    
+    // Create status span
+    const statusSpan = document.createElement('span');
+    statusSpan.className = 'reputation-status';
+    
+    const standingText = document.createElement('b');
+    standingText.style.color = getColor(faction, faction.level);
+    standingText.textContent = faction.levels[faction.level][1];
+    statusSpan.appendChild(standingText);
+    
+    // Add value/max text if applicable
+    if (faction.max !== 0 && !(faction.renown && faction.level == faction.levels.length-1)) {
+      const valueSpan = document.createElement('span');
+      valueSpan.style.color = 'grey';
+      valueSpan.textContent = ` • ${faction.value} / ${faction.max}`;
+      statusSpan.appendChild(valueSpan);
+    }
+    
+    rowDiv.appendChild(statusSpan);
+    
+    return rowDiv;
+  }
+
+  // Helper functions from ReputationRow component
+  function getColor(faction, level) {
+    const levelColors = [
+      '#c22',
+      'red',
+      '#e62',
+      '#d29d01',
+      '#55b101',
+      '#55b101',
+      '#55b101',
+      '#0ec077',
+    ];
+
+    return levelColors[
+      Math.max(
+        0,
+        faction.renown
+          ? Math.floor((level / (faction.levels.length - 1)) * (levelColors.length - 1))
+          : levelColors.length - (faction.levels.length - level)
+      )
+    ];
+  }
+
+  function getBorderColor(faction, level) {
+    return level <= faction.level ? getColor(faction, faction.level) : "lightgray";
+  }
+
+  function calculateLevelRatio(faction, levelIdx) {
+    if(faction.renown) {
+      if(faction.level == faction.levels.length-1) {
+        return 1;
+      }
+    }
+    
+    if (levelIdx === faction.level) {
+      return faction.perc / 100;
+    }
+    else if (levelIdx < faction.level) {
+      return 1;
+    }
+    else {
+      return 0;
+    }
+  }
+
+  function tierProgressString(faction, levelIdx) {
+    if (levelIdx == faction.levels.length - 1) {
+      return "";
+    } else {
+      const levelMax = (
+        faction.levels[levelIdx + 1][0] - faction.levels[levelIdx][0]
+      );
+      let levelCur;
+      if (levelIdx === faction.level) {
+        levelCur = faction.value;
+      }
+      else if (levelIdx < faction.level) {
+        levelCur = levelMax;
+      }
+      else {
+        levelCur = 0;
+      }
+      return ": " + levelCur + " / " + levelMax;
+    }
+  }
+
+  function getLevelWidth(faction, levelIdx) {
+    const startThreshold = faction.levels[levelIdx][0];
+    if (levelIdx < faction.levels.length - 1) {
+      const endThreshold = faction.levels[levelIdx + 1][0];
+      const maxThreshold = faction.levels[faction.levels.length - 1][0];
+      const baseRatio = (endThreshold - startThreshold) / maxThreshold;
+      return Math.max(
+        baseRatio * 400.0 - 1,
+        0
+      );
+    } else {
+      return 10;
+    }
+  }
+
+  function showError(message) {
+    const container = document.getElementById('reputations-container');
+    
+    if (container) {
+      container.innerHTML = `
+        <div class="error">
+          <i class="glyphicon glyphicon-exclamation-sign"></i>
+          <p>${message}</p>
+        </div>
+      `;
+    }
+  }
+
+  // Handle route changes for client-side navigation
+  document.addEventListener('router:update', async () => {
+    const user = getUserState();
+    if (window.location.hash.startsWith('#/reputations') && user.region && user.realm && user.character) {
+      // Update title with character name
+      document.title = getTitle(user.character, 'Reputation');
+      
+      try {
+        // Fetch and render
+        const reputations = await getReputations(user.region, user.realm, user.character);
+        
+        if (!reputations || !reputations.categories) {
+          showError('Failed to load reputation data');
+          return;
+        }
+
+        // Render reputations
+        renderReputations(reputations.categories);
+      } catch (error) {
+        console.error('Error loading reputations:', error);
+        showError(error.message || 'Failed to load reputations');
+      }
+    }
+  });
+</script>
+
+<style>
+  .loading {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #09f;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 15px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .loading-text {
+    color: #777;
+  }
+  
+  .error {
+    text-align: center;
+    color: #d9534f;
+    padding: 50px;
+  }
+  
+  .error i {
+    font-size: 48px;
+    margin-bottom: 15px;
+  }
+  
+  .faction-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  
+  .faction-item {
+    margin-bottom: 5px;
+  }
+  
+  /* Reputation row styles - duplicated from ReputationRow.astro */
+  .reputation-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .faction-label {
+    width: 200px;
+    margin: 0;
+    padding-right: 15px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .faction-label a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .faction-label a:hover {
+    text-decoration: underline;
+  }
+  
+  .reputation-progress {
+    display: flex;
+    height: 16px;
+    margin-right: 10px;
+  }
+  
+  .rep-progress-block {
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  .reputation-status {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  
+  /* Additional styles for the container */
+  .rep {
+    margin-bottom: 40px;
+  }
+</style>

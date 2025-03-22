@@ -1,0 +1,554 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getTitle } from '../utils/utils';
+---
+
+<Layout title={getTitle(null, 'Battle Pets')}>
+  <div class="container">
+    <div class="page-header">
+      <h2>
+        Battle Pets <small class="pbSmall"><input type="checkbox" id="showlevels"><label for="showlevels">Show levels and breeds</label></small>
+        <div id="progress-container" class="progress-right"></div>
+      </h2>
+    </div>
+
+    <div id="battle-pets-container">
+      <div class="loading">
+        <div class="spinner"></div>
+        <div class="loading-text">Loading...</div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  import { getUserState } from '../utils/state';
+  import { percent, percentFormat, getTitle } from '../utils/utils';
+  import { getBattlePets } from '../utils/api/battlePets';
+
+  let showLevel = false;
+
+  // Initialize once the DOM is loaded
+  document.addEventListener('DOMContentLoaded', async () => {
+    try {
+      // Track page view
+      if (window.ga) {
+        window.ga('send', 'pageview', 'BattlePets');
+      }
+
+      // Set up level/breed toggle
+      const showLevelsCheckbox = document.getElementById('showlevels');
+      if (showLevelsCheckbox) {
+        showLevelsCheckbox.addEventListener('change', function() {
+          showLevel = this.checked;
+          
+          // Update display of level and breed elements
+          const levelElements = document.querySelectorAll('.pbLevel');
+          const breedElements = document.querySelectorAll('.pbBreed');
+          
+          levelElements.forEach(el => {
+            if (showLevel) {
+              el.classList.add('opacityOn');
+            } else {
+              el.classList.remove('opacityOn');
+            }
+          });
+          
+          breedElements.forEach(el => {
+            if (showLevel) {
+              el.classList.add('opacityOn');
+            } else {
+              el.classList.remove('opacityOn');
+            }
+          });
+        });
+      }
+
+      // Get the user from state management
+      const user = getUserState();
+
+      if (!user || !user.region || !user.realm || !user.character) {
+        showError('Missing character information');
+        return;
+      }
+      
+      // Update title with character name
+      document.title = getTitle(user.character, 'Battle Pets');
+
+      // Fetch battle pets data
+      const battlePets = await getBattlePets(user.region, user.realm, user.character);
+      
+      if (!battlePets) {
+        showError('Failed to load battle pets data');
+        return;
+      }
+
+      // Update progress bar
+      updateProgressBar(battlePets);
+      
+      // Render battle pets
+      renderBattlePets(battlePets);
+    } catch (error) {
+      console.error('Error loading battle pets:', error);
+      showError(error.message || 'Failed to load battle pets');
+    }
+  });
+
+  function updateProgressBar(battlePets) {
+    const progressContainer = document.getElementById('progress-container');
+    
+    if (progressContainer) {
+      // Create progress bar structure
+      const progressBarHtml = `
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: ${percent(battlePets.collected, battlePets.possible)}%;" aria-valuenow="${battlePets.collected}" aria-valuemin="0" aria-valuemax="${battlePets.possible}"></div>
+        </div>
+        <div class="progress-text">${percentFormat(battlePets.collected, battlePets.possible)}</div>
+      `;
+      
+      progressContainer.innerHTML = progressBarHtml;
+    }
+  }
+
+  function renderBattlePets(battlePets) {
+    const container = document.getElementById('battle-pets-container');
+    
+    if (!container) return;
+    
+    // Clear loading indicator
+    container.innerHTML = '';
+    
+    // Create HTML for each category
+    for (const category of battlePets.categories) {
+      const categoryElement = document.createElement('div');
+      categoryElement.className = 'category';
+      
+      // Add category header
+      const categoryHeader = document.createElement('h3');
+      categoryHeader.textContent = category.name;
+      categoryElement.appendChild(categoryHeader);
+      
+      // Process each subcategory
+      for (const subcat of category.subcats) {
+        const subcatElement = document.createElement('div');
+        subcatElement.className = 'subcategory';
+        
+        // Add subcategory header
+        const subcatHeader = document.createElement('h4');
+        subcatHeader.textContent = subcat.name;
+        subcatElement.appendChild(subcatHeader);
+        
+        // Create items container
+        const itemsContainer = document.createElement('div');
+        itemsContainer.className = 'items';
+        
+        // Add each pet
+        for (const pet of subcat.pets) {
+          const itemElement = document.createElement('div');
+          itemElement.className = 'pet-item';
+          
+          // Create pet cell with thumbnail
+          const petCell = document.createElement('div');
+          petCell.className = 'pbCell';
+          
+          // Create pet link with image
+          const petLink = document.createElement('a');
+          petLink.className = `thumbnail pbThumbnail${!pet.collected ? ' notCollected' : ''}`;
+          petLink.href = pet.ptr || pet.new ? 
+            `//www.wowhead.com/ptr-2/battle-pet/${pet.id}` : 
+            `//www.wowhead.com/battle-pet/${pet.id}`;
+          petLink.target = '_blank';
+          
+          // Create pet image
+          const petImage = document.createElement('img');
+          petImage.height = 36;
+          petImage.width = 36;
+          petImage.src = getImageSrc(pet);
+          petImage.alt = pet.name;
+          petLink.appendChild(petImage);
+          
+          // Add level if available
+          if (pet.currentLevel) {
+            const levelElement = document.createElement('div');
+            levelElement.className = `pbLevel${showLevel ? ' opacityOn' : ''}`;
+            levelElement.textContent = pet.currentLevel;
+            petLink.appendChild(levelElement);
+          }
+          
+          // Add breed if available
+          if (pet.breed) {
+            const breedElement = document.createElement('div');
+            breedElement.className = `pbBreed${showLevel ? ' opacityOn' : ''}`;
+            breedElement.textContent = pet.breed;
+            petLink.appendChild(breedElement);
+          }
+          
+          petCell.appendChild(petLink);
+          
+          // Add quality indicator
+          const qualityElement = document.createElement('div');
+          qualityElement.className = 'pbQual';
+          qualityElement.style = qualityToBackground(pet);
+          petCell.appendChild(qualityElement);
+          
+          itemElement.appendChild(petCell);
+          
+          // Create tooltip content
+          const tooltipContent = `
+            <div class="tooltip-content">
+              <div class="tooltip-title">${pet.name}</div>
+              <div class="tooltip-description">${pet.description || ''}</div>
+              ${pet.source ? `<div class="tooltip-source">Source: ${pet.source.text}</div>` : ''}
+              ${pet.currentLevel ? `<div class="tooltip-level">Level: ${pet.currentLevel}/${pet.maxLevel || 25}</div>` : ''}
+              ${pet.qualityId ? `<div class="tooltip-quality">Quality: ${qualityToText(pet.qualityId)}</div>` : ''}
+            </div>
+          `;
+          
+          // Set data attributes for tooltip
+          itemElement.setAttribute('data-tooltip', tooltipContent);
+          
+          // Add event listeners for tooltip
+          itemElement.addEventListener('mouseenter', function() {
+            const tooltipContent = this.getAttribute('data-tooltip');
+            showTooltip(this, tooltipContent);
+          });
+          
+          itemElement.addEventListener('mouseleave', function() {
+            hideTooltip();
+          });
+          
+          // Add to container
+          itemsContainer.appendChild(itemElement);
+        }
+        
+        subcatElement.appendChild(itemsContainer);
+        categoryElement.appendChild(subcatElement);
+      }
+      
+      container.appendChild(categoryElement);
+    }
+  }
+
+  function qualityToBackground(pet) {
+    let bgColor = 'transparent';
+
+    if (pet.qualityId !== undefined) {
+      switch(pet.qualityId) {
+        case 0: // Poor
+          bgColor = '#7F7F7F';
+          break;
+        case 1: // Common
+          bgColor = '#F0F0F0';
+          break;
+        case 2: // Uncommon
+          bgColor = '#22B14C';
+          break;
+        case 3: // Rare
+          bgColor = '#3F48CC';
+          break;
+        case 4: // Epic
+          bgColor = '#9932CC';
+          break;
+        case 5: // Legendary
+          bgColor = '#FFA500';
+          break;
+      }
+    } else if (pet.quality) {
+      switch(pet.quality) {
+        case 'poor':
+          bgColor = '#7F7F7F';
+          break;
+        case 'common':
+          bgColor = '#F0F0F0';
+          break;
+        case 'uncommon':
+          bgColor = '#22B14C';
+          break;
+        case 'rare':
+          bgColor = '#3F48CC';
+          break;
+        case 'epic':
+          bgColor = '#9932CC';
+          break;
+        case 'legendary':
+          bgColor = '#FFA500';
+          break;
+      }
+    }
+
+    return `background:${bgColor}`;
+  }
+
+  function qualityToText(qualityId) {
+    switch(qualityId) {
+      case 0: return 'Poor';
+      case 1: return 'Common';
+      case 2: return 'Uncommon';
+      case 3: return 'Rare';
+      case 4: return 'Epic';
+      case 5: return 'Legendary';
+      default: return 'Unknown';
+    }
+  }
+
+  function getImageSrc(pet, isSmall = false) {
+    const baseUrl = isSmall ? 'https://wow.zamimg.com/images/wow/icons/small/' : 'https://wow.zamimg.com/images/wow/icons/large/';
+    return `${baseUrl}${pet.icon}.jpg`;
+  }
+
+  function showError(message) {
+    const container = document.getElementById('battle-pets-container');
+    
+    if (container) {
+      container.innerHTML = `
+        <div class="error">
+          <i class="glyphicon glyphicon-exclamation-sign"></i>
+          <p>${message}</p>
+        </div>
+      `;
+    }
+  }
+
+  function showTooltip(element, content) {
+    // Check if tooltip already exists
+    let tooltip = document.getElementById('pet-tooltip');
+    
+    if (!tooltip) {
+      // Create tooltip element
+      tooltip = document.createElement('div');
+      tooltip.id = 'pet-tooltip';
+      tooltip.className = 'tooltip';
+      document.body.appendChild(tooltip);
+    }
+    
+    // Set tooltip content
+    tooltip.innerHTML = content;
+    
+    // Position tooltip
+    const rect = element.getBoundingClientRect();
+    const tooltipRect = tooltip.getBoundingClientRect();
+    
+    // Calculate position
+    let top = rect.top - tooltipRect.height - 10;
+    let left = rect.left + (rect.width / 2) - (tooltipRect.width / 2);
+    
+    // Adjust if would go off screen
+    if (top < 0) top = rect.bottom + 10;
+    if (left < 0) left = 0;
+    if (left + tooltipRect.width > window.innerWidth) left = window.innerWidth - tooltipRect.width;
+    
+    // Set position
+    tooltip.style.top = `${top + window.scrollY}px`;
+    tooltip.style.left = `${left}px`;
+    tooltip.style.display = 'block';
+  }
+
+  function hideTooltip() {
+    const tooltip = document.getElementById('pet-tooltip');
+    if (tooltip) {
+      tooltip.style.display = 'none';
+    }
+  }
+
+  // Handle route changes for client-side navigation
+  document.addEventListener('router:update', async () => {
+    const user = getUserState();
+    if (window.location.hash.startsWith('#/battlePets') && user.region && user.realm && user.character) {
+      // Update title with character name
+      document.title = getTitle(user.character, 'Battle Pets');
+      
+      try {
+        // Fetch and render
+        const battlePets = await getBattlePets(user.region, user.realm, user.character);
+        
+        if (!battlePets) {
+          showError('Failed to load battle pets data');
+          return;
+        }
+
+        // Update progress bar
+        updateProgressBar(battlePets);
+        
+        // Render battle pets
+        renderBattlePets(battlePets);
+      } catch (error) {
+        console.error('Error loading battle pets:', error);
+        showError(error.message || 'Failed to load battle pets');
+      }
+    }
+  });
+</script>
+
+<style>
+  .progress-right {
+    float: right;
+    width: 200px;
+    margin-top: 8px;
+  }
+  
+  .progress {
+    margin-bottom: 0;
+    float: left;
+    width: 85%;
+  }
+  
+  .progress-text {
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #09f;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 15px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .loading-text {
+    color: #777;
+  }
+  
+  .error {
+    text-align: center;
+    color: #d9534f;
+    padding: 50px;
+  }
+  
+  .error i {
+    font-size: 48px;
+    margin-bottom: 15px;
+  }
+  
+  .category {
+    margin-bottom: 30px;
+  }
+  
+  .subcategory {
+    margin-bottom: 20px;
+  }
+  
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .pbSmall {
+    font-weight: normal;
+    margin-left: 10px;
+  }
+  
+  .pbSmall label {
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  .pbCell {
+    position: relative;
+    display: inline-block;
+    margin: 2px;
+  }
+  
+  .pbThumbnail {
+    display: block;
+    position: relative;
+    padding: 4px;
+    margin-bottom: 0;
+    line-height: 1.42857143;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .pbThumbnail img {
+    display: block;
+  }
+  
+  .pbThumbnail.notCollected {
+    opacity: 0.4;
+  }
+  
+  .pbQual {
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    height: 4px;
+  }
+  
+  .pbLevel, .pbBreed {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 10px;
+    padding: 1px 3px;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  
+  .pbLevel {
+    top: 4px;
+    left: 4px;
+  }
+  
+  .pbBreed {
+    top: 4px;
+    right: 4px;
+  }
+  
+  .pbLevel.opacityOn, .pbBreed.opacityOn {
+    opacity: 1;
+  }
+  
+  /* Tooltip styles */
+  .tooltip {
+    position: absolute;
+    z-index: 1000;
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 10px;
+    color: #fff;
+    font-size: 14px;
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    display: none;
+  }
+  
+  .tooltip-title {
+    color: #ffd100;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .tooltip-description {
+    margin-bottom: 5px;
+  }
+  
+  .tooltip-source {
+    font-style: italic;
+    color: #aaa;
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+  
+  .tooltip-level, .tooltip-quality {
+    font-size: 12px;
+    color: #ddd;
+    margin-bottom: 2px;
+  }
+</style>

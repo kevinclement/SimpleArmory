@@ -1,0 +1,508 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getTitle } from '../utils/utils';
+---
+
+<Layout title={getTitle(null, 'Calendar')}>
+  <div class="container cal">
+    <div class="page-header">
+      <h2>
+        Calendar 
+        <small>
+          <button type="button" class="btn btn-default" id="prev-month" disabled>&laquo;</button>
+          <select class="selMonth" id="month-select"></select>
+          <button type="button" class="btn btn-default" id="next-month" disabled>&raquo;</button>
+        </small>
+        <div id="progress-container" class="progress-right"></div>
+      </h2>
+    </div>
+
+    <div id="calendar-container">
+      <div class="loading">
+        <div class="spinner"></div>
+        <div class="loading-text">Loading...</div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  import { getUserState } from '../utils/state';
+  import { getTitle } from '../utils/utils';
+  import { getAchievements } from '../utils/api/achievements';
+
+  // State variables
+  let achByMonths = {};
+  let months = [];
+  let selectedMonth = null;
+  let totalForMonth = 0;
+  let totalPoints = 0;
+  
+  // DOM elements
+  let prevButton;
+  let nextButton;
+  let monthSelect;
+  let calendarContainer;
+  let progressContainer;
+
+  // Initialize once the DOM is loaded
+  document.addEventListener('DOMContentLoaded', async () => {
+    try {
+      // Track page view
+      if (window.ga) {
+        window.ga('send', 'pageview', 'Calendar');
+      }
+
+      // Get DOM elements
+      prevButton = document.getElementById('prev-month');
+      nextButton = document.getElementById('next-month');
+      monthSelect = document.getElementById('month-select');
+      calendarContainer = document.getElementById('calendar-container');
+      progressContainer = document.getElementById('progress-container');
+
+      // Add event listeners
+      prevButton.addEventListener('click', leftOneMonth);
+      nextButton.addEventListener('click', rightOneMonth);
+      monthSelect.addEventListener('change', selectionChanged);
+
+      // Get the user from state management
+      const user = getUserState();
+
+      if (!user || !user.region || !user.realm || !user.character) {
+        showError('Missing character information');
+        return;
+      }
+      
+      // Update title with character name
+      document.title = getTitle(user.character, 'Calendar');
+
+      // Fetch achievements data
+      const achievements = await getAchievements(user.region, user.realm, user.character);
+      
+      if (!achievements) {
+        showError('Failed to load achievements data');
+        return;
+      }
+
+      // Initialize calendar
+      init(achievements, user.character);
+    } catch (error) {
+      console.error('Error loading calendar:', error);
+      showError(error.message || 'Failed to load calendar');
+    }
+  });
+
+  function init(achievements, character) {
+    // Build achievement lookup by month
+    achByMonths = buildMonthLookup(achievements);
+    
+    // Build list of months with achievements
+    months = buildMonthList(achByMonths);
+    
+    // Populate month select dropdown
+    populateMonthSelect(months);
+    
+    // Select latest month by default
+    selectedMonth = months[months.length - 1];
+    monthSelect.value = months.length - 1;
+    
+    // Update UI
+    updateNavButtons();
+    selectionChanged();
+  }
+
+  function buildMonthLookup(achievements) {
+    const achByMonths = {};
+
+    Object.keys(achievements).forEach((key) => {
+      let supercat = achievements[key];
+      if (supercat.categories) {
+        supercat.categories.forEach((cat) => {
+          cat.subcats.forEach((subcat) => {
+            subcat.achievements.forEach((ach) => {
+              if (ach.completed) {
+                let dt = new Date(ach.completed);
+                let year = dt.getFullYear();
+                let month = dt.getMonth() + 1;
+                var monthid = '' + year + ((month < 10) ? '0' : '') + month;
+
+                if (!achByMonths[monthid]) {
+                  achByMonths[monthid] = new Array(31);
+                  achByMonths[monthid].hasAchievements = true;
+                  achByMonths[monthid].total = 0;
+                  achByMonths[monthid].points = 0;
+                }
+                if (!achByMonths[monthid][dt.getDate()]) {
+                  achByMonths[monthid][dt.getDate()] = [];
+                }
+
+                achByMonths[monthid][dt.getDate()].push(ach);
+                achByMonths[monthid].total++;
+                achByMonths[monthid].points += ach.points;
+              }
+            });
+          });
+        });
+      }
+    });
+
+    return achByMonths;
+  }
+
+  function buildMonthList(achByMonths) {
+    let monthnames = [
+      '', 'January', 'February', 'March', 'April', 'May', 'June',
+      'July', 'August', 'September', 'October', 'November', 'December'
+    ];
+    let today = new Date();
+    let foundFirstMonth = false;
+    let months = [];
+    let index = 0;
+
+    for (let year = 2008; year <= today.getFullYear(); year++) {
+      for (var month = 1; month <= 12; month++) {
+        var monthid = '' + year + ((month < 10) ? '0' : '') + month;
+        var thisMonth = (year === today.getFullYear()) && (month === (today.getMonth() + 1));
+
+        // if we're still trying to find the first month, don't include months without achievements
+        if (!foundFirstMonth && (!achByMonths[monthid] || !achByMonths[monthid].hasAchievements)) {
+          continue;
+        }
+        foundFirstMonth = true;
+
+        // Add the months to the list of months
+        months.push({
+          value: monthid,
+          text: monthnames[month] + ' ' + year,
+          index: index++,
+          year: year,
+          month: month
+        });
+
+        // Stop once we get to this month
+        if (thisMonth) {
+          break;
+        }
+      }
+    }
+
+    return months;
+  }
+
+  function populateMonthSelect(months) {
+    // Clear current options
+    monthSelect.innerHTML = '';
+    
+    // Add options for each month
+    months.forEach((month, index) => {
+      const option = document.createElement('option');
+      option.value = index;
+      option.textContent = month.text;
+      monthSelect.appendChild(option);
+    });
+  }
+
+  function buildMonthTableHTML(selectedMonth, character) {
+    let html = '<table class="calendar">';
+
+    let d;
+    var prettyName = character.charAt(0).toUpperCase() + character.slice(1);
+
+    for (var day = 1; day <= 31; day++) {
+      d = new Date(selectedMonth.year, selectedMonth.month - 1, day);
+      if (d.getDate() !== day) {
+        break;
+      }
+      if ((day === 1) || (d.getDay() === 0)) {
+        html += '<tr>';
+      }
+      if ((day === 1) && (d.getDay() > 0)) {
+        html += '<td colspan="' + (d.getDay()) + '" class="dayspacer"></td>';
+      }
+
+      let selMonth = achByMonths[selectedMonth.value];
+      let dayPoints = 0;
+      if (selMonth && selMonth[day]) {
+        selMonth[day].forEach((ach) => {
+          dayPoints += ach.points;
+        });
+      }
+      if (dayPoints > 0) {
+        html += '<td>' + day + `<small> - ${dayPoints} points </small>`;
+      } else {
+        html += '<td>' + day;
+      }
+
+      if (selMonth && selMonth[day]) {
+        let achievs = selMonth[day];
+        achievs.sort((achieve1, achieve2) => {
+          if (achieve1.completed === achieve2.completed) {
+            return (parseInt(achieve1.id, 10) < parseInt(achieve2.id, 10)) ? -1 : 1;
+          }
+
+          return (achieve1.completed < achieve2.completed) ? -1 : 1;
+        });
+
+        html += '<div>';
+        achievs.forEach((ach) => {
+          html += '<a target="_blank" href="https://www.wowhead.com/achievement=' + ach.id + '" ' +
+            'rel="who=' + prettyName + '&amp;when=' + ach.completed + '">' +
+            '<img src="//wow.zamimg.com/images/wow/icons/medium/' +
+            ach.icon.toLowerCase() + '.jpg" width="36" height="36" border="0"></a>';
+        });
+
+        html += '</div>';
+      }
+
+      html += '</td>';
+      if (d.getDay() === 6) {
+        html += '</tr>';
+      }
+    }
+    if (d.getDay() < 6) {
+      html += '<td colspan="' + (6 - d.getDay()) + '" class="dayspacer"></td>';
+    }
+
+    html += '</tr>';
+    html += '</table>';
+
+    return html;
+  }
+
+  function leftOneMonth() {
+    if (selectedMonth && selectedMonth.index > 0) {
+      selectedMonth = months[selectedMonth.index - 1];
+      monthSelect.value = selectedMonth.index;
+      updateNavButtons();
+      selectionChanged();
+    }
+  }
+
+  function rightOneMonth() {
+    if (selectedMonth && selectedMonth.index < months.length - 1) {
+      selectedMonth = months[selectedMonth.index + 1];
+      monthSelect.value = selectedMonth.index;
+      updateNavButtons();
+      selectionChanged();
+    }
+  }
+
+  function selectionChanged() {
+    // Get the selected month index
+    const index = parseInt(monthSelect.value, 10);
+    selectedMonth = months[index];
+    
+    // Update navigation buttons
+    updateNavButtons();
+    
+    // Update calendar HTML
+    updateCalendar();
+    
+    // Update progress/totals
+    updateProgress();
+  }
+
+  function updateNavButtons() {
+    if (!selectedMonth) return;
+    
+    // Update prev button
+    prevButton.disabled = selectedMonth.index <= 0;
+    
+    // Update next button
+    nextButton.disabled = selectedMonth.index >= months.length - 1;
+  }
+
+  function updateCalendar() {
+    if (!selectedMonth || !calendarContainer) return;
+    
+    // Get user character
+    const user = getUserState();
+    if (!user || !user.character) return;
+    
+    // Generate calendar HTML
+    const calendarHTML = buildMonthTableHTML(selectedMonth, user.character);
+    
+    // Update container
+    calendarContainer.innerHTML = calendarHTML;
+  }
+
+  function updateProgress() {
+    if (!selectedMonth || !progressContainer) return;
+    
+    // Calculate totals
+    totalForMonth = selectedMonth && achByMonths && achByMonths[selectedMonth.value] 
+      ? achByMonths[selectedMonth.value].total : 0;
+      
+    totalPoints = selectedMonth && achByMonths && achByMonths[selectedMonth.value] 
+      ? achByMonths[selectedMonth.value].points : 0;
+    
+    // Create progress bar HTML
+    const progressHTML = `
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <div class="progress-text">${totalForMonth} (${totalPoints} points)</div>
+    `;
+    
+    // Update container
+    progressContainer.innerHTML = progressHTML;
+  }
+
+  function showError(message) {
+    if (calendarContainer) {
+      calendarContainer.innerHTML = `
+        <div class="error">
+          <i class="glyphicon glyphicon-exclamation-sign"></i>
+          <p>${message}</p>
+        </div>
+      `;
+    }
+  }
+
+  // Handle route changes for client-side navigation
+  document.addEventListener('router:update', async () => {
+    const user = getUserState();
+    if (window.location.hash.startsWith('#/calendar') && user.region && user.realm && user.character) {
+      // Update title with character name
+      document.title = getTitle(user.character, 'Calendar');
+      
+      try {
+        // Show loading state
+        if (calendarContainer) {
+          calendarContainer.innerHTML = `
+            <div class="loading">
+              <div class="spinner"></div>
+              <div class="loading-text">Loading...</div>
+            </div>
+          `;
+        }
+        
+        // Fetch achievements data
+        const achievements = await getAchievements(user.region, user.realm, user.character);
+        
+        if (!achievements) {
+          showError('Failed to load achievements data');
+          return;
+        }
+
+        // Initialize calendar
+        init(achievements, user.character);
+      } catch (error) {
+        console.error('Error loading calendar:', error);
+        showError(error.message || 'Failed to load calendar');
+      }
+    }
+  });
+</script>
+
+<style>
+  .loading {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #09f;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 15px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .loading-text {
+    color: #777;
+  }
+  
+  .error {
+    text-align: center;
+    color: #d9534f;
+    padding: 50px;
+  }
+  
+  .error i {
+    font-size: 48px;
+    margin-bottom: 15px;
+  }
+  
+  /* Calendar styles */
+  .cal small {
+    display: inline-block;
+  }
+  
+  .cal select {
+    height: 30px;
+    min-width: 125px;
+    border-color: #ccc;
+    border-radius: 4px;
+    font-size: small;
+    position: relative;
+    top: -6px;
+  }
+  
+  .cal .btn {
+    height: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position: relative;
+    top: -5px;
+  }
+  
+  .progress-right {
+    float: right;
+    width: 175px;
+    margin-top: 8px;
+  }
+  
+  .progress {
+    margin-bottom: 0;
+    float: left;
+    width: 85%;
+  }
+  
+  .progress-text {
+    float: right;
+    margin-left: 5px;
+  }
+  
+  /* Calendar table styles */
+  .calendar {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .calendar td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    vertical-align: top;
+    height: 100px;
+    width: 14.28%;
+  }
+  
+  .calendar td small {
+    color: #777;
+    font-size: 11px;
+  }
+  
+  .calendar td div {
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+  }
+  
+  .calendar td a {
+    display: inline-block;
+  }
+  
+  .calendar .dayspacer {
+    background-color: #f5f5f5;
+  }
+</style>

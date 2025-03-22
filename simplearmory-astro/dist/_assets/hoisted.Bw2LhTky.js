@@ -1,0 +1,1 @@
+import"./Nav.astro_astro_type_script_index_0_lang.CT0JDFuw.js";document.addEventListener("DOMContentLoaded",()=>{const n=document.getElementById("retry-button");n&&n.addEventListener("click",()=>{const t=window.location.hash.substring(1).split("/");if(t.length>=4&&t[0]==="error"){const e=t[2]||"",o=t[3]||"";e&&o&&(window.location.hash=`#/us/${e}/${o}`)}})});

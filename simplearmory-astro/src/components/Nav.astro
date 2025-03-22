@@ -1,0 +1,376 @@
+---
+// Astro component script
+import { getUrl } from '../utils/url';
+import { getWowheadUrl } from '../utils/utils';
+
+// Define menu structure (static data)
+const menuItems = {
+  'Achievements': {
+    items: [ 
+      { txt: 'Character',          link: 'character'   },
+      { txt: 'Quests',             link: 'quests'      },
+      { txt: 'Exploration',        link: 'exploration' },
+      { txt: 'Delves',             link: 'delves'      },
+      { txt: 'Player vs. Player',  link: 'pvp'         },
+      { txt: 'Dungeons & Raids',   link: 'dungeons'    },
+      { txt: 'Professions',        link: 'professions' },
+      { txt: 'Reputation',         link: 'reputation'  },
+      { txt: 'World Events',       link: 'events'      },
+      { txt: 'Pet Battles',        link: 'pets'        },
+      { txt: 'Collections',        link: 'collections' },
+      { txt: 'Expansion Features', link: 'expansions'  },
+      { txt: 'Legacy',             link: 'legacy'      },
+      { txt: 'Feats of Strength',  link: 'feats'       },
+    ]
+  },
+  'Collectable': {
+    items: [ 
+      { txt: 'Mounts',      link: 'mounts'     },
+      { txt: 'Companions',  link: 'companions' },
+      { txt: 'Battle Pets', link: 'battlepets' },
+      { txt: 'Toys',        link: 'toys'       },
+      { txt: 'Heirlooms',	  link: 'heirlooms'  },
+      { txt: 'Titles',	    link: 'titles'     },
+    ]
+  },
+  'Profile': {
+    locales: [
+      { txt: 'EN',      link: 'wowhead.com'     },
+      { txt: 'DE',      link: 'de.wowhead.com'  },
+      { txt: 'ES',      link: 'es.wowhead.com'  },
+      { txt: 'FR',      link: 'fr.wowhead.com'  },
+      { txt: 'IT',	    link: 'it.wowhead.com'  },
+      { txt: 'PT',	    link: 'pt.wowhead.com'  },
+      { txt: 'RU',	    link: 'ru.wowhead.com'  },
+      { txt: 'KO',	    link: 'ko.wowhead.com'  },
+      { txt: 'CN',	    link: 'cn.wowhead.com'  },
+    ]
+  }
+};
+
+// These data items will be hydrated client-side
+const userData = {
+  region: "",
+  realm: "",
+  character: "",
+  avatar: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=",
+  page: "",
+  category: ""
+};
+
+const preferences = {
+  theme: "light"
+};
+
+// Determine if user is logged in (will be updated client-side)
+let isLoggedIn = false;
+---
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" id="nav-toggle" style={!isLoggedIn ? "display: none" : ""}>
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>	
+      <a class="navbar-brand" href="/#/" aria-label="Login"><span id="logo"></span></a>
+    </div>
+
+    <div class="navbar-collapse collapse" id="nav-menu">
+      <ul class="nav navbar-nav" style={!isLoggedIn ? "display: none" : ""}>
+        <li class="nav-overview"><a href="" data-navlink="overview">Overview</a></li>
+        
+        <li class="dropdown nav-achievements">
+          <a id="achDrop" href="#/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            Achievements
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="achDrop">
+            {menuItems.Achievements.items.map(item => (
+              <li class={`nav-achievements-${item.link}`}>
+                <a href="" data-navlink={`achievements/${item.link}`}>{item.txt}</a>
+              </li>
+            ))}
+          </ul>
+        </li>
+
+        <li class="dropdown nav-collectable">
+          <a id="collectDrop" href="#/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            Collectable
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="collectDrop">
+            {menuItems.Collectable.items.map(item => (
+              <li class={`nav-collectable-${item.link}`}>
+                <a href="" data-navlink={`collectable/${item.link}`}>{item.txt}</a>
+              </li>
+            ))}
+          </ul>
+        </li>
+
+        <li class="nav-calendar"><a href="" data-navlink="calendar">Calendar</a></li>
+        <li class="nav-reputation"><a href="" data-navlink="reputation">Reputation</a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right" style={!isLoggedIn ? "display: none" : ""}>
+        <li class="dropdown nav-profile">
+          <a id="profileDrop" href="#/" aria-label="Profile" class="navbar-char-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <img width="32" height="32" class="navbar-char-image" id="nav-avatar" src={userData.avatar} alt="Profile"/>					
+            <b class="caret"></b>
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="profileDrop">
+            <li class="signin-label"><span>Signed in as</span></li>
+            <li><strong class="signin-name" id="nav-character-info"></strong></li>
+            <li role="separator" class="divider"></li> 
+            <li><a href="/#/">Signout</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#" id="nav-armory-link" target="_blank">Armory profile</a></li>
+            <li><a href="#/" id="nav-theme-toggle">Use Dark Theme</a></li>
+            <li>
+              <a id="localeSubmenu" class="dropdown-item" href="#/">
+                Locale
+                <b class="caret-right"></b>
+              </a>
+              <ul class="dropdown-menu dropdown-submenu">
+                {menuItems.Profile.locales.map(locale => (
+                  <li class="locale-item" data-locale={locale.link}>
+                    <a class="dropdown-item" href="#/" data-locale={locale.link}>{locale.txt}</a>
+                  </li>
+                ))}
+              </ul>
+            </li>
+            <li><a href="" data-navlink="settings">Settings</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="https://github.com/kevinclement/SimpleArmory/issues" target="_blank">Report Bug</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Client-side script for navigation functionality
+  import { initializeState, getUserState, getPreferencesState, subscribeToUserState, subscribeToPreferences, updatePreferences } from '../utils/state.js';
+  import { getUrl, navigate, getArmoryUrl } from '../utils/url.js';
+  import { getWowheadUrl, setWowheadUrl } from '../utils/utils.js';
+
+  // Initialize state
+  document.addEventListener('DOMContentLoaded', () => {
+    initializeState();
+    
+    // Get current state
+    const userState = getUserState();
+    const prefsState = getPreferencesState();
+    
+    // Update UI with current state
+    updateNavUI(userState);
+    updateThemeUI(prefsState);
+    
+    // Set up event handlers
+    setupEventHandlers();
+    
+    // Subscribe to state changes
+    subscribeToUserState(updateNavUI);
+    subscribeToPreferences(updateThemeUI);
+  });
+  
+  // Update navigation UI based on current user state
+  function updateNavUI(state) {
+    // Check if logged in
+    const isLoggedIn = state.region && state.region !== '' && state.region !== 'error' &&
+                       state.realm && state.realm !== '' && 
+                       state.character && state.character !== '';
+    
+    // Show/hide navigation based on login state
+    const navMenu = document.getElementById('nav-menu');
+    const navToggle = document.getElementById('nav-toggle');
+    
+    if (isLoggedIn) {
+      navMenu.classList.remove('hidden');
+      navToggle.style.display = '';
+      
+      // Update avatar
+      const avatar = document.getElementById('nav-avatar');
+      if (avatar) avatar.src = state.avatar || "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=";
+      
+      // Update character info
+      const charInfo = document.getElementById('nav-character-info');
+      if (charInfo) charInfo.textContent = `${state.character} @ ${state.realm}`;
+      
+      // Update armory link
+      const armoryLink = document.getElementById('nav-armory-link');
+      if (armoryLink) armoryLink.href = getArmoryUrl(state.region, state.realm, state.character);
+      
+      // Update active navigation items
+      updateActiveNavItems(state);
+      
+      // Update all navigation links
+      updateNavLinks(state);
+    } else {
+      // If not logged in, collapse menu
+      navMenu.classList.add('collapse');
+      navToggle.style.display = 'none';
+    }
+  }
+  
+  // Update active state of navigation items
+  function updateActiveNavItems(state) {
+    // Remove all active classes first
+    document.querySelectorAll('.navbar-nav li').forEach(item => {
+      item.classList.remove('active');
+    });
+    
+    // Set active based on current page/category
+    if (!state.page || state.page === '') {
+      document.querySelector('.nav-overview')?.classList.add('active');
+    } else if (state.page === 'achievements') {
+      document.querySelector('.nav-achievements')?.classList.add('active');
+      document.querySelector(`.nav-achievements-${state.category}`)?.classList.add('active');
+    } else if (state.page === 'collectable') {
+      document.querySelector('.nav-collectable')?.classList.add('active');
+      document.querySelector(`.nav-collectable-${state.category}`)?.classList.add('active');
+    } else if (state.page === 'calendar') {
+      document.querySelector('.nav-calendar')?.classList.add('active');
+    } else if (state.page === 'reputation') {
+      document.querySelector('.nav-reputation')?.classList.add('active');
+    } else if (state.page === 'settings') {
+      document.querySelector('.nav-settings')?.classList.add('active');
+    }
+  }
+  
+  // Update all navigation links with current user data
+  function updateNavLinks(state) {
+    document.querySelectorAll('[data-navlink]').forEach(link => {
+      const navTarget = link.getAttribute('data-navlink');
+      link.href = getUrl(state.region, state.realm, state.character, navTarget);
+    });
+  }
+  
+  // Update theme-related UI
+  function updateThemeUI(prefs) {
+    const themeToggle = document.getElementById('nav-theme-toggle');
+    if (themeToggle) {
+      themeToggle.textContent = `Use ${prefs.theme === 'light' ? 'Dark' : 'Light'} Theme`;
+    }
+    
+    // Update locale active state
+    const currentLocale = getWowheadUrl();
+    document.querySelectorAll('.locale-item').forEach(item => {
+      item.classList.remove('active');
+      if (item.dataset.locale === currentLocale) {
+        item.classList.add('active');
+      }
+    });
+  }
+  
+  // Set up all event handlers
+  function setupEventHandlers() {
+    // Toggle menu for mobile
+    const navToggle = document.getElementById('nav-toggle');
+    navToggle?.addEventListener('click', () => {
+      const navMenu = document.getElementById('nav-menu');
+      navMenu.classList.toggle('collapse');
+    });
+    
+    // Theme toggle
+    const themeToggle = document.getElementById('nav-theme-toggle');
+    themeToggle?.addEventListener('click', (e) => {
+      e.preventDefault();
+      const prefs = getPreferencesState();
+      updatePreferences({
+        theme: prefs.theme === 'light' ? 'dark' : 'light'
+      });
+    });
+    
+    // Locale selection
+    document.querySelectorAll('.locale-item a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const locale = e.target.dataset.locale || e.target.parentElement.dataset.locale;
+        if (locale && locale !== getWowheadUrl()) {
+          setWowheadUrl(locale);
+          window.location.reload();
+        }
+      });
+    });
+    
+    // Dropdown toggle
+    document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+      toggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const parent = toggle.parentElement;
+        const wasOpen = parent.classList.contains('open');
+        
+        // Close all dropdowns
+        document.querySelectorAll('.dropdown').forEach(dropdown => {
+          dropdown.classList.remove('open');
+        });
+        
+        // Toggle this one
+        if (!wasOpen) {
+          parent.classList.add('open');
+        }
+      });
+    });
+    
+    // Close dropdowns on outside click
+    document.addEventListener('click', (e) => {
+      // Skip if clicking on elements that should maintain open state
+      if (e.target.classList.contains('signin-label') || 
+          e.target.classList.contains('signin-name') ||
+          e.target.id === 'localeSubmenu' ||
+          (e.target.classList.contains('dropdown-menu') && e.target.getAttribute('aria-labelledby') === 'profileDrop')) {
+        return;
+      }
+      
+      // Close all dropdowns
+      document.querySelectorAll('.dropdown').forEach(dropdown => {
+        dropdown.classList.remove('open');
+      });
+    });
+    
+    // Escape key to close dropdowns
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.dropdown').forEach(dropdown => {
+          dropdown.classList.remove('open');
+        });
+      }
+    });
+  }
+</script>
+
+<style>
+  /* Nav styling specific to the Astro component */
+  .navbar-char-image {
+    border-radius: 4px;
+    margin-right: 5px;
+  }
+  
+  /* Fix for submenu positioning */
+  .dropdown-submenu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    margin-top: -6px;
+    margin-left: -1px;
+    border-radius: 0 6px 6px 6px;
+  }
+  
+  .caret-right {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 6px;
+    vertical-align: middle;
+    border-left: 4px solid;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+  }
+</style>

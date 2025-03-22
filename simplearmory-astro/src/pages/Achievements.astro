@@ -1,0 +1,328 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getTitle } from '../utils/utils';
+---
+
+<Layout title={getTitle('Character', 'Achievements')}>
+  <div class="container">
+    <div class="page-header">
+      <h2>
+        Achievements <small id="achievement-category">Loading...</small>
+        <div class="progress-container" style="float: right;">
+          <div class="progress" style="width: 200px; margin-bottom: 0; margin-top: 5px;">
+            <div id="achievements-progress" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+              <span id="achievements-percentage">Loading...</span>
+            </div>
+          </div>
+        </div>
+      </h2>
+    </div>
+
+    <div id="loading-indicator" class="loading-placeholder">
+      <div class="spinner"></div>
+      <p>Loading achievement data...</p>
+    </div>
+
+    <div id="achievements-error" class="error-message" style="display: none;">
+      <p>Failed to load achievement data. Please try again later.</p>
+    </div>
+
+    <div id="achievements-container">
+      <!-- Achievement categories will be loaded here -->
+    </div>
+  </div>
+</Layout>
+
+<script>
+  import { initializeState, getUserState, subscribeToUserState } from '../utils/state.js';
+  import { getAchievements } from '../utils/api/achievements.js';
+  import { percent, percentFormat } from '../utils/utils.js';
+  
+  // Initialize state and data
+  document.addEventListener('DOMContentLoaded', () => {
+    // Initialize state
+    initializeState();
+    
+    // Get current user state
+    const userState = getUserState();
+    
+    // Load achievements data
+    loadAchievementsData(userState);
+    
+    // Subscribe to user state changes
+    subscribeToUserState(loadAchievementsData);
+    
+    // Send page view to analytics
+    if (window.ga) {
+      window.ga('send', 'pageview', 'Achievements/' + (userState.category || ''));
+    }
+  });
+  
+  // Load achievements data
+  async function loadAchievementsData(state) {
+    if (!state.region || !state.realm || !state.character) return;
+    
+    const loadingIndicator = document.getElementById('loading-indicator');
+    const achievementsError = document.getElementById('achievements-error');
+    const achievementsContainer = document.getElementById('achievements-container');
+    
+    if (loadingIndicator) loadingIndicator.style.display = 'block';
+    if (achievementsError) achievementsError.style.display = 'none';
+    if (achievementsContainer) achievementsContainer.innerHTML = '';
+    
+    try {
+      // Fetch achievements data
+      const achievementsData = await getAchievements(state.region, state.realm, state.character);
+      
+      if (loadingIndicator) loadingIndicator.style.display = 'none';
+      
+      if (achievementsData) {
+        // Get the formatted super category
+        const superCat = prettySuperCategory(state.category);
+        
+        // Update category name in header
+        const categoryElement = document.getElementById('achievement-category');
+        if (categoryElement) {
+          categoryElement.textContent = superCat;
+        }
+        
+        // Get the achievements for this category
+        const achievements = achievementsData[superCat];
+        
+        if (achievements) {
+          // Update progress bar - Note: we set 100% for Feats of Strength and Legacy categories
+          const isSpecialCategory = superCat === 'Feats of Strength' || superCat === 'Legacy';
+          const width = isSpecialCategory ? 100 : percent(achievements.completed, achievements.possible);
+          const percentage = percentFormat(achievements.completed, achievements.possible);
+          
+          updateProgressBar(width, percentage);
+          
+          // Render achievement categories
+          renderAchievementCategories(achievements, superCat);
+        } else {
+          // Handle missing category data
+          showError(`No achievements found for category: ${superCat}`);
+        }
+      }
+    } catch (error) {
+      console.error('Error loading achievements:', error);
+      if (loadingIndicator) loadingIndicator.style.display = 'none';
+      if (achievementsError) achievementsError.style.display = 'block';
+    }
+  }
+  
+  // Update progress bar
+  function updateProgressBar(width, percentage) {
+    const progressBar = document.getElementById('achievements-progress');
+    const percentageEl = document.getElementById('achievements-percentage');
+    
+    if (progressBar) {
+      progressBar.style.width = width + '%';
+      progressBar.setAttribute('aria-valuenow', width.toString());
+    }
+    
+    if (percentageEl) {
+      percentageEl.textContent = percentage;
+    }
+  }
+  
+  // Render achievement categories
+  function renderAchievementCategories(achievements, superCat) {
+    const container = document.getElementById('achievements-container');
+    if (!container || !achievements.categories) return;
+    
+    // Clear container
+    container.innerHTML = '';
+    
+    // Render each category
+    achievements.categories.forEach(category => {
+      // Create category container
+      const categoryElement = document.createElement('div');
+      categoryElement.className = 'achievement-category';
+      
+      // Category header
+      const categoryHeader = document.createElement('h3');
+      categoryHeader.className = 'category-header';
+      categoryHeader.textContent = category.name;
+      categoryElement.appendChild(categoryHeader);
+      
+      // Process subcategories
+      if (category.subcats && category.subcats.length > 0) {
+        category.subcats.forEach(subcategory => {
+          const subcategoryElement = document.createElement('div');
+          subcategoryElement.className = 'achievement-subcategory';
+          
+          // Subcategory header
+          const subcategoryHeader = document.createElement('h4');
+          subcategoryHeader.className = 'subcategory-header';
+          subcategoryHeader.textContent = subcategory.name;
+          subcategoryElement.appendChild(subcategoryHeader);
+          
+          // Create achievements grid
+          const achievementsGrid = document.createElement('div');
+          achievementsGrid.className = 'achievements-grid';
+          
+          // Add achievements
+          if (subcategory.achievements && subcategory.achievements.length > 0) {
+            subcategory.achievements.forEach(achievement => {
+              const achievementItem = document.createElement('div');
+              achievementItem.className = `achievement-item ${achievement.completed ? 'completed' : 'not-completed'}`;
+              
+              // Achievement icon
+              const achievementIcon = document.createElement('a');
+              achievementIcon.href = `//www.wowhead.com/achievement=${achievement.id}`;
+              achievementIcon.target = '_blank';
+              
+              const iconImg = document.createElement('img');
+              iconImg.src = achievement.icon ? `//wow.zamimg.com/images/wow/icons/small/${achievement.icon}.jpg` : '';
+              iconImg.alt = achievement.name;
+              iconImg.title = achievement.name;
+              
+              achievementIcon.appendChild(iconImg);
+              achievementItem.appendChild(achievementIcon);
+              
+              // Add tooltip data attributes
+              achievementItem.dataset.achievementId = achievement.id.toString();
+              achievementItem.dataset.achievementName = achievement.name;
+              achievementItem.dataset.achievementCompleted = achievement.completed.toString();
+              
+              achievementsGrid.appendChild(achievementItem);
+            });
+          }
+          
+          subcategoryElement.appendChild(achievementsGrid);
+          categoryElement.appendChild(subcategoryElement);
+        });
+      }
+      
+      container.appendChild(categoryElement);
+    });
+    
+    // Initialize tooltips (if WoWhead API is available)
+    if (window.__WH && window.__WH.tooltips) {
+      window.__WH.tooltips.refresh();
+    } else if (window.WH && window.WH.Tooltip) {
+      window.WH.Tooltip.refresh();
+    }
+  }
+  
+  // Show error message
+  function showError(message) {
+    const container = document.getElementById('achievements-container');
+    if (!container) return;
+    
+    container.innerHTML = `
+      <div class="error-message">
+        <p>${message}</p>
+        <p>Please try again later or check your character information.</p>
+      </div>
+    `;
+  }
+  
+  // Convert category URL segment to display name
+  function prettySuperCategory(supercat) {
+    if (!supercat) return 'Characters'; // Default category
+    
+    const categoryMap = {
+      'character': 'Characters',
+      'quests': 'Quests',
+      'exploration': 'Exploration',
+      'delves': 'Delves',
+      'pvp': 'Player vs. Player',
+      'dungeons': 'Dungeons & Raids',
+      'professions': 'Professions',
+      'reputation': 'Reputation',
+      'events': 'World Events',
+      'pets': 'Pet Battles',
+      'collections': 'Collections',
+      'expansions': 'Expansion Features',
+      'remix': 'Remix: Pandaria',
+      'legacy': 'Legacy',
+      'feats': 'Feats of Strength'
+    };
+    
+    return categoryMap[supercat] || supercat;
+  }
+</script>
+
+<style>
+  .container {
+    padding-top: 20px;
+  }
+  
+  .category-header {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .subcategory-header {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .achievements-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .achievement-item {
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .achievement-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .achievement-item.not-completed {
+    opacity: 0.4;
+  }
+  
+  .achievement-item.not-completed:hover {
+    opacity: 0.7;
+  }
+  
+  .loading-placeholder {
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: #09f;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 15px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .error-message {
+    color: #a94442;
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 20px 0;
+  }
+  
+  /* Dark mode adjustments */
+  :global(body.dark) .category-header {
+    border-bottom-color: #444;
+  }
+</style>

@@ -1,0 +1,138 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getTitle } from '../utils/utils';
+
+// Get error details from URL if available
+const url = Astro.url;
+const hash = url.hash || '';
+const hashParts = hash.substring(1).split('/');
+
+// Determine error type from URL pattern: #/error/{type}/{realm}/{character}
+let errorType = 'unknown';
+let realm = '';
+let character = '';
+
+if (hashParts.length >= 2 && hashParts[0] === 'error') {
+  errorType = hashParts[1];
+  realm = hashParts[2] || '';
+  character = hashParts[3] || '';
+}
+
+// Generate error message based on type
+let errorTitle = 'Error';
+let errorMessage = 'An unknown error occurred.';
+
+switch (errorType) {
+  case '404':
+    errorTitle = 'Character Not Found';
+    errorMessage = `The character "${character}" on realm "${realm}" could not be found. Please check the spelling and try again.`;
+    break;
+  case 'network':
+    errorTitle = 'Network Error';
+    errorMessage = 'A network error occurred while trying to connect to the Blizzard API. Please check your internet connection and try again.';
+    break;
+  case '503':
+    errorTitle = 'Service Unavailable';
+    errorMessage = 'The Blizzard API is currently unavailable. Please try again later.';
+    break;
+  default:
+    if (!isNaN(parseInt(errorType))) {
+      errorTitle = `Error ${errorType}`;
+      errorMessage = `An error occurred while fetching data from the Blizzard API (Status Code: ${errorType}). Please try again later.`;
+    }
+    break;
+}
+---
+
+<Layout title={getTitle('', 'Error')}>
+  <div class="container">
+    <div class="error-container">
+      <div class="error-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="8" x2="12" y2="12"></line>
+          <line x1="12" y1="16" x2="12.01" y2="16"></line>
+        </svg>
+      </div>
+      <h2 class="error-title">{errorTitle}</h2>
+      <p class="error-message">{errorMessage}</p>
+      <div class="error-actions">
+        <a href="/#/" class="btn btn-primary">Return to Login</a>
+        {character && realm && (
+          <button id="retry-button" class="btn btn-default">Retry</button>
+        )}
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  // Add retry functionality if character info is available
+  document.addEventListener('DOMContentLoaded', () => {
+    const retryButton = document.getElementById('retry-button');
+    if (retryButton) {
+      retryButton.addEventListener('click', () => {
+        // Extract character info from URL
+        const hash = window.location.hash;
+        const hashParts = hash.substring(1).split('/');
+        
+        if (hashParts.length >= 4 && hashParts[0] === 'error') {
+          const realm = hashParts[2] || '';
+          const character = hashParts[3] || '';
+          
+          if (realm && character) {
+            // Navigate back to the character's overview page
+            window.location.hash = `#/us/${realm}/${character}`;
+          }
+        }
+      });
+    }
+  });
+</script>
+
+<style>
+  .error-container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 30px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .error-icon {
+    color: #dc3545;
+    margin-bottom: 20px;
+  }
+  
+  .error-title {
+    margin-bottom: 20px;
+    color: #343a40;
+  }
+  
+  .error-message {
+    margin-bottom: 25px;
+    color: #6c757d;
+    line-height: 1.5;
+  }
+  
+  .error-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  /* Dark mode adjustments */
+  :global(body.dark) .error-container {
+    background-color: #343a40;
+  }
+  
+  :global(body.dark) .error-title {
+    color: #f8f9fa;
+  }
+  
+  :global(body.dark) .error-message {
+    color: #adb5bd;
+  }
+</style>
