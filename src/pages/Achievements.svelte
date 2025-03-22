@@ -1,4 +1,6 @@
 <script>
+   import { run } from 'svelte/legacy';
+
     import { onMount } from 'svelte'
     import { region, realm, character, category } from '$stores/user'
     import { getAchievements } from '$api/achievements'
@@ -7,32 +9,20 @@
     import Loading from '$components/Loading.svelte';
     import Category from '$components/Category/Category.svelte';
 
-    $: superCat = prettySuperCategory($category);
 
-    // Note: we do this here and not in the promise so we don't have to wait for it to display 100 if FoS
-    $: percWidth = superCat == 'Feats of Strength' || superCat == 'Legacy' ? 100 : percent(completed, possible);
 
-    let promise;
-    let completed = 0;
-    let possible = 0;
-    let percentage = "";
-    let achievements;
-    let all;
-    $: {
-        promise = getAchievements($region, $realm, $character).then(_ => {           
+    let promise = $derived(getAchievements($region, $realm, $character).then(_ => {           
             // NOTE: don't use superCat here to populate other parts yet
             // because doing so would put a dependency on category
             // then when only the category changed in the url, we'd do
             // an extra refresh when that isn't needed.
             all = _;
-        })
-    }
-    $: if (all) {
-        achievements = all[superCat];
-        completed = achievements.completed;
-        possible = achievements.possible;
-        percentage = percentFormat(completed, possible);
-    }
+        }));
+    let completed = $state(0);
+    let possible = $state(0);
+    let percentage = $state("");
+    let achievements = $state();
+    let all = $state();
    
     onMount(async () => {
         window.ga('send', 'pageview', 'Achievements/' + $category);
@@ -91,6 +81,18 @@
 
         return prettyCatName;
     }
+    let superCat = $derived(prettySuperCategory($category));
+    
+    run(() => {
+      if (all) {
+           achievements = all[superCat];
+           completed = achievements.completed;
+           possible = achievements.possible;
+           percentage = percentFormat(completed, possible);
+       }
+   });
+    // Note: we do this here and not in the promise so we don't have to wait for it to display 100 if FoS
+    let percWidth = $derived(superCat == 'Feats of Strength' || superCat == 'Legacy' ? 100 : percent(completed, possible));
 </script>
 
 <svelte:head>

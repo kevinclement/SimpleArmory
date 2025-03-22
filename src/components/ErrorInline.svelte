@@ -1,5 +1,6 @@
 <script>
-    export let page;
+  /** @type {{page: any}} */
+  let { page } = $props();
 </script>
 
 <h2 class="errorMsg">Uh oh! You no get candle...</h2>

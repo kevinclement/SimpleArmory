@@ -6,12 +6,14 @@
     import ProgressBar from '$components/ProgressBar.svelte';
     import { getUrl } from '$util/url'
 
-    let promise;
-    let overallWidth = 0;
-    let overallPercentage = "";
+    let promise = $derived(getAchievements($region, $realm, $character).then(_ => {           
+            init(_);
+        }));
+    let overallWidth = $state(0);
+    let overallPercentage = $state("");
 
     // NOTE: crazy bug where I need have have url set to non null for animation transition to work
-    let cats = {
+    let cats = $state({
         'Characters':         { w:0, txt:'', url:'INIT', seg:'character', }, 
         'Quests':             { w:0, txt:'', url:'INIT', seg:'quests' }, 
         'Exploration':        { w:0, txt:'', url:'INIT', seg:'exploration' }, 
@@ -26,13 +28,8 @@
         'Expansion Features': { w:0, txt:'', url:'INIT', seg:'expansions' },
         'Legacy':             { w:0, txt:'', url:'INIT', seg:'legacy' }, 
         'Feats of Strength':  { w:0, txt:'', url:'INIT', seg:'feats' }, 
-    };
+    });
     
-    $: {
-        promise = getAchievements($region, $realm, $character).then(_ => {           
-            init(_);
-        })
-    }
 
     onMount(async () => {
         window.ga('send', 'pageview', 'Overview');
@@ -59,6 +56,7 @@
             cats[cat].url = getUrl($region, $realm, $character, 'achievements/' + cats[cat].seg)
         })
     }
+    
 </script>
 
 <svelte:head>

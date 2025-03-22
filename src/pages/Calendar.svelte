@@ -1,4 +1,6 @@
 <script>
+    import { run } from 'svelte/legacy';
+
     import { onMount } from 'svelte'
     import { region, realm, character } from '$stores/user'
     import { getAchievements } from '$api/achievements'
@@ -7,24 +9,19 @@
     import ProgressBar from '$components/ProgressBar.svelte';
     import Loading from '$components/Loading.svelte';
 
-    let achByMonths
-    let promise
-    let months = []
-    let selectedMonth
-    let totalForMonth = 0
-    let totalPoints = 0
-    let calendarHTML = ''
-    $: prevDisabled = !selectedMonth || selectedMonth.index <=0
-    $: nextDisabled = !selectedMonth || selectedMonth.index === months.length - 1
-
-    $: promise = getAchievements($region, $realm, $character).then(_ => {
+    let achByMonths = $state()
+    let promise = $derived(getAchievements($region, $realm, $character).then(_ => {
         // weird bug where if I do assignment here instead of in function
         // it will go into an infinite loop of achievement requests
         init(_);
-    })
+    }))
+    let months = $state([])
+    let selectedMonth = $state()
+    let totalForMonth = $state(0)
+    let totalPoints = $state(0)
+    let calendarHTML = $state('')
+
     
-    $:{ totalForMonth = selectedMonth && achByMonths && achByMonths[selectedMonth.value] ? achByMonths[selectedMonth.value].total  : 0 }
-    $:{ totalPoints   = selectedMonth && achByMonths && achByMonths[selectedMonth.value] ? achByMonths[selectedMonth.value].points : 0 }
     
     function init(achs) {
         if (!achs) return;
@@ -203,6 +200,11 @@
     function selectionChanged() {
         calendarHTML = buildMonthTableHTML(selectedMonth, $character)
     }
+    let prevDisabled = $derived(!selectedMonth || selectedMonth.index <=0)
+    let nextDisabled = $derived(!selectedMonth || selectedMonth.index === months.length - 1)
+    
+    run(() => { totalForMonth = selectedMonth && achByMonths && achByMonths[selectedMonth.value] ? achByMonths[selectedMonth.value].total  : 0 });
+    run(() => { totalPoints   = selectedMonth && achByMonths && achByMonths[selectedMonth.value] ? achByMonths[selectedMonth.value].points : 0 });
 </script>
 
 <svelte:head>
@@ -214,15 +216,15 @@
     <h2>
         Calendar 
         <small>
-        <button type="button" class="btn btn-default" disabled={prevDisabled} on:click={leftOneMonth}>&laquo;</button>
-        <select class="selMonth" bind:value={selectedMonth} on:change="{selectionChanged}">
+        <button type="button" class="btn btn-default" disabled={prevDisabled} onclick={leftOneMonth}>&laquo;</button>
+        <select class="selMonth" bind:value={selectedMonth} onchange={selectionChanged}>
             {#each months as month (month.value)}
                 <option value={month}>
                     {month.text}
                 </option>
             {/each}
         </select>
-        <button type="button" class="btn btn-default" disabled={nextDisabled} on:click={rightOneMonth}>&raquo;</button>
+        <button type="button" class="btn btn-default" disabled={nextDisabled} onclick={rightOneMonth}>&raquo;</button>
         </small>
         <ProgressBar
             rightSide={true}

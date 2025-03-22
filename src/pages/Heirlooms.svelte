@@ -7,10 +7,7 @@
     import Loading from '$components/Loading.svelte';
     import Category from '$components/Category/Category.svelte';
 
-    let heirlooms
-    $: promise = getHeirlooms($region, $realm, $character).then(_ => {
-        init(_);
-    })
+    let heirlooms = $state()
 
     function init(_) {
         if (!_) return;
@@ -20,6 +17,9 @@
     onMount(async () => {
         window.ga('send', 'pageview', 'Heirlooms');
     });
+    let promise = $derived(getHeirlooms($region, $realm, $character).then(_ => {
+        init(_);
+    }))
 </script>
 
 <svelte:head>

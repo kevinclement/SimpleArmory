@@ -37,7 +37,7 @@
     ],
   };
 
-  let useDarkMode = $preferences.theme === "light" ? false : true;
+  let useDarkMode = $state($preferences.theme === "light" ? false : true);
 
   const toggleTheme = (e) => {
     e.preventDefault();
@@ -46,7 +46,7 @@
     localStorage.setItem("darkTheme", $preferences.theme !== "light");
   };
 
-  let useClassicSkin = $preferences.itemSkin === "classic" ? true : false;
+  let useClassicSkin = $state($preferences.itemSkin === "classic" ? true : false);
 
   const toggleItemSkin = (e) => {
     e.preventDefault();
@@ -55,7 +55,7 @@
     localStorage.setItem("itemSkin", $preferences.itemSkin);
   };
 
-  let showHidden = $preferences.showHidden == "hidden" ? false : true;
+  let showHidden = $state($preferences.showHidden == "hidden" ? false : true);
 
   const toggleShowHidden = (e) => {
 		e.preventDefault();
@@ -65,7 +65,7 @@
 		localStorage.setItem('showHidden', $preferences.showHidden);
 	}
 
-  let showFeats = $preferences.showHiddenFeat == "hidden" ? false : true;
+  let showFeats = $state($preferences.showHiddenFeat == "hidden" ? false : true);
 
   const toggleHiddenFeat = (e) => {
 		e.preventDefault();
@@ -75,7 +75,7 @@
 		localStorage.setItem('showHiddenFeat', $preferences.showHiddenFeat);
 	}
 
-  let showUnobtainedOnly = $preferences.showUnobtainedOnly == "false" ? false : true;
+  let showUnobtainedOnly = $state($preferences.showUnobtainedOnly == "false" ? false : true);
 
   const toggleShowUnobtained = (e) => {
     e.preventDefault();
@@ -85,7 +85,7 @@
 		localStorage.setItem('showUnobtainedOnly', $preferences.showUnobtainedOnly);
   }
 
-  let showUpcoming = $preferences.showUpcoming == "false" ? false : true;
+  let showUpcoming = $state($preferences.showUpcoming == "false" ? false : true);
 
   const toggleShowUpcoming = (e) => {
     e.preventDefault();
@@ -107,7 +107,7 @@
     window.location.reload();
   }
 
-  let selectedLocale = getWowheadUrl();
+  let selectedLocale = $state(getWowheadUrl());
 </script>
 
 <div class="container">
@@ -125,27 +125,27 @@
     </div>
 
     <div>
-      <input type="checkbox" id="useDarkMode" bind:checked={useDarkMode} on:change={toggleTheme}><label for="useDarkMode">&nbsp Use Dark Mode</label>
+      <input type="checkbox" id="useDarkMode" bind:checked={useDarkMode} onchange={toggleTheme}><label for="useDarkMode">&nbsp Use Dark Mode</label>
     </div>
 
     <div>
-      <input type="checkbox" id="useClassicSkin" bind:checked={useClassicSkin} on:change={toggleItemSkin}><label for="useClassicSkin">&nbsp Use Classic Appearance</label>
+      <input type="checkbox" id="useClassicSkin" bind:checked={useClassicSkin} onchange={toggleItemSkin}><label for="useClassicSkin">&nbsp Use Classic Appearance</label>
     </div>
 
     <div>
-        <input type="checkbox" id="showHidden" bind:checked={showHidden} on:change={toggleShowHidden}><label for="showHidden">&nbsp Show Unobtainable Collectibles</label>
+        <input type="checkbox" id="showHidden" bind:checked={showHidden} onchange={toggleShowHidden}><label for="showHidden">&nbsp Show Unobtainable Collectibles</label>
     </div>
 
     <div>
-      <input type="checkbox" id="showFeats" bind:checked={showFeats} on:change={toggleHiddenFeat}><label for="showFeats">&nbsp Show Obtainable Feat of Strengths</label>
+      <input type="checkbox" id="showFeats" bind:checked={showFeats} onchange={toggleHiddenFeat}><label for="showFeats">&nbsp Show Obtainable Feat of Strengths</label>
     </div>
 
     <div>
-      <input type="checkbox" id="showUnobtainedOnly" bind:checked={showUnobtainedOnly} on:change={toggleShowUnobtained}><label for="showUnobtainedOnly">&nbsp Show Only Unobtained Collectibles</label>
+      <input type="checkbox" id="showUnobtainedOnly" bind:checked={showUnobtainedOnly} onchange={toggleShowUnobtained}><label for="showUnobtainedOnly">&nbsp Show Only Unobtained Collectibles</label>
     </div>
 
     <div>
-      <input type="checkbox" id="showUpcoming" bind:checked={showUpcoming} on:change={toggleShowUpcoming}><label for="showUpcoming">&nbsp Show Upcoming Content</label>
+      <input type="checkbox" id="showUpcoming" bind:checked={showUpcoming} onchange={toggleShowUpcoming}><label for="showUpcoming">&nbsp Show Upcoming Content</label>
     </div>
 
     <div>
@@ -153,7 +153,7 @@
       <select
         name="locale"
         bind:value={selectedLocale}
-        on:change={(e) => setLocale(e, selectedLocale)}
+        onchange={(e) => setLocale(e, selectedLocale)}
       >
         {#each locales as locale}
           <option value={locale.link}>

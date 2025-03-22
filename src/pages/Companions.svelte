@@ -9,11 +9,8 @@
     import ErrorInline from '$components/ErrorInline.svelte';
     import Category from '$components/Category/Category.svelte';
 
-    let companions
-    let showQuality
-    $: promise = getCompanions($region, $realm, $character).then(_ => {
-        init(_)
-    })
+    let companions = $state()
+    let showQuality = $state()
 
     function init(_) {
         if (!_) return;
@@ -44,6 +41,9 @@
 
         return 'background:' + bgColor;
     };
+    let promise = $derived(getCompanions($region, $realm, $character).then(_ => {
+        init(_)
+    }))
 </script>
 
 <svelte:head>
@@ -68,17 +68,19 @@
 {#if companions}
     {#each companions.categories as category}
         <Category {category}>
-        <div class="pbCell" slot="item" let:item>
-            <a 
-            class="thumbnail pbThumbnail" 
-            target="{settings.anchorTarget}"
-            href="{item.ptr || item.new ? `//${settings.WowHeadUrl}/ptr/battle-pet/${ item.ID }` : `//${settings.WowHeadUrl}/battle-pet/${ item.ID }`}"
-            class:notCollected={!item.collected}
-            >
-                <img height="36" width="36" src="{ getImageSrc(item, true) }" alt>
-            </a> 
-            {#if showQuality}<div class="pbQual" style="{ qualityToBackground(item) }"></div> {/if}
-        </div>
+        {#snippet item({ item })}
+                    <div class="pbCell"  >
+              <a 
+              class="thumbnail pbThumbnail" 
+              target="{settings.anchorTarget}"
+              href="{item.ptr || item.new ? `//${settings.WowHeadUrl}/ptr/battle-pet/${ item.ID }` : `//${settings.WowHeadUrl}/battle-pet/${ item.ID }`}"
+              class:notCollected={!item.collected}
+              >
+                  <img height="36" width="36" src="{ getImageSrc(item, true) }" alt>
+              </a> 
+              {#if showQuality}<div class="pbQual" style="{ qualityToBackground(item) }"></div> {/if}
+          </div>
+                  {/snippet}
     </Category>
     {/each}
     {:else}

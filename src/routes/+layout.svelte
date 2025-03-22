@@ -20,6 +20,8 @@
 	
 	import { onMount } from 'svelte'
   import Settings from '../pages/Settings.svelte';
+	/** @type {{children?: import('svelte').Snippet}} */
+	let { children } = $props();
 
 	let _errorCount = 0;
     onMount(() => {
@@ -186,5 +188,5 @@
 		{/if}
 	{/if}
 
-	<slot />
+	{@render children?.()}
 </div>

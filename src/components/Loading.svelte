@@ -3,7 +3,7 @@
 
     // Show the loading placeholder only after a small time 
     // so if you're on a fast connection it doesn't flash
-    let show = false;   
+    let show = $state(false);   
     const timeoutId = setTimeout(() => {
         show = true
     }, 600);

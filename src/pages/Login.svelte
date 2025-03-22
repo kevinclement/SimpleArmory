@@ -6,16 +6,16 @@
     import { getTitle } from '$util/utils'
     import Select from 'svelte-select';
 
-    $: realms = getRealms()
+    let realms = $derived(getRealms())
     
-    let modal;
-    let backdrop;
-    let characterName;
-    let isFocused = false;   
-    let selectedValue;
-    let characterNameInput;
+    let modal = $state();
+    let backdrop = $state();
+    let characterName = $state();
+    let isFocused = $state(false);   
+    let selectedValue = $state();
+    let characterNameInput = $state();
     
-    $: isValid = characterName != undefined && characterName != "" && selectedValue && selectedValue.slug != ""
+    let isValid = $derived(characterName != undefined && characterName != "" && selectedValue && selectedValue.slug != "")
 
     function handleSelect(event) {
         selectedValue = event.detail
@@ -148,17 +148,17 @@
         <br/>
         <div class="input-group">
           <label for="myCharName" class="input-group-addon input-group-label">Character</label>
-          <input id="myCharName" type="text" class="form-control" bind:this={characterNameInput} bind:value={characterName} on:keydown={keydown} style="z-index:1">
+          <input id="myCharName" type="text" class="form-control" bind:this={characterNameInput} bind:value={characterName} onkeydown={keydown} style="z-index:1">
         </div>
       </div>
       <div class="modal-footer">
-        <button class="btn btn-primary" disabled={isValid === undefined || !isValid} on:click={ok}>Go</button>
+        <button class="btn btn-primary" disabled={isValid === undefined || !isValid} onclick={ok}>Go</button>
       </div>
     </div>
   </div>
 </div>
 
-<div class="modal-backdrop fade" style="z-index:1040" bind:this={backdrop}  />
+<div class="modal-backdrop fade" style="z-index:1040" bind:this={backdrop}></div>
 <style>
 
     /* Missing feature in select that they don't expose these */

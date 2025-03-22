@@ -1,7 +1,7 @@
 <script>
-	export let status;
-	export let error;
 	import { onMount } from 'svelte'
+	/** @type {{status: any, error: any}} */
+	let { status, error } = $props();
 
 	const dev = process.env.NODE_ENV === 'development';
 	const offline = typeof navigator !== 'undefined' && navigator.onLine === false;

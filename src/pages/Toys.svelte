@@ -7,10 +7,7 @@
     import Loading from '$components/Loading.svelte';
     import Category from '$components/Category/Category.svelte';
 
-    let toys
-    $: promise = getToys($region, $realm, $character).then(_ => {
-        init(_);
-    })
+    let toys = $state()
 
     function init(_) {
         if (!_) return;
@@ -20,6 +17,9 @@
     onMount(async () => {
         window.ga('send', 'pageview', 'Toys');
     });
+    let promise = $derived(getToys($region, $realm, $character).then(_ => {
+        init(_);
+    }))
 </script>
 
 <svelte:head>

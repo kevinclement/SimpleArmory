@@ -4,9 +4,9 @@
 	import { getUrl } from '$util/url'
 	import { getWowheadUrl } from '$util/utils'
 	import { onMount } from 'svelte'
-	let menuCollapsed = true
+	let menuCollapsed = $state(true)
 
-	let menuItems = {
+	let menuItems = $state({
 		'Achievements': {
 			items: [ 
 				{ txt: 'Character',          link: 'character'   },
@@ -51,12 +51,12 @@
 			],
 			isOpen: false
 		}
-	}
+	})
 
-	$: isLoggedIn = $region && $region !== '' && $region !== 'error' &&
+	let isLoggedIn = $derived($region && $region !== '' && $region !== 'error' &&
 	    $realm && $realm !== '' && 
-	    $character && $character !== ''
-	$: armoryUrl = !$character ? '' : 'https://worldofwarcraft.com/character/' + $region + '/' + $realm + '/' + $character.toLowerCase();
+	    $character && $character !== '')
+	let armoryUrl = $derived(!$character ? '' : 'https://worldofwarcraft.com/character/' + $region + '/' + $realm + '/' + $character.toLowerCase());
 
 	const toggleCollapsed = (e) => {
 		menuCollapsed = !menuCollapsed;
@@ -147,12 +147,12 @@
 	};
 </script>
 
-<!-- svelte-ignore a11y-click-events-have-key-events -->
-<nav class="navbar navbar-default navbar-fixed-top" on:click={NavbarClicked}>
+<!-- svelte-ignore a11y_click_events_have_key_events -->
+<nav class="navbar navbar-default navbar-fixed-top" onclick={NavbarClicked}>
 	<div class="container">
 		<div class="navbar-header">
 			{#if isLoggedIn }
-				<button type="button" class="navbar-toggle" on:click={toggleCollapsed}>
+				<button type="button" class="navbar-toggle" onclick={toggleCollapsed}>
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -168,7 +168,7 @@
 				<li class:active="{$page === undefined}"><a href="{getUrl($region, $realm, $character, '')}">Overview</a></li>
 				
 				<li class:active="{$page === 'achievements'}" class="dropdown" class:open={menuItems.Achievements.isOpen} >
-					<a id="achDrop" href="#/" on:click="{(e) => toggleDropDown(e,menuItems.Achievements)}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Achievements
+					<a id="achDrop" href="#/" onclick={(e) => toggleDropDown(e,menuItems.Achievements)} class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Achievements
 						<b class="caret"></b>
 					</a>
 					<ul class="dropdown-menu" aria-labelledby="achDrop">
@@ -179,7 +179,7 @@
 				</li>
 
 				<li class:active="{$page === 'collectable'}" class="dropdown" class:open={menuItems.Collectable.isOpen}>
-					<a id="collectDrop" href="#/" on:click="{(e) => toggleDropDown(e,menuItems.Collectable)}"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Collectable
+					<a id="collectDrop" href="#/" onclick={(e) => toggleDropDown(e,menuItems.Collectable)}  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Collectable
 						<b class="caret"></b>
 					</a>
 					<ul class="dropdown-menu" aria-labelledby="collectDrop">
@@ -194,7 +194,7 @@
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown" class:open={menuItems.Profile.isOpen}>
-					<a id="profileDrop" href="#/" aria-label="Profile" on:click="{(e) => toggleDropDown(e,menuItems.Profile)}" class="navbar-char-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					<a id="profileDrop" href="#/" aria-label="Profile" onclick={(e) => toggleDropDown(e,menuItems.Profile)} class="navbar-char-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 						<img width="32" height="32" class="navbar-char-image" src="{$avatar}" alt="Profile"/>					
 						<b class="caret"></b>
 					</a>
@@ -206,15 +206,15 @@
 					  <li><a href="/#/">Signout</a></li>
 					  <li role="separator" class="divider"></li>
 					  <li><a href="{armoryUrl}" target="_blank">Armory profile</a></li>
-					  <li><a href="#/" on:click={toggleTheme} >Use {$preferences.theme === 'light' ? 'Dark' : 'Light'} Theme</a></li>
+					  <li><a href="#/" onclick={toggleTheme} >Use {$preferences.theme === 'light' ? 'Dark' : 'Light'} Theme</a></li>
 					  <li>
-						<a id="localeSubmenu" class="dropdown-item" href="#/" on:click={(e) => e.preventDefault()}>
+						<a id="localeSubmenu" class="dropdown-item" href="#/" onclick={(e) => e.preventDefault()}>
 							Locale
 							<b class="caret-right"></b>
 						</a>
 						<ul class="dropdown-menu dropdown-submenu">
 						  {#each menuItems.Profile.locales as locale}
-							<li class:active="{getWowheadUrl() === locale.link}"><a class="dropdown-item" href="#/" on:click={(e) => setLocale(e, locale.link)}>{locale.txt}</a></li>
+							<li class:active="{getWowheadUrl() === locale.link}"><a class="dropdown-item" href="#/" onclick={(e) => setLocale(e, locale.link)}>{locale.txt}</a></li>
 						  {/each}
 						</ul>
 					  </li>

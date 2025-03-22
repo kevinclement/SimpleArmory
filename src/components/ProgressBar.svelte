@@ -1,10 +1,13 @@
 <script>
-    export let width = 0;
-    export let styleWidth = 250;
-    export let percentage = "";
-    export let rightSide = false;
-    export let url = "";
-    export let name = "";
+    /** @type {{width?: number, styleWidth?: number, percentage?: string, rightSide?: boolean, url?: string, name?: string}} */
+    let {
+        width = 0,
+        styleWidth = 250,
+        percentage = "",
+        rightSide = false,
+        url = "",
+        name = ""
+    } = $props();
 </script>
 
 <div class="progress" class:progressRight={rightSide} style="width: { styleWidth == 'auto' ? 'auto' : styleWidth + 'px' }">

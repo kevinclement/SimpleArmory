@@ -8,13 +8,10 @@
     import ErrorInline from '$components/ErrorInline.svelte';
     import Category from '$components/Category/Category.svelte';
 
-    let promise
-    let titles
-    $: {
-        promise = getTitles($region, $realm, $character).then(_ => {           
+    let promise = $derived(getTitles($region, $realm, $character).then(_ => {           
             init(_);
-        })
-    }
+        }))
+    let titles = $state()
 
     function init(_) {
         if (!_) return;
@@ -25,6 +22,7 @@
         window.ga('send', 'pageview', 'Titles');
     });
 
+    
 </script>
 
 <svelte:head>

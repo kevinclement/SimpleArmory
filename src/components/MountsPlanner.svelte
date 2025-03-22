@@ -1,28 +1,38 @@
+<!-- @migration-task Error while migrating Svelte code: `$props` cannot be called with arguments -->
+<!-- @migration-task Error while migrating Svelte code: `$props` cannot be called with arguments -->
 <script>
-    import { region, realm, character } from '$stores/user'
-    import { onMount } from 'svelte'
-    import { getPlannerSteps } from '$api/planner'
-    import settings from '$util/settings'
+    import { region, realm, character } from '$stores/user';
+    import { getPlannerSteps } from '$api/planner';
+    import settings from '$util/settings';
     import Loading from '$components/Loading.svelte';
 
-    export let mounts
-    export let isAlliance;
-    let promise;
-    let steps;
-    
-    $: {
-        promise = getPlannerSteps(mounts, $region, $realm, $character).then(_ => {           
-            steps = _;
-        })
-    }
+    /** @type {{mounts: any, isAlliance: any}} */
+    const props = $props({
+        mounts: undefined,
+        isAlliance: undefined
+    });
 
-    onMount(async () => {
+    // State variables
+    let steps = $state([]);
+    let promise = $state(null);
+
+    // Initialize the promise
+    $effect(() => {
+        promise = getPlannerSteps(props.mounts, region, realm, character)
+            .then(result => {
+                steps = result;
+                return result;
+            });
+    });
+
+    // Replace onMount with $effect.pre
+    $effect.pre(() => {
         window.ga('send', 'pageview', 'Planner');
     });
 
     function getPlanStepImageSrc(step) {
         if (step.capital) {
-            if (isAlliance) {
+            if (props.isAlliance) {
                 return '/images/alliance.png';
             }
             else {
@@ -42,11 +52,11 @@
         }
 
         return '//wow.zamimg.com/images/wow/icons/tiny/' + boss.icon + '.gif';
-    };
+    }
 
     function getStepTitle(step) {
         if (step.capital) {
-            return 'Hearthstone to ' + (isAlliance ? 'Stormwind ' : 'Orgrimmar ') + step.title;
+            return 'Hearthstone to ' + (props.isAlliance ? 'Stormwind ' : 'Orgrimmar ') + step.title;
         }
         else {
             return step.title;
@@ -103,7 +113,7 @@
                                     <td class="mnt-plan-boss-col">{boss.name}</td>
                                     <td class="mnt-plan-mount-col">
                                         {#if boss.itemId}
-                                            <a class="{anchorCss(boss)}" target="{settings.anchorTarget}" href="//{settings.WowHeadUrl}/item={ boss.itemId }">
+                                            <a class="{anchorCss(boss)}" target="{settings.anchorTarget}" href="//{settings.WowHeadUrl}/item={boss.itemId}">
                                                 <img class="mnt-plan-icon" src="{getPlanImageSrc(boss)}" alt>{boss.mount}</a>
                                         {/if}
                                         

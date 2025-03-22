@@ -10,15 +10,13 @@
     import ErrorInline from '$components/ErrorInline.svelte';
     import Category from '$components/Category/Category.svelte';
 
-    export let planner
+    /** @type {{planner: any}} */
+    let { planner = $bindable() } = $props();
 
-    let promise
-    let mounts
-    $: {
-        promise = getMounts($region, $realm, $character).then(_ => {           
+    let promise = $derived(getMounts($region, $realm, $character).then(_ => {           
             init(_);
-        })
-    }
+        }))
+    let mounts = $state()
 
     function init(_) {
         if (!_) return;
@@ -39,6 +37,7 @@
             navigate("collectable/mounts/planner", $region, $realm, $character)
         }        
     }
+    
 </script>
 
 <svelte:head>
@@ -50,7 +49,7 @@
     <h2>
         Mounts
         <small class="pbSmall">
-            <input type="checkbox" id="planner" bind:checked={planner} on:click={togglePlanner}><label for="planner">Show Planner</label>
+            <input type="checkbox" id="planner" bind:checked={planner} onclick={togglePlanner}><label for="planner">Show Planner</label>
         </small>
         <ProgressBar 
             rightSide={true}

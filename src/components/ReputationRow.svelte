@@ -1,6 +1,7 @@
 <script>
     import settings from '$util/settings'
-    export let faction;
+    /** @type {{faction: any}} */
+    let { faction } = $props();
 
     let levelColors = [
         '#c22',

@@ -1,22 +1,20 @@
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-static'; // or your current adapter
 
+/** @type {import('@sveltejs/kit').Config} */
 const config = {
-    kit: {
-        // By default, `npm run build` will create a standard Node app.
-        // You can create optimized builds for different platforms by
-        // specifying a different adapter
-        adapter: adapter({
-            fallback: "index.html"
-        }),
+  
+  kit: {
+    adapter: adapter()
+  },
 
-        alias: {
-            '$api': 'src/api',
-            '$components': 'src/components',
-            '$stores': 'src/stores',
-            '$pages': 'src/pages',
-            '$util': 'src/util',
-        }
+  // Add Svelte 5 configuration
+  compilerOptions: {
+    runes: true,  // Enable the new reactivity system
+    legacy: {
+      // Configure how much of the old reactivity system to maintain
+      componentApi: false  // Keep compatibility with Svelte 3/4 components
     }
+  }
 };
 
 export default config;

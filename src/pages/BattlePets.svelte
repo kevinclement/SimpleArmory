@@ -9,11 +9,8 @@
     import ErrorInline from '$components/ErrorInline.svelte';
     import Category from '$components/Category/Category.svelte';
 
-    let showLevel
-    let battlePets
-    $: promise = getBattlePets($region, $realm, $character).then(_ => {
-        init(_);
-    })
+    let showLevel = $state()
+    let battlePets = $state()
 
     onMount(async () => {
         window.ga('send', 'pageview', 'BattlePets');
@@ -44,6 +41,9 @@
 
         return 'background:' + bgColor;
     };
+    let promise = $derived(getBattlePets($region, $realm, $character).then(_ => {
+        init(_);
+    }))
 </script>
 
 <svelte:head>
@@ -68,19 +68,21 @@
 {#if battlePets}
 {#each battlePets.categories as category}
     <Category {category}>
-        <div class="pbCell" slot="item" let:item>
-            <a 
-            class="thumbnail pbThumbnail" 
-            target="{settings.anchorTarget}"
-            href="{item.ptr || item.new ? `//${settings.WowHeadUrl}/ptr-2/battle-pet/${ item.ID }` : `//${settings.WowHeadUrl}/battle-pet/${ item.ID }`}"
-            class:notCollected={!item.collected}
-            >
-                <img height="36" width="36" src="{ getImageSrc(item, true) }" alt>
-                {#if item.level}<div class="pbLevel" class:opacityOn={showLevel}>{ item.level }</div>{/if}
-                {#if item.breed}<div class="pbBreed" class:opacityOn={showLevel}>{ item.breed }</div>{/if}
-            </a> 
-            <div class="pbQual" style="{ qualityToBackground(item) }"></div>        		      	
-        </div>
+        {#snippet item({ item })}
+                                        <div class="pbCell"  >
+                <a 
+                class="thumbnail pbThumbnail" 
+                target="{settings.anchorTarget}"
+                href="{item.ptr || item.new ? `//${settings.WowHeadUrl}/ptr-2/battle-pet/${ item.ID }` : `//${settings.WowHeadUrl}/battle-pet/${ item.ID }`}"
+                class:notCollected={!item.collected}
+                >
+                    <img height="36" width="36" src="{ getImageSrc(item, true) }" alt>
+                    {#if item.level}<div class="pbLevel" class:opacityOn={showLevel}>{ item.level }</div>{/if}
+                    {#if item.breed}<div class="pbBreed" class:opacityOn={showLevel}>{ item.breed }</div>{/if}
+                </a> 
+                <div class="pbQual" style="{ qualityToBackground(item) }"></div>        		      	
+            </div>
+                                    {/snippet}
     </Category>
 {/each}
 {:else}

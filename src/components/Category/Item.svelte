@@ -2,11 +2,11 @@
   import settings from "$util/settings";
   import { getImageSrc } from "$util/utils";
 
-  export let item;
-  export let getItemPath = (item) => item.link;
+  /** @type {{item: any, getItemPath?: any}} */
+  let { item, getItemPath = (item) => item.link } = $props();
 
-  $: href = item.new || item.ptr ? "//" + settings.WowHeadUrl + "/ptr/" + getItemPath(item) : "//" + settings.WowHeadUrl + "/" + getItemPath(item);
-  $: src = getImageSrc(item, true);
+  let href = $derived(item.new || item.ptr ? "//" + settings.WowHeadUrl + "/ptr/" + getItemPath(item) : "//" + settings.WowHeadUrl + "/" + getItemPath(item));
+  let src = $derived(getImageSrc(item, true));
 </script>
 
 <a
