@@ -241,19 +241,6 @@
     "name": "Limited Time",
     "subcats": [
       {
-        "items": [
-          {
-            "ID": 4762,
-            "creatureId": 240137,
-            "icon": "inv_clockworkbeagle_blue",
-            "itemId": 238261,
-            "name": "Tock the Clocker Spaniel",
-            "spellid": 1224569
-          }
-        ],
-        "name": "Twitch Drops"
-      },
-      {
         "items": [],
         "name": "Trading Post: "
       },
@@ -8825,6 +8812,15 @@
             "itemId": 167009,
             "name": "Scaley",
             "spellid": 291223
+          },
+          {
+            "ID": 3245,
+            "creatureId": 185425,
+            "icon": "4235634",
+            "itemId": 241193,
+            "new": true,
+            "name": "Helpful Workshop Bot",
+            "spellid": 367189
           }
         ],
         "name": "Children's Week"
@@ -12442,6 +12438,15 @@
             "name": "Fathom",
             "notObtainable": true,
             "spellid": 439994
+          },
+          {
+            "ID": 4762,
+            "creatureId": 240137,
+            "icon": "inv_clockworkbeagle_blue",
+            "itemId": 238261,
+            "name": "Tock the Clocker Spaniel",
+            "notObtainable": true,
+            "spellid": 1224569
           }
         ],
         "name": "Twitch Drops"

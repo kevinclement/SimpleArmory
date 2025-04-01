@@ -153,35 +153,28 @@
       {
         "items": [
           {
-            "ID": 1958,
-            "icon": "inv_lovefoxmount_purple",
-            "itemId": 212229,
-            "name": "Twilight Sky Prowler",
-            "spellid": 431360
+            "ID": 2483,
+            "icon": "inv_darkmoonhorsemount_purple",
+            "itemId": 235556,
+            "name": "Violet Darkmoon Charger",
+            "spellid": 1217342
           },
           {
-            "ID": 2488,
-            "icon": "inv_horse2ardenwealdmount_blue",
-            "itemId": 235646,
-            "name": "Shimmermist Free Runner",
-            "spellid": 1217965
+            "ID": 2482,
+            "icon": "inv_darkmoonhorsemount_green",
+            "itemId": 235555,
+            "name": "Lively Darkmoon Charger",
+            "spellid": 1217341
           },
           {
-            "ID": 2489,
-            "icon": "inv_butterflymount_pearl",
-            "itemId": 235650,
-            "name": "Pearlescent Butterfly",
-            "spellid": 1217994
-          },
-          {
-            "ID": 2491,
-            "icon": "inv_butterflymount_red",
-            "itemId": 235657,
-            "name": "Ruby Butterfly",
-            "spellid": 1218012
+            "ID": 2495,
+            "icon": "inv_snailrockmount_green",
+            "itemId": 235662,
+            "name": "Emerald Snail",
+            "spellid": 1218069
           }
         ],
-        "name": "Trading Post: March"
+        "name": "Trading Post: April"
       },
       {
         "items": [
@@ -261,27 +254,6 @@
       },
       {
         "items": [
-          {
-            "ID": 1957,
-            "icon": "inv_lovefoxmount_blue",
-            "itemId": 212228,
-            "name": "Soaring Sky Fox",
-            "spellid": 431359
-          },
-          {
-            "ID": 2330,
-            "icon": "inv_lovebroom_goth",
-            "itemId": 233020,
-            "name": "Twilight Witch's Sweeper",
-            "spellid": 472488
-          },
-          {
-            "ID": 2331,
-            "icon": "inv_lovebroom_blue",
-            "itemId": 233019,
-            "name": "Sky Witch's Sweeper",
-            "spellid": 472489
-          },
           {
             "ID": 2343,
             "icon": "inv_redpandamount_gray",
@@ -760,7 +732,6 @@
           {
             "ID": 2535,
             "icon": "inv_arathilynxmount_nightfall",
-            "itemId": 239563,
             "name": "Void-Scarred Lynx",
             "new": true,
             "spellid": 1228865
@@ -9235,6 +9206,13 @@
             "name": "Alabaster Thunderwing",
             "side": "H",
             "spellid": 302362
+          },
+          {
+            "ID": 1958,
+            "icon": "inv_lovefoxmount_purple",
+            "itemId": 212229,
+            "name": "Twilight Sky Prowler",
+            "spellid": 431360
           }
         ],
         "name": "Trading Post Re-Releases"
@@ -9439,6 +9417,27 @@
             "spellid": 472487
           },
           {
+            "ID": 2488,
+            "icon": "inv_horse2ardenwealdmount_blue",
+            "itemId": 235646,
+            "name": "Shimmermist Free Runner",
+            "spellid": 1217965
+          },
+          {
+            "ID": 2489,
+            "icon": "inv_butterflymount_pearl",
+            "itemId": 235650,
+            "name": "Pearlescent Butterfly",
+            "spellid": 1217994
+          },
+          {
+            "ID": 2491,
+            "icon": "inv_butterflymount_red",
+            "itemId": 235657,
+            "name": "Ruby Butterfly",
+            "spellid": 1218012
+          },
+          {
             "ID": 799,
             "icon": "inv_infernalmountlava",
             "itemId": 137615,
@@ -9511,24 +9510,6 @@
             "spellid": 1217340
           },
           {
-            "ID": 2482,
-            "icon": "inv_darkmoonhorsemount_green",
-            "itemId": 235555,
-            "name": "Lively Darkmoon Charger",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1217341
-          },
-          {
-            "ID": 2483,
-            "icon": "inv_darkmoonhorsemount_purple",
-            "itemId": 235556,
-            "name": "Violet Darkmoon Charger",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1217342
-          },
-          {
             "ID": 2484,
             "icon": "inv_darkmoonhorsemount_white",
             "itemId": 235557,
@@ -9554,15 +9535,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1218014
-          },
-          {
-            "ID": 2495,
-            "icon": "inv_snailrockmount_green",
-            "itemId": 235662,
-            "name": "Emerald Snail",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1218069
           },
           {
             "ID": 1824,
@@ -10189,6 +10161,30 @@
             "itemId": 231297,
             "name": "Timbered Sky Snake",
             "spellid": 468205
+          },
+          {
+            "ID": 1957,
+            "icon": "inv_lovefoxmount_blue",
+            "itemId": 212228,
+            "name": "Soaring Sky Fox",
+            "notObtainable": true,
+            "spellid": 431359
+          },
+          {
+            "ID": 2330,
+            "icon": "inv_lovebroom_goth",
+            "itemId": 233020,
+            "name": "Twilight Witch's Sweeper",
+            "notObtainable": true,
+            "spellid": 472488
+          },
+          {
+            "ID": 2331,
+            "icon": "inv_lovebroom_blue",
+            "itemId": 233019,
+            "name": "Sky Witch's Sweeper",
+            "notObtainable": true,
+            "spellid": 472489
           },
           {
             "ID": 2345,
