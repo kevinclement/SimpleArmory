@@ -241,19 +241,6 @@
     "name": "Limited Time",
     "subcats": [
       {
-        "items": [
-          {
-            "ID": 4762,
-            "creatureId": 240137,
-            "icon": "inv_clockworkbeagle_blue",
-            "itemId": 238261,
-            "name": "Tock the Clocker Spaniel",
-            "spellid": 1224569
-          }
-        ],
-        "name": "Twitch Drops"
-      },
-      {
         "items": [],
         "name": "Trading Post: "
       },
@@ -283,7 +270,7 @@
           {
             "ID": 4791,
             "creatureId": 198989,
-            "icon": "4693218",
+            "icon": "inv_babymurloc3bronze",
             "itemId": 238796,
             "name": "Thrrrdgl",
             "spellid": 1226305
@@ -8825,6 +8812,15 @@
             "itemId": 167009,
             "name": "Scaley",
             "spellid": 291223
+          },
+          {
+            "ID": 3245,
+            "creatureId": 185425,
+            "icon": "4235634",
+            "itemId": 241193,
+            "new": true,
+            "name": "Helpful Workshop Bot",
+            "spellid": 367189
           }
         ],
         "name": "Children's Week"
@@ -11324,7 +11320,7 @@
             "creatureId": 241150,
             "icon": "inv_chihuahuadogpet_body_tan",
             "itemId": 238942,
-            "name": "The Wonder Pup",
+            "name": "Weechi",
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1226743
@@ -11418,6 +11414,20 @@
           }
         ],
         "name": "Plunderstorm"
+      },
+      {
+        "items": [
+          {
+            "ID": 4806,
+            "creatureId": 241346,
+            "icon": "inv_ironstarlettepet",
+            "itemId": 239019,
+            "name": "Spicy Mean-Ball",
+            "new": true,
+            "spellid": 1227066
+          }
+        ],
+        "name": "Dastardly Duos"
       },
       {
         "items": [
@@ -12428,6 +12438,15 @@
             "name": "Fathom",
             "notObtainable": true,
             "spellid": 439994
+          },
+          {
+            "ID": 4762,
+            "creatureId": 240137,
+            "icon": "inv_clockworkbeagle_blue",
+            "itemId": 238261,
+            "name": "Tock the Clocker Spaniel",
+            "notObtainable": true,
+            "spellid": 1224569
           }
         ],
         "name": "Twitch Drops"
