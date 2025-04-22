@@ -333,6 +333,24 @@
             "icon": "inv_alchemy_70_potion2",
             "itemId": 228705,
             "name": "Arachnoserum"
+          },
+          {
+            "ID": 1570,
+            "icon": "inv_misc_orb_05",
+            "itemId": 238850,
+            "name": "Arathi Entertainer's Flame"
+          },
+          {
+            "ID": 1571,
+            "icon": "inv_guild_standard_alliance_a",
+            "itemId": 238852,
+            "name": "Flame's Radiance Banner"
+          },
+          {
+            "ID": 1578,
+            "icon": "inv_11_0_misc_whistle_color1",
+            "itemId": 239693,
+            "name": "Radiant Lynx Whistle"
           }
         ],
         "name": "Renown"
@@ -485,20 +503,6 @@
             "icon": "inv_10_engineering2_boxofbombs_friendly_color2",
             "itemId": 237382,
             "name": "Undermine Supply Crate"
-          },
-          {
-            "ID": 1578,
-            "icon": "inv_11_0_misc_whistle_color1",
-            "itemId": 239693,
-            "name": "Radiant Lynx Whistle",
-            "new": true
-          },
-          {
-            "ID": 1571,
-            "icon": "inv_guild_standard_alliance_a",
-            "itemId": 238852,
-            "name": "Flame's Radiance Banner",
-            "new": true
           }
         ],
         "name": "Vendor"
@@ -576,18 +580,6 @@
           }
         ],
         "name": "Raid"
-      },
-      {
-        "items": [
-          {
-            "ID": 1570,
-            "icon": "inv_misc_orb_05",
-            "itemId": 238850,
-            "name": "Arathi Entertainer's Flame",
-            "new": true
-          }
-        ],
-        "name": "Unknown"
       }
     ]
   },
@@ -2039,8 +2031,7 @@
             "ID": 1579,
             "icon": "inv_gizmo_newgoggles",
             "itemId": 167698,
-            "name": "Secret Fish Goggles",
-            "new": true
+            "name": "Secret Fish Goggles"
           }
         ],
         "name": "Achievement"
