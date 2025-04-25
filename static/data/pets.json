@@ -2550,16 +2550,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 408332
-          },
-          {
-            "ID": 4264,
-            "creatureId": 209163,
-            "icon": "inv_wooddragonpet",
-            "itemId": 208446,
-            "name": "Fyrn",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 419467
           }
         ],
         "name": "Unknown"
@@ -11706,9 +11696,15 @@
             "ID": 4568,
             "creatureId": 223691,
             "icon": "inv_snowowlpet_white",
-            "name": "Whoopy",
-            "notObtainable": true,
-            "notReleased": true
+            "name": "Whoopy"
+          },
+          {
+            "ID": 4264,
+            "creatureId": 209163,
+            "icon": "inv_wooddragonpet",
+            "itemId": 208446,
+            "name": "Fyrn",
+            "spellid": 419467
           },
           {
             "ID": 4730,
