@@ -277,19 +277,6 @@
           }
         ],
         "name": "Promotions"
-      },
-      {
-        "items": [
-          {
-            "ID": 4791,
-            "creatureId": 198989,
-            "icon": "inv_babymurloc3bronze",
-            "itemId": 238796,
-            "name": "Thrrrdgl",
-            "spellid": 1226305
-          }
-        ],
-        "name": "Blizzard Gear Store"
       }
     ]
   },
@@ -1037,7 +1024,7 @@
             "spellid": 442327
           }
         ],
-        "name": "Pre-Patch Event"
+        "name": "Pre-launch Event"
       },
       {
         "id": "fad5d824",
@@ -1206,16 +1193,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 471903
-          },
-          {
-            "ID": 4635,
-            "creatureId": 231466,
-            "icon": "inv_babyhyena_red",
-            "itemId": 232857,
-            "name": "Goggles",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 471900
           }
         ],
         "name": "Unknown"
@@ -2373,20 +2350,6 @@
         "name": "Emerald Bounty"
       },
       {
-        "id": "ccca067e",
-        "items": [
-          {
-            "ID": 3348,
-            "creatureId": 191387,
-            "icon": "inv_10_elementalspiritfoozles_air",
-            "itemId": 199109,
-            "name": "Primal Stormling",
-            "spellid": 375713
-          }
-        ],
-        "name": "Pre-launch Event"
-      },
-      {
         "id": "ccda057e",
         "items": [
           {
@@ -2407,6 +2370,20 @@
           }
         ],
         "name": "Archives"
+      },
+      {
+        "id": "ccca067e",
+        "items": [
+          {
+            "ID": 3348,
+            "creatureId": 191387,
+            "icon": "inv_10_elementalspiritfoozles_air",
+            "itemId": 199109,
+            "name": "Primal Stormling",
+            "spellid": 375713
+          }
+        ],
+        "name": "Pre-launch Event"
       },
       {
         "id": "332ea2f0",
@@ -8824,6 +8801,15 @@
             "name": "Helpful Workshop Bot",
             "new": true,
             "spellid": 367189
+          },
+          {
+            "ID": 4635,
+            "creatureId": 231466,
+            "icon": "inv_babyhyena_red",
+            "itemId": 232857,
+            "name": "Goggles",
+            "new": true,
+            "spellid": 471900
           }
         ],
         "name": "Children's Week"
@@ -12497,6 +12483,14 @@
             "itemId": 229366,
             "name": "Brrrgl",
             "spellid": 464798
+          },
+          {
+            "ID": 4791,
+            "creatureId": 198989,
+            "icon": "inv_babymurloc3bronze",
+            "itemId": 238796,
+            "name": "Thrrrdgl",
+            "spellid": 1226305
           }
         ],
         "name": "Blizzard Gear Store"
