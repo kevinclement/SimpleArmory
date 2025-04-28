@@ -1068,16 +1068,6 @@
             "spellid": 445493
           },
           {
-            "ID": 4466,
-            "creatureId": 222204,
-            "icon": "inv_babyarathilynx_brown",
-            "itemId": 221851,
-            "name": "Argos",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 445828
-          },
-          {
             "ID": 4474,
             "creatureId": 222340,
             "icon": "inv_babycryptfiend_black",
@@ -8794,12 +8784,19 @@
             "spellid": 291223
           },
           {
+            "ID": 4466,
+            "creatureId": 222204,
+            "icon": "inv_babyarathilynx_brown",
+            "itemId": 221851,
+            "name": "Argos",
+            "spellid": 445828
+          },
+          {
             "ID": 3245,
             "creatureId": 185425,
             "icon": "4235634",
             "itemId": 241193,
             "name": "Helpful Workshop Bot",
-            "new": true,
             "spellid": 367189
           },
           {
@@ -8808,7 +8805,6 @@
             "icon": "inv_babyhyena_red",
             "itemId": 232857,
             "name": "Goggles",
-            "new": true,
             "spellid": 471900
           }
         ],

@@ -255,34 +255,6 @@
       {
         "items": [
           {
-            "ID": 2343,
-            "icon": "inv_redpandamount_gray",
-            "itemId": 233283,
-            "name": "Meeksi Softpaw",
-            "spellid": 473741
-          },
-          {
-            "ID": 2342,
-            "icon": "inv_redpandamount_blue",
-            "itemId": 233282,
-            "name": "Meeksi Rufflefur",
-            "spellid": 473739
-          },
-          {
-            "ID": 2344,
-            "icon": "inv_redpandamount_orange",
-            "itemId": 233284,
-            "name": "Meeksi Rollingpaw",
-            "spellid": 473743
-          },
-          {
-            "ID": 2346,
-            "icon": "inv_redpandamount_violet",
-            "itemId": 233286,
-            "name": "Meeksi Brewthief",
-            "spellid": 473745
-          },
-          {
             "ID": 2525,
             "icon": "inv_ravenmount_black",
             "itemId": 238943,
@@ -10205,6 +10177,38 @@
             "itemId": 233285,
             "name": "Meeksi Teatuft",
             "spellid": 473744
+          },
+          {
+            "ID": 2343,
+            "icon": "inv_redpandamount_gray",
+            "itemId": 233283,
+            "name": "Meeksi Softpaw",
+            "notObtainable": true,
+            "spellid": 473741
+          },
+          {
+            "ID": 2342,
+            "icon": "inv_redpandamount_blue",
+            "itemId": 233282,
+            "name": "Meeksi Rufflefur",
+            "notObtainable": true,
+            "spellid": 473739
+          },
+          {
+            "ID": 2344,
+            "icon": "inv_redpandamount_orange",
+            "itemId": 233284,
+            "name": "Meeksi Rollingpaw",
+            "notObtainable": true,
+            "spellid": 473743
+          },
+          {
+            "ID": 2346,
+            "icon": "inv_redpandamount_violet",
+            "itemId": 233286,
+            "name": "Meeksi Brewthief",
+            "notObtainable": true,
+            "spellid": 473745
           }
         ],
         "name": "Blizzard Store"
