@@ -241,8 +241,25 @@
     "name": "Limited Time",
     "subcats": [
       {
-        "items": [],
-        "name": "Trading Post: "
+        "items": [
+          {
+            "ID": 168,
+            "creatureId": 25109,
+            "icon": "inv_misc_enggizmos_rocketchicken",
+            "itemId": 34492,
+            "name": "Rocket Chicken",
+            "spellid": 45125
+          },
+          {
+            "ID": 4757,
+            "creatureId": 238178,
+            "icon": "inv_redpandapet_gray",
+            "itemId": 236409,
+            "name": "Frumpy Softpaw",
+            "spellid": 1219626
+          }
+        ],
+        "name": "Trading Post: May"
       },
       {
         "items": [
@@ -11261,16 +11278,6 @@
             "spellid": 449286
           },
           {
-            "ID": 4757,
-            "creatureId": 238178,
-            "icon": "inv_redpandapet_gray",
-            "itemId": 236409,
-            "name": "Frumpy Softpaw",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1219626
-          },
-          {
             "ID": 4761,
             "creatureId": 239362,
             "icon": "inv_chihuahuadogpet_body_tan",
@@ -12310,14 +12317,6 @@
             "itemId": 32588,
             "name": "Bananas",
             "spellid": 40549
-          },
-          {
-            "ID": 168,
-            "creatureId": 25109,
-            "icon": "inv_misc_enggizmos_rocketchicken",
-            "itemId": 34492,
-            "name": "Rocket Chicken",
-            "spellid": 45125
           },
           {
             "ID": 169,
