@@ -121,6 +121,32 @@
           }
         ],
         "name": "Racial"
+      },
+      {
+        "items": [
+          {
+            "ID": 1587,
+            "icon": "inv_knife_1h_artifactcthun_d_01",
+            "itemId": 244888,
+            "name": "Echo of the Xal'atath, Blade of the Black Empire",
+            "new": true
+          },
+          {
+            "ID": 1594,
+            "icon": "inv_shield_1h_lordaeron_d_01",
+            "itemId": 245631,
+            "name": "Royal Visage",
+            "new": true
+          },
+          {
+            "ID": 1593,
+            "icon": "achievement_boss_triumvirate_shadowguardetherealcaster",
+            "itemId": 245567,
+            "name": "K'aresh Memory Crystal",
+            "new": true
+          }
+        ],
+        "name": "Lorewalking"
       }
     ]
   },
@@ -128,8 +154,7 @@
     "name": "Limited Time",
     "subcats": [
       {
-        "items": [
-        ],
+        "items": [],
         "name": "Trading Post: "
       }
     ]
@@ -175,6 +200,13 @@
             "icon": "inv_10_engineering2_boxofbombs_friendly_color1",
             "itemId": 235050,
             "name": "Desk-in-a-Box"
+          },
+          {
+            "ID": 1545,
+            "icon": "inv_10_blacksmithing_craftedoptional_engineering_uprez",
+            "itemId": 235016,
+            "name": "Redeployment Module",
+            "new": true
           }
         ],
         "name": "Achievement"
@@ -552,14 +584,6 @@
             "icon": "inv_misc_enggizmos_33",
             "itemId": 233202,
             "name": "G.O.L.E.M, Jr."
-          },
-          {
-            "ID": 1545,
-            "icon": "inv_10_blacksmithing_craftedoptional_engineering_uprez",
-            "itemId": 235016,
-            "name": "Redeployment Module",
-            "notObtainable": true,
-            "notReleased": true
           }
         ],
         "name": "Quest"
@@ -6814,6 +6838,20 @@
             "icon": "achievement_alliedrace_nightborne",
             "itemId": 187591,
             "name": "Nightborne Guard's Vigilance"
+          },
+          {
+            "ID": 1595,
+            "icon": "inv_staff_2h_battledungeon_c_02",
+            "itemId": 245942,
+            "name": "Sea-Blessed Shrine",
+            "new": true
+          },
+          {
+            "ID": 1596,
+            "icon": "inv_staff_2h_battledungeon_c_04",
+            "itemId": 246227,
+            "name": "Lightning-Blessed Spire",
+            "new": true
           }
         ],
         "name": "Timewalking"

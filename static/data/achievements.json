@@ -606,6 +606,22 @@
                   "id": 40791,
                   "points": 10,
                   "title": "Fate of the Kirin Tor"
+                },
+                {
+                  "icon": "inv_tabard_stromgarde_c_01",
+                  "id": 41818,
+                  "new": true,
+                  "points": 10,
+                  "side": "A",
+                  "title": "Rise of the Red Dawn"
+                },
+                {
+                  "icon": "inv_tabard_maghar_c_01",
+                  "id": 41820,
+                  "new": true,
+                  "points": 10,
+                  "side": "H",
+                  "title": "Rise of the Red Dawn"
                 }
               ],
               "name": "Campaign"
@@ -7342,6 +7358,18 @@
           "name": "Legion",
           "subcats": [
             {
+              "items": [
+                {
+                  "icon": "achievements_zone_brokenshore",
+                  "id": 42114,
+                  "new": true,
+                  "points": 40,
+                  "title": "Broken Memories"
+                }
+              ],
+              "name": "Meta"
+            },
+            {
               "id": "0a424d88",
               "items": [
                 {
@@ -9401,6 +9429,26 @@
                 }
               ],
               "name": "Brann"
+            },
+            {
+              "id": "1149082e",
+              "items": [
+                {
+                  "icon": "inv_trinket_80_titan01b",
+                  "id": 42212,
+                  "new": true,
+                  "points": 0,
+                  "title": "Titan Console Overcharged"
+                },
+                {
+                  "icon": "inv_trinket_80_titan01b",
+                  "id": 42241,
+                  "new": true,
+                  "points": 0,
+                  "title": "Overcharged Delver"
+                }
+              ],
+              "name": "Overcharged Delves"
             }
           ]
         }
@@ -16418,6 +16466,13 @@
                   "title": "Rift of Aln"
                 },
                 {
+                  "icon": "achievement_emeraldnightmare",
+                  "id": 42029,
+                  "new": true,
+                  "points": 10,
+                  "title": "The Emerald Nightmare"
+                },
+                {
                   "icon": "inv_misc_bugsprayer",
                   "id": 10555,
                   "points": 10,
@@ -16586,6 +16641,13 @@
                   "title": "Betrayer's Rise"
                 },
                 {
+                  "icon": "achievement_thenighthold",
+                  "id": 42030,
+                  "new": true,
+                  "points": 10,
+                  "title": "The Nighthold"
+                },
+                {
                   "icon": "inv_misc_desecrated_plategloves",
                   "id": 10678,
                   "points": 10,
@@ -16736,6 +16798,13 @@
                   "title": "Deceiver's Fall"
                 },
                 {
+                  "icon": "achievement_dungeon_tombofsargeras",
+                  "id": 42031,
+                  "new": true,
+                  "points": 10,
+                  "title": "Tomb of Sargeras"
+                },
+                {
                   "icon": "inv_thanksgiving_turkey",
                   "id": 11724,
                   "points": 10,
@@ -16872,6 +16941,13 @@
                   "id": 11991,
                   "points": 10,
                   "title": "Seat of the Pantheon"
+                },
+                {
+                  "icon": "achievement_raid_argusraid",
+                  "id": 42032,
+                  "new": true,
+                  "points": 10,
+                  "title": "Antorus, the Burning Throne"
                 },
                 {
                   "icon": "ability_hunter_pet_worm",
@@ -29267,16 +29343,22 @@
                   "id": 15310,
                   "points": 20,
                   "title": "A Tour of Towers"
-                },
-                {
-                  "icon": "inv_belt_armor_waistoftime_d_01",
-                  "id": 41056,
-                  "notObtainable": true,
-                  "points": 20,
-                  "title": "Master of the Turbulent Timeways II"
                 }
               ],
               "name": ""
+            },
+            {
+              "id": "f93693bc",
+              "items": [
+                {
+                  "icon": "inv_relics_hourglass",
+                  "id": 41779,
+                  "new": true,
+                  "points": 20,
+                  "title": "Master of the Turbulent Timeways III"
+                }
+              ],
+              "name": "Turbulent Timeways"
             }
           ]
         },
@@ -32599,6 +32681,18 @@
           "name": "Expansion Features",
           "subcats": [
             {
+              "items": [
+                {
+                  "icon": "inv_ability_felscarreddemonhunter_demonsurge",
+                  "id": 42028,
+                  "new": true,
+                  "points": 100,
+                  "title": "Ashes to Ashes"
+                }
+              ],
+              "name": "Legion"
+            },
+            {
               "id": "9a7c4830",
               "items": [
                 {
@@ -32633,6 +32727,39 @@
                 }
               ],
               "name": "Dragonflight"
+            }
+          ]
+        },
+        {
+          "id": "00a0148e",
+          "name": "Lorewalking",
+          "subcats": [
+            {
+              "id": "e98fcd25",
+              "items": [
+                {
+                  "icon": "achievement_boss_triumvirate_shadowguardetherealcaster",
+                  "id": 42187,
+                  "new": true,
+                  "points": 0,
+                  "title": "Lorewalking: Ethereal Wisdom"
+                },
+                {
+                  "icon": "inv_knife_1h_artifactcthun_d_02",
+                  "id": 42188,
+                  "new": true,
+                  "points": 5,
+                  "title": "Lorewalking: Blade's Bane"
+                },
+                {
+                  "icon": "achievement_dungeon_icecrown_frostmourne",
+                  "id": 42189,
+                  "new": true,
+                  "points": 5,
+                  "title": "Lorewalking: The Lich King"
+                }
+              ],
+              "name": "Lorewalking"
             }
           ]
         },
@@ -32822,7 +32949,7 @@
                   "id": 41859,
                   "new": true,
                   "points": 5,
-                  "title": "Thanks For The Mementos"
+                  "title": "Thanks for the Mementos"
                 },
                 {
                   "icon": "archaeology_5_0_mogucoin",
@@ -39754,6 +39881,23 @@
                   "title": "Scourer of the Eternal Sands"
                 },
                 {
+                  "icon": "inv_misc_bone_01",
+                  "id": 8092,
+                  "points": 0,
+                  "title": "I've Got 9999 Problems but a Bone-White Primal Raptor Ain't One"
+                },
+                {
+                  "icon": "inv_brontosaurusmount",
+                  "id": 14183,
+                  "points": 0,
+                  "title": "Conspicuous Consumption"
+                }
+              ],
+              "name": ""
+            },
+            {
+              "items": [
+                {
                   "icon": "ability_mount_charger",
                   "id": 1436,
                   "notObtainable": true,
@@ -39787,21 +39931,9 @@
                   "notObtainable": true,
                   "points": 0,
                   "title": "Friends In Places Higher Yet"
-                },
-                {
-                  "icon": "inv_misc_bone_01",
-                  "id": 8092,
-                  "points": 0,
-                  "title": "I've Got 9999 Problems but a Bone-White Primal Raptor Ain't One"
-                },
-                {
-                  "icon": "inv_brontosaurusmount",
-                  "id": 14183,
-                  "points": 0,
-                  "title": "Conspicuous Consumption"
                 }
               ],
-              "name": ""
+              "name": "Recruit a Friend"
             },
             {
               "id": "37f5b9a9",
@@ -40113,19 +40245,6 @@
                 }
               ],
               "name": "Other"
-            },
-            {
-              "id": "acd9a2c1",
-              "items": [
-                {
-                  "icon": "ability_evoker_bronze_01",
-                  "id": 19079,
-                  "notObtainable": true,
-                  "points": 0,
-                  "title": "Master of the Turbulent Timeways"
-                }
-              ],
-              "name": "Turbulent Timeways"
             }
           ]
         },
@@ -41185,6 +41304,39 @@
             {
               "items": [
                 {
+                  "icon": "achievement_dungeon_heroic_gloryoftheraider",
+                  "id": 42148,
+                  "new": true,
+                  "points": 0,
+                  "title": "The Enterprising Dungeon Master"
+                },
+                {
+                  "icon": "inv_shield_05",
+                  "id": 42139,
+                  "new": true,
+                  "points": 0,
+                  "title": "The Enterprising Tank"
+                },
+                {
+                  "icon": "petbattle_health",
+                  "id": 42141,
+                  "new": true,
+                  "points": 0,
+                  "title": "The Enterprising Healer"
+                },
+                {
+                  "icon": "ability_dualwield",
+                  "id": 42144,
+                  "new": true,
+                  "points": 0,
+                  "title": "The Enterprising Damage Dealer"
+                }
+              ],
+              "name": "Mythic Keystone Roles: The War Within"
+            },
+            {
+              "items": [
+                {
                   "icon": "inv_achievement_dungeon_rookery",
                   "id": 20579,
                   "points": 0,
@@ -41249,6 +41401,13 @@
               "id": "a0bd3c10",
               "items": [
                 {
+                  "icon": "inv_misc_head_clockworkgnome_01",
+                  "id": 13789,
+                  "notObtainable": true,
+                  "points": 0,
+                  "title": "Hertz Locker"
+                },
+                {
                   "icon": "achievement_boss_infinitecorruptor",
                   "id": 18705,
                   "notObtainable": true,
@@ -41257,19 +41416,6 @@
                 }
               ],
               "name": "Dungeon Curves"
-            },
-            {
-              "id": "786c469d",
-              "items": [
-                {
-                  "icon": "inv_misc_head_clockworkgnome_01",
-                  "id": 13789,
-                  "notObtainable": true,
-                  "points": 0,
-                  "title": "Hertz Locker"
-                }
-              ],
-              "name": "Other"
             }
           ]
         },
@@ -45453,11 +45599,31 @@
                   "icon": "achievement_worldevent_dastardlyduos",
                   "id": 41995,
                   "new": true,
-                  "points": 10,
+                  "points": 0,
                   "title": "Boot Hill"
                 }
               ],
               "name": "Dastardly Duos"
+            },
+            {
+              "id": "5350f181",
+              "items": [
+                {
+                  "icon": "ability_evoker_bronze_01",
+                  "id": 19079,
+                  "notObtainable": true,
+                  "points": 0,
+                  "title": "Master of the Turbulent Timeways"
+                },
+                {
+                  "icon": "inv_belt_armor_waistoftime_d_01",
+                  "id": 41056,
+                  "notObtainable": true,
+                  "points": 0,
+                  "title": "Master of the Turbulent Timeways II"
+                }
+              ],
+              "name": "Turbulent Timeways"
             }
           ]
         },
@@ -45571,14 +45737,6 @@
                   "id": 15344,
                   "points": 0,
                   "title": "\"S.A.F.E\" Pilot"
-                },
-                {
-                  "icon": "inv_wooddragonpet",
-                  "id": 19031,
-                  "notObtainable": true,
-                  "notReleased": true,
-                  "points": 0,
-                  "title": "Fyrn"
                 }
               ],
               "name": "Pets"
