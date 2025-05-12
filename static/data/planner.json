@@ -15,7 +15,7 @@
 					"itemId": 63040,
 					"mount": "Drake of the North Wind",
 					"name": "Altairus",
-					"note": "You can run heroic once and 9 normal",
+					"note": "You can run Heroic once per day and up to 10x Normal an hour",
 					"spellId": 88742
 				  }
 				],
@@ -481,7 +481,7 @@
 							"epic": true,
 							"icon": "ability_mount_cockatricemountelite_white",
 							"itemId": 35513,
-							"mount": "White Hawkstrider",
+							"mount": "Swift White Hawkstrider",
 							"name": "Kael'thas",
 							"note": "Heroic only",
 							"spellId": 46628
@@ -585,7 +585,7 @@
 							"epic": true,
 							"icon": "ability_mount_blackpanther",
 							"itemId": 68824,
-							"mount": "Zulian Panther",
+							"mount": "Swift Zulian Panther",
 							"name": "Kilnara",
 							"note": "Heroic only",
 							"spellId": 96499
@@ -595,7 +595,7 @@
 							"epic": true,
 							"icon": "ability_mount_raptor",
 							"itemId": 68823,
-							"mount": "Razzashi Raptor",
+							"mount": "Armored Razzashi Raptor",
 							"name": "Mandokir",
 							"note": "Heroic only",
 							"spellId": 96491
@@ -932,7 +932,7 @@
 					"itemId": 166518,
 					"mount": "G.M.O.D.",
 					"name": "High Tinker Mekkatorque",
-					"note": "LFR/Normal/Heroic/Mythic",
+					"note": "LFR (Jaina)/Normal/Heroic/Mythic",
 					"spellId": 289083
 				  },
 				  {
@@ -1012,6 +1012,27 @@
 				  }
 				],
 				"title": "Walk to Nazmir"
+			  },
+			  {
+				"capital":true,
+				"steps": [
+				  {
+					"bosses": [
+					  {
+						"ID": "1252",
+						"epic": true,
+						"icon": "inv_mechagonspidertank_brass",
+						"itemId": 168826,
+						"mount": "Mechagon Peacekeeper",
+						"name": "HK-8 Aerial Oppression Unit",
+						"note": "Mythic only",
+						"spellId": 299158
+					  }
+					],
+					"title": "Run Mechagon: Junkyard"
+				  }
+				],
+				"title": "Portal to Zandalar / Kul'Tiras and take the Teleporter / Flight Path to Mechagon"
 			  },
 			  {
 				"capital":true,
@@ -1133,6 +1154,311 @@
 			  }
 			],
 			"title": "and Portal to Oribos"
+		  },
+		  {
+			"capital": true,
+			"notes":"Set Hearthstone to Faction Capital",
+			"steps": [
+				{
+					"steps": [
+					  {
+						"bosses": [
+						  {
+							"ID": "69",
+							"epic": true,
+							"icon": "ability_mount_undeadhorse",
+							"itemId": 13335,
+							"mount": "Deathcharger's Reins",
+							"name": "Chrono-Lord Deios",
+							"note": "Mythic only - from Quantum Courser item",
+							"spellId": 17481
+						  },
+						  {
+							"ID": "185",
+							"epic": true,
+							"icon": "inv-mount_raven_54",
+							"itemId": 32768,
+							"mount": "Raven Lord",
+							"name": "Chrono-Lord Deios",
+							"note": "Mythic only - from Quantum Courser item",
+							"spellId": 41252
+						  },
+						  {
+							"ID": "213",
+							"epic": true,
+							"icon": "ability_mount_cockatricemountelite_white",
+							"itemId": 35513,
+							"mount": "Swift White Hawkstrider",
+							"name": "Chrono-Lord Deios",
+							"note": "Mythic only - from Quantum Courser item",
+							"spellId": 46628
+						  },
+						  {
+							"ID": "264",
+							"epic": true,
+							"icon": "ability_mount_drake_proto",
+							"itemId": 44151,
+							"mount": "Blue Proto-Drake",
+							"name": "Chrono-Lord Deios",
+							"note": "Mythic only - from Quantum Courser item",
+							"spellId": 59996
+						  },
+						  {
+							"ID": "395",
+							"epic": true,
+							"icon": "inv_misc_stormdragonpale",
+							"itemId": 63040,
+							"mount": "Drake of the North Wind",
+							"name": "Chrono-Lord Deios",
+							"note": "Mythic only - from Quantum Courser item",
+							"spellId": 88742
+						  },
+						  {
+							"ID": "397",
+							"epic": true,
+							"icon": "inv_misc_stonedragonblue",
+							"itemId": 63043,
+							"mount": "Vitreous Stone Drake",
+							"name": "Chrono-Lord Deios",
+							"note": "Mythic only - from Quantum Courser item",
+							"spellId": 88746
+						  },
+						  {
+							"ID": "410",
+							"epic": true,
+							"icon": "ability_mount_raptor",
+							"itemId": 68823,
+							"mount": "Armored Razzashi Raptor",
+							"name": "Chrono-Lord Deios",
+							"note": "Mythic only - from Quantum Courser item",
+							"spellId": 96491
+						  },
+						  {
+							"ID": "411",
+							"epic": true,
+							"icon": "ability_mount_blackpanther",
+							"itemId": 68824,
+							"mount": "Swift Zulian Panther",
+							"name": "Chrono-Lord Deios",
+							"note": "Mythic only - from Quantum Courser item",
+							"spellId": 96499
+						  },
+						  {
+							"ID": "781",
+							"epic": true,
+							"icon": "inv_infinitedragonmount",
+							"itemId": 133543,
+							"mount": "Infinite Timereaver",
+							"name": "Chrono-Lord Deios",
+							"note": "Mythic only - from Quantum Courser item",
+							"spellId": 201098
+						  },
+						  {
+							"ID": "875",
+							"epic": true,
+							"icon": "inv_skeletalwarhorse_black",
+							"itemId": 142236,
+							"mount": "Midnight's Eternal Reins",
+							"name": "Chrono-Lord Deios",
+							"note": "Mythic only - from Quantum Courser item",
+							"spellId": 229499
+						  },
+						  {
+							"ID": "995",
+							"epic": true,
+							"icon": "inv_misc_food_wheat_02",
+							"itemId": 159842,
+							"mount": "Sharkbait's Favorite Crackers",
+							"name": "Chrono-Lord Deios",
+							"note": "Mythic only - from Quantum Courser item",
+							"spellId": 254813
+						  },
+						  {
+							"ID": "1040",
+							"epic": true,
+							"icon": "inv_armoredraptorundead",
+							"itemId": 159921,
+							"mount": "Mummified Raptor Skull",
+							"name": "Chrono-Lord Deios",
+							"note": "Mythic only - from Quantum Courser item",
+							"spellId": 266058
+						  },
+						  {
+							"ID": "1053",
+							"epic": true,
+							"icon": "inv_archaeology_ogres_chimera_riding_harness",
+							"itemId": 160829,
+							"mount": "Underrot Crawg Harness",
+							"name": "Chrono-Lord Deios",
+							"note": "Mythic only - from Quantum Courser item",
+							"spellId": 273541
+						  },
+						  {
+							"ID": "1252",
+							"epic": true,
+							"icon": "inv_mechagonspidertank_brass",
+							"itemId": 168826,
+							"mount": "Mechagon Peacekeeper",
+							"name": "Chrono-Lord Deios",
+							"note": "Mythic only - from Quantum Courser item",
+							"spellId": 299158
+						  },
+						  {
+							"ID": "1406",
+							"epic": true,
+							"icon": "inv_maldraxxusflyermount_red",
+							"itemId": 181819,
+							"mount": "Marrowfang",
+							"name": "Chrono-Lord Deios",
+							"note": "Mythic only - from Quantum Courser item",
+							"spellId": 336036
+						  },
+						  {
+							"ID": "1481",
+							"epic": true,
+							"icon": "inv_brokermount_dark",
+							"itemId": 186638,
+							"mount": "Cartel Master's Gearglider",
+							"name": "Chrono-Lord Deios",
+							"note": "Mythic only - from Quantum Courser item",
+							"spellId": 353263
+						  }
+						],
+						"title": "Run Dawn of the Infinites"
+					  }
+					],
+					"title": "Flightpath to Dawn of the Infinites"
+				},
+				{
+					"steps": [
+					  {
+						"bosses": [
+						  {
+							"ID": "1818",
+							"epic": true,
+							"icon": "inv_dreamowl_firemount",
+							"itemId": 210061,
+							"mount": "Anu'relos, Flame's Guidance",
+							"name": "Fyrakk",
+							"note": "Mythic only",
+							"spellId": 424484
+						  }
+						],
+						"title": "Run Amirdrassil, the Dream's Hope"
+					  }
+					],
+					"title": "Take the portal to the Emerald Dream in the Emerald Enclave"
+				}
+			],
+			"title": "and Portal to Valdrakken"
+		  },
+		  {
+			"capital": true,
+			"notes":"Set Hearthstone to Faction Capital",
+			"steps": [
+				{
+					"steps": [
+					  {
+						"bosses": [
+						  {
+							"ID": "2119",
+							"epic": true,
+							"icon": "inv_dwarvenmechboss",
+							"itemId": 221765,
+							"mount": "Stonevault Mechsuit",
+							"name": "Void Speaker Eirich",
+							"note": "Mythic only",
+							"spellId": 442358
+						  }
+						],
+						"title": "Run The Stonevault"
+					  }
+					],
+					"title": "Flightpath to The Ringing Deeps"
+				  },
+				  {
+					"steps": [
+					  {
+						"bosses": [
+						  {
+							"ID": "2204",
+							"epic": true,
+							"icon": "inv_molemount_brown",
+							"itemId": 225548,
+							"mount": "Wick",
+							"name": "The Darkness",
+							"note": "Mythic only",
+							"spellId": 449264
+						  }
+						],
+						"title": "Run Darkflame Cleft"
+					  }
+					],
+					"title": "Fly to Darkflame Cleft"
+				  },
+				  {
+					"steps": [
+					  {
+						"bosses": [
+							{
+								"ID": "2219",
+								"epic": true,
+								"icon": "inv_nerubianwarbeastmount_blue",
+								"itemId": 224147,
+								"mount": "Sureki Skyrazor",
+								"name": "Queen Ansurek",
+								"note": "LFR/Normal/Heroic/Mythic",
+								"spellId": 451486
+							},
+							{
+								"ID": "2223",
+								"epic": true,
+								"icon": "inv_nerubianwarbeastmount_white",
+								"itemId": 224151,
+								"mount": "Ascendant Skyrazor",
+								"name": "Queen Ansurek",
+								"note": "Mythic only",
+								"spellId": 451491
+							}
+						],
+						"title": "Run Nerub-ar Palace"
+					  }
+					],
+					"title": "Flightpath to Azj'Kahet"
+				  },
+				  {
+					"capital":true,
+					"steps": [
+					  {
+						"bosses": [
+							{
+								"ID": "2507",
+								"epic": true,
+								"icon": "inv_goblinflyingmachine",
+								"itemId": 236960,
+								"mount": "Prototype A.S.M.R.",
+								"name": "Chrome King Gallywix",
+								"note": "LFR/Normal/Heroic/Mythic",
+								"spellId": 1221155
+							},
+							{
+								"ID": "2487",
+								"epic": true,
+								"icon": "inv_gallywixmechmount",
+								"itemId": 235626,
+								"mount": "The Big G",
+								"name": "Chrome King Gallywix",
+								"note": "Mythic only",
+								"spellId": 235626
+							}
+						],
+						"title": "Run Liberation of Undermine"
+					  }
+					],
+					"title": "and Portal to Dornogal and then take the teleporter to Undermine"
+				  }
+			],
+			"title": "and Portal to Dornogal"
 		  }
 		],
 		"title": ""
