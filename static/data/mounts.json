@@ -10331,6 +10331,7 @@
             "icon": "ability_mount_bigblizzardbear",
             "itemId": 43599,
             "name": "Big Blizzard Bear",
+            "resale": true,
             "spellid": 58983
           },
           {
@@ -10338,6 +10339,7 @@
             "icon": "inv_allianceshipmount",
             "itemId": 151618,
             "name": "Stormwind Skychaser",
+            "resale": true,
             "side": "A",
             "spellid": 245723
           },
@@ -10346,6 +10348,7 @@
             "icon": "inv_hordezeppelinmount",
             "itemId": 151617,
             "name": "Orgrimmar Interceptor",
+            "resale": true,
             "side": "H",
             "spellid": 245725
           },
@@ -10353,6 +10356,7 @@
             "ID": 1517,
             "icon": "4054329",
             "name": "Bound Blizzard",
+            "resale": true,
             "spellid": 358072
           }
         ],
@@ -10378,7 +10382,7 @@
             "icon": "inv_felstalkermount",
             "itemId": 128425,
             "name": "Illidari Felstalker",
-            "notObtainable": true,
+            "resale": true,
             "spellid": 189998
           },
           {
@@ -10386,7 +10390,7 @@
             "icon": "inv_dressedhorse",
             "itemId": 153539,
             "name": "Seabraid Stallion",
-            "notObtainable": true,
+            "resale": true,
             "side": "A",
             "spellid": 255695
           },
@@ -10395,7 +10399,7 @@
             "icon": "inv_armoredraptor",
             "itemId": 153540,
             "name": "Gilded Ravasaur",
-            "notObtainable": true,
+            "resale": true,
             "side": "H",
             "spellid": 255696
           },
@@ -10449,7 +10453,8 @@
             "ID": 2582,
             "icon": "inv_celestialserpentmount_jade",
             "name": "Shaohao's Sage Serpent",
-            "new": true,
+            "notObtainable": true,
+            "notReleased": true,
             "spellid": 1236262
           }
         ],
@@ -10596,6 +10601,7 @@
             "icon": "inv_motorcyclefelreavermount_fire",
             "itemId": 211087,
             "name": "Hateforged Blazecycle",
+            "resale": true,
             "spellid": 428067
           }
         ],
@@ -10677,6 +10683,7 @@
             "icon": "ability_mount_spectraltiger",
             "itemId": 49283,
             "name": "Spectral Tiger",
+            "resale": true,
             "spellid": 42776
           },
           {
@@ -10684,6 +10691,7 @@
             "icon": "ability_mount_spectraltiger",
             "itemId": 49284,
             "name": "Swift Spectral Tiger",
+            "resale": true,
             "spellid": 42777
           },
           {
@@ -10691,6 +10699,7 @@
             "icon": "inv_misc_missilesmall_blue",
             "itemId": 49285,
             "name": "X-51 Nether-Rocket",
+            "resale": true,
             "spellid": 46197
           },
           {
@@ -10712,6 +10721,7 @@
             "icon": "ability_druid_challangingroar",
             "itemId": 49282,
             "name": "Big Battle Bear",
+            "resale": true,
             "spellid": 51412
           },
           {
@@ -10719,6 +10729,7 @@
             "icon": "inv_egg_03",
             "itemId": 49290,
             "name": "Magic Rooster",
+            "resale": true,
             "spellid": 65917
           },
           {
@@ -10726,6 +10737,7 @@
             "icon": "ability_mount_drake_bronze",
             "itemId": 68008,
             "name": "Mottled Drake",
+            "resale": true,
             "spellid": 93623
           },
           {
@@ -10733,6 +10745,7 @@
             "icon": "ability_mount_raptor",
             "itemId": 69228,
             "name": "Savage Raptor",
+            "resale": true,
             "spellid": 97581
           },
           {
@@ -10740,6 +10753,7 @@
             "icon": "ability_hunter_pet_dragonhawk",
             "itemId": 68825,
             "name": "Amani Dragonhawk",
+            "resale": true,
             "spellid": 96503
           },
           {
@@ -10747,6 +10761,7 @@
             "icon": "ability_hunter_pet_tallstrider",
             "itemId": 71718,
             "name": "Swift Shorestrider",
+            "resale": true,
             "spellid": 101573
           },
           {
@@ -10754,6 +10769,7 @@
             "icon": "ability_mount_warhippogryph",
             "itemId": 72582,
             "name": "Corrupted Hippogryph",
+            "resale": true,
             "spellid": 102514
           },
           {
@@ -10761,6 +10777,7 @@
             "icon": "ability_mount_camel_gray",
             "itemId": 72575,
             "name": "White Riding Camel",
+            "resale": true,
             "spellid": 102488
           },
           {
@@ -10768,6 +10785,7 @@
             "icon": "ability_mount_feldrake",
             "itemId": 79771,
             "name": "Feldrake",
+            "resale": true,
             "spellid": 113120
           },
           {
@@ -10775,6 +10793,7 @@
             "icon": "inv_ghostlycharger",
             "itemId": 93671,
             "name": "Ghastly Charger",
+            "resale": true,
             "spellid": 136505
           }
         ],
