@@ -1015,6 +1015,7 @@
 			  },
 			  {
 				"capital":true,
+				"unavailable": true,
 				"steps": [
 				  {
 					"bosses": [
@@ -1357,6 +1358,7 @@
 			"notes":"Set Hearthstone to Faction Capital",
 			"steps": [
 				{
+					"unavailable": true,
 					"steps": [
 					  {
 						"bosses": [
@@ -1394,7 +1396,7 @@
 						"title": "Run Darkflame Cleft"
 					  }
 					],
-					"title": "Fly to Darkflame Cleft"
+					"title": "Flightpath to Ringing Deeps"
 				  },
 				  {
 					"steps": [

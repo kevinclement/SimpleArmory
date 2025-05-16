@@ -69,6 +69,7 @@
 		$preferences.showHiddenFeat = localStorage.getItem('showHiddenFeat') ?? "hidden";
 		$preferences.showUnobtainedOnly = localStorage.getItem('showUnobtainedOnly') ?? "false";
 		$preferences.showUpcoming = localStorage.getItem('showUpcoming') ?? "false";
+		$preferences.hideResale = localStorage.getItem('hideResale') ?? "false";
 	})
 
     function getCharInfoFromURL() {

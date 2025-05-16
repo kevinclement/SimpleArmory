@@ -28,6 +28,7 @@ export async function getPlannerSteps(mountsPromise, region, realm, character) {
 function parseStepsObject(steps, items) {
     var neededSteps = [];
     steps.forEach((step) => {
+        if (step.unavailable) return;
         if (step.steps) {
             var neededChildSteps = parseStepsObject(step.steps, items);
 

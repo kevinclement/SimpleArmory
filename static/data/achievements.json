@@ -8929,7 +8929,12 @@
                   "id": 41097,
                   "points": 10,
                   "title": "Curiosity Never Killed the Looter"
-                },
+                }
+              ],
+              "name": "Mislaid Curiosities"
+            },
+            {
+              "items": [
                 {
                   "icon": "inv__blacksmithing_skeletonkey",
                   "id": 40819,
@@ -8955,7 +8960,7 @@
                   "title": "The Key to Madness"
                 }
               ],
-              "name": "Treasures"
+              "name": "Bountiful Coffers"
             },
             {
               "id": "ee78ad6d",
@@ -9399,7 +9404,7 @@
                   "title": "Sidestreet Sluice Discoveries"
                 }
               ],
-              "name": "Chests"
+              "name": "Sturdy Chests"
             },
             {
               "items": [
@@ -9933,6 +9938,12 @@
               "id": "79289469",
               "items": [
                 {
+                  "icon": "INV_Misc_Rune_07",
+                  "id": 1172,
+                  "points": 25,
+                  "title": "Master of Warsong Gulch"
+                },
+                {
                   "icon": "Ability_Racial_ShadowMeld",
                   "id": 713,
                   "points": 10,
@@ -10047,12 +10058,6 @@
                   "id": 168,
                   "points": 10,
                   "title": "Warsong Gulch Perfection"
-                },
-                {
-                  "icon": "INV_Misc_Rune_07",
-                  "id": 1172,
-                  "points": 25,
-                  "title": "Master of Warsong Gulch"
                 }
               ],
               "name": ""
@@ -10066,6 +10071,12 @@
             {
               "id": "a2b78bbf",
               "items": [
+                {
+                  "icon": "INV_Jewelry_Amulet_07",
+                  "id": 1169,
+                  "points": 25,
+                  "title": "Master of Arathi Basin"
+                },
                 {
                   "icon": "Ability_Warrior_RallyingCry",
                   "id": 711,
@@ -10157,12 +10168,6 @@
                   "id": 165,
                   "points": 20,
                   "title": "Arathi Basin Perfection"
-                },
-                {
-                  "icon": "INV_Jewelry_Amulet_07",
-                  "id": 1169,
-                  "points": 25,
-                  "title": "Master of Arathi Basin"
                 }
               ],
               "name": ""
@@ -10176,6 +10181,12 @@
             {
               "id": "19d39b7c",
               "items": [
+                {
+                  "icon": "Spell_Nature_EyeOfTheStorm",
+                  "id": 1171,
+                  "points": 25,
+                  "title": "Master of Eye of the Storm"
+                },
                 {
                   "icon": "Spell_Nature_BloodLust",
                   "id": 233,
@@ -10247,12 +10258,6 @@
                   "id": 783,
                   "points": 10,
                   "title": "The Perfect Storm"
-                },
-                {
-                  "icon": "Spell_Nature_EyeOfTheStorm",
-                  "id": 1171,
-                  "points": 25,
-                  "title": "Master of Eye of the Storm"
                 }
               ],
               "name": ""
@@ -10266,6 +10271,12 @@
             {
               "id": "524e28e4",
               "items": [
+                {
+                  "icon": "INV_Jewelry_Necklace_21",
+                  "id": 1167,
+                  "points": 25,
+                  "title": "Master of Alterac Valley"
+                },
                 {
                   "icon": "INV_Jewelry_FrostwolfTrinket_05",
                   "id": 708,
@@ -10383,12 +10394,6 @@
                   "points": 20,
                   "side": "A",
                   "title": "Stormpike Perfection"
-                },
-                {
-                  "icon": "INV_Jewelry_Necklace_21",
-                  "id": 1167,
-                  "points": 25,
-                  "title": "Master of Alterac Valley"
                 }
               ],
               "name": ""
@@ -10534,7 +10539,7 @@
                   "title": "Tour of Duty"
                 }
               ],
-              "name": "Ashran"
+              "name": ""
             },
             {
               "id": "9e539439",
@@ -10554,7 +10559,7 @@
                   "title": "Wrynn's Vanguard"
                 }
               ],
-              "name": "Ashran Reputation"
+              "name": "Reputation"
             },
             {
               "id": "cb24c606",
@@ -10585,6 +10590,20 @@
             {
               "id": "5f6d56ca",
               "items": [
+                {
+                  "icon": "Achievement_BG_winWSG",
+                  "id": 3957,
+                  "points": 25,
+                  "side": "H",
+                  "title": "Master of Isle of Conquest"
+                },
+                {
+                  "icon": "Achievement_BG_winWSG",
+                  "id": 3857,
+                  "points": 25,
+                  "side": "A",
+                  "title": "Master of Isle of Conquest"
+                },
                 {
                   "icon": "INV_Misc_Bomb_01",
                   "id": 3848,
@@ -10692,20 +10711,6 @@
                   "points": 10,
                   "side": "H",
                   "title": "Mine"
-                },
-                {
-                  "icon": "Achievement_BG_winWSG",
-                  "id": 3857,
-                  "points": 25,
-                  "side": "A",
-                  "title": "Master of Isle of Conquest"
-                },
-                {
-                  "icon": "Achievement_BG_winWSG",
-                  "id": 3957,
-                  "points": 25,
-                  "side": "H",
-                  "title": "Master of Isle of Conquest"
                 }
               ],
               "name": ""
@@ -10720,52 +10725,10 @@
               "id": "df9f6638",
               "items": [
                 {
-                  "icon": "inv_misc_statue_07",
-                  "id": 1722,
+                  "icon": "spell_frost_chillingblast",
+                  "id": 1752,
                   "points": 10,
-                  "title": "Archavon the Stone Watcher (10 player)"
-                },
-                {
-                  "icon": "inv_misc_statue_07",
-                  "id": 1721,
-                  "points": 10,
-                  "title": "Archavon the Stone Watcher (25 player)"
-                },
-                {
-                  "icon": "inv_misc_statue_10",
-                  "id": 3136,
-                  "points": 10,
-                  "title": "Emalon the Storm Watcher (10 player)"
-                },
-                {
-                  "icon": "inv_misc_statue_10",
-                  "id": 3137,
-                  "points": 10,
-                  "title": "Emalon the Storm Watcher (25 player)"
-                },
-                {
-                  "icon": "spell_fire_totemofwrath",
-                  "id": 3836,
-                  "points": 10,
-                  "title": "Koralon the Flame Watcher (10 player)"
-                },
-                {
-                  "icon": "spell_fire_totemofwrath",
-                  "id": 3837,
-                  "points": 10,
-                  "title": "Koralon the Flame Watcher (25 player)"
-                },
-                {
-                  "icon": "spell_frost_frostbrand",
-                  "id": 4585,
-                  "points": 10,
-                  "title": "Toravon the Ice Watcher (10 player)"
-                },
-                {
-                  "icon": "spell_frost_frostbrand",
-                  "id": 4586,
-                  "points": 10,
-                  "title": "Toravon the Ice Watcher (25 player)"
+                  "title": "Master of Wintergrasp"
                 },
                 {
                   "icon": "ability_mount_mammoth_black",
@@ -10828,15 +10791,62 @@
                   "id": 1718,
                   "points": 10,
                   "title": "Wintergrasp Veteran"
-                },
-                {
-                  "icon": "spell_frost_chillingblast",
-                  "id": 1752,
-                  "points": 10,
-                  "title": "Master of Wintergrasp"
                 }
               ],
               "name": ""
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_misc_statue_07",
+                  "id": 1722,
+                  "points": 10,
+                  "title": "Archavon the Stone Watcher (10 player)"
+                },
+                {
+                  "icon": "inv_misc_statue_07",
+                  "id": 1721,
+                  "points": 10,
+                  "title": "Archavon the Stone Watcher (25 player)"
+                },
+                {
+                  "icon": "inv_misc_statue_10",
+                  "id": 3136,
+                  "points": 10,
+                  "title": "Emalon the Storm Watcher (10 player)"
+                },
+                {
+                  "icon": "inv_misc_statue_10",
+                  "id": 3137,
+                  "points": 10,
+                  "title": "Emalon the Storm Watcher (25 player)"
+                },
+                {
+                  "icon": "spell_fire_totemofwrath",
+                  "id": 3836,
+                  "points": 10,
+                  "title": "Koralon the Flame Watcher (10 player)"
+                },
+                {
+                  "icon": "spell_fire_totemofwrath",
+                  "id": 3837,
+                  "points": 10,
+                  "title": "Koralon the Flame Watcher (25 player)"
+                },
+                {
+                  "icon": "spell_frost_frostbrand",
+                  "id": 4585,
+                  "points": 10,
+                  "title": "Toravon the Ice Watcher (10 player)"
+                },
+                {
+                  "icon": "spell_frost_frostbrand",
+                  "id": 4586,
+                  "points": 10,
+                  "title": "Toravon the Ice Watcher (25 player)"
+                }
+              ],
+              "name": "Vault of Archavon"
             }
           ]
         },
@@ -10847,6 +10857,12 @@
             {
               "id": "8cce520b",
               "items": [
+                {
+                  "icon": "achievement_battleground_battleforgilneas",
+                  "id": 5258,
+                  "points": 25,
+                  "title": "Master of the Battle for Gilneas"
+                },
                 {
                   "icon": "achievement_doublerainbow",
                   "id": 5262,
@@ -10930,12 +10946,6 @@
                   "id": 5246,
                   "points": 10,
                   "title": "Battle for Gilneas Veteran"
-                },
-                {
-                  "icon": "achievement_battleground_battleforgilneas",
-                  "id": 5258,
-                  "points": 25,
-                  "title": "Master of the Battle for Gilneas"
                 }
               ],
               "name": ""
@@ -10949,6 +10959,12 @@
             {
               "id": "e4f61970",
               "items": [
+                {
+                  "icon": "Spell_Nature_EarthShock",
+                  "id": 5223,
+                  "points": 25,
+                  "title": "Master of Twin Peaks"
+                },
                 {
                   "icon": "INV_Misc_Head_Dwarf_01",
                   "id": 5228,
@@ -11074,12 +11090,6 @@
                   "id": 5209,
                   "points": 10,
                   "title": "Twin Peaks Veteran"
-                },
-                {
-                  "icon": "Spell_Nature_EarthShock",
-                  "id": 5223,
-                  "points": 25,
-                  "title": "Master of Twin Peaks"
                 }
               ],
               "name": ""
@@ -11093,6 +11103,12 @@
             {
               "id": "8d21d88f",
               "items": [
+                {
+                  "icon": "achievement_battleground_silvershardmines",
+                  "id": 7106,
+                  "points": 10,
+                  "title": "Master of Silvershard Mines"
+                },
                 {
                   "icon": "achievement_battleground_silvershardmines",
                   "id": 6739,
@@ -11152,12 +11168,6 @@
                   "id": 7103,
                   "points": 10,
                   "title": "Greed is Good"
-                },
-                {
-                  "icon": "achievement_battleground_silvershardmines",
-                  "id": 7106,
-                  "points": 10,
-                  "title": "Master of Silvershard Mines"
                 }
               ],
               "name": ""
@@ -11171,6 +11181,12 @@
             {
               "id": "d99eb0d0",
               "items": [
+                {
+                  "icon": "achievement_battleground_templeofkotmogu",
+                  "id": 6981,
+                  "points": 10,
+                  "title": "Master of Temple of Kotmogu"
+                },
                 {
                   "icon": "achievement_battleground_templeofkotmogu",
                   "id": 6740,
@@ -11224,12 +11240,6 @@
                   "id": 6980,
                   "points": 10,
                   "title": "Temple of Kotmogu All-Star"
-                },
-                {
-                  "icon": "achievement_battleground_templeofkotmogu",
-                  "id": 6981,
-                  "points": 10,
-                  "title": "Master of Temple of Kotmogu"
                 }
               ],
               "name": ""
@@ -11242,6 +11252,12 @@
           "subcats": [
             {
               "items": [
+                {
+                  "icon": "ability_warrior_intensifyrage",
+                  "id": 12412,
+                  "points": 25,
+                  "title": "Master of Seething Shore"
+                },
                 {
                   "icon": "achievement_zone_sholazar_07",
                   "id": 12409,
@@ -11289,12 +11305,6 @@
                   "id": 12407,
                   "points": 20,
                   "title": "Seething Shore Perfection"
-                },
-                {
-                  "icon": "ability_warrior_intensifyrage",
-                  "id": 12412,
-                  "points": 25,
-                  "title": "Master of Seething Shore"
                 }
               ],
               "name": ""
@@ -11308,6 +11318,12 @@
             {
               "id": "1363cb3b",
               "items": [
+                {
+                  "icon": "achievement_bg_dg_master_of_the_deepwind_gorge",
+                  "id": 14175,
+                  "points": 10,
+                  "title": "Master of Deepwind Gorge"
+                },
                 {
                   "icon": "achievement_bg_abshutout",
                   "id": 8333,
@@ -11325,12 +11341,6 @@
                   "id": 8331,
                   "points": 10,
                   "title": "Deepwind Gorge Victory"
-                },
-                {
-                  "icon": "achievement_bg_dg_master_of_the_deepwind_gorge",
-                  "id": 14175,
-                  "points": 10,
-                  "title": "Master of Deepwind Gorge"
                 },
                 {
                   "icon": "achievement_cooking_masterofthesteamer",
@@ -11361,6 +11371,12 @@
           "subcats": [
             {
               "items": [
+                {
+                  "icon": "inv_achievement_battleground_earthen",
+                  "id": 40617,
+                  "points": 25,
+                  "title": "Deepholla"
+                },
                 {
                   "icon": "inv_achievement_battleground_earthen",
                   "id": 40210,
@@ -11420,12 +11436,6 @@
                   "id": 40616,
                   "points": 10,
                   "title": "Unexpected Arrivals"
-                },
-                {
-                  "icon": "inv_achievement_battleground_earthen",
-                  "id": 40617,
-                  "points": 25,
-                  "title": "Deepholla"
                 }
               ],
               "name": ""
@@ -15837,7 +15847,7 @@
                   "title": "Unbound Monstrosities"
                 }
               ],
-              "name": "World"
+              "name": "World Bosses"
             },
             {
               "id": "ba6fd32a",
@@ -18090,7 +18100,7 @@
                   "title": "The Legion Will NOT Conquer All"
                 }
               ],
-              "name": "World"
+              "name": "World Bosses"
             }
           ]
         },
@@ -19079,18 +19089,6 @@
               "name": "Siege of Orgrimmar"
             },
             {
-              "id": "ce08fda2",
-              "items": [
-                {
-                  "icon": "inv_pa_celestialmallet",
-                  "id": 8535,
-                  "points": 10,
-                  "title": "Celestial Challenge"
-                }
-              ],
-              "name": "Timeless Isle"
-            },
-            {
               "id": "b8465ad6",
               "items": [
                 {
@@ -19116,9 +19114,15 @@
                   "id": 8028,
                   "points": 10,
                   "title": "Praise the Sun!"
+                },
+                {
+                  "icon": "inv_pa_celestialmallet",
+                  "id": 8535,
+                  "points": 10,
+                  "title": "Celestial Challenge"
                 }
               ],
-              "name": "World"
+              "name": "World Bosses"
             }
           ]
         },
@@ -21110,7 +21114,7 @@
                   "title": "Earth, Wind & Fire (25 player)"
                 }
               ],
-              "name": "Wrath of the Lich King"
+              "name": "Vault of Archavon"
             },
             {
               "id": "1ea8e3b6",
@@ -21394,7 +21398,7 @@
               ],
               "name": "Icecrown Citadel (Normal) (10 player)"
             },
-            {
+                        {
               "id": "29e5f824",
               "items": [
                 {
@@ -21435,24 +21439,6 @@
                 }
               ],
               "name": "Icecrown Citadel (Heroic) (10 player)"
-            },
-            {
-              "id": "3275e1d6",
-              "items": [
-                {
-                  "icon": "Spell_Shadow_Twilight",
-                  "id": 4817,
-                  "points": 10,
-                  "title": "The Twilight Destroyer (10 player)"
-                },
-                {
-                  "icon": "Spell_Shadow_Twilight",
-                  "id": 4818,
-                  "points": 10,
-                  "title": "Heroic: The Twilight Destroyer (10 player)"
-                }
-              ],
-              "name": "The Ruby Sanctum (10 player)"
             },
             {
               "id": "84fe80fd",
@@ -21615,6 +21601,24 @@
                 }
               ],
               "name": "Icecrown Citadel (Heroic) (25 player)"
+            },
+            {
+              "id": "3275e1d6",
+              "items": [
+                {
+                  "icon": "Spell_Shadow_Twilight",
+                  "id": 4817,
+                  "points": 10,
+                  "title": "The Twilight Destroyer (10 player)"
+                },
+                {
+                  "icon": "Spell_Shadow_Twilight",
+                  "id": 4818,
+                  "points": 10,
+                  "title": "Heroic: The Twilight Destroyer (10 player)"
+                }
+              ],
+              "name": "The Ruby Sanctum (10 player)"
             },
             {
               "id": "c3f5b02c",
@@ -25183,7 +25187,12 @@
                   "id": 9422,
                   "points": 10,
                   "title": "The Search For Fact, Not Truth"
-                },
+                }
+              ],
+              "name": "Artifacts"
+            },
+            {
+              "items": [
                 {
                   "icon": "inv_misc_shovel_01",
                   "id": 10607,
@@ -25215,7 +25224,7 @@
                   "title": "Lengthy Legwork"
                 }
               ],
-              "name": "Counts"
+              "name": "Completion"
             },
             {
               "id": "69a2692d",
@@ -31905,7 +31914,7 @@
                   "title": "Thanks for the Carry!"
                 }
               ],
-              "name": "Mount Count"
+              "name": "Count"
             },
             {
               "id": "4d1e4719",
@@ -31928,6 +31937,12 @@
             {
               "id": "137378e0",
               "items": [
+                {
+                  "icon": "inv_jewelry_ring_42",
+                  "id": 10694,
+                  "points": 10,
+                  "title": "Fabulous"
+                },
                 {
                   "icon": "inv_misc_cape_18",
                   "id": 10687,
@@ -31999,12 +32014,6 @@
                   "id": 10688,
                   "points": 5,
                   "title": "Fashionista: Wrist"
-                },
-                {
-                  "icon": "inv_jewelry_ring_42",
-                  "id": 10694,
-                  "points": 10,
-                  "title": "Fabulous"
                 }
               ],
               "name": "Appearances"
@@ -32574,7 +32583,13 @@
                   "id": 16700,
                   "points": 5,
                   "title": "Renewed Proto-Drake Horns and Hair"
-                },
+                }
+              ],
+              "name": "Renewed Proto-Drake"
+            },
+            {
+              "items": [
+                
                 {
                   "icon": "inv_companionpterrordaxdrake",
                   "id": 16701,
@@ -32604,7 +32619,12 @@
                   "id": 16706,
                   "points": 5,
                   "title": "Windborne Velocidrake Back and Tail"
-                },
+                }
+              ],
+              "name": "Windborne Velocidrake"
+            },
+            {
+              "items": [
                 {
                   "icon": "inv_companiondrake",
                   "id": 16707,
@@ -32634,7 +32654,12 @@
                   "id": 16712,
                   "points": 5,
                   "title": "Highland Drake Head Features"
-                },
+                }
+              ],
+              "name": "Highland Drake"
+            },
+            {
+              "items": [
                 {
                   "icon": "inv_companionwyvern",
                   "id": 16723,
@@ -32666,7 +32691,7 @@
                   "title": "Cliffside Wylderdrake Head Features"
                 }
               ],
-              "name": ""
+              "name": "Cliffside Wylderdrake"
             }
           ]
         }
@@ -32680,18 +32705,6 @@
           "id": "9bd0d8f9",
           "name": "Expansion Features",
           "subcats": [
-            {
-              "items": [
-                {
-                  "icon": "inv_ability_felscarreddemonhunter_demonsurge",
-                  "id": 42028,
-                  "new": true,
-                  "points": 100,
-                  "title": "Ashes to Ashes"
-                }
-              ],
-              "name": "Legion"
-            },
             {
               "id": "9a7c4830",
               "items": [
@@ -36663,7 +36676,12 @@
                   "id": 9128,
                   "points": 5,
                   "title": "Grand Master Draftsman"
-                },
+                }
+              ],
+              "name": "Blueprints"
+            },
+            {
+              "items": [
                 {
                   "icon": "inv_letter_01",
                   "id": 9405,
@@ -36683,7 +36701,7 @@
                   "title": "Working Many Orders"
                 }
               ],
-              "name": "Blueprints"
+              "name": "Work Orders"
             },
             {
               "id": "24b9b861",
@@ -40907,6 +40925,13 @@
                   "title": "Shadowlands Keystone Hero: Season Three"
                 },
                 {
+                  "icon": "achievement_challengemode_platinum",
+                  "id": 15691,
+                  "notObtainable": true,
+                  "points": 0,
+                  "title": "Cryptic Hero: Shadowlands Season 3"
+                },
+                {
                   "icon": "achievement_challengemode_silver",
                   "id": 15688,
                   "notObtainable": true,
@@ -40926,13 +40951,6 @@
                   "notObtainable": true,
                   "points": 0,
                   "title": "Shadowlands Keystone Master: Season Four"
-                },
-                {
-                  "icon": "achievement_challengemode_platinum",
-                  "id": 15691,
-                  "notObtainable": true,
-                  "points": 0,
-                  "title": "Cryptic Hero: Shadowlands Season 3"
                 },
                 {
                   "icon": "achievement_challengemode_platinum",
@@ -41306,28 +41324,24 @@
                 {
                   "icon": "achievement_dungeon_heroic_gloryoftheraider",
                   "id": 42148,
-                  "new": true,
                   "points": 0,
                   "title": "The Enterprising Dungeon Master"
                 },
                 {
                   "icon": "inv_shield_05",
                   "id": 42139,
-                  "new": true,
                   "points": 0,
                   "title": "The Enterprising Tank"
                 },
                 {
                   "icon": "petbattle_health",
                   "id": 42141,
-                  "new": true,
                   "points": 0,
                   "title": "The Enterprising Healer"
                 },
                 {
                   "icon": "ability_dualwield",
                   "id": 42144,
-                  "new": true,
                   "points": 0,
                   "title": "The Enterprising Damage Dealer"
                 }

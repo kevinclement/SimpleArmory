@@ -96,6 +96,10 @@ export function getShowUpcomingSetting() {
     return(localStorage.getItem("showUpcoming"));
 }
 
+export function getHideResaleSetting() {
+    return(localStorage.getItem("hideResale"));
+}
+
 export function getShowHiddenUpdated() {
     return(localStorage.getItem("showHiddenUpdated"));
 }

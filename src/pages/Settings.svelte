@@ -95,6 +95,16 @@
 		localStorage.setItem('showUpcoming', $preferences.showUpcoming);
   }
 
+  let hideResale = $preferences.hideResale == "false" ? false : true;
+
+  const toggleHideResale = (e) => {
+    e.preventDefault();
+		$preferences.hideResale = hideResale == true ? "true" : "false";
+
+    localStorage.setItem('showHiddenUpdated',Date.now());
+		localStorage.setItem('hideResale', $preferences.hideResale);
+  }
+
   function setLocale(e, wowhead_url) {
     e.preventDefault();
 
@@ -146,6 +156,10 @@
 
     <div>
       <input type="checkbox" id="showUpcoming" bind:checked={showUpcoming} on:change={toggleShowUpcoming}><label for="showUpcoming">&nbsp Show Upcoming Content</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="hideResale" bind:checked={hideResale} on:change={toggleHideResale}><label for="hideResale">&nbsp Hide Resale Exclusive Content: TCG / Collector's Edition / Blizzcon / Promotion</label>
     </div>
 
     <div>
