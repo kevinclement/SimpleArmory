@@ -343,27 +343,6 @@
       {
         "items": [
           {
-            "icon": "achievement_challengemode_silver",
-            "id": 20524,
-            "name": "The Tempered",
-            "notObtainable": true,
-            "titleId": 579,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_challengemode_platinum",
-            "id": 20589,
-            "name": "The Tempered Hero",
-            "notObtainable": true,
-            "titleId": 548,
-            "type": "achievement"
-          }
-        ],
-        "name": "Mythic Plus"
-      },
-      {
-        "items": [
-          {
             "icon": "inv_cape_special_treasure_c_01",
             "id": 40506,
             "name": "Seeker of Loot",
@@ -558,10 +537,6 @@
         "name": "Exploration"
       },
       {
-        "items": [],
-        "name": "Mythic Plus"
-      },
-      {
         "items": [
           {
             "icon": "inv_checkered_flag",
@@ -627,9 +602,15 @@
         "items": [
           {
             "icon": "spell_nzinsanity_shortsighted",
+            "id": 41953,
+            "name": "The Faceless One",
+            "titleId": 631,
+            "type": "achievement"
+          },
+          {
+            "icon": "spell_nzinsanity_shortsighted",
             "id": 41971,
             "name": "The Mad",
-            "new": true,
             "titleId": 631,
             "type": "achievement"
           }
@@ -845,75 +826,6 @@
           }
         ],
         "name": "Quests"
-      },
-      {
-        "items": [
-          {
-            "icon": "achievement_challengemode_gold",
-            "id": 16648,
-            "name": "The Thundering",
-            "notObtainable": true,
-            "titleId": 477,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_challengemode_platinum",
-            "id": 16429,
-            "name": "The Thundering Hero",
-            "notObtainable": true,
-            "titleId": 470,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_challengemode_gold",
-            "id": 17843,
-            "name": "The Smoldering",
-            "notObtainable": true,
-            "titleId": 503,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_challengemode_platinum",
-            "id": 17846,
-            "name": "The Smoldering Hero",
-            "notObtainable": true,
-            "titleId": 504,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_challengemode_gold",
-            "id": 19010,
-            "name": "The Dreaming",
-            "notObtainable": true,
-            "titleId": 517,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_challengemode_platinum",
-            "id": 19449,
-            "name": "The Dreaming Hero",
-            "notObtainable": true,
-            "titleId": 531,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_challengemode_gold",
-            "id": 19781,
-            "name": "The Draconic",
-            "notObtainable": true,
-            "titleId": 537,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_challengemode_platinum",
-            "id": 19785,
-            "name": "The Draconic Hero",
-            "notObtainable": true,
-            "titleId": 538,
-            "type": "achievement"
-          }
-        ],
-        "name": "Mythic Plus"
       },
       {
         "items": [
@@ -3489,67 +3401,67 @@
         "items": [
           {
             "icon": "inv_cape_special_treasure_c_01",
-            "id": 875,
+            "id": 41152,
             "name": "Landlubber",
             "notObtainable": true,
             "titleId": 600,
-            "type": "title"
+            "type": "achievement"
           },
           {
             "icon": "inv_cape_special_treasure_c_01",
-            "id": 815,
+            "id": 41153,
             "name": "Swabbie",
             "notObtainable": true,
             "titleId": 542,
-            "type": "title"
+            "type": "achievement"
           },
           {
             "icon": "inv_cape_special_treasure_c_01",
-            "id": 816,
+            "id": 41154,
             "name": "Deck Hand",
             "notObtainable": true,
             "titleId": 543,
-            "type": "title"
+            "type": "achievement"
           },
           {
             "icon": "inv_cape_special_treasure_c_01",
-            "id": 817,
+            "id": 41156,
             "name": "Swashbuckler",
             "notObtainable": true,
             "titleId": 544,
-            "type": "title"
+            "type": "achievement"
           },
           {
             "icon": "inv_cape_special_treasure_c_01",
-            "id": 818,
+            "id": 41157,
             "name": "Buccaneer",
             "notObtainable": true,
             "titleId": 545,
-            "type": "title"
+            "type": "achievement"
           },
           {
             "icon": "inv_cape_special_treasure_c_01",
-            "id": 819,
+            "id": 41163,
             "name": "First Mate",
             "notObtainable": true,
             "titleId": 546,
-            "type": "title"
+            "type": "achievement"
           },
           {
             "icon": "inv_cape_special_treasure_c_01",
-            "id": 810,
+            "id": 41163,
             "name": "Plunderlord",
             "notObtainable": true,
             "titleId": 541,
-            "type": "title"
+            "type": "achievement"
           },
           {
             "icon": "inv_cape_special_treasure_c_01",
-            "id": 876,
+            "id": 41160,
             "name": "The Treasured",
             "notObtainable": true,
             "titleId": 601,
-            "type": "title"
+            "type": "achievement"
           }
         ],
         "name": "Plunderstorm"
@@ -3970,6 +3882,47 @@
             "notObtainable": true,
             "titleId": 465,
             "type": "achievement"
+          },
+          {
+            "icon": "achievement_challengemode_gold",
+            "id": 16648,
+            "name": "The Thundering",
+            "notObtainable": true,
+            "titleId": 477,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_challengemode_gold",
+            "id": 17843,
+            "name": "The Smoldering",
+            "notObtainable": true,
+            "titleId": 503,
+            "type": "achievement"
+          },
+          
+          {
+            "icon": "achievement_challengemode_gold",
+            "id": 19010,
+            "name": "The Dreaming",
+            "notObtainable": true,
+            "titleId": 517,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_challengemode_gold",
+            "id": 19781,
+            "name": "The Draconic",
+            "notObtainable": true,
+            "titleId": 537,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_challengemode_silver",
+            "id": 20524,
+            "name": "The Tempered",
+            "notObtainable": true,
+            "titleId": 579,
+            "type": "achievement"
           }
         ],
         "name": "Mythic Plus"
@@ -3998,6 +3951,46 @@
             "name": "The Shrouded Hero",
             "notObtainable": true,
             "titleId": 466,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_challengemode_platinum",
+            "id": 16429,
+            "name": "The Thundering Hero",
+            "notObtainable": true,
+            "titleId": 470,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_challengemode_platinum",
+            "id": 17846,
+            "name": "The Smoldering Hero",
+            "notObtainable": true,
+            "titleId": 504,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_challengemode_platinum",
+            "id": 19449,
+            "name": "The Dreaming Hero",
+            "notObtainable": true,
+            "titleId": 531,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_challengemode_platinum",
+            "id": 19785,
+            "name": "The Draconic Hero",
+            "notObtainable": true,
+            "titleId": 538,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_challengemode_platinum",
+            "id": 20589,
+            "name": "The Tempered Hero",
+            "notObtainable": true,
+            "titleId": 548,
             "type": "achievement"
           }
         ],
