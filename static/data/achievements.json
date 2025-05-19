@@ -11930,6 +11930,29 @@
                   "title": "Brutally Dedicated"
                 },
                 {
+                  "icon": "Ability_Hunter_Pathfinding",
+                  "id": 699,
+                  "points": 10,
+                  "title": "World Wide Winner"
+                },
+                {
+                  "icon": "Spell_Fire_Fire",
+                  "id": 408,
+                  "points": 10,
+                  "title": "Hot Streak"
+                },
+                {
+                  "icon": "Spell_Fire_Fire",
+                  "id": 1162,
+                  "points": 10,
+                  "title": "Hotter Streak"
+                }
+              ],
+              "name": "Wins"
+            },
+            {
+              "items": [
+                {
                   "icon": "Achievement_FeatsOfStrength_Gladiator_04",
                   "id": 2090,
                   "points": 10,
@@ -11952,27 +11975,9 @@
                   "id": 2091,
                   "points": 10,
                   "title": "Gladiator"
-                },
-                {
-                  "icon": "Ability_Hunter_Pathfinding",
-                  "id": 699,
-                  "points": 10,
-                  "title": "World Wide Winner"
-                },
-                {
-                  "icon": "Spell_Fire_Fire",
-                  "id": 408,
-                  "points": 10,
-                  "title": "Hot Streak"
-                },
-                {
-                  "icon": "Spell_Fire_Fire",
-                  "id": 1162,
-                  "points": 10,
-                  "title": "Hotter Streak"
                 }
               ],
-              "name": "Other"
+              "name": "Rating"
             },
             {
               "id": "38b722d8",
@@ -23034,6 +23039,53 @@
                   "title": "Look, You're Specialized!"
                 },
                 {
+                  "icon": "inv_alchemy_silussphere01",
+                  "id": 18770,
+                  "points": 10,
+                  "title": "Silas' Sphere of Transmutation"
+                },
+                {
+                  "icon": "inv_enchant_alchemistcauldron",
+                  "id": 18805,
+                  "points": 5,
+                  "title": "Draconic Phial Cabinet"
+                },
+                {
+                  "icon": "inv_alchemy_80_alchemiststone02",
+                  "id": 18904,
+                  "points": 5,
+                  "title": "Iron to Vendor Gold"
+                },
+                {
+                  "icon": "inv_alchemy_80_elixir01purple",
+                  "id": 18963,
+                  "points": 5,
+                  "title": "Burst Damage"
+                },
+                {
+                  "icon": "inv_11_alchemy_profession_cauldron04",
+                  "id": 19704,
+                  "points": 5,
+                  "title": "Overflowing Algari Flasks"
+                },
+                {
+                  "icon": "inv_11_alchemy_profession_cauldron01",
+                  "id": 19716,
+                  "points": 5,
+                  "title": "Plentiful Algari Potions"
+                }
+              ],
+              "name": ""
+            },
+            {
+              "items": [
+                {
+                  "icon": "achievement_guildperk_chug-a-lug_rank2",
+                  "id": 18934,
+                  "points": 10,
+                  "title": "Excessive Experimentation"
+                },
+                {
                   "icon": "trade_alchemy_potiona2",
                   "id": 18726,
                   "points": 5,
@@ -23080,51 +23132,9 @@
                   "id": 18737,
                   "points": 5,
                   "title": "Powerful Concoctions IV"
-                },
-                {
-                  "icon": "inv_alchemy_silussphere01",
-                  "id": 18770,
-                  "points": 10,
-                  "title": "Silas' Sphere of Transmutation"
-                },
-                {
-                  "icon": "inv_enchant_alchemistcauldron",
-                  "id": 18805,
-                  "points": 5,
-                  "title": "Draconic Phial Cabinet"
-                },
-                {
-                  "icon": "inv_alchemy_80_alchemiststone02",
-                  "id": 18904,
-                  "points": 5,
-                  "title": "Iron to Vendor Gold"
-                },
-                {
-                  "icon": "achievement_guildperk_chug-a-lug_rank2",
-                  "id": 18934,
-                  "points": 10,
-                  "title": "Excessive Experimentation"
-                },
-                {
-                  "icon": "inv_alchemy_80_elixir01purple",
-                  "id": 18963,
-                  "points": 5,
-                  "title": "Burst Damage"
-                },
-                {
-                  "icon": "inv_11_alchemy_profession_cauldron04",
-                  "id": 19704,
-                  "points": 5,
-                  "title": "Overflowing Algari Flasks"
-                },
-                {
-                  "icon": "inv_11_alchemy_profession_cauldron01",
-                  "id": 19716,
-                  "points": 5,
-                  "title": "Plentiful Algari Potions"
                 }
               ],
-              "name": ""
+              "name": "Count"
             }
           ]
         },
@@ -23164,7 +23174,12 @@
                   "id": 18853,
                   "points": 5,
                   "title": "Seething Flames of Hatred"
-                },
+                }
+              ],
+              "name": ""
+            },
+            {
+              "items": [
                 {
                   "icon": "inv_blacksmith_anvil",
                   "id": 18862,
@@ -23190,7 +23205,7 @@
                   "title": "Anvil Mastery IV"
                 }
               ],
-              "name": ""
+              "name": "Count"
             }
           ]
         },
@@ -23214,6 +23229,29 @@
                   "title": "Break Upon Your Body"
                 },
                 {
+                  "icon": "inv_enchanting_815_drustrod",
+                  "id": 18775,
+                  "points": 10,
+                  "title": "Iwen's Enchanting Rod"
+                },
+                {
+                  "icon": "inv_misc_largeshard_superior",
+                  "id": 18785,
+                  "points": 5,
+                  "title": "Shattered Expectations"
+                },
+                {
+                  "icon": "inv_ingot_eternium",
+                  "id": 18789,
+                  "points": 5,
+                  "title": "Simply Enchanting"
+                }
+              ],
+              "name": ""
+            },
+            {
+              "items": [
+                {
                   "icon": "inv_enchant_disenchant",
                   "id": 18766,
                   "points": 10,
@@ -23236,24 +23274,6 @@
                   "id": 18769,
                   "points": 10,
                   "title": "Disenchantment IV"
-                },
-                {
-                  "icon": "inv_enchanting_815_drustrod",
-                  "id": 18775,
-                  "points": 10,
-                  "title": "Iwen's Enchanting Rod"
-                },
-                {
-                  "icon": "inv_misc_largeshard_superior",
-                  "id": 18785,
-                  "points": 5,
-                  "title": "Shattered Expectations"
-                },
-                {
-                  "icon": "inv_ingot_eternium",
-                  "id": 18789,
-                  "points": 5,
-                  "title": "Simply Enchanting"
                 },
                 {
                   "icon": "inv_enchant_shardradientsmall",
@@ -23280,7 +23300,7 @@
                   "title": "Enchantment IV"
                 }
               ],
-              "name": ""
+              "name": "Count"
             }
           ]
         },
@@ -23322,30 +23342,6 @@
                   "title": "That's No Ordinary Gas Cloud!"
                 },
                 {
-                  "icon": "10prof_portabletable_engineering01",
-                  "id": 18872,
-                  "points": 10,
-                  "title": "Dangerous Devices I"
-                },
-                {
-                  "icon": "10prof_portabletable_engineering01",
-                  "id": 18873,
-                  "points": 10,
-                  "title": "Dangerous Devices II"
-                },
-                {
-                  "icon": "10prof_portabletable_engineering01",
-                  "id": 18874,
-                  "points": 10,
-                  "title": "Dangerous Devices III"
-                },
-                {
-                  "icon": "10prof_portabletable_engineering01",
-                  "id": 18875,
-                  "points": 10,
-                  "title": "Dangerous Devices IV"
-                },
-                {
                   "icon": "inv_weapon_rifle_38",
                   "id": 18895,
                   "points": 5,
@@ -23383,6 +23379,35 @@
                 }
               ],
               "name": ""
+            },
+            {
+              "items": [
+                 {
+                  "icon": "10prof_portabletable_engineering01",
+                  "id": 18872,
+                  "points": 10,
+                  "title": "Dangerous Devices I"
+                },
+                {
+                  "icon": "10prof_portabletable_engineering01",
+                  "id": 18873,
+                  "points": 10,
+                  "title": "Dangerous Devices II"
+                },
+                {
+                  "icon": "10prof_portabletable_engineering01",
+                  "id": 18874,
+                  "points": 10,
+                  "title": "Dangerous Devices III"
+                },
+                {
+                  "icon": "10prof_portabletable_engineering01",
+                  "id": 18875,
+                  "points": 10,
+                  "title": "Dangerous Devices IV"
+                }
+              ],
+              "name": "Count"
             },
             {
               "id": "23acb9fb",
@@ -23448,6 +23473,17 @@
                   "points": 5,
                   "side": "A",
                   "title": "Forge and Befuddle"
+                }
+              ],
+              "name": ""
+            },
+            {
+              "items":[
+                {
+                  "icon": "ability_miling",
+                  "id": 18892,
+                  "points": 5,
+                  "title": "Massive Mills"
                 },
                 {
                   "icon": "inv_inscription_inkred01",
@@ -23472,15 +23508,9 @@
                   "id": 18879,
                   "points": 10,
                   "title": "Ink and Quill IV"
-                },
-                {
-                  "icon": "ability_miling",
-                  "id": 18892,
-                  "points": 5,
-                  "title": "Massive Mills"
                 }
               ],
-              "name": ""
+              "name": "Count"
             }
           ]
         },
@@ -23502,6 +23532,35 @@
                   "id": 18773,
                   "points": 10,
                   "title": "Jewelhammer's Focus"
+                },
+                {
+                  "icon": "inv_jewelcrafting_gem_29",
+                  "id": 18897,
+                  "points": 5,
+                  "title": "Can't Crush These"
+                },
+                {
+                  "icon": "inv_jewelcrafting_truesilverboar",
+                  "id": 18909,
+                  "points": 5,
+                  "title": "Fantastic Figurines"
+                },
+                {
+                  "icon": "inv_dragonwhelp3_gemmed_green",
+                  "id": 18941,
+                  "points": 5,
+                  "title": "Dazzling Dragons"
+                }
+              ],
+              "name": ""
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_misc_gem_bloodgem_01",
+                  "id": 18893,
+                  "points": 5,
+                  "title": "Plentiful Prospects"
                 },
                 {
                   "icon": "inv_jewelcrafting_nightseye_03",
@@ -23526,33 +23585,9 @@
                   "id": 18891,
                   "points": 10,
                   "title": "Generations of Gemstones IV"
-                },
-                {
-                  "icon": "inv_misc_gem_bloodgem_01",
-                  "id": 18893,
-                  "points": 5,
-                  "title": "Plentiful Prospects"
-                },
-                {
-                  "icon": "inv_jewelcrafting_gem_29",
-                  "id": 18897,
-                  "points": 5,
-                  "title": "Can't Crush These"
-                },
-                {
-                  "icon": "inv_jewelcrafting_truesilverboar",
-                  "id": 18909,
-                  "points": 5,
-                  "title": "Fantastic Figurines"
-                },
-                {
-                  "icon": "inv_dragonwhelp3_gemmed_green",
-                  "id": 18941,
-                  "points": 5,
-                  "title": "Dazzling Dragons"
                 }
               ],
-              "name": ""
+              "name": "Count"
             },
             {
               "id": "5dd4aa6a",
@@ -23588,30 +23623,6 @@
                   "title": "Always Be Camping"
                 },
                 {
-                  "icon": "inv_misc_monsterscales_09",
-                  "id": 18881,
-                  "points": 10,
-                  "title": "A Test of Scale I"
-                },
-                {
-                  "icon": "inv_misc_monsterscales_09",
-                  "id": 18882,
-                  "points": 10,
-                  "title": "A Test of Scale II"
-                },
-                {
-                  "icon": "inv_misc_monsterscales_09",
-                  "id": 18883,
-                  "points": 10,
-                  "title": "A Test of Scale III"
-                },
-                {
-                  "icon": "inv_misc_monsterscales_09",
-                  "id": 18884,
-                  "points": 10,
-                  "title": "A Test of Scale IV"
-                },
-                {
                   "icon": "inv_helm_armor_buckledhat_b_01purple",
                   "id": 18894,
                   "points": 5,
@@ -23637,6 +23648,35 @@
                 }
               ],
               "name": ""
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_misc_monsterscales_09",
+                  "id": 18881,
+                  "points": 10,
+                  "title": "A Test of Scale I"
+                },
+                {
+                  "icon": "inv_misc_monsterscales_09",
+                  "id": 18882,
+                  "points": 10,
+                  "title": "A Test of Scale II"
+                },
+                {
+                  "icon": "inv_misc_monsterscales_09",
+                  "id": 18883,
+                  "points": 10,
+                  "title": "A Test of Scale III"
+                },
+                {
+                  "icon": "inv_misc_monsterscales_09",
+                  "id": 18884,
+                  "points": 10,
+                  "title": "A Test of Scale IV"
+                }
+              ],
+              "name": "Count"
             }
           ]
         },
@@ -23660,6 +23700,29 @@
                   "title": "Speed Dreamin'"
                 },
                 {
+                  "icon": "achievement_bg_3flagcap_nodeaths",
+                  "id": 18896,
+                  "points": 5,
+                  "title": "United as Three"
+                },
+                {
+                  "icon": "inv_10_skinning_consumable_clothbandages_color2",
+                  "id": 18902,
+                  "points": 5,
+                  "title": "Uncertified Nurse"
+                },
+                {
+                  "icon": "inv_shirt_basic_a_04_purple",
+                  "id": 18903,
+                  "points": 5,
+                  "title": "Ton of Tops"
+                }
+              ],
+              "name": ""
+            },
+            {
+              "items": [
+                {
                   "icon": "inv_fabric_celestial_cloth",
                   "id": 18885,
                   "points": 10,
@@ -23682,27 +23745,9 @@
                   "id": 18888,
                   "points": 10,
                   "title": "Quite the Quilt IV"
-                },
-                {
-                  "icon": "achievement_bg_3flagcap_nodeaths",
-                  "id": 18896,
-                  "points": 5,
-                  "title": "United as Three"
-                },
-                {
-                  "icon": "inv_10_skinning_consumable_clothbandages_color2",
-                  "id": 18902,
-                  "points": 5,
-                  "title": "Uncertified Nurse"
-                },
-                {
-                  "icon": "inv_shirt_basic_a_04_purple",
-                  "id": 18903,
-                  "points": 5,
-                  "title": "Ton of Tops"
                 }
               ],
-              "name": ""
+              "name": "Count"
             },
             {
               "id": "a94585ab",
@@ -29354,7 +29399,7 @@
                   "title": "A Tour of Towers"
                 }
               ],
-              "name": ""
+              "name": "Mage Tower"
             },
             {
               "id": "f93693bc",
@@ -32785,35 +32830,30 @@
                 {
                   "icon": "spell_shadow_auraofdarkness",
                   "id": 41929,
-                  "new": true,
                   "points": 20,
                   "title": "Through the Depths of Visions"
                 },
                 {
                   "icon": "spell_shadow_auraofdarkness",
                   "id": 41966,
-                  "new": true,
                   "points": 20,
                   "title": "Mastering the Visions"
                 },
                 {
                   "icon": "ability_priest_voidentropy",
                   "id": 41928,
-                  "new": true,
                   "points": 10,
                   "title": "Reeking of Visions"
                 },
                 {
                   "icon": "inv_relics_hourglass",
                   "id": 41725,
-                  "new": true,
                   "points": 10,
                   "title": "We Have the Memories"
                 },
                 {
                   "icon": "achievement_guildperk_workingovertime",
                   "id": 41873,
-                  "new": true,
                   "points": 10,
                   "title": "Incremental Progress"
                 }
@@ -32826,28 +32866,24 @@
                 {
                   "icon": "spell_arcane_teleportstormwind",
                   "id": 41853,
-                  "new": true,
                   "points": 5,
                   "title": "Horrific Vision of Stormwind"
                 },
                 {
                   "icon": "spell_arcane_teleportstormwind",
                   "id": 41854,
-                  "new": true,
                   "points": 10,
                   "title": "The Even More Horrific Vision of Stormwind"
                 },
                 {
                   "icon": "spell_arcane_teleportstormwind",
                   "id": 41855,
-                  "new": true,
                   "points": 15,
                   "title": "The Most Horrific Vision of Stormwind"
                 },
                 {
                   "icon": "spell_arcane_teleportstormwind",
                   "id": 41964,
-                  "new": true,
                   "points": 20,
                   "title": "Beyond the Most Horrific Vision of Stormwind"
                 }
@@ -32859,28 +32895,24 @@
                 {
                   "icon": "spell_arcane_teleportorgrimmar",
                   "id": 41875,
-                  "new": true,
                   "points": 5,
                   "title": "Horrific Vision of Orgrimmar"
                 },
                 {
                   "icon": "spell_arcane_teleportorgrimmar",
                   "id": 41876,
-                  "new": true,
                   "points": 10,
                   "title": "The Even More Horrific Vision of Orgrimmar"
                 },
                 {
                   "icon": "spell_arcane_teleportorgrimmar",
                   "id": 41879,
-                  "new": true,
                   "points": 15,
                   "title": "The Most Horrific Vision of Orgrimmar"
                 },
                 {
                   "icon": "spell_arcane_teleportorgrimmar",
                   "id": 41965,
-                  "new": true,
                   "points": 20,
                   "title": "Beyond the Most Horrific Vision of Orgrimmar"
                 }
@@ -32892,63 +32924,54 @@
                 {
                   "icon": "inv_helm_mask_fittedalpha_b_01_nightborne_01",
                   "id": 41889,
-                  "new": true,
                   "points": 10,
                   "title": "Horrific Masquerade"
                 },
                 {
                   "icon": "inv_helmet_186v3",
                   "id": 41857,
-                  "new": true,
                   "points": 5,
                   "title": "Masked Soliloquy"
                 },
                 {
                   "icon": "inv_helmet_186",
                   "id": 41890,
-                  "new": true,
                   "points": 5,
                   "title": "Masked Duet"
                 },
                 {
                   "icon": "inv_helmet_186v4",
                   "id": 41891,
-                  "new": true,
                   "points": 5,
                   "title": "Masked Trio"
                 },
                 {
                   "icon": "inv_helmet_187",
                   "id": 41893,
-                  "new": true,
                   "points": 5,
                   "title": "Masked Quartet"
                 },
                 {
                   "icon": "inv_helmet_186v2",
                   "id": 41874,
-                  "new": true,
                   "points": 10,
                   "title": "Symphony of Masks"
                 },
                 {
                   "icon": "inv_helmet_186v2",
                   "id": 41858,
-                  "new": true,
                   "points": 10,
                   "title": "Masked Sextet"
                 },
                 {
                   "icon": "inv_helmet_186v2",
                   "id": 41894,
-                  "new": true,
                   "points": 10,
                   "title": "Masked Septet"
                 },
                 {
                   "icon": "inv_helmet_186v2",
                   "id": 41895,
-                  "new": true,
                   "points": 10,
                   "title": "Orchestra of Masks"
                 }
@@ -32960,35 +32983,30 @@
                 {
                   "icon": "archaeology_5_0_mogucoin",
                   "id": 41859,
-                  "new": true,
                   "points": 5,
                   "title": "Thanks for the Mementos"
                 },
                 {
                   "icon": "archaeology_5_0_mogucoin",
                   "id": 41896,
-                  "new": true,
                   "points": 10,
                   "title": "Memento Mori"
                 },
                 {
                   "icon": "archaeology_5_0_mogucoin",
                   "id": 41983,
-                  "new": true,
                   "points": 10,
                   "title": "Memento Mania"
                 },
                 {
                   "icon": "archaeology_5_0_mogucoin",
                   "id": 41897,
-                  "new": true,
                   "points": 10,
                   "title": "A Monumental Amount of Mementos"
                 },
                 {
                   "icon": "archaeology_5_0_mogucoin",
                   "id": 41898,
-                  "new": true,
                   "points": 20,
                   "title": "A Mountain of Mementos"
                 }
@@ -39389,14 +39407,12 @@
                 {
                   "icon": "spell_nzinsanity_shortsighted",
                   "id": 41953,
-                  "new": true,
                   "points": 0,
                   "title": "Mad World"
                 },
                 {
                   "icon": "spell_nzinsanity_shortsighted",
                   "id": 41971,
-                  "new": true,
                   "points": 0,
                   "title": "Through the Looking Glass"
                 },
