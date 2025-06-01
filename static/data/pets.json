@@ -272,19 +272,6 @@
       {
         "items": [
           {
-            "ID": 4410,
-            "creatureId": 216455,
-            "icon": "inv_ladybugpet_yellow",
-            "itemId": 212791,
-            "name": "Beetriz",
-            "spellid": 433098
-          }
-        ],
-        "name": "Twitch Drops"
-      },
-      {
-        "items": [
-          {
             "ID": 4595,
             "creatureId": 225354,
             "icon": "inv_pitlordpet_fire",
@@ -11281,7 +11268,7 @@
           {
             "ID": 3242,
             "creatureId": 185322,
-            "icon": "inv_brontosaurusmount",
+            "icon": "inv_10_skinning_dragonscales_black",
             "itemId": 190173,
             "name": "Lil' Maka'jin",
             "notObtainable": true,
@@ -12472,6 +12459,15 @@
             "name": "Tock the Clocker Spaniel",
             "notObtainable": true,
             "spellid": 1224569
+          },
+          {
+            "ID": 4410,
+            "creatureId": 216455,
+            "icon": "inv_ladybugpet_yellow",
+            "itemId": 212791,
+            "name": "Beetriz",
+            "notObtainable": true,
+            "spellid": 433098
           }
         ],
         "name": "Twitch Drops"
