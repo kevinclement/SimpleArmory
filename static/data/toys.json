@@ -154,9 +154,33 @@
     "name": "Limited Time",
     "subcats": [
       {
-        "items": [],
-        "name": "Trading Post: "
-      }
+        "items": [
+          {
+            "ID": 1471,
+            "icon": "inv_fishingchair",
+            "itemId": 218112,
+            "name": "Colorful Beach Chair"
+          }
+        ],
+        "name": "Trading Post: June"
+      },
+      {
+        "items": [
+          {
+            "ID": 1573,
+            "icon": "inv_banner_01",
+            "itemId": 239007,
+            "name": "Dastardly Banner"
+          },
+          {
+            "ID": 1574,
+            "icon": "inv_11xp_event_dastardlyduos_podium01_nocollision",
+            "itemId": 239018,
+            "name": "Winner's Podium"
+          }
+        ],
+        "name": "Dastardly Duos"
+      }      
     ]
   },
   {
@@ -6944,12 +6968,6 @@
             "name": "Delicate Crimson Parasol"
           },
           {
-            "ID": 1471,
-            "icon": "inv_fishingchair",
-            "itemId": 218112,
-            "name": "Colorful Beach Chair"
-          },
-          {
             "ID": 1475,
             "icon": "inv_firearm_2h_waterblaster_c_01",
             "itemId": 220692,
@@ -6992,25 +7010,6 @@
           }
         ],
         "name": "Plunderstorm"
-      },
-      {
-        "items": [
-          {
-            "ID": 1573,
-            "icon": "inv_banner_01",
-            "itemId": 239007,
-            "name": "Dastardly Banner",
-            "new": true
-          },
-          {
-            "ID": 1574,
-            "icon": "inv_11xp_event_dastardlyduos_podium01_nocollision",
-            "itemId": 239018,
-            "name": "Winner's Podium",
-            "new": true
-          }
-        ],
-        "name": "Dastardly Duos"
       },
       {
         "id": "6edf78f8",

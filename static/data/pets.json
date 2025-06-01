@@ -243,44 +243,15 @@
       {
         "items": [
           {
-            "ID": 168,
-            "creatureId": 25109,
-            "icon": "inv_misc_enggizmos_rocketchicken",
-            "itemId": 34492,
-            "name": "Rocket Chicken",
-            "spellid": 45125
-          },
-          {
-            "ID": 4757,
-            "creatureId": 238178,
-            "icon": "inv_redpandapet_gray",
-            "itemId": 236409,
-            "name": "Frumpy Softpaw",
-            "spellid": 1219626
-          },
-          {
-            "ID": 4793,
-            "creatureId": 241150,
-            "icon": "inv_chihuahuadogpet_body_tan",
-            "itemId": 238942,
-            "name": "Weechi",
-            "spellid": 1226743
+            "ID": 4548,
+            "creatureId": 223316,
+            "icon": "inv_ogrepet",
+            "itemId": 223145,
+            "name": "Marrlok",
+            "spellid": 448355
           }
         ],
-        "name": "Trading Post: May"
-      },
-      {
-        "items": [
-          {
-            "ID": 4410,
-            "creatureId": 216455,
-            "icon": "inv_ladybugpet_yellow",
-            "itemId": 212791,
-            "name": "Beetriz",
-            "spellid": 433098
-          }
-        ],
-        "name": "Twitch Drops"
+        "name": "Trading Post: June"
       },
       {
         "items": [
@@ -302,6 +273,19 @@
           }
         ],
         "name": "Promotions"
+      },
+      {
+        "items": [
+          {
+            "ID": 4806,
+            "creatureId": 241346,
+            "icon": "inv_ironstarlettepet",
+            "itemId": 239019,
+            "name": "Spicy Mean-Ball",
+            "spellid": 1227066
+          }
+        ],
+        "name": "Dastardly Duos"
       }
     ]
   },
@@ -11191,14 +11175,6 @@
             "spellid": 438775
           },
           {
-            "ID": 4548,
-            "creatureId": 223316,
-            "icon": "inv_ogrepet",
-            "itemId": 223145,
-            "name": "Marrlok",
-            "spellid": 448355
-          },
-          {
             "ID": 3582,
             "creatureId": 205795,
             "icon": "inv_magicalfishpet",
@@ -11279,9 +11255,25 @@
             "spellid": 1213903
           },
           {
+            "ID": 4757,
+            "creatureId": 238178,
+            "icon": "inv_redpandapet_gray",
+            "itemId": 236409,
+            "name": "Frumpy Softpaw",
+            "spellid": 1219626
+          },
+          {
+            "ID": 4793,
+            "creatureId": 241150,
+            "icon": "inv_chihuahuadogpet_body_tan",
+            "itemId": 238942,
+            "name": "Weechi",
+            "spellid": 1226743
+          },
+          {
             "ID": 3242,
             "creatureId": 185322,
-            "icon": "inv_brontosaurusmount",
+            "icon": "inv_10_skinning_dragonscales_black",
             "itemId": 190173,
             "name": "Lil' Maka'jin",
             "notObtainable": true,
@@ -11323,6 +11315,14 @@
       },
       {
         "items": [
+          {
+            "ID": 168,
+            "creatureId": 25109,
+            "icon": "inv_misc_enggizmos_rocketchicken",
+            "itemId": 34492,
+            "name": "Rocket Chicken",
+            "spellid": 45125
+          },
           {
             "ID": 179,
             "creatureId": 27217,
@@ -11407,20 +11407,6 @@
           }
         ],
         "name": "Plunderstorm"
-      },
-      {
-        "items": [
-          {
-            "ID": 4806,
-            "creatureId": 241346,
-            "icon": "inv_ironstarlettepet",
-            "itemId": 239019,
-            "name": "Spicy Mean-Ball",
-            "new": true,
-            "spellid": 1227066
-          }
-        ],
-        "name": "Dastardly Duos"
       },
       {
         "items": [
@@ -12472,6 +12458,15 @@
             "name": "Tock the Clocker Spaniel",
             "notObtainable": true,
             "spellid": 1224569
+          },
+          {
+            "ID": 4410,
+            "creatureId": 216455,
+            "icon": "inv_ladybugpet_yellow",
+            "itemId": 212791,
+            "name": "Beetriz",
+            "notObtainable": true,
+            "spellid": 433098
           }
         ],
         "name": "Twitch Drops"
