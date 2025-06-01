@@ -154,8 +154,15 @@
     "name": "Limited Time",
     "subcats": [
       {
-        "items": [],
-        "name": "Trading Post: "
+        "items": [
+          {
+            "ID": 1471,
+            "icon": "inv_fishingchair",
+            "itemId": 218112,
+            "name": "Colorful Beach Chair"
+          }
+        ],
+        "name": "Trading Post: June"
       }
     ]
   },
@@ -6942,12 +6949,6 @@
             "icon": "inv_misc_1h_umbrella_b_01",
             "itemId": 212524,
             "name": "Delicate Crimson Parasol"
-          },
-          {
-            "ID": 1471,
-            "icon": "inv_fishingchair",
-            "itemId": 218112,
-            "name": "Colorful Beach Chair"
           },
           {
             "ID": 1475,
