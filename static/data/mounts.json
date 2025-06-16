@@ -274,19 +274,17 @@
       {
         "items": [
           {
-            "ID": 2525,
-            "icon": "inv_ravenmount_black",
-            "itemId": 238943,
-            "name": "Prophet's Great Raven",
-            "spellid": 1226760
-          },
-          {
-            "ID": 2529,
-            "icon": "inv_ravenmount_white",
-            "itemId": 238994,
-            "name": "Archmage's Great Raven",
-            "spellid": 1226983
-          },
+            "ID": 2518,
+            "icon": "inv_piratedragonmount",
+            "itemId": 238739,
+            "name": "Chrono Corsair",
+            "spellid": 1226144
+          }
+        ],
+        "name": "Turbulent Timeways"
+      },
+      {
+        "items": [
           {
             "ID": 2526,
             "icon": "inv_chimerafiremount_green",
@@ -337,7 +335,6 @@
             "icon": "inv_overchargedmech",
             "itemId": 246237,
             "name": "OC91 Chariot",
-            "new": true,
             "spellid": 1241263
           },
           {
@@ -9035,7 +9032,6 @@
             "icon": "ability_mount_raptor_white",
             "itemId": 245694,
             "name": "Ivory Savagemane",
-            "new": true,
             "spellid": 1237703
           },
           {
@@ -9043,7 +9039,6 @@
             "icon": "inv_nightsaber2mountwhite",
             "itemId": 245695,
             "name": "Moonlit Nightsaber",
-            "new": true,
             "spellid": 1237631
           },
           {
@@ -9754,19 +9749,6 @@
       {
         "items": [
           {
-            "ID": 2518,
-            "icon": "inv_piratedragonmount",
-            "itemId": 238739,
-            "name": "Chrono Corsair",
-            "new": true,
-            "spellid": 1226144
-          }
-        ],
-        "name": "Turbulent Timeways"
-      },
-      {
-        "items": [
-          {
             "ID": 2605,
             "icon": "inv_inariusmount",
             "itemId": 246264,
@@ -10310,6 +10292,20 @@
             "name": "Meeksi Brewthief",
             "notObtainable": true,
             "spellid": 473745
+          },
+          {
+            "ID": 2525,
+            "icon": "inv_ravenmount_black",
+            "itemId": 238943,
+            "name": "Prophet's Great Raven",
+            "spellid": 1226760
+          },
+          {
+            "ID": 2529,
+            "icon": "inv_ravenmount_white",
+            "itemId": 238994,
+            "name": "Archmage's Great Raven",
+            "spellid": 1226983
           }
         ],
         "name": "Blizzard Store"
