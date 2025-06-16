@@ -610,7 +610,6 @@
                 {
                   "icon": "inv_tabard_stromgarde_c_01",
                   "id": 41818,
-                  "new": true,
                   "points": 10,
                   "side": "A",
                   "title": "Rise of the Red Dawn"
@@ -618,7 +617,6 @@
                 {
                   "icon": "inv_tabard_maghar_c_01",
                   "id": 41820,
-                  "new": true,
                   "points": 10,
                   "side": "H",
                   "title": "Rise of the Red Dawn"
@@ -9441,14 +9439,12 @@
                 {
                   "icon": "inv_trinket_80_titan01b",
                   "id": 42212,
-                  "new": true,
                   "points": 0,
                   "title": "Titan Console Overcharged"
                 },
                 {
                   "icon": "inv_trinket_80_titan01b",
                   "id": 42241,
-                  "new": true,
                   "points": 0,
                   "title": "Overcharged Delver"
                 }
@@ -16483,7 +16479,6 @@
                 {
                   "icon": "achievement_emeraldnightmare",
                   "id": 42029,
-                  "new": true,
                   "points": 10,
                   "title": "The Emerald Nightmare"
                 },
@@ -16658,7 +16653,6 @@
                 {
                   "icon": "achievement_thenighthold",
                   "id": 42030,
-                  "new": true,
                   "points": 10,
                   "title": "The Nighthold"
                 },
@@ -16815,7 +16809,6 @@
                 {
                   "icon": "achievement_dungeon_tombofsargeras",
                   "id": 42031,
-                  "new": true,
                   "points": 10,
                   "title": "Tomb of Sargeras"
                 },
@@ -16960,7 +16953,6 @@
                 {
                   "icon": "achievement_raid_argusraid",
                   "id": 42032,
-                  "new": true,
                   "points": 10,
                   "title": "Antorus, the Burning Throne"
                 },
@@ -28337,7 +28329,6 @@
                 {
                   "icon": "inv_summerfest_firespirit",
                   "id": 41631,
-                  "new": true,
                   "points": 10,
                   "side": "A",
                   "title": "Flame Warden of Khaz Algar"
@@ -28345,7 +28336,6 @@
                 {
                   "icon": "inv_summerfest_firespirit",
                   "id": 41632,
-                  "new": true,
                   "points": 10,
                   "side": "H",
                   "title": "Flame Keeper of Khaz Algar"
@@ -29407,7 +29397,6 @@
                 {
                   "icon": "inv_relics_hourglass",
                   "id": 41779,
-                  "new": true,
                   "points": 20,
                   "title": "Master of the Turbulent Timeways III"
                 }
@@ -29634,7 +29623,6 @@
           "name": "Dastardly Duos",
           "subcats": [
             {
-              "id": "1de6d958",
               "items": [
                 {
                   "icon": "inv_11xp_event_dastardlyduos_podium01_nocollision",
@@ -29695,7 +29683,12 @@
                   "id": 41922,
                   "points": 10,
                   "title": "Undefeatable"
-                },
+                }
+              ],
+              "name": ""
+            },
+            {
+              "items": [
                 {
                   "icon": "achievement_worldevent_dastardlyduos",
                   "id": 41948,
@@ -29725,14 +29718,13 @@
                   "id": 41952,
                   "points": 10,
                   "title": "Defeat the Dastardlies"
-                },
-                {
-                  "icon": "achievement_worldevent_dastardlyduos",
-                  "id": 42004,
-                  "points": 10,
-                  "title": "Bullhorn of Most Plenty"
-                },
-                {
+                }
+              ],
+              "name": "Bosses"
+            },
+            {
+              "items": [
+                 {
                   "icon": "achievement_worldevent_dastardlyduos",
                   "id": 42002,
                   "points": 10,
@@ -29743,9 +29735,15 @@
                   "id": 42003,
                   "points": 10,
                   "title": "Bullhorn of More Plenty"
+                },
+                                {
+                  "icon": "achievement_worldevent_dastardlyduos",
+                  "id": 42004,
+                  "points": 10,
+                  "title": "Bullhorn of Most Plenty"
                 }
               ],
-              "name": ""
+              "name": "Bullhorns"
             }
           ]
         }
@@ -32779,21 +32777,18 @@
                 {
                   "icon": "achievement_boss_triumvirate_shadowguardetherealcaster",
                   "id": 42187,
-                  "new": true,
                   "points": 0,
                   "title": "Lorewalking: Ethereal Wisdom"
                 },
                 {
                   "icon": "inv_knife_1h_artifactcthun_d_02",
                   "id": 42188,
-                  "new": true,
                   "points": 5,
                   "title": "Lorewalking: Blade's Bane"
                 },
                 {
                   "icon": "achievement_dungeon_icecrown_frostmourne",
                   "id": 42189,
-                  "new": true,
                   "points": 5,
                   "title": "Lorewalking: The Lich King"
                 }
