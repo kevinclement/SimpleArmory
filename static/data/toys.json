@@ -128,7 +128,7 @@
             "ID": 1587,
             "icon": "inv_knife_1h_artifactcthun_d_01",
             "itemId": 244888,
-            "name": "Echo of the Xal'atath, Blade of the Black Empire"
+            "name": "Echo of Xal'atath, Blade of the Black Empire"
           },
           {
             "ID": 1594,
@@ -339,6 +339,13 @@
             "icon": "inv_111_underminegangsterdisguise",
             "itemId": 231064,
             "name": "Throwaway Gangster Disguise"
+          },
+          {
+            "ID": 1584,
+            "icon": "inv_misc_ancient_mana",
+            "itemId": 243056,
+            "name": "Delver's Mana-Bound Ethergate",
+            "new": true
           }
         ],
         "name": "Delves"
@@ -615,9 +622,35 @@
             "icon": "inv_111_goldenbomb_goldblue",
             "itemId": 236687,
             "name": "Explosive Hearthstone"
+          },
+          {
+            "ID": 1597,
+            "icon": "spell_holy_circleofrenewal_shadow",
+            "itemId": 246565,
+            "name": "Cosmic Hearthstone",
+            "new": true
           }
         ],
         "name": "Raid"
+      },
+      {
+        "items": [
+          {
+            "ID": 1582,
+            "icon": "inv_cape_special_heartribbon_c_01",
+            "itemId": 242323,
+            "name": "Chowdar's Favorite Ribbon",
+            "new": true
+          },
+          {
+            "ID": 1592,
+            "icon": "inv_letter_13",
+            "itemId": 245970,
+            "name": "P.O.S.T. Master's Express Hearthstone",
+            "new": true
+          }
+        ],
+        "name": "Unknown"
       }
     ]
   },
@@ -6287,6 +6320,13 @@
             "icon": "inv_holiday_beerfest_beerfesttrophy",
             "itemId": 169865,
             "name": "Brewfest Chowdown Trophy"
+          },
+          {
+            "ID": 1591,
+            "icon": "inv_misc_beerfest_balloon_02",
+            "itemId": 245946,
+            "name": "Brewer's Balloon",
+            "new": true
           }
         ],
         "name": "Brewfest"
