@@ -72,7 +72,7 @@
           {
             "icon": "achievement_scenario_500",
             "id": 41095,
-            "name": "Delver",
+            "name": "Flickering",
             "titleId": 598,
             "type": "achievement"
           },
@@ -296,6 +296,27 @@
           }
         ],
         "name": "War Within: Season 2"
+      },
+      {
+        "items": [
+          {
+            "icon": "inv_achievement_raidnerubian_etherealassasin",
+            "id": 42194,
+            "name": "Contract Killer",
+            "new": true,
+            "titleId": 639,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 914,
+            "name": "The Unbound Hero",
+            "new": true,
+            "titleId": 637,
+            "type": "title"
+          }
+        ],
+        "name": "War Within: Season 3"
       }
     ]
   },
@@ -316,6 +337,14 @@
             "id": 41236,
             "name": "Liberator of Undermine",
             "titleId": 605,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_112_achievement_raid_dimensius",
+            "id": 41611,
+            "name": "Void Vanquisher",
+            "new": true,
+            "titleId": 615,
             "type": "achievement"
           }
         ],
@@ -483,6 +512,30 @@
             "name": "Trade-Duke",
             "titleId": 607,
             "type": "achievement"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 927,
+            "name": "Ba'",
+            "titleId": 647,
+            "new": true,
+            "type": "title"
+          },
+          {
+            "icon": "inv_sword_1h_broker2boss_d_01_blue",
+            "id": 15109,
+            "name": "Zo'",
+            "titleId": 648,
+            "new": true,
+            "type": "title"
+          },
+          {
+            "icon": "achievement_dungeon_blackrockcaverns_romogg-bonecrusher",
+            "id": 5281,
+            "name": "Om'",
+            "titleId": 649,
+            "new": true,
+            "type": "title"
           }
         ],
         "name": "Reputation"
@@ -687,6 +740,38 @@
             "notObtainable": true,
             "notReleased": true,
             "titleId": 627,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 915,
+            "name": "The Delver Within",
+            "new": true,
+            "titleId": 638,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 917,
+            "name": "Star Savior",
+            "new": true,
+            "titleId": 640,
+            "type": "title"
+          },
+          {
+            "icon": "achievement_zone_ironforge",
+            "id": 616,
+            "name": "Bronzebeard",
+            "new": true,
+            "titleId": 641,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 924,
+            "name": "Of the Twilight Star",
+            "new": true,
+            "titleId": 644,
             "type": "title"
           }
         ],
@@ -3045,6 +3130,14 @@
             "notObtainable": true,
             "titleId": 611,
             "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 42033,
+            "name": "Astral Legend",
+            "new": true,
+            "titleId": 634,
+            "type": "achievement"
           }
         ],
         "name": "Solo Shuffle"
@@ -3065,6 +3158,14 @@
             "name": "Prized Gladiator",
             "notObtainable": true,
             "titleId": 608,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 42036,
+            "name": "Astral Gladiator",
+            "new": true,
+            "titleId": 633,
             "type": "achievement"
           }
         ],
@@ -3114,6 +3215,24 @@
             "notObtainable": true,
             "side": "A",
             "titleId": 610,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 42034,
+            "name": "Astral Warlord",
+            "new": true,
+            "side": "H",
+            "titleId": 632,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 42035,
+            "name": "Astral Marshal",
+            "new": true,
+            "side": "A",
+            "titleId": 635,
             "type": "achievement"
           }
         ],
@@ -4159,6 +4278,15 @@
             "nameF": "Famed Slayer of Gallywix",
             "notObtainable": true,
             "titleId": 604,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_112_achievement_raid_dimensius",
+            "id": 41623,
+            "name": "Famed Slayer of Dimensius",
+            "new": true,
+            "notObtainable": true,
+            "titleId": 614,
             "type": "achievement"
           }
         ],
