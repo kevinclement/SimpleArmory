@@ -257,6 +257,19 @@
                 }
               ],
               "name": "Warbank"
+            },
+            {
+              "id": "001e401c",
+              "items": [
+                {
+                  "icon": "inv_cape_special_treasure_c_01",
+                  "id": 42191,
+                  "points": 10,
+                  "title": "Safer Deposit",
+                  "new": true
+                }
+              ],
+              "name": "Bank"
             }
           ]
         }
@@ -549,6 +562,13 @@
                   "title": "Undermined"
                 },
                 {
+                  "icon": "ui_majorfactions_-karesh",
+                  "id": 41970,
+                  "points": 10,
+                  "title": "The Knife's Edge",
+                  "new": true
+                },
+                {
                   "icon": "ui_majorfactions_storm",
                   "id": 20595,
                   "points": 10,
@@ -577,6 +597,13 @@
                   "id": 40894,
                   "points": 10,
                   "title": "Sojourner of Undermine"
+                },
+                {
+                  "icon": "inv_kareshroamermount_crimson",
+                  "id": 42739,
+                  "points": 10,
+                  "title": "Sojourner of K'aresh",
+                  "new": true
                 },
                 {
                   "icon": "achievement_zone_isleofdorn",
@@ -782,6 +809,68 @@
               "name": "Siren Isle"
             },
             {
+              "id": "98717b14",
+              "items": [
+                {
+                  "icon": "ability_hunter_bestialdiscipline",
+                  "id": 41809,
+                  "points": 10,
+                  "title": "Ecological Variety",
+                  "new": true
+                },
+                {
+                  "icon": "achievement_zone_sholazar_03",
+                  "id": 41811,
+                  "points": 10,
+                  "title": "Ecological Stability",
+                  "new": true
+                },
+                {
+                  "icon": "inv_checkered_flag",
+                  "id": 41778,
+                  "points": 5,
+                  "title": "Brokers Don't Care How You Win",
+                  "new": true
+                },
+                {
+                  "icon": "ability_monk_domeofmist",
+                  "id": 41808,
+                  "points": 10,
+                  "title": "Otherworldly Ecologist",
+                  "new": true
+                },
+                {
+                  "icon": "inv_112_achievement_dungeon_ecodome",
+                  "id": 41815,
+                  "points": 20,
+                  "title": "Ecological Succession",
+                  "new": true
+                },
+                {
+                  "icon": "artifactability_balancedruid_fullmoon",
+                  "id": 41978,
+                  "points": 5,
+                  "title": "Moonlighter",
+                  "new": true
+                },
+                {
+                  "icon": "inv_misc_coinbag_special",
+                  "id": 41979,
+                  "points": 5,
+                  "title": "Bounty Seeker",
+                  "new": true
+                },
+                {
+                  "icon": "inv_mask_01",
+                  "id": 41980,
+                  "points": 10,
+                  "title": "Vigilante",
+                  "new": true
+                }
+              ],
+              "name": "K'aresh"
+            },
+            {
               "id": "8b73aed1",
               "items": [
                 {
@@ -789,13 +878,7 @@
                   "id": 40307,
                   "points": 10,
                   "title": "Allied Races: Earthen"
-                }
-              ],
-              "name": "Allied Races"
-            },
-            {
-              "id": "f91c91a0",
-              "items": [
+                },
                 {
                   "icon": "inv_armor_earthendwarf_d_01_helm",
                   "id": 40309,
@@ -803,7 +886,7 @@
                   "title": "Heritage of the Earthen"
                 }
               ],
-              "name": "Heritage"
+              "name": "Earthen"
             }
           ]
         },
@@ -4692,6 +4775,13 @@
                   "id": 41587,
                   "points": 10,
                   "title": "Explore Undermine"
+                },
+                {
+                  "icon": "inv_112_achievement_zone_karesh",
+                  "id": 42740,
+                  "points": 10,
+                  "title": "Explore K'aresh",
+                  "new": true
                 }
               ],
               "name": "Area"
@@ -4733,6 +4823,13 @@
                   "id": 41217,
                   "points": 10,
                   "title": "Treasures of Undermine"
+                },
+                {
+                  "icon": "icon_treasuremap",
+                  "id": 42741,
+                  "points": 10,
+                  "title": "Treasures of K'aresh",
+                  "new": true
                 }
               ],
               "name": "Treasure"
@@ -4774,6 +4871,13 @@
                   "id": 41216,
                   "points": 5,
                   "title": "Adventurer of Undermine"
+                },
+                {
+                  "icon": "ability_dualwield",
+                  "id": 42761,
+                  "points": 15,
+                  "title": "Remnants of a Shattered World",
+                  "new": true
                 }
               ],
               "name": "Encounter"
@@ -5121,6 +5225,82 @@
                 }
               ],
               "name": "Nightfall"
+            },
+            {
+              "id": "6574107c",
+              "items": [
+                {
+                  "icon": "inv_misc_groupneedmore",
+                  "id": 41812,
+                  "points": 5,
+                  "title": "Expertly Done",
+                  "new": true
+                },
+                {
+                  "icon": "inv_catbroker_light",
+                  "id": 42729,
+                  "points": 10,
+                  "title": "Dangerous Prowlers of K'aresh",
+                  "new": true
+                },
+                {
+                  "icon": "ability_vehicle_liquidpyrite_blue",
+                  "id": 42730,
+                  "points": 10,
+                  "title": "Jump, Jump, and Away!",
+                  "new": true
+                },
+                {
+                  "icon": "inv_cosmicvoid_buff",
+                  "id": 42731,
+                  "points": 10,
+                  "title": "Become a Hero. Become a Phasediver!",
+                  "new": true
+                },
+                {
+                  "icon": "warlock_summon_-beholder",
+                  "id": 42736,
+                  "points": 10,
+                  "title": "Ixthar's Legacy",
+                  "new": true
+                },
+                {
+                  "icon": "inv_staff_2h_etherealdefense_b_01",
+                  "id": 42737,
+                  "points": 10,
+                  "title": "Capstoned",
+                  "new": true
+                },
+                {
+                  "icon": "spell_priest_voidsear",
+                  "id": 42738,
+                  "points": 10,
+                  "title": "We've All Got Swords!",
+                  "new": true
+                },
+                {
+                  "icon": "inv_cape_armor_etherealshawl_d_01",
+                  "id": 42742,
+                  "points": 10,
+                  "title": "Power of the Reshii",
+                  "new": true
+                },
+                {
+                  "icon": "inv_112_achievement_zone_karesh",
+                  "id": 60889,
+                  "points": 20,
+                  "title": "Unraveled and Persevering",
+                  "new": true
+                },
+                {
+                  "icon": "ability_racial_etherealconnection",
+                  "id": 60890,
+                  "points": 10,
+                  "title": "Secrets of the K'areshi",
+                  "new": true
+                }
+              ],
+              "name": "K'aresh"
             }
           ]
         },
@@ -8910,6 +9090,13 @@
                   "id": 41723,
                   "points": 10,
                   "title": "Buddy System VIII"
+                },
+                {
+                  "icon": "achievement_level_100",
+                  "id": 42676,
+                  "points": 10,
+                  "title": "Buddy System IX",
+                  "new": true
                 }
               ],
               "name": "Companion"
@@ -9164,6 +9351,20 @@
                   "id": 41714,
                   "points": 10,
                   "title": "From Trash to Treasure"
+                },
+                {
+                  "icon": "inv_airshipmountethereal",
+                  "id": 42677,
+                  "points": 10,
+                  "title": "This Machine Flies?! Don't Care I Got It!",
+                  "new": true
+                },
+                {
+                  "icon": "inv_polearm_2h_outdoorethereal_c_01",
+                  "id": 42678,
+                  "points": 10,
+                  "title": "So That's Where My Manaflux Capacitor Was!",
+                  "new": true
                 }
               ],
               "name": "Mount"
@@ -9276,6 +9477,13 @@
                   "id": 41099,
                   "points": 5,
                   "title": "Sidestreet Sluice Stories"
+                },
+                {
+                  "icon": "inv_112_etherealwraps_basic_original",
+                  "id": 42771,
+                  "points": 5,
+                  "title": "Archival Assault Stories",
+                  "new": true
                 }
               ],
               "name": "Story"
@@ -9400,6 +9608,13 @@
                   "id": 41101,
                   "points": 5,
                   "title": "Sidestreet Sluice Discoveries"
+                },
+                {
+                  "icon": "inv_cape_special_treasure_c_01",
+                  "id": 42679,
+                  "points": 5,
+                  "title": "Archival Assault Discoveries",
+                  "new": true
                 }
               ],
               "name": "Sturdy Chests"
@@ -9450,6 +9665,26 @@
                 }
               ],
               "name": "Overcharged Delves"
+            },
+            {
+              "id": "1bbd50a8",
+              "items": [
+                {
+                  "icon": "inv_cosmicvoid_nova",
+                  "id": 42778,
+                  "points": 0,
+                  "title": "A Flicker in the Dark",
+                  "new": true
+                },
+                {
+                  "icon": "inv_ability_voidweaverpriest_entropicrift",
+                  "id": 42779,
+                  "points": 0,
+                  "title": "A Flash in the Void",
+                  "new": true
+                }
+              ],
+              "name": "Flickergates"
             }
           ]
         }
@@ -12497,6 +12732,13 @@
                   "title": "Tour of Duty: Undermine"
                 },
                 {
+                  "icon": "inv_112_achievement_zone_karesh",
+                  "id": 42131,
+                  "points": 10,
+                  "title": "Tour of Duty: K'aresh",
+                  "new": true
+                },
+                {
                   "icon": "inv_crossbow_2h_earthendungeon_c_01",
                   "id": 40087,
                   "points": 5,
@@ -12650,6 +12892,13 @@
                   "id": 41286,
                   "points": 10,
                   "title": "Glory of the Liberation of Undermine Raider"
+                },
+                {
+                  "icon": "inv_112_achievement_raid_manaforgeomega",
+                  "id": 41597,
+                  "points": 25,
+                  "title": "Glory of the Omega Raider",
+                  "new": true
                 }
               ],
               "name": "The War Within"
@@ -13349,6 +13598,166 @@
                 }
               ],
               "name": "Liberation of Undermine"
+            },
+            {
+              "id": "a3589d84",
+              "items": [
+                {
+                  "icon": "inv_112_achievement_raid_binder",
+                  "id": 41601,
+                  "points": 10,
+                  "title": "Might of the Shadowguard",
+                  "new": true
+                },
+                {
+                  "icon": "inv_112_achievement_raid_glasselemental",
+                  "id": 41602,
+                  "points": 10,
+                  "title": "Monsters of the Sands",
+                  "new": true
+                },
+                {
+                  "icon": "inv_112_achievement_raid_dimensius",
+                  "id": 41603,
+                  "points": 10,
+                  "title": "Heart of Darkness",
+                  "new": true
+                },
+                {
+                  "icon": "inv_112_achievement_raid_manaforgeomega",
+                  "id": 41598,
+                  "points": 10,
+                  "title": "Manaforge Omega",
+                  "new": true
+                },
+                {
+                  "icon": "inv_112_achievement_raid_manaforgeomega",
+                  "id": 41599,
+                  "points": 10,
+                  "title": "Heroic: Manaforge Omega",
+                  "new": true
+                },
+                {
+                  "icon": "inv_112_achievement_raid_manaforgeomega",
+                  "id": 41600,
+                  "points": 10,
+                  "title": "Mythic: Manaforge Omega",
+                  "new": true
+                },
+                {
+                  "icon": "inv_112_achievement_raid_automaton",
+                  "id": 41604,
+                  "points": 10,
+                  "title": "Mythic: Plexus Sentinel",
+                  "new": true
+                },
+                {
+                  "icon": "inv_112_achievement_raid_silkworm",
+                  "id": 41605,
+                  "points": 10,
+                  "title": "Mythic: Loom'ithar",
+                  "new": true
+                },
+                {
+                  "icon": "inv_112_achievement_raid_binder",
+                  "id": 41606,
+                  "points": 10,
+                  "title": "Mythic: Soulbinder Naazindhri",
+                  "new": true
+                },
+                {
+                  "icon": "inv_112_achievement_raid_engineer",
+                  "id": 41607,
+                  "points": 10,
+                  "title": "Mythic: Forgeweaver Araz",
+                  "new": true
+                },
+                {
+                  "icon": "inv_112_achievement_raid_dhcouncil",
+                  "id": 41608,
+                  "points": 10,
+                  "title": "Mythic: The Soul Hunters",
+                  "new": true
+                },
+                {
+                  "icon": "inv_112_achievement_raid_glasselemental",
+                  "id": 41609,
+                  "points": 10,
+                  "title": "Mythic: Fractillus",
+                  "new": true
+                },
+                {
+                  "icon": "inv_112_achievement_raid_salhadaar",
+                  "id": 41610,
+                  "points": 10,
+                  "title": "Mythic: Nexus-King Salhadaar",
+                  "new": true
+                },
+                {
+                  "icon": "inv_112_achievement_raid_dimensius",
+                  "id": 41611,
+                  "points": 10,
+                  "title": "Mythic: Dimensius, the All-Devouring",
+                  "new": true
+                },
+                {
+                  "icon": "inv_mousehearthstone",
+                  "id": 42118,
+                  "points": 10,
+                  "title": "Of Mice and Manaforges",
+                  "new": true
+                },
+                {
+                  "icon": "inv_misc_punchcards_white",
+                  "id": 41613,
+                  "points": 10,
+                  "title": "Time to Vote! Cute or Scary?",
+                  "new": true
+                },
+                {
+                  "icon": "ability_racial_etherealconnection",
+                  "id": 41614,
+                  "points": 10,
+                  "title": "Mother of All Tantrums",
+                  "new": true
+                },
+                {
+                  "icon": "inv_misc_food_legion_heartyfeast",
+                  "id": 41615,
+                  "points": 10,
+                  "title": "Cheat Meal",
+                  "new": true
+                },
+                {
+                  "icon": "inv_leather_demonhunter_blindfold_01",
+                  "id": 41616,
+                  "points": 10,
+                  "title": "I See... Absolutely Nothing",
+                  "new": true
+                },
+                {
+                  "icon": "spell_hunter_blackicetrap",
+                  "id": 41617,
+                  "points": 10,
+                  "title": "Breaking the Fourth Wall",
+                  "new": true
+                },
+                {
+                  "icon": "spell_mage_supernova",
+                  "id": 41618,
+                  "points": 10,
+                  "title": "Swing and a Miss",
+                  "new": true
+                },
+                {
+                  "icon": "achievement_halloween_witch_01",
+                  "id": 41619,
+                  "points": 10,
+                  "title": "Defying Gravity",
+                  "new": true
+                }
+              ],
+              "name": "Manaforge Omega"
             }
           ]
         },
@@ -13592,6 +14001,33 @@
                 }
               ],
               "name": "Operation: Floodgate"
+            },
+            {
+              "id": "75667da9",
+              "items": [
+                {
+                  "icon": "inv_112_achievement_dungeon_ecodome",
+                  "id": 42780,
+                  "points": 10,
+                  "title": "Eco-Dome Al'dani",
+                  "new": true
+                },
+                {
+                  "icon": "inv_112_achievement_dungeon_ecodome",
+                  "id": 42781,
+                  "points": 10,
+                  "title": "Heroic: Eco-Dome Al'dani",
+                  "new": true
+                },
+                {
+                  "icon": "inv_112_achievement_dungeon_ecodome",
+                  "id": 42782,
+                  "points": 10,
+                  "title": "Mythic: Eco-Dome Al'dani",
+                  "new": true
+                }
+              ],
+              "name": "Eco-Dome Al'dani"
             }
           ]
         },
@@ -26207,6 +26643,13 @@
                   "id": 41997,
                   "points": 10,
                   "title": "Owner of a Radiant Heart"
+                },
+                {
+                  "icon": "trade_engineering",
+                  "id": 42022,
+                  "points": 10,
+                  "title": "A Trusted Partner",
+                  "new": true
                 }
               ],
               "name": "Renown"
@@ -26257,6 +26700,26 @@
                 }
               ],
               "name": "Reputation"
+            },
+            {
+              "id": "18cdadea",
+              "items": [
+                {
+                  "icon": "inv_achievement_zone_undermine",
+                  "id": 60939,
+                  "points": 10,
+                  "title": "Bringing Down the House",
+                  "new": true
+                },
+                {
+                  "icon": "inv_112_achievement_raid_manaforgeomega",
+                  "id": 60940,
+                  "points": 10,
+                  "title": "Vandals! In! Space!",
+                  "new": true
+                }
+              ],
+              "name": "Raid Renown"
             }
           ]
         },
@@ -28448,7 +28911,14 @@
                   "icon": "inv_cask_04",
                   "id": 18579,
                   "points": 10,
-                  "title": "A Round on the House"
+                  "title": "A Round on the House on the Dragon Isles"
+                },
+                {
+                  "icon": "inv_misc_1h_earthenmug_b_01",
+                  "id": 41212,
+                  "points": 10,
+                  "title": "A Round on the House in Khaz Algar",
+                  "new": true
                 }
               ],
               "name": ""
@@ -29724,7 +30194,7 @@
             },
             {
               "items": [
-                 {
+                {
                   "icon": "achievement_worldevent_dastardlyduos",
                   "id": 42002,
                   "points": 10,
@@ -29736,7 +30206,7 @@
                   "points": 10,
                   "title": "Bullhorn of More Plenty"
                 },
-                                {
+                {
                   "icon": "achievement_worldevent_dastardlyduos",
                   "id": 42004,
                   "points": 10,
@@ -32350,6 +32820,20 @@
                   "id": 41665,
                   "points": 10,
                   "title": "Dressed to the Mines"
+                },
+                {
+                  "icon": "inv_112_achievement_zone_karesh",
+                  "id": 42316,
+                  "points": 10,
+                  "title": "Fractals? For Spring? Groundbreaking.",
+                  "new": true
+                },
+                {
+                  "icon": "inv_112_achievement_zone_karesh",
+                  "id": 42325,
+                  "points": 10,
+                  "title": "Void Wear Prohibited",
+                  "new": true
                 }
               ],
               "name": "The War Within"
@@ -32554,6 +33038,13 @@
                   "id": 41595,
                   "points": 10,
                   "title": "Prized Guise"
+                },
+                {
+                  "icon": "inv_robe_cloth_raidpriestethereal_d_01",
+                  "id": 42800,
+                  "points": 10,
+                  "title": "Astral Attire",
+                  "new": true
                 }
               ],
               "name": "PvP"
@@ -33273,6 +33764,13 @@
                   "id": 40705,
                   "points": 10,
                   "title": "Azj-Kahet Glyph Hunter"
+                },
+                {
+                  "icon": "inv_ability_skyriding_glyph",
+                  "id": 42727,
+                  "points": 10,
+                  "title": "K'aresh Glyph Hunter",
+                  "new": true
                 }
               ],
               "name": "War Within Glyphs"
@@ -39374,23 +39872,11 @@
                   "title": "Phenomenal Cosmic Power"
                 },
                 {
-                  "icon": "spell_nzinsanity_shortsighted",
-                  "id": 14140,
+                  "icon": "achievement_guildperk_honorablemention",
+                  "id": 9712,
                   "notObtainable": true,
                   "points": 0,
-                  "title": "Mad World"
-                },
-                {
-                  "icon": "spell_nzinsanity_shortsighted",
-                  "id": 41953,
-                  "points": 0,
-                  "title": "Mad World"
-                },
-                {
-                  "icon": "spell_nzinsanity_shortsighted",
-                  "id": 41971,
-                  "points": 0,
-                  "title": "Through the Looking Glass"
+                  "title": "Shiny Pet Charmer"
                 },
                 {
                   "icon": "ability_warrior_innerrage",
@@ -39419,6 +39905,30 @@
                 }
               ],
               "name": "Other"
+            },
+            {
+              "items": [
+                {
+                  "icon": "spell_nzinsanity_shortsighted",
+                  "id": 14140,
+                  "notObtainable": true,
+                  "points": 0,
+                  "title": "Mad World"
+                },
+                {
+                  "icon": "spell_nzinsanity_shortsighted",
+                  "id": 41953,
+                  "points": 0,
+                  "title": "Mad World"
+                },
+                {
+                  "icon": "spell_nzinsanity_shortsighted",
+                  "id": 41971,
+                  "points": 0,
+                  "title": "Through the Looking Glass"
+                }
+              ],
+              "name": "Horrific Visions"
             },
             {
               "items": [
@@ -39542,6 +40052,41 @@
                   "id": 40945,
                   "points": 0,
                   "title": "Gilded of the Undermine"
+                },
+                {
+                  "icon": "inv_112_achievement_zone_karesh",
+                  "id": 41937,
+                  "points": 0,
+                  "title": "The War Within Season 3: Voidborne Victor",
+                  "new": true
+                },
+                {
+                  "icon": "inv_crestupgrade_ethereal_weathered",
+                  "id": 41886,
+                  "points": 0,
+                  "title": "Weathered of the Ethereal",
+                  "new": true
+                },
+                {
+                  "icon": "inv_crestupgrade_ethereal_carved",
+                  "id": 41887,
+                  "points": 0,
+                  "title": "Carved of the Ethereal",
+                  "new": true
+                },
+                {
+                  "icon": "inv_crestupgrade_ethereal_runed",
+                  "id": 41888,
+                  "points": 0,
+                  "title": "Runed of the Ethereal",
+                  "new": true
+                },
+                {
+                  "icon": "inv_crestupgrade_ethereal_gilded",
+                  "id": 41892,
+                  "points": 0,
+                  "title": "Gilded of the Ethereal",
+                  "new": true
                 }
               ],
               "name": "War Within Seasonal"
@@ -39724,19 +40269,6 @@
                 }
               ],
               "name": "Awakened Raids"
-            },
-            {
-              "id": "596abc61",
-              "items": [
-                {
-                  "icon": "achievement_guildperk_honorablemention",
-                  "id": 9712,
-                  "notObtainable": true,
-                  "points": 0,
-                  "title": "Shiny Pet Charmer"
-                }
-              ],
-              "name": "Pet Charms"
             },
             {
               "id": "5d1f5085",
@@ -40219,6 +40751,13 @@
                   "id": 41362,
                   "points": 0,
                   "title": "Prized Gladiator's Fel Bat"
+                },
+                {
+                  "icon": "inv_felbatgladiatormount_copper",
+                  "id": 42039,
+                  "points": 0,
+                  "title": "Astral Gladiator's Fel Bat",
+                  "new": true
                 }
               ],
               "name": "PVP"
@@ -40283,6 +40822,13 @@
                   "notObtainable": true,
                   "points": 10,
                   "title": "I TAKE Candle!"
+                },
+                {
+                  "icon": "inv_knife_1h_etherealraid_d_02",
+                  "id": 42799,
+                  "points": 0,
+                  "title": "Let Her Solo Me",
+                  "new": true
                 }
               ],
               "name": "Challenge"
@@ -40339,6 +40885,50 @@
                   "id": 41709,
                   "points": 0,
                   "title": "Journey's End (Season 2)"
+                },
+                {
+                  "icon": "inv_helm_armor_ethereal_d_01",
+                  "id": 42193,
+                  "points": 0,
+                  "title": "My Stab-Happy Nemesis",
+                  "new": true
+                },
+                {
+                  "icon": "inv_achievement_raidnerubian_etherealassasin",
+                  "id": 42194,
+                  "points": 0,
+                  "title": "Pruning the Princess",
+                  "new": true
+                },
+                {
+                  "icon": "inv_airshipmountethereal",
+                  "id": 42190,
+                  "points": 0,
+                  "title": "Let Me Solo Her: Nexus-Princess Ky'veza",
+                  "new": true
+                },
+                {
+                  "icon": "inv_bannerpvp_01",
+                  "id": 60933,
+                  "points": 0,
+                  "side": "H",
+                  "title": "With Flying Colors",
+                  "new": true
+                },
+                {
+                  "icon": "inv_bannerpvp_02",
+                  "id": 60934,
+                  "points": 0,
+                  "side": "A",
+                  "title": "With Flying Colors",
+                  "new": true
+                },
+                {
+                  "icon": "ui_delves",
+                  "id": 42801,
+                  "points": 0,
+                  "title": "Journey's End (Season 3)",
+                  "new": true
                 }
               ],
               "name": "War Within Seasonal"
@@ -40449,6 +41039,62 @@
                   "id": 41197,
                   "points": 0,
                   "title": "War Within Delves: Tier 11 (Season 2)"
+                },
+                {
+                  "icon": "ui_delves",
+                  "id": 42196,
+                  "points": 0,
+                  "title": "War Within Delves: Tier 4 (Season 3)",
+                  "new": true
+                },
+                {
+                  "icon": "ui_delves",
+                  "id": 42197,
+                  "points": 0,
+                  "title": "War Within Delves: Tier 5 (Season 3)",
+                  "new": true
+                },
+                {
+                  "icon": "ui_delves",
+                  "id": 42198,
+                  "points": 0,
+                  "title": "War Within Delves: Tier 6 (Season 3)",
+                  "new": true
+                },
+                {
+                  "icon": "ui_delves",
+                  "id": 42199,
+                  "points": 0,
+                  "title": "War Within Delves: Tier 7 (Season 3)",
+                  "new": true
+                },
+                {
+                  "icon": "ui_delves",
+                  "id": 42200,
+                  "points": 0,
+                  "title": "War Within Delves: Tier 8 (Season 3)",
+                  "new": true
+                },
+                {
+                  "icon": "ui_delves",
+                  "id": 42201,
+                  "points": 0,
+                  "title": "War Within Delves: Tier 9 (Season 3)",
+                  "new": true
+                },
+                {
+                  "icon": "ui_delves",
+                  "id": 42202,
+                  "points": 0,
+                  "title": "War Within Delves: Tier 10 (Season 3)",
+                  "new": true
+                },
+                {
+                  "icon": "ui_delves",
+                  "id": 42203,
+                  "points": 0,
+                  "title": "War Within Delves: Tier 11 (Season 3)",
+                  "new": true
                 }
               ],
               "name": "War Within Seasonal Tiers"
@@ -41307,6 +41953,49 @@
                   "id": 40954,
                   "points": 0,
                   "title": "Enterprising Hero: The War Within Season Two"
+                },
+                {
+                  "icon": "achievement_challengemode_silver",
+                  "id": 42169,
+                  "points": 0,
+                  "title": "The War Within Keystone Explorer: Season Three",
+                  "new": true
+                },
+                {
+                  "icon": "achievement_challengemode_silver",
+                  "id": 42170,
+                  "points": 0,
+                  "title": "The War Within Keystone Conqueror: Season Three",
+                  "new": true
+                },
+                {
+                  "icon": "achievement_challengemode_platinum",
+                  "id": 41973,
+                  "points": 0,
+                  "title": "The War Within Keystone Master: Season Three",
+                  "new": true
+                },
+                {
+                  "icon": "achievement_challengemode_scholomance_platinum",
+                  "id": 42171,
+                  "points": 0,
+                  "title": "The War Within Keystone Hero: Season Three",
+                  "new": true
+                },
+                {
+                  "icon": "achievement_challengemode_scholomance_gold",
+                  "id": 42172,
+                  "points": 0,
+                  "title": "The War Within Keystone Legend: Season Three",
+                  "new": true
+                },
+                {
+                  "icon": "achievement_challengemode_platinum",
+                  "id": 42174,
+                  "points": 0,
+                  "title": "[PH] Hero: The War Within Season Three",
+                  "new": true,
+                  "notObtainable": true
                 }
               ],
               "name": "Mythic Keystone: The War Within"
@@ -41399,6 +42088,13 @@
                   "id": 41348,
                   "points": 0,
                   "title": "Keystone Hero: Operation: Floodgate"
+                },
+                {
+                  "icon": "trade_engineering",
+                  "id": 42173,
+                  "points": 0,
+                  "title": "Keystone Hero: Eco-Dome Al'dani",
+                  "new": true
                 }
               ],
               "name": "Dungeon Portals: The War Within"
@@ -41422,6 +42118,165 @@
                 }
               ],
               "name": "Dungeon Curves"
+            },
+            {
+              "id": "6ef87f14",
+              "items": [
+                
+                {
+                  "icon": "achievement_challengemode_scarletmonastery_hourglass",
+                  "id": 42149,
+                  "points": 0,
+                  "title": "The War Within Season 3: Resilient Keystone 12",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "achievement_challengemode_scarletmonastery_hourglass",
+                  "id": 42150,
+                  "points": 0,
+                  "title": "The War Within Season 3: Resilient Keystone 13",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "achievement_challengemode_scarletmonastery_hourglass",
+                  "id": 42151,
+                  "points": 0,
+                  "title": "The War Within Season 3: Resilient Keystone 14",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "achievement_challengemode_scarletmonastery_hourglass",
+                  "id": 42152,
+                  "points": 0,
+                  "title": "The War Within Season 3: Resilient Keystone 15",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "achievement_challengemode_scarletmonastery_hourglass",
+                  "id": 42153,
+                  "points": 0,
+                  "title": "The War Within Season 3: Resilient Keystone 16",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "achievement_challengemode_scarletmonastery_hourglass",
+                  "id": 42154,
+                  "points": 0,
+                  "title": "The War Within Season 3: Resilient Keystone 17",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "achievement_challengemode_scarletmonastery_hourglass",
+                  "id": 42155,
+                  "points": 0,
+                  "title": "The War Within Season 3: Resilient Keystone 18",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "achievement_challengemode_scarletmonastery_hourglass",
+                  "id": 42156,
+                  "points": 0,
+                  "title": "The War Within Season 3: Resilient Keystone 19",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "achievement_challengemode_scarletmonastery_hourglass",
+                  "id": 42157,
+                  "points": 0,
+                  "title": "The War Within Season 3: Resilient Keystone 20",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "achievement_challengemode_scarletmonastery_hourglass",
+                  "id": 42158,
+                  "points": 0,
+                  "title": "The War Within Season 3: Resilient Keystone 21",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "achievement_challengemode_scarletmonastery_hourglass",
+                  "id": 42159,
+                  "points": 0,
+                  "title": "The War Within Season 3: Resilient Keystone 22",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "achievement_challengemode_scarletmonastery_hourglass",
+                  "id": 42160,
+                  "points": 0,
+                  "title": "The War Within Season 3: Resilient Keystone 23",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "achievement_challengemode_scarletmonastery_hourglass",
+                  "id": 42161,
+                  "points": 0,
+                  "title": "The War Within Season 3: Resilient Keystone 24",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "achievement_challengemode_scarletmonastery_hourglass",
+                  "id": 42162,
+                  "points": 0,
+                  "title": "The War Within Season 3: Resilient Keystone 25",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "achievement_challengemode_scarletmonastery_hourglass",
+                  "id": 42805,
+                  "points": 0,
+                  "title": "The War Within Season 3: Resilient Keystone 29",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "achievement_challengemode_scarletmonastery_hourglass",
+                  "id": 42806,
+                  "points": 0,
+                  "title": "The War Within Season 3: Resilient Keystone 30",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "achievement_challengemode_scarletmonastery_hourglass",
+                  "id": 42802,
+                  "points": 0,
+                  "title": "The War Within Season 3: Resilient Keystone 26",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "achievement_challengemode_scarletmonastery_hourglass",
+                  "id": 42803,
+                  "points": 0,
+                  "title": "The War Within Season 3: Resilient Keystone 27",
+                  "notObtainable": true,
+                  "notReleased": true
+                },
+                {
+                  "icon": "achievement_challengemode_scarletmonastery_hourglass",
+                  "id": 42804,
+                  "points": 0,
+                  "title": "The War Within Season 3: Resilient Keystone 28",
+                  "notObtainable": true,
+                  "notReleased": true
+                }
+              ],
+              "name": "Unknown"
             }
           ]
         },
@@ -41884,6 +42739,20 @@
                   "id": 41297,
                   "points": 0,
                   "title": "Cutting Edge: Chrome King Gallywix"
+                },
+                {
+                  "icon": "inv_112_achievement_raid_dimensius",
+                  "id": 41624,
+                  "points": 0,
+                  "title": "Ahead of the Curve: Dimensius, the All-Devouring",
+                  "new": true
+                },
+                {
+                  "icon": "inv_112_achievement_raid_dimensius",
+                  "id": 41625,
+                  "points": 0,
+                  "title": "Cutting Edge: Dimensius, the All-Devouring",
+                  "new": true
                 }
               ],
               "name": "Lost Content"
@@ -43657,6 +44526,76 @@
                   "id": 41354,
                   "points": 0,
                   "title": "Prized Gladiator: The War Within Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_10",
+                  "id": 41028,
+                  "points": 0,
+                  "title": "Combatant I: The War Within Season 3",
+                  "new": true
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_10",
+                  "id": 41029,
+                  "points": 0,
+                  "title": "Combatant II: The War Within Season 3",
+                  "new": true
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 41030,
+                  "points": 0,
+                  "title": "Challenger I: The War Within Season 3",
+                  "new": true
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 41031,
+                  "points": 0,
+                  "title": "Challenger II: The War Within Season 3",
+                  "new": true
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 41024,
+                  "points": 0,
+                  "title": "Rival I: The War Within Season 3",
+                  "new": true
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 41025,
+                  "points": 0,
+                  "title": "Rival II: The War Within Season 3",
+                  "new": true
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 41026,
+                  "points": 0,
+                  "title": "Duelist: The War Within Season 3",
+                  "new": true
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 41027,
+                  "points": 0,
+                  "title": "Elite: The War Within Season 3",
+                  "new": true
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_09",
+                  "id": 41049,
+                  "points": 0,
+                  "title": "Gladiator: The War Within Season 3",
+                  "new": true
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 42036,
+                  "points": 0,
+                  "title": "Astral Gladiator: The War Within Season 3",
+                  "new": true
                 }
               ],
               "name": "Rated Arena: The War Within"
@@ -44672,6 +45611,22 @@
                   "points": 0,
                   "side": "A",
                   "title": "Hero of the Alliance: Prized"
+                },
+                {
+                  "icon": "achievement_pvp_h_h",
+                  "id": 42037,
+                  "points": 0,
+                  "side": "H",
+                  "title": "Hero of the Horde: Astral",
+                  "new": true
+                },
+                {
+                  "icon": "achievement_pvp_a_a",
+                  "id": 42038,
+                  "points": 0,
+                  "side": "A",
+                  "title": "Hero of the Alliance: Astral",
+                  "new": true
                 }
               ],
               "name": "Rated Battleground: The War Within"
@@ -44794,6 +45749,27 @@
                   "title": "Battle Mender: The War Within Season 2"
                 },
                 {
+                  "icon": "achievement_featsofstrength_gladiator_04",
+                  "id": 42023,
+                  "points": 0,
+                  "title": "Legend: The War Within Season 3",
+                  "new": true
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 42033,
+                  "points": 0,
+                  "title": "Astral Legend: The War Within Season 3",
+                  "new": true
+                },
+                {
+                  "icon": "ability_paladin_blessedmending",
+                  "id": 42044,
+                  "points": 0,
+                  "title": "Battle Mender: The War Within Season 3",
+                  "new": true
+                },
+                {
                   "icon": "spell_holy_heal",
                   "id": 40792,
                   "points": 0,
@@ -44846,6 +45822,29 @@
                   "points": 0,
                   "side": "A",
                   "title": "Prized Marshal: The War Within Season 2"
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_04",
+                  "id": 42024,
+                  "points": 0,
+                  "title": "Strategist: The War Within Season 3",
+                  "new": true
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 42034,
+                  "points": 0,
+                  "side": "H",
+                  "title": "Astral Warlord: The War Within Season 3",
+                  "new": true
+                },
+                {
+                  "icon": "achievement_featsofstrength_gladiator_07",
+                  "id": 42035,
+                  "points": 0,
+                  "side": "A",
+                  "title": "Astral Marshal: The War Within Season 3",
+                  "new": true
                 },
                 {
                   "icon": "spell_holy_heal",
@@ -44937,6 +45936,13 @@
                   "id": 41047,
                   "points": 0,
                   "title": "Prized Weapons of Conquest"
+                },
+                {
+                  "icon": "inv_misc_token_pvp02",
+                  "id": 41048,
+                  "points": 0,
+                  "title": "Astral Weapons of Conquest",
+                  "new": true
                 }
               ],
               "name": "War Within Seasonal"
@@ -46861,6 +47867,18 @@
                 }
               ],
               "name": "Other"
+            },
+            {
+              "id": "a6a8fb0d",
+              "items": [
+                {
+                  "icon": "inv_box_01",
+                  "id": 546,
+                  "points": 0,
+                  "title": "Safe Deposit"
+                }
+              ],
+              "name": "[R]Other"
             }
           ]
         },
