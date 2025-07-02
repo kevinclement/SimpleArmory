@@ -10,10 +10,59 @@
     let promise;
     let steps;
     
+    // Clé de stockage unique par personnage
+    function getStorageKey() {
+        return `mountsPlannerCheckedUntil_${$region}_${$realm}_${$character}`;
+    }
+
+    // Charger l'état sauvegardé
+    function loadCheckedUntil(steps) {
+        let saved = {};
+        try {
+            saved = JSON.parse(localStorage.getItem(getStorageKey()) || '{}');
+        } catch {}
+        return steps.map((step, i) => ({
+            ...step,
+            checkedUntil: saved[i] || null
+        }));
+    }
+
+    // Sauvegarder l'état
+    function saveCheckedUntil(steps) {
+        const obj = {};
+        steps.forEach((step, i) => {
+            if (step.checkedUntil) obj[i] = step.checkedUntil;
+        });
+        localStorage.setItem(getStorageKey(), JSON.stringify(obj));
+    }
+
     $: {
         promise = getPlannerSteps(mounts, $region, $realm, $character).then(_ => {           
-            steps = _;
+            steps = loadCheckedUntil(_);
         })
+    }
+
+    // Gestion des cases à cocher
+    function isChecked(step) {
+        if (!step.checkedUntil) return false;
+        const now = new Date();
+        const until = new Date(step.checkedUntil);
+        return now < until;
+    }
+
+    function toggleCheck(step, index) {
+        if (isChecked(step)) {
+            steps[index].checkedUntil = null;
+        } else {
+            // Rayure immédiate : on met une date future lointaine (ex: 2100-01-01)
+            steps[index].checkedUntil = '2100-01-01T23:59:59';
+        }
+        saveCheckedUntil(steps);
+    }
+
+    function resetAll() {
+        steps = steps.map(step => ({ ...step, checkedUntil: null }));
+        saveCheckedUntil(steps);
     }
 
     onMount(async () => {
@@ -74,9 +123,11 @@
     </p>
 </div>
 {:else}
+<button class="btn btn-sm btn-default" on:click={resetAll} style="margin-bottom:10px;">Reset all</button>
 <table class="table table-condensed">
     <thead>
       <tr>
+        <th>Done</th>
         <th>#</th>
         <th>Step</th>
         <th class="mnt-plan-boss-col">Boss</th>
@@ -86,7 +137,10 @@
     </thead>
     {#each steps as step, index}
         <tbody>
-            <tr>
+            <tr class={isChecked(step) ? 'mnt-planner-checked' : ''}>
+                <td>
+                  <input type="checkbox" checked={isChecked(step)} on:change={() => toggleCheck(step, index)} />
+                </td>
                 <td>{index + 1}</td>
                 <td>
                     {#if getPlanStepImageSrc(step) != ''}
@@ -134,6 +188,13 @@
             </tr>
         </tbody>
     {/each}
+
+<style>
+.mnt-planner-checked {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+</style>
 </table>
 {/if}
 

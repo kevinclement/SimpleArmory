@@ -20,7 +20,8 @@
 					"boosted": true
 				  }
 				],
-				"title": "Run Vortex Pinnacle"
+				"title": "Run Vortex Pinnacle",
+				"type": "Dungeon"
 			  },
 			  {
 				"bosses": [
@@ -35,7 +36,8 @@
 					"boosted": true
 				  }
 				],
-				"title": "Run Throne of the Four Winds"
+				"title": "Run Throne of the Four Winds",
+				"type": "Raid"
 			  },
 			  {
 				"steps": [
@@ -78,7 +80,8 @@
 						"spellId": 26054
 					  }
 					],
-					"title": "Run Ahn'Quiraj"
+					"title": "Run Ahn'Quiraj",
+					"type": "Raid"
 				  }
 				],
 				"title": "Fly to Silithus"
@@ -98,7 +101,8 @@
 						"boosted": true
 					  }
 					],
-					"title": "Run Onyxia"
+					"title": "Run Onyxia",
+					"type": "Raid"
 				  }
 				],
 				"title": "Fly to Dustwallow Marsh"
@@ -379,7 +383,8 @@
 						"spellId": 59569
 					  }
 					],
-					"title": "Run Culling of Stratholme"
+					"title": "Run Culling of Stratholme",
+					"type": "Dungeon"
 				  },
 				  {
 					"bosses": [
@@ -415,7 +420,8 @@
 						"boosted": true
 					  }
 					],
-					"title": "Run Dragon Soul"
+					"title": "Run Dragon Soul",
+					"type": "Raid"
 				  }
 				],
 				"title": "Portal to Caverns of Time"
@@ -442,7 +448,10 @@
 						"boosted": true
 					  }
 					],
-					"title": "Run Stonecore"
+					"title": "Run Stonecore",
+					"type": "Dungeon"
+				  },
+				  {
 				  }
 				],
 				"title": "Portal to Deepholm"
@@ -469,7 +478,8 @@
 						"boosted": true
 					  }
 					],
-					"title": "Run Sethekk Halls"
+					"title": "Run Sethekk Halls",
+					"type": "Dungeon"
 				  }
 				],
 				"title": "Fly to Auchindoun"
@@ -489,7 +499,8 @@
 						"boosted": true
 					  }
 					],
-					"title": "Run Tempest Keep"
+					"title": "Run Tempest Keep",
+					"type": "Raid"
 				  }
 				],
 				"title": "Fly to Netherstorm"
@@ -512,7 +523,8 @@
 						"boosted": true
 						  }
 						],
-						"title": "Run Magister's Terrace"
+						"title": "Run Magister's Terrace",
+						"type": "Dungeon"
 					  },
 					  {
 						"steps": [
@@ -529,7 +541,8 @@
 								"spellId": 98204
 							  }
 							],
-							"title": "Run Zul'Aman"
+							"title": "Run Zul'Aman",
+							"type": "Dungeon"
 						  }
 						],
 						"title": "Fly to Ghostlands"
@@ -549,7 +562,8 @@
 								"boosted": true
 							  }
 							],
-							"title": "Run Stratholme"
+							"title": "Run Stratholme",
+							"type": "Dungeon"
 						  }
 						],
 						"title": "Fly to Eastern Plaguelands"
@@ -583,7 +597,8 @@
 							"boosted": true
 						  }
 						],
-						"title": "Run Karazhan"
+						"title": "Run Karazhan",
+						"type": "Raid"
 					  },
 					  {
 						"bosses": [
@@ -609,7 +624,8 @@
 							"spellId": 231428
 						  }
 						],
-						"title": "Run Return to Karazhan"
+						"title": "Run Return to Karazhan",
+						"type": "Dungeon"
 					  }
 					],
 					"title": "Fly to Deadwind Pass"
@@ -641,7 +657,8 @@
 							"boosted": true
 						  }
 						],
-						"title": "Run Zul'Gurub"
+						"title": "Run Zul'Gurub",
+						"type": "Dungeon"
 					  }
 					],
 					"title": "Fly to Stranglethorn Vale"
@@ -668,7 +685,8 @@
 					"spellId": 130965
 				  }
 				],
-				"title": "Kill Galleon"
+				"title": "Kill Galleon",
+				"type": "Raid"
 			  }
 			],
 			"title": "and Portal to Jade Forest"
@@ -688,7 +706,8 @@
 					"spellId": 127158
 				  }
 				],
-				"title": "Kill Sha of Anger"
+				"title": "Kill Sha of Anger",
+				"type": "Raid"
 			  }
 			],
 			"title": "Fly to Kun-Lai Summit"
@@ -708,7 +727,8 @@
 					"spellId": 138423
 				  }
 				],
-				"title": "Kill Oondasta"
+				"title": "Kill Oondasta",
+				"type": "Raid"
 			  }
 			],
 			"title": "Fly to Isle of Giants"
@@ -728,7 +748,8 @@
 					"boosted": true
 				  }
 				],
-				"title": "Run Mogu'shan Vaults"
+				"title": "Run Mogu'shan Vaults",
+				"type": "Raid"
 			  }
 			],
 			"title": "Fly to Kun-Lai Summit"
@@ -751,7 +772,8 @@
 						"spellId": 139442
 					  }
 					],
-					"title": "Kill Nalak"
+					"title": "Kill Nalak",
+					"type": "Raid"
 				  },
 				  {
 					"bosses": [
@@ -778,7 +800,8 @@
 						"boosted": true
 					  }
 					],
-					"title": "Run Throne of Thunder"
+					"title": "Run Throne of Thunder",
+					"type": "Raid"
 				  }
 				],
 				"title": "Portal to Isle of Thunder"
@@ -802,7 +825,8 @@
 					"boosted": true
 				  }
 				],
-				"title": "Run Siege of Orgrimmar"
+				"title": "Run Siege of Orgrimmar",
+				"type": "Raid"
 			  }
 			],
 			"title": "Fly to Vale of the Eternal Blossoms"
@@ -826,7 +850,8 @@
 						"spellId": 171828
 					  }
 					],
-					"title": "Kill Rukhmar"
+					"title": "Kill Rukhmar",
+					"type": "Raid"
 				  }
 				],
 				"title": "Fly to Spires of Arak"
@@ -848,7 +873,8 @@
 						"boosted": true
 					  }
 					],
-					"title": "Run Hellfire Citadel"
+					"title": "Run Hellfire Citadel",
+					"type": "Raid"
 				  }
 				],
 				"title": "Fly to Tanaan Jungle"
@@ -869,7 +895,8 @@
 						"boosted": true
 					  }
 					],
-					"title": "Run Blackrock Foundry"
+					"title": "Run Blackrock Foundry",
+					"type": "Raid"
 				  }
 				],
 				"title": "Fly to Gorgrond"
@@ -888,7 +915,7 @@
 					"icon": "inv_infernalmountgreen",
 					"itemId": 137574,
 					"mount": "Living Infernal Core",
-					"note": "Normal/Heroic/Mythic",
+					"note": "Normal/Heroic/Mythic. You can run normal AND mythic the same week",
 					"name": "Gul'dan",
 					"spellId": 213134,
 					"boosted": true
@@ -905,7 +932,8 @@
 					"boosted": true
 				  }
 				],
-				"title": "Run Nighthold"
+				"title": "Run Nighthold",
+				"type": "Raid"
 			  }
 			],
 			"title": "Fly to Suramar"
@@ -927,7 +955,8 @@
 					"boosted": true
 				  }
 				],
-				"title": "Run Tomb of Sargeras"
+				"title": "Run Tomb of Sargeras",
+				"type": "Raid"
 			  }
 			],
 			"title": "Fly to Broken Shore"
@@ -962,7 +991,8 @@
 						"boosted": true
 					  }
 					],
-					"title": "Run Antorus, the Burning Throne"
+					"title": "Run Antorus, the Burning Throne",
+					"type": "Raid"
 				  }
 				],
 				"title": "Portal to Antoran Wastes"
@@ -998,7 +1028,8 @@
 					"boosted": true
 				  }
 				],
-				"title": "Run Battle of Dazar'alor"
+				"title": "Run Battle of Dazar'alor",
+				"type": "Raid"
 			  }
 			],
 			"title": "Hearthstone to Zandalar / Kul'Tiras"
@@ -1021,7 +1052,8 @@
 						"boosted": true
 					  }
 					],
-					"title": "Run Freehold"
+					"title": "Run Freehold",
+					"type": "Dungeon"
 				  }
 				],
 				"title": "Walk to Tiragarde Sound"
@@ -1042,7 +1074,8 @@
 						"boosted": true
 					  }
 					],
-					"title": "Run King's Rest"
+					"title": "Run King's Rest",
+					"type": "Dungeon"
 				  }
 				],
 				"title": "Walk to Zuldazar"
@@ -1063,14 +1096,15 @@
 						"boosted": true
 					  }
 					],
-					"title": "Run The Underrot"
+					"title": "Run The Underrot",
+					"type": "Dungeon"
 				  }
 				],
 				"title": "Walk to Nazmir"
 			  },
 			  {
 				"capital":true,
-				"unavailable": true,
+				"unavailable": false,
 				"steps": [
 				  {
 					"bosses": [
@@ -1095,7 +1129,8 @@
 						"spellId": 290718
 					  }
 					],
-					"title": "Run Mechagon: Junkyard"
+					"title": "Run Mechagon: Junkyard",
+					"type": "Dungeon"
 				  }
 				],
 				"title": "Portal to Zandalar / Kul'Tiras and take the Teleporter / Flight Path to Mechagon"
@@ -1117,7 +1152,8 @@
 						"boosted": true
 					  }
 					],
-					"title": "Run Ny'alotha the Waking City"
+					"title": "Run Ny'alotha the Waking City",
+					"type": "Raid"
 				  }
 				],
 				"title": "and Portal to Uldum"
@@ -1145,7 +1181,8 @@
 						"boosted": true
 					  }
 					],
-					"title": "Run Necrotic Wake"
+					"title": "Run Necrotic Wake",
+					"type": "Dungeon"
 				  }
 				],
 				"title": "Flightpath to Bastion"
@@ -1166,7 +1203,8 @@
 						"boosted": true
 					  }
 					],
-					"title": "Run Tazavesh the Veiled Market"
+					"title": "Run Tazavesh the Veiled Market",
+					"type": "Dungeon"
 				  }
 				],
 				"title": "Fly to Tazavesh"
@@ -1198,7 +1236,8 @@
 						"boosted": true
 						}
 					  ],
-					"title": "Run Sanctum of Domination"
+					"title": "Run Sanctum of Domination",
+					"type": "Raid"
 				  }
 				],
 				"title": "Fly to Oribos, then Portal to The Maw"
@@ -1219,7 +1258,8 @@
 						"boosted": true
 					  }
 					],
-					"title": "Run Sepulcher of the First Ones"
+					"title": "Run Sepulcher of the First Ones",
+					"type": "Raid"
 				  }
 				],
 				"title": "Teleport to Zereth Mortis"
@@ -1396,7 +1436,8 @@
 							"spellId": 353263
 						  }
 						],
-						"title": "Run Dawn of the Infinites"
+						"title": "Run Dawn of the Infinites",
+						"type": "Raid"
 					  }
 					],
 					"title": "Flightpath to Dawn of the Infinites"
@@ -1416,7 +1457,8 @@
 							"spellId": 424484
 						  }
 						],
-						"title": "Run Amirdrassil, the Dream's Hope"
+						"title": "Run Amirdrassil, the Dream's Hope",
+						"type": "Raid"
 					  }
 					],
 					"title": "Take the portal to the Emerald Dream in the Emerald Enclave"
@@ -1444,7 +1486,8 @@
 							"spellId": 442358
 						  }
 						],
-						"title": "Run The Stonevault"
+						"title": "Run The Stonevault",
+						"type": "Dungeon"
 					  }
 					],
 					"title": "Flightpath to The Ringing Deeps"
@@ -1464,7 +1507,8 @@
 							"spellId": 449264
 						  }
 						],
-						"title": "Run Darkflame Cleft"
+						"title": "Run Darkflame Cleft",
+						"type": "Dungeon"
 					  }
 					],
 					"title": "Flightpath to Ringing Deeps"
@@ -1494,7 +1538,8 @@
 								"spellId": 451491
 							}
 						],
-						"title": "Run Nerub-ar Palace"
+						"title": "Run Nerub-ar Palace",
+						"type": "Raid"
 					  }
 					],
 					"title": "Flightpath to Azj'Kahet"
@@ -1525,7 +1570,8 @@
 								"spellId": 235626
 							}
 						],
-						"title": "Run Liberation of Undermine"
+						"title": "Run Liberation of Undermine",
+						"type": "Raid"
 					  }
 					],
 					"title": "and Portal to Dornogal and then take the teleporter to Undermine"
