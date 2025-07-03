@@ -100,7 +100,11 @@
                         {#each step.bosses as boss}
                             <tbody>
                                 <tr>
+                                    {#if boss.boosted}
+                                    <td class="mnt-plan-boss-col mnt-plan-boss-boosted">{boss.name}</td>
+                                    {:else}
                                     <td class="mnt-plan-boss-col">{boss.name}</td>
+                                    {/if}
                                     <td class="mnt-plan-mount-col">
                                         {#if boss.itemId}
                                             <a class="{anchorCss(boss)}" target="{settings.anchorTarget}" href="//{settings.WowHeadUrl}/item={ boss.itemId }">
