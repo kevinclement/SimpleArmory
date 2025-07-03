@@ -50,18 +50,56 @@
         return now < until;
     }
 
+
+
+    // Trouve l'index dans le tableau à partir d'un idx logique
+    function findIndexByIdx(stepsArr, idx) {
+        return stepsArr.findIndex(s => s.idx === idx);
+    }
+
+    // Décoche l'étape et tous ses parents via parentIdx (retourne un nouveau tableau)
+    function uncheckStep(stepsArr, index) {
+        let updated = [...stepsArr];
+        let idx = index;
+        while (
+            idx !== null &&
+            idx !== undefined &&
+            updated[idx] &&
+            updated[idx].checkedUntil
+        ) {
+            updated[idx] = { ...updated[idx], checkedUntil: null };
+            const parentIdxValue = updated[idx].parentIdx;
+            if (parentIdxValue === null || parentIdxValue === undefined) break;
+            idx = findIndexByIdx(updated, parentIdxValue);
+            if (idx === -1) break;
+        }
+        return updated;
+    }
+
     function toggleCheck(step, index) {
         if (isChecked(step)) {
-            steps[index].checkedUntil = null;
+            steps = uncheckStep(steps, index);
         } else {
-            // Rayure immédiate : on met une date future lointaine (ex: 2100-01-01)
-            steps[index].checkedUntil = '2100-01-01T23:59:59';
+            steps = steps.map((s, i) =>
+                i === index ? { ...s, checkedUntil: '2100-01-01T23:59:59' } : s
+            );
         }
         saveCheckedUntil(steps);
     }
 
+    function resetByType(type) {
+        let updated = [...steps];
+        steps.forEach((step, idx) => {
+            if (step.type === type && step.checkedUntil) {
+                updated = uncheckStep(updated, idx);
+            }
+        });
+        steps = updated;
+        saveCheckedUntil(steps);
+    }
+
     function resetAll() {
-        steps = steps.map(step => ({ ...step, checkedUntil: null }));
+        steps = steps.map(s => ({ ...s, checkedUntil: null }));
         saveCheckedUntil(steps);
     }
 
@@ -109,6 +147,17 @@
 
         return 'mnt-plan-rare';
     }
+
+    function getFullLineClass(step) {
+        var classLine = [];
+        if (isChecked(step))
+            classLine.push('mnt-planner-checked');
+        return classLine.join(' ');
+    }
+
+    function logSteps(steps) {
+        console.log('Steps:', steps);
+    }
 </script>
 
 {#await promise}
@@ -123,7 +172,11 @@
     </p>
 </div>
 {:else}
-<button class="btn btn-sm btn-default" on:click={resetAll} style="margin-bottom:10px;">Reset all</button>
+<div style="margin-bottom:10px;display:flex;gap:8px;flex-wrap:wrap;">
+  <button class="btn btn-sm btn-default" on:click={resetAll}>Reset all</button>
+  <button class="btn btn-sm btn-default" on:click={() => resetByType('Dungeon')}>Reset Dungeons</button>
+  <button class="btn btn-sm btn-default" on:click={() => resetByType('Raid')}>Reset Raids</button>
+</div>
 <table class="table table-condensed">
     <thead>
       <tr>
@@ -137,7 +190,7 @@
     </thead>
     {#each steps as step, index}
         <tbody>
-            <tr class={isChecked(step) ? 'mnt-planner-checked' : ''}>
+            <tr class="{getFullLineClass(step)}">
                 <td>
                   <input type="checkbox" checked={isChecked(step)} on:change={() => toggleCheck(step, index)} />
                 </td>
