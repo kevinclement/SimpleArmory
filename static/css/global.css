@@ -480,11 +480,19 @@ body {
   filter: grayscale(0) opacity(1);
 }
 
+.itemSkinNew .hideCollected {
+  display: none;
+}
+
 .itemSkinClassic .notCollected {
   border: 1px dashed grey;
 }
 
 .itemSkinClassic .notCollected img {
+  display: none;
+}
+
+.itemSkinClassic .hideCollected {
   display: none;
 }
 

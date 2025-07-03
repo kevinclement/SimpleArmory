@@ -11,6 +11,7 @@
     import Category from '$components/Category/Category.svelte';
 
     export let planner
+    export let hideCollected
 
     let promise
     let mounts
@@ -51,6 +52,7 @@
         Mounts
         <small class="pbSmall">
             <input type="checkbox" id="planner" bind:checked={planner} on:click={togglePlanner}><label for="planner">Show Planner</label>
+            <input type="checkbox" id="hideCollected" bind:checked={hideCollected}><label for="hideCollected">Hide Collected</label>
         </small>
         <ProgressBar 
             rightSide={true}
@@ -71,7 +73,7 @@
          condition since it is faster to toggle it -->
     <div style="display: {planner ? 'none' : 'block' }">
     {#each mounts.categories as category}
-        <Category {category}  superCat="Mounts"></Category>
+        <Category {category}  superCat="Mounts" {hideCollected}></Category>
     {/each}
     </div>
 {:else}
