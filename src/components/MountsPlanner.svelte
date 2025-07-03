@@ -10,10 +10,97 @@
     let promise;
     let steps;
     
+    // Clé de stockage unique par personnage
+    function getStorageKey() {
+        return `mountsPlannerCheckedUntil_${$region}_${$realm}_${$character}`;
+    }
+
+    // Charger l'état sauvegardé
+    function loadCheckedUntil(steps) {
+        let saved = {};
+        try {
+            saved = JSON.parse(localStorage.getItem(getStorageKey()) || '{}');
+        } catch {}
+        return steps.map((step, i) => ({
+            ...step,
+            checkedUntil: saved[i] || null
+        }));
+    }
+
+    // Sauvegarder l'état
+    function saveCheckedUntil(steps) {
+        const obj = {};
+        steps.forEach((step, i) => {
+            if (step.checkedUntil) obj[i] = step.checkedUntil;
+        });
+        localStorage.setItem(getStorageKey(), JSON.stringify(obj));
+    }
+
     $: {
         promise = getPlannerSteps(mounts, $region, $realm, $character).then(_ => {           
-            steps = _;
+            steps = loadCheckedUntil(_);
         })
+    }
+
+    // Gestion des cases à cocher
+    function isChecked(step) {
+        if (!step.checkedUntil) return false;
+        const now = new Date();
+        const until = new Date(step.checkedUntil);
+        return now < until;
+    }
+
+
+
+    // Trouve l'index dans le tableau à partir d'un idx logique
+    function findIndexByIdx(stepsArr, idx) {
+        return stepsArr.findIndex(s => s.idx === idx);
+    }
+
+    // Décoche l'étape et tous ses parents via parentIdx (retourne un nouveau tableau)
+    function uncheckStep(stepsArr, index) {
+        let updated = [...stepsArr];
+        let idx = index;
+        while (
+            idx !== null &&
+            idx !== undefined &&
+            updated[idx] &&
+            updated[idx].checkedUntil
+        ) {
+            updated[idx] = { ...updated[idx], checkedUntil: null };
+            const parentIdxValue = updated[idx].parentIdx;
+            if (parentIdxValue === null || parentIdxValue === undefined) break;
+            idx = findIndexByIdx(updated, parentIdxValue);
+            if (idx === -1) break;
+        }
+        return updated;
+    }
+
+    function toggleCheck(step, index) {
+        if (isChecked(step)) {
+            steps = uncheckStep(steps, index);
+        } else {
+            steps = steps.map((s, i) =>
+                i === index ? { ...s, checkedUntil: '2100-01-01T23:59:59' } : s
+            );
+        }
+        saveCheckedUntil(steps);
+    }
+
+    function resetByType(type) {
+        let updated = [...steps];
+        steps.forEach((step, idx) => {
+            if (step.type === type && step.checkedUntil) {
+                updated = uncheckStep(updated, idx);
+            }
+        });
+        steps = updated;
+        saveCheckedUntil(steps);
+    }
+
+    function resetAll() {
+        steps = steps.map(s => ({ ...s, checkedUntil: null }));
+        saveCheckedUntil(steps);
     }
 
     onMount(async () => {
@@ -60,6 +147,17 @@
 
         return 'mnt-plan-rare';
     }
+
+    function getFullLineClass(step) {
+        var classLine = [];
+        if (isChecked(step))
+            classLine.push('mnt-planner-checked');
+        return classLine.join(' ');
+    }
+
+    function logSteps(steps) {
+        console.log('Steps:', steps);
+    }
 </script>
 
 {#await promise}
@@ -74,9 +172,15 @@
     </p>
 </div>
 {:else}
+<div style="margin-bottom:10px;display:flex;gap:8px;flex-wrap:wrap;">
+  <button class="btn btn-sm btn-default" on:click={resetAll}>Reset all</button>
+  <button class="btn btn-sm btn-default" on:click={() => resetByType('Dungeon')}>Reset Dungeons</button>
+  <button class="btn btn-sm btn-default" on:click={() => resetByType('Raid')}>Reset Raids</button>
+</div>
 <table class="table table-condensed">
     <thead>
       <tr>
+        <th>Done</th>
         <th>#</th>
         <th>Step</th>
         <th class="mnt-plan-boss-col">Boss</th>
@@ -86,7 +190,10 @@
     </thead>
     {#each steps as step, index}
         <tbody>
-            <tr>
+            <tr class="{getFullLineClass(step)}">
+                <td>
+                  <input type="checkbox" checked={isChecked(step)} on:change={() => toggleCheck(step, index)} />
+                </td>
                 <td>{index + 1}</td>
                 <td>
                     {#if getPlanStepImageSrc(step) != ''}
@@ -130,6 +237,13 @@
             </tr>
         </tbody>
     {/each}
+
+<style>
+.mnt-planner-checked {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+</style>
 </table>
 {/if}
 

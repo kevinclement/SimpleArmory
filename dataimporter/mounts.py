@@ -65,7 +65,7 @@ MOUNT_SOURCE_ENUM = {
 
 
 class MountFixer(WowToolsFixer):
-    def _store_init(self, mounts):
+    def _store_init(self, mounts): # type: ignore
         self.mounts = mounts
         self.id_to_old_mount = {}
 
