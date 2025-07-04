@@ -32,69 +32,74 @@ class WowToolsClient:
         return self
 
     async def __aexit__(self, exc_type, exc_value, tb):
-        await self.session.__aexit__(exc_type, exc_value, tb)
+        if self.session is not None:
+            await self.session.__aexit__(exc_type, exc_value, tb)
 
     async def get_table_versions(self, table_name):
-        versions_url = self.versions_url.format(name=table_name)
-        versions_response = await self.session.get(versions_url)
-        page = (await versions_response.text())
-        if (m := re.search(r'data-page="([^"]+)"', page)) is None:
-            raise RuntimeError(f"Cannot find data-page= in {versions_url}")
-        page_data = json.loads(html.unescape(m.group(1)))
-        return page_data['props']['versions']
+        if self.session is not None:
+            versions_url = self.versions_url.format(name=table_name)
+            versions_response = await self.session.get(versions_url)
+            page = (await versions_response.text())
+            if (m := re.search(r'data-page="([^"]+)"', page)) is None:
+                raise RuntimeError(f"Cannot find data-page= in {versions_url}")
+            page_data = json.loads(html.unescape(m.group(1)))
+            return page_data['props']['versions']
 
     async def get_matching_build_version(self, table_name, build=None):
         versions = (await self.get_table_versions(table_name))
-        versions.sort(
-            key=lambda s: list(map(int, s.split('.'))),
-            reverse=True
-        )
-        if build is None:
-            return versions[0]
-        else:
-            for v in versions:
-                if v.startswith(build):
-                    return v
-            versions_error_msg = ', '.join(versions[:10] + ['...'])
-            raise RuntimeError(
-                f"No matching version found for build {build} in table"
-                f" {table_name}. Available versions: [{versions_error_msg}]."
+        if versions is not None:
+            versions.sort(
+                key=lambda s: list(map(int, s.split('.'))),
+                reverse=True
             )
+            if build is None:
+                return versions[0]
+            else:
+                for v in versions:
+                    if v.startswith(build):
+                        return v
+                versions_error_msg = ', '.join(versions[:10] + ['...'])
+                raise RuntimeError(
+                    f"No matching version found for build {build} in table"
+                    f" {table_name}. Available versions: [{versions_error_msg}]."
+                )
     
     async def get_available_build_versions(self):
         # NOTE: passing in mount here for table, I think any table we 
         # pass or use should be the same, shouldn't need to specify
         versions = (await self.get_table_versions('mount'))
-        versions.sort(
-            key=lambda s: list(map(int, s.split('.'))),
-            reverse=True
-        )
+        if versions is not None:
+            versions.sort(
+                key=lambda s: list(map(int, s.split('.'))),
+                reverse=True
+            )
 
-        mainBuilds = {}
-        print("Versions available:")
-        for v in versions:
-            vparts = v.split('.')
-            mainBuild =  vparts[0] + "." + vparts[1] + "." + vparts[2]
+            mainBuilds = {}
+            print("Versions available:")
+            for v in versions:
+                vparts = v.split('.')
+                mainBuild =  vparts[0] + "." + vparts[1] + "." + vparts[2]
+                
+                if mainBuild not in mainBuilds:
+                    mainBuilds[mainBuild] = []
+
+                mainBuilds[mainBuild].append(vparts[3])
             
-            if mainBuild not in mainBuilds:
-                mainBuilds[mainBuild] = []
-
-            mainBuilds[mainBuild].append(vparts[3])
-        
-        for mainBuild in list(mainBuilds):
-            print(mainBuild)
-            for minorBuild in mainBuilds[mainBuild]:
-                print("  " + mainBuild + "." + minorBuild + " ")
+            for mainBuild in list(mainBuilds):
+                print(mainBuild)
+                for minorBuild in mainBuilds[mainBuild]:
+                    print("  " + mainBuild + "." + minorBuild + " ")
 
     async def get_table(self, table_name, build=None):
         build = (await self.get_matching_build_version(table_name, build))
-        table_response = await self.session.get(
-            self.export_url.format(name=table_name),
-            params={'build': build}
-        )
-        return fix_wago_csv_brackets(
-            csv_to_list(await table_response.text(encoding='utf-8'))
-        )
+        if self.session is not None:
+            table_response = await self.session.get(
+                self.export_url.format(name=table_name),
+                params={'build': str(build)} if build is not None else None
+            )
+            return fix_wago_csv_brackets(
+                csv_to_list(await table_response.text(encoding='utf-8'))
+            )
 
 
 @functools.lru_cache(maxsize=None)
