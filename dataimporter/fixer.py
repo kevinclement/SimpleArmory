@@ -15,7 +15,7 @@ class WowToolsFixer:
         raise NotImplementedError
 
     def dbc_get_table(self, table_name):
-        return wago.get_table(table_name, self.build)
+        return wago.get_table(table_name, self.build) or {}
 
     def get_icon_name(self, icon_id: int):
         if self._dbc_manifest_interface_data is None:

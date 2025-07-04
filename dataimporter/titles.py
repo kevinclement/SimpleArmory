@@ -117,7 +117,8 @@ IGNORE_TITLE_ID = [
 
 
 class TitleFixer(WowToolsFixer):
-    def _store_init(self, titles):
+    def _store_init(self, *args):
+        titles = args[0]
         self.titles = titles
         self.id_to_old_title = {}
         self.register_old_titles()
@@ -177,7 +178,7 @@ class TitleFixer(WowToolsFixer):
 
     def get_title(self, title_id: int):
         if int(title_id) not in self.dbc_title:
-            return None
+            return {}
         dbc_title = self.dbc_title[int(title_id)]
         name = self.simplify_name(dbc_title['Name_lang'])
         nameF = self.simplify_name(dbc_title['Name1_lang'])
