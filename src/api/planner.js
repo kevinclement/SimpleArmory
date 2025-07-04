@@ -71,7 +71,7 @@ function checkStepCompleted(step, items) {
             if (boss.ID === undefined) { return; } // continue the loop, bad boss data
             if (!characterNeedsBoss(boss.ID)) { return; }
 
-            if ( bossIsNeutral || (boss.isAlliance && character.isAlliance) || (boss.isHorde && character.isHorde)) {
+            if ( bossIsNeutral || (boss.isAlliance && character.isAlliance) || (boss.isHorde && !character.isAlliance)) {
                 addBoss(boss);
                 return;
             }
