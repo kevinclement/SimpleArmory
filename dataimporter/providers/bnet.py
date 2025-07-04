@@ -2,7 +2,7 @@ import asyncio
 import aiohttp
 from aiohttp.helpers import BasicAuth
 from urllib.parse import urljoin
-from settings import OAUTH_CLIENT_ID, OAUTH_CLIENT_SECRET, OAUTH_REGION
+from settings import OAUTH_CLIENT_ID, OAUTH_CLIENT_SECRET, OAUTH_REGION, LOCALE
 from tqdm.asyncio import tqdm
 
 
@@ -36,7 +36,7 @@ class BnetClient:
         url = urljoin(self.api_url, path).format(region)
         headers = {
             'Authorization': f'Bearer {self.access_token}',
-            'Battlenet-Namespace': 'static-us',
+            'Battlenet-Namespace': f'static-{OAUTH_REGION}',
         }
         for i in range(5):  # retry 5 times if too many requests
             r = await self.session.get(url, headers=headers, **kwargs)
@@ -57,19 +57,19 @@ class BnetClient:
         category = 'index' if cat_id is None else str(cat_id)
         return (await self.query(
             'data/wow/achievement-category/{}'.format(category),
-            params={'locale': 'en_US'},
+            params={'locale': LOCALE},
         ))
 
     async def achievement(self, ach_id):
         return (await self.query(
             'data/wow/achievement/{}'.format(ach_id),
-            params={'locale': 'en_US'},
+            params={'locale': LOCALE},
         ))
 
     async def achievement_media(self, ach_id):
         return (await self.query(
             'data/wow/media/achievement/{}'.format(ach_id),
-            params={'locale': 'en_US'},
+            params={'locale': LOCALE},
         ))
 
     async def mounts(self):
@@ -80,7 +80,7 @@ class BnetClient:
 
     async def realms(self, region):
         params = {'namespace': 'dynamic-' + region,
-                  'locale': 'en_US'}
+                  'locale': LOCALE}
         return (await self.query('data/wow/realm/', region=region,
                                  params=params))
 
@@ -90,13 +90,13 @@ class BnetClient:
     async def item(self, item_id):
         return (await self.query(
             'data/wow/item/{}'.format(item_id),
-            params={'locale': 'en_US'}
+            params={'locale': LOCALE}
         ))
 
     async def item_media(self, ach_id):
         return (await self.query(
             'data/wow/media/item/{}'.format(ach_id),
-            params={'locale': 'en_US'},
+            params={'locale': LOCALE},
         ))
 
     async def pet_source(self, species_id):
