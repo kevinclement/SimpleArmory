@@ -19,8 +19,9 @@ IGNORE_ACHIEV_ID = [
 
 
 class AchievementFixer(WowToolsFixer):
-    def _store_init(self, achievements):
+    def _store_init(self, *args):
         self.id_to_sa_ach = {}
+        achievements = args[0]
         self.achievs = achievements
 
         self.register_sa_achievs()
@@ -164,12 +165,13 @@ class AchievementFixer(WowToolsFixer):
                         for path, achs in path_to_achs.items():
                             if path == expected:
                                 continue
-                            (iscat(self.achievs, *path)
-                                ['subcats'].append({
+                            cat_ref = iscat(self.achievs, *path)
+                            if cat_ref is not None:
+                                cat_ref['subcats'].append({
                                     'id': genid(),
                                     'name': '[R]' + subcat['name'],
                                     'items': achs
-                                }))
+                                })
                             achs_to_remove |= {ach_to_idx[int(ach['id'])]
                                                for ach in achs}
                             changelog("  - {} > {} (achievements {})"
@@ -183,13 +185,13 @@ class AchievementFixer(WowToolsFixer):
                             subcat_to_remove.add(i)
                     elif first_path != expected:
                         # "Easy" fix: whole subcategory moved to other
-                        # category
-                        (iscat(self.achievs, *first_path)
-                            ['subcats'].append({
+                        cat_ref = iscat(self.achievs, *first_path)
+                        if cat_ref is not None:
+                            cat_ref['subcats'].append({
                                 'id': genid(),
                                 'name': '[R]' + subcat['name'],
                                 'items': subcat['items']
-                            }))
+                            })
                         changelog('* Moved sub-category {} > {} > {}'
                                   '  →  {} > {}'
                                   .format(*expected, subcat['name'],
@@ -210,7 +212,7 @@ class AchievementFixer(WowToolsFixer):
                             pass
         for ach_id in missing:
             path = self.id_to_cat[int(ach_id)]
-            cat = iscat(self.achievs, *path, 'TODO')
+            cat = iscat(self.achievs, *path)
             newach = self.genach(int(ach_id))
             cat['items'].append(newach)
             changelog(

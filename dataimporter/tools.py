@@ -44,9 +44,10 @@ def find_or_create_item(L, name, subitems_name=None, error_absent=False):
 
 
 def icat(dct, cat=None, subcat=None, error_absent=False):
+    res = None
     if cat is not None:
         res = find_or_create_item(dct, cat, 'subcats', error_absent)
-    if subcat is not None:
+    if subcat is not None and res is not None:
         res = find_or_create_item(
             res['subcats'], subcat, 'items', error_absent
         )
@@ -54,13 +55,14 @@ def icat(dct, cat=None, subcat=None, error_absent=False):
 
 
 def iscat(dct, supercat=None, cat=None, subcat=None, *, error_absent=False):
+    res = None
     if supercat is not None:
         res = find_or_create_item(
             dct['supercats'], supercat, 'cats', error_absent
         )
-    if cat is not None:
+    if cat is not None and res is not None:
         res = find_or_create_item(res['cats'], cat, 'subcats', error_absent)
-    if subcat is not None:
+    if subcat is not None and res is not None:
         res = find_or_create_item(
             res['subcats'], subcat, 'items', error_absent
         )

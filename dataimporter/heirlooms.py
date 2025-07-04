@@ -21,7 +21,8 @@ HEIRLOOM_SOURCE_ENUM = {
 
 
 class HeirloomFixer(WowToolsFixer):
-    def _store_init(self, heirlooms):
+    def _store_init(self, *args):
+        heirlooms = args[0]
         self.heirlooms = heirlooms
         self.id_to_old_heirloom = {}
 
@@ -78,7 +79,9 @@ class HeirloomFixer(WowToolsFixer):
                   .format(heirloom_id, heirloom['itemId']))
 
         source = self.get_heirloom_source(heirloom_id)
-        icat(self.heirlooms, 'TODO', source)['items'].append(heirloom)
+        cat = icat(self.heirlooms, 'TODO', source)
+        if cat is not None and 'items' in cat:
+            cat['items'].append(heirloom)
 
     def fix_missing_heirlooms(self):
         for heirloom_id in self.dbc_heirloom:
@@ -91,16 +94,17 @@ class HeirloomFixer(WowToolsFixer):
             for subcat in cat['subcats']:
                 for item in subcat['items']:
                     fixed_heirloom = self.get_heirloom(int(item['ID']))
-                    item['ID'] = fixed_heirloom['ID']
-                    item['itemId'] = fixed_heirloom['itemId']
-                    item['name'] = fixed_heirloom['name']
+                    if fixed_heirloom is not None:
+                        item['ID'] = fixed_heirloom['ID']
+                        item['itemId'] = fixed_heirloom['itemId']
+                        item['name'] = fixed_heirloom['name']
 
-                    if (
-                        fixed_heirloom['icon'] != '0'
-                        and item['icon'].lower()
-                            != fixed_heirloom['icon'].lower()
-                    ):
-                        item['icon'] = fixed_heirloom['icon']
+                        if (
+                            fixed_heirloom['icon'] != '0'
+                            and item['icon'].lower()
+                                != fixed_heirloom['icon'].lower()
+                        ):
+                            item['icon'] = fixed_heirloom['icon']
 
     def run(self):
         self.fix_missing_heirlooms()

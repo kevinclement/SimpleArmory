@@ -3,7 +3,7 @@ import aiohttp
 from aiohttp.helpers import BasicAuth
 from urllib.parse import urljoin
 from settings import OAUTH_CLIENT_ID, OAUTH_CLIENT_SECRET, OAUTH_REGION
-import tqdm
+from tqdm.asyncio import tqdm
 
 
 class BnetClient:
@@ -35,7 +35,7 @@ class BnetClient:
     async def query(self, path, region='us', **kwargs):
         url = urljoin(self.api_url, path).format(region)
         headers = {
-            'Authorization': 'Bearer ' + self.access_token,
+            'Authorization': f'Bearer {self.access_token}',
             'Battlenet-Namespace': 'static-us',
         }
         for i in range(5):  # retry 5 times if too many requests
@@ -137,7 +137,7 @@ async def build_achievement_master_list():
 
     async def enrich_achievement_list(achs):
         tasks = [enrich_achievement(ach) for ach in achs]
-        for f in tqdm.asyncio.tqdm_asyncio.as_completed(
+        for f in tqdm.as_completed(
             tasks,
             position=2,
             leave=False
@@ -150,7 +150,7 @@ async def build_achievement_master_list():
         res['achievements'] = [
             i for i in res['achievements'] if i['name'] != 'Guild'
         ]
-        for supercat in tqdm.tqdm(res['achievements'], position=0):
+        for supercat in tqdm(res['achievements'], position=0):
             supercat_data = await client.achievement_category(supercat['id'])
             supercat['display_order'] = supercat_data['display_order']
             if 'achievements' in supercat_data:
@@ -161,7 +161,7 @@ async def build_achievement_master_list():
                 )
             if 'subcategories' in supercat_data:
                 supercat['categories'] = supercat_data['subcategories']
-                for cat in tqdm.tqdm(
+                for cat in tqdm(
                     supercat['categories'],
                     position=1,
                     leave=False

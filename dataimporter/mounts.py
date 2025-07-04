@@ -142,7 +142,9 @@ class MountFixer(WowToolsFixer):
         )
 
         source = self.get_mount_source(mount_id)
-        icat(self.mounts, 'TODO', source)['items'].append(mount)
+        cat = icat(self.mounts, 'TODO', source)
+        if cat is not None:
+            cat['items'].append(mount)
 
     def fix_missing_mounts(self):
         for mount_id in self.dbc_mount:
