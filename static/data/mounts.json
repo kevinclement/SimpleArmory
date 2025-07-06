@@ -323,13 +323,6 @@
       {
         "items": [
           {
-            "ID": 439,
-            "icon": "ability_mount_tyraelmount",
-            "itemId": 76755,
-            "name": "Tyrael's Charger",
-            "spellid": 107203
-          },
-          {
             "ID": 2605,
             "icon": "inv_inariusmount",
             "itemId": 246264,
@@ -361,6 +354,59 @@
           }
         ],
         "name": "Blizzard Store"
+      }
+    ]
+  },
+  {
+    "name": "Collector's Bounty",
+    "subcats": [
+      {
+        "items": [
+
+        ],
+        "name": "Classic"
+      },
+      {
+        "items": [
+
+        ],
+        "name": "The Burning Crusade"
+      },
+      {
+        "items": [
+
+        ],
+        "name": "Wrath of the Lich King"
+      },
+      {
+        "items": [
+
+        ],
+        "name": "Mists of Pandaria"
+      },
+      {
+        "items": [
+
+        ],
+        "name": "Warlords of Draenor"
+      },
+      {
+        "items": [
+
+        ],
+        "name": "Legion"
+      },
+      {
+        "items": [
+
+        ],
+        "name": "Battle for Azeroth"
+      },
+      {
+        "items": [
+
+        ],
+        "name": "Shadowlands"
       }
     ]
   },
@@ -9393,6 +9439,13 @@
             "name": "Spectral Gryphon",
             "side": "A",
             "spellid": 107516
+          },
+          {
+            "ID": 439,
+            "icon": "ability_mount_tyraelmount",
+            "itemId": 76755,
+            "name": "Tyrael's Charger",
+            "spellid": 107203
           },
           {
             "ID": 454,
