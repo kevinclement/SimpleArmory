@@ -145,6 +145,7 @@ export async function parseCollectablesObject(categories, profile, collected_dat
                 //    4) You meet the race restriction
                 var hasthis = itm.collected;
                 var showthis = (hasthis || !item.notObtainable || (showHiddenItems == "shown" && !item.notReleased));
+                var bounty = item.bounty;
 
                 if (item.side && item.side !== profile.factionMapped) {
                     showthis = false;
@@ -192,6 +193,7 @@ export async function parseCollectablesObject(categories, profile, collected_dat
 
                 if (showthis) {
                     subCat.items.push(itm);
+                    if(bounty) return;
                     if (hasthis) {
                         totalCollected++;
                     }
