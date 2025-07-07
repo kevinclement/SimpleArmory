@@ -2,7 +2,10 @@
 
 from .tools import icat, changelog
 from .fixer import WowToolsFixer
+from .providers.bnet import get_master_list
+import settings
 
+from pprint import pprint
 
 IGNORE_MOUNT_ID = [
     7,     # Gray Wolf https://www.wowhead.com/mount/7
@@ -69,6 +72,9 @@ class MountFixer(WowToolsFixer):
         self.mounts = mounts
         self.id_to_old_mount = {}
 
+        localizedMounts = get_master_list('mounts')
+        self.allMountsById = {mount["id"]: mount["name"] for mount in localizedMounts["mounts"]}
+
         self.dbc_mount = {
             int(e['ID']): e for e in self.dbc_get_table('mount')
         }
@@ -114,8 +120,14 @@ class MountFixer(WowToolsFixer):
             'name': name,
             'icon': icon_name,
             'spellid': int(spell_id),
+            'i18n': {
+                settings.LOCALE: self.getLocalizedString(int(mount_id))
+            },
             **({'itemId': item_id} if item_id else {})
         }
+
+    def getLocalizedString(self, id: int) -> str:
+        return self.allMountsById.get(id, "")
 
     def get_mount_source(self, mount_id: int):
         return MOUNT_SOURCE_ENUM.get(
@@ -168,6 +180,7 @@ class MountFixer(WowToolsFixer):
                     item['ID'] = fixed_mount['ID']
                     item['name'] = fixed_mount['name']
                     item['spellid'] = fixed_mount['spellid']
+                    item['i18n'] = fixed_mount['i18n']
 
                     # There can be multiple valid itemID, do not overwrite
                     if item.get('itemId'):

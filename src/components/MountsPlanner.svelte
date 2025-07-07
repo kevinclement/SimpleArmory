@@ -123,12 +123,12 @@
         return '';
     }
 
-    function getPlanImageSrc(boss) {
-        if (!boss.icon) {
+    function getPlanImageSrc(mount) {
+        if (!mount || !mount.icon) {
             return '';
         }
 
-        return '//wow.zamimg.com/images/wow/icons/tiny/' + boss.icon + '.gif';
+        return '//wow.zamimg.com/images/wow/icons/tiny/' + mount.icon + '.gif';
     };
 
     function getStepTitle(step) {
@@ -177,33 +177,33 @@
   <button class="btn btn-sm btn-default" on:click={() => resetByType('Dungeon')}>Reset Dungeons</button>
   <button class="btn btn-sm btn-default" on:click={() => resetByType('Raid')}>Reset Raids</button>
 </div>
-<table class="table table-condensed">
+<table class="table table-condensed mnt-planner-table">
     <thead>
       <tr>
-        <th>Done</th>
-        <th>#</th>
-        <th>Step</th>
+        <th class="mnt-plan-col-done">Done</th>
+        <th class="mnt-plan-col-num">#</th>
+        <th class="mnt-plan-col-step">Step</th>
         <th class="mnt-plan-boss-col">Boss</th>
-        <th class="mnt-plan-mount-col" style="padding-left:0px;">Mount</th>
-        <th>Notes</th>
+        <th class="mnt-plan-mount-col">Mount</th>
+        <th class="mnt-plan-notes-col">Notes</th>
       </tr>
     </thead>
     {#each steps as step, index}
         <tbody>
             <tr class="{getFullLineClass(step)}">
-                <td>
+                <td class="mnt-plan-col-done" style="text-align:center;">
                   <input type="checkbox" checked={isChecked(step)} on:change={() => toggleCheck(step, index)} />
                 </td>
-                <td>{index + 1}</td>
-                <td>
+                <td class="mnt-plan-col-num" style="text-align:center;">{index + 1}</td>
+                <td class="mnt-plan-col-step">
                     {#if getPlanStepImageSrc(step) != ''}
                     <img src="{getPlanStepImageSrc(step)}" class="mnt-icon-step" alt/>
                     {/if}
                     {getStepTitle(step)}
                 </td>
-                <td colspan="2">
-                  <table width="100%">
-                      {#if step.bosses}
+                <td class="mnt-plan-boss-col">
+                  {#if step.bosses}
+                    <table width="100%">
                         {#each step.bosses as boss}
                             <tbody>
                                 <tr>
@@ -222,21 +222,34 @@
                                 </tr>
                             </tbody>
                         {/each}
-                      {/if}
-                    
-                  </table>
+                    </table>
+                  {/if}
                 </td>
-                <td>
-                  {step.notes ? step.notes : ""}
-                  <table>
-                      {#if step.bosses}
+                <td class="mnt-plan-mount-col">
+                  {#if step.bosses}
+                    <table width="100%">
                         {#each step.bosses as boss}
-                            <tbody>
-                                <tr><td>{boss.note ? boss.note : ""}&nbsp;</td></tr>
-                            </tbody>
+                            <tr>
+                                <td class="mnt-plan-mount-col">
+                                    {#if boss.mount && boss.mount.itemId}
+                                        <a class="{anchorCss(boss)}" target="{settings.anchorTarget}" href="//{settings.WowHeadUrl}/item={ boss.mount.itemId }">
+                                            <img class="mnt-plan-icon" src="{getPlanImageSrc(boss.mount)}" alt>{boss.mount.i18n.fr_FR}</a>
+                                    {/if}
+                                </td>
+                            </tr>
                         {/each}
-                      {/if}
-                  </table>
+                    </table>
+                  {/if}
+                </td>
+                <td class="mnt-plan-notes-col">
+                  {step.notes ? step.notes : ""}
+                  {#if step.bosses}
+                    <table width="100%">
+                        {#each step.bosses as boss}
+                            <tr><td>{boss.note ? boss.note : ""}&nbsp;</td></tr>
+                        {/each}
+                    </table>
+                  {/if}
                 </td>
             </tr>
         </tbody>
@@ -246,6 +259,32 @@
 .mnt-planner-checked {
   text-decoration: line-through;
   opacity: 0.5;
+}
+.mnt-planner-table th, .mnt-planner-table td {
+  vertical-align: middle;
+}
+.mnt-plan-col-done {
+  min-width: 60px;
+  text-align: center;
+}
+.mnt-plan-col-num {
+  min-width: 40px;
+  text-align: center;
+}
+.mnt-plan-col-step {
+  min-width: 220px;
+  padding-right: 24px;
+}
+.mnt-plan-boss-col {
+  min-width: 120px;
+  text-align: left;
+}
+.mnt-plan-mount-col {
+  min-width: 260px;
+  text-align: left;
+}
+.mnt-plan-notes-col {
+  min-width: 300px;
 }
 </style>
 </table>

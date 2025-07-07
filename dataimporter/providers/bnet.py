@@ -5,7 +5,6 @@ from urllib.parse import urljoin
 from settings import OAUTH_CLIENT_ID, OAUTH_CLIENT_SECRET, OAUTH_REGION, LOCALE
 from tqdm.asyncio import tqdm
 
-
 class BnetClient:
     def __init__(self):
         self.access_token = None
@@ -32,7 +31,7 @@ class BnetClient:
         if self.access_token is None:
             self.access_token = await self.get_access_token()
 
-    async def query(self, path, region='us', **kwargs):
+    async def query(self, path, region=f'{OAUTH_REGION}', **kwargs):
         url = urljoin(self.api_url, path).format(region)
         headers = {
             'Authorization': f'Bearer {self.access_token}',
@@ -48,7 +47,7 @@ class BnetClient:
             raise RuntimeError("Doing requests too fast")
 
         res = await r.json(content_type=None)
-        if 'status' in res and res['status'] == 'nok':
+        if res is not None and 'status' in res and res['status'] == 'nok':
             raise RuntimeError("Request failed: " + res['reason']
                                + "\nURL: " + url)
         return res
@@ -73,7 +72,11 @@ class BnetClient:
         ))
 
     async def mounts(self):
-        return (await self.query('wow/mount/'))
+        return (await self.query(
+            'data/wow/mount/index',
+            params={'namespace': f'static-{OAUTH_REGION}',
+                    'locale': LOCALE,}
+        ))
 
     async def pets(self):
         return (await self.query('wow/pet/'))
