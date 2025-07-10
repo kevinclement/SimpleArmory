@@ -238,16 +238,18 @@
                   {:else}
                     <span>&mdash;</span>
                   {/if}
-
                 </td>
+
                 <td class="mnt-plan-col-num" style="text-align:center;">{index + 1}</td>
+
                 <td class="mnt-plan-col-step">
                     {#if getPlanStepImageSrc(step) != ''}
                     <img src="{getPlanStepImageSrc(step)}" class="mnt-icon-step" alt/>
                     {/if}
                     {getStepTitle(step)}
                 </td>
-                <td class="mnt-plan-boss-col">
+
+                <td class="mnt-plan-boss-col" colspan="2">
                   {#if step.bosses}
                     <table width="100%">
                         {#each step.bosses as boss}
@@ -271,22 +273,7 @@
                     </table>
                   {/if}
                 </td>
-                <td class="mnt-plan-mount-col">
-                  {#if step.bosses}
-                    <table width="100%">
-                        {#each step.bosses as boss}
-                            <tr>
-                                <td class="mnt-plan-mount-col">
-                                    {#if boss.mount && boss.mount.itemId}
-                                        <a class="{anchorCss(boss)}" target="{settings.anchorTarget}" href="//{settings.WowHeadUrl}/item={ boss.mount.itemId }">
-                                            <img class="mnt-plan-icon" src="{getPlanImageSrc(boss.mount)}" alt>{boss.mount.name}</a>
-                                    {/if}
-                                </td>
-                            </tr>
-                        {/each}
-                    </table>
-                  {/if}
-                </td>
+                
                 <td class="mnt-plan-notes-col">
                   {step.notes ? step.notes : ""}
                   {#if step.bosses}

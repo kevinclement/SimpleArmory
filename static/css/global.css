@@ -347,12 +347,6 @@ body {
   /* ## Reputation Page ############################### */
   
   /* ## Mounts Page ############################### */
-  .mnt-plan-boss-col {
-	min-width: 110px;
-  }
-  .mnt-plan-mount-col {
-	min-width: 200px;
-  }
   .mnt-plan-icon {
 	width: 15px;
 	height: 15px;
@@ -399,9 +393,10 @@ body {
     text-align: left;
   }
   .mnt-plan-mount-col {
-    min-width: 260px;
+    min-width: 190px;
     text-align: left;
   }
+
   .mnt-plan-notes-col {
     min-width: 300px;
   }
