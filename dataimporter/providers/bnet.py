@@ -2,8 +2,9 @@ import asyncio
 import aiohttp
 from aiohttp.helpers import BasicAuth
 from urllib.parse import urljoin
-from settings import OAUTH_CLIENT_ID, OAUTH_CLIENT_SECRET, OAUTH_REGION, LOCALE
+from settings import OAUTH_CLIENT_ID, OAUTH_CLIENT_SECRET, OAUTH_REGION
 from tqdm.asyncio import tqdm
+
 
 class BnetClient:
     def __init__(self):
@@ -31,11 +32,11 @@ class BnetClient:
         if self.access_token is None:
             self.access_token = await self.get_access_token()
 
-    async def query(self, path, region=f'{OAUTH_REGION}', **kwargs):
+    async def query(self, path, region='us', **kwargs):
         url = urljoin(self.api_url, path).format(region)
         headers = {
             'Authorization': f'Bearer {self.access_token}',
-            'Battlenet-Namespace': f'static-{OAUTH_REGION}',
+            'Battlenet-Namespace': 'static-us',
         }
         for i in range(5):  # retry 5 times if too many requests
             r = await self.session.get(url, headers=headers, **kwargs)
@@ -47,7 +48,7 @@ class BnetClient:
             raise RuntimeError("Doing requests too fast")
 
         res = await r.json(content_type=None)
-        if res is not None and 'status' in res and res['status'] == 'nok':
+        if 'status' in res and res['status'] == 'nok':
             raise RuntimeError("Request failed: " + res['reason']
                                + "\nURL: " + url)
         return res
@@ -56,34 +57,30 @@ class BnetClient:
         category = 'index' if cat_id is None else str(cat_id)
         return (await self.query(
             'data/wow/achievement-category/{}'.format(category),
-            params={'locale': LOCALE},
+            params={'locale': 'en_US'},
         ))
 
     async def achievement(self, ach_id):
         return (await self.query(
             'data/wow/achievement/{}'.format(ach_id),
-            params={'locale': LOCALE},
+            params={'locale': 'en_US'},
         ))
 
     async def achievement_media(self, ach_id):
         return (await self.query(
             'data/wow/media/achievement/{}'.format(ach_id),
-            params={'locale': LOCALE},
+            params={'locale': 'en_US'},
         ))
 
     async def mounts(self):
-        return (await self.query(
-            'data/wow/mount/index',
-            params={'namespace': f'static-{OAUTH_REGION}',
-                    'locale': LOCALE,}
-        ))
+        return (await self.query('wow/mount/'))
 
     async def pets(self):
         return (await self.query('wow/pet/'))
 
     async def realms(self, region):
         params = {'namespace': 'dynamic-' + region,
-                  'locale': LOCALE}
+                  'locale': 'en_US'}
         return (await self.query('data/wow/realm/', region=region,
                                  params=params))
 
@@ -93,13 +90,13 @@ class BnetClient:
     async def item(self, item_id):
         return (await self.query(
             'data/wow/item/{}'.format(item_id),
-            params={'locale': LOCALE}
+            params={'locale': 'en_US'}
         ))
 
     async def item_media(self, ach_id):
         return (await self.query(
             'data/wow/media/item/{}'.format(ach_id),
-            params={'locale': LOCALE},
+            params={'locale': 'en_US'},
         ))
 
     async def pet_source(self, species_id):

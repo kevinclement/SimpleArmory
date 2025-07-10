@@ -80,7 +80,6 @@
   $: {
     promise = getPlannerSteps(mounts, $region, $realm, $character).then(raw => {
       const loaded = loadCheckedAt(raw);
-      // Extraire startStep
       startStep = loaded.find(s => s.startStep);
       steps = loaded.filter(s => !s.startStep);
     });
@@ -280,7 +279,7 @@
                                 <td class="mnt-plan-mount-col">
                                     {#if boss.mount && boss.mount.itemId}
                                         <a class="{anchorCss(boss)}" target="{settings.anchorTarget}" href="//{settings.WowHeadUrl}/item={ boss.mount.itemId }">
-                                            <img class="mnt-plan-icon" src="{getPlanImageSrc(boss.mount)}" alt>{boss.mount.i18n.fr_FR}</a>
+                                            <img class="mnt-plan-icon" src="{getPlanImageSrc(boss.mount)}" alt>{boss.mount.name}</a>
                                     {/if}
                                 </td>
                             </tr>

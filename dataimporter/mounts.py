@@ -2,10 +2,7 @@
 
 from .tools import icat, changelog
 from .fixer import WowToolsFixer
-from .providers.bnet import get_master_list
-import settings
 
-from pprint import pprint
 
 IGNORE_MOUNT_ID = [
     7,     # Gray Wolf https://www.wowhead.com/mount/7
@@ -68,12 +65,10 @@ MOUNT_SOURCE_ENUM = {
 
 
 class MountFixer(WowToolsFixer):
-    def _store_init(self, mounts): # type: ignore
+    def _store_init(self, *args):
+        mounts = args
         self.mounts = mounts
         self.id_to_old_mount = {}
-
-        localizedMounts = get_master_list('mounts')
-        self.allMountsById = {mount["id"]: mount["name"] for mount in localizedMounts["mounts"]}
 
         self.dbc_mount = {
             int(e['ID']): e for e in self.dbc_get_table('mount')
@@ -120,14 +115,8 @@ class MountFixer(WowToolsFixer):
             'name': name,
             'icon': icon_name,
             'spellid': int(spell_id),
-            'i18n': {
-                settings.LOCALE: self.getLocalizedString(int(mount_id))
-            },
             **({'itemId': item_id} if item_id else {})
         }
-
-    def getLocalizedString(self, id: int) -> str:
-        return self.allMountsById.get(id, "")
 
     def get_mount_source(self, mount_id: int):
         return MOUNT_SOURCE_ENUM.get(
@@ -154,9 +143,7 @@ class MountFixer(WowToolsFixer):
         )
 
         source = self.get_mount_source(mount_id)
-        cat = icat(self.mounts, 'TODO', source)
-        if cat is not None:
-            cat['items'].append(mount)
+        icat(self.mounts, 'TODO', source)['items'].append(mount)
 
     def fix_missing_mounts(self):
         for mount_id in self.dbc_mount:
@@ -180,7 +167,6 @@ class MountFixer(WowToolsFixer):
                     item['ID'] = fixed_mount['ID']
                     item['name'] = fixed_mount['name']
                     item['spellid'] = fixed_mount['spellid']
-                    item['i18n'] = fixed_mount['i18n']
 
                     # There can be multiple valid itemID, do not overwrite
                     if item.get('itemId'):

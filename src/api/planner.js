@@ -14,41 +14,29 @@ export async function getPlannerSteps(mountsPromise, region, realm, character) {
 
     console.log('Getting Planner Steps...');
     const all_steps = await getJsonDb('planner');
-    const mounts_db = await getJsonDb('mounts');
-
-    // Create a lookup table for mounts by their ID
-    const mountsById = {};
-    for (const category of mounts_db) {
-        for (const subcat of category.subcats) {
-            for (const item of subcat.items) {
-                mountsById[item.ID] = item;
-            }
-        }
-    }
     
-    // Réinitialise l'index global à chaque appel
     globalIdx = 0;
     _cache.update(
         region,
         realm,
         character,
-        parseStepsObject(all_steps.steps, items, mountsById, null)
+        parseStepsObject(all_steps.steps, items, null)
     )
     return _cache.cache;
 }
 
 // gotta love recursion
 let globalIdx = 0;
-function parseStepsObject(steps, items, mountsById, parentIdx = null) {
+function parseStepsObject(steps, items, parentIdx = null) {
     var neededSteps = [];
     steps.forEach((step) => {
-        // On clone le step pour ne pas polluer l'objet d'origine
+        
         let stepCopy = { ...step };
         stepCopy.parentIdx = parentIdx;
         stepCopy.idx = globalIdx++;
         if (stepCopy.unavailable) return;
         if (stepCopy.steps) {
-            var neededChildSteps = parseStepsObject(stepCopy.steps, items, mountsById, stepCopy.idx);
+            var neededChildSteps = parseStepsObject(stepCopy.steps, items, stepCopy.idx);
             if (neededChildSteps.length > 0) {
                 neededSteps.push(stepCopy);
                 neededSteps = neededSteps.concat(neededChildSteps);
@@ -57,7 +45,7 @@ function parseStepsObject(steps, items, mountsById, parentIdx = null) {
                 }
             }
         }
-        else if (!checkStepCompleted(stepCopy, items, mountsById)) {
+        else if (!checkStepCompleted(stepCopy, items)) {
             neededSteps.push(stepCopy);
         }
     });
@@ -65,7 +53,7 @@ function parseStepsObject(steps, items, mountsById, parentIdx = null) {
     return neededSteps;
 }
 
-function checkStepCompleted(step, items, mountsById) {
+function checkStepCompleted(step, items) {
     var completed = true;
     var showAll = false; // used for debugging
     var neededBosses = [];
@@ -83,16 +71,13 @@ function checkStepCompleted(step, items, mountsById) {
             };
             var addBoss = function(b) {
                     // Enrich the boss object with the full mount details
-                    if (b.mountId && mountsById[b.mountId]) {
-                        b.mount = mountsById[b.mountId];
-                    }
                     neededBosses.push(b);
                     completed = false;
                 };
 
             if (showAll) { addBoss(boss); return; }
-            if (boss.mountId === undefined) { return; } // continue the loop, bad boss data
-            if (!characterNeedsBoss(boss.mountId)) { return; }
+            if (boss.ID === undefined) { return; } // continue the loop, bad boss data
+            if (!characterNeedsBoss(boss.ID)) { return; }
 
             if ( bossIsNeutral || (boss.isAlliance && character.isAlliance) || (boss.isHorde && !character.isAlliance)) {
                 addBoss(boss);
