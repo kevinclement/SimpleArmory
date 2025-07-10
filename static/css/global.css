@@ -243,14 +243,14 @@ body {
 	margin-left:25px;
   }
   .rep h3 {
-	margin-bottom: 0px;
+	margin-bottom: 12px;
   }
   
   .factionLabel {
 	display:inline-block;
 	margin: 0 15px 0 0;
 	text-align: right;
-	width: 10em;
+	width: 15em;
 	font-size: 14px;
 	position:relative;
   }
@@ -276,6 +276,73 @@ body {
 	top: -10px;
 	left: 170px;
 	z-index:1;
+  }
+  .rep-separator {
+    margin: 32px 0 24px 0;
+    border: none;
+    border-top: 2px solid #bbb;
+  }
+  .rep-row-outer {
+    display: flex;
+    align-items: stretch;
+    min-width: 520px;
+    width: 100%;
+  }
+  .rep-row-btn-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 40px;
+    margin-right: 8px;
+  }
+  .rep-row-main-col {
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .rep-row-main-horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+  }
+  .rep-row-main-info {
+    min-width: 140px;
+    flex-shrink: 0;
+  }
+  .rep-row-main-bars {
+    align-items: center;
+    min-width: 120px;
+  }
+  .rep-row-main-value {
+    min-width: 90px;
+  }
+  .rep-todo-btn {
+    margin: 0 0 4px 0;
+    padding: 2px 8px;
+    font-size: 1.1em;
+    vertical-align: middle;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: transform 0.1s;
+  }
+  .rep-todo-btn svg {
+    display: block;
+  }
+  .rep-todo-btn:active {
+    transform: scale(0.95);
+  }
+  .rep-row-outer, .rep-row-btn-col, .rep-row-main-col {
+    box-sizing: border-box;
   }
   /* ## Reputation Page ############################### */
   
