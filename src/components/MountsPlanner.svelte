@@ -63,16 +63,16 @@
       saved = JSON.parse(localStorage.getItem(getStorageKey()) || '{}');
     } catch {}
 
-    return steps.map((step, i) => ({
+    return steps.map(step => ({
       ...step,
-      checkedAt: saved[i] || null
+      checkedAt: saved[step.idx] || null
     }));
   }
 
   function saveCheckedAt(steps) {
     const obj = {};
-    steps.forEach((step, i) => {
-      if (step.checkedAt) obj[i] = step.checkedAt;
+    steps.forEach(step => {
+      if (step.checkedAt) obj[step.idx] = step.checkedAt;
     });
     localStorage.setItem(getStorageKey(), JSON.stringify(obj));
   }
@@ -82,6 +82,39 @@
       const loaded = loadCheckedAt(raw);
       startStep = loaded.find(s => s.startStep);
       steps = loaded.filter(s => !s.startStep);
+    });
+  }
+
+  function getNextDailyReset() {
+    const { dailyHourUTC } = getResetTimes($region);
+    const now = new Date();
+    const reset = new Date(now);
+    reset.setUTCHours(dailyHourUTC, 0, 0, 0);
+    if (now >= reset) {
+      reset.setUTCDate(reset.getUTCDate() + 1);
+    }
+    return reset;
+  }
+
+  function getNextWeeklyReset() {
+    const { weeklyDay, weeklyHourUTC } = getResetTimes($region);
+    const now = new Date();
+    const reset = new Date(now);
+    const currentDay = now.getUTCDay();
+    const daysUntilReset = (weeklyDay - currentDay + 7) % 7 || 7;
+    reset.setUTCDate(reset.getUTCDate() + daysUntilReset);
+    reset.setUTCHours(weeklyHourUTC, 0, 0, 0);
+    return reset;
+  }
+
+  function formatResetDateEn(date) {
+    const userTZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    return date.toLocaleString('en-US', {
+      weekday: 'long',
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false,
+      timeZone: userTZ,
     });
   }
 
@@ -209,6 +242,10 @@
   <button class="btn btn-sm btn-default" on:click={resetAll}>Reset all</button>
   <button class="btn btn-sm btn-default" on:click={() => resetByType('Dungeon')}>Reset Dungeons</button>
   <button class="btn btn-sm btn-default" on:click={() => resetByType('Raid')}>Reset Raids</button>
+</div>
+<div style="font-size: 13px; margin-bottom: 12px; color: #888;">
+  📆 Next daily reset: {formatResetDateEn(getNextDailyReset())}<br/>
+  📅 Next weekly reset: {formatResetDateEn(getNextWeeklyReset())}
 </div>
 {#if startStep}
   <div class="mnt-start-step">

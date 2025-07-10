@@ -839,7 +839,6 @@
           "title": "Fly to Vale of the Eternal Blossoms"
         },
         {
-          "finalStep": "Use Dalaran Hearthstone",
           "notes":"Must Have Garrison Unlocked",
           "steps": [
             {
@@ -912,100 +911,112 @@
           "title": "Use Garrison Hearthstone"
         },
         {
-          "finalStep": "Use Dalaran Hearthstone",
           "steps": [
             {
-              "bosses": [
+              "steps": [
                 {
-                  "ID": "791",
-                  "epic": true,
-                  "icon": "inv_infernalmountgreen",
-                  "itemId": 137574,
-                  "mount": "Living Infernal Core",
-                  "note": "Normal/Heroic/Mythic.",
-                  "name": "Gul'dan",
-                  "spellId": 213134,
-                  "boosted": true
-                },
-                {
-                  "ID": "633",
-                  "epic": true,
-                  "icon": "inv_infernalmountred",
-                  "itemId": 137575,
-                  "mount": "Fiendish Hellfire Core",
-                  "name": "Gul'dan",
-                  "note": "Mythic only",
-                  "spellId": 171827,
-                  "boosted": true
-                }
-              ],
-              "title": "Run Nighthold",
-              "type": "Raid"
-            }
+                "bosses": [
+                  {
+                    "ID": "791",
+                    "epic": true,
+                    "icon": "inv_infernalmountgreen",
+                    "itemId": 137574,
+                    "mount": "Living Infernal Core",
+                    "note": "Normal/Heroic/Mythic.",
+                    "name": "Gul'dan",
+                    "spellId": 213134,
+                    "boosted": true
+                  },
+                  {
+                    "ID": "633",
+                    "epic": true,
+                    "icon": "inv_infernalmountred",
+                    "itemId": 137575,
+                    "mount": "Fiendish Hellfire Core",
+                    "name": "Gul'dan",
+                    "note": "Mythic only",
+                    "spellId": 171827,
+                    "boosted": true
+                  }
+                ],
+                "title": "Run Nighthold",
+                "type": "Raid"
+              }
+            ],
+            "title": "Fly to Suramar"
+          }
           ],
-          "title": "Fly to Suramar"
+          "title": "Heartstone to Dalaran"
         },
         {
-          "finalStep": "Use Dalaran Hearthstone",
-          "steps": [
-            {
-              "bosses": [
-                {
-                  "ID": "899",
-                  "epic": true,
-                  "icon": "inv_serpentmount_green",
-                  "itemId": 143643,
-                  "mount": "Abyss Worm",
-                  "note": "LFR/Normal/Heroic/Mythic",
-                  "name": "Mistress Sassz'ine",
-                  "spellId": 232519,
-                  "boosted": true
-                }
-              ],
-              "title": "Run Tomb of Sargeras",
-              "type": "Raid"
-            }
-          ],
-          "title": "Fly to Broken Shore"
-        },
-        {
-          "finalStep": "Use Dalaran Hearthstone",
           "steps": [
             {
               "steps": [
                 {
                   "bosses": [
                     {
-                      "ID": "971",
+                      "ID": "899",
                       "epic": true,
-                      "icon": "inv_felhound3_shadow_fire",
-                      "itemId": 152816,
-                      "mount": "Antoran Charhound",
+                      "icon": "inv_serpentmount_green",
+                      "itemId": 143643,
+                      "mount": "Abyss Worm",
                       "note": "LFR/Normal/Heroic/Mythic",
-                      "name": "Felhounds of Sargeras",
-                      "spellId": 253088,
-                      "boosted": true
-                    },
-                    {
-                      "ID": "954",
-                      "epic": true,
-                      "icon": "inv_soulhoundmount_blue",
-                      "itemId": 152789,
-                      "mount": "Shackled Ur'zul",
-                      "name": "Argus the Unmaker",
-                      "note": "Mythic only",
-                      "spellId": 243651,
+                      "name": "Mistress Sassz'ine",
+                      "spellId": 232519,
                       "boosted": true
                     }
                   ],
-                  "title": "Run Antorus, the Burning Throne",
+                  "title": "Run Tomb of Sargeras",
                   "type": "Raid"
                 }
               ],
-              "title": "Portal to Antoran Wastes"
+              "title": "Hearthstone to Dalaran"
             }
           ],
-          "title": "Portal to Argus"
+          "title": "Fly to Broken Shore"
+        },
+        {
+          "steps": [
+            {
+              "steps": [
+                {
+                  "steps": [
+                    {
+                      "bosses": [
+                        {
+                          "ID": "971",
+                          "epic": true,
+                          "icon": "inv_felhound3_shadow_fire",
+                          "itemId": 152816,
+                          "mount": "Antoran Charhound",
+                          "note": "LFR/Normal/Heroic/Mythic",
+                          "name": "Felhounds of Sargeras",
+                          "spellId": 253088,
+                          "boosted": true
+                        },
+                        {
+                          "ID": "954",
+                          "epic": true,
+                          "icon": "inv_soulhoundmount_blue",
+                          "itemId": 152789,
+                          "mount": "Shackled Ur'zul",
+                          "name": "Argus the Unmaker",
+                          "note": "Mythic only",
+                          "spellId": 243651,
+                          "boosted": true
+                        }
+                      ],
+                      "title": "Run Antorus, the Burning Throne",
+                      "type": "Raid"
+                    }
+                  ],
+                  "title": "Portal to Antoran Wastes"
+                }
+              ],
+              "title": "Portal to Argus"
+            }
+          ],
+          "title": "Hearthstone to Dalaran"
         },
         {
           "notes": "Set Hearthstone to Zandalar / Kul'Tiras",
