@@ -1,163 +1,197 @@
 <script>
-    import { region, realm, character } from '$stores/user'
-    import { onMount } from 'svelte'
-    import { getPlannerSteps } from '$api/planner'
-    import settings from '$util/settings'
-    import Loading from '$components/Loading.svelte';
+  import { region, realm, character } from '$stores/user';
+  import { onMount } from 'svelte';
+  import { getPlannerSteps } from '$api/planner';
+  import settings from '$util/settings';
+  import Loading from '$components/Loading.svelte';
 
-    export let mounts
-    export let isAlliance;
-    let promise;
-    let steps;
-    
-    // Clé de stockage unique par personnage
-    function getStorageKey() {
-        return `mountsPlannerCheckedUntil_${$region}_${$realm}_${$character}`;
+  export let mounts;
+  export let isAlliance;
+  let promise;
+  let steps;
+  let startStep;
+
+  function getStorageKey() {
+    return `mountsPlannerCheckedAt_${$region}_${$realm}_${$character}`;
+  }
+
+  function getResetTimes(region) {
+    if (region === 'US') {
+      return {
+        dailyHourUTC: 15,
+        weeklyDay: 2,
+        weeklyHourUTC: 15,
+      };
     }
-
-    // Charger l'état sauvegardé
-    function loadCheckedUntil(steps) {
-        let saved = {};
-        try {
-            saved = JSON.parse(localStorage.getItem(getStorageKey()) || '{}');
-        } catch {}
-        return steps.map((step, i) => ({
-            ...step,
-            checkedUntil: saved[i] || null
-        }));
-    }
-
-    // Sauvegarder l'état
-    function saveCheckedUntil(steps) {
-        const obj = {};
-        steps.forEach((step, i) => {
-            if (step.checkedUntil) obj[i] = step.checkedUntil;
-        });
-        localStorage.setItem(getStorageKey(), JSON.stringify(obj));
-    }
-
-    $: {
-        promise = getPlannerSteps(mounts, $region, $realm, $character).then(_ => {           
-            steps = loadCheckedUntil(_);
-        })
-    }
-
-    // Gestion des cases à cocher
-    function isChecked(step) {
-        if (!step.checkedUntil) return false;
-        const now = new Date();
-        const until = new Date(step.checkedUntil);
-        return now < until;
-    }
-
-
-
-    // Trouve l'index dans le tableau à partir d'un idx logique
-    function findIndexByIdx(stepsArr, idx) {
-        return stepsArr.findIndex(s => s.idx === idx);
-    }
-
-    // Décoche l'étape et tous ses parents via parentIdx (retourne un nouveau tableau)
-    function uncheckStep(stepsArr, index) {
-        let updated = [...stepsArr];
-        let idx = index;
-        while (
-            idx !== null &&
-            idx !== undefined &&
-            updated[idx] &&
-            updated[idx].checkedUntil
-        ) {
-            updated[idx] = { ...updated[idx], checkedUntil: null };
-            const parentIdxValue = updated[idx].parentIdx;
-            if (parentIdxValue === null || parentIdxValue === undefined) break;
-            idx = findIndexByIdx(updated, parentIdxValue);
-            if (idx === -1) break;
-        }
-        return updated;
-    }
-
-    function toggleCheck(step, index) {
-        if (isChecked(step)) {
-            steps = uncheckStep(steps, index);
-        } else {
-            steps = steps.map((s, i) =>
-                i === index ? { ...s, checkedUntil: '2100-01-01T23:59:59' } : s
-            );
-        }
-        saveCheckedUntil(steps);
-    }
-
-    function resetByType(type) {
-        let updated = [...steps];
-        steps.forEach((step, idx) => {
-            if (step.type === type && step.checkedUntil) {
-                updated = uncheckStep(updated, idx);
-            }
-        });
-        steps = updated;
-        saveCheckedUntil(steps);
-    }
-
-    function resetAll() {
-        steps = steps.map(s => ({ ...s, checkedUntil: null }));
-        saveCheckedUntil(steps);
-    }
-
-    onMount(async () => {
-        window.ga('send', 'pageview', 'Planner');
-    });
-
-    function getPlanStepImageSrc(step) {
-        if (step.capital) {
-            if (isAlliance) {
-                return '/images/alliance.png';
-            }
-            else {
-                return '/images/horde.png';
-            }
-        }
-        else if (step.hearth) {
-            return '/images/hearth.png';
-        }
-
-        return '';
-    }
-
-    function getPlanImageSrc(mount) {
-        if (!mount || !mount.icon) {
-            return '';
-        }
-
-        return '//wow.zamimg.com/images/wow/icons/tiny/' + mount.icon + '.gif';
+    return {
+      dailyHourUTC: 4,
+      weeklyDay: 3,
+      weeklyHourUTC: 4,
     };
+  }
 
-    function getStepTitle(step) {
-        if (step.capital) {
-            return 'Hearthstone to ' + (isAlliance ? 'Stormwind ' : 'Orgrimmar ') + step.title;
-        }
-        else {
-            return step.title;
-        }
+  function isValidCheck(step) {
+    if (!step.checkedAt) return false;
+    const { dailyHourUTC, weeklyDay, weeklyHourUTC } = getResetTimes($region);
+    const now = new Date();
+    const checkedDate = new Date(step.checkedAt);
+
+    if (step.type === 'Dungeon') {
+      const dailyReset = new Date(now);
+      dailyReset.setUTCHours(dailyHourUTC, 0, 0, 0);
+      if (now < dailyReset) {
+        dailyReset.setUTCDate(dailyReset.getUTCDate() - 1);
+      }
+      return checkedDate >= dailyReset;
     }
 
-    function anchorCss(boss) {
-        if (boss.epic) {
-            return 'mnt-plan-epic';
-        }
-
-        return 'mnt-plan-rare';
+    if (step.type === 'Raid') {
+      const currentDay = now.getUTCDay();
+      const daysSinceReset = (currentDay + 7 - weeklyDay) % 7;
+      const lastWeeklyReset = new Date(now);
+      lastWeeklyReset.setUTCDate(now.getUTCDate() - daysSinceReset);
+      lastWeeklyReset.setUTCHours(weeklyHourUTC, 0, 0, 0);
+      return checkedDate >= lastWeeklyReset;
     }
 
-    function getFullLineClass(step) {
-        var classLine = [];
-        if (isChecked(step))
-            classLine.push('mnt-planner-checked');
-        return classLine.join(' ');
+    return true;
+  }
+
+  function loadCheckedAt(steps) {
+    let saved = {};
+    try {
+      saved = JSON.parse(localStorage.getItem(getStorageKey()) || '{}');
+    } catch {}
+
+    return steps.map((step, i) => ({
+      ...step,
+      checkedAt: saved[i] || null
+    }));
+  }
+
+  function saveCheckedAt(steps) {
+    const obj = {};
+    steps.forEach((step, i) => {
+      if (step.checkedAt) obj[i] = step.checkedAt;
+    });
+    localStorage.setItem(getStorageKey(), JSON.stringify(obj));
+  }
+
+  $: {
+    promise = getPlannerSteps(mounts, $region, $realm, $character).then(raw => {
+      const loaded = loadCheckedAt(raw);
+      // Extraire startStep
+      startStep = loaded.find(s => s.startStep);
+      steps = loaded.filter(s => !s.startStep);
+    });
+  }
+
+  function isStepCheckable(step) {
+    return step.title?.startsWith('Run') || step.title?.startsWith('Kill');
+  }
+
+  function isChecked(step) {
+    return isStepCheckable(step) && isValidCheck(step);
+  }
+
+  function findIndexByIdx(stepsArr, idx) {
+    return stepsArr.findIndex(s => s.idx === idx);
+  }
+
+  function uncheckStep(stepsArr, index) {
+    let updated = [...stepsArr];
+    let idx = index;
+    while (
+      idx !== null &&
+      idx !== undefined &&
+      updated[idx] &&
+      updated[idx].checkedAt
+    ) {
+      updated[idx] = { ...updated[idx], checkedAt: null };
+      const parentIdxValue = updated[idx].parentIdx;
+      if (parentIdxValue === null || parentIdxValue === undefined) break;
+      idx = findIndexByIdx(updated, parentIdxValue);
+      if (idx === -1) break;
+    }
+    return updated;
+  }
+
+  let highlighted = new Set();
+  let highlightTimeout;
+
+  function toggleCheck(step, index) {
+    if (!isStepCheckable(step)) return;
+    if (isChecked(step)) {
+      steps = uncheckStep(steps, index);
+    } else {
+      const checkedAt = new Date().toISOString();
+      let updated = [...steps];
+      let idx = index;
+      while (idx !== null && idx !== undefined && updated[idx]) {
+        updated[idx] = { ...updated[idx], checkedAt };
+        highlighted.add(idx);
+        const parentIdx = updated[idx].parentIdx;
+        if (parentIdx === null || parentIdx === undefined) break;
+        idx = findIndexByIdx(updated, parentIdx);
+        if (idx === -1) break;
+      }
+      steps = updated;
     }
 
-    function logSteps(steps) {
-        console.log('Steps:', steps);
-    }
+    saveCheckedAt(steps);
+
+    clearTimeout(highlightTimeout);
+    highlightTimeout = setTimeout(() => {
+      highlighted = new Set();
+    }, 600);
+  }
+
+  function resetByType(type) {
+    let updated = [...steps];
+    steps.forEach((step, idx) => {
+      if (step.type === type && step.checkedAt) {
+        updated = uncheckStep(updated, idx);
+      }
+    });
+    steps = updated;
+    saveCheckedAt(steps);
+  }
+
+  function resetAll() {
+    steps = steps.map(s => ({ ...s, checkedAt: null }));
+    saveCheckedAt(steps);
+  }
+
+  onMount(() => {
+    window.ga('send', 'pageview', 'Planner');
+  });
+
+  function getPlanStepImageSrc(step) {
+    if (step.capital) return isAlliance ? '/images/alliance.png' : '/images/horde.png';
+    if (step.hearth) return '/images/hearth.png';
+    return '';
+  }
+
+  function getPlanImageSrc(mount) {
+    return mount && mount.icon ? `//wow.zamimg.com/images/wow/icons/tiny/${mount.icon}.gif` : '';
+  }
+
+  function getStepTitle(step) {
+    return step.capital && !step.startStep
+      ? 'Hearthstone to ' + (isAlliance ? 'Stormwind ' : 'Orgrimmar ') + step.title
+      : step.title;
+  }
+
+  function anchorCss(boss) {
+    return boss.epic ? 'mnt-plan-epic' : 'mnt-plan-rare';
+  }
+
+  function getFullLineClass(step, index) {
+    let classes = [];
+    if (isValidCheck(step)) classes.push('mnt-planner-checked');
+    if (highlighted.has(index)) classes.push('mnt-highlight');
+    return classes.join(' ');
+  }
 </script>
 
 {#await promise}
@@ -177,6 +211,14 @@
   <button class="btn btn-sm btn-default" on:click={() => resetByType('Dungeon')}>Reset Dungeons</button>
   <button class="btn btn-sm btn-default" on:click={() => resetByType('Raid')}>Reset Raids</button>
 </div>
+{#if startStep}
+  <div class="mnt-start-step">
+    <div style="width: 100%; text-align: center;">
+      <img src="{getPlanStepImageSrc(startStep)}" class="mnt-icon-step" alt />
+      <strong>{getStepTitle(startStep)}</strong>
+    </div>
+  </div>
+{/if}
 <table class="table table-condensed mnt-planner-table">
     <thead>
       <tr>
@@ -190,9 +232,14 @@
     </thead>
     {#each steps as step, index}
         <tbody>
-            <tr class="{getFullLineClass(step)}">
+            <tr class="{getFullLineClass(step, index)}">
                 <td class="mnt-plan-col-done" style="text-align:center;">
-                  <input type="checkbox" checked={isChecked(step)} on:change={() => toggleCheck(step, index)} />
+                  {#if isStepCheckable(step)}
+                    <input type="checkbox" checked={isChecked(step)} on:change={() => toggleCheck(step, index)} />
+                  {:else}
+                    <span>&mdash;</span>
+                  {/if}
+
                 </td>
                 <td class="mnt-plan-col-num" style="text-align:center;">{index + 1}</td>
                 <td class="mnt-plan-col-step">
@@ -254,40 +301,6 @@
             </tr>
         </tbody>
     {/each}
-
-<style>
-.mnt-planner-checked {
-  text-decoration: line-through;
-  opacity: 0.5;
-}
-.mnt-planner-table th, .mnt-planner-table td {
-  vertical-align: middle;
-}
-.mnt-plan-col-done {
-  min-width: 60px;
-  text-align: center;
-}
-.mnt-plan-col-num {
-  min-width: 40px;
-  text-align: center;
-}
-.mnt-plan-col-step {
-  min-width: 220px;
-  padding-right: 24px;
-}
-.mnt-plan-boss-col {
-  min-width: 120px;
-  text-align: left;
-}
-.mnt-plan-mount-col {
-  min-width: 260px;
-  text-align: left;
-}
-.mnt-plan-notes-col {
-  min-width: 300px;
-}
-</style>
 </table>
 {/if}
-
 {/await}

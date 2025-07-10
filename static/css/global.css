@@ -375,6 +375,62 @@ body {
 	top: -2px;
 	margin-right: 3px;
   }
+  .mnt-planner-checked {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+  .mnt-planner-table th, .mnt-planner-table td {
+    vertical-align: middle;
+  }
+  .mnt-plan-col-done {
+    min-width: 60px;
+    text-align: center;
+  }
+  .mnt-plan-col-num {
+    min-width: 40px;
+    text-align: center;
+  }
+  .mnt-plan-col-step {
+    min-width: 220px;
+    padding-right: 24px;
+  }
+  .mnt-plan-boss-col {
+    min-width: 120px;
+    text-align: left;
+  }
+  .mnt-plan-mount-col {
+    min-width: 260px;
+    text-align: left;
+  }
+  .mnt-plan-notes-col {
+    min-width: 300px;
+  }
+  .mnt-highlight {
+    animation: flashHighlight 1s ease-out;
+  }
+  .mnt-start-step {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+    border-left: 4px solid #0070dd;
+    background-color: rgba(0, 112, 221, 0.06);
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  /* Mode sombre */
+  body.dark .mnt-start-step {
+    border-left-color: #1e90ff;
+    background-color: rgba(30, 144, 255, 0.15);
+    color: #eee;
+  }
+
+  @keyframes flashHighlight {
+    0% { background-color: #d9edf7; }
+    100% { background-color: transparent; }
+  }
   /* ## Mounts Page ############################### */
   
   /* Fix up the widths for bigger header */
