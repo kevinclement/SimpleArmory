@@ -148,28 +148,60 @@
     return updated;
   }
 
+
+  // Helper function to check if all child steps are checked
+  function areAllChildrenChecked(stepsArr, parentIdx) {
+    // Find all steps that have the given parentIdx
+    const children = stepsArr.filter(s => s.parentIdx === parentIdx);
+    if (children.length === 0) return true; // No children means parent can be considered "complete"
+    return children.every(child => {
+      if (isStepCheckable(child)) {
+        return isValidCheck(child);
+      }
+      // If not checkable, check its children recursively
+      return areAllChildrenChecked(stepsArr, child.idx);
+    });
+  }
+
   let highlighted = new Set();
   let highlightTimeout;
 
   function toggleCheck(step, index) {
     if (!isStepCheckable(step)) return;
+
+    let updated = [...steps];
+
     if (isChecked(step)) {
-      steps = uncheckStep(steps, index);
+      // Uncheck the step and its parents
+      updated = uncheckStep(updated, index);
     } else {
+      // Check the step
       const checkedAt = new Date().toISOString();
-      let updated = [...steps];
-      let idx = index;
-      while (idx !== null && idx !== undefined && updated[idx]) {
-        updated[idx] = { ...updated[idx], checkedAt };
-        highlighted.add(idx);
-        const parentIdx = updated[idx].parentIdx;
-        if (parentIdx === null || parentIdx === undefined) break;
-        idx = findIndexByIdx(updated, parentIdx);
-        if (idx === -1) break;
+      updated[index] = { ...updated[index], checkedAt };
+
+      // Highlight the checked step
+      highlighted.add(index);
+
+      // Check parents only if all siblings are checked
+      let currentIdx = index;
+      let parentIdx = updated[currentIdx].parentIdx;
+
+      while (parentIdx !== null && parentIdx !== undefined) {
+        const parentStepIndex = findIndexByIdx(updated, parentIdx);
+        if (parentStepIndex === -1) break;
+
+        // Only check the parent if all its children are checked
+        if (areAllChildrenChecked(updated, parentIdx)) {
+          updated[parentStepIndex] = { ...updated[parentStepIndex], checkedAt };
+          highlighted.add(parentStepIndex);
+        }
+
+        currentIdx = parentStepIndex;
+        parentIdx = updated[currentIdx].parentIdx;
       }
-      steps = updated;
     }
 
+    steps = updated;
     saveCheckedAt(steps);
 
     clearTimeout(highlightTimeout);

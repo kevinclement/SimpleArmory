@@ -1022,38 +1022,38 @@
           "capital": true,
           "steps": [
             {
-              "bosses": [
+              "steps": [
                 {
-                  "ID": "1217",
-                  "epic": true,
-                  "icon": "achievement_dungeon_coinoperatedcrowdpummeler",
-                  "itemId": 166518,
-                  "mount": "G.M.O.D.",
-                  "name": "High Tinker Mekkatorque",
-                  "note": "LFR (Jaina)/Normal/Heroic/Mythic",
-                  "spellId": 289083,
-                  "boosted": true
-                },
-                {
-                  "ID": "1219",
-                  "epic": true,
-                  "icon": "spell_frost_summonwaterelemental_2",
-                  "itemId": 166705,
-                  "mount": "Glacial Tidestorm",
-                  "name": "Jaina Proudmoore",
-                  "note": "Mythic only",
-                  "spellId": 289555,
-                  "boosted": true
+                  "bosses": [
+                    {
+                      "ID": "1217",
+                      "epic": true,
+                      "icon": "achievement_dungeon_coinoperatedcrowdpummeler",
+                      "itemId": 166518,
+                      "mount": "G.M.O.D.",
+                      "name": "High Tinker Mekkatorque",
+                      "note": "LFR (Jaina)/Normal/Heroic/Mythic",
+                      "spellId": 289083,
+                      "boosted": true
+                    },
+                    {
+                      "ID": "1219",
+                      "epic": true,
+                      "icon": "spell_frost_summonwaterelemental_2",
+                      "itemId": 166705,
+                      "mount": "Glacial Tidestorm",
+                      "name": "Jaina Proudmoore",
+                      "note": "Mythic only",
+                      "spellId": 289555,
+                      "boosted": true
+                    }
+                  ],
+                  "title": "Run Battle of Dazar'alor",
+                  "type": "Raid"
                 }
               ],
-              "title": "Run Battle of Dazar'alor",
-              "type": "Raid"
-            }
-          ],
-          "title": "and teleport to Zandalar / Kul'Tiras"
-        },
-        {
-          "steps": [
+              "title": "Teleport to Zandalar / Kul'Tiras"
+            },
             {
               "steps": [
                 {
@@ -1119,7 +1119,12 @@
                 }
               ],
               "title": "Walk to Nazmir"
-            },
+            }
+          ],
+          "title": ""
+        },
+        {
+          "steps": [
             {
               "capital":true,
               "unavailable": true,
@@ -1152,32 +1157,31 @@
                 }
               ],
               "title": "Portal to Zandalar / Kul'Tiras and take the Teleporter / Flight Path to Mechagon"
-            },
+            }
+          ]
+        },
+        {
+          "capital":true,
+          "steps": [
             {
-              "capital":true,
-              "steps": [
+              "bosses": [
                 {
-                  "bosses": [
-                    {
-                      "ID": "1293",
-                      "epic": true,
-                      "icon": "inv_eyeballjellyfishmount",
-                      "itemId": 174872,
-                      "mount": "Ny'alotha Allseer",
-                      "name": "N'zoth the Corruptor",
-                      "note": "Mythic only",
-                      "spellId": 308814,
-                      "boosted": true
-                    }
-                  ],
-                  "title": "Run Ny'alotha the Waking City",
-                  "type": "Raid"
+                  "ID": "1293",
+                  "epic": true,
+                  "icon": "inv_eyeballjellyfishmount",
+                  "itemId": 174872,
+                  "mount": "Ny'alotha Allseer",
+                  "name": "N'zoth the Corruptor",
+                  "note": "Mythic only",
+                  "spellId": 308814,
+                  "boosted": true
                 }
               ],
-              "title": "and Portal to Uldum"
+              "title": "Run Ny'alotha the Waking City",
+              "type": "Raid"
             }
           ],
-          "title": "Hearthstone to Zandalar / Kul'Tiras"
+          "title": "and Portal to Uldum"
         },
         {
           "capital":true,
