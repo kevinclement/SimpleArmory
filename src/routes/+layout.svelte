@@ -19,7 +19,7 @@
 	import Error from '$pages/Error.svelte';
 	
 	import { onMount } from 'svelte'
-  import Settings from '../pages/Settings.svelte';
+  	import Settings from '../pages/Settings.svelte';
 
 	let _errorCount = 0;
     onMount(() => {
@@ -41,9 +41,10 @@
 			}
 		});
 
+		
         getCharInfoFromURL();
 		window.addEventListener('hashchange', getCharInfoFromURL, false);
-		
+	
 		// if this is root route, need to navigate it to login route
 		if (window.document.location.hash === "") {
 			// check if we have info in localstorage, if we do, use that
@@ -84,6 +85,12 @@
 			if (_errorCount === 1) {
 				console.log(`Handling special case url change.  Trying to redirect.`);
 				_errorCount = 0;
+				if (loc_region !== undefined && loc_realm !== undefined && loc_character !== undefined) {
+					// remove error from url
+					window.document.location.hash = `#/${loc_region}/${loc_realm}/${loc_character}`;
+				} else {
+					window.document.location.hash = `#/`;
+				}
 				navigate("", loc_realm, loc_character, loc_page);
 			} else {
 				_errorCount++;

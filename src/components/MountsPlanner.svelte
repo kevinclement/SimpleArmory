@@ -6,21 +6,13 @@
   import settings from '$util/settings';
   import Loading from '$components/Loading.svelte';
 
+  import { getPlannerSteps } from '$api/planner';
   import {
     region,
     realm,
     character,
     hideCompletedStore,
-    getCheckedAtStore,
   } from '$stores/user';
-
-  import {
-    getPlannerSteps,
-    findIndexByIdx,
-    getResetTimes,
-    getNextDailyReset,
-    getNextWeeklyReset,
-  } from '$api/planner';
 
   export let mounts;
   export let isAlliance;
@@ -31,6 +23,8 @@
   let filteredSteps = [];
   let checkedAtStore;
 
+  $: filteredSteps = steps ? ($hideCompletedStore ? steps.filter(step => !isValidCheck(step)) : steps) : [];
+  
   $: {
     promise = getPlannerSteps(mounts, $region, $realm, $character).then(raw => {
       const loaded = loadCheckedAt(raw);
@@ -39,12 +33,13 @@
     });
   }
 
-  $: filteredSteps = steps ? ($hideCompletedStore ? steps.filter(step => !isValidCheck(step)) : steps) : [];
-  $: checkedAtStore = getCheckedAtStore($region, $realm, $character);
-
-  onMount(() => {
+  onMount(async () => {
     window.ga('send', 'pageview', 'Planner');
   });
+
+  function getStorageKey() {
+    return `mountsPlannerCheckedAt_${$region}_${$realm}_${$character}`;
+  }
 
   // Check if a step is valid based on its checkedAt timestamp
   function isValidCheck(step) {
@@ -76,7 +71,11 @@
 
   // Load checkedAt timestamps from localStorage
   function loadCheckedAt(steps) {
-    const saved = get(checkedAtStore);
+    let saved = {};
+    try {
+      saved = JSON.parse(localStorage.getItem(getStorageKey()) || '{}');
+    } catch {}
+
     return steps.map(step => ({
       ...step,
       checkedAt: saved[step.idx] || null
@@ -85,11 +84,11 @@
 
   // Save checkedAt timestamps to localStorage
   function saveCheckedAt(steps) {
-    const updated = {};
+    const obj = {};
     steps.forEach(step => {
-      if (step.checkedAt) updated[step.idx] = step.checkedAt;
+      if (step.checkedAt) obj[step.idx] = step.checkedAt;
     });
-    checkedAtStore.set(updated);
+    localStorage.setItem(getStorageKey(), JSON.stringify(obj));
   }
 
   function isStepCheckable(step) {
@@ -130,6 +129,60 @@
       // If not checkable, check its children recursively
       return areAllChildrenChecked(stepsArr, child.idx);
     });
+  }
+
+  function findIndexByIdx(stepsArr, idx) {
+    return stepsArr.findIndex(s => s.idx === idx);
+  }
+
+  // Get reset times based on region
+  function getResetTimes(region) {
+      if (region === 'us') {
+          return {
+          dailyHourUTC: 15,
+          weeklyDay: 2,
+          weeklyHourUTC: 15,
+          };
+      }
+      return {
+          dailyHourUTC: 4,
+          weeklyDay: 3,
+          weeklyHourUTC: 4,
+      };
+  }
+
+  // Get the next daily and weekly reset times
+  function getNextDailyReset(region) {
+      const { dailyHourUTC } = getResetTimes(region);
+      const now = new Date();
+      const reset = new Date(now);
+      reset.setUTCHours(dailyHourUTC, 0, 0, 0);
+      if (now >= reset) {
+          reset.setUTCDate(reset.getUTCDate() + 1);
+      }
+      return formatResetDateEn(reset);
+  }
+
+  function getNextWeeklyReset(region) {
+      const { weeklyDay, weeklyHourUTC } = getResetTimes(region);
+      const now = new Date();
+      const reset = new Date(now);
+      const currentDay = now.getUTCDay();
+      const daysUntilReset = (weeklyDay - currentDay + 7) % 7 || 7;
+      reset.setUTCDate(reset.getUTCDate() + daysUntilReset);
+      reset.setUTCHours(weeklyHourUTC, 0, 0, 0);
+      return formatResetDateEn(reset);
+  }
+
+  function formatResetDateEn(date) {
+      const userTZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
+      return date.toLocaleString('en-US', {
+          weekday: 'long',
+          hour: '2-digit',
+          minute: '2-digit',
+          hour12: false,
+          timeZone: userTZ,
+      });
   }
 
   let highlighted = new Set();
@@ -244,8 +297,8 @@
 </div>
 {:else}
 <div style="font-size: 13px; margin-bottom: 12px; color: #888;">
-  📆 Next daily reset: {getNextDailyReset($region)}<br/>
-  📅 Next weekly reset: {getNextWeeklyReset($region)}
+  📆 Next daily reset: {getNextDailyReset(region)}<br/>
+  📅 Next weekly reset: {getNextWeeklyReset(region)}
 </div>
 <div class="mnt-controls">
   <div class="mnt-reset-buttons">
