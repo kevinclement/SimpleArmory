@@ -636,45 +636,45 @@
                     }
                   ],
                   "title": "Fly to Deadwind Pass"
-                },
-                {
-                  "steps": [
-                    {
-                      "bosses": [
-                        {
-                          "ID": "411",
-                          "epic": true,
-                          "icon": "ability_mount_blackpanther",
-                          "itemId": 68824,
-                          "mount": "Swift Zulian Panther",
-                          "name": "Kilnara",
-                          "note": "Heroic only",
-                          "spellId": 96499,
-                          "boosted": true
-                        },
-                        {
-                          "ID": "410",
-                          "epic": true,
-                          "icon": "ability_mount_raptor",
-                          "itemId": 68823,
-                          "mount": "Armored Razzashi Raptor",
-                          "name": "Mandokir",
-                          "note": "Heroic only",
-                          "spellId": 96491,
-                          "boosted": true
-                        }
-                      ],
-                      "title": "Run Zul'Gurub",
-                      "type": "Dungeon"
-                    }
-                  ],
-                  "title": "Fly to Stranglethorn Vale"
                 }
               ],
-              "title": "Fly to Stranglethorn Vale / Blimp to Stranglethorn Vale"
+              "title": "Fly to Stranglethorn Vale "
             }
           ],
           "title": ""
+        },
+        {
+          "steps": [
+            {
+              "bosses": [
+                {
+                  "ID": "411",
+                  "epic": true,
+                  "icon": "ability_mount_blackpanther",
+                  "itemId": 68824,
+                  "mount": "Swift Zulian Panther",
+                  "name": "Kilnara",
+                  "note": "Heroic only",
+                  "spellId": 96499,
+                  "boosted": true
+                },
+                {
+                  "ID": "410",
+                  "epic": true,
+                  "icon": "ability_mount_raptor",
+                  "itemId": 68823,
+                  "mount": "Armored Razzashi Raptor",
+                  "name": "Mandokir",
+                  "note": "Heroic only",
+                  "spellId": 96491,
+                  "boosted": true
+                }
+              ],
+              "title": "Run Zul'Gurub",
+              "type": "Dungeon"
+            }
+          ],
+          "title": "Fly to Stranglethorn Vale"
         },
         {
           "capital":true,

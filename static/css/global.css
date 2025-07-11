@@ -426,6 +426,82 @@ body.dark .mnt-start-step {
   color: #eee;
 }
 
+.mnt-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .mnt-reset-buttons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .mnt-toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .mnt-toggle-label {
+    font-size: 13px;
+    color: #767676;
+  }
+  body.dark .mnt-toggle-label {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .mnt-toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  .mnt-toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .mnt-toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #d3d3d3;
+    border: 1px solid #b0b0b0;
+    border-radius: 20px;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  .mnt-toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+  .mnt-toggle-switch input:checked + .mnt-toggle-slider {
+    background-color: #0070dd;
+    border-color: #0070dd;
+  }
+  .mnt-toggle-switch input:checked + .mnt-toggle-slider:before {
+    transform: translateX(20px);
+  }
+  body.dark .mnt-toggle-slider {
+    background-color: #555;
+    border-color: #646464;
+  }
+  body.dark .mnt-toggle-slider:before {
+    background-color: #f0f0f0;
+  }
+  body.dark .mnt-toggle-switch input:checked + .mnt-toggle-slider {
+    background-color: #0070dd;
+    border-color: #0070dd;
+  }
+
 @keyframes flashHighlight {
   0% { background-color: #d9edf7; }
   100% { background-color: transparent; }

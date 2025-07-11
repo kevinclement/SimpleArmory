@@ -1,35 +1,52 @@
 <script>
-  import { region, realm, character } from '$stores/user';
   import { onMount } from 'svelte';
-  import { getPlannerSteps } from '$api/planner';
+  import { get } from 'svelte/store';
+  import { fade } from 'svelte/transition';
+
   import settings from '$util/settings';
   import Loading from '$components/Loading.svelte';
 
+  import {
+    region,
+    realm,
+    character,
+    hideCompletedStore,
+    getCheckedAtStore,
+  } from '$stores/user';
+
+  import {
+    getPlannerSteps,
+    findIndexByIdx,
+    getResetTimes,
+    getNextDailyReset,
+    getNextWeeklyReset,
+  } from '$api/planner';
+
   export let mounts;
   export let isAlliance;
+
   let promise;
   let steps;
   let startStep;
+  let filteredSteps = [];
+  let checkedAtStore;
 
-  function getStorageKey() {
-    return `mountsPlannerCheckedAt_${$region}_${$realm}_${$character}`;
+  $: {
+    promise = getPlannerSteps(mounts, $region, $realm, $character).then(raw => {
+      const loaded = loadCheckedAt(raw);
+      startStep = loaded.find(s => s.startStep);
+      steps = loaded.filter(s => !s.startStep);
+    });
   }
 
-  function getResetTimes(region) {
-    if (region === 'US') {
-      return {
-        dailyHourUTC: 15,
-        weeklyDay: 2,
-        weeklyHourUTC: 15,
-      };
-    }
-    return {
-      dailyHourUTC: 4,
-      weeklyDay: 3,
-      weeklyHourUTC: 4,
-    };
-  }
+  $: filteredSteps = steps ? ($hideCompletedStore ? steps.filter(step => !isValidCheck(step)) : steps) : [];
+  $: checkedAtStore = getCheckedAtStore($region, $realm, $character);
 
+  onMount(() => {
+    window.ga('send', 'pageview', 'Planner');
+  });
+
+  // Check if a step is valid based on its checkedAt timestamp
   function isValidCheck(step) {
     if (!step.checkedAt) return false;
     const { dailyHourUTC, weeklyDay, weeklyHourUTC } = getResetTimes($region);
@@ -57,65 +74,22 @@
     return true;
   }
 
+  // Load checkedAt timestamps from localStorage
   function loadCheckedAt(steps) {
-    let saved = {};
-    try {
-      saved = JSON.parse(localStorage.getItem(getStorageKey()) || '{}');
-    } catch {}
-
+    const saved = get(checkedAtStore);
     return steps.map(step => ({
       ...step,
       checkedAt: saved[step.idx] || null
     }));
   }
 
+  // Save checkedAt timestamps to localStorage
   function saveCheckedAt(steps) {
-    const obj = {};
+    const updated = {};
     steps.forEach(step => {
-      if (step.checkedAt) obj[step.idx] = step.checkedAt;
+      if (step.checkedAt) updated[step.idx] = step.checkedAt;
     });
-    localStorage.setItem(getStorageKey(), JSON.stringify(obj));
-  }
-
-  $: {
-    promise = getPlannerSteps(mounts, $region, $realm, $character).then(raw => {
-      const loaded = loadCheckedAt(raw);
-      startStep = loaded.find(s => s.startStep);
-      steps = loaded.filter(s => !s.startStep);
-    });
-  }
-
-  function getNextDailyReset() {
-    const { dailyHourUTC } = getResetTimes($region);
-    const now = new Date();
-    const reset = new Date(now);
-    reset.setUTCHours(dailyHourUTC, 0, 0, 0);
-    if (now >= reset) {
-      reset.setUTCDate(reset.getUTCDate() + 1);
-    }
-    return reset;
-  }
-
-  function getNextWeeklyReset() {
-    const { weeklyDay, weeklyHourUTC } = getResetTimes($region);
-    const now = new Date();
-    const reset = new Date(now);
-    const currentDay = now.getUTCDay();
-    const daysUntilReset = (weeklyDay - currentDay + 7) % 7 || 7;
-    reset.setUTCDate(reset.getUTCDate() + daysUntilReset);
-    reset.setUTCHours(weeklyHourUTC, 0, 0, 0);
-    return reset;
-  }
-
-  function formatResetDateEn(date) {
-    const userTZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
-    return date.toLocaleString('en-US', {
-      weekday: 'long',
-      hour: '2-digit',
-      minute: '2-digit',
-      hour12: false,
-      timeZone: userTZ,
-    });
+    checkedAtStore.set(updated);
   }
 
   function isStepCheckable(step) {
@@ -124,10 +98,6 @@
 
   function isChecked(step) {
     return isStepCheckable(step) && isValidCheck(step);
-  }
-
-  function findIndexByIdx(stepsArr, idx) {
-    return stepsArr.findIndex(s => s.idx === idx);
   }
 
   function uncheckStep(stepsArr, index) {
@@ -147,7 +117,6 @@
     }
     return updated;
   }
-
 
   // Helper function to check if all child steps are checked
   function areAllChildrenChecked(stepsArr, parentIdx) {
@@ -226,10 +195,6 @@
     saveCheckedAt(steps);
   }
 
-  onMount(() => {
-    window.ga('send', 'pageview', 'Planner');
-  });
-
   function getPlanStepImageSrc(step) {
     if (step.capital) return isAlliance ? '/images/alliance.png' : '/images/horde.png';
     if (step.hearth) return '/images/hearth.png';
@@ -279,13 +244,22 @@
 </div>
 {:else}
 <div style="font-size: 13px; margin-bottom: 12px; color: #888;">
-  📆 Next daily reset: {formatResetDateEn(getNextDailyReset())}<br/>
-  📅 Next weekly reset: {formatResetDateEn(getNextWeeklyReset())}
+  📆 Next daily reset: {getNextDailyReset(region)}<br/>
+  📅 Next weekly reset: {getNextWeeklyReset(region)}
 </div>
-<div style="margin-bottom:10px;display:flex;gap:8px;flex-wrap:wrap;">
-  <button class="btn btn-sm btn-default" on:click={resetAll}>Reset all</button>
-  <button class="btn btn-sm btn-default" on:click={() => resetByType('Dungeon')}>Reset Dungeons</button>
-  <button class="btn btn-sm btn-default" on:click={() => resetByType('Raid')}>Reset Raids</button>
+<div class="mnt-controls">
+  <div class="mnt-reset-buttons">
+    <button class="btn btn-sm btn-default" on:click={resetAll}>Reset all</button>
+    <button class="btn btn-sm btn-default" on:click={() => resetByType('Dungeon')}>Reset Dungeons</button>
+    <button class="btn btn-sm btn-default" on:click={() => resetByType('Raid')}>Reset Raids</button>
+  </div>
+  <div class="mnt-toggle-container">
+    <span class="mnt-toggle-label">Hide completed steps</span>
+    <label class="mnt-toggle-switch">
+      <input type="checkbox" bind:checked={$hideCompletedStore} />
+      <span class="mnt-toggle-slider"></span>
+    </label>
+  </div>
 </div>
 {#if startStep}
   <div class="mnt-start-step">
@@ -306,14 +280,14 @@
         <th class="mnt-plan-notes-col">Notes</th>
       </tr>
     </thead>
-    {#each steps as step, index}
-        <tbody>
-            <tr class="{getFullLineClass(step, index)}">
+    {#each filteredSteps as step, index (step.idx)}
+        <tbody transition:fade="{{ duration: 300 }}">
+            <tr class="{getFullLineClass(step, steps.findIndex(s => s.idx === step.idx))}">
                 <td class="mnt-plan-col-done" style="text-align:center;">
                   {#if isStepCheckable(step)}
-                    <input type="checkbox" checked={isChecked(step)} on:change={() => toggleCheck(step, index)} />
+                    <input type="checkbox" checked={isChecked(step)} on:change={() => toggleCheck(step, steps.findIndex(s => s.idx === step.idx))} />
                   {:else}
-                    <span>&mdash;</span>
+                    <span>—</span>
                   {/if}
                 </td>
 
@@ -342,7 +316,6 @@
                                             <a class="{anchorCss(boss)}" target="{settings.anchorTarget}" href="//{settings.WowHeadUrl}/item={ boss.itemId }">
                                                 <img class="mnt-plan-icon" src="{getPlanImageSrc(boss)}" alt>{boss.mount}</a>
                                         {/if}
-                                        
                                     </td>
                                 </tr>
                             </tbody>
@@ -356,7 +329,7 @@
                   {#if step.bosses}
                     <table width="100%">
                         {#each step.bosses as boss}
-                            <tr><td>{boss.note ? boss.note : ""}&nbsp;</td></tr>
+                            <tr><td>{boss.note ? boss.note : ""} </td></tr>
                         {/each}
                     </table>
                   {/if}
