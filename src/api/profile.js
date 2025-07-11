@@ -17,6 +17,11 @@ export async function getProfile(region, realm, character) {
     if (profile.status && profile.status === 404) {
         window.ga('send', 'event', 'LoginError', region + ':' + realm + ':' + character);
         console.log(`Server 404 getting profile.`);
+        if (region === undefined || realm === undefined || character === undefined) {
+            window.document.location.hash = '#/';
+            return
+        }
+
         window.document.location.hash = `#/error/${region}/${realm}/${character}`
         return;
     }

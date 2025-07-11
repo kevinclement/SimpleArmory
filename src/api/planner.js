@@ -15,35 +15,38 @@ export async function getPlannerSteps(mountsPromise, region, realm, character) {
     console.log('Getting Planner Steps...');
     const all_steps = await getJsonDb('planner');
     
+    globalIdx = 0;
     _cache.update(
         region,
         realm,
         character,
-        parseStepsObject(all_steps.steps, items)
+        parseStepsObject(all_steps.steps, items, null)
     )
     return _cache.cache;
 }
 
 // gotta love recursion
-function parseStepsObject(steps, items) {
+let globalIdx = 0;
+function parseStepsObject(steps, items, parentIdx = null) {
     var neededSteps = [];
     steps.forEach((step) => {
-        if (step.unavailable) return;
-        if (step.steps) {
-            var neededChildSteps = parseStepsObject(step.steps, items);
-
-            // if we have child steps and we found ones that were needed, then we can
-            // go ahead and add ourself as a step and our children too
+        
+        let stepCopy = { ...step };
+        stepCopy.parentIdx = parentIdx;
+        stepCopy.idx = globalIdx++;
+        if (stepCopy.unavailable) return;
+        if (stepCopy.steps) {
+            var neededChildSteps = parseStepsObject(stepCopy.steps, items, stepCopy.idx);
             if (neededChildSteps.length > 0) {
-                neededSteps.push(step);
+                neededSteps.push(stepCopy);
                 neededSteps = neededSteps.concat(neededChildSteps);
-                if (step.finalStep) {
-                    neededSteps.push({'title':step.finalStep, 'hearth':true});
+                if (stepCopy.finalStep) {
+                    neededSteps.push({'title':stepCopy.finalStep, 'hearth':true, parentIdx: stepCopy.idx, idx: globalIdx++});
                 }
             }
         }
-        else if (!checkStepCompleted(step, items)) {
-            neededSteps.push(step);
+        else if (!checkStepCompleted(stepCopy, items)) {
+            neededSteps.push(stepCopy);
         }
     });
 
@@ -61,9 +64,14 @@ function checkStepCompleted(step, items) {
 
             var bossIsNeutral = !boss.isAlliance && !boss.isHorde;
             var character = items; // aliasing for clarity
-            var characterNeedsBoss = function(id){ return !character.lookup[id]; };
-            var addBoss = function(boss) {
-                    neededBosses.push(boss);
+            var characterNeedsBoss = function(mountId){ 
+                // The logic seems to be based on the character's collected mounts,
+                // which are in `items.lookup`. We need to check if the mountId is in the lookup.
+                return !character.lookup[mountId]; 
+            };
+            var addBoss = function(b) {
+                    // Enrich the boss object with the full mount details
+                    neededBosses.push(b);
                     completed = false;
                 };
 

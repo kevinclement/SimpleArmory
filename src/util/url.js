@@ -1,4 +1,7 @@
 export function getUrl(region, realm, character, subSite) {
+    if (region === undefined || realm === undefined || character === undefined) {
+        return '#/';
+    }
     let url = '#' + getBaseUrl(region, realm, character);
     if (subSite && subSite !== '') {
         url += '/' + subSite;

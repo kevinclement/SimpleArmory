@@ -1,6 +1,10 @@
 <script>
     import settings from '$util/settings'
+
     export let faction;
+    export let inTodo = false;
+    import { createEventDispatcher } from 'svelte';
+    const dispatch = createEventDispatcher();
 
     let levelColors = [
         '#c22',
@@ -83,17 +87,46 @@
     }
 </script>
 
-<div>
-    <h4 class="factionLabel">
-        <a target="{settings.anchorTarget}" href="//{settings.WowHeadUrl}/faction={faction.id}">{ faction.name }</a>
-    </h4>
-    {#each faction.levels as level, levelIdx}
-        <div title="{level[1] + tierProgressString(levelIdx)}" class="repProgressBlock" style="width: {getLevelWidth(levelIdx)}px; border: 1px solid {getBorderColor(levelIdx)};">
-            <div style="background-color: {getColor(faction.level)}; height: 100%; width: {calculateLevelRatio(levelIdx) * 100}%"></div>
+<div class="rep-row-outer">
+    <div class="rep-row-btn-col">
+        {#if !inTodo && (faction.level !== faction.levels.length-1)}
+            <button class="btn btn-xs btn-success rep-todo-btn" title="Add to Todo List" on:click={() => dispatch('addTodo')}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <circle cx="8" cy="8" r="8" fill="#28a745"/>
+                  <path d="M8 4v8M4 8h8" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        {/if}
+        {#if inTodo}
+            <button class="btn btn-xs btn-danger rep-todo-btn" title="Remove from Todo List" on:click={() => dispatch('removeTodo')}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <circle cx="8" cy="8" r="8" fill="#dc3545"/>
+                  <path d="M5 5l6 6M11 5l-6 6" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        {/if}
+    </div>
+    <div class="rep-row-main-col">
+        <div class="rep-row-main-horizontal">
+            <div class="rep-row-main-info">
+                <h4 class="factionLabel">
+                    <a target="{settings.anchorTarget}" href="//{settings.WowHeadUrl}/faction={faction.id}">{ faction.name }</a>
+                </h4>
+            </div>
+            <div class="rep-row-main-bars">
+                {#each faction.levels as level, levelIdx}
+                    <div title="{level[1] + tierProgressString(levelIdx)}" class="repProgressBlock" style="width: {getLevelWidth(levelIdx)}px; border: 1px solid {getBorderColor(levelIdx)};">
+                        <div style="background-color: {getColor(faction.level)}; height: 100%; width: {calculateLevelRatio(levelIdx) * 100}%"></div>
+                    </div>
+                {/each}
+            </div>
+            <div class="rep-row-main-value">
+                <span>
+                    <b style="color: {getColor(faction.level)}">{faction.levels[faction.level][1]}</b>
+                    {#if faction.max !== 0 && !(faction.renown && faction.level == faction.levels.length-1)}<span style="color: grey">• {faction.value} / {faction.max}</span>{/if}
+                </span>
+            </div>
         </div>
-    {/each}
-    <span>
-        <b style="color: {getColor(faction.level)}">{faction.levels[faction.level][1]}</b>
-        {#if faction.max !== 0 && !(faction.renown && faction.level == faction.levels.length-1)}<span style="color: grey">• {faction.value} / {faction.max}</span>{/if}
-    </span>
+    </div>
 </div>
+
