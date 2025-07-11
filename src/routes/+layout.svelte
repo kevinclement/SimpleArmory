@@ -88,10 +88,11 @@
 				if (loc_region !== undefined && loc_realm !== undefined && loc_character !== undefined) {
 					// remove error from url
 					window.document.location.hash = `#/${loc_region}/${loc_realm}/${loc_character}`;
+					navigate("", loc_realm, loc_character, loc_page);
 				} else {
 					window.document.location.hash = `#/`;
+					navigate("");
 				}
-				navigate("", loc_realm, loc_character, loc_page);
 			} else {
 				_errorCount++;
 			}
