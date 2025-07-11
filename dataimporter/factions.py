@@ -21,15 +21,13 @@ IGNORE_FACTION_ID = [
 
 
 def fcat(dct, cat=None):
-    res = None
     if cat is not None:
         res = find_or_create_item(dct, cat, 'factions')
     return res
 
 
 class FactionFixer(WowToolsFixer):
-    def _store_init(self, *args):
-        factions = args[0]
+    def _store_init(self, factions):
         self.factions = factions
         self.id_to_old_faction = {}
         self.dbc_faction = {}
@@ -60,7 +58,6 @@ class FactionFixer(WowToolsFixer):
                 if int(row['ParentFactionID']) == faction_id
             ]
 
-            rep = None
             if faction_id != 0:
                 rep = dbc_faction[faction_id]
                 if (
@@ -87,7 +84,7 @@ class FactionFixer(WowToolsFixer):
                 ):
                     return
 
-            if not children and rep is not None:
+            if not children:
                 self.dbc_faction[int(rep['ID'])] = rep
 
             for row in children:
@@ -120,18 +117,11 @@ class FactionFixer(WowToolsFixer):
 
     def fix_missing_faction(self, faction_id: int):
         faction = self.get_faction(faction_id)
-        if faction is not None:
-            changelog(
-                f"Faction {faction_id} \"{faction['name']}\" missing:"
-                f" https://www.wowhead.com/faction={faction_id}"
-            )
-            todo_cat = fcat(self.factions, 'TODO')
-            if todo_cat is not None:
-                todo_cat['factions'].append(faction)
-        else:
-            changelog(
-                f"Faction {faction_id} missing: https://www.wowhead.com/faction={faction_id}"
-            )
+        changelog(
+            f"Faction {faction_id} \"{faction['name']}\" missing:"
+            f" https://www.wowhead.com/faction={faction_id}"
+        )
+        fcat(self.factions, 'TODO')['factions'].append(faction)
 
     def fix_missing_factions(self):
         for faction_id in self.dbc_faction:

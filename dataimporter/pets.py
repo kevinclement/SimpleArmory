@@ -30,8 +30,7 @@ PET_SOURCE_ENUM = {
 
 
 class PetFixer(WowToolsFixer):
-    def _store_init(self, *args):
-        pets, battlepets = args
+    def _store_init(self, pets, battlepets):
         self.pets = pets
         self.battlepets = battlepets
         self.id_to_old_pet = {}
@@ -114,13 +113,9 @@ class PetFixer(WowToolsFixer):
 
         source = self.get_pet_source(pet_id)
         if source == 'Wild':
-            cat = icat(self.battlepets, 'TODO', 'TODO')
-            if cat is not None:
-                cat['items'].append(pet)
+            icat(self.battlepets, 'TODO', 'TODO')['items'].append(pet)
         else:
-            cat = icat(self.pets, 'TODO', source)
-            if cat is not None:
-                cat['items'].append(pet)
+            icat(self.pets, 'TODO', source)['items'].append(pet)
 
     def fix_missing_pets(self):
         for pet_id in self.dbc_battlepetspecies:
@@ -132,8 +127,6 @@ class PetFixer(WowToolsFixer):
             for subcat in cat['subcats']:
                 for item in subcat['items']:
                     fixed_pet = self.get_pet(int(item['ID']))
-                    if fixed_pet is None:
-                        continue
                     item['ID'] = fixed_pet['ID']
                     item['name'] = fixed_pet['name']
                     item['creatureId'] = fixed_pet['creatureId']

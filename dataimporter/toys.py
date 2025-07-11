@@ -32,8 +32,7 @@ TOY_SOURCE_ENUM = {
 
 
 class ToyFixer(WowToolsFixer):
-    def _store_init(self, *args):
-        toys = args
+    def _store_init(self, toys):
         self.toys = toys
         self.id_to_old_toy = {}
 
@@ -60,7 +59,7 @@ class ToyFixer(WowToolsFixer):
 
         # Name
         if item_id not in self.dbc_itemsparse:
-            return {}
+            return None
         name = self.dbc_itemsparse[item_id]['Display_lang']
 
         # Icon
