@@ -1019,7 +1019,7 @@
           "title": "Hearthstone to Dalaran"
         },
         {
-          "notes": "Set Hearthstone to Zandalar / Kul'Tiras",
+          "capital": true,
           "steps": [
             {
               "bosses": [
@@ -1050,7 +1050,7 @@
               "type": "Raid"
             }
           ],
-          "title": "Hearthstone to Zandalar / Kul'Tiras"
+          "title": "and teleport to Zandalar / Kul'Tiras"
         },
         {
           "steps": [
@@ -1122,7 +1122,7 @@
             },
             {
               "capital":true,
-              "unavailable": false,
+              "unavailable": true,
               "steps": [
                 {
                   "bosses": [
@@ -1598,7 +1598,7 @@
           "title": "and Portal to Dornogal"
         }
       ],
-      "title": "Start in Stormwind / Orgrimmar"
+      "title": "Start in "
     }
   ]
 }

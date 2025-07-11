@@ -208,9 +208,17 @@
     return mount && mount.icon ? `//wow.zamimg.com/images/wow/icons/tiny/${mount.icon}.gif` : '';
   }
 
+  function getCapital() {
+    return isAlliance ? 'Stormwind' : 'Orgrimmar';
+  }
+
+  function getStartTitle(step) {
+    return `${step.title} ${getCapital()}`;
+  }
+
   function getStepTitle(step) {
     return step.capital && !step.startStep
-      ? 'Hearthstone to ' + (isAlliance ? 'Stormwind ' : 'Orgrimmar ') + step.title
+      ? `Hearthstone to ${getCapital()} ${step.title}`
       : step.title;
   }
 
@@ -238,20 +246,20 @@
     </p>
 </div>
 {:else}
+<div style="font-size: 13px; margin-bottom: 12px; color: #888;">
+  📆 Next daily reset: {formatResetDateEn(getNextDailyReset())}<br/>
+  📅 Next weekly reset: {formatResetDateEn(getNextWeeklyReset())}
+</div>
 <div style="margin-bottom:10px;display:flex;gap:8px;flex-wrap:wrap;">
   <button class="btn btn-sm btn-default" on:click={resetAll}>Reset all</button>
   <button class="btn btn-sm btn-default" on:click={() => resetByType('Dungeon')}>Reset Dungeons</button>
   <button class="btn btn-sm btn-default" on:click={() => resetByType('Raid')}>Reset Raids</button>
 </div>
-<div style="font-size: 13px; margin-bottom: 12px; color: #888;">
-  📆 Next daily reset: {formatResetDateEn(getNextDailyReset())}<br/>
-  📅 Next weekly reset: {formatResetDateEn(getNextWeeklyReset())}
-</div>
 {#if startStep}
   <div class="mnt-start-step">
     <div style="width: 100%; text-align: center;">
       <img src="{getPlanStepImageSrc(startStep)}" class="mnt-icon-step" alt />
-      <strong>{getStepTitle(startStep)}</strong>
+      <strong>{getStartTitle(startStep)}</strong>
     </div>
   </div>
 {/if}
