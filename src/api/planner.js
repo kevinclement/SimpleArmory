@@ -98,7 +98,7 @@ export function findIndexByIdx(stepsArr, idx) {
 
   // Get reset times based on region
 export function getResetTimes(region) {
-    if (region === 'US') {
+    if (region === 'us') {
         return {
         dailyHourUTC: 15,
         weeklyDay: 2,
