@@ -296,8 +296,8 @@
 </div>
 {:else}
 <div style="font-size: 13px; margin-bottom: 12px; color: #888;">
-  📆 Next daily reset: {getNextDailyReset(region)}<br/>
-  📅 Next weekly reset: {getNextWeeklyReset(region)}
+  📆 Next daily reset: {getNextDailyReset($region)}<br/>
+  📅 Next weekly reset: {getNextWeeklyReset($region)}
 </div>
 <div class="mnt-controls">
   <div class="mnt-reset-buttons">
