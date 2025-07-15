@@ -153,19 +153,25 @@
       {
         "items": [
           {
-            "ID": 1573,
-            "icon": "inv_banner_01",
-            "itemId": 239007,
-            "name": "Dastardly Banner"
+            "ID": 609,
+            "icon": "diabloanniversary_tomeoftownportal",
+            "itemId": 142542,
+            "name": "Tome of Town Portal"
           },
           {
-            "ID": 1574,
-            "icon": "inv_11xp_event_dastardlyduos_podium01_nocollision",
-            "itemId": 239018,
-            "name": "Winner's Podium"
+            "ID": 605,
+            "icon": "inv_axe_2h_undeadguitar_c_01",
+            "itemId": 143543,
+            "name": "Twelve-String Guitar"
+          },
+          {
+            "ID": 1331,
+            "icon": "inv_misc_nightmarebanner",
+            "itemId": 206008,
+            "name": "Nightmare Banner"
           }
         ],
-        "name": "Dastardly Duos"
+        "name": "Greedy Emissary"
       }
     ]
   },
@@ -282,6 +288,13 @@
             "icon": "inv_helm_misc_fireworkpartyhat",
             "itemId": 235220,
             "name": "Fireworks Hat"
+          },
+          {
+            "ID": 1592,
+            "icon": "inv_letter_13",
+            "itemId": 245970,
+            "name": "P.O.S.T. Master's Express Hearthstone",
+            "new": true
           }
         ],
         "name": "Treasure"
@@ -639,13 +652,6 @@
             "new": true
           },
           {
-            "ID": 1592,
-            "icon": "inv_letter_13",
-            "itemId": 245970,
-            "name": "P.O.S.T. Master's Express Hearthstone",
-            "new": true
-          },
-          {
             "ID": 1600,
             "icon": "inv_chest_armor_explorer_d_01",
             "itemId": 244792,
@@ -657,6 +663,41 @@
             "icon": "inv_plate_broker_c_01_helm",
             "itemId": 249713,
             "name": "Cartel Transmorpher",
+            "new": true
+          },
+          {
+            "ID": 1603,
+            "icon": "spell_arcane_prismaticcloak",
+            "itemId": 246903,
+            "name": "Guise of the Phase Diver",
+            "new": true
+          },
+          {
+            "ID": 1604,
+            "icon": "ability_racial_etherealconnection",
+            "itemId": 246905,
+            "name": "Overtuned K'areshi Goggles",
+            "new": true
+          },
+          {
+            "ID": 1605,
+            "icon": "inv_112_raidtrinkets_etherealenergystoragebarrel_terra",
+            "itemId": 246908,
+            "name": "K'areshi Supply Crate",
+            "new": true
+          },
+          {
+            "ID": 1606,
+            "icon": "inv_misc_enlightenedbrokers_paragoncache01",
+            "itemId": 246907,
+            "name": "Broker Supply Crate",
+            "new": true
+          },
+          {
+            "ID": 1610,
+            "icon": "inv_misc_bandage_netherweave",
+            "itemId": 250722,
+            "name": "Ethereal Stall",
             "new": true
           }
         ],
@@ -7062,6 +7103,25 @@
         "name": "Plunderstorm"
       },
       {
+        "items": [
+          {
+            "ID": 1573,
+            "icon": "inv_banner_01",
+            "itemId": 239007,
+            "name": "Dastardly Banner",
+            "notObtainable": true
+          },
+          {
+            "ID": 1574,
+            "icon": "inv_11xp_event_dastardlyduos_podium01_nocollision",
+            "itemId": 239018,
+            "name": "Winner's Podium",
+            "notObtainable": true
+          }
+        ],
+        "name": "Dastardly Duos"
+      },
+      {
         "id": "6edf78f8",
         "items": [
           {
@@ -7362,27 +7422,6 @@
       {
         "id": "c0f754ff",
         "items": [
-          {
-            "ID": 609,
-            "icon": "diabloanniversary_tomeoftownportal",
-            "itemId": 142542,
-            "name": "Tome of Town Portal",
-            "notObtainable": true
-          },
-          {
-            "ID": 605,
-            "icon": "inv_axe_2h_undeadguitar_c_01",
-            "itemId": 143543,
-            "name": "Twelve-String Guitar",
-            "notObtainable": true
-          },
-          {
-            "ID": 1331,
-            "icon": "inv_misc_nightmarebanner",
-            "itemId": 206008,
-            "name": "Nightmare Banner",
-            "notObtainable": true
-          }
         ],
         "name": "Diablo 20th Anniversary"
       },
@@ -7465,42 +7504,6 @@
           }
         ],
         "name": "WoW Classic"
-      }
-    ]
-  },
-  {
-    "id": "25509538",
-    "name": "TODO",
-    "subcats": [
-      {
-        "id": "1a006cd3",
-        "items": [
-          {
-            "ID": 1603,
-            "icon": "spell_arcane_prismaticcloak",
-            "itemId": 246903,
-            "name": "Guise of the Phase Diver"
-          },
-          {
-            "ID": 1604,
-            "icon": "ability_racial_etherealconnection",
-            "itemId": 246905,
-            "name": "Overtuned K'areshi Goggles"
-          },
-          {
-            "ID": 1605,
-            "icon": "inv_112_raidtrinkets_etherealenergystoragebarrel_terra",
-            "itemId": 246908,
-            "name": "K'areshi Supply Crate"
-          },
-          {
-            "ID": 1606,
-            "icon": "inv_misc_enlightenedbrokers_paragoncache01",
-            "itemId": 246907,
-            "name": "Broker Supply Crate"
-          }
-        ],
-        "name": "Unknown"
       }
     ]
   }
