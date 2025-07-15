@@ -32,31 +32,3 @@ function createHideCompletedStore() {
   return store;
 }
 export const hideCompletedStore = createHideCompletedStore();
-
-
-// // Persistent character-specific checked steps
-// export function getCheckedAtStore(region, realm, character) {
-//   if (region === undefined || realm === undefined || character === undefined) {
-//     return;
-//   }
-
-//   const key = `mountsPlannerCheckedAt_${region}_${realm}_${character}`;
-//   let initial = {};
-
-//   if (typeof window !== 'undefined') {
-//     try {
-//       const stored = localStorage.getItem(key);
-//       if (stored) initial = JSON.parse(stored);
-//     } catch {}
-//   }
-
-//   const store = writable(initial);
-
-//   store.subscribe(val => {
-//     if (typeof window !== 'undefined') {
-//       localStorage.setItem(key, JSON.stringify(val));
-//     }
-//   });
-
-//   return store;
-// }

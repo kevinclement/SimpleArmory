@@ -14,7 +14,7 @@
 
     let promise
     let mounts
-    $: {
+    $: if ($region && $realm && $character) {
         promise = getMounts($region, $realm, $character).then(_ => {           
             init(_);
         })

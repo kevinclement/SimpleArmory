@@ -132,7 +132,6 @@
 		if (e.target.tagName === "A") {
 			menuCollapsed = true;
 		}
-		console.log(window.document);
 	}
 
 	function setLocale(e, wowhead_url) {

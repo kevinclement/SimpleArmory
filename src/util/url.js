@@ -1,5 +1,6 @@
 export function getUrl(region, realm, character, subSite) {
     if (region === undefined || realm === undefined || character === undefined) {
+        console.log("getUrl called with undefined region, realm or character", region, realm, character);
         return '#/';
     }
     let url = '#' + getBaseUrl(region, realm, character);

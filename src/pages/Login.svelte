@@ -38,6 +38,8 @@
 			  localStorage.removeItem('character');
         localStorage.removeItem('mountsPlannerHideCompleted');
 
+        document.title = getTitle('', 'Login');
+
         // Focus realm select on load
         window.setTimeout(() => {
             isFocused = true;

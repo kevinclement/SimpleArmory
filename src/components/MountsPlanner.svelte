@@ -1,6 +1,5 @@
 <script>
   import { onMount } from 'svelte';
-  import { get } from 'svelte/store';
   import { fade } from 'svelte/transition';
 
   import settings from '$util/settings';
@@ -21,11 +20,10 @@
   let steps;
   let startStep;
   let filteredSteps = [];
-  let checkedAtStore;
 
   $: filteredSteps = steps ? ($hideCompletedStore ? steps.filter(step => !isValidCheck(step)) : steps) : [];
   
-  $: {
+  $: if ($region && $realm && $character) {
     promise = getPlannerSteps(mounts, $region, $realm, $character).then(raw => {
       const loaded = loadCheckedAt(raw);
       startStep = loaded.find(s => s.startStep);
@@ -38,6 +36,7 @@
   });
 
   function getStorageKey() {
+    if (!$region || !$realm || !$character) return 'mountsPlannerCheckedAt_unknown';
     return `mountsPlannerCheckedAt_${$region}_${$realm}_${$character}`;
   }
 
