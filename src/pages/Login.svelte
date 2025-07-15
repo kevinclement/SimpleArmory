@@ -36,6 +36,9 @@
 			  localStorage.removeItem('region');
 			  localStorage.removeItem('realm');
 			  localStorage.removeItem('character');
+        localStorage.removeItem('mountsPlannerHideCompleted');
+
+        document.title = getTitle('', 'Login');
 
         // Focus realm select on load
         window.setTimeout(() => {

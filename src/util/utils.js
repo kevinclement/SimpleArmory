@@ -19,13 +19,16 @@ export function percentFormat(n, d) {
 
 export function getTitle(character, page) {
     
-    if (character && character !== "") {
+    if (character && character !== "" && character !== undefined) {
         // uppercase first character
         character = character.charAt(0).toUpperCase() + character.slice(1);
         page = page ? " - " + page  : ""
+
+        return `${character}${page} • Simple Armory`
     }
-        
-    return `${character}${page} • Simple Armory`
+
+    return `${page} • Simple Armory`
+
 }
 
 export function getImageSrc(item, renderIcon) {
