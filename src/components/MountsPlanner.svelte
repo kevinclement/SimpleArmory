@@ -56,12 +56,18 @@
       return checkedDate >= dailyReset;
     }
 
-    if (step.type === 'Raid') {
+    if (step.type === 'Raid' || step.type === 'WeeklyDungeon') {
       const currentDay = now.getUTCDay();
       const daysSinceReset = (currentDay + 7 - weeklyDay) % 7;
       const lastWeeklyReset = new Date(now);
       lastWeeklyReset.setUTCDate(now.getUTCDate() - daysSinceReset);
       lastWeeklyReset.setUTCHours(weeklyHourUTC, 0, 0, 0);
+      
+      // Extra condition for the day of reset
+      if (now < lastWeeklyReset) {
+        lastWeeklyReset.setUTCDate(lastWeeklyReset.getUTCDate() - 7);
+      }
+
       return checkedDate >= lastWeeklyReset;
     }
 
@@ -236,6 +242,12 @@
     steps.forEach((step, idx) => {
       if (step.type === type && step.checkedAt) {
         updated = uncheckStep(updated, idx);
+      }
+      if(type == "Dungeon") {
+        // Temporary bandaid fix to ensure both daily and weekly dungeons are reset
+        if (step.type === "WeeklyDungeon" && step.checkedAt) {
+          updated = uncheckStep(updated, idx);
+        }
       }
     });
     steps = updated;
