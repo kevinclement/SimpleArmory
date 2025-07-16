@@ -262,30 +262,9 @@
             "itemId": 224576,
             "name": "Lil' Flameo",
             "spellid": 453266
-          },
-          {
-            "ID": 4690,
-            "creatureId": 233481,
-            "icon": "inv_babynaga2_purple",
-            "itemId": 232519,
-            "name": "Razeshi B.",
-            "spellid": 470914
           }
         ],
         "name": "Promotions"
-      },
-      {
-        "items": [
-          {
-            "ID": 4806,
-            "creatureId": 241346,
-            "icon": "inv_ironstarlettepet",
-            "itemId": 239019,
-            "name": "Spicy Mean-Ball",
-            "spellid": 1227066
-          }
-        ],
-        "name": "Dastardly Duos"
       },
       {
         "items": [
@@ -430,7 +409,7 @@
             "creatureId": 231451,
             "icon": "inv_toygorilla_blue",
             "itemId": 232843,
-            "name": "Gorillion",
+            "name": "Mega-Mecha Gorilla",
             "spellid": 471935
           },
           {
@@ -11710,6 +11689,20 @@
       {
         "items": [
           {
+            "ID": 4806,
+            "creatureId": 241346,
+            "icon": "inv_ironstarlettepet",
+            "itemId": 239019,
+            "name": "Spicy Mean-Ball",
+            "notObtainable": true,
+            "spellid": 1227066
+          }
+        ],
+        "name": "Dastardly Duos"
+      },
+      {
+        "items": [
+          {
             "ID": 4579,
             "creatureId": 223785,
             "icon": "inv_yakpet",
@@ -11990,6 +11983,14 @@
             "itemId": 208446,
             "name": "Fyrn",
             "spellid": 419467
+          },
+          {
+            "ID": 4796,
+            "creatureId": 241416,
+            "icon": "6694821",
+            "itemId": 239082,
+            "name": "Sa'bak's Blessed",
+            "spellid": 127902
           },
           {
             "ID": 4730,
@@ -12525,6 +12526,20 @@
           }
         ],
         "name": "Mountain Dew"
+      },
+      {
+        "items": [
+          {
+            "ID": 4690,
+            "creatureId": 233481,
+            "icon": "inv_babynaga2_purple",
+            "itemId": 232519,
+            "name": "Razeshi B.",
+            "resale": true,
+            "spellid": 470914
+          }
+        ],
+        "name": "Razer"
       },
       {
         "items": [
