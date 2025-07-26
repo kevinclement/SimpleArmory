@@ -72,8 +72,8 @@
           {
             "icon": "achievement_scenario_500",
             "id": 41095,
-            "name": "Flickering",
-            "titleId": 598,
+            "name": "Delver",
+            "titleId": 650,
             "type": "achievement"
           },
           {
@@ -300,20 +300,36 @@
       {
         "items": [
           {
+            "icon": "achievement_challengemode_silver",
+            "id": 42170,
+            "name": "the Unbound",
+            "new": true,
+            "titleId": 713,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_challengemode_platinum",
+            "id": 42174,
+            "name": "The Unbound Hero",
+            "new": true,
+            "titleId": 637,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 915,
+            "name": "The Delver Within",
+            "new": true,
+            "titleId": 638,
+            "type": "title"
+          },
+          {
             "icon": "inv_achievement_raidnerubian_etherealassasin",
             "id": 42194,
             "name": "Contract Killer",
             "new": true,
             "titleId": 639,
             "type": "achievement"
-          },
-          {
-            "icon": "inv_misc_questionmark",
-            "id": 914,
-            "name": "The Unbound Hero",
-            "new": true,
-            "titleId": 637,
-            "type": "title"
           }
         ],
         "name": "War Within: Season 3"
@@ -386,7 +402,7 @@
             "type": "achievement"
           },
           {
-            "icon": "achievement_challengemode_gold",
+            "icon": "ui_delves",
             "id": 41197,
             "name": "High Explorer",
             "titleId": 550,
@@ -398,6 +414,14 @@
             "name": "The Bountiful",
             "titleId": 575,
             "type": "achievement"
+          },
+          {
+            "icon": "inv_ability_voidweaverpriest_entropicrift",
+            "id": 42779,
+            "name": "Flickering",
+            "titleId": 873,
+            "type": "achievement",
+            "new": true
           },
           {
             "icon": "inv_nerubianbeetlepet_purple",
@@ -460,6 +484,14 @@
             "name": "Sacred Templar",
             "titleId": 628,
             "type": "title"
+          },
+          {
+            "icon": "ui_majorfactions_-karesh",
+            "id": 924,
+            "name": "Of the Twilight Star",
+            "new": true,
+            "titleId": 644,
+            "type": "title"
           }
         ],
         "name": "Renown"
@@ -471,6 +503,14 @@
             "id": 878,
             "name": "High Roller",
             "titleId": 602,
+            "type": "title"
+          },
+          {
+            "icon": "inv_112_achievement_raid_manaforgeomega",
+            "id": 917,
+            "name": "Star Savior",
+            "new": true,
+            "titleId": 640,
             "type": "title"
           }
         ],
@@ -638,13 +678,6 @@
             "name": "Part-Timer",
             "titleId": 616,
             "type": "achievement"
-          },
-          {
-            "icon": "inv_misc_punchcards_prismatic",
-            "id": 41629,
-            "name": "\"Employee\" of the Month",
-            "titleId": 617,
-            "type": "achievement"
           }
         ],
         "name": "C.H.E.T.T."
@@ -743,36 +776,12 @@
             "type": "title"
           },
           {
-            "icon": "inv_misc_questionmark",
-            "id": 915,
-            "name": "The Delver Within",
-            "new": true,
-            "titleId": 638,
-            "type": "title"
-          },
-          {
-            "icon": "inv_misc_questionmark",
-            "id": 917,
-            "name": "Star Savior",
-            "new": true,
-            "titleId": 640,
-            "type": "title"
-          },
-          {
             "icon": "achievement_zone_ironforge",
             "id": 616,
             "name": "Bronzebeard",
             "new": true,
             "titleId": 641,
             "type": "achievement"
-          },
-          {
-            "icon": "inv_misc_questionmark",
-            "id": 924,
-            "name": "Of the Twilight Star",
-            "new": true,
-            "titleId": 644,
-            "type": "title"
           }
         ],
         "name": "Unknown"
