@@ -259,7 +259,7 @@
           {
             "ID": 2570,
             "icon": "inv_viciousvoidcreepermount_blue",
-            "itemId": "243157",
+            "itemId": 243157,
             "name": "Vicious Void Creeper",
             "new": true,
             "side": "A",
@@ -268,7 +268,7 @@
           {
             "ID": 2571,
             "icon": "inv_viciousvoidcreepermount_orange",
-            "itemId": "243159",
+            "itemId": 243159,
             "name": "Vicious Void Creeper",
             "new": true,
             "side": "H",
@@ -818,7 +818,7 @@
           {
             "ID": 2549,
             "icon": "inv_kareshflyermount_black",
-            "itemId": "242714",
+            "itemId": 242714,
             "name": "Umbral K'arroc",
             "new": true,
             "spellid": 1233511
@@ -826,7 +826,7 @@
           {
             "ID": 2511,
             "icon": "inv_voidflyermount_red",
-            "itemId": "237485",
+            "itemId": 237485,
             "name": "Terror of the Night",
             "new": true,
             "spellid": 1223191
@@ -1146,8 +1146,8 @@
             "icon": "inv_voidcreepermount_blue",
             "itemId": 242728,
             "name": "The Bone Freezer",
-            "spellid": 1233542,
-            "new": true
+            "new": true,
+            "spellid": 1233542
           }
         ],
         "name": "Raid Renown"
@@ -1438,11 +1438,11 @@
           },
           {
             "ID": 1321,
+            "dupe": true,
             "icon": "inv_aqirflyingmount_red",
             "itemId": 174770,
             "name": "Wicked Swarmer",
-            "spellid": 316340,
-            "dupe": true
+            "spellid": 316340
           },
           {
             "ID": 2557,
@@ -4995,6 +4995,18 @@
           }
         ],
         "name": "Raid Drop"
+      },
+      {
+        "items": [
+          {
+            "ID": 1532,
+            "icon": "inv_bookmount",
+            "itemId": 188674,
+            "name": "Soaring Spelltome",
+            "spellid": 359318
+          }
+        ],
+        "name": "Mage Tower"
       },
       {
         "id": "4a850111",
@@ -11835,18 +11847,6 @@
           }
         ],
         "name": "Guild Vendor"
-      },
-      {
-        "items": [
-          {
-            "ID": 1532,
-            "icon": "inv_bookmount",
-            "itemId": 188674,
-            "name": "Soaring Spelltome",
-            "spellid": 359318
-          }
-        ],
-        "name": "Mage Tower"
       },
       {
         "id": "bf2baf59",
