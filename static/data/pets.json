@@ -265,19 +265,6 @@
           }
         ],
         "name": "Promotions"
-      },
-      {
-        "items": [
-          {
-            "ID": 3580,
-            "creatureId": 205637,
-            "icon": "inv_demongoat_crimson",
-            "itemId": 206018,
-            "name": "Baa'lial",
-            "spellid": 411791
-          }
-        ],
-        "name": "Greedy Emissary"
       }
     ]
   },
@@ -11708,6 +11695,20 @@
           }
         ],
         "name": "Dastardly Duos"
+      },
+      {
+        "items": [
+          {
+            "ID": 3580,
+            "creatureId": 205637,
+            "icon": "inv_demongoat_crimson",
+            "itemId": 206018,
+            "name": "Baa'lial",
+            "notObtainable": true,
+            "spellid": 411791
+          }
+        ],
+        "name": "Greedy Emissary"
       },
       {
         "items": [

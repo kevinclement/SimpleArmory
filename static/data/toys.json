@@ -148,34 +148,6 @@
     ]
   },
   {
-    "name": "Limited Time",
-    "subcats": [
-      {
-        "items": [
-          {
-            "ID": 609,
-            "icon": "diabloanniversary_tomeoftownportal",
-            "itemId": 142542,
-            "name": "Tome of Town Portal"
-          },
-          {
-            "ID": 605,
-            "icon": "inv_axe_2h_undeadguitar_c_01",
-            "itemId": 143543,
-            "name": "Twelve-String Guitar"
-          },
-          {
-            "ID": 1331,
-            "icon": "inv_misc_nightmarebanner",
-            "itemId": 206008,
-            "name": "Nightmare Banner"
-          }
-        ],
-        "name": "Greedy Emissary"
-      }
-    ]
-  },
-  {
     "name": "The War Within",
     "subcats": [
       {
@@ -7428,7 +7400,29 @@
       },
       {
         "id": "c0f754ff",
-        "items": [],
+        "items": [
+          {
+            "ID": 609,
+            "icon": "diabloanniversary_tomeoftownportal",
+            "itemId": 142542,
+            "name": "Tome of Town Portal",
+            "notObtainable": true
+          },
+          {
+            "ID": 605,
+            "icon": "inv_axe_2h_undeadguitar_c_01",
+            "itemId": 143543,
+            "name": "Twelve-String Guitar",
+            "notObtainable": true
+          },
+          {
+            "ID": 1331,
+            "icon": "inv_misc_nightmarebanner",
+            "itemId": 206008,
+            "name": "Nightmare Banner",
+            "notObtainable": true
+          }
+        ],
         "name": "Diablo 20th Anniversary"
       },
       {
