@@ -25482,21 +25482,9 @@
                 },
                 {
                   "icon": "inv_tailoring_modifiedcraftingreagent_yellow",
-                  "id": 40496,
-                  "points": 10,
-                  "title": "60 Algari Anglerthread"
-                },
-                {
-                  "icon": "inv_tailoring_modifiedcraftingreagent_yellow",
                   "id": 40497,
                   "points": 10,
                   "title": "30 Algari Anglerthread"
-                },
-                {
-                  "icon": "inv_tailoring_modifiedcraftingreagent_yellow",
-                  "id": 40498,
-                  "points": 10,
-                  "title": "70 Algari Anglerthread"
                 },
                 {
                   "icon": "inv_tailoring_modifiedcraftingreagent_yellow",
@@ -25506,27 +25494,39 @@
                 },
                 {
                   "icon": "inv_tailoring_modifiedcraftingreagent_yellow",
-                  "id": 40500,
-                  "points": 10,
-                  "title": "80 Algari Anglerthread"
-                },
-                {
-                  "icon": "inv_tailoring_modifiedcraftingreagent_yellow",
-                  "id": 40501,
-                  "points": 10,
-                  "title": "100 Algari Anglerthread"
-                },
-                {
-                  "icon": "inv_tailoring_modifiedcraftingreagent_yellow",
                   "id": 40502,
                   "points": 10,
                   "title": "50 Algari Anglerthread"
                 },
                 {
                   "icon": "inv_tailoring_modifiedcraftingreagent_yellow",
+                  "id": 40496,
+                  "points": 10,
+                  "title": "60 Algari Anglerthread"
+                },
+                {
+                  "icon": "inv_tailoring_modifiedcraftingreagent_yellow",
+                  "id": 40498,
+                  "points": 10,
+                  "title": "70 Algari Anglerthread"
+                },
+                {
+                  "icon": "inv_tailoring_modifiedcraftingreagent_yellow",
+                  "id": 40500,
+                  "points": 10,
+                  "title": "80 Algari Anglerthread"
+                },
+                {
+                  "icon": "inv_tailoring_modifiedcraftingreagent_yellow",
                   "id": 40503,
                   "points": 10,
                   "title": "90 Algari Anglerthread"
+                },
+                {
+                  "icon": "inv_tailoring_modifiedcraftingreagent_yellow",
+                  "id": 40501,
+                  "points": 10,
+                  "title": "100 Algari Anglerthread"
                 }
               ],
               "name": "Anglerthread"
@@ -47194,12 +47194,14 @@
                 {
                   "icon": "inv_weapon_bow_01",
                   "id": 11296,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "The Ancient Keeper"
                 },
                 {
                   "icon": "inv_staff_30",
                   "id": 11297,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "The Balance of Light and Shadow"
                 }
