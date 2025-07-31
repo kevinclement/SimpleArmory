@@ -2159,6 +2159,17 @@
             "name": "Rhan'ka's Escape Plan"
           },
           {
+            "ID": 972,
+            "icon": "inv_misc_cat_trinket07",
+            "itemId": 170204,
+            "name": "Symbol of Gral"
+          }
+        ],
+        "name": "Vendor"
+      },
+      {
+        "items": [
+          {
             "ID": 817,
             "icon": "inv_weapon_rifle_01",
             "itemId": 163705,
@@ -2169,15 +2180,9 @@
             "icon": "inv_pet_mouse",
             "itemId": 163704,
             "name": "Tiny Mechanical Mouse"
-          },
-          {
-            "ID": 972,
-            "icon": "inv_misc_cat_trinket07",
-            "itemId": 170204,
-            "name": "Symbol of Gral"
           }
         ],
-        "name": "Vendor"
+        "name": "Pet Charms"
       },
       {
         "id": "5c328ffc",
@@ -3160,12 +3165,6 @@
         "id": "4e8c67af",
         "items": [
           {
-            "ID": 552,
-            "icon": "inv_7_0raid_trinket_010a",
-            "itemId": 140231,
-            "name": "Narcissa's Mirror"
-          },
-          {
             "ID": 606,
             "icon": "inv_offhand_ulduarraid_d_03",
             "itemId": 141862,
@@ -3221,6 +3220,17 @@
           }
         ],
         "name": "Vendor"
+      },
+      {
+        "items": [
+          {
+            "ID": 552,
+            "icon": "inv_7_0raid_trinket_010a",
+            "itemId": 140231,
+            "name": "Narcissa's Mirror"
+          }
+        ],
+        "name": "Pet Charms"
       },
       {
         "id": "4d739f21",
@@ -3759,28 +3769,10 @@
             "name": "Personal Spotlight"
           },
           {
-            "ID": 394,
-            "icon": "inv_misc_coin_12",
-            "itemId": 127707,
-            "name": "Indestructible Bone"
-          },
-          {
             "ID": 324,
             "icon": "inv_misc_stonetablet_03",
             "itemId": 119210,
             "name": "Hearthstone Board"
-          },
-          {
-            "ID": 393,
-            "icon": "spell_mage_temporalshield",
-            "itemId": 127696,
-            "name": "Magic Pet Mirror"
-          },
-          {
-            "ID": 392,
-            "icon": "inv_wand_16",
-            "itemId": 127695,
-            "name": "Spirit Wand"
           },
           {
             "ID": 279,
@@ -3796,6 +3788,29 @@
           }
         ],
         "name": "Vendor"
+      },
+      {
+        "items": [
+          {
+            "ID": 394,
+            "icon": "inv_misc_coin_12",
+            "itemId": 127707,
+            "name": "Indestructible Bone"
+          },
+          {
+            "ID": 393,
+            "icon": "spell_mage_temporalshield",
+            "itemId": 127696,
+            "name": "Magic Pet Mirror"
+          },
+          {
+            "ID": 392,
+            "icon": "inv_wand_16",
+            "itemId": 127695,
+            "name": "Spirit Wand"
+          }
+        ],
+        "name": "Pet Charms"
       },
       {
         "id": "95bf5c7b",
