@@ -265,6 +265,19 @@
           }
         ],
         "name": "Promotions"
+      },
+      {
+        "items": [
+          {
+            "ID": 4858,
+            "creatureId": 246983,
+            "icon": "inv_redpandapet_violet",
+            "itemId": 246451,
+            "name": "Shadefur Brewthief",
+            "spellid": 1242265
+          }
+        ],
+        "name": "Twitch Drops"
       }
     ]
   },
@@ -12996,16 +13009,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 473300
-          },
-          {
-            "ID": 4858,
-            "creatureId": 246983,
-            "icon": "inv_redpandapet_violet",
-            "itemId": 246451,
-            "name": "Shadefur Brewthief",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1242265
           }
         ],
         "name": "Promotion"
