@@ -163,14 +163,14 @@
             "ID": 1515,
             "icon": "inv_goblinsapperpet",
             "itemId": 230727,
-            "name": "Explosive Victory"
+            "name": "Explosive Victory",
+            "notObtainable": true
           },
           {
             "ID": 1599,
             "icon": "inv_knife_1h_etherealraid_d_02",
             "itemId": 244470,
-            "name": "Etheric Victory",
-            "new": true
+            "name": "Etheric Victory"
           },
           {
             "ID": 1483,
@@ -195,12 +195,6 @@
             "icon": "inv_10_engineering2_boxofbombs_friendly_color1",
             "itemId": 235050,
             "name": "Desk-in-a-Box"
-          },
-          {
-            "ID": 1545,
-            "icon": "inv_10_blacksmithing_craftedoptional_engineering_uprez",
-            "itemId": 235016,
-            "name": "Redeployment Module"
           }
         ],
         "name": "Achievement"
@@ -265,8 +259,7 @@
             "ID": 1592,
             "icon": "inv_letter_13",
             "itemId": 245970,
-            "name": "P.O.S.T. Master's Express Hearthstone",
-            "new": true
+            "name": "P.O.S.T. Master's Express Hearthstone"
           }
         ],
         "name": "Treasure"
@@ -325,15 +318,19 @@
             "ID": 1600,
             "icon": "inv_chest_armor_explorer_d_01",
             "itemId": 244792,
-            "name": "Etheric Brannmorpher",
-            "new": true
+            "name": "Etheric Brannmorpher"
           },
           {
             "ID": 1584,
             "icon": "inv_112_raidtrinkets_blobofswirlingvoid_gold",
             "itemId": 243056,
-            "name": "Delver's Mana-Bound Ethergate",
-            "new": true
+            "name": "Delver's Mana-Bound Ethergate"
+          },
+          {
+            "ID": 1545,
+            "icon": "inv_10_blacksmithing_craftedoptional_engineering_uprez",
+            "itemId": 235016,
+            "name": "Redeployment Module"
           }
         ],
         "name": "Delves"
@@ -350,8 +347,7 @@
             "ID": 1582,
             "icon": "inv_cape_special_heartribbon_c_01",
             "itemId": 242323,
-            "name": "Chowdar's Favorite Ribbon",
-            "new": true
+            "name": "Chowdar's Favorite Ribbon"
           }
         ],
         "name": "Rare"
@@ -561,36 +557,31 @@
             "ID": 1603,
             "icon": "spell_arcane_prismaticcloak",
             "itemId": 246903,
-            "name": "Guise of the Phase Diver",
-            "new": true
+            "name": "Guise of the Phase Diver"
           },
           {
             "ID": 1604,
             "icon": "ability_racial_etherealconnection",
             "itemId": 246905,
-            "name": "Overtuned K'areshi Goggles",
-            "new": true
+            "name": "Overtuned K'areshi Goggles"
           },
           {
             "ID": 1605,
             "icon": "inv_112_raidtrinkets_etherealenergystoragebarrel_terra",
             "itemId": 246908,
-            "name": "K'areshi Supply Crate",
-            "new": true
+            "name": "K'areshi Supply Crate"
           },
           {
             "ID": 1606,
             "icon": "inv_misc_enlightenedbrokers_paragoncache01",
             "itemId": 246907,
-            "name": "Broker Supply Crate",
-            "new": true
+            "name": "Broker Supply Crate"
           },
           {
             "ID": 1610,
             "icon": "inv_misc_bandage_netherweave",
             "itemId": 250722,
-            "name": "Ethereal Stall",
-            "new": true
+            "name": "Ethereal Stall"
           }
         ],
         "name": "Phase Diving"
@@ -662,22 +653,18 @@
             "ID": 1597,
             "icon": "spell_holy_circleofrenewal_shadow",
             "itemId": 246565,
-            "name": "Cosmic Hearthstone",
-            "new": true
+            "name": "Cosmic Hearthstone"
           }
         ],
         "name": "Raid"
       },
       {
         "items": [
-          
-
           {
             "ID": 1602,
             "icon": "inv_plate_broker_c_01_helm",
             "itemId": 249713,
-            "name": "Cartel Transmorpher",
-            "new": true
+            "name": "Cartel Transmorpher"
           }
         ],
         "name": "Unknown"
@@ -6018,17 +6005,17 @@
             "notObtainable": true
           },
           {
-            "ID": 1505,
-            "icon": "inv_twwsoloshufflepennantreward_icons_green",
-            "itemId": 227538,
-            "name": "Unbound Legend's Pennant",
-            "notObtainable": true
-          },
-          {
             "ID": 1572,
             "icon": "inv_twwsoloshufflepennantreward_icons_purple",
             "itemId": 235519,
             "name": "Prized Legend's Pennant",
+            "notObtainable": true
+          },
+          {
+            "ID": 1505,
+            "icon": "inv_twwsoloshufflepennantreward_icons_green",
+            "itemId": 227538,
+            "name": "Unbound Legend's Pennant",
             "notObtainable": true
           }
         ],
@@ -6371,7 +6358,8 @@
             "icon": "inv_misc_beerfest_balloon_02",
             "itemId": 245946,
             "name": "Brewer's Balloon",
-            "new": true
+            "notObtainable": true,
+            "notReleased": true
           }
         ],
         "name": "Brewfest"

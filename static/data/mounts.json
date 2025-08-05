@@ -205,54 +205,10 @@
       {
         "items": [
           {
-            "ID": 2480,
-            "icon": "inv_goblinspidertank",
-            "itemId": 235549,
-            "name": "Crimson Shreddertank",
-            "spellid": 1217235
-          },
-          {
-            "ID": 2508,
-            "icon": "inv_goblinspidertank",
-            "itemId": 237141,
-            "name": "Enterprising Shreddertank",
-            "spellid": 1221694
-          },
-          {
-            "ID": 2299,
-            "icon": "inv_electriceelviciousmount_red",
-            "itemId": 229988,
-            "name": "Vicious Electro Eel",
-            "side": "H",
-            "spellid": 466145
-          },
-          {
-            "ID": 2300,
-            "icon": "inv_electriceelviciousmount_blue",
-            "itemId": 229989,
-            "name": "Vicious Electro Eel",
-            "side": "A",
-            "spellid": 466146
-          },
-          {
-            "ID": 2298,
-            "icon": "inv_felbatgladiatormount_copper",
-            "itemId": 229987,
-            "name": "Prized Gladiator's Fel Bat",
-            "notObtainable": true,
-            "spellid": 466144
-          }
-        ],
-        "name": "War Within: Season 2"
-      },
-      {
-        "items": [
-          {
             "ID": 2633,
             "icon": "inv_voidflyermountmythic",
             "itemId": 248248,
             "name": "Azure Void Flyer",
-            "new": true,
             "spellid": 1246781
           },
           {
@@ -260,7 +216,6 @@
             "icon": "inv_voidflyermountmythic",
             "itemId": 247822,
             "name": "Scarlet Void Flyer",
-            "new": true,
             "spellid": 1245517
           },
           {
@@ -268,7 +223,6 @@
             "icon": "inv_viciousvoidcreepermount_blue",
             "itemId": 243157,
             "name": "Vicious Void Creeper",
-            "new": true,
             "side": "A",
             "spellid": 1234820
           },
@@ -277,32 +231,26 @@
             "icon": "inv_viciousvoidcreepermount_orange",
             "itemId": 243159,
             "name": "Vicious Void Creeper",
-            "new": true,
             "side": "H",
             "spellid": 1234821
           },
           {
+            "ID": 2606,
+            "icon": "inv_voiddragonmount2ethereal_king",
+            "itemId": 246445,
+            "name": "Royal Voidwing",
+            "spellid": 1242272
+          },
+          {
             "ID": 2326,
-            "icon": "inv_felbatgladiatormount_purple",
-            "itemId": "232617",
+            "icon": "inv_felbatgladiatormount_void",
+            "itemId": 232617,
             "name": "Astral Gladiator's Fel Bat",
-            "new": true,
+            "notObtainable": true,
             "spellid": 472157
           }
         ],
         "name": "War Within: Season 3"
-      },
-      {
-        "items": [
-          {
-            "ID": 2518,
-            "icon": "inv_piratedragonmount",
-            "itemId": 238739,
-            "name": "Chrono Corsair",
-            "spellid": 1226144
-          }
-        ],
-        "name": "Turbulent Timeways"
       },
       {
         "items": [
@@ -352,18 +300,10 @@
             "spellid": 1218314
           },
           {
-            "ID": 2604,
-            "icon": "inv_overchargedmech",
-            "itemId": 246237,
-            "name": "OC91 Chariot",
-            "spellid": 1241263
-          },
-          {
             "ID": 2511,
             "icon": "inv_voidflyermount_red",
             "itemId": 237485,
             "name": "Terror of the Night",
-            "new": true,
             "spellid": 1223191
           },
           {
@@ -371,7 +311,6 @@
             "icon": "inv_kareshroamermount_yellow",
             "itemId": 250240,
             "name": "Phase-Lost Slateback",
-            "new": true,
             "spellid": 1250578
           },
           {
@@ -400,7 +339,6 @@
             "icon": "inv_kareshflyermount_black",
             "itemId": 242714,
             "name": "Umbral K'arroc",
-            "new": true,
             "spellid": 1233511
           },
           {
@@ -410,6 +348,22 @@
             "name": "Diamond Mechsuit",
             "notObtainable": true,
             "spellid": 458335
+          },
+          {
+            "ID": 2480,
+            "icon": "inv_goblinspidertank",
+            "itemId": 235549,
+            "name": "Crimson Shreddertank",
+            "notObtainable": true,
+            "spellid": 1217235
+          },
+          {
+            "ID": 2508,
+            "icon": "inv_goblinspidertank",
+            "itemId": 237141,
+            "name": "Enterprising Shreddertank",
+            "notObtainable": true,
+            "spellid": 1221694
           }
         ],
         "name": "Achievement"
@@ -449,16 +403,7 @@
             "icon": "inv_cosmicdragonmount",
             "itemId": 243061,
             "name": "Unbound Star-Eater",
-            "new": true,
             "spellid": 1234573
-          },
-          {
-            "ID": 2606,
-            "icon": "inv_voiddragonmount2ethereal_king",
-            "itemId": 246445,
-            "name": "Royal Voidwing",
-            "new": true,
-            "spellid": 1242272
           }
         ],
         "name": "Raid Drop"
@@ -470,6 +415,7 @@
             "icon": "inv_molemount_brown",
             "itemId": 225548,
             "name": "Wick",
+            "notObtainable": true,
             "spellid": 449264
           },
           {
@@ -628,7 +574,6 @@
             "icon": "inv_voidcreepermount_red",
             "itemId": 242729,
             "name": "Ruby Void Creeper",
-            "new": true,
             "spellid": 1233546
           },
           {
@@ -636,7 +581,6 @@
             "icon": "inv_voidflyermount_purple",
             "itemId": 237484,
             "name": "Terror of the Wastes",
-            "new": true,
             "spellid": 1223187
           }
         ],
@@ -710,7 +654,6 @@
             "icon": "inv_brokermount_silver",
             "itemId": 186640,
             "name": "Vandal's Gearglider",
-            "new": true,
             "spellid": 353265
           },
           {
@@ -718,7 +661,6 @@
             "icon": "inv_voidcreepermount_blue",
             "itemId": 242728,
             "name": "The Bone Freezer",
-            "new": true,
             "spellid": 1233542
           }
         ],
@@ -764,7 +706,6 @@
             "icon": "inv_airshipmountethereal",
             "itemId": 238051,
             "name": "Delver's Mana-Skimmer",
-            "new": true,
             "spellid": 1224048
           }
         ],
@@ -805,7 +746,6 @@
             "icon": "inv_devourermediummount",
             "itemId": 246159,
             "name": "Translocated Gorger",
-            "new": true,
             "spellid": 1241070
           },
           {
@@ -813,7 +753,6 @@
             "icon": "inv_kareshroamermount_crimson",
             "itemId": 242734,
             "name": "Curious Slateback",
-            "new": true,
             "spellid": 1233561
           }
         ],
@@ -868,7 +807,6 @@
             "icon": "inv_trilobitemount_white",
             "itemId": 246067,
             "name": "Pearlescent Krolusk",
-            "new": true,
             "spellid": 1240632
           },
           {
@@ -876,7 +814,6 @@
             "icon": "inv_devourerswarmermount_green",
             "itemId": 246160,
             "name": "Sthaarbs's Last Lunch",
-            "new": true,
             "spellid": 1241076
           },
           {
@@ -884,7 +821,6 @@
             "icon": "inv_kareshflyermount_orange",
             "itemId": 242713,
             "name": "Resplendent K'arroc",
-            "new": true,
             "spellid": 1221132
           }
         ],
@@ -1009,11 +945,17 @@
             "spellid": 316340
           },
           {
+            "ID": 2604,
+            "icon": "inv_overchargedmech",
+            "itemId": 246237,
+            "name": "OC91 Chariot",
+            "spellid": 1241263
+          },
+          {
             "ID": 2557,
             "icon": "inv_voidcreepermount_yellow",
             "itemId": 242730,
             "name": "Acidic Void Creeper",
-            "new": true,
             "spellid": 1233547
           },
           {
@@ -1021,7 +963,6 @@
             "icon": "inv_kareshflyermount_purple",
             "itemId": 242717,
             "name": "Lavender K'arroc",
-            "new": true,
             "spellid": 1233518
           }
         ],
@@ -1041,7 +982,6 @@
             "icon": "inv_kareshroamermount_blue",
             "itemId": 242733,
             "name": "Blue Barry",
-            "new": true,
             "spellid": 1233559
           }
         ],
@@ -1054,7 +994,6 @@
             "icon": "inv_brokermount_light",
             "itemId": 186639,
             "name": "Xy Trustee's Gearglider",
-            "new": true,
             "spellid": 353264
           }
         ],
@@ -8601,6 +8540,24 @@
             "notObtainable": true,
             "side": "H",
             "spellid": 447405
+          },
+          {
+            "ID": 2299,
+            "icon": "inv_electriceelviciousmount_red",
+            "itemId": 229988,
+            "name": "Vicious Electro Eel",
+            "notObtainable": true,
+            "side": "H",
+            "spellid": 466145
+          },
+          {
+            "ID": 2300,
+            "icon": "inv_electriceelviciousmount_blue",
+            "itemId": 229989,
+            "name": "Vicious Electro Eel",
+            "notObtainable": true,
+            "side": "A",
+            "spellid": 466146
           }
         ],
         "name": "Vicious Saddle"
@@ -8911,6 +8868,14 @@
             "name": "Forged Gladiator's Fel Bat",
             "notObtainable": true,
             "spellid": 449466
+          },
+          {
+            "ID": 2298,
+            "icon": "inv_felbatgladiatormount_copper",
+            "itemId": 229987,
+            "name": "Prized Gladiator's Fel Bat",
+            "notObtainable": true,
+            "spellid": 466144
           }
         ],
         "name": "Gladiator"
@@ -8977,7 +8942,8 @@
             "icon": "inv_brewfestmount",
             "itemId": 248761,
             "name": "Brewfest Barrel Bomber",
-            "new": true,
+            "notObtainable": true,
+            "notReleased": true,
             "spellid": 1247662
           }
         ],
@@ -9889,7 +9855,6 @@
             "icon": "inv_elekkfelmount_blue",
             "itemId": 246917,
             "name": "Thunder-ridged Elekk",
-            "new": true,
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1244247
@@ -9899,7 +9864,6 @@
             "icon": "inv_elekkfelmount_orange",
             "itemId": 246919,
             "name": "Cinder-seared Elekk",
-            "new": true,
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1244259
@@ -9909,7 +9873,6 @@
             "icon": "inv_elekkfelmount_purple",
             "itemId": 246920,
             "name": "Void-Razed Elekk",
-            "new": true,
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1244260
@@ -9919,7 +9882,6 @@
             "icon": "inv_elekkfelmount_red",
             "itemId": 246921,
             "name": "Legion Forged Elekk",
-            "new": true,
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1244261
@@ -9929,7 +9891,6 @@
             "icon": "inv_headlesshorsemanmount2_blue",
             "itemId": 247720,
             "name": "The Headless Horseman's Chilling Charger",
-            "new": true,
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1245197
@@ -9939,7 +9900,6 @@
             "icon": "inv_headlesshorsemanmount2_green",
             "itemId": 247721,
             "name": "The Headless Horseman's Ghoulish Charger",
-            "new": true,
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1245198
@@ -9949,7 +9909,6 @@
             "icon": "inv_headlesshorsemanmount2_red",
             "itemId": 247722,
             "name": "The Headless Horseman's Burning Charger",
-            "new": true,
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1245202
@@ -9959,7 +9918,6 @@
             "icon": "inv_headlesshorsemanmount2_white",
             "itemId": 247723,
             "name": "The Headless Horseman's Hallowed Charger",
-            "new": true,
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1245205
@@ -9969,7 +9927,6 @@
             "icon": "inv_dwarfgryphonmount_blue",
             "itemId": 247791,
             "name": "Adorned Northeron Gryphon",
-            "new": true,
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1245357
@@ -9979,7 +9936,6 @@
             "icon": "inv_dwarfgryphonmount_green",
             "itemId": 247792,
             "name": "High Shaman's Aerie Gryphon",
-            "new": true,
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1245358
@@ -9989,7 +9945,6 @@
             "icon": "inv_dwarfgryphonmount_orange",
             "itemId": 247793,
             "name": "Cinder-Plumed Highland Gryphon",
-            "new": true,
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1245359
@@ -9999,7 +9954,6 @@
             "icon": "inv_dwarfgryphonmount_red",
             "itemId": 247794,
             "name": "Emberwing Sky Guide",
-            "new": true,
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1245361
@@ -10009,7 +9963,6 @@
             "icon": "inv_argustalbukmount_yellow",
             "itemId": 247795,
             "name": "Ornery Breezestrider",
-            "new": true,
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1245370
@@ -10087,6 +10040,19 @@
           }
         ],
         "name": "Greedy Emissary"
+      },
+      {
+        "items": [
+          {
+            "ID": 2518,
+            "icon": "inv_piratedragonmount",
+            "itemId": 238739,
+            "name": "Chrono Corsair",
+            "notObtainable": true,
+            "spellid": 1226144
+          }
+        ],
+        "name": "Turbulent Timeways"
       },
       {
         "items": [
@@ -10499,6 +10465,7 @@
           {
             "ID": 1330,
             "icon": "inv_catmount",
+            "itemId": "246698",
             "name": "Sunwarmed Furline",
             "spellid": 317177
           },

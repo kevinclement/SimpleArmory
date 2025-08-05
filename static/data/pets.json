@@ -265,6 +265,19 @@
           }
         ],
         "name": "Promotions"
+      },
+      {
+        "items": [
+          {
+            "ID": 4858,
+            "creatureId": 246983,
+            "icon": "inv_redpandapet_violet",
+            "itemId": 246451,
+            "name": "Shadefur Brewthief",
+            "spellid": 1242265
+          }
+        ],
+        "name": "Twitch Drops"
       }
     ]
   },
@@ -335,7 +348,6 @@
             "icon": "inv_babycosmicflyer_green",
             "itemId": 245255,
             "name": "Starlight",
-            "new": true,
             "spellid": 1238333
           }
         ],
@@ -523,7 +535,6 @@
             "icon": "inv_112_petrewards_kareshstrider_black",
             "itemId": 245269,
             "name": "Mr. Long-Legs",
-            "new": true,
             "spellid": 1238337
           },
           {
@@ -532,7 +543,6 @@
             "icon": "inv_112_petrewards_babyobserver_blue",
             "itemId": 243158,
             "name": "Ixthal the Observling",
-            "new": true,
             "spellid": 1234822
           }
         ],
@@ -546,7 +556,6 @@
             "icon": "inv_112_petrewards_kareshstrider_green-",
             "itemId": 245272,
             "name": "Heka'Tarnos, Bringer of Discord",
-            "new": true,
             "spellid": 1238338
           },
           {
@@ -555,7 +564,6 @@
             "icon": "inv_112_petrewards_cosmicworm",
             "itemId": 245214,
             "name": "Palek'ti, the Mouth of Nothingness",
-            "new": true,
             "spellid": 1238330
           },
           {
@@ -564,7 +572,6 @@
             "icon": "inv_voidcreepermount_red",
             "itemId": 244915,
             "name": "Jimmy",
-            "new": true,
             "spellid": 1238283
           },
           {
@@ -573,7 +580,6 @@
             "icon": "inv_babycosmicflyer_purple",
             "itemId": 245254,
             "name": "Duskthief",
-            "new": true,
             "spellid": 1238336
           }
         ],
@@ -690,7 +696,6 @@
             "icon": "inv_catbroker_gold",
             "itemId": 246694,
             "name": "Zo'ya",
-            "new": true,
             "spellid": 1243337
           },
           {
@@ -699,7 +704,6 @@
             "icon": "inv_112_petrewards_babyobserver_red",
             "itemId": 244913,
             "name": "Looker Gaz'kreth Jr.",
-            "new": true,
             "spellid": 1238275
           }
         ],
@@ -806,7 +810,6 @@
             "icon": "inv_babycosmicflyer_red",
             "itemId": 245256,
             "name": "Sao'rhon",
-            "new": true,
             "spellid": 1238334
           }
         ],
@@ -900,7 +903,6 @@
             "icon": "inv_112_petrewards_babyobserver_black",
             "itemId": 244910,
             "name": "Penumbral Terror",
-            "new": true,
             "spellid": 1238272
           }
         ],
@@ -1026,7 +1028,6 @@
             "icon": "inv_catbroker_light",
             "itemId": 246723,
             "name": "Unfazed Diver",
-            "new": true,
             "spellid": 1243343
           }
         ],
@@ -1280,14 +1281,12 @@
             "notReleased": true,
             "spellid": 471903
           },
-          
           {
             "ID": 4825,
             "creatureId": 245215,
             "icon": "inv_babykareshfox_green",
             "itemId": 244467,
             "name": "Veridian Thorntail",
-            "new": true,
             "spellid": 1237377
           },
           {
@@ -1296,7 +1295,6 @@
             "icon": "inv_babykareshfox_brown",
             "itemId": 244468,
             "name": "Scrappy Thorntail",
-            "new": true,
             "spellid": 1237379
           },
           {
@@ -1305,7 +1303,6 @@
             "icon": "inv_112_petrewards_babyobserver",
             "itemId": 244907,
             "name": "Dread Horrorling",
-            "new": true,
             "spellid": 1238270
           },
           {
@@ -1314,7 +1311,6 @@
             "icon": "inv_112_petrewards_babyobserver",
             "itemId": 244909,
             "name": "Impartial Watcher",
-            "new": true,
             "spellid": 1238271
           },
           {
@@ -1323,17 +1319,14 @@
             "icon": "inv_voidcreepermount_yellow",
             "itemId": 244914,
             "name": "Xanthous Siphonmite",
-            "new": true,
             "spellid": 1238282
           },
-          
           {
             "ID": 4835,
             "creatureId": 245482,
             "icon": "inv_voidcreepermount_blue",
             "itemId": 244916,
             "name": "Cyan Siphonmite",
-            "new": true,
             "spellid": 1238284
           },
           {
@@ -1342,7 +1335,6 @@
             "icon": "inv_112_petrewards_cosmicworm_green",
             "itemId": 245212,
             "name": "Vitriolic Inchshifter",
-            "new": true,
             "spellid": 1238328
           },
           {
@@ -1351,7 +1343,6 @@
             "icon": "inv_112_petrewards_cosmicworm_blue",
             "itemId": 245215,
             "name": "Shimmering Inchshifter",
-            "new": true,
             "spellid": 1238331
           },
           {
@@ -1360,27 +1351,22 @@
             "icon": "inv_babycosmicflyer_grey",
             "itemId": 245252,
             "name": "Graceful Cosmic Ray Pup",
-            "new": true,
             "spellid": 1238332
           },
-          
           {
             "ID": 4844,
             "creatureId": 245502,
             "icon": "inv_babycosmicflyer_teal",
             "itemId": 245253,
             "name": "Inquisitive Cosmic Ray Pup",
-            "new": true,
             "spellid": 1238335
           },
-          
           {
             "ID": 4847,
             "creatureId": 245505,
             "icon": "inv_112_petrewards_kareshstrider_red",
             "itemId": 245273,
             "name": "Copper Lapbug",
-            "new": true,
             "spellid": 1238341
           },
           {
@@ -1389,7 +1375,6 @@
             "icon": "inv_112_petrewards_kareshstrider",
             "itemId": 245274,
             "name": "Cerulean Lapbug",
-            "new": true,
             "spellid": 1238346
           }
         ],
@@ -1403,7 +1388,8 @@
             "icon": "inv_112_petrewards_babyobserver_blue",
             "itemId": 244911,
             "name": "Observer, Baby (Green)",
-            "new": true,
+            "notObtainable": true,
+            "notReleased": true,
             "spellid": 1238273
           },
           {
@@ -1412,7 +1398,8 @@
             "icon": "inv_babykareshfox_orange",
             "itemId": 244464,
             "name": "Baby Karesh Fox - Orange",
-            "new": true,
+            "notObtainable": true,
+            "notReleased": true,
             "spellid": 1237372
           },
           {
@@ -1421,7 +1408,8 @@
             "icon": "inv_112_petrewards_cosmicworm_red",
             "itemId": 245213,
             "name": "Worm, Cosmic - Critter (Red)",
-            "new": true,
+            "notObtainable": true,
+            "notReleased": true,
             "spellid": 1238329
           }
         ],
@@ -13021,16 +13009,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 473300
-          },
-          {
-            "ID": 4858,
-            "creatureId": 246983,
-            "icon": "inv_redpandapet_violet",
-            "itemId": 246451,
-            "name": "Shadefur Brewthief",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1242265
           }
         ],
         "name": "Promotion"
