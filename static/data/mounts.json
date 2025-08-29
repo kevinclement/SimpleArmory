@@ -153,35 +153,35 @@
       {
         "items": [
           {
-            "ID": 2201,
-            "icon": "inv_alliancewolfmount2_white",
-            "itemId": 223469,
-            "name": "Sentinel War Wolf",
-            "spellid": 449140
+            "ID": 2239,
+            "icon": "inv_treasurebasiliskmount_green",
+            "itemId": 226041,
+            "name": "Keg Leg's Radiant Crocolisk",
+            "spellid": 457654
+          },          
+          {
+            "ID": 2627,
+            "icon": "inv_dwarfgryphonmount_green",
+            "itemId": 247792,
+            "name": "High Shaman's Aerie Gryphon",
+            "spellid": 1245358
           },
           {
-            "ID": 2198,
-            "icon": "inv_nightsaberhordemount_red",
-            "itemId": 223449,
-            "name": "Kor'kron Warsaber",
-            "spellid": 449126
+            "ID": 2628,
+            "icon": "inv_dwarfgryphonmount_orange",
+            "itemId": 247793,
+            "name": "Cinder-Plumed Highland Gryphon",
+            "spellid": 1245359
           },
           {
-            "ID": 2575,
-            "icon": "inv_chessmount_black",
-            "itemId": 243572,
-            "name": "Grandmaster's Prophetic Board",
-            "spellid": 1235756
-          },
-          {
-            "ID": 2577,
-            "icon": "inv_chessmount_gold",
-            "itemId": 243591,
-            "name": "Grandmaster's Royal Board",
-            "spellid": 1235803
+            "ID": 2630,
+            "icon": "inv_argustalbukmount_yellow",
+            "itemId": 247795,
+            "name": "Ornery Breezestrider",
+            "spellid": 1245370
           }
         ],
-        "name": "Trading Post: August"
+        "name": "Trading Post: September"
       },
       {
         "items": [
@@ -994,6 +994,8 @@
             "icon": "inv_brokermount_light",
             "itemId": 186639,
             "name": "Xy Trustee's Gearglider",
+            "notObtainable": true,
+            "notReleased": true,
             "spellid": 353264
           }
         ],
@@ -9542,18 +9544,25 @@
             "spellid": 448851
           },
           {
+            "ID": 2201,
+            "icon": "inv_alliancewolfmount2_white",
+            "itemId": 223469,
+            "name": "Sentinel War Wolf",
+            "spellid": 449140
+          },
+          {
+            "ID": 2198,
+            "icon": "inv_nightsaberhordemount_red",
+            "itemId": 223449,
+            "name": "Kor'kron Warsaber",
+            "spellid": 449126
+          },
+          {
             "ID": 2238,
             "icon": "inv_treasurebasiliskmount_tan",
             "itemId": 226040,
             "name": "Plunderlord's Golden Crocolisk",
             "spellid": 457650
-          },
-          {
-            "ID": 2239,
-            "icon": "inv_treasurebasiliskmount_green",
-            "itemId": 226041,
-            "name": "Keg Leg's Radiant Crocolisk",
-            "spellid": 457654
           },
           {
             "ID": 2249,
@@ -9687,6 +9696,20 @@
             "itemId": 245936,
             "name": "Unarmored Deathtusk Felboar",
             "spellid": 1240003
+          },
+          {
+            "ID": 2575,
+            "icon": "inv_chessmount_black",
+            "itemId": 243572,
+            "name": "Grandmaster's Prophetic Board",
+            "spellid": 1235756
+          },
+          {
+            "ID": 2577,
+            "icon": "inv_chessmount_gold",
+            "itemId": 243591,
+            "name": "Grandmaster's Royal Board",
+            "spellid": 1235803
           },
           {
             "ID": 799,
@@ -9932,24 +9955,6 @@
             "spellid": 1245357
           },
           {
-            "ID": 2627,
-            "icon": "inv_dwarfgryphonmount_green",
-            "itemId": 247792,
-            "name": "High Shaman's Aerie Gryphon",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1245358
-          },
-          {
-            "ID": 2628,
-            "icon": "inv_dwarfgryphonmount_orange",
-            "itemId": 247793,
-            "name": "Cinder-Plumed Highland Gryphon",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1245359
-          },
-          {
             "ID": 2629,
             "icon": "inv_dwarfgryphonmount_red",
             "itemId": 247794,
@@ -9957,15 +9962,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1245361
-          },
-          {
-            "ID": 2630,
-            "icon": "inv_argustalbukmount_yellow",
-            "itemId": 247795,
-            "name": "Ornery Breezestrider",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1245370
           },
           {
             "ID": 1945,
