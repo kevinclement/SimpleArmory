@@ -7517,7 +7517,9 @@
                   "icon": "achievements_zone_brokenshore",
                   "id": 42114,
                   "points": 40,
-                  "title": "Broken Memories"
+                  "title": "Broken Memories",
+                  "notObtainable": true,
+                  "notReleased": true
                 }
               ],
               "name": "Meta"
@@ -46883,6 +46885,18 @@
                   "id": 19027,
                   "points": 0,
                   "title": "Heroic Edition: Algarian Stormrider"
+                },
+                {
+                  "icon": "6841375",
+                  "id": 61401,
+                  "points": 0,
+                  "title": "Heroic Edition: Lightwing Dragonhawk"
+                },
+                {
+                  "icon": "7135882",
+                  "id": 61402,
+                  "points": 0,
+                  "title": "Epic Edition: Voidlight Surger"
                 }
               ],
               "name": "Collector's Edition"

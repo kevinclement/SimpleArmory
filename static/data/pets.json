@@ -243,15 +243,15 @@
       {
         "items": [
           {
-            "ID": 4566,
-            "creatureId": 223645,
-            "icon": "inv_murlocsurrender",
-            "itemId": 223474,
-            "name": "Worgli the Apprehensive",
-            "spellid": 449173
+            "ID": 4602,
+            "creatureId": 227414,
+            "icon": "inv_treasurecrabpet_yellow",
+            "itemId": 226104,
+            "name": "Claudius",
+            "spellid": 457689
           }
         ],
-        "name": "Trading Post: August"
+        "name": "Trading Post: September"
       },
       {
         "items": [
@@ -265,19 +265,6 @@
           }
         ],
         "name": "Promotions"
-      },
-      {
-        "items": [
-          {
-            "ID": 4858,
-            "creatureId": 246983,
-            "icon": "inv_redpandapet_violet",
-            "itemId": 246451,
-            "name": "Shadefur Brewthief",
-            "spellid": 1242265
-          }
-        ],
-        "name": "Twitch Drops"
       }
     ]
   },
@@ -1021,14 +1008,6 @@
             "itemId": 236768,
             "name": "Craboom",
             "spellid": 1220834
-          },
-          {
-            "ID": 4860,
-            "creatureId": 247465,
-            "icon": "inv_catbroker_light",
-            "itemId": 246723,
-            "name": "Unfazed Diver",
-            "spellid": 1243343
           }
         ],
         "name": "Dungeon Drop"
@@ -1090,6 +1069,21 @@
           }
         ],
         "name": "Visions Revisited"
+      },
+      {
+        "items": [
+          {
+            "ID": 4860,
+            "creatureId": 247465,
+            "icon": "inv_catbroker_light",
+            "itemId": 246723,
+            "name": "Unfazed Diver",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1243343
+          }
+        ],
+        "name": "Unknown"
       },
       {
         "items": [
@@ -11421,12 +11415,12 @@
             "spellid": 449046
           },
           {
-            "ID": 4602,
-            "creatureId": 227414,
-            "icon": "inv_treasurecrabpet_yellow",
-            "itemId": 226104,
-            "name": "Claudius",
-            "spellid": 457689
+            "ID": 4566,
+            "creatureId": 223645,
+            "icon": "inv_murlocsurrender",
+            "itemId": 223474,
+            "name": "Worgli the Apprehensive",
+            "spellid": 449173
           },
           {
             "ID": 3542,
@@ -12878,6 +12872,15 @@
             "name": "Beetriz",
             "notObtainable": true,
             "spellid": 433098
+          },
+          {
+            "ID": 4858,
+            "creatureId": 246983,
+            "icon": "inv_redpandapet_violet",
+            "itemId": 246451,
+            "name": "Shadefur Brewthief",
+            "notObtainable": true,
+            "spellid": 1242265
           }
         ],
         "name": "Twitch Drops"
