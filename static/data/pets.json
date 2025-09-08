@@ -265,6 +265,32 @@
           }
         ],
         "name": "Promotions"
+      },
+      {
+        "items": [
+          {
+            "ID": 4858,
+            "creatureId": 246983,
+            "icon": "inv_redpandapet_violet",
+            "itemId": 246451,
+            "name": "Shadefur Brewthief",
+            "spellid": 1242265
+          }
+        ],
+        "name": "Twitch Drops"
+      },
+      {
+        "items": [
+          {
+            "ID": 4856,
+            "creatureId": 246663,
+            "icon": "inv_capybarafelpet_orange",
+            "itemId": 246343,
+            "name": "Scruffyhorn Fel Snooter",
+            "spellid": 1241763
+          }
+        ],
+        "name": "Blizzard Gear Store"
       }
     ]
   },
@@ -1070,20 +1096,107 @@
         ],
         "name": "Visions Revisited"
       },
-      {
+            {
+        "id": "fad5d824",
         "items": [
           {
-            "ID": 4860,
-            "creatureId": 247465,
-            "icon": "inv_catbroker_light",
-            "itemId": 246723,
-            "name": "Unfazed Diver",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1243343
+            "ID": 4825,
+            "creatureId": 245215,
+            "icon": "inv_babykareshfox_green",
+            "itemId": 244467,
+            "name": "Veridian Thorntail",
+            "spellid": 1237377
+          },
+          {
+            "ID": 4826,
+            "creatureId": 245217,
+            "icon": "inv_babykareshfox_brown",
+            "itemId": 244468,
+            "name": "Scrappy Thorntail",
+            "spellid": 1237379
+          },
+          {
+            "ID": 4827,
+            "creatureId": 245474,
+            "icon": "inv_112_petrewards_babyobserver",
+            "itemId": 244907,
+            "name": "Dread Horrorling",
+            "spellid": 1238270
+          },
+          {
+            "ID": 4828,
+            "creatureId": 245475,
+            "icon": "inv_112_petrewards_babyobserver",
+            "itemId": 244909,
+            "name": "Impartial Watcher",
+            "spellid": 1238271
+          },
+          {
+            "ID": 4833,
+            "creatureId": 245480,
+            "icon": "inv_voidcreepermount_yellow",
+            "itemId": 244914,
+            "name": "Xanthous Siphonmite",
+            "spellid": 1238282
+          },
+          {
+            "ID": 4835,
+            "creatureId": 245482,
+            "icon": "inv_voidcreepermount_blue",
+            "itemId": 244916,
+            "name": "Cyan Siphonmite",
+            "spellid": 1238284
+          },
+          {
+            "ID": 4836,
+            "creatureId": 245494,
+            "icon": "inv_112_petrewards_cosmicworm_green",
+            "itemId": 245212,
+            "name": "Vitriolic Inchshifter",
+            "spellid": 1238328
+          },
+          {
+            "ID": 4839,
+            "creatureId": 245497,
+            "icon": "inv_112_petrewards_cosmicworm_blue",
+            "itemId": 245215,
+            "name": "Shimmering Inchshifter",
+            "spellid": 1238331
+          },
+          {
+            "ID": 4840,
+            "creatureId": 245498,
+            "icon": "inv_babycosmicflyer_grey",
+            "itemId": 245252,
+            "name": "Graceful Cosmic Ray Pup",
+            "spellid": 1238332
+          },
+          {
+            "ID": 4844,
+            "creatureId": 245502,
+            "icon": "inv_babycosmicflyer_teal",
+            "itemId": 245253,
+            "name": "Inquisitive Cosmic Ray Pup",
+            "spellid": 1238335
+          },
+          {
+            "ID": 4847,
+            "creatureId": 245505,
+            "icon": "inv_112_petrewards_kareshstrider_red",
+            "itemId": 245273,
+            "name": "Copper Lapbug",
+            "spellid": 1238341
+          },
+          {
+            "ID": 4848,
+            "creatureId": 245506,
+            "icon": "inv_112_petrewards_kareshstrider",
+            "itemId": 245274,
+            "name": "Cerulean Lapbug",
+            "spellid": 1238346
           }
         ],
-        "name": "Unknown"
+        "name": "Ecological Succession"
       },
       {
         "items": [
@@ -1117,10 +1230,9 @@
         ],
         "name": "Pre-launch Event"
       },
-      {
-        "id": "fad5d824",
+            {
         "items": [
-          {
+                    {
             "ID": 4458,
             "creatureId": 222069,
             "icon": "inv_achievement_raidnerubian_swarmmother",
@@ -1276,106 +1388,15 @@
             "spellid": 471903
           },
           {
-            "ID": 4825,
-            "creatureId": 245215,
-            "icon": "inv_babykareshfox_green",
-            "itemId": 244467,
-            "name": "Veridian Thorntail",
-            "spellid": 1237377
+            "ID": 4860,
+            "creatureId": 247465,
+            "icon": "inv_catbroker_light",
+            "itemId": 246723,
+            "name": "Unfazed Diver",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1243343
           },
-          {
-            "ID": 4826,
-            "creatureId": 245217,
-            "icon": "inv_babykareshfox_brown",
-            "itemId": 244468,
-            "name": "Scrappy Thorntail",
-            "spellid": 1237379
-          },
-          {
-            "ID": 4827,
-            "creatureId": 245474,
-            "icon": "inv_112_petrewards_babyobserver",
-            "itemId": 244907,
-            "name": "Dread Horrorling",
-            "spellid": 1238270
-          },
-          {
-            "ID": 4828,
-            "creatureId": 245475,
-            "icon": "inv_112_petrewards_babyobserver",
-            "itemId": 244909,
-            "name": "Impartial Watcher",
-            "spellid": 1238271
-          },
-          {
-            "ID": 4833,
-            "creatureId": 245480,
-            "icon": "inv_voidcreepermount_yellow",
-            "itemId": 244914,
-            "name": "Xanthous Siphonmite",
-            "spellid": 1238282
-          },
-          {
-            "ID": 4835,
-            "creatureId": 245482,
-            "icon": "inv_voidcreepermount_blue",
-            "itemId": 244916,
-            "name": "Cyan Siphonmite",
-            "spellid": 1238284
-          },
-          {
-            "ID": 4836,
-            "creatureId": 245494,
-            "icon": "inv_112_petrewards_cosmicworm_green",
-            "itemId": 245212,
-            "name": "Vitriolic Inchshifter",
-            "spellid": 1238328
-          },
-          {
-            "ID": 4839,
-            "creatureId": 245497,
-            "icon": "inv_112_petrewards_cosmicworm_blue",
-            "itemId": 245215,
-            "name": "Shimmering Inchshifter",
-            "spellid": 1238331
-          },
-          {
-            "ID": 4840,
-            "creatureId": 245498,
-            "icon": "inv_babycosmicflyer_grey",
-            "itemId": 245252,
-            "name": "Graceful Cosmic Ray Pup",
-            "spellid": 1238332
-          },
-          {
-            "ID": 4844,
-            "creatureId": 245502,
-            "icon": "inv_babycosmicflyer_teal",
-            "itemId": 245253,
-            "name": "Inquisitive Cosmic Ray Pup",
-            "spellid": 1238335
-          },
-          {
-            "ID": 4847,
-            "creatureId": 245505,
-            "icon": "inv_112_petrewards_kareshstrider_red",
-            "itemId": 245273,
-            "name": "Copper Lapbug",
-            "spellid": 1238341
-          },
-          {
-            "ID": 4848,
-            "creatureId": 245506,
-            "icon": "inv_112_petrewards_kareshstrider",
-            "itemId": 245274,
-            "name": "Cerulean Lapbug",
-            "spellid": 1238346
-          }
-        ],
-        "name": "Vibrating Box"
-      },
-      {
-        "items": [
           {
             "ID": 4830,
             "creatureId": 245477,
@@ -11557,16 +11578,6 @@
             "spellid": 1241760
           },
           {
-            "ID": 4856,
-            "creatureId": 246663,
-            "icon": "inv_capybarafelpet_orange",
-            "itemId": 246343,
-            "name": "Scruffyhorn Fel Snooter",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1241763
-          },
-          {
             "ID": 4895,
             "creatureId": 251804,
             "icon": "inv_sealpet_body_blue",
@@ -12872,15 +12883,6 @@
             "name": "Beetriz",
             "notObtainable": true,
             "spellid": 433098
-          },
-          {
-            "ID": 4858,
-            "creatureId": 246983,
-            "icon": "inv_redpandapet_violet",
-            "itemId": 246451,
-            "name": "Shadefur Brewthief",
-            "notObtainable": true,
-            "spellid": 1242265
           }
         ],
         "name": "Twitch Drops"
