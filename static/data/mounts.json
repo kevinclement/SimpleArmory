@@ -251,18 +251,6 @@
           }
         ],
         "name": "War Within: Season 3"
-      },
-      {
-        "items": [
-          {
-            "ID": 2145,
-            "icon": "inv_goblinsurfboardmount_blue",
-            "itemId": 221270,
-            "name": "Kickin' Kezan Waveshredder",
-            "spellid": 446352
-          }
-        ],
-        "name": "Blizzard Store"
       }
     ]
   },
@@ -707,6 +695,13 @@
             "itemId": 238051,
             "name": "Delver's Mana-Skimmer",
             "spellid": 1224048
+          },
+          {
+            "ID": 2505,
+            "icon": "inv_kareshflyermount_orange",
+            "itemId": 242713,
+            "name": "Resplendent K'arroc",
+            "spellid": 1221132
           }
         ],
         "name": "Quest"
@@ -815,13 +810,6 @@
             "itemId": 246160,
             "name": "Sthaarbs's Last Lunch",
             "spellid": 1241076
-          },
-          {
-            "ID": 2505,
-            "icon": "inv_kareshflyermount_orange",
-            "itemId": 242713,
-            "name": "Resplendent K'arroc",
-            "spellid": 1221132
           }
         ],
         "name": "Rare Spawn"
@@ -11133,6 +11121,14 @@
             "itemId": 239076,
             "name": "Herald of Sa'bak",
             "spellid": 1227192
+          },
+          {
+            "ID": 2145,
+            "icon": "inv_goblinsurfboardmount_blue",
+            "itemId": 221270,
+            "name": "Kickin' Kezan Waveshredder",
+            "notObtainable": true,
+            "spellid": 446352
           }
         ],
         "name": "Blizzard Store"
