@@ -678,7 +678,9 @@
             "ID": 1602,
             "icon": "inv_plate_broker_c_01_helm",
             "itemId": 249713,
-            "name": "Cartel Transmorpher"
+            "name": "Cartel Transmorpher",
+            "notReleased": true,
+            "notObtainable": true
           }
         ],
         "name": "Unknown"
@@ -6392,9 +6394,7 @@
             "ID": 1591,
             "icon": "inv_misc_beerfest_balloon_02",
             "itemId": 245946,
-            "name": "Brewer's Balloon",
-            "notObtainable": true,
-            "notReleased": true
+            "name": "Brewer's Balloon"
           }
         ],
         "name": "Brewfest"
