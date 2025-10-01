@@ -14,6 +14,7 @@
     { txt: "RU", link: "ru.wowhead.com" },
     { txt: "KO", link: "ko.wowhead.com" },
     { txt: "CN", link: "cn.wowhead.com" },
+    { txt: "MX", link: "mx.wowhead.com" },
   ];
 
   let exampleCategory = {
