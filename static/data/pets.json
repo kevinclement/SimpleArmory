@@ -243,15 +243,36 @@
       {
         "items": [
           {
-            "ID": 4602,
-            "creatureId": 227414,
-            "icon": "inv_treasurecrabpet_yellow",
-            "itemId": 226104,
-            "name": "Claudius",
-            "spellid": 457689
+            "ID": 3542,
+            "creatureId": 204340,
+            "icon": "inv_sporebatrock_stoneblack",
+            "itemId": 205148,
+            "name": "Soot-Stained Shalewing",
+            "spellid": 408252
+          },
+          {
+            "ID": 4853,
+            "creatureId": 246660,
+            "icon": "inv_capybarafelpet_blue",
+            "itemId": 246337,
+            "name": "Rustyroot Fel Snooter",
+            "spellid": 1241750
           }
         ],
-        "name": "Trading Post: September"
+        "name": "Trading Post: October"
+      },
+      {
+        "items": [
+          {
+            "ID": 4907,
+            "creatureId": 254356,
+            "icon": "inv_pitlordpet_black",
+            "itemId": 257515,
+            "name": "Lil' Coalee",
+            "spellid": 1261676
+          }
+        ],
+        "name": "Twitch Drops"
       },
       {
         "items": [
@@ -1070,7 +1091,7 @@
         ],
         "name": "Visions Revisited"
       },
-            {
+      {
         "id": "fad5d824",
         "items": [
           {
@@ -1204,9 +1225,9 @@
         ],
         "name": "Pre-launch Event"
       },
-            {
+      {
         "items": [
-                    {
+          {
             "ID": 4458,
             "creatureId": 222069,
             "icon": "inv_achievement_raidnerubian_swarmmother",
@@ -11418,12 +11439,12 @@
             "spellid": 449173
           },
           {
-            "ID": 3542,
-            "creatureId": 204340,
-            "icon": "inv_sporebatrock_stoneblack",
-            "itemId": 205148,
-            "name": "Soot-Stained Shalewing",
-            "spellid": 408252
+            "ID": 4602,
+            "creatureId": 227414,
+            "icon": "inv_treasurecrabpet_yellow",
+            "itemId": 226104,
+            "name": "Claudius",
+            "spellid": 457689
           },
           {
             "ID": 4669,
@@ -11522,16 +11543,6 @@
             "spellid": 1226412
           },
           {
-            "ID": 4853,
-            "creatureId": 246660,
-            "icon": "inv_capybarafelpet_blue",
-            "itemId": 246337,
-            "name": "Rustyroot Fel Snooter",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1241750
-          },
-          {
             "ID": 4854,
             "creatureId": 246661,
             "icon": "inv_capybarafelpet_green",
@@ -11606,7 +11617,7 @@
             "creatureId": 251822,
             "icon": "inv_sealpet_body_winter",
             "itemId": 252200,
-            "name": "Bundled-up Bob",
+            "name": "Bundled-Up Bob",
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1254213
@@ -11969,6 +11980,7 @@
             "ID": 2623,
             "creatureId": 151788,
             "icon": "inv_encrypted14",
+            "itemId": 258414,
             "name": "Dottie",
             "notObtainable": true,
             "spellid": 294231
@@ -11977,6 +11989,7 @@
             "ID": 2780,
             "creatureId": 158142,
             "icon": "inv_sloth",
+            "itemId": 255701,
             "name": "Daisy",
             "spellid": 308369
           },
@@ -12252,7 +12265,7 @@
             "ID": 2777,
             "creatureId": 157715,
             "icon": "inv_encrypted18",
-            "itemId": null,
+            "itemId": 258418,
             "name": "Gillvanas",
             "resale": true,
             "side": "H",
@@ -12262,7 +12275,7 @@
             "ID": 2778,
             "creatureId": 157716,
             "icon": "inv_encrypted19",
-            "itemId": null,
+            "itemId": 258419,
             "name": "Finduin",
             "resale": true,
             "side": "A",
@@ -12272,6 +12285,7 @@
             "ID": 3053,
             "creatureId": 175203,
             "icon": "inv_dragonwhelpoutland2_light",
+            "itemId": 258429,
             "name": "Moon-Touched Netherwhelp",
             "notObtainable": true,
             "spellid": 344755
@@ -12280,6 +12294,7 @@
             "ID": 3579,
             "creatureId": 205467,
             "icon": "inv_murkyysera",
+            "itemId": 258482,
             "name": "Ysergle",
             "resale": true,
             "spellid": 411448
@@ -12413,6 +12428,7 @@
             "ID": 3175,
             "creatureId": 181535,
             "icon": "inv_murkyalexstrasza",
+            "itemId": 255695,
             "name": "Murkastrasza",
             "spellid": 359805
           },
@@ -12420,6 +12436,7 @@
             "ID": 3177,
             "creatureId": 181575,
             "icon": "inv_drakonidpet",
+            "itemId": 258432,
             "name": "Drakks",
             "spellid": 359855
           },
@@ -12459,13 +12476,17 @@
             "ID": 4811,
             "creatureId": 244145,
             "icon": "6792419",
-            "name": "Hopeflutter"
+            "itemId": 243062,
+            "name": "Hopeflutter",
+            "spellid": 1234588
           },
           {
             "ID": 4812,
             "creatureId": 244146,
             "icon": "6792054",
-            "name": "Doomfeathers"
+            "itemId": 243063,
+            "name": "Doomfeathers",
+            "spellid": 1234591
           }
         ],
         "name": "Collector's Edition"
@@ -12588,6 +12609,7 @@
             "ID": 3236,
             "creatureId": 184285,
             "icon": "inv_gnometoy",
+            "itemId": 258481,
             "name": "Gnomelia Gearheart",
             "spellid": 364451
           }
@@ -12836,6 +12858,7 @@
             "ID": 4437,
             "creatureId": 218060,
             "icon": "inv_treasurecrabpet_purple",
+            "itemId": 258483,
             "name": "Fathom",
             "notObtainable": true,
             "spellid": 439994
@@ -12907,7 +12930,7 @@
           {
             "ID": 4630,
             "creatureId": 230834,
-            "icon": "5834819",
+            "icon": "inv_babymurlocthrall",
             "itemId": 229368,
             "name": "Gill'el",
             "spellid": 464808
@@ -13093,7 +13116,7 @@
           {
             "ID": 2621,
             "creatureId": 151779,
-            "icon": "2615850",
+            "icon": "inv_encrypted12",
             "itemId": 172016,
             "name": "Lil' Nefarian",
             "spellid": 294206
@@ -13119,6 +13142,16 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 473300
+          },
+          {
+            "ID": 4908,
+            "creatureId": 254359,
+            "icon": "inv_pitlordpet_brown",
+            "itemId": 257518,
+            "name": "Lil' Ashlee",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1261687
           }
         ],
         "name": "Promotion"
