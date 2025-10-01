@@ -148,6 +148,22 @@
     ]
   },
   {
+    "name": "Limited Time",
+    "subcats": [
+      {
+        "items": [
+          {
+            "ID": 1455,
+            "icon": "inv_misc_1h_umbrella_b_01",
+            "itemId": 212525,
+            "name": "Delicate Ebony Parasol"
+          }
+        ],
+        "name": "Trading Post: October"
+      }
+    ]
+  },
+  {
     "name": "The War Within",
     "subcats": [
       {
@@ -679,8 +695,8 @@
             "icon": "inv_plate_broker_c_01_helm",
             "itemId": 249713,
             "name": "Cartel Transmorpher",
-            "notReleased": true,
-            "notObtainable": true
+            "notObtainable": true,
+            "notReleased": true
           }
         ],
         "name": "Unknown"
@@ -6066,6 +6082,13 @@
             "itemId": 227538,
             "name": "Unbound Legend's Pennant",
             "notObtainable": true
+          },
+          {
+            "ID": 1618,
+            "icon": "inv_twwsoloshufflepennantreward_icons_blue",
+            "itemId": 242636,
+            "name": "Astral Legend's Pennant",
+            "notObtainable": true
           }
         ],
         "name": "Solo Shuffle"
@@ -7092,12 +7115,6 @@
             "icon": "inv_firearm_2h_waterblaster_c_01",
             "itemId": 220692,
             "name": "X-treme Water Blaster Display"
-          },
-          {
-            "ID": 1455,
-            "icon": "inv_misc_1h_umbrella_b_01",
-            "itemId": 212525,
-            "name": "Delicate Ebony Parasol"
           }
         ],
         "name": "Trading Post Originals"
@@ -7567,6 +7584,19 @@
           }
         ],
         "name": "China Promotion"
+      },
+      {
+        "items": [
+          {
+            "ID": 1617,
+            "icon": "inv_dimensionalshippet",
+            "itemId": 254666,
+            "name": "Lil' Exodar",
+            "notObtainable": true,
+            "notReleased": true
+          }
+        ],
+        "name": "Unknown Promotion"
       }
     ]
   }
