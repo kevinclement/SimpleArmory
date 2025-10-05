@@ -112,6 +112,7 @@ class MountFixer(WowToolsFixer):
         return {
             'ID': int(mount_id),
             'name': name,
+            'new': True,
             'icon': icon_name,
             'spellid': int(spell_id),
             **({'itemId': item_id} if item_id else {})

@@ -83,6 +83,7 @@ class AchievementFixer(WowToolsFixer):
                 'id': int(ach_id),
                 'title': dbc_ach['Title_lang'],
                 'icon': self.get_icon_name(int(dbc_ach['IconFileID'])),
+                'new': True,
                 'points': int(dbc_ach['Points']),
                 **({'side': faction} if faction else {})
             }

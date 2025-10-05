@@ -82,6 +82,7 @@ class PetFixer(WowToolsFixer):
         return {
             'ID': int(pet_id),
             'name': name,
+            'new': True,
             'icon': icon_name,
             'creatureId': int(creature_id),
             'spellid': int(spell_id),
