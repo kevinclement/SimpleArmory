@@ -103,6 +103,10 @@ export function getHideResaleSetting() {
     return(localStorage.getItem("hideResale"));
 }
 
+export function getHideDupesSetting() {
+    return(localStorage.getItem("hideDupes"));
+}
+
 export function getShowHiddenUpdated() {
     return(localStorage.getItem("showHiddenUpdated"));
 }

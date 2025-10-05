@@ -71,6 +71,7 @@
 		$preferences.showUnobtainedOnly = localStorage.getItem('showUnobtainedOnly') ?? "false";
 		$preferences.showUpcoming = localStorage.getItem('showUpcoming') ?? "false";
 		$preferences.hideResale = localStorage.getItem('hideResale') ?? "false";
+		$preferences.hideDupes = localStorage.getItem('hideDupes') ?? "false";
 	})
 
     function getCharInfoFromURL() {

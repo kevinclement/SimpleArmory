@@ -106,6 +106,16 @@
 		localStorage.setItem('hideResale', $preferences.hideResale);
   }
 
+  let hideDupes = $preferences.hideDupes == "false" ? false : true;
+
+  const toggleHideDuplicates = (e) => {
+    e.preventDefault();
+		$preferences.hideDupes = hideDupes == true ? "true" : "false";
+
+    localStorage.setItem('showHiddenUpdated',Date.now());
+		localStorage.setItem('hideDupes', $preferences.hideDupes);
+  }
+
   function setLocale(e, wowhead_url) {
     e.preventDefault();
 
@@ -161,6 +171,10 @@
 
     <div>
       <input type="checkbox" id="hideResale" bind:checked={hideResale} on:change={toggleHideResale}><label for="hideResale">&nbsp Hide Resale Exclusive Content: TCG / Collector's Edition / Blizzcon / Promotion</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="hideDupes" bind:checked={hideDupes} on:change={toggleHideDuplicates}><label for="hideDupes">&nbsp Hide Duplicate Displays</label>
     </div>
 
     <div>
