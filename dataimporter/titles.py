@@ -185,6 +185,7 @@ class TitleFixer(WowToolsFixer):
         res = {
             'titleId': int(title_id),
             'name': name,
+            'new': True,
             'type': 'title',
             'id': int(dbc_title['ID']),
             'icon': 'inv_misc_questionmark',

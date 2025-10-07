@@ -70,6 +70,7 @@ class ToyFixer(WowToolsFixer):
             'ID': int(toy_id),
             'itemId': int(item_id),
             'name': name,
+            'new': True,
             'icon': icon_name,
         }
 
