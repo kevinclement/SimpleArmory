@@ -430,20 +430,6 @@
       {
         "items": [
           {
-            "ID": 2022,
-            "creatureId": 119040,
-            "dupe": true,
-            "icon": "achievement_boss_highmaul_aggronguardian",
-            "itemId": 144394,
-            "name": "Tylarr Gronnden",
-            "spellid": 236285
-          }
-        ],
-        "name": "Rise of the Nightfallen"
-      },
-      {
-        "items": [
-          {
             "ID": 2042,
             "creatureId": 120397,
             "dupe": true,
@@ -9564,6 +9550,7 @@
             "icon": "achievement_boss_highmaul_aggronguardian",
             "itemId": 144394,
             "name": "Tylarr Gronnden",
+            "notObtainable": true,
             "spellid": 236285
           }
         ],
