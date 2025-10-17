@@ -170,7 +170,7 @@
             "ID": 2621,
             "icon": "inv_elekkfelmount_red",
             "itemId": 246921,
-            "name": "Legion Forged Elekk",
+            "name": "Legion-Forged Elekk",
             "spellid": 1244261
           }
         ],
@@ -481,6 +481,14 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1254363
+          },
+          {
+            "ID": 656,
+            "dupe": true,
+            "icon": "foxmounticon",
+            "itemId": 137573,
+            "name": "Llothien Prowler",
+            "spellid": 171850
           },
           {
             "ID": 802,
@@ -844,6 +852,14 @@
     "subcats": [
       {
         "items": [
+          {
+            "ID": 2802,
+            "icon": "inv_111_raid_achievement_vexieandthegeargrinders",
+            "itemId": 258188,
+            "name": "Geargrinder Mk. 11",
+            "new": true,
+            "spellid": 1262886
+          },
           {
             "ID": 2181,
             "icon": "inv_flyingnerubian2mount_purple",
@@ -1287,6 +1303,14 @@
             "itemId": 242713,
             "name": "Resplendent K'arroc",
             "spellid": 1221132
+          },
+          {
+            "ID": 2550,
+            "icon": "inv_kareshflyermount_blue",
+            "itemId": 242715,
+            "name": "K'arroc Swiftwing",
+            "new": true,
+            "spellid": 1233516
           }
         ],
         "name": "Quest"
@@ -1616,6 +1640,7 @@
           {
             "ID": 1733,
             "icon": "inv_sporebatrock_yellow",
+            "itemId": "205206",
             "name": "Calescent Shalewing",
             "spellid": 408648
           },
@@ -3709,6 +3734,7 @@
           {
             "ID": 1277,
             "icon": "inv_bee_black",
+            "itemId": "170070",
             "name": "Honeyback Hivemother",
             "spellid": 303767
           },
@@ -9535,6 +9561,13 @@
             "itemId": 37012,
             "name": "Headless Horseman's Mount",
             "spellid": 48025
+          },
+          {
+            "ID": 2623,
+            "icon": "inv_headlesshorsemanmount2_green",
+            "itemId": 247721,
+            "name": "The Headless Horseman's Ghoulish Charger",
+            "spellid": 1245198
           }
         ],
         "name": "Hallow's End"
@@ -9644,6 +9677,22 @@
             "name": "Bruce",
             "notObtainable": true,
             "spellid": 289639
+          },
+          {
+            "ID": 2807,
+            "icon": "inv_crocoliskmount_green",
+            "itemId": 259227,
+            "name": "Brawlin' Bruno",
+            "new": true,
+            "spellid": 1264621
+          },
+          {
+            "ID": 2808,
+            "icon": "inv_rocketmount3_orange",
+            "itemId": 259238,
+            "name": "Ballistic Bronco",
+            "new": true,
+            "spellid": 1264643
           }
         ],
         "name": "Brawler's Guild"
@@ -9791,6 +9840,38 @@
             "spellid": 1237631
           },
           {
+            "ID": 1374,
+            "icon": "inv_maldraxxusboarmount_grey",
+            "itemId": 182083,
+            "name": "Bonecleaver's Skullboar",
+            "new": true,
+            "spellid": 332482
+          },
+          {
+            "ID": 2803,
+            "icon": "inv_fox2_blue",
+            "itemId": 258488,
+            "name": "Skypaw Glimmerfur",
+            "new": true,
+            "spellid": 1263369
+          },
+          {
+            "ID": 2804,
+            "icon": "inv_progenitorwolf",
+            "itemId": 258515,
+            "name": "Crimson Lupine",
+            "new": true,
+            "spellid": 1263387
+          },
+          {
+            "ID": 2815,
+            "icon": "inv_fox2_white",
+            "itemId": 259463,
+            "name": "Snowpaw Glimmerfur Prowler",
+            "new": true,
+            "spellid": 1264988
+          },
+          {
             "ID": 1737,
             "icon": "inv_sporebatrock_stoneorange",
             "itemId": 205208,
@@ -9861,7 +9942,7 @@
           },
           {
             "ID": 1798,
-            "icon": "5260432",
+            "icon": "inv_encrypted13_blue",
             "itemId": 208572,
             "name": "Azure Worldchiller",
             "spellid": 420097
@@ -10473,7 +10554,7 @@
             "ID": 2618,
             "icon": "inv_elekkfelmount_blue",
             "itemId": 246917,
-            "name": "Thunder-ridged Elekk",
+            "name": "Thunder-Ridged Elekk",
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1244247
@@ -10482,7 +10563,7 @@
             "ID": 2619,
             "icon": "inv_elekkfelmount_orange",
             "itemId": 246919,
-            "name": "Cinder-seared Elekk",
+            "name": "Cinder-Seared Elekk",
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1244259
@@ -10495,15 +10576,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1245197
-          },
-          {
-            "ID": 2623,
-            "icon": "inv_headlesshorsemanmount2_green",
-            "itemId": 247721,
-            "name": "The Headless Horseman's Ghoulish Charger",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1245198
           },
           {
             "ID": 2624,
@@ -10612,6 +10684,24 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1251690
+          },
+          {
+            "ID": 2823,
+            "icon": "inv_turtlemount2_red",
+            "itemId": 260409,
+            "name": "Savage Crimson Battle Turtle",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1266248
+          },
+          {
+            "ID": 2825,
+            "icon": "inv_mawexpansionfliermountwhite",
+            "itemId": 260580,
+            "name": "Cloudborn Razorwing",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1266579
           }
         ],
         "name": "Trading Post Originals"
@@ -10696,6 +10786,38 @@
             "name": "Chrono Corsair",
             "notObtainable": true,
             "spellid": 1226144
+          },
+          {
+            "ID": 2795,
+            "icon": "inv_wolfserpentmountbronze",
+            "itemId": 257511,
+            "name": "Bronze Wilderling",
+            "new": true,
+            "spellid": 1261668
+          },
+          {
+            "ID": 2796,
+            "icon": "inv_automatonfliermount_bronze",
+            "itemId": 257513,
+            "name": "Bronze Aquilon",
+            "new": true,
+            "spellid": 1261671
+          },
+          {
+            "ID": 2797,
+            "icon": "inv_flymaldraxxusmount_bronze",
+            "itemId": 257514,
+            "name": "Bronze Corpsefly",
+            "new": true,
+            "spellid": 1261677
+          },
+          {
+            "ID": 2798,
+            "icon": "inv_gargoylebrute2mount_bronze",
+            "itemId": 257516,
+            "name": "Bronze Gravewing",
+            "new": true,
+            "spellid": 1261681
           }
         ],
         "name": "Turbulent Timeways"
@@ -11278,7 +11400,7 @@
           },
           {
             "ID": 2532,
-            "icon": "6694822",
+            "icon": "inv_crocsunmount",
             "itemId": 239076,
             "name": "Herald of Sa'bak",
             "spellid": 1227192
@@ -11385,21 +11507,21 @@
           },
           {
             "ID": 2568,
-            "icon": "6841375",
+            "icon": "inv_dragonhawk2lightmount",
             "itemId": 243020,
             "name": "Lightwing Dragonhawk",
             "spellid": 1234305
           },
           {
             "ID": 2567,
-            "icon": "6841376",
+            "icon": "inv_dragonhawk2voidmount",
             "itemId": 243019,
             "name": "Voidwing Dragonhawk",
             "spellid": 1234303
           },
           {
             "ID": 2598,
-            "icon": "7135882",
+            "icon": "inv_112_dragonhawk_transformation",
             "itemId": 245610,
             "name": "Voidlight Surger",
             "spellid": 1239138
@@ -11483,7 +11605,7 @@
           },
           {
             "ID": 2304,
-            "icon": "6126079",
+            "icon": "inv_30thgryphonmount_gold",
             "itemId": 230184,
             "name": "Chaos-Forged Gryphon",
             "notObtainable": true,
@@ -11491,7 +11613,7 @@
           },
           {
             "ID": 2305,
-            "icon": "6036388",
+            "icon": "inv_30thhippogryphmount",
             "itemId": 230185,
             "name": "Chaos-Forged Hippogryph",
             "notObtainable": true,
@@ -11499,7 +11621,7 @@
           },
           {
             "ID": 2307,
-            "icon": "6036401",
+            "icon": "inv_30thbatmount",
             "itemId": 230200,
             "name": "Chaos-Forged Dreadwing",
             "notObtainable": true,
@@ -11507,7 +11629,7 @@
           },
           {
             "ID": 2308,
-            "icon": "6080694",
+            "icon": "inv_30thwyvernmount_red",
             "itemId": 230201,
             "name": "Chaos-Forged Wind Rider",
             "notObtainable": true,
@@ -12141,7 +12263,7 @@
           },
           {
             "ID": 1240,
-            "icon": "2734740",
+            "icon": "inv_encrypted13",
             "itemId": 172012,
             "name": "Obsidian Worldbreaker",
             "spellid": 294197
@@ -12371,7 +12493,7 @@
           },
           {
             "ID": 2255,
-            "icon": "5905217",
+            "icon": "inv_ridingphoenix2",
             "itemId": 227362,
             "name": "Golden Ashes of Al'ar",
             "notObtainable": true,
@@ -12405,7 +12527,7 @@
           },
           {
             "ID": 2612,
-            "icon": "7051426",
+            "icon": "inv_progenitorbotmountcn",
             "itemId": 246732,
             "name": "Void-Forged Overseer",
             "notObtainable": true,
@@ -12416,7 +12538,7 @@
             "ID": 2732,
             "icon": "inv_warpstalkermount_blue",
             "itemId": 253573,
-            "name": "Cerulean Phase-Hunter",
+            "name": "Cobalt Phase-Hunter",
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1256677
