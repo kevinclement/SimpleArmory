@@ -2531,24 +2531,28 @@
             "ID": 3446,
             "creatureId": 200769,
             "icon": "inv_elemental_eternal_air",
+            "itemId": 248953,
             "name": "Vortex"
           },
           {
             "ID": 3447,
             "creatureId": 200770,
             "icon": "inv_elemental_eternal_earth",
+            "itemId": 248953,
             "name": "Tremblor"
           },
           {
             "ID": 3448,
             "creatureId": 200771,
             "icon": "inv_elemental_eternal_fire",
+            "itemId": 248953,
             "name": "Wildfire"
           },
           {
             "ID": 3449,
             "creatureId": 200772,
             "icon": "inv_elemental_eternal_water",
+            "itemId": 248953,
             "name": "Flow"
           }
         ],
@@ -9276,7 +9280,7 @@
           {
             "ID": 3245,
             "creatureId": 185425,
-            "icon": "4235634",
+            "icon": "inv_surveybotpet",
             "itemId": 241193,
             "name": "Helpful Workshop Bot",
             "spellid": 367189
@@ -9541,6 +9545,15 @@
             "itemId": 232531,
             "name": "Grunch",
             "spellid": 471121
+          },
+          {
+            "ID": 4851,
+            "creatureId": 245616,
+            "icon": "inv_pet_snowman",
+            "itemId": 245544,
+            "name": "Tiny Snow Buddy",
+            "new": true,
+            "spellid": 1238915
           }
         ],
         "name": "Feast of Winter Veil"
@@ -9635,6 +9648,15 @@
             "itemId": 245574,
             "name": "Lil' Daz'ti",
             "spellid": 1239142
+          },
+          {
+            "ID": 4911,
+            "creatureId": 253374,
+            "icon": "inv_progenitorbotpet_red",
+            "itemId": 254876,
+            "name": "P.O.S.T. Assistant",
+            "new": true,
+            "spellid": 1258852
           }
         ],
         "name": "Timewalking"
@@ -12248,6 +12270,7 @@
             "ID": 4568,
             "creatureId": 223691,
             "icon": "inv_snowowlpet_white",
+            "itemId": 248953,
             "name": "Whoopy"
           },
           {
@@ -12261,7 +12284,7 @@
           {
             "ID": 4796,
             "creatureId": 241416,
-            "icon": "6694821",
+            "icon": "inv_crocsunpet",
             "itemId": 239082,
             "name": "Sa'bak's Blessed",
             "spellid": 1227251
@@ -12658,7 +12681,7 @@
           {
             "ID": 4811,
             "creatureId": 244145,
-            "icon": "6792419",
+            "icon": "inv_dragonhawk2lightpet_light",
             "itemId": 243062,
             "name": "Hopeflutter",
             "spellid": 1234588
@@ -12666,7 +12689,7 @@
           {
             "ID": 4812,
             "creatureId": 244146,
-            "icon": "6792054",
+            "icon": "inv_dragonhawk2voidpet_void",
             "itemId": 243063,
             "name": "Doomfeathers",
             "spellid": 1234591
@@ -13319,7 +13342,7 @@
           {
             "ID": 4717,
             "creatureId": 234439,
-            "icon": "6310496",
+            "icon": "inv_redpandapet_blue",
             "itemId": 233190,
             "name": "Wanderer Liu",
             "notObtainable": true,
