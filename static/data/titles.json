@@ -89,6 +89,19 @@
       {
         "items": [
           {
+            "icon": "garrison_building_storehouse",
+            "id": 61318,
+            "name": "The Furnished",
+            "new": true,
+            "titleId": 657,
+            "type": "achievement"
+          }
+        ],
+        "name": "Housing"
+      },
+      {
+        "items": [
+          {
             "icon": "achievement_reputation_08",
             "id": 1015,
             "name": "The Exalted",
@@ -254,6 +267,14 @@
             "notObtainable": true,
             "side": "H",
             "titleId": 209,
+            "type": "achievement"
+          },
+          {
+            "icon": "spell_holy_fistofjustice",
+            "id": 61429,
+            "name": "Brawl Star",
+            "new": true,
+            "titleId": 666,
             "type": "achievement"
           }
         ],
@@ -594,6 +615,14 @@
             "name": "Of Stromgarde",
             "side": "A",
             "titleId": 630,
+            "type": "achievement"
+          },
+          {
+            "icon": "artifactability_balancedruid_halfmoon",
+            "id": 61498,
+            "name": "Azeroth's Vanguard",
+            "new": true,
+            "titleId": 669,
             "type": "achievement"
           }
         ],
