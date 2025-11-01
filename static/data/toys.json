@@ -152,14 +152,8 @@
     "subcats": [
       {
         "items": [
-          {
-            "ID": 1455,
-            "icon": "inv_misc_1h_umbrella_b_01",
-            "itemId": 212525,
-            "name": "Delicate Ebony Parasol"
-          }
         ],
-        "name": "Trading Post: October"
+        "name": "Trading Post: "
       }
     ]
   },
@@ -929,19 +923,10 @@
             "ID": 1602,
             "icon": "inv_plate_broker_c_01_helm",
             "itemId": 249713,
-            "name": "Cartel Transmorpher",
-            "notObtainable": true,
-            "notReleased": true
-          },
-          {
-            "ID": 1626,
-            "icon": "inv_cape_pandaria_d_04",
-            "itemId": 242520,
-            "name": "Festival Hot Air Balloon",
-            "new": true
+            "name": "Cartel Transmorpher"
           }
         ],
-        "name": "Unknown"
+        "name": "Secret"
       }
     ]
   },
@@ -6428,6 +6413,13 @@
             "icon": "inv_holiday_hearthstonelunarfestival",
             "itemId": 165669,
             "name": "Lunar Elder's Hearthstone"
+          },
+          {
+            "ID": 1626,
+            "icon": "inv_cape_pandaria_d_04",
+            "itemId": 242520,
+            "name": "Festival Hot Air Balloon",
+            "new": true
           }
         ],
         "name": "Lunar Festival"
@@ -7381,6 +7373,12 @@
             "icon": "inv_firearm_2h_waterblaster_c_01",
             "itemId": 220692,
             "name": "X-treme Water Blaster Display"
+          },
+          {
+            "ID": 1455,
+            "icon": "inv_misc_1h_umbrella_b_01",
+            "itemId": 212525,
+            "name": "Delicate Ebony Parasol"
           }
         ],
         "name": "Trading Post Originals"
