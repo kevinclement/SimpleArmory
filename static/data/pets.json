@@ -242,37 +242,8 @@
     "subcats": [
       {
         "items": [
-          {
-            "ID": 3542,
-            "creatureId": 204340,
-            "icon": "inv_sporebatrock_stoneblack",
-            "itemId": 205148,
-            "name": "Soot-Stained Shalewing",
-            "spellid": 408252
-          },
-          {
-            "ID": 4853,
-            "creatureId": 246660,
-            "icon": "inv_capybarafelpet_blue",
-            "itemId": 246337,
-            "name": "Rustyroot Fel Snooter",
-            "spellid": 1241750
-          }
         ],
-        "name": "Trading Post: October"
-      },
-      {
-        "items": [
-          {
-            "ID": 4907,
-            "creatureId": 254356,
-            "icon": "inv_pitlordpet_black",
-            "itemId": 257515,
-            "name": "Lil' Coalee",
-            "spellid": 1261676
-          }
-        ],
-        "name": "Twitch Drops"
+        "name": "Trading Post: "
       },
       {
         "items": [
@@ -11713,6 +11684,14 @@
             "spellid": 457689
           },
           {
+            "ID": 3542,
+            "creatureId": 204340,
+            "icon": "inv_sporebatrock_stoneblack",
+            "itemId": 205148,
+            "name": "Soot-Stained Shalewing",
+            "spellid": 408252
+          },
+          {
             "ID": 4669,
             "creatureId": 231713,
             "icon": "inv_needledollpet_blue",
@@ -11767,6 +11746,14 @@
             "itemId": 238942,
             "name": "Weechi",
             "spellid": 1226743
+          },
+          {
+            "ID": 4853,
+            "creatureId": 246660,
+            "icon": "inv_capybarafelpet_blue",
+            "itemId": 246337,
+            "name": "Rustyroot Fel Snooter",
+            "spellid": 1241750
           },
           {
             "ID": 3242,
@@ -13095,6 +13082,15 @@
             "name": "Shadefur Brewthief",
             "notObtainable": true,
             "spellid": 1242265
+          },
+          {
+            "ID": 4907,
+            "creatureId": 254356,
+            "icon": "inv_pitlordpet_black",
+            "itemId": 257515,
+            "name": "Lil' Coalee",
+            "notObtainable": true,
+            "spellid": 1261676
           }
         ],
         "name": "Twitch Drops"
