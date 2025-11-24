@@ -269,6 +269,19 @@
           }
         ],
         "name": "Blizzard Store"
+      },
+      {
+        "items": [
+          {
+            "ID": 4908,
+            "creatureId": 254359,
+            "icon": "inv_pitlordpet_brown",
+            "itemId": 257518,
+            "name": "Lil' Ashlee",
+            "spellid": 1261687
+          }
+        ],
+        "name": "Blizzard Gear Store"
       }
     ]
   },
@@ -13341,16 +13354,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 473300
-          },
-          {
-            "ID": 4908,
-            "creatureId": 254359,
-            "icon": "inv_pitlordpet_brown",
-            "itemId": 257518,
-            "name": "Lil' Ashlee",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1261687
           }
         ],
         "name": "Promotion"
