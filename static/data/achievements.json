@@ -638,6 +638,20 @@
                   "points": 10,
                   "side": "H",
                   "title": "Rise of the Red Dawn"
+                },
+                {
+                  "icon": "inv_sword_1h_voidelf_d_01",
+                  "id": 42299,
+                  "new": true,
+                  "points": 10,
+                  "title": "Visions of a Shadowed Sun"
+                },
+                {
+                  "icon": "artifactability_balancedruid_halfmoon",
+                  "id": 61498,
+                  "new": true,
+                  "points": 10,
+                  "title": "Ready for Midnight"
                 }
               ],
               "name": "Campaign"
@@ -9948,6 +9962,54 @@
                 }
               ],
               "name": "Other"
+            },
+            {
+              "id": "d147686c",
+              "items": [
+                {
+                  "icon": "ability_dualwield",
+                  "id": 61683,
+                  "new": true,
+                  "points": 5,
+                  "title": "Entering Battle"
+                },
+                {
+                  "icon": "ability_dualwield",
+                  "id": 61684,
+                  "new": true,
+                  "points": 5,
+                  "title": "Progressing in Battle"
+                },
+                {
+                  "icon": "ability_dualwield",
+                  "id": 61685,
+                  "new": true,
+                  "points": 5,
+                  "title": "Proficient in Battle"
+                },
+                {
+                  "icon": "ability_dualwield",
+                  "id": 61686,
+                  "new": true,
+                  "points": 5,
+                  "title": "Expert in Battle"
+                },
+                {
+                  "icon": "ability_dualwield",
+                  "id": 61687,
+                  "new": true,
+                  "points": 5,
+                  "title": "Champion in Battle"
+                },
+                {
+                  "icon": "ability_dualwield",
+                  "id": 61688,
+                  "new": true,
+                  "points": 10,
+                  "title": "Master in Battle"
+                }
+              ],
+              "name": "Participation"
             }
           ]
         },
@@ -10302,7 +10364,7 @@
                   "icon": "Achievement_BG_takeXflags_AB",
                   "id": 158,
                   "points": 10,
-                  "title": "Me and the Cappin' Makin' it Happen"
+                  "title": "Me and the Cappin' Makin' It Happen"
                 },
                 {
                   "icon": "Ability_Warrior_VictoryRush",
@@ -29777,14 +29839,14 @@
               "name": "Mage Tower"
             },
             {
-              "id": "f93693bc",
+              "id": "a99e1b6c",
               "items": [
                 {
-                  "icon": "inv_relics_hourglass",
-                  "id": 41779,
-                  "notObtainable": true,
+                  "icon": "ability_evoker_masterytimewalker",
+                  "id": 61394,
+                  "new": true,
                   "points": 20,
-                  "title": "Master of the Turbulent Timeways III"
+                  "title": "Master of the Turbulent Timeways IV"
                 }
               ],
               "name": "Turbulent Timeways"
@@ -30148,6 +30210,104 @@
                 }
               ],
               "name": "Bullhorns"
+            }
+          ]
+        },
+        {
+          "id": "fe6fc6f1",
+          "name": "Brawler's Guild",
+          "subcats": [
+            {
+              "id": "1be8183c",
+              "items": [
+                {
+                  "icon": "spell_holy_fistofjustice",
+                  "id": 61429,
+                  "new": true,
+                  "points": 20,
+                  "title": "Brawl Star"
+                },
+                {
+                  "icon": "spell_holy_silence",
+                  "id": 61413,
+                  "new": true,
+                  "points": 10,
+                  "side": "A",
+                  "title": "The First Rule of Brawler's Guild"
+                },
+                {
+                  "icon": "spell_holy_silence",
+                  "id": 61414,
+                  "new": true,
+                  "points": 10,
+                  "side": "H",
+                  "title": "The First Rule of Brawler's Guild"
+                },
+                {
+                  "icon": "achievement_zone_icecrown_09",
+                  "id": 61419,
+                  "new": true,
+                  "points": 10,
+                  "title": "Brawler's Chilled"
+                },
+                {
+                  "icon": "creatureportrait_bubble",
+                  "id": 61420,
+                  "new": true,
+                  "points": 10,
+                  "title": "Let Me Solo It"
+                },
+                {
+                  "icon": "ability_hunter_stickytarbombtrap",
+                  "id": 61421,
+                  "new": true,
+                  "points": 10,
+                  "title": "A Prime Ordeal"
+                },
+                {
+                  "icon": "inv_misc_food_23",
+                  "id": 61422,
+                  "new": true,
+                  "points": 10,
+                  "title": "Audience Participation"
+                },
+                {
+                  "icon": "spell_magic_featherfall",
+                  "id": 61423,
+                  "new": true,
+                  "points": 10,
+                  "title": "Featherweight Brawler"
+                },
+                {
+                  "icon": "ability_racial_avatar",
+                  "id": 61424,
+                  "new": true,
+                  "points": 10,
+                  "title": "Brawlzilla"
+                },
+                {
+                  "icon": "spell_fire_burningspeed",
+                  "id": 61425,
+                  "new": true,
+                  "points": 10,
+                  "title": "Hot Footed"
+                },
+                {
+                  "icon": "ability_butcher_heavyhanded",
+                  "id": 61426,
+                  "new": true,
+                  "points": 10,
+                  "title": "Bare Knuckle Brawl"
+                },
+                {
+                  "icon": "inv_belt_mail_warsongclan_b_01",
+                  "id": 61466,
+                  "new": true,
+                  "points": 10,
+                  "title": "The Best There Is"
+                }
+              ],
+              "name": ""
             }
           ]
         }
@@ -32995,6 +33155,95 @@
           ]
         },
         {
+          "id": "62642195",
+          "name": "Decor",
+          "subcats": [
+            {
+              "id": "1498257c",
+              "items": [
+                {
+                  "icon": "inv_rosepotted01",
+                  "id": 61308,
+                  "new": true,
+                  "points": 10,
+                  "title": "Score a Decor"
+                },
+                {
+                  "icon": "trade_archaeology_goldchamberpot",
+                  "id": 61309,
+                  "new": true,
+                  "points": 10,
+                  "title": "Amateur Antiquarian"
+                },
+                {
+                  "icon": "garrison_building_salvageyard",
+                  "id": 61310,
+                  "new": true,
+                  "points": 10,
+                  "title": "Casual Collector"
+                },
+                {
+                  "icon": "garrison_building_lumbermill",
+                  "id": 61311,
+                  "new": true,
+                  "points": 10,
+                  "title": "Ready to Remodel"
+                },
+                {
+                  "icon": "inv_pet_broom",
+                  "id": 61312,
+                  "new": true,
+                  "points": 10,
+                  "title": "Center Stager"
+                },
+                {
+                  "icon": "trade_archaeology_chestoftinyglassanimals",
+                  "id": 61313,
+                  "new": true,
+                  "points": 10,
+                  "title": "Well-Travelled Collection"
+                },
+                {
+                  "icon": "trade_archaeology_vrykul_runestick",
+                  "id": 61314,
+                  "new": true,
+                  "points": 10,
+                  "title": "Furniture Historian"
+                },
+                {
+                  "icon": "garrison_building_magetower",
+                  "id": 61315,
+                  "new": true,
+                  "points": 10,
+                  "title": "Array of Antiquities"
+                },
+                {
+                  "icon": "trade_archaeology_silverdoorknocker-of-female-dwarf",
+                  "id": 61316,
+                  "new": true,
+                  "points": 10,
+                  "title": "Custom Cabinets"
+                },
+                {
+                  "icon": "inv_10_tailoring2_pillow_purple",
+                  "id": 61317,
+                  "new": true,
+                  "points": 10,
+                  "title": "Domicile Designer"
+                },
+                {
+                  "icon": "garrison_building_storehouse",
+                  "id": 61318,
+                  "new": true,
+                  "points": 10,
+                  "title": "Fully Furnished"
+                }
+              ],
+              "name": "Count"
+            }
+          ]
+        },
+        {
           "id": "46c5c18b",
           "name": "Dragon Isle Drake Cosmetics",
           "subcats": [
@@ -33186,6 +33435,19 @@
                 }
               ],
               "name": "Dragonflight"
+            },
+            {
+              "id": "663ab073",
+              "items": [
+                {
+                  "icon": "achievement_zone_isleofdorn",
+                  "id": 61451,
+                  "new": true,
+                  "points": 100,
+                  "title": "Worldsoul-Searching"
+                }
+              ],
+              "name": "The War Within"
             }
           ]
         },
@@ -33199,7 +33461,7 @@
                 {
                   "icon": "achievement_boss_triumvirate_shadowguardetherealcaster",
                   "id": 42187,
-                  "points": 0,
+                  "points": 5,
                   "title": "Lorewalking: Ethereal Wisdom"
                 },
                 {
@@ -33213,6 +33475,13 @@
                   "id": 42189,
                   "points": 5,
                   "title": "Lorewalking: The Lich King"
+                },
+                {
+                  "icon": "achievement_character_bloodelf_female",
+                  "id": 61467,
+                  "new": true,
+                  "points": 5,
+                  "title": "Lorewalking: The Elves of Quel'thalas"
                 }
               ],
               "name": "Lorewalking"
@@ -36748,6 +37017,90 @@
                   "id": 11136,
                   "points": 30,
                   "title": "An Epic Campaign"
+                },
+                {
+                  "icon": "spell_deathknight_armyofthedead",
+                  "id": 42270,
+                  "new": true,
+                  "points": 5,
+                  "title": "The Deathlord's Campaign"
+                },
+                {
+                  "icon": "ability_demonhunter_glide",
+                  "id": 42271,
+                  "new": true,
+                  "points": 5,
+                  "title": "The Slayer's Campaign"
+                },
+                {
+                  "icon": "spell_arcane_teleportmoonglade",
+                  "id": 42272,
+                  "new": true,
+                  "points": 5,
+                  "title": "The Archdruid's Campaign"
+                },
+                {
+                  "icon": "achievement_doublejeopardy",
+                  "id": 42273,
+                  "new": true,
+                  "points": 5,
+                  "title": "The Huntmaster's Campaign"
+                },
+                {
+                  "icon": "inv_legion_faction_kirintor",
+                  "id": 42274,
+                  "new": true,
+                  "points": 5,
+                  "title": "The Archmage's Campaign"
+                },
+                {
+                  "icon": "monk_ability_transcendence",
+                  "id": 42275,
+                  "new": true,
+                  "points": 5,
+                  "title": "The Grandmaster's Campaign"
+                },
+                {
+                  "icon": "ability_paladin_intercession",
+                  "id": 42276,
+                  "new": true,
+                  "points": 5,
+                  "title": "The Highlord's Campaign"
+                },
+                {
+                  "icon": "ability_priest_ascension",
+                  "id": 42277,
+                  "new": true,
+                  "points": 5,
+                  "title": "The High Priest's Campaign"
+                },
+                {
+                  "icon": "ability_rogue_nightblade",
+                  "id": 42279,
+                  "new": true,
+                  "points": 5,
+                  "title": "The Shadowblade's Campaign"
+                },
+                {
+                  "icon": "ability_shaman_echooftheelements",
+                  "id": 42280,
+                  "new": true,
+                  "points": 5,
+                  "title": "The Farseer's Campaign"
+                },
+                {
+                  "icon": "classicon_warlock",
+                  "id": 42281,
+                  "new": true,
+                  "points": 5,
+                  "title": "The Netherlord's Campaign"
+                },
+                {
+                  "icon": "inv_legion_faction_valarjar",
+                  "id": 42282,
+                  "new": true,
+                  "points": 5,
+                  "title": "The Battlelord's Campaign"
                 }
               ],
               "name": "Campaign"
@@ -36817,12 +37170,6 @@
             {
               "id": "e59edd7a",
               "items": [
-                {
-                  "icon": "achievement_garrison_blueprint_large",
-                  "id": 11223,
-                  "points": 5,
-                  "title": "Legendary Research"
-                },
                 {
                   "icon": "spell_magic_greaterblessingofkings",
                   "id": 11298,
@@ -36909,6 +37256,266 @@
                 }
               ],
               "name": "Quest"
+            },
+            {
+              "id": "52bf24f9",
+              "items": [
+                {
+                  "icon": "achievement_bg_abshutout",
+                  "id": 42288,
+                  "new": true,
+                  "points": 5,
+                  "title": "Hidden Potential of the Slayer"
+                },
+                {
+                  "icon": "achievement_bg_abshutout",
+                  "id": 42289,
+                  "new": true,
+                  "points": 5,
+                  "title": "Hidden Potential of the Archdruid"
+                },
+                {
+                  "icon": "achievement_bg_abshutout",
+                  "id": 42290,
+                  "new": true,
+                  "points": 5,
+                  "title": "Hidden Potential of the Huntmaster"
+                },
+                {
+                  "icon": "achievement_bg_abshutout",
+                  "id": 42292,
+                  "new": true,
+                  "points": 5,
+                  "title": "Hidden Potential of the Grandmaster"
+                },
+                {
+                  "icon": "achievement_bg_abshutout",
+                  "id": 42293,
+                  "new": true,
+                  "points": 5,
+                  "title": "Hidden Potential of the Highlord"
+                },
+                {
+                  "icon": "achievement_bg_abshutout",
+                  "id": 42294,
+                  "new": true,
+                  "points": 5,
+                  "title": "Hidden Potential of the High Priest"
+                },
+                {
+                  "icon": "achievement_bg_abshutout",
+                  "id": 42295,
+                  "new": true,
+                  "points": 5,
+                  "title": "Hidden Potential of the Shadowblade"
+                },
+                {
+                  "icon": "achievement_bg_abshutout",
+                  "id": 42296,
+                  "new": true,
+                  "points": 5,
+                  "title": "Hidden Potential of the Farseer"
+                },
+                {
+                  "icon": "achievement_bg_abshutout",
+                  "id": 42297,
+                  "new": true,
+                  "points": 5,
+                  "title": "Hidden Potential of the Netherlord"
+                },
+                {
+                  "icon": "achievement_bg_abshutout",
+                  "id": 42298,
+                  "new": true,
+                  "points": 5,
+                  "title": "Hidden Potential of the Battlelord"
+                }
+              ],
+              "name": "Hidden Appearances"
+            },
+            {
+              "items": [
+                {
+                  "icon": "achievement_garrison_blueprint_large",
+                  "id": 11223,
+                  "points": 5,
+                  "title": "Legendary Research"
+                },
+                {
+                  "icon": "achievement_garrison_blueprint_large",
+                  "id": 60962,
+                  "new": true,
+                  "points": 5,
+                  "title": "Legendary Research of the Ebon Blade"
+                },
+                {
+                  "icon": "achievement_garrison_blueprint_large",
+                  "id": 60963,
+                  "new": true,
+                  "points": 5,
+                  "title": "Legendary Research of the Illidari"
+                },
+                {
+                  "icon": "achievement_garrison_blueprint_large",
+                  "id": 60964,
+                  "new": true,
+                  "points": 5,
+                  "title": "Legendary Research of the Dreamgrove"
+                },
+                {
+                  "icon": "achievement_garrison_blueprint_large",
+                  "id": 60965,
+                  "new": true,
+                  "points": 5,
+                  "title": "Legendary Research of the Unseen Path"
+                },
+                {
+                  "icon": "achievement_garrison_blueprint_large",
+                  "id": 60966,
+                  "new": true,
+                  "points": 5,
+                  "title": "Legendary Research of the Tirisgarde"
+                },
+                {
+                  "icon": "achievement_garrison_blueprint_large",
+                  "id": 60967,
+                  "new": true,
+                  "points": 5,
+                  "title": "Legendary Research of Five Dawns"
+                },
+                {
+                  "icon": "achievement_garrison_blueprint_large",
+                  "id": 60968,
+                  "new": true,
+                  "points": 5,
+                  "title": "Legendary Research of the Silver Hand"
+                },
+                {
+                  "icon": "achievement_garrison_blueprint_large",
+                  "id": 60969,
+                  "new": true,
+                  "points": 5,
+                  "title": "Legendary Research of the Netherlight Conclave"
+                },
+                {
+                  "icon": "achievement_garrison_blueprint_large",
+                  "id": 60970,
+                  "new": true,
+                  "points": 5,
+                  "title": "Legendary Research of the Uncrowned"
+                },
+                {
+                  "icon": "achievement_garrison_blueprint_large",
+                  "id": 60971,
+                  "new": true,
+                  "points": 5,
+                  "title": "Legendary Research of the Maelstrom"
+                },
+                {
+                  "icon": "achievement_garrison_blueprint_large",
+                  "id": 60972,
+                  "new": true,
+                  "points": 5,
+                  "title": "Legendary Research of the Black Harvest"
+                },
+                {
+                  "icon": "achievement_garrison_blueprint_large",
+                  "id": 60973,
+                  "new": true,
+                  "points": 5,
+                  "title": "Legendary Research of the Valarjar"
+                }
+              ],
+              "name": "Research"
+            },
+            {
+              "items": [
+                {
+                  "icon": "achievement_garrison_invason_platinum",
+                  "id": 60981,
+                  "new": true,
+                  "points": 5,
+                  "title": "Raise an Army for Acherus"
+                },
+                {
+                  "icon": "achievement_garrison_invason_platinum",
+                  "id": 60982,
+                  "new": true,
+                  "points": 5,
+                  "title": "Raise an Army for the Fel Hammer"
+                },
+                {
+                  "icon": "achievement_garrison_invason_platinum",
+                  "id": 60983,
+                  "new": true,
+                  "points": 5,
+                  "title": "Raise an Army for the Dreamgrove"
+                },
+                {
+                  "icon": "achievement_garrison_invason_platinum",
+                  "id": 60984,
+                  "new": true,
+                  "points": 5,
+                  "title": "Raise an Army for the Trueshot Lodge"
+                },
+                {
+                  "icon": "achievement_garrison_invason_platinum",
+                  "id": 60985,
+                  "new": true,
+                  "points": 5,
+                  "title": "Raise an Army for the Hall of the Guardian"
+                },
+                {
+                  "icon": "achievement_garrison_invason_platinum",
+                  "id": 60986,
+                  "new": true,
+                  "points": 5,
+                  "title": "Raise an Army for the Temple of Five Dawns"
+                },
+                {
+                  "icon": "achievement_garrison_invason_platinum",
+                  "id": 60987,
+                  "new": true,
+                  "points": 5,
+                  "title": "Raise an Army for the Sanctum of Light"
+                },
+                {
+                  "icon": "achievement_garrison_invason_platinum",
+                  "id": 60988,
+                  "new": true,
+                  "points": 5,
+                  "title": "Raise an Army for the Netherlight Temple"
+                },
+                {
+                  "icon": "achievement_garrison_invason_platinum",
+                  "id": 60989,
+                  "new": true,
+                  "points": 5,
+                  "title": "Raise an Army for the Hall of Shadows"
+                },
+                {
+                  "icon": "achievement_garrison_invason_platinum",
+                  "id": 60990,
+                  "new": true,
+                  "points": 5,
+                  "title": "Raise an Army for the Maelstrom"
+                },
+                {
+                  "icon": "achievement_garrison_invason_platinum",
+                  "id": 60991,
+                  "new": true,
+                  "points": 5,
+                  "title": "Raise an Army for the Dreadscar Rift"
+                },
+                {
+                  "icon": "achievement_garrison_invason_platinum",
+                  "id": 60992,
+                  "new": true,
+                  "points": 5,
+                  "title": "Raise an Army for Skyhold"
+                }
+              ],
+              "name": "Recruit"
             }
           ]
         },
@@ -41608,6 +42215,20 @@
                   "id": 41630,
                   "points": 0,
                   "title": "\"Employee\" of the Month"
+                },
+                {
+                  "icon": "inv_misc_scrollrolled05a",
+                  "id": 61211,
+                  "new": true,
+                  "points": 0,
+                  "title": "Welcome Home"
+                },
+                {
+                  "icon": "ability_priest_heavanlyvoice",
+                  "id": 61516,
+                  "new": true,
+                  "points": 0,
+                  "title": "Radiant Singer"
                 }
               ],
               "name": "Other"
@@ -48194,6 +48815,13 @@
                   "id": 20510,
                   "points": 0,
                   "title": "What Could It Be?"
+                },
+                {
+                  "icon": "inv_holiday_christmas_present_01",
+                  "id": 42192,
+                  "new": true,
+                  "points": 0,
+                  "title": "Snowball Fight!"
                 }
               ],
               "name": "Holidays"
@@ -48371,6 +48999,13 @@
                   "notObtainable": true,
                   "points": 0,
                   "title": "Master of the Turbulent Timeways II"
+                },
+                {
+                  "icon": "inv_relics_hourglass",
+                  "id": 41779,
+                  "notObtainable": true,
+                  "points": 0,
+                  "title": "Master of the Turbulent Timeways III"
                 }
               ],
               "name": "Turbulent Timeways"
@@ -48665,13 +49300,13 @@
                   "title": "Heroic Edition: Algarian Stormrider"
                 },
                 {
-                  "icon": "6841375",
+                  "icon": "inv_dragonhawk2lightmount",
                   "id": 61401,
                   "points": 0,
                   "title": "Heroic Edition: Lightwing Dragonhawk"
                 },
                 {
-                  "icon": "7135882",
+                  "icon": "inv_112_dragonhawk_transformation",
                   "id": 61402,
                   "points": 0,
                   "title": "Epic Edition: Voidlight Surger"
@@ -52637,20 +53272,6 @@
             {
               "id": "eea32618",
               "items": [
-                {
-                  "icon": "spell_holy_silence",
-                  "id": 11558,
-                  "points": 0,
-                  "side": "A",
-                  "title": "The First Rule of Brawler's Guild"
-                },
-                {
-                  "icon": "spell_holy_silence",
-                  "id": 11559,
-                  "points": 0,
-                  "side": "H",
-                  "title": "The First Rule of Brawler's Guild"
-                },
                 {
                   "icon": "inv_pants_plate_05",
                   "id": 13186,

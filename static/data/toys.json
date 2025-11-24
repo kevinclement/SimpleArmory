@@ -151,8 +151,7 @@
     "name": "Limited Time",
     "subcats": [
       {
-        "items": [
-        ],
+        "items": [],
         "name": "Trading Post: "
       }
     ]
@@ -7826,6 +7825,18 @@
             "icon": "inv_11xp_generic_shateaset01",
             "itemId": 235288,
             "name": "Sha-Warped Tea Set"
+          },
+          {
+            "ID": 1617,
+            "icon": "inv_dimensionalshippet",
+            "itemId": 254666,
+            "name": "Exodar Replica"
+          },
+          {
+            "ID": 1644,
+            "icon": "inv_pet_naaru_yellow",
+            "itemId": 263489,
+            "name": "Naaru's Enfold"
           }
         ],
         "name": "WoW Classic"
@@ -7842,19 +7853,6 @@
           }
         ],
         "name": "China Promotion"
-      },
-      {
-        "items": [
-          {
-            "ID": 1617,
-            "icon": "inv_dimensionalshippet",
-            "itemId": 254666,
-            "name": "Exodar Miniature",
-            "notObtainable": true,
-            "notReleased": true
-          }
-        ],
-        "name": "Unknown Promotion"
       }
     ]
   }

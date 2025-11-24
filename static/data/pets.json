@@ -241,8 +241,7 @@
     "name": "Limited Time",
     "subcats": [
       {
-        "items": [
-        ],
+        "items": [],
         "name": "Trading Post: "
       },
       {
@@ -270,6 +269,19 @@
           }
         ],
         "name": "Blizzard Store"
+      },
+      {
+        "items": [
+          {
+            "ID": 4908,
+            "creatureId": 254359,
+            "icon": "inv_pitlordpet_brown",
+            "itemId": 257518,
+            "name": "Lil' Ashlee",
+            "spellid": 1261687
+          }
+        ],
+        "name": "Blizzard Gear Store"
       }
     ]
   },
@@ -307,7 +319,7 @@
             "creatureId": 251889,
             "icon": "inv_wardenowlpet",
             "itemId": 252301,
-            "name": "Fledgeling Warden's Companion",
+            "name": "Fledgling Warden's Companion",
             "spellid": 1254381
           },
           {
@@ -880,7 +892,6 @@
             "icon": "inv_babyarathilynx_black",
             "itemId": 238986,
             "name": "Mister Mans",
-            "ptr": true,
             "spellid": 1226942
           },
           {
@@ -889,7 +900,6 @@
             "icon": "inv_babyarathilynx_gold",
             "itemId": 241188,
             "name": "Swiftpaw",
-            "ptr": true,
             "spellid": 1231110
           }
         ],
@@ -12782,6 +12792,15 @@
             "itemId": 235358,
             "name": "Merriment",
             "spellid": 1216564
+          },
+          {
+            "ID": 4903,
+            "creatureId": 252859,
+            "icon": "7317259",
+            "itemId": 253699,
+            "name": "Starspark Whelpling",
+            "ptr": true,
+            "spellid": 1257069
           }
         ],
         "name": "WoW Classic"
@@ -13334,16 +13353,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 473300
-          },
-          {
-            "ID": 4908,
-            "creatureId": 254359,
-            "icon": "inv_pitlordpet_brown",
-            "itemId": 257518,
-            "name": "Lil' Ashlee",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1261687
           }
         ],
         "name": "Promotion"
