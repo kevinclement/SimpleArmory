@@ -241,8 +241,17 @@
     "name": "Limited Time",
     "subcats": [
       {
-        "items": [],
-        "name": "Trading Post: "
+        "items": [
+          {
+            "ID": 4900,
+            "creatureId": 251822,
+            "icon": "inv_sealpet_body_winter",
+            "itemId": 252200,
+            "name": "Bundled-Up Bob",
+            "spellid": 1254213
+          }
+        ],
+        "name": "Trading Post: December"
       },
       {
         "items": [
@@ -9636,7 +9645,6 @@
             "icon": "inv_progenitorbotpet_red",
             "itemId": 254876,
             "name": "P.O.S.T. Assistant",
-            "new": true,
             "spellid": 1258852
           }
         ],
@@ -11844,16 +11852,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1254212
-          },
-          {
-            "ID": 4900,
-            "creatureId": 251822,
-            "icon": "inv_sealpet_body_winter",
-            "itemId": 252200,
-            "name": "Bundled-Up Bob",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1254213
           }
         ],
         "name": "Trading Post Originals"
