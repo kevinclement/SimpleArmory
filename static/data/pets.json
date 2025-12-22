@@ -278,19 +278,6 @@
           }
         ],
         "name": "Blizzard Store"
-      },
-      {
-        "items": [
-          {
-            "ID": 4908,
-            "creatureId": 254359,
-            "icon": "inv_pitlordpet_brown",
-            "itemId": 257518,
-            "name": "Lil' Ashlee",
-            "spellid": 1261687
-          }
-        ],
-        "name": "Blizzard Gear Store"
       }
     ]
   },
@@ -12796,7 +12783,7 @@
             "creatureId": 252859,
             "icon": "7317259",
             "itemId": 253699,
-            "name": "Starspark Whelpling",
+            "name": "Starshard Whelpling",
             "ptr": true,
             "spellid": 1257069
           }
@@ -13170,6 +13157,15 @@
             "name": "Scruffyhorn Fel Snooter",
             "resale": true,
             "spellid": 1241763
+          },
+          {
+            "ID": 4908,
+            "creatureId": 254359,
+            "icon": "inv_pitlordpet_brown",
+            "itemId": 257518,
+            "name": "Lil' Ashlee",
+            "resale": true,
+            "spellid": 1261687
           }
         ],
         "name": "Blizzard Gear Store"
@@ -13351,6 +13347,15 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 473300
+          },
+          {
+            "ID": 4894,
+            "creatureId": 251511,
+            "icon": "7292703",
+            "itemId": 248953,
+            "name": "Heartglow Listener",
+            "notObtainable": true,
+            "notReleased": true
           }
         ],
         "name": "Promotion"
