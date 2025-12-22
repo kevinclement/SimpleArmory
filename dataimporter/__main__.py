@@ -11,6 +11,7 @@ from .pets import PetFixer
 from .realms import RealmFixer
 from .titles import TitleFixer
 from .toys import ToyFixer
+from .decors import DecorFixer
 
 from .providers import wago
 
@@ -22,6 +23,7 @@ FIXERS = {
     'reputations': (FactionFixer, ['factions.json']),
     'titles': (TitleFixer, ['titles.json']),
     'toys': (ToyFixer, ['toys.json']),
+    'decors': (DecorFixer, ['decors.json']),
 }
 
 # BUG: #569: looks like realm graphql API isn't working anymore

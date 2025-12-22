@@ -12,6 +12,7 @@
 	import Heirlooms from '$pages/Heirlooms.svelte';
 	import BattlePets from '$pages/BattlePets.svelte';
 	import Titles from '$pages/Titles.svelte';
+	import Decors from '$pages/Decors.svelte';
 	import Calendar from '$pages/Calendar.svelte';
 	import Reputations from '$pages/Reputations.svelte';
 	import Nav from '$components/Nav.svelte';
@@ -177,6 +178,10 @@
 			<!-- collectable/titles -->
 			{:else if $page === 'collectable' && $category === 'titles'} 
 			<Titles/>
+
+			<!-- collectable/decors -->
+			{:else if $page === 'collectable' && $category === 'decors'} 
+			<Decors/>
 
 			<!-- calendar -->
 			{:else if $page === 'calendar'}

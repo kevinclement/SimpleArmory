@@ -35,6 +35,7 @@
 				{ txt: 'Toys',        link: 'toys'       },
 				{ txt: 'Heirlooms',	  link: 'heirlooms'  },
 				{ txt: 'Titles',	  link: 'titles'     },
+				{ txt: 'Decors',	  link: 'decors'     },
 			],
 			isOpen: false,
 		},
