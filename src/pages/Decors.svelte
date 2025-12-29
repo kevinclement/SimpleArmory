@@ -10,6 +10,7 @@
 
     let promise
     let decors
+    let showDecorItem
     $: {
         promise = getDecors($region, $realm, $character).then(_ => {           
             init(_);
@@ -34,7 +35,7 @@
 <div class="container">
 <div class="page-header">
     <h2>
-        Decors
+        Decors <small class="pbSmall"><input type="checkbox" id="showDecorItem" bind:checked={showDecorItem}><label for="showDecorItem">Show Item Tooltips</label></small>
         <ProgressBar 
             rightSide={true}
             width={decors ? percent(decors.collected, decors.possible) : 0} 
@@ -49,7 +50,11 @@
 
     <div>
     {#each decors.categories as category}
-     <Category {category} getItemPath={item => `decor/${item.ID}`} superCat="Decors"></Category>
+        {#if showDecorItem}
+            <Category {category} superCat="Decors"></Category>
+        {:else}
+            <Category {category} getItemPath={item => `decor/${item.ID}`} superCat="Decors"></Category>
+        {/if}
     {/each}
     </div>
 {:else}

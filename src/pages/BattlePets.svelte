@@ -53,7 +53,7 @@
 <div class="container">
 <div class="page-header">
     <h2>
-        Battle Pets <small class="pbSmall"><input type="checkbox" id="showlevels" bind:checked={showLevel}><label for="showlevels">Show levels and breeds</label></small>
+        Battle Pets <small class="pbSmall"><input type="checkbox" id="showlevels" bind:checked={showLevel}><label for="showlevels">Show Pet Levels and Breeds</label></small>
         <ProgressBar
             rightSide={true}
             width={battlePets ? percent(battlePets.collected, battlePets.possible) : 0} 
