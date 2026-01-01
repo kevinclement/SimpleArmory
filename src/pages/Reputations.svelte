@@ -92,7 +92,7 @@
         <Loading/>
     {:else if categories}
         {#if Object.keys(todosObj).length > 0}
-            <h2 style="margin-bottom:10px;">Todo</h2>
+            <h2 style="margin-bottom:10px;">Reputation To-Do List</h2>
             {#each Object.entries(todosObj) as [catName, ids]}
                 {#if ids.length > 0}
                     <h3 style="margin:18px 0 12px 0;">{catName}</h3>

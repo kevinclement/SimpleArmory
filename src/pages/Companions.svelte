@@ -53,7 +53,7 @@
 <div class="container">
 <div class="page-header">
     <h2>
-        Companions <small class="pbSmall"><input type="checkbox" id="showquality" bind:checked={showQuality}><label for="showquality">Show quality</label></small>
+        Companions <small class="pbSmall"><input type="checkbox" id="showquality" bind:checked={showQuality}><label for="showquality">Show Pet Quality</label></small>
         <ProgressBar 
             rightSide={true}
             width={companions ? percent(companions.collected, companions.possible) : 0} 
