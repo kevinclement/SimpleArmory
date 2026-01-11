@@ -78,9 +78,6 @@
             case 'expansions':
                 prettyCatName = 'Expansion Features';
                 break;
-            case 'remix':
-                prettyCatName = 'Legion: Remix';
-                break;
             case 'legacy':
                 prettyCatName = 'Legacy';
                 break;                       
