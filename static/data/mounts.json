@@ -199,20 +199,6 @@
       {
         "items": [
           {
-            "ID": 2633,
-            "icon": "inv_voidflyermountmythic",
-            "itemId": 248248,
-            "name": "Azure Void Flyer",
-            "spellid": 1246781
-          },
-          {
-            "ID": 2631,
-            "icon": "inv_voidflyermountmythic",
-            "itemId": 247822,
-            "name": "Scarlet Void Flyer",
-            "spellid": 1245517
-          },
-          {
             "ID": 2570,
             "icon": "inv_viciousvoidcreepermount_blue",
             "itemId": 243157,
@@ -589,6 +575,14 @@
             "name": "Vivid Chloroceros",
             "new": true,
             "spellid": 1270675
+          },
+          {
+            "ID": 2161,
+            "icon": "inv_firefly2mount_green",
+            "itemId": 222988,
+            "name": "Elder Glowmite",
+            "new": true,
+            "spellid": 447173
           }
         ],
         "name": "Vendor"
@@ -713,14 +707,6 @@
       },
       {
         "items": [
-          {
-            "ID": 2161,
-            "icon": "inv_firefly2mount_green",
-            "itemId": 222988,
-            "name": "Elder Glowmite",
-            "new": true,
-            "spellid": 447173
-          },
           {
             "ID": 2767,
             "icon": "inv_kaijubatmount_orange",
@@ -847,6 +833,22 @@
             "name": "Enterprising Shreddertank",
             "notObtainable": true,
             "spellid": 1221694
+          },
+          {
+            "ID": 2633,
+            "icon": "inv_voidflyermountmythic",
+            "itemId": 248248,
+            "name": "Azure Void Flyer",
+            "notObtainable": true,
+            "spellid": 1246781
+          },
+          {
+            "ID": 2631,
+            "icon": "inv_voidflyermountmythic",
+            "itemId": 247822,
+            "name": "Scarlet Void Flyer",
+            "notObtainable": true,
+            "spellid": 1245517
           }
         ],
         "name": "Achievement"
