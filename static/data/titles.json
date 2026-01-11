@@ -320,6 +320,36 @@
       {
         "items": [
           {
+            "icon": "achievement_challengemode_silver",
+            "id": 61255,
+            "name": "The Umbral",
+            "new": true,
+            "titleId": 655,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_challengemode_platinum",
+            "id": 61259,
+            "name": "The Umbral Hero",
+            "new": true,
+            "notObtainable": true,
+            "titleId": 656,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_sulfurelemental_void",
+            "id": 61798,
+            "name": "The Ominous",
+            "new": true,
+            "titleId": 688,
+            "type": "achievement"
+          }
+        ],
+        "name": "Midnight: Season 1"
+      },
+      {
+        "items": [
+          {
             "icon": "inv_misc_paperbundle04a",
             "id": 60935,
             "name": "Chronoscholar",
@@ -342,6 +372,154 @@
           }
         ],
         "name": "Remix: Legion"
+      },
+      {
+        "items": [
+          {
+            "icon": "inv12_twilight_-blade_cultist_insignia",
+            "id": 42300,
+            "name": "Thorn of Twilight",
+            "new": true,
+            "titleId": 642,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 920,
+            "name": "Definitely Not a Cultist",
+            "new": true,
+            "titleId": 643,
+            "type": "title"
+          }
+        ],
+        "name": "Midnight Pre-Patch"
+      }
+    ]
+  },
+  {
+    "name": "Midnight",
+    "subcats": [
+      {
+        "items": [
+          {
+            "icon": "inv_120_raid_marchonqueldanas_lura",
+            "id": 61379,
+            "name": "Dawnbringer",
+            "new": true,
+            "titleId": 678,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_120_raid_dreamwell_malformedmanifestation",
+            "id": 61489,
+            "name": "Dream-Eater",
+            "new": true,
+            "titleId": 679,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 1072,
+            "name": "[PH] VoidspireRaid",
+            "new": true,
+            "titleId": 690,
+            "type": "title"
+          }
+        ],
+        "name": "Raids"
+      },
+      {
+        "items": [
+          {
+            "icon": "inv_inscription_talentcodex01",
+            "id": 61344,
+            "name": "Chronicler of the Haranir",
+            "new": true,
+            "titleId": 680,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_cape_special_treasure_c_01",
+            "id": 61901,
+            "name": "Treasure Seeker",
+            "new": true,
+            "titleId": 691,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_general_100kquests",
+            "id": 61922,
+            "name": "The Singular",
+            "new": true,
+            "titleId": 753,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_enchanting_wod_dust3",
+            "id": 61052,
+            "name": "Dustlord",
+            "new": true,
+            "titleId": 754,
+            "type": "achievement"
+          }
+        ],
+        "name": "Achievement"
+      },
+      {
+        "items": [
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 935,
+            "name": "Loa-Speaker",
+            "new": true,
+            "titleId": 740,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 1020,
+            "name": "Honorary Hara'ti",
+            "new": true,
+            "titleId": 665,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 1026,
+            "name": "Life of the Party",
+            "new": true,
+            "titleId": 667,
+            "type": "title"
+          }
+        ],
+        "name": "Renown"
+      },
+      {
+        "items": [
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 1035,
+            "name": "Teacher of Strong",
+            "new": true,
+            "titleId": 670,
+            "type": "title"
+          }
+        ],
+        "name": "Quest"
+      },
+      {
+        "items": [
+          {
+            "icon": "inv_ability_priest_mindgames",
+            "id": 62189,
+            "name": "Mind-Seeker",
+            "new": true,
+            "notObtainable": true,
+            "titleId": 671,
+            "type": "achievement"
+          }
+        ],
+        "name": "Riddle"
       }
     ]
   },
@@ -2499,6 +2677,99 @@
       {
         "items": [
           {
+            "icon": "inv_12_profession_alchemy_alhemyspecializations_flasks",
+            "id": 62239,
+            "name": "Thalassian Alchemist",
+            "new": true,
+            "titleId": 741,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_12_profession_blacksmithing_repairhammer_purple",
+            "id": 62240,
+            "name": "Thalassian Blacksmith",
+            "new": true,
+            "titleId": 742,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_12_profession_enchanting_transitoriestonicsandtools",
+            "id": 62241,
+            "name": "Thalassian Enchanter",
+            "new": true,
+            "titleId": 743,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_12_profession_engineering_manufacturedparts_coil_purple",
+            "id": 62242,
+            "name": "Thalassian Engineer",
+            "new": true,
+            "titleId": 744,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_12_profession_inscriptions_darkmoondominions_void",
+            "id": 62243,
+            "name": "Thalassian Scribe",
+            "new": true,
+            "titleId": 745,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_pink",
+            "id": 62244,
+            "name": "Thalassian Jewelcrafter",
+            "new": true,
+            "titleId": 746,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_12_profession_leatherworking_armor_banding_brown",
+            "id": 62245,
+            "name": "Thalassian Leatherworker",
+            "new": true,
+            "titleId": 747,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_12_profession_tailoring_tailoringspecializations_nimbleneedlework",
+            "id": 62246,
+            "name": "Thalassian Tailor",
+            "new": true,
+            "titleId": 748,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_12_profession_mining_dazzlingthorium-",
+            "id": 62251,
+            "name": "Thalassian Miner",
+            "new": true,
+            "titleId": 750,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_12_profession_herbalism_blacklotus_green",
+            "id": 62250,
+            "name": "Thalassian Herbalist",
+            "new": true,
+            "titleId": 751,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_12_skinning_stormchargedleather1",
+            "id": 62252,
+            "name": "Thalassian Skinner",
+            "new": true,
+            "titleId": 752,
+            "type": "achievement"
+          }
+        ],
+        "name": "Midnight"
+      },
+      {
+        "items": [
+          {
             "icon": "trade_fishing",
             "id": 1516,
             "name": "Salty",
@@ -2689,6 +2960,14 @@
             "id": 40097,
             "name": "Slayer of the Deeps",
             "titleId": 562,
+            "type": "achievement"
+          },
+          {
+            "icon": "spell_warrior_gladiatorstance",
+            "id": 61446,
+            "name": "Voidslayer",
+            "new": true,
+            "titleId": 664,
             "type": "achievement"
           }
         ],
@@ -3164,6 +3443,15 @@
             "notObtainable": true,
             "titleId": 634,
             "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 61179,
+            "name": "Galactic Legend",
+            "new": true,
+            "notObtainable": true,
+            "titleId": 653,
+            "type": "achievement"
           }
         ],
         "name": "Solo Shuffle"
@@ -3192,6 +3480,15 @@
             "name": "Astral Gladiator",
             "notObtainable": true,
             "titleId": 633,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 61180,
+            "name": "Galactic Gladiator",
+            "new": true,
+            "notObtainable": true,
+            "titleId": 654,
             "type": "achievement"
           }
         ],
@@ -3259,6 +3556,26 @@
             "notObtainable": true,
             "side": "A",
             "titleId": 635,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 61178,
+            "name": "Galactic Warlord",
+            "new": true,
+            "notObtainable": true,
+            "side": "H",
+            "titleId": 652,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 61177,
+            "name": "Galactic Marshal",
+            "new": true,
+            "notObtainable": true,
+            "side": "A",
+            "titleId": 651,
             "type": "achievement"
           }
         ],
@@ -4328,6 +4645,42 @@
             "name": "Famed Slayer of Dimensius",
             "notObtainable": true,
             "titleId": 614,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_120_raid_voidspire_alleria",
+            "id": 61622,
+            "name": "Famed Slayer of the Voidspire",
+            "new": true,
+            "notObtainable": true,
+            "titleId": 676,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_120_raid_marchonqueldanas_lura",
+            "id": 61623,
+            "name": "Famed Slayer of the Dark Naaru",
+            "new": true,
+            "notObtainable": true,
+            "titleId": 677,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_120_raid_dreamwell_malformedmanifestation",
+            "id": 61493,
+            "name": "Famed Slayer of the Undreamt",
+            "new": true,
+            "notObtainable": true,
+            "titleId": 668,
+            "type": "achievement"
+          },
+          {
+            "icon": "ability_rogue_controlisking",
+            "id": 61808,
+            "name": "Fabled Vanquisher of Nullaeus",
+            "new": true,
+            "notObtainable": true,
+            "titleId": 689,
             "type": "achievement"
           }
         ],
