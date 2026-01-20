@@ -350,32 +350,6 @@
       {
         "items": [
           {
-            "icon": "inv_misc_paperbundle04a",
-            "id": 60935,
-            "name": "Chronoscholar",
-            "titleId": 646,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_guildperk_everyones-a-hero_rank2",
-            "id": 42691,
-            "name": "The Infernal",
-            "titleId": 658,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_general_raidrepresentation",
-            "id": 61079,
-            "name": "Of the Infinite Chaos",
-            "titleId": 659,
-            "type": "achievement"
-          }
-        ],
-        "name": "Remix: Legion"
-      },
-      {
-        "items": [
-          {
             "icon": "inv12_twilight_-blade_cultist_insignia",
             "id": 42300,
             "name": "Thorn of Twilight",
@@ -3946,6 +3920,35 @@
           }
         ],
         "name": "Remix: Pandaria"
+      },
+      {
+        "items": [
+          {
+            "icon": "inv_misc_paperbundle04a",
+            "id": 60935,
+            "name": "Chronoscholar",
+            "notObtainable": true,
+            "titleId": 646,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_guildperk_everyones-a-hero_rank2",
+            "id": 42691,
+            "name": "The Infernal",
+            "notObtainable": true,
+            "titleId": 658,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_general_raidrepresentation",
+            "id": 61079,
+            "name": "Of the Infinite Chaos",
+            "notObtainable": true,
+            "titleId": 659,
+            "type": "achievement"
+          }
+        ],
+        "name": "Remix: Legion"
       }
     ]
   },
