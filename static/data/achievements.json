@@ -5349,6 +5349,12 @@
                   "new": true,
                   "points": 5,
                   "title": "Midnight: The Highest Peaks"
+                },
+                {
+                  "icon": "ability_druid_manatree",
+                  "id": 62188,
+                  "points": 5,
+                  "title": "More Than Just Their Roots"
                 }
               ],
               "name": "World"
@@ -5455,13 +5461,6 @@
                   "new": true,
                   "points": 5,
                   "title": "From The Cradle to the Grave"
-                },
-                {
-                  "icon": "ability_druid_manatree",
-                  "id": 62188,
-                  "new": true,
-                  "points": 5,
-                  "title": "More Than Just Their Roots"
                 }
               ],
               "name": "Harandar"
@@ -43365,6 +43364,7 @@
                 {
                   "icon": "ability_priest_heavanlyvoice",
                   "id": 61516,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Radiant Singer"
                 },
@@ -44462,6 +44462,7 @@
                 {
                   "icon": "inv_airshipmountethereal",
                   "id": 42190,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Let Me Solo Her: Nexus-Princess Ky'veza"
                 },
@@ -45755,6 +45756,7 @@
                 {
                   "icon": "achievement_challengemode_scholomance_gold",
                   "id": 42172,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "The War Within Keystone Legend: Season Three"
                 },
@@ -50577,14 +50579,12 @@
                 {
                   "icon": "inv12_twilight_-blade_cultist_insignia",
                   "id": 42300,
-                  "new": true,
                   "points": 0,
                   "title": "Two Minutes to Midnight"
                 },
                 {
                   "icon": "inv_10_inscription2_book2_color5",
                   "id": 61430,
-                  "new": true,
                   "points": 0,
                   "title": "Crunching for Cultists"
                 },
