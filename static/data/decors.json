@@ -129,8 +129,19 @@
             "ID": 1227,
             "icon": "7416801",
             "itemId": "251997",
-            "name": "Sin'dorei Winged Chaise",
-            "new": true
+            "name": "Sin'dorei Winged Chaise"
+          },
+          {
+            "ID": 714,
+            "icon": "7416091",
+            "itemId": "245284",
+            "name": "Silvermoon Wooden Chair"
+          },
+          {
+            "ID": 1236,
+            "icon": "7416829",
+            "itemId": "245330",
+            "name": "Enchanted Blood Elven Candelabra"
           }
         ],
         "name": "Midnight Pre-Patch"
@@ -2204,6 +2215,30 @@
             "icon": "7474405",
             "itemId": "260583",
             "name": "Arathi Bartender's Shelves"
+          },
+          {
+            "ID": 11930,
+            "icon": "7473061",
+            "itemId": "258262",
+            "name": "Kobold Digger's Chair"
+          },
+          {
+            "ID": 11931,
+            "icon": "7461567",
+            "itemId": "258264",
+            "name": "Kobold Candle Trio"
+          },
+          {
+            "ID": 11932,
+            "icon": "7461570",
+            "itemId": "258265",
+            "name": "Kobold Wagon"
+          },
+          {
+            "ID": 11933,
+            "icon": "7468058",
+            "itemId": "258267",
+            "name": "Candle-Festooned Wooden Awning"
           }
         ],
         "name": "Quest"
@@ -3414,6 +3449,12 @@
             "icon": "7461507",
             "itemId": "257721",
             "name": "Skyhorn Arrow Kite"
+          },
+          {
+            "ID": 11909,
+            "icon": "7461550",
+            "itemId": "258223",
+            "name": "Murloc's Wind Chimes"
           }
         ],
         "name": "Achievement"
@@ -3799,6 +3840,24 @@
             "icon": "7509646",
             "itemId": "264477",
             "name": "Thunder Totem Mailbox"
+          },
+          {
+            "ID": 11906,
+            "icon": "7461544",
+            "itemId": "258220",
+            "name": "Murloc Driftwood Hut"
+          },
+          {
+            "ID": 11907,
+            "icon": "7461547",
+            "itemId": "258221",
+            "name": "Driftwood Junk Pile"
+          },
+          {
+            "ID": 11908,
+            "icon": "7467969",
+            "itemId": "258222",
+            "name": "Shellscale Standard"
           }
         ],
         "name": "Quest"
@@ -3892,6 +3951,12 @@
             "icon": "7461498",
             "itemId": "257598",
             "name": "Suramar Stepping Stone Set"
+          },
+          {
+            "ID": 11905,
+            "icon": "7461541",
+            "itemId": "258219",
+            "name": "Driftwood Barrel"
           }
         ],
         "name": "Vendor"
@@ -4511,6 +4576,29 @@
       {
         "items": [
           {
+            "ID": 12207,
+            "icon": "7445506",
+            "itemId": "258747",
+            "name": "High Arakkoan Shelf"
+          },
+          {
+            "ID": 12203,
+            "icon": "7445482",
+            "itemId": "258743",
+            "name": "Arakkoan Alchemy Tools"
+          },
+          {
+            "ID": 12206,
+            "icon": "7445514",
+            "itemId": "258746",
+            "name": "High Arakkoan Alchemist's Shelf"
+          }
+        ],
+        "name": "Reputation"
+      },
+      {
+        "items": [
+          {
             "ID": 8177,
             "icon": "7424571",
             "itemId": "251330",
@@ -4611,6 +4699,36 @@
             "icon": "7424657",
             "itemId": "251548",
             "name": "Draenic Fence"
+          },
+          {
+            "ID": 12201,
+            "icon": "7445498",
+            "itemId": "258741",
+            "name": "Writings of Reshad the Outcast"
+          },
+          {
+            "ID": 12202,
+            "icon": "7445492",
+            "itemId": "258742",
+            "name": "Scroll of the Adherent"
+          },
+          {
+            "ID": 12205,
+            "icon": "7445510",
+            "itemId": "258745",
+            "name": "High Arakkoan Library Shelf"
+          },
+          {
+            "ID": 12208,
+            "icon": "7445518",
+            "itemId": "258748",
+            "name": "\"Rising Glory of Rukhmar\" Statue"
+          },
+          {
+            "ID": 12209,
+            "icon": "7445490",
+            "itemId": "258749",
+            "name": "Uncorrupted Eye of Terokk"
           }
         ],
         "name": "Quest"
@@ -5566,6 +5684,12 @@
             "icon": "7416759",
             "itemId": "245426",
             "name": "Dark Iron Brazier"
+          },
+          {
+            "ID": 12200,
+            "icon": "7445486",
+            "itemId": "258740",
+            "name": "Glorious Pendant of Rukhmar"
           }
         ],
         "name": "Archaeology"
@@ -9536,330 +9660,289 @@
             "ID": 2510,
             "icon": "7422895",
             "itemId": "246838",
-            "name": "Kafa Press",
-            "new": true
+            "name": "Kafa Press"
           },
           {
             "ID": 4424,
             "icon": "garrison_building_storehouse",
             "itemId": "248402",
-            "name": "Grummle Kafa Refinery",
-            "new": true
+            "name": "Grummle Kafa Refinery"
           },
           {
             "ID": 4425,
             "icon": "garrison_building_storehouse",
             "itemId": "248403",
-            "name": "Grummle Tent",
-            "new": true
+            "name": "Grummle Tent"
           },
           {
             "ID": 4427,
             "icon": "garrison_building_storehouse",
             "itemId": "248405",
-            "name": "Kafa Creamer",
-            "new": true
+            "name": "Kafa Creamer"
           },
           {
             "ID": 4428,
             "icon": "garrison_building_storehouse",
             "itemId": "248406",
-            "name": "Legerdemain Lounge Sign Board",
-            "new": true
+            "name": "Legerdemain Lounge Sign Board"
           },
           {
             "ID": 4429,
             "icon": "garrison_building_storehouse",
             "itemId": "248407",
-            "name": "Dalaran Kafa Table",
-            "new": true
+            "name": "Dalaran Kafa Table"
           },
           {
             "ID": 8179,
             "icon": "7424581",
             "itemId": "251472",
-            "name": "Pandaren Wooden Cart",
-            "new": true
+            "name": "Pandaren Wooden Cart"
           },
           {
             "ID": 8180,
             "icon": "7424583",
             "itemId": "251473",
-            "name": "Commander's Kafa Mug",
-            "new": true
+            "name": "Commander's Kafa Mug"
           },
           {
             "ID": 8181,
             "icon": "garrison_building_storehouse",
             "itemId": "251474",
-            "name": "Ceramic Kafa Mug",
-            "new": true
+            "name": "Ceramic Kafa Mug"
           },
           {
             "ID": 8182,
             "icon": "7424589",
             "itemId": "251475",
-            "name": "Dalaran Kafa Grinder",
-            "new": true
+            "name": "Dalaran Kafa Grinder"
           },
           {
             "ID": 8987,
             "icon": "7424829",
             "itemId": "252039",
-            "name": "Open Sack of Roasted Kafa",
-            "new": true
+            "name": "Open Sack of Roasted Kafa"
           },
           {
             "ID": 8988,
             "icon": "7424833",
             "itemId": "252040",
-            "name": "Sealed Sack of Roasted Kafa",
-            "new": true
+            "name": "Sealed Sack of Roasted Kafa"
           },
           {
             "ID": 9419,
             "icon": "7425297",
             "itemId": "253522",
-            "name": "Thalassian Chest",
-            "new": true
+            "name": "Thalassian Chest"
           },
           {
             "ID": 9420,
             "icon": "7425301",
             "itemId": "253523",
-            "name": "Astalor's Hookah",
-            "new": true
+            "name": "Astalor's Hookah"
           },
           {
             "ID": 9421,
             "icon": "7425305",
             "itemId": "253524",
-            "name": "590 Quel'Lithien Red Display Bottle",
-            "new": true
+            "name": "590 Quel'Lithien Red Display Bottle"
           },
           {
             "ID": 9422,
             "icon": "7425309",
             "itemId": "253525",
-            "name": "Thalassian Academy Dictation Device",
-            "new": true
+            "name": "Thalassian Academy Dictation Device"
           },
           {
             "ID": 9423,
             "icon": "7425313",
             "itemId": "253526",
-            "name": "Sin'dorei Wine Display",
-            "new": true
+            "name": "Sin'dorei Wine Display"
           },
           {
             "ID": 9476,
             "icon": "7425417",
             "itemId": "253599",
-            "name": "Artisanal Display Tent",
-            "new": true
+            "name": "Artisanal Display Tent"
           },
           {
             "ID": 9477,
             "icon": "7425421",
             "itemId": "253600",
-            "name": "Eversong Crystal Glass",
-            "new": true
+            "name": "Eversong Crystal Glass"
           },
           {
             "ID": 9478,
             "icon": "7425425",
             "itemId": "253601",
-            "name": "590 Quel'Lithien Red",
-            "new": true
+            "name": "590 Quel'Lithien Red"
           },
           {
             "ID": 10273,
             "icon": "garrison_building_storehouse",
             "itemId": "254235",
-            "name": "Sin'dorei Artisan's Easel",
-            "new": true
+            "name": "Sin'dorei Artisan's Easel"
           },
           {
             "ID": 10339,
             "icon": "7425565",
             "itemId": "254400",
-            "name": "Triple-Tested Steam Valve",
-            "new": true
+            "name": "Triple-Tested Steam Valve"
           },
           {
             "ID": 10340,
             "icon": "7425569",
             "itemId": "254401",
-            "name": "Mad Science Blueprints",
-            "new": true
+            "name": "Mad Science Blueprints"
           },
           {
             "ID": 10341,
             "icon": "7425573",
             "itemId": "254402",
-            "name": "Safety Electrical Cabling",
-            "new": true
+            "name": "Safety Electrical Cabling"
           },
           {
             "ID": 10342,
             "icon": "7425577",
             "itemId": "254403",
-            "name": "Mechagon Control Console",
-            "new": true
+            "name": "Mechagon Control Console"
           },
           {
             "ID": 10346,
             "icon": "7425593",
             "itemId": "254407",
-            "name": "Dual Mechanical Gauge",
-            "new": true
+            "name": "Dual Mechanical Gauge"
           },
           {
             "ID": 10348,
             "icon": "7425601",
             "itemId": "254409",
-            "name": "Sturdy Drive Belt",
-            "new": true
+            "name": "Sturdy Drive Belt"
           },
           {
             "ID": 10349,
             "icon": "7425605",
             "itemId": "254410",
-            "name": "Blue-Glo Lantern",
-            "new": true
+            "name": "Blue-Glo Lantern"
           },
           {
             "ID": 10350,
             "icon": "7425609",
             "itemId": "254411",
-            "name": "Z-205 Mechanical Device",
-            "new": true
+            "name": "Z-205 Mechanical Device"
           },
           {
             "ID": 10351,
             "icon": "7425613",
             "itemId": "254412",
-            "name": "Well-Oiled Machine Cog",
-            "new": true
+            "name": "Well-Oiled Machine Cog"
           },
           {
             "ID": 10352,
             "icon": "7425617",
             "itemId": "254413",
-            "name": "Jury-Rigged Electrical Couple",
-            "new": true
+            "name": "Jury-Rigged Electrical Couple"
           },
           {
             "ID": 10354,
             "icon": "7425625",
             "itemId": "254415",
-            "name": "Miniature Charging Station",
-            "new": true
+            "name": "Miniature Charging Station"
           },
           {
             "ID": 10355,
             "icon": "7425629",
             "itemId": "254416",
-            "name": "Galvanic Storage and Maintenance Device",
-            "new": true
+            "name": "Galvanic Storage and Maintenance Device"
           },
           {
             "ID": 10537,
             "icon": "7425647",
             "itemId": "254766",
-            "name": "Ineffective Mechanical Privacy Screen",
-            "new": true
+            "name": "Ineffective Mechanical Privacy Screen"
           },
           {
             "ID": 16227,
             "icon": "garrison_building_storehouse",
             "itemId": "264915",
-            "name": "Decorated Underground Table",
-            "new": true
+            "name": "Decorated Underground Table"
           },
           {
             "ID": 16228,
             "icon": "7521725",
             "itemId": "264916",
-            "name": "Loamm Bartering Stall",
-            "new": true
+            "name": "Loamm Bartering Stall"
           },
           {
             "ID": 16229,
             "icon": "garrison_building_storehouse",
             "itemId": "264917",
-            "name": "Ceramic Loamm Bowl",
-            "new": true
+            "name": "Ceramic Loamm Bowl"
           },
           {
             "ID": 16230,
             "icon": "garrison_building_storehouse",
             "itemId": "264918",
-            "name": "Zaralek Candles",
-            "new": true
+            "name": "Zaralek Candles"
           },
           {
             "ID": 16231,
             "icon": "7521721",
             "itemId": "264919",
-            "name": "Loamm Archway",
-            "new": true
+            "name": "Loamm Archway"
           },
           {
             "ID": 16232,
             "icon": "garrison_building_storehouse",
             "itemId": "264920",
-            "name": "Gooey Niffen Jar",
-            "new": true
+            "name": "Gooey Niffen Jar"
           },
           {
             "ID": 16233,
             "icon": "garrison_building_storehouse",
             "itemId": "264921",
-            "name": "Zaralek Snail Cart",
-            "new": true
+            "name": "Zaralek Snail Cart"
           },
           {
             "ID": 16234,
             "icon": "garrison_building_storehouse",
             "itemId": "264922",
-            "name": "Strong Sniffin' Incense",
-            "new": true
+            "name": "Strong Sniffin' Incense"
           },
           {
             "ID": 16235,
             "icon": "garrison_building_storehouse",
             "itemId": "264923",
-            "name": "Underdecorated Underground Table",
-            "new": true
+            "name": "Underdecorated Underground Table"
           },
           {
             "ID": 16236,
             "icon": "7521708",
             "itemId": "264924",
-            "name": "Loamm Wheelpot",
-            "new": true
+            "name": "Loamm Wheelpot"
           },
           {
             "ID": 16237,
             "icon": "garrison_building_storehouse",
             "itemId": "264925",
-            "name": "Kilnmaster's Bucket",
-            "new": true
+            "name": "Kilnmaster's Bucket"
           },
           {
             "ID": 16315,
             "icon": "7521264",
             "itemId": "265032",
-            "name": "Hearty Niffen Grub",
-            "new": true
+            "name": "Hearty Niffen Grub"
           },
           {
             "ID": 16962,
             "icon": "7521713",
             "itemId": "265541",
-            "name": "Loammy Soil",
-            "new": true
+            "name": "Loammy Soil"
+          },
+          {
+            "ID": 2453,
+            "icon": "7422779",
+            "itemId": "246686",
+            "name": "Grummle Sleeping Bag"
           }
         ],
         "name": "Endeavors"
@@ -10098,13 +10181,6 @@
             "notObtainable": true
           },
           {
-            "ID": 714,
-            "icon": "7416091",
-            "itemId": "245284",
-            "name": "Silvermoon Wooden Chair",
-            "notObtainable": true
-          },
-          {
             "ID": 715,
             "icon": "7416095",
             "itemId": "245279",
@@ -10200,13 +10276,6 @@
             "icon": "7416733",
             "itemId": "245290",
             "name": "Long Silvermoon Table",
-            "notObtainable": true
-          },
-          {
-            "ID": 1236,
-            "icon": "7416829",
-            "itemId": "245330",
-            "name": "Enchanted Blood Elven Candelabra",
             "notObtainable": true
           },
           {
@@ -10319,13 +10388,6 @@
             "icon": "7421847",
             "itemId": "244779",
             "name": "Sethrak Neckroll Pillow",
-            "notObtainable": true
-          },
-          {
-            "ID": 2453,
-            "icon": "7422779",
-            "itemId": "246686",
-            "name": "Grummle Sleeping Bag",
             "notObtainable": true
           },
           {
@@ -11190,41 +11252,6 @@
             "notObtainable": true
           },
           {
-            "ID": 11905,
-            "icon": "7461541",
-            "itemId": "258219",
-            "name": "Driftwood Barrel",
-            "notObtainable": true
-          },
-          {
-            "ID": 11906,
-            "icon": "7461544",
-            "itemId": "258220",
-            "name": "Murloc Driftwood Hut",
-            "notObtainable": true
-          },
-          {
-            "ID": 11907,
-            "icon": "7461547",
-            "itemId": "258221",
-            "name": "Driftwood Junk Pile",
-            "notObtainable": true
-          },
-          {
-            "ID": 11908,
-            "icon": "7467969",
-            "itemId": "258222",
-            "name": "Shellscale Standard",
-            "notObtainable": true
-          },
-          {
-            "ID": 11909,
-            "icon": "7461550",
-            "itemId": "258223",
-            "name": "Murloc's Wind Chimes",
-            "notObtainable": true
-          },
-          {
             "ID": 11914,
             "icon": "7461552",
             "itemId": "258230",
@@ -11243,34 +11270,6 @@
             "icon": "7461559",
             "itemId": "258234",
             "name": "Azsharan Brazier",
-            "notObtainable": true
-          },
-          {
-            "ID": 11930,
-            "icon": "7473061",
-            "itemId": "258262",
-            "name": "Kobold Digger's Chair",
-            "notObtainable": true
-          },
-          {
-            "ID": 11931,
-            "icon": "7461567",
-            "itemId": "258264",
-            "name": "Kobold Candle Trio",
-            "notObtainable": true
-          },
-          {
-            "ID": 11932,
-            "icon": "7461570",
-            "itemId": "258265",
-            "name": "Kobold Wagon",
-            "notObtainable": true
-          },
-          {
-            "ID": 11933,
-            "icon": "7468058",
-            "itemId": "258267",
-            "name": "Candle-Festooned Wooden Awning",
             "notObtainable": true
           },
           {
@@ -11344,73 +11343,10 @@
             "notObtainable": true
           },
           {
-            "ID": 12200,
-            "icon": "7445486",
-            "itemId": "258740",
-            "name": "Glorious Pendant of Rukhmar",
-            "notObtainable": true
-          },
-          {
-            "ID": 12201,
-            "icon": "7445498",
-            "itemId": "258741",
-            "name": "Writings of Reshad the Outcast",
-            "notObtainable": true
-          },
-          {
-            "ID": 12202,
-            "icon": "7445492",
-            "itemId": "258742",
-            "name": "Scroll of the Adherent",
-            "notObtainable": true
-          },
-          {
-            "ID": 12203,
-            "icon": "7445482",
-            "itemId": "258743",
-            "name": "Arakkoan Alchemy Tools",
-            "notObtainable": true
-          },
-          {
             "ID": 12204,
             "icon": "7445502",
             "itemId": "258744",
             "name": "Skyreach Circular Table",
-            "notObtainable": true
-          },
-          {
-            "ID": 12205,
-            "icon": "7445510",
-            "itemId": "258745",
-            "name": "High Arakkoan Library Shelf",
-            "notObtainable": true
-          },
-          {
-            "ID": 12206,
-            "icon": "7445514",
-            "itemId": "258746",
-            "name": "High Arakkoan Alchemist's Shelf",
-            "notObtainable": true
-          },
-          {
-            "ID": 12207,
-            "icon": "7445506",
-            "itemId": "258747",
-            "name": "High Arakkoan Shelf",
-            "notObtainable": true
-          },
-          {
-            "ID": 12208,
-            "icon": "7445518",
-            "itemId": "258748",
-            "name": "\"Rising Glory of Rukhmar\" Statue",
-            "notObtainable": true
-          },
-          {
-            "ID": 12209,
-            "icon": "7445490",
-            "itemId": "258749",
-            "name": "Uncorrupted Eye of Terokk",
             "notObtainable": true
           },
           {
