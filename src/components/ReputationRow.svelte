@@ -89,7 +89,7 @@
 
 <div class="rep-row-outer">
     <div class="rep-row-btn-col">
-        {#if !inTodo && (faction.level !== faction.levels.length-1)}
+        {#if !inTodo && (faction.level !== faction.levels.length-1) && !faction.legacy}
             <button class="btn btn-xs btn-success rep-todo-btn" title="Add to Todo List" on:click={() => dispatch('addTodo')}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                   <circle cx="8" cy="8" r="8" fill="#28a745"/>
