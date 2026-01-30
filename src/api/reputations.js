@@ -78,6 +78,10 @@ function parseFactions(all_factions, my_reputations) {
                 f.renown = true;
             }
 
+            if(faction.legacy) {
+                f.legacy = true;
+            }
+
             var stand = standing[faction.id];
             if (stand)
             {

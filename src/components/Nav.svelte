@@ -55,10 +55,13 @@
 		}
 	}
 
+	let favoriteCharacters = [];
+
 	$: isLoggedIn = $region && $region !== '' && $region !== 'error' &&
 	    $realm && $realm !== '' && 
 	    $character && $character !== ''
 	$: armoryUrl = !$character ? '' : 'https://worldofwarcraft.com/character/' + $region + '/' + $realm + '/' + $character.toLowerCase();
+	$: charIsFavorite = isCharacterFavorite($character, $realm, $region);
 
 	const toggleCollapsed = (e) => {
 		menuCollapsed = !menuCollapsed;
@@ -70,6 +73,8 @@
 
 		window.document.addEventListener('click', onDocumentClick, false);
 		window.document.addEventListener('keydown', onDocumentKeydown, false)
+
+		favoriteCharacters = JSON.parse(localStorage.getItem("savedCharacters") || "[]");
 	})
 	
 	function onDocumentClick(e) {		
@@ -128,6 +133,43 @@
 
 		localStorage.setItem('darkTheme', $preferences.theme !== 'light');
 	};
+
+	const isCharacterFavorite = (name,realm,region) => {
+		const charKey = `${name}~${realm}~${region}`;
+
+		if(favoriteCharacters.includes(charKey)) {
+			return true;
+		}
+		return false;
+	}
+
+	const toggleCharacterFavorite = (e,name,realm,region) => {
+		e.preventDefault()
+
+		const charKey = `${name}~${realm}~${region}`;
+
+		if(favoriteCharacters.includes(charKey)) {
+			favoriteCharacters = favoriteCharacters.filter(c => c !== charKey);
+			charIsFavorite = false;
+		} else {
+			favoriteCharacters = [...favoriteCharacters, charKey];
+			charIsFavorite = true;
+		}
+
+		localStorage.setItem("savedCharacters", JSON.stringify([...favoriteCharacters]))
+	}
+
+	function formatCharacter(character) {
+		let [name,realm,region] = character.split("~");
+		name = name.replace(/\b[a-z]/g, (match) => match.toUpperCase());
+		realm = realm.replace(/\b[a-z]/g, (match) => match.toUpperCase());
+		return `${name} @ ${realm} (${region.toUpperCase()})`;
+	}
+
+	const getCharacterURL = (character) => {
+		const [name,realm,region] = character.split("~");
+		return getUrl(region, realm, name, '');
+	}
 
     const NavbarClicked = (e) => {
 		// if an anchor was clicked, collapse the overflow menu
@@ -203,8 +245,37 @@
 
 					<ul class="dropdown-menu" aria-labelledby="profileDrop">
 					  <li class="signin-label"><span>Signed in as</span></li>
-					  <li><strong class="signin-name">{$character} @ {$realm}</strong></li>
+					  <li><strong class="signin-name">{$character} @ {$realm} ({$region.toUpperCase()})</strong></li>
 					  <li role="separator" class="divider"></li> 
+					  <li>
+						<a href="#/" on:click={e => toggleCharacterFavorite(e, $character, $realm, $region)}>
+						{#if charIsFavorite}
+							Remove Character from Favorites
+						{:else}
+							Add Character to Favorites
+						{/if}
+					  </li>
+					  <li>
+						<a id="favSubmenu" class="dropdown-item" href="#/" on:click={(e) => e.preventDefault()}>
+							Favorite Characters
+							<b class="caret-right"></b>
+						</a>
+						<ul class="dropdown-menu dropdown-submenu">
+							{#if favoriteCharacters.length > 0}
+								{#each favoriteCharacters as character}
+								<li>
+									<a href="{getCharacterURL(character)}" class="dropdown-item">
+										{#if character}
+											{formatCharacter(character)}
+										{/if}
+									</a>
+								</li>
+								{/each}
+							{:else}
+								<li><span class="dropdown-item text-muted" style="white-space: nowrap;">No favorite characters yet</span></li>
+							{/if}
+						</ul>
+					  </li>
 					  <li><a href="/#/">Signout</a></li>
 					  <li role="separator" class="divider"></li>
 					  <li><a href="{armoryUrl}" target="_blank">Armory profile</a></li>
