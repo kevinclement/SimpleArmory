@@ -73,6 +73,8 @@
 		$preferences.showUpcoming = localStorage.getItem('showUpcoming') ?? "false";
 		$preferences.hideResale = localStorage.getItem('hideResale') ?? "false";
 		$preferences.hideDupes = localStorage.getItem('hideDupes') ?? "false";
+
+		$preferences.savedCharacters = localStorage.getItem('savedCharacters') ?? "[]";
 	})
 
     function getCharInfoFromURL() {
