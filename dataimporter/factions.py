@@ -21,6 +21,7 @@ IGNORE_FACTION_ID = [
 
 
 def fcat(dct, cat=None):
+    res = dct
     if cat is not None:
         res = find_or_create_item(dct, cat, 'factions')
     return res
@@ -84,8 +85,8 @@ class FactionFixer(WowToolsFixer):
                 ):
                     return
 
-            if not children:
-                self.dbc_faction[int(rep['ID'])] = rep
+                if not children:
+                    self.dbc_faction[int(rep['ID'])] = rep
 
             for row in children:
                 _recurse_rep(int(row['ID']), level + 1)
@@ -117,6 +118,8 @@ class FactionFixer(WowToolsFixer):
 
     def fix_missing_faction(self, faction_id: int):
         faction = self.get_faction(faction_id)
+        if faction is None:
+            raise RuntimeError(f"Cannot find missing faction {faction_id}")
         changelog(
             f"Faction {faction_id} \"{faction['name']}\" missing:"
             f" https://www.wowhead.com/faction={faction_id}"
@@ -144,7 +147,8 @@ class FactionFixer(WowToolsFixer):
         # Add renown information to reputations with a renown system
         # such as the main factions in Dragonflight.
         dbc_faction_to_covenant = {
-            int(e['FactionID']): int(e['ID']) for e in self.dbc_get_table('covenant')
+            int(e['FactionID']): int(e['ID'])
+            for e in self.dbc_get_table('covenant')
         }
 
         # Compute the maximum renown for each covenant
@@ -154,7 +158,9 @@ class FactionFixer(WowToolsFixer):
             if covenant_id not in max_reward_for_covenant:
                 max_reward_for_covenant[covenant_id] = int(row['Level'])
             else:
-                max_reward_for_covenant[covenant_id] = max(int(row['Level']), max_reward_for_covenant[covenant_id])
+                max_reward_for_covenant[covenant_id] = max(
+                    int(row['Level']), max_reward_for_covenant[covenant_id]
+                )
 
         # Populate the 'renown' object for every renown faction
         for cat in self.factions:
@@ -163,9 +169,9 @@ class FactionFixer(WowToolsFixer):
 
                 # DBC faction flag 2 indicates that it is a "renown faction".
                 # Some valid renown factions filtered from the self.dbc_faction
-                # (e.g. Maruuk Centaur and Valdrakken Accord which have child factions)
-                # but can still be computed automatically if they have a 'renown'
-                # property in the JSON.
+                # (e.g. Maruuk Centaur and Valdrakken Accord which have child
+                # factions) but can still be computed automatically if they
+                # have a 'renown' property in the JSON.
                 if (
                     faction_id in dbc_faction_to_covenant
                     and (
@@ -181,9 +187,13 @@ class FactionFixer(WowToolsFixer):
                         faction['renown'] = dict()
 
                     if faction_id in self.dbc_faction:
-                        faction['renown']['step'] = int(self.dbc_faction[faction_id]['ReputationMax[0]'])
+                        faction['renown']['step'] = int(
+                            self.dbc_faction[faction_id]['ReputationMax[0]']
+                        )
 
-                    faction['renown']['max'] = max_reward_for_covenant[dbc_faction_to_covenant[faction_id]]
+                    faction['renown']['max'] = max_reward_for_covenant[
+                        dbc_faction_to_covenant[faction_id]
+                    ]
 
     def run(self):
         self.fix_missing_factions()

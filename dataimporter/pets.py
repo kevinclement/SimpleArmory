@@ -128,6 +128,8 @@ class PetFixer(WowToolsFixer):
             for subcat in cat['subcats']:
                 for item in subcat['items']:
                     fixed_pet = self.get_pet(int(item['ID']))
+                    if fixed_pet is None:
+                        raise RuntimeError(f"Cannot find pet {item['ID']}")
                     item['ID'] = fixed_pet['ID']
                     item['name'] = fixed_pet['name']
                     item['creatureId'] = fixed_pet['creatureId']

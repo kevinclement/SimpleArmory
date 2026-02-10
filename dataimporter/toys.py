@@ -102,6 +102,8 @@ class ToyFixer(WowToolsFixer):
             for subcat in cat['subcats']:
                 for item in subcat['items']:
                     fixed_toy = self.get_toy(int(item['ID']))
+                    if fixed_toy is None:
+                        raise RuntimeError(f"Cannot find toy {item['ID']}")
                     item['ID'] = fixed_toy['ID']
                     item['itemId'] = fixed_toy['itemId']
                     item['name'] = fixed_toy['name']

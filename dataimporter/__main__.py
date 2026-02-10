@@ -8,7 +8,7 @@ from .factions import FactionFixer
 from .heirlooms import HeirloomFixer
 from .mounts import MountFixer
 from .pets import PetFixer
-from .realms import RealmFixer
+# from .realms import RealmFixer
 from .titles import TitleFixer
 from .toys import ToyFixer
 from .decors import DecorFixer
@@ -28,11 +28,12 @@ FIXERS = {
 
 # BUG: #569: looks like realm graphql API isn't working anymore
 # I'm getting error: PersistedQueryNotSupported, which seems to suggest
-# that maybe it needs auth now too?  I haven't found documentation anywhere 
-# for the graphql API, so kind of blocked here.  I suspect we'll need to switch to
-# official wow api with a token, which is a bit of a pain. 
+# that maybe it needs auth now too?  I haven't found documentation anywhere
+# for the graphql API, so kind of blocked here.  I suspect we'll need to switch
+# to official wow api with a token, which is a bit of a pain.
 #
 #    'realms': (RealmFixer, ['servers.eu.json', 'servers.us.json']),
+
 
 def parse_args():
     def fixer_arg(value: str):
@@ -122,12 +123,4 @@ def main():
 
 
 if __name__ == '__main__':
-    # XXX: Fix asyncio.run() for Windows:
-    # https://bugs.python.org/issue39232
-    # https://stackoverflow.com/questions/63860576
-    import platform
-    import asyncio
-    if platform.system() == 'Windows':
-        asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-
     main()

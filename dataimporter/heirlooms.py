@@ -90,7 +90,10 @@ class HeirloomFixer(WowToolsFixer):
         for cat in self.heirlooms:
             for subcat in cat['subcats']:
                 for item in subcat['items']:
-                    fixed_heirloom = self.get_heirloom(int(item['ID']))
+                    item_id = int(item['ID'])
+                    fixed_heirloom = self.get_heirloom(item_id)
+                    if fixed_heirloom is None:
+                        raise RuntimeError(f"Cannot find heirloom {item_id}")
                     item['ID'] = fixed_heirloom['ID']
                     item['itemId'] = fixed_heirloom['itemId']
                     item['name'] = fixed_heirloom['name']

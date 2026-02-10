@@ -202,6 +202,8 @@ class TitleFixer(WowToolsFixer):
 
     def fix_missing_title(self, title_id: int):
         title = self.get_title(title_id)
+        if title is None:
+            raise RuntimeError(f"Cannot find missing title {title_id}")
         changelog(
             f"Title {title_id} \"{title['name']}\" missing:"
             f" https://www.wowhead.com/title={title['id']}"
