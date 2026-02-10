@@ -11,6 +11,7 @@
 			items: [ 
 				{ txt: 'Character',          link: 'character'   },
 				{ txt: 'Quests',             link: 'quests'      },
+				{ txt: 'Housing',            link: 'housing'     },
 				{ txt: 'Exploration',        link: 'exploration' },
 				{ txt: 'Delves',             link: 'delves'      },
 				{ txt: 'Player vs. Player',  link: 'pvp'         },

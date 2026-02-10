@@ -51,6 +51,9 @@
             case 'exploration':
                 prettyCatName = 'Exploration';
                 break;
+            case 'housing':
+                prettyCatName = 'Housing';
+                break;
             case 'delves':
                 prettyCatName = 'Delves';
                 break;
