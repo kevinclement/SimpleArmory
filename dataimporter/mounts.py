@@ -48,6 +48,7 @@ IGNORE_MOUNT_ID = [
     1954,  # Flourishing Whimsydrake: https://www.wowhead.com/mount/1954 : dupe of 1830
     2115,  # Dracthyr Racial
     1715,  # Placeholder Mecha-Done Mount - Never Added
+    2716,  # Placeholder Legion Remix Mount - Never Added
 ]
 
 MOUNT_SOURCE_ENUM = {
