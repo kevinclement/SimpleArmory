@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleArmory JSON Editor</title>
+    <!-- SortableJS for Drag and Drop -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>
+    <style>
+        :root {
+            --bg-dark: #1e1e1e;
+            --bg-panel: #2b2b2b;
+            --border: #444;
+            --accent: #f8b700;
+            --text-main: #e0e0e0;
+            --text-muted: #888;
+            --card-size: 36px; /* Smaller icons for density */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Controls Area */
+        .controls {
+            position: sticky;
+            top: 0;
+            background: rgba(30, 30, 30, 0.95);
+            padding: 10px 20px;
+            border-bottom: 1px solid #333;
+            z-index: 2000;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-bottom: 30px;
+            backdrop-filter: blur(5px);
+        }
+
+        .btn {
+            background-color: #333;
+            color: #ddd;
+            border: 1px solid #555;
+            padding: 8px 16px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #444;
+            color: #fff;
+            border-color: #777;
+        }
+
+        .btn-primary {
+            background-color: var(--accent);
+            color: #111;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #e0a600;
+            color: #000;
+        }
+
+        input[type="file"] { display: none; }
+
+        /* Layout Structure */
+        .container {
+            max-width: 1800px;
+            margin: 0 auto;
+            padding-bottom: 100px;
+        }
+
+        /* --- HIERARCHY STYLING & PERFORMANCE --- */
+
+        /* Super Category (e.g. Expansion Features) */
+        .supercat {
+            margin-bottom: 40px;
+            padding-left: 10px;
+            border-left: 2px solid #444;
+            /* Performance: Isolate layout calculations */
+            contain: layout;
+        }
+
+        /* Category (e.g. Dragonflight, Shadowlands) */
+        .cat {
+            margin-bottom: 40px;
+            /* Performance: Don't render off-screen categories (Huge boost for achievements.json) */
+            content-visibility: auto;
+            contain-intrinsic-size: 1px 500px; /* Estimate height to prevent scrollbar jump */
+            contain: layout paint style;
+        }
+
+        /* Sub Category Container */
+        .subcat-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        /* Sub Category (e.g. Achievement, Raid Drop) */
+        .subcat {
+            display: flex;
+            flex-direction: column;
+            max-width: 320px;
+            min-width: 40px;
+            /* Performance: Isolate the mini-blocks */
+            contain: layout paint;
+        }
+
+        /* --- HEADERS --- */
+
+        .header-row {
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+            cursor: grab;
+            user-select: none;
+            margin-bottom: 6px;
+        }
+
+        .cat > .header-row .header-title {
+            font-size: 1.5em;
+            color: #fff;
+            font-weight: 400;
+        }
+
+        .supercat > .header-row .header-title {
+            font-size: 1.8em;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .subcat > .header-row {
+            margin-bottom: 4px;
+        }
+        .subcat > .header-row .header-title {
+            font-size: 0.95em;
+            color: #999;
+            font-weight: normal;
+        }
+
+        .count-badge {
+            font-size: 0.75em;
+            color: #555;
+            display: none;
+        }
+        .cat > .header-row .count-badge { display: inline-block; }
+
+        /* --- ITEM GRID --- */
+
+        .item-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2px;
+            min-height: 40px;
+            background: transparent;
+            border: 1px dashed transparent;
+            border-radius: 4px;
+            transition: border-color 0.2s;
+            /* Performance: Prevent layout ripple effects when moving items inside */
+            contain: layout paint;
+        }
+
+        .item-list:empty, .item-list.sortable-drag-active {
+            border-color: #333;
+            min-width: 40px;
+        }
+
+        /* Individual Item */
+        .item-card {
+            width: var(--card-size);
+            height: var(--card-size);
+            position: relative;
+            cursor: grab;
+            border: 1px solid #000;
+            border-radius: 0;
+            background: #000;
+            box-sizing: border-box;
+            /* Performance: Promote to own layer to make movement cheap */
+            will-change: transform;
+            transform: translate3d(0,0,0);
+        }
+
+        .item-card:hover {
+            transform: scale(1.2);
+            z-index: 100;
+            border-color: #fff;
+            box-shadow: 0 0 5px rgba(0,0,0,0.8);
+        }
+
+        .item-icon {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Tooltip mimic */
+        .item-card::after {
+            content: attr(data-title);
+            position: absolute;
+            bottom: 120%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(10,10,10,0.95);
+            color: var(--accent);
+            padding: 4px 8px;
+            border-radius: 2px;
+            white-space: nowrap;
+            font-size: 12px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.1s;
+            z-index: 1000;
+            border: 1px solid #333;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+        }
+
+        .item-card:hover::after {
+            opacity: 1;
+        }
+
+        /* Sortable States */
+        .sortable-ghost {
+            opacity: 0.2;
+            background: var(--accent);
+        }
+
+        .sortable-drag {
+            cursor: grabbing;
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 80px;
+            color: #555;
+            border: 2px dashed #333;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="controls">
+        <label class="btn btn-primary" for="fileInput">Upload JSON</label>
+        <input type="file" id="fileInput" accept=".json">
+        <button class="btn" onclick="exportJSON()">Export JSON</button>
+        <div id="status" style="margin-left: auto; color: var(--accent); font-weight: 600; font-size: 14px;">Waiting for file...</div>
+    </div>
+
+    <div id="editor-root" class="container">
+        <div class="empty-state">
+            <h2>SimpleArmory Layout Editor</h2>
+            <p>Upload your <code>achievements.json</code>, <code>mounts.json</code>, or others to arrange them.</p>
+        </div>
+    </div>
+
+    <script>
+        let currentFileStructure = null;
+        let currentFileName = "data.json";
+
+        const fileInput = document.getElementById('fileInput');
+        const root = document.getElementById('editor-root');
+        const status = document.getElementById('status');
+
+        fileInput.addEventListener('change', handleFileUpload);
+
+        function handleFileUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            currentFileName = file.name;
+
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                try {
+                    const json = JSON.parse(e.target.result);
+                    renderEditor(json);
+                    status.textContent = `${file.name}`;
+                } catch (err) {
+                    alert("Invalid JSON file");
+                    console.error(err);
+                    status.textContent = "Error loading file";
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        function getIconUrl(iconName) {
+            if (!iconName) return 'https://wow.zamimg.com/images/wow/icons/large/inv_misc_questionmark.jpg';
+            const cleanName = iconName.replace(/\.(jpg|png)$/i, '').toLowerCase();
+            return `https://wow.zamimg.com/images/wow/icons/large/${cleanName}.jpg`;
+        }
+
+        // --- Rendering Logic ---
+
+        function renderEditor(data) {
+            root.innerHTML = '';
+
+            if (data.supercats) {
+                currentFileStructure = 'achievements';
+                renderSuperCats(data.supercats, root);
+            } else if (Array.isArray(data)) {
+                currentFileStructure = 'standard';
+                renderCats(data, root);
+            } else if (data.cats) {
+                 currentFileStructure = 'object_root';
+                 renderCats(data.cats, root);
+            } else {
+                status.textContent = "Unknown structure. Attempting render...";
+                const potentialArray = Object.values(data).find(val => Array.isArray(val));
+                if(potentialArray) {
+                    currentFileStructure = 'standard';
+                    renderCats(potentialArray, root);
+                } else {
+                     root.innerHTML = `<div class="empty-state">Could not detect structure.</div>`;
+                }
+            }
+        }
+
+        function renderSuperCats(supercats, container) {
+            const listContainer = document.createElement('div');
+            listContainer.className = 'supercat-list';
+            container.appendChild(listContainer);
+
+            // Sortable Supercats
+            new Sortable(listContainer, {
+                animation: 150,
+                handle: '.header-row',
+                ghostClass: 'sortable-ghost'
+            });
+
+            supercats.forEach(sc => {
+                const el = document.createElement('div');
+                el.className = 'supercat';
+                el.dataset.name = sc.name;
+                el.dataset.id = sc.id || "";
+
+                el.innerHTML = `
+                    <div class="header-row">
+                        <span class="header-title">${sc.name}</span>
+                    </div>
+                    <div class="cat-container"></div>
+                `;
+                listContainer.appendChild(el);
+                renderCats(sc.cats, el.querySelector('.cat-container'));
+            });
+        }
+
+        function renderCats(cats, container) {
+            // Sortable Categories
+            new Sortable(container, {
+                animation: 150,
+                group: 'cats',
+                handle: '.header-row',
+                ghostClass: 'sortable-ghost'
+            });
+
+            cats.forEach(cat => {
+                const el = document.createElement('div');
+                el.className = 'cat';
+                el.dataset.id = cat.id || '';
+                el.dataset.name = cat.name;
+
+                // Count items for badge
+                let count = 0;
+                if(cat.subcats) cat.subcats.forEach(s => count += (s.items ? s.items.length : 0));
+
+                el.innerHTML = `
+                    <div class="header-row">
+                        <span class="header-title">${cat.name}</span>
+                        <span class="count-badge">${count} items</span>
+                    </div>
+                    <div class="subcat-container"></div>
+                `;
+                container.appendChild(el);
+
+                if (cat.subcats) {
+                    renderSubCats(cat.subcats, el.querySelector('.subcat-container'));
+                }
+            });
+        }
+
+        function renderSubCats(subcats, container) {
+            // Sortable Sub-Categories (The dense blocks)
+            new Sortable(container, {
+                animation: 150,
+                group: 'subcats',
+                handle: '.header-row',
+                ghostClass: 'sortable-ghost'
+            });
+
+            subcats.forEach(sub => {
+                const el = document.createElement('div');
+                el.className = 'subcat';
+                el.dataset.id = sub.id || '';
+                el.dataset.name = sub.name;
+
+                el.innerHTML = `
+                    <div class="header-row">
+                        <span class="header-title">${sub.name}</span>
+                    </div>
+                    <div class="item-list"></div>
+                `;
+                container.appendChild(el);
+
+                if (sub.items) {
+                    renderItems(sub.items, el.querySelector('.item-list'));
+                }
+            });
+        }
+
+        function renderItems(items, container) {
+            // Sortable Items (The icons)
+            new Sortable(container, {
+                group: 'shared-items',
+                animation: 150,
+                ghostClass: 'sortable-ghost',
+                dragClass: 'sortable-drag',
+                delay: 0,
+                swapThreshold: 0.65
+            });
+
+            items.forEach(item => {
+                const el = document.createElement('div');
+                el.className = 'item-card';
+                el.dataset.json = JSON.stringify(item);
+
+                const title = item.title || item.name || "Unknown Item";
+                el.dataset.title = title;
+
+                const img = document.createElement('img');
+                img.src = getIconUrl(item.icon);
+                img.className = 'item-icon';
+                img.draggable = false;
+                img.loading = "lazy";
+
+                el.appendChild(img);
+                container.appendChild(el);
+            });
+        }
+
+        // --- Export & Scraper Logic ---
+
+        function exportJSON() {
+            if (!currentFileStructure) {
+                alert("Nothing to export!");
+                return;
+            }
+
+            let output = null;
+
+            if (currentFileStructure === 'achievements') {
+                const supercatsList = root.querySelector('.supercat-list');
+                if (supercatsList) {
+                    output = { supercats: scrapeSuperCats(supercatsList) };
+                }
+            } else if (currentFileStructure === 'standard') {
+                output = scrapeCats(root);
+            } else if (currentFileStructure === 'object_root') {
+                 output = { cats: scrapeCats(root) };
+            }
+
+            if (!output) {
+                alert("Error generating JSON structure.");
+                return;
+            }
+
+            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(output, null, 2));
+            const downloadAnchorNode = document.createElement('a');
+            downloadAnchorNode.setAttribute("href", dataStr);
+            downloadAnchorNode.setAttribute("download", "edited_" + currentFileName);
+            document.body.appendChild(downloadAnchorNode);
+            downloadAnchorNode.click();
+            downloadAnchorNode.remove();
+        }
+
+        function scrapeSuperCats(container) {
+            const els = Array.from(container.children);
+            return els.map(el => {
+                if(!el.classList.contains('supercat')) return null;
+                const catContainer = el.querySelector('.cat-container');
+                return {
+                    name: el.dataset.name,
+                    id: el.dataset.id || undefined,
+                    cats: catContainer ? scrapeCats(catContainer) : []
+                };
+            }).filter(x => x);
+        }
+
+        function scrapeCats(container) {
+            const els = Array.from(container.children);
+            return els.map(el => {
+                if(!el.classList.contains('cat')) return null;
+                const subcatContainer = el.querySelector('.subcat-container');
+                const obj = {
+                    name: el.dataset.name,
+                    subcats: subcatContainer ? scrapeSubCats(subcatContainer) : []
+                };
+                if(el.dataset.id) obj.id = el.dataset.id;
+                return obj;
+            }).filter(x => x);
+        }
+
+        function scrapeSubCats(container) {
+            const els = Array.from(container.children);
+            return els.map(el => {
+                if(!el.classList.contains('subcat')) return null;
+                const itemList = el.querySelector('.item-list');
+                const obj = {
+                    name: el.dataset.name,
+                    items: itemList ? scrapeItems(itemList) : []
+                };
+                if(el.dataset.id) obj.id = el.dataset.id;
+                return obj;
+            }).filter(x => x);
+        }
+
+        function scrapeItems(container) {
+            const els = Array.from(container.children);
+            return els.map(el => {
+                if (!el.dataset.json) return null;
+                return JSON.parse(el.dataset.json);
+            }).filter(x => x);
+        }
+    </script>
+</body>
+</html>
