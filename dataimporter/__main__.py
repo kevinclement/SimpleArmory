@@ -14,6 +14,7 @@ from .toys import ToyFixer
 from .decors import DecorFixer
 
 from .providers import wago
+from .tools import sort_obj_numeric
 
 FIXERS = {
     'achievements': (AchievementFixer, ['achievements.json']),
@@ -111,11 +112,12 @@ def main():
             fixed_list = fixer.run()
         for fixed_content, path in zip(fixed_list, json_paths):
             with path.open('w', encoding='utf8') as json_file:
+                fixed_content = sort_obj_numeric(fixed_content)
                 json.dump(
                     fixed_content,
                     json_file,
                     indent=2,
-                    sort_keys=True,
+                    sort_keys=False,
                     ensure_ascii=False
                 )
                 json_file.write('\n')
