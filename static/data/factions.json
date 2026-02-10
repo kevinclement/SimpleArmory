@@ -22,7 +22,11 @@
         "id": 2711,
         "levels": {
           "0": "Interloper",
-          "500": "VIP"
+          "500": "Guest",
+          "1000": "Socialite",
+          "1500": "Trendsetter",
+          "2000": "Host",
+          "2500": "Luminary"
         },
         "name": "Magisters"
       },
@@ -30,7 +34,11 @@
         "id": 2712,
         "levels": {
           "0": "Interloper",
-          "500": "VIP"
+          "500": "Guest",
+          "1000": "Socialite",
+          "1500": "Trendsetter",
+          "2000": "Host",
+          "2500": "Luminary"
         },
         "name": "Blood Knights"
       },
@@ -38,7 +46,11 @@
         "id": 2713,
         "levels": {
           "0": "Interloper",
-          "500": "VIP"
+          "500": "Guest",
+          "1000": "Socialite",
+          "1500": "Trendsetter",
+          "2000": "Host",
+          "2500": "Luminary"
         },
         "name": "Farstriders"
       },
@@ -46,7 +58,11 @@
         "id": 2714,
         "levels": {
           "0": "Interloper",
-          "500": "VIP"
+          "500": "Guest",
+          "1000": "Socialite",
+          "1500": "Trendsetter",
+          "2000": "Host",
+          "2500": "Luminary"
         },
         "name": "Shades of the Row"
       },
@@ -122,7 +138,7 @@
       },
       {
         "id": 2764,
-        "name": "Preyseeker's Journey"
+        "name": "Prey: Season 1"
       },
       {
         "id": 2770,
@@ -1873,6 +1889,7 @@
     "factions": [
       {
         "id": 1374,
+        "legacy": true,
         "levels": {
           "0": "Rank 1",
           "1000": "Rank 2",
@@ -1885,11 +1902,11 @@
           "8000": "Rank 9",
           "9000": "Max Rank"
         },
-        "name": "Brawl'gar Arena (Season 1)",
-        "legacy": true
+        "name": "Brawl'gar Arena (Season 1)"
       },
       {
         "id": 1419,
+        "legacy": true,
         "levels": {
           "0": "Rank 1",
           "1000": "Rank 2",
@@ -1902,11 +1919,11 @@
           "8000": "Rank 9",
           "9000": "Max Rank"
         },
-        "name": "Bizmo's Brawlpub (Season 1)",
-        "legacy": true
+        "name": "Bizmo's Brawlpub (Season 1)"
       },
       {
         "id": 1691,
+        "legacy": true,
         "levels": {
           "0": "Rank 1",
           "1000": "Rank 2",
@@ -1919,11 +1936,11 @@
           "8000": "Rank 9",
           "9000": "Max Rank"
         },
-        "name": "Bizmo's Brawlpub (Season 2)",
-        "legacy": true
+        "name": "Bizmo's Brawlpub (Season 2)"
       },
       {
         "id": 2011,
+        "legacy": true,
         "levels": {
           "0": "Rank 1",
           "1000": "Rank 2",
@@ -1936,11 +1953,11 @@
           "8000": "Rank 9",
           "9000": "Max Rank"
         },
-        "name": "Bizmo's Brawlpub (Season 3)",
-        "legacy": true
+        "name": "Bizmo's Brawlpub (Season 3)"
       },
       {
         "id": 2371,
+        "legacy": true,
         "levels": {
           "0": "Rank 1",
           "1000": "Rank 2",
@@ -1951,11 +1968,11 @@
           "6000": "Rank 7",
           "7000": "Max Rank"
         },
-        "name": "Bizmo's Brawlpub (Season 4)",
-        "legacy": true
+        "name": "Bizmo's Brawlpub (Season 4)"
       },
       {
         "id": 1690,
+        "legacy": true,
         "levels": {
           "0": "Rank 1",
           "1000": "Rank 2",
@@ -1968,11 +1985,11 @@
           "8000": "Rank 9",
           "9000": "Max Rank"
         },
-        "name": "Brawl'gar Arena (Season 2)",
-        "legacy": true
+        "name": "Brawl'gar Arena (Season 2)"
       },
       {
         "id": 2010,
+        "legacy": true,
         "levels": {
           "0": "Rank 1",
           "1000": "Rank 2",
@@ -1985,11 +2002,11 @@
           "8000": "Rank 9",
           "9000": "Max Rank"
         },
-        "name": "Brawl'gar Arena (Season 3)",
-        "legacy": true
+        "name": "Brawl'gar Arena (Season 3)"
       },
       {
         "id": 2372,
+        "legacy": true,
         "levels": {
           "0": "Rank 1",
           "1000": "Rank 2",
@@ -2000,8 +2017,7 @@
           "6000": "Rank 7",
           "7000": "Max Rank"
         },
-        "name": "Brawl'gar Arena (Season 4)",
-        "legacy": true
+        "name": "Brawl'gar Arena (Season 4)"
       },
       {
         "id": 2767,
