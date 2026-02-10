@@ -299,10 +299,10 @@
           },
           {
             "ID": 125,
+            "dupe": true,
             "icon": "ability_hunter_pet_turtle",
             "itemId": 23720,
             "name": "Riding Turtle",
-            "dupe": true,
             "spellid": 30174
           },
           {
@@ -473,6 +473,38 @@
             "spellid": 1253924
           },
           {
+            "ID": 2912,
+            "icon": "inv_misc_questionmark",
+            "itemId": 263579,
+            "name": "Vivacious Chloroceros",
+            "new": true,
+            "spellid": 1270673
+          },
+          {
+            "ID": 2755,
+            "icon": "inv_dragonhawk2mount_black",
+            "itemId": 257144,
+            "name": "Umbral Dragonhawk",
+            "new": true,
+            "spellid": 1261296
+          },
+          {
+            "ID": 2756,
+            "icon": "inv_dragonhawk2mount_red",
+            "itemId": 257145,
+            "name": "Crimson Dragonhawk",
+            "new": true,
+            "spellid": 1261298
+          },
+          {
+            "ID": 2829,
+            "icon": "inv_cosmicflyermount_purple",
+            "itemId": 260697,
+            "name": "Lab-grown Stormray",
+            "new": true,
+            "spellid": 1266703
+          },
+          {
             "ID": 2771,
             "icon": "inv_manawyrm2mount_3",
             "itemId": 257193,
@@ -635,6 +667,19 @@
           }
         ],
         "name": "Renown"
+      },
+      {
+        "items": [
+          {
+            "ID": 2785,
+            "icon": "bloodknightcharger_icon_white",
+            "itemId": 257240,
+            "name": "Relinquished Scarlet Charger",
+            "new": true,
+            "spellid": 1261391
+          }
+        ],
+        "name": "Quest"
       },
       {
         "items": [
@@ -838,10 +883,6 @@
         "name": "Zone Drop"
       },
       {
-        "items": [],
-        "name": "Pre-launch event"
-      },
-      {
         "items": [
           {
             "ID": 2767,
@@ -850,17 +891,26 @@
             "name": "Contained Stormarion Defender",
             "new": true,
             "spellid": 1261334
-          },
-          {
-            "ID": 2829,
-            "icon": "inv_cosmicflyermount_purple",
-            "itemId": 260697,
-            "name": "Lab-grown Stormray",
-            "new": true,
-            "spellid": 1266703
           }
         ],
-        "name": "Unknown"
+        "name": "Zone Feature"
+      },
+      {
+        "items": [
+          {
+            "ID": 2616,
+            "icon": "inv_harronircatmount_white",
+            "itemId": 246736,
+            "name": "Ivory Grimlynx",
+            "new": true,
+            "spellid": 1243598
+          }
+        ],
+        "name": "Allied Race"
+      },
+      {
+        "items": [],
+        "name": "Pre-launch event"
       }
     ]
   },
@@ -8400,7 +8450,7 @@
             "ID": 16,
             "icon": "ability_mount_netherdrakepurple",
             "itemId": 260916,
-            "name": "Lost Nether Drake",
+            "name": "Nether-Warped Drake",
             "new": true,
             "spellid": 3363
           }
@@ -9617,6 +9667,13 @@
             "itemId": 232926,
             "name": "Love Witch's Sweeper",
             "spellid": 472479
+          },
+          {
+            "ID": 2492,
+            "icon": "inv_butterflymount_pink",
+            "itemId": 235658,
+            "name": "Spring Butterfly",
+            "spellid": 1218013
           }
         ],
         "name": "Love is in the Air"
@@ -10437,15 +10494,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1217343
-          },
-          {
-            "ID": 2492,
-            "icon": "inv_butterflymount_pink",
-            "itemId": 235658,
-            "name": "Spring Butterfly",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1218013
           },
           {
             "ID": 2494,
@@ -12912,15 +12960,6 @@
             "spellid": 428065
           },
           {
-            "ID": 2704,
-            "icon": "inv_babyamanieagle_orange",
-            "itemId": 251288,
-            "name": "[DNT] Jellyfish",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1252141
-          },
-          {
             "ID": 1607,
             "icon": "inv_pterrordax2mount_white",
             "name": "Swift Spectral Drake",
@@ -12929,21 +12968,75 @@
             "spellid": 372995
           },
           {
-            "ID": 2785,
-            "icon": "bloodknightcharger_icon_white",
-            "itemId": 257240,
-            "name": "Relinquished Scarlet Charger",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1261391
-          },
-          {
             "ID": 2595,
             "icon": "ability_mount_dragonhawkarmorallliance",
             "name": "Swift Spectral Dragonhawk",
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1238827
+          },
+          {
+            "ID": 2838,
+            "icon": "7460360",
+            "itemId": 262438,
+            "name": "Fantastical Goblin Waveshredder",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1268809
+          },
+          {
+            "ID": 2914,
+            "icon": "7493687",
+            "itemId": 264273,
+            "name": "Fel Spirehawk",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1271549
+          },
+          {
+            "ID": 2843,
+            "icon": "7448047",
+            "itemId": 262661,
+            "name": "Ghastropod",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1269181
+          },
+          {
+            "ID": 2849,
+            "icon": "7489718",
+            "itemId": 262909,
+            "name": "Hypo-Speed X6000",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1269556
+          },
+          {
+            "ID": 2742,
+            "icon": "7360957",
+            "itemId": 254735,
+            "name": "Thunderhoof Celestial",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1258573
+          },
+          {
+            "ID": 2743,
+            "icon": "7360959",
+            "itemId": 254736,
+            "name": "Stormgilded Celestial",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1258574
+          },
+          {
+            "ID": 2948,
+            "icon": "7316475",
+            "itemId": 269009,
+            "name": "Golden Ashened Cataclysm",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1284640
           }
         ],
         "name": "Unknown"

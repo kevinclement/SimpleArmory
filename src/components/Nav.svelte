@@ -12,6 +12,7 @@
 				{ txt: 'Character',          link: 'character'   },
 				{ txt: 'Quests',             link: 'quests'      },
 				{ txt: 'Exploration',        link: 'exploration' },
+				{ txt: 'Housing',            link: 'housing'     },
 				{ txt: 'Delves',             link: 'delves'      },
 				{ txt: 'Player vs. Player',  link: 'pvp'         },
 				{ txt: 'Dungeons & Raids',   link: 'dungeons'    },

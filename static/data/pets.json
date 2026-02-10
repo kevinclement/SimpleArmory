@@ -425,18 +425,18 @@
             "creatureId": 254689,
             "icon": "inv_capybara",
             "itemId": 258189,
-            "name": "Do, child of Filo",
+            "name": "Do, Child of Filo",
             "new": true,
             "spellid": 1262925
           },
           {
-            "ID": 4913,
-            "creatureId": 254979,
-            "icon": "inv_faeriedragon3_blue",
-            "itemId": 258737,
-            "name": "Moon Darter",
+            "ID": 5012,
+            "creatureId": 260899,
+            "icon": "inv_babyeversonglynx_brown",
+            "itemId": 269028,
+            "name": "Sootpaw",
             "new": true,
-            "spellid": 1263911
+            "spellid": 1284800
           }
         ],
         "name": "Achievement"
@@ -484,7 +484,7 @@
             "creatureId": 256107,
             "icon": "inv_babyberserker_red",
             "itemId": 260922,
-            "name": "Immature Behemoth",
+            "name": "Fidoficus",
             "new": true,
             "spellid": 1267050
           },
@@ -748,15 +748,6 @@
       },
       {
         "items": [
-          {
-            "ID": 4905,
-            "creatureId": 253355,
-            "icon": "inv_babysnaplizard_red",
-            "itemId": 254843,
-            "name": "[DNT] Baby Amazard (Red)",
-            "new": true,
-            "spellid": 1258786
-          },
           {
             "ID": 4929,
             "creatureId": 255295,
@@ -1821,16 +1812,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 446047
-          },
-          {
-            "ID": 4475,
-            "creatureId": 222342,
-            "icon": "inv_babycryptfiend_green",
-            "itemId": 222967,
-            "name": "Webbers",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 446048
           },
           {
             "ID": 4493,
@@ -3176,16 +3157,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 407935
-          },
-          {
-            "ID": 3519,
-            "creatureId": 204240,
-            "icon": "inv_corehoundsmall_orange",
-            "itemId": 205017,
-            "name": "Byrn",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 407955
           },
           {
             "ID": 3520,
@@ -8415,6 +8386,19 @@
     "name": "Wrath of the Lich King",
     "subcats": [
       {
+        "items": [
+          {
+            "ID": 4475,
+            "creatureId": 222342,
+            "icon": "inv_babycryptfiend_green",
+            "itemId": 222967,
+            "name": "Webbers",
+            "spellid": 446048
+          }
+        ],
+        "name": "Achievement"
+      },
+      {
         "id": "cd88e425",
         "items": [
           {
@@ -8857,6 +8841,27 @@
     "id": "a98dd022",
     "name": "Classic",
     "subcats": [
+      {
+        "items": [
+          {
+            "ID": 3519,
+            "creatureId": 204240,
+            "icon": "inv_corehoundsmall_orange",
+            "itemId": 205017,
+            "name": "Byrn",
+            "spellid": 407955
+          },
+          {
+            "ID": 4913,
+            "creatureId": 254979,
+            "icon": "inv_faeriedragon3_blue",
+            "itemId": 258737,
+            "name": "Moon Darter",
+            "spellid": 1263911
+          }
+        ],
+        "name": "Achievement"
+      },
       {
         "id": "755f4361",
         "items": [
@@ -13683,6 +13688,46 @@
             "name": "Heartglow Listener",
             "notObtainable": true,
             "notReleased": true
+          },
+          {
+            "ID": 4902,
+            "creatureId": 252686,
+            "icon": "7315561",
+            "itemId": 253404,
+            "name": "Auspicious Pixiu",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1256380
+          },
+          {
+            "ID": 4943,
+            "creatureId": 255736,
+            "icon": "7442919",
+            "itemId": 260341,
+            "name": "Star the Lucky Dragon",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1266115
+          },
+          {
+            "ID": 4968,
+            "creatureId": 256663,
+            "icon": "7489719",
+            "itemId": 262881,
+            "name": "Lil' Staropod",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1269535
+          },
+          {
+            "ID": 4944,
+            "creatureId": 255750,
+            "icon": "7352245",
+            "itemId": 260360,
+            "name": "Gummi the Glow Wyrm",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1266148
           }
         ],
         "name": "Promotion"
