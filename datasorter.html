@@ -14,7 +14,7 @@
             --accent: #f8b700;
             --text-main: #e0e0e0;
             --text-muted: #888;
-            --card-size: 36px; /* Smaller icons for density */
+            --card-size: 36px;
         }
 
         body {
@@ -50,12 +50,28 @@
             cursor: pointer;
             border-radius: 4px;
             transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
         }
 
         .btn:hover {
             background-color: #444;
             color: #fff;
             border-color: #777;
+        }
+
+        /* Active/Done State - Green */
+        .btn.active {
+            background-color: #43a047;
+            color: white;
+            border-color: #43a047;
+            box-shadow: 0 0 10px rgba(67, 160, 71, 0.5);
+        }
+
+        .btn.active:hover {
+            background-color: #2e7d32;
+            border-color: #2e7d32;
         }
 
         .btn-primary {
@@ -79,25 +95,18 @@
 
         /* --- HIERARCHY STYLING & PERFORMANCE --- */
 
-        /* Super Category (e.g. Expansion Features) */
         .supercat {
             margin-bottom: 40px;
             padding-left: 10px;
             border-left: 2px solid #444;
-            /* Performance: Isolate layout calculations */
             contain: layout;
         }
 
-        /* Category (e.g. Dragonflight, Shadowlands) */
         .cat {
             margin-bottom: 40px;
-            /* Performance: Don't render off-screen categories (Huge boost for achievements.json) */
-            content-visibility: auto;
-            contain-intrinsic-size: 1px 500px; /* Estimate height to prevent scrollbar jump */
-            contain: layout paint style;
+            contain: layout style;
         }
 
-        /* Sub Category Container */
         .subcat-container {
             display: flex;
             flex-wrap: wrap;
@@ -105,14 +114,12 @@
             align-items: flex-start;
         }
 
-        /* Sub Category (e.g. Achievement, Raid Drop) */
         .subcat {
             display: flex;
             flex-direction: column;
             max-width: 320px;
             min-width: 40px;
-            /* Performance: Isolate the mini-blocks */
-            contain: layout paint;
+            contain: layout;
         }
 
         /* --- HEADERS --- */
@@ -126,33 +133,12 @@
             margin-bottom: 6px;
         }
 
-        .cat > .header-row .header-title {
-            font-size: 1.5em;
-            color: #fff;
-            font-weight: 400;
-        }
+        .cat > .header-row .header-title { font-size: 1.5em; color: #fff; font-weight: 400; }
+        .supercat > .header-row .header-title { font-size: 1.8em; color: var(--accent); text-transform: uppercase; letter-spacing: 1px; }
+        .subcat > .header-row { margin-bottom: 4px; }
+        .subcat > .header-row .header-title { font-size: 0.95em; color: #999; font-weight: normal; }
 
-        .supercat > .header-row .header-title {
-            font-size: 1.8em;
-            color: var(--accent);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .subcat > .header-row {
-            margin-bottom: 4px;
-        }
-        .subcat > .header-row .header-title {
-            font-size: 0.95em;
-            color: #999;
-            font-weight: normal;
-        }
-
-        .count-badge {
-            font-size: 0.75em;
-            color: #555;
-            display: none;
-        }
+        .count-badge { font-size: 0.75em; color: #555; display: none; }
         .cat > .header-row .count-badge { display: inline-block; }
 
         /* --- ITEM GRID --- */
@@ -166,8 +152,7 @@
             border: 1px dashed transparent;
             border-radius: 4px;
             transition: border-color 0.2s;
-            /* Performance: Prevent layout ripple effects when moving items inside */
-            contain: layout paint;
+            contain: layout;
         }
 
         .item-list:empty, .item-list.sortable-drag-active {
@@ -185,16 +170,29 @@
             border-radius: 0;
             background: #000;
             box-sizing: border-box;
-            /* Performance: Promote to own layer to make movement cheap */
             will-change: transform;
             transform: translate3d(0,0,0);
+            z-index: 1;
         }
 
         .item-card:hover {
             transform: scale(1.2);
-            z-index: 100;
+            z-index: 1000;
             border-color: #fff;
             box-shadow: 0 0 5px rgba(0,0,0,0.8);
+        }
+
+        /* Edit Mode Styles for Item Card */
+        body.edit-mode .item-card {
+            cursor: pointer;
+        }
+        body.edit-mode .item-card:hover {
+            border-color: #43a047;
+            box-shadow: 0 0 8px rgba(67, 160, 71, 0.6);
+        }
+        /* Disable dragging interaction in edit mode handled via JS, but visual cue here */
+        body.edit-mode .header-row {
+            cursor: default;
         }
 
         .item-icon {
@@ -203,6 +201,70 @@
             object-fit: cover;
             display: block;
         }
+
+        /* --- INDICATORS --- */
+        .indicator {
+            position: absolute;
+            z-index: 5;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+            font-weight: 700;
+            line-height: 1;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.8);
+            /* Shared base style for the "Black Square" look */
+            background: rgba(0, 0, 0, 0.85);
+            padding: 1px 2px;
+            font-size: 10px;
+        }
+
+        /* New: Top Left */
+        .ind-new {
+            top: 0;
+            left: 0;
+            color: #00ff00;
+            border-radius: 0 0 3px 0;
+            border-right: 1px solid #006400;
+            border-bottom: 1px solid #006400;
+        }
+
+        /* Dupe: Bottom Right */
+        .ind-dupe {
+            bottom: 0;
+            right: 0;
+            color: #00e5ff;
+            font-size: 9px;
+            border-radius: 3px 0 0 0;
+            border-left: 1px solid #00838f;
+            border-top: 1px solid #00838f;
+        }
+
+        /* Status: Top Right */
+        .ind-status {
+            top: 0;
+            right: 0;
+            border-radius: 0 0 0 3px;
+            border-left: 1px solid #555;
+            border-bottom: 1px solid #555;
+        }
+
+        .status-unob {
+            color: #ff3333;
+            border-color: #b71c1c;
+        }
+
+        .status-clock {
+            color: #ffaa00;
+            border-color: #e65100;
+        }
+
+        .status-resale {
+            color: #ffd700;
+            border-color: #ff8f00;
+        }
+
 
         /* Tooltip mimic */
         .item-card::after {
@@ -230,14 +292,8 @@
         }
 
         /* Sortable States */
-        .sortable-ghost {
-            opacity: 0.2;
-            background: var(--accent);
-        }
-
-        .sortable-drag {
-            cursor: grabbing;
-        }
+        .sortable-ghost { opacity: 0.2; background: var(--accent); }
+        .sortable-drag { cursor: grabbing; }
 
         /* Empty State */
         .empty-state {
@@ -248,6 +304,91 @@
             border-radius: 10px;
             margin-top: 40px;
         }
+
+        /* --- PROPERTY EDITOR POPUP --- */
+        #prop-editor {
+            position: fixed;
+            background: #2b2b2b;
+            border: 1px solid #555;
+            border-radius: 6px;
+            padding: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            z-index: 3000;
+            display: none;
+            min-width: 220px;
+        }
+
+        .editor-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #444;
+        }
+
+        #prop-editor h4 {
+            margin: 0;
+            font-size: 14px;
+            color: var(--accent);
+            border-bottom: none;
+            padding-bottom: 0;
+            white-space: normal;
+            line-height: 1.3;
+            overflow: visible;
+        }
+
+        #editor-preview {
+            flex-shrink: 0;
+            pointer-events: none;
+        }
+
+        /* Override hover effect in editor preview */
+        #editor-preview .item-card:hover {
+            transform: none;
+            box-shadow: none;
+            border-color: #000;
+        }
+
+        .prop-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .prop-row:hover {
+            background: rgba(255,255,255,0.05);
+        }
+
+        .prop-row input {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .prop-row label {
+            font-size: 13px;
+            cursor: pointer;
+            flex-grow: 1;
+        }
+
+        .prop-section-label {
+            font-size: 11px;
+            color: #999;
+            text-transform: uppercase;
+            margin: 10px 0 5px 0;
+            border-bottom: 1px solid #444;
+            padding-bottom: 2px;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: 2999;
+            display: none;
+        }
+
     </style>
 </head>
 <body>
@@ -255,7 +396,15 @@
     <div class="controls">
         <label class="btn btn-primary" for="fileInput">Upload JSON</label>
         <input type="file" id="fileInput" accept=".json">
+
         <button class="btn" onclick="exportJSON()">Export JSON</button>
+
+        <div style="width: 1px; height: 20px; background: #555; margin: 0 10px;"></div>
+
+        <button id="editModeBtn" class="btn" onclick="toggleEditMode()">
+            <span>✎ Edit Properties</span>
+        </button>
+
         <div id="status" style="margin-left: auto; color: var(--accent); font-weight: 600; font-size: 14px;">Waiting for file...</div>
     </div>
 
@@ -266,15 +415,72 @@
         </div>
     </div>
 
+    <!-- Edit Popover -->
+    <div id="prop-overlay" class="overlay" onclick="closeEditor()"></div>
+    <div id="prop-editor">
+        <div class="editor-header">
+            <div id="editor-preview"></div>
+            <h4 id="editor-title">Item Name</h4>
+        </div>
+
+        <div class="prop-section-label">Flags</div>
+        <label class="prop-row">
+            <input type="checkbox" id="chk-new"> <label for="chk-new">New (<span style="color:#00ff00; background:black; padding:0 2px;">★</span>)</label>
+        </label>
+        <label class="prop-row">
+            <input type="checkbox" id="chk-dupe"> <label for="chk-dupe">Dupe (<span style="color:#00e5ff; background:black; padding:0 2px;">⧉</span>)</label>
+        </label>
+
+        <div class="prop-section-label">Availability Status</div>
+        <label class="prop-row">
+            <input type="radio" name="status" value="obtainable" id="rad-obt">
+            <label for="rad-obt">Obtainable (Default)</label>
+        </label>
+        <label class="prop-row">
+            <input type="radio" name="status" value="resale" id="rad-resale">
+            <label for="rad-resale">Resale (<span style="color:#ffd700; background:black; padding:0 2px;">$</span>)</label>
+        </label>
+        <label class="prop-row">
+            <input type="radio" name="status" value="unobtainable" id="rad-unob">
+            <label for="rad-unob">Not Obtainable (<span style="color:#ff3333; background:black; padding:0 2px;">✖</span>)</label>
+        </label>
+        <label class="prop-row">
+            <input type="radio" name="status" value="unreleased" id="rad-rel">
+            <label for="rad-rel">Not Released (<span style="color:#ffaa00; background:black; padding:0 2px;">⏲</span>)</label>
+        </label>
+    </div>
+
     <script>
         let currentFileStructure = null;
         let currentFileName = "data.json";
+        let isEditMode = false;
+        let activeSortables = []; // Keep track to disable/enable
+        let currentEditingItemElement = null;
+        let currentPreviewElement = null;
 
         const fileInput = document.getElementById('fileInput');
         const root = document.getElementById('editor-root');
         const status = document.getElementById('status');
+        const editModeBtn = document.getElementById('editModeBtn');
+
+        // Editor Elements
+        const propEditor = document.getElementById('prop-editor');
+        const propOverlay = document.getElementById('prop-overlay');
+        const editorTitle = document.getElementById('editor-title');
+        const editorPreview = document.getElementById('editor-preview');
+
+        // Checkboxes
+        const chkNew = document.getElementById('chk-new');
+        const chkDupe = document.getElementById('chk-dupe');
+        // Radio Group
+        const radios = document.getElementsByName('status');
 
         fileInput.addEventListener('change', handleFileUpload);
+
+        // Setup Editor Change Listeners
+        chkNew.addEventListener('change', saveItemChanges);
+        chkDupe.addEventListener('change', saveItemChanges);
+        radios.forEach(r => r.addEventListener('change', saveItemChanges));
 
         function handleFileUpload(event) {
             const file = event.target.files[0];
@@ -288,6 +494,8 @@
                     const json = JSON.parse(e.target.result);
                     renderEditor(json);
                     status.textContent = `${file.name}`;
+                    // Reset mode
+                    if(isEditMode) toggleEditMode();
                 } catch (err) {
                     alert("Invalid JSON file");
                     console.error(err);
@@ -303,10 +511,170 @@
             return `https://wow.zamimg.com/images/wow/icons/large/${cleanName}.jpg`;
         }
 
+        // --- Edit Mode Logic ---
+
+        function toggleEditMode() {
+            isEditMode = !isEditMode;
+            document.body.classList.toggle('edit-mode', isEditMode);
+            editModeBtn.classList.toggle('active', isEditMode);
+
+            // Toggle Text
+            const span = editModeBtn.querySelector('span');
+            if(isEditMode) {
+                span.textContent = "✔ Done Editing";
+            } else {
+                span.textContent = "✎ Edit Properties";
+            }
+
+            // Enable/Disable Drag and Drop
+            activeSortables.forEach(sortable => {
+                sortable.option("disabled", isEditMode);
+            });
+        }
+
+        function openEditor(element, data, event) {
+            currentEditingItemElement = element;
+
+            // Populate Fields
+            editorTitle.textContent = data.title || data.name || "Item";
+            chkNew.checked = !!data.new;
+            chkDupe.checked = !!data.dupe;
+
+            // Determine Radio State
+            if (data.notReleased) {
+                document.getElementById('rad-rel').checked = true;
+            } else if (data.notObtainable) {
+                document.getElementById('rad-unob').checked = true;
+            } else if (data.resale) {
+                document.getElementById('rad-resale').checked = true;
+            } else {
+                document.getElementById('rad-obt').checked = true;
+            }
+
+            // Render Preview Item Card (Visual Clone)
+            editorPreview.innerHTML = '';
+
+            const previewCard = document.createElement('div');
+            previewCard.className = 'item-card';
+            previewCard.style.cursor = 'default';
+            // We reuse the standard card size from CSS
+
+            const img = document.createElement('img');
+            img.src = getIconUrl(data.icon);
+            img.className = 'item-icon';
+            img.draggable = false;
+
+            previewCard.appendChild(img);
+            editorPreview.appendChild(previewCard);
+            currentPreviewElement = previewCard;
+
+            // Initial Indicators for preview
+            updateItemIndicators(previewCard, data);
+
+            // Position Popup
+            propEditor.style.display = 'block';
+            propOverlay.style.display = 'block';
+
+            // Simple positioning logic
+            const rect = element.getBoundingClientRect();
+            let top = rect.bottom + 5;
+            let left = rect.left;
+
+            // Boundary checks
+            if (left + 220 > window.innerWidth) left = window.innerWidth - 230;
+            if (top + 280 > window.innerHeight) top = rect.top - 280;
+
+            propEditor.style.top = top + 'px';
+            propEditor.style.left = left + 'px';
+        }
+
+        function closeEditor() {
+            propEditor.style.display = 'none';
+            propOverlay.style.display = 'none';
+            currentEditingItemElement = null;
+            currentPreviewElement = null;
+        }
+
+        function saveItemChanges() {
+            if (!currentEditingItemElement) return;
+
+            // Get current data
+            let data = JSON.parse(currentEditingItemElement.dataset.json);
+
+            // Update Checkboxes
+            if (chkNew.checked) data.new = true; else delete data.new;
+            if (chkDupe.checked) data.dupe = true; else delete data.dupe;
+
+            // Update Status based on Radio
+            const selectedStatus = document.querySelector('input[name="status"]:checked').value;
+
+            // Clear all first
+            delete data.resale;
+            delete data.notObtainable;
+            delete data.notReleased;
+
+            if (selectedStatus === 'resale') {
+                data.resale = true;
+            } else if (selectedStatus === 'unobtainable') {
+                data.notObtainable = true;
+            } else if (selectedStatus === 'unreleased') {
+                data.notReleased = true;
+                data.notObtainable = true; // Implied
+            }
+            // 'obtainable' means all deleted, which we just did.
+
+            // Save back to DOM
+            currentEditingItemElement.dataset.json = JSON.stringify(data);
+
+            // Re-render item visuals (indicators) on BOTH
+            updateItemIndicators(currentEditingItemElement, data);
+            if(currentPreviewElement) updateItemIndicators(currentPreviewElement, data);
+        }
+
+        function updateItemIndicators(element, data) {
+            // Remove existing indicators
+            element.querySelectorAll('.indicator').forEach(el => el.remove());
+
+            // Add New
+            if (data.new) {
+                const i = document.createElement('div');
+                i.className = 'indicator ind-new';
+                i.textContent = '★';
+                element.appendChild(i);
+            }
+
+            // Add Dupe
+            if (data.dupe) {
+                const i = document.createElement('div');
+                i.className = 'indicator ind-dupe';
+                i.textContent = '⧉';
+                element.appendChild(i);
+            }
+
+            // Add Status (Exclusive position)
+            if (data.resale) {
+                const i = document.createElement('div');
+                i.className = 'indicator ind-status status-resale';
+                i.textContent = '$';
+                element.appendChild(i);
+            } else if (data.notReleased) {
+                const i = document.createElement('div');
+                i.className = 'indicator ind-status status-clock';
+                i.textContent = '⏲';
+                element.appendChild(i);
+            } else if (data.notObtainable) {
+                const i = document.createElement('div');
+                i.className = 'indicator ind-status status-unob';
+                i.textContent = '✖';
+                element.appendChild(i);
+            }
+        }
+
         // --- Rendering Logic ---
 
         function renderEditor(data) {
             root.innerHTML = '';
+            activeSortables = []; // Reset
 
             if (data.supercats) {
                 currentFileStructure = 'achievements';
@@ -329,16 +697,22 @@
             }
         }
 
+        function registerSortable(el, options) {
+            const s = new Sortable(el, options);
+            activeSortables.push(s);
+            return s;
+        }
+
         function renderSuperCats(supercats, container) {
             const listContainer = document.createElement('div');
             listContainer.className = 'supercat-list';
             container.appendChild(listContainer);
 
-            // Sortable Supercats
-            new Sortable(listContainer, {
+            registerSortable(listContainer, {
                 animation: 150,
                 handle: '.header-row',
-                ghostClass: 'sortable-ghost'
+                ghostClass: 'sortable-ghost',
+                disabled: isEditMode
             });
 
             supercats.forEach(sc => {
@@ -359,12 +733,12 @@
         }
 
         function renderCats(cats, container) {
-            // Sortable Categories
-            new Sortable(container, {
+            registerSortable(container, {
                 animation: 150,
                 group: 'cats',
                 handle: '.header-row',
-                ghostClass: 'sortable-ghost'
+                ghostClass: 'sortable-ghost',
+                disabled: isEditMode
             });
 
             cats.forEach(cat => {
@@ -373,7 +747,6 @@
                 el.dataset.id = cat.id || '';
                 el.dataset.name = cat.name;
 
-                // Count items for badge
                 let count = 0;
                 if(cat.subcats) cat.subcats.forEach(s => count += (s.items ? s.items.length : 0));
 
@@ -393,12 +766,12 @@
         }
 
         function renderSubCats(subcats, container) {
-            // Sortable Sub-Categories (The dense blocks)
-            new Sortable(container, {
+            registerSortable(container, {
                 animation: 150,
                 group: 'subcats',
                 handle: '.header-row',
-                ghostClass: 'sortable-ghost'
+                ghostClass: 'sortable-ghost',
+                disabled: isEditMode
             });
 
             subcats.forEach(sub => {
@@ -422,14 +795,14 @@
         }
 
         function renderItems(items, container) {
-            // Sortable Items (The icons)
-            new Sortable(container, {
+            registerSortable(container, {
                 group: 'shared-items',
                 animation: 150,
                 ghostClass: 'sortable-ghost',
                 dragClass: 'sortable-drag',
                 delay: 0,
-                swapThreshold: 0.65
+                swapThreshold: 0.65,
+                disabled: isEditMode
             });
 
             items.forEach(item => {
@@ -440,13 +813,24 @@
                 const title = item.title || item.name || "Unknown Item";
                 el.dataset.title = title;
 
+                // Click Listener for Edit Mode
+                el.addEventListener('click', (e) => {
+                    if (isEditMode) {
+                        e.stopPropagation();
+                        openEditor(el, JSON.parse(el.dataset.json), e);
+                    }
+                });
+
                 const img = document.createElement('img');
                 img.src = getIconUrl(item.icon);
                 img.className = 'item-icon';
                 img.draggable = false;
                 img.loading = "lazy";
-
                 el.appendChild(img);
+
+                // Initial Indicators
+                updateItemIndicators(el, item);
+
                 container.appendChild(el);
             });
         }
