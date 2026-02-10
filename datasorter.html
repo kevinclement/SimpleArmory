@@ -57,10 +57,15 @@
             min-width: 80px;
         }
 
-        .btn:hover {
+        .btn:hover:not(:disabled) {
             background-color: #444;
             color: #fff;
             border-color: #777;
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: default;
         }
 
         .btn-danger {
@@ -68,7 +73,7 @@
             border-color: #b71c1c;
             color: white;
         }
-        .btn-danger:hover {
+        .btn-danger:hover:not(:disabled) {
             background-color: #b71c1c;
         }
 
@@ -77,7 +82,7 @@
             color: #111;
             border: none;
         }
-        .btn-primary:hover {
+        .btn-primary:hover:not(:disabled) {
             background-color: #e0a600;
             color: #000;
         }
@@ -253,6 +258,14 @@
             border-color: #43a047;
             box-shadow: 0 0 8px rgba(67, 160, 71, 0.6);
         }
+
+        /* Selected State */
+        body.edit-mode .item-card.selected {
+            border-color: #fff;
+            box-shadow: 0 0 0 2px #43a047, 0 0 10px rgba(67, 160, 71, 0.8);
+            z-index: 100 !important;
+        }
+
         body.edit-mode .header-row {
             cursor: pointer; /* Signal clickable headers */
         }
@@ -555,6 +568,7 @@
         let currentEditingItemElement = null;
         let currentPreviewElement = null;
         let currentEditingStructElement = null;
+        let selectedElements = new Set();
 
         const fileInput = document.getElementById('fileInput');
         const root = document.getElementById('editor-root');
@@ -607,7 +621,6 @@
                     const json = JSON.parse(e.target.result);
                     renderEditor(json);
                     status.textContent = `${file.name}`;
-                    // Default to Sorting Mode
                     setMode('sort');
                 } catch (err) {
                     alert("Invalid JSON file");
@@ -630,27 +643,107 @@
             isEditMode = (mode === 'edit');
 
             document.body.classList.toggle('edit-mode', isEditMode);
-
-            // Toggle Button States
             document.getElementById('mode-sort').classList.toggle('active', mode === 'sort');
             document.getElementById('mode-edit').classList.toggle('active', mode === 'edit');
 
             if(!isEditMode) {
                 closeAllEditors();
+                clearSelection();
             }
 
-            // Enable/Disable Drag and Drop
             activeSortables.forEach(sortable => {
                 sortable.option("disabled", isEditMode);
             });
         }
 
+        // --- Selection Logic ---
+
+        function toggleSelection(element, forceAdd = false) {
+            if (selectedElements.has(element) && !forceAdd) {
+                element.classList.remove('selected');
+                selectedElements.delete(element);
+            } else {
+                element.classList.add('selected');
+                selectedElements.add(element);
+            }
+        }
+
+        function clearSelection() {
+            selectedElements.forEach(el => el.classList.remove('selected'));
+            selectedElements.clear();
+        }
+
+        function selectRange(endElement) {
+            const allItems = Array.from(root.querySelectorAll('.item-card'));
+            const firstSelected = allItems.find(el => selectedElements.has(el));
+
+            if (!firstSelected) {
+                toggleSelection(endElement, true);
+                return;
+            }
+
+            const startIdx = allItems.indexOf(firstSelected);
+            const endIdx = allItems.indexOf(endElement);
+
+            const low = Math.min(startIdx, endIdx);
+            const high = Math.max(startIdx, endIdx);
+
+            for (let i = low; i <= high; i++) {
+                toggleSelection(allItems[i], true);
+            }
+        }
+
         // --- Item Property Editor ---
 
-        function openEditor(element, data, event) {
+        function handleItemClick(element, data, event) {
+            if (isEditMode) {
+                event.stopPropagation();
+
+                if (event.ctrlKey || event.metaKey) {
+                    toggleSelection(element);
+                    return;
+                }
+
+                if (event.shiftKey) {
+                    selectRange(element);
+                    return;
+                }
+
+                if (selectedElements.size > 1 && selectedElements.has(element)) {
+                    openEditor(element, data);
+                } else {
+                    clearSelection();
+                    toggleSelection(element, true);
+                    openEditor(element, data);
+                }
+            }
+        }
+
+        function openEditor(element, data) {
             currentEditingItemElement = element;
 
-            editorTitle.textContent = data.title || data.name || "Item";
+            const isBatch = selectedElements.size > 1;
+
+            if (isBatch) {
+                editorTitle.textContent = `Editing ${selectedElements.size} Items`;
+                editorPreview.innerHTML = '';
+            } else {
+                editorTitle.textContent = data.title || data.name || "Item";
+
+                editorPreview.innerHTML = '';
+                const previewCard = document.createElement('div');
+                previewCard.className = 'item-card';
+                previewCard.style.cursor = 'default';
+                const img = document.createElement('img');
+                img.src = getIconUrl(data.icon);
+                img.className = 'item-icon';
+                img.draggable = false;
+                previewCard.appendChild(img);
+                editorPreview.appendChild(previewCard);
+                currentPreviewElement = previewCard;
+                updateItemIndicators(previewCard, data);
+            }
+
             chkNew.checked = !!data.new;
             chkDupe.checked = !!data.dupe;
 
@@ -662,19 +755,6 @@
             if (data.side === 'A') document.getElementById('rad-alliance').checked = true;
             else if (data.side === 'H') document.getElementById('rad-horde').checked = true;
             else document.getElementById('rad-neutral').checked = true;
-
-            editorPreview.innerHTML = '';
-            const previewCard = document.createElement('div');
-            previewCard.className = 'item-card';
-            previewCard.style.cursor = 'default';
-            const img = document.createElement('img');
-            img.src = getIconUrl(data.icon);
-            img.className = 'item-icon';
-            img.draggable = false;
-            previewCard.appendChild(img);
-            editorPreview.appendChild(previewCard);
-            currentPreviewElement = previewCard;
-            updateItemIndicators(previewCard, data);
 
             propEditor.style.display = 'block';
             propOverlay.style.display = 'block';
@@ -691,33 +771,49 @@
         }
 
         function saveItemChanges() {
-            if (!currentEditingItemElement) return;
-
-            let data = JSON.parse(currentEditingItemElement.dataset.json);
-
-            if (chkNew.checked) data.new = true; else delete data.new;
-            if (chkDupe.checked) data.dupe = true; else delete data.dupe;
+            // Read from UI
+            const updates = {};
+            if (chkNew.checked) updates.new = true; else updates.new = false;
+            if (chkDupe.checked) updates.dupe = true; else updates.dupe = false;
 
             const selectedStatus = document.querySelector('input[name="status"]:checked').value;
-            delete data.resale; delete data.notObtainable; delete data.notReleased;
-
-            if (selectedStatus === 'resale') data.resale = true;
-            else if (selectedStatus === 'unobtainable') data.notObtainable = true;
-            else if (selectedStatus === 'unreleased') { data.notReleased = true; data.notObtainable = true; }
+            updates.resale = (selectedStatus === 'resale');
+            updates.notObtainable = (selectedStatus === 'unobtainable' || selectedStatus === 'unreleased');
+            updates.notReleased = (selectedStatus === 'unreleased');
 
             const selectedSide = document.querySelector('input[name="side"]:checked').value;
-            if (selectedSide === 'neutral') delete data.side;
-            else data.side = selectedSide;
+            updates.side = (selectedSide === 'neutral') ? null : selectedSide;
 
-            currentEditingItemElement.dataset.json = JSON.stringify(data);
-            updateItemIndicators(currentEditingItemElement, data);
-            if(currentPreviewElement) updateItemIndicators(currentPreviewElement, data);
+            const targets = selectedElements.size > 0 ? Array.from(selectedElements) : [currentEditingItemElement];
+
+            targets.forEach(el => {
+                let itemData = el.__data;
+
+                if(updates.new) itemData.new = true; else delete itemData.new;
+                if(updates.dupe) itemData.dupe = true; else delete itemData.dupe;
+
+                delete itemData.resale; delete itemData.notObtainable; delete itemData.notReleased;
+                if (updates.resale) itemData.resale = true;
+                if (updates.notObtainable) itemData.notObtainable = true;
+                if (updates.notReleased) itemData.notReleased = true;
+
+                if (updates.side) itemData.side = updates.side; else delete itemData.side;
+
+                // Visual Update Only (Data is already in el.__data)
+                updateItemIndicators(el, itemData);
+            });
+
+            if(currentPreviewElement && targets.length === 1) {
+                updateItemIndicators(currentPreviewElement, targets[0].__data);
+            }
         }
 
         function deleteItem() {
-            if (!currentEditingItemElement) return;
-            currentEditingItemElement.remove();
+            const targets = selectedElements.size > 0 ? Array.from(selectedElements) : [currentEditingItemElement];
+            targets.forEach(el => el.remove());
+
             closeAllEditors();
+            clearSelection();
         }
 
         function updateItemIndicators(element, data) {
@@ -752,7 +848,7 @@
             structTitle.textContent = `Edit ${type}`;
             structNameInput.value = currentName;
 
-            // Reset delete button state
+            // Reset delete button state if user clicks it twice logic is used
             btnDeleteStruct.textContent = "Delete";
             btnDeleteStruct.dataset.confirming = "false";
 
@@ -769,7 +865,6 @@
             const newName = structNameInput.value.trim() || "Untitled";
             currentEditingStructElement.dataset.name = newName;
 
-            // Update the UI Text
             const titleEl = currentEditingStructElement.querySelector(':scope > .header-row .header-title');
             if(titleEl) titleEl.textContent = newName;
 
@@ -778,19 +873,29 @@
 
         function deleteStructure() {
             if (!currentEditingStructElement) return;
+
+            if (btnDeleteStruct.dataset.confirming !== "true") {
+                btnDeleteStruct.dataset.confirming = "true";
+                btnDeleteStruct.textContent = "Confirm?";
+
+                if (deleteConfirmTimer) clearTimeout(deleteConfirmTimer);
+                deleteConfirmTimer = setTimeout(() => {
+                    btnDeleteStruct.dataset.confirming = "false";
+                    btnDeleteStruct.textContent = "Delete";
+                }, 3000);
+                return;
+            }
+
+            if (deleteConfirmTimer) clearTimeout(deleteConfirmTimer);
             currentEditingStructElement.remove();
             closeAllEditors();
         }
 
         function addCategory(container, type) {
-            // Create a basic object structure
-            // type: 'supercat', 'cat', 'subcat'
-
             let newEl;
 
             if (type === 'supercat') {
                 newEl = createSuperCatElement({ name: "New Super Category", cats: [] });
-                // Append before the Add Button
                 const btn = container.querySelector('.add-supercat');
                 container.insertBefore(newEl, btn);
             } else if (type === 'cat') {
@@ -803,9 +908,7 @@
                 container.insertBefore(newEl, btn);
             }
 
-            if(newEl) {
-                newEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            }
+            if(newEl) newEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
 
         function closeAllEditors() {
@@ -831,11 +934,15 @@
             el.dataset.id = sc.id || "";
 
             el.innerHTML = `
-                <div class="header-row" onclick="if(isEditMode) openStructEditor(this.parentNode, 'Super Category')">
+                <div class="header-row">
                     <span class="header-title">${sc.name}</span>
                 </div>
                 <div class="cat-container"></div>
             `;
+
+            el.querySelector('.header-row').addEventListener('click', function() {
+                if(isEditMode) openStructEditor(el, 'Super Category');
+            });
 
             const catContainer = el.querySelector('.cat-container');
             renderCats(sc.cats || [], catContainer);
@@ -853,12 +960,16 @@
             if(cat.subcats) cat.subcats.forEach(s => count += (s.items ? s.items.length : 0));
 
             el.innerHTML = `
-                <div class="header-row" onclick="if(isEditMode) openStructEditor(this.parentNode, 'Category')">
+                <div class="header-row">
                     <span class="header-title">${cat.name}</span>
                     <span class="count-badge">${count} items</span>
                 </div>
                 <div class="subcat-container"></div>
             `;
+
+            el.querySelector('.header-row').addEventListener('click', function() {
+                if(isEditMode) openStructEditor(el, 'Category');
+            });
 
             const subcatContainer = el.querySelector('.subcat-container');
             renderSubCats(cat.subcats || [], subcatContainer);
@@ -872,11 +983,15 @@
             el.dataset.name = sub.name;
 
             el.innerHTML = `
-                <div class="header-row" onclick="if(isEditMode) openStructEditor(this.parentNode, 'Sub Category')">
+                <div class="header-row">
                     <span class="header-title">${sub.name}</span>
                 </div>
                 <div class="item-list"></div>
             `;
+
+            el.querySelector('.header-row').addEventListener('click', function() {
+                if(isEditMode) openStructEditor(el, 'Sub Category');
+            });
 
             const itemList = el.querySelector('.item-list');
             renderItems(sub.items || [], itemList);
@@ -888,6 +1003,7 @@
         function renderEditor(data) {
             root.innerHTML = '';
             activeSortables = [];
+            selectedElements = new Set();
 
             if (data.supercats) {
                 currentFileStructure = 'achievements';
@@ -993,15 +1109,11 @@
             items.forEach(item => {
                 const el = document.createElement('div');
                 el.className = 'item-card';
-                el.dataset.json = JSON.stringify(item);
+                // OPTIMIZATION: Store data directly on element
+                el.__data = item;
                 el.dataset.title = item.title || item.name || "Unknown Item";
 
-                el.addEventListener('click', (e) => {
-                    if (isEditMode) {
-                        e.stopPropagation();
-                        openEditor(el, JSON.parse(el.dataset.json), e);
-                    }
-                });
+                el.addEventListener('click', (e) => handleItemClick(el, el.__data, e));
 
                 const img = document.createElement('img');
                 img.src = getIconUrl(item.icon);
@@ -1023,18 +1135,7 @@
                 return;
             }
 
-            let output = null;
-
-            if (currentFileStructure === 'achievements') {
-                const supercatsList = root.querySelector('.supercat-list');
-                if (supercatsList) {
-                    output = { supercats: scrapeSuperCats(supercatsList) };
-                }
-            } else if (currentFileStructure === 'standard') {
-                output = scrapeCats(root);
-            } else if (currentFileStructure === 'object_root') {
-                 output = { cats: scrapeCats(root) };
-            }
+            const output = getCurrentJSON();
 
             if (!output) {
                 alert("Error generating JSON structure.");
@@ -1048,6 +1149,20 @@
             document.body.appendChild(downloadAnchorNode);
             downloadAnchorNode.click();
             downloadAnchorNode.remove();
+        }
+
+        function getCurrentJSON() {
+            if (currentFileStructure === 'achievements') {
+                const supercatsList = root.querySelector('.supercat-list');
+                if (supercatsList) {
+                    return { supercats: scrapeSuperCats(supercatsList) };
+                }
+            } else if (currentFileStructure === 'standard') {
+                return scrapeCats(root);
+            } else if (currentFileStructure === 'object_root') {
+                 return { cats: scrapeCats(root) };
+            }
+            return null;
         }
 
         function scrapeSuperCats(container) {
@@ -1094,8 +1209,8 @@
         function scrapeItems(container) {
             const els = Array.from(container.children);
             return els.map(el => {
-                if (!el.dataset.json) return null;
-                return JSON.parse(el.dataset.json);
+                // OPTIMIZATION: Read direct property instead of dataset parsing
+                return el.__data;
             }).filter(x => x);
         }
     </script>
