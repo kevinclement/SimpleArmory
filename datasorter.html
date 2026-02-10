@@ -52,7 +52,9 @@
             transition: all 0.2s;
             display: inline-flex;
             align-items: center;
+            justify-content: center;
             gap: 6px;
+            min-width: 80px;
         }
 
         .btn:hover {
@@ -61,17 +63,13 @@
             border-color: #777;
         }
 
-        /* Active/Done State - Green */
-        .btn.active {
-            background-color: #43a047;
+        .btn-danger {
+            background-color: #d32f2f;
+            border-color: #b71c1c;
             color: white;
-            border-color: #43a047;
-            box-shadow: 0 0 10px rgba(67, 160, 71, 0.5);
         }
-
-        .btn.active:hover {
-            background-color: #2e7d32;
-            border-color: #2e7d32;
+        .btn-danger:hover {
+            background-color: #b71c1c;
         }
 
         .btn-primary {
@@ -82,6 +80,50 @@
         .btn-primary:hover {
             background-color: #e0a600;
             color: #000;
+        }
+
+        /* --- MODE TOGGLE GROUP --- */
+        .mode-toggle {
+            display: flex;
+            background: #111;
+            border: 1px solid #444;
+            border-radius: 6px;
+            padding: 2px;
+            gap: 2px;
+        }
+
+        .btn-mode {
+            background: transparent;
+            border: none;
+            color: #888;
+            padding: 6px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s;
+        }
+
+        .btn-mode:hover {
+            color: #fff;
+            background: rgba(255,255,255,0.05);
+        }
+
+        /* Sort Active: Yellow */
+        .btn-mode#mode-sort.active {
+            background: var(--accent);
+            color: #000;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+        }
+
+        /* Edit Active: Green */
+        .btn-mode#mode-edit.active {
+            background: #43a047;
+            color: #fff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.4);
         }
 
         input[type="file"] { display: none; }
@@ -100,11 +142,13 @@
             padding-left: 10px;
             border-left: 2px solid #444;
             contain: layout;
+            transition: box-shadow 0.2s, border-color 0.2s;
         }
 
         .cat {
             margin-bottom: 40px;
             contain: layout style;
+            transition: box-shadow 0.2s, border-color 0.2s;
         }
 
         .subcat-container {
@@ -120,6 +164,16 @@
             max-width: 320px;
             min-width: 40px;
             contain: layout;
+            transition: box-shadow 0.2s, background 0.2s;
+            border-radius: 4px;
+        }
+
+        /* Highlight when editing */
+        .editing-target {
+            box-shadow: 0 0 0 2px var(--accent);
+            background: rgba(248, 183, 0, 0.05);
+            z-index: 2500;
+            position: relative;
         }
 
         /* --- HEADERS --- */
@@ -131,6 +185,15 @@
             cursor: grab;
             user-select: none;
             margin-bottom: 6px;
+            padding: 4px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+
+        /* Hover effect only in edit mode */
+        body.edit-mode .header-row:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            cursor: pointer;
         }
 
         .cat > .header-row .header-title { font-size: 1.5em; color: #fff; font-weight: 400; }
@@ -182,7 +245,7 @@
             box-shadow: 0 0 5px rgba(0,0,0,0.8);
         }
 
-        /* Edit Mode Styles for Item Card */
+        /* Edit Mode Styles */
         body.edit-mode .item-card {
             cursor: pointer;
         }
@@ -190,9 +253,8 @@
             border-color: #43a047;
             box-shadow: 0 0 8px rgba(67, 160, 71, 0.6);
         }
-        /* Disable dragging interaction in edit mode handled via JS, but visual cue here */
         body.edit-mode .header-row {
-            cursor: default;
+            cursor: pointer; /* Signal clickable headers */
         }
 
         .item-icon {
@@ -214,78 +276,20 @@
             font-weight: 700;
             line-height: 1;
             box-shadow: 0 1px 3px rgba(0,0,0,0.8);
-            /* Shared base style for the "Black Square" look */
             background: rgba(0, 0, 0, 0.85);
             padding: 1px 2px;
             font-size: 10px;
         }
 
-        /* New: Top Left */
-        .ind-new {
-            top: 0;
-            left: 0;
-            color: #00ff00;
-            border-radius: 0 0 3px 0;
-            border-right: 1px solid #006400;
-            border-bottom: 1px solid #006400;
-        }
-
-        /* Dupe: Bottom Right */
-        .ind-dupe {
-            bottom: 0;
-            right: 0;
-            color: #00e5ff;
-            font-size: 9px;
-            border-radius: 3px 0 0 0;
-            border-left: 1px solid #00838f;
-            border-top: 1px solid #00838f;
-        }
-
-        /* Status: Top Right */
-        .ind-status {
-            top: 0;
-            right: 0;
-            border-radius: 0 0 0 3px;
-            border-left: 1px solid #555;
-            border-bottom: 1px solid #555;
-        }
-
-        .status-unob {
-            color: #ff3333;
-            border-color: #b71c1c;
-        }
-
-        .status-clock {
-            color: #ffaa00;
-            border-color: #e65100;
-        }
-
-        .status-resale {
-            color: #ffd700;
-            border-color: #ff8f00;
-        }
-
-        /* Faction: Bottom Left */
-        .ind-side {
-            bottom: 0;
-            left: 0;
-            font-size: 10px;
-            padding: 0 2px;
-            border-radius: 0 3px 0 0;
-            border-right: 1px solid #555;
-            border-top: 1px solid #555;
-        }
-
-        .side-alliance {
-            color: #2196f3;
-            border-color: #0d47a1;
-        }
-
-        .side-horde {
-            color: #f44336;
-            border-color: #b71c1c;
-        }
-
+        .ind-new { top: 0; left: 0; color: #00ff00; border-radius: 0 0 3px 0; border-right: 1px solid #006400; border-bottom: 1px solid #006400; }
+        .ind-dupe { bottom: 0; right: 0; color: #00e5ff; font-size: 9px; border-radius: 3px 0 0 0; border-left: 1px solid #00838f; border-top: 1px solid #00838f; }
+        .ind-status { top: 0; right: 0; border-radius: 0 0 0 3px; border-left: 1px solid #555; border-bottom: 1px solid #555; }
+        .status-unob { color: #ff3333; border-color: #b71c1c; }
+        .status-clock { color: #ffaa00; border-color: #e65100; }
+        .status-resale { color: #ffd700; border-color: #ff8f00; }
+        .ind-side { bottom: 0; left: 0; font-size: 10px; padding: 0 2px; border-radius: 0 3px 0 0; border-right: 1px solid #555; border-top: 1px solid #555; }
+        .side-alliance { color: #2196f3; border-color: #0d47a1; }
+        .side-horde { color: #f44336; border-color: #b71c1c; }
 
         /* Tooltip mimic */
         .item-card::after {
@@ -307,10 +311,7 @@
             border: 1px solid #333;
             box-shadow: 0 4px 6px rgba(0,0,0,0.5);
         }
-
-        .item-card:hover::after {
-            opacity: 1;
-        }
+        .item-card:hover::after { opacity: 1; }
 
         /* Sortable States */
         .sortable-ghost { opacity: 0.2; background: var(--accent); }
@@ -326,17 +327,79 @@
             margin-top: 40px;
         }
 
-        /* --- PROPERTY EDITOR POPUP --- */
-        #prop-editor {
+        /* --- ADD BUTTONS --- */
+        .add-btn {
+            border: 2px dashed #444;
+            color: #888;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+            transition: all 0.2s;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .add-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: rgba(255,255,255,0.05);
+        }
+
+        /* Add button visibility toggle */
+        body:not(.edit-mode) .add-btn { display: none !important; }
+
+        .add-supercat {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        .add-cat {
+            width: 100%;
+            padding: 15px;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+
+        /* New Compact Size */
+        .add-subcat {
+            width: 100px;
+            height: 70px; /* Aligns visually with header + 1 row */
+            flex-shrink: 0;
+            margin-top: 0; /* Align with top */
+            font-size: 28px;
+        }
+
+        /* --- POPUPS --- */
+        .overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: 2999;
+            display: none;
+            background: rgba(0,0,0,0.5); /* Slight dim */
+        }
+
+        .popup {
             position: fixed;
             background: #2b2b2b;
             border: 1px solid #555;
             border-radius: 6px;
             padding: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            box-shadow: 0 5px 25px rgba(0,0,0,0.8);
             z-index: 3000;
             display: none;
-            min-width: 220px;
+        }
+
+        #prop-editor { min-width: 220px; }
+
+        #struct-editor {
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
         }
 
         .editor-header {
@@ -348,7 +411,7 @@
             border-bottom: 1px solid #444;
         }
 
-        #prop-editor h4 {
+        h4 {
             margin: 0;
             font-size: 14px;
             color: var(--accent);
@@ -359,17 +422,24 @@
             overflow: visible;
         }
 
-        #editor-preview {
-            flex-shrink: 0;
-            pointer-events: none;
+        /* Inputs */
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            background: #111;
+            border: 1px solid #444;
+            color: #fff;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+        input[type="text"]:focus {
+            border-color: var(--accent);
+            outline: none;
         }
 
-        /* Override hover effect in editor preview */
-        #editor-preview .item-card:hover {
-            transform: none;
-            box-shadow: none;
-            border-color: #000;
-        }
+        #editor-preview { flex-shrink: 0; pointer-events: none; }
+        #editor-preview .item-card:hover { transform: none; box-shadow: none; border-color: #000; }
 
         .prop-row {
             display: flex;
@@ -378,21 +448,9 @@
             cursor: pointer;
             user-select: none;
         }
-
-        .prop-row:hover {
-            background: rgba(255,255,255,0.05);
-        }
-
-        .prop-row input {
-            margin-right: 10px;
-            cursor: pointer;
-        }
-
-        .prop-row label {
-            font-size: 13px;
-            cursor: pointer;
-            flex-grow: 1;
-        }
+        .prop-row:hover { background: rgba(255,255,255,0.05); }
+        .prop-row input { margin-right: 10px; cursor: pointer; }
+        .prop-row label { font-size: 13px; cursor: pointer; flex-grow: 1; }
 
         .prop-section-label {
             font-size: 11px;
@@ -403,11 +461,16 @@
             padding-bottom: 2px;
         }
 
-        .overlay {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            z-index: 2999;
-            display: none;
+        /* Icon Button Style */
+        .btn-icon {
+            min-width: 32px !important;
+            width: 32px;
+            height: 32px;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
         }
 
     </style>
@@ -422,9 +485,14 @@
 
         <div style="width: 1px; height: 20px; background: #555; margin: 0 10px;"></div>
 
-        <button id="editModeBtn" class="btn" onclick="toggleEditMode()">
-            <span>✎ Edit Properties</span>
-        </button>
+        <div class="mode-toggle">
+            <button id="mode-sort" class="btn-mode active" onclick="setMode('sort')">
+                <span style="font-size:16px">✥</span> Sorting
+            </button>
+            <button id="mode-edit" class="btn-mode" onclick="setMode('edit')">
+                <span style="font-size:16px">✎</span> Editing
+            </button>
+        </div>
 
         <div id="status" style="margin-left: auto; color: var(--accent); font-weight: 600; font-size: 14px;">Waiting for file...</div>
     </div>
@@ -436,88 +504,96 @@
         </div>
     </div>
 
-    <!-- Edit Popover -->
-    <div id="prop-overlay" class="overlay" onclick="closeEditor()"></div>
-    <div id="prop-editor">
+    <!-- Overlays -->
+    <div id="prop-overlay" class="overlay" onclick="closeAllEditors()"></div>
+
+    <!-- Item Property Editor -->
+    <div id="prop-editor" class="popup">
         <div class="editor-header">
             <div id="editor-preview"></div>
             <h4 id="editor-title">Item Name</h4>
         </div>
 
         <div class="prop-section-label">Flags</div>
-        <label class="prop-row">
-            <input type="checkbox" id="chk-new"> <label for="chk-new">New (<span style="color:#00ff00; background:black; padding:0 2px;">★</span>)</label>
-        </label>
-        <label class="prop-row">
-            <input type="checkbox" id="chk-dupe"> <label for="chk-dupe">Dupe (<span style="color:#00e5ff; background:black; padding:0 2px;">⧉</span>)</label>
-        </label>
+        <label class="prop-row"><input type="checkbox" id="chk-new"> <label for="chk-new">New (<span style="color:#00ff00; background:black; padding:0 2px;">★</span>)</label></label>
+        <label class="prop-row"><input type="checkbox" id="chk-dupe"> <label for="chk-dupe">Dupe (<span style="color:#00e5ff; background:black; padding:0 2px;">⧉</span>)</label></label>
 
         <div class="prop-section-label">Availability Status</div>
-        <label class="prop-row">
-            <input type="radio" name="status" value="obtainable" id="rad-obt">
-            <label for="rad-obt">Obtainable (Default)</label>
-        </label>
-        <label class="prop-row">
-            <input type="radio" name="status" value="resale" id="rad-resale">
-            <label for="rad-resale">Resale (<span style="color:#ffd700; background:black; padding:0 2px;">$</span>)</label>
-        </label>
-        <label class="prop-row">
-            <input type="radio" name="status" value="unobtainable" id="rad-unob">
-            <label for="rad-unob">Not Obtainable (<span style="color:#ff3333; background:black; padding:0 2px;">✖</span>)</label>
-        </label>
-        <label class="prop-row">
-            <input type="radio" name="status" value="unreleased" id="rad-rel">
-            <label for="rad-rel">Not Released (<span style="color:#ffaa00; background:black; padding:0 2px;">⏲</span>)</label>
-        </label>
+        <label class="prop-row"><input type="radio" name="status" value="obtainable" id="rad-obt"> <label for="rad-obt">Obtainable (Default)</label></label>
+        <label class="prop-row"><input type="radio" name="status" value="resale" id="rad-resale"> <label for="rad-resale">Resale (<span style="color:#ffd700; background:black; padding:0 2px;">$</span>)</label></label>
+        <label class="prop-row"><input type="radio" name="status" value="unobtainable" id="rad-unob"> <label for="rad-unob">Not Obtainable (<span style="color:#ff3333; background:black; padding:0 2px;">✖</span>)</label></label>
+        <label class="prop-row"><input type="radio" name="status" value="unreleased" id="rad-rel"> <label for="rad-rel">Not Released (<span style="color:#ffaa00; background:black; padding:0 2px;">⏲</span>)</label></label>
 
         <div class="prop-section-label">Faction</div>
-        <label class="prop-row">
-            <input type="radio" name="side" value="neutral" id="rad-neutral">
-            <label for="rad-neutral">Neutral (Default)</label>
-        </label>
-        <label class="prop-row">
-            <input type="radio" name="side" value="A" id="rad-alliance">
-            <label for="rad-alliance">Alliance (<span style="color:#2196f3; background:black; padding:0 2px;">A</span>)</label>
-        </label>
-        <label class="prop-row">
-            <input type="radio" name="side" value="H" id="rad-horde">
-            <label for="rad-horde">Horde (<span style="color:#f44336; background:black; padding:0 2px;">H</span>)</label>
-        </label>
+        <label class="prop-row"><input type="radio" name="side" value="neutral" id="rad-neutral"> <label for="rad-neutral">Neutral (Default)</label></label>
+        <label class="prop-row"><input type="radio" name="side" value="A" id="rad-alliance"> <label for="rad-alliance">Alliance (<span style="color:#2196f3; background:black; padding:0 2px;">A</span>)</label></label>
+        <label class="prop-row"><input type="radio" name="side" value="H" id="rad-horde"> <label for="rad-horde">Horde (<span style="color:#f44336; background:black; padding:0 2px;">H</span>)</label></label>
+
+        <div style="margin-top: 15px; display: flex; justify-content: flex-end;">
+            <button class="btn btn-danger btn-icon" id="btn-delete-item" title="Delete Item">🗑</button>
+        </div>
+    </div>
+
+    <!-- Structure Editor (Renaming/Deleting Categories) -->
+    <div id="struct-editor" class="popup">
+        <h4 id="struct-title">Edit Category</h4>
+        <input type="text" id="struct-name" placeholder="Category Name" autocomplete="off">
+        <div style="display:flex; justify-content:space-between; margin-top:10px;">
+            <button id="btn-delete-struct" class="btn btn-danger" type="button">Delete</button>
+            <button id="btn-save-struct" class="btn btn-primary" type="button">Save</button>
+        </div>
     </div>
 
     <script>
         let currentFileStructure = null;
         let currentFileName = "data.json";
         let isEditMode = false;
-        let activeSortables = []; // Keep track to disable/enable
+        let activeSortables = [];
+        let deleteConfirmTimer = null;
+
+        // Editor State
         let currentEditingItemElement = null;
         let currentPreviewElement = null;
+        let currentEditingStructElement = null;
 
         const fileInput = document.getElementById('fileInput');
         const root = document.getElementById('editor-root');
         const status = document.getElementById('status');
-        const editModeBtn = document.getElementById('editModeBtn');
 
-        // Editor Elements
+        // Popup Elements
         const propEditor = document.getElementById('prop-editor');
+        const structEditor = document.getElementById('struct-editor');
         const propOverlay = document.getElementById('prop-overlay');
+
+        // Prop Editor Fields
         const editorTitle = document.getElementById('editor-title');
         const editorPreview = document.getElementById('editor-preview');
-
-        // Checkboxes
         const chkNew = document.getElementById('chk-new');
         const chkDupe = document.getElementById('chk-dupe');
-        // Radio Group
         const radiosStatus = document.getElementsByName('status');
         const radiosSide = document.getElementsByName('side');
+        const btnDeleteItem = document.getElementById('btn-delete-item');
+
+        // Struct Editor Fields
+        const structTitle = document.getElementById('struct-title');
+        const structNameInput = document.getElementById('struct-name');
+        const btnDeleteStruct = document.getElementById('btn-delete-struct');
+        const btnSaveStruct = document.getElementById('btn-save-struct');
 
         fileInput.addEventListener('change', handleFileUpload);
 
-        // Setup Editor Change Listeners
         chkNew.addEventListener('change', saveItemChanges);
         chkDupe.addEventListener('change', saveItemChanges);
         radiosStatus.forEach(r => r.addEventListener('change', saveItemChanges));
         radiosSide.forEach(r => r.addEventListener('change', saveItemChanges));
+
+        btnDeleteStruct.addEventListener('click', deleteStructure);
+        btnSaveStruct.addEventListener('click', saveStructure);
+        btnDeleteItem.addEventListener('click', deleteItem);
+
+        structNameInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') saveStructure();
+        });
 
         function handleFileUpload(event) {
             const file = event.target.files[0];
@@ -531,8 +607,8 @@
                     const json = JSON.parse(e.target.result);
                     renderEditor(json);
                     status.textContent = `${file.name}`;
-                    // Reset mode
-                    if(isEditMode) toggleEditMode();
+                    // Default to Sorting Mode
+                    setMode('sort');
                 } catch (err) {
                     alert("Invalid JSON file");
                     console.error(err);
@@ -550,17 +626,17 @@
 
         // --- Edit Mode Logic ---
 
-        function toggleEditMode() {
-            isEditMode = !isEditMode;
-            document.body.classList.toggle('edit-mode', isEditMode);
-            editModeBtn.classList.toggle('active', isEditMode);
+        function setMode(mode) {
+            isEditMode = (mode === 'edit');
 
-            // Toggle Text
-            const span = editModeBtn.querySelector('span');
-            if(isEditMode) {
-                span.textContent = "✔ Done Editing";
-            } else {
-                span.textContent = "✎ Edit Properties";
+            document.body.classList.toggle('edit-mode', isEditMode);
+
+            // Toggle Button States
+            document.getElementById('mode-sort').classList.toggle('active', mode === 'sort');
+            document.getElementById('mode-edit').classList.toggle('active', mode === 'edit');
+
+            if(!isEditMode) {
+                closeAllEditors();
             }
 
             // Enable/Disable Drag and Drop
@@ -569,179 +645,249 @@
             });
         }
 
+        // --- Item Property Editor ---
+
         function openEditor(element, data, event) {
             currentEditingItemElement = element;
 
-            // Populate Fields
             editorTitle.textContent = data.title || data.name || "Item";
             chkNew.checked = !!data.new;
             chkDupe.checked = !!data.dupe;
 
-            // Determine Status Radio State
-            if (data.notReleased) {
-                document.getElementById('rad-rel').checked = true;
-            } else if (data.notObtainable) {
-                document.getElementById('rad-unob').checked = true;
-            } else if (data.resale) {
-                document.getElementById('rad-resale').checked = true;
-            } else {
-                document.getElementById('rad-obt').checked = true;
-            }
+            if (data.notReleased) document.getElementById('rad-rel').checked = true;
+            else if (data.notObtainable) document.getElementById('rad-unob').checked = true;
+            else if (data.resale) document.getElementById('rad-resale').checked = true;
+            else document.getElementById('rad-obt').checked = true;
 
-            // Determine Faction Radio State
-            if (data.side === 'A') {
-                document.getElementById('rad-alliance').checked = true;
-            } else if (data.side === 'H') {
-                document.getElementById('rad-horde').checked = true;
-            } else {
-                document.getElementById('rad-neutral').checked = true;
-            }
+            if (data.side === 'A') document.getElementById('rad-alliance').checked = true;
+            else if (data.side === 'H') document.getElementById('rad-horde').checked = true;
+            else document.getElementById('rad-neutral').checked = true;
 
-            // Render Preview Item Card (Visual Clone)
             editorPreview.innerHTML = '';
-
             const previewCard = document.createElement('div');
             previewCard.className = 'item-card';
             previewCard.style.cursor = 'default';
-            // We reuse the standard card size from CSS
-
             const img = document.createElement('img');
             img.src = getIconUrl(data.icon);
             img.className = 'item-icon';
             img.draggable = false;
-
             previewCard.appendChild(img);
             editorPreview.appendChild(previewCard);
             currentPreviewElement = previewCard;
-
-            // Initial Indicators for preview
             updateItemIndicators(previewCard, data);
 
-            // Position Popup
             propEditor.style.display = 'block';
             propOverlay.style.display = 'block';
 
-            // Simple positioning logic
             const rect = element.getBoundingClientRect();
             let top = rect.bottom + 5;
             let left = rect.left;
 
-            // Boundary checks
             if (left + 220 > window.innerWidth) left = window.innerWidth - 230;
-            if (top + 400 > window.innerHeight) top = rect.top - 400; // Increased height allowance
+            if (top + 400 > window.innerHeight) top = rect.top - 400;
 
             propEditor.style.top = top + 'px';
             propEditor.style.left = left + 'px';
         }
 
-        function closeEditor() {
-            propEditor.style.display = 'none';
-            propOverlay.style.display = 'none';
-            currentEditingItemElement = null;
-            currentPreviewElement = null;
-        }
-
         function saveItemChanges() {
             if (!currentEditingItemElement) return;
 
-            // Get current data
             let data = JSON.parse(currentEditingItemElement.dataset.json);
 
-            // Update Checkboxes
             if (chkNew.checked) data.new = true; else delete data.new;
             if (chkDupe.checked) data.dupe = true; else delete data.dupe;
 
-            // Update Status based on Radio
             const selectedStatus = document.querySelector('input[name="status"]:checked').value;
+            delete data.resale; delete data.notObtainable; delete data.notReleased;
 
-            // Clear all first
-            delete data.resale;
-            delete data.notObtainable;
-            delete data.notReleased;
+            if (selectedStatus === 'resale') data.resale = true;
+            else if (selectedStatus === 'unobtainable') data.notObtainable = true;
+            else if (selectedStatus === 'unreleased') { data.notReleased = true; data.notObtainable = true; }
 
-            if (selectedStatus === 'resale') {
-                data.resale = true;
-            } else if (selectedStatus === 'unobtainable') {
-                data.notObtainable = true;
-            } else if (selectedStatus === 'unreleased') {
-                data.notReleased = true;
-                data.notObtainable = true; // Implied
-            }
-
-            // Update Faction based on Radio
             const selectedSide = document.querySelector('input[name="side"]:checked').value;
-            if (selectedSide === 'neutral') {
-                delete data.side;
-            } else {
-                data.side = selectedSide;
-            }
+            if (selectedSide === 'neutral') delete data.side;
+            else data.side = selectedSide;
 
-            // Save back to DOM
             currentEditingItemElement.dataset.json = JSON.stringify(data);
-
-            // Re-render item visuals (indicators) on BOTH
             updateItemIndicators(currentEditingItemElement, data);
             if(currentPreviewElement) updateItemIndicators(currentPreviewElement, data);
         }
 
+        function deleteItem() {
+            if (!currentEditingItemElement) return;
+            currentEditingItemElement.remove();
+            closeAllEditors();
+        }
+
         function updateItemIndicators(element, data) {
-            // Remove existing indicators
             element.querySelectorAll('.indicator').forEach(el => el.remove());
 
-            // Add New
-            if (data.new) {
-                const i = document.createElement('div');
-                i.className = 'indicator ind-new';
-                i.textContent = '★';
-                element.appendChild(i);
-            }
+            if (data.new) appendInd(element, '★', 'ind-new');
+            if (data.dupe) appendInd(element, '⧉', 'ind-dupe');
 
-            // Add Dupe
-            if (data.dupe) {
-                const i = document.createElement('div');
-                i.className = 'indicator ind-dupe';
-                i.textContent = '⧉';
-                element.appendChild(i);
-            }
+            if (data.resale) appendInd(element, '$', 'ind-status status-resale');
+            else if (data.notReleased) appendInd(element, '⏲', 'ind-status status-clock');
+            else if (data.notObtainable) appendInd(element, '✖', 'ind-status status-unob');
 
-            // Add Status (Exclusive position)
-            if (data.resale) {
-                const i = document.createElement('div');
-                i.className = 'indicator ind-status status-resale';
-                i.textContent = '$';
-                element.appendChild(i);
-            } else if (data.notReleased) {
-                const i = document.createElement('div');
-                i.className = 'indicator ind-status status-clock';
-                i.textContent = '⏲';
-                element.appendChild(i);
-            } else if (data.notObtainable) {
-                const i = document.createElement('div');
-                i.className = 'indicator ind-status status-unob';
-                i.textContent = '✖';
-                element.appendChild(i);
-            }
-
-            // Add Faction
             if (data.side) {
-                const i = document.createElement('div');
-                i.className = 'indicator ind-side';
-                if (data.side === 'A') {
-                    i.classList.add('side-alliance');
-                    i.textContent = 'A';
-                } else if (data.side === 'H') {
-                    i.classList.add('side-horde');
-                    i.textContent = 'H';
-                }
-                element.appendChild(i);
+                const cls = data.side === 'A' ? 'side-alliance' : 'side-horde';
+                appendInd(element, data.side, `ind-side ${cls}`);
             }
+        }
+
+        function appendInd(el, text, className) {
+            const i = document.createElement('div');
+            i.className = `indicator ${className}`;
+            i.textContent = text;
+            el.appendChild(i);
+        }
+
+        // --- Structure Editor (Categories) ---
+
+        function openStructEditor(element, type) {
+            currentEditingStructElement = element;
+            const currentName = element.dataset.name || "";
+
+            structTitle.textContent = `Edit ${type}`;
+            structNameInput.value = currentName;
+
+            // Reset delete button state
+            btnDeleteStruct.textContent = "Delete";
+            btnDeleteStruct.dataset.confirming = "false";
+
+            element.classList.add('editing-target');
+
+            structEditor.style.display = 'block';
+            propOverlay.style.display = 'block';
+            structNameInput.focus();
+        }
+
+        function saveStructure() {
+            if (!currentEditingStructElement) return;
+
+            const newName = structNameInput.value.trim() || "Untitled";
+            currentEditingStructElement.dataset.name = newName;
+
+            // Update the UI Text
+            const titleEl = currentEditingStructElement.querySelector(':scope > .header-row .header-title');
+            if(titleEl) titleEl.textContent = newName;
+
+            closeAllEditors();
+        }
+
+        function deleteStructure() {
+            if (!currentEditingStructElement) return;
+            currentEditingStructElement.remove();
+            closeAllEditors();
+        }
+
+        function addCategory(container, type) {
+            // Create a basic object structure
+            // type: 'supercat', 'cat', 'subcat'
+
+            let newEl;
+
+            if (type === 'supercat') {
+                newEl = createSuperCatElement({ name: "New Super Category", cats: [] });
+                // Append before the Add Button
+                const btn = container.querySelector('.add-supercat');
+                container.insertBefore(newEl, btn);
+            } else if (type === 'cat') {
+                newEl = createCatElement({ name: "New Category", subcats: [] });
+                const btn = container.querySelector('.add-cat');
+                container.insertBefore(newEl, btn);
+            } else if (type === 'subcat') {
+                newEl = createSubCatElement({ name: "New Group", items: [] });
+                const btn = container.querySelector('.add-subcat');
+                container.insertBefore(newEl, btn);
+            }
+
+            if(newEl) {
+                newEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+
+        function closeAllEditors() {
+            propEditor.style.display = 'none';
+            structEditor.style.display = 'none';
+            propOverlay.style.display = 'none';
+
+            if(currentEditingStructElement) {
+                currentEditingStructElement.classList.remove('editing-target');
+            }
+
+            currentEditingItemElement = null;
+            currentEditingStructElement = null;
+            currentPreviewElement = null;
+        }
+
+        // --- DOM Creation Helpers ---
+
+        function createSuperCatElement(sc) {
+            const el = document.createElement('div');
+            el.className = 'supercat';
+            el.dataset.name = sc.name;
+            el.dataset.id = sc.id || "";
+
+            el.innerHTML = `
+                <div class="header-row" onclick="if(isEditMode) openStructEditor(this.parentNode, 'Super Category')">
+                    <span class="header-title">${sc.name}</span>
+                </div>
+                <div class="cat-container"></div>
+            `;
+
+            const catContainer = el.querySelector('.cat-container');
+            renderCats(sc.cats || [], catContainer);
+
+            return el;
+        }
+
+        function createCatElement(cat) {
+            const el = document.createElement('div');
+            el.className = 'cat';
+            el.dataset.id = cat.id || '';
+            el.dataset.name = cat.name;
+
+            let count = 0;
+            if(cat.subcats) cat.subcats.forEach(s => count += (s.items ? s.items.length : 0));
+
+            el.innerHTML = `
+                <div class="header-row" onclick="if(isEditMode) openStructEditor(this.parentNode, 'Category')">
+                    <span class="header-title">${cat.name}</span>
+                    <span class="count-badge">${count} items</span>
+                </div>
+                <div class="subcat-container"></div>
+            `;
+
+            const subcatContainer = el.querySelector('.subcat-container');
+            renderSubCats(cat.subcats || [], subcatContainer);
+            return el;
+        }
+
+        function createSubCatElement(sub) {
+            const el = document.createElement('div');
+            el.className = 'subcat';
+            el.dataset.id = sub.id || '';
+            el.dataset.name = sub.name;
+
+            el.innerHTML = `
+                <div class="header-row" onclick="if(isEditMode) openStructEditor(this.parentNode, 'Sub Category')">
+                    <span class="header-title">${sub.name}</span>
+                </div>
+                <div class="item-list"></div>
+            `;
+
+            const itemList = el.querySelector('.item-list');
+            renderItems(sub.items || [], itemList);
+            return el;
         }
 
         // --- Rendering Logic ---
 
         function renderEditor(data) {
             root.innerHTML = '';
-            activeSortables = []; // Reset
+            activeSortables = [];
 
             if (data.supercats) {
                 currentFileStructure = 'achievements';
@@ -783,20 +929,14 @@
             });
 
             supercats.forEach(sc => {
-                const el = document.createElement('div');
-                el.className = 'supercat';
-                el.dataset.name = sc.name;
-                el.dataset.id = sc.id || "";
-
-                el.innerHTML = `
-                    <div class="header-row">
-                        <span class="header-title">${sc.name}</span>
-                    </div>
-                    <div class="cat-container"></div>
-                `;
-                listContainer.appendChild(el);
-                renderCats(sc.cats, el.querySelector('.cat-container'));
+                listContainer.appendChild(createSuperCatElement(sc));
             });
+
+            const btn = document.createElement('div');
+            btn.className = 'add-btn add-supercat';
+            btn.innerHTML = '+ Add Super Category';
+            btn.onclick = () => addCategory(listContainer, 'supercat');
+            listContainer.appendChild(btn);
         }
 
         function renderCats(cats, container) {
@@ -809,27 +949,14 @@
             });
 
             cats.forEach(cat => {
-                const el = document.createElement('div');
-                el.className = 'cat';
-                el.dataset.id = cat.id || '';
-                el.dataset.name = cat.name;
-
-                let count = 0;
-                if(cat.subcats) cat.subcats.forEach(s => count += (s.items ? s.items.length : 0));
-
-                el.innerHTML = `
-                    <div class="header-row">
-                        <span class="header-title">${cat.name}</span>
-                        <span class="count-badge">${count} items</span>
-                    </div>
-                    <div class="subcat-container"></div>
-                `;
-                container.appendChild(el);
-
-                if (cat.subcats) {
-                    renderSubCats(cat.subcats, el.querySelector('.subcat-container'));
-                }
+                container.appendChild(createCatElement(cat));
             });
+
+            const btn = document.createElement('div');
+            btn.className = 'add-btn add-cat';
+            btn.innerHTML = '+ Add Category';
+            btn.onclick = () => addCategory(container, 'cat');
+            container.appendChild(btn);
         }
 
         function renderSubCats(subcats, container) {
@@ -842,23 +969,14 @@
             });
 
             subcats.forEach(sub => {
-                const el = document.createElement('div');
-                el.className = 'subcat';
-                el.dataset.id = sub.id || '';
-                el.dataset.name = sub.name;
-
-                el.innerHTML = `
-                    <div class="header-row">
-                        <span class="header-title">${sub.name}</span>
-                    </div>
-                    <div class="item-list"></div>
-                `;
-                container.appendChild(el);
-
-                if (sub.items) {
-                    renderItems(sub.items, el.querySelector('.item-list'));
-                }
+                container.appendChild(createSubCatElement(sub));
             });
+
+            const btn = document.createElement('div');
+            btn.className = 'add-btn add-subcat';
+            btn.innerHTML = '+';
+            btn.onclick = () => addCategory(container, 'subcat');
+            container.appendChild(btn);
         }
 
         function renderItems(items, container) {
@@ -876,11 +994,8 @@
                 const el = document.createElement('div');
                 el.className = 'item-card';
                 el.dataset.json = JSON.stringify(item);
+                el.dataset.title = item.title || item.name || "Unknown Item";
 
-                const title = item.title || item.name || "Unknown Item";
-                el.dataset.title = title;
-
-                // Click Listener for Edit Mode
                 el.addEventListener('click', (e) => {
                     if (isEditMode) {
                         e.stopPropagation();
@@ -895,9 +1010,7 @@
                 img.loading = "lazy";
                 el.appendChild(img);
 
-                // Initial Indicators
                 updateItemIndicators(el, item);
-
                 container.appendChild(el);
             });
         }
@@ -931,7 +1044,7 @@
             const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(output, null, 2));
             const downloadAnchorNode = document.createElement('a');
             downloadAnchorNode.setAttribute("href", dataStr);
-            downloadAnchorNode.setAttribute("download", "edited_" + currentFileName);
+            downloadAnchorNode.setAttribute("download", currentFileName);
             document.body.appendChild(downloadAnchorNode);
             downloadAnchorNode.click();
             downloadAnchorNode.remove();
