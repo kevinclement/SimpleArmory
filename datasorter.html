@@ -265,6 +265,27 @@
             border-color: #ff8f00;
         }
 
+        /* Faction: Bottom Left */
+        .ind-side {
+            bottom: 0;
+            left: 0;
+            font-size: 10px;
+            padding: 0 2px;
+            border-radius: 0 3px 0 0;
+            border-right: 1px solid #555;
+            border-top: 1px solid #555;
+        }
+
+        .side-alliance {
+            color: #2196f3;
+            border-color: #0d47a1;
+        }
+
+        .side-horde {
+            color: #f44336;
+            border-color: #b71c1c;
+        }
+
 
         /* Tooltip mimic */
         .item-card::after {
@@ -448,6 +469,20 @@
             <input type="radio" name="status" value="unreleased" id="rad-rel">
             <label for="rad-rel">Not Released (<span style="color:#ffaa00; background:black; padding:0 2px;">⏲</span>)</label>
         </label>
+
+        <div class="prop-section-label">Faction</div>
+        <label class="prop-row">
+            <input type="radio" name="side" value="neutral" id="rad-neutral">
+            <label for="rad-neutral">Neutral (Default)</label>
+        </label>
+        <label class="prop-row">
+            <input type="radio" name="side" value="A" id="rad-alliance">
+            <label for="rad-alliance">Alliance (<span style="color:#2196f3; background:black; padding:0 2px;">A</span>)</label>
+        </label>
+        <label class="prop-row">
+            <input type="radio" name="side" value="H" id="rad-horde">
+            <label for="rad-horde">Horde (<span style="color:#f44336; background:black; padding:0 2px;">H</span>)</label>
+        </label>
     </div>
 
     <script>
@@ -473,14 +508,16 @@
         const chkNew = document.getElementById('chk-new');
         const chkDupe = document.getElementById('chk-dupe');
         // Radio Group
-        const radios = document.getElementsByName('status');
+        const radiosStatus = document.getElementsByName('status');
+        const radiosSide = document.getElementsByName('side');
 
         fileInput.addEventListener('change', handleFileUpload);
 
         // Setup Editor Change Listeners
         chkNew.addEventListener('change', saveItemChanges);
         chkDupe.addEventListener('change', saveItemChanges);
-        radios.forEach(r => r.addEventListener('change', saveItemChanges));
+        radiosStatus.forEach(r => r.addEventListener('change', saveItemChanges));
+        radiosSide.forEach(r => r.addEventListener('change', saveItemChanges));
 
         function handleFileUpload(event) {
             const file = event.target.files[0];
@@ -540,7 +577,7 @@
             chkNew.checked = !!data.new;
             chkDupe.checked = !!data.dupe;
 
-            // Determine Radio State
+            // Determine Status Radio State
             if (data.notReleased) {
                 document.getElementById('rad-rel').checked = true;
             } else if (data.notObtainable) {
@@ -549,6 +586,15 @@
                 document.getElementById('rad-resale').checked = true;
             } else {
                 document.getElementById('rad-obt').checked = true;
+            }
+
+            // Determine Faction Radio State
+            if (data.side === 'A') {
+                document.getElementById('rad-alliance').checked = true;
+            } else if (data.side === 'H') {
+                document.getElementById('rad-horde').checked = true;
+            } else {
+                document.getElementById('rad-neutral').checked = true;
             }
 
             // Render Preview Item Card (Visual Clone)
@@ -582,7 +628,7 @@
 
             // Boundary checks
             if (left + 220 > window.innerWidth) left = window.innerWidth - 230;
-            if (top + 280 > window.innerHeight) top = rect.top - 280;
+            if (top + 400 > window.innerHeight) top = rect.top - 400; // Increased height allowance
 
             propEditor.style.top = top + 'px';
             propEditor.style.left = left + 'px';
@@ -621,7 +667,14 @@
                 data.notReleased = true;
                 data.notObtainable = true; // Implied
             }
-            // 'obtainable' means all deleted, which we just did.
+
+            // Update Faction based on Radio
+            const selectedSide = document.querySelector('input[name="side"]:checked').value;
+            if (selectedSide === 'neutral') {
+                delete data.side;
+            } else {
+                data.side = selectedSide;
+            }
 
             // Save back to DOM
             currentEditingItemElement.dataset.json = JSON.stringify(data);
@@ -666,6 +719,20 @@
                 const i = document.createElement('div');
                 i.className = 'indicator ind-status status-unob';
                 i.textContent = '✖';
+                element.appendChild(i);
+            }
+
+            // Add Faction
+            if (data.side) {
+                const i = document.createElement('div');
+                i.className = 'indicator ind-side';
+                if (data.side === 'A') {
+                    i.classList.add('side-alliance');
+                    i.textContent = 'A';
+                } else if (data.side === 'H') {
+                    i.classList.add('side-horde');
+                    i.textContent = 'H';
+                }
                 element.appendChild(i);
             }
         }
