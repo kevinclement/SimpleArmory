@@ -65,3 +65,20 @@ def iscat(dct, supercat=None, cat=None, subcat=None, *, error_absent=False):
             res['subcats'], subcat, 'items', error_absent
         )
     return res
+
+
+# Sort a JSON-encodable object so that all the keys of its dictionaries are
+# sorted by key lexicographically, like json.dumps(sort_keys=True), except
+# if the dictionary keys are all integers, sort them numerically instead.
+def sort_obj_numeric(obj):
+    if isinstance(obj, dict):
+        d = {k: sort_obj_numeric(v) for k, v in obj.items()}
+        if all(str(s).strip().isdigit() for s in d.keys()):
+            sorted_keys = sorted(d.keys(), key=lambda x: int(x))
+        else:
+            sorted_keys = sorted(d.keys())
+        return {k: d[k] for k in sorted_keys}
+    elif isinstance(obj, list):
+        return [sort_obj_numeric(i) for i in obj]
+    else:
+        return obj
