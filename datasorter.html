@@ -10,6 +10,7 @@
         :root {
             --bg-dark: #1e1e1e;
             --bg-panel: #2b2b2b;
+            --bg-sidebar: #252526;
             --border: #444;
             --accent: #f8b700;
             --text-main: #e0e0e0;
@@ -22,13 +23,117 @@
             background-color: var(--bg-dark);
             color: var(--text-main);
             margin: 0;
-            padding: 20px;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+            width: 100vw; /* Ensure full width usage */
+        }
+
+        /* --- SIDEBAR --- */
+        .sidebar {
+            width: 250px;
+            background: var(--bg-sidebar);
+            border-right: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+            transition: margin-left 0.2s ease-in-out;
+            margin-left: 0;
+            height: 100%;
+            position: relative; /* Ensure it stays in flow */
+            z-index: 20;
+        }
+
+        .sidebar.hidden {
+            margin-left: -250px; /* Slide out instead of width: 0 */
+            border: none;
+        }
+
+        .sidebar-header {
+            padding: 15px;
+            border-bottom: 1px solid #333;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background: #2d2d30;
+            flex-shrink: 0;
+        }
+
+        .sidebar-title-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            font-weight: bold;
+            color: #ccc;
+            text-transform: uppercase;
+        }
+
+        .file-list {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 5px 0;
+        }
+
+        .file-item {
+            padding: 8px 20px;
+            cursor: pointer;
+            font-size: 14px;
+            color: #bbb;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-left: 3px solid transparent;
+        }
+
+        .file-item:hover {
+            background-color: #2a2d2e;
+            color: #fff;
+        }
+
+        .file-item.active {
+            background-color: #37373d;
+            color: #fff;
+            border-left-color: var(--accent);
+        }
+
+        .file-item.dirty::after {
+            content: '●';
+            font-size: 10px;
+            color: var(--accent);
+            margin-left: auto;
+        }
+
+        /* Sidebar Save Button */
+        #btn-save-disk {
+            width: 100%;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+        #btn-save-disk.dirty {
+            background-color: var(--accent);
+            color: #000;
+            border: none;
+        }
+        #btn-save-disk:disabled {
+            background-color: #333;
+            color: #666;
+            border: 1px solid #444;
+        }
+
+        /* --- MAIN CONTENT --- */
+        .main-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            min-width: 0; /* Prevents flex child from overflowing */
         }
 
         /* Controls Area */
         .controls {
-            position: sticky;
-            top: 0;
             background: rgba(30, 30, 30, 0.95);
             padding: 10px 20px;
             border-bottom: 1px solid #333;
@@ -36,8 +141,9 @@
             display: flex;
             gap: 15px;
             align-items: center;
-            margin-bottom: 30px;
-            backdrop-filter: blur(5px);
+            flex-shrink: 0;
+            height: 60px; /* Fixed height for consistency */
+            box-sizing: border-box;
         }
 
         .btn {
@@ -55,6 +161,7 @@
             justify-content: center;
             gap: 6px;
             min-width: 80px;
+            white-space: nowrap;
         }
 
         .btn:hover:not(:disabled) {
@@ -63,29 +170,19 @@
             border-color: #777;
         }
 
-        .btn:disabled {
-            opacity: 0.5;
-            cursor: default;
-        }
+        .btn:disabled { opacity: 0.5; cursor: default; }
 
-        .btn-danger {
-            background-color: #d32f2f;
-            border-color: #b71c1c;
-            color: white;
-        }
-        .btn-danger:hover:not(:disabled) {
-            background-color: #b71c1c;
-        }
+        .btn-danger { background-color: #d32f2f; border-color: #b71c1c; color: white; }
+        .btn-danger:hover:not(:disabled) { background-color: #b71c1c; }
 
-        .btn-primary {
-            background-color: var(--accent);
-            color: #111;
-            border: none;
-        }
-        .btn-primary:hover:not(:disabled) {
-            background-color: #e0a600;
-            color: #000;
-        }
+        .btn-primary { background-color: var(--accent); color: #111; border: none; }
+        .btn-primary:hover:not(:disabled) { background-color: #e0a600; color: #000; }
+
+        .btn-success { background-color: #2e7d32; border-color: #1b5e20; color: white; }
+        .btn-success:hover:not(:disabled) { background-color: #1b5e20; }
+
+        /* Full width button for sidebar */
+        .btn-block { width: 100%; }
 
         /* --- MODE TOGGLE GROUP --- */
         .mode-toggle {
@@ -112,26 +209,19 @@
             transition: all 0.2s;
         }
 
-        .btn-mode:hover {
-            color: #fff;
-            background: rgba(255,255,255,0.05);
-        }
-
-        /* Sort Active: Yellow */
-        .btn-mode#mode-sort.active {
-            background: var(--accent);
-            color: #000;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.4);
-        }
-
-        /* Edit Active: Green */
-        .btn-mode#mode-edit.active {
-            background: #43a047;
-            color: #fff;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.4);
-        }
+        .btn-mode:hover { color: #fff; background: rgba(255,255,255,0.05); }
+        .btn-mode#mode-sort.active { background: var(--accent); color: #000; box-shadow: 0 1px 3px rgba(0,0,0,0.4); }
+        .btn-mode#mode-edit.active { background: #43a047; color: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.4); }
 
         input[type="file"] { display: none; }
+
+        /* Scrollable Editor Area */
+        #editor-scroll {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 20px;
+            position: relative;
+        }
 
         /* Layout Structure */
         .container {
@@ -173,7 +263,6 @@
             border-radius: 4px;
         }
 
-        /* Highlight when editing */
         .editing-target {
             box-shadow: 0 0 0 2px var(--accent);
             background: rgba(248, 183, 0, 0.05);
@@ -195,7 +284,6 @@
             transition: background-color 0.2s;
         }
 
-        /* Hover effect only in edit mode */
         body.edit-mode .header-row:hover {
             background-color: rgba(255, 255, 255, 0.1);
             cursor: pointer;
@@ -251,13 +339,8 @@
         }
 
         /* Edit Mode Styles */
-        body.edit-mode .item-card {
-            cursor: pointer;
-        }
-        body.edit-mode .item-card:hover {
-            border-color: #43a047;
-            box-shadow: 0 0 8px rgba(67, 160, 71, 0.6);
-        }
+        body.edit-mode .item-card { cursor: pointer; }
+        body.edit-mode .item-card:hover { border-color: #43a047; box-shadow: 0 0 8px rgba(67, 160, 71, 0.6); }
 
         /* Selected State */
         body.edit-mode .item-card.selected {
@@ -266,16 +349,9 @@
             z-index: 100 !important;
         }
 
-        body.edit-mode .header-row {
-            cursor: pointer; /* Signal clickable headers */
-        }
+        body.edit-mode .header-row { cursor: pointer; }
 
-        .item-icon {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
+        .item-icon { width: 100%; height: 100%; object-fit: cover; display: block; }
 
         /* --- INDICATORS --- */
         .indicator {
@@ -360,32 +436,11 @@
             background: rgba(255,255,255,0.05);
         }
 
-        /* Add button visibility toggle */
         body:not(.edit-mode) .add-btn { display: none !important; }
 
-        .add-supercat {
-            width: 100%;
-            padding: 20px;
-            margin-top: 20px;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-
-        .add-cat {
-            width: 100%;
-            padding: 15px;
-            margin-top: 15px;
-            font-size: 16px;
-        }
-
-        /* New Compact Size */
-        .add-subcat {
-            width: 100px;
-            height: 70px; /* Aligns visually with header + 1 row */
-            flex-shrink: 0;
-            margin-top: 0; /* Align with top */
-            font-size: 28px;
-        }
+        .add-supercat { width: 100%; padding: 20px; margin-top: 20px; text-transform: uppercase; font-size: 16px; }
+        .add-cat { width: 100%; padding: 15px; margin-top: 15px; font-size: 16px; }
+        .add-subcat { width: 100px; height: 70px; flex-shrink: 0; margin-top: 0; font-size: 28px; }
 
         /* --- POPUPS --- */
         .overlay {
@@ -393,7 +448,7 @@
             top: 0; left: 0; width: 100%; height: 100%;
             z-index: 2999;
             display: none;
-            background: rgba(0,0,0,0.5); /* Slight dim */
+            background: rgba(0,0,0,0.5);
         }
 
         .popup {
@@ -408,112 +463,107 @@
         }
 
         #prop-editor { min-width: 220px; }
+        #struct-editor { top: 50%; left: 50%; transform: translate(-50%, -50%); width: 300px; }
 
-        #struct-editor {
-            top: 50%; left: 50%;
-            transform: translate(-50%, -50%);
-            width: 300px;
-        }
+        .editor-header { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid #444; }
+        h4 { margin: 0; font-size: 14px; color: var(--accent); border-bottom: none; padding-bottom: 0; white-space: normal; line-height: 1.3; overflow: visible; }
 
-        .editor-header {
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
-            margin-bottom: 12px;
-            padding-bottom: 12px;
-            border-bottom: 1px solid #444;
-        }
-
-        h4 {
-            margin: 0;
-            font-size: 14px;
-            color: var(--accent);
-            border-bottom: none;
-            padding-bottom: 0;
-            white-space: normal;
-            line-height: 1.3;
-            overflow: visible;
-        }
-
-        /* Inputs */
         input[type="text"] {
-            width: 100%;
-            padding: 8px;
-            background: #111;
-            border: 1px solid #444;
-            color: #fff;
-            border-radius: 4px;
-            margin-bottom: 15px;
-            box-sizing: border-box;
+            width: 100%; padding: 8px; background: #111; border: 1px solid #444; color: #fff;
+            border-radius: 4px; margin-bottom: 15px; box-sizing: border-box;
         }
-        input[type="text"]:focus {
-            border-color: var(--accent);
-            outline: none;
-        }
+        input[type="text"]:focus { border-color: var(--accent); outline: none; }
 
         #editor-preview { flex-shrink: 0; pointer-events: none; }
         #editor-preview .item-card:hover { transform: none; box-shadow: none; border-color: #000; }
 
-        .prop-row {
-            display: flex;
-            align-items: center;
-            margin-bottom: 8px;
-            cursor: pointer;
-            user-select: none;
-        }
+        .prop-row { display: flex; align-items: center; margin-bottom: 8px; cursor: pointer; user-select: none; }
         .prop-row:hover { background: rgba(255,255,255,0.05); }
         .prop-row input { margin-right: 10px; cursor: pointer; }
         .prop-row label { font-size: 13px; cursor: pointer; flex-grow: 1; }
 
-        .prop-section-label {
-            font-size: 11px;
-            color: #999;
-            text-transform: uppercase;
-            margin: 10px 0 5px 0;
-            border-bottom: 1px solid #444;
-            padding-bottom: 2px;
-        }
+        .prop-section-label { font-size: 11px; color: #999; text-transform: uppercase; margin: 10px 0 5px 0; border-bottom: 1px solid #444; padding-bottom: 2px; }
 
-        /* Icon Button Style */
-        .btn-icon {
-            min-width: 32px !important;
-            width: 32px;
-            height: 32px;
-            padding: 0;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 16px;
-        }
+        .btn-icon { min-width: 32px !important; width: 32px; height: 32px; padding: 0; display: inline-flex; align-items: center; justify-content: center; font-size: 16px; }
+
+        /* Visibility utility classes */
+        .d-none { display: none !important; }
+        .d-flex { display: flex !important; }
 
     </style>
 </head>
 <body>
 
-    <div class="controls">
-        <label class="btn btn-primary" for="fileInput">Upload JSON</label>
-        <input type="file" id="fileInput" accept=".json">
-
-        <button class="btn" onclick="exportJSON()">Export JSON</button>
-
-        <div style="width: 1px; height: 20px; background: #555; margin: 0 10px;"></div>
-
-        <div class="mode-toggle">
-            <button id="mode-sort" class="btn-mode active" onclick="setMode('sort')">
-                <span style="font-size:16px">✥</span> Sorting
-            </button>
-            <button id="mode-edit" class="btn-mode" onclick="setMode('edit')">
-                <span style="font-size:16px">✎</span> Editing
+    <!-- Sidebar for Folder Mode -->
+    <div id="sidebar" class="sidebar hidden">
+        <div class="sidebar-header">
+            <div class="sidebar-title-row">
+                <span>Project Files</span>
+                <button class="btn btn-icon" style="min-width:24px;width:24px;height:24px;font-size:12px;" onclick="refreshDirectory()" title="Refresh">↻</button>
+            </div>
+            <!-- Moved Save Button to Sidebar -->
+            <button class="btn btn-primary btn-block" id="btn-save-disk" onclick="saveToDisk()" disabled title="Save (Ctrl+S)">
+                💾 Save Changes
             </button>
         </div>
-
-        <div id="status" style="margin-left: auto; color: var(--accent); font-weight: 600; font-size: 14px;">Waiting for file...</div>
+        <div id="file-list" class="file-list">
+            <!-- Files injected here -->
+        </div>
     </div>
 
-    <div id="editor-root" class="container">
-        <div class="empty-state">
-            <h2>SimpleArmory Layout Editor</h2>
-            <p>Upload your <code>achievements.json</code>, <code>mounts.json</code>, or others to arrange them.</p>
+    <div class="main-content">
+        <div class="controls">
+            <!-- Start Group: Context Sensitive -->
+
+            <!-- Project Mode Trigger -->
+            <div id="group-init">
+                <div style="display:flex; gap:10px;">
+                    <button class="btn btn-primary" id="btn-open-folder">Open Project Folder</button>
+                    <label class="btn" for="fileInput">Upload JSON</label>
+                    <input type="file" id="fileInput" accept=".json">
+                </div>
+            </div>
+
+            <!-- Manual Mode Export (Visible only when file loaded manually) -->
+            <div id="group-manual-export" class="d-none">
+                <button class="btn" id="btn-export" onclick="exportJSON()">Download JSON</button>
+            </div>
+
+            <!-- Separator (Visible when file loaded) -->
+            <div id="controls-sep" class="d-none" style="width: 1px; height: 20px; background: #555; margin: 0 10px;"></div>
+
+            <!-- Editor Modes (Visible when file loaded) -->
+            <div id="group-modes" class="mode-toggle d-none">
+                <button id="mode-sort" class="btn-mode active" onclick="setMode('sort')">
+                    <span style="font-size:16px">✥</span> Sorting
+                </button>
+                <button id="mode-edit" class="btn-mode" onclick="setMode('edit')">
+                    <span style="font-size:16px">✎</span> Editing
+                </button>
+            </div>
+
+            <div id="status" style="margin-left: auto; color: var(--accent); font-weight: 600; font-size: 14px;">Waiting for file...</div>
+        </div>
+
+        <div id="editor-scroll">
+            <div id="editor-root" class="container">
+                <div class="empty-state">
+                    <h2>SimpleArmory Layout Editor</h2>
+                    <p style="margin-bottom:20px; color:#aaa;">A tool for organizing World of Warcraft collection data.</p>
+                    <div style="display:inline-flex; gap:20px; text-align:left;">
+                        <div>
+                            <strong style="color:var(--accent)">Project Mode</strong><br>
+                            - Edit files directly on disk<br>
+                            - Best for Chrome/Edge users
+                        </div>
+                        <div style="border-left:1px solid #444; padding-left:20px;">
+                            <strong style="color:var(--accent)">Manual Mode</strong><br>
+                            - Upload/Download files<br>
+                            - Works in all browsers
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -570,9 +620,18 @@
         let currentEditingStructElement = null;
         let selectedElements = new Set();
 
+        // File System API State
+        let dirHandle = null;
+        let activeFileHandle = null;
+        let isDirty = false;
+
         const fileInput = document.getElementById('fileInput');
         const root = document.getElementById('editor-root');
         const status = document.getElementById('status');
+        const sidebar = document.getElementById('sidebar');
+        const fileList = document.getElementById('file-list');
+        const btnSaveDisk = document.getElementById('btn-save-disk');
+        const btnExport = document.getElementById('btn-export');
 
         // Popup Elements
         const propEditor = document.getElementById('prop-editor');
@@ -595,6 +654,7 @@
         const btnSaveStruct = document.getElementById('btn-save-struct');
 
         fileInput.addEventListener('change', handleFileUpload);
+        document.getElementById('btn-open-folder').addEventListener('click', openDirectory);
 
         chkNew.addEventListener('change', saveItemChanges);
         chkDupe.addEventListener('change', saveItemChanges);
@@ -609,23 +669,246 @@
             if (e.key === 'Enter') saveStructure();
         });
 
+        // Global Keyboard Shortcut for Save
+        document.addEventListener('keydown', (e) => {
+            if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+                e.preventDefault();
+                if (activeFileHandle) {
+                    saveToDisk();
+                } else if(currentFileStructure) {
+                    exportJSON();
+                }
+            }
+        });
+
+        // --- IndexedDB Persistence ---
+        const DB_NAME = 'SimpleArmoryEditor';
+        const STORE_NAME = 'settings';
+
+        function getDB() {
+            return new Promise((resolve, reject) => {
+                const request = indexedDB.open(DB_NAME, 1);
+                request.onupgradeneeded = (event) => {
+                    event.target.result.createObjectStore(STORE_NAME);
+                };
+                request.onsuccess = (event) => resolve(event.target.result);
+                request.onerror = (event) => reject(event.target.error);
+            });
+        }
+
+        async function saveDirHandle(handle) {
+            const db = await getDB();
+            const tx = db.transaction(STORE_NAME, 'readwrite');
+            tx.objectStore(STORE_NAME).put(handle, 'projectDir');
+        }
+
+        async function getDirHandle() {
+            const db = await getDB();
+            return new Promise((resolve) => {
+                const tx = db.transaction(STORE_NAME, 'readonly');
+                const req = tx.objectStore(STORE_NAME).get('projectDir');
+                req.onsuccess = () => resolve(req.result);
+                req.onerror = () => resolve(null);
+            });
+        }
+
+        // --- File System Access API ---
+
+        async function openDirectory() {
+            try {
+                const options = { mode: 'readwrite' };
+                try {
+                    const lastHandle = await getDirHandle();
+                    if (lastHandle) options.startIn = lastHandle;
+                } catch(e) { console.log('No saved handle'); }
+
+                dirHandle = await window.showDirectoryPicker(options);
+                await saveDirHandle(dirHandle);
+
+                sidebar.classList.remove('hidden');
+
+                // Hide Init Buttons, Show File List UI
+                setAppState('project_active');
+
+                await refreshDirectory();
+            } catch (err) {
+                console.error(err);
+            }
+        }
+
+        async function refreshDirectory() {
+            if (!dirHandle) return;
+
+            fileList.innerHTML = '';
+            const entries = [];
+
+            for await (const entry of dirHandle.values()) {
+                if (entry.kind === 'file' && entry.name.endsWith('.json')) {
+                    entries.push(entry);
+                }
+            }
+
+            entries.sort((a, b) => a.name.localeCompare(b.name));
+
+            entries.forEach(entry => {
+                const div = document.createElement('div');
+                div.className = 'file-item';
+                div.textContent = entry.name;
+                div.onclick = () => loadFileFromHandle(entry, div);
+                fileList.appendChild(div);
+            });
+        }
+
+        async function loadFileFromHandle(handle, element) {
+            // Guard against discarding unsaved changes
+            if (isDirty) {
+                if (!confirm("You have unsaved changes in the current file. switching files will discard them.\n\nAre you sure you want to continue?")) {
+                    return;
+                }
+            }
+
+            activeFileHandle = handle;
+            currentFileName = handle.name;
+
+            document.querySelectorAll('.file-item').forEach(el => el.classList.remove('active'));
+            element.classList.add('active');
+
+            try {
+                const file = await handle.getFile();
+                const text = await file.text();
+                const json = JSON.parse(text);
+
+                renderEditor(json);
+                status.textContent = `Editing: ${handle.name}`;
+                setMode('sort');
+                markDirty(false);
+                btnSaveDisk.disabled = false;
+
+            } catch (err) {
+                console.error(err);
+                alert("Error reading file.");
+            }
+        }
+
+        async function saveToDisk() {
+            if (!activeFileHandle) return;
+
+            try {
+                const output = getCurrentJSON();
+                if (!output) return;
+
+                const writable = await activeFileHandle.createWritable();
+                await writable.write(deterministicStringify(output) + '\n');
+                await writable.close();
+
+                markDirty(false);
+
+                const originalText = btnSaveDisk.textContent;
+                btnSaveDisk.textContent = "Saved!";
+                setTimeout(() => {
+                    if(!isDirty) btnSaveDisk.textContent = "💾 Save Changes";
+                }, 1500);
+
+            } catch (err) {
+                console.error(err);
+                alert("Error saving file.");
+            }
+        }
+
+        function markDirty(dirty) {
+            isDirty = dirty;
+            const activeItem = document.querySelector('.file-item.active');
+            if (activeItem) {
+                if (dirty) activeItem.classList.add('dirty');
+                else activeItem.classList.remove('dirty');
+            }
+
+            if(dirty) {
+                btnSaveDisk.classList.add('dirty');
+                btnSaveDisk.textContent = "💾 Save Changes *";
+            } else {
+                btnSaveDisk.classList.remove('dirty');
+                btnSaveDisk.textContent = "💾 Save Changes";
+            }
+        }
+
+        // Guard against closing tab
+        window.onbeforeunload = function(e) {
+            if (isDirty) {
+                e.preventDefault();
+                e.returnValue = '';
+                return "You have unsaved changes.";
+            }
+        };
+
+        // --- Helper: UI State Management ---
+        function setAppState(state) {
+            const groupInit = document.getElementById('group-init');
+            const groupManualExport = document.getElementById('group-manual-export');
+            const groupModes = document.getElementById('group-modes');
+            const controlsSep = document.getElementById('controls-sep');
+
+            if (state === 'manual_active') {
+                groupInit.classList.add('d-none');
+                groupManualExport.classList.remove('d-none');
+                groupModes.classList.remove('d-none');
+                controlsSep.classList.remove('d-none');
+                sidebar.classList.add('hidden');
+            } else if (state === 'project_active') {
+                groupInit.classList.add('d-none');
+                groupManualExport.classList.add('d-none'); // Hide download button in project mode
+                groupModes.classList.remove('d-none');
+                controlsSep.classList.remove('d-none');
+            }
+        }
+
+        // --- Serializer ---
+
+        function deterministicStringify(obj) {
+            function deepSort(value) {
+                if (Array.isArray(value)) {
+                    return value.map(deepSort);
+                } else if (value !== null && typeof value === 'object') {
+                    const keys = Object.keys(value);
+                    // Check if map keys are numeric (e.g. "0", "500", "1000")
+                    const isNumeric = keys.length > 0 && keys.every(k => !isNaN(parseFloat(k)) && isFinite(k));
+
+                    if (isNumeric) {
+                        keys.sort((a, b) => parseFloat(a) - parseFloat(b));
+                    } else {
+                        keys.sort(); // Lexicographical
+                    }
+
+                    const sorted = {};
+                    keys.forEach(k => {
+                        sorted[k] = deepSort(value[k]);
+                    });
+                    return sorted;
+                }
+                return value;
+            }
+            return JSON.stringify(deepSort(obj), null, 2);
+        }
+
+        // --- Manual Upload Fallback ---
+
         function handleFileUpload(event) {
             const file = event.target.files[0];
             if (!file) return;
 
             currentFileName = file.name;
+            activeFileHandle = null;
 
             const reader = new FileReader();
             reader.onload = (e) => {
                 try {
                     const json = JSON.parse(e.target.result);
                     renderEditor(json);
-                    status.textContent = `${file.name}`;
+                    status.textContent = `${file.name} (Manual Mode)`;
+                    setAppState('manual_active');
                     setMode('sort');
                 } catch (err) {
                     alert("Invalid JSON file");
-                    console.error(err);
-                    status.textContent = "Error loading file";
                 }
             };
             reader.readAsText(file);
@@ -771,7 +1054,6 @@
         }
 
         function saveItemChanges() {
-            // Read from UI
             const updates = {};
             if (chkNew.checked) updates.new = true; else updates.new = false;
             if (chkDupe.checked) updates.dupe = true; else updates.dupe = false;
@@ -787,7 +1069,7 @@
             const targets = selectedElements.size > 0 ? Array.from(selectedElements) : [currentEditingItemElement];
 
             targets.forEach(el => {
-                let itemData = el.__data;
+                let itemData = JSON.parse(el.dataset.json);
 
                 if(updates.new) itemData.new = true; else delete itemData.new;
                 if(updates.dupe) itemData.dupe = true; else delete itemData.dupe;
@@ -799,13 +1081,14 @@
 
                 if (updates.side) itemData.side = updates.side; else delete itemData.side;
 
-                // Visual Update Only (Data is already in el.__data)
+                el.dataset.json = JSON.stringify(itemData);
                 updateItemIndicators(el, itemData);
             });
 
             if(currentPreviewElement && targets.length === 1) {
-                updateItemIndicators(currentPreviewElement, targets[0].__data);
+                updateItemIndicators(currentPreviewElement, JSON.parse(targets[0].dataset.json));
             }
+            markDirty(true);
         }
 
         function deleteItem() {
@@ -814,6 +1097,7 @@
 
             closeAllEditors();
             clearSelection();
+            markDirty(true);
         }
 
         function updateItemIndicators(element, data) {
@@ -848,7 +1132,7 @@
             structTitle.textContent = `Edit ${type}`;
             structNameInput.value = currentName;
 
-            // Reset delete button state if user clicks it twice logic is used
+            // Reset delete button state
             btnDeleteStruct.textContent = "Delete";
             btnDeleteStruct.dataset.confirming = "false";
 
@@ -869,26 +1153,16 @@
             if(titleEl) titleEl.textContent = newName;
 
             closeAllEditors();
+            markDirty(true);
         }
 
         function deleteStructure() {
             if (!currentEditingStructElement) return;
 
-            if (btnDeleteStruct.dataset.confirming !== "true") {
-                btnDeleteStruct.dataset.confirming = "true";
-                btnDeleteStruct.textContent = "Confirm?";
-
-                if (deleteConfirmTimer) clearTimeout(deleteConfirmTimer);
-                deleteConfirmTimer = setTimeout(() => {
-                    btnDeleteStruct.dataset.confirming = "false";
-                    btnDeleteStruct.textContent = "Delete";
-                }, 3000);
-                return;
-            }
-
-            if (deleteConfirmTimer) clearTimeout(deleteConfirmTimer);
+            // Single click delete logic
             currentEditingStructElement.remove();
             closeAllEditors();
+            markDirty(true);
         }
 
         function addCategory(container, type) {
@@ -909,6 +1183,7 @@
             }
 
             if(newEl) newEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            markDirty(true);
         }
 
         function closeAllEditors() {
@@ -1005,6 +1280,7 @@
             activeSortables = [];
             selectedElements = new Set();
 
+            // Detect structure
             if (data.supercats) {
                 currentFileStructure = 'achievements';
                 renderSuperCats(data.supercats, root);
@@ -1027,7 +1303,12 @@
         }
 
         function registerSortable(el, options) {
-            const s = new Sortable(el, options);
+            const s = new Sortable(el, {
+                ...options,
+                onEnd: function (evt) {
+                    markDirty(true);
+                }
+            });
             activeSortables.push(s);
             return s;
         }
@@ -1111,9 +1392,10 @@
                 el.className = 'item-card';
                 // OPTIMIZATION: Store data directly on element
                 el.__data = item;
+                el.dataset.json = JSON.stringify(item);
                 el.dataset.title = item.title || item.name || "Unknown Item";
 
-                el.addEventListener('click', (e) => handleItemClick(el, el.__data, e));
+                el.addEventListener('click', (e) => handleItemClick(el, JSON.parse(el.dataset.json), e));
 
                 const img = document.createElement('img');
                 img.src = getIconUrl(item.icon);
@@ -1142,7 +1424,7 @@
                 return;
             }
 
-            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(output, null, 2));
+            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(deterministicStringify(output) + '\n');
             const downloadAnchorNode = document.createElement('a');
             downloadAnchorNode.setAttribute("href", dataStr);
             downloadAnchorNode.setAttribute("download", currentFileName);
@@ -1209,8 +1491,8 @@
         function scrapeItems(container) {
             const els = Array.from(container.children);
             return els.map(el => {
-                // OPTIMIZATION: Read direct property instead of dataset parsing
-                return el.__data;
+                if (!el.dataset.json) return null;
+                return JSON.parse(el.dataset.json);
             }).filter(x => x);
         }
     </script>
