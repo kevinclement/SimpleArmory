@@ -7,9 +7,9 @@ import aiohttp
 
 
 async def get_realm_list(session, region):
-    api_url = 'https://worldofwarcraft.blizzard.com/graphql'
+    api_url = 'https://worldofwarcraft.blizzard.com/en-us/graphql'
     graphql_realm_query = {
-        "operationName": "GetInitialRealmStatusData",
+        "operationName": "GetRealmStatusData",
         "variables": {
             "input": {
                 "compoundRegionGameVersionSlug": region
@@ -19,8 +19,8 @@ async def get_realm_list(session, region):
             "persistedQuery": {
                 "version": 1,
                 "sha256Hash": (
-                    "9c7cc66367037fda3007b7f592201c26"
-                    "10edb2c9a9292975cd131a37bbe61930"
+                    "b37e546366a58e211e922b8c96cd1ff7"
+                    "4249f564a49029cc9737fef3300ff175"
                 )
             }
         }
