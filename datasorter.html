@@ -316,6 +316,16 @@
             contain: layout;
         }
 
+        .faction-list {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            background: rgba(0,0,0,0.2);
+            padding: 10px;
+            border-radius: 4px;
+            min-height: 40px;
+        }
+
         .item-list:empty, .item-list.sortable-drag-active {
             border-color: #333;
             min-width: 40px;
@@ -341,6 +351,24 @@
             z-index: 1000;
             border-color: #fff;
             box-shadow: 0 0 5px rgba(0,0,0,0.8);
+        }
+
+        /* Faction Item */
+        .faction-card {
+            background: #333;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: grab;
+            border: 1px solid #444;
+            color: #ddd;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+
+        .faction-card:hover {
+            background: #444;
+            border-color: #666;
         }
 
         /* Edit Mode Styles */
@@ -1131,19 +1159,11 @@
 
                 el.dataset.json = JSON.stringify(itemData);
                 updateItemIndicators(el, itemData);
-
-                // No need to update wowhead attr on grid items anymore
             });
 
             if(currentPreviewElement && targets.length === 1) {
                 updateItemIndicators(currentPreviewElement, JSON.parse(targets[0].dataset.json));
             }
-
-            // Refresh tooltips for modal only if needed
-             if(window.$WH && window.$WH.Tooltips) {
-                 setTimeout(() => window.$WH.Tooltips.refreshLinks(), 50);
-             }
-
             markDirty(true);
         }
 
@@ -1341,22 +1361,140 @@
                 currentFileStructure = 'achievements';
                 renderSuperCats(data.supercats, root);
             } else if (Array.isArray(data)) {
-                currentFileStructure = 'standard';
-                renderCats(data, root);
+                // Check if it's the specific Factions structure (array of objects with 'factions' key)
+                if (data.length > 0 && data[0].factions) {
+                    currentFileStructure = 'factions';
+                    renderFactions(data, root);
+                } else {
+                    currentFileStructure = 'standard';
+                    renderCats(data, root);
+                }
             } else if (data.cats) {
                  currentFileStructure = 'object_root';
                  renderCats(data.cats, root);
             } else {
-                status.textContent = "Unknown structure. Attempting render...";
-                const potentialArray = Object.values(data).find(val => Array.isArray(val));
-                if(potentialArray) {
-                    currentFileStructure = 'standard';
-                    renderCats(potentialArray, root);
+                // Check for unsupported files like servers.json
+                if (data.realms) {
+                    root.innerHTML = `<div class="empty-state">File format not supported (Server List).<br>This editor is for Collections, Achievements, and Factions.</div>`;
+                    status.textContent = "Unsupported File";
                 } else {
-                     root.innerHTML = `<div class="empty-state">Could not detect structure.</div>`;
+                    status.textContent = "Unknown structure. Attempting render...";
+                    const potentialArray = Object.values(data).find(val => Array.isArray(val));
+                    if(potentialArray) {
+                        currentFileStructure = 'standard';
+                        renderCats(potentialArray, root);
+                    } else {
+                         root.innerHTML = `<div class="empty-state">Could not detect a valid category structure in this JSON.</div>`;
+                    }
                 }
             }
         }
+
+        // --- Faction Rendering ---
+
+        function renderFactions(groups, container) {
+            const listContainer = document.createElement('div');
+            listContainer.className = 'supercat-list'; // Reuse layout
+            container.appendChild(listContainer);
+
+            // Allow reordering top groups
+            registerSortable(listContainer, {
+                animation: 150,
+                handle: '.header-row',
+                ghostClass: 'sortable-ghost',
+                disabled: isEditMode
+            });
+
+            groups.forEach(group => {
+                const el = document.createElement('div');
+                el.className = 'cat'; // Reuse cat style for Faction Groups
+                el.dataset.name = group.name;
+
+                el.innerHTML = `
+                    <div class="header-row" onclick="if(isEditMode) openStructEditor(this.parentNode, 'Faction Group')">
+                        <span class="header-title">${group.name}</span>
+                        <span class="count-badge">${group.factions ? group.factions.length : 0} factions</span>
+                    </div>
+                    <div class="faction-list-container"></div>
+                `;
+
+                listContainer.appendChild(el);
+
+                const factionContainer = el.querySelector('.faction-list-container');
+                factionContainer.className = 'faction-list'; // Specific style for chips
+
+                if (group.factions) {
+                    renderFactionItems(group.factions, factionContainer);
+                }
+            });
+
+            // Add Faction Group Button
+            const btn = document.createElement('div');
+            btn.className = 'add-btn add-cat';
+            btn.innerHTML = '+ Add Faction Group';
+            btn.onclick = () => addFactionGroup(listContainer);
+            listContainer.appendChild(btn);
+        }
+
+        function renderFactionItems(factions, container) {
+            registerSortable(container, {
+                group: 'factions',
+                animation: 150,
+                ghostClass: 'sortable-ghost',
+                disabled: isEditMode
+            });
+
+            factions.forEach(faction => {
+                const el = document.createElement('div');
+                el.className = 'faction-card';
+                el.dataset.json = JSON.stringify(faction);
+                el.textContent = faction.name;
+
+                // Allow simple rename via prompt for now (factions are simple)
+                el.addEventListener('click', () => {
+                    if (isEditMode) {
+                        const newName = prompt("Rename Faction:", faction.name);
+                        if(newName) {
+                            faction.name = newName;
+                            el.textContent = newName;
+                            el.dataset.json = JSON.stringify(faction);
+                            markDirty(true);
+                        }
+                    }
+                });
+
+                container.appendChild(el);
+            });
+        }
+
+        function addFactionGroup(container) {
+             // Basic implementation reusing createCatElement logic but tailored
+             // For simplicity, reusing text/structure editing logic
+             const newGroup = { name: "New Faction Group", factions: [] };
+             // Re-render whole view or insert element?
+             // To keep it simple, we'll just reload from current DOM state + new item
+             // Actually, let's insert DOM node
+
+             const el = document.createElement('div');
+             el.className = 'cat';
+             el.dataset.name = newGroup.name;
+             el.innerHTML = `
+                    <div class="header-row" onclick="if(isEditMode) openStructEditor(this.parentNode, 'Faction Group')">
+                        <span class="header-title">${newGroup.name}</span>
+                    </div>
+                    <div class="faction-list"></div>
+                `;
+             const btn = container.querySelector('.add-btn');
+             container.insertBefore(el, btn);
+
+             // Init sortable on new list
+             renderFactionItems([], el.querySelector('.faction-list'));
+
+             el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+             markDirty(true);
+        }
+
+        // --- Standard Renderers (unchanged) ---
 
         function registerSortable(el, options) {
             const s = new Sortable(el, {
@@ -1502,6 +1640,8 @@
                 return scrapeCats(root);
             } else if (currentFileStructure === 'object_root') {
                  return { cats: scrapeCats(root) };
+            } else if (currentFileStructure === 'factions') {
+                 return scrapeFactions(root);
             }
             return null;
         }
@@ -1552,6 +1692,27 @@
             return els.map(el => {
                 if (!el.dataset.json) return null;
                 return JSON.parse(el.dataset.json);
+            }).filter(x => x);
+        }
+
+        function scrapeFactions(container) {
+            // Container has .supercat-list > .cat > .faction-list > .faction-card
+            const listContainer = container.querySelector('.supercat-list');
+            if(!listContainer) return [];
+
+            const groupEls = Array.from(listContainer.children);
+            return groupEls.map(el => {
+                if(!el.classList.contains('cat')) return null; // using 'cat' class for groups
+
+                const factionList = el.querySelector('.faction-list');
+                const factions = Array.from(factionList.children).map(card => {
+                    return JSON.parse(card.dataset.json);
+                });
+
+                return {
+                    name: el.dataset.name,
+                    factions: factions
+                };
             }).filter(x => x);
         }
     </script>
