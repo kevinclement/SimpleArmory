@@ -136,7 +136,7 @@ class MountFixer(WowToolsFixer):
 
         mount = self.get_mount(mount_id)
         if mount is None:
-            return
+            raise RuntimeError(f"Cannot find missing mount {mount_id}")
 
         changelog(
             f"Mount {mount_id} \"{mount['name']}\" missing:"
@@ -156,13 +156,14 @@ class MountFixer(WowToolsFixer):
         for cat in self.mounts:
             for subcat in cat['subcats']:
                 for item in subcat['items']:
-                    
-                    # NOTE: If we're upgraded to a new version of the database and then try to update back
-                    # you will have mounts that are not found, so print them out so I can trim them out
-                    # and get to a good base state. 
-                    #if int(item['ID']) not in self.dbc_mount:
-                    #    print("DEBUG: MISSING MOUNT: " + str(item['ID']))
-                    #    continue
+                    # NOTE: If we're upgraded to a new version of the database
+                    # and then try to update back you will have mounts that are
+                    # not found, so print them out so I can trim them out and
+                    # get to a good base state.
+                    #
+                    # if int(item['ID']) not in self.dbc_mount:
+                    #     print("DEBUG: MISSING MOUNT: " + str(item['ID']))
+                    #     continue
 
                     fixed_mount = self.get_mount(int(item['ID']))
                     item['ID'] = fixed_mount['ID']

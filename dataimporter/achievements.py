@@ -35,7 +35,7 @@ class AchievementFixer(WowToolsFixer):
         }
 
         # Remove hidden/ignored achievements from master list
-        for ach_id, ach in list(self.dbc_achiev.items()):
+        for ach_id, _ in list(self.dbc_achiev.items()):
             blacklisted_flags = (
                 0x1  # COUNTER (Statistics)
                 | 0x4000  # GUILD
@@ -211,7 +211,7 @@ class AchievementFixer(WowToolsFixer):
                             pass
         for ach_id in missing:
             path = self.id_to_cat[int(ach_id)]
-            cat = iscat(self.achievs, *path, 'TODO')
+            cat = iscat(self.achievs, path[0], path[1], 'TODO')
             newach = self.genach(int(ach_id))
             cat['items'].append(newach)
             changelog(

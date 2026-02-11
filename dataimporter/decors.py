@@ -15,7 +15,7 @@ class DecorFixer(WowToolsFixer):
         self.dbc_decor = {
             int(e['ID']): e for e in self.dbc_get_table('housedecor')
         }
-        
+
         self.dbc_item = {
             int(e['ID']): e for e in self.dbc_get_table('item')
         }
@@ -31,7 +31,7 @@ class DecorFixer(WowToolsFixer):
     def get_decor(self, decor_id: int):
         name = self.dbc_decor[int(decor_id)]['Name_lang']
         if 'DNT' in name:
-            return None
+            return 'DNT'
         item_id = self.dbc_decor[decor_id]['ItemID']
 
         try:
@@ -59,9 +59,10 @@ class DecorFixer(WowToolsFixer):
 
     def fix_missing_decor(self, decor_id: int):
         decor = self.get_decor(decor_id)
-        if decor is None:
+        if decor == 'DNT':
             return
-
+        if decor is None:
+            raise RuntimeError(f"Cannot find missing decor {decor_id}")
         changelog(
             f"Decor {decor_id} \"{decor['name']}\" missing:"
             f" https://www.wowhead.com/decor/{decor['ID']}"
