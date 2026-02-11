@@ -6,6 +6,11 @@
     <title>SimpleArmory JSON Editor</title>
     <!-- SortableJS for Drag and Drop -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>
+
+    <!-- Wowhead Tooltips -->
+    <script>const whTooltips = {colorLinks: true, iconizeLinks: false, renameLinks: false};</script>
+    <script src="https://wow.zamimg.com/js/tooltips.js"></script>
+
     <style>
         :root {
             --bg-dark: #1e1e1e;
@@ -400,7 +405,10 @@
             border: 1px solid #333;
             box-shadow: 0 4px 6px rgba(0,0,0,0.5);
         }
+        /* Only show custom tooltip if NOT in edit mode OR if it's the preview (handled specially) */
+        /* UPDATE: Per user request, show simple tooltip everywhere except modal preview */
         .item-card:hover::after { opacity: 1; }
+        #editor-preview .item-card:hover::after { opacity: 0 !important; }
 
         /* Sortable States */
         .sortable-ghost { opacity: 0.2; background: var(--accent); }
@@ -474,8 +482,11 @@
         }
         input[type="text"]:focus { border-color: var(--accent); outline: none; }
 
-        #editor-preview { flex-shrink: 0; pointer-events: none; }
-        #editor-preview .item-card:hover { transform: none; box-shadow: none; border-color: #000; }
+        #editor-preview { flex-shrink: 0; }
+        /* Link styling for preview */
+        #editor-preview a { display: block; border: 1px solid #000; transition: border-color 0.2s; }
+        #editor-preview a:hover { border-color: var(--accent); }
+        #editor-preview img { display: block; width: 36px; height: 36px; }
 
         .prop-row { display: flex; align-items: center; margin-bottom: 8px; cursor: pointer; user-select: none; }
         .prop-row:hover { background: rgba(255,255,255,0.05); }
@@ -716,6 +727,7 @@
 
         async function openDirectory() {
             try {
+                // Feature Detection specifically for permission model
                 const options = { mode: 'readwrite' };
                 try {
                     const lastHandle = await getDirHandle();
@@ -732,7 +744,13 @@
 
                 await refreshDirectory();
             } catch (err) {
-                console.error(err);
+                // If it's a security error (like in iframe), fallback gracefully
+                // Catch all security errors including those from subframes
+                if(err.name === 'SecurityError' || err.message.includes('sub frames') || err.message.includes('user gesture')) {
+                     alert("Project Folder access requires running this file directly in the browser (not in a preview frame). \n\nPlease use 'Upload JSON' for now, or download this HTML file and open it locally.");
+                } else if (err.name !== 'AbortError') {
+                    console.error(err);
+                }
             }
         }
 
@@ -914,6 +932,15 @@
             reader.readAsText(file);
         }
 
+        function getWowheadUrl(item) {
+            if (item.wowheadUrl) return item.wowheadUrl;
+            if (item.spellid) return `https://www.wowhead.com/spell=${item.spellid}`;
+            if (item.creatureId) return `https://www.wowhead.com/npc=${item.creatureId}`;
+            if (item.itemId) return `https://www.wowhead.com/item=${item.itemId}`;
+            if (item.points !== undefined) return `https://www.wowhead.com/achievement=${item.id}`;
+            return null;
+        }
+
         function getIconUrl(iconName) {
             if (!iconName) return 'https://wow.zamimg.com/images/wow/icons/large/inv_misc_questionmark.jpg';
             const cleanName = iconName.replace(/\.(jpg|png)$/i, '').toLowerCase();
@@ -1013,18 +1040,39 @@
             } else {
                 editorTitle.textContent = data.title || data.name || "Item";
 
+                // Render Preview with Link
                 editorPreview.innerHTML = '';
                 const previewCard = document.createElement('div');
                 previewCard.className = 'item-card';
                 previewCard.style.cursor = 'default';
+
+                // Construct Link for Modal Preview
+                const whUrl = getWowheadUrl(data);
                 const img = document.createElement('img');
                 img.src = getIconUrl(data.icon);
                 img.className = 'item-icon';
                 img.draggable = false;
-                previewCard.appendChild(img);
+
+                if (whUrl) {
+                    const link = document.createElement('a');
+                    link.href = whUrl;
+                    link.target = "_blank";
+                    link.title = ""; // Ensure empty title to avoid browser tooltip
+                    link.appendChild(img);
+                    previewCard.appendChild(link);
+                } else {
+                    previewCard.appendChild(img);
+                }
+
+                // Add to DOM
                 editorPreview.appendChild(previewCard);
                 currentPreviewElement = previewCard;
                 updateItemIndicators(previewCard, data);
+
+                // Try refresh links if WH script is loaded
+                if(window.$WH && window.$WH.Tooltips) {
+                   setTimeout(() => $WH.Tooltips.refreshLinks(), 50);
+                }
             }
 
             chkNew.checked = !!data.new;
@@ -1083,11 +1131,19 @@
 
                 el.dataset.json = JSON.stringify(itemData);
                 updateItemIndicators(el, itemData);
+
+                // No need to update wowhead attr on grid items anymore
             });
 
             if(currentPreviewElement && targets.length === 1) {
                 updateItemIndicators(currentPreviewElement, JSON.parse(targets[0].dataset.json));
             }
+
+            // Refresh tooltips for modal only if needed
+             if(window.$WH && window.$WH.Tooltips) {
+                 setTimeout(() => window.$WH.Tooltips.refreshLinks(), 50);
+             }
+
             markDirty(true);
         }
 
@@ -1394,6 +1450,9 @@
                 el.__data = item;
                 el.dataset.json = JSON.stringify(item);
                 el.dataset.title = item.title || item.name || "Unknown Item";
+
+                // Note: We intentionally do NOT add data-wowhead to grid items anymore
+                // to keep the UI fast and consistent.
 
                 el.addEventListener('click', (e) => handleItemClick(el, JSON.parse(el.dataset.json), e));
 
