@@ -1,0 +1,1720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleArmory JSON Editor</title>
+    <!-- SortableJS for Drag and Drop -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>
+
+    <!-- Wowhead Tooltips -->
+    <script>const whTooltips = {colorLinks: true, iconizeLinks: false, renameLinks: false};</script>
+    <script src="https://wow.zamimg.com/js/tooltips.js"></script>
+
+    <style>
+        :root {
+            --bg-dark: #1e1e1e;
+            --bg-panel: #2b2b2b;
+            --bg-sidebar: #252526;
+            --border: #444;
+            --accent: #f8b700;
+            --text-main: #e0e0e0;
+            --text-muted: #888;
+            --card-size: 36px;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+            width: 100vw; /* Ensure full width usage */
+        }
+
+        /* --- SIDEBAR --- */
+        .sidebar {
+            width: 250px;
+            background: var(--bg-sidebar);
+            border-right: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+            transition: margin-left 0.2s ease-in-out;
+            margin-left: 0;
+            height: 100%;
+            position: relative; /* Ensure it stays in flow */
+            z-index: 20;
+        }
+
+        .sidebar.hidden {
+            margin-left: -250px; /* Slide out instead of width: 0 */
+            border: none;
+        }
+
+        .sidebar-header {
+            padding: 15px;
+            border-bottom: 1px solid #333;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background: #2d2d30;
+            flex-shrink: 0;
+        }
+
+        .sidebar-title-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            font-weight: bold;
+            color: #ccc;
+            text-transform: uppercase;
+        }
+
+        .file-list {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 5px 0;
+        }
+
+        .file-item {
+            padding: 8px 20px;
+            cursor: pointer;
+            font-size: 14px;
+            color: #bbb;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-left: 3px solid transparent;
+        }
+
+        .file-item:hover {
+            background-color: #2a2d2e;
+            color: #fff;
+        }
+
+        .file-item.active {
+            background-color: #37373d;
+            color: #fff;
+            border-left-color: var(--accent);
+        }
+
+        .file-item.dirty::after {
+            content: '●';
+            font-size: 10px;
+            color: var(--accent);
+            margin-left: auto;
+        }
+
+        /* Sidebar Save Button */
+        #btn-save-disk {
+            width: 100%;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+        #btn-save-disk.dirty {
+            background-color: var(--accent);
+            color: #000;
+            border: none;
+        }
+        #btn-save-disk:disabled {
+            background-color: #333;
+            color: #666;
+            border: 1px solid #444;
+        }
+
+        /* --- MAIN CONTENT --- */
+        .main-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            min-width: 0; /* Prevents flex child from overflowing */
+        }
+
+        /* Controls Area */
+        .controls {
+            background: rgba(30, 30, 30, 0.95);
+            padding: 10px 20px;
+            border-bottom: 1px solid #333;
+            z-index: 2000;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-shrink: 0;
+            height: 60px; /* Fixed height for consistency */
+            box-sizing: border-box;
+        }
+
+        .btn {
+            background-color: #333;
+            color: #ddd;
+            border: 1px solid #555;
+            padding: 8px 16px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            min-width: 80px;
+            white-space: nowrap;
+        }
+
+        .btn:hover:not(:disabled) {
+            background-color: #444;
+            color: #fff;
+            border-color: #777;
+        }
+
+        .btn:disabled { opacity: 0.5; cursor: default; }
+
+        .btn-danger { background-color: #d32f2f; border-color: #b71c1c; color: white; }
+        .btn-danger:hover:not(:disabled) { background-color: #b71c1c; }
+
+        .btn-primary { background-color: var(--accent); color: #111; border: none; }
+        .btn-primary:hover:not(:disabled) { background-color: #e0a600; color: #000; }
+
+        .btn-success { background-color: #2e7d32; border-color: #1b5e20; color: white; }
+        .btn-success:hover:not(:disabled) { background-color: #1b5e20; }
+
+        /* Full width button for sidebar */
+        .btn-block { width: 100%; }
+
+        /* --- MODE TOGGLE GROUP --- */
+        .mode-toggle {
+            display: flex;
+            background: #111;
+            border: 1px solid #444;
+            border-radius: 6px;
+            padding: 2px;
+            gap: 2px;
+        }
+
+        .btn-mode {
+            background: transparent;
+            border: none;
+            color: #888;
+            padding: 6px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s;
+        }
+
+        .btn-mode:hover { color: #fff; background: rgba(255,255,255,0.05); }
+        .btn-mode#mode-sort.active { background: var(--accent); color: #000; box-shadow: 0 1px 3px rgba(0,0,0,0.4); }
+        .btn-mode#mode-edit.active { background: #43a047; color: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.4); }
+
+        input[type="file"] { display: none; }
+
+        /* Scrollable Editor Area */
+        #editor-scroll {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 20px;
+            position: relative;
+        }
+
+        /* Layout Structure */
+        .container {
+            max-width: 1800px;
+            margin: 0 auto;
+            padding-bottom: 100px;
+        }
+
+        /* --- HIERARCHY STYLING & PERFORMANCE --- */
+
+        .supercat {
+            margin-bottom: 40px;
+            padding-left: 10px;
+            border-left: 2px solid #444;
+            contain: layout;
+            transition: box-shadow 0.2s, border-color 0.2s;
+        }
+
+        .cat {
+            margin-bottom: 40px;
+            contain: layout style;
+            transition: box-shadow 0.2s, border-color 0.2s;
+        }
+
+        .subcat-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .subcat {
+            display: flex;
+            flex-direction: column;
+            max-width: 320px;
+            min-width: 40px;
+            contain: layout;
+            transition: box-shadow 0.2s, background 0.2s;
+            border-radius: 4px;
+        }
+
+        .editing-target {
+            box-shadow: 0 0 0 2px var(--accent);
+            background: rgba(248, 183, 0, 0.05);
+            z-index: 2500;
+            position: relative;
+        }
+
+        /* --- HEADERS --- */
+
+        .header-row {
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+            cursor: grab;
+            user-select: none;
+            margin-bottom: 6px;
+            padding: 4px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+
+        body.edit-mode .header-row:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+        }
+
+        .cat > .header-row .header-title { font-size: 1.5em; color: #fff; font-weight: 400; }
+        .supercat > .header-row .header-title { font-size: 1.8em; color: var(--accent); text-transform: uppercase; letter-spacing: 1px; }
+        .subcat > .header-row { margin-bottom: 4px; }
+        .subcat > .header-row .header-title { font-size: 0.95em; color: #999; font-weight: normal; }
+
+        .count-badge { font-size: 0.75em; color: #555; display: none; }
+        .cat > .header-row .count-badge { display: inline-block; }
+
+        /* --- ITEM GRID --- */
+
+        .item-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2px;
+            min-height: 40px;
+            background: transparent;
+            border: 1px dashed transparent;
+            border-radius: 4px;
+            transition: border-color 0.2s;
+            contain: layout;
+        }
+
+        .faction-list {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            background: rgba(0,0,0,0.2);
+            padding: 10px;
+            border-radius: 4px;
+            min-height: 40px;
+        }
+
+        .item-list:empty, .item-list.sortable-drag-active {
+            border-color: #333;
+            min-width: 40px;
+        }
+
+        /* Individual Item */
+        .item-card {
+            width: var(--card-size);
+            height: var(--card-size);
+            position: relative;
+            cursor: grab;
+            border: 1px solid #000;
+            border-radius: 0;
+            background: #000;
+            box-sizing: border-box;
+            will-change: transform;
+            transform: translate3d(0,0,0);
+            z-index: 1;
+        }
+
+        .item-card:hover {
+            transform: scale(1.2);
+            z-index: 1000;
+            border-color: #fff;
+            box-shadow: 0 0 5px rgba(0,0,0,0.8);
+        }
+
+        /* Faction Item */
+        .faction-card {
+            background: #333;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: grab;
+            border: 1px solid #444;
+            color: #ddd;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+
+        .faction-card:hover {
+            background: #444;
+            border-color: #666;
+        }
+
+        /* Edit Mode Styles */
+        body.edit-mode .item-card { cursor: pointer; }
+        body.edit-mode .item-card:hover { border-color: #43a047; box-shadow: 0 0 8px rgba(67, 160, 71, 0.6); }
+
+        /* Selected State */
+        body.edit-mode .item-card.selected {
+            border-color: #fff;
+            box-shadow: 0 0 0 2px #43a047, 0 0 10px rgba(67, 160, 71, 0.8);
+            z-index: 100 !important;
+        }
+
+        body.edit-mode .header-row { cursor: pointer; }
+
+        .item-icon { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+        /* --- INDICATORS --- */
+        .indicator {
+            position: absolute;
+            z-index: 5;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+            font-weight: 700;
+            line-height: 1;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.8);
+            background: rgba(0, 0, 0, 0.85);
+            padding: 1px 2px;
+            font-size: 10px;
+        }
+
+        .ind-new { top: 0; left: 0; color: #00ff00; border-radius: 0 0 3px 0; border-right: 1px solid #006400; border-bottom: 1px solid #006400; }
+        .ind-dupe { bottom: 0; right: 0; color: #00e5ff; font-size: 9px; border-radius: 3px 0 0 0; border-left: 1px solid #00838f; border-top: 1px solid #00838f; }
+        .ind-status { top: 0; right: 0; border-radius: 0 0 0 3px; border-left: 1px solid #555; border-bottom: 1px solid #555; }
+        .status-unob { color: #ff3333; border-color: #b71c1c; }
+        .status-clock { color: #ffaa00; border-color: #e65100; }
+        .status-resale { color: #ffd700; border-color: #ff8f00; }
+        .ind-side { bottom: 0; left: 0; font-size: 10px; padding: 0 2px; border-radius: 0 3px 0 0; border-right: 1px solid #555; border-top: 1px solid #555; }
+        .side-alliance { color: #2196f3; border-color: #0d47a1; }
+        .side-horde { color: #f44336; border-color: #b71c1c; }
+
+        /* Tooltip mimic */
+        .item-card::after {
+            content: attr(data-title);
+            position: absolute;
+            bottom: 120%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(10,10,10,0.95);
+            color: var(--accent);
+            padding: 4px 8px;
+            border-radius: 2px;
+            white-space: nowrap;
+            font-size: 12px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.1s;
+            z-index: 1000;
+            border: 1px solid #333;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+        }
+        /* Only show custom tooltip if NOT in edit mode OR if it's the preview (handled specially) */
+        /* UPDATE: Per user request, show simple tooltip everywhere except modal preview */
+        .item-card:hover::after { opacity: 1; }
+        #editor-preview .item-card:hover::after { opacity: 0 !important; }
+
+        /* Sortable States */
+        .sortable-ghost { opacity: 0.2; background: var(--accent); }
+        .sortable-drag { cursor: grabbing; }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 80px;
+            color: #555;
+            border: 2px dashed #333;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+
+        /* --- ADD BUTTONS --- */
+        .add-btn {
+            border: 2px dashed #444;
+            color: #888;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+            transition: all 0.2s;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .add-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: rgba(255,255,255,0.05);
+        }
+
+        body:not(.edit-mode) .add-btn { display: none !important; }
+
+        .add-supercat { width: 100%; padding: 20px; margin-top: 20px; text-transform: uppercase; font-size: 16px; }
+        .add-cat { width: 100%; padding: 15px; margin-top: 15px; font-size: 16px; }
+        .add-subcat { width: 100px; height: 70px; flex-shrink: 0; margin-top: 0; font-size: 28px; }
+
+        /* --- POPUPS --- */
+        .overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: 2999;
+            display: none;
+            background: rgba(0,0,0,0.5);
+        }
+
+        .popup {
+            position: fixed;
+            background: #2b2b2b;
+            border: 1px solid #555;
+            border-radius: 6px;
+            padding: 15px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.8);
+            z-index: 3000;
+            display: none;
+        }
+
+        #prop-editor { min-width: 220px; }
+        #struct-editor { top: 50%; left: 50%; transform: translate(-50%, -50%); width: 300px; }
+
+        .editor-header { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid #444; }
+        h4 { margin: 0; font-size: 14px; color: var(--accent); border-bottom: none; padding-bottom: 0; white-space: normal; line-height: 1.3; overflow: visible; }
+
+        input[type="text"] {
+            width: 100%; padding: 8px; background: #111; border: 1px solid #444; color: #fff;
+            border-radius: 4px; margin-bottom: 15px; box-sizing: border-box;
+        }
+        input[type="text"]:focus { border-color: var(--accent); outline: none; }
+
+        #editor-preview { flex-shrink: 0; }
+        /* Link styling for preview */
+        #editor-preview a { display: block; border: 1px solid #000; transition: border-color 0.2s; }
+        #editor-preview a:hover { border-color: var(--accent); }
+        #editor-preview img { display: block; width: 36px; height: 36px; }
+
+        .prop-row { display: flex; align-items: center; margin-bottom: 8px; cursor: pointer; user-select: none; }
+        .prop-row:hover { background: rgba(255,255,255,0.05); }
+        .prop-row input { margin-right: 10px; cursor: pointer; }
+        .prop-row label { font-size: 13px; cursor: pointer; flex-grow: 1; }
+
+        .prop-section-label { font-size: 11px; color: #999; text-transform: uppercase; margin: 10px 0 5px 0; border-bottom: 1px solid #444; padding-bottom: 2px; }
+
+        .btn-icon { min-width: 32px !important; width: 32px; height: 32px; padding: 0; display: inline-flex; align-items: center; justify-content: center; font-size: 16px; }
+
+        /* Visibility utility classes */
+        .d-none { display: none !important; }
+        .d-flex { display: flex !important; }
+
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar for Folder Mode -->
+    <div id="sidebar" class="sidebar hidden">
+        <div class="sidebar-header">
+            <div class="sidebar-title-row">
+                <span>Project Files</span>
+                <button class="btn btn-icon" style="min-width:24px;width:24px;height:24px;font-size:12px;" onclick="refreshDirectory()" title="Refresh">↻</button>
+            </div>
+            <!-- Moved Save Button to Sidebar -->
+            <button class="btn btn-primary btn-block" id="btn-save-disk" onclick="saveToDisk()" disabled title="Save (Ctrl+S)">
+                💾 Save Changes
+            </button>
+        </div>
+        <div id="file-list" class="file-list">
+            <!-- Files injected here -->
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="controls">
+            <!-- Start Group: Context Sensitive -->
+
+            <!-- Project Mode Trigger -->
+            <div id="group-init">
+                <div style="display:flex; gap:10px;">
+                    <button class="btn btn-primary" id="btn-open-folder">Open Project Folder</button>
+                    <label class="btn" for="fileInput">Upload JSON</label>
+                    <input type="file" id="fileInput" accept=".json">
+                </div>
+            </div>
+
+            <!-- Manual Mode Export (Visible only when file loaded manually) -->
+            <div id="group-manual-export" class="d-none">
+                <button class="btn" id="btn-export" onclick="exportJSON()">Download JSON</button>
+            </div>
+
+            <!-- Separator (Visible when file loaded) -->
+            <div id="controls-sep" class="d-none" style="width: 1px; height: 20px; background: #555; margin: 0 10px;"></div>
+
+            <!-- Editor Modes (Visible when file loaded) -->
+            <div id="group-modes" class="mode-toggle d-none">
+                <button id="mode-sort" class="btn-mode active" onclick="setMode('sort')">
+                    <span style="font-size:16px">✥</span> Sorting
+                </button>
+                <button id="mode-edit" class="btn-mode" onclick="setMode('edit')">
+                    <span style="font-size:16px">✎</span> Editing
+                </button>
+            </div>
+
+            <div id="status" style="margin-left: auto; color: var(--accent); font-weight: 600; font-size: 14px;">Waiting for file...</div>
+        </div>
+
+        <div id="editor-scroll">
+            <div id="editor-root" class="container">
+                <div class="empty-state">
+                    <h2>SimpleArmory Layout Editor</h2>
+                    <p style="margin-bottom:20px; color:#aaa;">A tool for organizing World of Warcraft collection data.</p>
+                    <div style="display:inline-flex; gap:20px; text-align:left;">
+                        <div>
+                            <strong style="color:var(--accent)">Project Mode</strong><br>
+                            - Edit files directly on disk<br>
+                            - Best for Chrome/Edge users
+                        </div>
+                        <div style="border-left:1px solid #444; padding-left:20px;">
+                            <strong style="color:var(--accent)">Manual Mode</strong><br>
+                            - Upload/Download files<br>
+                            - Works in all browsers
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlays -->
+    <div id="prop-overlay" class="overlay" onclick="closeAllEditors()"></div>
+
+    <!-- Item Property Editor -->
+    <div id="prop-editor" class="popup">
+        <div class="editor-header">
+            <div id="editor-preview"></div>
+            <h4 id="editor-title">Item Name</h4>
+        </div>
+
+        <div class="prop-section-label">Flags</div>
+        <label class="prop-row"><input type="checkbox" id="chk-new"> <label for="chk-new">New (<span style="color:#00ff00; background:black; padding:0 2px;">★</span>)</label></label>
+        <label class="prop-row"><input type="checkbox" id="chk-dupe"> <label for="chk-dupe">Dupe (<span style="color:#00e5ff; background:black; padding:0 2px;">⧉</span>)</label></label>
+
+        <div class="prop-section-label">Availability Status</div>
+        <label class="prop-row"><input type="radio" name="status" value="obtainable" id="rad-obt"> <label for="rad-obt">Obtainable (Default)</label></label>
+        <label class="prop-row"><input type="radio" name="status" value="resale" id="rad-resale"> <label for="rad-resale">Resale (<span style="color:#ffd700; background:black; padding:0 2px;">$</span>)</label></label>
+        <label class="prop-row"><input type="radio" name="status" value="unobtainable" id="rad-unob"> <label for="rad-unob">Not Obtainable (<span style="color:#ff3333; background:black; padding:0 2px;">✖</span>)</label></label>
+        <label class="prop-row"><input type="radio" name="status" value="unreleased" id="rad-rel"> <label for="rad-rel">Not Released (<span style="color:#ffaa00; background:black; padding:0 2px;">⏲</span>)</label></label>
+
+        <div class="prop-section-label">Faction</div>
+        <label class="prop-row"><input type="radio" name="side" value="neutral" id="rad-neutral"> <label for="rad-neutral">Neutral (Default)</label></label>
+        <label class="prop-row"><input type="radio" name="side" value="A" id="rad-alliance"> <label for="rad-alliance">Alliance (<span style="color:#2196f3; background:black; padding:0 2px;">A</span>)</label></label>
+        <label class="prop-row"><input type="radio" name="side" value="H" id="rad-horde"> <label for="rad-horde">Horde (<span style="color:#f44336; background:black; padding:0 2px;">H</span>)</label></label>
+
+        <div style="margin-top: 15px; display: flex; justify-content: flex-end;">
+            <button class="btn btn-danger btn-icon" id="btn-delete-item" title="Delete Item">🗑</button>
+        </div>
+    </div>
+
+    <!-- Structure Editor (Renaming/Deleting Categories) -->
+    <div id="struct-editor" class="popup">
+        <h4 id="struct-title">Edit Category</h4>
+        <input type="text" id="struct-name" placeholder="Category Name" autocomplete="off">
+        <div style="display:flex; justify-content:space-between; margin-top:10px;">
+            <button id="btn-delete-struct" class="btn btn-danger" type="button">Delete</button>
+            <button id="btn-save-struct" class="btn btn-primary" type="button">Save</button>
+        </div>
+    </div>
+
+    <script>
+        let currentFileStructure = null;
+        let currentFileName = "data.json";
+        let isEditMode = false;
+        let activeSortables = [];
+        let deleteConfirmTimer = null;
+
+        // Editor State
+        let currentEditingItemElement = null;
+        let currentPreviewElement = null;
+        let currentEditingStructElement = null;
+        let selectedElements = new Set();
+
+        // File System API State
+        let dirHandle = null;
+        let activeFileHandle = null;
+        let isDirty = false;
+
+        const fileInput = document.getElementById('fileInput');
+        const root = document.getElementById('editor-root');
+        const status = document.getElementById('status');
+        const sidebar = document.getElementById('sidebar');
+        const fileList = document.getElementById('file-list');
+        const btnSaveDisk = document.getElementById('btn-save-disk');
+        const btnExport = document.getElementById('btn-export');
+
+        // Popup Elements
+        const propEditor = document.getElementById('prop-editor');
+        const structEditor = document.getElementById('struct-editor');
+        const propOverlay = document.getElementById('prop-overlay');
+
+        // Prop Editor Fields
+        const editorTitle = document.getElementById('editor-title');
+        const editorPreview = document.getElementById('editor-preview');
+        const chkNew = document.getElementById('chk-new');
+        const chkDupe = document.getElementById('chk-dupe');
+        const radiosStatus = document.getElementsByName('status');
+        const radiosSide = document.getElementsByName('side');
+        const btnDeleteItem = document.getElementById('btn-delete-item');
+
+        // Struct Editor Fields
+        const structTitle = document.getElementById('struct-title');
+        const structNameInput = document.getElementById('struct-name');
+        const btnDeleteStruct = document.getElementById('btn-delete-struct');
+        const btnSaveStruct = document.getElementById('btn-save-struct');
+
+        fileInput.addEventListener('change', handleFileUpload);
+        document.getElementById('btn-open-folder').addEventListener('click', openDirectory);
+
+        chkNew.addEventListener('change', saveItemChanges);
+        chkDupe.addEventListener('change', saveItemChanges);
+        radiosStatus.forEach(r => r.addEventListener('change', saveItemChanges));
+        radiosSide.forEach(r => r.addEventListener('change', saveItemChanges));
+
+        btnDeleteStruct.addEventListener('click', deleteStructure);
+        btnSaveStruct.addEventListener('click', saveStructure);
+        btnDeleteItem.addEventListener('click', deleteItem);
+
+        structNameInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') saveStructure();
+        });
+
+        // Global Keyboard Shortcut for Save
+        document.addEventListener('keydown', (e) => {
+            if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+                e.preventDefault();
+                if (activeFileHandle) {
+                    saveToDisk();
+                } else if(currentFileStructure) {
+                    exportJSON();
+                }
+            }
+        });
+
+        // --- IndexedDB Persistence ---
+        const DB_NAME = 'SimpleArmoryEditor';
+        const STORE_NAME = 'settings';
+
+        function getDB() {
+            return new Promise((resolve, reject) => {
+                const request = indexedDB.open(DB_NAME, 1);
+                request.onupgradeneeded = (event) => {
+                    event.target.result.createObjectStore(STORE_NAME);
+                };
+                request.onsuccess = (event) => resolve(event.target.result);
+                request.onerror = (event) => reject(event.target.error);
+            });
+        }
+
+        async function saveDirHandle(handle) {
+            const db = await getDB();
+            const tx = db.transaction(STORE_NAME, 'readwrite');
+            tx.objectStore(STORE_NAME).put(handle, 'projectDir');
+        }
+
+        async function getDirHandle() {
+            const db = await getDB();
+            return new Promise((resolve) => {
+                const tx = db.transaction(STORE_NAME, 'readonly');
+                const req = tx.objectStore(STORE_NAME).get('projectDir');
+                req.onsuccess = () => resolve(req.result);
+                req.onerror = () => resolve(null);
+            });
+        }
+
+        // --- File System Access API ---
+
+        async function openDirectory() {
+            try {
+                // Feature Detection specifically for permission model
+                const options = { mode: 'readwrite' };
+                try {
+                    const lastHandle = await getDirHandle();
+                    if (lastHandle) options.startIn = lastHandle;
+                } catch(e) { console.log('No saved handle'); }
+
+                dirHandle = await window.showDirectoryPicker(options);
+                await saveDirHandle(dirHandle);
+
+                sidebar.classList.remove('hidden');
+
+                // Hide Init Buttons, Show File List UI
+                setAppState('project_active');
+
+                await refreshDirectory();
+            } catch (err) {
+                // If it's a security error (like in iframe), fallback gracefully
+                // Catch all security errors including those from subframes
+                if(err.name === 'SecurityError' || err.message.includes('sub frames') || err.message.includes('user gesture')) {
+                     alert("Project Folder access requires running this file directly in the browser (not in a preview frame). \n\nPlease use 'Upload JSON' for now, or download this HTML file and open it locally.");
+                } else if (err.name !== 'AbortError') {
+                    console.error(err);
+                }
+            }
+        }
+
+        async function refreshDirectory() {
+            if (!dirHandle) return;
+
+            fileList.innerHTML = '';
+            const entries = [];
+
+            for await (const entry of dirHandle.values()) {
+                if (entry.kind === 'file' && entry.name.endsWith('.json')) {
+                    entries.push(entry);
+                }
+            }
+
+            entries.sort((a, b) => a.name.localeCompare(b.name));
+
+            entries.forEach(entry => {
+                const div = document.createElement('div');
+                div.className = 'file-item';
+                div.textContent = entry.name;
+                div.onclick = () => loadFileFromHandle(entry, div);
+                fileList.appendChild(div);
+            });
+        }
+
+        async function loadFileFromHandle(handle, element) {
+            // Guard against discarding unsaved changes
+            if (isDirty) {
+                if (!confirm("You have unsaved changes in the current file. switching files will discard them.\n\nAre you sure you want to continue?")) {
+                    return;
+                }
+            }
+
+            activeFileHandle = handle;
+            currentFileName = handle.name;
+
+            document.querySelectorAll('.file-item').forEach(el => el.classList.remove('active'));
+            element.classList.add('active');
+
+            try {
+                const file = await handle.getFile();
+                const text = await file.text();
+                const json = JSON.parse(text);
+
+                renderEditor(json);
+                status.textContent = `Editing: ${handle.name}`;
+                setMode('sort');
+                markDirty(false);
+                btnSaveDisk.disabled = false;
+
+            } catch (err) {
+                console.error(err);
+                alert("Error reading file.");
+            }
+        }
+
+        async function saveToDisk() {
+            if (!activeFileHandle) return;
+
+            try {
+                const output = getCurrentJSON();
+                if (!output) return;
+
+                const writable = await activeFileHandle.createWritable();
+                await writable.write(deterministicStringify(output) + '\n');
+                await writable.close();
+
+                markDirty(false);
+
+                const originalText = btnSaveDisk.textContent;
+                btnSaveDisk.textContent = "Saved!";
+                setTimeout(() => {
+                    if(!isDirty) btnSaveDisk.textContent = "💾 Save Changes";
+                }, 1500);
+
+            } catch (err) {
+                console.error(err);
+                alert("Error saving file.");
+            }
+        }
+
+        function markDirty(dirty) {
+            isDirty = dirty;
+            const activeItem = document.querySelector('.file-item.active');
+            if (activeItem) {
+                if (dirty) activeItem.classList.add('dirty');
+                else activeItem.classList.remove('dirty');
+            }
+
+            if(dirty) {
+                btnSaveDisk.classList.add('dirty');
+                btnSaveDisk.textContent = "💾 Save Changes *";
+            } else {
+                btnSaveDisk.classList.remove('dirty');
+                btnSaveDisk.textContent = "💾 Save Changes";
+            }
+        }
+
+        // Guard against closing tab
+        window.onbeforeunload = function(e) {
+            if (isDirty) {
+                e.preventDefault();
+                e.returnValue = '';
+                return "You have unsaved changes.";
+            }
+        };
+
+        // --- Helper: UI State Management ---
+        function setAppState(state) {
+            const groupInit = document.getElementById('group-init');
+            const groupManualExport = document.getElementById('group-manual-export');
+            const groupModes = document.getElementById('group-modes');
+            const controlsSep = document.getElementById('controls-sep');
+
+            if (state === 'manual_active') {
+                groupInit.classList.add('d-none');
+                groupManualExport.classList.remove('d-none');
+                groupModes.classList.remove('d-none');
+                controlsSep.classList.remove('d-none');
+                sidebar.classList.add('hidden');
+            } else if (state === 'project_active') {
+                groupInit.classList.add('d-none');
+                groupManualExport.classList.add('d-none'); // Hide download button in project mode
+                groupModes.classList.remove('d-none');
+                controlsSep.classList.remove('d-none');
+            }
+        }
+
+        // --- Serializer ---
+
+        function deterministicStringify(obj) {
+            function deepSort(value) {
+                if (Array.isArray(value)) {
+                    return value.map(deepSort);
+                } else if (value !== null && typeof value === 'object') {
+                    const keys = Object.keys(value);
+                    // Check if map keys are numeric (e.g. "0", "500", "1000")
+                    const isNumeric = keys.length > 0 && keys.every(k => !isNaN(parseFloat(k)) && isFinite(k));
+
+                    if (isNumeric) {
+                        keys.sort((a, b) => parseFloat(a) - parseFloat(b));
+                    } else {
+                        keys.sort(); // Lexicographical
+                    }
+
+                    const sorted = {};
+                    keys.forEach(k => {
+                        sorted[k] = deepSort(value[k]);
+                    });
+                    return sorted;
+                }
+                return value;
+            }
+            return JSON.stringify(deepSort(obj), null, 2);
+        }
+
+        // --- Manual Upload Fallback ---
+
+        function handleFileUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            currentFileName = file.name;
+            activeFileHandle = null;
+
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                try {
+                    const json = JSON.parse(e.target.result);
+                    renderEditor(json);
+                    status.textContent = `${file.name} (Manual Mode)`;
+                    setAppState('manual_active');
+                    setMode('sort');
+                } catch (err) {
+                    alert("Invalid JSON file");
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        function getWowheadUrl(item) {
+            if (item.wowheadUrl) return item.wowheadUrl;
+            if (item.spellid) return `https://www.wowhead.com/spell=${item.spellid}`;
+            if (item.creatureId) return `https://www.wowhead.com/npc=${item.creatureId}`;
+            if (item.itemId) return `https://www.wowhead.com/item=${item.itemId}`;
+            if (item.points !== undefined) return `https://www.wowhead.com/achievement=${item.id}`;
+            return null;
+        }
+
+        function getIconUrl(iconName) {
+            if (!iconName) return 'https://wow.zamimg.com/images/wow/icons/large/inv_misc_questionmark.jpg';
+            const cleanName = iconName.replace(/\.(jpg|png)$/i, '').toLowerCase();
+            return `https://wow.zamimg.com/images/wow/icons/large/${cleanName}.jpg`;
+        }
+
+        // --- Edit Mode Logic ---
+
+        function setMode(mode) {
+            isEditMode = (mode === 'edit');
+
+            document.body.classList.toggle('edit-mode', isEditMode);
+            document.getElementById('mode-sort').classList.toggle('active', mode === 'sort');
+            document.getElementById('mode-edit').classList.toggle('active', mode === 'edit');
+
+            if(!isEditMode) {
+                closeAllEditors();
+                clearSelection();
+            }
+
+            activeSortables.forEach(sortable => {
+                sortable.option("disabled", isEditMode);
+            });
+        }
+
+        // --- Selection Logic ---
+
+        function toggleSelection(element, forceAdd = false) {
+            if (selectedElements.has(element) && !forceAdd) {
+                element.classList.remove('selected');
+                selectedElements.delete(element);
+            } else {
+                element.classList.add('selected');
+                selectedElements.add(element);
+            }
+        }
+
+        function clearSelection() {
+            selectedElements.forEach(el => el.classList.remove('selected'));
+            selectedElements.clear();
+        }
+
+        function selectRange(endElement) {
+            const allItems = Array.from(root.querySelectorAll('.item-card'));
+            const firstSelected = allItems.find(el => selectedElements.has(el));
+
+            if (!firstSelected) {
+                toggleSelection(endElement, true);
+                return;
+            }
+
+            const startIdx = allItems.indexOf(firstSelected);
+            const endIdx = allItems.indexOf(endElement);
+
+            const low = Math.min(startIdx, endIdx);
+            const high = Math.max(startIdx, endIdx);
+
+            for (let i = low; i <= high; i++) {
+                toggleSelection(allItems[i], true);
+            }
+        }
+
+        // --- Item Property Editor ---
+
+        function handleItemClick(element, data, event) {
+            if (isEditMode) {
+                event.stopPropagation();
+
+                if (event.ctrlKey || event.metaKey) {
+                    toggleSelection(element);
+                    return;
+                }
+
+                if (event.shiftKey) {
+                    selectRange(element);
+                    return;
+                }
+
+                if (selectedElements.size > 1 && selectedElements.has(element)) {
+                    openEditor(element, data);
+                } else {
+                    clearSelection();
+                    toggleSelection(element, true);
+                    openEditor(element, data);
+                }
+            }
+        }
+
+        function openEditor(element, data) {
+            currentEditingItemElement = element;
+
+            const isBatch = selectedElements.size > 1;
+
+            if (isBatch) {
+                editorTitle.textContent = `Editing ${selectedElements.size} Items`;
+                editorPreview.innerHTML = '';
+            } else {
+                editorTitle.textContent = data.title || data.name || "Item";
+
+                // Render Preview with Link
+                editorPreview.innerHTML = '';
+                const previewCard = document.createElement('div');
+                previewCard.className = 'item-card';
+                previewCard.style.cursor = 'default';
+
+                // Construct Link for Modal Preview
+                const whUrl = getWowheadUrl(data);
+                const img = document.createElement('img');
+                img.src = getIconUrl(data.icon);
+                img.className = 'item-icon';
+                img.draggable = false;
+
+                if (whUrl) {
+                    const link = document.createElement('a');
+                    link.href = whUrl;
+                    link.target = "_blank";
+                    link.title = ""; // Ensure empty title to avoid browser tooltip
+                    link.appendChild(img);
+                    previewCard.appendChild(link);
+                } else {
+                    previewCard.appendChild(img);
+                }
+
+                // Add to DOM
+                editorPreview.appendChild(previewCard);
+                currentPreviewElement = previewCard;
+                updateItemIndicators(previewCard, data);
+
+                // Try refresh links if WH script is loaded
+                if(window.$WH && window.$WH.Tooltips) {
+                   setTimeout(() => $WH.Tooltips.refreshLinks(), 50);
+                }
+            }
+
+            chkNew.checked = !!data.new;
+            chkDupe.checked = !!data.dupe;
+
+            if (data.notReleased) document.getElementById('rad-rel').checked = true;
+            else if (data.notObtainable) document.getElementById('rad-unob').checked = true;
+            else if (data.resale) document.getElementById('rad-resale').checked = true;
+            else document.getElementById('rad-obt').checked = true;
+
+            if (data.side === 'A') document.getElementById('rad-alliance').checked = true;
+            else if (data.side === 'H') document.getElementById('rad-horde').checked = true;
+            else document.getElementById('rad-neutral').checked = true;
+
+            propEditor.style.display = 'block';
+            propOverlay.style.display = 'block';
+
+            const rect = element.getBoundingClientRect();
+            let top = rect.bottom + 5;
+            let left = rect.left;
+
+            if (left + 220 > window.innerWidth) left = window.innerWidth - 230;
+            if (top + 400 > window.innerHeight) top = rect.top - 400;
+
+            propEditor.style.top = top + 'px';
+            propEditor.style.left = left + 'px';
+        }
+
+        function saveItemChanges() {
+            const updates = {};
+            if (chkNew.checked) updates.new = true; else updates.new = false;
+            if (chkDupe.checked) updates.dupe = true; else updates.dupe = false;
+
+            const selectedStatus = document.querySelector('input[name="status"]:checked').value;
+            updates.resale = (selectedStatus === 'resale');
+            updates.notObtainable = (selectedStatus === 'unobtainable' || selectedStatus === 'unreleased');
+            updates.notReleased = (selectedStatus === 'unreleased');
+
+            const selectedSide = document.querySelector('input[name="side"]:checked').value;
+            updates.side = (selectedSide === 'neutral') ? null : selectedSide;
+
+            const targets = selectedElements.size > 0 ? Array.from(selectedElements) : [currentEditingItemElement];
+
+            targets.forEach(el => {
+                let itemData = JSON.parse(el.dataset.json);
+
+                if(updates.new) itemData.new = true; else delete itemData.new;
+                if(updates.dupe) itemData.dupe = true; else delete itemData.dupe;
+
+                delete itemData.resale; delete itemData.notObtainable; delete itemData.notReleased;
+                if (updates.resale) itemData.resale = true;
+                if (updates.notObtainable) itemData.notObtainable = true;
+                if (updates.notReleased) itemData.notReleased = true;
+
+                if (updates.side) itemData.side = updates.side; else delete itemData.side;
+
+                el.dataset.json = JSON.stringify(itemData);
+                updateItemIndicators(el, itemData);
+            });
+
+            if(currentPreviewElement && targets.length === 1) {
+                updateItemIndicators(currentPreviewElement, JSON.parse(targets[0].dataset.json));
+            }
+            markDirty(true);
+        }
+
+        function deleteItem() {
+            const targets = selectedElements.size > 0 ? Array.from(selectedElements) : [currentEditingItemElement];
+            targets.forEach(el => el.remove());
+
+            closeAllEditors();
+            clearSelection();
+            markDirty(true);
+        }
+
+        function updateItemIndicators(element, data) {
+            element.querySelectorAll('.indicator').forEach(el => el.remove());
+
+            if (data.new) appendInd(element, '★', 'ind-new');
+            if (data.dupe) appendInd(element, '⧉', 'ind-dupe');
+
+            if (data.resale) appendInd(element, '$', 'ind-status status-resale');
+            else if (data.notReleased) appendInd(element, '⏲', 'ind-status status-clock');
+            else if (data.notObtainable) appendInd(element, '✖', 'ind-status status-unob');
+
+            if (data.side) {
+                const cls = data.side === 'A' ? 'side-alliance' : 'side-horde';
+                appendInd(element, data.side, `ind-side ${cls}`);
+            }
+        }
+
+        function appendInd(el, text, className) {
+            const i = document.createElement('div');
+            i.className = `indicator ${className}`;
+            i.textContent = text;
+            el.appendChild(i);
+        }
+
+        // --- Structure Editor (Categories) ---
+
+        function openStructEditor(element, type) {
+            currentEditingStructElement = element;
+            const currentName = element.dataset.name || "";
+
+            structTitle.textContent = `Edit ${type}`;
+            structNameInput.value = currentName;
+
+            // Reset delete button state
+            btnDeleteStruct.textContent = "Delete";
+            btnDeleteStruct.dataset.confirming = "false";
+
+            element.classList.add('editing-target');
+
+            structEditor.style.display = 'block';
+            propOverlay.style.display = 'block';
+            structNameInput.focus();
+        }
+
+        function saveStructure() {
+            if (!currentEditingStructElement) return;
+
+            const newName = structNameInput.value.trim() || "Untitled";
+            currentEditingStructElement.dataset.name = newName;
+
+            const titleEl = currentEditingStructElement.querySelector(':scope > .header-row .header-title');
+            if(titleEl) titleEl.textContent = newName;
+
+            closeAllEditors();
+            markDirty(true);
+        }
+
+        function deleteStructure() {
+            if (!currentEditingStructElement) return;
+
+            // Single click delete logic
+            currentEditingStructElement.remove();
+            closeAllEditors();
+            markDirty(true);
+        }
+
+        function addCategory(container, type) {
+            let newEl;
+
+            if (type === 'supercat') {
+                newEl = createSuperCatElement({ name: "New Super Category", cats: [] });
+                const btn = container.querySelector('.add-supercat');
+                container.insertBefore(newEl, btn);
+            } else if (type === 'cat') {
+                newEl = createCatElement({ name: "New Category", subcats: [] });
+                const btn = container.querySelector('.add-cat');
+                container.insertBefore(newEl, btn);
+            } else if (type === 'subcat') {
+                newEl = createSubCatElement({ name: "New Group", items: [] });
+                const btn = container.querySelector('.add-subcat');
+                container.insertBefore(newEl, btn);
+            }
+
+            if(newEl) newEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            markDirty(true);
+        }
+
+        function closeAllEditors() {
+            propEditor.style.display = 'none';
+            structEditor.style.display = 'none';
+            propOverlay.style.display = 'none';
+
+            if(currentEditingStructElement) {
+                currentEditingStructElement.classList.remove('editing-target');
+            }
+
+            currentEditingItemElement = null;
+            currentEditingStructElement = null;
+            currentPreviewElement = null;
+        }
+
+        // --- DOM Creation Helpers ---
+
+        function createSuperCatElement(sc) {
+            const el = document.createElement('div');
+            el.className = 'supercat';
+            el.dataset.name = sc.name;
+            el.dataset.id = sc.id || "";
+
+            el.innerHTML = `
+                <div class="header-row">
+                    <span class="header-title">${sc.name}</span>
+                </div>
+                <div class="cat-container"></div>
+            `;
+
+            el.querySelector('.header-row').addEventListener('click', function() {
+                if(isEditMode) openStructEditor(el, 'Super Category');
+            });
+
+            const catContainer = el.querySelector('.cat-container');
+            renderCats(sc.cats || [], catContainer);
+
+            return el;
+        }
+
+        function createCatElement(cat) {
+            const el = document.createElement('div');
+            el.className = 'cat';
+            el.dataset.id = cat.id || '';
+            el.dataset.name = cat.name;
+
+            let count = 0;
+            if(cat.subcats) cat.subcats.forEach(s => count += (s.items ? s.items.length : 0));
+
+            el.innerHTML = `
+                <div class="header-row">
+                    <span class="header-title">${cat.name}</span>
+                    <span class="count-badge">${count} items</span>
+                </div>
+                <div class="subcat-container"></div>
+            `;
+
+            el.querySelector('.header-row').addEventListener('click', function() {
+                if(isEditMode) openStructEditor(el, 'Category');
+            });
+
+            const subcatContainer = el.querySelector('.subcat-container');
+            renderSubCats(cat.subcats || [], subcatContainer);
+            return el;
+        }
+
+        function createSubCatElement(sub) {
+            const el = document.createElement('div');
+            el.className = 'subcat';
+            el.dataset.id = sub.id || '';
+            el.dataset.name = sub.name;
+
+            el.innerHTML = `
+                <div class="header-row">
+                    <span class="header-title">${sub.name}</span>
+                </div>
+                <div class="item-list"></div>
+            `;
+
+            el.querySelector('.header-row').addEventListener('click', function() {
+                if(isEditMode) openStructEditor(el, 'Sub Category');
+            });
+
+            const itemList = el.querySelector('.item-list');
+            renderItems(sub.items || [], itemList);
+            return el;
+        }
+
+        // --- Rendering Logic ---
+
+        function renderEditor(data) {
+            root.innerHTML = '';
+            activeSortables = [];
+            selectedElements = new Set();
+
+            // Detect structure
+            if (data.supercats) {
+                currentFileStructure = 'achievements';
+                renderSuperCats(data.supercats, root);
+            } else if (Array.isArray(data)) {
+                // Check if it's the specific Factions structure (array of objects with 'factions' key)
+                if (data.length > 0 && data[0].factions) {
+                    currentFileStructure = 'factions';
+                    renderFactions(data, root);
+                } else {
+                    currentFileStructure = 'standard';
+                    renderCats(data, root);
+                }
+            } else if (data.cats) {
+                 currentFileStructure = 'object_root';
+                 renderCats(data.cats, root);
+            } else {
+                // Check for unsupported files like servers.json
+                if (data.realms) {
+                    root.innerHTML = `<div class="empty-state">File format not supported (Server List).<br>This editor is for Collections, Achievements, and Factions.</div>`;
+                    status.textContent = "Unsupported File";
+                } else {
+                    status.textContent = "Unknown structure. Attempting render...";
+                    const potentialArray = Object.values(data).find(val => Array.isArray(val));
+                    if(potentialArray) {
+                        currentFileStructure = 'standard';
+                        renderCats(potentialArray, root);
+                    } else {
+                         root.innerHTML = `<div class="empty-state">Could not detect a valid category structure in this JSON.</div>`;
+                    }
+                }
+            }
+        }
+
+        // --- Faction Rendering ---
+
+        function renderFactions(groups, container) {
+            const listContainer = document.createElement('div');
+            listContainer.className = 'supercat-list'; // Reuse layout
+            container.appendChild(listContainer);
+
+            // Allow reordering top groups
+            registerSortable(listContainer, {
+                animation: 150,
+                handle: '.header-row',
+                ghostClass: 'sortable-ghost',
+                disabled: isEditMode
+            });
+
+            groups.forEach(group => {
+                const el = document.createElement('div');
+                el.className = 'cat'; // Reuse cat style for Faction Groups
+                el.dataset.name = group.name;
+
+                el.innerHTML = `
+                    <div class="header-row" onclick="if(isEditMode) openStructEditor(this.parentNode, 'Faction Group')">
+                        <span class="header-title">${group.name}</span>
+                        <span class="count-badge">${group.factions ? group.factions.length : 0} factions</span>
+                    </div>
+                    <div class="faction-list-container"></div>
+                `;
+
+                listContainer.appendChild(el);
+
+                const factionContainer = el.querySelector('.faction-list-container');
+                factionContainer.className = 'faction-list'; // Specific style for chips
+
+                if (group.factions) {
+                    renderFactionItems(group.factions, factionContainer);
+                }
+            });
+
+            // Add Faction Group Button
+            const btn = document.createElement('div');
+            btn.className = 'add-btn add-cat';
+            btn.innerHTML = '+ Add Faction Group';
+            btn.onclick = () => addFactionGroup(listContainer);
+            listContainer.appendChild(btn);
+        }
+
+        function renderFactionItems(factions, container) {
+            registerSortable(container, {
+                group: 'factions',
+                animation: 150,
+                ghostClass: 'sortable-ghost',
+                disabled: isEditMode
+            });
+
+            factions.forEach(faction => {
+                const el = document.createElement('div');
+                el.className = 'faction-card';
+                el.dataset.json = JSON.stringify(faction);
+                el.textContent = faction.name;
+
+                // Allow simple rename via prompt for now (factions are simple)
+                el.addEventListener('click', () => {
+                    if (isEditMode) {
+                        const newName = prompt("Rename Faction:", faction.name);
+                        if(newName) {
+                            faction.name = newName;
+                            el.textContent = newName;
+                            el.dataset.json = JSON.stringify(faction);
+                            markDirty(true);
+                        }
+                    }
+                });
+
+                container.appendChild(el);
+            });
+        }
+
+        function addFactionGroup(container) {
+             // Basic implementation reusing createCatElement logic but tailored
+             // For simplicity, reusing text/structure editing logic
+             const newGroup = { name: "New Faction Group", factions: [] };
+             // Re-render whole view or insert element?
+             // To keep it simple, we'll just reload from current DOM state + new item
+             // Actually, let's insert DOM node
+
+             const el = document.createElement('div');
+             el.className = 'cat';
+             el.dataset.name = newGroup.name;
+             el.innerHTML = `
+                    <div class="header-row" onclick="if(isEditMode) openStructEditor(this.parentNode, 'Faction Group')">
+                        <span class="header-title">${newGroup.name}</span>
+                    </div>
+                    <div class="faction-list"></div>
+                `;
+             const btn = container.querySelector('.add-btn');
+             container.insertBefore(el, btn);
+
+             // Init sortable on new list
+             renderFactionItems([], el.querySelector('.faction-list'));
+
+             el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+             markDirty(true);
+        }
+
+        // --- Standard Renderers (unchanged) ---
+
+        function registerSortable(el, options) {
+            const s = new Sortable(el, {
+                ...options,
+                onEnd: function (evt) {
+                    markDirty(true);
+                }
+            });
+            activeSortables.push(s);
+            return s;
+        }
+
+        function renderSuperCats(supercats, container) {
+            const listContainer = document.createElement('div');
+            listContainer.className = 'supercat-list';
+            container.appendChild(listContainer);
+
+            registerSortable(listContainer, {
+                animation: 150,
+                handle: '.header-row',
+                ghostClass: 'sortable-ghost',
+                disabled: isEditMode
+            });
+
+            supercats.forEach(sc => {
+                listContainer.appendChild(createSuperCatElement(sc));
+            });
+
+            const btn = document.createElement('div');
+            btn.className = 'add-btn add-supercat';
+            btn.innerHTML = '+ Add Super Category';
+            btn.onclick = () => addCategory(listContainer, 'supercat');
+            listContainer.appendChild(btn);
+        }
+
+        function renderCats(cats, container) {
+            registerSortable(container, {
+                animation: 150,
+                group: 'cats',
+                handle: '.header-row',
+                ghostClass: 'sortable-ghost',
+                disabled: isEditMode
+            });
+
+            cats.forEach(cat => {
+                container.appendChild(createCatElement(cat));
+            });
+
+            const btn = document.createElement('div');
+            btn.className = 'add-btn add-cat';
+            btn.innerHTML = '+ Add Category';
+            btn.onclick = () => addCategory(container, 'cat');
+            container.appendChild(btn);
+        }
+
+        function renderSubCats(subcats, container) {
+            registerSortable(container, {
+                animation: 150,
+                group: 'subcats',
+                handle: '.header-row',
+                ghostClass: 'sortable-ghost',
+                disabled: isEditMode
+            });
+
+            subcats.forEach(sub => {
+                container.appendChild(createSubCatElement(sub));
+            });
+
+            const btn = document.createElement('div');
+            btn.className = 'add-btn add-subcat';
+            btn.innerHTML = '+';
+            btn.onclick = () => addCategory(container, 'subcat');
+            container.appendChild(btn);
+        }
+
+        function renderItems(items, container) {
+            registerSortable(container, {
+                group: 'shared-items',
+                animation: 150,
+                ghostClass: 'sortable-ghost',
+                dragClass: 'sortable-drag',
+                delay: 0,
+                swapThreshold: 0.65,
+                disabled: isEditMode
+            });
+
+            items.forEach(item => {
+                const el = document.createElement('div');
+                el.className = 'item-card';
+                // OPTIMIZATION: Store data directly on element
+                el.__data = item;
+                el.dataset.json = JSON.stringify(item);
+                el.dataset.title = item.title || item.name || "Unknown Item";
+
+                // Note: We intentionally do NOT add data-wowhead to grid items anymore
+                // to keep the UI fast and consistent.
+
+                el.addEventListener('click', (e) => handleItemClick(el, JSON.parse(el.dataset.json), e));
+
+                const img = document.createElement('img');
+                img.src = getIconUrl(item.icon);
+                img.className = 'item-icon';
+                img.draggable = false;
+                img.loading = "lazy";
+                el.appendChild(img);
+
+                updateItemIndicators(el, item);
+                container.appendChild(el);
+            });
+        }
+
+        // --- Export & Scraper Logic ---
+
+        function exportJSON() {
+            if (!currentFileStructure) {
+                alert("Nothing to export!");
+                return;
+            }
+
+            const output = getCurrentJSON();
+
+            if (!output) {
+                alert("Error generating JSON structure.");
+                return;
+            }
+
+            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(deterministicStringify(output) + '\n');
+            const downloadAnchorNode = document.createElement('a');
+            downloadAnchorNode.setAttribute("href", dataStr);
+            downloadAnchorNode.setAttribute("download", currentFileName);
+            document.body.appendChild(downloadAnchorNode);
+            downloadAnchorNode.click();
+            downloadAnchorNode.remove();
+        }
+
+        function getCurrentJSON() {
+            if (currentFileStructure === 'achievements') {
+                const supercatsList = root.querySelector('.supercat-list');
+                if (supercatsList) {
+                    return { supercats: scrapeSuperCats(supercatsList) };
+                }
+            } else if (currentFileStructure === 'standard') {
+                return scrapeCats(root);
+            } else if (currentFileStructure === 'object_root') {
+                 return { cats: scrapeCats(root) };
+            } else if (currentFileStructure === 'factions') {
+                 return scrapeFactions(root);
+            }
+            return null;
+        }
+
+        function scrapeSuperCats(container) {
+            const els = Array.from(container.children);
+            return els.map(el => {
+                if(!el.classList.contains('supercat')) return null;
+                const catContainer = el.querySelector('.cat-container');
+                return {
+                    name: el.dataset.name,
+                    id: el.dataset.id || undefined,
+                    cats: catContainer ? scrapeCats(catContainer) : []
+                };
+            }).filter(x => x);
+        }
+
+        function scrapeCats(container) {
+            const els = Array.from(container.children);
+            return els.map(el => {
+                if(!el.classList.contains('cat')) return null;
+                const subcatContainer = el.querySelector('.subcat-container');
+                const obj = {
+                    name: el.dataset.name,
+                    subcats: subcatContainer ? scrapeSubCats(subcatContainer) : []
+                };
+                if(el.dataset.id) obj.id = el.dataset.id;
+                return obj;
+            }).filter(x => x);
+        }
+
+        function scrapeSubCats(container) {
+            const els = Array.from(container.children);
+            return els.map(el => {
+                if(!el.classList.contains('subcat')) return null;
+                const itemList = el.querySelector('.item-list');
+                const obj = {
+                    name: el.dataset.name,
+                    items: itemList ? scrapeItems(itemList) : []
+                };
+                if(el.dataset.id) obj.id = el.dataset.id;
+                return obj;
+            }).filter(x => x);
+        }
+
+        function scrapeItems(container) {
+            const els = Array.from(container.children);
+            return els.map(el => {
+                if (!el.dataset.json) return null;
+                return JSON.parse(el.dataset.json);
+            }).filter(x => x);
+        }
+
+        function scrapeFactions(container) {
+            // Container has .supercat-list > .cat > .faction-list > .faction-card
+            const listContainer = container.querySelector('.supercat-list');
+            if(!listContainer) return [];
+
+            const groupEls = Array.from(listContainer.children);
+            return groupEls.map(el => {
+                if(!el.classList.contains('cat')) return null; // using 'cat' class for groups
+
+                const factionList = el.querySelector('.faction-list');
+                const factions = Array.from(factionList.children).map(card => {
+                    return JSON.parse(card.dataset.json);
+                });
+
+                return {
+                    name: el.dataset.name,
+                    factions: factions
+                };
+            }).filter(x => x);
+        }
+    </script>
+</body>
+</html>
