@@ -377,7 +377,6 @@
             "icon": "inv_120_raid_marchonqueldanas_lura",
             "id": 61379,
             "name": "Dawnbringer",
-            "new": true,
             "titleId": 678,
             "type": "achievement"
           },
@@ -385,17 +384,15 @@
             "icon": "inv_120_raid_dreamwell_malformedmanifestation",
             "id": 61489,
             "name": "Dream-Eater",
-            "new": true,
             "titleId": 679,
             "type": "achievement"
           },
           {
-            "icon": "inv_misc_questionmark",
-            "id": 1072,
+            "icon": "inv_120_raid_voidspire_alleria",
+            "id": 61377,
             "name": "Spirebane",
-            "new": true,
             "titleId": 690,
-            "type": "title"
+            "type": "achievement"
           }
         ],
         "name": "Raids"
@@ -406,7 +403,6 @@
             "icon": "inv_inscription_talentcodex01",
             "id": 61344,
             "name": "Chronicler of the Haranir",
-            "new": true,
             "titleId": 680,
             "type": "achievement"
           },
@@ -414,7 +410,6 @@
             "icon": "inv_cape_special_treasure_c_01",
             "id": 61901,
             "name": "Treasure Seeker",
-            "new": true,
             "titleId": 691,
             "type": "achievement"
           },
@@ -422,7 +417,6 @@
             "icon": "achievement_general_100kquests",
             "id": 61922,
             "name": "The Singular",
-            "new": true,
             "titleId": 753,
             "type": "achievement"
           },
@@ -430,8 +424,14 @@
             "icon": "inv_enchanting_wod_dust3",
             "id": 61052,
             "name": "Dustlord",
-            "new": true,
             "titleId": 754,
+            "type": "achievement"
+          },
+          {
+            "icon": "ui_prey",
+            "id": 62351,
+            "name": "Preyseeker",
+            "titleId": 755,
             "type": "achievement"
           }
         ],
@@ -443,7 +443,6 @@
             "icon": "inv_misc_questionmark",
             "id": 935,
             "name": "Loa-Speaker",
-            "new": true,
             "titleId": 740,
             "type": "title"
           },
@@ -451,7 +450,6 @@
             "icon": "inv_misc_questionmark",
             "id": 1020,
             "name": "Honorary Hara'ti",
-            "new": true,
             "titleId": 665,
             "type": "title"
           },
@@ -459,7 +457,6 @@
             "icon": "inv_misc_questionmark",
             "id": 1026,
             "name": "Life of the Party",
-            "new": true,
             "titleId": 667,
             "type": "title"
           }
@@ -472,7 +469,6 @@
             "icon": "inv_misc_questionmark",
             "id": 1035,
             "name": "Teacher of Strong",
-            "new": true,
             "titleId": 670,
             "type": "title"
           }
@@ -485,8 +481,6 @@
             "icon": "inv_ability_priest_mindgames",
             "id": 62189,
             "name": "Mind-Seeker",
-            "new": true,
-            "notObtainable": true,
             "titleId": 671,
             "type": "achievement"
           }
@@ -3953,7 +3947,6 @@
   {
     "id": "fffffffe",
     "name": "Legacy",
-    "notObtainable": true,
     "subcats": [
       {
         "items": [
