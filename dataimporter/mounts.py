@@ -49,6 +49,7 @@ IGNORE_MOUNT_ID = [
     2115,  # Dracthyr Racial
     1715,  # Placeholder Mecha-Done Mount - Never Added
     2716,  # Placeholder Legion Remix Mount - Never Added
+    2969,  # Swift Spectral Gryphon https://www.wowhead.com/mount/2969
 ]
 
 MOUNT_SOURCE_ENUM = {

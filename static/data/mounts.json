@@ -444,18 +444,6 @@
           }
         ],
         "name": "Midnight Pre-Patch"
-      },
-      {
-        "items": [
-          {
-            "ID": 2651,
-            "icon": "inv_tuskarrmoosemount_red",
-            "itemId": 250108,
-            "name": "Cragstepper Crest-Horn",
-            "spellid": 1250288
-          }
-        ],
-        "name": "Blizzard Store"
       }
     ]
   },
@@ -469,39 +457,34 @@
             "icon": "inv_rutaanibirdmount_pink",
             "itemId": 252011,
             "name": "Brilliant Petalwing",
-            "new": true,
             "spellid": 1253924
           },
           {
             "ID": 2912,
-            "icon": "inv_misc_questionmark",
+            "icon": "inv_resinrhinomount_pink",
             "itemId": 263579,
             "name": "Vivacious Chloroceros",
-            "new": true,
             "spellid": 1270673
-          },
-          {
-            "ID": 2755,
-            "icon": "inv_dragonhawk2mount_black",
-            "itemId": 257144,
-            "name": "Umbral Dragonhawk",
-            "new": true,
-            "spellid": 1261296
           },
           {
             "ID": 2756,
             "icon": "inv_dragonhawk2mount_red",
             "itemId": 257145,
             "name": "Crimson Dragonhawk",
-            "new": true,
             "spellid": 1261298
           },
           {
+            "ID": 2755,
+            "icon": "inv_dragonhawk2mount_black",
+            "itemId": 257144,
+            "name": "Umbral Dragonhawk",
+            "spellid": 1261296
+          },
+          {
             "ID": 2829,
-            "icon": "inv_cosmicflyermount_purple",
+            "icon": "inv_cosmicflyermount_red",
             "itemId": 260697,
             "name": "Lab-grown Stormray",
-            "new": true,
             "spellid": 1266703
           },
           {
@@ -509,7 +492,6 @@
             "icon": "inv_manawyrm2mount_3",
             "itemId": 257193,
             "name": "Preyseeker's Nightmare",
-            "new": true,
             "spellid": 1261338
           },
           {
@@ -517,7 +499,6 @@
             "icon": "inv_amanipangolinmount_forest",
             "itemId": 257199,
             "name": "Giganto Manis",
-            "new": true,
             "spellid": 1261349
           },
           {
@@ -525,7 +506,6 @@
             "icon": "inv_kaijubatvoidmount",
             "itemId": 260887,
             "name": "Tenebrous Harrower",
-            "new": true,
             "spellid": 1266980
           }
         ],
@@ -538,7 +518,6 @@
             "icon": "inv_darkwellphoenixmount",
             "itemId": 246590,
             "name": "Ashes of Belo'ren",
-            "new": true,
             "spellid": 1242904
           }
         ],
@@ -551,7 +530,6 @@
             "icon": "inv_white_hawkstrider",
             "itemId": 262914,
             "name": "Spectral Hawkstrider",
-            "new": true,
             "spellid": 1263635
           },
           {
@@ -559,7 +537,6 @@
             "icon": "inv_hawkstridermount_white",
             "itemId": 260231,
             "name": "Lucent Hawkstrider",
-            "new": true,
             "spellid": 1265784
           }
         ],
@@ -572,7 +549,6 @@
             "icon": "inv_stalkermount_blue",
             "itemId": 257447,
             "name": "Prowling Shredclaw",
-            "new": true,
             "spellid": 1261584
           },
           {
@@ -580,7 +556,6 @@
             "icon": "inv_stalkermount_red",
             "itemId": 257448,
             "name": "Frenzied Shredclaw",
-            "new": true,
             "spellid": 1261585
           }
         ],
@@ -593,7 +568,6 @@
             "icon": "inv_kaijubatmount_blue",
             "itemId": 257176,
             "name": "Duskbrute Harrower",
-            "new": true,
             "spellid": 1261332
           }
         ],
@@ -606,7 +580,6 @@
             "icon": "inv_harronircatmount_purple",
             "itemId": 246734,
             "name": "Fierce Grimlynx",
-            "new": true,
             "spellid": 1243593
           },
           {
@@ -614,7 +587,6 @@
             "icon": "inv_sborebat3mount_blue",
             "itemId": 252014,
             "name": "Cerulean Sporeglider",
-            "new": true,
             "spellid": 1253929
           },
           {
@@ -622,7 +594,6 @@
             "icon": "inv_amanibearmount_amani",
             "itemId": 257219,
             "name": "Amani Blessed Bear",
-            "new": true,
             "spellid": 1261357
           },
           {
@@ -630,7 +601,6 @@
             "icon": "inv_gianteagle2mount_amani",
             "itemId": 250889,
             "name": "Amani Windcaller",
-            "new": true,
             "spellid": 1251630
           },
           {
@@ -638,7 +608,6 @@
             "icon": "inv_hawkstridermount_red",
             "itemId": 257154,
             "name": "Crimson Silvermoon Hawkstrider",
-            "new": true,
             "spellid": 1261322
           },
           {
@@ -646,7 +615,6 @@
             "icon": "inv_dragonhawk2mount_orange",
             "itemId": 257142,
             "name": "Fiery Dragonhawk",
-            "new": true,
             "spellid": 1261291
           },
           {
@@ -654,7 +622,6 @@
             "icon": "inv_stalkermount_orange",
             "itemId": 257445,
             "name": "Ravenous Shredclaw",
-            "new": true,
             "spellid": 1261579
           },
           {
@@ -662,7 +629,6 @@
             "icon": "inv_cosmicflyermount_grey",
             "itemId": 260696,
             "name": "Voidbound Stormray",
-            "new": true,
             "spellid": 1266702
           }
         ],
@@ -675,7 +641,6 @@
             "icon": "bloodknightcharger_icon_white",
             "itemId": 257240,
             "name": "Relinquished Scarlet Charger",
-            "new": true,
             "spellid": 1261391
           }
         ],
@@ -688,7 +653,6 @@
             "icon": "inv_pandarenserpentmount_bluewhite",
             "itemId": 256424,
             "name": "Echo of Aln'sharan",
-            "new": true,
             "spellid": 1260356
           }
         ],
@@ -701,7 +665,6 @@
             "icon": "inv_manawyrm2mount_1",
             "itemId": 257191,
             "name": "Preyseeker's Hubris",
-            "new": true,
             "spellid": 1261336
           },
           {
@@ -709,7 +672,6 @@
             "icon": "inv_manawyrm2mount_2",
             "itemId": 257192,
             "name": "Preyseeker's Wrath",
-            "new": true,
             "spellid": 1261337
           }
         ],
@@ -722,7 +684,6 @@
             "icon": "inv_gianteagle2mount_woodland",
             "itemId": 250782,
             "name": "Amani Sunfeather",
-            "new": true,
             "spellid": 1251433
           },
           {
@@ -730,7 +691,6 @@
             "icon": "inv_amanipangolinmount_amani",
             "itemId": 257197,
             "name": "Blessed Amani Burrower",
-            "new": true,
             "spellid": 1261348
           },
           {
@@ -738,7 +698,6 @@
             "icon": "inv_arcanegolem2mount_red",
             "itemId": 262500,
             "name": "Silvermoon's Arcane Defender",
-            "new": true,
             "spellid": 1268924
           },
           {
@@ -746,7 +705,6 @@
             "icon": "inv_arcanegolem2mount_white",
             "itemId": 262502,
             "name": "Elven Arcane Guardian",
-            "new": true,
             "spellid": 1268926
           },
           {
@@ -754,7 +712,6 @@
             "icon": "inv_resinrhinomount_purple",
             "itemId": 263580,
             "name": "Vivid Chloroceros",
-            "new": true,
             "spellid": 1270675
           },
           {
@@ -762,7 +719,6 @@
             "icon": "inv_firefly2mount_green",
             "itemId": 222988,
             "name": "Elder Glowmite",
-            "new": true,
             "spellid": 447173
           }
         ],
@@ -775,7 +731,6 @@
             "icon": "inv_sborebat3mount_red",
             "itemId": 252017,
             "name": "Ruddy Sporeglider",
-            "new": true,
             "spellid": 1253938
           },
           {
@@ -783,7 +738,6 @@
             "icon": "inv_grovecrawlermount_purple",
             "itemId": 256423,
             "name": "Untainted Grove Crawler",
-            "new": true,
             "spellid": 1260354
           },
           {
@@ -791,7 +745,6 @@
             "icon": "inv_amanibearmount_wood",
             "itemId": 257223,
             "name": "Ancestral War Bear",
-            "new": true,
             "spellid": 1261360
           },
           {
@@ -799,7 +752,6 @@
             "icon": "inv_gianteagle2hexmount",
             "itemId": 257444,
             "name": "Hexed Vilefeather Eagle",
-            "new": true,
             "spellid": 1261576
           },
           {
@@ -807,7 +759,6 @@
             "icon": "inv_stalkermount_yellow",
             "itemId": 257446,
             "name": "Insatiable Shredclaw",
-            "new": true,
             "spellid": 1261583
           }
         ],
@@ -820,7 +771,6 @@
             "icon": "inv_harronircatmount_red",
             "itemId": 246735,
             "name": "Rootstalker Grimlynx",
-            "new": true,
             "spellid": 1243597
           },
           {
@@ -828,7 +778,6 @@
             "icon": "inv_rutaanibirdmount_red",
             "itemId": 252012,
             "name": "Vibrant Petalwing",
-            "new": true,
             "spellid": 1253927
           },
           {
@@ -836,7 +785,6 @@
             "icon": "inv_dragonhawk2mount_cyan",
             "itemId": 257147,
             "name": "Cobalt Dragonhawk",
-            "new": true,
             "spellid": 1261302
           },
           {
@@ -844,7 +792,6 @@
             "icon": "inv_hawkstridermount_blue",
             "itemId": 257156,
             "name": "Cerulean Hawkstrider",
-            "new": true,
             "spellid": 1261323
           },
           {
@@ -852,7 +799,6 @@
             "icon": "inv_gianteagle2mount_forest",
             "itemId": 257152,
             "name": "Amani Sharptalon",
-            "new": true,
             "spellid": 1261316
           },
           {
@@ -860,7 +806,6 @@
             "icon": "inv_amanipangolinmount_witherbark",
             "itemId": 257200,
             "name": "Witherbark Pango",
-            "new": true,
             "spellid": 1261351
           },
           {
@@ -868,7 +813,6 @@
             "icon": "inv_cosmicflyermount_grey",
             "itemId": 257085,
             "name": "Augmented Stormray",
-            "new": true,
             "spellid": 1261155
           },
           {
@@ -876,7 +820,6 @@
             "icon": "inv_kaijubatmount_red",
             "itemId": 260635,
             "name": "Sanguine Harrower",
-            "new": true,
             "spellid": 1266700
           }
         ],
@@ -889,7 +832,6 @@
             "icon": "inv_kaijubatmount_orange",
             "itemId": 257180,
             "name": "Contained Stormarion Defender",
-            "new": true,
             "spellid": 1261334
           }
         ],
@@ -902,7 +844,6 @@
             "icon": "inv_harronircatmount_white",
             "itemId": 246736,
             "name": "Ivory Grimlynx",
-            "new": true,
             "spellid": 1243598
           }
         ],
@@ -11799,8 +11740,16 @@
             "spellid": 1244260
           },
           {
+            "ID": 2651,
+            "icon": "inv_tuskarrmoosemount_red",
+            "itemId": 250108,
+            "name": "Cragstepper Crest-Horn",
+            "notObtainable": true,
+            "spellid": 1250288
+          },
+          {
             "ID": 2634,
-            "icon": "7153694",
+            "icon": "inv_lunarhorsemount",
             "itemId": 248681,
             "name": "Scorching Valor",
             "spellid": 1247422
@@ -11962,7 +11911,7 @@
           },
           {
             "ID": 2719,
-            "icon": "7317375",
+            "icon": "inv_netherwingmount",
             "itemId": 252950,
             "name": "Starspark Netherdrake",
             "spellid": 1255246
@@ -11995,7 +11944,7 @@
         "items": [
           {
             "ID": 2304,
-            "icon": "6126079",
+            "icon": "inv_30thgryphonmount_gold",
             "itemId": 230184,
             "name": "Chaos-Forged Gryphon",
             "notObtainable": true,
@@ -12003,7 +11952,7 @@
           },
           {
             "ID": 2305,
-            "icon": "6036388",
+            "icon": "inv_30thhippogryphmount",
             "itemId": 230185,
             "name": "Chaos-Forged Hippogryph",
             "notObtainable": true,
@@ -12019,7 +11968,7 @@
           },
           {
             "ID": 2308,
-            "icon": "6080694",
+            "icon": "inv_30thwyvernmount_red",
             "itemId": 230201,
             "name": "Chaos-Forged Wind Rider",
             "notObtainable": true,
@@ -12934,7 +12883,7 @@
           },
           {
             "ID": 2717,
-            "icon": "7259806",
+            "icon": "inv_pantheramount",
             "itemId": 252679,
             "name": "Mechanical Prototype Panther MK-0",
             "notObtainable": true,
@@ -12943,7 +12892,7 @@
           },
           {
             "ID": 2718,
-            "icon": "7259773",
+            "icon": "inv_pantheramountironhorde",
             "itemId": 252681,
             "name": "Steel Prototype Panther MK-0",
             "notObtainable": true,
@@ -12977,7 +12926,7 @@
           },
           {
             "ID": 2838,
-            "icon": "7460360",
+            "icon": "inv_goblinsurfboardmount_orange",
             "itemId": 262438,
             "name": "Fantastical Goblin Waveshredder",
             "notObtainable": true,
@@ -12986,7 +12935,7 @@
           },
           {
             "ID": 2914,
-            "icon": "7493687",
+            "icon": "inv_stormcrowmount_fel",
             "itemId": 264273,
             "name": "Fel Spirehawk",
             "notObtainable": true,
@@ -12995,7 +12944,7 @@
           },
           {
             "ID": 2843,
-            "icon": "7448047",
+            "icon": "inv_snailmount_green",
             "itemId": 262661,
             "name": "Ghastropod",
             "notObtainable": true,
@@ -13004,7 +12953,7 @@
           },
           {
             "ID": 2849,
-            "icon": "7489718",
+            "icon": "inv_goblintrikemount",
             "itemId": 262909,
             "name": "Hypo-Speed X6000",
             "notObtainable": true,
@@ -13013,7 +12962,7 @@
           },
           {
             "ID": 2742,
-            "icon": "7360957",
+            "icon": "inv_horsedragonmount_blue",
             "itemId": 254735,
             "name": "Thunderhoof Celestial",
             "notObtainable": true,
@@ -13022,7 +12971,7 @@
           },
           {
             "ID": 2743,
-            "icon": "7360959",
+            "icon": "inv_horsedragonmount_yellow",
             "itemId": 254736,
             "name": "Stormgilded Celestial",
             "notObtainable": true,
@@ -13031,7 +12980,7 @@
           },
           {
             "ID": 2948,
-            "icon": "7316475",
+            "icon": "inv_encrypted13_gold",
             "itemId": 269009,
             "name": "Golden Ashened Cataclysm",
             "notObtainable": true,

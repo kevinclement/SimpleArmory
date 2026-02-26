@@ -289,7 +289,7 @@
             "icon": "achievement_challengemode_silver",
             "id": 42170,
             "name": "the Unbound",
-            "titleId": 713,
+            "titleId": 453,
             "type": "achievement"
           },
           {
@@ -377,7 +377,6 @@
             "icon": "inv_120_raid_marchonqueldanas_lura",
             "id": 61379,
             "name": "Dawnbringer",
-            "new": true,
             "titleId": 678,
             "type": "achievement"
           },
@@ -385,17 +384,15 @@
             "icon": "inv_120_raid_dreamwell_malformedmanifestation",
             "id": 61489,
             "name": "Dream-Eater",
-            "new": true,
             "titleId": 679,
             "type": "achievement"
           },
           {
-            "icon": "inv_misc_questionmark",
-            "id": 1072,
+            "icon": "inv_120_raid_voidspire_alleria",
+            "id": 61377,
             "name": "Spirebane",
-            "new": true,
             "titleId": 690,
-            "type": "title"
+            "type": "achievement"
           }
         ],
         "name": "Raids"
@@ -406,7 +403,6 @@
             "icon": "inv_inscription_talentcodex01",
             "id": 61344,
             "name": "Chronicler of the Haranir",
-            "new": true,
             "titleId": 680,
             "type": "achievement"
           },
@@ -414,7 +410,6 @@
             "icon": "inv_cape_special_treasure_c_01",
             "id": 61901,
             "name": "Treasure Seeker",
-            "new": true,
             "titleId": 691,
             "type": "achievement"
           },
@@ -422,7 +417,6 @@
             "icon": "achievement_general_100kquests",
             "id": 61922,
             "name": "The Singular",
-            "new": true,
             "titleId": 753,
             "type": "achievement"
           },
@@ -430,8 +424,14 @@
             "icon": "inv_enchanting_wod_dust3",
             "id": 61052,
             "name": "Dustlord",
-            "new": true,
             "titleId": 754,
+            "type": "achievement"
+          },
+          {
+            "icon": "ui_prey",
+            "id": 62351,
+            "name": "Preyseeker",
+            "titleId": 755,
             "type": "achievement"
           }
         ],
@@ -443,7 +443,6 @@
             "icon": "inv_misc_questionmark",
             "id": 935,
             "name": "Loa-Speaker",
-            "new": true,
             "titleId": 740,
             "type": "title"
           },
@@ -451,7 +450,6 @@
             "icon": "inv_misc_questionmark",
             "id": 1020,
             "name": "Honorary Hara'ti",
-            "new": true,
             "titleId": 665,
             "type": "title"
           },
@@ -459,7 +457,6 @@
             "icon": "inv_misc_questionmark",
             "id": 1026,
             "name": "Life of the Party",
-            "new": true,
             "titleId": 667,
             "type": "title"
           }
@@ -472,7 +469,6 @@
             "icon": "inv_misc_questionmark",
             "id": 1035,
             "name": "Teacher of Strong",
-            "new": true,
             "titleId": 670,
             "type": "title"
           }
@@ -485,8 +481,6 @@
             "icon": "inv_ability_priest_mindgames",
             "id": 62189,
             "name": "Mind-Seeker",
-            "new": true,
-            "notObtainable": true,
             "titleId": 671,
             "type": "achievement"
           }
@@ -715,27 +709,6 @@
             "name": "Trade-Duke",
             "titleId": 607,
             "type": "achievement"
-          },
-          {
-            "icon": "inv_misc_questionmark",
-            "id": 927,
-            "name": "Ba'",
-            "titleId": 647,
-            "type": "title"
-          },
-          {
-            "icon": "inv_sword_1h_broker2boss_d_01_blue",
-            "id": 15109,
-            "name": "Zo'",
-            "titleId": 648,
-            "type": "title"
-          },
-          {
-            "icon": "achievement_dungeon_blackrockcaverns_romogg-bonecrusher",
-            "id": 5281,
-            "name": "Om'",
-            "titleId": 649,
-            "type": "title"
           }
         ],
         "name": "Reputation"
@@ -2652,7 +2625,6 @@
             "icon": "inv_12_profession_alchemy_alhemyspecializations_flasks",
             "id": 62239,
             "name": "Thalassian Alchemist",
-            "new": true,
             "titleId": 741,
             "type": "achievement"
           },
@@ -2660,7 +2632,6 @@
             "icon": "inv_12_profession_blacksmithing_repairhammer_purple",
             "id": 62240,
             "name": "Thalassian Blacksmith",
-            "new": true,
             "titleId": 742,
             "type": "achievement"
           },
@@ -2668,7 +2639,6 @@
             "icon": "inv_12_profession_enchanting_transitoriestonicsandtools",
             "id": 62241,
             "name": "Thalassian Enchanter",
-            "new": true,
             "titleId": 743,
             "type": "achievement"
           },
@@ -2676,7 +2646,6 @@
             "icon": "inv_12_profession_engineering_manufacturedparts_coil_purple",
             "id": 62242,
             "name": "Thalassian Engineer",
-            "new": true,
             "titleId": 744,
             "type": "achievement"
           },
@@ -2684,7 +2653,6 @@
             "icon": "inv_12_profession_inscriptions_darkmoondominions_void",
             "id": 62243,
             "name": "Thalassian Scribe",
-            "new": true,
             "titleId": 745,
             "type": "achievement"
           },
@@ -2692,7 +2660,6 @@
             "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_pink",
             "id": 62244,
             "name": "Thalassian Jewelcrafter",
-            "new": true,
             "titleId": 746,
             "type": "achievement"
           },
@@ -2700,7 +2667,6 @@
             "icon": "inv_12_profession_leatherworking_armor_banding_brown",
             "id": 62245,
             "name": "Thalassian Leatherworker",
-            "new": true,
             "titleId": 747,
             "type": "achievement"
           },
@@ -2708,7 +2674,6 @@
             "icon": "inv_12_profession_tailoring_tailoringspecializations_nimbleneedlework",
             "id": 62246,
             "name": "Thalassian Tailor",
-            "new": true,
             "titleId": 748,
             "type": "achievement"
           },
@@ -2716,7 +2681,6 @@
             "icon": "inv_12_profession_mining_dazzlingthorium-",
             "id": 62251,
             "name": "Thalassian Miner",
-            "new": true,
             "titleId": 750,
             "type": "achievement"
           },
@@ -2724,7 +2688,6 @@
             "icon": "inv_12_profession_herbalism_blacklotus_green",
             "id": 62250,
             "name": "Thalassian Herbalist",
-            "new": true,
             "titleId": 751,
             "type": "achievement"
           },
@@ -2732,7 +2695,6 @@
             "icon": "inv_12_skinning_stormchargedleather1",
             "id": 62252,
             "name": "Thalassian Skinner",
-            "new": true,
             "titleId": 752,
             "type": "achievement"
           }
@@ -3953,7 +3915,6 @@
   {
     "id": "fffffffe",
     "name": "Legacy",
-    "notObtainable": true,
     "subcats": [
       {
         "items": [

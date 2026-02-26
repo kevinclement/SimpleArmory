@@ -114,6 +114,10 @@ IGNORE_TITLE_ID = [
     469,  # The Worldbreaker https://www.wowhead.com/title=13931
     146,  # Blessed Defender of Nordrassil https://www.wowhead.com/title=266
     617,  # Employee of the Month https://www.wowhead.com/title=893
+    647,  # Ba' Temporary Contract Title https://www.wowhead.com/spell=1249465/deal-cartel-ba
+    648,  # Zo' Temporary Contract Title https://www.wowhead.com/spell=1249463/deal-cartel-zo
+    649,  # Om' Temporary Contract Title https://www.wowhead.com/spell=1249468/deal-cartel-om
+
 ]
 
 
