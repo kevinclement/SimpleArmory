@@ -12925,6 +12925,48 @@
           ]
         },
         {
+          "id": "3d1a445e",
+          "name": "Slayer's Rise",
+          "subcats": [
+            {
+              "id": "e4d2ef6b",
+              "items": [
+                {
+                  "icon": "inv_battleground_voidstorm",
+                  "id": 62493,
+                  "points": 5,
+                  "title": "Slayer's Rise Victory"
+                },
+                {
+                  "icon": "inv_battleground_voidstorm",
+                  "id": 62494,
+                  "points": 10,
+                  "title": "Slayer's Rise Veteran"
+                },
+                {
+                  "icon": "inv_battleground_voidstorm",
+                  "id": 62514,
+                  "points": 10,
+                  "title": "Slayer's Rise Dominance"
+                },
+                {
+                  "icon": "achievement_bg_kill_on_mount",
+                  "id": 62516,
+                  "points": 10,
+                  "title": "The Voided Gazelle"
+                },
+                {
+                  "icon": "inv_120_raid_voidspire_kaiju",
+                  "id": 62517,
+                  "points": 0,
+                  "title": "Rise of the Ultradon Slayer"
+                }
+              ],
+              "name": ""
+            }
+          ]
+        },
+        {
           "id": "6108f828",
           "name": "Rated Battleground",
           "subcats": [
@@ -49100,20 +49142,20 @@
                   "title": "Hero of the Horde: Cruel"
                 },
                 {
-                  "icon": "achievement_pvp_g_h",
-                  "id": 11051,
-                  "notObtainable": true,
-                  "points": 0,
-                  "side": "H",
-                  "title": "Soldier of the Horde: Legion Season 4"
-                },
-                {
                   "icon": "achievement_pvp_g_a",
                   "id": 11050,
                   "notObtainable": true,
                   "points": 0,
                   "side": "A",
                   "title": "Soldier of the Alliance: Legion Season 4"
+                },
+                {
+                  "icon": "achievement_pvp_g_h",
+                  "id": 11051,
+                  "notObtainable": true,
+                  "points": 0,
+                  "side": "H",
+                  "title": "Soldier of the Horde: Legion Season 4"
                 },
                 {
                   "icon": "achievement_pvp_o_a",
@@ -49164,14 +49206,6 @@
                   "title": "Hero of the Horde: Ferocious"
                 },
                 {
-                  "icon": "achievement_pvp_g_h",
-                  "id": 12044,
-                  "notObtainable": true,
-                  "points": 0,
-                  "side": "H",
-                  "title": "Soldier of the Horde: Legion Season 5"
-                },
-                {
                   "icon": "achievement_pvp_g_a",
                   "id": 12040,
                   "notObtainable": true,
@@ -49180,12 +49214,12 @@
                   "title": "Soldier of the Alliance: Legion Season 5"
                 },
                 {
-                  "icon": "achievement_pvp_o_h",
-                  "id": 12043,
+                  "icon": "achievement_pvp_g_h",
+                  "id": 12044,
                   "notObtainable": true,
                   "points": 0,
                   "side": "H",
-                  "title": "Defender of the Horde: Legion Season 5"
+                  "title": "Soldier of the Horde: Legion Season 5"
                 },
                 {
                   "icon": "achievement_pvp_o_a",
@@ -49196,12 +49230,12 @@
                   "title": "Defender of the Alliance: Legion Season 5"
                 },
                 {
-                  "icon": "achievement_pvp_p_h",
-                  "id": 12042,
+                  "icon": "achievement_pvp_o_h",
+                  "id": 12043,
                   "notObtainable": true,
                   "points": 0,
                   "side": "H",
-                  "title": "Guardian of the Horde: Legion Season 5"
+                  "title": "Defender of the Horde: Legion Season 5"
                 },
                 {
                   "icon": "achievement_pvp_p_a",
@@ -49212,12 +49246,12 @@
                   "title": "Guardian of the Alliance: Legion Season 5"
                 },
                 {
-                  "icon": "achievement_pvp_h_h",
-                  "id": 12041,
+                  "icon": "achievement_pvp_p_h",
+                  "id": 12042,
                   "notObtainable": true,
                   "points": 0,
                   "side": "H",
-                  "title": "Hero of the Horde: Fierce"
+                  "title": "Guardian of the Horde: Legion Season 5"
                 },
                 {
                   "icon": "achievement_pvp_a_a",
@@ -49228,12 +49262,12 @@
                   "title": "Hero of the Alliance: Fierce"
                 },
                 {
-                  "icon": "achievement_pvp_g_h",
-                  "id": 12178,
+                  "icon": "achievement_pvp_h_h",
+                  "id": 12041,
                   "notObtainable": true,
                   "points": 0,
                   "side": "H",
-                  "title": "Soldier of the Horde: Legion Season 6"
+                  "title": "Hero of the Horde: Fierce"
                 },
                 {
                   "icon": "achievement_pvp_g_a",
@@ -49242,6 +49276,14 @@
                   "points": 0,
                   "side": "A",
                   "title": "Soldier of the Alliance: Legion Season 6"
+                },
+                {
+                  "icon": "achievement_pvp_g_h",
+                  "id": 12178,
+                  "notObtainable": true,
+                  "points": 0,
+                  "side": "H",
+                  "title": "Soldier of the Horde: Legion Season 6"
                 },
                 {
                   "icon": "achievement_pvp_o_a",
@@ -49260,14 +49302,6 @@
                   "title": "Defender of the Horde: Legion Season 6"
                 },
                 {
-                  "icon": "achievement_pvp_p_h",
-                  "id": 12176,
-                  "notObtainable": true,
-                  "points": 0,
-                  "side": "H",
-                  "title": "Guardian of the Horde: Legion Season 6"
-                },
-                {
                   "icon": "achievement_pvp_p_a",
                   "id": 12177,
                   "notObtainable": true,
@@ -49276,12 +49310,12 @@
                   "title": "Guardian of the Alliance: Legion Season 6"
                 },
                 {
-                  "icon": "achievement_pvp_h_h",
-                  "id": 12172,
+                  "icon": "achievement_pvp_p_h",
+                  "id": 12176,
                   "notObtainable": true,
                   "points": 0,
                   "side": "H",
-                  "title": "Hero of the Horde: Dominant"
+                  "title": "Guardian of the Horde: Legion Season 6"
                 },
                 {
                   "icon": "achievement_pvp_a_a",
@@ -49292,12 +49326,12 @@
                   "title": "Hero of the Alliance: Dominant"
                 },
                 {
-                  "icon": "achievement_pvp_g_h",
-                  "id": 12190,
+                  "icon": "achievement_pvp_h_h",
+                  "id": 12172,
                   "notObtainable": true,
                   "points": 0,
                   "side": "H",
-                  "title": "Soldier of the Horde: Legion Season 7"
+                  "title": "Hero of the Horde: Dominant"
                 },
                 {
                   "icon": "achievement_pvp_g_a",
@@ -49308,12 +49342,12 @@
                   "title": "Soldier of the Alliance: Legion Season 7"
                 },
                 {
-                  "icon": "achievement_pvp_o_h",
-                  "id": 12194,
+                  "icon": "achievement_pvp_g_h",
+                  "id": 12190,
                   "notObtainable": true,
                   "points": 0,
                   "side": "H",
-                  "title": "Defender of the Horde: Legion Season 7"
+                  "title": "Soldier of the Horde: Legion Season 7"
                 },
                 {
                   "icon": "achievement_pvp_o_a",
@@ -49324,12 +49358,12 @@
                   "title": "Defender of the Alliance: Legion Season 7"
                 },
                 {
-                  "icon": "achievement_pvp_p_h",
-                  "id": 12192,
+                  "icon": "achievement_pvp_o_h",
+                  "id": 12194,
                   "notObtainable": true,
                   "points": 0,
                   "side": "H",
-                  "title": "Guardian of the Horde: Legion Season 7"
+                  "title": "Defender of the Horde: Legion Season 7"
                 },
                 {
                   "icon": "achievement_pvp_p_a",
@@ -49340,12 +49374,12 @@
                   "title": "Guardian of the Alliance: Legion Season 7"
                 },
                 {
-                  "icon": "achievement_pvp_h_h",
-                  "id": 12196,
+                  "icon": "achievement_pvp_p_h",
+                  "id": 12192,
                   "notObtainable": true,
                   "points": 0,
                   "side": "H",
-                  "title": "Hero of the Horde: Demonic"
+                  "title": "Guardian of the Horde: Legion Season 7"
                 },
                 {
                   "icon": "achievement_pvp_a_a",
@@ -49354,6 +49388,14 @@
                   "points": 0,
                   "side": "A",
                   "title": "Hero of the Alliance: Demonic"
+                },
+                {
+                  "icon": "achievement_pvp_h_h",
+                  "id": 12196,
+                  "notObtainable": true,
+                  "points": 0,
+                  "side": "H",
+                  "title": "Hero of the Horde: Demonic"
                 }
               ],
               "name": "Rated Battleground: Legion"
@@ -49861,7 +49903,7 @@
                   "title": "Hero of the Alliance: Galactic"
                 },
                 {
-                  "icon": "achievement_pvp_a_a",
+                  "icon": "achievement_pvp_h_h",
                   "id": 61196,
                   "notObtainable": true,
                   "points": 0,
@@ -49918,6 +49960,7 @@
                   "id": 61177,
                   "notObtainable": true,
                   "points": 0,
+                  "side": "A",
                   "title": "Galactic Marshal: Midnight Season 1"
                 },
                 {
@@ -49925,6 +49968,7 @@
                   "id": 61178,
                   "notObtainable": true,
                   "points": 0,
+                  "side": "H",
                   "title": "Galactic Warlord: Midnight Season 1"
                 },
                 {
@@ -50794,11 +50838,6 @@
                 }
               ],
               "name": "Legion: Remix"
-            },
-            {
-              "id": "6b7b283e",
-              "items": [],
-              "name": "TODO"
             }
           ]
         },
