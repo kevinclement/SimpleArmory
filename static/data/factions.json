@@ -12,11 +12,35 @@
     "factions": [
       {
         "id": 2699,
-        "name": "The Singularity"
+        "name": "The Singularity",
+        "renown": {
+          "max": 20,
+          "step": 2500
+        }
       },
       {
         "id": 2704,
-        "name": "Hara'ti"
+        "name": "Hara'ti",
+        "renown": {
+          "max": 20,
+          "step": 2500
+        }
+      },
+      {
+        "id": 2696,
+        "name": "Amani Tribe",
+        "renown": {
+          "max": 20,
+          "step": 2500
+        }
+      },
+      {
+        "id": 2710,
+        "name": "Silvermoon Court",
+        "renown": {
+          "max": 20,
+          "step": 2500
+        }
       },
       {
         "id": 2711,
