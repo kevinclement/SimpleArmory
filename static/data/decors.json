@@ -132,17 +132,6 @@
       {
         "items": [
           {
-            "ID": 14467,
-            "icon": "7476681",
-            "itemId": "260785",
-            "name": "Miniature Replica Dark Portal"
-          }
-        ],
-        "name": "Login"
-      },
-      {
-        "items": [
-          {
             "ID": 15668,
             "icon": "7513316",
             "itemId": "264396",
@@ -1959,19 +1948,29 @@
             "ID": 1227,
             "icon": "7416801",
             "itemId": "251997",
-            "name": "Sin'dorei Winged Chaise"
+            "name": "Sin'dorei Winged Chaise",
+            "notObtainable": true
           },
           {
             "ID": 714,
             "icon": "7416091",
             "itemId": "245284",
-            "name": "Silvermoon Wooden Chair"
+            "name": "Silvermoon Wooden Chair",
+            "notObtainable": true
           },
           {
             "ID": 1236,
             "icon": "7416829",
             "itemId": "245330",
-            "name": "Enchanted Blood Elven Candelabra"
+            "name": "Enchanted Blood Elven Candelabra",
+            "notObtainable": true
+          },
+          {
+            "ID": 14467,
+            "icon": "7476681",
+            "itemId": "260785",
+            "name": "Miniature Replica Dark Portal",
+            "notObtainable": true
           }
         ],
         "name": "Pre-Launch Event"
