@@ -241,17 +241,8 @@
     "name": "Limited Time",
     "subcats": [
       {
-        "items": [
-          {
-            "ID": 4729,
-            "creatureId": 235159,
-            "icon": "inv_redpandapet_orange",
-            "itemId": 234397,
-            "name": "Fullbelly Rollingpaw",
-            "spellid": 1213933
-          }
-        ],
-        "name": "Trading Post: February"
+        "items": [],
+        "name": "Trading Post: "
       },
       {
         "items": [
@@ -269,153 +260,23 @@
       {
         "items": [
           {
-            "ID": 4402,
-            "creatureId": 214286,
-            "icon": "inv_mouserock_teal",
-            "itemId": 211432,
-            "name": "Teele",
-            "spellid": 429423
-          },
-          {
-            "ID": 4286,
-            "creatureId": 211942,
-            "icon": "inv_duckbabyexplorer",
-            "itemId": 210409,
-            "name": "Aura",
-            "spellid": 425472
-          },
-          {
-            "ID": 4565,
-            "creatureId": 223600,
-            "icon": "inv_babynaga2_teal",
-            "itemId": 223339,
-            "name": "Trishi",
-            "spellid": 449046
-          },
-          {
-            "ID": 3582,
-            "creatureId": 205795,
-            "icon": "inv_magicalfishpet",
-            "itemId": 206174,
-            "name": "Blub",
-            "spellid": 412389
-          },
-          {
-            "ID": 4669,
-            "creatureId": 231713,
-            "icon": "inv_needledollpet_blue",
-            "itemId": 229993,
-            "name": "Bluedoo",
-            "spellid": 466179
-          },
-          {
-            "ID": 4408,
-            "creatureId": 216379,
-            "icon": "inv_ladybugpet_pink",
-            "itemId": 212722,
-            "name": "Buggsy",
-            "spellid": 432888
-          },
-          {
-            "ID": 4436,
-            "creatureId": 219134,
-            "icon": "inv_needledollpet_green",
-            "itemId": 217043,
-            "name": "Pokee",
-            "spellid": 438775
-          },
-          {
-            "ID": 4407,
-            "creatureId": 216345,
-            "icon": "inv_ladybugpet_red",
-            "itemId": 212700,
-            "name": "Nelle",
-            "spellid": 432844
-          },
-          {
-            "ID": 4548,
-            "creatureId": 223316,
-            "icon": "inv_ogrepet",
-            "itemId": 223145,
-            "name": "Marrlok",
-            "spellid": 448355
-          },
-          {
-            "ID": 3297,
-            "creatureId": 189123,
-            "icon": "inv_salamanderwaterbaby_orange",
-            "itemId": 193429,
-            "name": "Time-Lost Salamanther",
-            "spellid": 375235
-          },
-          {
-            "ID": 4566,
-            "creatureId": 223645,
-            "icon": "inv_murlocsurrender",
-            "itemId": 223474,
-            "name": "Worgli the Apprehensive",
-            "spellid": 449173
-          },
-          {
-            "ID": 4602,
-            "creatureId": 227414,
-            "icon": "inv_treasurecrabpet_yellow",
-            "itemId": 226104,
-            "name": "Claudius",
-            "spellid": 457689
-          },
-          {
-            "ID": 3542,
-            "creatureId": 204340,
-            "icon": "inv_sporebatrock_stoneblack",
-            "itemId": 205148,
-            "name": "Soot-Stained Shalewing",
-            "spellid": 408252
-          }
-        ],
-        "name": "Trading Post Anniversary"
-      },
-      {
-        "items": [
-          {
             "ID": 4595,
             "creatureId": 225354,
             "icon": "inv_pitlordpet_fire",
             "itemId": 224576,
             "name": "Lil' Flameo",
             "spellid": 453266
+          },
+          {
+            "ID": 4944,
+            "creatureId": 255750,
+            "icon": "inv_manawurm2pink",
+            "itemId": 260360,
+            "name": "Gummi the Glow Wyrm",
+            "spellid": 1266148
           }
         ],
         "name": "Promotions"
-      },
-      {
-        "items": [
-          {
-            "ID": 4830,
-            "creatureId": 245477,
-            "icon": "inv_112_petrewards_babyobserver_blue",
-            "itemId": 244911,
-            "name": "Rhay'Dahr",
-            "spellid": 1238273
-          },
-          {
-            "ID": 4633,
-            "creatureId": 231467,
-            "icon": "inv_babyhyena_blue",
-            "itemId": 232856,
-            "name": "Scruff",
-            "spellid": 471901
-          },
-          {
-            "ID": 4508,
-            "creatureId": 222593,
-            "icon": "inv_green_sporecreature2",
-            "itemId": 246628,
-            "name": "Emerald Sporbit",
-            "spellid": 446501
-          }
-        ],
-        "name": "Midnight Pre-Patch"
       }
     ]
   },
@@ -772,6 +633,38 @@
           }
         ],
         "name": "Prey"
+      },
+      {
+        "items": [
+          {
+            "ID": 4830,
+            "creatureId": 245477,
+            "icon": "inv_112_petrewards_babyobserver_blue",
+            "itemId": 244911,
+            "name": "Rhay'Dahr",
+            "notObtainable": true,
+            "spellid": 1238273
+          },
+          {
+            "ID": 4633,
+            "creatureId": 231467,
+            "icon": "inv_babyhyena_blue",
+            "itemId": 232856,
+            "name": "Scruff",
+            "notObtainable": true,
+            "spellid": 471901
+          },
+          {
+            "ID": 4508,
+            "creatureId": 222593,
+            "icon": "inv_green_sporecreature2",
+            "itemId": 246628,
+            "name": "Emerald Sporbit",
+            "notObtainable": true,
+            "spellid": 446501
+          }
+        ],
+        "name": "Pre-Launch Event"
       },
       {
         "items": [
@@ -11885,6 +11778,110 @@
             "spellid": 427289
           },
           {
+            "ID": 3297,
+            "creatureId": 189123,
+            "icon": "inv_salamanderwaterbaby_orange",
+            "itemId": 193429,
+            "name": "Time-Lost Salamanther",
+            "spellid": 375235
+          },
+          {
+            "ID": 4407,
+            "creatureId": 216345,
+            "icon": "inv_ladybugpet_red",
+            "itemId": 212700,
+            "name": "Nelle",
+            "spellid": 432844
+          },
+          {
+            "ID": 4408,
+            "creatureId": 216379,
+            "icon": "inv_ladybugpet_pink",
+            "itemId": 212722,
+            "name": "Buggsy",
+            "spellid": 432888
+          },
+          {
+            "ID": 4402,
+            "creatureId": 214286,
+            "icon": "inv_mouserock_teal",
+            "itemId": 211432,
+            "name": "Teele",
+            "spellid": 429423
+          },
+          {
+            "ID": 4286,
+            "creatureId": 211942,
+            "icon": "inv_duckbabyexplorer",
+            "itemId": 210409,
+            "name": "Aura",
+            "spellid": 425472
+          },
+          {
+            "ID": 4436,
+            "creatureId": 219134,
+            "icon": "inv_needledollpet_green",
+            "itemId": 217043,
+            "name": "Pokee",
+            "spellid": 438775
+          },
+          {
+            "ID": 4548,
+            "creatureId": 223316,
+            "icon": "inv_ogrepet",
+            "itemId": 223145,
+            "name": "Marrlok",
+            "spellid": 448355
+          },
+          {
+            "ID": 3582,
+            "creatureId": 205795,
+            "icon": "inv_magicalfishpet",
+            "itemId": 206174,
+            "name": "Blub",
+            "spellid": 412389
+          },
+          {
+            "ID": 4565,
+            "creatureId": 223600,
+            "icon": "inv_babynaga2_teal",
+            "itemId": 223339,
+            "name": "Trishi",
+            "spellid": 449046
+          },
+          {
+            "ID": 4566,
+            "creatureId": 223645,
+            "icon": "inv_murlocsurrender",
+            "itemId": 223474,
+            "name": "Worgli the Apprehensive",
+            "spellid": 449173
+          },
+          {
+            "ID": 4602,
+            "creatureId": 227414,
+            "icon": "inv_treasurecrabpet_yellow",
+            "itemId": 226104,
+            "name": "Claudius",
+            "spellid": 457689
+          },
+          {
+            "ID": 3542,
+            "creatureId": 204340,
+            "icon": "inv_sporebatrock_stoneblack",
+            "itemId": 205148,
+            "name": "Soot-Stained Shalewing",
+            "spellid": 408252
+          },
+          {
+            "ID": 4669,
+            "creatureId": 231713,
+            "icon": "inv_needledollpet_blue",
+            "itemId": 229993,
+            "name": "Bluedoo",
+            "spellid": 466179
+          },
+          {
             "ID": 4719,
             "creatureId": 234664,
             "icon": "inv_clockworkbeagle_green",
@@ -11907,6 +11904,14 @@
             "itemId": 234396,
             "name": "Teatuft Tamer",
             "spellid": 1213903
+          },
+          {
+            "ID": 4729,
+            "creatureId": 235159,
+            "icon": "inv_redpandapet_orange",
+            "itemId": 234397,
+            "name": "Fullbelly Rollingpaw",
+            "spellid": 1213933
           },
           {
             "ID": 4757,
@@ -13683,16 +13688,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1269535
-          },
-          {
-            "ID": 4944,
-            "creatureId": 255750,
-            "icon": "inv_manawurm2pink",
-            "itemId": 260360,
-            "name": "Gummi the Glow Wyrm",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1266148
           }
         ],
         "name": "Promotion"

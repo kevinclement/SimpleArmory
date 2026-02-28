@@ -287,40 +287,6 @@
         "items": [
           {
             "icon": "achievement_challengemode_silver",
-            "id": 42170,
-            "name": "the Unbound",
-            "titleId": 453,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_challengemode_platinum",
-            "id": 42174,
-            "name": "The Unbound Hero",
-            "notObtainable": true,
-            "titleId": 637,
-            "type": "achievement"
-          },
-          {
-            "icon": "ui_delves",
-            "id": 42801,
-            "name": "The Delver Within",
-            "titleId": 638,
-            "type": "achievement"
-          },
-          {
-            "icon": "inv_achievement_raidnerubian_etherealassasin",
-            "id": 42194,
-            "name": "Contract Killer",
-            "titleId": 639,
-            "type": "achievement"
-          }
-        ],
-        "name": "War Within: Season 3"
-      },
-      {
-        "items": [
-          {
-            "icon": "achievement_challengemode_silver",
             "id": 61255,
             "name": "The Umbral",
             "new": true,
@@ -346,25 +312,6 @@
           }
         ],
         "name": "Midnight: Season 1"
-      },
-      {
-        "items": [
-          {
-            "icon": "inv12_twilight_-blade_cultist_insignia",
-            "id": 42300,
-            "name": "Thorn of Twilight",
-            "titleId": 642,
-            "type": "achievement"
-          },
-          {
-            "icon": "inv_misc_questionmark",
-            "id": 920,
-            "name": "Definitely Not a Cultist",
-            "titleId": 643,
-            "type": "title"
-          }
-        ],
-        "name": "Midnight Pre-Patch"
       }
     ]
   },
@@ -486,6 +433,27 @@
           }
         ],
         "name": "Riddle"
+      },
+      {
+        "items": [
+          {
+            "icon": "inv12_twilight_-blade_cultist_insignia",
+            "id": 42300,
+            "name": "Thorn of Twilight",
+            "notObtainable": true,
+            "titleId": 642,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 920,
+            "name": "Definitely Not a Cultist",
+            "notObtainable": true,
+            "titleId": 643,
+            "type": "title"
+          }
+        ],
+        "name": "Pre-Launch Event"
       }
     ]
   },
@@ -532,6 +500,14 @@
             "id": 41122,
             "name": "The Reel Deal",
             "titleId": 618,
+            "type": "achievement"
+          },
+          {
+            "icon": "ui_delves",
+            "id": 42801,
+            "name": "The Delver Within",
+            "notObtainable": true,
+            "titleId": 638,
             "type": "achievement"
           }
         ],
@@ -588,6 +564,14 @@
             "name": "The Real Deal",
             "notObtainable": true,
             "titleId": 612,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_achievement_raidnerubian_etherealassasin",
+            "id": 42194,
+            "name": "Contract Killer",
+            "notObtainable": true,
+            "titleId": 639,
             "type": "achievement"
           }
         ],
@@ -828,6 +812,7 @@
             "icon": "spell_nzinsanity_shortsighted",
             "id": 41953,
             "name": "The Faceless One",
+            "notObtainable": true,
             "titleId": 419,
             "type": "achievement"
           },
@@ -835,6 +820,7 @@
             "icon": "spell_nzinsanity_shortsighted",
             "id": 41971,
             "name": "The Mad",
+            "notObtainable": true,
             "titleId": 631,
             "type": "achievement"
           }
@@ -2900,7 +2886,6 @@
             "icon": "spell_warrior_gladiatorstance",
             "id": 61446,
             "name": "Voidslayer",
-            "new": true,
             "titleId": 664,
             "type": "achievement"
           }
@@ -3382,7 +3367,6 @@
             "icon": "achievement_featsofstrength_gladiator_07",
             "id": 61179,
             "name": "Galactic Legend",
-            "new": true,
             "notObtainable": true,
             "titleId": 653,
             "type": "achievement"
@@ -3420,7 +3404,6 @@
             "icon": "achievement_featsofstrength_gladiator_07",
             "id": 61180,
             "name": "Galactic Gladiator",
-            "new": true,
             "notObtainable": true,
             "titleId": 654,
             "type": "achievement"
@@ -3496,7 +3479,6 @@
             "icon": "achievement_featsofstrength_gladiator_07",
             "id": 61178,
             "name": "Galactic Warlord",
-            "new": true,
             "notObtainable": true,
             "side": "H",
             "titleId": 652,
@@ -3506,7 +3488,6 @@
             "icon": "achievement_featsofstrength_gladiator_07",
             "id": 61177,
             "name": "Galactic Marshal",
-            "new": true,
             "notObtainable": true,
             "side": "A",
             "titleId": 651,
@@ -4352,6 +4333,14 @@
             "notObtainable": true,
             "titleId": 636,
             "type": "achievement"
+          },
+          {
+            "icon": "achievement_challengemode_silver",
+            "id": 42170,
+            "name": "the Unbound",
+            "notObtainable": true,
+            "titleId": 453,
+            "type": "achievement"
           }
         ],
         "name": "Mythic Plus"
@@ -4428,6 +4417,14 @@
             "name": "The Enterprising Hero",
             "notObtainable": true,
             "titleId": 593,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_challengemode_platinum",
+            "id": 42174,
+            "name": "The Unbound Hero",
+            "notObtainable": true,
+            "titleId": 637,
             "type": "achievement"
           }
         ],
@@ -4613,7 +4610,6 @@
             "icon": "inv_120_raid_voidspire_alleria",
             "id": 61622,
             "name": "Famed Slayer of the Voidspire",
-            "new": true,
             "notObtainable": true,
             "titleId": 676,
             "type": "achievement"
@@ -4622,7 +4618,6 @@
             "icon": "inv_120_raid_marchonqueldanas_lura",
             "id": 61623,
             "name": "Famed Slayer of the Dark Naaru",
-            "new": true,
             "notObtainable": true,
             "titleId": 677,
             "type": "achievement"
@@ -4631,7 +4626,6 @@
             "icon": "inv_120_raid_dreamwell_malformedmanifestation",
             "id": 61493,
             "name": "Famed Slayer of the Undreamt",
-            "new": true,
             "notObtainable": true,
             "titleId": 668,
             "type": "achievement"
@@ -4640,7 +4634,6 @@
             "icon": "ability_rogue_controlisking",
             "id": 61808,
             "name": "Fabled Vanquisher of Nullaeus",
-            "new": true,
             "notObtainable": true,
             "titleId": 689,
             "type": "achievement"
