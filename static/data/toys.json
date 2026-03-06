@@ -340,6 +340,12 @@
             "icon": "inv_rat2undermine_radioactive",
             "itemId": 251633,
             "name": "Bursting Bounty Bundle"
+          },
+          {
+            "ID": 1675,
+            "icon": "achievement_dungeon_ulduar80_25man",
+            "itemId": 266370,
+            "name": "Dundun's Abundant Travel Method"
           }
         ],
         "name": "Vendor"
@@ -369,9 +375,26 @@
             "icon": "ability_malkorok_blightofyshaarj_yellow",
             "itemId": 259084,
             "name": "Gift of the Cycle"
+          },
+          {
+            "ID": 1614,
+            "icon": "inv_egg_07",
+            "itemId": 251903,
+            "name": "Potatoad Egg"
           }
         ],
         "name": "Treasure"
+      },
+      {
+        "items": [
+          {
+            "ID": 1689,
+            "icon": "inv_firstaid_healingsalve2",
+            "itemId": 268728,
+            "name": "Saptor Salve"
+          }
+        ],
+        "name": "Dungeon Drop"
       },
       {
         "items": [
@@ -403,24 +426,6 @@
             "icon": "inv_10_blacksmithing_craftedoptional_reinforcedmetalplating_color02",
             "itemId": 250320,
             "name": "Lightgraft"
-          },
-          {
-            "ID": 1614,
-            "icon": "inv_egg_07",
-            "itemId": 251903,
-            "name": "Potatoad Egg"
-          },
-          {
-            "ID": 1675,
-            "icon": "achievement_dungeon_ulduar80_25man",
-            "itemId": 266370,
-            "name": "Dundun's Abundant Travel Method"
-          },
-          {
-            "ID": 1689,
-            "icon": "inv_firstaid_healingsalve2",
-            "itemId": 268728,
-            "name": "Saptor Salve"
           }
         ],
         "name": "Unknown"
@@ -462,7 +467,8 @@
             "ID": 1500,
             "icon": "inv_axe_2h_kobold_pickaxe_a_01",
             "itemId": 225969,
-            "name": "Forged Flag of Victory"
+            "name": "Forged Flag of Victory",
+            "notObtainable": true
           },
           {
             "ID": 1560,

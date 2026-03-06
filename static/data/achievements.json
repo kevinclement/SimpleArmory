@@ -4952,7 +4952,7 @@
                   "title": "Explore Harandar"
                 },
                 {
-                  "icon": "inv_achievement_zone_harandar",
+                  "icon": "inv_zone_voidstorm",
                   "id": 61857,
                   "points": 10,
                   "title": "Explore Voidstorm"
@@ -9908,6 +9908,18 @@
                 }
               ],
               "name": "Endeavours"
+            },
+            {
+              "id": "e79a3443",
+              "items": [
+                {
+                  "icon": "inv_misc_scrollrolled05a",
+                  "id": 61211,
+                  "points": 10,
+                  "title": "Welcome Home"
+                }
+              ],
+              "name": "Other"
             }
           ]
         }
@@ -12958,7 +12970,7 @@
                 {
                   "icon": "inv_120_raid_voidspire_kaiju",
                   "id": 62517,
-                  "points": 0,
+                  "points": 10,
                   "title": "Rise of the Ultradon Slayer"
                 }
               ],
@@ -14183,18 +14195,6 @@
                   "id": 40091,
                   "points": 10,
                   "title": "Slightly Spoiled"
-                },
-                {
-                  "icon": "ability_dualwield",
-                  "id": 40095,
-                  "points": 5,
-                  "title": "Sparking Battle"
-                },
-                {
-                  "icon": "ability_dualwield",
-                  "id": 40096,
-                  "points": 10,
-                  "title": "Sparking Battle"
                 },
                 {
                   "icon": "inv_axe_1h_earthendungeon_c_01",
@@ -32084,18 +32084,6 @@
                 }
               ],
               "name": "Mage Tower"
-            },
-            {
-              "id": "a99e1b6c",
-              "items": [
-                {
-                  "icon": "ability_evoker_masterytimewalker",
-                  "id": 61394,
-                  "points": 20,
-                  "title": "Master of the Turbulent Timeways IV"
-                }
-              ],
-              "name": "Turbulent Timeways"
             }
           ]
         },
@@ -43194,12 +43182,6 @@
                   "title": "\"Employee\" of the Month"
                 },
                 {
-                  "icon": "inv_misc_scrollrolled05a",
-                  "id": 61211,
-                  "points": 0,
-                  "title": "Welcome Home"
-                },
-                {
                   "icon": "druid_ability_wildmushroom_b",
                   "id": 61917,
                   "points": 0,
@@ -43659,6 +43641,24 @@
                 }
               ],
               "name": "Other"
+            },
+            {
+              "id": "ecd48743",
+              "items": [
+                {
+                  "icon": "ability_dualwield",
+                  "id": 40095,
+                  "points": 0,
+                  "title": "Sparking Battle"
+                },
+                {
+                  "icon": "ability_dualwield",
+                  "id": 40096,
+                  "points": 0,
+                  "title": "Sparking Battle"
+                }
+              ],
+              "name": "Sparks of War"
             }
           ]
         },
@@ -50827,6 +50827,13 @@
                   "notObtainable": true,
                   "points": 0,
                   "title": "Master of the Turbulent Timeways III"
+                },
+                {
+                  "icon": "ability_evoker_masterytimewalker",
+                  "id": 61394,
+                  "notObtainable": true,
+                  "points": 0,
+                  "title": "Master of the Turbulent Timeways IV"
                 }
               ],
               "name": "Turbulent Timeways"
@@ -52084,13 +52091,13 @@
                 {
                   "icon": "spell_frost_wizardmark",
                   "id": 40146,
-                  "points": 10,
+                  "points": 0,
                   "title": "War Within Superior"
                 },
                 {
                   "icon": "inv_enchant_voidcrystal",
                   "id": 40147,
-                  "points": 10,
+                  "points": 0,
                   "title": "War Within Epic"
                 }
               ],
