@@ -956,6 +956,24 @@
             "icon": "7416811",
             "itemId": "257418",
             "name": "Ornate Sin'dorei Sconce"
+          },
+          {
+            "ID": 14635,
+            "icon": "7515813",
+            "itemId": "262610",
+            "name": "Swirling Ritual Pedestal"
+          },
+          {
+            "ID": 15155,
+            "icon": "7495874",
+            "itemId": "263315",
+            "name": "Bubbling Haranir Cauldron"
+          },
+          {
+            "ID": 15895,
+            "icon": "7516198",
+            "itemId": "264660",
+            "name": "Ren'dorei Spired Tent"
           }
         ],
         "name": "Quest"
@@ -1228,6 +1246,12 @@
             "icon": "7509033",
             "itemId": "264330",
             "name": "Amani Hanging Brazier"
+          },
+          {
+            "ID": 14828,
+            "icon": "7491990",
+            "itemId": "263042",
+            "name": "Rootlight Lamppost"
           }
         ],
         "name": "Delves"
@@ -12036,13 +12060,6 @@
             "notObtainable": true
           },
           {
-            "ID": 14828,
-            "icon": "7491990",
-            "itemId": "263042",
-            "name": "Rootlight Lamppost",
-            "notObtainable": true
-          },
-          {
             "ID": 15141,
             "icon": "7571000",
             "itemId": "263291",
@@ -12183,20 +12200,6 @@
             "notObtainable": true
           },
           {
-            "ID": 14635,
-            "icon": "7515813",
-            "itemId": "262610",
-            "name": "Swirling Ritual Pedestal",
-            "notObtainable": true
-          },
-          {
-            "ID": 15155,
-            "icon": "7495874",
-            "itemId": "263315",
-            "name": "Bubbling Haranir Cauldron",
-            "notObtainable": true
-          },
-          {
             "ID": 15339,
             "icon": null,
             "itemId": "113503",
@@ -12208,13 +12211,6 @@
             "icon": "7679713",
             "itemId": "264251",
             "name": "Depthdiver's Cooking Spit",
-            "notObtainable": true
-          },
-          {
-            "ID": 15895,
-            "icon": "7516198",
-            "itemId": "264660",
-            "name": "Ren'dorei Spired Tent",
             "notObtainable": true
           },
           {
@@ -12397,28 +12393,32 @@
             "icon": null,
             "itemId": "264692",
             "name": "Lush Garden Window",
-            "new": true
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 17749,
             "icon": "7552585",
             "itemId": "266070",
             "name": "Lush Garden Fungal Table",
-            "new": true
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 17793,
             "icon": "7553542",
             "itemId": "266163",
             "name": "Lush Garden Fungal Planter",
-            "new": true
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 17797,
             "icon": "7553527",
             "itemId": "266167",
             "name": "Spring Blossom Pond",
-            "new": true
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 15070,
