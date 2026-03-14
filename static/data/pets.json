@@ -260,19 +260,6 @@
       {
         "items": [
           {
-            "ID": 4975,
-            "creatureId": 257493,
-            "icon": "inv_babynaga2_blue",
-            "itemId": 264366,
-            "name": "Razeshi C.",
-            "spellid": 1271843
-          }
-        ],
-        "name": "Discord Quest"
-      },
-      {
-        "items": [
-          {
             "ID": 4595,
             "creatureId": 225354,
             "icon": "inv_pitlordpet_fire",
@@ -321,6 +308,15 @@
             "itemId": 269028,
             "name": "Sootpaw",
             "spellid": 1284800
+          },
+          {
+            "ID": 5039,
+            "creatureId": 262787,
+            "icon": "inv_capybara_dark",
+            "itemId": 270989,
+            "name": "Cappy",
+            "new": true,
+            "spellid": 1288380
           }
         ],
         "name": "Achievement"
@@ -617,6 +613,30 @@
             "itemId": 263492,
             "name": "Blitzcreek",
             "spellid": 1268696
+          },
+          {
+            "ID": 4830,
+            "creatureId": 245477,
+            "icon": "inv_112_petrewards_babyobserver_blue",
+            "itemId": 244911,
+            "name": "Rhay'Dahr",
+            "spellid": 1238273
+          },
+          {
+            "ID": 4633,
+            "creatureId": 231467,
+            "icon": "inv_babyhyena_blue",
+            "itemId": 232856,
+            "name": "Scruff",
+            "spellid": 471901
+          },
+          {
+            "ID": 4508,
+            "creatureId": 222593,
+            "icon": "inv_green_sporecreature2",
+            "itemId": 246628,
+            "name": "Emerald Sporbit",
+            "spellid": 446501
           }
         ],
         "name": "Vendor"
@@ -632,7 +652,7 @@
             "spellid": 1269361
           }
         ],
-        "name": "Dungeon Drop"
+        "name": "Riddle"
       },
       {
         "items": [
@@ -650,34 +670,110 @@
       {
         "items": [
           {
-            "ID": 4830,
-            "creatureId": 245477,
-            "icon": "inv_112_petrewards_babyobserver_blue",
-            "itemId": 244911,
-            "name": "Rhay'Dahr",
-            "notObtainable": true,
-            "spellid": 1238273
-          },
-          {
-            "ID": 4633,
-            "creatureId": 231467,
-            "icon": "inv_babyhyena_blue",
-            "itemId": 232856,
-            "name": "Scruff",
-            "notObtainable": true,
-            "spellid": 471901
-          },
-          {
-            "ID": 4508,
-            "creatureId": 222593,
-            "icon": "inv_green_sporecreature2",
-            "itemId": 246628,
-            "name": "Emerald Sporbit",
-            "notObtainable": true,
-            "spellid": 446501
+            "ID": 4983,
+            "creatureId": 257908,
+            "icon": "inv_babyberserker_blue",
+            "itemId": 265030,
+            "name": "Kai",
+            "spellid": 1273131
           }
         ],
-        "name": "Pre-Launch Event"
+        "name": "Zone Feature"
+      },
+      {
+        "items": [
+          {
+            "ID": 5017,
+            "creatureId": 261676,
+            "icon": "inv_babyamanieagle_burgundy",
+            "itemId": 269829,
+            "name": "Void-Scarred Eaglet",
+            "new": true,
+            "spellid": 1286610
+          },
+          {
+            "ID": 5019,
+            "creatureId": 261684,
+            "icon": "inv_babyamanibear_witherbark",
+            "itemId": 269836,
+            "name": "Chubs",
+            "new": true,
+            "spellid": 1286634
+          },
+          {
+            "ID": 5020,
+            "creatureId": 262066,
+            "icon": "spell_priest_void-flay",
+            "itemId": 269999,
+            "name": "Overloaded Manaling",
+            "new": true,
+            "spellid": 1287339
+          },
+          {
+            "ID": 5021,
+            "creatureId": 262089,
+            "icon": "inv_snapdragonmount02",
+            "itemId": 270061,
+            "name": "Void-Corrupted Snapdragon",
+            "new": true,
+            "spellid": 1287374
+          },
+          {
+            "ID": 5023,
+            "creatureId": 262092,
+            "icon": "inv_babyeversonglynx_black",
+            "itemId": 270063,
+            "name": "Void-Touched Lynx Kitten",
+            "new": true,
+            "spellid": 1287380
+          },
+          {
+            "ID": 5038,
+            "creatureId": 262786,
+            "icon": "inv_capybara_brown",
+            "itemId": 270988,
+            "name": "Wriggling Capybara",
+            "new": true,
+            "spellid": 1288378
+          },
+          {
+            "ID": 5040,
+            "creatureId": 262788,
+            "icon": "inv_babyeversonglynx_tan",
+            "itemId": 270990,
+            "name": "Curious Lynx Kitten",
+            "new": true,
+            "spellid": 1288381
+          },
+          {
+            "ID": 5022,
+            "creatureId": 262090,
+            "icon": "inv_blue_babyhawkstrider2",
+            "itemId": 270062,
+            "name": "Void-Touched Chick",
+            "new": true,
+            "spellid": 1287376
+          },
+          {
+            "ID": 5036,
+            "creatureId": 262422,
+            "icon": "inv_babydragonhawk_black",
+            "itemId": 270330,
+            "name": "Rescued Dragonhawk Chick",
+            "new": true,
+            "spellid": 1287849
+          },
+          {
+            "ID": 5037,
+            "creatureId": 262427,
+            "icon": "inv_11_0_dungeon_tentaclevial_blue",
+            "itemId": 270331,
+            "name": "Void-Infused Mindbreaker Fry",
+            "new": true,
+            "spellid": 1287856
+          }
+        ],
+        "name": "Ritual Sites"
       },
       {
         "items": [
@@ -698,15 +794,6 @@
             "name": "Chillcrawler",
             "new": true,
             "spellid": 1263916
-          },
-          {
-            "ID": 4983,
-            "creatureId": 257908,
-            "icon": "inv_babyberserker_blue",
-            "itemId": 265030,
-            "name": "Kai",
-            "new": true,
-            "spellid": 1273131
           }
         ],
         "name": "Unknown"
@@ -13404,6 +13491,15 @@
             "name": "Parrlok",
             "notObtainable": true,
             "spellid": 463079
+          },
+          {
+            "ID": 4975,
+            "creatureId": 257493,
+            "icon": "inv_babynaga2_blue",
+            "itemId": 264366,
+            "name": "Razeshi C.",
+            "notObtainable": true,
+            "spellid": 1271843
           }
         ],
         "name": "Discord Quest"

@@ -212,6 +212,13 @@
             "itemId": 224574,
             "name": "Savage Ebony Battle Turtle",
             "spellid": 453255
+          },
+          {
+            "ID": 2618,
+            "icon": "inv_elekkfelmount_blue",
+            "itemId": 246917,
+            "name": "Thunder-Ridged Elekk",
+            "spellid": 1244247
           }
         ],
         "name": "Promotions"
@@ -223,7 +230,6 @@
             "icon": "inv_mythichexeaglemount_black",
             "itemId": 262620,
             "name": "Calamitous Carrion",
-            "new": true,
             "spellid": 1257058
           },
           {
@@ -231,7 +237,6 @@
             "icon": "inv_mythichexeaglemount_white",
             "itemId": 262621,
             "name": "Convalescent Carrion",
-            "new": true,
             "spellid": 1257081
           },
           {
@@ -239,7 +244,6 @@
             "icon": "inv_arcanegolem2voidmount",
             "itemId": 263222,
             "name": "Arcanovoid Construct",
-            "new": true,
             "spellid": 1268949
           },
           {
@@ -247,7 +251,6 @@
             "icon": "inv_vicioussnaplizardmount_horde",
             "itemId": 258175,
             "name": "Vicious Snaplizard",
-            "new": true,
             "side": "H",
             "spellid": 1261629
           },
@@ -256,7 +259,6 @@
             "icon": "inv_vicioussnaplizardmount_alliance",
             "itemId": 257504,
             "name": "Vicious Snaplizard",
-            "new": true,
             "side": "A",
             "spellid": 1261648
           },
@@ -265,7 +267,6 @@
             "icon": "inv_kaijugladiatormount_blue",
             "itemId": 260228,
             "name": "Galactic Gladiator's Goredrake",
-            "new": true,
             "notObtainable": true,
             "spellid": 1262840
           }
@@ -299,6 +300,14 @@
             "itemId": 257145,
             "name": "Crimson Dragonhawk",
             "spellid": 1261298
+          },
+          {
+            "ID": 2915,
+            "icon": "inv_dragonchromaticmount2",
+            "itemId": 264348,
+            "name": "Unbound Manawyrm",
+            "new": true,
+            "spellid": 1271698
           },
           {
             "ID": 2755,
@@ -554,6 +563,13 @@
             "itemId": 222988,
             "name": "Elder Glowmite",
             "spellid": 447173
+          },
+          {
+            "ID": 2220,
+            "icon": "inv_nerubianwarbeastmount_cyan",
+            "itemId": 224148,
+            "name": "Retrained Skyrazor",
+            "spellid": 451487
           }
         ],
         "name": "Vendor"
@@ -667,9 +683,62 @@
             "itemId": 257180,
             "name": "Contained Stormarion Defender",
             "spellid": 1261334
+          },
+          {
+            "ID": 2933,
+            "icon": "inv_cooking_80_choralhoney3",
+            "itemId": 268481,
+            "name": "Magister's Spell Bee",
+            "new": true,
+            "spellid": 1282471
           }
         ],
         "name": "Zone Feature"
+      },
+      {
+        "items": [
+          {
+            "ID": 2779,
+            "icon": "inv_amanibearmount_witherbark",
+            "itemId": 257225,
+            "name": "Witherbark Warbear Mother",
+            "new": true,
+            "spellid": 1261362
+          },
+          {
+            "ID": 2935,
+            "icon": null,
+            "itemId": 268578,
+            "name": "Void-Touched Hawkstrider",
+            "new": true,
+            "spellid": 1282936
+          },
+          {
+            "ID": 2964,
+            "icon": "inv_seaeel_teal",
+            "itemId": 270041,
+            "name": "Void-Touched Snapdragon",
+            "new": true,
+            "spellid": 1287357
+          },
+          {
+            "ID": 2965,
+            "icon": "inv_leatherworking_70_petleash",
+            "itemId": 270058,
+            "name": "Void-Corruped Lynx",
+            "new": true,
+            "spellid": 1287359
+          },
+          {
+            "ID": 2961,
+            "icon": "inv_weapon_shortblade_28",
+            "itemId": 269828,
+            "name": "Void-Corrupted Hex Eagle",
+            "new": true,
+            "spellid": 1286606
+          }
+        ],
+        "name": "Ritual Sites"
       },
       {
         "items": [
@@ -692,17 +761,9 @@
             "name": "Light-Forged Mechsuit",
             "notObtainable": true,
             "spellid": 1243003
-          },
-          {
-            "ID": 2220,
-            "icon": "inv_nerubianwarbeastmount_cyan",
-            "itemId": 224148,
-            "name": "Retrained Skyrazor",
-            "notObtainable": true,
-            "spellid": 451487
           }
         ],
-        "name": "Pre-Launch event"
+        "name": "Pre-Launch Event"
       }
     ]
   },
@@ -8250,7 +8311,7 @@
             "ID": 16,
             "icon": "ability_mount_netherdrakepurple",
             "itemId": 260916,
-            "name": "Nether-Warped Drake",
+            "name": "Nether-Swept Drake",
             "spellid": 3363
           }
         ],
@@ -8997,7 +9058,6 @@
             "icon": "inv_viciousflyingnerubian2_alliance",
             "itemId": 223511,
             "name": "Vicious Skyflayer",
-            "notObtainable": true,
             "side": "A",
             "spellid": 449325
           },
@@ -9006,7 +9066,6 @@
             "icon": "inv_viciousflyingnerubian2_horde",
             "itemId": 221813,
             "name": "Vicious Skyflayer",
-            "notObtainable": true,
             "side": "H",
             "spellid": 447405
           },
@@ -9015,7 +9074,6 @@
             "icon": "inv_electriceelviciousmount_red",
             "itemId": 229988,
             "name": "Vicious Electro Eel",
-            "notObtainable": true,
             "side": "H",
             "spellid": 466145
           },
@@ -9024,7 +9082,6 @@
             "icon": "inv_electriceelviciousmount_blue",
             "itemId": 229989,
             "name": "Vicious Electro Eel",
-            "notObtainable": true,
             "side": "A",
             "spellid": 466146
           },
@@ -9033,7 +9090,6 @@
             "icon": "inv_viciousvoidcreepermount_orange",
             "itemId": 243159,
             "name": "Vicious Void Creeper",
-            "notObtainable": true,
             "side": "H",
             "spellid": 1234821
           },
@@ -9042,7 +9098,6 @@
             "icon": "inv_viciousvoidcreepermount_blue",
             "itemId": 243157,
             "name": "Vicious Void Creeper",
-            "notObtainable": true,
             "side": "A",
             "spellid": 1234820
           }
@@ -10521,15 +10576,6 @@
             "spellid": 1235820
           },
           {
-            "ID": 2618,
-            "icon": "inv_elekkfelmount_blue",
-            "itemId": 246917,
-            "name": "Thunder-Ridged Elekk",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1244247
-          },
-          {
             "ID": 2619,
             "icon": "inv_elekkfelmount_orange",
             "itemId": 246919,
@@ -10699,6 +10745,70 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1270521
+          },
+          {
+            "ID": 2926,
+            "icon": "inv_gilneashorsemount",
+            "itemId": 268360,
+            "name": "Gilnean Iron Charger",
+            "new": true,
+            "spellid": 1282268
+          },
+          {
+            "ID": 2927,
+            "icon": "inv_gilneashorsemount",
+            "itemId": 268362,
+            "name": "Gilnean Copper Charger",
+            "new": true,
+            "spellid": 1282274
+          },
+          {
+            "ID": 2928,
+            "icon": "inv_gilneashorsemount",
+            "itemId": 268363,
+            "name": "Pyrewood Rebel's Rouncey",
+            "new": true,
+            "spellid": 1282275
+          },
+          {
+            "ID": 2929,
+            "icon": "inv_gilneashorsemount",
+            "itemId": 268364,
+            "name": "Gilneas Loyalist's Rouncey",
+            "new": true,
+            "spellid": 1282276
+          },
+          {
+            "ID": 2939,
+            "icon": "inv_gianteagle2sunwalkermount_blue",
+            "itemId": 268878,
+            "name": "[PH] Giant Eagle Sunwalker Mount Blue",
+            "new": true,
+            "spellid": 1283906
+          },
+          {
+            "ID": 2940,
+            "icon": "inv_gianteagle2sunwalkermount_dark",
+            "itemId": 268877,
+            "name": "Dusk-Painted Sun Roc",
+            "new": true,
+            "spellid": 1283908
+          },
+          {
+            "ID": 2941,
+            "icon": "inv_gianteagle2sunwalkermount_gold",
+            "itemId": 268876,
+            "name": "Flame-Painted Sun Roc",
+            "new": true,
+            "spellid": 1283910
+          },
+          {
+            "ID": 2942,
+            "icon": "inv_gianteagle2sunwalkermount_white",
+            "itemId": 268875,
+            "name": "[PH] Giant Eagle Sunwalker Mount White",
+            "new": true,
+            "spellid": 1283911
           }
         ],
         "name": "Trading Post Originals"
@@ -11762,6 +11872,24 @@
             "icon": "7262716",
             "name": "Blossombranch Groveglider",
             "spellid": 1251765
+          },
+          {
+            "ID": 2930,
+            "icon": "inv_springmonkeymount_white",
+            "itemId": 268472,
+            "name": "Blossomback Arboon",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1282450
+          },
+          {
+            "ID": 2931,
+            "icon": "inv_springmonkeymount_brown",
+            "itemId": 268474,
+            "name": "Amberback Arboon",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1282453
           }
         ],
         "name": "Blizzard Store"
