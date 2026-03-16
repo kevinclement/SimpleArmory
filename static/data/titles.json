@@ -407,13 +407,6 @@
             "type": "achievement"
           },
           {
-            "icon": "achievement_general_100kquests",
-            "id": 61922,
-            "name": "The Singular",
-            "titleId": 753,
-            "type": "achievement"
-          },
-          {
             "icon": "inv_enchanting_wod_dust3",
             "id": 61052,
             "name": "Dustlord",
@@ -441,24 +434,31 @@
       {
         "items": [
           {
-            "icon": "inv_misc_questionmark",
+            "icon": "ui_majorfaction_-flames",
             "id": 935,
             "name": "Loa-Speaker",
             "titleId": 740,
             "type": "title"
           },
           {
-            "icon": "inv_misc_questionmark",
+            "icon": "ui_majorfaction_-vines",
             "id": 1020,
             "name": "Honorary Hara'ti",
             "titleId": 665,
             "type": "title"
           },
           {
-            "icon": "inv_misc_questionmark",
+            "icon": "ui_majorfaction_-gold",
             "id": 1026,
             "name": "Life of the Party",
             "titleId": 667,
+            "type": "title"
+          },
+          {
+            "icon": "ui_majorfaction_-sky",
+            "id": 1212,
+            "name": "The Singular",
+            "titleId": 753,
             "type": "title"
           }
         ],
