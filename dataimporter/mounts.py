@@ -179,6 +179,7 @@ class MountFixer(WowToolsFixer):
 
                     if (
                         fixed_mount['icon'] is not None
+                        and item['icon'] is not None
                         and item['icon'].lower() != fixed_mount['icon'].lower()
                     ):
                         item['icon'] = fixed_mount['icon']

@@ -563,13 +563,6 @@
             "itemId": 222988,
             "name": "Elder Glowmite",
             "spellid": 447173
-          },
-          {
-            "ID": 2220,
-            "icon": "inv_nerubianwarbeastmount_cyan",
-            "itemId": 224148,
-            "name": "Retrained Skyrazor",
-            "spellid": 451487
           }
         ],
         "name": "Vendor"
@@ -725,7 +718,7 @@
             "ID": 2965,
             "icon": "inv_leatherworking_70_petleash",
             "itemId": 270058,
-            "name": "Void-Corruped Lynx",
+            "name": "Void-Corrupted Lynx",
             "new": true,
             "spellid": 1287359
           },
@@ -761,6 +754,14 @@
             "name": "Light-Forged Mechsuit",
             "notObtainable": true,
             "spellid": 1243003
+          },
+          {
+            "ID": 2220,
+            "icon": "inv_nerubianwarbeastmount_cyan",
+            "itemId": 224148,
+            "name": "Retrained Skyrazor",
+            "notObtainable": true,
+            "spellid": 451487
           }
         ],
         "name": "Pre-Launch Event"
@@ -10751,7 +10752,8 @@
             "icon": "inv_gilneashorsemount",
             "itemId": 268360,
             "name": "Gilnean Iron Charger",
-            "new": true,
+            "notObtainable": true,
+            "notReleased": true,
             "spellid": 1282268
           },
           {
@@ -10759,7 +10761,8 @@
             "icon": "inv_gilneashorsemount",
             "itemId": 268362,
             "name": "Gilnean Copper Charger",
-            "new": true,
+            "notObtainable": true,
+            "notReleased": true,
             "spellid": 1282274
           },
           {
@@ -10767,7 +10770,8 @@
             "icon": "inv_gilneashorsemount",
             "itemId": 268363,
             "name": "Pyrewood Rebel's Rouncey",
-            "new": true,
+            "notObtainable": true,
+            "notReleased": true,
             "spellid": 1282275
           },
           {
@@ -10775,7 +10779,8 @@
             "icon": "inv_gilneashorsemount",
             "itemId": 268364,
             "name": "Gilneas Loyalist's Rouncey",
-            "new": true,
+            "notObtainable": true,
+            "notReleased": true,
             "spellid": 1282276
           },
           {
@@ -10783,7 +10788,8 @@
             "icon": "inv_gianteagle2sunwalkermount_blue",
             "itemId": 268878,
             "name": "[PH] Giant Eagle Sunwalker Mount Blue",
-            "new": true,
+            "notObtainable": true,
+            "notReleased": true,
             "spellid": 1283906
           },
           {
@@ -10791,7 +10797,8 @@
             "icon": "inv_gianteagle2sunwalkermount_dark",
             "itemId": 268877,
             "name": "Dusk-Painted Sun Roc",
-            "new": true,
+            "notObtainable": true,
+            "notReleased": true,
             "spellid": 1283908
           },
           {
@@ -10799,7 +10806,8 @@
             "icon": "inv_gianteagle2sunwalkermount_gold",
             "itemId": 268876,
             "name": "Flame-Painted Sun Roc",
-            "new": true,
+            "notObtainable": true,
+            "notReleased": true,
             "spellid": 1283910
           },
           {
@@ -10807,7 +10815,8 @@
             "icon": "inv_gianteagle2sunwalkermount_white",
             "itemId": 268875,
             "name": "[PH] Giant Eagle Sunwalker Mount White",
-            "new": true,
+            "notObtainable": true,
+            "notReleased": true,
             "spellid": 1283911
           }
         ],
@@ -11852,24 +11861,28 @@
           {
             "ID": 2700,
             "icon": "7262713",
+            "itemId": "250930",
             "name": "Frostfall Groveglider",
             "spellid": 1251697
           },
           {
             "ID": 2701,
             "icon": "7262714",
+            "itemId": "250971",
             "name": "Cindertuft Groveglider",
             "spellid": 1251762
           },
           {
             "ID": 2702,
             "icon": "7262715",
+            "itemId": "250972",
             "name": "Gloombough Groveglider",
             "spellid": 1251764
           },
           {
             "ID": 2703,
             "icon": "7262716",
+            "itemId": "250973",
             "name": "Blossombranch Groveglider",
             "spellid": 1251765
           },
