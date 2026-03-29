@@ -22,7 +22,7 @@ FIXERS = {
     'heirlooms': (HeirloomFixer, ['heirlooms.json']),
     'mounts': (MountFixer, ['mounts.json']),
     'pets': (PetFixer, ['pets.json', 'battlepets.json']),
-    'realms': (RealmFixer, ['servers.eu.json', 'servers.us.json']),
+    'realms': (RealmFixer, ['servers.eu.json', 'servers.us.json', 'servers.kr.json', 'servers.tw.json']),
     'reputations': (FactionFixer, ['factions.json']),
     'titles': (TitleFixer, ['titles.json']),
     'toys': (ToyFixer, ['toys.json']),

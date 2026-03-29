@@ -5,9 +5,11 @@ from .providers import wowgraphql
 
 
 class RealmFixer:
-    def __init__(self, realms_eu, realms_us, build=None):
+    def __init__(self, realms_eu, realms_us, realms_kr, realms_tw, build=None):
         self.realms_eu = realms_eu
         self.realms_us = realms_us
+        self.realms_kr = realms_kr
+        self.realms_tw = realms_tw
 
     def fix_realms(self, region):
         master_list = wowgraphql.get_realm_list_sync(region)
@@ -22,4 +24,6 @@ class RealmFixer:
     def run(self):
         self.realms_eu = self.fix_realms('eu')
         self.realms_us = self.fix_realms('us')
-        return [self.realms_eu, self.realms_us]
+        self.realms_kr = self.fix_realms('kr')
+        self.realms_tw = self.fix_realms('tw')
+        return [self.realms_eu, self.realms_us, self.realms_kr, self.realms_tw]
