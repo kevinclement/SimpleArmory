@@ -241,8 +241,17 @@
     "name": "Limited Time",
     "subcats": [
       {
-        "items": [],
-        "name": "Trading Post: "
+        "items": [
+          {
+            "ID": 4963,
+            "creatureId": 256559,
+            "icon": "inv_gardenmandrakepet_green",
+            "itemId": 262762,
+            "name": "Grumpy Mandrake",
+            "spellid": 1269346
+          }
+        ],
+        "name": "Trading Post: April"
       },
       {
         "items": [
@@ -637,6 +646,15 @@
             "itemId": 246628,
             "name": "Emerald Sporbit",
             "spellid": 446501
+          },
+          {
+            "ID": 5065,
+            "creatureId": 264933,
+            "icon": "inv_capybara_orange",
+            "itemId": 274266,
+            "name": "Ka'bubb",
+            "new": true,
+            "spellid": 1293499
           }
         ],
         "name": "Vendor"
@@ -12121,8 +12139,7 @@
             "icon": "inv_gardenmandrakepet_green",
             "itemId": 262762,
             "name": "Grumpy Mandrake",
-            "notObtainable": true,
-            "notReleased": true,
+            "highlighted": true,
             "spellid": 1269346
           },
           {
