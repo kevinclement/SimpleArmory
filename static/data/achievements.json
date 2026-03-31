@@ -5320,7 +5320,7 @@
                   "title": "Abyss Anglers: Trench Berserker"
                 },
                 {
-                  "icon": "spell_shadow_demonbreath",
+                  "icon": "inv_inscription_runescrolloffortitude_red",
                   "id": 62272,
                   "new": true,
                   "points": 5,
@@ -5346,6 +5346,104 @@
                   "new": true,
                   "points": 5,
                   "title": "Abyss Anglers: Pressurized Eyeglass"
+                },
+                {
+                  "icon": "inv_misc_treasurechest02b",
+                  "id": 62759,
+                  "new": true,
+                  "points": 5,
+                  "title": "Abyss Anglers: History Below"
+                },
+                {
+                  "icon": "inv_misc_bag_10_black",
+                  "id": 62760,
+                  "new": true,
+                  "points": 5,
+                  "title": "Abyss Anglers: Angler Physics"
+                },
+                {
+                  "icon": "ability_toughness",
+                  "id": 62761,
+                  "new": true,
+                  "points": 10,
+                  "title": "Abyss Anglers: One with the Depths"
+                },
+                {
+                  "icon": "inv_10_fishing_fishdragon_red",
+                  "id": 62762,
+                  "new": true,
+                  "points": 5,
+                  "title": "Abyss Anglers: Top of the Class"
+                },
+                {
+                  "icon": "inv_10_fishing_fishdragon_red",
+                  "id": 62763,
+                  "new": true,
+                  "points": 5,
+                  "title": "Abyss Anglers: Vintage Collector"
+                },
+                {
+                  "icon": "inv_10_fishing_fishdragon_red",
+                  "id": 62772,
+                  "new": true,
+                  "points": 5,
+                  "title": "Abyss Anglers: Now That's Anglin'"
+                },
+                {
+                  "icon": "inv_seaeel_teal",
+                  "id": 62773,
+                  "new": true,
+                  "points": 10,
+                  "title": "Abyss Anglers: Jeju's New Rival"
+                },
+                {
+                  "icon": "ability_deathknight_asphixiate",
+                  "id": 62774,
+                  "new": true,
+                  "points": 5,
+                  "title": "Abyss Anglers: Not Done Yet"
+                },
+                {
+                  "icon": "inv_10_fishing_fishdragon_red",
+                  "id": 62775,
+                  "new": true,
+                  "points": 5,
+                  "title": "Abyss Anglers: Delicate Diver"
+                },
+                {
+                  "icon": "inv_misc_volatileair",
+                  "id": 62776,
+                  "new": true,
+                  "points": 5,
+                  "title": "Abyss Anglers: All Blue Angler"
+                },
+                {
+                  "icon": "inv_10_fishing_fishdragon_red",
+                  "id": 62777,
+                  "new": true,
+                  "points": 5,
+                  "title": "Abyss Anglers: Pearls to the Abyss"
+                },
+                {
+                  "icon": "inv_10_fishing_fishdragon_red",
+                  "id": 62778,
+                  "new": true,
+                  "points": 5,
+                  "title": "Abyss Anglers: Luck of the Loa"
+                },
+                {
+                  "icon": "trade_archaeology_shark-jaws",
+                  "id": 62829,
+                  "new": true,
+                  "points": 5,
+                  "title": "Abyss Anglers: Don't Know What You Expected"
+                },
+                {
+                  "icon": "ability_evoker_discerningeye",
+                  "id": 62832,
+                  "new": true,
+                  "points": 5,
+                  "title": "Abyss Anglers: Reservation for One"
                 }
               ],
               "name": "Abyss Anglers"
@@ -10172,6 +10270,30 @@
                   "id": 40461,
                   "points": 10,
                   "title": "Buddy System VI"
+                },
+                {
+                  "icon": "achievement_level_70",
+                  "id": 41537,
+                  "points": 10,
+                  "title": "Buddy System VII"
+                },
+                {
+                  "icon": "achievement_level_80",
+                  "id": 41723,
+                  "points": 10,
+                  "title": "Buddy System VIII"
+                },
+                {
+                  "icon": "achievement_level_90",
+                  "id": 61342,
+                  "points": 10,
+                  "title": "Buddy System IX"
+                },
+                {
+                  "icon": "achievement_level_100",
+                  "id": 42676,
+                  "points": 10,
+                  "title": "Buddy System X"
                 }
               ],
               "name": "Companion"
@@ -10268,36 +10390,6 @@
                 }
               ],
               "name": "Strange Disturbance"
-            },
-            {
-              "id": "af7ceabd",
-              "items": [
-                {
-                  "icon": "achievement_level_70",
-                  "id": 41537,
-                  "points": 10,
-                  "title": "Buddy System VII"
-                },
-                {
-                  "icon": "achievement_level_80",
-                  "id": 41723,
-                  "points": 10,
-                  "title": "Buddy System VIII"
-                },
-                {
-                  "icon": "achievement_level_90",
-                  "id": 61342,
-                  "points": 10,
-                  "title": "Buddy System IX"
-                },
-                {
-                  "icon": "achievement_level_100",
-                  "id": 42676,
-                  "points": 10,
-                  "title": "Buddy System X"
-                }
-              ],
-              "name": "Companion Levels"
             }
           ]
         },
@@ -36095,336 +36187,336 @@
               "id": "60890c2a",
               "items": [
                 {
-                  "icon": "trade_engineering",
+                  "icon": "inv_misc_book_03",
                   "id": 62450,
                   "new": true,
                   "points": 5,
                   "title": "Ritual Sites 101: An Introduction to Basic Magical Rituals"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "inv_misc_book_06",
                   "id": 62451,
                   "new": true,
                   "points": 5,
                   "title": "Ritual Sites 200: Intermediate Ritual Practices"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "inv_10_inscription2_book2_color2",
                   "id": 62452,
                   "new": true,
                   "points": 10,
                   "title": "Ritual Sites 320: Ritual Items and Their Uses in Quel'Thalas"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "ability_priest_bindingprayers",
                   "id": 62453,
                   "new": true,
                   "points": 10,
                   "title": "Ritual Sites 415: Applied Ritual Strategies"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "ability_mage_massinvisibility",
                   "id": 62454,
                   "new": true,
                   "points": 15,
                   "title": "Ritual Sites 505: A Seminar in Void Ritual Nuance"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "inv_achievement_zone_zulaman1",
                   "id": 62521,
                   "new": true,
                   "points": 5,
                   "title": "Ritual Site: Broken Throne"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "achievement_boss_nagazone",
                   "id": 62522,
                   "new": true,
                   "points": 5,
                   "title": "Ritual Site: Daggerspine Point"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "achievement_dungeon_blackrockcaverns_corla-herald-of-twilight",
                   "id": 62523,
                   "new": true,
                   "points": 5,
                   "title": "Ritual Site Mastery: Broken Throne"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "achievement_boss_triumvirate_voidbrokenbrute",
                   "id": 62524,
                   "new": true,
                   "points": 5,
                   "title": "Ritual Site Challenge: Broken Throne"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "achievement_boss_malkorok",
                   "id": 62525,
                   "new": true,
                   "points": 15,
                   "title": "Ritual Site Extreme: Broken Throne"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "inv_misc_nagamale",
                   "id": 62526,
                   "new": true,
                   "points": 5,
                   "title": "Ritual Site Mastery: Daggerspine Point"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "achievement_boss_nagabruteboss",
                   "id": 62527,
                   "new": true,
                   "points": 5,
                   "title": "Ritual Site Challenge: Daggerspine Point"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "achievement_boss_nagacentaur",
                   "id": 62528,
                   "new": true,
                   "points": 10,
                   "title": "Ritual Site Extreme: Daggerspine Point"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "inv_cloth_startinggear_a_01_chest",
                   "id": 62529,
                   "new": true,
                   "points": 5,
                   "title": "Ritual Site Starter"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "inv_chest_cloth_66",
                   "id": 62530,
                   "new": true,
                   "points": 10,
                   "title": "Ritual Site Achiever"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "inv_chest_robe_pvppriest_c_02",
                   "id": 62531,
                   "new": true,
                   "points": 10,
                   "title": "Ritual Site Adept"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "inv_chest_mail_dungeonmail_c_03",
                   "id": 62532,
                   "new": true,
                   "points": 10,
                   "title": "Ritual Site Handler"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "inv_chest_mail_dungeonmail_c_06",
                   "id": 62533,
                   "new": true,
                   "points": 15,
                   "title": "Ritual Site Master"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "ability_rogue_masterofsubtlety",
                   "id": 62534,
                   "new": true,
                   "points": 20,
                   "title": "Ritual Site Rogue: Broken Throne"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "ability_rogue_masterofsubtlety",
                   "id": 62535,
                   "new": true,
                   "points": 10,
                   "title": "Ritual Site Rogue: Daggerspine Point"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "inv_misc_groupneedmore",
                   "id": 62536,
                   "new": true,
                   "points": 10,
                   "title": "Neighborhood Ritual Watch: Broken Throne"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "inv_112_achievement_raid_dhcouncil",
                   "id": 62537,
                   "new": true,
                   "points": 15,
                   "title": "Neighborhood Ritual Team: Broken Throne"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "inv_misc_groupneedmore",
                   "id": 62538,
                   "new": true,
                   "points": 10,
                   "title": "Neighborhood Ritual Watch: Daggerspine Point"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "inv_112_achievement_raid_dhcouncil",
                   "id": 62539,
                   "new": true,
                   "points": 15,
                   "title": "Neighborhood Ritual Team: Daggerspine Point"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "spell_priest_voidtendrils",
                   "id": 62540,
                   "new": true,
                   "points": 5,
                   "title": "Challenge: Tendrils"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "spell_warlock_soulburn",
                   "id": 62541,
                   "new": true,
                   "points": 5,
                   "title": "Challenge: Tainted Corpses"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "inv_10_enchanting2_magicswirl_black",
                   "id": 62542,
                   "new": true,
                   "points": 5,
                   "title": "Challenge: Manifestations"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "achievement_guildperk_everybodysfriend",
                   "id": 62543,
                   "new": true,
                   "points": 5,
                   "title": "Challenge: Patrols!"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "inv_netherportal",
                   "id": 62544,
                   "new": true,
                   "points": 5,
                   "title": "Challenge: Magical Alarm Bells"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "trade_archaeology_nerubian_obelisk",
                   "id": 62545,
                   "new": true,
                   "points": 5,
                   "title": "Challenge: Malevolent Boons"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "inv_1115_warlock_diabolicritual_felguard",
                   "id": 62546,
                   "new": true,
                   "points": 5,
                   "title": "Challenge: Reinforced"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "ability_maldraxxus_warriorplantbanner",
                   "id": 62547,
                   "new": true,
                   "points": 5,
                   "title": "Challenge: Embers"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "inv12_ability_priest_tentacleslam",
                   "id": 62548,
                   "new": true,
                   "points": 10,
                   "title": "Expert Challenge: Tendrils"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "spell_shadow_demonicempathy",
                   "id": 62549,
                   "new": true,
                   "points": 10,
                   "title": "Expert Challenge: Tainted Corpses"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "inv_10_enchanting2_magicswirl_blue",
                   "id": 62550,
                   "new": true,
                   "points": 10,
                   "title": "Expert Challenge: Manifestations"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "achievement_guildperk_everyones-a-hero_rank2",
                   "id": 62551,
                   "new": true,
                   "points": 10,
                   "title": "Expert Challenge: Patrols!"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "ability_demonhunter_netherbond",
                   "id": 62552,
                   "new": true,
                   "points": 10,
                   "title": "Expert Challenge: Magical Alarm Bells"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "inv_cosmicvoid_beam",
                   "id": 62553,
                   "new": true,
                   "points": 10,
                   "title": "Expert Challenge: Malevolent Boons"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "achievement_explore_argus",
                   "id": 62554,
                   "new": true,
                   "points": 10,
                   "title": "Expert Challenge: Reinforced"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "ability_warlock_burningembersblue",
                   "id": 62555,
                   "new": true,
                   "points": 10,
                   "title": "Expert Challenge: Embers"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "ability_druid_dash",
                   "id": 62556,
                   "new": true,
                   "points": 15,
                   "title": "Quick Reflexes"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "ability_ambush",
                   "id": 62558,
                   "new": true,
                   "points": 10,
                   "title": "Patrol Ambusher"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "spell_animaardenweald_buff",
                   "id": 62559,
                   "new": true,
                   "points": 15,
                   "title": "Malevolence Shrugged"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "inv_everburningignition_blue",
                   "id": 62560,
                   "new": true,
                   "points": 15,
                   "title": "Ember Still Burning"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "achievement_bg_kill_flag_carrier",
                   "id": 62561,
                   "new": true,
                   "points": 10,
                   "title": "Reinforcement Obliteration"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "spell_holy_consumemagic",
                   "id": 62562,
                   "new": true,
                   "points": 20,
                   "title": "Ritual Site Disruptor"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "achievement_bg_killxenemies_generalsroom",
                   "id": 62621,
                   "new": true,
                   "points": 20,
                   "title": "Challenging Sites"
                 },
                 {
-                  "icon": "trade_engineering",
+                  "icon": "spell_shadow_shadesofdarkness",
                   "id": 62622,
                   "new": true,
                   "points": 20,
@@ -36516,7 +36608,7 @@
                   "icon": "ability_hunter_zenarchery",
                   "id": 62563,
                   "new": true,
-                  "points": 0,
+                  "points": 15,
                   "title": "Void Response Team"
                 },
                 {
@@ -36530,7 +36622,7 @@
                   "icon": "spell_shadow_shadesofdarkness",
                   "id": 62569,
                   "new": true,
-                  "points": 0,
+                  "points": 15,
                   "title": "Traces in the Dark"
                 },
                 {
@@ -36565,7 +36657,7 @@
                   "icon": "inv_belt_armor_bloodelf_d_01",
                   "id": 62574,
                   "new": true,
-                  "points": 0,
+                  "points": 10,
                   "title": "Accolade to Rest"
                 }
               ],
