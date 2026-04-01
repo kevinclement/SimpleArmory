@@ -160,42 +160,35 @@
       {
         "items": [
           {
-            "ID": 2488,
-            "icon": "inv_horse2ardenwealdmount_blue",
-            "itemId": 235646,
-            "name": "Shimmermist Free Runner",
-            "spellid": 1217965
+            "ID": 2495,
+            "icon": "inv_snailrockmount_green",
+            "itemId": 235662,
+            "name": "Emerald Snail",
+            "spellid": 1218069
           },
           {
-            "ID": 2489,
-            "icon": "inv_butterflymount_pearl",
-            "itemId": 235650,
-            "name": "Pearlescent Butterfly",
-            "spellid": 1217994
+            "ID": 2520,
+            "icon": "inv_hedgehogmount_green",
+            "itemId": 238897,
+            "name": "Spring Harvesthog",
+            "spellid": 1226511
           },
           {
-            "ID": 2491,
-            "icon": "inv_butterflymount_red",
-            "itemId": 235657,
-            "name": "Ruby Butterfly",
-            "spellid": 1218012
+            "ID": 2833,
+            "icon": "inv_gardensnailmount_green",
+            "itemId": 260893,
+            "name": "Arboreal Pseudoshell",
+            "spellid": 1266993
           },
           {
-            "ID": 2853,
-            "icon": "inv_flyingcarpetmount4",
-            "itemId": 263452,
-            "name": "Comfy Silvermoon Flying Quilt",
-            "spellid": 1270523
-          },
-          {
-            "ID": 2852,
-            "icon": "inv_flyingcarpetmount4",
-            "itemId": 263451,
-            "name": "Comfy Bel'ameth Flying Quilt",
-            "spellid": 1270522
+            "ID": 2845,
+            "icon": "inv_gardenvinemount_green",
+            "itemId": 262705,
+            "name": "Vicious Snapvine",
+            "spellid": 1269273
           }
         ],
-        "name": "Trading Post: March"
+        "name": "Trading Post: April"
       },
       {
         "items": [
@@ -219,6 +212,13 @@
             "itemId": 246917,
             "name": "Thunder-Ridged Elekk",
             "spellid": 1244247
+          },
+          {
+            "ID": 2838,
+            "icon": "inv_goblinsurfboardmount_orange",
+            "itemId": 262438,
+            "name": "Fantastical Goblin Waveshredder",
+            "spellid": 1268809
           }
         ],
         "name": "Promotions"
@@ -478,6 +478,20 @@
             "itemId": 257240,
             "name": "Relinquished Scarlet Charger",
             "spellid": 1261391
+          },
+          {
+            "ID": 2818,
+            "icon": "inv_hawkstridermount_green",
+            "itemId": 260233,
+            "name": "Emerald Hawkstrider",
+            "spellid": 1265785
+          },
+          {
+            "ID": 2754,
+            "icon": "inv_dragonhawk2mount_green",
+            "itemId": 257143,
+            "name": "Peridot Dragonhawk",
+            "spellid": 1261293
           }
         ],
         "name": "Quest"
@@ -490,13 +504,6 @@
             "itemId": 256424,
             "name": "Echo of Aln'sharan",
             "spellid": 1260356
-          },
-          {
-            "ID": 2754,
-            "icon": "inv_dragonhawk2mount_green",
-            "itemId": 257143,
-            "name": "Peridot Dragonhawk",
-            "spellid": 1261293
           }
         ],
         "name": "Rare Spawn"
@@ -700,7 +707,7 @@
           },
           {
             "ID": 2935,
-            "icon": null,
+            "icon": "inv_blue_hawkstrider",
             "itemId": 268578,
             "name": "Void-Touched Hawkstrider",
             "new": true,
@@ -10256,6 +10263,27 @@
             "spellid": 472487
           },
           {
+            "ID": 2488,
+            "icon": "inv_horse2ardenwealdmount_blue",
+            "itemId": 235646,
+            "name": "Shimmermist Free Runner",
+            "spellid": 1217965
+          },
+          {
+            "ID": 2489,
+            "icon": "inv_butterflymount_pearl",
+            "itemId": 235650,
+            "name": "Pearlescent Butterfly",
+            "spellid": 1217994
+          },
+          {
+            "ID": 2491,
+            "icon": "inv_butterflymount_red",
+            "itemId": 235657,
+            "name": "Ruby Butterfly",
+            "spellid": 1218012
+          },
+          {
             "ID": 2483,
             "icon": "inv_darkmoonhorsemount_purple",
             "itemId": 235556,
@@ -10271,6 +10299,7 @@
           },
           {
             "ID": 2495,
+            "highlighted": true,
             "icon": "inv_snailrockmount_green",
             "itemId": 235662,
             "name": "Emerald Snail",
@@ -10285,6 +10314,7 @@
           },
           {
             "ID": 2520,
+            "highlighted": true,
             "icon": "inv_hedgehogmount_green",
             "itemId": 238897,
             "name": "Spring Harvesthog",
@@ -10422,6 +10452,36 @@
             "itemId": 260580,
             "name": "Cloudborn Razorwing",
             "spellid": 1266579
+          },
+          {
+            "ID": 2833,
+            "highlighted": true,
+            "icon": "inv_gardensnailmount_green",
+            "itemId": 260893,
+            "name": "Arboreal Pseudoshell",
+            "spellid": 1266993
+          },
+          {
+            "ID": 2845,
+            "highlighted": true,
+            "icon": "inv_gardenvinemount_green",
+            "itemId": 262705,
+            "name": "Vicious Snapvine",
+            "spellid": 1269273
+          },
+          {
+            "ID": 2853,
+            "icon": "inv_flyingcarpetmount4",
+            "itemId": 263452,
+            "name": "Comfy Silvermoon Flying Quilt",
+            "spellid": 1270523
+          },
+          {
+            "ID": 2852,
+            "icon": "inv_flyingcarpetmount4",
+            "itemId": 263451,
+            "name": "Comfy Bel'ameth Flying Quilt",
+            "spellid": 1270522
           },
           {
             "ID": 799,
@@ -10658,15 +10718,6 @@
             "spellid": 1251689
           },
           {
-            "ID": 2833,
-            "icon": "inv_gardensnailmount_green",
-            "itemId": 260893,
-            "name": "Arboreal Pseudoshell",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1266993
-          },
-          {
             "ID": 2834,
             "icon": "inv_gardensnailmount_pink",
             "itemId": 260894,
@@ -10692,15 +10743,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1267004
-          },
-          {
-            "ID": 2845,
-            "icon": "inv_gardenvinemount_green",
-            "itemId": 262705,
-            "name": "Vicious Snapvine",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1269273
           },
           {
             "ID": 2846,
@@ -11861,28 +11903,28 @@
           {
             "ID": 2700,
             "icon": "7262713",
-            "itemId": "250930",
+            "itemId": 250930,
             "name": "Frostfall Groveglider",
             "spellid": 1251697
           },
           {
             "ID": 2701,
             "icon": "7262714",
-            "itemId": "250971",
+            "itemId": 250971,
             "name": "Cindertuft Groveglider",
             "spellid": 1251762
           },
           {
             "ID": 2702,
             "icon": "7262715",
-            "itemId": "250972",
+            "itemId": 250972,
             "name": "Gloombough Groveglider",
             "spellid": 1251764
           },
           {
             "ID": 2703,
             "icon": "7262716",
-            "itemId": "250973",
+            "itemId": 250973,
             "name": "Blossombranch Groveglider",
             "spellid": 1251765
           },
@@ -13073,15 +13115,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1238827
-          },
-          {
-            "ID": 2838,
-            "icon": "inv_goblinsurfboardmount_orange",
-            "itemId": 262438,
-            "name": "Fantastical Goblin Waveshredder",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1268809
           },
           {
             "ID": 2914,
