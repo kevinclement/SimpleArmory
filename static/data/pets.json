@@ -324,7 +324,6 @@
             "icon": "inv_capybara_dark",
             "itemId": 270989,
             "name": "Cappy",
-            "new": true,
             "spellid": 1288380
           }
         ],
@@ -661,8 +660,23 @@
             "icon": "inv_capybara_orange",
             "itemId": 274266,
             "name": "Ka'bubb",
-            "new": true,
             "spellid": 1293499
+          },
+          {
+            "ID": 5036,
+            "creatureId": 262422,
+            "icon": "inv_babydragonhawk_black",
+            "itemId": 270330,
+            "name": "Rescued Dragonhawk Chick",
+            "spellid": 1287849
+          },
+          {
+            "ID": 5037,
+            "creatureId": 262427,
+            "icon": "inv_11_0_dungeon_tentaclevial_blue",
+            "itemId": 270331,
+            "name": "Void-Infused Mindbreaker Fry",
+            "spellid": 1287856
           }
         ],
         "name": "Vendor"
@@ -714,7 +728,6 @@
             "icon": "inv_babyamanieagle_burgundy",
             "itemId": 269829,
             "name": "Void-Scarred Eaglet",
-            "new": true,
             "spellid": 1286610
           },
           {
@@ -723,7 +736,6 @@
             "icon": "inv_babyamanibear_witherbark",
             "itemId": 269836,
             "name": "Chubs",
-            "new": true,
             "spellid": 1286634
           },
           {
@@ -732,7 +744,6 @@
             "icon": "spell_priest_void-flay",
             "itemId": 269999,
             "name": "Overloaded Manaling",
-            "new": true,
             "spellid": 1287339
           },
           {
@@ -741,7 +752,6 @@
             "icon": "inv_snapdragonmount02",
             "itemId": 270061,
             "name": "Void-Corrupted Snapdragon",
-            "new": true,
             "spellid": 1287374
           },
           {
@@ -750,7 +760,6 @@
             "icon": "inv_babyeversonglynx_black",
             "itemId": 270063,
             "name": "Void-Touched Lynx Kitten",
-            "new": true,
             "spellid": 1287380
           },
           {
@@ -759,7 +768,6 @@
             "icon": "inv_capybara_brown",
             "itemId": 270988,
             "name": "Wriggling Capybara",
-            "new": true,
             "spellid": 1288378
           },
           {
@@ -768,7 +776,6 @@
             "icon": "inv_babyeversonglynx_tan",
             "itemId": 270990,
             "name": "Curious Lynx Kitten",
-            "new": true,
             "spellid": 1288381
           },
           {
@@ -777,26 +784,7 @@
             "icon": "inv_blue_babyhawkstrider2",
             "itemId": 270062,
             "name": "Void-Touched Chick",
-            "new": true,
             "spellid": 1287376
-          },
-          {
-            "ID": 5036,
-            "creatureId": 262422,
-            "icon": "inv_babydragonhawk_black",
-            "itemId": 270330,
-            "name": "Rescued Dragonhawk Chick",
-            "new": true,
-            "spellid": 1287849
-          },
-          {
-            "ID": 5037,
-            "creatureId": 262427,
-            "icon": "inv_11_0_dungeon_tentaclevial_blue",
-            "itemId": 270331,
-            "name": "Void-Infused Mindbreaker Fry",
-            "new": true,
-            "spellid": 1287856
           }
         ],
         "name": "Ritual Sites"

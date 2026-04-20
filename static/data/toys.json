@@ -346,6 +346,24 @@
             "icon": "achievement_dungeon_ulduar80_25man",
             "itemId": 266370,
             "name": "Dundun's Abundant Travel Method"
+          },
+          {
+            "ID": 1574,
+            "icon": "inv_11xp_event_dastardlyduos_podium01_nocollision",
+            "itemId": 239018,
+            "name": "Winner's Podium"
+          },
+          {
+            "ID": 1684,
+            "icon": "inv_relics_hourglass",
+            "itemId": 268455,
+            "name": "Enchanted Hourglass"
+          },
+          {
+            "ID": 1685,
+            "icon": "inv_leatherworking_70_loveseat",
+            "itemId": 268456,
+            "name": "Animated Bench"
           }
         ],
         "name": "Vendor"
@@ -425,35 +443,21 @@
             "ID": 1609,
             "icon": "inv_10_blacksmithing_craftedoptional_reinforcedmetalplating_color02",
             "itemId": 250320,
-            "name": "Lightgraft"
+            "name": "Lightgraft",
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 1681,
             "icon": "inv_10_inscription_illusoryspellscrolls_color4",
             "itemId": 267323,
-            "name": "Troll Scroll of Rainbow Roll",
-            "new": true
-          },
-          {
-            "ID": 1684,
-            "icon": "inv_relics_hourglass",
-            "itemId": 268455,
-            "name": "Enchanted Hourglass",
-            "new": true
-          },
-          {
-            "ID": 1685,
-            "icon": "inv_leatherworking_70_loveseat",
-            "itemId": 268456,
-            "name": "Animated Bench",
-            "new": true
+            "name": "Troll Scroll of Rainbow Roll"
           },
           {
             "ID": 1683,
             "icon": "inv_111_remotecontrol_steamwheedle",
             "itemId": 267472,
-            "name": "Gnomatic Projector",
-            "new": true
+            "name": "Gnomatic Projector"
           }
         ],
         "name": "Unknown"
@@ -466,7 +470,7 @@
             "icon": "inv_12xp_mdi_awv_banner01",
             "itemId": 272339,
             "name": "Umbral Champion's Illustrious Banner",
-            "new": true
+            "notObtainable": true
           }
         ],
         "name": "Esports"
@@ -7491,13 +7495,6 @@
             "icon": "inv_banner_01",
             "itemId": 239007,
             "name": "Dastardly Banner",
-            "notObtainable": true
-          },
-          {
-            "ID": 1574,
-            "icon": "inv_11xp_event_dastardlyduos_podium01_nocollision",
-            "itemId": 239018,
-            "name": "Winner's Podium",
             "notObtainable": true
           }
         ],

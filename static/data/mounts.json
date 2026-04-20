@@ -207,13 +207,6 @@
             "spellid": 453255
           },
           {
-            "ID": 2618,
-            "icon": "inv_elekkfelmount_blue",
-            "itemId": 246917,
-            "name": "Thunder-Ridged Elekk",
-            "spellid": 1244247
-          },
-          {
             "ID": 2838,
             "icon": "inv_goblinsurfboardmount_orange",
             "itemId": 262438,
@@ -249,7 +242,7 @@
           {
             "ID": 2793,
             "icon": "inv_vicioussnaplizardmount_horde",
-            "itemId": 258175,
+            "itemId": 257502,
             "name": "Vicious Snaplizard",
             "side": "H",
             "spellid": 1261629
@@ -300,14 +293,6 @@
             "itemId": 257145,
             "name": "Crimson Dragonhawk",
             "spellid": 1261298
-          },
-          {
-            "ID": 2915,
-            "icon": "inv_dragonchromaticmount2",
-            "itemId": 264348,
-            "name": "Unbound Manawyrm",
-            "new": true,
-            "spellid": 1271698
           },
           {
             "ID": 2755,
@@ -511,25 +496,6 @@
       {
         "items": [
           {
-            "ID": 2769,
-            "icon": "inv_manawyrm2mount_1",
-            "itemId": 257191,
-            "name": "Preyseeker's Hubris",
-            "spellid": 1261336
-          },
-          {
-            "ID": 2770,
-            "icon": "inv_manawyrm2mount_2",
-            "itemId": 257192,
-            "name": "Preyseeker's Wrath",
-            "spellid": 1261337
-          }
-        ],
-        "name": "Prey"
-      },
-      {
-        "items": [
-          {
             "ID": 2693,
             "icon": "inv_gianteagle2mount_woodland",
             "itemId": 250782,
@@ -558,6 +524,20 @@
             "spellid": 1268926
           },
           {
+            "ID": 2769,
+            "icon": "inv_manawyrm2mount_1",
+            "itemId": 257191,
+            "name": "Preyseeker's Hubris",
+            "spellid": 1261336
+          },
+          {
+            "ID": 2770,
+            "icon": "inv_manawyrm2mount_2",
+            "itemId": 257192,
+            "name": "Preyseeker's Wrath",
+            "spellid": 1261337
+          },
+          {
             "ID": 2913,
             "icon": "inv_resinrhinomount_purple",
             "itemId": 263580,
@@ -570,6 +550,27 @@
             "itemId": 222988,
             "name": "Elder Glowmite",
             "spellid": 447173
+          },
+          {
+            "ID": 2935,
+            "icon": "inv_blue_hawkstrider",
+            "itemId": 268578,
+            "name": "Void-Touched Hawkstrider",
+            "spellid": 1282936
+          },
+          {
+            "ID": 2915,
+            "icon": "inv_dragonchromaticmount2",
+            "itemId": 264348,
+            "name": "Unbound Manawyrm",
+            "spellid": 1271698
+          },
+          {
+            "ID": 2933,
+            "icon": "inv_cooking_80_choralhoney3",
+            "itemId": 268481,
+            "name": "Magister's Spell Bee",
+            "spellid": 1282471
           }
         ],
         "name": "Vendor"
@@ -683,14 +684,6 @@
             "itemId": 257180,
             "name": "Contained Stormarion Defender",
             "spellid": 1261334
-          },
-          {
-            "ID": 2933,
-            "icon": "inv_cooking_80_choralhoney3",
-            "itemId": 268481,
-            "name": "Magister's Spell Bee",
-            "new": true,
-            "spellid": 1282471
           }
         ],
         "name": "Zone Feature"
@@ -700,25 +693,14 @@
           {
             "ID": 2779,
             "icon": "inv_amanibearmount_witherbark",
-            "itemId": 257225,
             "name": "Witherbark Warbear Mother",
-            "new": true,
             "spellid": 1261362
-          },
-          {
-            "ID": 2935,
-            "icon": "inv_blue_hawkstrider",
-            "itemId": 268578,
-            "name": "Void-Touched Hawkstrider",
-            "new": true,
-            "spellid": 1282936
           },
           {
             "ID": 2964,
             "icon": "inv_seaeel_teal",
             "itemId": 270041,
             "name": "Void-Touched Snapdragon",
-            "new": true,
             "spellid": 1287357
           },
           {
@@ -726,7 +708,6 @@
             "icon": "inv_leatherworking_70_petleash",
             "itemId": 270058,
             "name": "Void-Corrupted Lynx",
-            "new": true,
             "spellid": 1287359
           },
           {
@@ -734,7 +715,6 @@
             "icon": "inv_weapon_shortblade_28",
             "itemId": 269828,
             "name": "Void-Corrupted Hex Eagle",
-            "new": true,
             "spellid": 1286606
           }
         ],
@@ -856,46 +836,6 @@
             "itemId": 242714,
             "name": "Umbral K'arroc",
             "spellid": 1233511
-          },
-          {
-            "ID": 2244,
-            "icon": "inv_crystalmech_teal",
-            "itemId": 226357,
-            "name": "Diamond Mechsuit",
-            "notObtainable": true,
-            "spellid": 458335
-          },
-          {
-            "ID": 2480,
-            "icon": "inv_goblinspidertank",
-            "itemId": 235549,
-            "name": "Crimson Shreddertank",
-            "notObtainable": true,
-            "spellid": 1217235
-          },
-          {
-            "ID": 2508,
-            "icon": "inv_goblinspidertank",
-            "itemId": 237141,
-            "name": "Enterprising Shreddertank",
-            "notObtainable": true,
-            "spellid": 1221694
-          },
-          {
-            "ID": 2633,
-            "icon": "inv_voidflyermountmythic",
-            "itemId": 248248,
-            "name": "Azure Void Flyer",
-            "notObtainable": true,
-            "spellid": 1246781
-          },
-          {
-            "ID": 2631,
-            "icon": "inv_voidflyermountmythic",
-            "itemId": 247822,
-            "name": "Scarlet Void Flyer",
-            "notObtainable": true,
-            "spellid": 1245517
           }
         ],
         "name": "Achievement"
@@ -1668,38 +1608,6 @@
             "name": "Voyaging Wilderling",
             "notObtainable": true,
             "spellid": 439138
-          },
-          {
-            "ID": 1681,
-            "icon": "inv_rhinoprimalmountice",
-            "itemId": 199412,
-            "name": "Hailstorm Armoredon",
-            "notObtainable": true,
-            "spellid": 387231
-          },
-          {
-            "ID": 1725,
-            "icon": "inv_rhinoprimalmountfire",
-            "itemId": 204798,
-            "name": "Inferno Armoredon",
-            "notObtainable": true,
-            "spellid": 406637
-          },
-          {
-            "ID": 1801,
-            "icon": "inv_rhinoprimalmountdream",
-            "itemId": 209060,
-            "name": "Verdant Armoredon",
-            "notObtainable": true,
-            "spellid": 422486
-          },
-          {
-            "ID": 2055,
-            "icon": "inv_rhinoprimalmountinfinite",
-            "itemId": 213438,
-            "name": "Infinite Armoredon",
-            "notObtainable": true,
-            "spellid": 434462
           }
         ],
         "name": "Achievement"
@@ -1882,6 +1790,20 @@
             "itemId": 206585,
             "name": "Valiance",
             "spellid": 413922
+          },
+          {
+            "ID": 1794,
+            "icon": "inv_alpacamount_ivory",
+            "itemId": 208152,
+            "name": "Pattie",
+            "spellid": 418078
+          },
+          {
+            "ID": 1813,
+            "icon": "inv_hunterkillershipblue",
+            "itemId": 210022,
+            "name": "Mimiron's Jumpjets",
+            "spellid": 424082
           }
         ],
         "name": "Riddle"
@@ -2363,38 +2285,6 @@
             "itemId": 190170,
             "name": "Jigglesworth Sr.",
             "spellid": 366791
-          },
-          {
-            "ID": 1419,
-            "icon": "inv_deathelementalmount_black",
-            "itemId": 182717,
-            "name": "Sintouched Deathwalker",
-            "notObtainable": true,
-            "spellid": 340068
-          },
-          {
-            "ID": 1520,
-            "icon": "inv_deathelementalmount_green",
-            "itemId": 187525,
-            "name": "Soultwisted Deathwalker",
-            "notObtainable": true,
-            "spellid": 358319
-          },
-          {
-            "ID": 1544,
-            "icon": "inv_deathelementalmount_red",
-            "itemId": 187682,
-            "name": "Wastewarped Deathwalker",
-            "notObtainable": true,
-            "spellid": 359407
-          },
-          {
-            "ID": 1405,
-            "icon": "inv_deathelementalmount_purple",
-            "itemId": 192557,
-            "name": "Restoration Deathwalker",
-            "notObtainable": true,
-            "spellid": 334482
           }
         ],
         "name": "Achievement"
@@ -3741,14 +3631,6 @@
             "itemId": 174861,
             "name": "Wriggling Parasite",
             "spellid": 316343
-          },
-          {
-            "ID": 1326,
-            "icon": "inv_nzothserpentmount_pale",
-            "itemId": 174836,
-            "name": "Awakened Mindborer",
-            "notObtainable": true,
-            "spellid": 316637
           }
         ],
         "name": "Achievement"
@@ -8443,6 +8325,120 @@
     ]
   },
   {
+    "name": "Mythic+",
+    "subcats": [
+      {
+        "items": [
+          {
+            "ID": 1326,
+            "icon": "inv_nzothserpentmount_pale",
+            "itemId": 174836,
+            "name": "Awakened Mindborer",
+            "spellid": 316637
+          },
+          {
+            "ID": 1419,
+            "icon": "inv_deathelementalmount_black",
+            "itemId": 182717,
+            "name": "Sintouched Deathwalker",
+            "spellid": 340068
+          },
+          {
+            "ID": 1520,
+            "icon": "inv_deathelementalmount_green",
+            "itemId": 187525,
+            "name": "Soultwisted Deathwalker",
+            "spellid": 358319
+          },
+          {
+            "ID": 1544,
+            "icon": "inv_deathelementalmount_red",
+            "itemId": 187682,
+            "name": "Wastewarped Deathwalker",
+            "spellid": 359407
+          },
+          {
+            "ID": 1405,
+            "icon": "inv_deathelementalmount_purple",
+            "itemId": 192557,
+            "name": "Restoration Deathwalker",
+            "spellid": 334482
+          },
+          {
+            "ID": 1681,
+            "icon": "inv_rhinoprimalmountice",
+            "itemId": 199412,
+            "name": "Hailstorm Armoredon",
+            "spellid": 387231
+          },
+          {
+            "ID": 1725,
+            "icon": "inv_rhinoprimalmountfire",
+            "itemId": 204798,
+            "name": "Inferno Armoredon",
+            "spellid": 406637
+          },
+          {
+            "ID": 1801,
+            "icon": "inv_rhinoprimalmountdream",
+            "itemId": 209060,
+            "name": "Verdant Armoredon",
+            "spellid": 422486
+          },
+          {
+            "ID": 2055,
+            "icon": "inv_rhinoprimalmountinfinite",
+            "itemId": 213438,
+            "name": "Infinite Armoredon",
+            "spellid": 434462
+          },
+          {
+            "ID": 2244,
+            "icon": "inv_crystalmech_teal",
+            "itemId": 226357,
+            "name": "Diamond Mechsuit",
+            "spellid": 458335
+          },
+          {
+            "ID": 2480,
+            "icon": "inv_goblinspidertank",
+            "itemId": 235549,
+            "name": "Crimson Shreddertank",
+            "spellid": 1217235
+          },
+          {
+            "ID": 2508,
+            "icon": "inv_goblinspidertank",
+            "itemId": 237141,
+            "name": "Enterprising Shreddertank",
+            "spellid": 1221694
+          },
+          {
+            "ID": 2633,
+            "icon": "inv_voidflyermountmythic",
+            "itemId": 248248,
+            "name": "Azure Void Flyer",
+            "spellid": 1246781
+          },
+          {
+            "ID": 2631,
+            "icon": "inv_voidflyermountmythic",
+            "itemId": 247822,
+            "name": "Scarlet Void Flyer",
+            "spellid": 1245517
+          }
+        ],
+        "name": "Timelost Saddle"
+      },
+      {
+        "items": [
+
+        ],
+        "name": "Champion"
+      }
+    ]
+  },
+  {
     "id": "4ea9ce5d",
     "name": "PVP",
     "subcats": [
@@ -9887,26 +9883,6 @@
           }
         ],
         "name": "Timewalking"
-      },
-      {
-        "id": "bbd3216a",
-        "items": [
-          {
-            "ID": 1794,
-            "icon": "inv_alpacamount_ivory",
-            "itemId": 208152,
-            "name": "Pattie",
-            "spellid": 418078
-          },
-          {
-            "ID": 1813,
-            "icon": "inv_hunterkillershipblue",
-            "itemId": 210022,
-            "name": "Mimiron's Jumpjets",
-            "spellid": 424082
-          }
-        ],
-        "name": "Secrets of Azeroth"
       },
       {
         "items": [
@@ -12266,6 +12242,19 @@
           }
         ],
         "name": "Mountain Dew"
+      },
+      {
+        "items": [
+          {
+            "ID": 2618,
+            "icon": "inv_elekkfelmount_blue",
+            "itemId": 246917,
+            "name": "Thunder-Ridged Elekk",
+            "resale": true,
+            "spellid": 1244247
+          }
+        ],
+        "name": "Pringles"
       },
       {
         "items": [
