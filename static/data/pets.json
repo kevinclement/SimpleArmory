@@ -393,14 +393,6 @@
             "spellid": 1269889
           },
           {
-            "ID": 4976,
-            "creatureId": 257546,
-            "icon": "inv_babyvoidwalker_blue",
-            "itemId": 264434,
-            "name": "Voldy",
-            "spellid": 1271988
-          },
-          {
             "ID": 4977,
             "creatureId": 257616,
             "icon": "inv_babyamanieagle_burgundy",
@@ -551,14 +543,6 @@
       {
         "items": [
           {
-            "ID": 4955,
-            "creatureId": 256272,
-            "icon": "inv_bloodticklarvaeorange",
-            "itemId": 262393,
-            "name": "Kreepah'zoyd",
-            "spellid": 1268693
-          },
-          {
             "ID": 4953,
             "creatureId": 256264,
             "icon": "inv_babysporebat3_purple",
@@ -644,28 +628,28 @@
             "spellid": 1268696
           },
           {
-            "ID": 4830,
-            "creatureId": 245477,
-            "icon": "inv_112_petrewards_babyobserver_blue",
-            "itemId": 244911,
-            "name": "Rhay'Dahr",
-            "spellid": 1238273
+            "ID": 4976,
+            "creatureId": 257546,
+            "icon": "inv_babyvoidwalker_blue",
+            "itemId": 264434,
+            "name": "Voldy",
+            "spellid": 1271988
           },
           {
-            "ID": 4633,
-            "creatureId": 231467,
-            "icon": "inv_babyhyena_blue",
-            "itemId": 232856,
-            "name": "Scruff",
-            "spellid": 471901
+            "ID": 4930,
+            "creatureId": 255522,
+            "icon": "inv_babymanawyrm_blue",
+            "itemId": 259991,
+            "name": "Lil' Preyseeker",
+            "spellid": 1265397
           },
           {
-            "ID": 4508,
-            "creatureId": 222593,
-            "icon": "inv_green_sporecreature2",
-            "itemId": 246628,
-            "name": "Emerald Sporbit",
-            "spellid": 446501
+            "ID": 4955,
+            "creatureId": 256272,
+            "icon": "inv_bloodticklarvaeorange",
+            "itemId": 262393,
+            "name": "Kreepah'zoyd",
+            "spellid": 1268693
           },
           {
             "ID": 5065,
@@ -706,19 +690,6 @@
           }
         ],
         "name": "Riddle"
-      },
-      {
-        "items": [
-          {
-            "ID": 4930,
-            "creatureId": 255522,
-            "icon": "inv_babymanawyrm_blue",
-            "itemId": 259991,
-            "name": "Lil' Preyseeker",
-            "spellid": 1265397
-          }
-        ],
-        "name": "Prey"
       },
       {
         "items": [
@@ -801,6 +772,38 @@
           }
         ],
         "name": "Ritual Sites"
+      },
+      {
+        "items": [
+          {
+            "ID": 4830,
+            "creatureId": 245477,
+            "icon": "inv_112_petrewards_babyobserver_blue",
+            "itemId": 244911,
+            "name": "Rhay'Dahr",
+            "notObtainable": true,
+            "spellid": 1238273
+          },
+          {
+            "ID": 4633,
+            "creatureId": 231467,
+            "icon": "inv_babyhyena_blue",
+            "itemId": 232856,
+            "name": "Scruff",
+            "notObtainable": true,
+            "spellid": 471901
+          },
+          {
+            "ID": 4508,
+            "creatureId": 222593,
+            "icon": "inv_green_sporecreature2",
+            "itemId": 246628,
+            "name": "Emerald Sporbit",
+            "notObtainable": true,
+            "spellid": 446501
+          }
+        ],
+        "name": "Pre-Launch Event"
       },
       {
         "items": [
