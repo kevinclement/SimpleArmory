@@ -179,12 +179,6 @@
             "name": "Dominating Victory"
           },
           {
-            "ID": 1653,
-            "icon": "inv_bannerpvp_03",
-            "itemId": 264517,
-            "name": "Galactic Flag of Victory"
-          },
-          {
             "ID": 1688,
             "icon": "inv_amanipangolinmount_amani",
             "itemId": 268717,
@@ -212,18 +206,6 @@
             "icon": "inv_helm_armor_fungarian_d_01_purple",
             "itemId": 262431,
             "name": "Bouncy Mushroom"
-          },
-          {
-            "ID": 1652,
-            "icon": "inv_10_engineering2_pvpflaregun_color1",
-            "itemId": 264414,
-            "name": "Midnight Delver's Flare Gun"
-          },
-          {
-            "ID": 1665,
-            "icon": "inv_cosmicvoid_groundsate",
-            "itemId": 265100,
-            "name": "Corewarden's Hearthstone"
           },
           {
             "ID": 1679,
@@ -278,19 +260,13 @@
       {
         "items": [
           {
-            "ID": 1646,
-            "icon": "inv_enchanting_crystal_color1",
-            "itemId": 263933,
-            "name": "Preyseeker's Hearthstone"
-          },
-          {
-            "ID": 1654,
-            "icon": "inv_misc_enchantedelementiumrod",
-            "itemId": 264666,
-            "name": "Rod of Exanguishation"
+            "ID": 1653,
+            "icon": "inv_bannerpvp_03",
+            "itemId": 264517,
+            "name": "Galactic Flag of Victory"
           }
         ],
-        "name": "Prey"
+        "name": "Reputation"
       },
       {
         "items": [
@@ -346,6 +322,48 @@
             "icon": "achievement_dungeon_ulduar80_25man",
             "itemId": 266370,
             "name": "Dundun's Abundant Travel Method"
+          },
+          {
+            "ID": 1652,
+            "icon": "inv_10_engineering2_pvpflaregun_color1",
+            "itemId": 264414,
+            "name": "Midnight Delver's Flare Gun"
+          },
+          {
+            "ID": 1665,
+            "icon": "inv_cosmicvoid_groundsate",
+            "itemId": 265100,
+            "name": "Corewarden's Hearthstone"
+          },
+          {
+            "ID": 1646,
+            "icon": "inv_enchanting_crystal_color1",
+            "itemId": 263933,
+            "name": "Preyseeker's Hearthstone"
+          },
+          {
+            "ID": 1654,
+            "icon": "inv_misc_enchantedelementiumrod",
+            "itemId": 264666,
+            "name": "Rod of Exanguishation"
+          },
+          {
+            "ID": 1574,
+            "icon": "inv_11xp_event_dastardlyduos_podium01_nocollision",
+            "itemId": 239018,
+            "name": "Winner's Podium"
+          },
+          {
+            "ID": 1684,
+            "icon": "inv_relics_hourglass",
+            "itemId": 268455,
+            "name": "Enchanted Hourglass"
+          },
+          {
+            "ID": 1685,
+            "icon": "inv_leatherworking_70_loveseat",
+            "itemId": 268456,
+            "name": "Animated Bench"
           }
         ],
         "name": "Vendor"
@@ -425,35 +443,21 @@
             "ID": 1609,
             "icon": "inv_10_blacksmithing_craftedoptional_reinforcedmetalplating_color02",
             "itemId": 250320,
-            "name": "Lightgraft"
+            "name": "Lightgraft",
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 1681,
             "icon": "inv_10_inscription_illusoryspellscrolls_color4",
             "itemId": 267323,
-            "name": "Troll Scroll of Rainbow Roll",
-            "new": true
-          },
-          {
-            "ID": 1684,
-            "icon": "inv_relics_hourglass",
-            "itemId": 268455,
-            "name": "Enchanted Hourglass",
-            "new": true
-          },
-          {
-            "ID": 1685,
-            "icon": "inv_leatherworking_70_loveseat",
-            "itemId": 268456,
-            "name": "Animated Bench",
-            "new": true
+            "name": "Troll Scroll of Rainbow Roll"
           },
           {
             "ID": 1683,
             "icon": "inv_111_remotecontrol_steamwheedle",
             "itemId": 267472,
-            "name": "Gnomatic Projector",
-            "new": true
+            "name": "Gnomatic Projector"
           }
         ],
         "name": "Unknown"
@@ -466,7 +470,7 @@
             "icon": "inv_12xp_mdi_awv_banner01",
             "itemId": 272339,
             "name": "Umbral Champion's Illustrious Banner",
-            "new": true
+            "notObtainable": true
           }
         ],
         "name": "Esports"
@@ -7491,13 +7495,6 @@
             "icon": "inv_banner_01",
             "itemId": 239007,
             "name": "Dastardly Banner",
-            "notObtainable": true
-          },
-          {
-            "ID": 1574,
-            "icon": "inv_11xp_event_dastardlyduos_podium01_nocollision",
-            "itemId": 239018,
-            "name": "Winner's Podium",
             "notObtainable": true
           }
         ],

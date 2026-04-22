@@ -806,7 +806,7 @@
           "title": "Fly to Vale of the Eternal Blossoms"
         },
         {
-          "notes":"Must Have Garrison Unlocked",
+          "notes": "Must Have Garrison Unlocked",
           "steps": [
             {
               "steps": [
@@ -1134,7 +1134,7 @@
         },
         {
           "capital":true,
-          "notes":"Set Hearthstone to Faction Capital",
+          "notes": "Set Hearthstone to Faction Capital",
           "steps": [
             {
               "steps": [
@@ -1235,7 +1235,7 @@
         },
         {
           "capital": true,
-          "notes":"Set Hearthstone to Faction Capital",
+          "notes": "Set Hearthstone to Faction Capital",
           "steps": [
             {
               "steps": [
@@ -1434,7 +1434,7 @@
         },
         {
           "capital": true,
-          "notes":"Set Hearthstone to Faction Capital",
+          "notes": "Set Hearthstone to Faction Capital",
           "steps": [
             {
               "steps": [
@@ -1565,6 +1565,71 @@
             }
           ],
           "title": "and Portal to Dornogal"
+        },
+        {
+          "capital": true,
+          "notes": "Set Hearthstone to Faction Capital",
+          "steps": [
+            {
+              "steps": [
+                {
+                  "bosses": [
+                    {
+                      "ID": "2817",
+                      "epic": true,
+                      "icon": "inv_hawkstridermount_white",
+                      "itemId": 260231,
+                      "mount": "Lucent Hawkstrider",
+                      "name": "Degentrius",
+                      "note": "Mythic only",
+                      "spellId": 1265784
+                    }
+                  ],
+                  "title": "Run Magister's Terrace (Midnight Dungeon)",
+                  "type": "Dungeon"
+                },
+                {
+                  "bosses": [
+                    {
+                      "ID": "2607",
+                      "epic": true,
+                      "icon": "inv_darkwellphoenixmount",
+                      "itemId": 246590,
+                      "mount": "Ashes of Belo'ren",
+                      "name": "Midnight Falls",
+                      "note": "Mythic only",
+                      "spellId": 1242904
+                    }
+                  ],
+                  "title": "Run March on Quel'Danas (Raid)",
+                  "type": "Raid"
+                }
+              ],
+              "title": "Flightpath to Isle of Quel'Danas"
+            },
+            {
+              "steps": [
+                {
+                  "bosses": [
+                    {
+                      "ID": "2805",
+                      "epic": true,
+                      "icon": "inv_white_hawkstrider",
+                      "itemId": 262914,
+                      "mount": "Spectral Hawkstrider",
+                      "name": "The Restless Heart",
+                      "note": "Mythic only",
+                      "spellId": 1263635
+                    }
+                  ],
+                  "title": "Run Windrunner Spire (Dungeon)",
+                  "type": "Dungeon"
+                }
+              ],
+              "title": "Flightpath to Eversong Woods"
+            }
+          ],
+          "title": "and Portal to Silvermoon"
         }
       ],
       "title": "Start in "

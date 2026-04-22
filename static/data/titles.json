@@ -311,6 +311,7 @@
             "icon": "achievement_dungeon_icecrown_pitofsaron",
             "id": 1056,
             "name": "Scourgebane",
+            "notObtainable": true,
             "titleId": 681,
             "type": "title"
           },
@@ -318,6 +319,7 @@
             "icon": "achievement_dungeon_dragonacademy",
             "id": 1057,
             "name": "Top Student",
+            "notObtainable": true,
             "titleId": 682,
             "type": "title"
           },
@@ -325,6 +327,7 @@
             "icon": "inv_misc_questionmark",
             "id": 1058,
             "name": "Despair Defier",
+            "notObtainable": true,
             "titleId": 683,
             "type": "title"
           },
@@ -332,6 +335,7 @@
             "icon": "inv_achievement_dungeon_windrunnerspire",
             "id": 1060,
             "name": "Windrunner Mediator",
+            "notObtainable": true,
             "titleId": 684,
             "type": "title"
           },
@@ -339,6 +343,7 @@
             "icon": "inv_achievement_dungeon_voidscararena",
             "id": 1061,
             "name": "Nexus Navigator",
+            "notObtainable": true,
             "titleId": 685,
             "type": "title"
           },
@@ -346,6 +351,7 @@
             "icon": "inv_achievement_dungeon_maisarahills",
             "id": 1062,
             "name": "Maisaran Soultender",
+            "notObtainable": true,
             "titleId": 686,
             "type": "title"
           },
@@ -353,8 +359,24 @@
             "icon": "inv_achievement_dungeon_magistersterrace",
             "id": 1064,
             "name": "Terrace Terror",
+            "notObtainable": true,
             "titleId": 687,
             "type": "title"
+          },
+          {
+            "icon": "achievement_challengemode_arakkoaspires_gold",
+            "id": 9623,
+            "name": "Scion of Rukhmar",
+            "notObtainable": true,
+            "titleId": 294,
+            "type": "achievement"
+          },
+          {
+            "icon": "ui_delves",
+            "id": 61796,
+            "name": "Void Breacher",
+            "titleId": 772,
+            "type": "achievement"
           }
         ],
         "name": "Midnight: Season 1"
@@ -424,7 +446,6 @@
             "icon": "inv_misc_head_murloc_01",
             "id": 61910,
             "name": "Mrglgrgl of Grglmrgl",
-            "new": true,
             "titleId": 766,
             "type": "achievement"
           }
@@ -4224,14 +4245,6 @@
             "name": "The Soul Preserver",
             "notObtainable": true,
             "titleId": 293,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_challengemode_arakkoaspires_gold",
-            "id": 9623,
-            "name": "Scion of Rukhmar",
-            "notObtainable": true,
-            "titleId": 294,
             "type": "achievement"
           },
           {

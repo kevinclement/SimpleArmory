@@ -269,6 +269,19 @@
       {
         "items": [
           {
+            "ID": 4968,
+            "creatureId": 256663,
+            "icon": "inv_celestialbrontosauruspet",
+            "itemId": 262881,
+            "name": "Lil' Staropod",
+            "spellid": 1269535
+          }
+        ],
+        "name": "Blizzard Gear Store"
+      },
+      {
+        "items": [
+          {
             "ID": 4595,
             "creatureId": 225354,
             "icon": "inv_pitlordpet_fire",
@@ -324,7 +337,6 @@
             "icon": "inv_capybara_dark",
             "itemId": 270989,
             "name": "Cappy",
-            "new": true,
             "spellid": 1288380
           }
         ],
@@ -379,14 +391,6 @@
             "itemId": 262999,
             "name": "Luma",
             "spellid": 1269889
-          },
-          {
-            "ID": 4976,
-            "creatureId": 257546,
-            "icon": "inv_babyvoidwalker_blue",
-            "itemId": 264434,
-            "name": "Voldy",
-            "spellid": 1271988
           },
           {
             "ID": 4977,
@@ -539,14 +543,6 @@
       {
         "items": [
           {
-            "ID": 4955,
-            "creatureId": 256272,
-            "icon": "inv_bloodticklarvaeorange",
-            "itemId": 262393,
-            "name": "Kreepah'zoyd",
-            "spellid": 1268693
-          },
-          {
             "ID": 4953,
             "creatureId": 256264,
             "icon": "inv_babysporebat3_purple",
@@ -632,28 +628,28 @@
             "spellid": 1268696
           },
           {
-            "ID": 4830,
-            "creatureId": 245477,
-            "icon": "inv_112_petrewards_babyobserver_blue",
-            "itemId": 244911,
-            "name": "Rhay'Dahr",
-            "spellid": 1238273
+            "ID": 4976,
+            "creatureId": 257546,
+            "icon": "inv_babyvoidwalker_blue",
+            "itemId": 264434,
+            "name": "Voldy",
+            "spellid": 1271988
           },
           {
-            "ID": 4633,
-            "creatureId": 231467,
-            "icon": "inv_babyhyena_blue",
-            "itemId": 232856,
-            "name": "Scruff",
-            "spellid": 471901
+            "ID": 4930,
+            "creatureId": 255522,
+            "icon": "inv_babymanawyrm_blue",
+            "itemId": 259991,
+            "name": "Lil' Preyseeker",
+            "spellid": 1265397
           },
           {
-            "ID": 4508,
-            "creatureId": 222593,
-            "icon": "inv_green_sporecreature2",
-            "itemId": 246628,
-            "name": "Emerald Sporbit",
-            "spellid": 446501
+            "ID": 4955,
+            "creatureId": 256272,
+            "icon": "inv_bloodticklarvaeorange",
+            "itemId": 262393,
+            "name": "Kreepah'zoyd",
+            "spellid": 1268693
           },
           {
             "ID": 5065,
@@ -661,8 +657,23 @@
             "icon": "inv_capybara_orange",
             "itemId": 274266,
             "name": "Ka'bubb",
-            "new": true,
             "spellid": 1293499
+          },
+          {
+            "ID": 5036,
+            "creatureId": 262422,
+            "icon": "inv_babydragonhawk_black",
+            "itemId": 270330,
+            "name": "Rescued Dragonhawk Chick",
+            "spellid": 1287849
+          },
+          {
+            "ID": 5037,
+            "creatureId": 262427,
+            "icon": "inv_11_0_dungeon_tentaclevial_blue",
+            "itemId": 270331,
+            "name": "Void-Infused Mindbreaker Fry",
+            "spellid": 1287856
           }
         ],
         "name": "Vendor"
@@ -679,19 +690,6 @@
           }
         ],
         "name": "Riddle"
-      },
-      {
-        "items": [
-          {
-            "ID": 4930,
-            "creatureId": 255522,
-            "icon": "inv_babymanawyrm_blue",
-            "itemId": 259991,
-            "name": "Lil' Preyseeker",
-            "spellid": 1265397
-          }
-        ],
-        "name": "Prey"
       },
       {
         "items": [
@@ -714,7 +712,6 @@
             "icon": "inv_babyamanieagle_burgundy",
             "itemId": 269829,
             "name": "Void-Scarred Eaglet",
-            "new": true,
             "spellid": 1286610
           },
           {
@@ -723,7 +720,6 @@
             "icon": "inv_babyamanibear_witherbark",
             "itemId": 269836,
             "name": "Chubs",
-            "new": true,
             "spellid": 1286634
           },
           {
@@ -732,7 +728,6 @@
             "icon": "spell_priest_void-flay",
             "itemId": 269999,
             "name": "Overloaded Manaling",
-            "new": true,
             "spellid": 1287339
           },
           {
@@ -741,7 +736,6 @@
             "icon": "inv_snapdragonmount02",
             "itemId": 270061,
             "name": "Void-Corrupted Snapdragon",
-            "new": true,
             "spellid": 1287374
           },
           {
@@ -750,7 +744,6 @@
             "icon": "inv_babyeversonglynx_black",
             "itemId": 270063,
             "name": "Void-Touched Lynx Kitten",
-            "new": true,
             "spellid": 1287380
           },
           {
@@ -759,7 +752,6 @@
             "icon": "inv_capybara_brown",
             "itemId": 270988,
             "name": "Wriggling Capybara",
-            "new": true,
             "spellid": 1288378
           },
           {
@@ -768,7 +760,6 @@
             "icon": "inv_babyeversonglynx_tan",
             "itemId": 270990,
             "name": "Curious Lynx Kitten",
-            "new": true,
             "spellid": 1288381
           },
           {
@@ -777,29 +768,42 @@
             "icon": "inv_blue_babyhawkstrider2",
             "itemId": 270062,
             "name": "Void-Touched Chick",
-            "new": true,
             "spellid": 1287376
-          },
-          {
-            "ID": 5036,
-            "creatureId": 262422,
-            "icon": "inv_babydragonhawk_black",
-            "itemId": 270330,
-            "name": "Rescued Dragonhawk Chick",
-            "new": true,
-            "spellid": 1287849
-          },
-          {
-            "ID": 5037,
-            "creatureId": 262427,
-            "icon": "inv_11_0_dungeon_tentaclevial_blue",
-            "itemId": 270331,
-            "name": "Void-Infused Mindbreaker Fry",
-            "new": true,
-            "spellid": 1287856
           }
         ],
         "name": "Ritual Sites"
+      },
+      {
+        "items": [
+          {
+            "ID": 4830,
+            "creatureId": 245477,
+            "icon": "inv_112_petrewards_babyobserver_blue",
+            "itemId": 244911,
+            "name": "Rhay'Dahr",
+            "notObtainable": true,
+            "spellid": 1238273
+          },
+          {
+            "ID": 4633,
+            "creatureId": 231467,
+            "icon": "inv_babyhyena_blue",
+            "itemId": 232856,
+            "name": "Scruff",
+            "notObtainable": true,
+            "spellid": 471901
+          },
+          {
+            "ID": 4508,
+            "creatureId": 222593,
+            "icon": "inv_green_sporecreature2",
+            "itemId": 246628,
+            "name": "Emerald Sporbit",
+            "notObtainable": true,
+            "spellid": 446501
+          }
+        ],
+        "name": "Pre-Launch Event"
       },
       {
         "items": [
@@ -13801,16 +13805,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1266115
-          },
-          {
-            "ID": 4968,
-            "creatureId": 256663,
-            "icon": "inv_celestialbrontosauruspet",
-            "itemId": 262881,
-            "name": "Lil' Staropod",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1269535
           }
         ],
         "name": "Promotion"
