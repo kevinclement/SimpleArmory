@@ -243,15 +243,23 @@
       {
         "items": [
           {
-            "ID": 4963,
-            "creatureId": 256559,
-            "icon": "inv_gardenmandrakepet_green",
-            "itemId": 262762,
-            "name": "Grumpy Mandrake",
-            "spellid": 1269346
+            "ID": 4595,
+            "creatureId": 225354,
+            "icon": "inv_pitlordpet_fire",
+            "itemId": 224576,
+            "name": "Lil' Flameo",
+            "spellid": 453266
+          },
+          {
+            "ID": 4615,
+            "creatureId": 229846,
+            "icon": "inv_ogrepet",
+            "itemId": 228758,
+            "name": "Parrlok",
+            "spellid": 463079
           }
         ],
-        "name": "Trading Post: April"
+        "name": "Trading Post: May"
       },
       {
         "items": [
@@ -281,14 +289,6 @@
       },
       {
         "items": [
-          {
-            "ID": 4595,
-            "creatureId": 225354,
-            "icon": "inv_pitlordpet_fire",
-            "itemId": 224576,
-            "name": "Lil' Flameo",
-            "spellid": 453266
-          },
           {
             "ID": 4944,
             "creatureId": 255750,
@@ -12148,7 +12148,6 @@
           {
             "ID": 4963,
             "creatureId": 256559,
-            "highlighted": true,
             "icon": "inv_gardenmandrakepet_green",
             "itemId": 262762,
             "name": "Grumpy Mandrake",
@@ -12228,6 +12227,24 @@
             "itemId": 49343,
             "name": "Spectral Tiger Cub",
             "spellid": 68810
+          },
+          {
+            "ID": 4595,
+            "creatureId": 225354,
+            "highlighted": true,
+            "icon": "inv_pitlordpet_fire",
+            "itemId": 224576,
+            "name": "Lil' Flameo",
+            "spellid": 453266
+          },
+          {
+            "ID": 4615,
+            "creatureId": 229846,
+            "highlighted": true,
+            "icon": "inv_ogrepet",
+            "itemId": 228758,
+            "name": "Parrlok",
+            "spellid": 463079
           }
         ],
         "name": "Trading Post Re-Releases"
@@ -13511,15 +13528,6 @@
       },
       {
         "items": [
-          {
-            "ID": 4615,
-            "creatureId": 229846,
-            "icon": "inv_ogrepet",
-            "itemId": 228758,
-            "name": "Parrlok",
-            "notObtainable": true,
-            "spellid": 463079
-          },
           {
             "ID": 4975,
             "creatureId": 257493,
