@@ -158,6 +158,17 @@
       {
         "items": [],
         "name": "Trading Post: "
+      },
+      {
+        "items": [
+          {
+            "ID": 1651,
+            "icon": "inv_nullstone_cosmicvoid",
+            "itemId": 264413,
+            "name": "Dominating Victory"
+          }
+        ],
+        "name": "Midnight: Season 1"
       }
     ]
   },
@@ -174,6 +185,7 @@
           },
           {
             "ID": 1651,
+            "highlighted": true,
             "icon": "inv_nullstone_cosmicvoid",
             "itemId": 264413,
             "name": "Dominating Victory"
@@ -446,18 +458,6 @@
             "name": "Lightgraft",
             "notObtainable": true,
             "notReleased": true
-          },
-          {
-            "ID": 1681,
-            "icon": "inv_10_inscription_illusoryspellscrolls_color4",
-            "itemId": 267323,
-            "name": "Troll Scroll of Rainbow Roll"
-          },
-          {
-            "ID": 1683,
-            "icon": "inv_111_remotecontrol_steamwheedle",
-            "itemId": 267472,
-            "name": "Gnomatic Projector"
           }
         ],
         "name": "Unknown"
@@ -500,7 +500,8 @@
             "ID": 1599,
             "icon": "inv_knife_1h_etherealraid_d_02",
             "itemId": 244470,
-            "name": "Etheric Victory"
+            "name": "Etheric Victory",
+            "notObtainable": true
           },
           {
             "ID": 1483,
@@ -6619,6 +6620,18 @@
         "name": "Children's Week"
       },
       {
+        "items": [
+          {
+            "ID": 1681,
+            "icon": "inv_10_inscription_illusoryspellscrolls_color4",
+            "itemId": 267323,
+            "name": "Troll Scroll of Rainbow Roll",
+            "notObtainable": true
+          }
+        ],
+        "name": "Darkspear Dash"
+      },
+      {
         "id": "0b1ab958",
         "items": [
           {
@@ -6761,6 +6774,18 @@
           }
         ],
         "name": "Brewfest"
+      },
+      {
+        "items": [
+          {
+            "ID": 1683,
+            "icon": "inv_111_remotecontrol_steamwheedle",
+            "itemId": 267472,
+            "name": "Gnomatic Projector",
+            "notObtainable": true
+          }
+        ],
+        "name": "Great Gnomeregan Run"
       },
       {
         "id": "ca273c36",
