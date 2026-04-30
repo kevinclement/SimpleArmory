@@ -359,6 +359,19 @@
       {
         "items": [
           {
+            "ID": 2842,
+            "highlighted": true,
+            "icon": "inv_arcanegolem2voidmount",
+            "itemId": 263222,
+            "name": "Arcanovoid Construct",
+            "spellid": 1268949
+          }
+        ],
+        "name": "Delve Nemesis Drop"
+      },
+      {
+        "items": [
+          {
             "ID": 2791,
             "icon": "inv_stalkermount_blue",
             "itemId": 257447,
@@ -8422,6 +8435,22 @@
             "spellid": 1245517
           },
           {
+            "ID": 2733,
+            "highlighted": true,
+            "icon": "inv_mythichexeaglemount_black",
+            "itemId": 262620,
+            "name": "Calamitous Carrion",
+            "spellid": 1257058
+          },
+          {
+            "ID": 2734,
+            "highlighted": true,
+            "icon": "inv_mythichexeaglemount_white",
+            "itemId": 262621,
+            "name": "Convalescent Carrion",
+            "spellid": 1257081
+          },
+          {
             "ID": 3005,
             "icon": "inv_deathelementalmount_blue",
             "itemId": 275440,
@@ -9138,6 +9167,24 @@
             "name": "Vicious Void Creeper",
             "side": "A",
             "spellid": 1234820
+          },
+          {
+            "ID": 2793,
+            "highlighted": true,
+            "icon": "inv_vicioussnaplizardmount_horde",
+            "itemId": 257502,
+            "name": "Vicious Snaplizard",
+            "side": "H",
+            "spellid": 1261629
+          },
+          {
+            "ID": 2794,
+            "highlighted": true,
+            "icon": "inv_vicioussnaplizardmount_alliance",
+            "itemId": 257504,
+            "name": "Vicious Snaplizard",
+            "side": "A",
+            "spellid": 1261648
           }
         ],
         "name": "Vicious Saddle"
@@ -9464,6 +9511,15 @@
             "name": "Astral Gladiator's Fel Bat",
             "notObtainable": true,
             "spellid": 472157
+          },
+          {
+            "ID": 2801,
+            "highlighted": true,
+            "icon": "inv_kaijugladiatormount_blue",
+            "itemId": 260228,
+            "name": "Galactic Gladiator's Goredrake",
+            "notObtainable": true,
+            "spellid": 1262840
           }
         ],
         "name": "Gladiator"
@@ -11621,6 +11677,14 @@
             "spellid": 153489
           },
           {
+            "ID": 594,
+            "highlighted": true,
+            "icon": "ability_mount_ravager2mount",
+            "itemId": 112327,
+            "name": "Grinning Reaver",
+            "spellid": 163025
+          },
+          {
             "ID": 600,
             "icon": "inv_ravenlordmount",
             "itemId": 109013,
@@ -11938,8 +12002,6 @@
             "icon": "inv_springmonkeymount_white",
             "itemId": 268472,
             "name": "Blossomback Arboon",
-            "notObtainable": true,
-            "notReleased": true,
             "spellid": 1282450
           },
           {
@@ -11947,8 +12009,6 @@
             "icon": "inv_springmonkeymount_brown",
             "itemId": 268474,
             "name": "Amberback Arboon",
-            "notObtainable": true,
-            "notReleased": true,
             "spellid": 1282453
           }
         ],
@@ -12297,6 +12357,32 @@
           }
         ],
         "name": "Razer"
+      },
+      {
+        "items": [
+          {
+            "ID": 2232,
+            "highlighted": true,
+            "icon": "inv_turtlemount2_dark",
+            "itemId": 224574,
+            "name": "Savage Ebony Battle Turtle",
+            "spellid": 453255
+          }
+        ],
+        "name": "Steelseries"
+      },
+      {
+        "items": [
+          {
+            "ID": 2838,
+            "highlighted": true,
+            "icon": "inv_goblinsurfboardmount_orange",
+            "itemId": 262438,
+            "name": "Fantastical Goblin Waveshredder",
+            "spellid": 1268809
+          }
+        ],
+        "name": "Fanta"
       },
       {
         "id": "ed0e4736",
