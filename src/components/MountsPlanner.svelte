@@ -149,6 +149,21 @@
           weeklyHourUTC: 15,
           };
       }
+      if (region === 'tw') {
+          return {
+            dailyHourUTC: 23,
+            weeklyDay: 3,
+            weeklyHourUTC: 23,
+          };
+      }
+      if (region === 'kr') {
+          return {
+            dailyHourUTC: 23,
+            weeklyDay: 3,
+            weeklyHourUTC: 23,
+          };
+      }
+      
       return {
           dailyHourUTC: 4,
           weeklyDay: 3,

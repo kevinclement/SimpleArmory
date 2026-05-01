@@ -243,15 +243,23 @@
       {
         "items": [
           {
-            "ID": 4963,
-            "creatureId": 256559,
-            "icon": "inv_gardenmandrakepet_green",
-            "itemId": 262762,
-            "name": "Grumpy Mandrake",
-            "spellid": 1269346
+            "ID": 4595,
+            "creatureId": 225354,
+            "icon": "inv_pitlordpet_fire",
+            "itemId": 224576,
+            "name": "Lil' Flameo",
+            "spellid": 453266
+          },
+          {
+            "ID": 4615,
+            "creatureId": 229846,
+            "icon": "inv_ogrepet",
+            "itemId": 228758,
+            "name": "Parrlok",
+            "spellid": 463079
           }
         ],
-        "name": "Trading Post: April"
+        "name": "Trading Post: May"
       },
       {
         "items": [
@@ -281,14 +289,6 @@
       },
       {
         "items": [
-          {
-            "ID": 4595,
-            "creatureId": 225354,
-            "icon": "inv_pitlordpet_fire",
-            "itemId": 224576,
-            "name": "Lil' Flameo",
-            "spellid": 453266
-          },
           {
             "ID": 4944,
             "creatureId": 255750,
@@ -338,6 +338,15 @@
             "itemId": 270989,
             "name": "Cappy",
             "spellid": 1288380
+          },
+          {
+            "ID": 5074,
+            "creatureId": 266580,
+            "icon": "inv_babyvoidwalker_blue",
+            "itemId": 275663,
+            "name": "Silento",
+            "new": true,
+            "spellid": 1297418
           }
         ],
         "name": "Achievement"
@@ -407,6 +416,33 @@
             "itemId": 258122,
             "name": "Emerald Hatchling",
             "spellid": 1262832
+          },
+          {
+            "ID": 5007,
+            "creatureId": 260149,
+            "icon": "inv_babyamanieagle_red",
+            "itemId": 268557,
+            "name": "Kinduwu",
+            "new": true,
+            "spellid": 1282832
+          },
+          {
+            "ID": 5041,
+            "creatureId": 262985,
+            "icon": "inv_babydragonhawk_orange",
+            "itemId": 271185,
+            "name": "Emberlyn",
+            "new": true,
+            "spellid": 1288774
+          },
+          {
+            "ID": 5073,
+            "creatureId": 266577,
+            "icon": "inv_babyberserker_teal",
+            "itemId": 260922,
+            "name": "Frosticus Maximus",
+            "new": true,
+            "spellid": 1267050
           }
         ],
         "name": "Quest"
@@ -9932,6 +9968,15 @@
             "itemId": 254876,
             "name": "P.O.S.T. Assistant",
             "spellid": 1258852
+          },
+          {
+            "ID": 4949,
+            "creatureId": 256080,
+            "icon": "inv_babyfireelemental_shadowflame",
+            "itemId": 260885,
+            "name": "Shadowflame Remnant",
+            "new": true,
+            "spellid": 1266976
           }
         ],
         "name": "Timewalking"
@@ -12148,7 +12193,6 @@
           {
             "ID": 4963,
             "creatureId": 256559,
-            "highlighted": true,
             "icon": "inv_gardenmandrakepet_green",
             "itemId": 262762,
             "name": "Grumpy Mandrake",
@@ -12169,7 +12213,7 @@
             "creatureId": 256565,
             "icon": "inv_gardenmandrakepet_purple",
             "itemId": 262768,
-            "name": "Chirpy Mandrake",
+            "name": "Sleepy Mandrake",
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1269356
@@ -12228,6 +12272,24 @@
             "itemId": 49343,
             "name": "Spectral Tiger Cub",
             "spellid": 68810
+          },
+          {
+            "ID": 4595,
+            "creatureId": 225354,
+            "highlighted": true,
+            "icon": "inv_pitlordpet_fire",
+            "itemId": 224576,
+            "name": "Lil' Flameo",
+            "spellid": 453266
+          },
+          {
+            "ID": 4615,
+            "creatureId": 229846,
+            "highlighted": true,
+            "icon": "inv_ogrepet",
+            "itemId": 228758,
+            "name": "Parrlok",
+            "spellid": 463079
           }
         ],
         "name": "Trading Post Re-Releases"
@@ -12458,6 +12520,14 @@
             "spellid": 98736
           },
           {
+            "ID": 671,
+            "creatureId": 63832,
+            "icon": "inv_quilinpet",
+            "itemId": 85871,
+            "name": "Lucky Quilen Cub",
+            "spellid": 124660
+          },
+          {
             "ID": 347,
             "creatureId": 58163,
             "icon": "inv_pet_chromaticdragon",
@@ -12488,6 +12558,14 @@
             "itemId": 106240,
             "name": "Alterac Brew-Pup",
             "spellid": 149787
+          },
+          {
+            "ID": 1386,
+            "creatureId": 77137,
+            "icon": "inv_ravenlordpet",
+            "itemId": 109014,
+            "name": "Dread Hatchling",
+            "spellid": 155748
           },
           {
             "ID": 1603,
@@ -12557,6 +12635,14 @@
             "spellid": 294231
           },
           {
+            "ID": 2779,
+            "creatureId": 157969,
+            "icon": "inv_aetherserpentpet",
+            "itemId": 248091,
+            "name": "Anima Wyrmling",
+            "spellid": 308067
+          },
+          {
             "ID": 2780,
             "creatureId": 158142,
             "icon": "inv_sloth",
@@ -12579,6 +12665,14 @@
             "itemId": 190586,
             "name": "Lil' Ursoc",
             "spellid": 367702
+          },
+          {
+            "ID": 3175,
+            "creatureId": 181535,
+            "icon": "inv_murkyalexstrasza",
+            "itemId": 255695,
+            "name": "Murkastrasza",
+            "spellid": 359805
           },
           {
             "ID": 2890,
@@ -12633,6 +12727,14 @@
             "spellid": 468228
           },
           {
+            "ID": 4264,
+            "creatureId": 209163,
+            "icon": "inv_wooddragonpet",
+            "itemId": 208446,
+            "name": "Fyrn",
+            "spellid": 419467
+          },
+          {
             "ID": 4568,
             "creatureId": 223691,
             "icon": "inv_snowowlpet_white",
@@ -12640,12 +12742,44 @@
             "name": "Whoopy"
           },
           {
-            "ID": 4264,
-            "creatureId": 209163,
-            "icon": "inv_wooddragonpet",
-            "itemId": 208446,
-            "name": "Fyrn",
-            "spellid": 419467
+            "ID": 4316,
+            "creatureId": 213407,
+            "icon": "inv_dragonwhelpwrathionclassic",
+            "itemId": 210964,
+            "name": "Lil' Wrathion",
+            "spellid": 427682
+          },
+          {
+            "ID": 4266,
+            "creatureId": 209681,
+            "icon": "inv_gryphonstormpet_blue",
+            "itemId": 208751,
+            "name": "Squally",
+            "spellid": 420759
+          },
+          {
+            "ID": 4589,
+            "creatureId": 224717,
+            "icon": "inv_gryphonstormpet_purple",
+            "itemId": 224261,
+            "name": "Gale",
+            "spellid": 452221
+          },
+          {
+            "ID": 4590,
+            "creatureId": 224716,
+            "icon": "inv_gryphonstormpet_red",
+            "itemId": 224259,
+            "name": "Flash",
+            "spellid": 452222
+          },
+          {
+            "ID": 4591,
+            "creatureId": 224718,
+            "icon": "inv_gryphonstormpet_yellow",
+            "itemId": 224260,
+            "name": "Thundo",
+            "spellid": 452223
           },
           {
             "ID": 4796,
@@ -12671,6 +12805,15 @@
             "itemId": 248073,
             "name": "Smoldering Valor",
             "spellid": 1246166
+          },
+          {
+            "ID": 4969,
+            "creatureId": 256698,
+            "highlighted": true,
+            "icon": "7481108",
+            "itemId": 262982,
+            "name": "Roofus",
+            "spellid": 1269627
           },
           {
             "ID": 4730,
@@ -12981,22 +13124,6 @@
             "spellid": 87344
           },
           {
-            "ID": 671,
-            "creatureId": 63832,
-            "icon": "inv_quilinpet",
-            "itemId": 85871,
-            "name": "Lucky Quilen Cub",
-            "spellid": 124660
-          },
-          {
-            "ID": 1386,
-            "creatureId": 77137,
-            "icon": "inv_ravenlordpet",
-            "itemId": 109014,
-            "name": "Dread Hatchling",
-            "spellid": 155748
-          },
-          {
             "ID": 1691,
             "creatureId": 95841,
             "icon": "inv_felstalker_pet",
@@ -13015,60 +13142,13 @@
             "spellid": 255702
           },
           {
-            "ID": 2779,
-            "creatureId": 157969,
-            "icon": "inv_aetherserpentpet",
-            "itemId": 248091,
-            "name": "Anima Wyrmling",
-            "spellid": 308067
-          },
-          {
-            "ID": 3175,
-            "creatureId": 181535,
-            "icon": "inv_murkyalexstrasza",
-            "itemId": 255695,
-            "name": "Murkastrasza",
-            "spellid": 359805
-          },
-          {
             "ID": 3177,
             "creatureId": 181575,
             "icon": "inv_drakonidpet",
             "itemId": 258432,
             "name": "Drakks",
+            "resale": true,
             "spellid": 359855
-          },
-          {
-            "ID": 4266,
-            "creatureId": 209681,
-            "icon": "inv_gryphonstormpet_blue",
-            "itemId": 208751,
-            "name": "Squally",
-            "spellid": 420759
-          },
-          {
-            "ID": 4589,
-            "creatureId": 224717,
-            "icon": "inv_gryphonstormpet_purple",
-            "itemId": 224261,
-            "name": "Gale",
-            "spellid": 452221
-          },
-          {
-            "ID": 4590,
-            "creatureId": 224716,
-            "icon": "inv_gryphonstormpet_red",
-            "itemId": 224259,
-            "name": "Flash",
-            "spellid": 452222
-          },
-          {
-            "ID": 4591,
-            "creatureId": 224718,
-            "icon": "inv_gryphonstormpet_yellow",
-            "itemId": 224260,
-            "name": "Thundo",
-            "spellid": 452223
           },
           {
             "ID": 4811,
@@ -13183,14 +13263,6 @@
       {
         "items": [
           {
-            "ID": 4316,
-            "creatureId": 213407,
-            "icon": "inv_dragonwhelpwrathionclassic",
-            "itemId": 210964,
-            "name": "Lil' Wrathion",
-            "spellid": 427682
-          },
-          {
             "ID": 4733,
             "creatureId": 236783,
             "icon": "inv_shapetclassic",
@@ -13204,7 +13276,6 @@
             "icon": "inv_netherwingpet",
             "itemId": 253699,
             "name": "Starshard Whelpling",
-            "ptr": true,
             "spellid": 1257069
           }
         ],
@@ -13270,6 +13341,15 @@
             "name": "Gummi",
             "resale": true,
             "spellid": 463148
+          },
+          {
+            "ID": 4944,
+            "creatureId": 255750,
+            "highlighted": true,
+            "icon": "inv_manawurm2pink",
+            "itemId": 260360,
+            "name": "Gummi the Glow Wyrm",
+            "spellid": 1266148
           }
         ],
         "name": "Trolli"
@@ -13512,15 +13592,6 @@
       {
         "items": [
           {
-            "ID": 4615,
-            "creatureId": 229846,
-            "icon": "inv_ogrepet",
-            "itemId": 228758,
-            "name": "Parrlok",
-            "notObtainable": true,
-            "spellid": 463079
-          },
-          {
             "ID": 4975,
             "creatureId": 257493,
             "icon": "inv_babynaga2_blue",
@@ -13558,6 +13629,7 @@
             "icon": "inv_babymurlocthrall",
             "itemId": 229368,
             "name": "Gill'el",
+            "resale": true,
             "spellid": 464808
           },
           {
@@ -13595,6 +13667,15 @@
             "name": "Lil' Ashlee",
             "resale": true,
             "spellid": 1261687
+          },
+          {
+            "ID": 4968,
+            "creatureId": 256663,
+            "highlighted": true,
+            "icon": "inv_celestialbrontosauruspet",
+            "itemId": 262881,
+            "name": "Lil' Staropod",
+            "spellid": 1269535
           }
         ],
         "name": "Blizzard Gear Store"
@@ -13805,6 +13886,16 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1266115
+          },
+          {
+            "ID": 5080,
+            "creatureId": 266912,
+            "icon": "inv_babyfaeriedragon_pink",
+            "itemId": 275818,
+            "name": "Pinky",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1297823
           }
         ],
         "name": "Promotion"

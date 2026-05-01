@@ -158,6 +158,17 @@
       {
         "items": [],
         "name": "Trading Post: "
+      },
+      {
+        "items": [
+          {
+            "ID": 1651,
+            "icon": "inv_nullstone_cosmicvoid",
+            "itemId": 264413,
+            "name": "Dominating Victory"
+          }
+        ],
+        "name": "Midnight: Season 1"
       }
     ]
   },
@@ -174,6 +185,7 @@
           },
           {
             "ID": 1651,
+            "highlighted": true,
             "icon": "inv_nullstone_cosmicvoid",
             "itemId": 264413,
             "name": "Dominating Victory"
@@ -421,6 +433,20 @@
             "icon": "inv_cosmicvoid_groundstate",
             "itemId": 264672,
             "name": "Cosmic Ritual Stone"
+          },
+          {
+            "ID": 1648,
+            "icon": "inv_1207_fungarianraid_fungarianfeast",
+            "itemId": 264313,
+            "name": "Madcap Redcap",
+            "new": true
+          },
+          {
+            "ID": 1649,
+            "icon": "inv_1207_fungarianraid_fungalhearthstone",
+            "itemId": 264367,
+            "name": "Mycomancer's Hearthspore",
+            "new": true
           }
         ],
         "name": "Raid Drop"
@@ -446,18 +472,6 @@
             "name": "Lightgraft",
             "notObtainable": true,
             "notReleased": true
-          },
-          {
-            "ID": 1681,
-            "icon": "inv_10_inscription_illusoryspellscrolls_color4",
-            "itemId": 267323,
-            "name": "Troll Scroll of Rainbow Roll"
-          },
-          {
-            "ID": 1683,
-            "icon": "inv_111_remotecontrol_steamwheedle",
-            "itemId": 267472,
-            "name": "Gnomatic Projector"
           }
         ],
         "name": "Unknown"
@@ -500,7 +514,8 @@
             "ID": 1599,
             "icon": "inv_knife_1h_etherealraid_d_02",
             "itemId": 244470,
-            "name": "Etheric Victory"
+            "name": "Etheric Victory",
+            "notObtainable": true
           },
           {
             "ID": 1483,
@@ -6619,6 +6634,18 @@
         "name": "Children's Week"
       },
       {
+        "items": [
+          {
+            "ID": 1681,
+            "icon": "inv_10_inscription_illusoryspellscrolls_color4",
+            "itemId": 267323,
+            "name": "Troll Scroll of Rainbow Roll",
+            "notObtainable": true
+          }
+        ],
+        "name": "Darkspear Dash"
+      },
+      {
         "id": "0b1ab958",
         "items": [
           {
@@ -6761,6 +6788,18 @@
           }
         ],
         "name": "Brewfest"
+      },
+      {
+        "items": [
+          {
+            "ID": 1683,
+            "icon": "inv_111_remotecontrol_steamwheedle",
+            "itemId": 267472,
+            "name": "Gnomatic Projector",
+            "notObtainable": true
+          }
+        ],
+        "name": "Great Gnomeregan Run"
       },
       {
         "id": "ca273c36",
@@ -7347,6 +7386,27 @@
             "icon": "inv_trinket_revendreth_01_dark",
             "itemId": 256893,
             "name": "Wretched Dredger's Brand"
+          },
+          {
+            "ID": 1633,
+            "icon": "inv_misc_-selfiecamera_normal",
+            "itemId": 259335,
+            "name": "Photo Finisher",
+            "new": true
+          },
+          {
+            "ID": 1634,
+            "icon": "achievement_zone_firelands",
+            "itemId": 259899,
+            "name": "Ashen Horn of the Fallen Keeper",
+            "new": true
+          },
+          {
+            "ID": 1635,
+            "icon": "flightstone-black",
+            "itemId": 260170,
+            "name": "Oathstone Fragment",
+            "new": true
           }
         ],
         "name": "Timewalking"
@@ -7758,18 +7818,6 @@
             "side": "A"
           },
           {
-            "ID": 1438,
-            "icon": "inv_pet_bluemurlocegg",
-            "itemId": 210467,
-            "name": "Magical Murkmorpher"
-          }
-        ],
-        "name": "Blizzard Store"
-      },
-      {
-        "id": "011e92ca",
-        "items": [
-          {
             "ID": 981,
             "icon": "inv_hearthstone_aether",
             "itemId": 172179,
@@ -7792,9 +7840,15 @@
             "icon": "inv_hearthstone_storm",
             "itemId": 208704,
             "name": "Deepdweller's Earthen Hearthstone"
+          },
+          {
+            "ID": 1438,
+            "icon": "inv_pet_bluemurlocegg",
+            "itemId": 210467,
+            "name": "Magical Murkmorpher"
           }
         ],
-        "name": "Collector's Edition"
+        "name": "Blizzard Store"
       },
       {
         "id": "c0f754ff",
@@ -7978,22 +8032,6 @@
           }
         ],
         "name": "Pinterest"
-      }
-    ]
-  },
-  {
-    "id": "8b7cd8e4",
-    "name": "TODO",
-    "subcats": [
-      {
-        "id": "86cdaa00",
-        "items": [],
-        "name": "Vendor"
-      },
-      {
-        "id": "ae431d92",
-        "items": [],
-        "name": "Promotion"
       }
     ]
   }

@@ -377,9 +377,30 @@
             "name": "Void Breacher",
             "titleId": 772,
             "type": "achievement"
+          },
+          {
+            "icon": "achievement_challengemode_scarletmonastery_gold",
+            "id": 63097,
+            "name": "The Umbral Contender",
+            "notObtainable": true,
+            "titleId": 773,
+            "type": "achievement"
           }
         ],
         "name": "Midnight: Season 1"
+      },
+      {
+        "items": [
+          {
+            "icon": "achievement_bg_captureflag_eos",
+            "id": 62941,
+            "name": "Ritual Breaker",
+            "new": true,
+            "titleId": 771,
+            "type": "achievement"
+          }
+        ],
+        "name": "Midnight"
       }
     ]
   },
@@ -3666,6 +3687,14 @@
             "name": "Honorary Preservationist",
             "titleId": 519,
             "type": "achievement"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 1207,
+            "name": "Darkspear Dasher",
+            "new": true,
+            "titleId": 749,
+            "type": "title"
           }
         ],
         "name": "Achievements"
