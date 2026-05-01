@@ -643,22 +643,10 @@
                   "title": "The War of Light and Shadow"
                 },
                 {
-                  "icon": "spell_azerite_essence10",
-                  "id": 42278,
-                  "points": 10,
-                  "title": "The Empty Cradle"
-                },
-                {
                   "icon": "achievement_character_bloodelf_female",
                   "id": 60891,
                   "points": 10,
                   "title": "The Crimson Rogue"
-                },
-                {
-                  "icon": "inv_12_haranir_ability_rootwalker-",
-                  "id": 61574,
-                  "points": 10,
-                  "title": "Legends Never Die"
                 },
                 {
                   "icon": "inv_misc_head_murloc_01",
@@ -671,6 +659,13 @@
                   "id": 61916,
                   "points": 10,
                   "title": "Rage of the Ren'dorei"
+                },
+                {
+                  "icon": "7516223",
+                  "id": 62413,
+                  "new": true,
+                  "points": 0,
+                  "title": "The Curse of Ula'tek"
                 }
               ],
               "name": "Campaign"
@@ -682,6 +677,18 @@
                   "id": 61219,
                   "points": 5,
                   "title": "No Time to Paws"
+                },
+                {
+                  "icon": "inv_12_haranir_ability_rootwalker-",
+                  "id": 61574,
+                  "points": 10,
+                  "title": "Legends Never Die"
+                },
+                {
+                  "icon": "spell_azerite_essence10",
+                  "id": 42278,
+                  "points": 10,
+                  "title": "The Empty Cradle"
                 }
               ],
               "name": "Harandar"
@@ -15285,6 +15292,33 @@
                 }
               ],
               "name": "March on Quel'Danas"
+            },
+            {
+              "id": "e7288b9e",
+              "items": [
+                {
+                  "icon": "inv_1207_achievement_raid_fungariangiant_fungalgiant",
+                  "id": 63237,
+                  "new": true,
+                  "points": 10,
+                  "title": "Rotmire"
+                },
+                {
+                  "icon": "inv_1207_achievement_raid_fungariangiant_fungalgiant",
+                  "id": 63240,
+                  "new": true,
+                  "points": 10,
+                  "title": "Heroic: Rotmire"
+                },
+                {
+                  "icon": "inv_1207_achievement_raid_fungariangiant_fungalgiant",
+                  "id": 63241,
+                  "new": true,
+                  "points": 10,
+                  "title": "Mythic: Rotmire"
+                }
+              ],
+              "name": "Sporefall"
             }
           ]
         },
@@ -31244,6 +31278,22 @@
                   "points": 10,
                   "side": "H",
                   "title": "Flame Keeper of Khaz Algar"
+                },
+                {
+                  "icon": "inv_summerfest_firespirit",
+                  "id": 61335,
+                  "new": true,
+                  "points": 10,
+                  "side": "H",
+                  "title": "Flame Keeper of Midnight"
+                },
+                {
+                  "icon": "inv_summerfest_firespirit",
+                  "id": 61336,
+                  "new": true,
+                  "points": 10,
+                  "side": "A",
+                  "title": "Flame Warden of Midnight"
                 }
               ],
               "name": "Honor"
@@ -32301,6 +32351,19 @@
                 }
               ],
               "name": "Mage Tower"
+            },
+            {
+              "id": "03e0a441",
+              "items": [
+                {
+                  "icon": "spell_mage_altertime",
+                  "id": 61463,
+                  "new": true,
+                  "points": 20,
+                  "title": "Master of the Turbulent Timeways V"
+                }
+              ],
+              "name": "Turbulent Timeways"
             }
           ]
         },
@@ -36145,6 +36208,20 @@
                   "id": 62562,
                   "points": 20,
                   "title": "Ritual Site Disruptor"
+                },
+                {
+                  "icon": "achievement_bg_captureflag_eos",
+                  "id": 62941,
+                  "new": true,
+                  "points": 10,
+                  "title": "Pinnacle Ritual Work"
+                },
+                {
+                  "icon": "ability_priest_bindingprayers",
+                  "id": 63182,
+                  "new": true,
+                  "points": 10,
+                  "title": "Advanced Ritual Site Studies"
                 }
               ],
               "name": ""
@@ -36180,6 +36257,13 @@
                   "id": 62454,
                   "points": 15,
                   "title": "Ritual Sites 505: A Seminar in Void Ritual Nuance"
+                },
+                {
+                  "icon": "trade_archaeology_nerubian_obelisk",
+                  "id": 62940,
+                  "new": true,
+                  "points": 15,
+                  "title": "Ritual Sites 612: Practical Ritual Work"
                 },
                 {
                   "icon": "inv_cloth_startinggear_a_01_chest",
@@ -36511,6 +36595,20 @@
                   "id": 62573,
                   "points": 5,
                   "title": "Air Traffic Controller"
+                },
+                {
+                  "icon": "inv_voidsurfboardmount",
+                  "id": 62873,
+                  "new": true,
+                  "points": 15,
+                  "title": "A Trip Around the Stars"
+                },
+                {
+                  "icon": "inv_voidforgedmechsuit",
+                  "id": 62874,
+                  "new": true,
+                  "points": 15,
+                  "title": "A Trip Through the Stars"
                 }
               ],
               "name": ""
@@ -36589,6 +36687,198 @@
                 }
               ],
               "name": "Accolades"
+            },
+            {
+              "items": [
+                {
+                  "icon": "ability_priest_halo_shadow",
+                  "id": 62606,
+                  "new": true,
+                  "points": 10,
+                  "title": "The Sunstrider Omnium"
+                },
+                {
+                  "icon": "inv12_ability_warlock_ritualofsummoning",
+                  "id": 62607,
+                  "new": true,
+                  "points": 5,
+                  "title": "Ritualized Arcana"
+                },
+                {
+                  "icon": "inv12_ability_priest_voidvolley",
+                  "id": 62608,
+                  "new": true,
+                  "points": 5,
+                  "title": "Leyline Assaults"
+                },
+                {
+                  "icon": "achievement_dungeon_lordstormsong",
+                  "id": 62609,
+                  "new": true,
+                  "points": 5,
+                  "title": "Magical Primeessence"
+                },
+                {
+                  "icon": "achievement_zone_zangarmarsh",
+                  "id": 62610,
+                  "new": true,
+                  "points": 5,
+                  "title": "Off-World Magic"
+                }
+              ],
+              "name": "Quest"
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_1205_voidforge_fluctuatingvoidcores_cosmicvoid",
+                  "id": 62887,
+                  "new": true,
+                  "points": 5,
+                  "title": "Heroic: Worlds Ahead"
+                },
+                {
+                  "icon": "ability_mage_icewall",
+                  "id": 62880,
+                  "new": true,
+                  "points": 5,
+                  "title": "Showdown Success: Val"
+                },
+                {
+                  "icon": "spell_druid_wildmushroom",
+                  "id": 62882,
+                  "new": true,
+                  "points": 5,
+                  "title": "Showdown Success: Naigtal"
+                }
+              ],
+              "name": "World Quests"
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_10_elementalspiritfoozles_frost",
+                  "id": 62881,
+                  "new": true,
+                  "points": 5,
+                  "title": "Showdown Slugger: Val"
+                },
+                {
+                  "icon": "inv_10_elementalspiritfoozles_decay",
+                  "id": 62883,
+                  "new": true,
+                  "points": 5,
+                  "title": "Showdown Slugger: Naigtal"
+                }
+              ],
+              "name": "Rare Spawns"
+            },
+            {
+              "items": [
+                {
+                  "icon": "achievement_dungeon_heroic_gloryoftheraider",
+                  "id": 63264,
+                  "new": true,
+                  "points": 0,
+                  "title": "Heroic Showdowns"
+                },
+                {
+                  "icon": "achievement_dungeon_nexus70_heroic",
+                  "id": 63323,
+                  "new": true,
+                  "points": 10,
+                  "title": "Heroic Tendencies"
+                },
+                {
+                  "icon": "inv_offhand_1h_artifactskulloferedar_d_05",
+                  "id": 62905,
+                  "new": true,
+                  "points": 5,
+                  "title": "Pain of Command"
+                },
+                {
+                  "icon": "inv_offhand_1h_artifactskulloferedar_d_01",
+                  "id": 62909,
+                  "new": true,
+                  "points": 5,
+                  "title": "Heroic: Pain of Command"
+                }
+              ],
+              "name": "World Bosses"
+            },
+            {
+              "items": [
+                {
+                  "icon": "ability_fixated_state_blue",
+                  "id": 62896,
+                  "new": true,
+                  "points": 5,
+                  "title": "Power Creep"
+                },
+                {
+                  "icon": "ability_fixated_state_green",
+                  "id": 62898,
+                  "new": true,
+                  "points": 5,
+                  "title": "Cradle of Power"
+                },
+                {
+                  "icon": "ability_fixated_state_orange",
+                  "id": 62899,
+                  "new": true,
+                  "points": 5,
+                  "title": "Absolute Power"
+                },
+                {
+                  "icon": "ability_fixated_state_purple",
+                  "id": 62900,
+                  "new": true,
+                  "points": 5,
+                  "title": "Power Beyond Measure"
+                },
+                {
+                  "icon": "ability_fixated_state_red",
+                  "id": 62901,
+                  "new": true,
+                  "points": 5,
+                  "title": "Heroic: Power Creep"
+                }
+              ],
+              "name": "Affixes"
+            },
+            {
+              "id": "3581e58d",
+              "items": [
+                  {
+                  "icon": "spell_frost_arcticwinds",
+                  "id": 62903,
+                  "new": true,
+                  "points": 5,
+                  "title": "Climate Strange: Val"
+                },
+                {
+                  "icon": "spell_frost_ice-shards",
+                  "id": 62917,
+                  "new": true,
+                  "points": 5,
+                  "title": "Heroic Climate Strange: Val"
+                },
+                {
+                  "icon": "ability_monk_renewingmists",
+                  "id": 62904,
+                  "new": true,
+                  "points": 5,
+                  "title": "Climate Strange: Naigtal"
+                },
+                {
+                  "icon": "spell_monk_envelopingmist",
+                  "id": 62919,
+                  "new": true,
+                  "points": 5,
+                  "title": "Heroic Climate Strange: Naigtal"
+                }
+              ],
+              "name": "Storms"
             }
           ]
         },
@@ -36970,6 +37260,13 @@
                   "id": 61467,
                   "points": 5,
                   "title": "Lorewalking: The Elves of Quel'Thalas"
+                },
+                {
+                  "icon": "ability_racial_embraceoftheloa_gonk",
+                  "id": 61442,
+                  "new": true,
+                  "points": 5,
+                  "title": "Lorewalking: The Loa"
                 }
               ],
               "name": "Lorewalking"
@@ -44408,6 +44705,19 @@
                 }
               ],
               "name": "Sparks of War"
+            },
+            {
+              "id": "d8e077f8",
+              "items": [
+                {
+                  "icon": "ui_prey",
+                  "id": 63164,
+                  "new": true,
+                  "points": 0,
+                  "title": "Big Prey Hunter (Season 1)"
+                }
+              ],
+              "name": "Midnight Seasonal Prey"
             }
           ]
         },
@@ -51477,6 +51787,13 @@
                   "notObtainable": true,
                   "points": 0,
                   "title": "Bring Me The Head of... Oh Wait"
+                },
+                {
+                  "icon": "ability_thunderking_overcharge",
+                  "id": 62842,
+                  "new": true,
+                  "points": 0,
+                  "title": "A Celestial Pain"
                 }
               ],
               "name": "Other"
