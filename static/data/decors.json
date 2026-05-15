@@ -1220,12 +1220,6 @@
             "name": "Voltaic Trigore Egg"
           },
           {
-            "ID": 15764,
-            "icon": "7514958",
-            "itemId": "264500",
-            "name": "Devouring Host Ritual Engine"
-          },
-          {
             "ID": 20632,
             "icon": "7696309",
             "itemId": "269269",
@@ -2133,6 +2127,12 @@
             "icon": "7425101",
             "itemId": "253163",
             "name": "Fallside Storage Tent"
+          },
+          {
+            "ID": 1121,
+            "icon": "7416499",
+            "itemId": "245302",
+            "name": "Gallagio L.U.C.K. Spinner"
           }
         ],
         "name": "Achievement"
@@ -2286,12 +2286,6 @@
       },
       {
         "items": [
-          {
-            "ID": 1121,
-            "icon": "7416499",
-            "itemId": "245302",
-            "name": "Gallagio L.U.C.K. Spinner"
-          },
           {
             "ID": 828,
             "icon": "7479442",
@@ -12262,6 +12256,13 @@
             "icon": "7478551",
             "itemId": "263584",
             "name": "Razorwind Construction Crane",
+            "notObtainable": true
+          },
+          {
+            "ID": 15764,
+            "icon": "7514958",
+            "itemId": "264500",
+            "name": "Devouring Host Ritual Engine",
             "notObtainable": true
           },
           {
