@@ -36213,7 +36213,7 @@
                   "icon": "achievement_bg_captureflag_eos",
                   "id": 62941,
                   "new": true,
-                  "points": 10,
+                  "points": 0,
                   "title": "Pinnacle Ritual Work"
                 },
                 {
@@ -36555,6 +36555,25 @@
                   "title": "Void Response Team"
                 },
                 {
+                  "icon": "inv_voidsurfboardmount",
+                  "id": 62873,
+                  "new": true,
+                  "points": 15,
+                  "title": "A Trip Around the Stars"
+                },
+                {
+                  "icon": "inv_voidforgedmechsuit",
+                  "id": 62874,
+                  "new": true,
+                  "points": 15,
+                  "title": "A Trip Through the Stars"
+                }
+              ],
+              "name": "Meta"
+              },
+              {
+                "items": [
+                {
                   "icon": "inv_cosmicvoid_groundstate",
                   "id": 62518,
                   "points": 10,
@@ -36597,18 +36616,11 @@
                   "title": "Air Traffic Controller"
                 },
                 {
-                  "icon": "inv_voidsurfboardmount",
-                  "id": 62873,
+                  "icon": "inv_kaijugladiatormount_blue",
+                  "id": 63349,
                   "new": true,
-                  "points": 15,
-                  "title": "A Trip Around the Stars"
-                },
-                {
-                  "icon": "inv_voidforgedmechsuit",
-                  "id": 62874,
-                  "new": true,
-                  "points": 15,
-                  "title": "A Trip Through the Stars"
+                  "points": 10,
+                  "title": "Ultradon Carnage"
                 }
               ],
               "name": ""
@@ -36691,6 +36703,13 @@
             {
               "items": [
                 {
+                  "icon": "inv_12_profession_mining_miningspecializations_overloded",
+                  "id": 63325,
+                  "new": true,
+                  "points": 10,
+                  "title": "Omnium Folio Studies"
+                },
+                {
                   "icon": "ability_priest_halo_shadow",
                   "id": 62606,
                   "new": true,
@@ -36698,32 +36717,32 @@
                   "title": "The Sunstrider Omnium"
                 },
                 {
-                  "icon": "inv12_ability_warlock_ritualofsummoning",
-                  "id": 62607,
+                  "icon": "inv_netherportal",
+                  "id": 63383,
                   "new": true,
                   "points": 5,
-                  "title": "Ritualized Arcana"
+                  "title": "Into the Stars"
                 },
                 {
-                  "icon": "inv12_ability_priest_voidvolley",
-                  "id": 62608,
+                  "icon": "inv_box_01",
+                  "id": 63384,
                   "new": true,
                   "points": 5,
-                  "title": "Leyline Assaults"
+                  "title": "Prepared for a Showdown"
                 },
                 {
-                  "icon": "achievement_dungeon_lordstormsong",
-                  "id": 62609,
+                  "icon": "achievement_boss_triumvirate_shadowguardetherealmelee",
+                  "id": 63385,
                   "new": true,
-                  "points": 5,
-                  "title": "Magical Primeessence"
+                  "points": 10,
+                  "title": "A Hal'hadar Walks into a Swamp"
                 },
                 {
-                  "icon": "achievement_zone_zangarmarsh",
-                  "id": 62610,
+                  "icon": "inv_sword_1h_domanaar_b_01",
+                  "id": 63386,
                   "new": true,
-                  "points": 5,
-                  "title": "Off-World Magic"
+                  "points": 10,
+                  "title": "Frosty Domanaar Politics"
                 }
               ],
               "name": "Quest"
@@ -36769,6 +36788,13 @@
                   "new": true,
                   "points": 5,
                   "title": "Showdown Slugger: Naigtal"
+                },
+                {
+                  "icon": "inv_10_elementalspiritfoozles_decay",
+                  "id": 63348,
+                  "new": true,
+                  "points": 5,
+                  "title": "Heroic Slugger"
                 }
               ],
               "name": "Rare Spawns"
@@ -36779,7 +36805,7 @@
                   "icon": "achievement_dungeon_heroic_gloryoftheraider",
                   "id": 63264,
                   "new": true,
-                  "points": 0,
+                  "points": 15,
                   "title": "Heroic Showdowns"
                 },
                 {
@@ -36849,7 +36875,7 @@
             {
               "id": "3581e58d",
               "items": [
-                  {
+                {
                   "icon": "spell_frost_arcticwinds",
                   "id": 62903,
                   "new": true,
