@@ -188,59 +188,6 @@
           }
         ],
         "name": "Promotion"
-      },
-      {
-        "items": [
-          {
-            "ID": 12244,
-            "icon": "7646663",
-            "itemId": "259044",
-            "name": "Paw Pal Water Dish"
-          },
-          {
-            "ID": 12245,
-            "icon": "garrison_building_storehouse",
-            "itemId": "259045",
-            "name": "Paw Pal Bed and Blanket"
-          },
-          {
-            "ID": 12246,
-            "icon": "7646671",
-            "itemId": "259046",
-            "name": "Paw Pal Bed"
-          },
-          {
-            "ID": 12264,
-            "icon": "7449384",
-            "itemId": "259093",
-            "name": "Paw Pal Dog House Frame"
-          },
-          {
-            "ID": 12265,
-            "icon": "7449388",
-            "itemId": "259094",
-            "name": "Paw Pal Dog House Elwynn Roof"
-          },
-          {
-            "ID": 15547,
-            "icon": "7507803",
-            "itemId": "264275",
-            "name": "Paw Pal Dog House Durotar Roof"
-          },
-          {
-            "ID": 15548,
-            "icon": "7507806",
-            "itemId": "264276",
-            "name": "Paw Pal Dog House Eversong Roof"
-          },
-          {
-            "ID": 15549,
-            "icon": "7507809",
-            "itemId": "264277",
-            "name": "Paw Pal Dog House Shadowglen Roof"
-          }
-        ],
-        "name": "Blizzard Store"
       }
     ]
   },
@@ -704,7 +651,7 @@
             "ID": 22183,
             "icon": "7815550",
             "itemId": "273157",
-            "name": "Void Flame Candle"
+            "name": "Voidflame Candle"
           },
           {
             "ID": 22388,
@@ -2041,6 +1988,48 @@
             "icon": "7696331",
             "itemId": "269316",
             "name": "Bartender Bob's \"No Weapons Allowed\" Rack",
+            "new": true
+          },
+          {
+            "ID": 18802,
+            "icon": "7570736",
+            "itemId": "267211",
+            "name": "Luminant Scout's Golden Fence",
+            "new": true
+          },
+          {
+            "ID": 25564,
+            "icon": "7961009",
+            "itemId": "276321",
+            "name": "Luminant Defender's Golden Barricade",
+            "new": true
+          },
+          {
+            "ID": 25565,
+            "icon": "7961007",
+            "itemId": "276318",
+            "name": "Luminant Soldier's War Banner",
+            "new": true
+          },
+          {
+            "ID": 25566,
+            "icon": "7961003",
+            "itemId": "276316",
+            "name": "Lightveil's Transport Pad",
+            "new": true
+          },
+          {
+            "ID": 25664,
+            "icon": "7960993",
+            "itemId": "276432",
+            "name": "De-Powered Lightforged Siegebreaker",
+            "new": true
+          },
+          {
+            "ID": 25665,
+            "icon": "7960997",
+            "itemId": "276429",
+            "name": "Grand Artificer's Lightforged Console",
             "new": true
           }
         ],
@@ -9849,133 +9838,184 @@
             "ID": 9630,
             "icon": "7425529",
             "itemId": "253707",
-            "name": "Open Sturdy Wooden Crate"
+            "name": "Open Sturdy Wooden Crate",
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 12169,
             "icon": "7527581",
             "itemId": "258565",
-            "name": "Reinforced Wooden Barrel"
+            "name": "Reinforced Wooden Barrel",
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 12170,
             "icon": "7527577",
             "itemId": "258566",
-            "name": "Empty Reinforced Wooden Barrel"
+            "name": "Empty Reinforced Wooden Barrel",
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 12174,
             "icon": "7516320",
             "itemId": "258570",
-            "name": "Refined Wooden Bed"
+            "name": "Refined Wooden Bed",
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 12214,
             "icon": "garrison_building_storehouse",
             "itemId": "258818",
-            "name": "Padded Wooden Bench"
+            "name": "Padded Wooden Bench",
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 12215,
             "icon": "7499885",
             "itemId": "258819",
-            "name": "Sturdy Wooden Crate"
+            "name": "Sturdy Wooden Crate",
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 14807,
             "icon": "garrison_building_storehouse",
             "itemId": "262962",
-            "name": "Carved Wooden Chair"
+            "name": "Carved Wooden Chair",
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 14818,
             "icon": "7466540",
             "itemId": "263032",
-            "name": "Razorwind Fishing Net"
+            "name": "Razorwind Fishing Net",
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 17862,
             "icon": "7554230",
             "itemId": "266233",
-            "name": "Short Hanging Tavern Lantern"
+            "name": "Short Hanging Tavern Lantern",
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 17879,
             "icon": "7554390",
             "itemId": "266249",
-            "name": "Hanging Tavern Lantern"
+            "name": "Hanging Tavern Lantern",
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 17880,
             "icon": "7554394",
             "itemId": "266250",
-            "name": "Long Hanging Tavern Lantern"
+            "name": "Long Hanging Tavern Lantern",
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 18614,
             "icon": "7554102",
             "itemId": "267075",
-            "name": "Ornate Elven Stove"
+            "name": "Ornate Elven Stove",
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 18618,
             "icon": "garrison_building_storehouse",
             "itemId": "267083",
-            "name": "Razorwind Campfire Grill"
+            "name": "Razorwind Campfire Grill",
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 18619,
             "icon": "7570015",
             "itemId": "267084",
-            "name": "Founder's Point Hay Bale"
+            "name": "Founder's Point Hay Bale",
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 18620,
             "icon": "7570013",
             "itemId": "267088",
-            "name": "Iron Candlelight Lantern"
+            "name": "Iron Candlelight Lantern",
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 18793,
             "icon": "7568684",
             "itemId": "267202",
-            "name": "Elegant Elven Water Well"
+            "name": "Elegant Elven Water Well",
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 19159,
             "icon": "7633234",
             "itemId": "267616",
-            "name": "Loose Wisps of Hay"
+            "name": "Loose Wisps of Hay",
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 19215,
             "icon": "7634895",
             "itemId": "268026",
-            "name": "Scattered Wisps of Hay"
+            "name": "Scattered Wisps of Hay",
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 19216,
             "icon": "7634902",
             "itemId": "268027",
-            "name": "Windblown Wisps of Hay"
+            "name": "Windblown Wisps of Hay",
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 19217,
             "icon": "7634906",
             "itemId": "268028",
-            "name": "Trampled Wisps of Hay"
+            "name": "Trampled Wisps of Hay",
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 19218,
             "icon": "7634893",
             "itemId": "268029",
-            "name": "Mounted Founder's Point Lantern"
+            "name": "Mounted Founder's Point Lantern",
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 19219,
             "icon": "7634888",
             "itemId": "268030",
-            "name": "Mounted Tavern Lantern"
+            "name": "Mounted Tavern Lantern",
+            "notObtainable": true,
+            "notReleased": true
+          },
+          {
+            "ID": 21950,
+            "icon": "7808350",
+            "itemId": "272359",
+            "name": "Square Woolen Rug",
+            "new": true
           }
         ],
         "name": "Neighbourhood Vendor"
@@ -10621,56 +10661,64 @@
             "highlighted": true,
             "icon": "7646663",
             "itemId": "259044",
-            "name": "Paw Pal Water Dish"
+            "name": "Paw Pal Water Dish",
+            "notObtainable": true
           },
           {
             "ID": 12245,
             "highlighted": true,
             "icon": "garrison_building_storehouse",
             "itemId": "259045",
-            "name": "Paw Pal Bed and Blanket"
+            "name": "Paw Pal Bed and Blanket",
+            "notObtainable": true
           },
           {
             "ID": 12246,
             "highlighted": true,
             "icon": "7646671",
             "itemId": "259046",
-            "name": "Paw Pal Bed"
+            "name": "Paw Pal Bed",
+            "notObtainable": true
           },
           {
             "ID": 12264,
             "highlighted": true,
             "icon": "7449384",
             "itemId": "259093",
-            "name": "Paw Pal Dog House Frame"
+            "name": "Paw Pal Dog House Frame",
+            "notObtainable": true
           },
           {
             "ID": 12265,
             "highlighted": true,
             "icon": "7449388",
             "itemId": "259094",
-            "name": "Paw Pal Dog House Elwynn Roof"
+            "name": "Paw Pal Dog House Elwynn Roof",
+            "notObtainable": true
           },
           {
             "ID": 15547,
             "highlighted": true,
             "icon": "7507803",
             "itemId": "264275",
-            "name": "Paw Pal Dog House Durotar Roof"
+            "name": "Paw Pal Dog House Durotar Roof",
+            "notObtainable": true
           },
           {
             "ID": 15548,
             "highlighted": true,
             "icon": "7507806",
             "itemId": "264276",
-            "name": "Paw Pal Dog House Eversong Roof"
+            "name": "Paw Pal Dog House Eversong Roof",
+            "notObtainable": true
           },
           {
             "ID": 15549,
             "highlighted": true,
             "icon": "7507809",
             "itemId": "264277",
-            "name": "Paw Pal Dog House Shadowglen Roof"
+            "name": "Paw Pal Dog House Shadowglen Roof",
+            "notObtainable": true
           },
           {
             "ID": 16039,
@@ -11576,7 +11624,7 @@
             "ID": 7584,
             "icon": "7424321",
             "itemId": "250251",
-            "name": "Founder's Point Gravestone Tower",
+            "name": "Tall Founder's Point Gravestone",
             "notObtainable": true
           },
           {
@@ -13039,7 +13087,6 @@
             "name": "Auspicious Meal Case",
             "new": true
           },
-          
           {
             "ID": 21945,
             "icon": "7808287",
@@ -13058,7 +13105,7 @@
             "ID": 25307,
             "icon": "7940509",
             "itemId": "276083",
-            "name": "Sunstrider Omnium",
+            "name": "Sunstrider Omnium Simulacrum",
             "new": true
           }
         ],
