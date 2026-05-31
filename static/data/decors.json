@@ -122,17 +122,6 @@
       {
         "items": [
           {
-            "ID": 16818,
-            "icon": "7531451",
-            "itemId": "265394",
-            "name": "Cuddly Pearl Grrgle"
-          }
-        ],
-        "name": "Twitch Drops"
-      },
-      {
-        "items": [
-          {
             "ID": 15668,
             "icon": "7513316",
             "itemId": "264396",
@@ -10658,7 +10647,6 @@
           },
           {
             "ID": 12244,
-            "highlighted": true,
             "icon": "7646663",
             "itemId": "259044",
             "name": "Paw Pal Water Dish",
@@ -10666,7 +10654,6 @@
           },
           {
             "ID": 12245,
-            "highlighted": true,
             "icon": "garrison_building_storehouse",
             "itemId": "259045",
             "name": "Paw Pal Bed and Blanket",
@@ -10674,7 +10661,6 @@
           },
           {
             "ID": 12246,
-            "highlighted": true,
             "icon": "7646671",
             "itemId": "259046",
             "name": "Paw Pal Bed",
@@ -10682,7 +10668,6 @@
           },
           {
             "ID": 12264,
-            "highlighted": true,
             "icon": "7449384",
             "itemId": "259093",
             "name": "Paw Pal Dog House Frame",
@@ -10690,7 +10675,6 @@
           },
           {
             "ID": 12265,
-            "highlighted": true,
             "icon": "7449388",
             "itemId": "259094",
             "name": "Paw Pal Dog House Elwynn Roof",
@@ -10698,7 +10682,6 @@
           },
           {
             "ID": 15547,
-            "highlighted": true,
             "icon": "7507803",
             "itemId": "264275",
             "name": "Paw Pal Dog House Durotar Roof",
@@ -10706,7 +10689,6 @@
           },
           {
             "ID": 15548,
-            "highlighted": true,
             "icon": "7507806",
             "itemId": "264276",
             "name": "Paw Pal Dog House Eversong Roof",
@@ -10714,7 +10696,6 @@
           },
           {
             "ID": 15549,
-            "highlighted": true,
             "icon": "7507809",
             "itemId": "264277",
             "name": "Paw Pal Dog House Shadowglen Roof",
@@ -11017,10 +10998,10 @@
           },
           {
             "ID": 16818,
-            "highlighted": true,
             "icon": "7531451",
             "itemId": "265394",
-            "name": "Cuddly Pearl Grrgle"
+            "name": "Cuddly Pearl Grrgle",
+            "notObtainable": true
           }
         ],
         "name": "Twitch Drops"
