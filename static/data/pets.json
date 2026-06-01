@@ -243,49 +243,15 @@
       {
         "items": [
           {
-            "ID": 4595,
-            "creatureId": 225354,
-            "icon": "inv_pitlordpet_fire",
-            "itemId": 224576,
-            "name": "Lil' Flameo",
-            "spellid": 453266
-          },
-          {
-            "ID": 4615,
-            "creatureId": 229846,
-            "icon": "inv_ogrepet",
-            "itemId": 228758,
-            "name": "Parrlok",
-            "spellid": 463079
+            "ID": 665,
+            "creatureId": 54745,
+            "icon": "inv_scarab_clay",
+            "itemId": 72153,
+            "name": "Sand Scarab",
+            "spellid": 102353
           }
         ],
-        "name": "Trading Post: May"
-      },
-      {
-        "items": [
-          {
-            "ID": 4969,
-            "creatureId": 256698,
-            "icon": "7481108",
-            "itemId": 262982,
-            "name": "Roofus",
-            "spellid": 1269627
-          }
-        ],
-        "name": "Blizzard Store"
-      },
-      {
-        "items": [
-          {
-            "ID": 4968,
-            "creatureId": 256663,
-            "icon": "inv_celestialbrontosauruspet",
-            "itemId": 262881,
-            "name": "Lil' Staropod",
-            "spellid": 1269535
-          }
-        ],
-        "name": "Blizzard Gear Store"
+        "name": "Trading Post: June"
       },
       {
         "items": [
@@ -12258,6 +12224,15 @@
             "spellid": 69677
           },
           {
+            "ID": 665,
+            "highlighted": true,
+            "creatureId": 54745,
+            "icon": "inv_scarab_clay",
+            "itemId": 72153,
+            "name": "Sand Scarab",
+            "spellid": 102353
+          },
+          {
             "ID": 248,
             "creatureId": 36911,
             "icon": "inv_misc_pet_03",
@@ -12276,7 +12251,6 @@
           {
             "ID": 4595,
             "creatureId": 225354,
-            "highlighted": true,
             "icon": "inv_pitlordpet_fire",
             "itemId": 224576,
             "name": "Lil' Flameo",
@@ -12285,7 +12259,6 @@
           {
             "ID": 4615,
             "creatureId": 229846,
-            "highlighted": true,
             "icon": "inv_ogrepet",
             "itemId": 228758,
             "name": "Parrlok",
@@ -12809,10 +12782,10 @@
           {
             "ID": 4969,
             "creatureId": 256698,
-            "highlighted": true,
             "icon": "7481108",
             "itemId": 262982,
             "name": "Roofus",
+            "notObtainable": true,
             "spellid": 1269627
           },
           {
@@ -13519,15 +13492,6 @@
             "spellid": 112994
           },
           {
-            "ID": 665,
-            "creatureId": 54745,
-            "icon": "inv_scarab_clay",
-            "itemId": 72153,
-            "name": "Sand Scarab",
-            "resale": true,
-            "spellid": 102353
-          },
-          {
             "ID": 1174,
             "creatureId": 69208,
             "icon": "inv_misc_book_18",
@@ -13671,10 +13635,10 @@
           {
             "ID": 4968,
             "creatureId": 256663,
-            "highlighted": true,
             "icon": "inv_celestialbrontosauruspet",
             "itemId": 262881,
             "name": "Lil' Staropod",
+            "resale": true,
             "spellid": 1269535
           }
         ],
