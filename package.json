@@ -7,7 +7,6 @@
 		"build": "vite build",
 		"package": "vite package",
 		"preview": "vite preview",
-		"rollbar": "vite build && node rollbar.js",
 		"postinstall": "patch-package"
 	},
 	"devDependencies": {

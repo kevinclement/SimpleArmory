@@ -3,4 +3,4 @@
   command = "npm run build"
 
 [context.production]
-  command = "npm run rollbar"
+  command = "npm run build"

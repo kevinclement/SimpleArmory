@@ -1,15 +1,3 @@
-- [ ] Investigate Rollbar breaks:
-  - [ ] ie11 crashes
-    - [ ] wow, people use this
-  
-  - [ ] Uncaught SyntaxError: Unexpected token =>
-    - [ ] Samsung Internet 12.1
-  - [ ] Script Error
-    - [ ] Samsung Internet 12.1
-  
-  - [ ] Attempt to use history.replaceState() more than 100 times per 30 seconds
-    - [ ] ios 14
-
 - [ ] armoryinfo returns all locals, might want to trim that to save size?
 
 - [ ] seems like I lost events in ga
