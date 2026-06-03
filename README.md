@@ -33,6 +33,23 @@ npm run dev -- --open
 - `npm run build` Creates a production build of the site
 - `npm run preview` Locally serves an already-built site
 
+## Cloudflare Pages Deployment
+
+This repository is set up to deploy the static SvelteKit build to Cloudflare Pages.
+
+Build settings:
+
+- Build command: `npm run build`
+- Build output directory: `build`
+
+Required GitHub secrets for the deployment workflow:
+
+- `CLOUDFLARE_API_TOKEN`
+- `CLOUDFLARE_ACCOUNT_ID`
+
+The deployment workflow runs on pushes to `main` and can also be triggered manually from GitHub Actions.
+Pull requests targeting `main` create Cloudflare Pages preview deployments automatically.
+
 To test for missing icons you can do a `showall=true` from the url.
 - [Achievements - Quests](http://localhost:3000/?showall=true#/us/proudmoore/marko/achievements/quests)
 
