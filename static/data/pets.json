@@ -296,15 +296,6 @@
             "itemId": 269028,
             "name": "Sootpaw",
             "spellid": 1284800
-          },
-          {
-            "ID": 5074,
-            "creatureId": 266580,
-            "icon": "inv_babyvoidwalker_blue",
-            "itemId": 275663,
-            "name": "Silento",
-            "new": true,
-            "spellid": 1297418
           }
         ],
         "name": "Achievement"
@@ -381,7 +372,6 @@
             "icon": "inv_babyamanieagle_red",
             "itemId": 268557,
             "name": "Akiki",
-            "new": true,
             "spellid": 1282832
           },
           {
@@ -390,7 +380,6 @@
             "icon": "inv_babydragonhawk_orange",
             "itemId": 271185,
             "name": "Emberlyn",
-            "new": true,
             "spellid": 1288774
           },
           {
@@ -399,7 +388,6 @@
             "icon": "inv_babyberserker_teal",
             "itemId": 260922,
             "name": "Frosticus Maximus",
-            "new": true,
             "spellid": 1267050
           }
         ],
@@ -676,6 +664,14 @@
             "itemId": 270989,
             "name": "Cappy",
             "spellid": 1288380
+          },
+          {
+            "ID": 5074,
+            "creatureId": 266580,
+            "icon": "inv_babyvoidwalker_blue",
+            "itemId": 275663,
+            "name": "Silento",
+            "spellid": 1297418
           }
         ],
         "name": "Vendor"
@@ -12225,8 +12221,8 @@
           },
           {
             "ID": 665,
-            "highlighted": true,
             "creatureId": 54745,
+            "highlighted": true,
             "icon": "inv_scarab_clay",
             "itemId": 72153,
             "name": "Sand Scarab",
@@ -13850,6 +13846,26 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1266115
+          },
+          {
+            "ID": 5042,
+            "creatureId": 263232,
+            "icon": "7657804",
+            "itemId": 271652,
+            "name": "The Sire's Ghastly Screecher",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1289296
+          },
+          {
+            "ID": 5060,
+            "creatureId": 264163,
+            "icon": "7657991",
+            "itemId": 273021,
+            "name": "Sha-Warped Hippogryph Hatchling",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1291667
           }
         ],
         "name": "Promotion"

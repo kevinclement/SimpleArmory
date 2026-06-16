@@ -97,8 +97,7 @@
             "ID": 21857,
             "icon": "7787692",
             "itemId": "271971",
-            "name": "Tome of Kings",
-            "new": true
+            "name": "Tome of Kings"
           }
         ],
         "name": "Lorewalking"
@@ -119,6 +118,17 @@
   {
     "name": "Limited Time",
     "subcats": [
+      {
+        "items": [
+          {
+            "ID": 16813,
+            "icon": "7531429",
+            "itemId": "265389",
+            "name": "Cuddly Cotton Candy Grrgle"
+          }
+        ],
+        "name": "Twitch Drops"
+      },
       {
         "items": [
           {
@@ -1219,8 +1229,7 @@
             "ID": 2606,
             "icon": "7423148",
             "itemId": "247235",
-            "name": "Luminous Rotshroom",
-            "new": true
+            "name": "Luminous Rotshroom"
           }
         ],
         "name": "Raid Drop"
@@ -1962,64 +1971,55 @@
             "ID": 5129,
             "icon": "7579010",
             "itemId": "248961",
-            "name": "Large Amani Tiki Mask",
-            "new": true
+            "name": "Large Amani Tiki Mask"
           },
           {
             "ID": 18897,
             "icon": "7474395",
             "itemId": "267372",
-            "name": "Banner of Five Dawns",
-            "new": true
+            "name": "Banner of Five Dawns"
           },
           {
             "ID": 20679,
             "icon": "7696331",
             "itemId": "269316",
-            "name": "Bartender Bob's \"No Weapons Allowed\" Rack",
-            "new": true
+            "name": "Bartender Bob's \"No Weapons Allowed\" Rack"
           },
           {
             "ID": 18802,
             "icon": "7570736",
             "itemId": "267211",
-            "name": "Luminant Scout's Golden Fence",
-            "new": true
+            "name": "Luminant Scout's Golden Fence"
           },
           {
             "ID": 25564,
             "icon": "7961009",
             "itemId": "276321",
-            "name": "Luminant Defender's Golden Barricade",
-            "new": true
+            "name": "Luminant Defender's Golden Barricade"
           },
           {
             "ID": 25565,
             "icon": "7961007",
             "itemId": "276318",
-            "name": "Luminant Soldier's War Banner",
-            "new": true
+            "name": "Luminant Soldier's War Banner"
           },
           {
             "ID": 25566,
             "icon": "7961003",
             "itemId": "276316",
-            "name": "Lightveil's Transport Pad",
-            "new": true
+            "name": "Lightveil's Transport Pad"
           },
           {
             "ID": 25664,
             "icon": "7960993",
             "itemId": "276432",
-            "name": "De-Powered Lightforged Siegebreaker",
-            "new": true
+            "name": "De-Powered Lightforged Siegebreaker"
           },
           {
             "ID": 25665,
             "icon": "7960997",
             "itemId": "276429",
-            "name": "Grand Artificer's Lightforged Console",
-            "new": true
+            "name": "Grand Artificer's Lightforged Console"
           }
         ],
         "name": "Vendor"
@@ -10003,8 +10003,7 @@
             "ID": 21950,
             "icon": "7808350",
             "itemId": "272359",
-            "name": "Square Woolen Rug",
-            "new": true
+            "name": "Square Woolen Rug"
           }
         ],
         "name": "Neighbourhood Vendor"
@@ -11002,6 +11001,13 @@
             "itemId": "265394",
             "name": "Cuddly Pearl Grrgle",
             "notObtainable": true
+          },
+          {
+            "ID": 16813,
+            "icon": "7531429",
+            "itemId": "265389",
+            "name": "Cuddly Cotton Candy Grrgle",
+            "highlighted": true
           }
         ],
         "name": "Twitch Drops"
@@ -12861,14 +12867,6 @@
             "notReleased": true
           },
           {
-            "ID": 16813,
-            "icon": "7531429",
-            "itemId": "265389",
-            "name": "Cuddly Cotton Candy Grrgle",
-            "notObtainable": true,
-            "notReleased": true
-          },
-          {
             "ID": 16814,
             "icon": "7531435",
             "itemId": "265390",
@@ -13017,77 +13015,112 @@
             "icon": "7519078",
             "itemId": "264721",
             "name": "Auspicious Curio Display",
-            "new": true
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 16099,
             "icon": "7519084",
             "itemId": "264722",
             "name": "Auspicious Inkmaster's Desk",
-            "new": true
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 16100,
             "icon": "7519074",
             "itemId": "264723",
             "name": "Auspicious Tree of Fortune",
-            "new": true
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 16101,
             "icon": "7519087",
             "itemId": "264724",
             "name": "Auspicious Golden Carp Lantern",
-            "new": true
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 16102,
             "icon": "7519081",
             "itemId": "264725",
             "name": "Auspicious Imperial Lion",
-            "new": true
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 17750,
             "icon": "7552588",
             "itemId": "266071",
             "name": "Auspicious Wooden Chair",
-            "new": true
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 21060,
             "icon": "7704384",
             "itemId": "269604",
             "name": "Auspicious Picnic Basket",
-            "new": true
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 21061,
             "icon": "7704380",
             "itemId": "269605",
             "name": "Auspicious Meal Case",
-            "new": true
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 21945,
             "icon": "7808287",
             "itemId": "272353",
             "name": "Auspicious Verdant Basin",
-            "new": true
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 21946,
             "icon": "7808268",
             "itemId": "272354",
             "name": "Auspicious Stone Lion",
-            "new": true
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 25307,
             "icon": "7940509",
             "itemId": "276083",
             "name": "Sunstrider Omnium Simulacrum",
-            "new": true
+            "notObtainable": true,
+            "notReleased": true
+          },
+          {
+            "ID": 21947,
+            "icon": "7845058",
+            "itemId": "272355",
+            "name": "Orchestrion of Echoing Atonement",
+            "notObtainable": true,
+            "notReleased": true
+          },
+          {
+            "ID": 21948,
+            "icon": "7808282",
+            "itemId": "272356",
+            "name": "Throne of Subjugated Souls",
+            "notObtainable": true,
+            "notReleased": true
+          },
+          {
+            "ID": 22775,
+            "icon": "7830790",
+            "itemId": "273640",
+            "name": "Condensed Anima Orb",
+            "notObtainable": true,
+            "notReleased": true
           }
         ],
         "name": "Undiscovered Sources"

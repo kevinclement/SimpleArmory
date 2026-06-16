@@ -359,7 +359,6 @@
             "icon": "inv_sporebat3mount_purple",
             "itemId": 269240,
             "name": "Luminous Sporeglider",
-            "new": true,
             "spellid": 1284973
           }
         ],
@@ -518,6 +517,13 @@
             "itemId": 257143,
             "name": "Peridot Dragonhawk",
             "spellid": 1261293
+          },
+          {
+            "ID": 2611,
+            "icon": "inv_harronircatmount_blue",
+            "itemId": 246731,
+            "name": "Dusk Grimlynx",
+            "spellid": 1243582
           }
         ],
         "name": "Quest"
@@ -611,7 +617,6 @@
             "icon": "inv_voidsurfboardmount",
             "itemId": 274649,
             "name": "Voidmancer's Starcarver",
-            "new": true,
             "spellid": 1294648
           },
           {
@@ -619,15 +624,13 @@
             "icon": "inv_voidforgedmechsuit",
             "itemId": 274650,
             "name": "Netherforged Nullframe",
-            "new": true,
             "spellid": 1294663
           },
           {
             "ID": 3033,
             "icon": "achievement_dungeon_sanguinedepths_kryxis",
             "itemId": 275664,
-            "name": "Void-Tortured Gorger",
-            "new": true,
+            "name": "Tortured Gorger",
             "spellid": 1297427
           }
         ],
@@ -812,7 +815,8 @@
             "icon": "inv_amanibearmount2_hex",
             "itemId": 257232,
             "name": "Amani Hex Bear",
-            "new": true,
+            "notObtainable": true,
+            "notReleased": true,
             "spellid": 1261369
           }
         ],
@@ -9769,7 +9773,6 @@
             "icon": "inv_gianteagle2sunwalkermount_orange",
             "itemId": 275464,
             "name": "Sun Festival's Painted Roc",
-            "new": true,
             "spellid": 1298439
           }
         ],
@@ -9982,6 +9985,14 @@
             "name": "Black-Furred Bakar",
             "new": true,
             "spellid": 404018
+          },
+          {
+            "ID": 1470,
+            "icon": "inv_slugmount_orange",
+            "itemId": 192778,
+            "name": "Liquid Hot Magma Slug",
+            "new": true,
+            "spellid": 350220
           },
           {
             "ID": 1737,
@@ -11009,7 +11020,7 @@
             "ID": 2975,
             "icon": "inv_rocketmount6_orange",
             "itemId": 273651,
-            "name": "Bligewater X-TREME Firework Rocket",
+            "name": "Bilgewater X-TREME Firework Rocket",
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1292344
@@ -13427,6 +13438,42 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1283838
+          },
+          {
+            "ID": 2832,
+            "icon": "7754063",
+            "itemId": 269659,
+            "name": "The Sire's Palanquin",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1266982
+          },
+          {
+            "ID": 2949,
+            "icon": "7669035",
+            "itemId": 269012,
+            "name": "Sha-Warped Riding Wolf",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1284679
+          },
+          {
+            "ID": 2951,
+            "icon": "7658809",
+            "itemId": 269640,
+            "name": "Sha-Warped Owl",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1285897
+          },
+          {
+            "ID": 2837,
+            "icon": "inv_horse3_pinkblanche",
+            "itemId": 262344,
+            "name": "Scarlet Lady",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1267077
           }
         ],
         "name": "Unknown"
