@@ -359,7 +359,6 @@
             "icon": "inv_sporebat3mount_purple",
             "itemId": 269240,
             "name": "Luminous Sporeglider",
-            "new": true,
             "spellid": 1284973
           }
         ],
@@ -611,7 +610,6 @@
             "icon": "inv_voidsurfboardmount",
             "itemId": 274649,
             "name": "Voidmancer's Starcarver",
-            "new": true,
             "spellid": 1294648
           },
           {
@@ -619,7 +617,6 @@
             "icon": "inv_voidforgedmechsuit",
             "itemId": 274650,
             "name": "Netherforged Nullframe",
-            "new": true,
             "spellid": 1294663
           },
           {
@@ -627,7 +624,6 @@
             "icon": "achievement_dungeon_sanguinedepths_kryxis",
             "itemId": 275664,
             "name": "Void-Tortured Gorger",
-            "new": true,
             "spellid": 1297427
           }
         ],
@@ -812,7 +808,8 @@
             "icon": "inv_amanibearmount2_hex",
             "itemId": 257232,
             "name": "Amani Hex Bear",
-            "new": true,
+            "notObtainable": true,
+            "notReleased": true,
             "spellid": 1261369
           }
         ],
@@ -9769,7 +9766,6 @@
             "icon": "inv_gianteagle2sunwalkermount_orange",
             "itemId": 275464,
             "name": "Sun Festival's Painted Roc",
-            "new": true,
             "spellid": 1298439
           }
         ],
