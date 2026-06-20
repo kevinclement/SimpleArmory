@@ -282,6 +282,32 @@
             "spellid": 1230550
           },
           {
+            "ID": 5012,
+            "creatureId": 260899,
+            "icon": "inv_babyeversonglynx_brown",
+            "itemId": 269028,
+            "name": "Sootpaw",
+            "spellid": 1284800
+          },
+          {
+            "ID": 5130,
+            "creatureId": 270425,
+            "icon": "8125119",
+            "itemId": 279387,
+            "name": "Ul'ava'took",
+            "new": true,
+            "spellid": 1306694
+          },
+          {
+            "ID": 5131,
+            "creatureId": 270857,
+            "icon": "8032875",
+            "itemId": 279921,
+            "name": "Ki'clak",
+            "new": true,
+            "spellid": 1307328
+          },
+          {
             "ID": 4910,
             "creatureId": 254689,
             "icon": "inv_capybara",
@@ -290,12 +316,13 @@
             "spellid": 1262925
           },
           {
-            "ID": 5012,
-            "creatureId": 260899,
-            "icon": "inv_babyeversonglynx_brown",
-            "itemId": 269028,
-            "name": "Sootpaw",
-            "spellid": 1284800
+            "ID": 5132,
+            "creatureId": 271086,
+            "icon": "8125120",
+            "itemId": 280138,
+            "name": "Zesty",
+            "new": true,
+            "spellid": 1307843
           }
         ],
         "name": "Achievement"
@@ -389,6 +416,15 @@
             "itemId": 260922,
             "name": "Frosticus Maximus",
             "spellid": 1267050
+          },
+          {
+            "ID": 5011,
+            "creatureId": 260792,
+            "icon": "8032874",
+            "itemId": 268644,
+            "name": "Zan",
+            "new": true,
+            "spellid": 1283105
           }
         ],
         "name": "Quest"
@@ -450,6 +486,32 @@
             "itemId": 267838,
             "name": "Sunwing Hatchling",
             "spellid": 1281048
+          },
+          {
+            "ID": 4965,
+            "creatureId": 256565,
+            "icon": "inv_gardenmandrakepet_purple",
+            "itemId": 262768,
+            "name": "Sleepy Mandrake",
+            "spellid": 1269356
+          },
+          {
+            "ID": 5133,
+            "creatureId": 271106,
+            "icon": "inv_frog2_green",
+            "itemId": 280178,
+            "name": "Poison Dart Frog",
+            "new": true,
+            "spellid": 1307875
+          },
+          {
+            "ID": 5129,
+            "creatureId": 270147,
+            "icon": "8032873",
+            "itemId": 279197,
+            "name": "Slitherfang",
+            "new": true,
+            "spellid": 1306197
           }
         ],
         "name": "Treasure"
@@ -466,6 +528,20 @@
           }
         ],
         "name": "Rare Drop"
+      },
+      {
+        "items": [
+          {
+            "ID": 5126,
+            "creatureId": 269712,
+            "icon": "inv_snake_white",
+            "itemId": 278572,
+            "name": "Pale Hexscale",
+            "new": true,
+            "spellid": 1305199
+          }
+        ],
+        "name": "Prey Drop"
       },
       {
         "items": [
@@ -672,6 +748,60 @@
             "itemId": 275663,
             "name": "Silento",
             "spellid": 1297418
+          },
+          {
+            "ID": 5070,
+            "creatureId": 265786,
+            "icon": "inv_sulfurelemental_slime",
+            "itemId": 275020,
+            "name": "Venom Elemental",
+            "new": true,
+            "spellid": 1295938
+          },
+          {
+            "ID": 5071,
+            "creatureId": 266464,
+            "icon": "8032870",
+            "itemId": 275631,
+            "name": "Corrosive Writhling",
+            "new": true,
+            "spellid": 1297094
+          },
+          {
+            "ID": 5072,
+            "creatureId": 266469,
+            "icon": "8125100",
+            "itemId": 275632,
+            "name": "Volatile Venomfang",
+            "new": true,
+            "spellid": 1297098
+          },
+          {
+            "ID": 5076,
+            "creatureId": 266833,
+            "icon": "inv_arcanegolempet_green",
+            "itemId": 275702,
+            "name": "Preyhunter's Prismguard",
+            "new": true,
+            "spellid": 1297702
+          },
+          {
+            "ID": 5078,
+            "creatureId": 266835,
+            "icon": "inv_arcanegolempet_white",
+            "itemId": 275704,
+            "name": "Preyhunter's Riftbreaker",
+            "new": true,
+            "spellid": 1297704
+          },
+          {
+            "ID": 5093,
+            "creatureId": 267805,
+            "icon": "8125118",
+            "itemId": 276248,
+            "name": "Snek'zali",
+            "new": true,
+            "spellid": 1299255
           }
         ],
         "name": "Vendor"
@@ -685,6 +815,14 @@
             "itemId": 262774,
             "name": "Gortham",
             "spellid": 1269361
+          },
+          {
+            "ID": 4860,
+            "creatureId": 247465,
+            "icon": "inv_catbroker_light",
+            "itemId": 246723,
+            "name": "Unfazed Diver",
+            "spellid": 1243343
           }
         ],
         "name": "Riddle"
@@ -767,6 +905,15 @@
             "itemId": 270062,
             "name": "Void-Touched Chick",
             "spellid": 1287376
+          },
+          {
+            "ID": 5092,
+            "creatureId": 267689,
+            "icon": "8125117",
+            "itemId": 276234,
+            "name": "Vibrant Venomfang",
+            "new": true,
+            "spellid": 1299089
           }
         ],
         "name": "Ritual Sites"
@@ -822,6 +969,23 @@
             "name": "Chillcrawler",
             "notObtainable": true,
             "spellid": 1263916
+          },
+          {
+            "ID": 5125,
+            "creatureId": 269501,
+            "icon": "inv_hextrollpet_blue",
+            "name": "Soulcoil Remnant",
+            "new": true,
+            "spellid": 1304581
+          },
+          {
+            "ID": 5134,
+            "creatureId": 271163,
+            "icon": "inv_hextrollpet_blue",
+            "itemId": 280189,
+            "name": "Cauldron Concoction",
+            "new": true,
+            "spellid": 1307902
           }
         ],
         "name": "Unknown"
@@ -1886,16 +2050,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 471903
-          },
-          {
-            "ID": 4860,
-            "creatureId": 247465,
-            "icon": "inv_catbroker_light",
-            "itemId": 246723,
-            "name": "Unfazed Diver",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1243343
           },
           {
             "ID": 4824,
@@ -8236,6 +8390,15 @@
             "itemId": 60869,
             "name": "Pebble",
             "spellid": 84492
+          },
+          {
+            "ID": 5027,
+            "creatureId": 262220,
+            "icon": "inv_apocalypticwhelp_red",
+            "itemId": 270211,
+            "name": "Furiostraza",
+            "new": true,
+            "spellid": 1287534
           }
         ],
         "name": "Achievement"
@@ -8681,6 +8844,20 @@
     "id": "4426ce42",
     "name": "The Burning Crusade",
     "subcats": [
+      {
+        "items": [
+          {
+            "ID": 5026,
+            "creatureId": 262210,
+            "icon": "inv_doomguardpet_green",
+            "itemId": 270191,
+            "name": "Lil'Kruul",
+            "new": true,
+            "spellid": 1287493
+          }
+        ],
+        "name": "Achievement"
+      },
       {
         "id": "12871832",
         "items": [
@@ -9987,11 +10164,11 @@
           },
           {
             "ID": 1666,
-            "creatureId": 93814,
-            "icon": "inv_misc_fish_57",
+            "creatureId": 269295,
+            "icon": "inv_nzothfish",
             "itemId": 126925,
-            "name": "Blorp",
-            "spellid": 185601
+            "name": "Three-Eyed Fish",
+            "spellid": 1303722
           },
           {
             "ID": 1665,
@@ -12171,16 +12348,6 @@
             "spellid": 1269350
           },
           {
-            "ID": 4965,
-            "creatureId": 256565,
-            "icon": "inv_gardenmandrakepet_purple",
-            "itemId": 262768,
-            "name": "Sleepy Mandrake",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1269356
-          },
-          {
             "ID": 4966,
             "creatureId": 256566,
             "icon": "inv_gardenmandrakepet_red",
@@ -12189,6 +12356,76 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1269358
+          },
+          {
+            "ID": 5077,
+            "creatureId": 266834,
+            "icon": "inv_arcanegolempet_red",
+            "itemId": 275703,
+            "name": "ArcaneGolem2 Pet - Red",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1297703
+          },
+          {
+            "ID": 5114,
+            "creatureId": 268609,
+            "icon": "8014864",
+            "itemId": 277270,
+            "name": "Kirin Tor Kitty",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1301935
+          },
+          {
+            "ID": 5115,
+            "creatureId": 268636,
+            "icon": "8014864",
+            "itemId": 277282,
+            "name": "Kirin Tor Cat",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1302008
+          },
+          {
+            "ID": 5116,
+            "creatureId": 268671,
+            "icon": "inv_catpet_naxx",
+            "itemId": 277318,
+            "name": "Catsramas",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1302084
+          },
+          {
+            "ID": 5117,
+            "creatureId": 268672,
+            "icon": "inv_catpet_naxx",
+            "itemId": 277319,
+            "name": "Cat'Thuzad",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1302088
+          },
+          {
+            "ID": 5118,
+            "creatureId": 268675,
+            "icon": "inv_catpet_uldum",
+            "itemId": 277321,
+            "name": "Mewkahen",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1302094
+          },
+          {
+            "ID": 5119,
+            "creatureId": 268676,
+            "icon": "inv_catpet_uldum",
+            "itemId": 277322,
+            "name": "Amewbis",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1302095
           }
         ],
         "name": "Trading Post Originals"
