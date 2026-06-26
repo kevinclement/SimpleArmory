@@ -72,7 +72,7 @@
             <a 
             class="thumbnail pbThumbnail" 
             target="{settings.anchorTarget}"
-            href="{item.ptr || item.new ? `//${settings.WowHeadUrl}/ptr-2/battle-pet/${ item.ID }` : `//${settings.WowHeadUrl}/battle-pet/${ item.ID }`}"
+            href="{item.ptr || item.new ? `//${settings.WowHeadUrl}/ptr/battle-pet/${ item.ID }` : `//${settings.WowHeadUrl}/battle-pet/${ item.ID }`}"
             class:notCollected={!item.collected}
             >
                 <img height="36" width="36" src="{ getImageSrc(item, true) }" alt>

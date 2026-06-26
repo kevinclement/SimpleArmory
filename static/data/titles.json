@@ -293,6 +293,13 @@
             "type": "achievement"
           },
           {
+            "icon": "achievement_challengemode_scarletmonastery_gold",
+            "id": 63097,
+            "name": "The Umbral Contender",
+            "titleId": 773,
+            "type": "achievement"
+          },
+          {
             "icon": "achievement_challengemode_platinum",
             "id": 61259,
             "name": "The Umbral Hero",
@@ -379,11 +386,37 @@
             "type": "achievement"
           },
           {
-            "icon": "achievement_challengemode_scarletmonastery_gold",
-            "id": 63097,
-            "name": "The Umbral Contender",
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 61180,
+            "name": "Galactic Gladiator",
             "notObtainable": true,
-            "titleId": 773,
+            "titleId": 654,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 61178,
+            "name": "Galactic Warlord",
+            "notObtainable": true,
+            "side": "H",
+            "titleId": 652,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 61177,
+            "name": "Galactic Marshal",
+            "notObtainable": true,
+            "side": "A",
+            "titleId": 651,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 61179,
+            "name": "Galactic Legend",
+            "notObtainable": true,
+            "titleId": 653,
             "type": "achievement"
           }
         ],
@@ -428,6 +461,14 @@
             "name": "Spirebane",
             "titleId": 690,
             "type": "achievement"
+          },
+          {
+            "icon": "inv_121_raid_achievement_ulatek",
+            "id": 63476,
+            "name": "Venom's End",
+            "new": true,
+            "titleId": 791,
+            "type": "achievement"
           }
         ],
         "name": "Raids"
@@ -471,6 +512,35 @@
           }
         ],
         "name": "Achievement"
+      },
+      {
+        "items": [
+          {
+            "highlighted": true,
+            "icon": "inv_sulfurelemental_void",
+            "id": 61798,
+            "name": "The Ominous",
+            "titleId": 688,
+            "type": "achievement"
+          },
+          {
+            "highlighted": true,
+            "icon": "ui_delves",
+            "id": 61796,
+            "name": "Void Breacher",
+            "titleId": 772,
+            "type": "achievement"
+          },
+          {
+            "icon": "spell_nature_poisoncleansingtotem",
+            "id": 63332,
+            "name": "The Poisonous",
+            "new": true,
+            "titleId": 775,
+            "type": "achievement"
+          }
+        ],
+        "name": "Delves"
       },
       {
         "items": [
@@ -532,6 +602,27 @@
       {
         "items": [
           {
+            "icon": "inv_ability_poison_buff",
+            "id": 63381,
+            "name": "The Cursebreaker",
+            "new": true,
+            "titleId": 777,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_121_professions_fishing_curseworm_red",
+            "id": 63635,
+            "name": "Bloodsworn Mariner",
+            "new": true,
+            "titleId": 789,
+            "type": "achievement"
+          }
+        ],
+        "name": "Exploration"
+      },
+      {
+        "items": [
+          {
             "icon": "inv12_twilight_-blade_cultist_insignia",
             "id": 42300,
             "name": "Thorn of Twilight",
@@ -549,6 +640,91 @@
           }
         ],
         "name": "Pre-Launch Event"
+      },
+      {
+        "items": [
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 1315,
+            "name": "Hash'ura of Zul'jarra",
+            "new": true,
+            "titleId": 778,
+            "type": "title"
+          },
+          {
+            "icon": "achievement_profession_fishing_oldmanbarlowned",
+            "id": 63510,
+            "name": "Briny",
+            "new": true,
+            "titleId": 779,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 1319,
+            "name": "Voice of the Fangs",
+            "new": true,
+            "titleId": 781,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 1320,
+            "name": "Nalorakk's Favored",
+            "new": true,
+            "titleId": 782,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 1321,
+            "name": "Street Sovereign",
+            "new": true,
+            "titleId": 783,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 1322,
+            "name": "Eyes of the Vale",
+            "new": true,
+            "titleId": 784,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 1323,
+            "name": "Voidscar Champion",
+            "new": true,
+            "titleId": 785,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 1324,
+            "name": "The Uncrowned Conqueror",
+            "new": true,
+            "titleId": 786,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 1325,
+            "name": "Flame of Life",
+            "new": true,
+            "titleId": 787,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 1326,
+            "name": "Wrath of Sethraliss",
+            "new": true,
+            "titleId": 788,
+            "type": "title"
+          }
+        ],
+        "name": "Unknown"
       }
     ]
   },
@@ -1604,6 +1780,19 @@
           }
         ],
         "name": "Exploration"
+      },
+      {
+        "items": [
+          {
+            "icon": "inv_waepon_bow_zulgrub_d_01",
+            "id": 12507,
+            "name": "Snake Eater",
+            "new": true,
+            "titleId": 774,
+            "type": "achievement"
+          }
+        ],
+        "name": "Dungeons"
       }
     ]
   },
@@ -3433,163 +3622,9 @@
             "name": "Soloist",
             "titleId": 456,
             "type": "achievement"
-          },
-          {
-            "icon": "achievement_featsofstrength_gladiator_07",
-            "id": 40381,
-            "name": "Forged Legend",
-            "notObtainable": true,
-            "titleId": 559,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_featsofstrength_gladiator_07",
-            "id": 41355,
-            "name": "Prized Legend",
-            "notObtainable": true,
-            "titleId": 611,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_featsofstrength_gladiator_07",
-            "id": 42033,
-            "name": "Astral Legend",
-            "notObtainable": true,
-            "titleId": 634,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_featsofstrength_gladiator_07",
-            "id": 61179,
-            "name": "Galactic Legend",
-            "notObtainable": true,
-            "titleId": 653,
-            "type": "achievement"
           }
         ],
         "name": "Solo Shuffle"
-      },
-      {
-        "items": [
-          {
-            "icon": "achievement_featsofstrength_gladiator_07",
-            "id": 40380,
-            "name": "Forged Gladiator",
-            "notObtainable": true,
-            "titleId": 558,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_featsofstrength_gladiator_07",
-            "id": 41354,
-            "name": "Prized Gladiator",
-            "notObtainable": true,
-            "titleId": 608,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_featsofstrength_gladiator_07",
-            "id": 42036,
-            "name": "Astral Gladiator",
-            "notObtainable": true,
-            "titleId": 633,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_featsofstrength_gladiator_07",
-            "id": 61180,
-            "name": "Galactic Gladiator",
-            "notObtainable": true,
-            "titleId": 654,
-            "type": "achievement"
-          }
-        ],
-        "name": "Arena"
-      },
-      {
-        "items": [
-          {
-            "icon": "spell_holy_heal",
-            "id": 40795,
-            "name": "Strategist",
-            "notObtainable": true,
-            "titleId": 539,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_featsofstrength_gladiator_07",
-            "id": 40234,
-            "name": "Forged Warlord",
-            "notObtainable": true,
-            "side": "H",
-            "titleId": 554,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_featsofstrength_gladiator_07",
-            "id": 40235,
-            "name": "Forged Marshal",
-            "notObtainable": true,
-            "side": "A",
-            "titleId": 555,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_featsofstrength_gladiator_07",
-            "id": 41356,
-            "name": "Prized Warlord",
-            "notObtainable": true,
-            "side": "H",
-            "titleId": 609,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_featsofstrength_gladiator_07",
-            "id": 41357,
-            "name": "Prized Marshal",
-            "notObtainable": true,
-            "side": "A",
-            "titleId": 610,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_featsofstrength_gladiator_07",
-            "id": 42034,
-            "name": "Astral Warlord",
-            "notObtainable": true,
-            "side": "H",
-            "titleId": 632,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_featsofstrength_gladiator_07",
-            "id": 42035,
-            "name": "Astral Marshal",
-            "notObtainable": true,
-            "side": "A",
-            "titleId": 635,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_featsofstrength_gladiator_07",
-            "id": 61178,
-            "name": "Galactic Warlord",
-            "notObtainable": true,
-            "side": "H",
-            "titleId": 652,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_featsofstrength_gladiator_07",
-            "id": 61177,
-            "name": "Galactic Marshal",
-            "notObtainable": true,
-            "side": "A",
-            "titleId": 651,
-            "type": "achievement"
-          }
-        ],
-        "name": "Battleground Blitz"
       }
     ]
   },
@@ -4435,6 +4470,50 @@
             "notObtainable": true,
             "titleId": 453,
             "type": "achievement"
+          },
+          {
+            "highlighted": true,
+            "icon": "achievement_challengemode_silver",
+            "id": 61255,
+            "name": "The Umbral",
+            "notObtainable": true,
+            "titleId": 655,
+            "type": "achievement"
+          },
+          {
+            "highlighted": true,
+            "icon": "achievement_challengemode_scarletmonastery_gold",
+            "id": 63097,
+            "name": "The Umbral Contender",
+            "notObtainable": true,
+            "titleId": 773,
+            "type": "achievement"
+          },
+          {
+            "highlighted": true,
+            "icon": "achievement_challengemode_platinum",
+            "id": 61259,
+            "name": "The Umbral Hero",
+            "notObtainable": true,
+            "titleId": 656,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_challengemode_silver",
+            "id": 977,
+            "name": "The Venomous",
+            "new": true,
+            "titleId": 663,
+            "type": "title"
+          },
+          {
+            "icon": "achievement_challengemode_platinum",
+            "id": 976,
+            "name": "The Venomous Hero",
+            "new": true,
+            "notObtainable": true,
+            "titleId": 662,
+            "type": "title"
           }
         ],
         "name": "Mythic Plus"
@@ -4725,15 +4804,38 @@
             "type": "achievement"
           },
           {
+            "icon": "inv_121_raid_achievement_ulatek",
+            "id": 63652,
+            "name": "Famed Slayer of Ula'tek",
+            "new": true,
+            "notObtainable": true,
+            "titleId": 790,
+            "type": "achievement"
+          }
+        ],
+        "name": "Hall of Fame"
+      },
+      {
+        "items": [
+          {
             "icon": "ability_rogue_controlisking",
             "id": 61808,
             "name": "Fabled Vanquisher of Nullaeus",
             "notObtainable": true,
             "titleId": 689,
             "type": "achievement"
+          },
+          {
+            "icon": "ability_rogue_controlisking",
+            "id": 63334,
+            "name": "Fabled Vanquisher of Azta'rec",
+            "new": true,
+            "notObtainable": true,
+            "titleId": 776,
+            "type": "achievement"
           }
         ],
-        "name": "Hall of Fame"
+        "name": "Delves Hall of Fame"
       },
       {
         "items": [
@@ -5108,6 +5210,47 @@
             "notObtainable": true,
             "titleId": 534,
             "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 40380,
+            "name": "Forged Gladiator",
+            "notObtainable": true,
+            "titleId": 558,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 41354,
+            "name": "Prized Gladiator",
+            "notObtainable": true,
+            "titleId": 608,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 42036,
+            "name": "Astral Gladiator",
+            "notObtainable": true,
+            "titleId": 633,
+            "type": "achievement"
+          },
+          {
+            "highlighted": true,
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 61180,
+            "name": "Galactic Gladiator",
+            "notObtainable": true,
+            "titleId": 654,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 62922,
+            "name": "Venomous Gladiator",
+            "new": true,
+            "titleId": 767,
+            "type": "achievement"
           }
         ],
         "name": "Arena"
@@ -5161,9 +5304,155 @@
             "notObtainable": true,
             "titleId": 535,
             "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 40381,
+            "name": "Forged Legend",
+            "notObtainable": true,
+            "titleId": 559,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 41355,
+            "name": "Prized Legend",
+            "notObtainable": true,
+            "titleId": 611,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 42033,
+            "name": "Astral Legend",
+            "notObtainable": true,
+            "titleId": 634,
+            "type": "achievement"
+          },
+          {
+            "highlighted": true,
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 61179,
+            "name": "Galactic Legend",
+            "notObtainable": true,
+            "titleId": 653,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 62923,
+            "name": "Venomous Legend",
+            "new": true,
+            "titleId": 768,
+            "type": "achievement"
           }
         ],
         "name": "Solo Shuffle"
+      },
+      {
+        "items": [
+          {
+            "icon": "spell_holy_heal",
+            "id": 40795,
+            "name": "Strategist",
+            "notObtainable": true,
+            "titleId": 539,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 40234,
+            "name": "Forged Warlord",
+            "notObtainable": true,
+            "side": "H",
+            "titleId": 554,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 40235,
+            "name": "Forged Marshal",
+            "notObtainable": true,
+            "side": "A",
+            "titleId": 555,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 41356,
+            "name": "Prized Warlord",
+            "notObtainable": true,
+            "side": "H",
+            "titleId": 609,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 41357,
+            "name": "Prized Marshal",
+            "notObtainable": true,
+            "side": "A",
+            "titleId": 610,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 42034,
+            "name": "Astral Warlord",
+            "notObtainable": true,
+            "side": "H",
+            "titleId": 632,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 42035,
+            "name": "Astral Marshal",
+            "notObtainable": true,
+            "side": "A",
+            "titleId": 635,
+            "type": "achievement"
+          },
+          {
+            "highlighted": true,
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 61178,
+            "name": "Galactic Warlord",
+            "notObtainable": true,
+            "side": "H",
+            "titleId": 652,
+            "type": "achievement"
+          },
+          {
+            "highlighted": true,
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 61177,
+            "name": "Galactic Marshal",
+            "notObtainable": true,
+            "side": "A",
+            "titleId": 651,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 62924,
+            "name": "Venomous Marshal",
+            "new": true,
+            "side": "A",
+            "titleId": 769,
+            "type": "achievement"
+          },
+          {
+            "icon": "achievement_featsofstrength_gladiator_07",
+            "id": 62925,
+            "name": "Venomous Warlord",
+            "new": true,
+            "side": "H",
+            "titleId": 770,
+            "type": "achievement"
+          }
+        ],
+        "name": "Battleground Blitz"
       },
       {
         "items": [
@@ -5193,6 +5482,110 @@
           }
         ],
         "name": "Tournaments"
+      },
+      {
+        "items": [
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 974,
+            "name": "[PH]",
+            "notObtainable": true,
+            "notReleased": true,
+            "titleId": 660,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 975,
+            "name": "[PH]",
+            "notObtainable": true,
+            "notReleased": true,
+            "titleId": 661,
+            "type": "title"
+          },
+          {
+            "icon": "achievement_character_orc_female",
+            "id": 2056,
+            "name": "Volunteer",
+            "notObtainable": true,
+            "notReleased": true,
+            "titleId": 756,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 1233,
+            "name": "Caring Citizen",
+            "notObtainable": true,
+            "notReleased": true,
+            "titleId": 757,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 1234,
+            "name": "The Backbone of the Realm",
+            "notObtainable": true,
+            "notReleased": true,
+            "titleId": 758,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 1235,
+            "name": "The Philanthropist",
+            "notObtainable": true,
+            "notReleased": true,
+            "titleId": 759,
+            "type": "title"
+          },
+          {
+            "icon": "inv_checkered_flag",
+            "id": 9764,
+            "name": "The Everlasting",
+            "notObtainable": true,
+            "notReleased": true,
+            "titleId": 760,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 1237,
+            "name": "World Apex",
+            "notObtainable": true,
+            "notReleased": true,
+            "titleId": 761,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 1238,
+            "name": "Azeroth's Top Ten Youth",
+            "notObtainable": true,
+            "notReleased": true,
+            "titleId": 762,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 1239,
+            "name": "Model of the Era",
+            "notObtainable": true,
+            "notReleased": true,
+            "titleId": 763,
+            "type": "title"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 1240,
+            "name": "Big Brother",
+            "notObtainable": true,
+            "notReleased": true,
+            "titleId": 764,
+            "type": "title"
+          }
+        ],
+        "name": "Unknown"
       }
     ]
   }
