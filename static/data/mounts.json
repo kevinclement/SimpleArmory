@@ -160,35 +160,28 @@
       {
         "items": [
           {
-            "ID": 2524,
-            "icon": "inv_chimerafiremount_blue",
-            "itemId": 238941,
-            "name": "Coldflame Cormaera",
-            "spellid": 1226740
+            "ID": 2580,
+            "icon": "inv_forsakenhorsemount_purple",
+            "itemId": 243596,
+            "name": "Wailing Banshee's Charger",
+            "spellid": 1235819
           },
           {
-            "ID": 2504,
-            "icon": "ability_mount_goatmountblack",
-            "itemId": 236415,
-            "name": "Spotted Black Riding Goat",
-            "spellid": 1219705
+            "ID": 2973,
+            "icon": "inv_rocketmount6_blue",
+            "itemId": 273317,
+            "name": "Blackwater X-TREME Firework Rocket",
+            "spellid": 1292102
           },
           {
-            "ID": 2940,
-            "icon": "inv_gianteagle2sunwalkermount_dark",
-            "itemId": 268877,
-            "name": "Dusk-Painted Sun Roc",
-            "spellid": 1283908
-          },
-          {
-            "ID": 2941,
-            "icon": "inv_gianteagle2sunwalkermount_gold",
-            "itemId": 268876,
-            "name": "Flame-Painted Sun Roc",
-            "spellid": 1283910
+            "ID": 2975,
+            "icon": "inv_rocketmount6_orange",
+            "itemId": 273651,
+            "name": "Bilgewater X-TREME Firework Rocket",
+            "spellid": 1292344
           }
         ],
-        "name": "Trading Post: June"
+        "name": "Trading Post: July"
       },
       {
         "items": [
@@ -281,7 +274,6 @@
             "icon": "inv_protodragonicemount",
             "itemId": 258884,
             "name": "Spawn of Vyranoth",
-            "new": true,
             "spellid": 1264184
           }
         ],
@@ -10119,7 +10111,6 @@
             "icon": "inv_dogprimalmount",
             "itemId": 210140,
             "name": "Black-Furred Bakar",
-            "new": true,
             "spellid": 404018
           },
           {
@@ -10127,7 +10118,6 @@
             "icon": "inv_slugmount_orange",
             "itemId": 192778,
             "name": "Liquid Hot Magma Slug",
-            "new": true,
             "spellid": 350220
           },
           {
@@ -10608,7 +10598,6 @@
           },
           {
             "ID": 2524,
-            "highlighted": true,
             "icon": "inv_chimerafiremount_blue",
             "itemId": 238941,
             "name": "Coldflame Cormaera",
@@ -10616,7 +10605,6 @@
           },
           {
             "ID": 2504,
-            "highlighted": true,
             "icon": "ability_mount_goatmountblack",
             "itemId": 236415,
             "name": "Spotted Black Riding Goat",
@@ -10631,6 +10619,7 @@
           },
           {
             "ID": 2580,
+            "highlighted": true,
             "icon": "inv_forsakenhorsemount_purple",
             "itemId": 243596,
             "name": "Wailing Banshee's Charger",
@@ -10778,7 +10767,6 @@
           },
           {
             "ID": 2940,
-            "highlighted": true,
             "icon": "inv_gianteagle2sunwalkermount_dark",
             "itemId": 268877,
             "name": "Dusk-Painted Sun Roc",
@@ -10786,11 +10774,26 @@
           },
           {
             "ID": 2941,
-            "highlighted": true,
             "icon": "inv_gianteagle2sunwalkermount_gold",
             "itemId": 268876,
             "name": "Flame-Painted Sun Roc",
             "spellid": 1283910
+          },
+          {
+            "ID": 2973,
+            "highlighted": true,
+            "icon": "inv_rocketmount6_blue",
+            "itemId": 273317,
+            "name": "Blackwater X-TREME Firework Rocket",
+            "spellid": 1292102
+          },
+          {
+            "ID": 2975,
+            "highlighted": true,
+            "icon": "inv_rocketmount6_orange",
+            "itemId": 273651,
+            "name": "Bilgewater X-TREME Firework Rocket",
+            "spellid": 1292344
           },
           {
             "ID": 799,
@@ -11135,15 +11138,6 @@
             "spellid": 1283911
           },
           {
-            "ID": 2973,
-            "icon": "inv_rocketmount6_blue",
-            "itemId": 273317,
-            "name": "Blackwater X-TREME Firework Rocket",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1292102
-          },
-          {
             "ID": 2974,
             "icon": "inv_rocketmount6_green",
             "itemId": 273650,
@@ -11151,15 +11145,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1292342
-          },
-          {
-            "ID": 2975,
-            "icon": "inv_rocketmount6_orange",
-            "itemId": 273651,
-            "name": "Bilgewater X-TREME Firework Rocket",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1292344
           },
           {
             "ID": 2976,
