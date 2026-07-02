@@ -743,13 +743,6 @@
                   "new": true,
                   "points": 5,
                   "title": "A Stack of Snacks"
-                },
-                {
-                  "icon": "8032876",
-                  "id": 63662,
-                  "new": true,
-                  "points": 10,
-                  "title": "Student of Hissstory"
                 }
               ],
               "name": "Coiled Isle"
@@ -4937,6 +4930,13 @@
                   "id": 62104,
                   "points": 5,
                   "title": "Midnight Lore Hunter"
+                },
+                {
+                  "icon": "8032876",
+                  "id": 63662,
+                  "new": true,
+                  "points": 10,
+                  "title": "Student of Hissstory"
                 },
                 {
                   "icon": "achievement_zone_eversongwoods",
@@ -14928,7 +14928,7 @@
                   "id": 63254,
                   "new": true,
                   "points": 25,
-                  "title": "Glory of the Venomous Abyss Raider"
+                  "title": "Glory of the Venomous Raider"
                 }
               ],
               "name": "Midnight"
@@ -15617,6 +15617,13 @@
                   "title": "Mythic: The Venomous Abyss"
                 },
                 {
+                  "icon": "inv_helm_cloth_outdooramaniloa_c_01",
+                  "id": 63670,
+                  "new": true,
+                  "points": 10,
+                  "title": "Comforting Da Spirits"
+                },
+                {
                   "icon": "inv_pet_toad_blue",
                   "id": 63418,
                   "new": true,
@@ -15657,6 +15664,13 @@
                   "new": true,
                   "points": 10,
                   "title": "Taking a Bite out of Slime"
+                },
+                {
+                  "icon": "ability_fixated_state_purple",
+                  "id": 63669,
+                  "new": true,
+                  "points": 10,
+                  "title": "Watch Out Behind You"
                 },
                 {
                   "icon": "inv_egg_08",
@@ -15712,7 +15726,7 @@
                   "id": 63529,
                   "new": true,
                   "points": 10,
-                  "title": "Mythic: The Bargained Crown"
+                  "title": "Mythic: The Coiled Altar"
                 },
                 {
                   "icon": "inv_121_raid_achievement_ulatek",
@@ -15723,6 +15737,33 @@
                 }
               ],
               "name": "The Venomous Abyss"
+            },
+            {
+              "id": "a77ac9ed",
+              "items": [
+                {
+                  "icon": "achievement_boss_elitenagamale",
+                  "id": 63683,
+                  "new": true,
+                  "points": 10,
+                  "title": "Nymrissa Wavecaller"
+                },
+                {
+                  "icon": "achievement_boss_elitenagamale",
+                  "id": 63681,
+                  "new": true,
+                  "points": 10,
+                  "title": "Heroic: Nymrissa Wavecaller"
+                },
+                {
+                  "icon": "achievement_boss_elitenagamale",
+                  "id": 63682,
+                  "new": true,
+                  "points": 10,
+                  "title": "Mythic: Nymrissa Wavecaller"
+                }
+              ],
+              "name": "World Boss"
             }
           ]
         },
@@ -48441,19 +48482,19 @@
                 {
                   "icon": "inv_misc_epicgem_06",
                   "id": 12503,
-                  "points": 0,
+                  "points": 10,
                   "title": "Snake Eyes"
                 },
                 {
                   "icon": "inv_waepon_bow_zulgrub_d_01",
                   "id": 12507,
-                  "points": 0,
+                  "points": 10,
                   "title": "Snake Eater"
                 },
                 {
                   "icon": "spell_shaman_hex",
                   "id": 12508,
-                  "points": 0,
+                  "points": 10,
                   "title": "Good Night, Sweet Prince"
                 }
               ],
@@ -53127,6 +53168,13 @@
                   "id": 62842,
                   "points": 0,
                   "title": "A Celestial Pain"
+                },
+                {
+                  "icon": "7746469",
+                  "id": 63679,
+                  "new": true,
+                  "points": 0,
+                  "title": "In Case Of Emergency"
                 }
               ],
               "name": "Other"
