@@ -419,14 +419,6 @@
             "itemId": 260231,
             "name": "Lucent Hawkstrider",
             "spellid": 1265784
-          },
-          {
-            "ID": 3031,
-            "icon": "inv_manawyrm2mount_poison2",
-            "itemId": 275659,
-            "name": "Hexflame Reaver",
-            "new": true,
-            "spellid": 1297407
           }
         ],
         "name": "Dungeon Drop"
@@ -451,6 +443,19 @@
           }
         ],
         "name": "Delve Nemesis Drop"
+      },
+      {
+        "items": [
+          {
+            "ID": 3031,
+            "icon": "inv_manawyrm2mount_poison2",
+            "itemId": 275659,
+            "name": "Hexflame Reaver",
+            "new": true,
+            "spellid": 1297407
+          }
+        ],
+        "name": "Prey Drop"
       },
       {
         "items": [
