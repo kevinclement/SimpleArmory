@@ -273,6 +273,19 @@
           }
         ],
         "name": "Promotions"
+      },
+      {
+        "items": [
+          {
+            "ID": 5064,
+            "creatureId": 264863,
+            "icon": "7845057",
+            "itemId": 274150,
+            "name": "Murk'atath",
+            "spellid": 1293301
+          }
+        ],
+        "name": "Blizzard Store"
       }
     ]
   },
@@ -13286,6 +13299,7 @@
           {
             "ID": 5064,
             "creatureId": 264863,
+            "highlighted": true,
             "icon": "7845057",
             "itemId": 274150,
             "name": "Murk'atath",
