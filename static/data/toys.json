@@ -169,6 +169,29 @@
           }
         ],
         "name": "Midnight: Season 1"
+      },
+      {
+        "items": [
+          {
+            "ID": 1574,
+            "icon": "inv_11xp_event_dastardlyduos_podium01_nocollision",
+            "itemId": 239018,
+            "name": "Winner's Podium"
+          },
+          {
+            "ID": 1684,
+            "icon": "inv_relics_hourglass",
+            "itemId": 268455,
+            "name": "Enchanted Hourglass"
+          },
+          {
+            "ID": 1685,
+            "icon": "inv_leatherworking_70_loveseat",
+            "itemId": 268456,
+            "name": "Animated Bench"
+          }
+        ],
+        "name": "Decor Duels"
       }
     ]
   },
@@ -378,24 +401,6 @@
             "icon": "inv_gizmo_hardenedadamantitetube",
             "itemId": 267291,
             "name": "Coffer Key Glue"
-          },
-          {
-            "ID": 1574,
-            "icon": "inv_11xp_event_dastardlyduos_podium01_nocollision",
-            "itemId": 239018,
-            "name": "Winner's Podium"
-          },
-          {
-            "ID": 1684,
-            "icon": "inv_relics_hourglass",
-            "itemId": 268455,
-            "name": "Enchanted Hourglass"
-          },
-          {
-            "ID": 1685,
-            "icon": "inv_leatherworking_70_loveseat",
-            "itemId": 268456,
-            "name": "Animated Bench"
           },
           {
             "ID": 1733,
@@ -6468,7 +6473,7 @@
             "name": "Glorious Pennant"
           }
         ],
-        "name": "Prestige"
+        "name": "Honor"
       },
       {
         "items": [
@@ -7686,6 +7691,32 @@
           }
         ],
         "name": "Dastardly Duos"
+      },
+      {
+        "items": [
+          {
+            "ID": 1574,
+            "highlighted": true,
+            "icon": "inv_11xp_event_dastardlyduos_podium01_nocollision",
+            "itemId": 239018,
+            "name": "Winner's Podium"
+          },
+          {
+            "ID": 1684,
+            "highlighted": true,
+            "icon": "inv_relics_hourglass",
+            "itemId": 268455,
+            "name": "Enchanted Hourglass"
+          },
+          {
+            "ID": 1685,
+            "highlighted": true,
+            "icon": "inv_leatherworking_70_loveseat",
+            "itemId": 268456,
+            "name": "Animated Bench"
+          }
+        ],
+        "name": "Decor Duels"
       },
       {
         "id": "6edf78f8",
