@@ -270,6 +270,18 @@
       {
         "items": [
           {
+            "ID": 2933,
+            "icon": "inv_cooking_80_choralhoney3",
+            "itemId": 268481,
+            "name": "Magister's Spell Bee",
+            "spellid": 1282471
+          }
+        ],
+        "name": "Decor Duels"
+      },
+      {
+        "items": [
+          {
             "ID": 2806,
             "icon": "inv_protodragonicemount",
             "itemId": 258884,
@@ -667,13 +679,6 @@
             "spellid": 1271698
           },
           {
-            "ID": 2933,
-            "icon": "inv_cooking_80_choralhoney3",
-            "itemId": 268481,
-            "name": "Magister's Spell Bee",
-            "spellid": 1282471
-          },
-          {
             "ID": 2988,
             "icon": "inv_voidsurfboardmount",
             "itemId": 274649,
@@ -733,6 +738,14 @@
             "name": "Indigo Coiled Horror",
             "new": true,
             "spellid": 1300778
+          },
+          {
+            "ID": 3019,
+            "icon": "inv_venomserpentmount_purple",
+            "itemId": 275653,
+            "name": "Sea-Dwelling Isle Serpent",
+            "new": true,
+            "spellid": 1297216
           }
         ],
         "name": "Vendor"
@@ -773,6 +786,14 @@
             "itemId": 257446,
             "name": "Insatiable Shredclaw",
             "spellid": 1261583
+          },
+          {
+            "ID": 2839,
+            "icon": "inv_arcanegolem2mount_green",
+            "itemId": 262496,
+            "name": "Delver's Arcane Golem",
+            "new": true,
+            "spellid": 1268919
           }
         ],
         "name": "Treasure"
@@ -4793,13 +4814,6 @@
         "id": "a8e200df",
         "items": [
           {
-            "ID": 800,
-            "icon": "inv_fishmount",
-            "itemId": 138811,
-            "name": "Brinedeep Bottom-Feeder",
-            "spellid": 214791
-          },
-          {
             "ID": 847,
             "icon": "inv_turtlemount",
             "itemId": 141713,
@@ -4894,6 +4908,13 @@
       {
         "id": "82bf985b",
         "items": [
+          {
+            "ID": 800,
+            "icon": "inv_fishmount",
+            "itemId": 138811,
+            "name": "Brinedeep Bottom-Feeder",
+            "spellid": 214791
+          },
           {
             "ID": 965,
             "icon": "inv_argustalbukmount_blue",
@@ -5385,6 +5406,13 @@
             "itemId": 116655,
             "name": "Witherhide Cliffstomper",
             "spellid": 171616
+          },
+          {
+            "ID": 632,
+            "icon": "inv_hippo_green",
+            "itemId": 116768,
+            "name": "Mosshide Riverwallow",
+            "spellid": 171825
           }
         ],
         "name": "Vendor"
@@ -5421,13 +5449,6 @@
             "itemId": 116672,
             "name": "Domesticated Razorback",
             "spellid": 171634
-          },
-          {
-            "ID": 632,
-            "icon": "inv_hippo_green",
-            "itemId": 116768,
-            "name": "Mosshide Riverwallow",
-            "spellid": 171825
           },
           {
             "ID": 624,
@@ -9393,6 +9414,7 @@
             "icon": "inv_viciouslightbloomboar_blue",
             "itemId": 275433,
             "name": "Vicious Lightbloom Boar",
+            "side": "A",
             "new": true,
             "spellid": 1296670
           },
@@ -9401,6 +9423,7 @@
             "icon": "inv_viciouslightbloomboar_red",
             "itemId": 275432,
             "name": "Vicious Lightbloom Boar",
+            "side": "H",
             "new": true,
             "spellid": 1296672
           }
@@ -9744,7 +9767,7 @@
             "icon": "inv_kaijugladiatormount_green",
             "itemId": 275302,
             "name": "Venomous Gladiator's Goredrake",
-            "new": true,
+            "notObtainable": true,
             "spellid": 1266211
           }
         ],

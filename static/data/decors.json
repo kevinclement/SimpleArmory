@@ -121,17 +121,6 @@
       {
         "items": [
           {
-            "ID": 16813,
-            "icon": "7531429",
-            "itemId": "265389",
-            "name": "Cuddly Cotton Candy Grrgle"
-          }
-        ],
-        "name": "Twitch Drops"
-      },
-      {
-        "items": [
-          {
             "ID": 15668,
             "icon": "7513316",
             "itemId": "264396",
@@ -1230,6 +1219,13 @@
             "icon": "7423148",
             "itemId": "247235",
             "name": "Luminous Rotshroom"
+          },
+          {
+            "ID": 1426,
+            "icon": "7417197",
+            "itemId": "244343",
+            "name": "Vessel of the Howling Ossuary",
+            "new": true
           }
         ],
         "name": "Raid Drop"
@@ -1353,6 +1349,13 @@
             "icon": "7491990",
             "itemId": "263042",
             "name": "Rootlight Lamppost"
+          },
+          {
+            "ID": 5131,
+            "icon": "7424029",
+            "itemId": "248963",
+            "name": "Spirit-Touched Amani Mask",
+            "new": true
           }
         ],
         "name": "Delves"
@@ -1430,6 +1433,32 @@
       {
         "items": [
           {
+            "ID": 23706,
+            "icon": "7852009",
+            "itemId": "274731",
+            "name": "Prized Orb of Azeroth",
+            "new": true
+          },
+          {
+            "ID": 24193,
+            "icon": "7875082",
+            "itemId": "274734",
+            "name": "Framed Horde Pride",
+            "new": true
+          },
+          {
+            "ID": 24194,
+            "icon": "7875085",
+            "itemId": "274736",
+            "name": "Framed Alliance Pride",
+            "new": true
+          }
+        ],
+        "name": "Football"
+      },
+      {
+        "items": [
+          {
             "ID": 19763,
             "icon": "7649407",
             "itemId": "268457",
@@ -1502,7 +1531,7 @@
             "name": "Large Decorative Dornogal Opal"
           }
         ],
-        "name": "Decor Duel"
+        "name": "Decor Duels"
       },
       {
         "items": [
@@ -1971,7 +2000,7 @@
             "ID": 5129,
             "icon": "7579010",
             "itemId": "248961",
-            "name": "Large Amani Tiki Mask"
+            "name": "Furious Tiki Mask"
           },
           {
             "ID": 18897,
@@ -2020,6 +2049,27 @@
             "icon": "7960997",
             "itemId": "276429",
             "name": "Grand Artificer's Lightforged Console"
+          },
+          {
+            "ID": 1136,
+            "icon": "7416515",
+            "itemId": "253449",
+            "name": "Bound Silvermoon Drapes",
+            "new": true
+          },
+          {
+            "ID": 1140,
+            "icon": "7416531",
+            "itemId": "253455",
+            "name": "Unearthed Amani Sarcophagus Lid",
+            "new": true
+          },
+          {
+            "ID": 1150,
+            "icon": "7416567",
+            "itemId": "253473",
+            "name": "Unearthed Amani Sarcophagus Base",
+            "new": true
           }
         ],
         "name": "Vendor"
@@ -10004,6 +10054,13 @@
             "icon": "7808350",
             "itemId": "272359",
             "name": "Square Woolen Rug"
+          },
+          {
+            "ID": 1427,
+            "icon": "7417201",
+            "itemId": "244344",
+            "name": "Griftah's Mystical Polter-Urn",
+            "new": true
           }
         ],
         "name": "Neighbourhood Vendor"
@@ -11007,7 +11064,7 @@
             "icon": "7531429",
             "itemId": "265389",
             "name": "Cuddly Cotton Candy Grrgle",
-            "highlighted": true
+            "notObtainable": true
           }
         ],
         "name": "Twitch Drops"
@@ -11163,14 +11220,14 @@
             "ID": 1283,
             "icon": "7416971",
             "itemId": "243337",
-            "name": "Left-Bound Silvermoon Drapes",
+            "name": "Bound-Left Silvermoon Drapes",
             "notObtainable": true
           },
           {
             "ID": 1284,
             "icon": "7416975",
             "itemId": "243338",
-            "name": "Right-Bound Silvermoon Drapes",
+            "name": "Bound-Right Silvermoon Drapes",
             "notObtainable": true
           },
           {
@@ -12304,7 +12361,7 @@
             "ID": 1204,
             "icon": "7416749",
             "itemId": "253496",
-            "name": "Sunsmoke Censer DEPRICATED DONT USE",
+            "name": "Sunsmoke Censer DEPRECATED DONT USE",
             "notObtainable": true
           },
           {
@@ -13121,6 +13178,27 @@
             "name": "Condensed Anima Orb",
             "notObtainable": true,
             "notReleased": true
+          },
+          {
+            "ID": 1154,
+            "icon": "7416583",
+            "itemId": "253481",
+            "name": "Masterful Sin'dorei Gravestone",
+            "new": true
+          },
+          {
+            "ID": 1730,
+            "icon": "7421955",
+            "itemId": "245539",
+            "name": "Elegant Enchanted Vanity",
+            "new": true
+          },
+          {
+            "ID": 2587,
+            "icon": "7423072",
+            "itemId": "246958",
+            "name": "Mastercrafted Fungal Row Planter",
+            "new": true
           }
         ],
         "name": "Undiscovered Sources"
