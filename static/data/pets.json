@@ -243,27 +243,6 @@
       {
         "items": [
           {
-            "ID": 4617,
-            "creatureId": 229890,
-            "icon": "inv_pet_futurebotpet_orange",
-            "itemId": 228790,
-            "name": "Thrillbot 9000",
-            "spellid": 463242
-          },
-          {
-            "ID": 4618,
-            "creatureId": 229901,
-            "icon": "inv_pet_futurebotpet_purple",
-            "itemId": 228793,
-            "name": "Chillbot 9000",
-            "spellid": 463251
-          }
-        ],
-        "name": "Trading Post: July"
-      },
-      {
-        "items": [
-          {
             "ID": 4944,
             "creatureId": 255750,
             "icon": "inv_manawurm2pink",
@@ -429,14 +408,6 @@
             "itemId": 271185,
             "name": "Emberlyn",
             "spellid": 1288774
-          },
-          {
-            "ID": 5073,
-            "creatureId": 266577,
-            "icon": "inv_babyberserker_teal",
-            "itemId": 260922,
-            "name": "Frosticus Maximus",
-            "spellid": 1267050
           },
           {
             "ID": 5011,
@@ -778,6 +749,14 @@
             "itemId": 275663,
             "name": "Silento",
             "spellid": 1297418
+          },
+          {
+            "ID": 5073,
+            "creatureId": 266577,
+            "icon": "inv_babyberserker_teal",
+            "itemId": 260922,
+            "name": "Frosticus Maximus",
+            "spellid": 1267050
           },
           {
             "ID": 5070,
@@ -2453,14 +2432,6 @@
             "spellid": 375499
           },
           {
-            "ID": 3427,
-            "creatureId": 200259,
-            "icon": "inv_snowelemental_02",
-            "itemId": 202255,
-            "name": "Driftling",
-            "spellid": 398170
-          },
-          {
             "ID": 3528,
             "creatureId": 204286,
             "icon": "inv_beetleprimal_mint",
@@ -2870,6 +2841,19 @@
           }
         ],
         "name": "Renown"
+      },
+      {
+        "items": [
+          {
+            "ID": 3427,
+            "creatureId": 200259,
+            "icon": "inv_snowelemental_02",
+            "itemId": 202255,
+            "name": "Driftling",
+            "spellid": 398170
+          }
+        ],
+        "name": "Reputation"
       },
       {
         "id": "2aeb5179",
@@ -7115,6 +7099,22 @@
             "spellid": 233805
           },
           {
+            "ID": 1911,
+            "creatureId": 109216,
+            "icon": "inv_fish_stormraygreen",
+            "itemId": 138810,
+            "name": "Sting Ray Pup",
+            "spellid": 217218
+          },
+          {
+            "ID": 2077,
+            "creatureId": 126579,
+            "icon": "inv_pet_babyshark",
+            "itemId": 152555,
+            "name": "Ghost Shark",
+            "spellid": 251191
+          },
+          {
             "ID": 2116,
             "creatureId": 128119,
             "icon": "inv_feasel_purple",
@@ -11077,22 +11077,6 @@
             "spellid": 43697
           },
           {
-            "ID": 1911,
-            "creatureId": 109216,
-            "icon": "inv_fish_stormraygreen",
-            "itemId": 138810,
-            "name": "Sting Ray Pup",
-            "spellid": 217218
-          },
-          {
-            "ID": 2077,
-            "creatureId": 126579,
-            "icon": "inv_pet_babyshark",
-            "itemId": 152555,
-            "name": "Ghost Shark",
-            "spellid": 251191
-          },
-          {
             "ID": 2837,
             "creatureId": 161951,
             "icon": "sha_inv_misc_slime_01_nightborne",
@@ -12524,7 +12508,6 @@
           {
             "ID": 4617,
             "creatureId": 229890,
-            "highlighted": true,
             "icon": "inv_pet_futurebotpet_orange",
             "itemId": 228790,
             "name": "Thrillbot 9000",
@@ -12533,7 +12516,6 @@
           {
             "ID": 4618,
             "creatureId": 229901,
-            "highlighted": true,
             "icon": "inv_pet_futurebotpet_purple",
             "itemId": 228793,
             "name": "Chillbot 9000",

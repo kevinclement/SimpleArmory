@@ -160,28 +160,28 @@
       {
         "items": [
           {
-            "ID": 2580,
-            "icon": "inv_forsakenhorsemount_purple",
-            "itemId": 243596,
-            "name": "Wailing Banshee's Charger",
-            "spellid": 1235819
+            "ID": 1947,
+            "icon": "inv_motorcyclefelreavermount_fire",
+            "itemId": 211087,
+            "name": "Hateforged Blazecycle",
+            "spellid": 428067
           },
           {
-            "ID": 2973,
-            "icon": "inv_rocketmount6_blue",
-            "itemId": 273317,
-            "name": "Blackwater X-TREME Firework Rocket",
-            "spellid": 1292102
+            "ID": 2577,
+            "icon": "inv_chessmount_gold",
+            "itemId": 243591,
+            "name": "Grandmaster's Royal Board",
+            "spellid": 1235803
           },
           {
-            "ID": 2975,
-            "icon": "inv_rocketmount6_orange",
-            "itemId": 273651,
-            "name": "Bilgewater X-TREME Firework Rocket",
-            "spellid": 1292344
+            "ID": 2994,
+            "icon": "inv_vulturemount_black",
+            "itemId": 274681,
+            "name": "Badlands Buzzard",
+            "spellid": 1294767
           }
         ],
-        "name": "Trading Post: July"
+        "name": "Trading Post: August"
       },
       {
         "items": [
@@ -10402,6 +10402,14 @@
             "itemId": 212228,
             "name": "Soaring Sky Fox",
             "spellid": 431359
+          },
+          {
+            "ID": 1947,
+            "highlighted": true,
+            "icon": "inv_motorcyclefelreavermount_fire",
+            "itemId": 211087,
+            "name": "Hateforged Blazecycle",
+            "spellid": 428067
           }
         ],
         "name": "Trading Post Re-Releases"
@@ -10691,7 +10699,6 @@
           },
           {
             "ID": 2580,
-            "highlighted": true,
             "icon": "inv_forsakenhorsemount_purple",
             "itemId": 243596,
             "name": "Wailing Banshee's Charger",
@@ -10713,6 +10720,7 @@
           },
           {
             "ID": 2577,
+            "highlighted": true,
             "icon": "inv_chessmount_gold",
             "itemId": 243591,
             "name": "Grandmaster's Royal Board",
@@ -10853,7 +10861,6 @@
           },
           {
             "ID": 2973,
-            "highlighted": true,
             "icon": "inv_rocketmount6_blue",
             "itemId": 273317,
             "name": "Blackwater X-TREME Firework Rocket",
@@ -10861,11 +10868,18 @@
           },
           {
             "ID": 2975,
-            "highlighted": true,
             "icon": "inv_rocketmount6_orange",
             "itemId": 273651,
             "name": "Bilgewater X-TREME Firework Rocket",
             "spellid": 1292344
+          },
+          {
+            "ID": 2994,
+            "highlighted": true,
+            "icon": "inv_vulturemount_black",
+            "itemId": 274681,
+            "name": "Badlands Buzzard",
+            "spellid": 1294767
           },
           {
             "ID": 799,
@@ -11234,15 +11248,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1294677
-          },
-          {
-            "ID": 2994,
-            "icon": "inv_vulturemount_black",
-            "itemId": 274681,
-            "name": "Badlands Buzzard",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1294767
           },
           {
             "ID": 2652,
@@ -12720,19 +12725,6 @@
           }
         ],
         "name": "Diablo IV"
-      },
-      {
-        "items": [
-          {
-            "ID": 1947,
-            "icon": "inv_motorcyclefelreavermount_fire",
-            "itemId": 211087,
-            "name": "Hateforged Blazecycle",
-            "resale": true,
-            "spellid": 428067
-          }
-        ],
-        "name": "Mountain Dew"
       },
       {
         "items": [
