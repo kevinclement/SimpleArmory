@@ -162,36 +162,13 @@
       {
         "items": [
           {
-            "ID": 1651,
-            "icon": "inv_nullstone_cosmicvoid",
-            "itemId": 264413,
-            "name": "Dominating Victory"
+            "ID": 1731,
+            "icon": "inv_knife_1h_ulatekfang_d_01_poison",
+            "itemId": 275988,
+            "name": "Corrosive Victory"
           }
         ],
-        "name": "Midnight: Season 1"
-      },
-      {
-        "items": [
-          {
-            "ID": 1574,
-            "icon": "inv_11xp_event_dastardlyduos_podium01_nocollision",
-            "itemId": 239018,
-            "name": "Winner's Podium"
-          },
-          {
-            "ID": 1684,
-            "icon": "inv_relics_hourglass",
-            "itemId": 268455,
-            "name": "Enchanted Hourglass"
-          },
-          {
-            "ID": 1685,
-            "icon": "inv_leatherworking_70_loveseat",
-            "itemId": 268456,
-            "name": "Animated Bench"
-          }
-        ],
-        "name": "Decor Duels"
+        "name": "Midnight: Season 2"
       }
     ]
   },
@@ -208,17 +185,16 @@
           },
           {
             "ID": 1651,
-            "highlighted": true,
             "icon": "inv_nullstone_cosmicvoid",
             "itemId": 264413,
-            "name": "Dominating Victory"
+            "name": "Dominating Victory",
+            "notObtainable": true
           },
           {
             "ID": 1731,
             "icon": "inv_knife_1h_ulatekfang_d_01_poison",
             "itemId": 275988,
-            "name": "Corrosive Victory",
-            "new": true
+            "name": "Corrosive Victory"
           },
           {
             "ID": 1688,
@@ -242,8 +218,7 @@
             "ID": 1758,
             "icon": "8032876",
             "itemId": 280419,
-            "name": "Cursed Badge of the Soulcoilers",
-            "new": true
+            "name": "Cursed Badge of the Soulcoilers"
           }
         ],
         "name": "Achievement"
@@ -290,6 +265,12 @@
             "icon": "inv_icon_feather10b",
             "itemId": 250974,
             "name": "Akil'zon's Updraft"
+          },
+          {
+            "ID": 1739,
+            "icon": "trade_archaeology_whitehydrafigurine",
+            "itemId": 276925,
+            "name": "Idol of Ula'tek"
           }
         ],
         "name": "Renown"
@@ -406,36 +387,25 @@
             "ID": 1733,
             "icon": "icon_upgradestone_critter_uncommon",
             "itemId": 276189,
-            "name": "Effigy of Dundun",
-            "new": true
+            "name": "Effigy of Dundun"
           },
           {
             "ID": 1734,
             "icon": "inv_misc_trophy_argent",
             "itemId": 276229,
-            "name": "Preyhunter's Trophy Stand",
-            "new": true
+            "name": "Preyhunter's Trophy Stand"
           },
           {
             "ID": 1735,
             "icon": "ui_prey",
             "itemId": 276258,
-            "name": "Companion Command Crystal",
-            "new": true
-          },
-          {
-            "ID": 1739,
-            "icon": "trade_archaeology_whitehydrafigurine",
-            "itemId": 276925,
-            "name": "Idol of Ula'tek",
-            "new": true
+            "name": "Companion Command Crystal"
           },
           {
             "ID": 1746,
             "icon": "inv_121_professions_fishing_starfish_purple",
             "itemId": 278557,
-            "name": "Otoola's Recognition",
-            "new": true
+            "name": "Otoola's Recognition"
           }
         ],
         "name": "Vendor"
@@ -471,6 +441,48 @@
             "icon": "inv_egg_07",
             "itemId": 251903,
             "name": "Potatoad Egg"
+          },
+          {
+            "ID": 1686,
+            "icon": "inv_staff_45",
+            "itemId": 268504,
+            "name": "Malfunctioning Staff"
+          },
+          {
+            "ID": 1725,
+            "icon": "inv_misc_discoball_01",
+            "itemId": 274921,
+            "name": "Pearl of Jubilation"
+          },
+          {
+            "ID": 1747,
+            "icon": "spell_holy_divinespirit",
+            "itemId": 279021,
+            "name": "Forgotten Memento"
+          },
+          {
+            "ID": 1749,
+            "icon": "inv_misc_statue_12",
+            "itemId": 279054,
+            "name": "Idol of Blue Water and Blue Sky"
+          },
+          {
+            "ID": 1730,
+            "icon": "inv_ability_poison_buff",
+            "itemId": 275825,
+            "name": "Ula'tek's Sssacrificial Rain"
+          },
+          {
+            "ID": 1748,
+            "icon": "inv_banner_01",
+            "itemId": 279052,
+            "name": "Ancient Amani Mask"
+          },
+          {
+            "ID": 1741,
+            "icon": "inv_knife_1h_outdooramaniloa_c_01",
+            "itemId": 277954,
+            "name": "Jaktu's Cursed Blade"
           }
         ],
         "name": "Treasure"
@@ -512,6 +524,17 @@
       {
         "items": [
           {
+            "ID": 1732,
+            "icon": "inv_glaive_1h_outdooramaniloa_c_01",
+            "itemId": 276207,
+            "name": "Preyhunter's Masquerade"
+          }
+        ],
+        "name": "Prey Drop"
+      },
+      {
+        "items": [
+          {
             "ID": 1601,
             "icon": "inv_10_inscription2_book2_color5",
             "itemId": 249468,
@@ -536,62 +559,6 @@
             "icon": "inv_121_professions_fishing_starfish_purple",
             "itemId": 274817,
             "name": "Gold Starfish",
-            "new": true
-          },
-          {
-            "ID": 1686,
-            "icon": "inv_staff_45",
-            "itemId": 268504,
-            "name": "Malfunctioning Staff",
-            "new": true
-          },
-          {
-            "ID": 1725,
-            "icon": "inv_misc_discoball_01",
-            "itemId": 274921,
-            "name": "Pearl of Jubilation",
-            "new": true
-          },
-          {
-            "ID": 1732,
-            "icon": "inv_glaive_1h_outdooramaniloa_c_01",
-            "itemId": 276207,
-            "name": "Preyhunter's Masquerade",
-            "new": true
-          },
-          {
-            "ID": 1741,
-            "icon": "inv_knife_1h_outdooramaniloa_c_01",
-            "itemId": 277954,
-            "name": "Jaktu's Cursed Blade",
-            "new": true
-          },
-          {
-            "ID": 1747,
-            "icon": "spell_holy_divinespirit",
-            "itemId": 279021,
-            "name": "Forgotten Memento",
-            "new": true
-          },
-          {
-            "ID": 1749,
-            "icon": "inv_misc_statue_12",
-            "itemId": 279054,
-            "name": "Idol of Blue Water and Blue Sky",
-            "new": true
-          },
-          {
-            "ID": 1730,
-            "icon": "inv_ability_poison_buff",
-            "itemId": 275825,
-            "name": "Ula'tek's Sssacrificial Rain",
-            "new": true
-          },
-          {
-            "ID": 1748,
-            "icon": "inv_banner_01",
-            "itemId": 279052,
-            "name": "Ancient Amani Mask",
             "new": true
           },
           {
@@ -6360,8 +6327,7 @@
             "ID": 1729,
             "icon": "inv_surveybotpet",
             "itemId": 275683,
-            "name": "G-00",
-            "new": true
+            "name": "G-00"
           }
         ],
         "name": "Engineering"
@@ -7696,24 +7662,24 @@
         "items": [
           {
             "ID": 1574,
-            "highlighted": true,
             "icon": "inv_11xp_event_dastardlyduos_podium01_nocollision",
             "itemId": 239018,
-            "name": "Winner's Podium"
+            "name": "Winner's Podium",
+            "notObtainable": true
           },
           {
             "ID": 1684,
-            "highlighted": true,
             "icon": "inv_relics_hourglass",
             "itemId": 268455,
-            "name": "Enchanted Hourglass"
+            "name": "Enchanted Hourglass",
+            "notObtainable": true
           },
           {
             "ID": 1685,
-            "highlighted": true,
             "icon": "inv_leatherworking_70_loveseat",
             "itemId": 268456,
-            "name": "Animated Bench"
+            "name": "Animated Bench",
+            "notObtainable": true
           }
         ],
         "name": "Decor Duels"
@@ -8175,6 +8141,14 @@
             "icon": "inv_10xp_generic_toy_treasurebowltoy01",
             "itemId": 258840,
             "name": "Gilded Fountain",
+            "notObtainable": true,
+            "notReleased": true
+          },
+          {
+            "ID": 1727,
+            "icon": "inv_dragonthronetoy01",
+            "itemId": 274967,
+            "name": "Varian's Dragon Throne",
             "notObtainable": true,
             "notReleased": true
           }

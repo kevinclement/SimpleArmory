@@ -186,122 +186,64 @@
       {
         "items": [
           {
-            "ID": 594,
-            "icon": "ability_mount_ravager2mount",
-            "itemId": 112327,
-            "name": "Grinning Reaver",
-            "spellid": 163025
+            "ID": 3063,
+            "icon": "inv_windserpent3mount_skeletal_green",
+            "itemId": 276881,
+            "name": "Breath of Blight",
+            "spellid": 1301070
           },
           {
-            "ID": 2232,
-            "icon": "inv_turtlemount2_dark",
-            "itemId": 224574,
-            "name": "Savage Ebony Battle Turtle",
-            "spellid": 453255
+            "ID": 3064,
+            "icon": "inv_windserpent3mount_skeletal_red",
+            "itemId": 276882,
+            "name": "Breath of Ruin",
+            "spellid": 1301074
           },
           {
-            "ID": 2838,
-            "icon": "inv_goblinsurfboardmount_orange",
-            "itemId": 262438,
-            "name": "Fantastical Goblin Waveshredder",
-            "spellid": 1268809
-          }
-        ],
-        "name": "Promotions"
-      },
-      {
-        "items": [
-          {
-            "ID": 2733,
-            "icon": "inv_mythichexeaglemount_black",
-            "itemId": 262620,
-            "name": "Calamitous Carrion",
-            "spellid": 1257058
+            "ID": 3029,
+            "icon": "inv_serpentgolemmountnemesis",
+            "itemId": 275657,
+            "name": "Apophic Soul Crusher",
+            "spellid": 1297404
           },
           {
-            "ID": 2734,
-            "icon": "inv_mythichexeaglemount_white",
-            "itemId": 262621,
-            "name": "Convalescent Carrion",
-            "spellid": 1257081
-          },
-          {
-            "ID": 3069,
-            "icon": "inv_darkwellphoenixmount2",
-            "itemId": 277192,
-            "name": "Umbral Ashes",
-            "notObtainable": true,
-            "spellid": 1301775
-          },
-          {
-            "ID": 2842,
-            "icon": "inv_arcanegolem2voidmount",
-            "itemId": 263222,
-            "name": "Arcanovoid Construct",
-            "spellid": 1268949
-          },
-          {
-            "ID": 2793,
-            "icon": "inv_vicioussnaplizardmount_horde",
-            "itemId": 257502,
-            "name": "Vicious Snaplizard",
-            "side": "H",
-            "spellid": 1261629
-          },
-          {
-            "ID": 2794,
-            "icon": "inv_vicioussnaplizardmount_alliance",
-            "itemId": 257504,
-            "name": "Vicious Snaplizard",
+            "ID": 3002,
+            "icon": "inv_viciouslightbloomboar_blue",
+            "itemId": 275433,
+            "name": "Vicious Lightbloom Boar",
             "side": "A",
-            "spellid": 1261648
+            "spellid": 1296670
           },
           {
-            "ID": 2801,
-            "icon": "inv_kaijugladiatormount_blue",
-            "itemId": 260228,
-            "name": "Galactic Gladiator's Goredrake",
+            "ID": 3003,
+            "icon": "inv_viciouslightbloomboar_red",
+            "itemId": 275432,
+            "name": "Vicious Lightbloom Boar",
+            "side": "H",
+            "spellid": 1296672
+          },
+          {
+            "ID": 2821,
+            "icon": "inv_kaijugladiatormount_green",
+            "itemId": 275302,
+            "name": "Venomous Gladiator's Goredrake",
             "notObtainable": true,
-            "spellid": 1262840
+            "spellid": 1266211
           }
         ],
-        "name": "Midnight: Season 1"
+        "name": "Midnight: Season 2"
       },
       {
         "items": [
           {
             "ID": 2984,
-            "icon": "7853755",
-            "itemId": "274260",
+            "icon": "inv_rabbitmountvoid",
+            "itemId": 274260,
             "name": "Rabbit'ath",
             "spellid": 1293456
           }
         ],
         "name": "Blizzard Store"
-      },
-      {
-        "items": [
-          {
-            "ID": 2933,
-            "icon": "inv_cooking_80_choralhoney3",
-            "itemId": 268481,
-            "name": "Magister's Spell Bee",
-            "spellid": 1282471
-          }
-        ],
-        "name": "Decor Duels"
-      },
-      {
-        "items": [
-          {
-            "ID": 2806,
-            "icon": "inv_protodragonicemount",
-            "itemId": 258884,
-            "name": "Spawn of Vyranoth",
-            "spellid": 1264184
-          }
-        ],
-        "name": "Turbulent Timeways"
       }
     ]
   },
@@ -322,7 +264,6 @@
             "icon": "inv_writhesmount_green",
             "itemId": 276801,
             "name": "Venomous Coiler",
-            "new": true,
             "spellid": 1300777
           },
           {
@@ -337,7 +278,6 @@
             "icon": "inv_venomserpentmount_yellow",
             "itemId": 275656,
             "name": "Auriferous Venomfang",
-            "new": true,
             "spellid": 1297224
           },
           {
@@ -366,7 +306,6 @@
             "icon": "inv_windserpent3mount_green",
             "itemId": 276553,
             "name": "Emerald Skyfang",
-            "new": true,
             "spellid": 1299965
           },
           {
@@ -395,7 +334,6 @@
             "icon": "inv_venomserpentmount_pink",
             "itemId": 275652,
             "name": "Crimson Venomfang",
-            "new": true,
             "spellid": 1297220
           }
         ],
@@ -422,7 +360,6 @@
             "icon": "inv_flyingserpentmount",
             "itemId": 275658,
             "name": "Primeval Skyfriend",
-            "new": true,
             "spellid": 1297405
           }
         ],
@@ -451,7 +388,6 @@
         "items": [
           {
             "ID": 2842,
-            "highlighted": true,
             "icon": "inv_arcanegolem2voidmount",
             "itemId": 263222,
             "name": "Arcanovoid Construct",
@@ -459,10 +395,10 @@
           },
           {
             "ID": 3029,
+            "highlighted": true,
             "icon": "inv_serpentgolemmountnemesis",
             "itemId": 275657,
             "name": "Apophic Soul Crusher",
-            "new": true,
             "spellid": 1297404
           }
         ],
@@ -475,7 +411,6 @@
             "icon": "inv_manawyrm2mount_poison2",
             "itemId": 275659,
             "name": "Hexflame Reaver",
-            "new": true,
             "spellid": 1297407
           }
         ],
@@ -716,7 +651,6 @@
             "icon": "inv_venomserpentmount_green",
             "itemId": 275654,
             "name": "Caustic Venomfang",
-            "new": true,
             "spellid": 1297217
           },
           {
@@ -724,7 +658,6 @@
             "icon": "inv_manawyrm2mount_poison1",
             "itemId": 275660,
             "name": "Preyhunter's Fury",
-            "new": true,
             "spellid": 1297408
           },
           {
@@ -732,7 +665,6 @@
             "icon": "inv_serpentgolemmount",
             "itemId": 276162,
             "name": "Corroded Soul Crusher",
-            "new": true,
             "spellid": 1298808
           },
           {
@@ -740,7 +672,6 @@
             "icon": "inv_windserpent3mount_purple",
             "itemId": 276551,
             "name": "Violet-Backed Skyfang",
-            "new": true,
             "spellid": 1299963
           },
           {
@@ -748,7 +679,6 @@
             "icon": "inv_writhesmount_purple",
             "itemId": 276802,
             "name": "Indigo Coiled Horror",
-            "new": true,
             "spellid": 1300778
           },
           {
@@ -756,7 +686,6 @@
             "icon": "inv_venomserpentmount_purple",
             "itemId": 275653,
             "name": "Sea-Dwelling Isle Serpent",
-            "new": true,
             "spellid": 1297216
           }
         ],
@@ -804,7 +733,6 @@
             "icon": "inv_arcanegolem2mount_green",
             "itemId": 262496,
             "name": "Delver's Arcane Golem",
-            "new": true,
             "spellid": 1268919
           }
         ],
@@ -873,7 +801,6 @@
             "icon": "inv_windserpent3mount_yellow",
             "itemId": 276549,
             "name": "Topaz Skyfang",
-            "new": true,
             "spellid": 1299961
           },
           {
@@ -881,7 +808,6 @@
             "icon": "inv_writhesmount_pink",
             "itemId": 276803,
             "name": "Ruby Writhe",
-            "new": true,
             "spellid": 1300779
           }
         ],
@@ -8655,7 +8581,6 @@
           },
           {
             "ID": 2733,
-            "highlighted": true,
             "icon": "inv_mythichexeaglemount_black",
             "itemId": 262620,
             "name": "Calamitous Carrion",
@@ -8663,7 +8588,6 @@
           },
           {
             "ID": 2734,
-            "highlighted": true,
             "icon": "inv_mythichexeaglemount_white",
             "itemId": 262621,
             "name": "Convalescent Carrion",
@@ -8713,25 +8637,34 @@
           },
           {
             "ID": 3063,
+            "highlighted": true,
             "icon": "inv_windserpent3mount_skeletal_green",
             "itemId": 276881,
             "name": "Breath of Blight",
-            "new": true,
             "spellid": 1301070
           },
           {
             "ID": 3064,
+            "highlighted": true,
             "icon": "inv_windserpent3mount_skeletal_red",
             "itemId": 276882,
             "name": "Breath of Ruin",
-            "new": true,
             "spellid": 1301074
           }
         ],
         "name": "Timelost Saddle"
       },
       {
-        "items": [],
+        "items": [
+          {
+            "ID": 3069,
+            "icon": "inv_darkwellphoenixmount2",
+            "itemId": 277192,
+            "name": "Umbral Ashes",
+            "notObtainable": true,
+            "spellid": 1301775
+          }
+        ],
         "name": "Champion"
       }
     ]
@@ -9405,37 +9338,37 @@
           },
           {
             "ID": 2793,
-            "highlighted": true,
             "icon": "inv_vicioussnaplizardmount_horde",
             "itemId": 257502,
             "name": "Vicious Snaplizard",
+            "notObtainable": true,
             "side": "H",
             "spellid": 1261629
           },
           {
             "ID": 2794,
-            "highlighted": true,
             "icon": "inv_vicioussnaplizardmount_alliance",
             "itemId": 257504,
             "name": "Vicious Snaplizard",
+            "notObtainable": true,
             "side": "A",
             "spellid": 1261648
           },
           {
             "ID": 3002,
+            "highlighted": true,
             "icon": "inv_viciouslightbloomboar_blue",
             "itemId": 275433,
             "name": "Vicious Lightbloom Boar",
-            "new": true,
             "side": "A",
             "spellid": 1296670
           },
           {
             "ID": 3003,
+            "highlighted": true,
             "icon": "inv_viciouslightbloomboar_red",
             "itemId": 275432,
             "name": "Vicious Lightbloom Boar",
-            "new": true,
             "side": "H",
             "spellid": 1296672
           }
@@ -9767,7 +9700,6 @@
           },
           {
             "ID": 2801,
-            "highlighted": true,
             "icon": "inv_kaijugladiatormount_blue",
             "itemId": 260228,
             "name": "Galactic Gladiator's Goredrake",
@@ -9776,6 +9708,7 @@
           },
           {
             "ID": 2821,
+            "highlighted": true,
             "icon": "inv_kaijugladiatormount_green",
             "itemId": 275302,
             "name": "Venomous Gladiator's Goredrake",
@@ -10235,10 +10168,10 @@
           },
           {
             "ID": 2806,
-            "highlighted": true,
             "icon": "inv_protodragonicemount",
             "itemId": 258884,
             "name": "Spawn of Vyranoth",
+            "notObtainable": true,
             "spellid": 1264184
           },
           {
@@ -11359,10 +11292,10 @@
         "items": [
           {
             "ID": 2933,
-            "highlighted": true,
             "icon": "inv_cooking_80_choralhoney3",
             "itemId": 268481,
             "name": "Magister's Spell Bee",
+            "notObtainable": true,
             "spellid": 1282471
           }
         ],
@@ -12058,15 +11991,15 @@
             "icon": "ability_mount_ironchimera",
             "itemId": 107951,
             "name": "Iron Skyreaver",
-            "notObtainable": true,
+            "resale": true,
             "spellid": 153489
           },
           {
             "ID": 594,
-            "highlighted": true,
             "icon": "ability_mount_ravager2mount",
             "itemId": 112327,
             "name": "Grinning Reaver",
+            "resale": true,
             "spellid": 163025
           },
           {
@@ -12412,7 +12345,7 @@
           },
           {
             "ID": 2977,
-            "icon": "7949372",
+            "icon": "inv_mothfluffymount_orange",
             "itemId": 273655,
             "name": "Sunflare Driftmoth",
             "spellid": 1292356
@@ -12460,8 +12393,8 @@
           {
             "ID": 2984,
             "highlighted": true,
-            "icon": "7853755",
-            "itemId": "274260",
+            "icon": "inv_rabbitmountvoid",
+            "itemId": 274260,
             "name": "Rabbit'ath",
             "spellid": 1293456
           }
@@ -12756,10 +12689,10 @@
         "items": [
           {
             "ID": 2232,
-            "highlighted": true,
             "icon": "inv_turtlemount2_dark",
             "itemId": 224574,
             "name": "Savage Ebony Battle Turtle",
+            "resale": true,
             "spellid": 453255
           }
         ],
@@ -12769,10 +12702,10 @@
         "items": [
           {
             "ID": 2838,
-            "highlighted": true,
             "icon": "inv_goblinsurfboardmount_orange",
             "itemId": 262438,
             "name": "Fantastical Goblin Waveshredder",
+            "resale": true,
             "spellid": 1268809
           }
         ],
