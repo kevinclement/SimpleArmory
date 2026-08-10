@@ -286,11 +286,11 @@
       {
         "items": [
           {
-            "icon": "inv_misc_questionmark",
-            "id": 1331,
+            "icon": "ui_prey",
+            "id": 63611,
             "name": "Servant of Astalor",
             "titleId": 792,
-            "type": "title"
+            "type": "achievement"
           },
           {
             "icon": "achievement_challengemode_silver",
@@ -312,6 +312,13 @@
             "id": 63332,
             "name": "The Poisonous",
             "titleId": 775,
+            "type": "achievement"
+          },
+          {
+            "icon": "ui_delves",
+            "id": 63433,
+            "name": "Snake Eater",
+            "titleId": 774,
             "type": "achievement"
           },
           {
@@ -472,6 +479,14 @@
             "id": 63332,
             "name": "The Poisonous",
             "titleId": 775,
+            "type": "achievement"
+          },
+          {
+            "highlighted": true,
+            "icon": "inv_waepon_bow_zulgrub_d_01",
+            "id": 12507,
+            "name": "Snake Eater",
+            "titleId": 774,
             "type": "achievement"
           }
         ],
@@ -1648,19 +1663,6 @@
           }
         ],
         "name": "Exploration"
-      },
-      {
-        "items": [
-          {
-            "icon": "inv_waepon_bow_zulgrub_d_01",
-            "id": 12507,
-            "name": "Snake Eater",
-            "new": true,
-            "titleId": 774,
-            "type": "achievement"
-          }
-        ],
-        "name": "Dungeons"
       }
     ]
   },
@@ -4364,29 +4366,12 @@
             "type": "achievement"
           },
           {
-            "icon": "achievement_challengemode_platinum",
-            "id": 61259,
-            "name": "The Umbral Hero",
-            "notObtainable": true,
-            "titleId": 656,
-            "type": "achievement"
-          },
-          {
             "highlighted": true,
             "icon": "achievement_challengemode_silver",
             "id": 977,
             "name": "The Venomous",
             "new": true,
             "titleId": 663,
-            "type": "title"
-          },
-          {
-            "highlighted": true,
-            "icon": "achievement_challengemode_platinum",
-            "id": 976,
-            "name": "The Venomous Hero",
-            "notObtainable": true,
-            "titleId": 662,
             "type": "title"
           }
         ],
@@ -4473,6 +4458,23 @@
             "notObtainable": true,
             "titleId": 637,
             "type": "achievement"
+          },
+          {
+            "icon": "achievement_challengemode_platinum",
+            "id": 61259,
+            "name": "The Umbral Hero",
+            "notObtainable": true,
+            "titleId": 656,
+            "type": "achievement"
+          },
+          {
+            "highlighted": true,
+            "icon": "achievement_challengemode_platinum",
+            "id": 976,
+            "name": "The Venomous Hero",
+            "notObtainable": true,
+            "titleId": 662,
+            "type": "title"
           }
         ],
         "name": "End-of-season Mythic Plus"
