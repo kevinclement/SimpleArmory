@@ -149,30 +149,6 @@
             "icon": "7507785",
             "itemId": "264283",
             "name": "Backboard and Hoop Playset"
-          },
-          {
-            "ID": 15550,
-            "icon": "7507797",
-            "itemId": "264278",
-            "name": "Sturdy Portable Ice Chest"
-          },
-          {
-            "ID": 15551,
-            "icon": "7507793",
-            "itemId": "264279",
-            "name": "Tall Corked Bottle of Liquid Mystery"
-          },
-          {
-            "ID": 15229,
-            "icon": "7498736",
-            "itemId": "263383",
-            "name": "Corked Bottle of Liquid Mystery"
-          },
-          {
-            "ID": 15552,
-            "icon": "7507800",
-            "itemId": "264280",
-            "name": "Short Corked Bottle of Liquid Mystery"
           }
         ],
         "name": "Promotion"
@@ -260,6 +236,25 @@
             "icon": "7424713",
             "itemId": "251909",
             "name": "Eversong Feast Platter"
+          },
+          {
+            "ID": 25307,
+            "icon": "7940509",
+            "itemId": "276083",
+            "name": "Sunstrider Omnium Simulacrum"
+          },
+          {
+            "ID": 5130,
+            "icon": "7424025",
+            "itemId": "248962",
+            "name": "Mysterious Voodoo Mask"
+          },
+          {
+            "ID": 15283,
+            "icon": "7521688",
+            "itemId": "263873",
+            "name": "Amani Forge",
+            "new": true
           }
         ],
         "name": "Achievement"
@@ -670,6 +665,101 @@
       {
         "items": [
           {
+            "ID": 5648,
+            "icon": "7424137",
+            "itemId": "249765",
+            "name": "Amani Supply Sack"
+          },
+          {
+            "ID": 15156,
+            "icon": "7557049",
+            "itemId": "263316",
+            "name": "Amani Storage Crate"
+          },
+          {
+            "ID": 15569,
+            "icon": "7509040",
+            "itemId": "264331",
+            "name": "Amani Wayfarer's Torch"
+          },
+          {
+            "ID": 21324,
+            "icon": "7728557",
+            "itemId": "269778",
+            "name": "Stitched Blisterfang Bag"
+          },
+          {
+            "ID": 21325,
+            "icon": "7728553",
+            "itemId": "269779",
+            "name": "Fanged Scaleskin Pouch"
+          },
+          {
+            "ID": 26097,
+            "icon": "8025997",
+            "itemId": "277280",
+            "name": "Vilescar Weapon Rack"
+          },
+          {
+            "ID": 23874,
+            "icon": "8017253",
+            "itemId": "277271",
+            "name": "Wrapped Scaleskin Urn"
+          },
+          {
+            "ID": 23875,
+            "icon": "8017251",
+            "itemId": "277273",
+            "name": "Cracked Vilescar Urn"
+          },
+          {
+            "ID": 23876,
+            "icon": "8017248",
+            "itemId": "277275",
+            "name": "Charmed Blisterfang Urn"
+          },
+          {
+            "ID": 25294,
+            "icon": "7940040",
+            "itemId": "276457",
+            "name": "Amani Worship Candle"
+          },
+          {
+            "ID": 25295,
+            "icon": "7940044",
+            "itemId": "276459",
+            "name": "Amani Ritual Candles"
+          },
+          {
+            "ID": 15506,
+            "icon": "7507168",
+            "itemId": "264271",
+            "name": "Amani Ritual Totem"
+          },
+          {
+            "ID": 23873,
+            "icon": "8017256",
+            "itemId": "277323",
+            "name": "Sealed Serpentine Reliquary"
+          },
+          {
+            "ID": 21617,
+            "icon": "7746471",
+            "itemId": "271177",
+            "name": "Opened Serpentine Reliquary"
+          },
+          {
+            "ID": 18900,
+            "icon": "7581349",
+            "itemId": "267377",
+            "name": "Ula'tek Ritual Monolith"
+          }
+        ],
+        "name": "Renown: Zul'jarra's Forces"
+      },
+      {
+        "items": [
+          {
             "ID": 2459,
             "icon": "7422803",
             "itemId": "246692",
@@ -728,6 +818,42 @@
             "icon": "7509083",
             "itemId": "264345",
             "name": "Galactic Commander's Orb"
+          },
+          {
+            "ID": 25297,
+            "icon": "7940359",
+            "itemId": "277921",
+            "name": "Traditional Tortollan Tent"
+          },
+          {
+            "ID": 25299,
+            "icon": "7940351",
+            "itemId": "277923",
+            "name": "Aged Tortollan Scroll Case"
+          },
+          {
+            "ID": 25300,
+            "icon": "7940355",
+            "itemId": "277925",
+            "name": "Blue Tortollan Signpost"
+          },
+          {
+            "ID": 25336,
+            "icon": "7940365",
+            "itemId": "277927",
+            "name": "Yellowed Kelp Pile"
+          },
+          {
+            "ID": 26196,
+            "icon": "8030647",
+            "itemId": "277929",
+            "name": "Rustic Fishing Rack"
+          },
+          {
+            "ID": 26197,
+            "icon": "8030643",
+            "itemId": "277931",
+            "name": "Hanging Yellowed Kelp"
           }
         ],
         "name": "Reputation"
@@ -1175,55 +1301,64 @@
             "ID": 19198,
             "icon": "7633623",
             "itemId": "267646",
-            "name": "March on Quel'Danas Vanquisher's Argent Trophy"
+            "name": "March on Quel'Danas Vanquisher's Argent Trophy",
+            "notObtainable": true
           },
           {
             "ID": 17628,
             "icon": "7551593",
             "itemId": "265949",
-            "name": "March on Quel'Danas Vanquisher's Aureate Trophy"
+            "name": "March on Quel'Danas Vanquisher's Aureate Trophy",
+            "notObtainable": true
           },
           {
             "ID": 18396,
             "icon": "7562220",
             "itemId": "266885",
-            "name": "March on Quel'Danas Vanquisher's Gleaming Trophy"
+            "name": "March on Quel'Danas Vanquisher's Gleaming Trophy",
+            "notObtainable": true
           },
           {
             "ID": 19197,
             "icon": "7633619",
             "itemId": "267645",
-            "name": "Dreamrift Vanquisher's Argent Trophy"
+            "name": "Dreamrift Vanquisher's Argent Trophy",
+            "notObtainable": true
           },
           {
             "ID": 17629,
             "icon": "7551595",
             "itemId": "265950",
-            "name": "Dreamrift Vanquisher's Aureate Trophy"
+            "name": "Dreamrift Vanquisher's Aureate Trophy",
+            "notObtainable": true
           },
           {
             "ID": 18397,
             "icon": "7562227",
             "itemId": "266886",
-            "name": "Dreamrift Vanquisher's Gleaming Trophy"
+            "name": "Dreamrift Vanquisher's Gleaming Trophy",
+            "notObtainable": true
           },
           {
             "ID": 19252,
             "icon": "7633625",
             "itemId": "268049",
-            "name": "Voidspire Vanquisher's Argent Trophy"
+            "name": "Voidspire Vanquisher's Argent Trophy",
+            "notObtainable": true
           },
           {
             "ID": 17630,
             "icon": "7551590",
             "itemId": "265951",
-            "name": "Voidspire Vanquisher's Aureate Trophy"
+            "name": "Voidspire Vanquisher's Aureate Trophy",
+            "notObtainable": true
           },
           {
             "ID": 18398,
             "icon": "7562224",
             "itemId": "266887",
-            "name": "Voidspire Vanquisher's Gleaming Trophy"
+            "name": "Voidspire Vanquisher's Gleaming Trophy",
+            "notObtainable": true
           },
           {
             "ID": 2606,
@@ -1235,11 +1370,81 @@
             "ID": 1426,
             "icon": "7417197",
             "itemId": "244343",
-            "name": "Vessel of the Howling Ossuary",
-            "new": true
+            "name": "Vessel of the Howling Ossuary"
+          },
+          {
+            "ID": 16093,
+            "icon": "7517842",
+            "itemId": "264716",
+            "name": "Hexed Tomb Brazier"
+          },
+          {
+            "ID": 21952,
+            "icon": null,
+            "itemId": "272361",
+            "name": "Venomous Pyre"
+          },
+          {
+            "ID": 21956,
+            "icon": null,
+            "itemId": "272365",
+            "name": "Hanging Coiled Isle Ropes"
+          },
+          {
+            "ID": 25813,
+            "icon": "7967325",
+            "itemId": "279122",
+            "name": "Venom-Fanged Font"
+          },
+          {
+            "ID": 26205,
+            "icon": "8030633",
+            "itemId": "279115",
+            "name": "Soulcoiler's Ritual Candle"
+          },
+          {
+            "ID": 26374,
+            "icon": "8033314",
+            "itemId": "279118",
+            "name": "Lost Explorers' Mailbox"
+          },
+          {
+            "ID": 27043,
+            "icon": "8123902",
+            "itemId": "279500",
+            "name": "\"Rage of the Shackled\" Mural"
+          },
+          {
+            "ID": 25133,
+            "icon": "7937272",
+            "itemId": "279127",
+            "name": "The Venomous Abyss Argent Trophy"
+          },
+          {
+            "ID": 25131,
+            "icon": "7937278",
+            "itemId": "279125",
+            "name": "The Venomous Abyss Aureate Trophy"
+          },
+          {
+            "ID": 25132,
+            "icon": "7937274",
+            "itemId": "279129",
+            "name": "The Venomous Abyss Gleaming Trophy"
           }
         ],
         "name": "Raid Drop"
+      },
+      {
+        "items": [
+          {
+            "ID": 26487,
+            "icon": "8033308",
+            "itemId": "279112",
+            "name": "Clumped Asteroidea"
+          }
+        ],
+        "name": "World Boss"
       },
       {
         "items": [
@@ -1296,6 +1501,18 @@
             "icon": "7425933",
             "itemId": "256683",
             "name": "Silvermoon Training Dummy"
+          },
+          {
+            "ID": 25293,
+            "icon": "7940034",
+            "itemId": "279211",
+            "name": "Pillar of the Fanged Altar"
+          },
+          {
+            "ID": 25812,
+            "icon": "7967329",
+            "itemId": "279131",
+            "name": "Pillar of the Coiled Isle"
           }
         ],
         "name": "Dungeon Drop"
@@ -1365,8 +1582,19 @@
             "ID": 5131,
             "icon": "7424029",
             "itemId": "248963",
-            "name": "Spirit-Touched Amani Mask",
-            "new": true
+            "name": "Spirit-Touched Amani Mask"
+          },
+          {
+            "ID": 18615,
+            "icon": "7570019",
+            "itemId": "267080",
+            "name": "Amani Blueflame Chandelier"
+          },
+          {
+            "ID": 24889,
+            "icon": "7900308",
+            "itemId": "275855",
+            "name": "Zul'Aman Swamp Palm Sprout"
           }
         ],
         "name": "Delves"
@@ -1414,6 +1642,18 @@
             "icon": "7422519",
             "itemId": "246416",
             "name": "Waterlogged Haranir Pigment Bowl"
+          },
+          {
+            "ID": 1428,
+            "icon": "7417207",
+            "itemId": "244345",
+            "name": "Forgotten Amani Urn"
+          },
+          {
+            "ID": 21615,
+            "icon": "7746465",
+            "itemId": "271175",
+            "name": "Venomjade Necklace"
           }
         ],
         "name": "Treasure"
@@ -1737,9 +1977,64 @@
             "icon": "7487182",
             "itemId": "265799",
             "name": "Preyseeker's Farstrider Bust"
+          },
+          {
+            "ID": 22145,
+            "icon": "7815027",
+            "itemId": "278369",
+            "name": "Preyhunter's Scaled Effigy"
+          },
+          {
+            "ID": 22146,
+            "icon": "7815022",
+            "itemId": "278372",
+            "name": "Preyhunter's Fanged Effigy"
+          },
+          {
+            "ID": 22147,
+            "icon": "7815025",
+            "itemId": "278374",
+            "name": "Preyhunter's Fanged Bust"
+          },
+          {
+            "ID": 22148,
+            "icon": "7815039",
+            "itemId": "278376",
+            "name": "Preyhunter's Terror Effigy"
+          },
+          {
+            "ID": 24890,
+            "icon": "7815030",
+            "itemId": "278378",
+            "name": "Preyhunter's Scaled Bust",
+            "new": true
+          },
+          {
+            "ID": 24891,
+            "icon": "7815036",
+            "itemId": "278380",
+            "name": "Preyhunter's Terror Bust",
+            "new": true
           }
         ],
         "name": "Prey"
+      },
+      {
+        "items": [
+          {
+            "ID": 15284,
+            "icon": "8097756",
+            "itemId": "263874",
+            "name": "Emerald-Encrusted Amani Ritual Skull"
+          },
+          {
+            "ID": 25337,
+            "icon": "7940361",
+            "itemId": "278154",
+            "name": "Hooked Net Trap"
+          }
+        ],
+        "name": "Prey Drop"
       },
       {
         "items": [
@@ -2080,6 +2375,306 @@
             "icon": "7416567",
             "itemId": "253473",
             "name": "Unearthed Amani Sarcophagus Base",
+            "new": true
+          },
+          {
+            "ID": 16808,
+            "icon": "7531419",
+            "itemId": "265386",
+            "name": "Fortified Amani Awning",
+            "new": true
+          },
+          {
+            "ID": 16316,
+            "icon": "7524458",
+            "itemId": "265033",
+            "name": "Zul'Aman Brazier Post",
+            "new": true
+          },
+          {
+            "ID": 18798,
+            "icon": "8017260",
+            "itemId": "267207",
+            "name": "Amani Territorial Totem",
+            "new": true
+          },
+          {
+            "ID": 21951,
+            "icon": "7808366",
+            "itemId": "272360",
+            "name": "Ula'tek Ritual Stone",
+            "new": true
+          },
+          {
+            "ID": 17799,
+            "icon": "7553557",
+            "itemId": "266169",
+            "name": "Soulcoiler Canopy",
+            "new": true
+          },
+          {
+            "ID": 18901,
+            "icon": "7581345",
+            "itemId": "267378",
+            "name": "Venom Scholar's Focus",
+            "new": true
+          },
+          {
+            "ID": 21102,
+            "icon": "7710008",
+            "itemId": "269637",
+            "name": "Serpent-Caller Spike",
+            "new": true
+          },
+          {
+            "ID": 21653,
+            "icon": "7758414",
+            "itemId": "271358",
+            "name": "Clutch of Ula'tek",
+            "new": true
+          },
+          {
+            "ID": 21720,
+            "icon": "7759670",
+            "itemId": "271604",
+            "name": "Egg of Ula'tek",
+            "new": true
+          },
+          {
+            "ID": 21725,
+            "icon": null,
+            "itemId": "271609",
+            "name": "Destroyed Clutch of Ula'tek",
+            "new": true
+          },
+          {
+            "ID": 21832,
+            "icon": "7786074",
+            "itemId": "271850",
+            "name": "Venomous Tendril",
+            "new": true
+          },
+          {
+            "ID": 21833,
+            "icon": "7808368",
+            "itemId": "271851",
+            "name": "Oozing Vilescar Barricade",
+            "new": true
+          },
+          {
+            "ID": 21616,
+            "icon": null,
+            "itemId": "271176",
+            "name": "Feathered Ula'tek Talisman"
+          },
+          {
+            "ID": 21953,
+            "icon": "7808362",
+            "itemId": "272362",
+            "name": "Venombound Ropes",
+            "new": true
+          },
+          {
+            "ID": 23871,
+            "icon": "7879028",
+            "itemId": "275628",
+            "name": "Cauldron of Ula'tek",
+            "new": true
+          },
+          {
+            "ID": 23881,
+            "icon": "7894700",
+            "itemId": "275578",
+            "name": "Soulcoiler Sconce",
+            "new": true
+          },
+          {
+            "ID": 24512,
+            "icon": "7879035",
+            "itemId": "279917",
+            "name": "Soulcoiler Skull",
+            "new": true
+          },
+          {
+            "ID": 24519,
+            "icon": "7880722",
+            "itemId": "279919",
+            "name": "Soulcoiler Jaw",
+            "new": true
+          },
+          {
+            "ID": 24765,
+            "icon": "7900316",
+            "itemId": "275857",
+            "name": "Zul'Aman Creeping Pangoroot",
+            "new": true
+          },
+          {
+            "ID": 25137,
+            "icon": "8162862",
+            "itemId": "281573",
+            "name": "Venomous Thread",
+            "new": true
+          },
+          {
+            "ID": 25138,
+            "icon": "8147538",
+            "itemId": "281577",
+            "name": "Venomous Globule",
+            "new": true
+          },
+          {
+            "ID": 25139,
+            "icon": "7960211",
+            "itemId": "280764",
+            "name": "Venomous Defender's Barricade",
+            "new": true
+          },
+          {
+            "ID": 25274,
+            "icon": "7939352",
+            "itemId": "278130",
+            "name": "Gilded Silvermoon Compass",
+            "new": true
+          },
+          {
+            "ID": 25279,
+            "icon": "7939586",
+            "itemId": "278151",
+            "name": "Blood Knight's Decorative Shield",
+            "new": true
+          },
+          {
+            "ID": 25284,
+            "icon": "7940008",
+            "itemId": "278134",
+            "name": "Sturdy Silvermoon Crate",
+            "new": true
+          },
+          {
+            "ID": 25286,
+            "icon": "7940014",
+            "itemId": "278123",
+            "name": "Sturdy Silvermoon Crate Lid",
+            "new": true
+          },
+          {
+            "ID": 25287,
+            "icon": "7940002",
+            "itemId": "278148",
+            "name": "Adorned Sin'dorei Satchel",
+            "new": true
+          },
+          {
+            "ID": 25288,
+            "icon": "7940020",
+            "itemId": "278145",
+            "name": "Stonecarved Sin'dorei Jar",
+            "new": true
+          },
+          {
+            "ID": 25289,
+            "icon": "7939996",
+            "itemId": "278126",
+            "name": "Mysterious Sin'dorei Candlestick",
+            "new": true
+          },
+          {
+            "ID": 25292,
+            "icon": "7940032",
+            "itemId": "279922",
+            "name": "Altar of Corrosion",
+            "new": true
+          },
+          {
+            "ID": 25296,
+            "icon": "7940048",
+            "itemId": "275853",
+            "name": "Zul'Aman Burning Pinecone",
+            "new": true
+          },
+          {
+            "ID": 26201,
+            "icon": "8030627",
+            "itemId": "278044",
+            "name": "Kobold's Hanging Kandles",
+            "new": true
+          },
+          {
+            "ID": 26202,
+            "icon": "8030630",
+            "itemId": "278038",
+            "name": "Arathor Toy Sword",
+            "new": true
+          },
+          {
+            "ID": 26203,
+            "icon": "8030625",
+            "itemId": "278691",
+            "name": "Twilight Brazier",
+            "new": true
+          },
+          {
+            "ID": 26204,
+            "icon": "8030640",
+            "itemId": "281620",
+            "name": "Corrosive Cache",
+            "new": true
+          },
+          {
+            "ID": 26375,
+            "icon": "8033298",
+            "itemId": "281580",
+            "name": "Pungent Atal'Utek Shroom",
+            "new": true
+          },
+          {
+            "ID": 26376,
+            "icon": "8033306",
+            "itemId": "281582",
+            "name": "Atal'Utek Ivy",
+            "new": true
+          },
+          {
+            "ID": 26377,
+            "icon": "8033302",
+            "itemId": "279292",
+            "name": "Zul'Aman Pine Tree",
+            "new": true
+          },
+          {
+            "ID": 26481,
+            "icon": "8037600",
+            "itemId": "280218",
+            "name": "Tortollan Scholar Satchel",
+            "new": true
+          },
+          {
+            "ID": 26484,
+            "icon": "8037602",
+            "itemId": "279285",
+            "name": "Lost Tortollan Scroll",
+            "new": true
+          },
+          {
+            "ID": 26651,
+            "icon": "8086352",
+            "itemId": "278694",
+            "name": "Stormstout Hanging Lantern",
+            "new": true
+          },
+          {
+            "ID": 27041,
+            "icon": "8121193",
+            "itemId": "279452",
+            "name": "\"Summoning of Ula'tek\" Mural",
+            "new": true
+          },
+          {
+            "ID": 27042,
+            "icon": "8123905",
+            "itemId": "279508",
+            "name": "\"The Hunger Awakens\" Mural",
             "new": true
           }
         ],
@@ -3608,6 +4203,18 @@
             "icon": "7425759",
             "itemId": "255672",
             "name": "Gnomish Tesla Tower"
+          },
+          {
+            "ID": 26198,
+            "icon": "8030619",
+            "itemId": "278982",
+            "name": "Hatchery of Hissing Eggs"
+          },
+          {
+            "ID": 26208,
+            "icon": "8032206",
+            "itemId": "278245",
+            "name": "Royal Attendant's Coffin"
           }
         ],
         "name": "Dungeon Drop"
@@ -6319,6 +6926,24 @@
             "icon": "7504908",
             "itemId": "264006",
             "name": "Midnight Leatherworker's Shop Sign"
+          },
+          {
+            "ID": 17800,
+            "icon": null,
+            "itemId": "266170",
+            "name": "Flat Snakeskin Canopy"
+          },
+          {
+            "ID": 26363,
+            "icon": "8033258",
+            "itemId": "279348",
+            "name": "Mounted Moby"
+          },
+          {
+            "ID": 26378,
+            "icon": "8033204",
+            "itemId": "279346",
+            "name": "Stretched Snakeskin Rack"
           }
         ],
         "name": "Leatherworking"
@@ -6516,6 +7141,24 @@
             "icon": "7504902",
             "itemId": "264005",
             "name": "Midnight Jewelcrafter's Shop Sign"
+          },
+          {
+            "ID": 26488,
+            "icon": "8033260",
+            "itemId": "279356",
+            "name": "Opalescent Amani Peridot"
+          },
+          {
+            "ID": 26489,
+            "icon": "8033266",
+            "itemId": "279343",
+            "name": "Piercing Amani Lapis"
+          },
+          {
+            "ID": 26490,
+            "icon": "8033270",
+            "itemId": "280762",
+            "name": "Roaring Amani Garnet"
           }
         ],
         "name": "Jewelcrafting"
@@ -6713,6 +7356,18 @@
             "icon": "7504918",
             "itemId": "264174",
             "name": "Midnight Tailor's Shop Sign"
+          },
+          {
+            "ID": 26366,
+            "icon": "8033290",
+            "itemId": "279353",
+            "name": "Tortollan Slingsack"
+          },
+          {
+            "ID": 26495,
+            "icon": "8033200",
+            "itemId": "279350",
+            "name": "Twilight's Blade Bedroll"
           }
         ],
         "name": "Tailoring"
@@ -7162,6 +7817,18 @@
             "icon": "7504895",
             "itemId": "264004",
             "name": "Midnight Scribe's Shop Sign"
+          },
+          {
+            "ID": 26380,
+            "icon": "8033222",
+            "itemId": "280757",
+            "name": "Chiseled Amani Tablet"
+          },
+          {
+            "ID": 26384,
+            "icon": "8033214",
+            "itemId": "280752",
+            "name": "\"Cursed Gaze of Ula'tek\" Mural"
           }
         ],
         "name": "Inscription"
@@ -7353,6 +8020,24 @@
             "icon": "7504881",
             "itemId": "263998",
             "name": "Midnight Blacksmith's Shop Sign"
+          },
+          {
+            "ID": 15266,
+            "icon": "7521690",
+            "itemId": "263709",
+            "name": "Amani Forgemaster's Workbench"
+          },
+          {
+            "ID": 26381,
+            "icon": "8033224",
+            "itemId": "275305",
+            "name": "Amani Forgemaster's Decorative Spear"
+          },
+          {
+            "ID": 26382,
+            "icon": "8033228",
+            "itemId": "279329",
+            "name": "Amani Forgemaster's Rack"
           }
         ],
         "name": "Blacksmithing"
@@ -7550,6 +8235,24 @@
             "icon": "7504890",
             "itemId": "264001",
             "name": "Midnight Engineer's Shop Sign"
+          },
+          {
+            "ID": 26372,
+            "icon": "8033282",
+            "itemId": "279341",
+            "name": "Aetherlume Field Lamp"
+          },
+          {
+            "ID": 26383,
+            "icon": "8033236",
+            "itemId": "279337",
+            "name": "Coiled Amani Hookshot"
+          },
+          {
+            "ID": 26485,
+            "icon": "8033272",
+            "itemId": "279339",
+            "name": "Proudmoore Ship-in-a-Bottle"
           }
         ],
         "name": "Engineering"
@@ -7765,6 +8468,18 @@
             "icon": "7504878",
             "itemId": "264000",
             "name": "Midnight Enchanter's Shop Sign"
+          },
+          {
+            "ID": 26379,
+            "icon": "8033210",
+            "itemId": "279332",
+            "name": "Keen Hex Mask"
+          },
+          {
+            "ID": 26496,
+            "icon": "8033240",
+            "itemId": "279335",
+            "name": "Enchanted Voidwell Fish"
           }
         ],
         "name": "Enchanting"
@@ -7950,6 +8665,12 @@
             "icon": "7504875",
             "itemId": "263997",
             "name": "Midnight Alchemist's Shop Sign"
+          },
+          {
+            "ID": 26391,
+            "icon": "8033192",
+            "itemId": "279359",
+            "name": "Ersatz Venom Splatter"
           }
         ],
         "name": "Alchemy"
@@ -8088,6 +8809,46 @@
           }
         ],
         "name": "Remix: Legion"
+      },
+      {
+        "items": [
+          {
+            "ID": 25666,
+            "icon": "7961729",
+            "itemId": "280337",
+            "name": "Traditional Brewfest Banner",
+            "new": true
+          },
+          {
+            "ID": 25672,
+            "icon": "7965527",
+            "itemId": "280339",
+            "name": "Brewfest Fence",
+            "new": true
+          },
+          {
+            "ID": 25673,
+            "icon": "7965529",
+            "itemId": "280341",
+            "name": "Brewfest Fencepost",
+            "new": true
+          },
+          {
+            "ID": 25674,
+            "icon": "7965533",
+            "itemId": "280343",
+            "name": "Hanging Brewfest Wreath",
+            "new": true
+          },
+          {
+            "ID": 25675,
+            "icon": "7965523",
+            "itemId": "280335",
+            "name": "Brewfest Crate",
+            "new": true
+          }
+        ],
+        "name": "Brewfest"
       }
     ]
   },
@@ -10072,6 +10833,286 @@
             "itemId": "244344",
             "name": "Griftah's Mystical Polter-Urn",
             "new": true
+          },
+          {
+            "ID": 15285,
+            "icon": "7517853",
+            "itemId": "263875",
+            "name": "Griftah's Resizing Hex-Skull",
+            "new": true
+          },
+          {
+            "ID": 15290,
+            "icon": "7552576",
+            "itemId": "263880",
+            "name": "Cherished Pet's Rug",
+            "new": true
+          },
+          {
+            "ID": 23553,
+            "icon": "7845254",
+            "itemId": "280142",
+            "name": "Small Wooden Floor Tile",
+            "new": true
+          },
+          {
+            "ID": 23554,
+            "icon": "7845239",
+            "itemId": "280144",
+            "name": "Large Wooden Floor Tile",
+            "new": true
+          },
+          {
+            "ID": 23555,
+            "icon": "7845248",
+            "itemId": "280146",
+            "name": "Small Triangular Wooden Tile",
+            "new": true
+          },
+          {
+            "ID": 23556,
+            "icon": "7845233",
+            "itemId": "280148",
+            "name": "Large Triangular Wooden Tile",
+            "new": true
+          },
+          {
+            "ID": 23557,
+            "icon": "7845236",
+            "itemId": "280150",
+            "name": "Tall Round Wooden Column",
+            "new": true
+          },
+          {
+            "ID": 23558,
+            "icon": "7845250",
+            "itemId": "280152",
+            "name": "Short Round Wooden Column",
+            "new": true
+          },
+          {
+            "ID": 23559,
+            "icon": "7845243",
+            "itemId": "280154",
+            "name": "Short Square Wooden Column",
+            "new": true
+          },
+          {
+            "ID": 23560,
+            "icon": "7845245",
+            "itemId": "280156",
+            "name": "Tall Square Wooden Column",
+            "new": true
+          },
+          {
+            "ID": 23707,
+            "icon": "7852048",
+            "itemId": "280158",
+            "name": "Small Wooden Wall Tile",
+            "new": true
+          },
+          {
+            "ID": 23708,
+            "icon": "7852046",
+            "itemId": "280160",
+            "name": "Large Wooden Wall Tile",
+            "new": true
+          },
+          {
+            "ID": 23709,
+            "icon": "7852051",
+            "itemId": "280162",
+            "name": "Wide Wooden Staircase",
+            "new": true
+          },
+          {
+            "ID": 23710,
+            "icon": "7852043",
+            "itemId": "280164",
+            "name": "Spiral Wooden Stairs",
+            "new": true
+          },
+          {
+            "ID": 25101,
+            "icon": "7930683",
+            "itemId": "277142",
+            "name": "Westfall Pet Cage",
+            "new": true
+          },
+          {
+            "ID": 25102,
+            "icon": "7930689",
+            "itemId": "277144",
+            "name": "Crossroads Pet Cage",
+            "new": true
+          },
+          {
+            "ID": 25103,
+            "icon": "7930697",
+            "itemId": "277149",
+            "name": "Crude Pet Cage",
+            "new": true
+          },
+          {
+            "ID": 25105,
+            "icon": "7930679",
+            "itemId": "277138",
+            "name": "Silvermoon Dragonhawk Incubator",
+            "new": true
+          },
+          {
+            "ID": 25106,
+            "icon": "7930699",
+            "itemId": "277160",
+            "name": "Cozy Lightbloom Lilypad",
+            "new": true
+          },
+          {
+            "ID": 25121,
+            "icon": "7930675",
+            "itemId": "277121",
+            "name": "Cozy Bird Nest",
+            "new": true
+          },
+          {
+            "ID": 25122,
+            "icon": "7930703",
+            "itemId": "277163",
+            "name": "Loyal Companion's Plinth",
+            "new": true
+          },
+          {
+            "ID": 25128,
+            "icon": "7934964",
+            "itemId": "276312",
+            "name": "Griftah's Torch of Rotation",
+            "new": true
+          },
+          {
+            "ID": 25765,
+            "icon": "7967942",
+            "itemId": "280625",
+            "name": "Framed Moonbrook Quilt",
+            "new": true
+          },
+          {
+            "ID": 25895,
+            "icon": "7976266",
+            "itemId": "280627",
+            "name": "Jansen Farm Floral Basket",
+            "new": true
+          },
+          {
+            "ID": 25896,
+            "icon": "7976260",
+            "itemId": "280639",
+            "name": "Saldean Autumnal Woven Rug",
+            "new": true
+          },
+          {
+            "ID": 26477,
+            "icon": "8037614",
+            "itemId": "279458",
+            "name": "Draenei Rock Goblet",
+            "new": true
+          },
+          {
+            "ID": 26491,
+            "icon": "8037609",
+            "itemId": "279455",
+            "name": "K'areshi Tea Cup",
+            "new": true
+          },
+          {
+            "ID": 26703,
+            "icon": "8106842",
+            "itemId": "280629",
+            "name": "Sentinel Hill Rocking Chair",
+            "new": true
+          },
+          {
+            "ID": 26704,
+            "icon": "8106838",
+            "itemId": "280631",
+            "name": "Demont Orchard Juicer",
+            "new": true
+          },
+          {
+            "ID": 26705,
+            "icon": "8106832",
+            "itemId": "280642",
+            "name": "Furlbrow Farm Pumpkin Trio",
+            "new": true
+          },
+          {
+            "ID": 26706,
+            "icon": "8106957",
+            "itemId": "280644",
+            "name": "Molsen Farm Corn Row",
+            "new": true
+          },
+          {
+            "ID": 26707,
+            "icon": "8106835",
+            "itemId": "280646",
+            "name": "Old Moonbrook Creeping Ivy",
+            "new": true
+          },
+          {
+            "ID": 26708,
+            "icon": "8106959",
+            "itemId": "280650",
+            "name": "Westfall Farmer's Shed",
+            "new": true
+          },
+          {
+            "ID": 26875,
+            "icon": "8117514",
+            "itemId": "280633",
+            "name": "Westfall Harvest Lamp",
+            "new": true
+          },
+          {
+            "ID": 26876,
+            "icon": "8117506",
+            "itemId": "280652",
+            "name": "Sentinel Hill Picnic Table",
+            "new": true
+          },
+          {
+            "ID": 26877,
+            "icon": "8117516",
+            "itemId": "280654",
+            "name": "Old Moonbrook Daylight Window",
+            "new": true
+          },
+          {
+            "ID": 26935,
+            "icon": "8119357",
+            "itemId": "280884",
+            "name": "Seeker's First Draft",
+            "new": true
+          },
+          {
+            "ID": 26940,
+            "icon": "8119380",
+            "itemId": "280635",
+            "name": "Maxwell Stables Saddle",
+            "new": true
+          },
+          {
+            "ID": 27045,
+            "icon": "8123895",
+            "itemId": "280637",
+            "name": "Torquewrench Tractor",
+            "new": true
+          },
+          {
+            "ID": 27973,
+            "icon": "8117509",
+            "itemId": "282347",
+            "name": "Old Moonbrook Nighttime Window",
+            "new": true
           }
         ],
         "name": "Neighbourhood Vendor"
@@ -10577,6 +11618,524 @@
       {
         "items": [
           {
+            "ID": 22919,
+            "icon": "7834195",
+            "itemId": "274525",
+            "name": "Steamy Romance Tablet"
+          },
+          {
+            "ID": 22920,
+            "icon": "7834198",
+            "itemId": "274527",
+            "name": "Amani Building Peg"
+          },
+          {
+            "ID": 22921,
+            "icon": "7834200",
+            "itemId": "274529",
+            "name": "Forest Troll Fence"
+          },
+          {
+            "ID": 22922,
+            "icon": "7834204",
+            "itemId": "274531",
+            "name": "Forest Troll Fencepost"
+          },
+          {
+            "ID": 22917,
+            "icon": "7834216",
+            "itemId": "274521",
+            "name": "Amani Road Marker"
+          },
+          {
+            "ID": 22918,
+            "icon": "7834207",
+            "itemId": "274523",
+            "name": "Woven Forest Troll Rug"
+          },
+          {
+            "ID": 15157,
+            "icon": "8209001",
+            "itemId": "263317",
+            "name": "Amani Wicker Crate"
+          },
+          {
+            "ID": 15265,
+            "icon": "7521667",
+            "itemId": "263708",
+            "name": "Amani Anvil"
+          },
+          {
+            "ID": 22916,
+            "icon": "7834210",
+            "itemId": "274518",
+            "name": "Amani Decorative Plinth"
+          },
+          {
+            "ID": 10859,
+            "icon": "7425725",
+            "itemId": "255649",
+            "name": "Amani Water Well"
+          },
+          {
+            "ID": 22924,
+            "icon": "7834213",
+            "itemId": "274533",
+            "name": "Witch Doctor's Punch Bowl"
+          },
+          {
+            "ID": 22925,
+            "icon": "7834227",
+            "itemId": "274535",
+            "name": "Shrine of Nalorakk, Loa of War"
+          },
+          {
+            "ID": 22926,
+            "icon": "7834230",
+            "itemId": "274537",
+            "name": "Shrine of Jan'alai, Loa of Fire"
+          },
+          {
+            "ID": 22927,
+            "icon": "7834233",
+            "itemId": "274505",
+            "name": "Shrine of Akil'zon, Loa of Victory"
+          },
+          {
+            "ID": 23188,
+            "icon": "7836026",
+            "itemId": "274539",
+            "name": "Shrine of Halazzi, Loa of the Hunt"
+          }
+        ],
+        "name": "Amani Troll Endeavors"
+      },
+      {
+        "items": [
+          {
+            "ID": 23177,
+            "icon": "7836038",
+            "itemId": "276626",
+            "name": "Wide Maruukai Barricade"
+          },
+          {
+            "ID": 23180,
+            "icon": "7836043",
+            "itemId": "276656",
+            "name": "Maruukai Wooden Table"
+          },
+          {
+            "ID": 23182,
+            "icon": "7836053",
+            "itemId": "276663",
+            "name": "Bakar's Napping Rug"
+          },
+          {
+            "ID": 23178,
+            "icon": "7836061",
+            "itemId": "276669",
+            "name": "Maruukai Storage Basket"
+          },
+          {
+            "ID": 23176,
+            "icon": "7836034",
+            "itemId": "276650",
+            "name": "Maruukai Barricade"
+          },
+          {
+            "ID": 23181,
+            "icon": "7836046",
+            "itemId": "276658",
+            "name": "Maruukai Feast Table"
+          },
+          {
+            "ID": 23183,
+            "icon": "7836055",
+            "itemId": "276665",
+            "name": "Ornate Khanam's Rug"
+          },
+          {
+            "ID": 23186,
+            "icon": "7836040",
+            "itemId": "276652",
+            "name": "Tapered Maruukai Barricade"
+          },
+          {
+            "ID": 23184,
+            "icon": "7836058",
+            "itemId": "276667",
+            "name": "Large Ornate Khanam's Rug"
+          },
+          {
+            "ID": 23550,
+            "icon": "7845216",
+            "itemId": "276673",
+            "name": "Bakar's Snack"
+          },
+          {
+            "ID": 23551,
+            "icon": "7845221",
+            "itemId": "276675",
+            "name": "Bakar's Dinner"
+          },
+          {
+            "ID": 23179,
+            "icon": "7836064",
+            "itemId": "276671",
+            "name": "Open Maruukai Storage Basket"
+          },
+          {
+            "ID": 23548,
+            "icon": "7845224",
+            "itemId": "276654",
+            "name": "Bakar's Favorite Ball"
+          },
+          {
+            "ID": 23549,
+            "icon": "7845226",
+            "itemId": "276677",
+            "name": "Pet Food and Water Tray"
+          },
+          {
+            "ID": 23185,
+            "icon": "7836050",
+            "itemId": "276661",
+            "name": "Maruukai Chef's Stove"
+          }
+        ],
+        "name": "Ohn'ahran Centaur Endeavors"
+      },
+      {
+        "items": [
+          {
+            "ID": 26619,
+            "icon": "8067647",
+            "itemId": "280251",
+            "name": "Kobold Sit-Thing"
+          },
+          {
+            "ID": 26614,
+            "icon": "8063381",
+            "itemId": "280249",
+            "name": "Kobold Dig-Thing"
+          },
+          {
+            "ID": 26938,
+            "icon": "8119375",
+            "itemId": "280269",
+            "name": "Cozy Kobold Crate"
+          },
+          {
+            "ID": 26618,
+            "icon": "8067654",
+            "itemId": "280255",
+            "name": "Small Warrens Candle"
+          },
+          {
+            "ID": 26936,
+            "icon": "8119378",
+            "itemId": "280273",
+            "name": "Droopy Longwick Rope"
+          },
+          {
+            "ID": 26937,
+            "icon": "8119384",
+            "itemId": "280271",
+            "name": "Longwick Rope"
+          },
+          {
+            "ID": 26939,
+            "icon": "8119389",
+            "itemId": "280275",
+            "name": "Hanging Longwick Rope"
+          },
+          {
+            "ID": 26621,
+            "icon": "8068707",
+            "itemId": "280257",
+            "name": "Medium Warrens Candle"
+          },
+          {
+            "ID": 26787,
+            "icon": "8116406",
+            "itemId": "280263",
+            "name": "Candle Cage"
+          },
+          {
+            "ID": 26788,
+            "icon": "8116411",
+            "itemId": "280267",
+            "name": "Bold Kobold Kabin"
+          },
+          {
+            "ID": 26789,
+            "icon": "8116408",
+            "itemId": "280265",
+            "name": "Hot Kobold Treasure"
+          },
+          {
+            "ID": 26785,
+            "icon": "8116394",
+            "itemId": "280259",
+            "name": "Large Warrens Candle"
+          },
+          {
+            "ID": 26786,
+            "icon": "8116400",
+            "itemId": "280261",
+            "name": "Large Threedium Warrens Candle"
+          },
+          {
+            "ID": 26617,
+            "icon": "8067651",
+            "itemId": "280253",
+            "name": "Highlighting High Light"
+          },
+          {
+            "ID": 26613,
+            "icon": "8063360",
+            "itemId": "280246",
+            "name": "Warrens Candlecooker"
+          },
+          {
+            "ID": 27167,
+            "icon": "8131302",
+            "itemId": "280513",
+            "name": "Color-Curious Candle"
+          }
+        ],
+        "name": "Kobold Endeavors"
+      },
+      {
+        "items": [
+          {
+            "ID": 26364,
+            "icon": "8033326",
+            "itemId": "280244",
+            "name": "Tortollan Traveler's Tincture"
+          },
+          {
+            "ID": 26386,
+            "icon": "8033334",
+            "itemId": "280238",
+            "name": "Half-Shell Hot Pot"
+          },
+          {
+            "ID": 26367,
+            "icon": "8033183",
+            "itemId": "280873",
+            "name": "Protected Tortollan Scroll Case"
+          },
+          {
+            "ID": 26373,
+            "icon": "8033276",
+            "itemId": "280242",
+            "name": "Tortollan Traveler's Chest"
+          },
+          {
+            "ID": 26482,
+            "icon": "8037596",
+            "itemId": "280221",
+            "name": "Sealeather Sack"
+          },
+          {
+            "ID": 26370,
+            "icon": "8033286",
+            "itemId": "280230",
+            "name": "Empty Tortollan Display Rack"
+          },
+          {
+            "ID": 26564,
+            "icon": "8037589",
+            "itemId": "280225",
+            "name": "Mason's Tortollan Display Rack"
+          },
+          {
+            "ID": 26389,
+            "icon": "8033705",
+            "itemId": "280227",
+            "name": "Apothecary's Tortollan Display Rack"
+          },
+          {
+            "ID": 26483,
+            "icon": "8037593",
+            "itemId": "280223",
+            "name": "Collector's Tortollan Display Rack"
+          },
+          {
+            "ID": 26365,
+            "icon": "8033330",
+            "itemId": "280240",
+            "name": "Compact Cookfire"
+          },
+          {
+            "ID": 26387,
+            "icon": "8033693",
+            "itemId": "280232",
+            "name": "Sea Glass Lamp Post"
+          },
+          {
+            "ID": 26371,
+            "icon": "8033179",
+            "itemId": "280234",
+            "name": "Sea Glass Bauble"
+          },
+          {
+            "ID": 26478,
+            "icon": "8033695",
+            "itemId": "280236",
+            "name": "Ancient Memories of the Sea"
+          },
+          {
+            "ID": 26871,
+            "icon": "8117482",
+            "itemId": "280215",
+            "name": "Tortollan Tarp Tent"
+          },
+          {
+            "ID": 27044,
+            "icon": "8123885",
+            "itemId": "280846",
+            "name": "Beguiling Memories of the Sea"
+          }
+        ],
+        "name": "Tortollan Endeavors"
+      },
+      {
+        "items": [
+          {
+            "ID": 1430,
+            "icon": "7417217",
+            "itemId": "244347",
+            "name": "Purified Troll Urn"
+          },
+          {
+            "ID": 1907,
+            "icon": "7422219",
+            "itemId": "245991",
+            "name": "Purified Sin'dorei Candle"
+          },
+          {
+            "ID": 1909,
+            "icon": "7422227",
+            "itemId": "245993",
+            "name": "Purified Floating Lantern"
+          },
+          {
+            "ID": 8990,
+            "icon": "7424841",
+            "itemId": "252042",
+            "name": "Purified Troll Pitcher"
+          },
+          {
+            "ID": 9289,
+            "icon": "7425285",
+            "itemId": "253396",
+            "name": "Purified Crude Axe"
+          },
+          {
+            "ID": 9627,
+            "icon": "7425517",
+            "itemId": "253703",
+            "name": "Purified Crude Hammer"
+          },
+          {
+            "ID": 10862,
+            "icon": "7425737",
+            "itemId": "255652",
+            "name": "Purified Troll Loop"
+          },
+          {
+            "ID": 10896,
+            "icon": "7425789",
+            "itemId": "255712",
+            "name": "Purified Ancient Urn"
+          },
+          {
+            "ID": 11140,
+            "icon": "7425861",
+            "itemId": "256361",
+            "name": "Purified Troll Pendant"
+          },
+          {
+            "ID": 11285,
+            "icon": "7425935",
+            "itemId": "256684",
+            "name": "Purified Troll Amulet"
+          },
+          {
+            "ID": 12145,
+            "icon": "7439735",
+            "itemId": "258540",
+            "name": "Purified Troll Ring"
+          },
+          {
+            "ID": 15286,
+            "icon": "7553518",
+            "itemId": "263876",
+            "name": "Purified Folk Mirror"
+          },
+          {
+            "ID": 18796,
+            "icon": "7570038",
+            "itemId": "267205",
+            "name": "Purified Folk Candle"
+          },
+          {
+            "ID": 18880,
+            "icon": "7579455",
+            "itemId": "267355",
+            "name": "Purified Elven Mirror",
+            "new": true
+          },
+          {
+            "ID": 18960,
+            "icon": "7583104",
+            "itemId": "267435",
+            "name": "Purified Kaldorei Candle",
+            "new": true
+          },
+          {
+            "ID": 20332,
+            "icon": "7679717",
+            "itemId": "268943",
+            "name": "Purified Elven Glowlamp",
+            "new": true
+          },
+          {
+            "ID": 21873,
+            "icon": "7791467",
+            "itemId": "272129",
+            "name": "Purified Tauren Pot",
+            "new": true
+          },
+          {
+            "ID": 21886,
+            "icon": "7791449",
+            "itemId": "272142",
+            "name": "Purified Earthen Pot",
+            "new": true
+          },
+          {
+            "ID": 26492,
+            "icon": "8037606",
+            "itemId": "278696",
+            "name": "Purified Dracthyr Stein",
+            "new": true
+          },
+          {
+            "ID": 26494,
+            "icon": "8037612",
+            "itemId": "278701",
+            "name": "Purified Goblin Cup",
+            "new": true
+          }
+        ],
+        "name": "Cursed Keepsake"
+      },
+      {
+        "items": [
+          {
             "ID": 14583,
             "icon": "7487068",
             "itemId": "262453",
@@ -11044,6 +12603,39 @@
           }
         ],
         "name": "Blizzcon"
+      },
+      {
+        "items": [
+          {
+            "ID": 15550,
+            "icon": "7507797",
+            "itemId": "264278",
+            "name": "Sturdy Portable Ice Chest",
+            "notObtainable": true
+          },
+          {
+            "ID": 15551,
+            "icon": "7507793",
+            "itemId": "264279",
+            "name": "Tall Corked Bottle of Liquid Mystery",
+            "notObtainable": true
+          },
+          {
+            "ID": 15229,
+            "icon": "7498736",
+            "itemId": "263383",
+            "name": "Corked Bottle of Liquid Mystery",
+            "notObtainable": true
+          },
+          {
+            "ID": 15552,
+            "icon": "7507800",
+            "itemId": "264280",
+            "name": "Short Corked Bottle of Liquid Mystery",
+            "notObtainable": true
+          }
+        ],
+        "name": "Fanta"
       },
       {
         "items": [
@@ -13171,14 +14763,6 @@
             "notReleased": true
           },
           {
-            "ID": 25307,
-            "icon": "7940509",
-            "itemId": "276083",
-            "name": "Sunstrider Omnium Simulacrum",
-            "notObtainable": true,
-            "notReleased": true
-          },
-          {
             "ID": 21947,
             "icon": "7845058",
             "itemId": "272355",
@@ -13221,6 +14805,174 @@
             "icon": "7423072",
             "itemId": "246958",
             "name": "Mastercrafted Fungal Row Planter",
+            "new": true
+          },
+          {
+            "ID": 4426,
+            "icon": "7423685",
+            "itemId": "248404",
+            "name": "Stack of Kafa Mugs",
+            "new": true
+          },
+          {
+            "ID": 5796,
+            "icon": "7424169",
+            "itemId": "249923",
+            "name": "Sin'dorei Golden Welcome",
+            "new": true
+          },
+          {
+            "ID": 9290,
+            "icon": "7425289",
+            "itemId": "253397",
+            "name": "Revered Deepstone Table",
+            "new": true
+          },
+          {
+            "ID": 10368,
+            "icon": "7425645",
+            "itemId": "254561",
+            "name": "Ogre Champion's Prized Skull",
+            "new": true
+          },
+          {
+            "ID": 21949,
+            "icon": "7808343",
+            "itemId": "272358",
+            "name": "Seaside Firefly Jar",
+            "new": true
+          },
+          {
+            "ID": 22144,
+            "icon": "7814993",
+            "itemId": "274784",
+            "name": "Seaside Tiki Frondtree",
+            "new": true
+          },
+          {
+            "ID": 22397,
+            "icon": "7819559",
+            "itemId": "274899",
+            "name": "Seaside Tiki Market Stand",
+            "new": true
+          },
+          {
+            "ID": 22398,
+            "icon": "7819566",
+            "itemId": "274897",
+            "name": "Seaside Charcoal Grill",
+            "new": true
+          },
+          {
+            "ID": 22895,
+            "icon": "7833788",
+            "itemId": "274901",
+            "name": "Seaside Cushioned Chair",
+            "new": true
+          },
+          {
+            "ID": 23175,
+            "icon": "7835998",
+            "itemId": "274767",
+            "name": "Seaside Lounge Chair",
+            "new": true
+          },
+          {
+            "ID": 23868,
+            "icon": "7869047",
+            "itemId": "274903",
+            "name": "Seaside Hanging Lantern",
+            "new": true
+          },
+          {
+            "ID": 23869,
+            "icon": "7869040",
+            "itemId": "274905",
+            "name": "Seaside Straw Umbrella",
+            "new": true
+          },
+          {
+            "ID": 23870,
+            "icon": "7869045",
+            "itemId": "274907",
+            "name": "Seaside Painted Surfboard",
+            "new": true
+          },
+          {
+            "ID": 23883,
+            "icon": "7889307",
+            "itemId": "274786",
+            "name": "Seaside Waterfall Basin",
+            "new": true
+          },
+          {
+            "ID": 24196,
+            "icon": "7875095",
+            "itemId": "274788",
+            "name": "Seaside Depths Porthole",
+            "new": true
+          },
+          {
+            "ID": 24630,
+            "icon": "7889304",
+            "itemId": "274909",
+            "name": "Seaside Murloc Tiki Totem",
+            "new": true
+          },
+          {
+            "ID": 24753,
+            "icon": "7819563",
+            "itemId": "274988",
+            "name": "Seaside Tiki Gazebo",
+            "new": true
+          },
+          {
+            "ID": 24755,
+            "icon": "7851307",
+            "itemId": "274991",
+            "name": "Seaside Fire Pit",
+            "new": true
+          },
+          {
+            "ID": 24888,
+            "icon": "7928396",
+            "itemId": "275343",
+            "name": "Tune-O-Tron 6000",
+            "new": true
+          },
+          {
+            "ID": 25104,
+            "icon": "7930691",
+            "itemId": "277155",
+            "name": "Breanni's Menagerie Aquarium",
+            "new": true
+          },
+          {
+            "ID": 25546,
+            "icon": "7960207",
+            "itemId": "276230",
+            "name": "Pepe",
+            "new": true
+          },
+          {
+            "ID": 26878,
+            "icon": null,
+            "itemId": "280523",
+            "name": "Tuskarr Fire Pit",
+            "new": true
+          },
+          {
+            "ID": 26879,
+            "icon": null,
+            "itemId": "280525",
+            "name": "Tuskarr Hanging Grill",
+            "new": true
+          },
+          {
+            "ID": 27046,
+            "icon": null,
+            "itemId": "280527",
+            "name": "Tuskarr Fishing Gear Rack",
             "new": true
           }
         ],
