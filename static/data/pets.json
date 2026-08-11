@@ -258,7 +258,7 @@
           {
             "ID": 5064,
             "creatureId": 264863,
-            "icon": "7845057",
+            "icon": "inv_babymurlocxalatath",
             "itemId": 274150,
             "name": "Murk'atath",
             "spellid": 1293301
@@ -295,7 +295,6 @@
             "icon": "8125119",
             "itemId": 279387,
             "name": "Ula'took",
-            "new": true,
             "spellid": 1306694
           },
           {
@@ -304,7 +303,6 @@
             "icon": "8032875",
             "itemId": 279921,
             "name": "Ki'clak",
-            "new": true,
             "spellid": 1307328
           },
           {
@@ -321,7 +319,6 @@
             "icon": "8125120",
             "itemId": 280138,
             "name": "Zesty",
-            "new": true,
             "spellid": 1307843
           }
         ],
@@ -415,7 +412,6 @@
             "icon": "8032874",
             "itemId": 268644,
             "name": "Zan",
-            "new": true,
             "spellid": 1283105
           }
         ],
@@ -493,7 +489,6 @@
             "icon": "inv_frog2_green",
             "itemId": 280178,
             "name": "Poison Dart Frog",
-            "new": true,
             "spellid": 1307875
           },
           {
@@ -502,7 +497,6 @@
             "icon": "8032873",
             "itemId": 279197,
             "name": "Slitherfang",
-            "new": true,
             "spellid": 1306197
           }
         ],
@@ -524,7 +518,6 @@
             "icon": "inv_ferret_light",
             "itemId": 280540,
             "name": "Lil' Mon",
-            "new": true,
             "spellid": 1309175
           }
         ],
@@ -538,7 +531,6 @@
             "icon": "inv_snake_white",
             "itemId": 278572,
             "name": "Pale Hexscale",
-            "new": true,
             "spellid": 1305199
           }
         ],
@@ -577,6 +569,14 @@
             "itemId": 270331,
             "name": "Void-Infused Mindbreaker Fry",
             "spellid": 1287856
+          },
+          {
+            "ID": 5093,
+            "creatureId": 267805,
+            "icon": "8125118",
+            "itemId": 276248,
+            "name": "Snek'zali",
+            "spellid": 1299255
           }
         ],
         "name": "Renown"
@@ -598,6 +598,14 @@
             "itemId": 265035,
             "name": "Medusa",
             "spellid": 1272858
+          },
+          {
+            "ID": 5070,
+            "creatureId": 265786,
+            "icon": "inv_sulfurelemental_slime",
+            "itemId": 275020,
+            "name": "Venom Elemental",
+            "spellid": 1295938
           }
         ],
         "name": "Reputation"
@@ -759,21 +767,11 @@
             "spellid": 1267050
           },
           {
-            "ID": 5070,
-            "creatureId": 265786,
-            "icon": "inv_sulfurelemental_slime",
-            "itemId": 275020,
-            "name": "Venom Elemental",
-            "new": true,
-            "spellid": 1295938
-          },
-          {
             "ID": 5071,
             "creatureId": 266464,
             "icon": "8032870",
             "itemId": 275631,
             "name": "Corrosive Writhling",
-            "new": true,
             "spellid": 1297094
           },
           {
@@ -782,7 +780,6 @@
             "icon": "8125100",
             "itemId": 275632,
             "name": "Volatile Venomfang",
-            "new": true,
             "spellid": 1297098
           },
           {
@@ -791,7 +788,6 @@
             "icon": "inv_arcanegolempet_green",
             "itemId": 275702,
             "name": "Preyhunter's Prismguard",
-            "new": true,
             "spellid": 1297702
           },
           {
@@ -800,17 +796,7 @@
             "icon": "inv_arcanegolempet_white",
             "itemId": 275704,
             "name": "Preyhunter's Riftbreaker",
-            "new": true,
             "spellid": 1297704
-          },
-          {
-            "ID": 5093,
-            "creatureId": 267805,
-            "icon": "8125118",
-            "itemId": 276248,
-            "name": "Snek'zali",
-            "new": true,
-            "spellid": 1299255
           }
         ],
         "name": "Vendor"
@@ -921,7 +907,6 @@
             "icon": "8125117",
             "itemId": 276234,
             "name": "Vibrant Venomfang",
-            "new": true,
             "spellid": 1299089
           }
         ],
@@ -985,7 +970,6 @@
             "icon": "inv_hextrollpet_blue",
             "itemId": 280305,
             "name": "Soulcoil Remnant",
-            "new": true,
             "spellid": 1304581
           },
           {
@@ -994,7 +978,6 @@
             "icon": "inv_hextrollpet_blue",
             "itemId": 280189,
             "name": "Cauldron Concoction",
-            "new": true,
             "spellid": 1307902
           }
         ],
@@ -2724,14 +2707,6 @@
             "spellid": 408027
           },
           {
-            "ID": 3533,
-            "creatureId": 204303,
-            "icon": "misc_drogbartotem02",
-            "itemId": 205114,
-            "name": "Brul",
-            "spellid": 408110
-          },
-          {
             "ID": 3545,
             "creatureId": 204343,
             "icon": "inv_viperrock_blue",
@@ -3070,6 +3045,14 @@
       },
       {
         "items": [
+          {
+            "ID": 3533,
+            "creatureId": 204303,
+            "icon": "misc_drogbartotem02",
+            "itemId": 205114,
+            "name": "Brul",
+            "spellid": 408110
+          },
           {
             "ID": 3541,
             "creatureId": 204339,
@@ -8428,7 +8411,6 @@
             "icon": "inv_apocalypticwhelp_red",
             "itemId": 270211,
             "name": "Furiostraza",
-            "new": true,
             "spellid": 1287534
           }
         ],
@@ -8878,7 +8860,6 @@
             "icon": "inv_doomguardpet_green",
             "itemId": 270191,
             "name": "Lil'Kruul",
-            "new": true,
             "spellid": 1287493
           }
         ],
@@ -10189,11 +10170,11 @@
           },
           {
             "ID": 1666,
-            "creatureId": 269295,
-            "icon": "inv_nzothfish",
+            "creatureId": 93814,
+            "icon": "inv_misc_fish_57",
             "itemId": 126925,
-            "name": "Three-Eyed Fish",
-            "spellid": 1303722
+            "name": "Blorp",
+            "spellid": 185601
           },
           {
             "ID": 1665,
@@ -11094,13 +11075,13 @@
           },
           {
             "ID": 3526,
-            "creatureId": 204275,
+            "creatureId": 269295,
             "icon": "inv_nzothfish",
             "itemId": 205035,
-            "name": "Snapjaw Lurker",
+            "name": "Three-Eyed Fish",
             "notObtainable": true,
             "notReleased": true,
-            "spellid": 408062
+            "spellid": 1303722
           },
           {
             "ID": 3527,
@@ -13048,7 +13029,7 @@
           {
             "ID": 5052,
             "creatureId": 263995,
-            "icon": "7570980",
+            "icon": "inv_mothpet2_yellow",
             "itemId": 272956,
             "name": "Sunflicker Driftmoth",
             "spellid": 1291367
@@ -13282,7 +13263,7 @@
             "ID": 5064,
             "creatureId": 264863,
             "highlighted": true,
-            "icon": "7845057",
+            "icon": "inv_babymurlocxalatath",
             "itemId": 274150,
             "name": "Murk'atath",
             "spellid": 1293301
@@ -14105,7 +14086,7 @@
           {
             "ID": 5042,
             "creatureId": 263232,
-            "icon": "7657804",
+            "icon": "inv_batpetrevendreth2",
             "itemId": 271652,
             "name": "The Sire's Ghastly Screecher",
             "notObtainable": true,
@@ -14115,7 +14096,7 @@
           {
             "ID": 5060,
             "creatureId": 264163,
-            "icon": "7657991",
+            "icon": "inv_shabeakypet",
             "itemId": 273021,
             "name": "Sha-Warped Hippogryph Hatchling",
             "notObtainable": true,
