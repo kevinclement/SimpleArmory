@@ -490,17 +490,22 @@
             "itemId": 280178,
             "name": "Poison Dart Frog",
             "spellid": 1307875
-          },
-          {
-            "ID": 5129,
-            "creatureId": 270147,
-            "icon": "8032873",
-            "itemId": 279197,
-            "name": "Slitherfang",
-            "spellid": 1306197
           }
         ],
         "name": "Treasure"
+      },
+      {
+        "items": [
+          {
+            "ID": 5125,
+            "creatureId": 269501,
+            "icon": "inv_hextrollpet_blue",
+            "itemId": 280305,
+            "name": "Soulcoil Remnant",
+            "spellid": 1304581
+          }
+        ],
+        "name": "Raid Drop"
       },
       {
         "items": [
@@ -818,6 +823,14 @@
             "itemId": 246723,
             "name": "Unfazed Diver",
             "spellid": 1243343
+          },
+          {
+            "ID": 5129,
+            "creatureId": 270147,
+            "icon": "8032873",
+            "itemId": 279197,
+            "name": "Slitherfang",
+            "spellid": 1306197
           }
         ],
         "name": "Riddle"
@@ -834,6 +847,19 @@
           }
         ],
         "name": "Zone Feature"
+      },
+      {
+        "items": [
+          {
+            "ID": 5134,
+            "creatureId": 271163,
+            "icon": "inv_hextrollpet_blue",
+            "itemId": 280189,
+            "name": "Cauldron Concoction",
+            "spellid": 1307902
+          }
+        ],
+        "name": "Daily Activities"
       },
       {
         "items": [
@@ -963,22 +989,6 @@
             "name": "Chillcrawler",
             "notObtainable": true,
             "spellid": 1263916
-          },
-          {
-            "ID": 5125,
-            "creatureId": 269501,
-            "icon": "inv_hextrollpet_blue",
-            "itemId": 280305,
-            "name": "Soulcoil Remnant",
-            "spellid": 1304581
-          },
-          {
-            "ID": 5134,
-            "creatureId": 271163,
-            "icon": "inv_hextrollpet_blue",
-            "itemId": 280189,
-            "name": "Cauldron Concoction",
-            "spellid": 1307902
           }
         ],
         "name": "Unknown"

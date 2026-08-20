@@ -329,6 +329,12 @@
             "icon": "inv_misc_lightcrystals",
             "itemId": 276371,
             "name": "Lightveil Recall Beacon"
+          },
+          {
+            "ID": 1756,
+            "icon": "inv_misc_book_03",
+            "itemId": 280201,
+            "name": "Book of Storytime"
           }
         ],
         "name": "Quest"
@@ -406,6 +412,12 @@
             "icon": "inv_121_professions_fishing_starfish_purple",
             "itemId": 278557,
             "name": "Otoola's Recognition"
+          },
+          {
+            "ID": 1724,
+            "icon": "inv_121_professions_fishing_starfish_purple",
+            "itemId": 274817,
+            "name": "Gold Starfish"
           }
         ],
         "name": "Vendor"
@@ -553,20 +565,6 @@
             "name": "Lightgraft",
             "notObtainable": true,
             "notReleased": true
-          },
-          {
-            "ID": 1724,
-            "icon": "inv_121_professions_fishing_starfish_purple",
-            "itemId": 274817,
-            "name": "Gold Starfish",
-            "new": true
-          },
-          {
-            "ID": 1756,
-            "icon": "inv_misc_book_03",
-            "itemId": 280201,
-            "name": "Book of Storytime",
-            "new": true
           }
         ],
         "name": "Unknown"
@@ -956,7 +954,7 @@
             "name": "Cartel Transmorpher"
           }
         ],
-        "name": "Secret"
+        "name": "Riddle"
       },
       {
         "items": [
@@ -1896,7 +1894,7 @@
             "name": "Idol of Ohn'ahra"
           }
         ],
-        "name": "Secret"
+        "name": "Riddle"
       }
     ]
   },
@@ -2405,7 +2403,7 @@
             "name": "Enlightened Hearthstone"
           }
         ],
-        "name": "Secret"
+        "name": "Riddle"
       },
       {
         "id": "02e2422a",
@@ -2799,7 +2797,7 @@
             "name": "Gem of Acquiescence"
           }
         ],
-        "name": "Secret"
+        "name": "Riddle"
       },
       {
         "id": "7a17211a",
