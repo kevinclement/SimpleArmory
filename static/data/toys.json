@@ -479,12 +479,6 @@
             "name": "Idol of Blue Water and Blue Sky"
           },
           {
-            "ID": 1730,
-            "icon": "inv_ability_poison_buff",
-            "itemId": 275825,
-            "name": "Ula'tek's Sssacrificial Rain"
-          },
-          {
             "ID": 1748,
             "icon": "inv_banner_01",
             "itemId": 279052,
@@ -6381,6 +6375,17 @@
       {
         "items": [
           {
+            "ID": 1730,
+            "icon": "inv_ability_poison_buff",
+            "itemId": 275825,
+            "name": "Ula'tek's Sssacrificial Rain"
+          }
+        ],
+        "name": "Achievement"
+      },
+      {
+        "items": [
+          {
             "ID": 946,
             "icon": "inv_misc_flute_01",
             "itemId": 116396,
@@ -6739,8 +6744,7 @@
             "ID": 1681,
             "icon": "inv_10_inscription_illusoryspellscrolls_color4",
             "itemId": 267323,
-            "name": "Troll Scroll of Rainbow Roll",
-            "notObtainable": true
+            "name": "Troll Scroll of Rainbow Roll"
           }
         ],
         "name": "Darkspear Dash"
