@@ -10307,7 +10307,30 @@
                   "title": "A Few Coupons More"
                 }
               ],
-              "name": "Endeavours"
+              "name": "Coupons"
+            },
+            {
+              "items": [
+                {
+                  "icon": "inv_babytortollan",
+                  "id": 63606,
+                  "points": 10,
+                  "title": "Superlative Souvenir Seeker"
+                },
+                {
+                  "icon": "8033179",
+                  "id": 63441,
+                  "points": 10,
+                  "title": "Souvenir Seeker, Razorwind Shores"
+                },
+                {
+                  "icon": "8033179",
+                  "id": 63605,
+                  "points": 10,
+                  "title": "Souvenir Seeker, Founder's Point"
+                }
+              ],
+              "name": "Endeavors"
             },
             {
               "id": "e79a3443",
@@ -29489,6 +29512,12 @@
                   "id": 62265,
                   "points": 10,
                   "title": "The Singularity Champion"
+                },
+                {
+                  "icon": "ui_majorfaction_renown_zuljarrasforces",
+                  "id": 63838,
+                  "points": 10,
+                  "title": "Zul'jarra's Forces Champion"
                 }
               ],
               "name": "Renown"
@@ -37201,6 +37230,12 @@
                   "id": 62874,
                   "points": 15,
                   "title": "A Trip Through the Stars"
+                },
+                {
+                  "icon": "achievement_dungeon_heroic_gloryoftheraider",
+                  "id": 63264,
+                  "points": 15,
+                  "title": "Heroic Showdowns"
                 }
               ],
               "name": "Meta"
@@ -37336,16 +37371,16 @@
             {
               "items": [
                 {
-                  "icon": "inv_12_profession_mining_miningspecializations_overloded",
-                  "id": 63325,
-                  "points": 10,
-                  "title": "Omnium Folio Studies"
-                },
-                {
                   "icon": "ability_priest_halo_shadow",
                   "id": 62606,
                   "points": 10,
                   "title": "The Sunstrider Omnium"
+                },
+                {
+                  "icon": "inv_12_profession_mining_miningspecializations_overloded",
+                  "id": 63325,
+                  "points": 10,
+                  "title": "Omnium Folio Studies"
                 },
                 {
                   "icon": "inv_netherportal",
@@ -37400,6 +37435,12 @@
             {
               "items": [
                 {
+                  "icon": "inv_10_elementalspiritfoozles_decay",
+                  "id": 63348,
+                  "points": 5,
+                  "title": "Heroic Slugger"
+                },
+                {
                   "icon": "inv_10_elementalspiritfoozles_frost",
                   "id": 62881,
                   "points": 5,
@@ -37410,24 +37451,12 @@
                   "id": 62883,
                   "points": 5,
                   "title": "Showdown Slugger: Naigtal"
-                },
-                {
-                  "icon": "inv_10_elementalspiritfoozles_decay",
-                  "id": 63348,
-                  "points": 5,
-                  "title": "Heroic Slugger"
                 }
               ],
               "name": "Rare Spawns"
             },
             {
               "items": [
-                {
-                  "icon": "achievement_dungeon_heroic_gloryoftheraider",
-                  "id": 63264,
-                  "points": 15,
-                  "title": "Heroic Showdowns"
-                },
                 {
                   "icon": "inv_offhand_1h_artifactskulloferedar_d_05",
                   "id": 62905,
