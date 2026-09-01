@@ -156,8 +156,69 @@
     "name": "Limited Time",
     "subcats": [
       {
-        "items": [],
-        "name": "Trading Post: "
+        "items": [
+          {
+            "ID": 1345,
+            "icon": "ability_racial_etherealconnection",
+            "itemId": 206268,
+            "name": "Ethereal Transmogrifier"
+          },
+          {
+            "ID": 1334,
+            "icon": "tradingpostcurrency",
+            "itemId": 206347,
+            "name": "Mannequin Charm"
+          },
+          {
+            "ID": 1453,
+            "icon": "inv_misc_1h_umbrella_b_01",
+            "itemId": 212523,
+            "name": "Delicate Jade Parasol"
+          },
+          {
+            "ID": 1452,
+            "icon": "inv_misc_1h_umbrella_b_01",
+            "itemId": 212500,
+            "name": "Delicate Silk Parasol"
+          },
+          {
+            "ID": 1454,
+            "icon": "inv_misc_1h_umbrella_b_01",
+            "itemId": 212524,
+            "name": "Delicate Crimson Parasol"
+          },
+          {
+            "ID": 1471,
+            "icon": "inv_fishingchair",
+            "itemId": 218112,
+            "name": "Colorful Beach Chair"
+          },
+          {
+            "ID": 1475,
+            "icon": "inv_firearm_2h_waterblaster_c_01",
+            "itemId": 220692,
+            "name": "X-treme Water Blaster Display"
+          },
+          {
+            "ID": 1455,
+            "icon": "inv_misc_1h_umbrella_b_01",
+            "itemId": 212525,
+            "name": "Delicate Ebony Parasol"
+          },
+          {
+            "ID": 214,
+            "icon": "inv_potion_27",
+            "itemId": 32542,
+            "name": "Imp in a Ball"
+          },
+          {
+            "ID": 202,
+            "icon": "ability_warrior_challange",
+            "itemId": 45063,
+            "name": "Foam Sword Rack"
+          }
+        ],
+        "name": "Trading Post Celebration"
       },
       {
         "items": [
@@ -7570,48 +7631,56 @@
         "items": [
           {
             "ID": 1345,
+            "highlighted": true,
             "icon": "ability_racial_etherealconnection",
             "itemId": 206268,
             "name": "Ethereal Transmogrifier"
           },
           {
             "ID": 1334,
+            "highlighted": true,
             "icon": "tradingpostcurrency",
             "itemId": 206347,
             "name": "Mannequin Charm"
           },
           {
             "ID": 1453,
+            "highlighted": true,
             "icon": "inv_misc_1h_umbrella_b_01",
             "itemId": 212523,
             "name": "Delicate Jade Parasol"
           },
           {
             "ID": 1452,
+            "highlighted": true,
             "icon": "inv_misc_1h_umbrella_b_01",
             "itemId": 212500,
             "name": "Delicate Silk Parasol"
           },
           {
             "ID": 1454,
+            "highlighted": true,
             "icon": "inv_misc_1h_umbrella_b_01",
             "itemId": 212524,
             "name": "Delicate Crimson Parasol"
           },
           {
             "ID": 1471,
+            "highlighted": true,
             "icon": "inv_fishingchair",
             "itemId": 218112,
             "name": "Colorful Beach Chair"
           },
           {
             "ID": 1475,
+            "highlighted": true,
             "icon": "inv_firearm_2h_waterblaster_c_01",
             "itemId": 220692,
             "name": "X-treme Water Blaster Display"
           },
           {
             "ID": 1455,
+            "highlighted": true,
             "icon": "inv_misc_1h_umbrella_b_01",
             "itemId": 212525,
             "name": "Delicate Ebony Parasol"
@@ -7623,12 +7692,14 @@
         "items": [
           {
             "ID": 214,
+            "highlighted": true,
             "icon": "inv_potion_27",
             "itemId": 32542,
             "name": "Imp in a Ball"
           },
           {
             "ID": 202,
+            "highlighted": true,
             "icon": "ability_warrior_challange",
             "itemId": 45063,
             "name": "Foam Sword Rack"

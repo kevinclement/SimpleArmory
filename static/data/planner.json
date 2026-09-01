@@ -1627,6 +1627,66 @@
                 }
               ],
               "title": "Flightpath to Eversong Woods"
+            },
+            {
+              "capital":true,
+              "steps": [
+                {
+                  "bosses": [
+                    {
+                      "ID": "2950",
+                      "epic": true,
+                      "icon": "inv_sporebat3mount_purple",
+                      "itemId": 269240,
+                      "mount": "Luminous Sporeglider",
+                      "name": "Rotmire",
+                      "note": "Kill 4 separate weeks on any difficulty",
+                      "spellId": 1284973
+                    }
+                  ],
+                  "title": "Run Sporefall (Raid)",
+                  "type": "Raid"
+                }
+              ],
+              "title": "and Portal to Silvermoon and then take the teleporter to Harandar"
+            },
+            {
+              "capital":true,
+              "steps": [
+                {
+                  "bosses": [
+                    {
+                      "ID": "3058",
+                      "epic": true,
+                      "icon": "inv_writhesmount_white",
+                      "itemId": 276804,
+                      "mount": "The Writhing Brood",
+                      "name": "Zul'jan",
+                      "note": "Mythic only",
+                      "spellId": 1300776
+                    }
+                  ],
+                  "title": "Run Altar of Fangs (Dungeon)",
+                  "type": "Dungeon"
+                },
+                {
+                  "bosses": [
+                    {
+                      "ID": "3030",
+                      "epic": true,
+                      "icon": "inv_flyingserpentmount",
+                      "itemId": 275658,
+                      "mount": "Primeval Skyfriend",
+                      "name": "Ula'tek",
+                      "note": "Mythic only",
+                      "spellId": 1297405
+                    }
+                  ],
+                  "title": "Run The Venomous Abyss (Raid)",
+                  "type": "Raid"
+                }
+              ],
+              "title": "and Portal to Silvermoon and then take the Portal to The Coiled Isle"
             }
           ],
           "title": "and Portal to Silvermoon"
