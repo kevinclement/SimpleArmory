@@ -451,6 +451,19 @@
           }
         ],
         "name": "Blizzard Store"
+      },
+      {
+        "items": [
+          {
+            "ID": 4893,
+            "creatureId": 250776,
+            "icon": "7264939",
+            "itemId": 251038,
+            "name": "Emerrrgl",
+            "spellid": 1251934
+          }
+        ],
+        "name": "Blizzard Gear Store"
       }
     ]
   },
@@ -14101,6 +14114,15 @@
             "name": "Lil' Staropod",
             "resale": true,
             "spellid": 1269535
+          },
+          {
+            "ID": 4893,
+            "highlighted": true,
+            "creatureId": 250776,
+            "icon": "7264939",
+            "itemId": 251038,
+            "name": "Emerrrgl",
+            "spellid": 1251934
           }
         ],
         "name": "Blizzard Gear Store"
@@ -14381,16 +14403,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1295658
-          },
-          {
-            "ID": 4893,
-            "creatureId": 250776,
-            "icon": "7264939",
-            "itemId": 251038,
-            "name": "Emerrrgl",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1251934
           }
         ],
         "name": "Promotion"
