@@ -66,7 +66,7 @@ function parseTitlesObject(db, profile, earned) {
         obj.categories.push(cat);
 
         category.subcats.forEach((subCategory) => {
-            var subCat = { 'name': subCategory.name, 'items':[] };
+            var subCat = { 'name': subCategory.name, 'items':[], 'info': subCategory.info };
 
             //Determine if each title has been collected and if it should be shown
             subCategory.items.forEach((item) => {

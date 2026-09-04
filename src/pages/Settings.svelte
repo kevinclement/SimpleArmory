@@ -3,6 +3,7 @@
   import { preferences } from "$stores/preferences";
   import { getWowheadUrl } from "$util/utils";
   import Category from "$components/Category/Category.svelte";
+  import Tooltip from "$components/Tooltip.svelte";
 
   let locales = [
     { txt: "EN", link: "wowhead.com" },
@@ -116,6 +117,16 @@
 		localStorage.setItem('hideDupes', $preferences.hideDupes);
   }
 
+  let hideTooltips = $preferences.hideTooltips == "false" ? false : true;
+
+  const toggleHideTooltips = (e) => {
+    e.preventDefault();
+		$preferences.hideTooltips = hideTooltips == true ? "true" : "false";
+
+    localStorage.setItem('showHiddenUpdated',Date.now());
+		localStorage.setItem('hideTooltips', $preferences.hideTooltips);
+  }
+
   function setLocale(e, wowhead_url) {
     e.preventDefault();
 
@@ -166,15 +177,31 @@
     </div>
 
     <div>
-      <input type="checkbox" id="showUpcoming" bind:checked={showUpcoming} on:change={toggleShowUpcoming}><label for="showUpcoming">&nbsp Show Upcoming Content</label>
+      <input type="checkbox" id="showUpcoming" bind:checked={showUpcoming} on:change={toggleShowUpcoming}>
+      <Tooltip text="This setting enabled the showing of any future content that is datamined from the official PTR.">
+        <label for="showUpcoming">&nbsp<span class="info-underline">Show Upcoming Content</span></label>
+      </Tooltip>
     </div>
 
     <div>
-      <input type="checkbox" id="hideResale" bind:checked={hideResale} on:change={toggleHideResale}><label for="hideResale">&nbsp Hide Resale Exclusive Content: TCG / Collector's Edition / Blizzcon / Promotion</label>
+      <input type="checkbox" id="hideResale" bind:checked={hideResale} on:change={toggleHideResale}>
+      <Tooltip text="This settings hides any collectible that can only be obtained through third party reselling and is no longer available through official means.">
+        <label for="hideResale">&nbsp<span class="info-underline">Hide Resale Exclusive Content: TCG / Collector's Edition / Blizzcon / Promotion</span></label>
+      </Tooltip>
     </div>
 
     <div>
-      <input type="checkbox" id="hideDupes" bind:checked={hideDupes} on:change={toggleHideDuplicates}><label for="hideDupes">&nbsp Hide Duplicate Displays</label>
+      <input type="checkbox" id="hideDupes" bind:checked={hideDupes} on:change={toggleHideDuplicates}>
+      <Tooltip text="This setting hides any collectibles that are listed more than once for any reason, such as having multiple sources."> 
+        <label for="hideDupes">&nbsp<span class="info-underline">Hide Duplicate Displays</span></label>
+      </Tooltip>
+    </div>
+
+    <div>
+      <input type="checkbox" id="hideTooltips" bind:checked={hideTooltips} on:change={toggleHideTooltips}>
+      <Tooltip text="This setting hides all information tooltips on the site."> 
+        <label for="hideTooltips">&nbsp<span class="info-underline">Hide Tooltips</span></label>
+      </Tooltip>
     </div>
 
     <div>

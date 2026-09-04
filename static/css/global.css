@@ -850,4 +850,43 @@ body.dark .cal td {
   color: #fff;
 }
 
+/* Tooltips */
+
+.tooltip-trigger {
+  display: inline-block;
+  text-decoration: underline dotted;
+  cursor: pointer;
+}
+
+.info-tooltip {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  background-color: #1e293b;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  max-width: 280px;
+  white-space: pre-line;
+  text-align: left;
+  z-index: 9999;
+  pointer-events: none;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.2);
+}
+
+.info-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #1e293b transparent transparent transparent;
+}
+
+.info-underline {
+  text-decoration: underline dotted;
+}
+
 /* ########################################################## */

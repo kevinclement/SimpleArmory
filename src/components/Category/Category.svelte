@@ -1,5 +1,7 @@
 <script>
   import Item from "./Item.svelte";
+  import Tooltip from "../Tooltip.svelte";
+  import { getHideTooltipSetting } from '$util/utils'
 
   export let category;
   export let getItemPath = undefined;
@@ -9,6 +11,8 @@
 
   let totalItems = 0;
   let totalItemsCompleted = 0;
+
+  let tooltipsHidden = getHideTooltipSetting();
 
   $: {
     totalItems = 0;
@@ -41,7 +45,11 @@
 
 {#each category[subCategoriesKey] as subCategory}
   <div class="sect">
+  {#if subCategory.info && tooltipsHidden != "true"}
+    <div class="subCatHeader"><Tooltip text={subCategory.info}><span class="info-underline">{subCategory.name}</span></Tooltip></div>
+  {:else}
     <div class="subCatHeader">{subCategory.name}</div>
+  {/if}
     {#each subCategory[itemsKey] as item}
       {#if $$slots.item}
         <slot name="item" {item} />
