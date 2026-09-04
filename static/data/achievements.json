@@ -457,6 +457,12 @@
                   "id": 4958,
                   "points": 10,
                   "title": "The First Rule of Ring of Blood is You Don't Talk About Ring of Blood"
+                },
+                {
+                  "icon": "inv_misc_head_murloc_01",
+                  "id": 61910,
+                  "points": 5,
+                  "title": "Mrglgrgl of Grglmrgl"
                 }
               ],
               "name": "Themes"
@@ -661,16 +667,17 @@
                   "title": "The Crimson Rogue"
                 },
                 {
-                  "icon": "inv_misc_head_murloc_01",
-                  "id": 61910,
-                  "points": 5,
-                  "title": "Mrglgrgl of Grglmrgl"
-                },
-                {
                   "icon": "ability_demonhunter_eyebeam",
                   "id": 61916,
                   "points": 10,
                   "title": "Rage of the Ren'dorei"
+                },
+                {
+                  "icon": "spell_holy_testoffaith",
+                  "id": 63519,
+                  "new": true,
+                  "points": 10,
+                  "title": "The Promise of Tomorrow"
                 }
               ],
               "name": "Campaign"
@@ -10573,6 +10580,82 @@
                 }
               ],
               "name": "Bonus Objectives"
+            },
+            {
+              "id": "e5407d3d",
+              "items": [
+                {
+                  "icon": "inv_cape_special_treasure_c_01",
+                  "id": 63717,
+                  "new": true,
+                  "points": 10,
+                  "title": "Kindo'jan's Labyrinth Discoveries"
+                },
+                {
+                  "icon": "inv_misc_key_07",
+                  "id": 63718,
+                  "new": true,
+                  "points": 5,
+                  "title": "Lock and Key"
+                },
+                {
+                  "icon": "inv_misc_key_07",
+                  "id": 63719,
+                  "new": true,
+                  "points": 5,
+                  "title": "Lock and Key Master"
+                },
+                {
+                  "icon": "inv_waepon_bow_zulgrub_d_02",
+                  "id": 63720,
+                  "new": true,
+                  "points": 5,
+                  "title": "Happy Hexmask Collector"
+                },
+                {
+                  "icon": "inv_cape_armor_troll_d_01",
+                  "id": 63721,
+                  "new": true,
+                  "points": 5,
+                  "title": "The Labyrinth of Kindo'jan"
+                },
+                {
+                  "icon": "ability_racial_dungeondelver",
+                  "id": 63722,
+                  "new": true,
+                  "points": 10,
+                  "title": "Who's Labyrinth?"
+                },
+                {
+                  "icon": "inv_misc_map09",
+                  "id": 63723,
+                  "new": true,
+                  "points": 10,
+                  "title": "My Labyrinth"
+                },
+                {
+                  "icon": "ui_delves",
+                  "id": 63724,
+                  "new": true,
+                  "points": 5,
+                  "title": "Knock Knock"
+                },
+                {
+                  "icon": "inv_10xp_generic_toy_treasurebowltoy01",
+                  "id": 63727,
+                  "new": true,
+                  "points": 5,
+                  "title": "Treasures Upon Treasures"
+                },
+                {
+                  "icon": "inv_10xp_generic_toy_treasurebowltoy01",
+                  "id": 63728,
+                  "new": true,
+                  "points": 10,
+                  "title": "A Few More Can't Hurt"
+                }
+              ],
+              "name": "Labyrinth"
             }
           ]
         },
@@ -15632,7 +15715,7 @@
                   "icon": "inv_helm_cloth_outdooramaniloa_c_01",
                   "id": 63670,
                   "points": 10,
-                  "title": "Comforting Da Spirits"
+                  "title": "Comforting De Spirits"
                 },
                 {
                   "icon": "inv_pet_toad_blue",
@@ -15732,6 +15815,33 @@
                 }
               ],
               "name": "The Venomous Abyss"
+            },
+            {
+              "id": "40a2971c",
+              "items": [
+                {
+                  "icon": "8214194",
+                  "id": 63692,
+                  "new": true,
+                  "points": 10,
+                  "title": "Kith'ix"
+                },
+                {
+                  "icon": "8214194",
+                  "id": 63693,
+                  "new": true,
+                  "points": 10,
+                  "title": "Heroic: Kith'ix"
+                },
+                {
+                  "icon": "8214194",
+                  "id": 63694,
+                  "new": true,
+                  "points": 10,
+                  "title": "Mythic: Kith'ix"
+                }
+              ],
+              "name": "The Unbinding of Kith'ix"
             },
             {
               "id": "a77ac9ed",
@@ -32027,6 +32137,13 @@
                   "new": true,
                   "points": 10,
                   "title": "Tricks and Treats of Midnight"
+                },
+                {
+                  "icon": "achievement_halloween_candy_01",
+                  "id": 62500,
+                  "new": true,
+                  "points": 10,
+                  "title": "Sweet Tooth"
                 }
               ],
               "name": "Tricks and Treats"
@@ -32131,6 +32248,13 @@
                   "id": 18962,
                   "points": 10,
                   "title": "A Cleansing Fire"
+                },
+                {
+                  "icon": "achievement_halloween_ghost_01",
+                  "id": 62501,
+                  "new": true,
+                  "points": 10,
+                  "title": "I Ain't Afraid of no Ghost"
                 }
               ],
               "name": "Other"
@@ -32381,6 +32505,13 @@
                   "id": 20511,
                   "points": 10,
                   "title": "Gotta Punt em' All"
+                },
+                {
+                  "icon": "inv_ammo_snowball",
+                  "id": 62502,
+                  "new": true,
+                  "points": 10,
+                  "title": "Master of Merry Mayhem"
                 }
               ],
               "name": ""
@@ -45620,6 +45751,13 @@
                   "id": 61706,
                   "points": 0,
                   "title": "Herald of the Goddess"
+                },
+                {
+                  "icon": "8262534",
+                  "id": 63830,
+                  "new": true,
+                  "points": 0,
+                  "title": "Fungal Not Frugal"
                 }
               ],
               "name": ""
@@ -46199,6 +46337,27 @@
                   "id": 63333,
                   "points": 0,
                   "title": "Let Me Solo Him: Azta'rec"
+                },
+                 {
+                  "icon": "achievement_dungeon_theotherside_muehzala",
+                  "id": 63716,
+                  "new": true,
+                  "points": 0,
+                  "title": "The First Hash'ey"
+                },
+                {
+                  "icon": "8269989",
+                  "id": 63715,
+                  "new": true,
+                  "points": 0,
+                  "title": "Let Me Solo Him: Kindo'Jan"
+                },
+                {
+                  "icon": "8393517",
+                  "id": 64118,
+                  "new": true,
+                  "points": 0,
+                  "title": "The Labyrinth of Kindo'jan: One-Champion Army"
                 }
               ],
               "name": "Midnight Seasonal"
@@ -46522,6 +46681,13 @@
                   "notObtainable": true,
                   "points": 0,
                   "title": "Fabled Let Me Solo Him: Azta'rec"
+                },
+                {
+                  "icon": "ability_rogue_controlisking",
+                  "id": 64039,
+                  "new": true,
+                  "points": 0,
+                  "title": "Fabled Let Me Solo Him: Kindo'jan"
                 }
               ],
               "name": "Hall of Fame"
@@ -47885,6 +48051,13 @@
                   "id": 62449,
                   "points": 0,
                   "title": "Midnight Keystone Legend: Season 2"
+                },
+                {
+                  "icon": "achievement_challengemode_scarletmonastery_gold",
+                  "id": 63690,
+                  "new": true,
+                  "points": 0,
+                  "title": "Midnight Keystone Myth: Season 2"
                 },
                 {
                   "icon": "achievement_challengemode_platinum",
@@ -52666,6 +52839,13 @@
                   "notObtainable": true,
                   "points": 0,
                   "title": "WoW's 21st Anniversary"
+                },
+                {
+                  "icon": "inv_misc_celebrationcake_01",
+                  "id": 63714,
+                  "new": true,
+                  "points": 0,
+                  "title": "WoW's 22nd Anniversary"
                 }
               ],
               "name": "Anniversary"
@@ -53261,6 +53441,40 @@
                 }
               ],
               "name": "Legion: Remix"
+            },
+            {
+              "id": "0722ac15",
+              "items": [
+                {
+                  "icon": "trade_archaeology_blacktrilobite",
+                  "id": 63657,
+                  "new": true,
+                  "points": 0,
+                  "title": "Aqir Research Associate"
+                },
+                {
+                  "icon": "inv_misc_ahnqirajtrinket_06",
+                  "id": 63658,
+                  "new": true,
+                  "points": 0,
+                  "title": "No Hives Left Standing"
+                },
+                {
+                  "icon": "trade_archaeology_aqir_artifactfragment",
+                  "id": 63659,
+                  "new": true,
+                  "points": 0,
+                  "title": "Bane of the Swarm"
+                },
+                {
+                  "icon": "trade_archaeology_sceptor-of-azaqir",
+                  "id": 63680,
+                  "new": true,
+                  "points": 0,
+                  "title": "Driving Back the Swarm"
+                }
+              ],
+              "name": "Aqir Invasions"
             }
           ]
         },
