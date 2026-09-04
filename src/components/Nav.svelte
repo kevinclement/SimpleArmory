@@ -160,6 +160,17 @@
 		localStorage.setItem("savedCharacters", JSON.stringify([...favoriteCharacters]))
 	}
 
+	const removeFavoriteCharacterDirect = (e,character) => {
+		e.preventDefault();
+
+		if(favoriteCharacters.includes(character)) {
+			favoriteCharacters = favoriteCharacters.filter(c => c !== character);
+		}
+
+		localStorage.setItem("savedCharacters", JSON.stringify([...favoriteCharacters]))
+	}
+
+
 	function formatCharacter(character) {
 		let [name,realm,region] = character.split("~");
 		name = name.replace(/\b[a-z]/g, (match) => match.toUpperCase());
@@ -267,7 +278,7 @@
 								<li>
 									<a href="{getCharacterURL(character)}" class="dropdown-item">
 										{#if character}
-											{formatCharacter(character)}
+											{formatCharacter(character)} <a href="#/" on:click={e => removeFavoriteCharacterDirect(e, character)}>✕</a>
 										{/if}
 									</a>
 								</li>
