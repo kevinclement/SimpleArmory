@@ -50,7 +50,7 @@ export async function parseCollectablesObject(categories, profile, collected_dat
         obj.categories.push(cat);
 
         category.subcats.forEach((subCategory) => {
-            var subCat = { 'name': subCategory.name, 'items':[] };
+            var subCat = { 'name': subCategory.name, 'items':[], 'info': subCategory.info };
 
             subCategory.items.forEach((item) => {
                 var itm = item;

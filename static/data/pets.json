@@ -136,6 +136,24 @@
       {
         "items": [
           {
+            "ID": 1979,
+            "creatureId": 115919,
+            "icon": "inv_boastfulgruntling_hd",
+            "itemId": 142380,
+            "name": "Dutiful Gruntling",
+            "side": "H",
+            "spellid": 230444
+          },
+          {
+            "ID": 1978,
+            "creatureId": 115918,
+            "icon": "inv_boastfulsquire_hd",
+            "itemId": 142379,
+            "name": "Dutiful Squire",
+            "side": "A",
+            "spellid": 230443
+          },
+          {
             "ID": 1918,
             "creatureId": 111202,
             "icon": "inv_pet_wyrmtongue",
@@ -152,22 +170,6 @@
             "name": "Horde Fanatic",
             "side": "H",
             "spellid": 221683
-          },
-          {
-            "ID": 1979,
-            "creatureId": 115919,
-            "icon": "inv_boastfulgruntling_hd",
-            "itemId": 142380,
-            "name": "Dutiful Gruntling",
-            "spellid": 230444
-          },
-          {
-            "ID": 1978,
-            "creatureId": 115918,
-            "icon": "inv_boastfulsquire_hd",
-            "itemId": 142379,
-            "name": "Dutiful Squire",
-            "spellid": 230443
           },
           {
             "ID": 2478,
@@ -251,7 +253,8 @@
             "spellid": 463148
           }
         ],
-        "name": "Trading Post: September"
+        "name": "Trading Post: September",
+        "info": "These pets are currently available on the Trading Post and will return in future rotations. \n\n Ending: September 30th"
       },
       {
         "items": [
@@ -424,7 +427,8 @@
             "spellid": 466179
           }
         ],
-        "name": "Trading Post Celebration"
+        "name": "Trading Post Celebration",
+        "info": "These pets are currently available on the Trading Post Celebration Vendors and may return in future rotations. \n\n Ending: September 30th"
       },
       {
         "items": [
@@ -437,7 +441,8 @@
             "spellid": 1266148
           }
         ],
-        "name": "Promotions"
+        "name": "Promotions",
+        "info": "These pets are available through limited time promotions, they may return in the Trading Post in the future. \n\n End dates: \n Gummi: September 30th 2026"
       },
       {
         "items": [
@@ -450,7 +455,8 @@
             "spellid": 1293301
           }
         ],
-        "name": "Blizzard Store"
+        "name": "Blizzard Store",
+        "info": "These pets are only available on the store for a limited time and will possibly not return again. \n\n End dates: \n Murk'atath: September 28th 2026"
       },
       {
         "items": [
@@ -463,7 +469,8 @@
             "spellid": 1251934
           }
         ],
-        "name": "Blizzard Gear Store"
+        "name": "Blizzard Gear Store",
+        "info": "These pets are only available through purchasing physical merch on the Blizzard Gear Store for a limited time and will possibly not return again. \n\n End dates: \n Emerrrgl: Limited Supply"
       }
     ]
   },

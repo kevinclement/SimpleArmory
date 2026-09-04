@@ -107,6 +107,10 @@ export function getHideDupesSetting() {
     return(localStorage.getItem("hideDupes"));
 }
 
+export function getHideTooltipSetting() {
+    return(localStorage.getItem("hideTooltips"));
+}
+
 export function getShowHiddenUpdated() {
     return(localStorage.getItem("showHiddenUpdated"));
 }
