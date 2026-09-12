@@ -160,6 +160,19 @@
       {
         "items": [
           {
+            "ID": 2850,
+            "icon": "inv_flyingcarpetmount4",
+            "itemId": 263449,
+            "name": "Fluffy Comfy Flying Quilt",
+            "spellid": 1270520
+          }
+        ],
+        "name": "Twitch Drops",
+        "info": "This mount is available as a Twitch Drop for a limited time and will likely not return again. \n Ending: September 27th" 
+      },
+      {
+        "items": [
+          {
             "ID": 2628,
             "icon": "inv_dwarfgryphonmount_orange",
             "itemId": 247793,
@@ -174,13 +187,6 @@
             "spellid": 1245370
           },
           {
-            "ID": 3102,
-            "icon": "8028501",
-            "itemId": 278573,
-            "name": "Crested Ember Leafmimic",
-            "spellid": 1305204
-          },
-          {
             "ID": 3104,
             "icon": "8028503",
             "itemId": 278575,
@@ -193,10 +199,17 @@
             "itemId": 278574,
             "name": "Crested Aqua Leafmimic",
             "spellid": 1305206
+          },
+          {
+            "ID": 3102,
+            "icon": "8028501",
+            "itemId": 278573,
+            "name": "Crested Ember Leafmimic",
+            "spellid": 1305204
           }
         ],
         "name": "Trading Post: September",
-        "info": "These mounts are currently available on the Trading Post and will return in future rotations. \n\n Ending: September 30th"
+        "info": "These mounts are currently available on the Trading Post and may return in future rotations. \n\n Ending: September 30th"
       },
       {
         "items": [
@@ -521,7 +534,7 @@
           }
         ],
         "name": "Blizzard Store",
-        "info": "These mounts are only available on the store for a limited time and will possibly not return again. \n\n End dates: \n Rabbit'ath: September 28th 2026"
+        "info": "This mount is only available on the store for a limited time and will likely not return again. \n\n Ending: \n Rabbit'ath: September 28th 2026"
       }
     ]
   },
@@ -11488,15 +11501,6 @@
             "spellid": 1269280
           },
           {
-            "ID": 2850,
-            "icon": "inv_flyingcarpetmount4",
-            "itemId": 263449,
-            "name": "Fluffy Comfy Flying Quilt",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1270520
-          },
-          {
             "ID": 2851,
             "icon": "inv_flyingcarpetmount4",
             "itemId": 263450,
@@ -13389,6 +13393,14 @@
             "name": "Kaldorei War Wolf",
             "notObtainable": true,
             "spellid": 449142
+          },
+          {
+            "ID": 2850,
+            "highlighted": true,
+            "icon": "inv_flyingcarpetmount4",
+            "itemId": 263449,
+            "name": "Fluffy Comfy Flying Quilt",
+            "spellid": 1270520
           }
         ],
         "name": "Twitch Drops"
