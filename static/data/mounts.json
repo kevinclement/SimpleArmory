@@ -168,7 +168,7 @@
           }
         ],
         "name": "Twitch Drops",
-        "info": "This mount is available as a Twitch Drop for a limited time and will likely not return again. \n Ending: September 27th" 
+        "info": "This mount is available as a Twitch Drop for a limited time and will likely not return again. \n\n Ending: September 27th" 
       },
       {
         "items": [
@@ -680,7 +680,8 @@
             "spellid": 1300776
           }
         ],
-        "name": "Dungeon Drop"
+        "name": "Dungeon Drop",
+        "info": "Some of these mounts are not currently obtainable due to the seasonal dungeon rotation. \n\n Obtainable again:\n Spectral Hawkstrider: Midnight Season 3 \n Lucent Hawkstrider: The Last Titan"
       },
       {
         "items": [
@@ -12754,6 +12755,20 @@
             "itemId": 274164,
             "name": "Hearthkeeper's Wandering Caravan",
             "spellid": 142515
+          },
+          {
+            "ID": 2937,
+            "icon": "7673157",
+            "itemId": 268833,
+            "name": "Zothwing Darkseeker",
+            "spellid": 1283837
+          },
+          {
+            "ID": 2938,
+            "icon": "7673158",
+            "itemId": 268834,
+            "name": "Zothwing Deepseeker",
+            "spellid": 1283838
           }
         ],
         "name": "Blizzard Store"
@@ -12927,6 +12942,25 @@
           }
         ],
         "name": "WoW Classic"
+      },
+      {
+        "items": [
+          {
+            "ID": 3107,
+            "icon": "7754350",
+            "itemId": 280519,
+            "name": "Cerulean Prideclaw",
+            "spellid": 1309109
+          },
+          {
+            "ID": 3125,
+            "icon": "7931171",
+            "itemId": 280599,
+            "name": "Veteran Adventurer's Loyal Companion",
+            "spellid": 1309376
+          }
+        ],
+        "name": "WoW Forever"
       },
       {
         "id": "435bf98f",
@@ -14031,24 +14065,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1263369
-          },
-          {
-            "ID": 2937,
-            "icon": "7673157",
-            "itemId": 268833,
-            "name": "Zothwing Darkseeker",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1283837
-          },
-          {
-            "ID": 2938,
-            "icon": "7673158",
-            "itemId": 268834,
-            "name": "Zothwing Deepseeker",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1283838
           },
           {
             "ID": 2832,
