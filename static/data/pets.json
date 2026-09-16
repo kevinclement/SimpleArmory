@@ -243,6 +243,7 @@
     "name": "Limited Time",
     "subcats": [
       {
+        "info": "These pets are currently available on the Trading Post and will return in future rotations. \n\n Ending: September 30th",
         "items": [
           {
             "ID": 4616,
@@ -253,10 +254,10 @@
             "spellid": 463148
           }
         ],
-        "name": "Trading Post: September",
-        "info": "These pets are currently available on the Trading Post and will return in future rotations. \n\n Ending: September 30th"
+        "name": "Trading Post: September"
       },
       {
+        "info": "These pets are currently available on the Trading Post Celebration Vendors and may return in future rotations. \n\n Ending: September 30th",
         "items": [
           {
             "ID": 179,
@@ -459,10 +460,10 @@
             "spellid": 466179
           }
         ],
-        "name": "Trading Post Celebration",
-        "info": "These pets are currently available on the Trading Post Celebration Vendors and may return in future rotations. \n\n Ending: September 30th"
+        "name": "Trading Post Celebration"
       },
       {
+        "info": "These pets are available through limited time promotions, they may return in the Trading Post in the future. \n\n End dates: \n Gummi: September 30th 2026",
         "items": [
           {
             "ID": 4944,
@@ -473,10 +474,10 @@
             "spellid": 1266148
           }
         ],
-        "name": "Promotions",
-        "info": "These pets are available through limited time promotions, they may return in the Trading Post in the future. \n\n End dates: \n Gummi: September 30th 2026"
+        "name": "Promotions"
       },
       {
+        "info": "These pets are only available on the store for a limited time and will possibly not return again. \n\n End dates: \n Murk'atath: September 28th 2026",
         "items": [
           {
             "ID": 5064,
@@ -487,10 +488,10 @@
             "spellid": 1293301
           }
         ],
-        "name": "Blizzard Store",
-        "info": "These pets are only available on the store for a limited time and will possibly not return again. \n\n End dates: \n Murk'atath: September 28th 2026"
+        "name": "Blizzard Store"
       },
       {
+        "info": "These pets are only available through purchasing physical merch on the Blizzard Gear Store for a limited time and will possibly not return again. \n\n End dates: \n Emerrrgl: Limited Supply",
         "items": [
           {
             "ID": 4893,
@@ -501,8 +502,7 @@
             "spellid": 1251934
           }
         ],
-        "name": "Blizzard Gear Store",
-        "info": "These pets are only available through purchasing physical merch on the Blizzard Gear Store for a limited time and will possibly not return again. \n\n End dates: \n Emerrrgl: Limited Supply"
+        "name": "Blizzard Gear Store"
       }
     ]
   },
@@ -13557,6 +13557,33 @@
             "itemId": 274150,
             "name": "Murk'atath",
             "spellid": 1293301
+          },
+          {
+            "ID": 5123,
+            "creatureId": 269373,
+            "icon": "8029660",
+            "itemId": 278230,
+            "name": "Classic Clockwork Quacker",
+            "resale": true,
+            "spellid": 1304105
+          },
+          {
+            "ID": 5124,
+            "creatureId": 269374,
+            "icon": "8029660",
+            "itemId": 10398,
+            "name": "Aquatic Clockwork Quacker",
+            "resale": true,
+            "spellid": 12243
+          },
+          {
+            "ID": 5127,
+            "creatureId": 269780,
+            "icon": "8030676",
+            "itemId": 278688,
+            "name": "Skipper",
+            "resale": true,
+            "spellid": 1305392
           }
         ],
         "name": "Blizzcon"
@@ -14402,36 +14429,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1297823
-          },
-          {
-            "ID": 5123,
-            "creatureId": 269373,
-            "icon": "8029660",
-            "itemId": 278230,
-            "name": "Classic Clockwork Quacker",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1304105
-          },
-          {
-            "ID": 5124,
-            "creatureId": 269374,
-            "icon": "8029660",
-            "itemId": 10398,
-            "name": "Aquatic Clockwork Quacker",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 12243
-          },
-          {
-            "ID": 5127,
-            "creatureId": 269780,
-            "icon": "8030676",
-            "itemId": 278688,
-            "name": "Skipper",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1305392
           },
           {
             "ID": 5067,

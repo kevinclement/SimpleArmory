@@ -420,13 +420,6 @@
             "type": "achievement"
           },
           {
-            "icon": "inv_cape_special_treasure_c_01",
-            "id": 61901,
-            "name": "Treasure Seeker",
-            "titleId": 691,
-            "type": "achievement"
-          },
-          {
             "icon": "inv_enchanting_wod_dust3",
             "id": 61052,
             "name": "Dustlord",
@@ -453,12 +446,35 @@
             "name": "The Snake",
             "titleId": 794,
             "type": "achievement"
+          },
+          {
+            "icon": "spell_holy_testoffaith",
+            "id": 63519,
+            "name": "Light's Faithful",
+            "new": true,
+            "titleId": 780,
+            "type": "achievement"
+          },
+          {
+            "icon": "trade_archaeology_aqir_artifactfragment",
+            "id": 63659,
+            "name": "Bane of the Swarm",
+            "new": true,
+            "titleId": 793,
+            "type": "achievement"
           }
         ],
         "name": "Achievement"
       },
       {
         "items": [
+          {
+            "icon": "inv_cape_special_treasure_c_01",
+            "id": 61901,
+            "name": "Treasure Seeker",
+            "titleId": 691,
+            "type": "achievement"
+          },
           {
             "icon": "inv_sulfurelemental_void",
             "id": 61798,
@@ -490,6 +506,55 @@
             "name": "Snake Eater",
             "titleId": 774,
             "type": "achievement"
+          },
+          {
+            "icon": "achievement_dungeon_theotherside_muehzala",
+            "id": 63716,
+            "name": "Loa-Blessed",
+            "new": true,
+            "titleId": 796,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_cape_special_treasure_c_01",
+            "id": 63717,
+            "name": "Treasure Hound",
+            "new": true,
+            "titleId": 797,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_misc_key_07",
+            "id": 63719,
+            "name": "Lockpickin'",
+            "new": true,
+            "titleId": 798,
+            "type": "achievement"
+          },
+          {
+            "icon": "ability_racial_dungeondelver",
+            "id": 63722,
+            "name": "Maze Runner",
+            "new": true,
+            "titleId": 799,
+            "type": "achievement"
+          },
+          
+          {
+            "icon": "8393517",
+            "id": 64118,
+            "name": "Lone Raider",
+            "new": true,
+            "titleId": 802,
+            "type": "achievement"
+          },
+          {
+            "icon": "inv_misc_questionmark",
+            "id": 1353,
+            "name": "Of the Labyrinth",
+            "new": true,
+            "titleId": 803,
+            "type": "title"
           }
         ],
         "name": "Delves"
@@ -657,14 +722,6 @@
             "name": "The Reel Deal",
             "titleId": 618,
             "type": "achievement"
-          },
-          {
-            "icon": "ui_delves",
-            "id": 42801,
-            "name": "The Delver Within",
-            "notObtainable": true,
-            "titleId": 638,
-            "type": "achievement"
           }
         ],
         "name": "Achievement"
@@ -728,6 +785,14 @@
             "name": "Contract Killer",
             "notObtainable": true,
             "titleId": 639,
+            "type": "achievement"
+          },
+          {
+            "icon": "ui_delves",
+            "id": 42801,
+            "name": "The Delver Within",
+            "notObtainable": true,
+            "titleId": 638,
             "type": "achievement"
           }
         ],
@@ -4373,6 +4438,14 @@
             "name": "The Venomous",
             "titleId": 663,
             "type": "title"
+          },
+          {
+            "icon": "achievement_challengemode_scarletmonastery_gold",
+            "id": 63690,
+            "name": "The Venomous Contender",
+            "new": true,
+            "titleId": 795,
+            "type": "achievement"
           }
         ],
         "name": "Mythic Plus"
@@ -4706,6 +4779,15 @@
             "name": "Fabled Vanquisher of Azta'rec",
             "notObtainable": true,
             "titleId": 776,
+            "type": "achievement"
+          },
+          {
+            "icon": "ability_rogue_controlisking",
+            "id": 64039,
+            "name": "Fabled Vanquisher of The First Hash'ey",
+            "notObtainable": true,
+            "new": true,
+            "titleId": 801,
             "type": "achievement"
           }
         ],
@@ -5593,90 +5675,6 @@
           }
         ],
         "name": "Unknown"
-      }
-    ]
-  },
-  {
-    "id": "d0041d91",
-    "name": "TODO",
-    "subcats": [
-      {
-        "id": "b57b50d3",
-        "items": [
-          {
-            "icon": "spell_holy_testoffaith",
-            "id": 63519,
-            "name": "Light's Faithful",
-            "new": true,
-            "titleId": 780,
-            "type": "achievement"
-          },
-          {
-            "icon": "trade_archaeology_aqir_artifactfragment",
-            "id": 63659,
-            "name": "Bane of the Swarm",
-            "new": true,
-            "titleId": 793,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_challengemode_scarletmonastery_gold",
-            "id": 63690,
-            "name": "The Venomous Contender",
-            "new": true,
-            "titleId": 795,
-            "type": "achievement"
-          },
-          {
-            "icon": "achievement_dungeon_theotherside_muehzala",
-            "id": 63716,
-            "name": "Loa-Blessed",
-            "new": true,
-            "titleId": 796,
-            "type": "achievement"
-          },
-          {
-            "icon": "inv_cape_special_treasure_c_01",
-            "id": 63717,
-            "name": "Treasure Hound",
-            "new": true,
-            "titleId": 797,
-            "type": "achievement"
-          },
-          {
-            "icon": "inv_misc_key_07",
-            "id": 63719,
-            "name": "Lockpickin'",
-            "new": true,
-            "titleId": 798,
-            "type": "achievement"
-          },
-          {
-            "icon": "ability_racial_dungeondelver",
-            "id": 63722,
-            "name": "Maze Runner",
-            "new": true,
-            "titleId": 799,
-            "type": "achievement"
-          },
-          {
-            "icon": "ability_rogue_controlisking",
-            "id": 64039,
-            "name": "Fabled Vanquisher of Kindo'jan",
-            "new": true,
-            "titleId": 801,
-            "type": "achievement"
-          },
-          {
-            "icon": "8393517",
-            "id": 64118,
-            "name": "Lone Raider",
-            "new": true,
-            "titleId": 802,
-            "type": "achievement"
-          }
-        ],
-        "name": "TODO"
       }
     ]
   }

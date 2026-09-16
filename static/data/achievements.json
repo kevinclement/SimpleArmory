@@ -10624,7 +10624,7 @@
                   "id": 63722,
                   "new": true,
                   "points": 10,
-                  "title": "Who's Labyrinth?"
+                  "title": "Whose Labyrinth?"
                 },
                 {
                   "icon": "inv_misc_map09",
@@ -23163,13 +23163,6 @@
                   "title": "Heroic: Grim Batol"
                 },
                 {
-                  "icon": "achievement_dungeon_grimbatol_general-umbriss",
-                  "id": 5297,
-                  "notObtainable": true,
-                  "points": 0,
-                  "title": "Umbrage for Umbriss"
-                },
-                {
                   "icon": "Achievement_Halloween_RottenEgg_01",
                   "id": 5298,
                   "points": 10,
@@ -32137,13 +32130,6 @@
                   "new": true,
                   "points": 10,
                   "title": "Tricks and Treats of Midnight"
-                },
-                {
-                  "icon": "achievement_halloween_candy_01",
-                  "id": 62500,
-                  "new": true,
-                  "points": 10,
-                  "title": "Sweet Tooth"
                 }
               ],
               "name": "Tricks and Treats"
@@ -32258,6 +32244,40 @@
                 }
               ],
               "name": "Other"
+            },
+            {
+              "id": "b5010194",
+              "items": [
+                {
+                  "icon": "achievement_halloween_candy_01",
+                  "id": 62500,
+                  "new": true,
+                  "points": 10,
+                  "title": "Sweet Tooth"
+                },
+                {
+                  "icon": "inv_misc_food_legion_goocaramel_bottle",
+                  "id": 64160,
+                  "new": true,
+                  "points": 10,
+                  "title": "Duskwood Caramel Crafter"
+                },
+                {
+                  "icon": "inv_holiday_tow_spicebrownie",
+                  "id": 64161,
+                  "new": true,
+                  "points": 10,
+                  "title": "Felwood Fudge Bite Former"
+                },
+                {
+                  "icon": "inv_misc_breadofthedead",
+                  "id": 64162,
+                  "new": true,
+                  "points": 10,
+                  "title": "Drustvar Choc-O-Drop Designer"
+                }
+              ],
+              "name": "Housing"
             }
           ]
         },
@@ -46350,7 +46370,7 @@
                   "id": 63715,
                   "new": true,
                   "points": 0,
-                  "title": "Let Me Solo Him: Kindo'Jan"
+                  "title": "Let Me Solo Him: Kindo'jan"
                 },
                 {
                   "icon": "8393517",
@@ -52598,7 +52618,6 @@
                 {
                   "icon": "inv_eyeofnzothpet",
                   "id": 14191,
-                  "notObtainable": true,
                   "points": 0,
                   "title": "Servant of N'Zoth"
                 }
@@ -53058,10 +53077,18 @@
                   "title": "It's Nearly Midnight"
                 },
                 {
-                  "icon": "inv_112_raidtrinkets_etherealenergystoragesphere_terra",
-                  "id": 61585,
+                  "icon": "inv_1115_xp-bonus",
+                  "id": 64140,
                   "points": 0,
-                  "title": "You Conduit!"
+                  "title": "Winds of Particularly Mysterious Fortune",
+                  "ptr": true
+                },
+                {
+                  "icon": "8198905",
+                  "id": 63685,
+                  "points": 0,
+                  "title": "BlizzCon 2026",
+                  "ptr": true
                 }
               ],
               "name": "Events"
@@ -53291,6 +53318,12 @@
                   "notObtainable": true,
                   "points": 0,
                   "title": "Bring Me The Head of... Oh Wait"
+                },
+                {
+                  "icon": "inv_112_raidtrinkets_etherealenergystoragesphere_terra",
+                  "id": 61585,
+                  "points": 0,
+                  "title": "You Conduit!"
                 },
                 {
                   "icon": "ability_thunderking_overcharge",
@@ -56446,6 +56479,19 @@
                 }
               ],
               "name": "Algeth'ar Academy"
+            },
+            {
+              "id": "e3b13856",
+              "items": [
+                {
+                  "icon": "achievement_dungeon_grimbatol_general-umbriss",
+                  "id": 5297,
+                  "notObtainable": true,
+                  "points": 0,
+                  "title": "Umbrage for Umbriss"
+                }
+              ],
+              "name": "Grim Batol"
             }
           ]
         },
