@@ -158,6 +158,7 @@
     "name": "Limited Time",
     "subcats": [
       {
+        "info": "This mount is available as a Twitch Drop for a limited time and will likely not return again. \n\n Ending: September 27th",
         "items": [
           {
             "ID": 2850,
@@ -167,10 +168,10 @@
             "spellid": 1270520
           }
         ],
-        "name": "Twitch Drops",
-        "info": "This mount is available as a Twitch Drop for a limited time and will likely not return again. \n\n Ending: September 27th" 
+        "name": "Twitch Drops"
       },
       {
+        "info": "These mounts are currently available on the Trading Post and may return in future rotations. \n\n Ending: September 30th",
         "items": [
           {
             "ID": 2628,
@@ -208,10 +209,10 @@
             "spellid": 1305204
           }
         ],
-        "name": "Trading Post: September",
-        "info": "These mounts are currently available on the Trading Post and may return in future rotations. \n\n Ending: September 30th"
+        "name": "Trading Post: September"
       },
       {
+        "info": "These mounts are currently available on the Trading Post Celebration Vendors and may return in future rotations. \n\n Ending: September 30th",
         "items": [
           {
             "ID": 1577,
@@ -477,10 +478,10 @@
             "spellid": 431360
           }
         ],
-        "name": "Trading Post Celebration",
-        "info": "These mounts are currently available on the Trading Post Celebration Vendors and may return in future rotations. \n\n Ending: September 30th"
+        "name": "Trading Post Celebration"
       },
       {
+        "info": "These mounts will be available through a different or more difficult source in the future. \n\n Ending: Midnight, Patch 12.2",
         "items": [
           {
             "ID": 3063,
@@ -520,10 +521,10 @@
             "spellid": 1296672
           }
         ],
-        "name": "Midnight: Season 2",
-        "info": "These mounts will be available through a different or more difficult source in the future. \n\n Ending: Midnight, Patch 12.2"
+        "name": "Midnight: Season 2"
       },
       {
+        "info": "This mount is only available on the store for a limited time and will likely not return again. \n\n Ending: \n Rabbit'ath: September 28th 2026",
         "items": [
           {
             "ID": 2984,
@@ -533,8 +534,7 @@
             "spellid": 1293456
           }
         ],
-        "name": "Blizzard Store",
-        "info": "This mount is only available on the store for a limited time and will likely not return again. \n\n Ending: \n Rabbit'ath: September 28th 2026"
+        "name": "Blizzard Store"
       }
     ]
   },
@@ -657,6 +657,7 @@
         "name": "Raid Drop"
       },
       {
+        "info": "Some of these mounts are not currently obtainable due to the seasonal dungeon rotation. \n\n Obtainable again:\n Spectral Hawkstrider: Midnight Season 3 \n Lucent Hawkstrider: The Last Titan",
         "items": [
           {
             "ID": 2805,
@@ -680,8 +681,7 @@
             "spellid": 1300776
           }
         ],
-        "name": "Dungeon Drop",
-        "info": "Some of these mounts are not currently obtainable due to the seasonal dungeon rotation. \n\n Obtainable again:\n Spectral Hawkstrider: Midnight Season 3 \n Lucent Hawkstrider: The Last Titan"
+        "name": "Dungeon Drop"
       },
       {
         "items": [
@@ -12453,12 +12453,14 @@
           {
             "ID": 1290,
             "icon": "inv_ratmount2",
+            "itemId": "255700",
             "name": "Squeakers, the Trickster",
             "spellid": 308078
           },
           {
             "ID": 1289,
             "icon": "inv_aetherserpentmount",
+            "itemId": "255693",
             "name": "Ensorcelled Everwyrm",
             "spellid": 307932
           },
@@ -14217,6 +14219,33 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1297808
+          },
+          {
+            "ID": 3108,
+            "icon": "7754351",
+            "itemId": 280520,
+            "name": "[PH] Purple Cat Mount",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1309110
+          },
+          {
+            "ID": 3109,
+            "icon": "7754352",
+            "itemId": 280521,
+            "name": "[PH] Brown Cat Mount",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1309112
+          },
+          {
+            "ID": 3110,
+            "icon": "7754353",
+            "itemId": 280522,
+            "name": "[PH] White Blue Cat Mount",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1309114
           }
         ],
         "name": "Unknown"
