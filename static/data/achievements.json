@@ -32006,7 +32006,6 @@
                 {
                   "icon": "inv_cask_03",
                   "id": 63253,
-                  "new": true,
                   "points": 10,
                   "title": "A Round on the House in Midnight"
                 }
@@ -45185,6 +45184,7 @@
                 {
                   "icon": "inv_tabard_blue_armor_azjkahet_c_01",
                   "id": 40660,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "The War Within Season 1: Spelunker Supreme"
                 },
@@ -45219,6 +45219,7 @@
                 {
                   "icon": "inv_achievement_zone_undermine",
                   "id": 40911,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "The War Within Season 2: Master Blaster"
                 },
@@ -45253,6 +45254,7 @@
                 {
                   "icon": "inv_112_achievement_zone_karesh",
                   "id": 41937,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "The War Within Season 3: Voidborne Victor"
                 },
@@ -47360,13 +47362,6 @@
               "id": "580bf734",
               "items": [
                 {
-                  "icon": "achievement_challengemode_platinum",
-                  "id": 16429,
-                  "notObtainable": true,
-                  "points": 0,
-                  "title": "Thundering Hero: Dragonflight Season 1"
-                },
-                {
                   "icon": "achievement_challengemode_silver",
                   "id": 16647,
                   "notObtainable": true,
@@ -47393,6 +47388,13 @@
                   "notObtainable": true,
                   "points": 0,
                   "title": "Dragonflight Keystone Hero: Season One"
+                },
+                {
+                  "icon": "achievement_challengemode_platinum",
+                  "id": 16429,
+                  "notObtainable": true,
+                  "points": 0,
+                  "title": "Thundering Hero: Dragonflight Season 1"
                 },
                 {
                   "icon": "achievement_challengemode_silver",
@@ -47519,6 +47521,19 @@
                   "title": "Keystone Hero: Ruby Life Pools (Dragonflight)"
                 },
                 {
+                  "icon": "achievement_dungeon_lifepools",
+                  "id": 62442,
+                  "points": 0,
+                  "title": "Keystone Hero: Ruby Life Pools (Midnight Season 2)"
+                },
+                {
+                  "icon": "achievement_dungeon_lifepools",
+                  "id": 63627,
+                  "notObtainable": true,
+                  "points": 0,
+                  "title": "Keystone Victor: Ruby Life Pools"
+                },
+                {
                   "icon": "achievement_dungeon_centaurplains",
                   "id": 16641,
                   "notObtainable": true,
@@ -47573,19 +47588,6 @@
                   "notObtainable": true,
                   "points": 0,
                   "title": "Keystone Hero: Dawn of the Infinite"
-                },
-                {
-                  "icon": "achievement_dungeon_lifepools",
-                  "id": 62442,
-                  "points": 0,
-                  "title": "Keystone Hero: Ruby Life Pools (Midnight Season 2)"
-                },
-                {
-                  "icon": "achievement_dungeon_lifepools",
-                  "id": 63627,
-                  "notObtainable": true,
-                  "points": 0,
-                  "title": "Keystone Victor: Ruby Life Pools"
                 }
               ],
               "name": "Keystones: Dragonflight"
@@ -48619,18 +48621,21 @@
                 {
                   "icon": "inv_misc_epicgem_06",
                   "id": 12503,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Snake Eyes"
                 },
                 {
                   "icon": "inv_waepon_bow_zulgrub_d_01",
                   "id": 12507,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Snake Eater"
                 },
                 {
                   "icon": "spell_shaman_hex",
                   "id": 12508,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Good Night, Sweet Prince"
                 }
@@ -53079,6 +53084,7 @@
                 {
                   "icon": "inv_1115_xp-bonus",
                   "id": 64140,
+                  "notObtainable": true,
                   "points": 0,
                   "title": "Winds of Particularly Mysterious Fortune",
                   "ptr": true

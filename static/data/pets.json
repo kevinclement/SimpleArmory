@@ -1040,6 +1040,33 @@
             "itemId": 275704,
             "name": "Preyhunter's Riftbreaker",
             "spellid": 1297704
+          },
+          {
+            "ID": 5066,
+            "creatureId": 265740,
+            "icon": "inv_misc_monsterscales_13",
+            "itemId": 274923,
+            "name": "Aqir Scuttler",
+            "new": true,
+            "spellid": 1295644
+          },
+          {
+            "ID": 5068,
+            "creatureId": 265755,
+            "icon": "inv_icon_wing03c",
+            "itemId": 274927,
+            "name": "Aqir Wingreaver",
+            "new": true,
+            "spellid": 1295663
+          },
+          {
+            "ID": 5100,
+            "creatureId": 268483,
+            "icon": "inv_icon_wingbroken03b",
+            "itemId": 276927,
+            "name": "Aqir Razorwing",
+            "new": true,
+            "spellid": 1301393
           }
         ],
         "name": "Vendor"
@@ -11335,8 +11362,6 @@
             "icon": "inv_nzothfish",
             "itemId": 205035,
             "name": "Three-Eyed Fish",
-            "notObtainable": true,
-            "notReleased": true,
             "spellid": 1303722
           },
           {
@@ -14442,51 +14467,6 @@
           }
         ],
         "name": "Promotion"
-      }
-    ]
-  },
-  {
-    "id": "5e842d65",
-    "name": "TODO",
-    "subcats": [
-      {
-        "id": "1ed70e87",
-        "items": [
-          {
-            "ID": 5066,
-            "creatureId": 265740,
-            "icon": "inv_misc_monsterscales_13",
-            "itemId": 274923,
-            "name": "Aqir Scuttler",
-            "new": true,
-            "spellid": 1295644
-          }
-        ],
-        "name": "Achievement"
-      },
-      {
-        "id": "528853b1",
-        "items": [
-          {
-            "ID": 5068,
-            "creatureId": 265755,
-            "icon": "inv_icon_wing03c",
-            "itemId": 274927,
-            "name": "Aqir Wingreaver",
-            "new": true,
-            "spellid": 1295663
-          },
-          {
-            "ID": 5100,
-            "creatureId": 268483,
-            "icon": "inv_icon_wingbroken03b",
-            "itemId": 276927,
-            "name": "Aqir Razorwing",
-            "new": true,
-            "spellid": 1301393
-          }
-        ],
-        "name": "Unknown"
       }
     ]
   }
