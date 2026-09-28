@@ -119,18 +119,6 @@
     "name": "Limited Time",
     "subcats": [
       {
-        "info": "This decor is available as a Twitch Drop for a limited time and will likely not return again. \n Ending: September 27th",
-        "items": [
-          {
-            "ID": 15153,
-            "icon": "7497415",
-            "itemId": "263303",
-            "name": "Cuddly Blue Grrgle"
-          }
-        ],
-        "name": "Twitch Drops"
-      },
-      {
         "items": [
           {
             "ID": 15668,
@@ -8634,6 +8622,12 @@
             "icon": "8033192",
             "itemId": "279359",
             "name": "Ersatz Venom Splatter"
+          },
+          {
+            "ID": 11138,
+            "icon": "7416749",
+            "itemId": "256356",
+            "name": "Sunsmoke Censer"
           }
         ],
         "name": "Alchemy"
@@ -13162,10 +13156,10 @@
           },
           {
             "ID": 15153,
-            "highlighted": true,
             "icon": "7497415",
             "itemId": "263303",
-            "name": "Cuddly Blue Grrgle"
+            "name": "Cuddly Blue Grrgle",
+            "notObtainable": true
           }
         ],
         "name": "Twitch Drops"
@@ -13763,13 +13757,6 @@
             "icon": "7425833",
             "itemId": "256173",
             "name": "Silvermoon Front Door",
-            "notObtainable": true
-          },
-          {
-            "ID": 11138,
-            "icon": "7416749",
-            "itemId": "256356",
-            "name": "Sunsmoke Censer",
             "notObtainable": true
           },
           {
