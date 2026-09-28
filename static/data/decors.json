@@ -119,18 +119,6 @@
     "name": "Limited Time",
     "subcats": [
       {
-        "info": "This decor is available as a Twitch Drop for a limited time and will likely not return again. \n Ending: September 27th",
-        "items": [
-          {
-            "ID": 15153,
-            "icon": "7497415",
-            "itemId": "263303",
-            "name": "Cuddly Blue Grrgle"
-          }
-        ],
-        "name": "Twitch Drops"
-      },
-      {
         "items": [
           {
             "ID": 15668,
@@ -1273,12 +1261,6 @@
             "icon": "7746469",
             "itemId": "271176",
             "name": "Feathered Ula'tek Talisman"
-          },
-          {
-            "ID": 26201,
-            "icon": "8030627",
-            "itemId": "278044",
-            "name": "Kobold's Hanging Kandles"
           },
           {
             "ID": 26651,
@@ -2567,6 +2549,18 @@
             "icon": "7939352",
             "itemId": "278130",
             "name": "Gilded Silvermoon Compass"
+          },
+          {
+            "ID": 7834,
+            "icon": "7424509",
+            "itemId": "250870",
+            "name": "Crimson Crystal Fragment"
+          },
+          {
+            "ID": 7832,
+            "icon": "7424501",
+            "itemId": "250868",
+            "name": "Crimson Crystal Column"
           },
           {
             "ID": 25279,
@@ -8628,6 +8622,12 @@
             "icon": "8033192",
             "itemId": "279359",
             "name": "Ersatz Venom Splatter"
+          },
+          {
+            "ID": 11138,
+            "icon": "7416749",
+            "itemId": "256356",
+            "name": "Sunsmoke Censer"
           }
         ],
         "name": "Alchemy"
@@ -10970,12 +10970,6 @@
             "name": "Old Moonbrook Daylight Window"
           },
           {
-            "ID": 26935,
-            "icon": "8119357",
-            "itemId": "280884",
-            "name": "Seeker's First Draft"
-          },
-          {
             "ID": 26940,
             "icon": "8119380",
             "itemId": "280635",
@@ -13162,10 +13156,10 @@
           },
           {
             "ID": 15153,
-            "highlighted": true,
             "icon": "7497415",
             "itemId": "263303",
-            "name": "Cuddly Blue Grrgle"
+            "name": "Cuddly Blue Grrgle",
+            "notObtainable": true
           }
         ],
         "name": "Twitch Drops"
@@ -13766,13 +13760,6 @@
             "notObtainable": true
           },
           {
-            "ID": 11138,
-            "icon": "7416749",
-            "itemId": "256356",
-            "name": "Sunsmoke Censer",
-            "notObtainable": true
-          },
-          {
             "ID": 11277,
             "icon": "7425905",
             "itemId": "256676",
@@ -14032,24 +14019,10 @@
             "notObtainable": true
           },
           {
-            "ID": 7832,
-            "icon": "7424501",
-            "itemId": "250868",
-            "name": "Crimson Crystal Column",
-            "notObtainable": true
-          },
-          {
             "ID": 7833,
             "icon": "7424505",
             "itemId": "250869",
             "name": "Crimson Crystal Core",
-            "notObtainable": true
-          },
-          {
-            "ID": 7834,
-            "icon": "7424509",
-            "itemId": "250870",
-            "name": "Crimson Crystal Fragment",
             "notObtainable": true
           },
           {
@@ -14219,6 +14192,21 @@
             "itemId": "264720",
             "name": "Void Elf Bedroll",
             "notObtainable": true
+          },
+          {
+            "ID": 26201,
+            "icon": "8030627",
+            "itemId": "278044",
+            "name": "Kobold's Hanging Kandles",
+            "notObtainable": true
+          },
+          {
+            "ID": 26935,
+            "icon": "8119357",
+            "itemId": "280884",
+            "name": "Seeker's First Draft",
+            "notObtainable": true,
+            "notReleased": true
           },
           {
             "ID": 15070,

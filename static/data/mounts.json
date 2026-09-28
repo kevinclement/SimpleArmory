@@ -158,19 +158,6 @@
     "name": "Limited Time",
     "subcats": [
       {
-        "info": "This mount is available as a Twitch Drop for a limited time and will likely not return again. \n\n Ending: September 27th",
-        "items": [
-          {
-            "ID": 2850,
-            "icon": "inv_flyingcarpetmount4",
-            "itemId": 263449,
-            "name": "Fluffy Comfy Flying Quilt",
-            "spellid": 1270520
-          }
-        ],
-        "name": "Twitch Drops"
-      },
-      {
         "info": "These mounts are currently available on the Trading Post and may return in future rotations. \n\n Ending: September 30th",
         "items": [
           {
@@ -13427,10 +13414,10 @@
           },
           {
             "ID": 2850,
-            "highlighted": true,
             "icon": "inv_flyingcarpetmount4",
             "itemId": 263449,
             "name": "Fluffy Comfy Flying Quilt",
+            "notObtainable": true,
             "spellid": 1270520
           }
         ],

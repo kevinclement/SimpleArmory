@@ -156,18 +156,6 @@
     "name": "Limited Time",
     "subcats": [
       {
-        "info": "This toy is available as a Twitch Drop for a limited time and will likely not return again. \n Ending: September 27th",
-        "items": [
-          {
-            "ID": 1755,
-            "icon": "inv_12xp_mdi_awv_banner02",
-            "itemId": 279590,
-            "name": "Venomous Champion's Illustrious Banner"
-          }
-        ],
-        "name": "Twitch Drops"
-      },
-      {
         "info": "These toys are currently available on the Trading Post Celebration Vendors and may return in future rotations. \n\n Ending: September 30th",
         "items": [
           {
@@ -720,10 +708,10 @@
           },
           {
             "ID": 1755,
-            "highlighted": true,
             "icon": "inv_12xp_mdi_awv_banner02",
             "itemId": 279590,
-            "name": "Venomous Champion's Illustrious Banner"
+            "name": "Venomous Champion's Illustrious Banner",
+            "notObtainable": true
           }
         ],
         "name": "Esports"
