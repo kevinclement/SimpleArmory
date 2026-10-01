@@ -243,252 +243,26 @@
     "name": "Limited Time",
     "subcats": [
       {
-        "info": "These pets are currently available on the Trading Post and will return in future rotations. \n\n Ending: September 30th",
+        "info": "These pets are currently available on the Trading Post and may return in future rotations. \n\n Ending: October 31st",
         "items": [
           {
-            "ID": 4616,
-            "creatureId": 229860,
-            "icon": "inv_brokerworm_pink",
-            "itemId": 228765,
-            "name": "Gummi",
-            "spellid": 463148
+            "ID": 3254,
+            "creatureId": 185621,
+            "icon": "inv_jewelcrafting_jadeowl",
+            "itemId": 190609,
+            "name": "Watcher of the Huntress",
+            "spellid": 367800
+          },
+          {
+            "ID": 5115,
+            "creatureId": 268636,
+            "icon": "8014864",
+            "itemId": 277282,
+            "name": "Archmage's Familiar",
+            "spellid": 1302008
           }
         ],
-        "name": "Trading Post: September"
-      },
-      {
-        "info": "These pets are currently available on the Trading Post Celebration Vendors and may return in future rotations. \n\n Ending: September 30th",
-        "items": [
-          {
-            "ID": 179,
-            "creatureId": 27217,
-            "icon": "inv_jewelry_amulet_03",
-            "itemId": 37297,
-            "name": "Spirit of Competition",
-            "spellid": 48406
-          },
-          {
-            "ID": 249,
-            "creatureId": 36979,
-            "icon": "achievement_boss_kelthuzad_01",
-            "itemId": 49693,
-            "name": "Lil' K.T.",
-            "spellid": 69677
-          },
-          {
-            "ID": 248,
-            "creatureId": 36911,
-            "icon": "inv_misc_pet_03",
-            "itemId": 49665,
-            "name": "Pandaren Monk",
-            "spellid": 69541
-          },
-          {
-            "ID": 242,
-            "creatureId": 36511,
-            "icon": "ability_mount_spectraltiger",
-            "itemId": 49343,
-            "name": "Spectral Tiger Cub",
-            "spellid": 68810
-          },
-          {
-            "ID": 3252,
-            "creatureId": 185606,
-            "icon": "inv_ogrepet",
-            "itemId": 190607,
-            "name": "Garrlok",
-            "spellid": 367768
-          },
-          {
-            "ID": 3250,
-            "creatureId": 183708,
-            "icon": "inv_pet_egbert",
-            "itemId": 190603,
-            "name": "Egbob",
-            "spellid": 367732
-          },
-          {
-            "ID": 3243,
-            "creatureId": 183686,
-            "icon": "creatureportrait_robot_doberman",
-            "itemId": 190175,
-            "name": "Pippin",
-            "spellid": 366841
-          },
-          {
-            "ID": 3251,
-            "creatureId": 185604,
-            "icon": "inv_bee_red",
-            "itemId": 190604,
-            "name": "Buzzworth",
-            "spellid": 367748
-          },
-          {
-            "ID": 4253,
-            "creatureId": 208436,
-            "icon": "inv_pet_celestialfoxwyvern",
-            "itemId": 208045,
-            "name": "Slyvy",
-            "spellid": 417464
-          },
-          {
-            "ID": 3244,
-            "creatureId": 185324,
-            "icon": "inv_mummypet",
-            "itemId": 190176,
-            "name": "Drazka'zet the Wrathful",
-            "spellid": 366842
-          },
-          {
-            "ID": 3255,
-            "creatureId": 185756,
-            "icon": "inv_pet_babymoose_white",
-            "itemId": 190925,
-            "name": "Buttercup",
-            "spellid": 368314
-          },
-          {
-            "ID": 4311,
-            "creatureId": 213111,
-            "icon": "inv_helm_cloth_holiday_christmas_a_03",
-            "itemId": 210870,
-            "name": "Mitzy",
-            "spellid": 427289
-          },
-          {
-            "ID": 3297,
-            "creatureId": 189123,
-            "icon": "inv_salamanderwaterbaby_orange",
-            "itemId": 193429,
-            "name": "Time-Lost Salamanther",
-            "spellid": 375235
-          },
-          {
-            "ID": 4407,
-            "creatureId": 216345,
-            "icon": "inv_ladybugpet_red",
-            "itemId": 212700,
-            "name": "Nelle",
-            "spellid": 432844
-          },
-          {
-            "ID": 4408,
-            "creatureId": 216379,
-            "icon": "inv_ladybugpet_pink",
-            "itemId": 212722,
-            "name": "Buggsy",
-            "spellid": 432888
-          },
-          {
-            "ID": 4402,
-            "creatureId": 214286,
-            "icon": "inv_mouserock_teal",
-            "itemId": 211432,
-            "name": "Teele",
-            "spellid": 429423
-          },
-          {
-            "ID": 4286,
-            "creatureId": 211942,
-            "icon": "inv_duckbabyexplorer",
-            "itemId": 210409,
-            "name": "Aura",
-            "spellid": 425472
-          },
-          {
-            "ID": 4436,
-            "creatureId": 219134,
-            "icon": "inv_needledollpet_green",
-            "itemId": 217043,
-            "name": "Pokee",
-            "spellid": 438775
-          },
-          {
-            "ID": 4548,
-            "creatureId": 223316,
-            "icon": "inv_ogrepet",
-            "itemId": 223145,
-            "name": "Marrlok",
-            "spellid": 448355
-          },
-          {
-            "ID": 3582,
-            "creatureId": 205795,
-            "icon": "inv_magicalfishpet",
-            "itemId": 206174,
-            "name": "Blub",
-            "spellid": 412389
-          },
-          {
-            "ID": 4565,
-            "creatureId": 223600,
-            "icon": "inv_babynaga2_teal",
-            "itemId": 223339,
-            "name": "Trishi",
-            "spellid": 449046
-          },
-          {
-            "ID": 4566,
-            "creatureId": 223645,
-            "icon": "inv_murlocsurrender",
-            "itemId": 223474,
-            "name": "Worgli the Apprehensive",
-            "spellid": 449173
-          },
-          {
-            "ID": 4602,
-            "creatureId": 227414,
-            "icon": "inv_treasurecrabpet_yellow",
-            "itemId": 226104,
-            "name": "Claudius",
-            "spellid": 457689
-          },
-          {
-            "ID": 3542,
-            "creatureId": 204340,
-            "icon": "inv_sporebatrock_stoneblack",
-            "itemId": 205148,
-            "name": "Soot-Stained Shalewing",
-            "spellid": 408252
-          },
-          {
-            "ID": 4669,
-            "creatureId": 231713,
-            "icon": "inv_needledollpet_blue",
-            "itemId": 229993,
-            "name": "Bluedoo",
-            "spellid": 466179
-          }
-        ],
-        "name": "Trading Post Celebration"
-      },
-      {
-        "info": "These pets are available through limited time promotions, they may return in the Trading Post in the future. \n\n End dates: \n Gummi: September 30th 2026",
-        "items": [
-          {
-            "ID": 4944,
-            "creatureId": 255750,
-            "icon": "inv_manawurm2pink",
-            "itemId": 260360,
-            "name": "Gummi the Glow Wyrm",
-            "spellid": 1266148
-          }
-        ],
-        "name": "Promotions"
-      },
-      {
-        "info": "These pets are only available on the store for a limited time and will possibly not return again. \n\n End dates: \n Murk'atath: September 28th 2026",
-        "items": [
-          {
-            "ID": 5064,
-            "creatureId": 264863,
-            "icon": "inv_babymurlocxalatath",
-            "itemId": 274150,
-            "name": "Murk'atath",
-            "spellid": 1293301
-          }
-        ],
-        "name": "Blizzard Store"
+        "name": "Trading Post: October"
       },
       {
         "info": "These pets are only available through purchasing physical merch on the Blizzard Gear Store for a limited time and will possibly not return again. \n\n End dates: \n Emerrrgl: Limited Supply",
@@ -12291,7 +12065,6 @@
           {
             "ID": 3252,
             "creatureId": 185606,
-            "highlighted": true,
             "icon": "inv_ogrepet",
             "itemId": 190607,
             "name": "Garrlok",
@@ -12300,7 +12073,6 @@
           {
             "ID": 3250,
             "creatureId": 183708,
-            "highlighted": true,
             "icon": "inv_pet_egbert",
             "itemId": 190603,
             "name": "Egbob",
@@ -12309,7 +12081,6 @@
           {
             "ID": 3243,
             "creatureId": 183686,
-            "highlighted": true,
             "icon": "creatureportrait_robot_doberman",
             "itemId": 190175,
             "name": "Pippin",
@@ -12318,7 +12089,6 @@
           {
             "ID": 3251,
             "creatureId": 185604,
-            "highlighted": true,
             "icon": "inv_bee_red",
             "itemId": 190604,
             "name": "Buzzworth",
@@ -12327,7 +12097,6 @@
           {
             "ID": 4253,
             "creatureId": 208436,
-            "highlighted": true,
             "icon": "inv_pet_celestialfoxwyvern",
             "itemId": 208045,
             "name": "Slyvy",
@@ -12336,7 +12105,6 @@
           {
             "ID": 3244,
             "creatureId": 185324,
-            "highlighted": true,
             "icon": "inv_mummypet",
             "itemId": 190176,
             "name": "Drazka'zet the Wrathful",
@@ -12345,7 +12113,6 @@
           {
             "ID": 3255,
             "creatureId": 185756,
-            "highlighted": true,
             "icon": "inv_pet_babymoose_white",
             "itemId": 190925,
             "name": "Buttercup",
@@ -12354,7 +12121,6 @@
           {
             "ID": 4311,
             "creatureId": 213111,
-            "highlighted": true,
             "icon": "inv_helm_cloth_holiday_christmas_a_03",
             "itemId": 210870,
             "name": "Mitzy",
@@ -12363,7 +12129,6 @@
           {
             "ID": 3297,
             "creatureId": 189123,
-            "highlighted": true,
             "icon": "inv_salamanderwaterbaby_orange",
             "itemId": 193429,
             "name": "Time-Lost Salamanther",
@@ -12372,7 +12137,6 @@
           {
             "ID": 4407,
             "creatureId": 216345,
-            "highlighted": true,
             "icon": "inv_ladybugpet_red",
             "itemId": 212700,
             "name": "Nelle",
@@ -12381,7 +12145,6 @@
           {
             "ID": 4408,
             "creatureId": 216379,
-            "highlighted": true,
             "icon": "inv_ladybugpet_pink",
             "itemId": 212722,
             "name": "Buggsy",
@@ -12390,7 +12153,6 @@
           {
             "ID": 4402,
             "creatureId": 214286,
-            "highlighted": true,
             "icon": "inv_mouserock_teal",
             "itemId": 211432,
             "name": "Teele",
@@ -12399,7 +12161,6 @@
           {
             "ID": 4286,
             "creatureId": 211942,
-            "highlighted": true,
             "icon": "inv_duckbabyexplorer",
             "itemId": 210409,
             "name": "Aura",
@@ -12408,7 +12169,6 @@
           {
             "ID": 4436,
             "creatureId": 219134,
-            "highlighted": true,
             "icon": "inv_needledollpet_green",
             "itemId": 217043,
             "name": "Pokee",
@@ -12417,7 +12177,6 @@
           {
             "ID": 4548,
             "creatureId": 223316,
-            "highlighted": true,
             "icon": "inv_ogrepet",
             "itemId": 223145,
             "name": "Marrlok",
@@ -12426,7 +12185,6 @@
           {
             "ID": 3582,
             "creatureId": 205795,
-            "highlighted": true,
             "icon": "inv_magicalfishpet",
             "itemId": 206174,
             "name": "Blub",
@@ -12435,7 +12193,6 @@
           {
             "ID": 4565,
             "creatureId": 223600,
-            "highlighted": true,
             "icon": "inv_babynaga2_teal",
             "itemId": 223339,
             "name": "Trishi",
@@ -12444,7 +12201,6 @@
           {
             "ID": 4566,
             "creatureId": 223645,
-            "highlighted": true,
             "icon": "inv_murlocsurrender",
             "itemId": 223474,
             "name": "Worgli the Apprehensive",
@@ -12453,7 +12209,6 @@
           {
             "ID": 4602,
             "creatureId": 227414,
-            "highlighted": true,
             "icon": "inv_treasurecrabpet_yellow",
             "itemId": 226104,
             "name": "Claudius",
@@ -12462,7 +12217,6 @@
           {
             "ID": 3542,
             "creatureId": 204340,
-            "highlighted": true,
             "icon": "inv_sporebatrock_stoneblack",
             "itemId": 205148,
             "name": "Soot-Stained Shalewing",
@@ -12471,7 +12225,6 @@
           {
             "ID": 4669,
             "creatureId": 231713,
-            "highlighted": true,
             "icon": "inv_needledollpet_blue",
             "itemId": 229993,
             "name": "Bluedoo",
@@ -12540,6 +12293,23 @@
             "itemId": 252200,
             "name": "Bundled-Up Bob",
             "spellid": 1254213
+          },
+          {
+            "ID": 4963,
+            "creatureId": 256559,
+            "icon": "inv_gardenmandrakepet_green",
+            "itemId": 262762,
+            "name": "Grumpy Mandrake",
+            "spellid": 1269346
+          },
+          {
+            "ID": 5115,
+            "creatureId": 268636,
+            "highlighted": true,
+            "icon": "8014864",
+            "itemId": 277282,
+            "name": "Archmage's Familiar",
+            "spellid": 1302008
           },
           {
             "ID": 3242,
@@ -12622,14 +12392,6 @@
             "spellid": 1254212
           },
           {
-            "ID": 4963,
-            "creatureId": 256559,
-            "icon": "inv_gardenmandrakepet_green",
-            "itemId": 262762,
-            "name": "Grumpy Mandrake",
-            "spellid": 1269346
-          },
-          {
             "ID": 4964,
             "creatureId": 256560,
             "icon": "inv_gardenmandrakepet_pink",
@@ -12668,16 +12430,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1301935
-          },
-          {
-            "ID": 5115,
-            "creatureId": 268636,
-            "icon": "8014864",
-            "itemId": 277282,
-            "name": "Archmage's Familiar",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1302008
           },
           {
             "ID": 5116,
@@ -12735,7 +12487,6 @@
           {
             "ID": 179,
             "creatureId": 27217,
-            "highlighted": true,
             "icon": "inv_jewelry_amulet_03",
             "itemId": 37297,
             "name": "Spirit of Competition",
@@ -12744,7 +12495,6 @@
           {
             "ID": 249,
             "creatureId": 36979,
-            "highlighted": true,
             "icon": "achievement_boss_kelthuzad_01",
             "itemId": 49693,
             "name": "Lil' K.T.",
@@ -12761,7 +12511,6 @@
           {
             "ID": 248,
             "creatureId": 36911,
-            "highlighted": true,
             "icon": "inv_misc_pet_03",
             "itemId": 49665,
             "name": "Pandaren Monk",
@@ -12770,7 +12519,6 @@
           {
             "ID": 242,
             "creatureId": 36511,
-            "highlighted": true,
             "icon": "ability_mount_spectraltiger",
             "itemId": 49343,
             "name": "Spectral Tiger Cub",
@@ -12811,11 +12559,19 @@
           {
             "ID": 4616,
             "creatureId": 229860,
-            "highlighted": true,
             "icon": "inv_brokerworm_pink",
             "itemId": 228765,
             "name": "Gummi",
             "spellid": 463148
+          },
+          {
+            "ID": 3254,
+            "creatureId": 185621,
+            "highlighted": true,
+            "icon": "inv_jewelcrafting_jadeowl",
+            "itemId": 190609,
+            "name": "Watcher of the Huntress",
+            "spellid": 367800
           }
         ],
         "name": "Trading Post Re-Releases"
@@ -13375,15 +13131,6 @@
             "spellid": 367696
           },
           {
-            "ID": 3254,
-            "creatureId": 185621,
-            "icon": "inv_jewelcrafting_jadeowl",
-            "itemId": 190609,
-            "name": "Watcher of the Huntress",
-            "notObtainable": true,
-            "spellid": 367800
-          },
-          {
             "ID": 4897,
             "creatureId": 251819,
             "icon": "inv_sealpet_body_tuskarr",
@@ -13577,10 +13324,10 @@
           {
             "ID": 5064,
             "creatureId": 264863,
-            "highlighted": true,
             "icon": "inv_babymurlocxalatath",
             "itemId": 274150,
             "name": "Murk'atath",
+            "resale": true,
             "spellid": 1293301
           },
           {
@@ -13883,7 +13630,6 @@
           {
             "ID": 4944,
             "creatureId": 255750,
-            "highlighted": true,
             "icon": "inv_manawurm2pink",
             "itemId": 260360,
             "name": "Gummi the Glow Wyrm",
