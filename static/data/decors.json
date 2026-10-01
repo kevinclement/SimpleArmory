@@ -152,18 +152,6 @@
           }
         ],
         "name": "Promotion"
-      },
-      {
-        "info": "This decor is only available on the store for a limited time and will likely not return again. \n\n Ending: \n Perch of the Dawnfire Phoenix: September 28th 2026",
-        "items": [
-          {
-            "ID": 25936,
-            "icon": "8014769",
-            "itemId": "276873",
-            "name": "Perch of the Dawnfire Phoenix"
-          }
-        ],
-        "name": "Blizzard Store"
       }
     ]
   },
@@ -13011,16 +12999,17 @@
         "items": [
           {
             "ID": 25936,
-            "highlighted": true,
             "icon": "8014769",
             "itemId": "276873",
-            "name": "Perch of the Dawnfire Phoenix"
+            "name": "Perch of the Dawnfire Phoenix",
+            "resale": true
           },
           {
             "ID": 28350,
             "icon": "8198897",
             "itemId": "281107",
-            "name": "BlizzCon Doormat"
+            "name": "BlizzCon Doormat",
+            "notObtainable": true
           }
         ],
         "name": "Blizzcon"
