@@ -301,6 +301,13 @@
             "type": "achievement"
           },
           {
+            "icon": "achievement_challengemode_scarletmonastery_gold",
+            "id": 63690,
+            "name": "The Venomous Contender",
+            "titleId": 795,
+            "type": "achievement"
+          },
+          {
             "icon": "achievement_challengemode_platinum",
             "id": 976,
             "name": "The Venomous Hero",
@@ -354,6 +361,13 @@
             "name": "Venomous Legend",
             "notObtainable": true,
             "titleId": 768,
+            "type": "achievement"
+          },
+          {
+            "icon": "8393517",
+            "id": 64118,
+            "name": "Lone Raider",
+            "titleId": 802,
             "type": "achievement"
           }
         ],
@@ -451,7 +465,6 @@
             "icon": "spell_holy_testoffaith",
             "id": 63519,
             "name": "Light's Faithful",
-            "new": true,
             "titleId": 780,
             "type": "achievement"
           },
@@ -459,7 +472,6 @@
             "icon": "trade_archaeology_aqir_artifactfragment",
             "id": 63659,
             "name": "Bane of the Swarm",
-            "new": true,
             "titleId": 793,
             "type": "achievement"
           }
@@ -511,7 +523,6 @@
             "icon": "achievement_dungeon_theotherside_muehzala",
             "id": 63716,
             "name": "Loa-Blessed",
-            "new": true,
             "titleId": 796,
             "type": "achievement"
           },
@@ -519,7 +530,6 @@
             "icon": "inv_cape_special_treasure_c_01",
             "id": 63717,
             "name": "Treasure Hound",
-            "new": true,
             "titleId": 797,
             "type": "achievement"
           },
@@ -527,7 +537,6 @@
             "icon": "inv_misc_key_07",
             "id": 63719,
             "name": "Lockpickin'",
-            "new": true,
             "titleId": 798,
             "type": "achievement"
           },
@@ -535,15 +544,14 @@
             "icon": "ability_racial_dungeondelver",
             "id": 63722,
             "name": "Maze Runner",
-            "new": true,
             "titleId": 799,
             "type": "achievement"
           },
           {
             "icon": "8393517",
+            "highlighted": true,
             "id": 64118,
             "name": "Lone Raider",
-            "new": true,
             "titleId": 802,
             "type": "achievement"
           },
@@ -551,7 +559,6 @@
             "icon": "inv_misc_questionmark",
             "id": 1353,
             "name": "Of the Labyrinth",
-            "new": true,
             "titleId": 803,
             "type": "title"
           }
@@ -4439,10 +4446,10 @@
             "type": "title"
           },
           {
+            "highlighted": true,
             "icon": "achievement_challengemode_scarletmonastery_gold",
             "id": 63690,
             "name": "The Venomous Contender",
-            "new": true,
             "titleId": 795,
             "type": "achievement"
           }
@@ -4784,7 +4791,6 @@
             "icon": "ability_rogue_controlisking",
             "id": 64039,
             "name": "Fabled Vanquisher of The First Hash'ey",
-            "new": true,
             "notObtainable": true,
             "titleId": 801,
             "type": "achievement"
