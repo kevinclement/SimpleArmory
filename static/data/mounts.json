@@ -209,6 +209,13 @@
             "spellid": 1297404
           },
           {
+            "ID": 3144,
+            "icon": "8269989",
+            "itemId": 283363,
+            "name": "Loa-Blessed Wayfarer",
+            "spellid": 1314715
+          },
+          {
             "ID": 3002,
             "icon": "inv_viciouslightbloomboar_blue",
             "itemId": 275433,
@@ -226,6 +233,19 @@
           }
         ],
         "name": "Midnight: Season 2"
+      },
+      {
+        "info": "This mount is available for sale on a vendor and will likely not be available again or exclusively through the Black Market Auction House. \n\n Ending: End of Midnight Expansion",
+        "items": [
+          {
+            "ID": 3137,
+            "icon": "8262534",
+            "itemId": 282414,
+            "name": "Sporebearer Fungal Strider",
+            "spellid": 1313788
+          }
+        ],
+        "name": "Vendor"
       }
     ]
   },
@@ -393,10 +413,10 @@
           },
           {
             "ID": 3144,
+            "highlighted": true,
             "icon": "8269989",
             "itemId": 283363,
             "name": "Loa-Blessed Wayfarer",
-            "new": true,
             "spellid": 1314715
           }
         ],
@@ -436,6 +456,13 @@
             "itemId": 275653,
             "name": "Sea-Dwelling Isle Serpent",
             "spellid": 1297216
+          },
+          {
+            "ID": 3066,
+            "icon": "8014728",
+            "itemId": 276926,
+            "name": "Corrupted Swarmer",
+            "spellid": 1301331
           }
         ],
         "name": "Reputation"
@@ -688,19 +715,11 @@
           },
           {
             "ID": 3137,
+            "highlighted": true,
             "icon": "8262534",
             "itemId": 282414,
             "name": "Sporebearer Fungal Strider",
-            "new": true,
             "spellid": 1313788
-          },
-          {
-            "ID": 3066,
-            "icon": "8014728",
-            "itemId": 276926,
-            "name": "Corrupted Swarmer",
-            "new": true,
-            "spellid": 1301331
           }
         ],
         "name": "Vendor"
