@@ -233,6 +233,19 @@
           }
         ],
         "name": "Midnight: Season 2"
+      },
+      {
+        "info": "This mount is available for sale on a vendor and will likely not be available again or exclusively through the Black Market Auction House. \n\n Ending: End of Midnight Expansion",
+        "items": [
+          {
+            "ID": 3137,
+            "icon": "8262534",
+            "itemId": 282414,
+            "name": "Sporebearer Fungal Strider",
+            "spellid": 1313788
+          }
+        ],
+        "name": "Midnight"
       }
     ]
   },
@@ -702,6 +715,7 @@
           },
           {
             "ID": 3137,
+            "highlighted": true,
             "icon": "8262534",
             "itemId": 282414,
             "name": "Sporebearer Fungal Strider",
