@@ -131,6 +131,30 @@
         "name": "Twitch Drops"
       },
       {
+        "info": "These decor trophies are time-limited and will not be available again in the future. \n\n Ending: Midnight, Patch 12.2",
+        "items": [
+          {
+            "ID": 25133,
+            "icon": "7937272",
+            "itemId": "279127",
+            "name": "The Venomous Abyss Argent Trophy"
+          },
+          {
+            "ID": 25131,
+            "icon": "7937278",
+            "itemId": "279125",
+            "name": "The Venomous Abyss Aureate Trophy"
+          },
+          {
+            "ID": 25132,
+            "icon": "7937274",
+            "itemId": "279129",
+            "name": "The Venomous Abyss Gleaming Trophy"
+          }
+        ],
+        "name": "Midnight: Season 2"
+      },
+      {
         "items": [
           {
             "ID": 15668,
@@ -1547,19 +1571,22 @@
             "ID": 25133,
             "icon": "7937272",
             "itemId": "279127",
-            "name": "The Venomous Abyss Argent Trophy"
+            "name": "The Venomous Abyss Argent Trophy",
+            "highlighted": true
           },
           {
             "ID": 25131,
             "icon": "7937278",
             "itemId": "279125",
-            "name": "The Venomous Abyss Aureate Trophy"
+            "name": "The Venomous Abyss Aureate Trophy",
+            "highlighted": true
           },
           {
             "ID": 25132,
             "icon": "7937274",
             "itemId": "279129",
-            "name": "The Venomous Abyss Gleaming Trophy"
+            "name": "The Venomous Abyss Gleaming Trophy",
+            "highlighted": true
           },
           {
             "ID": 25474,
