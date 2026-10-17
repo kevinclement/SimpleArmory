@@ -1,6 +1,7 @@
 import { getData } from '$api/_blizzard'
 import { getJsonDb } from '$api/_db'
 import Cache from '$api/_cache'
+import { getHideUncompletableReputationsSetting } from '../util/utils'
 
 let _cache;
 export async function getReputations(region, realm, character) {
@@ -27,6 +28,8 @@ export async function getReputations(region, realm, character) {
 function parseFactions(all_factions, my_reputations) {
     var obj = { categories: [] };
     var standing = {};
+
+    var hideUncompletableReputation = getHideUncompletableReputationsSetting();
 
     let defaultLevels = {
         0: 'Hated',
@@ -89,6 +92,7 @@ function parseFactions(all_factions, my_reputations) {
                 f.perc = stand.perc;
                 f.value = stand.value;
                 f.max = stand.max;
+                if(hideUncompletableReputation == 'true' && stand.value != stand.max && f.legacy) return; 
                 fc.factions.push(f);
             }
         });
