@@ -74,6 +74,7 @@
 		$preferences.hideResale = localStorage.getItem('hideResale') ?? "false";
 		$preferences.hideDupes = localStorage.getItem('hideDupes') ?? "false";
 		$preferences.hideTooltips = localStorage.getItem("hideTooltips") ?? "false";
+		$preferences.hideUncompletableReputation = localStorage.getItem("hideUncompletableReputation") ?? "false";
 
 		$preferences.savedCharacters = localStorage.getItem('savedCharacters') ?? "[]";
 	})

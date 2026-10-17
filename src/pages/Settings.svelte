@@ -127,6 +127,16 @@
 		localStorage.setItem('hideTooltips', $preferences.hideTooltips);
   }
 
+  let hideUncompletableReputation = $preferences.hideUncompletableReputation == "false" ? false : true;
+
+  const toggleHideUncompletableReputation = (e) => {
+		e.preventDefault();
+		$preferences.hideUncompletableReputation = hideUncompletableReputation == true ? "true" : "false";
+
+    localStorage.setItem('showHiddenUpdated',Date.now());
+		localStorage.setItem('hideUncompletableReputation', $preferences.hideUncompletableReputation);
+	}
+
   function setLocale(e, wowhead_url) {
     e.preventDefault();
 
@@ -201,6 +211,13 @@
       <input type="checkbox" id="hideTooltips" bind:checked={hideTooltips} on:change={toggleHideTooltips}>
       <Tooltip text="This setting hides all information tooltips on the site."> 
         <label for="hideTooltips">&nbsp<span class="info-underline">Hide Tooltips</span></label>
+      </Tooltip>
+    </div>
+
+    <div>
+      <input type="checkbox" id="hideUncompletableReputation" bind:checked={hideUncompletableReputation} on:change={toggleHideUncompletableReputation}>
+      <Tooltip text="This setting hides any non-maxed reputations that can no longer be progressed."> 
+        <label for="hideUncompletableReputation">&nbsp<span class="info-underline">Hide Uncompletable Reputations</span></label>
       </Tooltip>
     </div>
 

@@ -111,6 +111,10 @@ export function getHideTooltipSetting() {
     return(localStorage.getItem("hideTooltips"));
 }
 
+export function getHideUncompletableReputationsSetting() {
+    return(localStorage.getItem("hideUncompletableReputation"));
+}
+
 export function getShowHiddenUpdated() {
     return(localStorage.getItem("showHiddenUpdated"));
 }
