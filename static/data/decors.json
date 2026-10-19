@@ -941,12 +941,6 @@
             "icon": "7940058",
             "itemId": "275865",
             "name": "Nourished Clutch of Brood Eggs"
-          },
-          {
-            "ID": 27216,
-            "icon": "8126775",
-            "itemId": "280050",
-            "name": "Aqir Hunter's Trophy"
           }
         ],
         "name": "Reputation: Aqir Research Enclave"
@@ -1438,6 +1432,12 @@
             "icon": "7940022",
             "itemId": "279067",
             "name": "Symbol of Halazzi, Loa of the Hunt"
+          },
+          {
+            "ID": 27216,
+            "icon": "8126775",
+            "itemId": "280050",
+            "name": "Aqir Hunter's Trophy"
           }
         ],
         "name": "Quest"
@@ -5952,6 +5952,17 @@
       {
         "items": [
           {
+            "ID": 28632,
+            "icon": "8179442",
+            "itemId": "282164",
+            "name": "Eredath Worktable"
+          }
+        ],
+        "name": "Treasure"
+      },
+      {
+        "items": [
+          {
             "ID": 5880,
             "icon": "7424205",
             "itemId": "250113",
@@ -10268,50 +10279,43 @@
             "ID": 26011,
             "icon": "8017307",
             "itemId": "282192",
-            "name": "Candlelit Shrieking Jack-o'-Lantern",
-            "new": true
+            "name": "Candlelit Shrieking Jack-o'-Lantern"
           },
           {
             "ID": 26012,
             "icon": "8017310",
             "itemId": "282194",
-            "name": "Candlelit Ogre Jack-o'-Lantern",
-            "new": true
+            "name": "Candlelit Ogre Jack-o'-Lantern"
           },
           {
             "ID": 26016,
             "icon": "8017313",
             "itemId": "282196",
-            "name": "Filled Candy Bucket",
-            "new": true
+            "name": "Filled Candy Bucket"
           },
           {
             "ID": 26052,
             "icon": "8018859",
             "itemId": "282198",
-            "name": "Unlit Shrieking Jack-o'-Lantern",
-            "new": true
+            "name": "Unlit Shrieking Jack-o'-Lantern"
           },
           {
             "ID": 26053,
             "icon": "8018863",
             "itemId": "282200",
-            "name": "Unlit Ogre Jack-o'-Lantern",
-            "new": true
+            "name": "Unlit Ogre Jack-o'-Lantern"
           },
           {
             "ID": 26054,
             "icon": "8018869",
             "itemId": "282289",
-            "name": "Horrific Head of the Horseman",
-            "new": true
+            "name": "Horrific Head of the Horseman"
           },
           {
             "ID": 26880,
             "icon": "8033232",
             "itemId": "282213",
-            "name": "Looming Heartsbane Effigy",
-            "new": true
+            "name": "Looming Heartsbane Effigy"
           },
           {
             "ID": 26881,
@@ -10323,22 +10327,19 @@
             "ID": 26883,
             "icon": "8033369",
             "itemId": "282206",
-            "name": "Heartsbane Stone Circle",
-            "new": true
+            "name": "Heartsbane Stone Circle"
           },
           {
             "ID": 26884,
             "icon": "8033381",
             "itemId": "282208",
-            "name": "Heartsbane Banner",
-            "new": true
+            "name": "Heartsbane Banner"
           },
           {
             "ID": 26885,
             "icon": "8033344",
             "itemId": "282204",
-            "name": "Ominous Heartsbane Shrine",
-            "new": true
+            "name": "Ominous Heartsbane Shrine"
           }
         ],
         "name": "Hallow's End"
@@ -13035,8 +13036,7 @@
             "ID": 26882,
             "icon": "8033361",
             "itemId": "282092",
-            "name": "Heartsbane Ritual Markings",
-            "new": true
+            "name": "Heartsbane Ritual Markings"
           },
           {
             "ID": 26886,
@@ -16449,14 +16449,6 @@
             "icon": "8179456",
             "itemId": "282160",
             "name": "Solar Mana-Ring",
-            "notObtainable": true,
-            "notReleased": true
-          },
-          {
-            "ID": 28632,
-            "icon": "8179442",
-            "itemId": "282164",
-            "name": "Eredath Worktable",
             "notObtainable": true,
             "notReleased": true
           }
