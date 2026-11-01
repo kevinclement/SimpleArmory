@@ -158,31 +158,38 @@
     "name": "Limited Time",
     "subcats": [
       {
-        "info": "These mounts are currently available on the Trading Post and may return in future rotations. \n\n Ending: October 31st",
+        "info": "These mounts are currently available on the Trading Post and may return in future rotations. \n\n Ending: November 30th",
         "items": [
           {
-            "ID": 532,
-            "icon": "inv_ghostlycharger",
-            "itemId": 93671,
-            "name": "Ghastly Charger",
-            "spellid": 136505
+            "ID": 2696,
+            "icon": "inv_turkeymount_black",
+            "itemId": 250926,
+            "name": "Highlands Gobbler",
+            "spellid": 1251680
           },
           {
-            "ID": 2625,
-            "icon": "inv_headlesshorsemanmount2_white",
-            "itemId": 247723,
-            "name": "The Headless Horseman's Hallowed Charger",
-            "spellid": 1245205
+            "ID": 3142,
+            "icon": "8270409",
+            "itemId": 282649,
+            "name": "Hot Motocross Bunmover 4600",
+            "spellid": 1314169
           },
           {
-            "ID": 2652,
-            "icon": "inv_soulhoundmount_green",
-            "itemId": 250191,
-            "name": "Bilebound Ur'zul",
-            "spellid": 1250481
+            "ID": 3141,
+            "icon": "8270410",
+            "itemId": 282648,
+            "name": "Hot Motocross Bunmover 4400",
+            "spellid": 1314168
+          },
+          {
+            "ID": 2698,
+            "icon": "inv_turkeymount_purple",
+            "itemId": 250928,
+            "name": "Aubergine Warturkey",
+            "spellid": 1251689
           }
         ],
-        "name": "Trading Post: October"
+        "name": "Trading Post: November"
       },
       {
         "info": "These mounts will be available through a different or more difficult source in the future. \n\n Ending: Midnight, Patch 12.2",
@@ -10308,7 +10315,6 @@
           },
           {
             "ID": 532,
-            "highlighted": true,
             "icon": "inv_ghostlycharger",
             "itemId": 93671,
             "name": "Ghastly Charger",
@@ -10732,7 +10738,6 @@
           },
           {
             "ID": 2625,
-            "highlighted": true,
             "icon": "inv_headlesshorsemanmount2_white",
             "itemId": 247723,
             "name": "The Headless Horseman's Hallowed Charger",
@@ -10747,6 +10752,7 @@
           },
           {
             "ID": 2696,
+            "highlighted": true,
             "icon": "inv_turkeymount_black",
             "itemId": 250926,
             "name": "Highlands Gobbler",
@@ -10887,11 +10893,34 @@
           },
           {
             "ID": 2652,
-            "highlighted": true,
             "icon": "inv_soulhoundmount_green",
             "itemId": 250191,
             "name": "Bilebound Ur'zul",
             "spellid": 1250481
+          },
+          {
+            "ID": 3142,
+            "highlighted": true,
+            "icon": "8270409",
+            "itemId": 282649,
+            "name": "Hot Motocross Bunmover 4600",
+            "spellid": 1314169
+          },
+          {
+            "ID": 3141,
+            "highlighted": true,
+            "icon": "8270410",
+            "itemId": 282648,
+            "name": "Hot Motocross Bunmover 4400",
+            "spellid": 1314168
+          },
+          {
+            "ID": 2698,
+            "highlighted": true,
+            "icon": "inv_turkeymount_purple",
+            "itemId": 250928,
+            "name": "Aubergine Warturkey",
+            "spellid": 1251689
           },
           {
             "ID": 799,
@@ -11119,15 +11148,6 @@
             "spellid": 1251685
           },
           {
-            "ID": 2698,
-            "icon": "inv_turkeymount_purple",
-            "itemId": 250928,
-            "name": "Aubergine Warturkey",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1251689
-          },
-          {
             "ID": 2834,
             "icon": "inv_gardensnailmount_pink",
             "itemId": 260894,
@@ -11278,24 +11298,6 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1314166
-          },
-          {
-            "ID": 3141,
-            "icon": "8270410",
-            "itemId": 282648,
-            "name": "Hot Motocross Bunmover 4400",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1314168
-          },
-          {
-            "ID": 3142,
-            "icon": "8270409",
-            "itemId": 282649,
-            "name": "Hot Motocross Bunmover 4600",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1314169
           }
         ],
         "name": "Trading Post Originals"

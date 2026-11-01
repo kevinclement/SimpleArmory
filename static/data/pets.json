@@ -243,26 +243,18 @@
     "name": "Limited Time",
     "subcats": [
       {
-        "info": "These pets are currently available on the Trading Post and may return in future rotations. \n\n Ending: October 31st",
+        "info": "These pets are currently available on the Trading Post and may return in future rotations. \n\n Ending: November 30th",
         "items": [
           {
-            "ID": 3254,
-            "creatureId": 185621,
-            "icon": "inv_jewelcrafting_jadeowl",
-            "itemId": 190609,
-            "name": "Watcher of the Huntress",
-            "spellid": 367800
-          },
-          {
-            "ID": 5115,
-            "creatureId": 268636,
-            "icon": "8014864",
-            "itemId": 277282,
-            "name": "Archmage's Familiar",
-            "spellid": 1302008
+            "ID": 4630,
+            "creatureId": 230834,
+            "icon": "inv_babymurlocthrall",
+            "itemId": 229368,
+            "name": "Gill'el",
+            "spellid": 464808
           }
         ],
-        "name": "Trading Post: October"
+        "name": "Trading Post: November"
       },
       {
         "info": "These pets are only available through purchasing physical merch on the Blizzard Gear Store for a limited time and will possibly not return again. \n\n End dates: \n Emerrrgl: Limited Supply",
@@ -12310,7 +12302,6 @@
           {
             "ID": 5115,
             "creatureId": 268636,
-            "highlighted": true,
             "icon": "8014864",
             "itemId": 277282,
             "name": "Archmage's Familiar",
@@ -12562,11 +12553,19 @@
           {
             "ID": 3254,
             "creatureId": 185621,
-            "highlighted": true,
             "icon": "inv_jewelcrafting_jadeowl",
             "itemId": 190609,
             "name": "Watcher of the Huntress",
             "spellid": 367800
+          },
+          {
+            "ID": 4630,
+            "highlighted": true,
+            "creatureId": 230834,
+            "icon": "inv_babymurlocthrall",
+            "itemId": 229368,
+            "name": "Gill'el",
+            "spellid": 464808
           }
         ],
         "name": "Trading Post Re-Releases"
@@ -13892,15 +13891,6 @@
             "name": "Wind Rider Cub",
             "resale": true,
             "spellid": 69536
-          },
-          {
-            "ID": 4630,
-            "creatureId": 230834,
-            "icon": "inv_babymurlocthrall",
-            "itemId": 229368,
-            "name": "Gill'el",
-            "resale": true,
-            "spellid": 464808
           },
           {
             "ID": 4629,
