@@ -119,18 +119,6 @@
     "name": "Limited Time",
     "subcats": [
       {
-        "info": "This decor piece is a limited time Twitch Drop. \n\n Ending: November 3rd",
-        "items": [
-          {
-            "ID": 15144,
-            "icon": "7496716",
-            "itemId": "263294",
-            "name": "Cuddly Gold-Colored Grrgle"
-          }
-        ],
-        "name": "Twitch Drops"
-      },
-      {
         "info": "These decor trophies are time-limited and will not be available again in the future. \n\n Ending: Midnight, Patch 12.2",
         "items": [
           {
@@ -14469,6 +14457,132 @@
             "icon": "7655923",
             "itemId": "268550",
             "name": "Lush Garden Rug"
+          },
+          {
+            "ID": 27913,
+            "icon": "8419526",
+            "itemId": "285120",
+            "name": "Grimtide Coffee Table"
+          },
+          {
+            "ID": 27914,
+            "icon": "8419523",
+            "itemId": "285109",
+            "name": "Grimtide Dining Chair"
+          },
+          {
+            "ID": 27915,
+            "icon": "8267553",
+            "itemId": "285138",
+            "name": "Grimtide Floor Hatch"
+          },
+          {
+            "ID": 27975,
+            "icon": "8419528",
+            "itemId": "285118",
+            "name": "Grimtide Rug"
+          },
+          {
+            "ID": 27976,
+            "icon": "8419531",
+            "itemId": "285116",
+            "name": "Small Grimtide Rug"
+          },
+          {
+            "ID": 27977,
+            "icon": "8244644",
+            "itemId": "285107",
+            "name": "Grimtide Side Table"
+          },
+          {
+            "ID": 28403,
+            "icon": "8201899",
+            "itemId": "285126",
+            "name": "Grimtide Display Anchor"
+          },
+          {
+            "ID": 28404,
+            "icon": "8201894",
+            "itemId": "285128",
+            "name": "Grimtide Enchanted Candles"
+          },
+          {
+            "ID": 28718,
+            "icon": "8209032",
+            "itemId": "285105",
+            "name": "Grimtide Grand Table"
+          },
+          {
+            "ID": 29099,
+            "icon": "8244651",
+            "itemId": "285122",
+            "name": "Grimtide Grand Piano"
+          },
+          {
+            "ID": 29100,
+            "icon": "8244647",
+            "itemId": "285136",
+            "name": "Grimtide Bookcase"
+          },
+          {
+            "ID": 29506,
+            "icon": "8267690",
+            "itemId": "285114",
+            "name": "Grimtide Couch"
+          },
+          {
+            "ID": 29507,
+            "icon": "8267561",
+            "itemId": "285124",
+            "name": "Grimtide Tentacle"
+          },
+          {
+            "ID": 29508,
+            "icon": "8267558",
+            "itemId": "285132",
+            "name": "Grimtide Sconce"
+          },
+          {
+            "ID": 29509,
+            "icon": "8267555",
+            "itemId": "285134",
+            "name": "Grimtide Candelabra"
+          },
+          {
+            "ID": 29525,
+            "icon": "8270048",
+            "itemId": "285130",
+            "name": "Grimtide Chandelier"
+          },
+          {
+            "ID": 29976,
+            "icon": "8293775",
+            "itemId": "285142",
+            "name": "Grimtide Enchanted Candle"
+          },
+          {
+            "ID": 29977,
+            "icon": "8293779",
+            "itemId": "285144",
+            "name": "Grimtide Small Enchanted Candle"
+          },
+          {
+            "ID": 29978,
+            "icon": "8293777",
+            "itemId": "285140",
+            "name": "Grimtide Tall Enchanted Candle"
+          },
+          {
+            "ID": 30834,
+            "icon": "8419432",
+            "itemId": "286002",
+            "name": "Nighttime Grimtide Window"
+          },
+          {
+            "ID": 30835,
+            "icon": "8419343",
+            "itemId": "286004",
+            "name": "Daytime Grimtide Window"
           }
         ],
         "name": "Blizzard Store"
@@ -14630,6 +14744,17 @@
       {
         "items": [
           {
+            "ID": 29999,
+            "icon": "8297211",
+            "itemId": "285216",
+            "name": "Shifty Chest"
+          }
+        ],
+        "name": "D&D"
+      },
+      {
+        "items": [
+          {
             "ID": 25936,
             "icon": "8014769",
             "itemId": "276873",
@@ -14784,10 +14909,10 @@
           },
           {
             "ID": 15144,
-            "highlighted": true,
             "icon": "7496716",
             "itemId": "263294",
-            "name": "Cuddly Gold-Colored Grrgle"
+            "name": "Cuddly Gold-Colored Grrgle",
+            "notObtainable": true
           }
         ],
         "name": "Twitch Drops"
