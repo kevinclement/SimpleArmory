@@ -176,18 +176,6 @@
           }
         ],
         "name": "Promotion"
-      },
-      {
-        "info": "This decor piece is part of a limited time store bundle. \n\n Ending: November 8th",
-        "items": [
-          {
-            "ID": 26890,
-            "icon": "8117527",
-            "itemId": "281372",
-            "name": "Zhevraskin Rug"
-          }
-        ],
-        "name": "Blizzard Store"
       }
     ]
   },
@@ -14583,6 +14571,13 @@
             "icon": "8419343",
             "itemId": "286004",
             "name": "Daytime Grimtide Window"
+          },
+          {
+            "ID": 26890,
+            "icon": "8117527",
+            "itemId": "281372",
+            "name": "Zhevraskin Rug",
+            "notObtainable": true
           }
         ],
         "name": "Blizzard Store"

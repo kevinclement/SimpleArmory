@@ -172,18 +172,6 @@
           }
         ],
         "name": "Midnight: Season 2"
-      },
-      {
-        "info": "This toy is part of a limited time store bundle. \n\n Ending: November 8th",
-        "items": [
-          {
-            "ID": 1773,
-            "icon": "inv_rexxar",
-            "itemId": 284572,
-            "name": "Rexxar's Companion Transformation"
-          }
-        ],
-        "name": "Blizzard Store"
       }
     ]
   },
@@ -7312,6 +7300,13 @@
             "icon": "inv_ammo_snowball",
             "itemId": 245580,
             "name": "Rolling Snowball"
+          },
+          {
+            "ID": 1782,
+            "icon": "8473410",
+            "itemId": 286660,
+            "name": "Throw Bow",
+            "new": true
           }
         ],
         "name": "Winter Veil"
@@ -7760,6 +7755,25 @@
         "name": "Decor Duels"
       },
       {
+        "items": [
+          {
+            "ID": 1790,
+            "icon": "inv_bookmountdrust",
+            "itemId": 288899,
+            "name": "Hexed Tiny Tome",
+            "new": true
+          },
+          {
+            "ID": 1793,
+            "icon": "inv_10_alchemy_alchemystone_color3",
+            "itemId": 288912,
+            "name": "Wood-Cursed Hearthstone",
+            "new": true
+          }
+        ],
+        "name": "Talebound"
+      },
+      {
         "id": "6edf78f8",
         "items": [
           {
@@ -8046,6 +8060,13 @@
             "icon": "inv_pet_bluemurlocegg",
             "itemId": 210467,
             "name": "Magical Murkmorpher"
+          },
+          {
+            "ID": 1773,
+            "icon": "inv_rexxar",
+            "itemId": 284572,
+            "name": "Rexxar's Companion Transformation",
+            "notObtainable": true
           }
         ],
         "name": "Blizzard Store"
@@ -8190,6 +8211,17 @@
           }
         ],
         "name": "Pinterest"
+      },
+      {
+        "items": [
+          {
+            "ID": 1772,
+            "icon": "8373661",
+            "itemId": 284220,
+            "name": "Shifty Chest"
+          }
+        ],
+        "name": "D&D"
       },
       {
         "items": [

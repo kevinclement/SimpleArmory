@@ -81,6 +81,9 @@
             case 'expansions':
                 prettyCatName = 'Expansion Features';
                 break;
+            case 'talebound':
+                prettyCatName = 'Talebound';
+                break;
             case 'legacy':
                 prettyCatName = 'Legacy';
                 break;                       

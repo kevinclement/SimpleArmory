@@ -25,6 +25,7 @@
         'Pet Battles':        { w:0, txt:'', url:'INIT', seg:'pets' }, 
         'Collections':        { w:0, txt:'', url:'INIT', seg:'collections' }, 
         'Expansion Features': { w:0, txt:'', url:'INIT', seg:'expansions' },
+        //'Talebound':          { w:0, txt:'', url:'INIT', seg:'talebound' }, Won't enable this until Talebound goes live.
         'Legacy':             { w:0, txt:'', url:'INIT', seg:'legacy' }, 
         'Feats of Strength':  { w:0, txt:'', url:'INIT', seg:'feats' }, 
     };

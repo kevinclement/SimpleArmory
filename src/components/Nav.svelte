@@ -22,6 +22,7 @@
 				{ txt: 'Pet Battles',        link: 'pets'        },
 				{ txt: 'Collections',        link: 'collections' },
 				{ txt: 'Expansion Features', link: 'expansions'  },
+				//{ txt: 'Talebound',          link: 'talebound'   }, Won't enable this until Talebound goes live.
 				{ txt: 'Legacy',             link: 'legacy'      },
 				{ txt: 'Feats of Strength',  link: 'feats'       },
 			],
