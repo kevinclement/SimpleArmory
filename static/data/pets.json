@@ -10066,6 +10066,15 @@
             "itemId": 245544,
             "name": "Tiny Snow Buddy",
             "spellid": 1238915
+          },
+          {
+            "ID": 5188,
+            "creatureId": 276433,
+            "icon": "inv_pet_snowman",
+            "itemId": 286661,
+            "name": "Petite Snow Buddy",
+            "new": true,
+            "spellid": 1320982
           }
         ],
         "name": "Feast of Winter Veil"
@@ -12408,16 +12417,6 @@
             "spellid": 1297703
           },
           {
-            "ID": 5114,
-            "creatureId": 268609,
-            "icon": "8014864",
-            "itemId": 277270,
-            "name": "Kirin Tor Kitty",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1301935
-          },
-          {
             "ID": 5116,
             "creatureId": 268671,
             "icon": "inv_catpet_naxx",
@@ -12456,6 +12455,46 @@
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1302095
+          },
+          {
+            "ID": 5184,
+            "creatureId": 276413,
+            "icon": "8415179",
+            "itemId": 286652,
+            "name": "Bump",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1320926
+          },
+          {
+            "ID": 5185,
+            "creatureId": 276417,
+            "icon": "8415180",
+            "itemId": 286653,
+            "name": "Lump",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1320950
+          },
+          {
+            "ID": 5186,
+            "creatureId": 276418,
+            "icon": "8415181",
+            "itemId": 286654,
+            "name": "Grump",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1320954
+          },
+          {
+            "ID": 5187,
+            "creatureId": 276419,
+            "icon": "8415182",
+            "itemId": 286655,
+            "name": "Frump",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1320959
           }
         ],
         "name": "Trading Post Originals"
@@ -12560,8 +12599,8 @@
           },
           {
             "ID": 4630,
-            "highlighted": true,
             "creatureId": 230834,
+            "highlighted": true,
             "icon": "inv_babymurlocthrall",
             "itemId": 229368,
             "name": "Gill'el",
@@ -12633,6 +12672,57 @@
           }
         ],
         "name": "Dastardly Duos"
+      },
+      {
+        "items": [
+          {
+            "ID": 5169,
+            "creatureId": 273981,
+            "icon": "inv_cape_special_arathor_d_01_black",
+            "itemId": 283378,
+            "name": "Inquisitor's Messenger",
+            "new": true,
+            "spellid": 1314175
+          },
+          {
+            "ID": 5168,
+            "creatureId": 273980,
+            "icon": "inv_arfuspet_brown",
+            "itemId": 283375,
+            "name": "Slayer's Faithful Tracker",
+            "new": true,
+            "spellid": 1314164
+          },
+          {
+            "ID": 5170,
+            "creatureId": 274233,
+            "icon": "inv_wickerbeastpet",
+            "itemId": 284094,
+            "name": "Hex-Cursed Manifestation",
+            "new": true,
+            "spellid": 1315041
+          },
+          {
+            "ID": 5171,
+            "creatureId": 274252,
+            "icon": "inv_babynaga2_red",
+            "itemId": 284103,
+            "name": "Zyg'ee",
+            "new": true,
+            "spellid": 1315373
+          },
+          {
+            "ID": 5114,
+            "creatureId": 268609,
+            "icon": "8014864",
+            "itemId": 277270,
+            "name": "Bewitching Familiar",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1301935
+          }
+        ],
+        "name": "Talebound"
       },
       {
         "items": [
@@ -13142,7 +13232,9 @@
             "ID": 5173,
             "creatureId": 274350,
             "icon": "8284180",
-            "name": "Eyestalker"
+            "itemId": 284179,
+            "name": "Eyestalker",
+            "spellid": 1315275
           }
         ],
         "name": "D&D"
